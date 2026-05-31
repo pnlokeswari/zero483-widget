@@ -6,7 +6,7 @@
   <title>USFDA Pharma News | Zero483</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet" />
   <style>
     /* ─── Reset & Scope ───────────────────────────────────────────── */
     .z483-widget *,
@@ -17,121 +17,105 @@
       padding: 0;
     }
 
-    /* ─── Design Tokens ──────────────────────────────────────────── */
+    /* ─── Design Tokens (Premium Light Theme) ────────────────────── */
     .z483-widget {
-      --z-bg:           #0b1120;
-      --z-surface:      #111827;
-      --z-surface2:     #1a2236;
-      --z-border:       rgba(255,255,255,0.07);
-      --z-accent:       hsl(213, 92%, 58%);
-      --z-accent-glow:  hsl(213, 92%, 68%);
-      --z-text:         #e2e8f0;
-      --z-text-muted:   #8b9cc5;
-      --z-text-dim:     #4a5a7a;
-      --z-high:         hsl(0, 80%, 60%);
-      --z-high-bg:      hsl(0, 60%, 15%);
-      --z-med:          hsl(38, 90%, 58%);
-      --z-med-bg:       hsl(38, 60%, 14%);
-      --z-low:          hsl(143, 65%, 50%);
-      --z-low-bg:       hsl(143, 40%, 12%);
-      --z-recall:       hsl(0, 80%, 58%);
-      --z-shortage:     hsl(38, 90%, 58%);
-      --z-approval:     hsl(143, 65%, 52%);
-      --z-adverse:      hsl(280, 70%, 62%);
-      --z-press:        hsl(213, 92%, 58%);
-      --z-radius:       14px;
-      --z-radius-sm:    8px;
-      --z-shadow:       0 8px 32px rgba(0,0,0,0.45);
-      --z-transition:   0.22s cubic-bezier(0.4, 0, 0.2, 1);
+      --z-bg:           #f8f9fa;
+      --z-surface:      #ffffff;
+      --z-surface2:     #f1f5f9;
+      --z-border:       #e2e8f0;
+      --z-accent:       #2563eb;
+      --z-accent-glow:  #1d4ed8;
+      --z-text:         #0f172a;
+      --z-text-muted:   #475569;
+      --z-text-dim:     #64748b;
+      
+      --z-high:         #dc2626;
+      --z-high-bg:      #fef2f2;
+      --z-med:          #d97706;
+      --z-med-bg:       #fffbeb;
+      --z-low:          #16a34a;
+      --z-low-bg:       #f0fdf4;
+      
+      --z-radius:       8px;
+      --z-radius-sm:    6px;
+      --z-shadow:       0 4px 12px rgba(0,0,0,0.05);
+      --z-transition:   0.2s ease-in-out;
 
-      font-family: 'Inter', 'Segoe UI', sans-serif;
-      font-size: 15px;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
       line-height: 1.6;
       color: var(--z-text);
       background: var(--z-bg);
-      padding: 24px 20px 32px;
+      padding: 32px 24px;
       border-radius: var(--z-radius);
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
     /* ─── Header ─────────────────────────────────────────────────── */
     .z483-header {
       display: flex;
       align-items: center;
-      gap: 14px;
-      margin-bottom: 22px;
-    }
-
-    .z483-logo-mark {
-      flex-shrink: 0;
-      width: 42px;
-      height: 42px;
-      border-radius: 10px;
-      background: linear-gradient(135deg, var(--z-accent) 0%, hsl(240,80%,65%) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 16px hsla(213,92%,58%,0.35);
-    }
-
-    .z483-logo-mark svg {
-      width: 22px;
-      height: 22px;
-      fill: #fff;
+      gap: 16px;
+      margin-bottom: 24px;
+      border-bottom: 2px solid var(--z-text);
+      padding-bottom: 16px;
     }
 
     .z483-header-text h2 {
-      font-family: 'Outfit', sans-serif;
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #fff;
-      letter-spacing: -0.3px;
+      font-family: 'Merriweather', serif;
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--z-text);
+      letter-spacing: -0.5px;
     }
 
     .z483-header-text p {
-      font-size: 0.78rem;
+      font-size: 0.95rem;
       color: var(--z-text-muted);
-      margin-top: 1px;
+      margin-top: 4px;
+      font-weight: 500;
     }
 
     .z483-live-badge {
       margin-left: auto;
       display: flex;
       align-items: center;
-      gap: 6px;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.8px;
+      gap: 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
       text-transform: uppercase;
-      color: var(--z-low);
-      background: var(--z-low-bg);
-      border: 1px solid hsla(143,65%,50%,0.25);
+      color: var(--z-high);
+      background: var(--z-high-bg);
+      border: 1px solid #fecaca;
       border-radius: 20px;
-      padding: 4px 10px;
+      padding: 6px 12px;
     }
 
     .z483-live-dot {
-      width: 6px;
-      height: 6px;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
-      background: var(--z-low);
+      background: var(--z-high);
       animation: z483-pulse 2s ease-in-out infinite;
     }
 
     @keyframes z483-pulse {
-      0%   { box-shadow: 0 0 0 0 hsla(143,65%,52%,0.6); transform: scale(1); opacity: 1; }
-      70%  { box-shadow: 0 0 0 8px hsla(143,65%,52%,0); transform: scale(1); opacity: 0.8; }
-      100% { box-shadow: 0 0 0 0 hsla(143,65%,52%,0); transform: scale(1); opacity: 1; }
+      0%   { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); transform: scale(1); opacity: 1; }
+      70%  { box-shadow: 0 0 0 6px rgba(220, 38, 38, 0); transform: scale(1); opacity: 0.8; }
+      100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); transform: scale(1); opacity: 1; }
     }
 
     /* ─── Search ─────────────────────────────────────────────────── */
     .z483-search-wrap {
       position: relative;
-      margin-bottom: 14px;
+      margin-bottom: 20px;
     }
 
     .z483-search-icon {
       position: absolute;
-      left: 14px;
+      left: 16px;
       top: 50%;
       transform: translateY(-50%);
       pointer-events: none;
@@ -140,13 +124,13 @@
 
     .z483-search {
       width: 100%;
-      padding: 11px 14px 11px 42px;
-      background: var(--z-surface2);
+      padding: 14px 16px 14px 46px;
+      background: var(--z-surface);
       border: 1px solid var(--z-border);
       border-radius: var(--z-radius-sm);
       color: var(--z-text);
       font-family: inherit;
-      font-size: 0.9rem;
+      font-size: 1rem;
       outline: none;
       transition: border-color var(--z-transition), box-shadow var(--z-transition);
     }
@@ -154,564 +138,278 @@
     .z483-search::placeholder { color: var(--z-text-dim); }
 
     .z483-search:focus {
-      border-color: hsla(213,92%,58%,0.5);
-      box-shadow: 0 0 0 3px hsla(213,92%,58%,0.1);
+      border-color: var(--z-accent);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
     }
 
     /* ─── Filter Chips ───────────────────────────────────────────── */
     .z483-filters {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 20px;
+      gap: 10px;
+      margin-bottom: 28px;
     }
 
     .z483-chip {
-      border: none;
-      border-radius: 20px;
-      padding: 5px 14px;
-      font-size: 0.75rem;
+      border: 1px solid var(--z-border);
+      border-radius: 24px;
+      padding: 8px 18px;
+      font-size: 0.85rem;
       font-weight: 600;
       font-family: inherit;
       cursor: pointer;
-      background: var(--z-surface2);
+      background: var(--z-surface);
       color: var(--z-text-muted);
-      border: 1px solid var(--z-border);
       transition: all var(--z-transition);
-      letter-spacing: 0.2px;
     }
 
     .z483-chip:hover {
       border-color: var(--z-accent);
       color: var(--z-accent);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      background: var(--z-surface2);
     }
 
     .z483-chip.active {
-      background: var(--z-accent);
-      border-color: var(--z-accent);
-      color: #fff;
-      box-shadow: 0 4px 16px hsla(213,92%,58%,0.4);
-      transform: translateY(-1px);
-    }
-
-    /* ─── Stats Bar ──────────────────────────────────────────────── */
-    .z483-stats {
-      display: flex;
-      gap: 18px;
-      background: var(--z-surface2);
-      border: 1px solid var(--z-border);
-      border-radius: var(--z-radius-sm);
-      padding: 12px 16px;
-      margin-bottom: 18px;
-      flex-wrap: wrap;
-    }
-
-    .z483-stat {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.78rem;
-    }
-
-    .z483-stat-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-    }
-
-    .z483-stat-count {
-      font-weight: 700;
+      background: var(--z-text);
+      border-color: var(--z-text);
       color: #fff;
     }
 
-    .z483-stat-label {
-      color: var(--z-text-muted);
+    /* ─── Feed Layout ────────────────────────────────────────────── */
+    .z483-feed {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
     }
 
-    /* ─── Cards Grid ─────────────────────────────────────────────── */
-    .z483-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 14px;
-    }
-
-    /* ─── Card ───────────────────────────────────────────────────── */
+    /* ─── Article Card ───────────────────────────────────────────── */
     .z483-card {
       background: var(--z-surface);
       border: 1px solid var(--z-border);
       border-radius: var(--z-radius);
-      padding: 18px;
+      padding: 24px;
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      cursor: pointer;
+      gap: 16px;
       text-decoration: none;
       color: inherit;
-      position: relative;
-      overflow: hidden;
-      transition:
-        transform var(--z-transition),
-        box-shadow var(--z-transition),
-        border-color var(--z-transition);
-      animation: z483-card-in 0.4s cubic-bezier(0.4,0,0.2,1) both;
-    }
-
-    @keyframes z483-card-in {
-      from { opacity: 0; transform: translateY(12px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    .z483-card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        135deg,
-        hsla(213,92%,58%,0.04) 0%,
-        transparent 60%
-      );
-      opacity: 0;
-      transition: opacity var(--z-transition);
+      transition: transform var(--z-transition), box-shadow var(--z-transition);
     }
 
     .z483-card:hover {
-      transform: translateY(-4px) scale(1.02);
-      box-shadow: 0 16px 40px rgba(0,0,0,0.6), 0 0 20px hsla(213,92%,58%,0.15);
-      border-color: hsla(213,92%,58%,0.5);
-      z-index: 10;
+      transform: translateY(-2px);
+      box-shadow: var(--z-shadow);
+      border-color: var(--z-accent);
     }
 
-    .z483-card:hover::before { opacity: 1; }
-
-    /* Severity top border stripe */
-    .z483-card[data-severity="High"]   { border-top: 3px solid var(--z-high); }
-    .z483-card[data-severity="Medium"] { border-top: 3px solid var(--z-med); }
-    .z483-card[data-severity="Low"]    { border-top: 3px solid var(--z-low); }
-
-    /* ─── Card: Top Row ──────────────────────────────────────────── */
     .z483-card-top {
       display: flex;
-      align-items: flex-start;
-      gap: 10px;
       justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-bottom: 1px solid var(--z-border);
+      padding-bottom: 12px;
     }
 
     .z483-badges {
       display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
     }
 
     .z483-badge {
-      font-size: 0.68rem;
+      font-size: 0.75rem;
       font-weight: 700;
-      letter-spacing: 0.5px;
       text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 4px 10px;
       border-radius: 4px;
-      padding: 3px 8px;
     }
 
-    /* Category colours */
-    .z483-badge-Recall       { background: hsla(0,80%,58%,0.15);   color: var(--z-recall); }
-    .z483-badge-DrugShortage { background: hsla(38,90%,58%,0.15);  color: var(--z-shortage); }
-    .z483-badge-DrugApproval { background: hsla(143,65%,52%,0.15); color: var(--z-approval); }
-    .z483-badge-AdverseEvent { background: hsla(280,70%,62%,0.15); color: var(--z-adverse); }
-    .z483-badge-PressRelease { background: hsla(213,92%,58%,0.15); color: var(--z-press); }
-    .z483-badge-WarningLetter{ background: hsla(0,80%,58%,0.15);   color: var(--z-recall); }
-    .z483-badge-LabelUpdate  { background: hsla(213,92%,58%,0.12); color: var(--z-press); }
-
-    /* Severity badges */
-    .z483-sev {
-      font-size: 0.65rem;
-      font-weight: 700;
-      padding: 3px 8px;
-      border-radius: 4px;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-    }
-
-    .z483-sev-High   { background: var(--z-high-bg); color: var(--z-high); }
-    .z483-sev-Medium { background: var(--z-med-bg);  color: var(--z-med); }
-    .z483-sev-Low    { background: var(--z-low-bg);  color: var(--z-low); }
+    .z483-badge-Recall { background: var(--z-high-bg); color: var(--z-high); }
+    .z483-badge-DrugShortage { background: var(--z-med-bg); color: var(--z-med); }
+    .z483-badge-DrugApproval { background: var(--z-low-bg); color: var(--z-low); }
+    .z483-badge-AdverseEvent { background: #fdf4ff; color: #c026d3; }
+    .z483-badge-WarningLetter, .z483-badge-Form483 { background: var(--z-high-bg); color: var(--z-high); }
+    .z483-badge-Guidance { background: #f0f9ff; color: #0284c7; }
 
     .z483-date {
-      font-size: 0.72rem;
-      color: var(--z-text-dim);
-      white-space: nowrap;
-    }
-
-    /* ─── Card: Title ────────────────────────────────────────────── */
-    .z483-card-title {
-      font-size: 0.94rem;
+      font-size: 0.85rem;
       font-weight: 600;
-      color: #fff;
-      line-height: 1.4;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
+      color: var(--z-text-dim);
     }
 
-    /* ─── Card: Summary ──────────────────────────────────────────── */
-    .z483-card-summary {
-      font-size: 0.82rem;
-      color: var(--z-text-muted);
-      line-height: 1.65;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
-    /* ─── Card: Impact Box ───────────────────────────────────────── */
-    .z483-impact {
-      background: var(--z-surface2);
-      border-left: 3px solid var(--z-accent);
-      border-radius: 0 var(--z-radius-sm) var(--z-radius-sm) 0;
-      padding: 10px 12px;
-    }
-
-    .z483-impact-label {
-      font-size: 0.65rem;
+    .z483-card-title {
+      font-family: 'Merriweather', serif;
+      font-size: 1.4rem;
       font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--z-accent-glow);
-      margin-bottom: 5px;
+      color: var(--z-text);
+      line-height: 1.35;
     }
 
-    .z483-impact-text {
-      font-size: 0.79rem;
+    .z483-card-summary {
+      font-size: 1.05rem;
       color: var(--z-text-muted);
-      line-height: 1.6;
-      white-space: pre-line;
+      line-height: 1.7;
     }
 
-    /* ─── Card: Action ───────────────────────────────────────────── */
     .z483-action-row {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       margin-top: auto;
-      padding-top: 4px;
-    }
-
-    .z483-action-text {
-      font-size: 0.75rem;
-      color: var(--z-text-dim);
-      font-style: italic;
-      flex: 1;
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
+      padding-top: 16px;
     }
 
     .z483-read-link {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 5px;
-      font-size: 0.75rem;
+      gap: 6px;
+      font-size: 0.9rem;
       font-weight: 600;
       color: var(--z-accent);
       text-decoration: none;
-      transition: color var(--z-transition), gap var(--z-transition);
-      white-space: nowrap;
-      margin-left: 10px;
+      transition: gap var(--z-transition);
     }
 
-    .z483-read-link:hover {
+    .z483-card:hover .z483-read-link {
+      gap: 10px;
       color: var(--z-accent-glow);
-      gap: 8px;
     }
 
-    /* ─── Empty / Loading / Error ────────────────────────────────── */
+    /* ─── Empty / Loading ────────────────────────────────────────── */
     .z483-state {
-      grid-column: 1 / -1;
-      padding: 48px 20px;
+      padding: 64px 20px;
       text-align: center;
-      color: var(--z-text-muted);
-    }
-
-    .z483-state-icon {
-      font-size: 2.5rem;
-      margin-bottom: 12px;
-      opacity: 0.6;
+      background: var(--z-surface);
+      border: 1px dashed var(--z-border);
+      border-radius: var(--z-radius);
     }
 
     .z483-state h3 {
-      font-size: 1.1rem;
-      color: #fff;
-      margin-bottom: 6px;
+      font-family: 'Merriweather', serif;
+      font-size: 1.4rem;
+      color: var(--z-text);
+      margin-bottom: 8px;
     }
 
-    .z483-state p { font-size: 0.85rem; }
+    .z483-state p { font-size: 1rem; color: var(--z-text-muted); }
 
     /* Skeleton loader */
     .z483-skeleton {
       background: var(--z-surface);
       border: 1px solid var(--z-border);
       border-radius: var(--z-radius);
-      padding: 18px;
+      padding: 24px;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 16px;
     }
 
     .z483-skel-bar {
       background: var(--z-surface2);
       border-radius: 4px;
-      animation: z483-shimmer 1.6s ease-in-out infinite;
+      animation: z483-shimmer 1.5s ease-in-out infinite;
     }
 
     @keyframes z483-shimmer {
-      0%, 100% { opacity: 0.4; }
+      0%, 100% { opacity: 0.5; }
       50%       { opacity: 1; }
     }
 
-    /* ─── Footer ─────────────────────────────────────────────────── */
-    .z483-footer {
-      margin-top: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .z483-footer-note {
-      font-size: 0.7rem;
-      color: var(--z-text-dim);
-    }
-
-    .z483-footer-note a {
-      color: var(--z-accent);
-      text-decoration: none;
-    }
-
-    .z483-refresh-btn {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      background: none;
-      border: 1px solid var(--z-border);
-      border-radius: var(--z-radius-sm);
-      color: var(--z-text-muted);
-      font-family: inherit;
-      font-size: 0.75rem;
-      padding: 6px 12px;
-      cursor: pointer;
-      transition: all var(--z-transition);
-    }
-
-    .z483-refresh-btn:hover {
-      border-color: var(--z-accent);
-      color: var(--z-accent);
-    }
-
-    .z483-refresh-btn.spinning svg {
-      animation: z483-spin 0.9s linear infinite;
-    }
-
-    @keyframes z483-spin {
-      to { transform: rotate(360deg); }
-    }
-
-    /* ─── Responsive ─────────────────────────────────────────────── */
-    @media (max-width: 600px) {
-      .z483-widget { padding: 16px 12px 24px; }
-      .z483-grid { grid-template-columns: 1fr; }
-      .z483-stats { gap: 10px; }
-      .z483-live-badge { display: none; }
-    }
   </style>
 </head>
-<body style="background:#0b1120;min-height:100vh;padding:20px;">
+<body>
 
-<!-- ══════════════════════════════════════════════════════════════════
-     WIDGET ROOT — Copy everything from here down to </div> <!--/z483-->
-     into a Zoho Sites "Code Snippet" element.
-     Change DATA_URL below to point to your publicly hosted JSON file.
-════════════════════════════════════════════════════════════════════ -->
-
-<div class="z483-widget" id="z483-root">
-
+<div class="z483-widget">
+  
   <!-- Header -->
-  <div class="z483-header">
-    <div class="z483-logo-mark">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M19 3H5C3.9 3 3 3.9 3 5v14c0 1.1.9 2 2 2h14c1.1 0
-          2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-      </svg>
-    </div>
+  <header class="z483-header">
     <div class="z483-header-text">
-      <h2>USFDA Regulatory Watch</h2>
-      <p>Live updates for pharmaceutical inspection readiness</p>
+      <h2>USFDA Regulatory News</h2>
+      <p>Official breaking updates, recalls, and approvals for inspection readiness.</p>
     </div>
     <div class="z483-live-badge">
-      <span class="z483-live-dot"></span>Live
+      <span class="z483-live-dot"></span>Live Feed
     </div>
-  </div>
+  </header>
 
   <!-- Search -->
   <div class="z483-search-wrap">
     <span class="z483-search-icon">
-      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
         <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
       </svg>
     </span>
-    <input
-      id="z483-search"
-      class="z483-search"
-      type="text"
-      placeholder="Search recalls, approvals, warnings…"
-      aria-label="Search FDA news"
-    />
+    <input id="z483-search" class="z483-search" type="text" placeholder="Search recalls, approvals, warnings…" />
   </div>
 
   <!-- Filter chips -->
-  <div class="z483-filters" id="z483-filters">
-    <button class="z483-chip active" data-filter="All">All</button>
-    <button class="z483-chip" data-filter="Recall">🔴 Recalls</button>
-    <button class="z483-chip" data-filter="Drug Shortage">🟡 Shortages</button>
-    <button class="z483-chip" data-filter="Drug Approval">🟢 Approvals</button>
-    <button class="z483-chip" data-filter="Adverse Event">🟣 Adverse Events</button>
-    <button class="z483-chip" data-filter="Warning Letter">⚠️ Warning Letters</button>
-    <button class="z483-chip" data-filter="Form 483">📋 Form 483s</button>
-    <button class="z483-chip" data-filter="Guidance">📄 Guidelines</button>
-  </div>
+  <nav class="z483-filters" id="z483-filters">
+    <button class="z483-chip active" data-filter="All">All News</button>
+    <button class="z483-chip" data-filter="Recall">Recalls</button>
+    <button class="z483-chip" data-filter="Drug Shortage">Shortages</button>
+    <button class="z483-chip" data-filter="Drug Approval">Approvals</button>
+    <button class="z483-chip" data-filter="Adverse Event">Adverse Events</button>
+    <button class="z483-chip" data-filter="Warning Letter">Warning Letters</button>
+    <button class="z483-chip" data-filter="Form 483">Form 483s</button>
+    <button class="z483-chip" data-filter="Guidance">Guidelines</button>
+  </nav>
 
-  <!-- Educational FAQ Section -->
-  <div class="z483-faq-section" style="margin-bottom: 20px; background: var(--z-surface2); border: 1px solid var(--z-border); border-radius: var(--z-radius); padding: 16px;">
-    <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 0.95rem; color: var(--z-text);">📋 FDA Form 483 Frequently Asked Questions</h3>
-    
-    <details style="margin-bottom: 8px;">
-      <summary style="cursor: pointer; font-weight: 600; font-size: 0.85rem; color: var(--z-accent);">What is an FDA Form 483?</summary>
-      <p style="margin-top: 8px; font-size: 0.8rem; color: var(--z-text-muted); line-height: 1.4;">An FDA Form 483 is issued to firm management at the conclusion of an inspection when an investigator has observed any conditions that in their judgment may constitute violations of the Food Drug and Cosmetic (FD&C) Act and related Acts.</p>
-    </details>
-
-    <details style="margin-bottom: 8px;">
-      <summary style="cursor: pointer; font-weight: 600; font-size: 0.85rem; color: var(--z-accent);">What is the purpose of a Form 483?</summary>
-      <p style="margin-top: 8px; font-size: 0.8rem; color: var(--z-text-muted); line-height: 1.4;">The FDA Form 483 notifies the company's management of objectionable conditions. It is presented and discussed with senior management at the conclusion of an inspection. Companies are encouraged to respond in writing with their corrective action plan and then implement that corrective action plan expeditiously.</p>
-    </details>
-
-    <details style="margin-bottom: 8px;">
-      <summary style="cursor: pointer; font-weight: 600; font-size: 0.85rem; color: var(--z-accent);">Is a Form 483 a final Agency determination?</summary>
-      <p style="margin-top: 8px; font-size: 0.8rem; color: var(--z-text-muted); line-height: 1.4;">No. The FDA Form 483 does not constitute a final Agency determination of whether any condition is in violation of the FD&C Act or any of its relevant regulations. The FDA considers the Form 483 along with the Establishment Inspection Report (EIR), all evidence or documentation collected, and any responses made by the company before determining what further action, if any, is appropriate.</p>
-    </details>
-
-    <details>
-      <summary style="cursor: pointer; font-weight: 600; font-size: 0.85rem; color: var(--z-accent);">Is it an all-inclusive list of violations?</summary>
-      <p style="margin-top: 8px; font-size: 0.8rem; color: var(--z-text-muted); line-height: 1.4;">No. It is not an all-inclusive list. There may be other objectionable conditions that exist at the firm that are not cited on the FDA Form 483. Companies are responsible to take corrective action to address the cited observations as well as any related non-cited objectionable conditions.</p>
-    </details>
-  </div>
-
-  <!-- Stats bar -->
-  <div class="z483-stats" id="z483-stats" style="display:none">
-    <div class="z483-stat">
-      <span class="z483-stat-dot" style="background:var(--z-high)"></span>
-      <span class="z483-stat-count" id="z483-cnt-high">0</span>
-      <span class="z483-stat-label">High severity</span>
-    </div>
-    <div class="z483-stat">
-      <span class="z483-stat-dot" style="background:var(--z-med)"></span>
-      <span class="z483-stat-count" id="z483-cnt-med">0</span>
-      <span class="z483-stat-label">Medium severity</span>
-    </div>
-    <div class="z483-stat">
-      <span class="z483-stat-dot" style="background:var(--z-low)"></span>
-      <span class="z483-stat-count" id="z483-cnt-low">0</span>
-      <span class="z483-stat-label">Low severity</span>
-    </div>
-    <div class="z483-stat" style="margin-left:auto">
-      <span class="z483-stat-label">Updated:</span>
-      <span class="z483-stat-count" id="z483-updated" style="font-size:0.72rem">—</span>
-    </div>
-  </div>
-
-  <!-- Cards -->
-  <div class="z483-grid" id="z483-grid">
-    <!-- Skeleton placeholders -->
+  <!-- Feed -->
+  <main class="z483-feed" id="z483-feed">
+    <!-- Loading Skeletons -->
     <div class="z483-skeleton">
-      <div class="z483-skel-bar" style="height:14px;width:40%"></div>
-      <div class="z483-skel-bar" style="height:18px;width:85%"></div>
-      <div class="z483-skel-bar" style="height:12px;width:95%"></div>
-      <div class="z483-skel-bar" style="height:12px;width:70%"></div>
+      <div class="z483-skel-bar" style="height:16px;width:30%"></div>
+      <div class="z483-skel-bar" style="height:28px;width:85%"></div>
+      <div class="z483-skel-bar" style="height:16px;width:95%"></div>
+      <div class="z483-skel-bar" style="height:16px;width:80%"></div>
     </div>
     <div class="z483-skeleton">
-      <div class="z483-skel-bar" style="height:14px;width:35%"></div>
-      <div class="z483-skel-bar" style="height:18px;width:90%"></div>
-      <div class="z483-skel-bar" style="height:12px;width:80%"></div>
-      <div class="z483-skel-bar" style="height:12px;width:60%"></div>
+      <div class="z483-skel-bar" style="height:16px;width:25%"></div>
+      <div class="z483-skel-bar" style="height:28px;width:75%"></div>
+      <div class="z483-skel-bar" style="height:16px;width:100%"></div>
+      <div class="z483-skel-bar" style="height:16px;width:60%"></div>
     </div>
-    <div class="z483-skeleton">
-      <div class="z483-skel-bar" style="height:14px;width:45%"></div>
-      <div class="z483-skel-bar" style="height:18px;width:75%"></div>
-      <div class="z483-skel-bar" style="height:12px;width:90%"></div>
-      <div class="z483-skel-bar" style="height:12px;width:55%"></div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <div class="z483-footer">
-    <p class="z483-footer-note">
-      Data sourced from <a href="https://open.fda.gov" target="_blank" rel="noopener">openFDA</a> &amp;
-      <a href="https://www.fda.gov" target="_blank" rel="noopener">USFDA</a>.
-    </p>
-    <button class="z483-refresh-btn" id="z483-refresh-btn">
-      <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-        <path d="M23 4v6h-6"/><path d="M1 20v-6h6"/>
-        <path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/>
-      </svg>
-      Refresh
-    </button>
-  </div>
+  </main>
 
 </div>
-<!--/z483-->
 
-<!-- ══════════════════════════════════════════════════════════════════
-     JAVASCRIPT
-     DATA_URL: Change this to the public URL of your news_database.json
-     For testing locally, keep it as-is (reads from same folder).
-════════════════════════════════════════════════════════════════════ -->
 <script>
-(function () {
-  'use strict';
+  const INJECTED_DATA = {"last_updated": "2026-05-31T05:30:40.283932+00:00", "total_items": 17, "items": [{"id": "d83abb2828b0", "title": "FDA Issues Draft Guidance to Cut Unnecessary Animal Testing for Cancer Drugs - The Manila Times", "date": "2026-05-29", "category": "Guidance", "severity": "Low", "summary": "Title: FDA Issues Draft Guidance to Cut Unnecessary Animal Testing for Cancer Drugs - The Manila Times\nSource: Google News\nDate: Fri, 29 May 2026 17:59:27 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOaVdLM0liN01FVG9FMTZCV3J5cVJ2UFE1enljUENna1Z3V0xtV3UxWVBaRm02N1dSd2hqaUxXbllNM0gxekFKUklkeHpVcHZ4OV9UVURpeF94Qk95Nk40ak1naE9RYnJVeUxkM2ZkNXhqYWcwSUp3a21iT2EzOVcwbmRuM2dmT0pUWDdIZldnX2dHOWRiX3lsQ2d0VDUxRW9PRnd0T2lOMUo3VGVrX19nX0pJUFJBQmt5YUVWOHFTRFdvamF5OG5GLW1Nbl9kOWJsaHBZVmpiVDEtczFpSjluSS01T0pGQjRNTXfSAeoBQVVfeXFMTmlXSzNJYjdNRVRvRTE2QldyeXFSdlBRNXp5Y1BDZ2tWd1dMbVd1MVlQWkZtNjdXUndoamlMV25ZTTNIMXpBSlJJZHh6VXB2eDlfVFVEaXhfeEJPeTZONGpNZ2hPUWJyVXlMZDNmZDV4amFnMElKd2ttYk9hMzlXMG5kbjNnZk9KVFg3SGZXZ19nRzlkYl95bENndFQ1MUVvT0Z3dE9pTjFKN1Rla19fZ19KSVBSQUJreWFFVjhxU0RXb2pheThuRi1tTW5fZDlibGhwWVZqYlQxLXMxaUo5bkktNU9KRkI0TU13?oc=5", "fetched_at": "2026-05-31T05:30:40.283873+00:00"}, {"id": "7c46560e8048", "title": "FDA issues draft guidance to cut unnecessary animal testing for cancer drugs - Tampa Bay 28", "date": "2026-05-29", "category": "Guidance", "severity": "Low", "summary": "Title: FDA issues draft guidance to cut unnecessary animal testing for cancer drugs - Tampa Bay 28\nSource: Google News\nDate: Fri, 29 May 2026 15:02:57 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQN0NydWdSajJfZ2JiUW4zMTFIRUNGZmxxTnZoNThQTjd5UHNHVXhPVUk1MndkYVFYeEtmY0lRMjZYbmR5VW1SU2RhbEhlelV6UmlJX2R0eTJRaFdxc0dUZkR5bzRTSXNoYkI4SHdOblJ1a3NXQ1gyUTZtU2o4ZnNQaGU1UmJxM1pBOWdldnR3VEtRbzBSZ1MySjRxNlZHN01jakltcFJ2Nks1ZkNtaUtybDNjQkVhWnpDQTdaaW9Bbw?oc=5", "fetched_at": "2026-05-31T05:30:35.283431+00:00"}, {"id": "0348d2ae2766", "title": "FDA Issues Draft Guidance to Cut Unnecessary Animal Testing for Cancer Drugs - Caledonian Record", "date": "2026-05-29", "category": "Guidance", "severity": "Low", "summary": "Title: FDA Issues Draft Guidance to Cut Unnecessary Animal Testing for Cancer Drugs - Caledonian Record\nSource: Google News\nDate: Fri, 29 May 2026 17:51:38 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxORU8tRHloTGV5N0tGOHI4Qk5qdlhJTDNEOWdOV194WXJQai1udzdmZlFOV3Rma3dwNzdDSURtUEJ2VDdRR3Q2a1gyYVdFQjRNaTRRS3UtMGJzYUVCb2k0MzRaU0pSYnMtb1NVV0I3bFBQaEF1RTAyd2lUSEEzY1NTZTBnam9meVFvNDAzbUpPRUdxS01EblRKQk9MVWlsN2NYbXJ1V19SWWxzakZYeDY0RDdpWTl6REhMRUUyT0ZoeGhJNnI1XzZsS2RuaEJqZk9aeUkwNHJjcEkwLTdHOTZycDRmUG1fM2V1ZTUtNUlPXzE?oc=5", "fetched_at": "2026-05-31T05:30:30.282923+00:00"}, {"id": "bc4a5bd0f835", "title": "FDA inspections and Form 483 responses: What companies need to know - Manufacturing Chemist", "date": "2026-05-27", "category": "Form 483", "severity": "High", "summary": "Title: FDA inspections and Form 483 responses: What companies need to know - Manufacturing Chemist\nSource: Google News\nDate: Wed, 27 May 2026 16:05:26 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZnNyZXpwOC14a3VSQUZKUE1lVmUzamE3UkpPOFpfbnFUZG9MUU5iSXdYdFpjRloxc3ZFYUJ1a3BHRUhtMG5UNzI4aUZBbHlPbXExbGJBb3M2QlFCWlotWk9hRk9YckZjRkVpODhfemNQSXJTUmE2SUM0d2gtRGpka2xIazVSSTFmbGtKamlCVQ?oc=5", "fetched_at": "2026-05-31T05:30:24.651785+00:00"}, {"id": "c2d5f470a160", "title": "FDA warns drugmakers in US, Japan, and India for GMP issues - RAPS.org", "date": "2026-05-26", "category": "Form 483", "severity": "High", "summary": "Title: FDA warns drugmakers in US, Japan, and India for GMP issues - RAPS.org\nSource: Google News\nDate: Tue, 26 May 2026 20:51:00 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPaUM5ZTk2NWt0RzlHN2tUS0dXV0kxaTFZNzJDZURySTF3aG9XakNlN1N0UWVrR0xJY0JjSkhMenA1RmpyZzM1c2xMbHA5M0tVeWg1RkU2alZlaTdjU3ZrT09NQU5HWlFZUGhfYldKdUIzMElkUTY0c1dWS0F2QnVVUGxja3h0NTdhWS1oclhwN01JelA3Wm5N?oc=5", "fetched_at": "2026-05-31T05:30:19.651353+00:00"}, {"id": "4a72169f0ccb", "title": "FDA Issues Warning Letter to GSC Products for OTC Nasal Spray - Happi | Household And Personal Products Industry", "date": "2026-05-29", "category": "Warning Letter", "severity": "High", "summary": "Title: FDA Issues Warning Letter to GSC Products for OTC Nasal Spray - Happi | Household And Personal Products Industry\nSource: Google News\nDate: Fri, 29 May 2026 13:52:30 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWWtzakJZckI1b2FfVlltSUI4cnAwTU1QdFM4cXhidk1lNlo3YjR1bTJld3ZzOUJVOXBxU1hMaFJFQnFxNDRZUWZTWWcySGxnS3dUTkI2UW9fclNYNExZTGlCbXpsOFdRMllvYW10akNqX3A0WUZuU2MwWFI5Wktrbi1hdTcwZ283aTZDMjEzV3JXSEdrU3FnVHRGWHJfdVk?oc=5", "fetched_at": "2026-05-31T05:30:14.651017+00:00"}, {"id": "fdeb0ea5c233", "title": "From Warning Letter to Guilty Plea: How a Cheese Maker's Regulatory Failures Became a Federal Crime - Regulatory Oversig", "date": "2026-05-27", "category": "Warning Letter", "severity": "High", "summary": "Title: From Warning Letter to Guilty Plea: How a Cheese Maker's Regulatory Failures Became a Federal Crime - Regulatory Oversight\nSource: Google News\nDate: Wed, 27 May 2026 16:19:48 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcUY2U1dqc3c0OUw4cDl2TC0teGdQVEpEU1FEVVRsbW1rb19NblVwZUtMOW4xTXJoS2FkUnhyei0yOHlFbllGV0tybWFmWVE5cldIQ3Bnc0ZTM2xPbTd2NF8wQTNkc2x3bnJKY2N0YVpWOVNVQ2NyRzVyLVVqek51UFpuY0FFdTVJZHNGWU1RWTA1ZlBrQ2syNTROY2NzLTJHUFV6OE5KUHlXelhNcjRSNzc1TDh0djRQUi1IbWI4QXZlendnYS0ycDlDOWJEdnR4Z0VDTFBHT0pSdw?oc=5", "fetched_at": "2026-05-31T05:30:09.650709+00:00"}, {"id": "336b27939fc5", "title": "Cracked gaskets and rust-like residues trigger FDA warning letter to Alchymars - BioSpace", "date": "2026-05-29", "category": "Warning Letter", "severity": "High", "summary": "Title: Cracked gaskets and rust-like residues trigger FDA warning letter to Alchymars - BioSpace\nSource: Google News\nDate: Fri, 29 May 2026 14:34:17 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUWR2QkVQZGV3ZVhXWDQ5NDV6OEptdzdzSjlFRHM4VEQ2am5BaDU5S015MVNuUWF1c00tc2V5TnNUYmlNV2VXYVVIMHl4MEVFMlg5cGZmWlVaQTFRVWN3Ty00THJGamEwdGN2dVp2d0RMdFpJUkhpQ0szd2pPZWxzZVBrUHBTemZhRENQM2tTbmJaTmg5b0pWSFhjd01nTHVTUVBJdXVjcEJYWFU?oc=5", "fetched_at": "2026-05-31T05:30:04.650480+00:00"}, {"id": "ac3377b5ad9c", "title": "Impella CP Set With SmartAssist Warning Issued by FDA After Patient Death - AboutLawsuits.com", "date": "2026-05-28", "category": "Adverse Event", "severity": "High", "summary": "Title: Impella CP Set With SmartAssist Warning Issued by FDA After Patient Death - AboutLawsuits.com\nSource: Google News\nDate: Thu, 28 May 2026 12:00:00 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZjVzUnh5LVJHMTVfdTdjYWo4SW5fRFBKelQ2anA1aTVKVHBuYnZqbXdyRHZaLXRhbzBBYm5lWVRVMnozazc1dEg1aWZfa3FGQm1Zc1diV0JScnQyRDFUdlBHNjZqaDBBY25SdG1ZT0xHWTVDMkNGSjNIaFdwWDI5N0hmUUtrYWFNdXFYNQ?oc=5", "fetched_at": "2026-05-31T05:29:58.955959+00:00"}, {"id": "9dd99a1dec9f", "title": "Drug Approval: LOSARTAN POTASSIUM AND HYDROCHLOROTHIAZIDE - HETERO LABS LTD V", "date": "2026-05-27", "category": "Drug Approval", "severity": "Low", "summary": "Application: ANDA219869\nSponsor: HETERO LABS LTD V\nProduct: LOSARTAN POTASSIUM AND HYDROCHLOROTHIAZIDE\nSubmission type: ORIG\nSubmission class: N/A\nStatus: AP\nStatus date: 20260527", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=A219869", "fetched_at": "2026-05-31T05:29:51.929609+00:00"}, {"id": "1abfaf6388f2", "title": "Thousands of Philips interventional systems subject to FDA recall - Radiology Business", "date": "2026-05-27", "category": "Recall", "severity": "High", "summary": "Title: Thousands of Philips interventional systems subject to FDA recall - Radiology Business\nSource: Google News\nDate: Wed, 27 May 2026 17:54:57 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZG5pRzQwcFVRcjJmUG5JTjRKdWY2ejBWVzV1ZFNZZURfMEVUVHA5RlpQNE9sWUNoS0xHdGtrekY2dEJGYXRacHhmZG9sYmhDRk94VExFOWE0YzVhMktCckZrX0NXbEVKTGRwTmRfUW5JZlVzc0k5U3pQMkFyd0JWbGdPMTI0WnQxR0I2a3FJbzBXMmVOek9JVTYxbG5SR2VFRk45dWZxTktRbmRqUDFnZVNFZ3VYa1pSRXFabU5BU2FVWF9wcVZ6UXRMR1lRbDFGRmc?oc=5", "fetched_at": "2026-05-31T05:29:43.567799+00:00"}, {"id": "dec3801091c9", "title": "FDA Announces Nationwide Gas-X Recall\u2014Thousands of Boxes Affected - Health: Trusted and Empathetic Health and Wellness I", "date": "2026-05-28", "category": "Recall", "severity": "High", "summary": "Title: FDA Announces Nationwide Gas-X Recall\u2014Thousands of Boxes Affected - Health: Trusted and Empathetic Health and Wellness Information\nSource: Google News\nDate: Thu, 28 May 2026 14:37:46 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1lMWlLc041MGxkUEc1MnRXV2tkcVFRb3pJaEpOTmVMQUdyaHlIRGNWRDJhZE9OZnFZX3ZqbERDZ1BfYXhMdFV1Qm5Sbm05WVhtd0lzS3dhSV9BN2dMSG1ZQV90dw?oc=5", "fetched_at": "2026-05-31T05:29:38.567296+00:00"}, {"id": "fb3890cc7667", "title": "Salmonella outbreak tied to supplements sickens people in Connecticut, FDA says - News-Times", "date": "2026-05-30", "category": "Recall", "severity": "High", "summary": "Title: Salmonella outbreak tied to supplements sickens people in Connecticut, FDA says - News-Times\nSource: Google News\nDate: Sat, 30 May 2026 22:34:42 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTS0zaGE5ZU1fWlBjYkpJWENWVzV5b3JPNkloLWJDb29jU0xLLXhhVlljdkExeV9ZaHJlcTFrNS1PTGhZOHVnWXF5V29BU1JzdzVhMldJanRaaU85bm10Y3ZWSE1CbktHam9kemxzTzdScE54Q3ZmMmFUU2o1enVycDQ3TTFqYnhfWnhIOXBNU1hYdVpaSEJtak5zczl5VVE?oc=5", "fetched_at": "2026-05-31T05:29:33.566787+00:00"}, {"id": "4b1b4232ed8a", "title": "Supplement Recalled Over \u2018Fatal Physiological\u2019 Risks - Stop Taking Immediately - Yahoo", "date": "2026-05-30", "category": "Recall", "severity": "High", "summary": "Title: Supplement Recalled Over \u2018Fatal Physiological\u2019 Risks - Stop Taking Immediately - Yahoo\nSource: Google News\nDate: Sat, 30 May 2026 08:15:10 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPX29mZmhaMjhHT0s2WEJmNmZRU0NvWmhHck9lUUhOdjFsb3IwZDRxLTBvLUNVWFBxWW0tTk94WjNBX0JUYXVKRXhTSkJEcG9hZVdNQ3FtWVI2aUlJYW5vTWJVYjZ0LVFveURNVUIwMDB2RS1zZlZMY2kwd1JVb29iNWctdzFvVUZLZy00MHBMTXN3NTdNTXpQMFMzblNnanM?oc=5", "fetched_at": "2026-05-31T05:29:28.566075+00:00"}, {"id": "57f348c6bbe2", "title": "FDA shares another warning about Impella heart pumps after death - Cardiovascular Business", "date": "2026-05-29", "category": "Recall", "severity": "High", "summary": "Title: FDA shares another warning about Impella heart pumps after death - Cardiovascular Business\nSource: Google News\nDate: Fri, 29 May 2026 16:53:57 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZm5rbHk3MndySlhkY1pZOHIyX0NKek5jZ2llZDl4SHpLaHZScGppS05qWEdNMnZsLWlxUVA3OXIxcGtiRnFkcGNwY2c2bzFmeDZmQl9id0cwOUJSWk1EMDhNTGdJLVc0aVYwd08tLTVFeWhwT0t6UVExeFlqQlVCVUFIb2xjUGVZdlNNZ1M3eGQxTjZjNGUyVG9laTZBcUV4d0lxZFA1c2UtV0lxTU1MMEE0eFhMbXd4OUo0S2RkLUdGeWFWWkJvaGt1V0hxSEdwRUFsSExDeG0?oc=5", "fetched_at": "2026-05-31T05:29:23.565565+00:00"}, {"id": "2fe9e5cc0afa", "title": "FDA Recall on Gas X: What to Know About Recalled Batches and Safety - EatingWell", "date": "2026-05-28", "category": "Recall", "severity": "High", "summary": "Title: FDA Recall on Gas X: What to Know About Recalled Batches and Safety - EatingWell\nSource: Google News\nDate: Thu, 28 May 2026 19:01:42 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1hRDA5SWZ2bEN0cU5qSnduczNmYm11RmEtSGpjR0tfSVF4UzZpZkxkQlVramlSUXI2d1BJQS1xV1VKNXZvaWJkSzRPSVYyaGMwTTNsYWpwRFNVRVVMRUpqZ21xb01HdVNMQTJPRmRmSE9SZw?oc=5", "fetched_at": "2026-05-31T05:29:18.564970+00:00"}, {"id": "c0aec0f90a01", "title": "FDA Announces Nationwide Recall on Popular Walmart Item - Good Housekeeping", "date": "2026-05-29", "category": "Recall", "severity": "High", "summary": "Title: FDA Announces Nationwide Recall on Popular Walmart Item - Good Housekeeping\nSource: Google News\nDate: Fri, 29 May 2026 15:03:00 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOY3V6dWp0NjgtdHdMY0V5VnNrTlZZMGloUzNIbmtyMW9ldW1TZjFLWGVCTExrU3M0dHZWdTgyZ1VyT2RLNDh0LUFOTXBfeThSRDczSWlrcnZsQXhMTzQzYjdDcGttaDRLSVk2UTVLRnBTZ3JkeklkUkhfeV9GOGpsbVdDRzlTaG1hTFlIcXR2b24wazFXbFlrZFZsR0xHOThybUNtempmQ1p0clNTV2ZMTENR?oc=5", "fetched_at": "2026-05-31T05:29:13.564607+00:00"}]}; /* __WIDGET_DATA_INJECT__ */
 
-  // Data is injected directly here by the Python script!
-  // This makes the widget completely self-contained for Zoho Sites.
-  const INJECTED_DATA = {"last_updated": "2026-05-31T05:22:40.049540+00:00", "total_items": 18, "items": [{"id": "d83abb2828b0", "title": "FDA Issues Draft Guidance to Cut Unnecessary Animal Testing for Cancer Drugs - The Manila Times", "date": "2026-05-29", "category": "Guidance", "severity": "Low", "summary": "Title: FDA Issues Draft Guidance to Cut Unnecessary Animal Testing for Cancer Drugs - The Manila Times\nSource: Google News\nDate: Fri, 29 May 2026 17:59:27 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOaVdLM0liN01FVG9FMTZCV3J5cVJ2UFE1enljUENna1Z3V0xtV3UxWVBaRm02N1dSd2hqaUxXbllNM0gxekFKUklkeHpVcHZ4OV9UVURpeF94Qk95Nk40ak1naE9RYnJVeUxkM2ZkNXhqYWcwSUp3a21iT2EzOVcwbmRuM2dmT0pUWDdIZldnX2dHOWRiX3lsQ2d0VDUxRW9PRnd0T2lOMUo3VGVrX19nX0pJUFJBQmt5YUVWOHFTRFdvamF5OG5GLW1Nbl9kOWJsaHBZVmpiVDEtczFpSjluSS01T0pGQjRNTXfSAeoBQVVfeXFMTmlXSzNJYjdNRVRvRTE2QldyeXFSdlBRNXp5Y1BDZ2tWd1dMbVd1MVlQWkZtNjdXUndoamlMV25ZTTNIMXpBSlJJZHh6VXB2eDlfVFVEaXhfeEJPeTZONGpNZ2hPUWJyVXlMZDNmZDV4amFnMElKd2ttYk9hMzlXMG5kbjNnZk9KVFg3SGZXZ19nRzlkYl95bENndFQ1MUVvT0Z3dE9pTjFKN1Rla19fZ19KSVBSQUJreWFFVjhxU0RXb2pheThuRi1tTW5fZDlibGhwWVZqYlQxLXMxaUo5bkktNU9KRkI0TU13?oc=5", "fetched_at": "2026-05-31T05:22:40.049481+00:00"}, {"id": "7c46560e8048", "title": "FDA issues draft guidance to cut unnecessary animal testing for cancer drugs - Tampa Bay 28", "date": "2026-05-29", "category": "Guidance", "severity": "Low", "summary": "Title: FDA issues draft guidance to cut unnecessary animal testing for cancer drugs - Tampa Bay 28\nSource: Google News\nDate: Fri, 29 May 2026 15:02:57 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQN0NydWdSajJfZ2JiUW4zMTFIRUNGZmxxTnZoNThQTjd5UHNHVXhPVUk1MndkYVFYeEtmY0lRMjZYbmR5VW1SU2RhbEhlelV6UmlJX2R0eTJRaFdxc0dUZkR5bzRTSXNoYkI4SHdOblJ1a3NXQ1gyUTZtU2o4ZnNQaGU1UmJxM1pBOWdldnR3VEtRbzBSZ1MySjRxNlZHN01jakltcFJ2Nks1ZkNtaUtybDNjQkVhWnpDQTdaaW9Bbw?oc=5", "fetched_at": "2026-05-31T05:22:35.049224+00:00"}, {"id": "0348d2ae2766", "title": "FDA Issues Draft Guidance to Cut Unnecessary Animal Testing for Cancer Drugs - Caledonian Record", "date": "2026-05-29", "category": "Guidance", "severity": "Low", "summary": "Title: FDA Issues Draft Guidance to Cut Unnecessary Animal Testing for Cancer Drugs - Caledonian Record\nSource: Google News\nDate: Fri, 29 May 2026 17:51:38 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxORU8tRHloTGV5N0tGOHI4Qk5qdlhJTDNEOWdOV194WXJQai1udzdmZlFOV3Rma3dwNzdDSURtUEJ2VDdRR3Q2a1gyYVdFQjRNaTRRS3UtMGJzYUVCb2k0MzRaU0pSYnMtb1NVV0I3bFBQaEF1RTAyd2lUSEEzY1NTZTBnam9meVFvNDAzbUpPRUdxS01EblRKQk9MVWlsN2NYbXJ1V19SWWxzakZYeDY0RDdpWTl6REhMRUUyT0ZoeGhJNnI1XzZsS2RuaEJqZk9aeUkwNHJjcEkwLTdHOTZycDRmUG1fM2V1ZTUtNUlPXzE?oc=5", "fetched_at": "2026-05-31T05:22:30.048953+00:00"}, {"id": "bc4a5bd0f835", "title": "FDA inspections and Form 483 responses: What companies need to know - Manufacturing Chemist", "date": "2026-05-27", "category": "Form 483", "severity": "High", "summary": "Title: FDA inspections and Form 483 responses: What companies need to know - Manufacturing Chemist\nSource: Google News\nDate: Wed, 27 May 2026 16:05:26 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZnNyZXpwOC14a3VSQUZKUE1lVmUzamE3UkpPOFpfbnFUZG9MUU5iSXdYdFpjRloxc3ZFYUJ1a3BHRUhtMG5UNzI4aUZBbHlPbXExbGJBb3M2QlFCWlotWk9hRk9YckZjRkVpODhfemNQSXJTUmE2SUM0d2gtRGpka2xIazVSSTFmbGtKamlCVQ?oc=5", "fetched_at": "2026-05-31T05:22:24.488557+00:00"}, {"id": "c2d5f470a160", "title": "FDA warns drugmakers in US, Japan, and India for GMP issues - RAPS.org", "date": "2026-05-26", "category": "Form 483", "severity": "High", "summary": "Title: FDA warns drugmakers in US, Japan, and India for GMP issues - RAPS.org\nSource: Google News\nDate: Tue, 26 May 2026 20:51:00 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPaUM5ZTk2NWt0RzlHN2tUS0dXV0kxaTFZNzJDZURySTF3aG9XakNlN1N0UWVrR0xJY0JjSkhMenA1RmpyZzM1c2xMbHA5M0tVeWg1RkU2alZlaTdjU3ZrT09NQU5HWlFZUGhfYldKdUIzMElkUTY0c1dWS0F2QnVVUGxja3h0NTdhWS1oclhwN01JelA3Wm5N?oc=5", "fetched_at": "2026-05-31T05:22:19.488071+00:00"}, {"id": "4a72169f0ccb", "title": "FDA Issues Warning Letter to GSC Products for OTC Nasal Spray - Happi | Household And Personal Products Industry", "date": "2026-05-29", "category": "Warning Letter", "severity": "High", "summary": "Title: FDA Issues Warning Letter to GSC Products for OTC Nasal Spray - Happi | Household And Personal Products Industry\nSource: Google News\nDate: Fri, 29 May 2026 13:52:30 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWWtzakJZckI1b2FfVlltSUI4cnAwTU1QdFM4cXhidk1lNlo3YjR1bTJld3ZzOUJVOXBxU1hMaFJFQnFxNDRZUWZTWWcySGxnS3dUTkI2UW9fclNYNExZTGlCbXpsOFdRMllvYW10akNqX3A0WUZuU2MwWFI5Wktrbi1hdTcwZ283aTZDMjEzV3JXSEdrU3FnVHRGWHJfdVk?oc=5", "fetched_at": "2026-05-31T05:22:14.487696+00:00"}, {"id": "fdeb0ea5c233", "title": "From Warning Letter to Guilty Plea: How a Cheese Maker's Regulatory Failures Became a Federal Crime - Regulatory Oversig", "date": "2026-05-27", "category": "Warning Letter", "severity": "High", "summary": "Title: From Warning Letter to Guilty Plea: How a Cheese Maker's Regulatory Failures Became a Federal Crime - Regulatory Oversight\nSource: Google News\nDate: Wed, 27 May 2026 16:19:48 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcUY2U1dqc3c0OUw4cDl2TC0teGdQVEpEU1FEVVRsbW1rb19NblVwZUtMOW4xTXJoS2FkUnhyei0yOHlFbllGV0tybWFmWVE5cldIQ3Bnc0ZTM2xPbTd2NF8wQTNkc2x3bnJKY2N0YVpWOVNVQ2NyRzVyLVVqek51UFpuY0FFdTVJZHNGWU1RWTA1ZlBrQ2syNTROY2NzLTJHUFV6OE5KUHlXelhNcjRSNzc1TDh0djRQUi1IbWI4QXZlendnYS0ycDlDOWJEdnR4Z0VDTFBHT0pSdw?oc=5", "fetched_at": "2026-05-31T05:22:09.487503+00:00"}, {"id": "336b27939fc5", "title": "Cracked gaskets and rust-like residues trigger FDA warning letter to Alchymars - BioSpace", "date": "2026-05-29", "category": "Warning Letter", "severity": "High", "summary": "Title: Cracked gaskets and rust-like residues trigger FDA warning letter to Alchymars - BioSpace\nSource: Google News\nDate: Fri, 29 May 2026 14:34:17 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUWR2QkVQZGV3ZVhXWDQ5NDV6OEptdzdzSjlFRHM4VEQ2am5BaDU5S015MVNuUWF1c00tc2V5TnNUYmlNV2VXYVVIMHl4MEVFMlg5cGZmWlVaQTFRVWN3Ty00THJGamEwdGN2dVp2d0RMdFpJUkhpQ0szd2pPZWxzZVBrUHBTemZhRENQM2tTbmJaTmg5b0pWSFhjd01nTHVTUVBJdXVjcEJYWFU?oc=5", "fetched_at": "2026-05-31T05:22:04.486765+00:00"}, {"id": "ac3377b5ad9c", "title": "Impella CP Set With SmartAssist Warning Issued by FDA After Patient Death - AboutLawsuits.com", "date": "2026-05-28", "category": "Adverse Event", "severity": "High", "summary": "Title: Impella CP Set With SmartAssist Warning Issued by FDA After Patient Death - AboutLawsuits.com\nSource: Google News\nDate: Thu, 28 May 2026 12:00:00 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZjVzUnh5LVJHMTVfdTdjYWo4SW5fRFBKelQ2anA1aTVKVHBuYnZqbXdyRHZaLXRhbzBBYm5lWVRVMnozazc1dEg1aWZfa3FGQm1Zc1diV0JScnQyRDFUdlBHNjZqaDBBY25SdG1ZT0xHWTVDMkNGSjNIaFdwWDI5N0hmUUtrYWFNdXFYNQ?oc=5", "fetched_at": "2026-05-31T05:21:58.855500+00:00"}, {"id": "9dd99a1dec9f", "title": "Drug Approval: LOSARTAN POTASSIUM AND HYDROCHLOROTHIAZIDE - HETERO LABS LTD V", "date": "2026-05-27", "category": "Drug Approval", "severity": "Low", "summary": "Application: ANDA219869\nSponsor: HETERO LABS LTD V\nProduct: LOSARTAN POTASSIUM AND HYDROCHLOROTHIAZIDE\nSubmission type: ORIG\nSubmission class: N/A\nStatus: AP\nStatus date: 20260527", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=A219869", "fetched_at": "2026-05-31T05:21:51.996976+00:00"}, {"id": "b43f7095caa8", "title": "FDA Announces Recall on Supplement Due to Multistate Salmonella Outbreak\u2014Here\u2019s What to Know - EatingWell", "date": "2026-05-27", "category": "Recall", "severity": "High", "summary": "Title: FDA Announces Recall on Supplement Due to Multistate Salmonella Outbreak\u2014Here\u2019s What to Know - EatingWell\nSource: Google News\nDate: Wed, 27 May 2026 18:09:40 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVlVOeU1GZ2pZTGJkaWRzMjZ6NUZVUE9IS2U2ZEJvVlMybGlVZGJpbDl2OE1Jb21mbW5yaWR6UzNTV1ZFUG5PM0dhQUp4cWFTekFqTEdfNW1hak0tVzlwU0JfZElFcm5ZVFpzX18yWVkzQWRwTERrWGNVTTdpZU1oVGpUZjFTV19UODI4?oc=5", "fetched_at": "2026-05-31T05:21:44.090589+00:00"}, {"id": "1abfaf6388f2", "title": "Thousands of Philips interventional systems subject to FDA recall - Radiology Business", "date": "2026-05-27", "category": "Recall", "severity": "High", "summary": "Title: Thousands of Philips interventional systems subject to FDA recall - Radiology Business\nSource: Google News\nDate: Wed, 27 May 2026 17:54:57 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZG5pRzQwcFVRcjJmUG5JTjRKdWY2ejBWVzV1ZFNZZURfMEVUVHA5RlpQNE9sWUNoS0xHdGtrekY2dEJGYXRacHhmZG9sYmhDRk94VExFOWE0YzVhMktCckZrX0NXbEVKTGRwTmRfUW5JZlVzc0k5U3pQMkFyd0JWbGdPMTI0WnQxR0I2a3FJbzBXMmVOek9JVTYxbG5SR2VFRk45dWZxTktRbmRqUDFnZVNFZ3VYa1pSRXFabU5BU2FVWF9wcVZ6UXRMR1lRbDFGRmc?oc=5", "fetched_at": "2026-05-31T05:21:39.089879+00:00"}, {"id": "dec3801091c9", "title": "FDA Announces Nationwide Gas-X Recall\u2014Thousands of Boxes Affected - Health: Trusted and Empathetic Health and Wellness I", "date": "2026-05-28", "category": "Recall", "severity": "High", "summary": "Title: FDA Announces Nationwide Gas-X Recall\u2014Thousands of Boxes Affected - Health: Trusted and Empathetic Health and Wellness Information\nSource: Google News\nDate: Thu, 28 May 2026 14:37:46 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1lMWlLc041MGxkUEc1MnRXV2tkcVFRb3pJaEpOTmVMQUdyaHlIRGNWRDJhZE9OZnFZX3ZqbERDZ1BfYXhMdFV1Qm5Sbm05WVhtd0lzS3dhSV9BN2dMSG1ZQV90dw?oc=5", "fetched_at": "2026-05-31T05:21:34.089360+00:00"}, {"id": "fb3890cc7667", "title": "Salmonella outbreak tied to supplements sickens people in Connecticut, FDA says - News-Times", "date": "2026-05-30", "category": "Recall", "severity": "High", "summary": "Title: Salmonella outbreak tied to supplements sickens people in Connecticut, FDA says - News-Times\nSource: Google News\nDate: Sat, 30 May 2026 22:34:42 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTS0zaGE5ZU1fWlBjYkpJWENWVzV5b3JPNkloLWJDb29jU0xLLXhhVlljdkExeV9ZaHJlcTFrNS1PTGhZOHVnWXF5V29BU1JzdzVhMldJanRaaU85bm10Y3ZWSE1CbktHam9kemxzTzdScE54Q3ZmMmFUU2o1enVycDQ3TTFqYnhfWnhIOXBNU1hYdVpaSEJtak5zczl5VVE?oc=5", "fetched_at": "2026-05-31T05:21:29.089067+00:00"}, {"id": "4b1b4232ed8a", "title": "Supplement Recalled Over \u2018Fatal Physiological\u2019 Risks - Stop Taking Immediately - Yahoo", "date": "2026-05-30", "category": "Recall", "severity": "High", "summary": "Title: Supplement Recalled Over \u2018Fatal Physiological\u2019 Risks - Stop Taking Immediately - Yahoo\nSource: Google News\nDate: Sat, 30 May 2026 08:15:10 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPX29mZmhaMjhHT0s2WEJmNmZRU0NvWmhHck9lUUhOdjFsb3IwZDRxLTBvLUNVWFBxWW0tTk94WjNBX0JUYXVKRXhTSkJEcG9hZVdNQ3FtWVI2aUlJYW5vTWJVYjZ0LVFveURNVUIwMDB2RS1zZlZMY2kwd1JVb29iNWctdzFvVUZLZy00MHBMTXN3NTdNTXpQMFMzblNnanM?oc=5", "fetched_at": "2026-05-31T05:21:24.088706+00:00"}, {"id": "57f348c6bbe2", "title": "FDA shares another warning about Impella heart pumps after death - Cardiovascular Business", "date": "2026-05-29", "category": "Recall", "severity": "High", "summary": "Title: FDA shares another warning about Impella heart pumps after death - Cardiovascular Business\nSource: Google News\nDate: Fri, 29 May 2026 16:53:57 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZm5rbHk3MndySlhkY1pZOHIyX0NKek5jZ2llZDl4SHpLaHZScGppS05qWEdNMnZsLWlxUVA3OXIxcGtiRnFkcGNwY2c2bzFmeDZmQl9id0cwOUJSWk1EMDhNTGdJLVc0aVYwd08tLTVFeWhwT0t6UVExeFlqQlVCVUFIb2xjUGVZdlNNZ1M3eGQxTjZjNGUyVG9laTZBcUV4d0lxZFA1c2UtV0lxTU1MMEE0eFhMbXd4OUo0S2RkLUdGeWFWWkJvaGt1V0hxSEdwRUFsSExDeG0?oc=5", "fetched_at": "2026-05-31T05:21:19.088179+00:00"}, {"id": "2fe9e5cc0afa", "title": "FDA Recall on Gas X: What to Know About Recalled Batches and Safety - EatingWell", "date": "2026-05-28", "category": "Recall", "severity": "High", "summary": "Title: FDA Recall on Gas X: What to Know About Recalled Batches and Safety - EatingWell\nSource: Google News\nDate: Thu, 28 May 2026 19:01:42 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1hRDA5SWZ2bEN0cU5qSnduczNmYm11RmEtSGpjR0tfSVF4UzZpZkxkQlVramlSUXI2d1BJQS1xV1VKNXZvaWJkSzRPSVYyaGMwTTNsYWpwRFNVRVVMRUpqZ21xb01HdVNMQTJPRmRmSE9SZw?oc=5", "fetched_at": "2026-05-31T05:21:14.087577+00:00"}, {"id": "c0aec0f90a01", "title": "FDA Announces Nationwide Recall on Popular Walmart Item - Good Housekeeping", "date": "2026-05-29", "category": "Recall", "severity": "High", "summary": "Title: FDA Announces Nationwide Recall on Popular Walmart Item - Good Housekeeping\nSource: Google News\nDate: Fri, 29 May 2026 15:03:00 GMT", "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.", "key_actions": "Review and escalate to QA leadership as appropriate.", "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOY3V6dWp0NjgtdHdMY0V5VnNrTlZZMGloUzNIbmtyMW9ldW1TZjFLWGVCTExrU3M0dHZWdTgyZ1VyT2RLNDh0LUFOTXBfeThSRDczSWlrcnZsQXhMTzQzYjdDcGttaDRLSVk2UTVLRnBTZ3JkeklkUkhfeV9GOGpsbVdDRzlTaG1hTFlIcXR2b24wazFXbFlrZFZsR0xHOThybUNtempmQ1p0clNTV2ZMTENR?oc=5", "fetched_at": "2026-05-31T05:21:09.087186+00:00"}]}; /* __WIDGET_DATA_INJECT__ */
-
-  // ── State ────────────────────────────────────────────────────────
-  let allItems   = [];
+  const feed         = document.getElementById('z483-feed');
+  const searchInput  = document.getElementById('z483-search');
+  const filterWrap   = document.getElementById('z483-filters');
+  
+  let allItems     = [];
   let activeFilter = 'All';
   let searchQuery  = '';
 
-  // ── DOM refs ─────────────────────────────────────────────────────
-  const grid       = document.getElementById('z483-grid');
-  const searchEl   = document.getElementById('z483-search');
-  const filtersEl  = document.getElementById('z483-filters');
-  const statsEl    = document.getElementById('z483-stats');
-  const cntHigh    = document.getElementById('z483-cnt-high');
-  const cntMed     = document.getElementById('z483-cnt-med');
-  const cntLow     = document.getElementById('z483-cnt-low');
-  const updatedEl  = document.getElementById('z483-updated');
-  const refreshBtn = document.getElementById('z483-refresh-btn');
+  // Setup events
+  searchInput.addEventListener('input', (e) => {
+    searchQuery = e.target.value;
+    applyFilters();
+  });
 
-  // ── Utility ──────────────────────────────────────────────────────
+  filterWrap.addEventListener('click', (e) => {
+    if (e.target.tagName !== 'BUTTON') return;
+    document.querySelectorAll('.z483-chip').forEach(btn => btn.classList.remove('active'));
+    e.target.classList.add('active');
+    activeFilter = e.target.getAttribute('data-filter');
+    applyFilters();
+  });
+
+  // Utilities
   function escHtml(s) {
-    return String(s || '')
-      .replace(/&/g,'&amp;').replace(/</g,'&lt;')
-      .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
   function formatDate(iso) {
     try {
-      return new Date(iso).toLocaleDateString('en-IN', {
-        day: 'numeric', month: 'short', year: 'numeric'
+      return new Date(iso).toLocaleDateString('en-US', {
+        month: 'long', day: 'numeric', year: 'numeric'
       });
     } catch { return iso; }
   }
@@ -720,57 +418,36 @@
     return 'z483-badge-' + (cat || '').replace(/\s+/g,'');
   }
 
-  // ── Render stats ─────────────────────────────────────────────────
-  function renderStats(items, lastUpdated) {
-    cntHigh.textContent = items.filter(i => i.severity === 'High').length;
-    cntMed.textContent  = items.filter(i => i.severity === 'Medium').length;
-    cntLow.textContent  = items.filter(i => i.severity === 'Low').length;
-    updatedEl.textContent = lastUpdated ? formatDate(lastUpdated) : '—';
-    statsEl.style.display = 'flex';
-  }
-
-  // ── Render cards ─────────────────────────────────────────────────
-  function renderCards(items) {
+  // Render articles
+  function renderFeed(items) {
     if (!items.length) {
-      grid.innerHTML = `
+      feed.innerHTML = `
         <div class="z483-state">
-          <div class="z483-state-icon">✅</div>
-          <h3>All Clear!</h3>
+          <h3>✅ All Clear</h3>
           <p>No new updates were found for this category in the last 7 days. The strict 7-day filter is active.</p>
         </div>`;
       return;
     }
 
-    grid.innerHTML = items.map((item, idx) => {
+    feed.innerHTML = items.map(item => {
       const catClass = categoryClass(item.category);
-      const sevClass = 'z483-sev-' + (item.severity || 'Medium');
-      const delay    = Math.min(idx * 60, 600);
-
+      
       return `
-        <a
-          class="z483-card"
-          href="${escHtml(item.source_url)}"
-          target="_blank"
-          rel="noopener noreferrer"
-          data-severity="${escHtml(item.severity)}"
-          style="animation-delay:${delay}ms"
-        >
-          <div class="z483-card-top">
+        <a class="z483-card" href="${escHtml(item.source_url)}" target="_blank" rel="noopener noreferrer">
+          <header class="z483-card-top">
             <div class="z483-badges">
               <span class="z483-badge ${catClass}">${escHtml(item.category)}</span>
-              <span class="z483-sev ${sevClass}">${escHtml(item.severity)}</span>
             </div>
-            <span class="z483-date">${formatDate(item.date)}</span>
-          </div>
-
-          <p class="z483-card-title">${escHtml(item.title)}</p>
-
+            <time class="z483-date">${formatDate(item.date)}</time>
+          </header>
+          
+          <h3 class="z483-card-title">${escHtml(item.title)}</h3>
           <p class="z483-card-summary">${escHtml(item.summary)}</p>
-
+          
           <div class="z483-action-row">
             <span class="z483-read-link">
-              Read more
-              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              Read Full Article
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
             </span>
@@ -779,7 +456,6 @@
     }).join('');
   }
 
-  // ── Filter & search ──────────────────────────────────────────────
   function applyFilters() {
     const q = searchQuery.toLowerCase().trim();
     const filtered = allItems.filter(item => {
@@ -791,89 +467,34 @@
         (item.summary|| '').toLowerCase().includes(q)
       );
     });
-    renderCards(filtered);
+    renderFeed(filtered);
   }
 
-  // ── Load data ────────────────────────────────────────────────────
-  function loadData() {
-    refreshBtn.classList.add('spinning');
-
-    // Show skeleton while loading
-    grid.innerHTML = [1,2,3].map(() => `
-      <div class="z483-skeleton">
-        <div class="z483-skel-bar" style="height:14px;width:40%"></div>
-        <div class="z483-skel-bar" style="height:18px;width:85%"></div>
-        <div class="z483-skel-bar" style="height:12px;width:95%"></div>
-        <div class="z483-skel-bar" style="height:12px;width:70%"></div>
-      </div>`).join('');
-
+  function init() {
     if (INJECTED_DATA && INJECTED_DATA.items) {
-      setTimeout(() => {
-        allItems = (INJECTED_DATA.items || []).sort(
-          (a,b) => new Date(b.date) - new Date(a.date)
-        );
-        renderStats(allItems, INJECTED_DATA.last_updated);
-        applyFilters();
-        refreshBtn.classList.remove('spinning');
-      }, 300);
-      return;
+      allItems = INJECTED_DATA.items;
+      applyFilters();
+    } else {
+      feed.innerHTML = `
+        <div class="z483-state">
+          <h3>No Data Available</h3>
+          <p>Please run the python script to inject data.</p>
+        </div>`;
     }
-
-    const cacheBust = Date.now();
-    fetch('news_database.json?v=' + cacheBust)
-      .then(r => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.json();
-      })
-      .then(db => {
-        allItems = (db.items || []).sort(
-          (a,b) => new Date(b.date) - new Date(a.date)
-        );
-        renderStats(allItems, db.last_updated);
-        applyFilters();
-        refreshBtn.classList.remove('spinning');
-      })
-      .catch(err => {
-        console.error('[Zero483 Widget]', err);
-        refreshBtn.classList.remove('spinning');
-        grid.innerHTML = `
-          <div class="z483-state">
-            <div class="z483-state-icon">⚠️</div>
-            <h3>Could not load news feed</h3>
-            <p>
-              Make sure <code>news_database.json</code> is available
-              and the widget is served from a web server
-              (not opened as a local file). Or ensure the Python
-              script has injected the data directly into this file.
-              <br/><br/>
-              Run <strong>python fda_news_processor.py</strong> first
-              to populate the database.
-            </p>
-          </div>`;
-      });
   }
 
-  // ── Event listeners ──────────────────────────────────────────────
-  searchEl.addEventListener('input', () => {
-    searchQuery = searchEl.value;
-    applyFilters();
-  });
+  // Fallback data for local preview if no injected data
+  if (!INJECTED_DATA) {
+    setTimeout(() => {
+      // If still null, just clear
+      if (!allItems.length) {
+        init();
+      }
+    }, 100);
+  } else {
+    init();
+  }
 
-  filtersEl.addEventListener('click', e => {
-    const chip = e.target.closest('.z483-chip');
-    if (!chip) return;
-    activeFilter = chip.dataset.filter;
-    filtersEl.querySelectorAll('.z483-chip').forEach(c => c.classList.remove('active'));
-    chip.classList.add('active');
-    applyFilters();
-  });
-
-  refreshBtn.addEventListener('click', loadData);
-
-  // ── Boot ──────────────────────────────────────────────────────────
-  loadData();
-})();
 </script>
-
 </body>
 </html>
