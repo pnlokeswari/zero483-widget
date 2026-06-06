@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-06T14:15:28.160509+00:00",
-  "total_items": 37,
+  "last_updated": "2026-06-06T15:48:55.987615+00:00",
+  "total_items": 38,
   "items": [
+    {
+      "id": "d9d1c091a7f4",
+      "title": "Nationwide Recall Issued for Certain Gas-X Extra Strength Softgels Due to Potential Contamination - Dailyfly News",
+      "date": "2026-06-06",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Nationwide Recall Issued for Certain Gas-X Extra Strength Softgels Due to Potential Contamination - Dailyfly News\nSource: Google News\nDate: Sat, 06 Jun 2026 13:53:58 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQeUE1SkVMc29TNEFINXBUSXlmQUtnTmRQTi1GREY5LVFpeXNnQUhWSEdtZnFvcnZHM2hBNzVtcVZ2Umpfc2VFd1owX19yQ1Z0TXZZaFgxY1RNRjJraUV6MXp4MS1sODktLVF4ZklHRldDdDBRZEtWZE9iMlh4aEV1ZWlEbmhNeG0tY2tRSEIyS3RscXc0aGRSWTBDd2dORlRZVThqVlNXYmpsYmxYUGI1X3FZXzlXVFBBV3l0dUdrRE84SmZZdkFwWWcwWnQwRms?oc=5",
+      "fetched_at": "2026-06-06T15:48:51.118573+00:00"
+    },
     {
       "id": "736e958f3494",
       "title": "Outbreak Investigation of Infant Botulism: Infant Formula (November 2025) - fda.gov",
