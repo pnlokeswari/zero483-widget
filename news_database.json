@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-06T02:30:57.805176+00:00",
-  "total_items": 35,
+  "last_updated": "2026-06-06T06:34:47.800621+00:00",
+  "total_items": 36,
   "items": [
+    {
+      "id": "08c2e6346afe",
+      "title": "FDA alerts public to recall of packaged Dried Herring Fish - Spectrum News",
+      "date": "2026-06-05",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: FDA alerts public to recall of packaged Dried Herring Fish - Spectrum News\nSource: Google News\nDate: Fri, 05 Jun 2026 22:00:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOc01EbGp1ZnhQQ2R4RGRwcEJ6UXF1ZklQaklFNXRudm1aRUI2aHh1NmRXZmpqRGxFQjNfTXpRT3pjZ2tVNmxiWE1FRjYtdm14TUYySEFOUHA5dHdCOVFHWTBGQzJWVDRZRFhiQlpJMkVDbnlzcVFMaklGZ3N0c3RhR0pFQ3Z6cEgxM2pqNUJVSDdNTkVBV2N0Tnc5V0NZYUwzZGJiRUMycGd3NWc5SjJsZmNwbnk?oc=5",
+      "fetched_at": "2026-06-06T06:34:44.557495+00:00"
+    },
     {
       "id": "28dbb4fd091a",
       "title": "The FDA Amendments Act And Drug Safety: Where Are We Twenty Years Later? - Health Affairs",
