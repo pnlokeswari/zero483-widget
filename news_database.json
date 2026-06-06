@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-06-06T06:12:58.335628+00:00",
-  "total_items": 36,
+  "last_updated": "2026-06-06T02:30:57.805176+00:00",
+  "total_items": 35,
   "items": [
     {
       "id": "28dbb4fd091a",
@@ -12,7 +12,7 @@
       "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZ0Q3ajRfZWNiTlpPS1FORUdwRlIwTTN4a0ZVZWZ1b0pnNjZjVzdoTWc2UnpoYTVyVzFLZERaSVVHbUJsN3Vqamw5SW1yRmdObnZFd3RvQktVa1JOR2ttR2tfdGxaeEtEZWxQNEw4Q2hNWFB5MUFxVDB3Z3ZQa0lfX3RSaDZ2MlhJRnZvZk9wb3o0clliNFAzQVNDcTBGWTdjSnNQZ0Z1RQ?oc=5",
-      "fetched_at": "2026-06-06T06:12:57.202486+00:00"
+      "fetched_at": "2026-06-06T02:28:23.477226+00:00"
     },
     {
       "id": "041e1ccf8169",
@@ -23,20 +23,8 @@
       "summary": "Application: ANDA220137\nSponsor: SOMERSET THERAPS LLC\nProduct: TOFACITINIB CITRATE\nSubmission type: ORIG\nSubmission class: N/A\nStatus: AP\nStatus date: 20260603",
       "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
       "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=A220137",
-      "fetched_at": "2026-06-06T06:12:51.384351+00:00"
-    },
-    {
-      "id": "08c2e6346afe",
-      "title": "FDA alerts public to recall of packaged Dried Herring Fish - Spectrum News",
-      "date": "2026-06-05",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: FDA alerts public to recall of packaged Dried Herring Fish - Spectrum News\nSource: Google News\nDate: Fri, 05 Jun 2026 22:00:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOc01EbGp1ZnhQQ2R4RGRwcEJ6UXF1ZklQaklFNXRudm1aRUI2aHh1NmRXZmpqRGxFQjNfTXpRT3pjZ2tVNmxiWE1FRjYtdm14TUYySEFOUHA5dHdCOVFHWTBGQzJWVDRZRFhiQlpJMkVDbnlzcVFMaklGZ3N0c3RhR0pFQ3Z6cEgxM2pqNUJVSDdNTkVBV2N0Tnc5V0NZYUwzZGJiRUMycGd3NWc5SjJsZmNwbnk?oc=5",
-      "fetched_at": "2026-06-06T06:12:44.392892+00:00"
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220137",
+      "fetched_at": "2026-06-06T02:28:16.509917+00:00"
     },
     {
       "id": "c02cd178fea9",
