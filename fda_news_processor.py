@@ -759,9 +759,8 @@ def merge_items(db: dict, new_items: list[dict], client) -> int:
 
 
 def generate_zoho_widget(db: dict) -> None:
-    """Read widget.html, inject JSON data, and write to widget_ready_for_zoho.html"""
+    """Read widget.html, inject JSON data, and write to local files"""
     widget_path = BASE_DIR / "widget.html"
-    out_path = BASE_DIR / "widget_ready_for_zoho.html"
     
     if not widget_path.exists():
         return
@@ -775,16 +774,21 @@ def generate_zoho_widget(db: dict) -> None:
     replacement = f"const INJECTED_DATA = {json_str}; /* __WIDGET_DATA_INJECT__ */"
     final_html = html.replace(target, replacement)
     
+    # Write to widget_ready_for_zoho.html
+    out_path = BASE_DIR / "widget_ready_for_zoho.html"
     with out_path.open("w", encoding="utf-8") as f:
         f.write(final_html)
-        
     print(f"\n[ZOHO READY] Generated {out_path.name}")
-    print("   -> Attempting automatic upload to GitHub Pages...")
-    upload_file_to_github(final_html, "index.html")
+    
+    # Write directly to index.html so it gets committed to Git Pages
+    index_path = BASE_DIR / "index.html"
+    with index_path.open("w", encoding="utf-8") as f:
+        f.write(final_html)
+    print(f"[ZOHO READY] Generated {index_path.name}")
 
 
 def generate_citizen_widget(db: dict) -> None:
-    """Read citizen_widget.html, inject JSON data, and upload to citizen.html"""
+    """Read citizen_widget.html, inject JSON data, and write to local files"""
     widget_path = BASE_DIR / "citizen_widget.html"
     if not widget_path.exists():
         return
@@ -797,13 +801,17 @@ def generate_citizen_widget(db: dict) -> None:
     replacement = f"const INJECTED_DATA = {json_str}; /* __WIDGET_DATA_INJECT__ */"
     final_html = html.replace(target, replacement)
     
+    # Write to citizen_ready.html
     out_path = BASE_DIR / "citizen_ready.html"
     with out_path.open("w", encoding="utf-8") as f:
         f.write(final_html)
     print(f"\n[CITIZEN READY] Generated {out_path.name}")
     
-    print("   -> Attempting automatic upload to GitHub Pages for citizen widget...")
-    upload_file_to_github(final_html, "citizen.html")
+    # Write directly to citizen.html so it gets committed to Git Pages
+    citizen_path = BASE_DIR / "citizen.html"
+    with citizen_path.open("w", encoding="utf-8") as f:
+        f.write(final_html)
+    print(f"[CITIZEN READY] Generated {citizen_path.name}")
 
 
 def generate_rss_feed(db: dict) -> str:
