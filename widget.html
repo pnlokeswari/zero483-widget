@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>USFDA Pharma News | Zero483</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet" />
+  <style>
+    /* ─── Reset & Scope ───────────────────────────────────────────── */
+    .z483-widget *,
+    .z483-widget *::before,
+    .z483-widget *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ─── Design Tokens (Premium Light Theme) ────────────────────── */
+    .z483-widget {
+      --z-bg:           #f8f9fa;
+      --z-surface:      #ffffff;
+      --z-surface2:     #f1f5f9;
+      --z-border:       #e2e8f0;
+      --z-accent:       #2563eb;
+      --z-accent-glow:  #1d4ed8;
+      --z-text:         #0f172a;
+      --z-text-muted:   #475569;
+      --z-text-dim:     #64748b;
+      
+      --z-high:         #dc2626;
+      --z-high-bg:      #fef2f2;
+      --z-med:          #d97706;
+      --z-med-bg:       #fffbeb;
+      --z-low:          #16a34a;
+      --z-low-bg:       #f0fdf4;
+      
+      --z-radius:       8px;
+      --z-radius-sm:    6px;
+      --z-shadow:       0 4px 12px rgba(0,0,0,0.05);
+      --z-transition:   0.2s ease-in-out;
+
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--z-text);
+      background: var(--z-bg);
+      padding: 32px 24px;
+      border-radius: var(--z-radius);
+      max-width: 100%;
+      margin: 0;
+    }
+
+    /* ─── Header ─────────────────────────────────────────────────── */
+    .z483-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      border-bottom: 2px solid var(--z-text);
+      padding-bottom: 16px;
+    }
+
+    .z483-header-text h2 {
+      font-family: 'Merriweather', serif;
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--z-text);
+      letter-spacing: -0.5px;
+    }
+
+    .z483-header-text p {
+      font-size: 0.95rem;
+      color: var(--z-text-muted);
+      margin-top: 4px;
+      font-weight: 500;
+    }
+
+    .z483-live-badge {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--z-high);
+      background: var(--z-high-bg);
+      border: 1px solid #fecaca;
+      border-radius: 20px;
+      padding: 6px 12px;
+    }
+
+    .z483-live-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--z-high);
+      animation: z483-pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes z483-pulse {
+      0%   { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); transform: scale(1); opacity: 1; }
+      70%  { box-shadow: 0 0 0 6px rgba(220, 38, 38, 0); transform: scale(1); opacity: 0.8; }
+      100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); transform: scale(1); opacity: 1; }
+    }
+
+    /* ─── Search ─────────────────────────────────────────────────── */
+    .z483-search-wrap {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .z483-search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: var(--z-text-dim);
+    }
+
+    .z483-search {
+      width: 100%;
+      padding: 14px 16px 14px 46px;
+      background: var(--z-surface);
+      border: 1px solid var(--z-border);
+      border-radius: var(--z-radius-sm);
+      color: var(--z-text);
+      font-family: inherit;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color var(--z-transition), box-shadow var(--z-transition);
+    }
+
+    .z483-search::placeholder { color: var(--z-text-dim); }
+
+    .z483-search:focus {
+      border-color: var(--z-accent);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+
+    /* ─── Filter Chips ───────────────────────────────────────────── */
+    .z483-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .z483-chip {
+      border: 1px solid var(--z-border);
+      border-radius: 24px;
+      padding: 8px 18px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      background: var(--z-surface);
+      color: var(--z-text-muted);
+      transition: all var(--z-transition);
+    }
+
+    .z483-chip:hover {
+      border-color: var(--z-accent);
+      color: var(--z-accent);
+      background: var(--z-surface2);
+    }
+
+    .z483-chip.active {
+      background: var(--z-text);
+      border-color: var(--z-text);
+      color: #fff;
+    }
+
+    /* ─── Feed Layout ────────────────────────────────────────────── */
+    .z483-feed {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* ─── Article Card ───────────────────────────────────────────── */
+    .z483-card {
+      background: var(--z-surface);
+      border: 1px solid var(--z-border);
+      border-radius: var(--z-radius);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform var(--z-transition), box-shadow var(--z-transition);
+    }
+
+    .z483-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--z-shadow);
+      border-color: var(--z-accent);
+    }
+
+    .z483-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-bottom: 1px solid var(--z-border);
+      padding-bottom: 12px;
+    }
+
+    .z483-badges {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .z483-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+
+    .z483-badge-Recall { background: var(--z-high-bg); color: var(--z-high); }
+    .z483-badge-DrugShortage { background: var(--z-med-bg); color: var(--z-med); }
+    .z483-badge-DrugApproval { background: var(--z-low-bg); color: var(--z-low); }
+    .z483-badge-AdverseEvent { background: #fdf4ff; color: #c026d3; }
+    .z483-badge-WarningLetter, .z483-badge-Form483 { background: var(--z-high-bg); color: var(--z-high); }
+    .z483-badge-Guidance { background: #f0f9ff; color: #0284c7; }
+
+    .z483-date {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--z-text-dim);
+    }
+
+    .z483-card-title {
+      font-family: 'Merriweather', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--z-text);
+      line-height: 1.35;
+    }
+
+    .z483-card-summary {
+      font-size: 1.05rem;
+      color: var(--z-text-muted);
+      line-height: 1.7;
+    }
+    .z483-share-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px 0;
+      transition: var(--z-transition);
+    }
+    .z483-share-wa { color: #25D366; }
+    .z483-share-li { color: #0a66c2; }
+    .z483-share-fb { color: #1877f2; }
+    .z483-share-tw { color: #1da1f2; }
+    .z483-share-mail { color: #ea4335; }
+    .z483-share-copy { color: #6b7280; }
+    .z483-share-btn:hover {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+    .z483-share-group {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .z483-action-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+      padding-top: 16px;
+    }
+
+    .z483-read-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--z-accent);
+      text-decoration: none;
+      transition: gap var(--z-transition);
+    }
+
+    .z483-card:hover .z483-read-link {
+      gap: 10px;
+      color: var(--z-accent-glow);
+    }
+
+    /* ─── Empty / Loading ────────────────────────────────────────── */
+    .z483-state {
+      padding: 64px 20px;
+      text-align: center;
+      background: var(--z-surface);
+      border: 1px dashed var(--z-border);
+      border-radius: var(--z-radius);
+    }
+
+    .z483-state h3 {
+      font-family: 'Merriweather', serif;
+      font-size: 1.4rem;
+      color: var(--z-text);
+      margin-bottom: 8px;
+    }
+
+    .z483-state p { font-size: 1rem; color: var(--z-text-muted); }
+
+    /* Skeleton loader */
+    .z483-skeleton {
+      background: var(--z-surface);
+      border: 1px solid var(--z-border);
+      border-radius: var(--z-radius);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .z483-skel-bar {
+      background: var(--z-surface2);
+      border-radius: 4px;
+      animation: z483-shimmer 1.5s ease-in-out infinite;
+    }
+
+    @keyframes z483-shimmer {
+      0%, 100% { opacity: 0.5; }
+      50%       { opacity: 1; }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="z483-widget">
+  
+  <!-- Header -->
+    <header class="z483-header">
+    <div class="z483-header-text">
+      <h2>USFDA Regulatory News</h2>
+      <p>Official breaking updates, recalls, and approvals for inspection readiness.</p>
+    </div>
+    <div style="display:flex; gap:12px; align-items:center;">
+      <a href="#" target="_blank" style="padding:8px 16px; background:var(--z-accent); color:#fff; border-radius:6px; text-decoration:none; font-weight:600; font-size:0.9rem;">Subscribe Free</a>
+      <div class="z483-live-badge">
+        <span class="z483-live-dot"></span>Live Feed
+      </div>
+    </div>
+  </header>
+
+  <!-- Search -->
+  <div class="z483-search-wrap">
+    <span class="z483-search-icon">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+      </svg>
+    </span>
+    <input id="z483-search" class="z483-search" type="text" placeholder="Search recalls, approvals, warnings…" />
+  </div>
+
+  <!-- Filter chips -->
+  <nav class="z483-filters" id="z483-filters">
+    <button class="z483-chip active" data-filter="All">All News</button>
+    <button class="z483-chip" data-filter="Recall">Recalls</button>
+    <button class="z483-chip" data-filter="Drug Shortage">Shortages</button>
+    <button class="z483-chip" data-filter="Drug Approval">Approvals</button>
+    <button class="z483-chip" data-filter="Adverse Event">Adverse Events</button>
+    <button class="z483-chip" data-filter="Warning Letter">Warning Letters</button>
+    <button class="z483-chip" data-filter="Form 483">Form 483s</button>
+    <button class="z483-chip" data-filter="Guidance">Guidelines</button>
+  </nav>
+
+  <!-- Feed -->
+  <main class="z483-feed" id="z483-feed">
+    <!-- Loading Skeletons -->
+    <div class="z483-skeleton">
+      <div class="z483-skel-bar" style="height:16px;width:30%"></div>
+      <div class="z483-skel-bar" style="height:28px;width:85%"></div>
+      <div class="z483-skel-bar" style="height:16px;width:95%"></div>
+      <div class="z483-skel-bar" style="height:16px;width:80%"></div>
+    </div>
+    <div class="z483-skeleton">
+      <div class="z483-skel-bar" style="height:16px;width:25%"></div>
+      <div class="z483-skel-bar" style="height:28px;width:75%"></div>
+      <div class="z483-skel-bar" style="height:16px;width:100%"></div>
+      <div class="z483-skel-bar" style="height:16px;width:60%"></div>
+    </div>
+  </main>
+
+</div>
+
+<script>
+  const INJECTED_DATA = null; /* __WIDGET_DATA_INJECT__ */
+
+  const feed         = document.getElementById('z483-feed');
+  const searchInput  = document.getElementById('z483-search');
+  const filterWrap   = document.getElementById('z483-filters');
+  
+  let allItems     = [];
+  let activeFilter = 'All';
+  let searchQuery  = '';
+
+  // Setup events
+  searchInput.addEventListener('input', (e) => {
+    searchQuery = e.target.value;
+    applyFilters();
+  });
+
+  filterWrap.addEventListener('click', (e) => {
+    if (e.target.tagName !== 'BUTTON') return;
+    document.querySelectorAll('.z483-chip').forEach(btn => btn.classList.remove('active'));
+    e.target.classList.add('active');
+    activeFilter = e.target.getAttribute('data-filter');
+    activeFilter = e.target.getAttribute('data-filter');
+    applyFilters();
+  });
+
+  window.shareWhatsApp = function(e, btn) {
+    e.preventDefault();
+    e.stopPropagation();
+    const title = btn.getAttribute('data-title') || "Update";
+    const shareUrl = "https://www.zero483.com/USFDA-news?q=" + encodeURIComponent(title);
+    const text = "FDA Update: " + title + "\n\nRead more on our Live Tracker: " + shareUrl;
+    const waUrl = "https://api.whatsapp.com/send?text=" + encodeURIComponent(text);
+    window.open(waUrl, "_blank", "noopener,noreferrer");
+  };
+
+  window.shareLinkedIn = function(e, btn) {
+    e.preventDefault();
+    e.stopPropagation();
+    const title = btn.getAttribute('data-title') || "Update";
+    const shareUrl = "https://www.zero483.com/USFDA-news?q=" + encodeURIComponent(title);
+    const text = "FDA Update: " + title + "\n\nRead more on our Live Tracker: " + shareUrl;
+    const liUrl = "https://www.linkedin.com/feed/?shareActive=true&text=" + encodeURIComponent(text);
+    window.open(liUrl, "_blank", "noopener,noreferrer");
+  };
+
+  window.shareFacebook = function(e, btn) {
+    e.preventDefault(); e.stopPropagation();
+    const shareUrl = "https://www.zero483.com/USFDA-news?q=" + encodeURIComponent(btn.getAttribute('data-title') || "Update");
+    window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(shareUrl), "_blank");
+  };
+
+  window.shareTwitter = function(e, btn) {
+    e.preventDefault(); e.stopPropagation();
+    const title = btn.getAttribute('data-title') || "Update";
+    const shareUrl = "https://www.zero483.com/USFDA-news?q=" + encodeURIComponent(title);
+    window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent("FDA Alert: " + title) + "&url=" + encodeURIComponent(shareUrl), "_blank");
+  };
+
+  window.shareEmail = function(e, btn) {
+    e.preventDefault(); e.stopPropagation();
+    const title = btn.getAttribute('data-title') || "Update";
+    const shareUrl = "https://www.zero483.com/USFDA-news?q=" + encodeURIComponent(title);
+    window.location.href = "mailto:?subject=" + encodeURIComponent("FDA Alert: " + title) + "&body=" + encodeURIComponent("Read more here: " + shareUrl);
+  };
+
+  window.copyShareLink = function(e, btn) {
+    e.preventDefault();
+    e.stopPropagation();
+    const title = btn.getAttribute('data-title') || "Update";
+    const shareUrl = "https://www.zero483.com/USFDA-news?q=" + encodeURIComponent(title);
+    
+    // Copy to clipboard
+    navigator.clipboard.writeText(shareUrl).then(() => {
+      // Temporarily change icon or text to show success
+      const originalHtml = btn.innerHTML;
+      btn.innerHTML = '<span style="font-size:12px; font-weight:normal; margin-left:2px;">Copied!</span>';
+      setTimeout(() => { btn.innerHTML = originalHtml; }, 2000);
+    }).catch(err => {
+      console.error('Failed to copy: ', err);
+      prompt("Copy this link:", shareUrl); // Fallback for older browsers
+    });
+  };
+
+  // Utilities
+  function escHtml(s) {
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function formatDate(iso) {
+    try {
+      return new Date(iso).toLocaleDateString('en-US', {
+        month: 'long', day: 'numeric', year: 'numeric'
+      });
+    } catch { return iso; }
+  }
+
+  function categoryClass(cat) {
+    return 'z483-badge-' + (cat || '').replace(/\s+/g,'');
+  }
+
+  // Render articles
+  function renderFeed(items) {
+    if (!items.length) {
+      feed.innerHTML = `
+        <div class="z483-state">
+          <h3>✅ All Clear</h3>
+          <p>No new updates were found for this category in the last 7 days. The strict 7-day filter is active.</p>
+        </div>`;
+      return;
+    }
+
+    feed.innerHTML = items.map(item => {
+      const catClass = categoryClass(item.category);
+      
+      return `
+        <a class="z483-card" href="${escHtml(item.source_url)}" target="_blank" rel="noopener noreferrer">
+          <header class="z483-card-top">
+            <div class="z483-badges">
+              <span class="z483-badge ${catClass}">${escHtml(item.category)}</span>
+            </div>
+            <time class="z483-date">${formatDate(item.date)}</time>
+          </header>
+          
+          <h3 class="z483-card-title">${escHtml(item.title)}</h3>
+          <p class="z483-card-summary">${escHtml(item.summary)}</p>
+          
+          <div class="z483-action-row">
+            <div class="z483-share-group">
+              <button class="z483-share-btn z483-share-wa" data-title="${escHtml(item.title)}" onclick="shareWhatsApp(event, this)" aria-label="Share on WhatsApp" title="Share on WhatsApp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51h-.57c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+              </button>
+              <button class="z483-share-btn z483-share-li" data-title="${escHtml(item.title)}" onclick="shareLinkedIn(event, this)" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </button>
+              <button class="z483-share-btn z483-share-copy" data-title="${escHtml(item.title)}" onclick="copyShareLink(event, this)" aria-label="Copy Link" title="Copy Link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+              <button class="z483-share-btn z483-share-fb" data-title="${escHtml(item.title)}" onclick="shareFacebook(event, this)" aria-label="Share on Facebook" title="Share on Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </button>
+              <button class="z483-share-btn z483-share-tw" data-title="${escHtml(item.title)}" onclick="shareTwitter(event, this)" aria-label="Share on Twitter" title="Share on Twitter">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+              </button>
+              <button class="z483-share-btn z483-share-mail" data-title="${escHtml(item.title)}" onclick="shareEmail(event, this)" aria-label="Share via Email" title="Share via Email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </button>
+            </div>
+            <span class="z483-read-link">
+              Read Full Article
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </span>
+          </div>
+        </a>`;
+    }).join('');
+  }
+
+  function applyFilters() {
+    const q = searchQuery.toLowerCase().trim();
+    const filtered = allItems.filter(item => {
+      const matchCat = activeFilter === 'All' || item.category === activeFilter;
+      if (!matchCat) return false;
+      if (!q) return true;
+      return (
+        (item.title  || '').toLowerCase().includes(q) ||
+        (item.summary|| '').toLowerCase().includes(q)
+      );
+    });
+    renderFeed(filtered);
+  }
+
+  function init() {
+    if (INJECTED_DATA && INJECTED_DATA.items) {
+      allItems = INJECTED_DATA.items;
+      
+      const params = new URLSearchParams(window.location.search);
+      if (params.has('q')) {
+        searchQuery = params.get('q');
+        searchInput.value = searchQuery;
+      }
+      
+      applyFilters();
+    } else {
+      feed.innerHTML = `
+        <div class="z483-state">
+          <h3>No Data Available</h3>
+          <p>Please run the python script to inject data.</p>
+        </div>`;
+    }
+  }
+
+  // Fallback data for local preview if no injected data
+  if (!INJECTED_DATA) {
+    setTimeout(() => {
+      // If still null, just clear
+      if (!allItems.length) {
+        init();
+      }
+    }, 100);
+  } else {
+    init();
+  }
+
+</script>
+</body>
+</html>
