@@ -35,6 +35,7 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add news_database.json
-        git commit -m "Auto-update FDA news database [skip ci]" || echo "No changes to commit"
+        git add news_database.json widget_ready_for_zoho.html citizen_ready.html feed.xml index.html citizen.html || echo "Some files not found, staging what is present"
+        git add *.html *.json *.xml || echo "Staging catch-all"
+        git commit -m "Auto-update FDA news database and widgets [skip ci]" || echo "No changes to commit"
         git push
