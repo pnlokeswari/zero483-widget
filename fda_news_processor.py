@@ -404,8 +404,13 @@ def fetch_drug_approvals(limit: int = FETCH_LIMIT) -> list[dict]:
             f"Status: {latest.get('submission_status', 'N/A')}\n"
             f"Status date: {latest.get('submission_status_date', 'N/A')}"
         )
+        # Normalize application number (e.g. ANDA220137 -> 220137, NDA220787 -> 220787) to form valid FDA Drugs@FDA link
+        app_no_raw = r.get("application_number", "")
+        # Remove any leading alpha prefix (like NDA, ANDA, BLA, etc.) keeping only digits
+        app_no_clean = re.sub(r"^[a-zA-Z]+", "", app_no_raw)
+
         items.append({
-            "_id":       make_id(r.get("application_number", title)),
+            "_id":       make_id(app_no_raw if app_no_raw else title),
             "_title":    title[:120],
             "_date":     date_str(latest.get("submission_status_date", "")),
             "_category": "Drug Approval",
@@ -414,7 +419,7 @@ def fetch_drug_approvals(limit: int = FETCH_LIMIT) -> list[dict]:
             "_url":      (
                 f"https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm"
                 f"?event=overview.process&ApplNo="
-                f"{r.get('application_number','').replace('NDA','').replace('ANDA','').replace('BLA','')}"
+                f"{app_no_clean}"
             ),
         })
     print(f"  Fetched {len(items)} approval items.")
@@ -791,6 +796,11 @@ def generate_citizen_widget(db: dict) -> None:
     target = "const INJECTED_DATA = null; /* __WIDGET_DATA_INJECT__ */"
     replacement = f"const INJECTED_DATA = {json_str}; /* __WIDGET_DATA_INJECT__ */"
     final_html = html.replace(target, replacement)
+    
+    out_path = BASE_DIR / "citizen_ready.html"
+    with out_path.open("w", encoding="utf-8") as f:
+        f.write(final_html)
+    print(f"\n[CITIZEN READY] Generated {out_path.name}")
     
     print("   -> Attempting automatic upload to GitHub Pages for citizen widget...")
     upload_file_to_github(final_html, "citizen.html")
