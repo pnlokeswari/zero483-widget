@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-06T09:33:06.231311+00:00",
-  "total_items": 36,
+  "last_updated": "2026-06-06T09:40:45.682883+00:00",
+  "total_items": 37,
   "items": [
+    {
+      "id": "736e958f3494",
+      "title": "Outbreak Investigation of Infant Botulism: Infant Formula (November 2025) - fda.gov",
+      "date": "2026-06-03",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Outbreak Investigation of Infant Botulism: Infant Formula (November 2025) - fda.gov\nSource: Google News\nDate: Wed, 03 Jun 2026 10:00:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUjFDQjlHQ2x1ZUZEdkREVlBxREh2QVAtc2xtSGZzQkVDMnlJSEx5UkppYWkzdVZYSWhQTEdwd0NsaTd0SWxpc05FS3FVWFliMnVhZG5OUm9FbmNFM3ZvN1JlS3lLZVhaTkJmRU1xS2Q4OGtpYXFYX0ZnSHZGU2xpNkdDdVN0YlFaQnZHNllHaDJKUG9nWnRVN1NpdjhMSHQ3c3pZQUJvS2ZTT2x1bGhXVTRPWFFxQUM4R3ltVA?oc=5",
+      "fetched_at": "2026-06-06T09:40:42.457237+00:00"
+    },
     {
       "id": "08c2e6346afe",
       "title": "FDA alerts public to recall of packaged Dried Herring Fish - Spectrum News",
