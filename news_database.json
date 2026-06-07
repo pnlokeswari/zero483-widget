@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-07T14:18:07.317142+00:00",
+  "last_updated": "2026-06-07T14:38:24.534591+00:00",
   "total_items": 50,
   "items": [
     {
@@ -54,8 +54,8 @@
       "id": "ba1f58409001",
       "title": "CDSCO clears Wockhardt’s homegrown antibiotic Zaynich, as does US FDA - The Pharma Letter",
       "date": "2026-06-01",
-      "category": "Warning Letter",
-      "severity": "High",
+      "category": "Drug Approval",
+      "severity": "Low",
       "summary": "Title: CDSCO clears Wockhardt’s homegrown antibiotic Zaynich, as does US FDA - The Pharma Letter\nSource: CDSCO India\nDate: Mon, 01 Jun 2026 08:28:29 GMT",
       "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
       "key_actions": "Review and escalate to QA leadership as appropriate.",
