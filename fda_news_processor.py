@@ -642,10 +642,10 @@ def fetch_google_news_warning_letters(limit: int = FETCH_LIMIT) -> list[dict]:
     return items
 
 
-def fetch_google_news_guidances(limit: int = FETCH_LIMIT) -> list[dict]:
+def fetch_google_news_guidances(limit: int = 30) -> list[dict]:
     """Fetch FDA Draft Guidance and Guidelines news from Google News RSS."""
     print("\n[SOURCE] Google News RSS (FDA Guidelines)...")
-    url = 'https://news.google.com/rss/search?q=(%22FDA%22+%22Guidance%22+OR+%22Guidelines%22)+(drug+OR+pharma)&hl=en-US&gl=US&ceid=US:en'
+    url = 'https://news.google.com/rss/search?q=(%22FDA%22+OR+%22ICH%22)+AND+(%22Guidance%22+OR+%22Guideline%22+OR+%22Guidelines%22)+AND+(drug+OR+pharma+OR+medicine+OR+biological)&hl=en-US&gl=US&ceid=US:en'
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         html = urllib.request.urlopen(req, timeout=10).read()
