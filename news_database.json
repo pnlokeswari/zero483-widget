@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-07T20:43:57.773631+00:00",
+  "last_updated": "2026-06-07T22:35:04.937262+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "1e668436402c",
+      "title": "Banned Antibiotic Residues Trigger Shrimp Export Rejections; CDSCO Seeks State Action - Medical Dialogues",
+      "date": "2026-06-04",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "Title: Banned Antibiotic Residues Trigger Shrimp Export Rejections; CDSCO Seeks State Action - Medical Dialogues\nSource: CDSCO India\nDate: Thu, 04 Jun 2026 12:30:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOWnJRUGVBZmtwTzNNU05BZ2NlVzNCdmNyYno1ekhfU1FtSGhMbktZb3UzUk9RLU9NWFdSQXQ4ZGNkWTUxdHdSSUR5NkVnbW44M0tnZTNKMmtxZE96cVhwOFNmWjZvaFY1ZWtURFZsQWd0VFVURlRJSmROZFlNaGVUQzREdFdtMU9KX2pmbjNjRlJGTjBUc1diZTVMSWFoTFZZWG1ERGNSUFJFbmNxckNJVkMzM2hSbnZndHIwWHZBdUh1RW1jOTljQ055aTFRWlJ3aE93NTFMNNIB3AFBVV95cUxQczBMY2tfcmpGbFVaMkg5REZScVo2NkFrdm9vQVpZMFRKVnlXSjlzTndBb08yd0FTRlUwdTdIZDg5cUlhTzhET3phOTBVV2R1Y0dTZXc0TVg0a0RraWRQZ1h0c3FDcGQzWTRXeFdmWFBoNXNzTWJHSm1TdVZDYzZrR1hsVU9nMnlZQktUNHcxb0l3bHFIVnVrQ29RYktRWVNZZk5QenhXU3NWZXlQdVpTbnV6b01aUUJNdWh5VWlINS1JcUlZNnY3SnBYNFYzbU04ckJUS3J3S2Jpcmpj?oc=5",
+      "fetched_at": "2026-06-07T22:35:04.937213+00:00"
+    },
     {
       "id": "91a1b3ab265f",
       "title": "CDSCO flags banned antibiotics in shrimp exports amid rising rejections - Business Standard",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcUlkYi1PbWpQZWllVFpXYzZOaFo1ZmRQUFNfS2RMV2dGM1duNHJTcEdyY3o1VWFINEVSTDEzMTR1RndjLUZaSlg0VXN2Rl9ZX2dUU1ltWFNWSDVNSURXcnl1blh3UHVDcnFoT25CT2xqU0VRV3BqY2QyVVpXRGloNnNKQm42bTczdGYtX2VsVm1hMUFqanlUYXJQVy1NNG5EZ0JublJUTy1NM1BxUjFsY1BXQUFqNlNIVHVB?oc=5",
       "fetched_at": "2026-06-02T14:57:20.747668+00:00"
-    },
-    {
-      "id": "7cd0461604de",
-      "title": "Drug Recall: cimzia (certolizumab pegol), 2x200mg/mL PREFILLED SYRINGES (2 single-dose), Rx O",
-      "date": "2026-05-08",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Recalling firm: UCB Biosciences Inc.\nProduct: cimzia (certolizumab pegol), 2x200mg/mL PREFILLED SYRINGES (2 single-dose), Rx ONLY, Manufactured by: UCB Inc., Smyrna, GA 30080, a) NDC 50474-710-79, b) Professional sample, NDC 50474-710-80; c) 3 cartons, STARTER KIT, NDC 50474-710-81.\nReason: Lack of Assurance of Sterility\nClassification: Class II\nStatus: Ongoing\nDistribution: US Nationwide.\nQuantity: 141,708 cartons",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm?Event=98915",
-      "fetched_at": "2026-06-02T14:57:13.834303+00:00"
     }
   ]
 }
