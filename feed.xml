@@ -4,18 +4,8 @@
     <title>Zero483 FDA Pharma Alerts</title>
     <description>Live tracker for FDA drug recalls, warning letters, and guidance.</description>
     <link>https://www.zero483.com/USFDA-news</link>
-    <lastBuildDate>Sun, 07 Jun 2026 15:48:05 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 15:54:04 GMT</lastBuildDate>
 
-    <item>
-      <title>CDSCO flags banned antibiotics in shrimp exports amid rising rejections - Business Standard</title>
-      <description>Title: CDSCO flags banned antibiotics in shrimp exports amid rising rejections - Business Standard
-Source: CDSCO India
-Date: Thu, 04 Jun 2026 18:12:52 GMT</description>
-      <link>https://www.zero483.com/USFDA-news?q=CDSCO%20flags%20banned%20antibiotics%20in%20shrimp%20exports%20amid%20rising%20rejections%20-%20Business%20Standard</link>
-      <guid>https://www.zero483.com/USFDA-news?q=CDSCO%20flags%20banned%20antibiotics%20in%20shrimp%20exports%20amid%20rising%20rejections%20-%20Business%20Standard</guid>
-      <category>Warning Letter</category>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
     <item>
       <title>ICH M15 Guidance: General Principles for Model-Informed Drug Development</title>
       <description>The FDA has announced the availability of the final guidance for industry, &#x27;M15 General Principles for Model-Informed Drug Development.&#x27; Developed by the International Council for Harmonisation (ICH), this document provides a harmonized framework for planning, evaluating, and documenting Model-Informed Drug Development (MIDD) evidence to ensure consistent and high-quality applications across global regulatory agencies.</description>
@@ -523,6 +513,20 @@ Quantity: 690 tubes</description>
       <guid>https://www.zero483.com/USFDA-news?q=Drug%20Recall%3A%20MG217%20Multi-Symptom%20Treatment%20Cream%20%26%20Skin%20Protectant%20%28colloidal%20oatmeal%202%25%29%2C%20NE</guid>
       <category>Recall</category>
       <pubDate>Fri, 24 Apr 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Drug Recall: Primidone Tablets, USP, 50 mg, 100 Tablets (10 x 10 unit dose blister) per carto</title>
+      <description>Recalling firm: Amerisource Health Services LLC
+Product: Primidone Tablets, USP, 50 mg, 100 Tablets (10 x 10 unit dose blister) per carton, Rx only, Distributed by: American Health Packaging, Columbus, Ohio 43217.   Carton NDC: 68084-202-01; Individual Dose NDC: 68084-202-11
+Reason: Cross contamination with other products: API contaminated with trace amounts of Acemetacin API.
+Classification: Class III
+Status: Ongoing
+Distribution: USA Nationwide
+Quantity: 225,000 tablets</description>
+      <link>https://www.zero483.com/USFDA-news?q=Drug%20Recall%3A%20Primidone%20Tablets%2C%20USP%2C%2050%20mg%2C%20100%20Tablets%20%2810%20x%2010%20unit%20dose%20blister%29%20per%20carto</link>
+      <guid>https://www.zero483.com/USFDA-news?q=Drug%20Recall%3A%20Primidone%20Tablets%2C%20USP%2C%2050%20mg%2C%20100%20Tablets%20%2810%20x%2010%20unit%20dose%20blister%29%20per%20carto</guid>
+      <category>Recall</category>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>

@@ -6,11 +6,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://alerts.zero483.com/alerts/cdsco-flags-banned-antibiotics-in-shrimp-exports-amid-rising-rejections-business-standard.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://alerts.zero483.com/alerts/ich-m15-guidance-general-principles-for-model-informed-drug-development.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -252,6 +247,11 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/drug-recall-mg217-multi-symptom-treatment-cream-skin-protectant-colloidal-oatmeal-2-ne.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/drug-recall-primidone-tablets-usp-50-mg-100-tablets-10-x-10-unit-dose-blister-per-carto.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
