@@ -897,6 +897,40 @@ def save_database(db: dict) -> None:
     print(f"   Total items: {db['total_items']} | Last updated: {db['last_updated']}")
 
 
+def is_pharma_relevant(title: str, raw_text: str) -> bool:
+    """Filter out non-pharmaceutical/non-medical device news (e.g. food, pet food, cars, toys)."""
+    title_lower = title.lower()
+    
+    # Exclude terms that strongly indicate non-pharma consumer products
+    exclude_keywords = [
+        "dog food", "cat food", "pet food", "animal feed", "bird seed",
+        "toy", "stroller", "crib", "car seat", "airbag", "motorcycle", "vehicle", "automobile",
+        "beef", "pork", "chicken", "salad", "cheese", "butter", "cookie", "chocolate", "grocery", "supermarket",
+        "restaurant", "seafood", "dried fish", "herring", "vegetable", "fruit", "ice cream", "yogurt"
+    ]
+    
+    for kw in exclude_keywords:
+        if kw in title_lower:
+            return False
+            
+    # Include terms that strongly indicate pharma/medical device relevance
+    include_keywords = [
+        "drug", "pharma", "pharmaceutical", "medicine", "biologic", "vaccine", "therapy", "therap",
+        "clinical", "trial", "anda", "nda", "bla", "ind", "gmp", "cgmp", "api", "active ingredient",
+        "tablet", "capsule", "injection", "syringe", "vial", "medical device", "pacemaker", "catheter",
+        "ventilator", "implant", "sterile", "warning letter", "483", "inspection", "recall", "shortage",
+        "approval", "clearance", "clears", "biosimilar", "lucentis", "ranibizumab", "zaynich",
+        "shortages", "regulatory", "health canada", "ema", "european medicines agency", "who", "world health",
+        "cdsco", "auditor", "compliance", "sterile", "contamination", "antibiotic"
+    ]
+    
+    # If any include keyword is in the title, it is relevant
+    if any(kw in title_lower for kw in include_keywords):
+        return True
+        
+    return False
+
+
 def is_duplicate_title(new_title: str, existing_titles: list, threshold: float = 0.65) -> bool:
     """Return True if new_title is too similar to any title in existing_titles."""
     new_title_lower = new_title.lower()
@@ -908,7 +942,7 @@ def is_duplicate_title(new_title: str, existing_titles: list, threshold: float =
 
 def merge_items(db: dict, new_items: list[dict], client) -> int:
     """
-    Add new items to the database, skipping duplicates.
+    Add new items to the database, skipping duplicates and non-pharma content.
     Runs AI analysis on each new item before inserting.
     Returns count of newly added items.
     """
@@ -918,6 +952,10 @@ def merge_items(db: dict, new_items: list[dict], client) -> int:
 
     for raw in new_items:
         if raw["_id"] in existing_ids:
+            continue
+
+        if not is_pharma_relevant(raw["_title"], raw["_raw"]):
+            print(f"  [SKIP] Not relevant to Pharma/Medical Devices: {raw['_title'][:60]}...")
             continue
 
         if is_duplicate_title(raw["_title"], existing_titles):
