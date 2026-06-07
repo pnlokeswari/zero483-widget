@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-07T15:54:04.856601+00:00",
+  "last_updated": "2026-06-07T15:54:52.303844+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "4180491ec600",
+      "title": "U.S. FDA Approves Lupin's Ranluspec (ranibizumab-hkdz) as Interchangeable Biosimilar to Lucentis",
+      "date": "2026-06-05",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Lupin Limited has received U.S. FDA approval for Ranluspec™ (ranibizumab-hkdz), an interchangeable biosimilar to Lucentis® (ranibizumab) for the treatment of wet age-related macular degeneration (AMD), diabetic macular edema (DME), and other serious retinal diseases. It is the first interchangeable biosimilar ranibizumab available in both vials and pre-filled syringes (PFS) in the United States.",
+      "compliance_impact": "This approval expands interchangeable biosimilar options in ophthalmology. Health systems and pharmacy networks can substitute Ranluspec for Lucentis without requiring provider intervention, subject to state laws.",
+      "key_actions": "1. Update pharmacy formularies to include Ranluspec as a cost-effective alternative to Lucentis.\n2. Review state-specific laws regarding interchangeable biosimilar substitution.\n3. Educate staff on the availability of both vial and pre-filled syringe (PFS) options.",
+      "source_url": "https://www.lupin.com",
+      "fetched_at": "2026-06-07T15:54:37.256023+00:00"
+    },
     {
       "id": "28f0f8084bbe",
       "title": "ICH M15 Guidance: General Principles for Model-Informed Drug Development",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm?Event=98788",
       "fetched_at": "2026-06-02T14:57:08.826965+00:00"
-    },
-    {
-      "id": "7cb8866d68e6",
-      "title": "Drug Recall: Primidone Tablets, USP, 50 mg, 100 Tablets (10 x 10 unit dose blister) per carto",
-      "date": "2026-05-01",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Recalling firm: Amerisource Health Services LLC\nProduct: Primidone Tablets, USP, 50 mg, 100 Tablets (10 x 10 unit dose blister) per carton, Rx only, Distributed by: American Health Packaging, Columbus, Ohio 43217.   Carton NDC: 68084-202-01; Individual Dose NDC: 68084-202-11\nReason: Cross contamination with other products: API contaminated with trace amounts of Acemetacin API.\nClassification: Class III\nStatus: Ongoing\nDistribution: USA Nationwide\nQuantity: 225,000 tablets",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm?Event=98884",
-      "fetched_at": "2026-06-02T14:57:03.817142+00:00"
     }
   ]
 }
