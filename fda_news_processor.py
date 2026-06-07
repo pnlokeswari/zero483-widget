@@ -860,6 +860,9 @@ def fetch_cdsco_alerts(limit: int = FETCH_LIMIT) -> list[dict]:
         if "recall" in title_lower or "spurious" in title_lower or "nsq" in title_lower or "substandard" in title_lower:
             category = "Recall"
             severity = "High"
+        elif "approve" in title_lower or "clear" in title_lower or "authoris" in title_lower or "permission" in title_lower:
+            category = "Drug Approval"
+            severity = "Low"
 
         items.append({
             "_id":       make_id(title),
