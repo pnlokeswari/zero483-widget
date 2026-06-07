@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-07T15:45:51.339252+00:00",
+  "last_updated": "2026-06-07T15:48:05.637855+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "91a1b3ab265f",
+      "title": "CDSCO flags banned antibiotics in shrimp exports amid rising rejections - Business Standard",
+      "date": "2026-06-04",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "Title: CDSCO flags banned antibiotics in shrimp exports amid rising rejections - Business Standard\nSource: CDSCO India\nDate: Thu, 04 Jun 2026 18:12:52 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQT0g1TG13ek5BbWs0SUJKcDlqVmRfVjFOeTA4TXlYbFBxVDAzazBHb1AxRk8wWm1Ia1lEVy1TWEtJbmlSZFo2SWljV2JkdmtxdVI1TmVkMXd5dTNxbHNzM2p1d3hsdndfNmpHSVlRQUhvUWM5VWRjQUhodVNhdjZob3dTSDg4d1p4cE9pWnhic2tCbnByd0g4MDZRNktpcVdwM2pmN0Vtc1BPNUM1UVZnVWxrY0Fsb05jMHowQTNJMUE2WGlMcFVERzg2dlVCNWlnMTVKMUhR0gHbAUFVX3lxTE9aeGxKc0xkVi1pWVc2RGdfRFVMaWVnelJKa1lwaHVtWEtHQW5Sc3FLR0w3bldlaFZsNkVEZml3RXNMbjJUdXpQMld0bkdkMW5zb19uU19Nd2lMeUZwZGhIZEpEY05xVnB0OHl0ZDY5THp5eDUxc3NQSTVMUl85NF9mNVJ4NkhSRUhySWNhR3p1am9Sc0ppS3pBWDQtczZPd2Y4OW5VVWQxWnR3ZnlUemRndnNqS2hDMWdIQk1xbFFWVDNaYkU3M3dpd0NjWlo5c0RtbWFnM1phZGprbw?oc=5",
+      "fetched_at": "2026-06-07T15:48:05.637794+00:00"
+    },
     {
       "id": "28f0f8084bbe",
       "title": "ICH M15 Guidance: General Principles for Model-Informed Drug Development",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm?Event=98788",
       "fetched_at": "2026-06-02T14:57:08.826965+00:00"
-    },
-    {
-      "id": "7cb8866d68e6",
-      "title": "Drug Recall: Primidone Tablets, USP, 50 mg, 100 Tablets (10 x 10 unit dose blister) per carto",
-      "date": "2026-05-01",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Recalling firm: Amerisource Health Services LLC\nProduct: Primidone Tablets, USP, 50 mg, 100 Tablets (10 x 10 unit dose blister) per carton, Rx only, Distributed by: American Health Packaging, Columbus, Ohio 43217.   Carton NDC: 68084-202-01; Individual Dose NDC: 68084-202-11\nReason: Cross contamination with other products: API contaminated with trace amounts of Acemetacin API.\nClassification: Class III\nStatus: Ongoing\nDistribution: USA Nationwide\nQuantity: 225,000 tablets",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm?Event=98884",
-      "fetched_at": "2026-06-02T14:57:03.817142+00:00"
     }
   ]
 }
