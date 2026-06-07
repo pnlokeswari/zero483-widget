@@ -864,7 +864,51 @@ def generate_rss_feed(db: dict) -> str:
     with out_path.open("w", encoding="utf-8") as f:
         f.write(rss)
     print(f"\n[RSS READY] Generated {out_path.name}")
+    
+    # Also trigger standard Google Sitemap XML generation
+    generate_sitemap(db)
+    
     return rss
+
+
+def generate_sitemap(db: dict) -> None:
+    """Generate a valid Google Sitemap XML listing the main widget and all alert pages."""
+    url_nodes = []
+    
+    # 1. Add Main Tracker page URL
+    url_nodes.append(
+        "  <url>\n"
+        "    <loc>https://www.zero483.com/USFDA-news</loc>\n"
+        "    <changefreq>hourly</changefreq>\n"
+        "    <priority>1.0</priority>\n"
+        "  </url>"
+    )
+    
+    # 2. Add individual alert page URLs
+    for item in db.get("items", []):
+        title_raw = item.get("title", "")
+        slug = re.sub(r'[^a-zA-Z0-9]+', '-', title_raw.lower()).strip('-')
+        if not slug:
+            continue
+        url_nodes.append(
+            f"  <url>\n"
+            f"    <loc>https://www.zero483.com/alerts/{slug}.html</loc>\n"
+            f"    <changefreq>monthly</changefreq>\n"
+            f"    <priority>0.8</priority>\n"
+            f"  </url>"
+        )
+        
+    sitemap = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{chr(10).join(url_nodes)}\n"
+        '</urlset>\n'
+    )
+    
+    sitemap_path = BASE_DIR / "sitemap.xml"
+    with sitemap_path.open("w", encoding="utf-8") as f:
+        f.write(sitemap)
+    print(f"[SITEMAP READY] Generated {sitemap_path.name}")
 
 
 def generate_seo_pages(db: dict) -> None:
