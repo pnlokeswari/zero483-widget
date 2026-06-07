@@ -867,6 +867,185 @@ def generate_rss_feed(db: dict) -> str:
     return rss
 
 
+def generate_seo_pages(db: dict) -> None:
+    """Generate search-engine-friendly static HTML pages for each news item in the alerts folder."""
+    import html
+    alerts_dir = BASE_DIR / "alerts"
+    alerts_dir.mkdir(exist_ok=True)
+    
+    # We clean old alerts that are no longer in the database to keep the repository clean
+    existing_slugs = set()
+
+    for item in db.get("items", []):
+        title_raw = item.get("title", "")
+        # Create a clean url slug (e.g., "Drug Recall: Gas-X Extra" -> "drug-recall-gas-x-extra")
+        slug = re.sub(r'[^a-zA-Z0-9]+', '-', title_raw.lower()).strip('-')
+        if not slug:
+            continue
+            
+        existing_slugs.add(slug + ".html")
+        
+        escaped_title = html.escape(title_raw)
+        escaped_summary = html.escape(item.get("summary", ""))
+        escaped_impact = html.escape(item.get("compliance_impact", ""))
+        escaped_actions = html.escape(item.get("key_actions", ""))
+        category = html.escape(item.get("category", ""))
+        severity = html.escape(item.get("severity", ""))
+        date_str = html.escape(item.get("date", ""))
+        
+        # Determine severity class color
+        sev_color = "#dc2626" if severity == "High" else ("#d97706" if severity == "Medium" else "#16a34a")
+        
+        html_content = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{escaped_title} | USFDA Alert Zero483</title>
+  <meta name="description" content="USFDA Pharma Alert - {escaped_title}. Analysis, compliance impact, and key quality assurance actions for manufacturers and pharmacists." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet" />
+  <style>
+    body {{
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: #0f172a;
+      background: #f8f9fa;
+      padding: 40px 20px;
+      margin: 0;
+    }}
+    .container {{
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }}
+    a {{
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }}
+    a:hover {{
+      text-decoration: underline;
+    }}
+    .back-link {{
+      display: inline-block;
+      margin-bottom: 24px;
+    }}
+    .category-badge {{
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }}
+    .badge-Recall {{ background: #fef2f2; color: #dc2626; }}
+    .badge-DrugShortage {{ background: #fffbeb; color: #d97706; }}
+    .badge-DrugApproval {{ background: #f0fdf4; color: #16a34a; }}
+    .badge-AdverseEvent {{ background: #fdf4ff; color: #c026d3; }}
+    .badge-WarningLetter, .badge-Form483 {{ background: #fef2f2; color: #dc2626; }}
+    .badge-Guidance {{ background: #f0f9ff; color: #0284c7; }}
+    
+    h1 {{
+      font-family: 'Merriweather', serif;
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1.3;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }}
+    .metadata {{
+      font-size: 0.9rem;
+      color: #64748b;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 12px;
+    }}
+    .section {{
+      margin-bottom: 30px;
+    }}
+    h3 {{
+      font-family: 'Merriweather', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      border-left: 4px solid #2563eb;
+      padding-left: 12px;
+    }}
+    .action-box {{
+      background: #f1f5f9;
+      border-left: 4px solid #64748b;
+      padding: 16px 20px;
+      border-radius: 0 4px 4px 0;
+      margin-top: 24px;
+    }}
+    .footer {{
+      margin-top: 40px;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #64748b;
+    }}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="https://www.zero483.com/USFDA-news" class="back-link">&larr; Back to USFDA Live Tracker</a>
+    <br/>
+    <span class="category-badge badge-{category.replace(' ', '')}">{category}</span>
+    <h1>{escaped_title}</h1>
+    
+    <div class="metadata">
+      <strong>Published:</strong> {date_str} &nbsp;|&nbsp; 
+      <strong>Severity:</strong> <span style="color: {sev_color}; font-weight: bold;">{severity}</span>
+    </div>
+    
+    <div class="section">
+      <h3>Alert Summary</h3>
+      <p style="white-space: pre-line;">{escaped_summary}</p>
+    </div>
+    
+    <div class="section">
+      <h3>Compliance & Audit Impact</h3>
+      <p style="white-space: pre-line;">{escaped_impact}</p>
+    </div>
+    
+    <div class="action-box">
+      <strong>Immediate QA Action Items:</strong>
+      <p style="white-space: pre-line; margin-top: 8px; font-weight: 500;">{escaped_actions}</p>
+    </div>
+    
+    <div class="footer">
+      <p>Brought to you by <a href="https://www.zero483.com">Zero483.com</a>. Automated USFDA Compliance Monitoring.</p>
+    </div>
+  </div>
+</body>
+</html>
+"""
+        
+        file_path = alerts_dir / (slug + ".html")
+        with file_path.open("w", encoding="utf-8") as f:
+            f.write(html_content)
+            
+    # Remove old alerts not present in database
+    for f in alerts_dir.glob("*.html"):
+        if f.name not in existing_slugs:
+            try:
+                f.unlink()
+            except OSError:
+                pass
+                
+    print(f"\n[SEO READY] Generated {len(existing_slugs)} static alert pages inside /alerts folder.")
+
+
 def upload_file_to_github(content: str, filename: str):
     """Uploads a file directly to GitHub Pages."""
     owner = "pnlokeswari"
@@ -959,6 +1138,7 @@ def main():
     generate_zoho_widget(db)
     generate_citizen_widget(db)
     rss_content = generate_rss_feed(db)
+    generate_seo_pages(db)
     print("   -> Attempting automatic upload to GitHub Pages for RSS feed...")
     upload_file_to_github(rss_content, "feed.xml")
     
