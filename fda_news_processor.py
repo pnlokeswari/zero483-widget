@@ -878,7 +878,7 @@ def generate_sitemap(db: dict) -> None:
     # 1. Add Main Tracker page URL
     url_nodes.append(
         "  <url>\n"
-        "    <loc>https://pnlokeswari.github.io/zero483-widget/index.html</loc>\n"
+        "    <loc>https://alerts.zero483.com/index.html</loc>\n"
         "    <changefreq>hourly</changefreq>\n"
         "    <priority>1.0</priority>\n"
         "  </url>"
@@ -892,7 +892,7 @@ def generate_sitemap(db: dict) -> None:
             continue
         url_nodes.append(
             f"  <url>\n"
-            f"    <loc>https://pnlokeswari.github.io/zero483-widget/alerts/{slug}.html</loc>\n"
+            f"    <loc>https://alerts.zero483.com/alerts/{slug}.html</loc>\n"
             f"    <changefreq>monthly</changefreq>\n"
             f"    <priority>0.8</priority>\n"
             f"  </url>"
