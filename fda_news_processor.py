@@ -683,6 +683,197 @@ def fetch_google_news_guidances(limit: int = FETCH_LIMIT) -> list[dict]:
     return items
 
 
+def fetch_health_canada_alerts(limit: int = FETCH_LIMIT) -> list[dict]:
+    """Fetch Health Canada Recalls & Alerts."""
+    print("\n[SOURCE] Health Canada RSS...")
+    feeds = [
+        "https://recalls-rappels.canada.ca/en/feed/health-products-alerts-recalls",
+        "https://recalls-rappels.canada.ca/en/feed/medical-devices-alerts-recalls"
+    ]
+    items = []
+    for url in feeds:
+        try:
+            req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+            html = urllib.request.urlopen(req, timeout=10).read()
+            root = ET.fromstring(html)
+        except Exception as e:
+            print(f"  Failed to fetch {url}: {e}")
+            continue
+
+        for item in root.findall('.//item')[:limit]:
+            title = item.find('title').text or "Health Canada Alert"
+            link = item.find('link').text or ""
+            pubDate = item.find('pubDate').text or ""
+            
+            try:
+                # Remove timezone offset (like -0400 or EST) for simple parsing
+                clean_pub_date = re.sub(r'\s[+-]\d{4}$', '', pubDate).strip()
+                clean_pub_date = re.sub(r'\s[A-Z]{3,4}$', '', clean_pub_date).strip()
+                dt = datetime.strptime(clean_pub_date, "%a, %d %b %Y %H:%M:%S")
+                if (datetime.now(timezone.utc).replace(tzinfo=None) - dt).days > DAYS_LOOKBACK:
+                    continue
+                date_s = dt.strftime("%Y-%m-%d")
+            except Exception as pe:
+                date_s = today_iso()
+
+            raw_text = f"Title: {title}\nSource: Health Canada\nDate: {pubDate}"
+            
+            items.append({
+                "_id":       make_id(title),
+                "_title":    title[:120],
+                "_date":     date_s,
+                "_category": "Recall",
+                "_severity": "High",
+                "_raw":      raw_text,
+                "_url":      link,
+            })
+    print(f"  Fetched {len(items)} Health Canada items.")
+    return items
+
+
+def fetch_ema_alerts(limit: int = FETCH_LIMIT) -> list[dict]:
+    """Fetch EMA Alerts via Google News RSS search."""
+    print("\n[SOURCE] Google News RSS (EMA)...")
+    url = 'https://news.google.com/rss/search?q=%22European+Medicines+Agency%22+OR+%22EMA%22+(drug+OR+pharma+OR+approval+OR+shortage)&hl=en-US&gl=US&ceid=US:en'
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        html = urllib.request.urlopen(req, timeout=10).read()
+        root = ET.fromstring(html)
+    except Exception as e:
+        print(f"  Failed to fetch EMA RSS: {e}")
+        return []
+
+    items = []
+    for item in root.findall('.//item')[:limit]:
+        title = item.find('title').text or "EMA Update"
+        link = item.find('link').text or ""
+        pubDate = item.find('pubDate').text or ""
+        
+        try:
+            dt = datetime.strptime(pubDate, "%a, %d %b %Y %H:%M:%S %Z")
+            if (datetime.now(timezone.utc).replace(tzinfo=None) - dt).days > DAYS_LOOKBACK:
+                continue
+            date_s = dt.strftime("%Y-%m-%d")
+        except:
+            date_s = today_iso()
+
+        raw_text = f"Title: {title}\nSource: European Medicines Agency\nDate: {pubDate}"
+        
+        category = "Guidance"
+        severity = "Low"
+        title_lower = title.lower()
+        if "shortage" in title_lower or "deficit" in title_lower:
+            category = "Drug Shortage"
+            severity = "Medium"
+        elif "recall" in title_lower or "safety" in title_lower or "warning" in title_lower:
+            category = "Recall"
+            severity = "High"
+        elif "approval" in title_lower or "approve" in title_lower or "authorise" in title_lower:
+            category = "Drug Approval"
+            severity = "Low"
+
+        items.append({
+            "_id":       make_id(title),
+            "_title":    title[:120],
+            "_date":     date_s,
+            "_category": category,
+            "_severity": severity,
+            "_raw":      raw_text,
+            "_url":      link,
+        })
+    print(f"  Fetched {len(items)} EMA items.")
+    return items
+
+
+def fetch_who_alerts(limit: int = FETCH_LIMIT) -> list[dict]:
+    """Fetch WHO Medical Product Alerts via Google News RSS search."""
+    print("\n[SOURCE] Google News RSS (WHO Medical Alerts)...")
+    url = 'https://news.google.com/rss/search?q=%22World+Health+Organization%22+OR+%22WHO%22+%22medical+product+alert%22&hl=en-US&gl=US&ceid=US:en'
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        html = urllib.request.urlopen(req, timeout=10).read()
+        root = ET.fromstring(html)
+    except Exception as e:
+        print(f"  Failed to fetch WHO RSS: {e}")
+        return []
+
+    items = []
+    for item in root.findall('.//item')[:limit]:
+        title = item.find('title').text or "WHO Medical Product Alert"
+        link = item.find('link').text or ""
+        pubDate = item.find('pubDate').text or ""
+        
+        try:
+            dt = datetime.strptime(pubDate, "%a, %d %b %Y %H:%M:%S %Z")
+            if (datetime.now(timezone.utc).replace(tzinfo=None) - dt).days > DAYS_LOOKBACK:
+                continue
+            date_s = dt.strftime("%Y-%m-%d")
+        except:
+            date_s = today_iso()
+
+        raw_text = f"Title: {title}\nSource: World Health Organization\nDate: {pubDate}"
+        
+        items.append({
+            "_id":       make_id(title),
+            "_title":    title[:120],
+            "_date":     date_s,
+            "_category": "Warning Letter",
+            "_severity": "High",
+            "_raw":      raw_text,
+            "_url":      link,
+        })
+    print(f"  Fetched {len(items)} WHO items.")
+    return items
+
+
+def fetch_cdsco_alerts(limit: int = FETCH_LIMIT) -> list[dict]:
+    """Fetch CDSCO Alerts via Google News RSS search."""
+    print("\n[SOURCE] Google News RSS (CDSCO)...")
+    url = 'https://news.google.com/rss/search?q=%22CDSCO%22+OR+%22Central+Drugs+Standard+Control+Organisation%22+(alert+OR+recall+OR+drug+OR+pharma)&hl=en-US&gl=US&ceid=US:en'
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        html = urllib.request.urlopen(req, timeout=10).read()
+        root = ET.fromstring(html)
+    except Exception as e:
+        print(f"  Failed to fetch CDSCO RSS: {e}")
+        return []
+
+    items = []
+    for item in root.findall('.//item')[:limit]:
+        title = item.find('title').text or "CDSCO Alert"
+        link = item.find('link').text or ""
+        pubDate = item.find('pubDate').text or ""
+        
+        try:
+            dt = datetime.strptime(pubDate, "%a, %d %b %Y %H:%M:%S %Z")
+            if (datetime.now(timezone.utc).replace(tzinfo=None) - dt).days > DAYS_LOOKBACK:
+                continue
+            date_s = dt.strftime("%Y-%m-%d")
+        except:
+            date_s = today_iso()
+
+        raw_text = f"Title: {title}\nSource: CDSCO India\nDate: {pubDate}"
+        
+        category = "Warning Letter"
+        severity = "High"
+        title_lower = title.lower()
+        if "recall" in title_lower or "spurious" in title_lower or "nsq" in title_lower or "substandard" in title_lower:
+            category = "Recall"
+            severity = "High"
+
+        items.append({
+            "_id":       make_id(title),
+            "_title":    title[:120],
+            "_date":     date_s,
+            "_category": category,
+            "_severity": severity,
+            "_raw":      raw_text,
+            "_url":      link,
+        })
+    print(f"  Fetched {len(items)} CDSCO items.")
+    return items
+
+
 # ── Database I/O ──────────────────────────────────────────────────────────────
 
 def load_database() -> dict:
@@ -1165,6 +1356,10 @@ def main():
         fetch_google_news_adverse_events,
         fetch_google_news_warning_letters,
         fetch_google_news_guidances,
+        fetch_health_canada_alerts,
+        fetch_ema_alerts,
+        fetch_who_alerts,
+        fetch_cdsco_alerts,
     ]
 
     total_new = 0
