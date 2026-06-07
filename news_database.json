@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-07T15:08:35.144698+00:00",
+  "last_updated": "2026-06-07T15:45:51.339252+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "28f0f8084bbe",
+      "title": "ICH M15 Guidance: General Principles for Model-Informed Drug Development",
+      "date": "2026-06-03",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "The FDA has announced the availability of the final guidance for industry, 'M15 General Principles for Model-Informed Drug Development.' Developed by the International Council for Harmonisation (ICH), this document provides a harmonized framework for planning, evaluating, and documenting Model-Informed Drug Development (MIDD) evidence to ensure consistent and high-quality applications across global regulatory agencies.",
+      "compliance_impact": "This guidance establishes a standardized framework for the modeling, simulation, and documentation of MIDD evidence. Organizations must align early regulatory engagement, model assumptions, and credibility assessment with these new expectations.",
+      "key_actions": "1. Review modeling protocols against the new ICH M15 guidelines.\n2. Assess model credibility and 'fit for purpose' based on the risk-based framework.\n3. Establish standard operating procedures (SOPs) for multidisciplinary alignment on model assumptions prior to FDA submission.",
+      "source_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/m15-general-principles-model-informed-drug-development",
+      "fetched_at": "2026-06-07T15:45:33.716298+00:00"
+    },
     {
       "id": "9f590c74e886",
       "title": "CDSCO directs drugmakers to maintain pharmacovigilance systems - Business Standard",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm?Event=98884",
       "fetched_at": "2026-06-02T14:57:03.817142+00:00"
-    },
-    {
-      "id": "88ca89bd8b9f",
-      "title": "Drug Recall: Liraglutide Injection, 18 mg/3 mL (6 mg/mL), Rx only, Manufactured for: Lupin Ph",
-      "date": "2026-04-24",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Recalling firm: Lupin Pharmaceuticals Inc.\nProduct: Liraglutide Injection, 18 mg/3 mL (6 mg/mL), Rx only, Manufactured for: Lupin Pharmaceuticals, Inc., Naples, FL 34108, Manufactured by: Lupin Limited, Nagpur 441108, INDIA, a) 2 Pens- NDC 70748-346-02; b) 3 Pens - NDC 70748-346-03.\nReason: Presence of particulate matter: a white thread-like structure in the cartridge\nClassification: Class II\nStatus: Ongoing\nDistribution: Nationwide within U.S\nQuantity: 217,621 pen injectors",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm?Event=98809",
-      "fetched_at": "2026-06-02T14:56:58.808775+00:00"
     }
   ]
 }
