@@ -62,7 +62,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 FDA_API_KEY    = os.getenv("FDA_API_KEY", "")
 MAX_ITEMS_DB   = 50          # Max total items to keep in the database
 FETCH_LIMIT    = 10          # Items to fetch per source per run
-DAYS_LOOKBACK  = 1           # Only include items from past N days (24 hours)
+DAYS_LOOKBACK  = 2           # Only include items from past N days (48 hours)
 
 # openFDA API base
 OPENFDA_BASE = "https://api.fda.gov"
@@ -268,12 +268,11 @@ TITLE: {title}
 def fetch_drug_recalls(limit: int = FETCH_LIMIT) -> list[dict]:
     """Fetch recent drug enforcement/recall reports from openFDA."""
     print("\n[SOURCE] openFDA Drug Recalls / Enforcement...")
-    # Use +TO+ syntax (confirmed working); bracket-encoded variants cause 404
-    start = cutoff_date()
-    end = (datetime.now(timezone.utc) + timedelta(days=1)).strftime("%Y%m%d")
+    # No date filter - openFDA has indexing lag of days/weeks so date filters cause 404.
+    # Duplicate detection in merge_items() prevents re-adding already-seen items.
     url = (
         f"{OPENFDA_BASE}/drug/enforcement.json"
-        f"?search=report_date:[{start}+TO+{end}]"
+        f"?search=status:Ongoing"
         f"&sort=report_date:desc&limit={limit}"
     )
     data = http_get(url)
@@ -315,12 +314,11 @@ def fetch_drug_recalls(limit: int = FETCH_LIMIT) -> list[dict]:
 def fetch_drug_shortages(limit: int = FETCH_LIMIT) -> list[dict]:
     """Fetch current drug shortage reports from openFDA."""
     print("\n[SOURCE] openFDA Drug Shortages...")
-    # status:Current confirmed working (1,149 results); no date sort needed
-    start = cutoff_date()
-    end = (datetime.now(timezone.utc) + timedelta(days=1)).strftime("%Y%m%d")
+    # No date filter - just fetch most recent current shortages.
+    # Duplicate detection in merge_items() prevents re-adding already-seen items.
     url = (
         f"{OPENFDA_BASE}/drug/shortages.json"
-        f"?search=status:Current+AND+update_date:[{start}+TO+{end}]"
+        f"?search=status:Current"
         f"&sort=update_date:desc&limit={limit}"
     )
     data = http_get(url)
@@ -359,11 +357,11 @@ def fetch_drug_shortages(limit: int = FETCH_LIMIT) -> list[dict]:
 def fetch_drug_approvals(limit: int = FETCH_LIMIT) -> list[dict]:
     """Fetch recent NDA/ANDA approvals from openFDA drugsfda endpoint."""
     print("\n[SOURCE] openFDA Drug Approvals (drugsfda)...")
-    start = cutoff_date()
-    end = (datetime.now(timezone.utc) + timedelta(days=1)).strftime("%Y%m%d")
+    # No date filter - openFDA indexing lag causes 404 on recent date ranges.
+    # We filter in-memory for ORIG submissions and rely on duplicate detection.
     url = (
         f"{OPENFDA_BASE}/drug/drugsfda.json"
-        f"?search=submissions.submission_status_date:[{start}+TO+{end}]"
+        f"?search=submissions.submission_status%3AAP"
         f"&sort=submissions.submission_status_date:desc&limit={limit}"
     )
     data = http_get(url)
@@ -380,13 +378,11 @@ def fetch_drug_approvals(limit: int = FETCH_LIMIT) -> list[dict]:
 
         submissions = r.get("submissions", [])
         
-        # Filter strictly for ORIGINAL submissions in our date range
-        valid_orig_submissions = []
-        for s in submissions:
-            if s.get("submission_type") == "ORIG":
-                s_date = s.get("submission_status_date", "")
-                if start <= s_date <= end:
-                    valid_orig_submissions.append(s)
+        # Filter for ORIGINAL approved submissions only (no date filter - rely on duplicate detection)
+        valid_orig_submissions = [
+            s for s in submissions
+            if s.get("submission_type") == "ORIG" and s.get("submission_status") == "AP"
+        ]
                     
         if not valid_orig_submissions:
             continue
@@ -394,6 +390,7 @@ def fetch_drug_approvals(limit: int = FETCH_LIMIT) -> list[dict]:
         # Use the newest valid original submission
         valid_orig_submissions.sort(key=lambda s: s.get("submission_status_date", ""), reverse=True)
         latest = valid_orig_submissions[0]
+
         
         raw_text = (
             f"Application: {r.get('application_number', 'N/A')}\n"
@@ -429,12 +426,11 @@ def fetch_drug_approvals(limit: int = FETCH_LIMIT) -> list[dict]:
 def fetch_adverse_events_summary(limit: int = FETCH_LIMIT) -> list[dict]:
     """Fetch recent serious adverse drug event reports."""
     print("\n[SOURCE] openFDA Serious Drug Adverse Events (FAERS)...")
-    # +TO+ syntax confirmed working (881,427 results for Jan 2025 - Dec 2026)
-    start = cutoff_date()
-    end = (datetime.now(timezone.utc) + timedelta(days=1)).strftime("%Y%m%d")
+    # No date filter - FAERS has multi-week indexing lag so date filters cause 404.
+    # Fetch most recent serious adverse events; duplicate detection handles dedup.
     url = (
         f"{OPENFDA_BASE}/drug/event.json"
-        f"?search=serious:1+AND+receivedate:[{start}+TO+{end}]"
+        f"?search=serious:1"
         f"&sort=receivedate:desc&limit={limit}"
     )
     data = http_get(url)
