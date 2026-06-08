@@ -6,16 +6,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://alerts.zero483.com/alerts/banned-antibiotic-residues-trigger-shrimp-export-rejections-cdsco-seeks-state-action-medical-dialogues.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/cdsco-flags-banned-antibiotics-in-shrimp-exports-amid-rising-rejections-business-standard.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://alerts.zero483.com/alerts/u-s-fda-approves-lupin-s-ranluspec-ranibizumab-hkdz-as-interchangeable-biosimilar-to-lucentis.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -252,6 +242,16 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/outbreak-investigation-of-salmonella-moringa-leaf-powder-january-2026-fda-gov.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/drug-recall-cimzia-certolizumab-pegol-2x200mg-ml-prefilled-syringes-2-single-dose-rx-o.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/drug-recall-mg217-multi-symptom-treatment-cream-skin-protectant-colloidal-oatmeal-2-ne.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
