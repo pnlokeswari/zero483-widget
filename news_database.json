@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-06-08T15:07:05.404125+00:00",
+  "last_updated": "2026-06-08T15:51:47.299669+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "0bcff804242f",
+      "title": "Drug Shortage: Lisdexamfetamine Dimesylate Capsule",
+      "date": "2026-06-08",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Generic name: Lisdexamfetamine Dimesylate Capsule\nBrand name: N/A\nStatus: Current\nPresentations: []",
+      "compliance_impact": "Review and assess the impact on your site's quality systems.",
+      "key_actions": "Escalate to QA leadership for site-specific action plan.",
+      "source_url": "https://news.google.com/search?q=FDA+Shortage+Lisdexamfetamine+Dimesylate+Capsule",
+      "fetched_at": "2026-06-08T15:50:57.909605+00:00"
+    },
+    {
+      "id": "64704ba1a691",
+      "title": "Drug Shortage: Sterile Water Irrigant",
+      "date": "2026-06-08",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Generic name: Sterile Water Irrigant\nBrand name: N/A\nStatus: Current\nPresentations: []",
+      "compliance_impact": "Review and assess the impact on your site's quality systems.",
+      "key_actions": "Escalate to QA leadership for site-specific action plan.",
+      "source_url": "https://news.google.com/search?q=FDA+Shortage+Sterile+Water+Irrigant",
+      "fetched_at": "2026-06-08T15:50:52.842619+00:00"
+    },
+    {
+      "id": "401f439d3fed",
+      "title": "Drug Shortage: Dexmedetomidine Hydrochloride Injection",
+      "date": "2026-06-08",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Generic name: Dexmedetomidine Hydrochloride Injection\nBrand name: N/A\nStatus: Current\nPresentations: []",
+      "compliance_impact": "Review and assess the impact on your site's quality systems.",
+      "key_actions": "Escalate to QA leadership for site-specific action plan.",
+      "source_url": "https://news.google.com/search?q=FDA+Shortage+Dexmedetomidine+Hydrochloride+Injection",
+      "fetched_at": "2026-06-08T15:50:47.809244+00:00"
+    },
     {
       "id": "2d0a9699e789",
       "title": "Giraffe™ OmniBed™ Carestation™",
@@ -565,42 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1lMWlLc041MGxkUEc1MnRXV2tkcVFRb3pJaEpOTmVMQUdyaHlIRGNWRDJhZE9OZnFZX3ZqbERDZ1BfYXhMdFV1Qm5Sbm05WVhtd0lzS3dhSV9BN2dMSG1ZQV90dw?oc=5",
       "fetched_at": "2026-06-02T14:57:25.764842+00:00"
-    },
-    {
-      "id": "c09af28b81d3",
-      "title": "FSMA Final Rule on Requirements for Additional Traceability Records for Certain Foods - fda.gov",
-      "date": "2026-05-27",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: FSMA Final Rule on Requirements for Additional Traceability Records for Certain Foods - fda.gov\nSource: Google News\nDate: Wed, 27 May 2026 00:00:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOLUpFeElsTVhoSmhiSmk3bDI3ZWJucWxHd05jN3FXRUNSTGtoSHB1VUpjMTd3aktFMlpsQWdNRF9hU1V2bU01Y1JoZWdWeXZNd05mLW9XX2s3Qk9vWGwtV0o3bm9EUXpFbXAzN3Nsb2VOSGtUNmJqa0dJTHJSalNSNnlxUDNZYzZKblcwMVEzcDY3b3pvb0hSUFdqNlBfN3BFZWlPVXIxdWJmcDQ5cmVKcnh0NERYLVF3RUlaNVBwdWlPYVF3QzhvUGtpeTFSSzA?oc=5",
-      "fetched_at": "2026-06-02T14:58:09.930985+00:00"
-    },
-    {
-      "id": "b43f7095caa8",
-      "title": "FDA Announces Recall on Supplement Due to Multistate Salmonella Outbreak—Here’s What to Know - EatingWell",
-      "date": "2026-05-27",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: FDA Announces Recall on Supplement Due to Multistate Salmonella Outbreak—Here’s What to Know - EatingWell\nSource: Google News\nDate: Wed, 27 May 2026 18:09:40 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVlVOeU1GZ2pZTGJkaWRzMjZ6NUZVUE9IS2U2ZEJvVlMybGlVZGJpbDl2OE1Jb21mbW5yaWR6UzNTV1ZFUG5PM0dhQUp4cWFTekFqTEdfNW1hak0tVzlwU0JfZElFcm5ZVFpzX18yWVkzQWRwTERrWGNVTTdpZU1oVGpUZjFTV19UODI4?oc=5",
-      "fetched_at": "2026-06-02T14:57:30.776481+00:00"
-    },
-    {
-      "id": "05be07cdc802",
-      "title": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) - fda.gov",
-      "date": "2026-05-27",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) - fda.gov\nSource: Google News\nDate: Wed, 27 May 2026 14:00:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcUlkYi1PbWpQZWllVFpXYzZOaFo1ZmRQUFNfS2RMV2dGM1duNHJTcEdyY3o1VWFINEVSTDEzMTR1RndjLUZaSlg0VXN2Rl9ZX2dUU1ltWFNWSDVNSURXcnl1blh3UHVDcnFoT25CT2xqU0VRV3BqY2QyVVpXRGloNnNKQm42bTczdGYtX2VsVm1hMUFqanlUYXJQVy1NNG5EZ0JublJUTy1NM1BxUjFsY1BXQUFqNlNIVHVB?oc=5",
-      "fetched_at": "2026-06-02T14:57:20.747668+00:00"
     }
   ]
 }
