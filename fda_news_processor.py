@@ -62,7 +62,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 FDA_API_KEY    = os.getenv("FDA_API_KEY", "")
 MAX_ITEMS_DB   = 50          # Max total items to keep in the database
 FETCH_LIMIT    = 10          # Items to fetch per source per run
-DAYS_LOOKBACK  = 7           # Only include items from past N days
+DAYS_LOOKBACK  = 1           # Only include items from past N days (24 hours)
 
 # openFDA API base
 OPENFDA_BASE = "https://api.fda.gov"
