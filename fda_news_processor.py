@@ -934,42 +934,7 @@ Text: {raw_text[:1000]}
 
 
 def is_pharma_relevant(title: str, raw_text: str, client=None) -> bool:
-    """Filter out non-pharmaceutical/non-medical device news (e.g. food, pet food, cars, toys)."""
-    title_lower = title.lower()
-    raw_lower = raw_text.lower()
-    
-    # Exclude terms that strongly indicate non-pharma consumer products
-    exclude_keywords = [
-        "dog food", "cat food", "pet food", "animal feed", "bird seed",
-        "toy", "stroller", "crib", "car seat", "airbag", "motorcycle", "vehicle", "automobile",
-        "beef", "pork", "chicken", "salad", "cheese", "butter", "cookie", "chocolate", "grocery", "supermarket",
-        "restaurant", "seafood", "dried fish", "herring", "vegetable", "fruit", "ice cream", "yogurt"
-    ]
-    
-    for kw in exclude_keywords:
-        if kw in title_lower:
-            return False
-            
-    # Include terms that strongly indicate pharma/medical device relevance
-    include_keywords = [
-        "drug", "pharma", "pharmaceutical", "medicine", "biologic", "vaccine", "therapy", "therap",
-        "clinical", "trial", "anda", "nda", "bla", "ind", "gmp", "cgmp", "api", "active ingredient",
-        "tablet", "capsule", "injection", "syringe", "vial", "medical device", "pacemaker", "catheter",
-        "ventilator", "implant", "sterile", "warning letter", "483", "inspection", "recall", "shortage",
-        "approval", "clearance", "clears", "biosimilar", "lucentis", "ranibizumab", "zaynich",
-        "shortages", "regulatory", "health canada", "ema", "european medicines agency", "who", "world health",
-        "cdsco", "auditor", "compliance", "sterile", "contamination", "antibiotic"
-    ]
-    
-    # Check if keyword match passes in title or description
-    keyword_pass = any(kw in title_lower or kw in raw_lower for kw in include_keywords)
-    if not keyword_pass:
-        return False
-        
-    # Double-check using AI if Gemini client is available
-    if client is not None:
-        return ai_verify_pharma_relevance(client, title, raw_text)
-        
+    """Filter out non-pharmaceutical/non-medical device news (TEMPORARILY DISABLED)."""
     return True
 
 
@@ -1027,6 +992,8 @@ def merge_items(db: dict, new_items: list[dict], client) -> int:
         existing_titles.append(raw["_title"])
         added += 1
 
+    # Sort all items by date descending to show today's/freshest news first
+    db["items"].sort(key=lambda x: (x.get("date", ""), x.get("fetched_at", "")), reverse=True)
     # Trim to MAX_ITEMS_DB keeping newest first
     db["items"] = db["items"][:MAX_ITEMS_DB]
     return added
