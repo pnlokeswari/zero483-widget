@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-06-08T16:35:07.415284+00:00",
+  "last_updated": "2026-06-08T19:40:13.049894+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "6fe3f4320f9c",
+      "title": "Baxter Corporation products recall; Blue cap breakage",
+      "date": "2026-06-08",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Baxter Corporation products recall; Blue cap breakage\nSource: Health Canada\nDate: 2026-06-08T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/baxter-corporation-products-recall-blue-cap-breakage",
+      "fetched_at": "2026-06-08T19:40:11.469727+00:00"
+    },
+    {
+      "id": "96811eaf065b",
+      "title": "PMS-Fluconazole 50 mg tablets; Incorrect quantity of tablets",
+      "date": "2026-06-08",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: PMS-Fluconazole 50 mg tablets; Incorrect quantity of tablets\nSource: Health Canada\nDate: 2026-06-08T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/pms-fluconazole-50-mg-tablets-incorrect-quantity-tablets",
+      "fetched_at": "2026-06-08T19:40:06.456517+00:00"
+    },
+    {
+      "id": "28bbba5798ef",
+      "title": "FDA Recalls Gas-X Over-The-Counter Medicine For Potential Coolant Contamination - Fox Rio Grande Valley",
+      "date": "2026-06-08",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: FDA Recalls Gas-X Over-The-Counter Medicine For Potential Coolant Contamination - Fox Rio Grande Valley\nSource: Google News\nDate: Mon, 08 Jun 2026 18:27:35 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRXpNRHZOSVV5bXdlcm51THgwdFVyNXIzUzlUNFRjM0o2WTJ3Znc1YzZnY1M5TWh5NlZOTmhORTFLQ0xzWmNwWWZObXdFQ2Z6MWp3bFMtalNybEYzTjk0X1d2UXJNcUtNNE83ZE5iMGpPNzdEOUM4VXE0WTdNRHQwS0tfNzctUzdEYzVGemI2aXhsVmtMWnVnWm1vWXVMS2c?oc=5",
+      "fetched_at": "2026-06-08T19:39:20.906218+00:00"
+    },
     {
       "id": "0bcff804242f",
       "title": "Drug Shortage: Lisdexamfetamine Dimesylate Capsule",
@@ -565,42 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMnNBMFoxOEU0VHJybm5fbUszSkpkYVphU3l5WFZZTF9GQ2dDYVFUb2xiRm1waV9RaVRMbEpkN05kS2lnV0EtNnFwR0VPbTY1cV9POVdXYVU5RW9KYVRZOEZxVVlwYVA2aFlmckREbGxmY0tUaldBMUZUMDJZS3A5M3VURnRCMWfSAYwBQVVfeXFMT3NNdGhRbGl0aW15WXhZSmJSSjBrNUZzOFFrcERtSTNBYlJPNjNQaC1yb293emdDOEZ6XzVQLUNBLTJWb3oyeGxtbXFGdUI5aEhtWDd4eEZnRC1aRFVnbGhmVTZPcnhDNUpPcWdXQnF2VjhWVWtzSklXckZIcXVyX01hY3V4SmlsMmpPeW4?oc=5",
       "fetched_at": "2026-06-02T14:58:14.941711+00:00"
-    },
-    {
-      "id": "4a72169f0ccb",
-      "title": "FDA Issues Warning Letter to GSC Products for OTC Nasal Spray - Happi | Household And Personal Products Industry",
-      "date": "2026-05-29",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: FDA Issues Warning Letter to GSC Products for OTC Nasal Spray - Happi | Household And Personal Products Industry\nSource: Google News\nDate: Fri, 29 May 2026 13:52:30 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWWtzakJZckI1b2FfVlltSUI4cnAwTU1QdFM4cXhidk1lNlo3YjR1bTJld3ZzOUJVOXBxU1hMaFJFQnFxNDRZUWZTWWcySGxnS3dUTkI2UW9fclNYNExZTGlCbXpsOFdRMllvYW10akNqX3A0WUZuU2MwWFI5Wktrbi1hdTcwZ283aTZDMjEzV3JXSEdrU3FnVHRGWHJfdVk?oc=5",
-      "fetched_at": "2026-06-02T14:57:53.939797+00:00"
-    },
-    {
-      "id": "66293ccae962",
-      "title": "Big Dick Energy! may be harmful due to hidden drug ingredient - fda.gov",
-      "date": "2026-05-29",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "Title: Big Dick Energy! may be harmful due to hidden drug ingredient - fda.gov\nSource: Google News\nDate: Fri, 29 May 2026 00:00:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYmFYdzJQT05oMzEzVU9ONGdIUFB0YzJCYlZQVlJfVk9CbkhrTkpVdGZoOTZYZVBtTHlHalA3eWcycU91RW9NejZkWnRqWDZkdjFSaGNYcHhGUFJvSG45Q21MRXpaa1lraE5xM3BSWFZyUUJUZEVQY2hwbTFpakRha2o3SktBczlJcmUzMlRUTFVrVDdmbWJsYmRDbnVsdmFEMlNXVElOc2UtckkwYkRoN0Q4cXdsR29WMGJJX0tn?oc=5",
-      "fetched_at": "2026-06-02T14:57:48.041440+00:00"
-    },
-    {
-      "id": "dec3801091c9",
-      "title": "FDA Announces Nationwide Gas-X Recall—Thousands of Boxes Affected - Health: Trusted and Empathetic Health and Wellness I",
-      "date": "2026-05-28",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: FDA Announces Nationwide Gas-X Recall—Thousands of Boxes Affected - Health: Trusted and Empathetic Health and Wellness Information\nSource: Google News\nDate: Thu, 28 May 2026 14:37:46 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1lMWlLc041MGxkUEc1MnRXV2tkcVFRb3pJaEpOTmVMQUdyaHlIRGNWRDJhZE9OZnFZX3ZqbERDZ1BfYXhMdFV1Qm5Sbm05WVhtd0lzS3dhSV9BN2dMSG1ZQV90dw?oc=5",
-      "fetched_at": "2026-06-02T14:57:25.764842+00:00"
     }
   ]
 }
