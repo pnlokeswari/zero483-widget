@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-08T19:40:13.049894+00:00",
+  "last_updated": "2026-06-08T22:09:48.844187+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "000f475683c4",
+      "title": "FDA Reports Meeting Year One Goals for Reducing Animal Drug Testing - Spencer Fane",
+      "date": "2026-06-08",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: FDA Reports Meeting Year One Goals for Reducing Animal Drug Testing - Spencer Fane\nSource: Google News\nDate: Mon, 08 Jun 2026 20:26:50 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMXFlbTFmcGNENUpHYnppMElpWExCV0xQb3ZZbmtzTERUXzJLaVFKZnFyN2dOdmZUOG5KdUhPWldoMjVMM3NoRlFqSWNFMVF2UGdwckVzQl80MU1uRS11alA3b3N6MHowWlRzT1FGdjNUMm5ScW9hZ0lnblkwNlBrX1VFRGJRUFpVUU5wWk9TTmllMllfNXMzR0VfZTBfQ2lzWTY0bnBmSQ?oc=5",
+      "fetched_at": "2026-06-08T22:09:45.387624+00:00"
+    },
     {
       "id": "6fe3f4320f9c",
       "title": "Baxter Corporation products recall; Blue cap breakage",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=217379",
       "fetched_at": "2026-06-04T15:35:42.537680+00:00"
-    },
-    {
-      "id": "53ac59f562a0",
-      "title": "Replimune to resubmit twice-rejected drug for approval after FDA shakeup - CNBC",
-      "date": "2026-05-29",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Replimune to resubmit twice-rejected drug for approval after FDA shakeup - CNBC\nSource: Google News\nDate: Fri, 29 May 2026 12:51:06 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMnNBMFoxOEU0VHJybm5fbUszSkpkYVphU3l5WFZZTF9GQ2dDYVFUb2xiRm1waV9RaVRMbEpkN05kS2lnV0EtNnFwR0VPbTY1cV9POVdXYVU5RW9KYVRZOEZxVVlwYVA2aFlmckREbGxmY0tUaldBMUZUMDJZS3A5M3VURnRCMWfSAYwBQVVfeXFMT3NNdGhRbGl0aW15WXhZSmJSSjBrNUZzOFFrcERtSTNBYlJPNjNQaC1yb293emdDOEZ6XzVQLUNBLTJWb3oyeGxtbXFGdUI5aEhtWDd4eEZnRC1aRFVnbGhmVTZPcnhDNUpPcWdXQnF2VjhWVWtzSklXckZIcXVyX01hY3V4SmlsMmpPeW4?oc=5",
-      "fetched_at": "2026-06-02T14:58:14.941711+00:00"
     }
   ]
 }

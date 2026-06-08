@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/fda-reports-meeting-year-one-goals-for-reducing-animal-drug-testing-spencer-fane.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/baxter-corporation-products-recall-blue-cap-breakage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -247,11 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/drug-approval-unknown-product-flex-pharma-llc.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/replimune-to-resubmit-twice-rejected-drug-for-approval-after-fda-shakeup-cnbc.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
