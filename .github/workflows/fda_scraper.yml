@@ -12,10 +12,10 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.10'
 
@@ -28,6 +28,8 @@ jobs:
     - name: Run Python Script
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        FDA_API_KEY: ${{ secrets.FDA_API_KEY }}
       run: |
         python fda_news_processor.py
 
@@ -35,7 +37,8 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add news_database.json widget_ready_for_zoho.html citizen_ready.html feed.xml index.html citizen.html || echo "Some files not found, staging what is present"
+        git add news_database.json widget_ready_for_zoho.html citizen_ready.html feed.xml index.html citizen.html || echo "Some files not found"
+        git add alerts/*.html || echo "Staging individual alerts"
         git add *.html *.json *.xml || echo "Staging catch-all"
-        git commit -m "Auto-update FDA news database and widgets [skip ci]" || echo "No changes to commit"
+        git commit -m "Auto-update FDA news database, widgets, and SEO pages" || echo "No changes to commit"
         git push
