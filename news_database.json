@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-06-09T12:21:57.263343+00:00",
+  "last_updated": "2026-06-09T15:38:13.944385+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "5be87f87608f",
+      "title": "Longeveron Inc. Awarded SME Status by European Medicines Agency, Enhancing Drug Development Opportunities - Quiver Quant",
+      "date": "2026-06-09",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: Longeveron Inc. Awarded SME Status by European Medicines Agency, Enhancing Drug Development Opportunities - Quiver Quantitative\nSource: European Medicines Agency\nDate: Tue, 09 Jun 2026 13:30:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNjItTlNsSWM2VnNTWHpWQkRRYkh4czFBb2JxSFpVVmVRY0p3ZlF2MnNGbDZPSWtWaGZFQ3g5bl9pX3MybkhkaVlkYkprcEUtX3hjbGtCNl9xclo1dExzWTZVaHFvWDZnSDl5VGxXb2I3NkhKVnJsVjZUVDlhZDVsQ3FtRnFfQU10QkxmeWkxZGR6MlY5Qk84cUIyXzM5SzJqZjU4Sm9zYi1QaDdCbG1MX1dHUmxmamZMaFgwQ3hiM0pzMDBJNFQ3cU83VnNrNzhLTFNobTRWbw?oc=5",
+      "fetched_at": "2026-06-09T15:38:12.958264+00:00"
+    },
+    {
+      "id": "1fa44edb03de",
+      "title": "Guedel Airway",
+      "date": "2026-06-09",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Guedel Airway\nSource: Health Canada\nDate: 2026-06-09T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/guedel-airway-0",
+      "fetched_at": "2026-06-09T15:38:07.468447+00:00"
+    },
     {
       "id": "436eae5e0aee",
       "title": "Drug Shortage: Cromolyn Sodium Concentrate",
@@ -577,30 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPV0owLTlWbmY2UlhKYm9YMEJ6X2tMRG5Bc1dVR1p5STRVMExZalRHdlRPdlY1eTlVbXZYeFdQM3JMaTBLcUVNRE1LbDRQZS1NQWJRNmpsTG5zWF9lMU04ZnlON2VrMC1oUkFoczlxMEJqWElUZEt3M1VSLWJHVVVhODM5UEV5SmZOTlRwRE53OVo2NFRPNnhOdXJKQXFHWE1xa0RfZE55RWVweWpGNTI0LWNKNGQ0MjNDWVYteXFJY2k?oc=5",
       "fetched_at": "2026-06-07T14:15:21.106321+00:00"
-    },
-    {
-      "id": "4ff8a1b18d85",
-      "title": "Fulcrum scraps SCD program, considers options after FDA takes hard line on safety risks - Fierce Biotech",
-      "date": "2026-06-02",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "Title: Fulcrum scraps SCD program, considers options after FDA takes hard line on safety risks - Fierce Biotech\nSource: Google News\nDate: Tue, 02 Jun 2026 12:46:52 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQmRRMnZKTGtPdmQtRHdOR1RkZ3dOdnRUamNvWlk3NndqQUdJaUJXeEQ1WlRzQm56bTdOX2JRZUVXQnFVc1RUMDd4cUlXRURsUk9lc0x3aEw1dGhuTVo1OEhjUkVDY3g0cDJRZFdjbnFZVFFCcWJlRkZESkczT2h6VkEzbnByQlliU2N0M0N1WDF4ZG9SZzhjQ1o0czVSczFrMTJaZGxOM1hEbjRZV3J1R3ktLUhIS3dxU2N5OE1B?oc=5",
-      "fetched_at": "2026-06-07T14:14:49.538650+00:00"
-    },
-    {
-      "id": "f806d9d303ef",
-      "title": "Telehealth booms as demand for GLP-1s surges and questions mount about safety, oversight - The Lund Report",
-      "date": "2026-06-02",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "Title: Telehealth booms as demand for GLP-1s surges and questions mount about safety, oversight - The Lund Report\nSource: Google News\nDate: Tue, 02 Jun 2026 20:28:43 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPOTlPT2dkOE45dGE3NGdrVno1el9WdkdydS0xQnFlUHN6WTNIS3QyelpOVDRXT2E5LTBQSDAxUEZTWWlNUmpFTGE1S2ZvcDUxanZjSFoyX2Rtd19CNEtRQUVlanBySmJ3U2prdGR5NnZxTS1sT3hiLUlRSW1CZ3NZUV9aMUVlSGdYVEtoaDVhUVRqdDFnNHcya1hTSnJnUE5ncVA4blh6NVczR2hfbDBkZjlocXFiZW1jaEE?oc=5",
-      "fetched_at": "2026-06-07T14:14:44.522444+00:00"
     }
   ]
 }

@@ -6,6 +6,16 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/longeveron-inc-awarded-sme-status-by-european-medicines-agency-enhancing-drug-development-opportunities-quiver-quant.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/guedel-airway.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/drug-shortage-cromolyn-sodium-concentrate.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -242,16 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/study-fda-approves-more-orphan-drugs-with-specific-cancer-pediatric-indications-over-ema-raps-org.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/fulcrum-scraps-scd-program-considers-options-after-fda-takes-hard-line-on-safety-risks-fierce-biotech.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/telehealth-booms-as-demand-for-glp-1s-surges-and-questions-mount-about-safety-oversight-the-lund-report.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
