@@ -6,6 +6,31 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/drug-shortage-cromolyn-sodium-concentrate.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/drug-shortage-technetium-tc-99m-pyrophosphate-kit-injection.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/drug-shortage-amphetamine-aspartate-monohydrate-amphetamine-sulfate-dextroamphetamine-saccha.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/bacteria-found-in-target-baby-wipes-could-be-life-threatening-to-infants-recall-underway-los-angeles-times.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/gas-x-capsules-recalled-over-potential-chemical-contamination-due-to-leaky-machine-fda-fox-business.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/fda-reports-meeting-year-one-goals-for-reducing-animal-drug-testing-spencer-fane.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -102,6 +127,16 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/the-fda-amendments-act-and-drug-safety-where-are-we-twenty-years-later-health-affairs.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/drug-approval-dalbavancin-hydrochloride-be-pharms.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/drug-approval-unknown-product-msn-pharmaceuticals-inc.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -217,41 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/telehealth-booms-as-demand-for-glp-1s-surges-and-questions-mount-about-safety-oversight-the-lund-report.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/exclusive-fda-issues-industry-friendly-gene-therapy-guidance-axios.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/fda-final-guidance-on-developing-drugs-for-pulmonary-tuberculosis-the-pharma-letter.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/cdsco-clears-wockhardt-s-homegrown-antibiotic-zaynich-as-does-us-fda-the-pharma-letter.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/fda-oncology-draft-guidance-aims-to-reduce-animal-testing-raps-org.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/salmonella-outbreak-linked-to-supplements-sickens-people-in-connecticut-fda-says-news-times.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/drug-approval-zaynich-wockhardt-bio-ag.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/drug-approval-unknown-product-flex-pharma-llc.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
