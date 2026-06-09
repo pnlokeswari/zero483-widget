@@ -1,7 +1,115 @@
 {
-  "last_updated": "2026-06-08T15:51:47.299669+00:00",
+  "last_updated": "2026-06-09T16:09:11.524415+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "ded51767d77d",
+      "title": "THX Pharma (Theranexus) and Exeltis secure EMA approval of the paediatric investigation plan (PIP) for TX01,… - ActusNew",
+      "date": "2026-06-09",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: THX Pharma (Theranexus) and Exeltis secure EMA approval of the paediatric investigation plan (PIP) for TX01,… - ActusNews.com\nSource: European Medicines Agency\nDate: Tue, 09 Jun 2026 16:00:25 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQMUtEc3lCbVNGOUlTNzZfSWtCTnBlRnZZOVU4dE5VNGNBSjRHZVJxeHpLTFdjc1IxQ2plbnRsekt6MlU2RHNkb0VMMTVLTTh6T3pTYmw2X1dCTEVpenZXUDE5ZzR3QTRUdTRKR0VGTVIyTEV6Q2xkMXZPMm1BUlBiU2hLckVVdGtzeTBxMUpOcG1UV3JuS05ZOWdxamIwNE9EVnFRTVB2TEk2Q0ZBYWNtLTR3LUVDOFFkUFZBenV3eU52Z2l4d3Z5cHlweTVjVVlyMlJ2YW1HbWcyNS1ILXFlb3ptd3Y5QTBoUjhyVDJvc25VTVdjcW5QV3g3R3ZIUl82MmVmQXUta9IBjAJBVV95cUxQRGFiLVVya2FIVW45RW5kYjk1TXlkcW9PTnk5YWZtWkd0WnNXdVJuX3NkS3lJY2xsMS1HX0pwaHloU1JRWHNpdlc4N3NfbkQ0cUlIZHNUUmFid1dHOHRKVUZaQnVLblNMWGx6ZGxaMDU3ZjV2aVNqalRtd2Z3X2NiQmpqaVpZVmRCVndfSjBDUGFxRXhncGZsNVJLcXVXUWRCazVSN1VSUXVSemYzb3ZJenJfYlp2N3NuMVp6WE9zQmtyUGM1UzZRNnd6WXIxVnpyS2s2eHRLYktHam5iYm9IbWd5R25Pa3VrVXpCc0FBcHJPcW00M2c1WTJhVkRVV1g0MFVKMWV2V2Z3ampZ?oc=5",
+      "fetched_at": "2026-06-09T16:09:10.610063+00:00"
+    },
+    {
+      "id": "5be87f87608f",
+      "title": "Longeveron Inc. Awarded SME Status by European Medicines Agency, Enhancing Drug Development Opportunities - Quiver Quant",
+      "date": "2026-06-09",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: Longeveron Inc. Awarded SME Status by European Medicines Agency, Enhancing Drug Development Opportunities - Quiver Quantitative\nSource: European Medicines Agency\nDate: Tue, 09 Jun 2026 13:30:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNjItTlNsSWM2VnNTWHpWQkRRYkh4czFBb2JxSFpVVmVRY0p3ZlF2MnNGbDZPSWtWaGZFQ3g5bl9pX3MybkhkaVlkYkprcEUtX3hjbGtCNl9xclo1dExzWTZVaHFvWDZnSDl5VGxXb2I3NkhKVnJsVjZUVDlhZDVsQ3FtRnFfQU10QkxmeWkxZGR6MlY5Qk84cUIyXzM5SzJqZjU4Sm9zYi1QaDdCbG1MX1dHUmxmamZMaFgwQ3hiM0pzMDBJNFQ3cU83VnNrNzhLTFNobTRWbw?oc=5",
+      "fetched_at": "2026-06-09T16:09:05.586907+00:00"
+    },
+    {
+      "id": "6fe3f4320f9c",
+      "title": "Baxter Corporation products recall; Blue cap breakage",
+      "date": "2026-06-09",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Baxter Corporation products recall; Blue cap breakage\nSource: Health Canada\nDate: 2026-06-08T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/baxter-corporation-products-recall-blue-cap-breakage",
+      "fetched_at": "2026-06-09T16:09:00.064585+00:00"
+    },
+    {
+      "id": "96811eaf065b",
+      "title": "PMS-Fluconazole 50 mg tablets; Incorrect quantity of tablets",
+      "date": "2026-06-09",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: PMS-Fluconazole 50 mg tablets; Incorrect quantity of tablets\nSource: Health Canada\nDate: 2026-06-08T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/pms-fluconazole-50-mg-tablets-incorrect-quantity-tablets",
+      "fetched_at": "2026-06-09T16:08:55.051072+00:00"
+    },
+    {
+      "id": "1fa44edb03de",
+      "title": "Guedel Airway",
+      "date": "2026-06-09",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Guedel Airway\nSource: Health Canada\nDate: 2026-06-09T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/guedel-airway-0",
+      "fetched_at": "2026-06-09T16:08:50.036475+00:00"
+    },
+    {
+      "id": "436eae5e0aee",
+      "title": "Drug Shortage: Cromolyn Sodium Concentrate",
+      "date": "2026-06-09",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Generic name: Cromolyn Sodium Concentrate\nBrand name: N/A\nStatus: Current\nPresentations: []",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/search?q=FDA+Shortage+Cromolyn+Sodium+Concentrate",
+      "fetched_at": "2026-06-09T16:07:56.852940+00:00"
+    },
+    {
+      "id": "fdb51e207a51",
+      "title": "Drug Shortage: Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccha",
+      "date": "2026-06-09",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Generic name: Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate Tablet\nBrand name: N/A\nStatus: Current\nPresentations: []",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/search?q=FDA+Shortage+Amphetamine+Aspartate+Monohydrate%2C+Amphetamine+Sulfate%2C+Dextroamphetamine+Saccharate%2C+Dextroamphetamine+Sulfate+Tablet",
+      "fetched_at": "2026-06-09T16:07:51.839730+00:00"
+    },
+    {
+      "id": "000f475683c4",
+      "title": "FDA Reports Meeting Year One Goals for Reducing Animal Drug Testing - Spencer Fane",
+      "date": "2026-06-08",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: FDA Reports Meeting Year One Goals for Reducing Animal Drug Testing - Spencer Fane\nSource: Google News\nDate: Mon, 08 Jun 2026 21:06:57 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMXFlbTFmcGNENUpHYnppMElpWExCV0xQb3ZZbmtzTERUXzJLaVFKZnFyN2dOdmZUOG5KdUhPWldoMjVMM3NoRlFqSWNFMVF2UGdwckVzQl80MU1uRS11alA3b3N6MHowWlRzT1FGdjNUMm5ScW9hZ0lnblkwNlBrX1VFRGJRUFpVUU5wWk9TTmllMllfNXMzR0VfZTBfQ2lzWTY0bnBmSQ?oc=5",
+      "fetched_at": "2026-06-09T16:08:44.915384+00:00"
+    },
+    {
+      "id": "28bbba5798ef",
+      "title": "FDA Recalls Gas-X Over-The-Counter Medicine For Potential Coolant Contamination - Fox Rio Grande Valley",
+      "date": "2026-06-08",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: FDA Recalls Gas-X Over-The-Counter Medicine For Potential Coolant Contamination - Fox Rio Grande Valley\nSource: Google News\nDate: Mon, 08 Jun 2026 18:27:35 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRXpNRHZOSVV5bXdlcm51THgwdFVyNXIzUzlUNFRjM0o2WTJ3Znc1YzZnY1M5TWh5NlZOTmhORTFLQ0xzWmNwWWZObXdFQ2Z6MWp3bFMtalNybEYzTjk0X1d2UXJNcUtNNE83ZE5iMGpPNzdEOUM4VXE0WTdNRHQwS0tfNzctUzdEYzVGemI2aXhsVmtMWnVnWm1vWXVMS2c?oc=5",
+      "fetched_at": "2026-06-09T16:07:46.620748+00:00"
+    },
     {
       "id": "0bcff804242f",
       "title": "Drug Shortage: Lisdexamfetamine Dimesylate Capsule",
@@ -193,6 +301,18 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZ0Q3ajRfZWNiTlpPS1FORUdwRlIwTTN4a0ZVZWZ1b0pnNjZjVzdoTWc2UnpoYTVyVzFLZERaSVVHbUJsN3Vqamw5SW1yRmdObnZFd3RvQktVa1JOR2ttR2tfdGxaeEtEZWxQNEw4Q2hNWFB5MUFxVDB3Z3ZQa0lfX3RSaDZ2MlhJRnZvZk9wb3o0clliNFAzQVNDcTBGWTdjSnNQZ0Z1RQ?oc=5",
       "fetched_at": "2026-06-06T02:28:23.477226+00:00"
+    },
+    {
+      "id": "adf74a9f4498",
+      "title": "Drug Approval: DALBAVANCIN HYDROCHLORIDE - BE PHARMS",
+      "date": "2026-06-04",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Application: ANDA219604\nSponsor: BE PHARMS\nProduct: DALBAVANCIN HYDROCHLORIDE\nSubmission type: ORIG\nSubmission class: N/A\nStatus: AP\nStatus date: 20260604",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219604",
+      "fetched_at": "2026-06-09T16:08:07.618299+00:00"
     },
     {
       "id": "1e668436402c",
@@ -481,126 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8zS1REd3F4bmZ4ZlU3bHpUVkFiVklva05XbEtJTkhyR2ZUeTk0ZncyNld0aGJyWW5GWE9OZVZfMHhlb3RFY09Lbnl2NVFCSU8zaTFSajFWckRmeEtRcWVRYkgxaDdCM1daOWF6RkF5MGF6Q3Jq?oc=5",
       "fetched_at": "2026-06-03T01:28:44.279672+00:00"
-    },
-    {
-      "id": "8ffaab45e1b9",
-      "title": "FDA final guidance on developing drugs for pulmonary tuberculosis - The Pharma Letter",
-      "date": "2026-06-02",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: FDA final guidance on developing drugs for pulmonary tuberculosis - The Pharma Letter\nSource: Google News\nDate: Tue, 02 Jun 2026 10:29:30 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOc0k4cDRaYnhUcDVJaFNuUGU4MmNTdHVmZWFubU9KbC1VQWZkdnFRM1QxSEZYOW1EWWpqcmFrQllGVW00UzRwQXNqMjk3QkpFdTM0b2hPNlhhM001SVhoVUwwLXdkbHlEUUs1M0NjaTVqSk1TOXlvY1VYT1lvWmp5bzdWRm5PY0hPSmg5N3kyaHpyUkc2RHUwcjU1bUI5M2t6WWFhT1dOWVFnUDNfUkE?oc=5",
-      "fetched_at": "2026-06-02T14:57:59.904231+00:00"
-    },
-    {
-      "id": "ba1f58409001",
-      "title": "CDSCO clears Wockhardt’s homegrown antibiotic Zaynich, as does US FDA - The Pharma Letter",
-      "date": "2026-06-01",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Title: CDSCO clears Wockhardt’s homegrown antibiotic Zaynich, as does US FDA - The Pharma Letter\nSource: CDSCO India\nDate: Mon, 01 Jun 2026 08:28:29 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcDlycFZyYy1tNG9rZFBkdnJtM05LX3hOdFdxZ0ptOU9YY0JVcU8tVF9fa18zR2NSc29XYTVZWHdKUXBnUWItQmVjdkdmX1E3TFJ0YkdIZW9PUTJBZUEzbndCYUlDaUtkdGM2T2pZczJzOFRFR1d3YXI5RVpLTGdRS3VVUEI4Nkp2bnk4bGo0VWdqdUVmYXZoZTVld05PTVBWRGdIQUZWTzJJQlZpRGN4Ty1R?oc=5",
-      "fetched_at": "2026-06-07T14:15:33.465766+00:00"
-    },
-    {
-      "id": "c8b9f72a4fd1",
-      "title": "FDA oncology draft guidance aims to reduce animal testing - RAPS.org",
-      "date": "2026-06-01",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: FDA oncology draft guidance aims to reduce animal testing - RAPS.org\nSource: Google News\nDate: Mon, 01 Jun 2026 19:28:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZ1VGSVlzQjBEckN5bktrcUxLay0zT1JFRFRneGR1VmxDQVRTUG9CWm9MUWVQQzRFOTliQ1dGZUdYU2liZGRBVmh2eUZQS3VGUjFrRlBrUTJrOUZtUmVIZXI0US1OVWJpV3RsUm9HdVF3SzNyak9RdmNmanVNQkphNkxTdUZsSHJWWmJuX0pNSlZQUGdWM1pJ?oc=5",
-      "fetched_at": "2026-06-02T14:58:04.914513+00:00"
-    },
-    {
-      "id": "8ec445bdce95",
-      "title": "Salmonella outbreak linked to supplements sickens people in Connecticut, FDA says - News-Times",
-      "date": "2026-05-30",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Salmonella outbreak linked to supplements sickens people in Connecticut, FDA says - News-Times\nSource: Google News\nDate: Sat, 30 May 2026 22:34:42 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTS0zaGE5ZU1fWlBjYkpJWENWVzV5b3JPNkloLWJDb29jU0xLLXhhVlljdkExeV9ZaHJlcTFrNS1PTGhZOHVnWXF5V29BU1JzdzVhMldJanRaaU85bm10Y3ZWSE1CbktHam9kemxzTzdScE54Q3ZmMmFUU2o1enVycDQ3TTFqYnhfWnhIOXBNU1hYdVpaSEJtak5zczl5VVE?oc=5",
-      "fetched_at": "2026-06-02T14:57:35.787095+00:00"
-    },
-    {
-      "id": "c02cd178fea9",
-      "title": "Drug Approval: ZAYNICH - WOCKHARDT BIO AG",
-      "date": "2026-05-29",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Application: NDA220787\nSponsor: WOCKHARDT BIO AG\nProduct: ZAYNICH\nSubmission type: ORIG\nSubmission class: Type 1 - New Molecular Entity and Type 4 - New Combination\nStatus: AP\nStatus date: 20260529",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220787",
-      "fetched_at": "2026-06-05T01:38:06.132563+00:00"
-    },
-    {
-      "id": "b9c2ceecfff4",
-      "title": "Drug Approval: Unknown product - FLEX PHARMA, LLC",
-      "date": "2026-05-29",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Application: NDA217379\nSponsor: FLEX PHARMA, LLC\nProduct: Unknown product\nSubmission type: ORIG\nSubmission class: Type 5 - New Formulation or New Manufacturer\nStatus: AP\nStatus date: 20260529",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=217379",
-      "fetched_at": "2026-06-04T15:35:42.537680+00:00"
-    },
-    {
-      "id": "53ac59f562a0",
-      "title": "Replimune to resubmit twice-rejected drug for approval after FDA shakeup - CNBC",
-      "date": "2026-05-29",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Replimune to resubmit twice-rejected drug for approval after FDA shakeup - CNBC\nSource: Google News\nDate: Fri, 29 May 2026 12:51:06 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMnNBMFoxOEU0VHJybm5fbUszSkpkYVphU3l5WFZZTF9GQ2dDYVFUb2xiRm1waV9RaVRMbEpkN05kS2lnV0EtNnFwR0VPbTY1cV9POVdXYVU5RW9KYVRZOEZxVVlwYVA2aFlmckREbGxmY0tUaldBMUZUMDJZS3A5M3VURnRCMWfSAYwBQVVfeXFMT3NNdGhRbGl0aW15WXhZSmJSSjBrNUZzOFFrcERtSTNBYlJPNjNQaC1yb293emdDOEZ6XzVQLUNBLTJWb3oyeGxtbXFGdUI5aEhtWDd4eEZnRC1aRFVnbGhmVTZPcnhDNUpPcWdXQnF2VjhWVWtzSklXckZIcXVyX01hY3V4SmlsMmpPeW4?oc=5",
-      "fetched_at": "2026-06-02T14:58:14.941711+00:00"
-    },
-    {
-      "id": "4a72169f0ccb",
-      "title": "FDA Issues Warning Letter to GSC Products for OTC Nasal Spray - Happi | Household And Personal Products Industry",
-      "date": "2026-05-29",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: FDA Issues Warning Letter to GSC Products for OTC Nasal Spray - Happi | Household And Personal Products Industry\nSource: Google News\nDate: Fri, 29 May 2026 13:52:30 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWWtzakJZckI1b2FfVlltSUI4cnAwTU1QdFM4cXhidk1lNlo3YjR1bTJld3ZzOUJVOXBxU1hMaFJFQnFxNDRZUWZTWWcySGxnS3dUTkI2UW9fclNYNExZTGlCbXpsOFdRMllvYW10akNqX3A0WUZuU2MwWFI5Wktrbi1hdTcwZ283aTZDMjEzV3JXSEdrU3FnVHRGWHJfdVk?oc=5",
-      "fetched_at": "2026-06-02T14:57:53.939797+00:00"
-    },
-    {
-      "id": "66293ccae962",
-      "title": "Big Dick Energy! may be harmful due to hidden drug ingredient - fda.gov",
-      "date": "2026-05-29",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "Title: Big Dick Energy! may be harmful due to hidden drug ingredient - fda.gov\nSource: Google News\nDate: Fri, 29 May 2026 00:00:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYmFYdzJQT05oMzEzVU9ONGdIUFB0YzJCYlZQVlJfVk9CbkhrTkpVdGZoOTZYZVBtTHlHalA3eWcycU91RW9NejZkWnRqWDZkdjFSaGNYcHhGUFJvSG45Q21MRXpaa1lraE5xM3BSWFZyUUJUZEVQY2hwbTFpakRha2o3SktBczlJcmUzMlRUTFVrVDdmbWJsYmRDbnVsdmFEMlNXVElOc2UtckkwYkRoN0Q4cXdsR29WMGJJX0tn?oc=5",
-      "fetched_at": "2026-06-02T14:57:48.041440+00:00"
-    },
-    {
-      "id": "dec3801091c9",
-      "title": "FDA Announces Nationwide Gas-X Recall—Thousands of Boxes Affected - Health: Trusted and Empathetic Health and Wellness I",
-      "date": "2026-05-28",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: FDA Announces Nationwide Gas-X Recall—Thousands of Boxes Affected - Health: Trusted and Empathetic Health and Wellness Information\nSource: Google News\nDate: Thu, 28 May 2026 14:37:46 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1lMWlLc041MGxkUEc1MnRXV2tkcVFRb3pJaEpOTmVMQUdyaHlIRGNWRDJhZE9OZnFZX3ZqbERDZ1BfYXhMdFV1Qm5Sbm05WVhtd0lzS3dhSV9BN2dMSG1ZQV90dw?oc=5",
-      "fetched_at": "2026-06-02T14:57:25.764842+00:00"
     }
   ]
 }
