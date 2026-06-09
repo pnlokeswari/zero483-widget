@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-09T20:30:33.081066+00:00",
+  "last_updated": "2026-06-09T22:09:10.896819+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "a295ec69147b",
+      "title": "Pharma groups say SUPAC guidelines should be updated, better aligned with ICH - RAPS.org",
+      "date": "2026-06-09",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: Pharma groups say SUPAC guidelines should be updated, better aligned with ICH - RAPS.org\nSource: Google News\nDate: Tue, 09 Jun 2026 21:07:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTjZacm0zTHppS2VUSWpIZlVWTkNNbllIc1VBeG5nUGFxVk5uZ2Y1VHlSOTh5VnIyMlVEeFE0NFJUVklyaWN2Q21mT25FdmhocU9CY3UydzlPYTg0RWc4SUFhbFVWYjE1NmNpUTI1aWlNR05xMngwVzM1MThkaVhUVjAtVndiZV9ONDhzdndwNlZMU0x0eDJuS2ZQUWpHOVlsR1NsZXRhUGZSblpBYkgwMg?oc=5",
+      "fetched_at": "2026-06-09T22:09:09.116408+00:00"
+    },
     {
       "id": "b9d1f2a4dc93",
       "title": "Report: How Drug Discontinuations Surged Despite Shortage Numbers Declining - Pharmaceutical Commerce",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPV0owLTlWbmY2UlhKYm9YMEJ6X2tMRG5Bc1dVR1p5STRVMExZalRHdlRPdlY1eTlVbXZYeFdQM3JMaTBLcUVNRE1LbDRQZS1NQWJRNmpsTG5zWF9lMU04ZnlON2VrMC1oUkFoczlxMEJqWElUZEt3M1VSLWJHVVVhODM5UEV5SmZOTlRwRE53OVo2NFRPNnhOdXJKQXFHWE1xa0RfZE55RWVweWpGNTI0LWNKNGQ0MjNDWVYteXFJY2k?oc=5",
       "fetched_at": "2026-06-07T14:15:21.106321+00:00"
-    },
-    {
-      "id": "4ff8a1b18d85",
-      "title": "Fulcrum scraps SCD program, considers options after FDA takes hard line on safety risks - Fierce Biotech",
-      "date": "2026-06-02",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "Title: Fulcrum scraps SCD program, considers options after FDA takes hard line on safety risks - Fierce Biotech\nSource: Google News\nDate: Tue, 02 Jun 2026 12:46:52 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQmRRMnZKTGtPdmQtRHdOR1RkZ3dOdnRUamNvWlk3NndqQUdJaUJXeEQ1WlRzQm56bTdOX2JRZUVXQnFVc1RUMDd4cUlXRURsUk9lc0x3aEw1dGhuTVo1OEhjUkVDY3g0cDJRZFdjbnFZVFFCcWJlRkZESkczT2h6VkEzbnByQlliU2N0M0N1WDF4ZG9SZzhjQ1o0czVSczFrMTJaZGxOM1hEbjRZV3J1R3ktLUhIS3dxU2N5OE1B?oc=5",
-      "fetched_at": "2026-06-07T14:14:49.538650+00:00"
     }
   ]
 }
