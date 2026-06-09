@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-09T18:30:22.497706+00:00",
+  "last_updated": "2026-06-09T20:30:33.081066+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "b9d1f2a4dc93",
+      "title": "Report: How Drug Discontinuations Surged Despite Shortage Numbers Declining - Pharmaceutical Commerce",
+      "date": "2026-06-09",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Title: Report: How Drug Discontinuations Surged Despite Shortage Numbers Declining - Pharmaceutical Commerce\nSource: Google News\nDate: Tue, 09 Jun 2026 16:57:11 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTUtpTmh4UFNKMlJFUmxHWkxjNU1ULVBING4tQjBfZmpTS184M01OV2NhV1MwOTlyOEFsZU1DVFkyXy1LWlpOaG1Ic3IzZ01ObTFRNkp1MFhGR1NfODBGWllfYjdsQWFZdXNlaUduVjBYd0Z4djRCZEZSUXJOeENwOTVNcXllWk1jdjdhVGlqVnJobVA2Q09GeVBJYUp1VHZlWURvR2l0Z3Z0TE9jV0J0VQ?oc=5",
+      "fetched_at": "2026-06-09T20:29:51.855222+00:00"
+    },
     {
       "id": "ded51767d77d",
       "title": "THX Pharma (Theranexus) and Exeltis secure EMA approval of the paediatric investigation plan (PIP) for TX01,… - ActusNew",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQmRRMnZKTGtPdmQtRHdOR1RkZ3dOdnRUamNvWlk3NndqQUdJaUJXeEQ1WlRzQm56bTdOX2JRZUVXQnFVc1RUMDd4cUlXRURsUk9lc0x3aEw1dGhuTVo1OEhjUkVDY3g0cDJRZFdjbnFZVFFCcWJlRkZESkczT2h6VkEzbnByQlliU2N0M0N1WDF4ZG9SZzhjQ1o0czVSczFrMTJaZGxOM1hEbjRZV3J1R3ktLUhIS3dxU2N5OE1B?oc=5",
       "fetched_at": "2026-06-07T14:14:49.538650+00:00"
-    },
-    {
-      "id": "f806d9d303ef",
-      "title": "Telehealth booms as demand for GLP-1s surges and questions mount about safety, oversight - The Lund Report",
-      "date": "2026-06-02",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "Title: Telehealth booms as demand for GLP-1s surges and questions mount about safety, oversight - The Lund Report\nSource: Google News\nDate: Tue, 02 Jun 2026 20:28:43 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPOTlPT2dkOE45dGE3NGdrVno1el9WdkdydS0xQnFlUHN6WTNIS3QyelpOVDRXT2E5LTBQSDAxUEZTWWlNUmpFTGE1S2ZvcDUxanZjSFoyX2Rtd19CNEtRQUVlanBySmJ3U2prdGR5NnZxTS1sT3hiLUlRSW1CZ3NZUV9aMUVlSGdYVEtoaDVhUVRqdDFnNHcya1hTSnJnUE5ncVA4blh6NVczR2hfbDBkZjlocXFiZW1jaEE?oc=5",
-      "fetched_at": "2026-06-07T14:14:44.522444+00:00"
     }
   ]
 }
