@@ -131,6 +131,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/drug-approval-unknown-product-msn-pharmaceuticals-inc.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/drug-approval-dalbavancin-hydrochloride-be-pharms.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -247,11 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/telehealth-booms-as-demand-for-glp-1s-surges-and-questions-mount-about-safety-oversight-the-lund-report.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/exclusive-fda-issues-industry-friendly-gene-therapy-guidance-axios.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

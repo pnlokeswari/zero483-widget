@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T16:09:11.524415+00:00",
+  "last_updated": "2026-06-09T18:30:22.497706+00:00",
   "total_items": 50,
   "items": [
     {
@@ -303,6 +303,18 @@
       "fetched_at": "2026-06-06T02:28:23.477226+00:00"
     },
     {
+      "id": "0c65d8898758",
+      "title": "Drug Approval: Unknown product - MSN PHARMACEUTICALS INC",
+      "date": "2026-06-04",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Application: ANDA213703\nSponsor: MSN PHARMACEUTICALS INC\nProduct: Unknown product\nSubmission type: ORIG\nSubmission class: N/A\nStatus: AP\nStatus date: 20260604",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213703",
+      "fetched_at": "2026-06-09T18:29:51.853821+00:00"
+    },
+    {
       "id": "adf74a9f4498",
       "title": "Drug Approval: DALBAVANCIN HYDROCHLORIDE - BE PHARMS",
       "date": "2026-06-04",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPOTlPT2dkOE45dGE3NGdrVno1el9WdkdydS0xQnFlUHN6WTNIS3QyelpOVDRXT2E5LTBQSDAxUEZTWWlNUmpFTGE1S2ZvcDUxanZjSFoyX2Rtd19CNEtRQUVlanBySmJ3U2prdGR5NnZxTS1sT3hiLUlRSW1CZ3NZUV9aMUVlSGdYVEtoaDVhUVRqdDFnNHcya1hTSnJnUE5ncVA4blh6NVczR2hfbDBkZjlocXFiZW1jaEE?oc=5",
       "fetched_at": "2026-06-07T14:14:44.522444+00:00"
-    },
-    {
-      "id": "6b45defa5c82",
-      "title": "Exclusive: FDA issues industry-friendly gene therapy guidance - Axios",
-      "date": "2026-06-02",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Exclusive: FDA issues industry-friendly gene therapy guidance - Axios\nSource: Google News\nDate: Tue, 02 Jun 2026 10:51:17 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8zS1REd3F4bmZ4ZlU3bHpUVkFiVklva05XbEtJTkhyR2ZUeTk0ZncyNld0aGJyWW5GWE9OZVZfMHhlb3RFY09Lbnl2NVFCSU8zaTFSajFWckRmeEtRcWVRYkgxaDdCM1daOWF6RkF5MGF6Q3Jq?oc=5",
-      "fetched_at": "2026-06-03T01:28:44.279672+00:00"
     }
   ]
 }
