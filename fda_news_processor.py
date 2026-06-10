@@ -930,8 +930,8 @@ Text: {raw_text[:1000]}
 
 
 def is_pharma_relevant(title: str, raw_text: str, client=None) -> bool:
-    """Filter out non-pharmaceutical/non-medical device news (TEMPORARILY DISABLED)."""
-    return True
+    """Filter out non-pharmaceutical/non-medical device news."""
+    return ai_verify_pharma_relevance(client, title, raw_text)
 
 
 def is_duplicate_title(new_title: str, existing_titles: list, threshold: float = 0.65) -> bool:
