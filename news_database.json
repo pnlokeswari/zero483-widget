@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-10T04:58:00.992718+00:00",
+  "last_updated": "2026-06-10T09:05:09.339179+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "b456eb0a8e4f",
+      "title": "Drug Shortage: Carboplatin Injection",
+      "date": "2026-06-10",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Generic name: Carboplatin Injection\nBrand name: N/A\nStatus: Current\nPresentations: []",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/search?q=FDA+Shortage+Carboplatin+Injection",
+      "fetched_at": "2026-06-10T09:04:19.655010+00:00"
+    },
     {
       "id": "6fe3f4320f9c",
       "title": "Baxter Corporation products recall; Blue cap breakage",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8zS1REd3F4bmZ4ZlU3bHpUVkFiVklva05XbEtJTkhyR2ZUeTk0ZncyNld0aGJyWW5GWE9OZVZfMHhlb3RFY09Lbnl2NVFCSU8zaTFSajFWckRmeEtRcWVRYkgxaDdCM1daOWF6RkF5MGF6Q3Jq?oc=5",
       "fetched_at": "2026-06-03T01:28:44.279672+00:00"
-    },
-    {
-      "id": "8ffaab45e1b9",
-      "title": "FDA final guidance on developing drugs for pulmonary tuberculosis - The Pharma Letter",
-      "date": "2026-06-02",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: FDA final guidance on developing drugs for pulmonary tuberculosis - The Pharma Letter\nSource: Google News\nDate: Tue, 02 Jun 2026 10:29:30 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOc0k4cDRaYnhUcDVJaFNuUGU4MmNTdHVmZWFubU9KbC1VQWZkdnFRM1QxSEZYOW1EWWpqcmFrQllGVW00UzRwQXNqMjk3QkpFdTM0b2hPNlhhM001SVhoVUwwLXdkbHlEUUs1M0NjaTVqSk1TOXlvY1VYT1lvWmp5bzdWRm5PY0hPSmg5N3kyaHpyUkc2RHUwcjU1bUI5M2t6WWFhT1dOWVFnUDNfUkE?oc=5",
-      "fetched_at": "2026-06-02T14:57:59.904231+00:00"
     }
   ]
 }

@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/drug-shortage-carboplatin-injection.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/baxter-corporation-products-recall-blue-cap-breakage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -247,11 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/exclusive-fda-issues-industry-friendly-gene-therapy-guidance-axios.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/fda-final-guidance-on-developing-drugs-for-pulmonary-tuberculosis-the-pharma-letter.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
