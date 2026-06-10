@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-10T19:53:19.840011+00:00",
+  "last_updated": "2026-06-10T22:26:22.483648+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "f33382711540",
+      "title": "FDA Issues Safety Alert on Weight-Loss Drug's Kidney Risks - MedPage Today",
+      "date": "2026-06-10",
+      "category": "Adverse Event",
+      "severity": "High",
+      "summary": "Title: FDA Issues Safety Alert on Weight-Loss Drug's Kidney Risks - MedPage Today\nSource: Google News\nDate: Wed, 10 Jun 2026 20:58:12 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9TTVlqZExFWlRLZEhhb3VIcXYxZlJhaGIyZ09UeVF5Q24zdllrbGVUQVlmb3VtX2tzUFV3NjBXMm1xVFhGLVExSXJSa2xiSUp4RU5QWEEwdVZ0cWFYcWppTEdsMEpGZw?oc=5",
+      "fetched_at": "2026-06-10T22:26:19.961269+00:00"
+    },
     {
       "id": "1c735dd03976",
       "title": "Nicotine Pouch Recall; No market authorization",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbjNBaENQTzdPcHFvQzZIMmwwUDczNGtmV0NoaFdCekNuQVFsaXpCZDllWFdJbjRlX2I5dXR3MXFxUmt5VFVkN3c5bGJ0Z3NqdjVpZzVsX2Zkc3FPZGNhaG9VbWNaWDJKSXVyZ2VidUxWTDM1UmR1UGJRZjhObnN3VWlBM291bmFXcWpRVmk1WllkQkVGeWFwbHF2dklQMHRWMVJkV05wVQ?oc=5",
       "fetched_at": "2026-06-04T15:36:18.975824+00:00"
-    },
-    {
-      "id": "2a1adad3228b",
-      "title": "FDA updates manufacturer communications guidance to emphasize application to devices - RAPS.org",
-      "date": "2026-06-03",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: FDA updates manufacturer communications guidance to emphasize application to devices - RAPS.org\nSource: Google News\nDate: Wed, 03 Jun 2026 20:38:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxON1JwaE54ekhMRkU0Uk14NzBRLVByeHJBWnczVGlyeV9PdlFiRHpCaGtwMHpWS1AxSGV5OTExd0hOM0VmRDhFVHFKd3JKUWRJV203TGpOZ083Ums4bFVSbFFEejdLcTBLcFF2UlJvVWUwUGNIcWY4Y0hjNVctQ2J5Q3gybHJjUWJmaWhXdklDVHRwNkE5QXM0RWRZMEo4d1VST1lNRmJobld5VXozTkxiS2k4WkFNT1lTZDk0?oc=5",
-      "fetched_at": "2026-06-04T15:36:08.844044+00:00"
     }
   ]
 }
