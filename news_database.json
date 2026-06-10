@@ -1,7 +1,67 @@
 {
-  "last_updated": "2026-06-10T12:44:12.220151+00:00",
+  "last_updated": "2026-06-10T16:48:52.106915+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "1c735dd03976",
+      "title": "Nicotine Pouch Recall; No market authorization",
+      "date": "2026-06-10",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Nicotine Pouch Recall; No market authorization\nSource: Health Canada\nDate: 2026-06-10T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/nicotine-pouch-recall-no-market-authorization",
+      "fetched_at": "2026-06-10T16:48:45.501282+00:00"
+    },
+    {
+      "id": "d16410695bb8",
+      "title": "Selenia Dimensions 2D/3D Mammography Systems",
+      "date": "2026-06-10",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Selenia Dimensions 2D/3D Mammography Systems\nSource: Health Canada\nDate: 2026-06-10T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/selenia-dimensions-2d3d-mammography-systems",
+      "fetched_at": "2026-06-10T16:48:40.488695+00:00"
+    },
+    {
+      "id": "1a67cccc003d",
+      "title": "FDA shares guidance on authorized drugs for NWS myiasis - Veterinary Practice News",
+      "date": "2026-06-10",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: FDA shares guidance on authorized drugs for NWS myiasis - Veterinary Practice News\nSource: Google News\nDate: Wed, 10 Jun 2026 13:33:56 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQc193eVo3RDZhelpFYm9rcHhaSmFuOW9Cb3RtQ3NEaFVnSXdVTmZKUlNBZnNZTUloOEx5NGxnV3dKbmpELUtrTVpVR25wdmxEOVZzYnB3d0QyRkctUnVzdGd3Y0FoQ0JYTWU2cmdkZGpTN2tUTjM2Y19UWnpwcWpCUDd0ckFEM3FXeFhBVTJLWjZaZw?oc=5",
+      "fetched_at": "2026-06-10T16:48:34.958097+00:00"
+    },
+    {
+      "id": "5cdac0adf115",
+      "title": "Pay(or) Attention, Drug and Device Makers: FDA’s New Guidance for Talking to Health Plans - ArentFox Schiff",
+      "date": "2026-06-10",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: Pay(or) Attention, Drug and Device Makers: FDA’s New Guidance for Talking to Health Plans - ArentFox Schiff\nSource: Google News\nDate: Wed, 10 Jun 2026 05:00:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdFZ0VFRlZkhZeTU4WERJT3ZFRHUwYnlTeGJqbGRuVW8yR0ZKWG1vaGJ1VmRTMXg4YXE2ajd3VFRYNXM1ek50RWNZQTRZZ3paSzdIaC1DYzVRQWZNS0RhVDJrejZucVpiMDRJejd0U3IzY3ZDM3pBMFpzaXVMdGNQV0lWemNoTUVXV05xa2ZRMUpYdkRZdWEtZTdqVHZ1aEFsTWFhME5wb2JKZEpkOWNJVWV0UmhjYm5xZFhXcQ?oc=5",
+      "fetched_at": "2026-06-10T16:48:29.939006+00:00"
+    },
+    {
+      "id": "964afa3971de",
+      "title": "FDA Issues Draft Guidance on Payor Communications to Address Statutory Changes - Akin",
+      "date": "2026-06-10",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: FDA Issues Draft Guidance on Payor Communications to Address Statutory Changes - Akin\nSource: Google News\nDate: Wed, 10 Jun 2026 16:14:50 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUjAwcEk1bnprOG9rbTQ4ZjVnLWsySGpFS0Jia19pSjlFY0xaOWx6ZGEtb0otam1JQ3k2YVptNjhpY0c1Q2s1RzhpSmdCbEw0aUJmMFRzdllzcUlxcUVidENULVdhZzVpSkhQXzI0ZjI1UTBSeFRNMGN1RnRaNFp1c2RvSlBNNXBRWFZEc1NyaXhmR1BQSnI1R1dkdi1ycUl5eDVmMDhqSTRkMHQwaUF6X21YZlZoSUE0SGNSbzljb0MzY29tRm5Sa1doWmE?oc=5",
+      "fetched_at": "2026-06-10T16:48:24.918010+00:00"
+    },
     {
       "id": "a8279ce8bf98",
       "title": "Slow process: 48 treatments awaiting approval in the Netherlands already used in Germany - NL Times",
@@ -75,6 +135,18 @@
       "fetched_at": "2026-06-10T04:56:36.604116+00:00"
     },
     {
+      "id": "35cf49ea8dd6",
+      "title": "40+ Govt Drugs Inspector Recruitment 2026 at CDSCO – Salary up to ₹1.51 Lakh For Microbiology, Biochemistry & Life Scien",
+      "date": "2026-06-09",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "Title: 40+ Govt Drugs Inspector Recruitment 2026 at CDSCO – Salary up to ₹1.51 Lakh For Microbiology, Biochemistry & Life Sciences - BioTecNika\nSource: CDSCO India\nDate: Tue, 09 Jun 2026 07:19:59 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMkpiUFVaeGJxUjg2c053R1V3b3Y5MmhNa2QzRnlsOXh4eGJUaF9VbDV6N1RWMVFpS29nNERTNWo3WXJLU2o0YjhSNEd3c21uYWZoUVB0ejliSHR2YV9uM09mNDAzMEYzaHdiTnlPaTVhQXF5Mm1fVUV2YnltUG9nYmROc9IBiAFBVV95cUxQcnliWk9lNmo1QlQtVU14UUNqajNNTzlySk9aekVmR2NsS2FJTkpkQ21RU0Y0c1BsUVh3TmtiUTczaXE3WjZJTXNVRUNpR2diQnNDVldncjNBb1VkRThXSkFsdHRWWDhobHowcnJ3ODhCWE9KNlBZUUh4UFNJQkRrMGJfcEtpM1Bh?oc=5",
+      "fetched_at": "2026-06-10T16:48:52.106801+00:00"
+    },
+    {
       "id": "ded51767d77d",
       "title": "THX Pharma (Theranexus) and Exeltis secure EMA approval of the paediatric investigation plan (PIP) for TX01,… - ActusNew",
       "date": "2026-06-09",
@@ -109,6 +181,18 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTUtpTmh4UFNKMlJFUmxHWkxjNU1ULVBING4tQjBfZmpTS184M01OV2NhV1MwOTlyOEFsZU1DVFkyXy1LWlpOaG1Ic3IzZ01ObTFRNkp1MFhGR1NfODBGWllfYjdsQWFZdXNlaUduVjBYd0Z4djRCZEZSUXJOeENwOTVNcXllWk1jdjdhVGlqVnJobVA2Q09GeVBJYUp1VHZlWURvR2l0Z3Z0TE9jV0J0VQ?oc=5",
       "fetched_at": "2026-06-10T04:56:42.087623+00:00"
+    },
+    {
+      "id": "eb856ff79b80",
+      "title": "Bacteria found in Target baby wipes could be life-threatening to infants; recall underway - Los Angeles Times",
+      "date": "2026-06-08",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Bacteria found in Target baby wipes could be life-threatening to infants; recall underway - Los Angeles Times\nSource: Google News\nDate: Mon, 08 Jun 2026 21:35:43 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQeWRhdEFtdFNBTGFvQ0tneFp2anZDVGZUWFYzcGV2NFlfMXRETTJiRmJkMEhFNzFKSDlwR19IaEVWMHR6ZDNNNnBiaHJOeWhFcFlYM3E0N01PNHRtdjBWNmxudFpOdG00dnpjVUVZZ2RsVVFXa2c0ZU1taU5nalNCSm9CM2owZjFaRzNsZ0VCWUJ0YmZ6ZWd6bGlpSEpTZw?oc=5",
+      "fetched_at": "2026-06-10T16:47:30.535250+00:00"
     },
     {
       "id": "b32a4859955a",
@@ -517,90 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxON1JwaE54ekhMRkU0Uk14NzBRLVByeHJBWnczVGlyeV9PdlFiRHpCaGtwMHpWS1AxSGV5OTExd0hOM0VmRDhFVHFKd3JKUWRJV203TGpOZ083Ums4bFVSbFFEejdLcTBLcFF2UlJvVWUwUGNIcWY4Y0hjNVctQ2J5Q3gybHJjUWJmaWhXdklDVHRwNkE5QXM0RWRZMEo4d1VST1lNRmJobld5VXozTkxiS2k4WkFNT1lTZDk0?oc=5",
       "fetched_at": "2026-06-04T15:36:08.844044+00:00"
-    },
-    {
-      "id": "94a623bde454",
-      "title": "FDA Issues Warning Letter to Medline Over Recurring Bacterial Contamination in Drug Products - geneonline.com",
-      "date": "2026-06-03",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: FDA Issues Warning Letter to Medline Over Recurring Bacterial Contamination in Drug Products - geneonline.com\nSource: Google News\nDate: Wed, 03 Jun 2026 18:42:37 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZUVHX2VkTDZnZ2s5b2dlNjcxQ0tzeVRUeG1ZM1ktXzhJWnNldVZWNnd6WmMwNVN6dy0zeUt0UzdLa2VJejhDVk5oLTFFMlVTNWRjbFNTaVNNbWxvSUdQbG5ITXhrSEtKM2lWQUQ2VVhoWkdERF8tMUh5NWZhX0ozenc1QXVBYXBFX1hSNHljdzIyc09UczA2SG9VYmRFd0haNVM0M2R2Y2ZKUHJaU3ZONk1zMGZULUxwQ25EMg?oc=5",
-      "fetched_at": "2026-06-04T15:36:00.744659+00:00"
-    },
-    {
-      "id": "281f64583275",
-      "title": "Boston seafood company receives FDA warning letter - NBC Boston",
-      "date": "2026-06-03",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: Boston seafood company receives FDA warning letter - NBC Boston\nSource: Google News\nDate: Wed, 03 Jun 2026 17:55:01 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPc0Z1ZC0yUkFqUjNBYjRrb0hQallFd0lPVHpfSmZobkVIU2NKaWpQN1p1Uk9wYjZsRjRCUVJ4YTAzRzhRako4RzVzTXRmV1ViOHlEU2g3MkhZQ1A3c1V0MDUyUWVzWEtuRkRQLUFYMlF2SVRLR0VGc3RVNk1OVkl0NHhmRUF1VE5RbmF6T3hPS0NsaElTdllUOENwVDhzRzEwdEhUSy0xYlBLRUhaYUHSAbYBQVVfeXFMTndBUjlyTkdZSjIyWmM4cWdfX2ZlUUFJYVBDLTJYNEw2Y3c5XzhadGlWZnBGZm50aDNyT2xQaTVjS3hZRzRWRE5QYkdOWEhqT2tvOUZEbUp0SnpEV2x0ZXptSHJQbTlfeGM2LVF6cmllM3VvQ2RMNVNhWEVEdlFXNGhHSEJQYXNzdEEybG1ySDBNRXlhLUhMeTVjdmRYNUdGTDBBUWFwR2NyWkpzRHZYSFdzOWxWUmc?oc=5",
-      "fetched_at": "2026-06-04T15:35:55.731787+00:00"
-    },
-    {
-      "id": "6a3826eb4a01",
-      "title": "FDA hits Medline with warning letter over long-running contamination problem - BioSpace",
-      "date": "2026-06-03",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: FDA hits Medline with warning letter over long-running contamination problem - BioSpace\nSource: Google News\nDate: Wed, 03 Jun 2026 23:17:03 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQYVo5cjl0M05CNHNyYjJoOWNRSTVPOGlfN3pSamYxV1d0bllEd0NiTi1Sb25YdnlfWE9Sb3Ric2V1UHZicXNOTEJsaE5nQ0s0VFN2RGIwWEk2OHUxMU5obEtkYXlKaW5KalZ4ZDMxSkxOMmloRE9aX1lETGRJbWN1Y05XUXNMakdLc0NlR1NMSjN2aS1DS1BrTVk3eEo5VmJvN0E0R3lOVWc?oc=5",
-      "fetched_at": "2026-06-04T15:35:50.722886+00:00"
-    },
-    {
-      "id": "96478e44ae8a",
-      "title": "Explaining unapproved drugs to payors: FDA offers pharma new guidance to avoid pitfalls - Endpoints News",
-      "date": "2026-06-03",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Explaining unapproved drugs to payors: FDA offers pharma new guidance to avoid pitfalls - Endpoints News\nSource: Google News\nDate: Wed, 03 Jun 2026 16:55:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcjVHQmxHU04wLWR0b0taZ1hjcHNZQlVMVXRvbE1BZEZ1Qi1objd3WVpxeFkzVERMSWx3VTNMeGlGMUhFQTVJbDlwNUk2czFmSXFqYUZhaV90LXBMMnVnbmExbWJlcl9XVWVFdVcyZ1JBYkM5bUJMaGZZODZRa3ZxS1FmWkktdFZOamc?oc=5",
-      "fetched_at": "2026-06-03T17:24:30.805797+00:00"
-    },
-    {
-      "id": "f5293b6f42c7",
-      "title": "Zydus’ Baddi facility gets warning letter from FDA - ETPharma.com",
-      "date": "2026-06-03",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: Zydus’ Baddi facility gets warning letter from FDA - ETPharma.com\nSource: Google News\nDate: Wed, 03 Jun 2026 07:58:56 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOR0tFTGF3UlVkYWYxeFl0SV9BZzZCZ2VlVWdpcGtMWWVMcDd6QjJMSUpONy1aSjlpZjFERFdlcEwwandFNEY4R2xlY1V3TjZ5RURnM3FEc0VfY044NDhsNTFOdXJDeElNV20zc3hLTGNYalJxTktKcUxKNWZHelNJMW13Nmtyb0lmUzNtLXJHNmx1YlhOSjRKa2ZwNk9kUTFHYUpsdkZ6blhEYm5VWEdydy0wYUlEaDItWUNzWkp5OVFjd9IBxwFBVV95cUxQV1lPZlJ0S2xxTkJrQkMySlpGdFBCaXg2Q29UdnlWZG1Jek1qTEVkaHZkbHU4VGcxQV9yUlFoVlhxajl4dGVscURLQkZ0MlVXLWRIX3o2QVhfOEY3c2xzOHhvalhVUnV6RUkwN2JQa3ptZFlkMG9ieWpxaUJUdEpTWnp1MS04TEc0dkdyWjdXdzI0b1AxRGxtbGQwdDl1TmxhQVhGTXpPMFFNbk5Ja293XzhDeXdZU0FNQ19hckRCZ2dHN29HUHY0?oc=5",
-      "fetched_at": "2026-06-03T15:07:24.616051+00:00"
-    },
-    {
-      "id": "57d0193176f0",
-      "title": "Study: FDA approves more orphan drugs with specific cancer, pediatric indications over EMA - RAPS.org",
-      "date": "2026-06-02",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Title: Study: FDA approves more orphan drugs with specific cancer, pediatric indications over EMA - RAPS.org\nSource: European Medicines Agency\nDate: Tue, 02 Jun 2026 19:34:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPV0owLTlWbmY2UlhKYm9YMEJ6X2tMRG5Bc1dVR1p5STRVMExZalRHdlRPdlY1eTlVbXZYeFdQM3JMaTBLcUVNRE1LbDRQZS1NQWJRNmpsTG5zWF9lMU04ZnlON2VrMC1oUkFoczlxMEJqWElUZEt3M1VSLWJHVVVhODM5UEV5SmZOTlRwRE53OVo2NFRPNnhOdXJKQXFHWE1xa0RfZE55RWVweWpGNTI0LWNKNGQ0MjNDWVYteXFJY2k?oc=5",
-      "fetched_at": "2026-06-07T14:15:21.106321+00:00"
-    },
-    {
-      "id": "4ff8a1b18d85",
-      "title": "Fulcrum scraps SCD program, considers options after FDA takes hard line on safety risks - Fierce Biotech",
-      "date": "2026-06-02",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "Title: Fulcrum scraps SCD program, considers options after FDA takes hard line on safety risks - Fierce Biotech\nSource: Google News\nDate: Tue, 02 Jun 2026 12:46:52 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQmRRMnZKTGtPdmQtRHdOR1RkZ3dOdnRUamNvWlk3NndqQUdJaUJXeEQ1WlRzQm56bTdOX2JRZUVXQnFVc1RUMDd4cUlXRURsUk9lc0x3aEw1dGhuTVo1OEhjUkVDY3g0cDJRZFdjbnFZVFFCcWJlRkZESkczT2h6VkEzbnByQlliU2N0M0N1WDF4ZG9SZzhjQ1o0czVSczFrMTJaZGxOM1hEbjRZV3J1R3ktLUhIS3dxU2N5OE1B?oc=5",
-      "fetched_at": "2026-06-07T14:14:49.538650+00:00"
     }
   ]
 }
