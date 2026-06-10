@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-10T09:05:09.339179+00:00",
+  "last_updated": "2026-06-10T12:44:12.220151+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "a8279ce8bf98",
+      "title": "Slow process: 48 treatments awaiting approval in the Netherlands already used in Germany - NL Times",
+      "date": "2026-06-10",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: Slow process: 48 treatments awaiting approval in the Netherlands already used in Germany - NL Times\nSource: European Medicines Agency\nDate: Wed, 10 Jun 2026 10:00:58 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVm1pOGVDcVB4UzViZ3ktWGdhTEY2cTd2NFVRNXBXQXdjak5qZFRqamxSOU5QempkbWdLUjFxTi1pcHJNVVkzOEtnUTFITkY5Q3BWcV93cFBLUXpSN3J0Sk9RX2xVQlBvaFAzeUc1MzRCZngtUUZfNXN1MzhGRjRvZ0NaV3ZhRjhDR3FUeU5jUkRnRzB1dWt2d21BMzRjMklYaGgtOXlZYUV4UlU?oc=5",
+      "fetched_at": "2026-06-10T12:44:06.013315+00:00"
+    },
     {
       "id": "b456eb0a8e4f",
       "title": "Drug Shortage: Carboplatin Injection",
@@ -97,6 +109,18 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTUtpTmh4UFNKMlJFUmxHWkxjNU1ULVBING4tQjBfZmpTS184M01OV2NhV1MwOTlyOEFsZU1DVFkyXy1LWlpOaG1Ic3IzZ01ObTFRNkp1MFhGR1NfODBGWllfYjdsQWFZdXNlaUduVjBYd0Z4djRCZEZSUXJOeENwOTVNcXllWk1jdjdhVGlqVnJobVA2Q09GeVBJYUp1VHZlWURvR2l0Z3Z0TE9jV0J0VQ?oc=5",
       "fetched_at": "2026-06-10T04:56:42.087623+00:00"
+    },
+    {
+      "id": "b32a4859955a",
+      "title": "CDSCO Highlights Pending States for April 2026 NSQ Drug Data: Several States Yet to Submit Details of Substandard Medici",
+      "date": "2026-06-08",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: CDSCO Highlights Pending States for April 2026 NSQ Drug Data: Several States Yet to Submit Details of Substandard Medicines - drugscontrol.org\nSource: CDSCO India\nDate: Mon, 08 Jun 2026 13:39:27 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4wOVV6eVhjbHZJT2ppdnhrdnRzQ2NxNDVaTWcwYWlDXzk2amg3QW1jcXZMdzdBZDNOakd2TnN4ODV3ZTcza0ktM2VwbHNta1hoa2ZoOUtnYUNYNnBsWXc2R1JRQQ?oc=5",
+      "fetched_at": "2026-06-10T12:44:12.220061+00:00"
     },
     {
       "id": "000f475683c4",
@@ -577,30 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQmRRMnZKTGtPdmQtRHdOR1RkZ3dOdnRUamNvWlk3NndqQUdJaUJXeEQ1WlRzQm56bTdOX2JRZUVXQnFVc1RUMDd4cUlXRURsUk9lc0x3aEw1dGhuTVo1OEhjUkVDY3g0cDJRZFdjbnFZVFFCcWJlRkZESkczT2h6VkEzbnByQlliU2N0M0N1WDF4ZG9SZzhjQ1o0czVSczFrMTJaZGxOM1hEbjRZV3J1R3ktLUhIS3dxU2N5OE1B?oc=5",
       "fetched_at": "2026-06-07T14:14:49.538650+00:00"
-    },
-    {
-      "id": "f806d9d303ef",
-      "title": "Telehealth booms as demand for GLP-1s surges and questions mount about safety, oversight - The Lund Report",
-      "date": "2026-06-02",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "Title: Telehealth booms as demand for GLP-1s surges and questions mount about safety, oversight - The Lund Report\nSource: Google News\nDate: Tue, 02 Jun 2026 20:28:43 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPOTlPT2dkOE45dGE3NGdrVno1el9WdkdydS0xQnFlUHN6WTNIS3QyelpOVDRXT2E5LTBQSDAxUEZTWWlNUmpFTGE1S2ZvcDUxanZjSFoyX2Rtd19CNEtRQUVlanBySmJ3U2prdGR5NnZxTS1sT3hiLUlRSW1CZ3NZUV9aMUVlSGdYVEtoaDVhUVRqdDFnNHcya1hTSnJnUE5ncVA4blh6NVczR2hfbDBkZjlocXFiZW1jaEE?oc=5",
-      "fetched_at": "2026-06-07T14:14:44.522444+00:00"
-    },
-    {
-      "id": "6b45defa5c82",
-      "title": "Exclusive: FDA issues industry-friendly gene therapy guidance - Axios",
-      "date": "2026-06-02",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Exclusive: FDA issues industry-friendly gene therapy guidance - Axios\nSource: Google News\nDate: Tue, 02 Jun 2026 10:51:17 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8zS1REd3F4bmZ4ZlU3bHpUVkFiVklva05XbEtJTkhyR2ZUeTk0ZncyNld0aGJyWW5GWE9OZVZfMHhlb3RFY09Lbnl2NVFCSU8zaTFSajFWckRmeEtRcWVRYkgxaDdCM1daOWF6RkF5MGF6Q3Jq?oc=5",
-      "fetched_at": "2026-06-03T01:28:44.279672+00:00"
     }
   ]
 }

@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/slow-process-48-treatments-awaiting-approval-in-the-netherlands-already-used-in-germany-nl-times.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/drug-shortage-carboplatin-injection.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -42,6 +47,11 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/report-how-drug-discontinuations-surged-despite-shortage-numbers-declining-pharmaceutical-commerce.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/cdsco-highlights-pending-states-for-april-2026-nsq-drug-data-several-states-yet-to-submit-details-of-substandard-medici.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -242,16 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/fulcrum-scraps-scd-program-considers-options-after-fda-takes-hard-line-on-safety-risks-fierce-biotech.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/telehealth-booms-as-demand-for-glp-1s-surges-and-questions-mount-about-safety-oversight-the-lund-report.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/exclusive-fda-issues-industry-friendly-gene-therapy-guidance-axios.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
