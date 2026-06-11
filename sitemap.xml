@@ -6,6 +6,21 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/cdsco-approves-trastuzumab-deruxtecan-for-first-line-her2-positive-breast-cancer-express-pharma.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/ema-s-2025-annual-report-shows-strong-approval-numbers-for-human-and-veterinary-medicines-european-medicines-agency-e.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/aptima-hiv-quant-dx-assay-hcv-quant-dx-assay-and-hbv-quant-assay-software.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/astrazeneca-pharma-india-gets-cdsco-nod-for-expanded-use-of-breast-cancer-drug-enhertu-cnbc-tv18.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -237,21 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/cdsco-directs-drugmakers-to-maintain-pharmacovigilance-systems-business-standard.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/update-hintermann-h3-tar-has-a-higher-than-expected-risk-of-failure-fda-gov.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/outbreak-investigation-of-infant-botulism-infant-formula-november-2025-fda-gov.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/drug-approval-tofacitinib-citrate-somerset-theraps-llc.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
