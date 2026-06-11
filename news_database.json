@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-06-11T14:15:56.492449+00:00",
+  "last_updated": "2026-06-11T17:50:54.491850+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "1391d2c056ea",
+      "title": "ETMS 70 mm Cooled Coil",
+      "date": "2026-06-11",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: ETMS 70 mm Cooled Coil\nSource: Health Canada\nDate: 2026-06-11T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/etms-70-mm-cooled-coil",
+      "fetched_at": "2026-06-11T17:50:52.993465+00:00"
+    },
+    {
+      "id": "ec22860a3860",
+      "title": "FDA Warns of Kidney Stone, Injury Risk in Use of OTC Weight-Loss Drug Orlistat - Drug Topics",
+      "date": "2026-06-11",
+      "category": "Adverse Event",
+      "severity": "High",
+      "summary": "Title: FDA Warns of Kidney Stone, Injury Risk in Use of OTC Weight-Loss Drug Orlistat - Drug Topics\nSource: Google News\nDate: Thu, 11 Jun 2026 15:06:20 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRjNDRVpTOWNyT0NvLUV3b0U3M2xEbTExZ0dXbExVWGtrTXFCM2ZRZDFkRGQ3dXFfQl91cUhnckpCbUkxdWlPeHUyU21OaHRwYU5GUUJRVTlQY3BUQlVPOFF1bVFKNHBhdzVwazMwaklHbGVEYUZDTDJDUkdIbVRnVks2YnhtVUJ3ZTJnS1RlaFp3UEVSZ1hiU19EczNJNHIxNkE?oc=5",
+      "fetched_at": "2026-06-11T17:50:46.775875+00:00"
+    },
     {
       "id": "fb47a69ec8e1",
       "title": "CDSCO approves Trastuzumab Deruxtecan for first-line HER2-positive breast cancer - Express Pharma",
@@ -577,30 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1Xd0FTYWd6bEtKTmVuX0xkbWpLZndqZTJ5ZUpCNUI3TjZzV3dWTk1HY21VZ3JCMlJsVXZBTGpveHNrVjdDQXVKMTlxaGh1WW1BSDgwWkY3U2ZEMGFEVFhoRk5Xc2wyQQ?oc=5",
       "fetched_at": "2026-06-04T15:35:35.553820+00:00"
-    },
-    {
-      "id": "28f0f8084bbe",
-      "title": "ICH M15 Guidance: General Principles for Model-Informed Drug Development",
-      "date": "2026-06-03",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "The FDA has announced the availability of the final guidance for industry, 'M15 General Principles for Model-Informed Drug Development.' Developed by the International Council for Harmonisation (ICH), this document provides a harmonized framework for planning, evaluating, and documenting Model-Informed Drug Development (MIDD) evidence to ensure consistent and high-quality applications across global regulatory agencies.",
-      "compliance_impact": "This guidance establishes a standardized framework for the modeling, simulation, and documentation of MIDD evidence. Organizations must align early regulatory engagement, model assumptions, and credibility assessment with these new expectations.",
-      "key_actions": "1. Review modeling protocols against the new ICH M15 guidelines.\n2. Assess model credibility and 'fit for purpose' based on the risk-based framework.\n3. Establish standard operating procedures (SOPs) for multidisciplinary alignment on model assumptions prior to FDA submission.",
-      "source_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/m15-general-principles-model-informed-drug-development",
-      "fetched_at": "2026-06-07T15:45:33.716298+00:00"
-    },
-    {
-      "id": "9f590c74e886",
-      "title": "CDSCO directs drugmakers to maintain pharmacovigilance systems - Business Standard",
-      "date": "2026-06-03",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: CDSCO directs drugmakers to maintain pharmacovigilance systems - Business Standard\nSource: CDSCO India\nDate: Wed, 03 Jun 2026 16:37:53 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPakJsNnphZ1hRUzJmUkhVTENOejdNQmc0ZFdoUTdYVFFtRTBPZW8tM1NRMzBqSHh5Ny12V21IVHR5RWlWWm9zazhwQWx6WF93Wlp0b2ZNNkx3bVdvQ1JrMEg0X2lCSmxLR2dKYXFZVlBmYWRvUi1mS1Z3cDN5QTJkblllRHFBY3dTMS1XcHBFVTNsbWFCZjA1ektwMkswSEF3SVZuNUVEWGpfTzJmd3g3UUpRMHhnVGJDN3lfWmdFSTcySmRsQ2hoWHNn0gHPAUFVX3lxTFBzOTJROUF5Y1N0QzAzRE84Q0xkWXBMTlJhdkRLME81c1RUdWhyRzd2YnFaREVDa3FYZEpOZFBFM3psWThoNVM1eXRBUUJ6WDBHSDFkczVLNjBkemxzODNsajRxLTZEN3pGc3RBalhSUVFmOTRhZ1FyVVJ1MHRKQ0VLaHRhYzdjb1BaTFZLU3VueHRmTmhfUWdwU3R6cnFRZG01M0NVWWFwMHJLMGNZT1BJM1IwZHZoSm5qMVlJRnRLZmJBWjhCLVZfbHpmdVdMVQ?oc=5",
-      "fetched_at": "2026-06-07T14:15:53.620092+00:00"
     }
   ]
 }
