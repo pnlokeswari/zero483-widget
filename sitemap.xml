@@ -6,6 +6,16 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/astrazeneca-pharma-india-gets-cdsco-nod-for-expanded-use-of-breast-cancer-drug-enhertu-cnbc-tv18.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/european-medicines-agency-cannabis-is-most-commonly-consumed-drug-in-luxembourg-rtl-today.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/fda-issues-safety-alert-on-weight-loss-drug-s-kidney-risks-medpage-today.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -242,16 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/drug-approval-tofacitinib-citrate-somerset-theraps-llc.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/new-fda-draft-guidance-targets-gene-therapy-submission-burden-by-allowing-use-of-existing-cmc-and-scientific-knowledge.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/pharmalittle-we-re-reading-about-glp-1-drugs-and-knees-fda-cell-and-gene-therapy-guidance-and-more-statnews-com.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

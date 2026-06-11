@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-06-11T05:08:20.486044+00:00",
+  "last_updated": "2026-06-11T09:50:46.280734+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "441032ad4f94",
+      "title": "AstraZeneca Pharma India gets CDSCO nod for expanded use of breast cancer drug Enhertu - CNBC TV18",
+      "date": "2026-06-11",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "Title: AstraZeneca Pharma India gets CDSCO nod for expanded use of breast cancer drug Enhertu - CNBC TV18\nSource: CDSCO India\nDate: Thu, 11 Jun 2026 06:29:14 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZHlFbnZoZUpPQmhKTGdWU0FZMjRXWGVfenpRaTNqc09sVm9DWEVXd3NqaWdjT0xTcG5MMlg1UE9vSDgtVVdjYmRja1RTaV9DYVZuVndyVk9hdmJmRmtQN3BGR3kwQ190Vk5Sc2xGY1JhbFVVU1YwMXVBYW9YSUdMN3I1dGVnYnBmS3dhTHN1Y1luTUduN29HY3d1eUpsRUttMXJHM2E4YUFRd3p5aTVGdzh5bDNLOERSZ191dXZnenVLbmtxY1hERWtmemtnVEJVT1N4SmRtRE1EMHlYYzlqVTY4c9IB6AFBVV95cUxPc19iZGUyMGhhUjRjV1BjVnFxVExiQlJMSy12T3B6MVRCZDVacDdfZlJQRHR3Y0RveF9IdmtQdGVXeWlldF9OMzBGZVFvV1VYcUpyNVBldi1xQVlwTU03aUVtWVBRbG5VUDBBNkhkU0lIVGtKVUhfVUNtVjNtTFppNk91QlFxSTd6TUZNNEZ4NlVoMmFHdHdSZnc2cjhIdlVxTHZtM3ZCdl9QdWFQTnA5aFp0eDdGamUxa0tLZ0NGWFFoeENxckVXSXAwajRPczcza2ZHRHJILVF2VXQwUzZ0UjhoX1gzVkZK?oc=5",
+      "fetched_at": "2026-06-11T09:50:46.280643+00:00"
+    },
+    {
+      "id": "13b877ff970f",
+      "title": "European Medicines Agency: Cannabis is most commonly consumed drug in Luxembourg - RTL Today",
+      "date": "2026-06-11",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: European Medicines Agency: Cannabis is most commonly consumed drug in Luxembourg - RTL Today\nSource: European Medicines Agency\nDate: Thu, 11 Jun 2026 07:30:49 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUnREMk9MblJRWDNNY200MTJueFYyaWhabGFCeTdsS2Fqd0Q5XzNVeGhQSU5NcmJubkUzRUFweGR2bFhHeE1QVWZQQzF6eVA3aXZ0dGUtaENROTJ4UTdneFlDWkJrQmVuTER2WVRnbUpIeE9fRVYzUGhOeXM3RnVwMXJscmtQcmppWDlSRVdEdTBiTHlYVVkwY2ZqYXlDcGs?oc=5",
+      "fetched_at": "2026-06-11T09:50:40.420932+00:00"
+    },
     {
       "id": "f33382711540",
       "title": "FDA Issues Safety Alert on Weight-Loss Drug's Kidney Risks - MedPage Today",
@@ -577,30 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220137",
       "fetched_at": "2026-06-06T02:28:16.509917+00:00"
-    },
-    {
-      "id": "55457a4780de",
-      "title": "New FDA Draft Guidance Targets Gene Therapy Submission Burden by Allowing Use of Existing CMC and Scientific Knowledge -",
-      "date": "2026-06-03",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: New FDA Draft Guidance Targets Gene Therapy Submission Burden by Allowing Use of Existing CMC and Scientific Knowledge - Pharmaceutical Executive\nSource: Google News\nDate: Wed, 03 Jun 2026 16:30:46 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQcHVMN3ZmNThudmpVRktNWXNrMk5YZUpnZ0QtQnZnRHhTZVk3dnFJbW9JQ25ZdVB0ZnlNOGlZS0ZLeDFQckY0aFZLandsNWlSNllpek5JMFhNT3NFV3YxdmFQZkdLZ1FNNXZ3N3ZONWFxR3NETUdTYThGZjFDRkxmejhhSjgxbnMxYTI2cDF2S0tuNkVlUkp6YU9UVVVwMkw5T2tzeXE5bFdWdWd5R2dQR0g0ZWN5N2QtOHMyNVFYS3FKSk9l?oc=5",
-      "fetched_at": "2026-06-04T15:36:24.472597+00:00"
-    },
-    {
-      "id": "d0fd4a6f38f9",
-      "title": "Pharmalittle: We're reading about GLP-1 drugs and knees, FDA cell and gene therapy guidance, and more - statnews.com",
-      "date": "2026-06-03",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Pharmalittle: We're reading about GLP-1 drugs and knees, FDA cell and gene therapy guidance, and more - statnews.com\nSource: Google News\nDate: Wed, 03 Jun 2026 13:19:23 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbjNBaENQTzdPcHFvQzZIMmwwUDczNGtmV0NoaFdCekNuQVFsaXpCZDllWFdJbjRlX2I5dXR3MXFxUmt5VFVkN3c5bGJ0Z3NqdjVpZzVsX2Zkc3FPZGNhaG9VbWNaWDJKSXVyZ2VidUxWTDM1UmR1UGJRZjhObnN3VWlBM291bmFXcWpRVmk1WllkQkVGeWFwbHF2dklQMHRWMVJkV05wVQ?oc=5",
-      "fetched_at": "2026-06-04T15:36:18.975824+00:00"
     }
   ]
 }
