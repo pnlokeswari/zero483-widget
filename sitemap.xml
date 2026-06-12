@@ -6,6 +6,16 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/cdsco-s-cosmetic-regulations-the-rules-exist-the-enforcement-does-not-express-pharma.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/drug-shortage-valproate-sodium-injection.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/ema-recommends-approval-for-ranibizumab-biosimilar-vislyfa-generics-and-biosimilars-initiative.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -36,6 +46,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/astrazeneca-gets-cdsco-nod-for-trastuzumab-deruxtecan-plus-pertuzumab-indian-pharma-post.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/cdsco-approves-trastuzumab-deruxtecan-for-first-line-her2-positive-breast-cancer-express-pharma.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -57,6 +72,11 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/fda-warns-of-kidney-stone-injury-risk-in-use-of-otc-weight-loss-drug-orlistat-drug-topics.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/drug-approval-propranolol-hydrochloride-pai-holdings.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -232,26 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/update-hintermann-h3-tar-has-a-higher-than-expected-risk-of-failure-fda-gov.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/outbreak-investigation-of-infant-botulism-infant-formula-november-2025-fda-gov.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/drug-approval-tofacitinib-citrate-somerset-theraps-llc.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/new-fda-draft-guidance-targets-gene-therapy-submission-burden-by-allowing-use-of-existing-cmc-and-scientific-knowledge.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/pharmalittle-we-re-reading-about-glp-1-drugs-and-knees-fda-cell-and-gene-therapy-guidance-and-more-statnews-com.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

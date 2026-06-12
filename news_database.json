@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-06-12T17:21:43.816571+00:00",
+  "last_updated": "2026-06-12T19:29:55.870518+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "7e4d82a163a0",
+      "title": "CDSCO’s cosmetic regulations: The rules exist. The enforcement does not - Express Pharma",
+      "date": "2026-06-12",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "Title: CDSCO’s cosmetic regulations: The rules exist. The enforcement does not - Express Pharma\nSource: CDSCO India\nDate: Fri, 12 Jun 2026 12:01:13 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPc1dzVnFVdjRCVG5xajJFZVBaX3dpd0RiQ3B4Mko1dmRGaUNBXzdXTS0xSWFSYlJsY2NPNi1aSzNlVHNwM3luUHg2cExndEZVVS1yVmgzam9iOHhuWEthbjdpeGJ2TUgtUmNrR1ZoTjRrWEhRa2FDVjdKZk82TGVNZFN2enNtR3JMZTVMM3kxTUF2cTVSZU81Q3U1Mzd2ZnPSAaQBQVVfeXFMTWRjNmtIc2JmSGlUaWZ1ektnWEtpT1VnMWhSakNzOHF0cEwwT2ZITjFXVGFlT1dIS1dMcFBwVkdvSmhDTzUwajBtWFR3RTh0Y2tQcWNMaXJOZWR0SjBBbUUySV8xblZMdDRycWFoZmFIRkd4b3lGQTUyMjJTcTBBVEQwbHlLa1hXQnYxbWlMRG9pVjl6bXZNSmllYnljUVF1eXhWU3Q?oc=5",
+      "fetched_at": "2026-06-12T19:29:50.852777+00:00"
+    },
+    {
+      "id": "fae230a5f1be",
+      "title": "Drug Shortage: Valproate Sodium Injection",
+      "date": "2026-06-12",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Generic name: Valproate Sodium Injection\nBrand name: N/A\nStatus: Current\nPresentations: []",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/search?q=FDA+Shortage+Valproate+Sodium+Injection",
+      "fetched_at": "2026-06-12T19:28:45.540454+00:00"
+    },
     {
       "id": "00c23c77f7ac",
       "title": "EMA recommends approval for ranibizumab biosimilar Vislyfa - Generics and Biosimilars Initiative",
@@ -75,6 +99,18 @@
       "fetched_at": "2026-06-12T14:19:02.944533+00:00"
     },
     {
+      "id": "b5097a52faf0",
+      "title": "AstraZeneca gets CDSCO nod for Trastuzumab Deruxtecan plus Pertuzumab - Indian Pharma Post",
+      "date": "2026-06-11",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "Title: AstraZeneca gets CDSCO nod for Trastuzumab Deruxtecan plus Pertuzumab - Indian Pharma Post\nSource: CDSCO India\nDate: Thu, 11 Jun 2026 14:00:38 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOeDczMHZuWXVnNGxRSkhPdHJSMXFzTGZSY2plMFNMejZjODhCaHU3d2RicmNDdlAwV3AyanE2NWNLaUotYjMtTDRWMWt3eEJReUVMaVdiVXlpRWZQYnJXMWlCOXZEd1RKQnZCc1ZacE9aWVlXSnZtR29VMXJ4aGozVkFDeEJXakhCcUJleUFobEFHRUtTZk1Na0tQbnFvR1JWQ3ZwQlZ4TENodnczZmlzTVdhSXpILVNkS1RsWUx2b9IBxgFBVV95cUxQZzI2dTRvUXdUdkVZZkhoTzY3bW1RblMzaUlYZ3IweHpuSjJQTE4wdDVVYkJNdjRtM1lTQ0l6WGVtblhWNXRWM2JLNU96YTg5LS1GWTlTU29GVE5qR2tBZEx5YkFyRk1DX0JxZGdRbTR2ckUzNkpGZHFHUkx6WUlwQUxYcDRFUjkzempVdWJ1UTlGWGhtUm9lS2JPdU1Pb21aOW9sQVgzWXdYb2N3RVJ4Y0pUUlhyVkd5Ykltd2lJQjUxMUo1dFE?oc=5",
+      "fetched_at": "2026-06-12T19:29:55.868552+00:00"
+    },
+    {
       "id": "fb47a69ec8e1",
       "title": "CDSCO approves Trastuzumab Deruxtecan for first-line HER2-positive breast cancer - Express Pharma",
       "date": "2026-06-11",
@@ -133,6 +169,18 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRjNDRVpTOWNyT0NvLUV3b0U3M2xEbTExZ0dXbExVWGtrTXFCM2ZRZDFkRGQ3dXFfQl91cUhnckpCbUkxdWlPeHUyU21OaHRwYU5GUUJRVTlQY3BUQlVPOFF1bVFKNHBhdzVwazMwaklHbGVEYUZDTDJDUkdIbVRnVks2YnhtVUJ3ZTJnS1RlaFp3UEVSZ1hiU19EczNJNHIxNkE?oc=5",
       "fetched_at": "2026-06-12T14:19:55.937622+00:00"
+    },
+    {
+      "id": "e6b7aa99959d",
+      "title": "Drug Approval: PROPRANOLOL HYDROCHLORIDE - PAI HOLDINGS",
+      "date": "2026-06-10",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Application: ANDA219165\nSponsor: PAI HOLDINGS\nProduct: PROPRANOLOL HYDROCHLORIDE\nSubmission type: ORIG\nSubmission class: N/A\nStatus: AP\nStatus date: 20260610",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219165",
+      "fetched_at": "2026-06-12T19:29:16.467366+00:00"
     },
     {
       "id": "35cf49ea8dd6",
@@ -553,54 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPd0Q0cllqLWxjWGRRREl4RGhEUWx5dThlTDJRUl9mbGV5WEFYdmJNZVMtYjFueEpIWFZYX25zTlZXaklCUUFsdTVTb1kzX2E3dVh1RmtSNGZJSnB3a2RJTjlSMmVsNURPQTJ6UldZUHp6SHZZclN6OV9meXk2dGJLNUowVUVFd2ZUbHhTQnJ5cHJtVmNKSXJZcG5WMVJMQ3RQQzZUYjhjYWE4ak1teWZyNmFpeTEzZGlDM0JGVEEtRGloczByYzNkbFlaQ1hKTEN5Z0FXTi1iX25XcWctbnpoRDl5Z1hDUzNu?oc=5",
       "fetched_at": "2026-06-07T14:14:34.449008+00:00"
-    },
-    {
-      "id": "736e958f3494",
-      "title": "Outbreak Investigation of Infant Botulism: Infant Formula (November 2025) - fda.gov",
-      "date": "2026-06-03",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Outbreak Investigation of Infant Botulism: Infant Formula (November 2025) - fda.gov\nSource: Google News\nDate: Wed, 03 Jun 2026 10:00:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUjFDQjlHQ2x1ZUZEdkREVlBxREh2QVAtc2xtSGZzQkVDMnlJSEx5UkppYWkzdVZYSWhQTEdwd0NsaTd0SWxpc05FS3FVWFliMnVhZG5OUm9FbmNFM3ZvN1JlS3lLZVhaTkJmRU1xS2Q4OGtpYXFYX0ZnSHZGU2xpNkdDdVN0YlFaQnZHNllHaDJKUG9nWnRVN1NpdjhMSHQ3c3pZQUJvS2ZTT2x1bGhXVTRPWFFxQUM4R3ltVA?oc=5",
-      "fetched_at": "2026-06-07T02:46:00.897793+00:00"
-    },
-    {
-      "id": "041e1ccf8169",
-      "title": "Drug Approval: TOFACITINIB CITRATE - SOMERSET THERAPS LLC",
-      "date": "2026-06-03",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Application: ANDA220137\nSponsor: SOMERSET THERAPS LLC\nProduct: TOFACITINIB CITRATE\nSubmission type: ORIG\nSubmission class: N/A\nStatus: AP\nStatus date: 20260603",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220137",
-      "fetched_at": "2026-06-06T02:28:16.509917+00:00"
-    },
-    {
-      "id": "55457a4780de",
-      "title": "New FDA Draft Guidance Targets Gene Therapy Submission Burden by Allowing Use of Existing CMC and Scientific Knowledge -",
-      "date": "2026-06-03",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: New FDA Draft Guidance Targets Gene Therapy Submission Burden by Allowing Use of Existing CMC and Scientific Knowledge - Pharmaceutical Executive\nSource: Google News\nDate: Wed, 03 Jun 2026 16:30:46 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQcHVMN3ZmNThudmpVRktNWXNrMk5YZUpnZ0QtQnZnRHhTZVk3dnFJbW9JQ25ZdVB0ZnlNOGlZS0ZLeDFQckY0aFZLandsNWlSNllpek5JMFhNT3NFV3YxdmFQZkdLZ1FNNXZ3N3ZONWFxR3NETUdTYThGZjFDRkxmejhhSjgxbnMxYTI2cDF2S0tuNkVlUkp6YU9UVVVwMkw5T2tzeXE5bFdWdWd5R2dQR0g0ZWN5N2QtOHMyNVFYS3FKSk9l?oc=5",
-      "fetched_at": "2026-06-04T15:36:24.472597+00:00"
-    },
-    {
-      "id": "d0fd4a6f38f9",
-      "title": "Pharmalittle: We're reading about GLP-1 drugs and knees, FDA cell and gene therapy guidance, and more - statnews.com",
-      "date": "2026-06-03",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Pharmalittle: We're reading about GLP-1 drugs and knees, FDA cell and gene therapy guidance, and more - statnews.com\nSource: Google News\nDate: Wed, 03 Jun 2026 13:19:23 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbjNBaENQTzdPcHFvQzZIMmwwUDczNGtmV0NoaFdCekNuQVFsaXpCZDllWFdJbjRlX2I5dXR3MXFxUmt5VFVkN3c5bGJ0Z3NqdjVpZzVsX2Zkc3FPZGNhaG9VbWNaWDJKSXVyZ2VidUxWTDM1UmR1UGJRZjhObnN3VWlBM291bmFXcWpRVmk1WllkQkVGeWFwbHF2dklQMHRWMVJkV05wVQ?oc=5",
-      "fetched_at": "2026-06-04T15:36:18.975824+00:00"
     }
   ]
 }
