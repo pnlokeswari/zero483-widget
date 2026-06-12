@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-12T14:21:14.142402+00:00",
+  "last_updated": "2026-06-12T17:21:43.816571+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "00c23c77f7ac",
+      "title": "EMA recommends approval for ranibizumab biosimilar Vislyfa - Generics and Biosimilars Initiative",
+      "date": "2026-06-12",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: EMA recommends approval for ranibizumab biosimilar Vislyfa - Generics and Biosimilars Initiative\nSource: European Medicines Agency\nDate: Fri, 12 Jun 2026 14:16:32 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNU1I5ZXpmR3dKSDF4bXlyZTVBRE81b1gzaDRwSHJYWVRkYjBsUUNUTVhXLWY4bkFwbGZ1dmJ2UkJBWTFNZS1iZEpOZjNKeVUzb1RTYnNWVG9FaTN1M1o0VGlHSkc2cjBKa01vdVNYc05hUk1zTVdpUTA5SzN1NGwwYWJGNThxTER0RTVaajVrNXpaMDFCOUlNMlFFN1c4X0E?oc=5",
+      "fetched_at": "2026-06-12T17:21:42.698419+00:00"
+    },
     {
       "id": "d16410695bb8",
       "title": "Selenia Dimensions 2D/3D Mammography Systems",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbjNBaENQTzdPcHFvQzZIMmwwUDczNGtmV0NoaFdCekNuQVFsaXpCZDllWFdJbjRlX2I5dXR3MXFxUmt5VFVkN3c5bGJ0Z3NqdjVpZzVsX2Zkc3FPZGNhaG9VbWNaWDJKSXVyZ2VidUxWTDM1UmR1UGJRZjhObnN3VWlBM291bmFXcWpRVmk1WllkQkVGeWFwbHF2dklQMHRWMVJkV05wVQ?oc=5",
       "fetched_at": "2026-06-04T15:36:18.975824+00:00"
-    },
-    {
-      "id": "2a1adad3228b",
-      "title": "FDA updates manufacturer communications guidance to emphasize application to devices - RAPS.org",
-      "date": "2026-06-03",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: FDA updates manufacturer communications guidance to emphasize application to devices - RAPS.org\nSource: Google News\nDate: Wed, 03 Jun 2026 20:38:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxON1JwaE54ekhMRkU0Uk14NzBRLVByeHJBWnczVGlyeV9PdlFiRHpCaGtwMHpWS1AxSGV5OTExd0hOM0VmRDhFVHFKd3JKUWRJV203TGpOZ083Ums4bFVSbFFEejdLcTBLcFF2UlJvVWUwUGNIcWY4Y0hjNVctQ2J5Q3gybHJjUWJmaWhXdklDVHRwNkE5QXM0RWRZMEo4d1VST1lNRmJobld5VXozTkxiS2k4WkFNT1lTZDk0?oc=5",
-      "fetched_at": "2026-06-04T15:36:08.844044+00:00"
     }
   ]
 }

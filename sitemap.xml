@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/ema-recommends-approval-for-ranibizumab-biosimilar-vislyfa-generics-and-biosimilars-initiative.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/selenia-dimensions-2d-3d-mammography-systems.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -247,11 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/pharmalittle-we-re-reading-about-glp-1-drugs-and-knees-fda-cell-and-gene-therapy-guidance-and-more-statnews-com.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/fda-updates-manufacturer-communications-guidance-to-emphasize-application-to-devices-raps-org.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
