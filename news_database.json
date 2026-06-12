@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-12T07:01:03.271738+00:00",
+  "last_updated": "2026-06-12T11:13:43.178673+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "1e31394938c4",
+      "title": "Drug Shortage: Cefotaxime Sodium Powder, for Solution",
+      "date": "2026-06-12",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Generic name: Cefotaxime Sodium Powder, for Solution\nBrand name: N/A\nStatus: Current\nPresentations: []",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/search?q=FDA+Shortage+Cefotaxime+Sodium+Powder%2C+for+Solution",
+      "fetched_at": "2026-06-12T11:12:57.788233+00:00"
+    },
     {
       "id": "55421b66045e",
       "title": "FDA Updates 8-Year-Old Payor Communications Guidance - The National Law Review",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbWdiM0tNR2tobmVldHdjR2RvYW9HeXJ2QmNTdHNLVFpBR1NlZHJfYzh3LVVVUUlpUHVmcXBpQzREUF9KNmJfNGVHOHdtbG5IREVzYjNZdURXakRvanBVQ1VWbzlpU1NlZWZYbFZ2SDk3YTFJYU9mRldRcHhHN3dXM3R0eU8wMFllLUNhc2xnVDJXNDhpY1BYUHpSVUZHTGtoT1UxdnhIVW9iZTUtZDlscDh3?oc=5",
       "fetched_at": "2026-06-04T16:53:50.455794+00:00"
-    },
-    {
-      "id": "7c76668df640",
-      "title": "Pharma Pulse: 340B Uncertainty, Drug Shortages, and Wegovy's Global Debut - Pharmaceutical Commerce",
-      "date": "2026-06-04",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "Title: Pharma Pulse: 340B Uncertainty, Drug Shortages, and Wegovy's Global Debut - Pharmaceutical Commerce\nSource: Google News\nDate: Thu, 04 Jun 2026 15:30:46 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSjc4SzE3SGpqYUhQMWZGVmNfR2steWhFZUJMQjBSRldEWlNNeW56ZG15N0dHLWpEVE9VcjZ2RDJZVTVLWXNjb09LUGROOVFWTmJWNTU1T2hsMFN4ZHRpRjFKVmZXb1h5eWRvSzM3dWJGUGZWc1VucEp1bHk0ZFUzdmVnQmNJVnRZRDZKSGR3bmNDVVd4NGlETXMwR0QyR1RUdjFVRWIxQ1paSTFuX1hLRkFFUkRyS3NwdU1hZ09GTTBlQQ?oc=5",
-      "fetched_at": "2026-06-04T16:53:40.701465+00:00"
     }
   ]
 }
