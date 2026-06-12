@@ -6,6 +6,16 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/highlights-from-ema-pharmacovigilance-committee-meeting-the-pharma-letter.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/snack-recall-hits-21-states-after-dangerous-metal-contamination-discovered-in-popular-product-al-com.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/cdsco-s-cosmetic-regulations-the-rules-exist-the-enforcement-does-not-express-pharma.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -242,16 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/ich-m15-guidance-general-principles-for-model-informed-drug-development.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/cdsco-directs-drugmakers-to-maintain-pharmacovigilance-systems-business-standard.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/update-hintermann-h3-tar-has-a-higher-than-expected-risk-of-failure-fda-gov.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

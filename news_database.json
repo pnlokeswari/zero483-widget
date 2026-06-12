@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-06-12T21:14:47.017640+00:00",
+  "last_updated": "2026-06-12T22:56:32.339318+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "cd6de54e49b3",
+      "title": "Highlights from EMA pharmacovigilance committee meeting - The Pharma Letter",
+      "date": "2026-06-12",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: Highlights from EMA pharmacovigilance committee meeting - The Pharma Letter\nSource: European Medicines Agency\nDate: Fri, 12 Jun 2026 22:52:30 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPci1PMlQ0TTVtalExR3plSDAxVmlIb1pJWnZubGo1M0xJdFVWd3VzNi1iZDFVTGdScVVLSE1lV1FlQUd6eVNGZVppX2M2WHkzVEQ2NldvV244TnJnNVlGZ2p2YS04NGFwNVpyRElNR0c1dk5qd1NRcjlSeXl2SlBsc2xZVDMyOWUzdV9vZi1hb0s5SU5Zd19qSDlLaUNTS28?oc=5",
+      "fetched_at": "2026-06-12T22:56:31.353565+00:00"
+    },
+    {
+      "id": "d9509a2197da",
+      "title": "Snack recall hits 21 states after dangerous metal contamination discovered in popular product - AL.com",
+      "date": "2026-06-12",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Snack recall hits 21 states after dangerous metal contamination discovered in popular product - AL.com\nSource: Google News\nDate: Fri, 12 Jun 2026 17:51:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPbjc0Wkh1TXpzazJkX3p5VDRSeDNEQ1pJeEFLdnJiVnVhYzcxNVhJTlJRVXIwa1JnTDZnTGhOWkdVcmlNbUd0RTFnRkZJSTh3ZHhtYzdPOHN3YjZ1NUxhb0h6N2djWjlQSVpHaG9CV2xmM0U0dkhrZkFJakJORkRyUWk0VUF3cGN2NW45SFpGQzFrOUdGdUdPTzN1UmZVSm5wZ3BGR1hHMFROR0FudGVUdHFWLWxmc0RrRDNWV0pCdnQtOFBzZmJxVUV30gHeAUFVX3lxTE9aUVo5MVp4c3VOMFdOdGh0MEt2X1NBUjhOLTN5ZWdSRllLRE5PbXB2UlFFcEJUWFFodm0wRWZ3MHdWMTdmMFRWV2lrMmplRnJCZ1RWZ1o2RDhid0dlMlA0YWtxREhNcWNVd2s5SFZUYUFuY29tU1Q0UmhPRUsxRlJ2NjNDeTMyUHU5QTVIejJCVnFpeTVtVWRMR1FRczkxaEcxUU8xV25POUZXcC1VUldUOFlRRFA2SWE4TU03VVJTNjlRMEt3MmZ6VDJ0czA4R1dFX3kzQzBLa2czRkVxQQ?oc=5",
+      "fetched_at": "2026-06-12T22:55:31.381711+00:00"
+    },
     {
       "id": "7e4d82a163a0",
       "title": "CDSCO’s cosmetic regulations: The rules exist. The enforcement does not - Express Pharma",
@@ -577,30 +601,6 @@
       "key_actions": "1. Review modeling protocols against the new ICH M15 guidelines.\n2. Assess model credibility and 'fit for purpose' based on the risk-based framework.\n3. Establish standard operating procedures (SOPs) for multidisciplinary alignment on model assumptions prior to FDA submission.",
       "source_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/m15-general-principles-model-informed-drug-development",
       "fetched_at": "2026-06-07T15:45:33.716298+00:00"
-    },
-    {
-      "id": "9f590c74e886",
-      "title": "CDSCO directs drugmakers to maintain pharmacovigilance systems - Business Standard",
-      "date": "2026-06-03",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: CDSCO directs drugmakers to maintain pharmacovigilance systems - Business Standard\nSource: CDSCO India\nDate: Wed, 03 Jun 2026 16:37:53 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPakJsNnphZ1hRUzJmUkhVTENOejdNQmc0ZFdoUTdYVFFtRTBPZW8tM1NRMzBqSHh5Ny12V21IVHR5RWlWWm9zazhwQWx6WF93Wlp0b2ZNNkx3bVdvQ1JrMEg0X2lCSmxLR2dKYXFZVlBmYWRvUi1mS1Z3cDN5QTJkblllRHFBY3dTMS1XcHBFVTNsbWFCZjA1ektwMkswSEF3SVZuNUVEWGpfTzJmd3g3UUpRMHhnVGJDN3lfWmdFSTcySmRsQ2hoWHNn0gHPAUFVX3lxTFBzOTJROUF5Y1N0QzAzRE84Q0xkWXBMTlJhdkRLME81c1RUdWhyRzd2YnFaREVDa3FYZEpOZFBFM3psWThoNVM1eXRBUUJ6WDBHSDFkczVLNjBkemxzODNsajRxLTZEN3pGc3RBalhSUVFmOTRhZ1FyVVJ1MHRKQ0VLaHRhYzdjb1BaTFZLU3VueHRmTmhfUWdwU3R6cnFRZG01M0NVWWFwMHJLMGNZT1BJM1IwZHZoSm5qMVlJRnRLZmJBWjhCLVZfbHpmdVdMVQ?oc=5",
-      "fetched_at": "2026-06-07T14:15:53.620092+00:00"
-    },
-    {
-      "id": "61f17a401dbf",
-      "title": "UPDATE: Hintermann H3 TAR Has a Higher-Than-Expected Risk of Failure - fda.gov",
-      "date": "2026-06-03",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "Title: UPDATE: Hintermann H3 TAR Has a Higher-Than-Expected Risk of Failure - fda.gov\nSource: Google News\nDate: Wed, 03 Jun 2026 00:00:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPd0Q0cllqLWxjWGRRREl4RGhEUWx5dThlTDJRUl9mbGV5WEFYdmJNZVMtYjFueEpIWFZYX25zTlZXaklCUUFsdTVTb1kzX2E3dVh1RmtSNGZJSnB3a2RJTjlSMmVsNURPQTJ6UldZUHp6SHZZclN6OV9meXk2dGJLNUowVUVFd2ZUbHhTQnJ5cHJtVmNKSXJZcG5WMVJMQ3RQQzZUYjhjYWE4ak1teWZyNmFpeTEzZGlDM0JGVEEtRGloczByYzNkbFlaQ1hKTEN5Z0FXTi1iX25XcWctbnpoRDl5Z1hDUzNu?oc=5",
-      "fetched_at": "2026-06-07T14:14:34.449008+00:00"
     }
   ]
 }
