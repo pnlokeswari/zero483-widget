@@ -554,6 +554,47 @@ def fetch_google_news_shortages(limit: int = FETCH_LIMIT) -> list[dict]:
     return items
 
 
+def fetch_google_news_approvals(limit: int = FETCH_LIMIT) -> list[dict]:
+    """Fetch FDA/USFDA/CDSCO Drug Approvals from Google News RSS to bypass openFDA latency."""
+    print("\n[SOURCE] Google News RSS (Drug Approvals)...")
+    url = 'https://news.google.com/rss/search?q=(%22FDA+approval%22+OR+%22USFDA+approval%22+OR+%22CDSCO+approval%22+OR+%22drug+approval%22)+(drug+OR+pharma+OR+tablets+OR+injection)&hl=en-US&gl=US&ceid=US:en'
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        html = urllib.request.urlopen(req, timeout=10).read()
+        root = ET.fromstring(html)
+    except Exception as e:
+        print(f"  Failed to fetch RSS: {e}")
+        return []
+
+    items = []
+    for item in root.findall('.//item')[:limit]:
+        title = item.find('title').text or "Drug Approval News"
+        link = item.find('link').text or ""
+        pubDate = item.find('pubDate').text or ""
+        
+        try:
+            dt = datetime.strptime(pubDate, "%a, %d %b %Y %H:%M:%S %Z")
+            if (datetime.now(timezone.utc).replace(tzinfo=None) - dt).days > DAYS_LOOKBACK:
+                continue
+            date_s = dt.strftime("%Y-%m-%d")
+        except:
+            date_s = today_iso()
+
+        raw_text = f"Title: {title}\nSource: Google News\nDate: {pubDate}"
+        
+        items.append({
+            "_id":       make_id(title),
+            "_title":    title[:120],
+            "_date":     date_s,
+            "_category": "Drug Approval",
+            "_severity": "Low",
+            "_raw":      raw_text,
+            "_url":      link,
+        })
+    print(f"  Fetched {len(items)} drug approval news items.")
+    return items
+
+
 def fetch_google_news_adverse_events(limit: int = FETCH_LIMIT) -> list[dict]:
     """Fetch FDA Adverse Events / Safety Alerts from Google News RSS to bypass openFDA latency."""
     print("\n[SOURCE] Google News RSS (FDA Adverse Events)...")
@@ -1398,6 +1439,7 @@ def main():
         fetch_drug_shortages,
         fetch_google_news_shortages,
         fetch_drug_approvals,
+        fetch_google_news_approvals,
         fetch_adverse_events_summary,
         fetch_google_news_adverse_events,
         fetch_google_news_warning_letters,
