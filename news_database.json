@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T11:31:17.885634+00:00",
+  "last_updated": "2026-06-13T12:09:30.209365+00:00",
   "total_items": 50,
   "items": [
     {
@@ -169,6 +169,18 @@
       "key_actions": "Escalate to QA leadership for site-specific action plan.",
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRjNDRVpTOWNyT0NvLUV3b0U3M2xEbTExZ0dXbExVWGtrTXFCM2ZRZDFkRGQ3dXFfQl91cUhnckpCbUkxdWlPeHUyU21OaHRwYU5GUUJRVTlQY3BUQlVPOFF1bVFKNHBhdzVwazMwaklHbGVEYUZDTDJDUkdIbVRnVks2YnhtVUJ3ZTJnS1RlaFp3UEVSZ1hiU19EczNJNHIxNkE?oc=5",
       "fetched_at": "2026-06-13T11:30:21.772474+00:00"
+    },
+    {
+      "id": "1a67cccc003d",
+      "title": "FDA shares guidance on authorized drugs for NWS myiasis - Veterinary Practice News",
+      "date": "2026-06-10",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: FDA shares guidance on authorized drugs for NWS myiasis - Veterinary Practice News\nSource: Google News\nDate: Wed, 10 Jun 2026 13:33:56 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQc193eVo3RDZhelpFYm9rcHhaSmFuOW9Cb3RtQ3NEaFVnSXdVTmZKUlNBZnNZTUloOEx5NGxnV3dKbmpELUtrTVpVR25wdmxEOVZzYnB3d0QyRkctUnVzdGd3Y0FoQ0JYTWU2cmdkZGpTN2tUTjM2Y19UWnpwcWpCUDd0ckFEM3FXeFhBVTJLWjZaZw?oc=5",
+      "fetched_at": "2026-06-13T12:09:28.377407+00:00"
     },
     {
       "id": "964afa3971de",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbjNBaENQTzdPcHFvQzZIMmwwUDczNGtmV0NoaFdCekNuQVFsaXpCZDllWFdJbjRlX2I5dXR3MXFxUmt5VFVkN3c5bGJ0Z3NqdjVpZzVsX2Zkc3FPZGNhaG9VbWNaWDJKSXVyZ2VidUxWTDM1UmR1UGJRZjhObnN3VWlBM291bmFXcWpRVmk1WllkQkVGeWFwbHF2dklQMHRWMVJkV05wVQ?oc=5",
       "fetched_at": "2026-06-04T15:36:18.975824+00:00"
-    },
-    {
-      "id": "2a1adad3228b",
-      "title": "FDA updates manufacturer communications guidance to emphasize application to devices - RAPS.org",
-      "date": "2026-06-03",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: FDA updates manufacturer communications guidance to emphasize application to devices - RAPS.org\nSource: Google News\nDate: Wed, 03 Jun 2026 20:38:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxON1JwaE54ekhMRkU0Uk14NzBRLVByeHJBWnczVGlyeV9PdlFiRHpCaGtwMHpWS1AxSGV5OTExd0hOM0VmRDhFVHFKd3JKUWRJV203TGpOZ083Ums4bFVSbFFEejdLcTBLcFF2UlJvVWUwUGNIcWY4Y0hjNVctQ2J5Q3gybHJjUWJmaWhXdklDVHRwNkE5QXM0RWRZMEo4d1VST1lNRmJobld5VXozTkxiS2k4WkFNT1lTZDk0?oc=5",
-      "fetched_at": "2026-06-04T15:36:08.844044+00:00"
     }
   ]
 }
