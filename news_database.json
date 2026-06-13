@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T12:09:30.209365+00:00",
+  "last_updated": "2026-06-13T14:37:12.857206+00:00",
   "total_items": 50,
   "items": [
     {
@@ -49,6 +49,18 @@
       "key_actions": "Escalate to QA leadership for site-specific action plan.",
       "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMjdNYmx3c2RISTA0NzJkV19Wa0Z0bTRFUTFlOGN4OEVUNUs1M1VpT1Vqa0pXdm8wa3lQM2tyWldFUUJJRmNCeFJyVm5qNUNBSk4zSlhBUDJENFZOclh5eENUTG5uVlJkaVhENG5KN1BwQTFfLTYwcHpLa0d3cEJhbG9rSUozUDRhbUMzXzcyVzM0UGF1cEdB?oc=5",
       "fetched_at": "2026-06-13T11:29:53.851666+00:00"
+    },
+    {
+      "id": "23c7b1f38812",
+      "title": "Alfredo sauce sold in 41 states recalled over Salmonella concerns - NewsNation",
+      "date": "2026-06-12",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Alfredo sauce sold in 41 states recalled over Salmonella concerns - NewsNation\nSource: Google News\nDate: Fri, 12 Jun 2026 11:27:09 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQlhtajFoMXZlOVZDMEVqYl9adkREMmg5c2hvN1hLaTlEbUoyMkZGR1Q5aGU3SnJ1ZFhrazVMNFBETC1ZMXI1ZXFoVmFwcXU4VldZakZQa1NuR3lFUEdRLVRoblk0UkdLNkhSYUctRHFTTXA1Qy1fNUdPUlJXQm9zRjdQV0JZbEHSAYwBQVVfeXFMT19zd3cwX1lVd0o1VEpNMGtqejV5ODYzd1pNNnBhSmFMTEFGcnlwX05VU2dFSXBwSlRqT081SDc1V19vWHlVY0M4N1ZNYk9UdWRIVzlXeFZ0cUFpNTF1aWN4S3prdlcwZkZtY3ZJV195MTVHREI1UF9PRGJnbXoxOFFKb1Y3NVhKZmJMUEU?oc=5",
+      "fetched_at": "2026-06-13T14:36:10.253092+00:00"
     },
     {
       "id": "7e4d82a163a0",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQcHVMN3ZmNThudmpVRktNWXNrMk5YZUpnZ0QtQnZnRHhTZVk3dnFJbW9JQ25ZdVB0ZnlNOGlZS0ZLeDFQckY0aFZLandsNWlSNllpek5JMFhNT3NFV3YxdmFQZkdLZ1FNNXZ3N3ZONWFxR3NETUdTYThGZjFDRkxmejhhSjgxbnMxYTI2cDF2S0tuNkVlUkp6YU9UVVVwMkw5T2tzeXE5bFdWdWd5R2dQR0g0ZWN5N2QtOHMyNVFYS3FKSk9l?oc=5",
       "fetched_at": "2026-06-04T15:36:24.472597+00:00"
-    },
-    {
-      "id": "d0fd4a6f38f9",
-      "title": "Pharmalittle: We're reading about GLP-1 drugs and knees, FDA cell and gene therapy guidance, and more - statnews.com",
-      "date": "2026-06-03",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Pharmalittle: We're reading about GLP-1 drugs and knees, FDA cell and gene therapy guidance, and more - statnews.com\nSource: Google News\nDate: Wed, 03 Jun 2026 13:19:23 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbjNBaENQTzdPcHFvQzZIMmwwUDczNGtmV0NoaFdCekNuQVFsaXpCZDllWFdJbjRlX2I5dXR3MXFxUmt5VFVkN3c5bGJ0Z3NqdjVpZzVsX2Zkc3FPZGNhaG9VbWNaWDJKSXVyZ2VidUxWTDM1UmR1UGJRZjhObnN3VWlBM291bmFXcWpRVmk1WllkQkVGeWFwbHF2dklQMHRWMVJkV05wVQ?oc=5",
-      "fetched_at": "2026-06-04T15:36:18.975824+00:00"
     }
   ]
 }
