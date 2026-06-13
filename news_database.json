@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-06-13T14:37:12.857206+00:00",
+  "last_updated": "2026-06-13T16:56:11.107917+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "42045ecf6cf2",
+      "title": "US FDA approves expanded use of Sanofi’s Type 1 diabetes drug in children aged 8 to 17 - The Straits Times",
+      "date": "2026-06-13",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: US FDA approves expanded use of Sanofi’s Type 1 diabetes drug in children aged 8 to 17 - The Straits Times\nSource: Google News\nDate: Sat, 13 Jun 2026 08:38:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTHJSNERJWVNFQjBzbFpoSWU4NjQ5RjZQMlE4b2h0YW5yb1RUdXIxU3BOT2E5WGR6YkxMYU01YlRBOGtLNC1FYlBVS2FNREhHZlkzOGNXbXR3ME1lRFpGc0IxTjd6Sk5uakE2M193MFlqa1dNQUpTanB0OTA2THV6MXM1MU1tVlVKd1Z5MjNGLWRROW44cWw3YTA2QXpIeEN0NVJ2bTd6cEtLNk5VY3VWNFBKeEY0dndLM3pVNnN4TFo5djczdlplSm8zbjk5UEU?oc=5",
+      "fetched_at": "2026-06-13T16:55:51.454448+00:00"
+    },
+    {
+      "id": "fbb8b0fc96a2",
+      "title": "Cholesterol Drug Recall: Nearly 3,000 Bottles Yanked Nationwide - The Healthy",
+      "date": "2026-06-13",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Cholesterol Drug Recall: Nearly 3,000 Bottles Yanked Nationwide - The Healthy\nSource: Google News\nDate: Sat, 13 Jun 2026 15:44:04 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5rMVJOZThEOFJ2WHpxeWxjd2tkV05yekNiOGwweHNjOGs3THJJRzR1X1FIOEp2TVJRbTdtZUNFZk1JZDB5bmVJUTRfbnlvc2RSVWVBX3haVWwyOFF4ZUl4MUNWTVdGYWpIenluUkdycmgxRXJG?oc=5",
+      "fetched_at": "2026-06-13T16:55:04.244988+00:00"
+    },
     {
       "id": "d16410695bb8",
       "title": "Selenia Dimensions 2D/3D Mammography Systems",
@@ -577,30 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUjFDQjlHQ2x1ZUZEdkREVlBxREh2QVAtc2xtSGZzQkVDMnlJSEx5UkppYWkzdVZYSWhQTEdwd0NsaTd0SWxpc05FS3FVWFliMnVhZG5OUm9FbmNFM3ZvN1JlS3lLZVhaTkJmRU1xS2Q4OGtpYXFYX0ZnSHZGU2xpNkdDdVN0YlFaQnZHNllHaDJKUG9nWnRVN1NpdjhMSHQ3c3pZQUJvS2ZTT2x1bGhXVTRPWFFxQUM4R3ltVA?oc=5",
       "fetched_at": "2026-06-07T02:46:00.897793+00:00"
-    },
-    {
-      "id": "041e1ccf8169",
-      "title": "Drug Approval: TOFACITINIB CITRATE - SOMERSET THERAPS LLC",
-      "date": "2026-06-03",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Application: ANDA220137\nSponsor: SOMERSET THERAPS LLC\nProduct: TOFACITINIB CITRATE\nSubmission type: ORIG\nSubmission class: N/A\nStatus: AP\nStatus date: 20260603",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220137",
-      "fetched_at": "2026-06-06T02:28:16.509917+00:00"
-    },
-    {
-      "id": "55457a4780de",
-      "title": "New FDA Draft Guidance Targets Gene Therapy Submission Burden by Allowing Use of Existing CMC and Scientific Knowledge -",
-      "date": "2026-06-03",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: New FDA Draft Guidance Targets Gene Therapy Submission Burden by Allowing Use of Existing CMC and Scientific Knowledge - Pharmaceutical Executive\nSource: Google News\nDate: Wed, 03 Jun 2026 16:30:46 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQcHVMN3ZmNThudmpVRktNWXNrMk5YZUpnZ0QtQnZnRHhTZVk3dnFJbW9JQ25ZdVB0ZnlNOGlZS0ZLeDFQckY0aFZLandsNWlSNllpek5JMFhNT3NFV3YxdmFQZkdLZ1FNNXZ3N3ZONWFxR3NETUdTYThGZjFDRkxmejhhSjgxbnMxYTI2cDF2S0tuNkVlUkp6YU9UVVVwMkw5T2tzeXE5bFdWdWd5R2dQR0g0ZWN5N2QtOHMyNVFYS3FKSk9l?oc=5",
-      "fetched_at": "2026-06-04T15:36:24.472597+00:00"
     }
   ]
 }
