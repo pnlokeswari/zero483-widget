@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-14T16:54:58.324709+00:00",
+  "last_updated": "2026-06-14T18:51:52.476444+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "35b4555717db",
+      "title": "Patients with rare diseases 'cannot wait' for another review into drug approval processes - Irish Examiner",
+      "date": "2026-06-14",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: Patients with rare diseases 'cannot wait' for another review into drug approval processes - Irish Examiner\nSource: Google News\nDate: Sun, 14 Jun 2026 18:00:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1BMjhmMEl2dHJsZEhaX1VyOU1yTm1RTnlOU0dza2dlampwd01ZbFpLZW5aWW5uQnlicVp3WGs0cHFYUFJfUE5MM25CODJUMkg0V2FIRTJGc0k4TE1uTGpDZ0pFcw?oc=5",
+      "fetched_at": "2026-06-14T18:51:32.959094+00:00"
+    },
     {
       "id": "e0767bd32ef3",
       "title": "Concord Biotech Secures USFDA Approval for Tofacitinib Tablets, Targets USD 500 Million US Market - Medical Dialogues",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPakJsNnphZ1hRUzJmUkhVTENOejdNQmc0ZFdoUTdYVFFtRTBPZW8tM1NRMzBqSHh5Ny12V21IVHR5RWlWWm9zazhwQWx6WF93Wlp0b2ZNNkx3bVdvQ1JrMEg0X2lCSmxLR2dKYXFZVlBmYWRvUi1mS1Z3cDN5QTJkblllRHFBY3dTMS1XcHBFVTNsbWFCZjA1ektwMkswSEF3SVZuNUVEWGpfTzJmd3g3UUpRMHhnVGJDN3lfWmdFSTcySmRsQ2hoWHNn0gHPAUFVX3lxTFBzOTJROUF5Y1N0QzAzRE84Q0xkWXBMTlJhdkRLME81c1RUdWhyRzd2YnFaREVDa3FYZEpOZFBFM3psWThoNVM1eXRBUUJ6WDBHSDFkczVLNjBkemxzODNsajRxLTZEN3pGc3RBalhSUVFmOTRhZ1FyVVJ1MHRKQ0VLaHRhYzdjb1BaTFZLU3VueHRmTmhfUWdwU3R6cnFRZG01M0NVWWFwMHJLMGNZT1BJM1IwZHZoSm5qMVlJRnRLZmJBWjhCLVZfbHpmdVdMVQ?oc=5",
       "fetched_at": "2026-06-07T14:15:53.620092+00:00"
-    },
-    {
-      "id": "61f17a401dbf",
-      "title": "UPDATE: Hintermann H3 TAR Has a Higher-Than-Expected Risk of Failure - fda.gov",
-      "date": "2026-06-03",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "Title: UPDATE: Hintermann H3 TAR Has a Higher-Than-Expected Risk of Failure - fda.gov\nSource: Google News\nDate: Wed, 03 Jun 2026 00:00:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPd0Q0cllqLWxjWGRRREl4RGhEUWx5dThlTDJRUl9mbGV5WEFYdmJNZVMtYjFueEpIWFZYX25zTlZXaklCUUFsdTVTb1kzX2E3dVh1RmtSNGZJSnB3a2RJTjlSMmVsNURPQTJ6UldZUHp6SHZZclN6OV9meXk2dGJLNUowVUVFd2ZUbHhTQnJ5cHJtVmNKSXJZcG5WMVJMQ3RQQzZUYjhjYWE4ak1teWZyNmFpeTEzZGlDM0JGVEEtRGloczByYzNkbFlaQ1hKTEN5Z0FXTi1iX25XcWctbnpoRDl5Z1hDUzNu?oc=5",
-      "fetched_at": "2026-06-07T14:14:34.449008+00:00"
     }
   ]
 }

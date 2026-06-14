@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/patients-with-rare-diseases-cannot-wait-for-another-review-into-drug-approval-processes-irish-examiner.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/concord-biotech-secures-usfda-approval-for-tofacitinib-tablets-targets-usd-500-million-us-market-medical-dialogues.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -247,11 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/cdsco-directs-drugmakers-to-maintain-pharmacovigilance-systems-business-standard.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/update-hintermann-h3-tar-has-a-higher-than-expected-risk-of-failure-fda-gov.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
