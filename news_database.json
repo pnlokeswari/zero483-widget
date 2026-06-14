@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-06-14T20:46:44.307665+00:00",
+  "last_updated": "2026-06-14T22:42:36.304940+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "ca10d70ab19d",
+      "title": "Keppel Infrastructure Trust : Receipt of EMA Approval in relation to the Proposed Acquisition of an Additional 39% Inter",
+      "date": "2026-06-14",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: Keppel Infrastructure Trust : Receipt of EMA Approval in relation to the Proposed Acquisition of an Additional 39% Interest in KMC - marketscreener.com\nSource: European Medicines Agency\nDate: Sun, 14 Jun 2026 22:07:04 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOYTBPWlJzUEQ5X24xWDkySGJfelhRQnp5Z2ROeUx1M3p4RHdfWXlKRDNiaEljR3IyRFNtSWJRdEF3Q1BEWTBmb1JlR0dUZHVyZi1KSF9hVGlzSjU1R0kxZzVMcXh5QTFYQ1dVYmUtUXVISTZDUlRSa0k0MUN2ZWVUa29nanFVYjZrclc3dmU2aTNIeTNlR3M1aGdjck9XXzQ5b1FYVlMxeUpKUUpkQUEzRnkwQlNyY2tLYW9EWVJtVnRVTDAxMnlZTVpkVlh2U3hXLWxVRmpLcVhNN3VNc1ZXV05zU0M?oc=5",
+      "fetched_at": "2026-06-14T22:42:35.250107+00:00"
+    },
+    {
+      "id": "ad60a317ca73",
+      "title": "Alfredo Sauce Recall Elevated to Highest Risk Level in 41 States Due to Potential Salmonella Contamination - People.com",
+      "date": "2026-06-14",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Alfredo Sauce Recall Elevated to Highest Risk Level in 41 States Due to Potential Salmonella Contamination - People.com\nSource: Google News\nDate: Sun, 14 Jun 2026 17:43:50 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQW1PQXZaaEJkYUdxakZvakJwLUhLRnF6cEx2WVJ4M0pfYXVtWmRPUjJlUVhkLW9TSHVGY3F3RDRncVgxQzlMcTdUWmdzS1BsRkNqUDc2NzRta1VpbHNXTmFqVzkyaDVCem42UUM5QmUxN3FsRHoyR0E5WGkzWVk1X3Fmdy1CWDh3Qi1XV3I2REhSaktvNWVPR0E1dw?oc=5",
+      "fetched_at": "2026-06-14T22:41:29.785483+00:00"
+    },
     {
       "id": "35b4555717db",
       "title": "Patients with rare diseases 'cannot wait' for another review into drug approval processes - Irish Examiner",
@@ -577,30 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQcllQS0tyc01nblcxWmp6NXVnT3E5elZWdmFLejZhdllvaFpESlhwVmIzbXFDTFZwVG1zcnN1Mk5vZEVPd3V3UUplUlJWYU51WXExNUFYQjJIUEZoUktDN2Z3VzFBZXpxUGE1TTJmdnRBWllteV92NWlaWjVaaG02cnhNZENzWjBGTmQyLTZZWU9Ncm1BNDk2SzlNVER1ejJ2V3FXZWlMeEVpQk9IbGd2TEtLNmJ1UFR3OXlFNzU0M1FITDY1UHJfaUNGS3FwYy1Zc1hZ?oc=5",
       "fetched_at": "2026-06-04T15:36:13.865400+00:00"
-    },
-    {
-      "id": "678ab63a0d77",
-      "title": "Thai FDA assures medicines, supplies adequate, fast-tracks imports - Nation Thailand",
-      "date": "2026-06-04",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "Title: Thai FDA assures medicines, supplies adequate, fast-tracks imports - Nation Thailand\nSource: Google News\nDate: Thu, 04 Jun 2026 05:18:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1Xd0FTYWd6bEtKTmVuX0xkbWpLZndqZTJ5ZUpCNUI3TjZzV3dWTk1HY21VZ3JCMlJsVXZBTGpveHNrVjdDQXVKMTlxaGh1WW1BSDgwWkY3U2ZEMGFEVFhoRk5Xc2wyQQ?oc=5",
-      "fetched_at": "2026-06-04T15:35:35.553820+00:00"
-    },
-    {
-      "id": "28f0f8084bbe",
-      "title": "ICH M15 Guidance: General Principles for Model-Informed Drug Development",
-      "date": "2026-06-03",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "The FDA has announced the availability of the final guidance for industry, 'M15 General Principles for Model-Informed Drug Development.' Developed by the International Council for Harmonisation (ICH), this document provides a harmonized framework for planning, evaluating, and documenting Model-Informed Drug Development (MIDD) evidence to ensure consistent and high-quality applications across global regulatory agencies.",
-      "compliance_impact": "This guidance establishes a standardized framework for the modeling, simulation, and documentation of MIDD evidence. Organizations must align early regulatory engagement, model assumptions, and credibility assessment with these new expectations.",
-      "key_actions": "1. Review modeling protocols against the new ICH M15 guidelines.\n2. Assess model credibility and 'fit for purpose' based on the risk-based framework.\n3. Establish standard operating procedures (SOPs) for multidisciplinary alignment on model assumptions prior to FDA submission.",
-      "source_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/m15-general-principles-model-informed-drug-development",
-      "fetched_at": "2026-06-07T15:45:33.716298+00:00"
     }
   ]
 }
