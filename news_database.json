@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T18:51:52.476444+00:00",
+  "last_updated": "2026-06-14T20:46:44.307665+00:00",
   "total_items": 50,
   "items": [
     {
@@ -25,6 +25,18 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNamxBMkRkMTFBOExWRFNLTDNRanY4VExSakQzd3o0WERZWE5tOGpHU2pjRmRJQkU3LVhHUkhfWVRDUElPMVBnRTRBVUdkbWNndXpfcjZiZWRpRUpDMWZhTUpaT0RickVsU0FVdzhpWWdpY054cm9qV0xheGZJQklyOXh2WGhTeHNVaHhIajhKMWZkaTl4ZU9fT0pZWE95ZFYza25ja19reWdGSURxVExfN3lxUjdhUzFiekhTQUxZa0pmbHZMREhmUmRub0JlWi1fM2lxdjlIeEo0V3BVVGYybi1BdmNxZ1nSAewBQVVfeXFMUE5QdVNTYTVvc1M3NndmRHVWSldfdlpDS2ZOeXhwRGc0T3RxSHFWbHdIN3dlU005TWwwbVNVcVBIMUk1WXhOQ3NMRHN1SjNPbUF4QXgySENWMVJDYlR0QnZDR2Q5LUtrdF9YLWhtNGVIdHNmT2VOTUhFVi1rcFZxZzh2bmoxQVVsUFNlMHBHQ1dHQzZVRHdtMGpGTThaQTg1dXJuY0FGcUpMcnM4YnY1YS1VNEpxOTVvYlRpbzNYMmlNb1FmZjR0OTF2OWFsanQ2SjNRcV9lVndJdF92Qkh5d3hNdTVnTGJsRzVBUHc?oc=5",
       "fetched_at": "2026-06-14T15:24:48.392422+00:00"
+    },
+    {
+      "id": "8227c3a65832",
+      "title": "Outbreak Investigation of Infant Botulism: Powdered Infant Formula (June 2026) - fda.gov",
+      "date": "2026-06-13",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Outbreak Investigation of Infant Botulism: Powdered Infant Formula (June 2026) - fda.gov\nSource: Google News\nDate: Sat, 13 Jun 2026 00:00:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdWIzNDUxbG1ZY1BXR2Jra3otQ0JtcmZhVHQ0aDV5elZXaVYzbTk1OWppWkJPTEQ0aTl2azFSRUJ3eXBXbVRaSHEzYmpXY2I5X3FGdzBaN0JickJHZkxLREpHdFNuNHZTUzdEdGNhSzVlbHBSUHpZQVlMdWQ4eHl5SFZtMklGcXdNcXowVjZydUxxUFRlbnJWQTY4ZXExZjQ3Ykh6R0VMeFE3S0p0enBKV2ZqZmtlNG1hbG55dXFQekhoOUU?oc=5",
+      "fetched_at": "2026-06-14T20:45:44.398081+00:00"
     },
     {
       "id": "42045ecf6cf2",
@@ -589,18 +601,6 @@
       "key_actions": "1. Review modeling protocols against the new ICH M15 guidelines.\n2. Assess model credibility and 'fit for purpose' based on the risk-based framework.\n3. Establish standard operating procedures (SOPs) for multidisciplinary alignment on model assumptions prior to FDA submission.",
       "source_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/m15-general-principles-model-informed-drug-development",
       "fetched_at": "2026-06-07T15:45:33.716298+00:00"
-    },
-    {
-      "id": "9f590c74e886",
-      "title": "CDSCO directs drugmakers to maintain pharmacovigilance systems - Business Standard",
-      "date": "2026-06-03",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: CDSCO directs drugmakers to maintain pharmacovigilance systems - Business Standard\nSource: CDSCO India\nDate: Wed, 03 Jun 2026 16:37:53 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPakJsNnphZ1hRUzJmUkhVTENOejdNQmc0ZFdoUTdYVFFtRTBPZW8tM1NRMzBqSHh5Ny12V21IVHR5RWlWWm9zazhwQWx6WF93Wlp0b2ZNNkx3bVdvQ1JrMEg0X2lCSmxLR2dKYXFZVlBmYWRvUi1mS1Z3cDN5QTJkblllRHFBY3dTMS1XcHBFVTNsbWFCZjA1ektwMkswSEF3SVZuNUVEWGpfTzJmd3g3UUpRMHhnVGJDN3lfWmdFSTcySmRsQ2hoWHNn0gHPAUFVX3lxTFBzOTJROUF5Y1N0QzAzRE84Q0xkWXBMTlJhdkRLME81c1RUdWhyRzd2YnFaREVDa3FYZEpOZFBFM3psWThoNVM1eXRBUUJ6WDBHSDFkczVLNjBkemxzODNsajRxLTZEN3pGc3RBalhSUVFmOTRhZ1FyVVJ1MHRKQ0VLaHRhYzdjb1BaTFZLU3VueHRmTmhfUWdwU3R6cnFRZG01M0NVWWFwMHJLMGNZT1BJM1IwZHZoSm5qMVlJRnRLZmJBWjhCLVZfbHpmdVdMVQ?oc=5",
-      "fetched_at": "2026-06-07T14:15:53.620092+00:00"
     }
   ]
 }

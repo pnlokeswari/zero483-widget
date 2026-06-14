@@ -16,6 +16,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/outbreak-investigation-of-infant-botulism-powdered-infant-formula-june-2026-fda-gov.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/us-fda-approves-expanded-use-of-sanofi-s-type-1-diabetes-drug-in-children-aged-8-to-17-the-straits-times.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -247,11 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/ich-m15-guidance-general-principles-for-model-informed-drug-development.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/cdsco-directs-drugmakers-to-maintain-pharmacovigilance-systems-business-standard.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
