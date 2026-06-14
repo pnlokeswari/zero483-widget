@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-14T13:13:30.455676+00:00",
+  "last_updated": "2026-06-14T15:25:08.663447+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "e0767bd32ef3",
+      "title": "Concord Biotech Secures USFDA Approval for Tofacitinib Tablets, Targets USD 500 Million US Market - Medical Dialogues",
+      "date": "2026-06-14",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: Concord Biotech Secures USFDA Approval for Tofacitinib Tablets, Targets USD 500 Million US Market - Medical Dialogues\nSource: Google News\nDate: Sun, 14 Jun 2026 12:49:02 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNamxBMkRkMTFBOExWRFNLTDNRanY4VExSakQzd3o0WERZWE5tOGpHU2pjRmRJQkU3LVhHUkhfWVRDUElPMVBnRTRBVUdkbWNndXpfcjZiZWRpRUpDMWZhTUpaT0RickVsU0FVdzhpWWdpY054cm9qV0xheGZJQklyOXh2WGhTeHNVaHhIajhKMWZkaTl4ZU9fT0pZWE95ZFYza25ja19reWdGSURxVExfN3lxUjdhUzFiekhTQUxZa0pmbHZMREhmUmRub0JlWi1fM2lxdjlIeEo0V3BVVGYybi1BdmNxZ1nSAewBQVVfeXFMUE5QdVNTYTVvc1M3NndmRHVWSldfdlpDS2ZOeXhwRGc0T3RxSHFWbHdIN3dlU005TWwwbVNVcVBIMUk1WXhOQ3NMRHN1SjNPbUF4QXgySENWMVJDYlR0QnZDR2Q5LUtrdF9YLWhtNGVIdHNmT2VOTUhFVi1rcFZxZzh2bmoxQVVsUFNlMHBHQ1dHQzZVRHdtMGpGTThaQTg1dXJuY0FGcUpMcnM4YnY1YS1VNEpxOTVvYlRpbzNYMmlNb1FmZjR0OTF2OWFsanQ2SjNRcV9lVndJdF92Qkh5d3hNdTVnTGJsRzVBUHc?oc=5",
+      "fetched_at": "2026-06-14T15:24:48.392422+00:00"
+    },
     {
       "id": "42045ecf6cf2",
       "title": "US FDA approves expanded use of Sanofi’s Type 1 diabetes drug in children aged 8 to 17 - The Straits Times",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPd0Q0cllqLWxjWGRRREl4RGhEUWx5dThlTDJRUl9mbGV5WEFYdmJNZVMtYjFueEpIWFZYX25zTlZXaklCUUFsdTVTb1kzX2E3dVh1RmtSNGZJSnB3a2RJTjlSMmVsNURPQTJ6UldZUHp6SHZZclN6OV9meXk2dGJLNUowVUVFd2ZUbHhTQnJ5cHJtVmNKSXJZcG5WMVJMQ3RQQzZUYjhjYWE4ak1teWZyNmFpeTEzZGlDM0JGVEEtRGloczByYzNkbFlaQ1hKTEN5Z0FXTi1iX25XcWctbnpoRDl5Z1hDUzNu?oc=5",
       "fetched_at": "2026-06-07T14:14:34.449008+00:00"
-    },
-    {
-      "id": "736e958f3494",
-      "title": "Outbreak Investigation of Infant Botulism: Infant Formula (November 2025) - fda.gov",
-      "date": "2026-06-03",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Outbreak Investigation of Infant Botulism: Infant Formula (November 2025) - fda.gov\nSource: Google News\nDate: Wed, 03 Jun 2026 10:00:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUjFDQjlHQ2x1ZUZEdkREVlBxREh2QVAtc2xtSGZzQkVDMnlJSEx5UkppYWkzdVZYSWhQTEdwd0NsaTd0SWxpc05FS3FVWFliMnVhZG5OUm9FbmNFM3ZvN1JlS3lLZVhaTkJmRU1xS2Q4OGtpYXFYX0ZnSHZGU2xpNkdDdVN0YlFaQnZHNllHaDJKUG9nWnRVN1NpdjhMSHQ3c3pZQUJvS2ZTT2x1bGhXVTRPWFFxQUM4R3ltVA?oc=5",
-      "fetched_at": "2026-06-07T02:46:00.897793+00:00"
     }
   ]
 }

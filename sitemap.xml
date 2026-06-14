@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/concord-biotech-secures-usfda-approval-for-tofacitinib-tablets-targets-usd-500-million-us-market-medical-dialogues.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/us-fda-approves-expanded-use-of-sanofi-s-type-1-diabetes-drug-in-children-aged-8-to-17-the-straits-times.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -247,11 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/update-hintermann-h3-tar-has-a-higher-than-expected-risk-of-failure-fda-gov.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/outbreak-investigation-of-infant-botulism-infant-formula-november-2025-fda-gov.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
