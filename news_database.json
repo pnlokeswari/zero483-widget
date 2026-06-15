@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-06-15T19:12:53.160807+00:00",
+  "last_updated": "2026-06-15T22:01:31.658576+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "b29a7daf6f3a",
+      "title": "FDA issues guidance on sharing potential NDA patent information - RAPS.org",
+      "date": "2026-06-15",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: FDA issues guidance on sharing potential NDA patent information - RAPS.org\nSource: Google News\nDate: Mon, 15 Jun 2026 20:03:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPX09UODRCLXAzLS1YX0NjM210dnI4NFdYUFRyX0VGbFNXajBBMG1Dai04Mkl5aTgtUk15QURnVnM3eF8ybDliSzZVMVpjRVktUUNDUWJIOGlOQVQ2RXBKaU83X2ZuMHJXZEtUS0tZdWxNZGhnWGZoeTJuRTVZSEE4blBUTkFINk1QeFJqbXZ6YnlvT2NKeGJPTlBCU01nbzA?oc=5",
+      "fetched_at": "2026-06-15T22:01:29.965437+00:00"
+    },
+    {
+      "id": "aff2e06c2e52",
+      "title": "Zaynich and the question India can no longer avoid - Deccan Herald",
+      "date": "2026-06-15",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: Zaynich and the question India can no longer avoid - Deccan Herald\nSource: Google News\nDate: Mon, 15 Jun 2026 19:47:25 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNcl9NS0cxcHA3aWdmaVZWV3E3VklyTDQ3SENIcHJtNzlCbGtLZzNPSEJIZnR5ZzNwUWloTG05ZjlDWjhvSER1d09sbVc4bTE0aHpBSG82NXRHalBmRlFMZUZyOWNEQXlfeW1Tb1ZyMGdHN09TR011X1kxQkZ5dW1LeWk1TW83YWRScjFGOTZPbkpfOHF5eVAyNXh3OA?oc=5",
+      "fetched_at": "2026-06-15T22:01:07.141383+00:00"
+    },
+    {
+      "id": "1e31394938c4",
+      "title": "Drug Shortage: Cefotaxime Sodium Powder, for Solution",
+      "date": "2026-06-15",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Generic name: Cefotaxime Sodium Powder, for Solution\nBrand name: N/A\nStatus: Current\nPresentations: []",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/search?q=FDA+Shortage+Cefotaxime+Sodium+Powder%2C+for+Solution",
+      "fetched_at": "2026-06-15T22:00:20.398007+00:00"
+    },
+    {
+      "id": "fdb51e207a51",
+      "title": "Drug Shortage: Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccha",
+      "date": "2026-06-15",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Generic name: Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate Tablet\nBrand name: N/A\nStatus: Current\nPresentations: []",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/search?q=FDA+Shortage+Amphetamine+Aspartate+Monohydrate%2C+Amphetamine+Sulfate%2C+Dextroamphetamine+Saccharate%2C+Dextroamphetamine+Sulfate+Tablet",
+      "fetched_at": "2026-06-15T22:00:15.383998+00:00"
+    },
     {
       "id": "6451b45daf8d",
       "title": "US Food And Drug Administration Issues Warning Letter to Telangana-Based Beagle Breeder and Animal Lab Palamur Bioscienc",
@@ -553,54 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1HR2pJQXJsR0JMdGpBX2JINnZaLTk0S3JUd1dsWDVWTVp1WlpDSUs5ZFlzNC03ZTQySzJ4cTZOelRQM2JqUHJiUkxac3llMUE0Tlo0Mlk2ZmZqeXRVSEJ4aUg0TVlYRUFmT2pNVUhsVFQ3MURPelB0amtNNnZBUQ?oc=5",
       "fetched_at": "2026-06-07T14:15:16.066032+00:00"
-    },
-    {
-      "id": "8241cb5e02c8",
-      "title": "As pro-life pressure ramps up on Trump, FDA is investigating safety of abortion pill: WSJ - Fierce Pharma",
-      "date": "2026-06-05",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "Title: As pro-life pressure ramps up on Trump, FDA is investigating safety of abortion pill: WSJ - Fierce Pharma\nSource: Google News\nDate: Fri, 05 Jun 2026 15:06:57 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMlZIWlFQT1ZnTEpTSld6Zk01NmY2X1NrLVFQY3hsbTN6R1ZCTmhjZV9WdFpfMHJyQzNEdy1vcHNGcW5WNjJxM3NlWTJxVThyQUYwd09iaXFDZENibVJZeExSQnN1dzM3NWFfa09KeTZlNkpFWlZWTHEzakhMbjJIWTVCQlRoYlhmNUFkY1RyYzJDVXlBVlg0blBqcjlMUGxNa0RobUVObTNsWFhi?oc=5",
-      "fetched_at": "2026-06-07T14:14:39.486848+00:00"
-    },
-    {
-      "id": "08c2e6346afe",
-      "title": "FDA alerts public to recall of packaged Dried Herring Fish - Spectrum News",
-      "date": "2026-06-05",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: FDA alerts public to recall of packaged Dried Herring Fish - Spectrum News\nSource: Google News\nDate: Fri, 05 Jun 2026 22:00:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOc01EbGp1ZnhQQ2R4RGRwcEJ6UXF1ZklQaklFNXRudm1aRUI2aHh1NmRXZmpqRGxFQjNfTXpRT3pjZ2tVNmxiWE1FRjYtdm14TUYySEFOUHA5dHdCOVFHWTBGQzJWVDRZRFhiQlpJMkVDbnlzcVFMaklGZ3N0c3RhR0pFQ3Z6cEgxM2pqNUJVSDdNTkVBV2N0Tnc5V0NZYUwzZGJiRUMycGd3NWc5SjJsZmNwbnk?oc=5",
-      "fetched_at": "2026-06-06T07:08:57.181469+00:00"
-    },
-    {
-      "id": "28dbb4fd091a",
-      "title": "The FDA Amendments Act And Drug Safety: Where Are We Twenty Years Later? - Health Affairs",
-      "date": "2026-06-05",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "Title: The FDA Amendments Act And Drug Safety: Where Are We Twenty Years Later? - Health Affairs\nSource: Google News\nDate: Fri, 05 Jun 2026 15:31:27 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZ0Q3ajRfZWNiTlpPS1FORUdwRlIwTTN4a0ZVZWZ1b0pnNjZjVzdoTWc2UnpoYTVyVzFLZERaSVVHbUJsN3Vqamw5SW1yRmdObnZFd3RvQktVa1JOR2ttR2tfdGxaeEtEZWxQNEw4Q2hNWFB5MUFxVDB3Z3ZQa0lfX3RSaDZ2MlhJRnZvZk9wb3o0clliNFAzQVNDcTBGWTdjSnNQZ0Z1RQ?oc=5",
-      "fetched_at": "2026-06-06T02:28:23.477226+00:00"
-    },
-    {
-      "id": "1e668436402c",
-      "title": "Banned Antibiotic Residues Trigger Shrimp Export Rejections; CDSCO Seeks State Action - Medical Dialogues",
-      "date": "2026-06-04",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: Banned Antibiotic Residues Trigger Shrimp Export Rejections; CDSCO Seeks State Action - Medical Dialogues\nSource: CDSCO India\nDate: Thu, 04 Jun 2026 12:30:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOWnJRUGVBZmtwTzNNU05BZ2NlVzNCdmNyYno1ekhfU1FtSGhMbktZb3UzUk9RLU9NWFdSQXQ4ZGNkWTUxdHdSSUR5NkVnbW44M0tnZTNKMmtxZE96cVhwOFNmWjZvaFY1ZWtURFZsQWd0VFVURlRJSmROZFlNaGVUQzREdFdtMU9KX2pmbjNjRlJGTjBUc1diZTVMSWFoTFZZWG1ERGNSUFJFbmNxckNJVkMzM2hSbnZndHIwWHZBdUh1RW1jOTljQ055aTFRWlJ3aE93NTFMNNIB3AFBVV95cUxQczBMY2tfcmpGbFVaMkg5REZScVo2NkFrdm9vQVpZMFRKVnlXSjlzTndBb08yd0FTRlUwdTdIZDg5cUlhTzhET3phOTBVV2R1Y0dTZXc0TVg0a0RraWRQZ1h0c3FDcGQzWTRXeFdmWFBoNXNzTWJHSm1TdVZDYzZrR1hsVU9nMnlZQktUNHcxb0l3bHFIVnVrQ29RYktRWVNZZk5QenhXU3NWZXlQdVpTbnV6b01aUUJNdWh5VWlINS1JcUlZNnY3SnBYNFYzbU04ckJUS3J3S2Jpcmpj?oc=5",
-      "fetched_at": "2026-06-07T22:35:04.937213+00:00"
     }
   ]
 }
