@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-14T22:42:36.304940+00:00",
+  "last_updated": "2026-06-15T01:45:58.929659+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "e2bb91447365",
+      "title": "Brazilian Critical Minerals advances rare earths project with key regulatory approval - Mining.com.au",
+      "date": "2026-06-15",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: Brazilian Critical Minerals advances rare earths project with key regulatory approval - Mining.com.au\nSource: European Medicines Agency\nDate: Mon, 15 Jun 2026 00:40:26 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVE9jRGt0Nk5vdUVsYzdLczFKc2xvUVYyTmttRlNTeUpGdFVsSlJFTEpyMUtlVzVYYk5NdmhPemxBa203YzZiQnc3X2FvY2xGYWJjVzFkM0JWWFdTX0sycjBoVGRGTDZKNXVEMUJEbGFHcUlqQW00ekJSb05uQ0VGZnBEQQ?oc=5",
+      "fetched_at": "2026-06-15T01:45:57.914217+00:00"
+    },
     {
       "id": "ca10d70ab19d",
       "title": "Keppel Infrastructure Trust : Receipt of EMA Approval in relation to the Proposed Acquisition of an Additional 39% Inter",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSjc4SzE3SGpqYUhQMWZGVmNfR2steWhFZUJMQjBSRldEWlNNeW56ZG15N0dHLWpEVE9VcjZ2RDJZVTVLWXNjb09LUGROOVFWTmJWNTU1T2hsMFN4ZHRpRjFKVmZXb1h5eWRvSzM3dWJGUGZWc1VucEp1bHk0ZFUzdmVnQmNJVnRZRDZKSGR3bmNDVVd4NGlETXMwR0QyR1RUdjFVRWIxQ1paSTFuX1hLRkFFUkRyS3NwdU1hZ09GTTBlQQ?oc=5",
       "fetched_at": "2026-06-04T16:53:40.701465+00:00"
-    },
-    {
-      "id": "2362a97f832d",
-      "title": "Why targeted therapies are exposing the limits of animal models – and what comes next - Drug Target Review",
-      "date": "2026-06-04",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Why targeted therapies are exposing the limits of animal models – and what comes next - Drug Target Review\nSource: Google News\nDate: Thu, 04 Jun 2026 08:45:27 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQcllQS0tyc01nblcxWmp6NXVnT3E5elZWdmFLejZhdllvaFpESlhwVmIzbXFDTFZwVG1zcnN1Mk5vZEVPd3V3UUplUlJWYU51WXExNUFYQjJIUEZoUktDN2Z3VzFBZXpxUGE1TTJmdnRBWllteV92NWlaWjVaaG02cnhNZENzWjBGTmQyLTZZWU9Ncm1BNDk2SzlNVER1ejJ2V3FXZWlMeEVpQk9IbGd2TEtLNmJ1UFR3OXlFNzU0M1FITDY1UHJfaUNGS3FwYy1Zc1hZ?oc=5",
-      "fetched_at": "2026-06-04T15:36:13.865400+00:00"
     }
   ]
 }

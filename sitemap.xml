@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/brazilian-critical-minerals-advances-rare-earths-project-with-key-regulatory-approval-mining-com-au.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/keppel-infrastructure-trust-receipt-of-ema-approval-in-relation-to-the-proposed-acquisition-of-an-additional-39-inter.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -247,11 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/pharma-pulse-340b-uncertainty-drug-shortages-and-wegovy-s-global-debut-pharmaceutical-commerce.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/why-targeted-therapies-are-exposing-the-limits-of-animal-models-and-what-comes-next-drug-target-review.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
