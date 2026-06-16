@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-15T22:01:31.658576+00:00",
+  "last_updated": "2026-06-16T00:09:47.049015+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "fe53bc216739",
+      "title": "FDA Recalls and Warnings: Gas-X Contaminated With Coolant; More Generic Cymbalta Cancer Risks, Supplements Linked to Sal",
+      "date": "2026-06-15",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: FDA Recalls and Warnings: Gas-X Contaminated With Coolant; More Generic Cymbalta Cancer Risks, Supplements Linked to Salmonella Outbreak - MedShadow Foundation\nSource: Google News\nDate: Mon, 15 Jun 2026 16:27:37 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQWGZDczMta2g4WjE1WklVUW5KYTJKNlBFZ3VzMWU4c29lblFjREladDRUNjRaSTVOWHNwSXNQRFh1S3N4dGpLbHo0bFNXM3Z0Tjc3eWFNVzFWYUg5Y1ptbzRYdC1OMmg0ZmJUZjdNNlNIb3NuV1NkS25idW9LYkxFZUVzRHMwYVNnVnpuVkR5RGpBc0I5T1MxbjZnTnYyREFKU2NWTE0tNzVHQ0hweEI5QklRMUhzWXJHbVRDX2VxMFZpdS1tZTY5R1JQbmROM2VFVjRTMDUxdDMtQml4WWc?oc=5",
+      "fetched_at": "2026-06-16T00:08:45.983427+00:00"
+    },
     {
       "id": "b29a7daf6f3a",
       "title": "FDA issues guidance on sharing potential NDA patent information - RAPS.org",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQZDViY0ZRc2FSdTdlbmdUdU9nVllwdjZzczl6c3ZXclVrVVFEYjBzOUtaZkl0VWY3dVliUVJCcjF1b2pGVHBMcDRBRE5YSV9YZUhFeUtPY2tCYXhTSm5TYXdPT1JVMTY2ajc3MnVHV2lNWDNZWHQ2bTdMVHdidTJ6cWR1MGlPc09lXzZvbS1INEdwNkI3MkJ1N1BycFZtZ19YdFFXLXRQeVlWd2YwYmU0U3hPSVRINEVlcFh6S0t5SElaQ1czRXllYVV1dk8zd3k3a2VQZVJQX0Q0STJXZUN0bGZSRy11WXpNaWlSeEEzdF9maE5pbjBqeC1kd2I5Um9LMlBpVTF3MTd4aXVrajhfbg?oc=5",
       "fetched_at": "2026-06-07T14:15:26.127503+00:00"
-    },
-    {
-      "id": "bbaa45bdcdf5",
-      "title": "Regulatory tracker: AbbVie's Elahere cleared for use on NHS England - Fierce Pharma",
-      "date": "2026-06-05",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Regulatory tracker: AbbVie's Elahere cleared for use on NHS England - Fierce Pharma\nSource: European Medicines Agency\nDate: Fri, 05 Jun 2026 07:00:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1HR2pJQXJsR0JMdGpBX2JINnZaLTk0S3JUd1dsWDVWTVp1WlpDSUs5ZFlzNC03ZTQySzJ4cTZOelRQM2JqUHJiUkxac3llMUE0Tlo0Mlk2ZmZqeXRVSEJ4aUg0TVlYRUFmT2pNVUhsVFQ3MURPelB0amtNNnZBUQ?oc=5",
-      "fetched_at": "2026-06-07T14:15:16.066032+00:00"
     }
   ]
 }

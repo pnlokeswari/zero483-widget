@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/fda-recalls-and-warnings-gas-x-contaminated-with-coolant-more-generic-cymbalta-cancer-risks-supplements-linked-to-sal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/fda-issues-guidance-on-sharing-potential-nda-patent-information-raps-org.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -247,11 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/intrabio-announces-submission-of-variation-application-to-the-european-medicines-agency-for-aqneursa-for-ataxia-telangi.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/regulatory-tracker-abbvie-s-elahere-cleared-for-use-on-nhs-england-fierce-pharma.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
