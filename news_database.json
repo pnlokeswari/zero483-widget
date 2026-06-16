@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-06-16T05:44:45.281641+00:00",
+  "last_updated": "2026-06-16T11:41:56.947618+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "40615026ced8",
+      "title": "Medical Product Alert N°2/2026: Falsified JAKAVI (ruxolitinib) - World Health Organization (WHO)",
+      "date": "2026-06-16",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "Title: Medical Product Alert N°2/2026: Falsified JAKAVI (ruxolitinib) - World Health Organization (WHO)\nSource: World Health Organization\nDate: Tue, 16 Jun 2026 09:22:30 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYU1oc05tLXd5TGQ1aVRwNG9iRlgzdGFndU9KNVRDbWFxSjZ3aTV1N0RqNG9MQTNUdV83NWhvTE9vVTlDQU1VT0t6Y1UwN2c2amxINE5oWkU4N0I5eXRRRHBXS2xjdTJ3SEkwenpqbU9BYXBOejR3QWNBM25IeURxSFJGU0lwZmhZUEFvN3dfRjE0YUN0bUEtT2FDQUgwaFFIM2g3SzNB?oc=5",
+      "fetched_at": "2026-06-16T11:41:56.456008+00:00"
+    },
+    {
+      "id": "4d69cf559823",
+      "title": "May 2026 — CDMO Opportunities And Threats Report - Bioprocess Online",
+      "date": "2026-06-16",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: May 2026 — CDMO Opportunities And Threats Report - Bioprocess Online\nSource: European Medicines Agency\nDate: Tue, 16 Jun 2026 06:40:31 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQWFNa2ZPeTJGeDdoRjZfeEJRQ3hleDVjQUM4aFE4QXp2TjEtb2MybjRnejgxaEZ1NzBpNGplc0Z2WlhtYUlHQ3N6YnJKMU5GaGpudV9UQWRWU0JOWGtUa0h3VExOYTFjOGJLWVVJaDl5RUxHYndmT00zam95bm9vLUpEVm9JX2Nzbmk4?oc=5",
+      "fetched_at": "2026-06-16T11:41:50.957154+00:00"
+    },
+    {
+      "id": "0b2e5ab3d9ca",
+      "title": "EMA grants orphan status to lung NEC drug for 375,000 patients - Stock Titan",
+      "date": "2026-06-16",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: EMA grants orphan status to lung NEC drug for 375,000 patients - Stock Titan\nSource: European Medicines Agency\nDate: Tue, 16 Jun 2026 11:00:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNMXpqMFFzcVFSZC02dUlSNWd1TTI4dkduSnJ3a215c2xSemdxWHZhQ1JaT1hGX0NDY1JzdXozRWc0NG96Y1Q5M0JXZmtXeUVvWnJHcXBOQlhpY0JBanNwUHRKa2RMbElXRFVDSHBCUXJSc0JSaFpIRmZNZDZVLXZtREpKREZ2b1pzaUJWbTh3LWR5aklqbFNwcWlsWG9KSDZRWXFCelhPcDRPUDZTUk5sNi0xYXE0b1k?oc=5",
+      "fetched_at": "2026-06-16T11:41:45.940206+00:00"
+    },
+    {
+      "id": "436eae5e0aee",
+      "title": "Drug Shortage: Cromolyn Sodium Concentrate",
+      "date": "2026-06-16",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Generic name: Cromolyn Sodium Concentrate\nBrand name: N/A\nStatus: Current\nPresentations: []",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/search?q=FDA+Shortage+Cromolyn+Sodium+Concentrate",
+      "fetched_at": "2026-06-16T11:40:41.025568+00:00"
+    },
+    {
+      "id": "b456eb0a8e4f",
+      "title": "Drug Shortage: Carboplatin Injection",
+      "date": "2026-06-16",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Generic name: Carboplatin Injection\nBrand name: N/A\nStatus: Current\nPresentations: []",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/search?q=FDA+Shortage+Carboplatin+Injection",
+      "fetched_at": "2026-06-16T11:40:36.012540+00:00"
+    },
+    {
+      "id": "9810ce86ed08",
+      "title": "Drug Shortage: Riluzole Oral Suspension",
+      "date": "2026-06-16",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Generic name: Riluzole Oral Suspension\nBrand name: N/A\nStatus: Current\nPresentations: []",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/search?q=FDA+Shortage+Riluzole+Oral+Suspension",
+      "fetched_at": "2026-06-16T11:40:30.980917+00:00"
+    },
+    {
+      "id": "6162d30ba705",
+      "title": "Antidepressant recalled due to presence of potentially cancer-causing impurity - ABC News - Breaking News, Latest News a",
+      "date": "2026-06-16",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Antidepressant recalled due to presence of potentially cancer-causing impurity - ABC News - Breaking News, Latest News and Videos\nSource: Google News\nDate: Tue, 16 Jun 2026 02:45:04 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYnZFdWt3bzY4YTFqVXBpRWFIQUlVdEVlY0hYUGRMSlZlbXFVYnEzbE5zbHlQSWtIbWZ2X0R5NnhlOUR3VEZ3NzdGaURwVGlyWW1XS29INDZlRWlWdTB3Y1pZU1ZIc0lqa0xESndTcDRqSzBaXzhsZ3NUM1Bac1VtdENFYjdveDVYMFp1bTVWS0hmUm9wdTJhXzZueDBmLTdNSXI4Tlc2TW05QTZqYlctbFJPeGlid01GTUxNRXpTN0RMQdIBxwFBVV95cUxQQ3g0RVJBUWptQTl6ZFVjQ3BUU3FEMkZ6X0I3WHA3bnZRVFJHOVR0YzJXWTZjQnFWel90OThWSmpVRkhCUTVITmdWMFBNYzV4SkN3dmZ4bVRwTEZiU1UzVHJsVVhmQUhUR05xUjR4SEh0cUNYZjFnOVVpVjVkWTJZTFBudk1HUU5uZURKbFpRbG1nQVRxeVRsMm1RUGF6ZUFOdUg2TmQwVWdJY01fQ3RmX2wzVzV3OTV3UThMeEROLURQQWF5VDZj?oc=5",
+      "fetched_at": "2026-06-16T11:40:25.593927+00:00"
+    },
     {
       "id": "506f1039202d",
       "title": "FDA elevates recall of sauce sold in SC stores to highest risk over potential contamination - Post and Courier",
@@ -423,6 +507,18 @@
       "fetched_at": "2026-06-13T11:30:21.772474+00:00"
     },
     {
+      "id": "e6b7aa99959d",
+      "title": "Drug Approval: PROPRANOLOL HYDROCHLORIDE - PAI HOLDINGS",
+      "date": "2026-06-10",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Application: ANDA219165\nSponsor: PAI HOLDINGS\nProduct: PROPRANOLOL HYDROCHLORIDE\nSubmission type: ORIG\nSubmission class: N/A\nStatus: AP\nStatus date: 20260610",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219165",
+      "fetched_at": "2026-06-16T11:41:02.087474+00:00"
+    },
+    {
       "id": "1a67cccc003d",
       "title": "FDA shares guidance on authorized drugs for NWS myiasis - Veterinary Practice News",
       "date": "2026-06-10",
@@ -505,102 +601,6 @@
       "key_actions": "Escalate to QA leadership for site-specific action plan.",
       "source_url": "https://news.google.com/search?q=FDA+Shortage+Lisdexamfetamine+Dimesylate+Capsule",
       "fetched_at": "2026-06-08T15:50:57.909605+00:00"
-    },
-    {
-      "id": "64704ba1a691",
-      "title": "Drug Shortage: Sterile Water Irrigant",
-      "date": "2026-06-08",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "Generic name: Sterile Water Irrigant\nBrand name: N/A\nStatus: Current\nPresentations: []",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://news.google.com/search?q=FDA+Shortage+Sterile+Water+Irrigant",
-      "fetched_at": "2026-06-08T15:50:52.842619+00:00"
-    },
-    {
-      "id": "401f439d3fed",
-      "title": "Drug Shortage: Dexmedetomidine Hydrochloride Injection",
-      "date": "2026-06-08",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "Generic name: Dexmedetomidine Hydrochloride Injection\nBrand name: N/A\nStatus: Current\nPresentations: []",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://news.google.com/search?q=FDA+Shortage+Dexmedetomidine+Hydrochloride+Injection",
-      "fetched_at": "2026-06-08T15:50:47.809244+00:00"
-    },
-    {
-      "id": "2d0a9699e789",
-      "title": "Giraffe™ OmniBed™ Carestation™",
-      "date": "2026-06-07",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Giraffe™ OmniBed™ Carestation™\nSource: Health Canada\nDate: 2026-06-04T12:00:00",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/giraffetm-omnibedtm-carestationtm",
-      "fetched_at": "2026-06-07T14:15:09.331280+00:00"
-    },
-    {
-      "id": "bc332f0eaf69",
-      "title": "Philips Allura Xper Systems",
-      "date": "2026-06-07",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Philips Allura Xper Systems\nSource: Health Canada\nDate: 2026-06-04T12:00:00",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/philips-allura-xper-systems",
-      "fetched_at": "2026-06-07T14:15:04.313252+00:00"
-    },
-    {
-      "id": "40ce0bc3f0f2",
-      "title": "Harmony™ Delivery Catheter System",
-      "date": "2026-06-07",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Harmony™ Delivery Catheter System\nSource: Health Canada\nDate: 2026-06-04T12:00:00",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/harmonytm-delivery-catheter-system",
-      "fetched_at": "2026-06-07T14:14:59.305557+00:00"
-    },
-    {
-      "id": "d9d1c091a7f4",
-      "title": "Nationwide Recall Issued for Certain Gas-X Extra Strength Softgels Due to Potential Contamination - Dailyfly News",
-      "date": "2026-06-06",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Nationwide Recall Issued for Certain Gas-X Extra Strength Softgels Due to Potential Contamination - Dailyfly News\nSource: Google News\nDate: Sat, 06 Jun 2026 14:13:19 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQeUE1SkVMc29TNEFINXBUSXlmQUtnTmRQTi1GREY5LVFpeXNnQUhWSEdtZnFvcnZHM2hBNzVtcVZ2Umpfc2VFd1owX19yQ1Z0TXZZaFgxY1RNRjJraUV6MXp4MS1sODktLVF4ZklHRldDdDBRZEtWZE9iMlh4aEV1ZWlEbmhNeG0tY2tRSEIyS3RscXc0aGRSWTBDd2dORlRZVThqVlNXYmpsYmxYUGI1X3FZXzlXVFBBV3l0dUdrRE84SmZZdkFwWWcwWnQwRms?oc=5",
-      "fetched_at": "2026-06-07T02:46:05.911488+00:00"
-    },
-    {
-      "id": "4180491ec600",
-      "title": "U.S. FDA Approves Lupin's Ranluspec (ranibizumab-hkdz) as Interchangeable Biosimilar to Lucentis",
-      "date": "2026-06-05",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Lupin Limited has received U.S. FDA approval for Ranluspec™ (ranibizumab-hkdz), an interchangeable biosimilar to Lucentis® (ranibizumab) for the treatment of wet age-related macular degeneration (AMD), diabetic macular edema (DME), and other serious retinal diseases. It is the first interchangeable biosimilar ranibizumab available in both vials and pre-filled syringes (PFS) in the United States.",
-      "compliance_impact": "This approval expands interchangeable biosimilar options in ophthalmology. Health systems and pharmacy networks can substitute Ranluspec for Lucentis without requiring provider intervention, subject to state laws.",
-      "key_actions": "1. Update pharmacy formularies to include Ranluspec as a cost-effective alternative to Lucentis.\n2. Review state-specific laws regarding interchangeable biosimilar substitution.\n3. Educate staff on the availability of both vial and pre-filled syringe (PFS) options.",
-      "source_url": "https://www.prnewswire.com/news-releases/lupin-receives-approval-from-us-fda-for-ranluspecranibizumab-injection-302792038.html",
-      "fetched_at": "2026-06-07T15:54:37.256023+00:00"
-    },
-    {
-      "id": "44094a926034",
-      "title": "CDSCO receives 1,387 adverse drug reaction reports in nine months of 2025 - drugscontrol.org",
-      "date": "2026-06-05",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: CDSCO receives 1,387 adverse drug reaction reports in nine months of 2025 - drugscontrol.org\nSource: CDSCO India\nDate: Fri, 05 Jun 2026 02:57:48 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5HVDhhaFdYeVR4eWxRS1pwZlNjSnl6bm15ajFpZGotbUVDX3RmZ2ZXNlJhR3BEYUlUSDlMVi1ULWJuZkpkdl94Q0FYdktRUXRhSk5hYUNpNEoxaUFXRURaMnpCWQ?oc=5",
-      "fetched_at": "2026-06-07T14:15:48.598068+00:00"
     }
   ]
 }
