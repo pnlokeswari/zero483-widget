@@ -1,7 +1,79 @@
 {
-  "last_updated": "2026-06-16T17:30:52.577402+00:00",
+  "last_updated": "2026-06-16T20:26:30.306264+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "3002f1b60c9a",
+      "title": "GE Healthcare Integrated and Stand-Alone Resuscitation systems",
+      "date": "2026-06-16",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: GE Healthcare Integrated and Stand-Alone Resuscitation systems\nSource: Health Canada\nDate: 2026-06-16T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/ge-healthcare-integrated-and-stand-alone-resuscitation-systems",
+      "fetched_at": "2026-06-16T20:26:28.601738+00:00"
+    },
+    {
+      "id": "438895735d20",
+      "title": "Unauthorized soft-shelled hyperbaric chambers may pose serious health risks 2026-06-16",
+      "date": "2026-06-16",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Unauthorized soft-shelled hyperbaric chambers may pose serious health risks 2026-06-16\nSource: Health Canada\nDate: 2026-06-16T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/unauthorized-soft-shelled-hyperbaric-chambers-may-pose-serious-health-risks-2026-06-16",
+      "fetched_at": "2026-06-16T20:26:23.585898+00:00"
+    },
+    {
+      "id": "21e7394fdd82",
+      "title": "Lancora Tablets; Broken / partial tablets in blister pack",
+      "date": "2026-06-16",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Lancora Tablets; Broken / partial tablets in blister pack\nSource: Health Canada\nDate: 2026-06-16T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/lancora-tablets-broken-partial-tablets-blister-pack",
+      "fetched_at": "2026-06-16T20:26:18.567778+00:00"
+    },
+    {
+      "id": "48680dad6406",
+      "title": "Biocurious: Entropy surfs the supportive wave to psychedelic drug approval - Stockhead",
+      "date": "2026-06-16",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: Biocurious: Entropy surfs the supportive wave to psychedelic drug approval - Stockhead\nSource: Google News\nDate: Tue, 16 Jun 2026 20:00:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdnZMYThjTzhMZHZ6WUV1Y1cxaGdPU0stbkJuV2JpREF1TEdWcVlDRkVGNFluQnNiaHM3V0N0a0Y2cHZ5emlRdGxrNzlBUzRIcXJmeHF5amVZeTdqdnBjdkdodERCNlhueEREX0JFQUIyakhwTC1OV3hoOFNKRTl4ZlMyR0NqTGl2YjF3Z1dVMlUyVkNhUWZfajRDdUNLSG5ZeGNreFNfZkdla1hQZlE1bUI2Y0p6ZUdZdWc?oc=5",
+      "fetched_at": "2026-06-16T20:25:55.451589+00:00"
+    },
+    {
+      "id": "8e58ebee7df0",
+      "title": "Allergan Aesthetics Receives U.S. FDA Approval for SKINVIVE by JUVÉDERM® for the Improvement of Neck Appearance - AbbVie",
+      "date": "2026-06-16",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: Allergan Aesthetics Receives U.S. FDA Approval for SKINVIVE by JUVÉDERM® for the Improvement of Neck Appearance - AbbVie News Center\nSource: Google News\nDate: Tue, 16 Jun 2026 12:03:07 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNc3ZPU1lHWFdpVGZGY2hFQVpwZUZmdnFTQ1ZYUHRTRG9EOHJSaENyVE9qX29YakxhVzBWU2xJMlVCUE80TXkyVXBEY2tadlNjRDVDMmRhWUZtQlNyeXdIUGRXRUhSNVc3SEl5bE9LQXNJaHdvTDhKb2VwOXgwdnN1b1dyLTBJMEJiX3J3WDVwTzVUZmdzMDlPdk9IYzNWS2pUVHJ5ZUV6SUtuS2c5NWZqb0JKUThvNm1aTVZsQlZ6UGpHYThtTVVxa3RSdWkwbi13YUg1OWc4V2dKakpmbWNV?oc=5",
+      "fetched_at": "2026-06-16T20:25:50.434215+00:00"
+    },
+    {
+      "id": "b1427356b6dc",
+      "title": "FDA device shortage update includes bloodlines, biopsy needles and more - Medical Design & Outsourcing",
+      "date": "2026-06-16",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Title: FDA device shortage update includes bloodlines, biopsy needles and more - Medical Design & Outsourcing\nSource: Google News\nDate: Tue, 16 Jun 2026 19:02:32 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPT0NsU0sxWE5fazU0aHNaekp5cnpUYjBkMl9hMGxqejhVczhLcjdOUGFyTkVad2RucFJNT056SHlUaXJBX3FfZV9pSVBFUTh1MTZURnpJak5GZUdheDJpbGlqa1FTRnJCbzh3SVFnY1p4dlRhMTc4aEJadW5xejVvZEFvcy1PcmZydEZtNGlpeEJPNjY2dmlpb3RR?oc=5",
+      "fetched_at": "2026-06-16T20:25:09.024617+00:00"
+    },
     {
       "id": "b40922644c8d",
       "title": "Zai Lab Receives EMA Orphan Drug Designation for Zocilurtatug Pelitecan (Zoci) in Pulmonary Neuroendocrine Carcinomas - ",
@@ -529,78 +601,6 @@
       "key_actions": "Escalate to QA leadership for site-specific action plan.",
       "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOeDczMHZuWXVnNGxRSkhPdHJSMXFzTGZSY2plMFNMejZjODhCaHU3d2RicmNDdlAwV3AyanE2NWNLaUotYjMtTDRWMWt3eEJReUVMaVdiVXlpRWZQYnJXMWlCOXZEd1RKQnZCc1ZacE9aWVlXSnZtR29VMXJ4aGozVkFDeEJXakhCcUJleUFobEFHRUtTZk1Na0tQbnFvR1JWQ3ZwQlZ4TENodnczZmlzTVdhSXpILVNkS1RsWUx2b9IBxgFBVV95cUxQZzI2dTRvUXdUdkVZZkhoTzY3bW1RblMzaUlYZ3IweHpuSjJQTE4wdDVVYkJNdjRtM1lTQ0l6WGVtblhWNXRWM2JLNU96YTg5LS1GWTlTU29GVE5qR2tBZEx5YkFyRk1DX0JxZGdRbTR2ckUzNkpGZHFHUkx6WUlwQUxYcDRFUjkzempVdWJ1UTlGWGhtUm9lS2JPdU1Pb21aOW9sQVgzWXdYb2N3RVJ4Y0pUUlhyVkd5Ykltd2lJQjUxMUo1dFE?oc=5",
       "fetched_at": "2026-06-13T11:31:12.829057+00:00"
-    },
-    {
-      "id": "9070ed9ff3a0",
-      "title": "EMA’s 2025 annual report shows strong approval numbers for human and veterinary medicines - European Medicines Agency (E",
-      "date": "2026-06-11",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Title: EMA’s 2025 annual report shows strong approval numbers for human and veterinary medicines - European Medicines Agency (EMA)\nSource: European Medicines Agency\nDate: Thu, 11 Jun 2026 11:00:00 GMT",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOYmtrdHIwekxSbENjenRXTXhVX3dyOURSV1U0eV9vdWtwckwwWGlCZmZWSWI4NUhiVnZkbGZpODhWeGUxQkR6LTdOYm5MREdEb2tKczVvcnpXT0JwZ3dFQ1ZwWkI5UGExdnhPWGg0M0c0cF9zMHdNemhDbXFleHJKVVZYaFprMVJhSmNOWEY3TDhwSzYtR1VZSS1SV2wtdWxjRGQxQ19qQWtjVHhFanlfZDRlUVg?oc=5",
-      "fetched_at": "2026-06-13T11:30:52.530245+00:00"
-    },
-    {
-      "id": "55421b66045e",
-      "title": "FDA Updates 8-Year-Old Payor Communications Guidance - The National Law Review",
-      "date": "2026-06-11",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: FDA Updates 8-Year-Old Payor Communications Guidance - The National Law Review\nSource: Google News\nDate: Thu, 11 Jun 2026 21:17:29 GMT",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaGpuTHB6VjRLUGlGenAxMEV6Q2VsZTVRbFhzcEJRYTZEbjI5azE0Y0ZOMm9hVDM4Q0Z4TllTN0FaTEpSQUgwQllIUmJYbHRWcVpRMjNSUVgwNGgtb2pzQWZTSTB4anhXcGpjLXlHYXU5VGlMbUtKUFZlM0hzSVMxN1pQTWZkQmZUZGJhQy1fR3FUZjDSAZMBQVVfeXFMUGhqbkxwelY0S1BpRnpwMTBFekNlbGU1UWxYc3BCUWE2RG4yOWsxNGNGTjJvYVQzOENGeE5ZUzdBWkxKUkFIMEJZSFJiWGx0VnFaUTIzUlFYMDRoLW9qc0FmU0kweGp4V3BqYy15R2F1OVRpTG1LSlBWZTNIc0lTMTdaUE1mZEJmVGRiYUMtX0dxVGYw?oc=5",
-      "fetched_at": "2026-06-13T11:30:32.020381+00:00"
-    },
-    {
-      "id": "ec22860a3860",
-      "title": "FDA Warns of Kidney Stone, Injury Risk in Use of OTC Weight-Loss Drug Orlistat - Drug Topics",
-      "date": "2026-06-11",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "Title: FDA Warns of Kidney Stone, Injury Risk in Use of OTC Weight-Loss Drug Orlistat - Drug Topics\nSource: Google News\nDate: Thu, 11 Jun 2026 15:06:20 GMT",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRjNDRVpTOWNyT0NvLUV3b0U3M2xEbTExZ0dXbExVWGtrTXFCM2ZRZDFkRGQ3dXFfQl91cUhnckpCbUkxdWlPeHUyU21OaHRwYU5GUUJRVTlQY3BUQlVPOFF1bVFKNHBhdzVwazMwaklHbGVEYUZDTDJDUkdIbVRnVks2YnhtVUJ3ZTJnS1RlaFp3UEVSZ1hiU19EczNJNHIxNkE?oc=5",
-      "fetched_at": "2026-06-13T11:30:21.772474+00:00"
-    },
-    {
-      "id": "e6b7aa99959d",
-      "title": "Drug Approval: PROPRANOLOL HYDROCHLORIDE - PAI HOLDINGS",
-      "date": "2026-06-10",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Application: ANDA219165\nSponsor: PAI HOLDINGS\nProduct: PROPRANOLOL HYDROCHLORIDE\nSubmission type: ORIG\nSubmission class: N/A\nStatus: AP\nStatus date: 20260610",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219165",
-      "fetched_at": "2026-06-16T11:41:02.087474+00:00"
-    },
-    {
-      "id": "1a67cccc003d",
-      "title": "FDA shares guidance on authorized drugs for NWS myiasis - Veterinary Practice News",
-      "date": "2026-06-10",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: FDA shares guidance on authorized drugs for NWS myiasis - Veterinary Practice News\nSource: Google News\nDate: Wed, 10 Jun 2026 13:33:56 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQc193eVo3RDZhelpFYm9rcHhaSmFuOW9Cb3RtQ3NEaFVnSXdVTmZKUlNBZnNZTUloOEx5NGxnV3dKbmpELUtrTVpVR25wdmxEOVZzYnB3d0QyRkctUnVzdGd3Y0FoQ0JYTWU2cmdkZGpTN2tUTjM2Y19UWnpwcWpCUDd0ckFEM3FXeFhBVTJLWjZaZw?oc=5",
-      "fetched_at": "2026-06-13T12:09:28.377407+00:00"
-    },
-    {
-      "id": "964afa3971de",
-      "title": "FDA Issues Draft Guidance on Payor Communications to Address Statutory Changes - Akin",
-      "date": "2026-06-10",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: FDA Issues Draft Guidance on Payor Communications to Address Statutory Changes - Akin\nSource: Google News\nDate: Wed, 10 Jun 2026 16:14:50 GMT",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUjAwcEk1bnprOG9rbTQ4ZjVnLWsySGpFS0Jia19pSjlFY0xaOWx6ZGEtb0otam1JQ3k2YVptNjhpY0c1Q2s1RzhpSmdCbEw0aUJmMFRzdllzcUlxcUVidENULVdhZzVpSkhQXzI0ZjI1UTBSeFRNMGN1RnRaNFp1c2RvSlBNNXBRWFZEc1NyaXhmR1BQSnI1R1dkdi1ycUl5eDVmMDhqSTRkMHQwaUF6X21YZlZoSUE0SGNSbzljb0MzY29tRm5Sa1doWmE?oc=5",
-      "fetched_at": "2026-06-13T11:30:27.002091+00:00"
     }
   ]
 }
