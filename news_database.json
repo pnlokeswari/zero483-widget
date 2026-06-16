@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-06-16T00:09:47.049015+00:00",
+  "last_updated": "2026-06-16T05:44:45.281641+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "506f1039202d",
+      "title": "FDA elevates recall of sauce sold in SC stores to highest risk over potential contamination - Post and Courier",
+      "date": "2026-06-16",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: FDA elevates recall of sauce sold in SC stores to highest risk over potential contamination - Post and Courier\nSource: Google News\nDate: Tue, 16 Jun 2026 00:00:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPd20zZUtnTnJTZW92VkN2c1piLTNMNFo3U1NIeVFYNFpDekU1dC1kbU5SZGtkQmNIYnZQd3NSLXhNOEhhQk5veVo3V1hfUl9QRk0tOVVmYzMxMDJfSzBkUVI1bno1eWkwbFBwMEFPSU5wQlVHNUd3WEFfSE1jZ1otMnZTUHkzTVUzRE11X3lhOU1pTTAxVXRVZUtDLVBKcW1kdzBTS1F3T2pWT0QwLXRKYU9rTlFQYlVjdDh5UE0wNk5OekNtZl93d2NmV0JvcHZsSnk5b0VQa3R5Um1V?oc=5",
+      "fetched_at": "2026-06-16T05:43:42.837292+00:00"
+    },
+    {
+      "id": "75c6007fa14a",
+      "title": "Nearly 375,000 bottles of popular antidepressant recalled over high levels of carcinogen - KVUE",
+      "date": "2026-06-16",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Nearly 375,000 bottles of popular antidepressant recalled over high levels of carcinogen - KVUE\nSource: Google News\nDate: Tue, 16 Jun 2026 01:07:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcG1kR0pWQUNray1abFJ0Q3BQbHZLcVk3Umd0RDBpWG5rODNZbDM2NTJaTkh6UlRxaUdYN1psdDc2SVp4T0N5Nk9PTFlSc2EzY3NnTl9IX1BVMXp6dlhzODJtaEo0QlNoQTBGdGxrSVJDODdFdHZhdzhWdVRoM3p1ZVEtc0hJQmMxOFpobXVfdF9NX2pCRGZ0R0dtT0c0NUczTml0R2xwbjZ3SXQzVmJuVlk5UGpzUGJKakJhZjBGRDc?oc=5",
+      "fetched_at": "2026-06-16T05:43:32.790442+00:00"
+    },
+    {
+      "id": "e52532bfcf25",
+      "title": "FDA Says 11,000 More Blood Pressure Prescriptions Recalled Nationwide - The Healthy",
+      "date": "2026-06-15",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: FDA Says 11,000 More Blood Pressure Prescriptions Recalled Nationwide - The Healthy\nSource: Google News\nDate: Mon, 15 Jun 2026 23:15:48 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPVEJEODlGbU5OcGk0YTVSRTdVSFhqWkJUdERqdFU4YUY3OG9XN01hb1ZQdHdMcnp5dFdRMTVXNzVRVGNFdUdUaV9UcXF6eU5iM0xLSjlMaUY1a09USjdGV0hCaGNUQnVWMFpoTkc0RjRGQTZJWWdLdGZSUHJCbE1LdkR1dFQ0bzlPYzNNcE91ODVtMHd5MEZ6LQ?oc=5",
+      "fetched_at": "2026-06-16T05:43:37.808941+00:00"
+    },
     {
       "id": "fe53bc216739",
       "title": "FDA Recalls and Warnings: Gas-X Contaminated With Coolant; More Generic Cymbalta Cancer Risks, Supplements Linked to Sal",
@@ -565,42 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5HVDhhaFdYeVR4eWxRS1pwZlNjSnl6bm15ajFpZGotbUVDX3RmZ2ZXNlJhR3BEYUlUSDlMVi1ULWJuZkpkdl94Q0FYdktRUXRhSk5hYUNpNEoxaUFXRURaMnpCWQ?oc=5",
       "fetched_at": "2026-06-07T14:15:48.598068+00:00"
-    },
-    {
-      "id": "ac84dc5c2ed5",
-      "title": "CDSCO Directs Pharma Firms to Maintain Mandatory Pharmacovigilance, ADR Monitoring Systems Under Schedule ... - Medical ",
-      "date": "2026-06-05",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: CDSCO Directs Pharma Firms to Maintain Mandatory Pharmacovigilance, ADR Monitoring Systems Under Schedule ... - Medical Dialogues\nSource: CDSCO India\nDate: Fri, 05 Jun 2026 12:40:38 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOUU5kbWM2Mmxhb3V4OTBCckhrTHBwTDltWjJoeUlzZnhoY2V2bzJQb252N0dXUmRQQjNxMnFxcVhaMjFVOERCOXhDaWtLRHJ0a05hdjJoMkpMV2x3ZEdQTTgtcC1rekwtNkVDbktUU1l5bEE0LV9sSDdzeXlhZVBjSERtX1VuUXJJVUl4SV9aSmtfU0dST211NjhkT1RRLUw2bFJrTURjSU1qNXNlMnpiejRJR3I3dHZyU1BCdUUzN1ZtT1FQZHhiQzd6bTdiTXMyVzhqX2VUbFFHSklqZGo2NjB2eVRfRC1vQXQ3dWlLWFNYM0Nm0gH6AUFVX3lxTE9uSUtlc3o2ZF84VXlIS002djd3dE1BVm1oTkprc3pzU2I4WGJDNThSMXl5RVY2N25nb25IbGRyeXh1cWVRdEhNcGM2eG1qbUtDMXZRYTFTVWhWSmFjdUtnekhBcnBpeGVPVmdKNHJvbU9nWnJPVUpvN2xhcUdvSXFoV1lOV1dDT2M2c3BldXp6T2czNzlOTF95enl5R0VtVUJfcjdsUU40YXlmUjUybFNLNVR1c2NVcGVHWnlfbzcwenhqYU1vc21VM0F6UWYwUnBqVzVIbUUwMExtQ2IzeDNPcXd0eGpuaFQxWmxFTlZpWGZDYUcyWjF0ekE?oc=5",
-      "fetched_at": "2026-06-07T14:15:43.561572+00:00"
-    },
-    {
-      "id": "9bb6170972e8",
-      "title": "CDSCO directs all stakeholders to ensure establishment of pharmacovigilance system - Pharmabiz.com",
-      "date": "2026-06-05",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: CDSCO directs all stakeholders to ensure establishment of pharmacovigilance system - Pharmabiz.com\nSource: CDSCO India\nDate: Fri, 05 Jun 2026 03:07:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9yODJ5RDNGMS1peVVWOGhPaE9RRG8wWEUyck5sWWhRUXVvN1FaOU5UazlxaTk0SGxXZjJqTHgwNTdXSG1iTHN4b3N2UXFfbVVKb0JJemtERmZjRmk1RHZiamg2U1BMWkVnbFNR?oc=5",
-      "fetched_at": "2026-06-07T14:15:38.511819+00:00"
-    },
-    {
-      "id": "ec4b0e5d8738",
-      "title": "IntraBio Announces Submission of Variation Application to the European Medicines Agency for AQNEURSA® for Ataxia-Telangi",
-      "date": "2026-06-05",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: IntraBio Announces Submission of Variation Application to the European Medicines Agency for AQNEURSA® for Ataxia-Telangiectasia - Business Wire\nSource: European Medicines Agency\nDate: Fri, 05 Jun 2026 15:09:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQZDViY0ZRc2FSdTdlbmdUdU9nVllwdjZzczl6c3ZXclVrVVFEYjBzOUtaZkl0VWY3dVliUVJCcjF1b2pGVHBMcDRBRE5YSV9YZUhFeUtPY2tCYXhTSm5TYXdPT1JVMTY2ajc3MnVHV2lNWDNZWHQ2bTdMVHdidTJ6cWR1MGlPc09lXzZvbS1INEdwNkI3MkJ1N1BycFZtZ19YdFFXLXRQeVlWd2YwYmU0U3hPSVRINEVlcFh6S0t5SElaQ1czRXllYVV1dk8zd3k3a2VQZVJQX0Q0STJXZUN0bGZSRy11WXpNaWlSeEEzdF9maE5pbjBqeC1kd2I5Um9LMlBpVTF3MTd4aXVrajhfbg?oc=5",
-      "fetched_at": "2026-06-07T14:15:26.127503+00:00"
     }
   ]
 }

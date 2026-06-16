@@ -6,6 +6,21 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/fda-elevates-recall-of-sauce-sold-in-sc-stores-to-highest-risk-over-potential-contamination-post-and-courier.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/nearly-375-000-bottles-of-popular-antidepressant-recalled-over-high-levels-of-carcinogen-kvue.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/fda-says-11-000-more-blood-pressure-prescriptions-recalled-nationwide-the-healthy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/fda-recalls-and-warnings-gas-x-contaminated-with-coolant-more-generic-cymbalta-cancer-risks-supplements-linked-to-sal.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -237,21 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/cdsco-receives-1-387-adverse-drug-reaction-reports-in-nine-months-of-2025-drugscontrol-org.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/cdsco-directs-pharma-firms-to-maintain-mandatory-pharmacovigilance-adr-monitoring-systems-under-schedule-medical.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/cdsco-directs-all-stakeholders-to-ensure-establishment-of-pharmacovigilance-system-pharmabiz-com.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/intrabio-announces-submission-of-variation-application-to-the-european-medicines-agency-for-aqneursa-for-ataxia-telangi.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
