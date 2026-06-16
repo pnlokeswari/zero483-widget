@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-16T20:26:30.306264+00:00",
+  "last_updated": "2026-06-16T22:29:18.013782+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "0f6a81086854",
+      "title": "FDA Alerts on Shortage of Breast Biopsy Needles - MedPage Today",
+      "date": "2026-06-16",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Title: FDA Alerts on Shortage of Breast Biopsy Needles - MedPage Today\nSource: Google News\nDate: Tue, 16 Jun 2026 21:07:04 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5CQWxvQjlQNUQ5bnQtc052NlVpY19aRGdmZ2gySjNoOEV2QklpcWxjNUdxNEV5OTZNc3RPcU01UzNhNG5UV1gtemRmZktINjc0VXhCdUVWYVpYZEo2bW5QbUJybm9wX2F0dmRJYUtpVTA1MGFYSXc?oc=5",
+      "fetched_at": "2026-06-16T22:28:23.067373+00:00"
+    },
     {
       "id": "3002f1b60c9a",
       "title": "GE Healthcare Integrated and Stand-Alone Resuscitation systems",
@@ -589,18 +601,6 @@
       "key_actions": "Escalate to QA leadership for site-specific action plan.",
       "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNVlJ5emtXcTFjUDdCSXFHYjREck5IZFFoTmNuZ0tIQzBKNFhkOWpwLU11NFRRSURzRjQ5cEZrc3pkbnVBbEpvZVZIYXhQUVNjRW5ieTVra1U2NnRKaW90SnI0dkpMQl9ObEpxSE9kUzFpY0VqQ3hmUHRZS01zQ2dVU2tNcm90dm9sdUhsTm1weGJkN2N4anI2dG8zZnY0UWc2eGdjazhBcXRSY1hFUmxQT1R5SWFBZEpXNXNtRDBVd3NDU1ZzQjNyRzhobERubWdBNnBkbmVRMkREUzhUNDVKQnBZRjgxYkE?oc=5",
       "fetched_at": "2026-06-13T11:31:17.854007+00:00"
-    },
-    {
-      "id": "b5097a52faf0",
-      "title": "AstraZeneca gets CDSCO nod for Trastuzumab Deruxtecan plus Pertuzumab - Indian Pharma Post",
-      "date": "2026-06-11",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: AstraZeneca gets CDSCO nod for Trastuzumab Deruxtecan plus Pertuzumab - Indian Pharma Post\nSource: CDSCO India\nDate: Thu, 11 Jun 2026 14:00:38 GMT",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOeDczMHZuWXVnNGxRSkhPdHJSMXFzTGZSY2plMFNMejZjODhCaHU3d2RicmNDdlAwV3AyanE2NWNLaUotYjMtTDRWMWt3eEJReUVMaVdiVXlpRWZQYnJXMWlCOXZEd1RKQnZCc1ZacE9aWVlXSnZtR29VMXJ4aGozVkFDeEJXakhCcUJleUFobEFHRUtTZk1Na0tQbnFvR1JWQ3ZwQlZ4TENodnczZmlzTVdhSXpILVNkS1RsWUx2b9IBxgFBVV95cUxQZzI2dTRvUXdUdkVZZkhoTzY3bW1RblMzaUlYZ3IweHpuSjJQTE4wdDVVYkJNdjRtM1lTQ0l6WGVtblhWNXRWM2JLNU96YTg5LS1GWTlTU29GVE5qR2tBZEx5YkFyRk1DX0JxZGdRbTR2ckUzNkpGZHFHUkx6WUlwQUxYcDRFUjkzempVdWJ1UTlGWGhtUm9lS2JPdU1Pb21aOW9sQVgzWXdYb2N3RVJ4Y0pUUlhyVkd5Ykltd2lJQjUxMUo1dFE?oc=5",
-      "fetched_at": "2026-06-13T11:31:12.829057+00:00"
     }
   ]
 }
