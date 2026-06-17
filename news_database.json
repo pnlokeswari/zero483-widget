@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-06-17T19:38:23.242533+00:00",
+  "last_updated": "2026-06-17T22:20:29.359221+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "3c3765bab11f",
+      "title": "After FDA sign-off, Colorado's drug import plan faces tough road ahead - Fierce Pharma",
+      "date": "2026-06-17",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: After FDA sign-off, Colorado's drug import plan faces tough road ahead - Fierce Pharma\nSource: Google News\nDate: Wed, 17 Jun 2026 14:30:39 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTWFYWGZycTJXel9FUm01dE8yUVZnNVA2RlRRN3lLbW1LaGFhLWtLSGdNMUpxQ1hIQnZOay0yVm1JUFBXUTVVZFdpa2JsR0N0Tm5EblR4dERyWVZVSVhlQ2RRRXhjUWlyMzZ2bUtRMmtERlV2ZUxHbm1GdmRocG1kUWNEMlRadVFRUDkwb2VNZ0x0MGlLdFE3YWl3MEUzM011Y3YzVVd2dl9EQWVpYlE?oc=5",
+      "fetched_at": "2026-06-17T22:20:00.415037+00:00"
+    },
+    {
+      "id": "f88e86063ba4",
+      "title": "FDA says shortage of breast biopsy needles expected to last until 2027 - American Hospital Association",
+      "date": "2026-06-17",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Title: FDA says shortage of breast biopsy needles expected to last until 2027 - American Hospital Association\nSource: Google News\nDate: Wed, 17 Jun 2026 20:41:55 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNaWQxSVM1X1FYb1J6VHd5dGFnakN3Q3JNQlJvMjFWcjRPZmdRXzhXOHBVVFhRZ3hCYlYtQm5iOGZ2cTRZaGVBMzRVdTA3SEFSaWhXaTh5b25LUWhHSWxXMGdodDZEeHpGV096SEZDWjFQZTMxZFVCZzRmejgzRGRqbkpiNkZvbDlLeUNzbmpQeDRpdnpaa1pIcS1FblBpUzBhMDVZMmVHTWxuNFI4NXc?oc=5",
+      "fetched_at": "2026-06-17T22:19:19.250694+00:00"
+    },
     {
       "id": "24b0b8447524",
       "title": "ARTIS icono ceiling",
@@ -471,6 +495,30 @@
       "fetched_at": "2026-06-16T05:43:32.790442+00:00"
     },
     {
+      "id": "74a4e0adc4af",
+      "title": "CDSCO Crackdown on Injectable Cosmetics: Why India’s Aesthetics Industry Faces a Major Regulatory Shift - Open Magazine",
+      "date": "2026-06-15",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "Title: CDSCO Crackdown on Injectable Cosmetics: Why India’s Aesthetics Industry Faces a Major Regulatory Shift - Open Magazine\nSource: CDSCO India\nDate: Mon, 15 Jun 2026 10:09:34 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMFBkel9JQk95Y1FfRFdmZXJzbzA4TU00T1N3YVZhVnFMalE3MHpnZ0hRZGpkd3hiMUQzUTMzc1dwU2RfUHJjZGpod2tZa1NMWDFDRER1dXhTZEhrakU5d1lRS1Z0ZFZ1MW9XU2VXTndVMHhCT2E0QV85SmpFV2FpNmNhMXhTTkc3TFRxM3E5ZXZHUFUydHFMQ2NvbUM0a19uQzdfSi1CVzVDREp3NFRjSEkyNkxNTzhqczdBTjNta21IWTV3TWZoQ0xhaG1WdVZrdzRjQQ?oc=5",
+      "fetched_at": "2026-06-17T22:20:29.359130+00:00"
+    },
+    {
+      "id": "c9a5f72f4ca4",
+      "title": "EMA Tightens Liver Safety Checks for Rare Vasculitis Drug - Medscape",
+      "date": "2026-06-15",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: EMA Tightens Liver Safety Checks for Rare Vasculitis Drug - Medscape\nSource: European Medicines Agency\nDate: Mon, 15 Jun 2026 12:00:40 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOc19wQ2NxazZsa0tCbjdpenQ0SXZYQW9WOEdNTWxwaXNrQ25fanp0RjZLZmpuVFBFcmREeFhhWW03QW8wS002ZHFwM05YZDVsdXliOGRJeTQ4bVllT0NYR2hOV0ZDX3AwamgzWjZBVmZRbVFVSE16NDIzR3FEbEY3TnVLX216REJ4azE0aGw0aU03LWEzLTduU1hTX24xYjNSdTBMb2hn?oc=5",
+      "fetched_at": "2026-06-17T22:20:23.321179+00:00"
+    },
+    {
       "id": "41d0bc6488bd",
       "title": "Regulatory tracker: After FDA scrutiny, AZ's Truqap clears hurdle in prostate cancer - Fierce Pharma",
       "date": "2026-06-15",
@@ -553,54 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/search?q=FDA+Shortage+Amphetamine+Aspartate+Monohydrate%2C+Amphetamine+Sulfate%2C+Dextroamphetamine+Saccharate%2C+Dextroamphetamine+Sulfate+Tablet",
       "fetched_at": "2026-06-15T22:00:15.383998+00:00"
-    },
-    {
-      "id": "6451b45daf8d",
-      "title": "US Food And Drug Administration Issues Warning Letter to Telangana-Based Beagle Breeder and Animal Lab Palamur Bioscienc",
-      "date": "2026-06-15",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: US Food And Drug Administration Issues Warning Letter to Telangana-Based Beagle Breeder and Animal Lab Palamur Biosciences for “Serious Violations”; PETA India Urges Action From PMO - PETA India\nSource: Google News\nDate: Mon, 15 Jun 2026 15:08:24 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxQZ0xvc2pqUHR5T0tSOUVpSElQVmVHVncxQ25wYzBIZUdWbU1sYmljX1lEdDZlMVkzeEp6Qm1jRUdJWVZOMmxvOXZSbEdEVGQ1VWNrbVJWZnlFYmRhTV9XMy1fZkprM3FoVnphU1B1Y0NfRE1wTHdaWHBPYlViRjd1azBHbUVmb1FVaFhocHJreE1HaGdHS0tMMDlua21KX0ZmUnE5YUM4b0pHRWR5MTVSSU1wMWNoVWVTR29LbEx3ZGt0MGxLRzZjRmxoLThTeW5oLUN4Yi1hU2stYlRBU0kxRGlldklmYzAwV3pfdmhhdXZXejF2V2hCSlBQUkU4dm8xMV9HMWRmTmRKOHdfbG9LeFRNUHMzWUEzamM0RTl5NlMyaEVsWHhMYjFKSFFld3pyM3lJTw?oc=5",
-      "fetched_at": "2026-06-15T19:12:49.469595+00:00"
-    },
-    {
-      "id": "6eab26c85918",
-      "title": "FDA warning letter surrounding herpes products underscores potential misuse of AI - NutraIngredients.com",
-      "date": "2026-06-15",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: FDA warning letter surrounding herpes products underscores potential misuse of AI - NutraIngredients.com\nSource: Google News\nDate: Mon, 15 Jun 2026 14:59:25 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNeXlsN2tOY0R2QzNRRHU3a2liT2xhRzltd2hBT2otRkNpbFhnYXBsdFJrU041UXIyZ045b0x2WGxYTENqeE5fLVlfc2ozbzBzSDBYZkRhQXFMSGcwcXBRZ0NhWm9KdzRNbVJxOUtLSE5NbVNTMjZ1bTNRbGduc2ZtVVZNcTdMUEFHT3BqMVFZbjVwclFWTXBYNjRHaGlFVmdtUk1GN1NUd2F6TjJZRzBpVTQtaHlrM2Z1SjhXamRza3lDdGVDMmhJ?oc=5",
-      "fetched_at": "2026-06-15T19:12:44.445752+00:00"
-    },
-    {
-      "id": "74a4e0adc4af",
-      "title": "CDSCO Crackdown on Injectable Cosmetics: Why India’s Aesthetics Industry Faces a Major Regulatory Shift - Open Magazine",
-      "date": "2026-06-15",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: CDSCO Crackdown on Injectable Cosmetics: Why India’s Aesthetics Industry Faces a Major Regulatory Shift - Open Magazine\nSource: CDSCO India\nDate: Mon, 15 Jun 2026 10:09:34 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMFBkel9JQk95Y1FfRFdmZXJzbzA4TU00T1N3YVZhVnFMalE3MHpnZ0hRZGpkd3hiMUQzUTMzc1dwU2RfUHJjZGpod2tZa1NMWDFDRER1dXhTZEhrakU5d1lRS1Z0ZFZ1MW9XU2VXTndVMHhCT2E0QV85SmpFV2FpNmNhMXhTTkc3TFRxM3E5ZXZHUFUydHFMQ2NvbUM0a19uQzdfSi1CVzVDREp3NFRjSEkyNkxNTzhqczdBTjNta21IWTV3TWZoQ0xhaG1WdVZrdzRjQQ?oc=5",
-      "fetched_at": "2026-06-15T14:43:27.303815+00:00"
-    },
-    {
-      "id": "c9a5f72f4ca4",
-      "title": "EMA Tightens Liver Safety Checks for Rare Vasculitis Drug - Medscape",
-      "date": "2026-06-15",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: EMA Tightens Liver Safety Checks for Rare Vasculitis Drug - Medscape\nSource: European Medicines Agency\nDate: Mon, 15 Jun 2026 12:00:40 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOc19wQ2NxazZsa0tCbjdpenQ0SXZYQW9WOEdNTWxwaXNrQ25fanp0RjZLZmpuVFBFcmREeFhhWW03QW8wS002ZHFwM05YZDVsdXliOGRJeTQ4bVllT0NYR2hOV0ZDX3AwamgzWjZBVmZRbVFVSE16NDIzR3FEbEY3TnVLX216REJ4azE0aGw0aU03LWEzLTduU1hTX24xYjNSdTBMb2hn?oc=5",
-      "fetched_at": "2026-06-15T14:43:21.325646+00:00"
     }
   ]
 }
