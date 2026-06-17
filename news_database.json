@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-17T10:14:22.384411+00:00",
+  "last_updated": "2026-06-17T14:08:45.691106+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "edf696631da1",
+      "title": "EXCLUSIVE: CDSCO suspends HCG Hospital’s Ethics Committee for 24 months - The South First",
+      "date": "2026-06-17",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "Title: EXCLUSIVE: CDSCO suspends HCG Hospital’s Ethics Committee for 24 months - The South First\nSource: CDSCO India\nDate: Wed, 17 Jun 2026 10:35:24 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbFFUSGhoRi1VT2hJNDZBQTlfalFTVGFtc2ZuYmk2YXZnZ3FVWHg0N0Yxd09FQjJFQm52SGNZTURjM2E1ZEdwdVpjY3BVWm45TmhJYWNRbHF1U25nTUZ5a09ZZ1dyV1BmZzNCS2JhdEpkZHcwTmdrRjcxMU81d2pIMFl1YXA0VzZLVFMxU3loZldlbFZjSTNnS0F0M3R2N3dZLXM2MkJ0QTVuRTdsNldPN2ZUTQ?oc=5",
+      "fetched_at": "2026-06-17T14:08:45.691012+00:00"
+    },
     {
       "id": "fe00dbe5bf19",
       "title": "Zai Lab’s zocilurtatug pelitecan secures EMA orphan drug status - Pharmaceutical Technology",
@@ -339,6 +351,18 @@
       "fetched_at": "2026-06-16T05:43:32.790442+00:00"
     },
     {
+      "id": "41d0bc6488bd",
+      "title": "Regulatory tracker: After FDA scrutiny, AZ's Truqap clears hurdle in prostate cancer - Fierce Pharma",
+      "date": "2026-06-15",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: Regulatory tracker: After FDA scrutiny, AZ's Truqap clears hurdle in prostate cancer - Fierce Pharma\nSource: European Medicines Agency\nDate: Mon, 15 Jun 2026 07:00:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1HR2pJQXJsR0JMdGpBX2JINnZaLTk0S3JUd1dsWDVWTVp1WlpDSUs5ZFlzNC03ZTQySzJ4cTZOelRQM2JqUHJiUkxac3llMUE0Tlo0Mlk2ZmZqeXRVSEJ4aUg0TVlYRUFmT2pNVUhsVFQ3MURPelB0amtNNnZBUQ?oc=5",
+      "fetched_at": "2026-06-17T14:08:39.510656+00:00"
+    },
+    {
       "id": "e52532bfcf25",
       "title": "FDA Says 11,000 More Blood Pressure Prescriptions Recalled Nationwide - The Healthy",
       "date": "2026-06-15",
@@ -577,30 +601,6 @@
       "key_actions": "Escalate to QA leadership for site-specific action plan.",
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/aptima-hiv-quant-dx-assay-hcv-quant-dx-assay-and-hbv-quant-assay-software",
       "fetched_at": "2026-06-13T11:30:42.371989+00:00"
-    },
-    {
-      "id": "1391d2c056ea",
-      "title": "ETMS 70 mm Cooled Coil",
-      "date": "2026-06-13",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: ETMS 70 mm Cooled Coil\nSource: Health Canada\nDate: 2026-06-11T12:00:00",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/etms-70-mm-cooled-coil",
-      "fetched_at": "2026-06-13T11:30:37.356731+00:00"
-    },
-    {
-      "id": "a2a291bffabd",
-      "title": "Alembic Pharma Receives USFDA Approval for Tretinoin Cream - Machine Maker",
-      "date": "2026-06-13",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Title: Alembic Pharma Receives USFDA Approval for Tretinoin Cream - Machine Maker\nSource: Google News\nDate: Sat, 13 Jun 2026 10:31:29 GMT",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMjdNYmx3c2RISTA0NzJkV19Wa0Z0bTRFUTFlOGN4OEVUNUs1M1VpT1Vqa0pXdm8wa3lQM2tyWldFUUJJRmNCeFJyVm5qNUNBSk4zSlhBUDJENFZOclh5eENUTG5uVlJkaVhENG5KN1BwQTFfLTYwcHpLa0d3cEJhbG9rSUozUDRhbUMzXzcyVzM0UGF1cEdB?oc=5",
-      "fetched_at": "2026-06-13T11:29:53.851666+00:00"
     }
   ]
 }
