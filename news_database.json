@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-06-17T17:30:31.697695+00:00",
+  "last_updated": "2026-06-17T19:38:23.242533+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "24b0b8447524",
+      "title": "ARTIS icono ceiling",
+      "date": "2026-06-17",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: ARTIS icono ceiling\nSource: Health Canada\nDate: 2026-06-17T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/artis-icono-ceiling-0",
+      "fetched_at": "2026-06-17T19:38:21.733685+00:00"
+    },
+    {
+      "id": "5540cd0dc282",
+      "title": "Plum™ Precision IV Pumps",
+      "date": "2026-06-17",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Plum™ Precision IV Pumps\nSource: Health Canada\nDate: 2026-06-17T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/plumtm-precision-iv-pumps",
+      "fetched_at": "2026-06-17T19:38:16.725154+00:00"
+    },
+    {
+      "id": "8227c3a65832",
+      "title": "Outbreak Investigation of Infant Botulism: Powdered Infant Formula (June 2026) - fda.gov",
+      "date": "2026-06-17",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Outbreak Investigation of Infant Botulism: Powdered Infant Formula (June 2026) - fda.gov\nSource: Google News\nDate: Wed, 17 Jun 2026 12:40:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdWIzNDUxbG1ZY1BXR2Jra3otQ0JtcmZhVHQ0aDV5elZXaVYzbTk1OWppWkJPTEQ0aTl2azFSRUJ3eXBXbVRaSHEzYmpXY2I5X3FGdzBaN0JickJHZkxLREpHdFNuNHZTUzdEdGNhSzVlbHBSUHpZQVlMdWQ4eHl5SFZtMklGcXdNcXowVjZydUxxUFRlbnJWQTY4ZXExZjQ3Ykh6R0VMeFE3S0p0enBKV2ZqZmtlNG1hbG55dXFQekhoOUU?oc=5",
+      "fetched_at": "2026-06-17T19:37:12.898250+00:00"
+    },
     {
       "id": "717a5c08e937",
       "title": "HALYARD* PUREZERO* Ultraviolet* Nitrile Exam Gloves",
@@ -565,42 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOc19wQ2NxazZsa0tCbjdpenQ0SXZYQW9WOEdNTWxwaXNrQ25fanp0RjZLZmpuVFBFcmREeFhhWW03QW8wS002ZHFwM05YZDVsdXliOGRJeTQ4bVllT0NYR2hOV0ZDX3AwamgzWjZBVmZRbVFVSE16NDIzR3FEbEY3TnVLX216REJ4azE0aGw0aU03LWEzLTduU1hTX24xYjNSdTBMb2hn?oc=5",
       "fetched_at": "2026-06-15T14:43:21.325646+00:00"
-    },
-    {
-      "id": "e2bb91447365",
-      "title": "Brazilian Critical Minerals advances rare earths project with key regulatory approval - Mining.com.au",
-      "date": "2026-06-15",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Title: Brazilian Critical Minerals advances rare earths project with key regulatory approval - Mining.com.au\nSource: European Medicines Agency\nDate: Mon, 15 Jun 2026 00:40:26 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVE9jRGt0Nk5vdUVsYzdLczFKc2xvUVYyTmttRlNTeUpGdFVsSlJFTEpyMUtlVzVYYk5NdmhPemxBa203YzZiQnc3X2FvY2xGYWJjVzFkM0JWWFdTX0sycjBoVGRGTDZKNXVEMUJEbGFHcUlqQW00ekJSb05uQ0VGZnBEQQ?oc=5",
-      "fetched_at": "2026-06-15T01:45:57.914217+00:00"
-    },
-    {
-      "id": "ca10d70ab19d",
-      "title": "Keppel Infrastructure Trust : Receipt of EMA Approval in relation to the Proposed Acquisition of an Additional 39% Inter",
-      "date": "2026-06-14",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Title: Keppel Infrastructure Trust : Receipt of EMA Approval in relation to the Proposed Acquisition of an Additional 39% Interest in KMC - marketscreener.com\nSource: European Medicines Agency\nDate: Sun, 14 Jun 2026 22:07:04 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOYTBPWlJzUEQ5X24xWDkySGJfelhRQnp5Z2ROeUx1M3p4RHdfWXlKRDNiaEljR3IyRFNtSWJRdEF3Q1BEWTBmb1JlR0dUZHVyZi1KSF9hVGlzSjU1R0kxZzVMcXh5QTFYQ1dVYmUtUXVISTZDUlRSa0k0MUN2ZWVUa29nanFVYjZrclc3dmU2aTNIeTNlR3M1aGdjck9XXzQ5b1FYVlMxeUpKUUpkQUEzRnkwQlNyY2tLYW9EWVJtVnRVTDAxMnlZTVpkVlh2U3hXLWxVRmpLcVhNN3VNc1ZXV05zU0M?oc=5",
-      "fetched_at": "2026-06-14T22:42:35.250107+00:00"
-    },
-    {
-      "id": "ad60a317ca73",
-      "title": "Alfredo Sauce Recall Elevated to Highest Risk Level in 41 States Due to Potential Salmonella Contamination - People.com",
-      "date": "2026-06-14",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Alfredo Sauce Recall Elevated to Highest Risk Level in 41 States Due to Potential Salmonella Contamination - People.com\nSource: Google News\nDate: Sun, 14 Jun 2026 17:43:50 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQW1PQXZaaEJkYUdxakZvakJwLUhLRnF6cEx2WVJ4M0pfYXVtWmRPUjJlUVhkLW9TSHVGY3F3RDRncVgxQzlMcTdUWmdzS1BsRkNqUDc2NzRta1VpbHNXTmFqVzkyaDVCem42UUM5QmUxN3FsRHoyR0E5WGkzWVk1X3Fmdy1CWDh3Qi1XV3I2REhSaktvNWVPR0E1dw?oc=5",
-      "fetched_at": "2026-06-14T22:41:29.785483+00:00"
     }
   ]
 }
