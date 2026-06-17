@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-06-17T14:08:45.691106+00:00",
+  "last_updated": "2026-06-17T17:30:31.697695+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "717a5c08e937",
+      "title": "HALYARD* PUREZERO* Ultraviolet* Nitrile Exam Gloves",
+      "date": "2026-06-17",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: HALYARD* PUREZERO* Ultraviolet* Nitrile Exam Gloves\nSource: Health Canada\nDate: 2026-06-17T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/halyard-purezero-ultraviolet-nitrile-exam-gloves",
+      "fetched_at": "2026-06-17T17:30:30.142597+00:00"
+    },
+    {
+      "id": "a570063e10cf",
+      "title": "CorNeat KPro",
+      "date": "2026-06-17",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: CorNeat KPro\nSource: Health Canada\nDate: 2026-06-17T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/corneat-kpro",
+      "fetched_at": "2026-06-17T17:30:25.128129+00:00"
+    },
+    {
+      "id": "0146ba7a07d1",
+      "title": "Single Use Distal Cover",
+      "date": "2026-06-17",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Single Use Distal Cover\nSource: Health Canada\nDate: 2026-06-17T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/single-use-distal-cover-0",
+      "fetched_at": "2026-06-17T17:30:20.119847+00:00"
+    },
+    {
+      "id": "0cb28371fa36",
+      "title": "Polyflex powder for suspension; Cracked vials",
+      "date": "2026-06-17",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Polyflex powder for suspension; Cracked vials\nSource: Health Canada\nDate: 2026-06-17T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/polyflex-powder-suspension-cracked-vials",
+      "fetched_at": "2026-06-17T17:30:15.109921+00:00"
+    },
+    {
+      "id": "67ace466d440",
+      "title": "HLB Shares Swing on FDA Approval Hopes - Businesskorea",
+      "date": "2026-06-17",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: HLB Shares Swing on FDA Approval Hopes - Businesskorea\nSource: Google News\nDate: Wed, 17 Jun 2026 09:07:24 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBJTy11UFVRSUJjRU5OTmZtdFF3d3p3ZHozMzZsaFdkTWNyQ3pyOHJqbE9uWnppYk5fMVNwNGlaOEVoRmZSN2RrSmkwQS00MnZfWHpwMFZPN096UC1XTzBBMkVybWlEbmc4T2V5Zlc3dS1SSHhu?oc=5",
+      "fetched_at": "2026-06-17T17:29:51.858743+00:00"
+    },
+    {
+      "id": "81fd78203f6e",
+      "title": "Needles Used to Detect Breast Cancer in Shortage After Recall - Bloomberg.com",
+      "date": "2026-06-17",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Title: Needles Used to Detect Breast Cancer in Shortage After Recall - Bloomberg.com\nSource: Google News\nDate: Wed, 17 Jun 2026 16:34:48 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOcUFPYU5kS1lnY3dMalBvS2xXdUc4cXV4M0pPOVNUdGJ4N3BNRGtsVEVrLWgwNHBnRnRiYkZQelNzd0JtU3lNZmxqQkkxQk9fM1F0dnNkTWtkaFNiV3hTTU9PeElIZm9xS3U0RW14QUg4TVh5OExwV2MzRTlnTVgwOExIR2ozRW5LN1VpaUM4NUtxcktVNHhWLTdkMVdWckxfa0FRZnQxTnRFemREVUtUc29BSElLOEtJYU5vNk1NNDFHQXFfY181dTN4Z0VWNnM?oc=5",
+      "fetched_at": "2026-06-17T17:29:10.454958+00:00"
+    },
+    {
+      "id": "56977b0c2b29",
+      "title": "FDA warns breast biopsy needle shortage to continue into 2027 - MedTech Dive",
+      "date": "2026-06-17",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Title: FDA warns breast biopsy needle shortage to continue into 2027 - MedTech Dive\nSource: Google News\nDate: Wed, 17 Jun 2026 15:47:06 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVmJObUQ0RnF1a2dvR2xBOG9fMnY4azF2OEpSU3ZtZUxSVHhqTVBYeUd3MGNlRURMcFdCYTZpYWxJV2xHcFE0RmFJeV9ZS0NxVkUtd2RvbGxBOVJkdnNtRFQ1VHBvV09kZkk0ZDFoSzhRLXBzRkpiaVNRbFdOSlo5T3hDNEZFZFJPeF9pYk5fOFcxSzI4eGI2eDNTV3g2Q3YxMHpVdw?oc=5",
+      "fetched_at": "2026-06-17T17:29:05.436730+00:00"
+    },
     {
       "id": "edf696631da1",
       "title": "EXCLUSIVE: CDSCO suspends HCG Hospital’s Ethics Committee for 24 months - The South First",
@@ -517,90 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQW1PQXZaaEJkYUdxakZvakJwLUhLRnF6cEx2WVJ4M0pfYXVtWmRPUjJlUVhkLW9TSHVGY3F3RDRncVgxQzlMcTdUWmdzS1BsRkNqUDc2NzRta1VpbHNXTmFqVzkyaDVCem42UUM5QmUxN3FsRHoyR0E5WGkzWVk1X3Fmdy1CWDh3Qi1XV3I2REhSaktvNWVPR0E1dw?oc=5",
       "fetched_at": "2026-06-14T22:41:29.785483+00:00"
-    },
-    {
-      "id": "35b4555717db",
-      "title": "Patients with rare diseases 'cannot wait' for another review into drug approval processes - Irish Examiner",
-      "date": "2026-06-14",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Title: Patients with rare diseases 'cannot wait' for another review into drug approval processes - Irish Examiner\nSource: Google News\nDate: Sun, 14 Jun 2026 18:00:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1BMjhmMEl2dHJsZEhaX1VyOU1yTm1RTnlOU0dza2dlampwd01ZbFpLZW5aWW5uQnlicVp3WGs0cHFYUFJfUE5MM25CODJUMkg0V2FIRTJGc0k4TE1uTGpDZ0pFcw?oc=5",
-      "fetched_at": "2026-06-14T18:51:32.959094+00:00"
-    },
-    {
-      "id": "e0767bd32ef3",
-      "title": "Concord Biotech Secures USFDA Approval for Tofacitinib Tablets, Targets USD 500 Million US Market - Medical Dialogues",
-      "date": "2026-06-14",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Title: Concord Biotech Secures USFDA Approval for Tofacitinib Tablets, Targets USD 500 Million US Market - Medical Dialogues\nSource: Google News\nDate: Sun, 14 Jun 2026 12:49:02 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNamxBMkRkMTFBOExWRFNLTDNRanY4VExSakQzd3o0WERZWE5tOGpHU2pjRmRJQkU3LVhHUkhfWVRDUElPMVBnRTRBVUdkbWNndXpfcjZiZWRpRUpDMWZhTUpaT0RickVsU0FVdzhpWWdpY054cm9qV0xheGZJQklyOXh2WGhTeHNVaHhIajhKMWZkaTl4ZU9fT0pZWE95ZFYza25ja19reWdGSURxVExfN3lxUjdhUzFiekhTQUxZa0pmbHZMREhmUmRub0JlWi1fM2lxdjlIeEo0V3BVVGYybi1BdmNxZ1nSAewBQVVfeXFMUE5QdVNTYTVvc1M3NndmRHVWSldfdlpDS2ZOeXhwRGc0T3RxSHFWbHdIN3dlU005TWwwbVNVcVBIMUk1WXhOQ3NMRHN1SjNPbUF4QXgySENWMVJDYlR0QnZDR2Q5LUtrdF9YLWhtNGVIdHNmT2VOTUhFVi1rcFZxZzh2bmoxQVVsUFNlMHBHQ1dHQzZVRHdtMGpGTThaQTg1dXJuY0FGcUpMcnM4YnY1YS1VNEpxOTVvYlRpbzNYMmlNb1FmZjR0OTF2OWFsanQ2SjNRcV9lVndJdF92Qkh5d3hNdTVnTGJsRzVBUHc?oc=5",
-      "fetched_at": "2026-06-14T15:24:48.392422+00:00"
-    },
-    {
-      "id": "8227c3a65832",
-      "title": "Outbreak Investigation of Infant Botulism: Powdered Infant Formula (June 2026) - fda.gov",
-      "date": "2026-06-13",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Outbreak Investigation of Infant Botulism: Powdered Infant Formula (June 2026) - fda.gov\nSource: Google News\nDate: Sat, 13 Jun 2026 00:00:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdWIzNDUxbG1ZY1BXR2Jra3otQ0JtcmZhVHQ0aDV5elZXaVYzbTk1OWppWkJPTEQ0aTl2azFSRUJ3eXBXbVRaSHEzYmpXY2I5X3FGdzBaN0JickJHZkxLREpHdFNuNHZTUzdEdGNhSzVlbHBSUHpZQVlMdWQ4eHl5SFZtMklGcXdNcXowVjZydUxxUFRlbnJWQTY4ZXExZjQ3Ykh6R0VMeFE3S0p0enBKV2ZqZmtlNG1hbG55dXFQekhoOUU?oc=5",
-      "fetched_at": "2026-06-14T20:45:44.398081+00:00"
-    },
-    {
-      "id": "42045ecf6cf2",
-      "title": "US FDA approves expanded use of Sanofi’s Type 1 diabetes drug in children aged 8 to 17 - The Straits Times",
-      "date": "2026-06-13",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Title: US FDA approves expanded use of Sanofi’s Type 1 diabetes drug in children aged 8 to 17 - The Straits Times\nSource: Google News\nDate: Sat, 13 Jun 2026 08:38:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTHJSNERJWVNFQjBzbFpoSWU4NjQ5RjZQMlE4b2h0YW5yb1RUdXIxU3BOT2E5WGR6YkxMYU01YlRBOGtLNC1FYlBVS2FNREhHZlkzOGNXbXR3ME1lRFpGc0IxTjd6Sk5uakE2M193MFlqa1dNQUpTanB0OTA2THV6MXM1MU1tVlVKd1Z5MjNGLWRROW44cWw3YTA2QXpIeEN0NVJ2bTd6cEtLNk5VY3VWNFBKeEY0dndLM3pVNnN4TFo5djczdlplSm8zbjk5UEU?oc=5",
-      "fetched_at": "2026-06-13T16:55:51.454448+00:00"
-    },
-    {
-      "id": "fbb8b0fc96a2",
-      "title": "Cholesterol Drug Recall: Nearly 3,000 Bottles Yanked Nationwide - The Healthy",
-      "date": "2026-06-13",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Cholesterol Drug Recall: Nearly 3,000 Bottles Yanked Nationwide - The Healthy\nSource: Google News\nDate: Sat, 13 Jun 2026 15:44:04 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5rMVJOZThEOFJ2WHpxeWxjd2tkV05yekNiOGwweHNjOGs3THJJRzR1X1FIOEp2TVJRbTdtZUNFZk1JZDB5bmVJUTRfbnlvc2RSVWVBX3haVWwyOFF4ZUl4MUNWTVdGYWpIenluUkdycmgxRXJG?oc=5",
-      "fetched_at": "2026-06-13T16:55:04.244988+00:00"
-    },
-    {
-      "id": "d16410695bb8",
-      "title": "Selenia Dimensions 2D/3D Mammography Systems",
-      "date": "2026-06-13",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Selenia Dimensions 2D/3D Mammography Systems\nSource: Health Canada\nDate: 2026-06-10T12:00:00",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/selenia-dimensions-2d3d-mammography-systems",
-      "fetched_at": "2026-06-13T11:30:47.382503+00:00"
-    },
-    {
-      "id": "94e0749da641",
-      "title": "Aptima HIV Quant Dx Assay, HCV Quant Dx Assay, and HBV Quant Assay Software",
-      "date": "2026-06-13",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Aptima HIV Quant Dx Assay, HCV Quant Dx Assay, and HBV Quant Assay Software\nSource: Health Canada\nDate: 2026-06-11T12:00:00",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/aptima-hiv-quant-dx-assay-hcv-quant-dx-assay-and-hbv-quant-assay-software",
-      "fetched_at": "2026-06-13T11:30:42.371989+00:00"
     }
   ]
 }
