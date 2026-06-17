@@ -6,6 +6,26 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/korea-s-drug-agency-completes-first-joint-review-with-ema-seoul-economic-daily.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/3-birth-control-drugs-have-been-recalled-nationwide-fda-the-healthy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/fda-provides-anticipated-timeline-for-resolution-of-breast-biopsy-needle-shortage-radiology-business.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/fda-announces-recall-of-popular-antidepressant-over-possible-carcinogen-risk-health-trusted-and-empathetic-health-and.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/fda-alerts-on-shortage-of-breast-biopsy-needles-medpage-today.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -232,26 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/highlights-from-ema-pharmacovigilance-committee-meeting-the-pharma-letter.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/ema-recommends-approval-for-ranibizumab-biosimilar-vislyfa-generics-and-biosimilars-initiative.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/snack-recall-hits-21-states-after-dangerous-metal-contamination-discovered-in-popular-product-al-com.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/fda-recalls-farm-rich-pizza-snack-over-possible-metal-contamination-click2houston.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/astrazeneca-gets-cdsco-nod-for-enhertu-for-breast-cancer-scanx-trade.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

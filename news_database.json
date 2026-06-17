@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-06-16T23:56:59.927737+00:00",
+  "last_updated": "2026-06-17T05:24:37.389827+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "e57017805a6a",
+      "title": "Korea's Drug Agency Completes First Joint Review With EMA - Seoul Economic Daily",
+      "date": "2026-06-17",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: Korea's Drug Agency Completes First Joint Review With EMA - Seoul Economic Daily\nSource: European Medicines Agency\nDate: Wed, 17 Jun 2026 00:48:52 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYmdudTB1VUFCd2FkNWd1ZGlsaGNxU3JtY2ZCcFVMZDh1WjdNaTQtdWxNZl9lVkJnTXFuYl9kbXJwMVRTUzZraUpzeTIwQnJDM2p0VXBNTU9hSmJyLUFmVHlPX0NQX1pBTzh0TXg5Q3VBSkFDTWJEaXZRVVVySkhBRkRYT3I4XzZYbkZUVTJtMERuVmp0NXg2cXE1M0RXVE0?oc=5",
+      "fetched_at": "2026-06-17T05:24:36.439865+00:00"
+    },
+    {
+      "id": "62ad06f3ab9f",
+      "title": "3 Birth Control Drugs Have Been Recalled Nationwide: FDA - The Healthy",
+      "date": "2026-06-17",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: 3 Birth Control Drugs Have Been Recalled Nationwide: FDA - The Healthy\nSource: Google News\nDate: Wed, 17 Jun 2026 02:16:12 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBSaHZvMThONnNhWENmd1NRdngtYW8tUnh0SGRWbGgwZ1ZhTnF6ZDlxdkxLNzUxQlJfRzQ5SDhkVXV0Ukh5ZUNuWVh2VXZaSkppeGYyMlRIZGljWnVmLW5fRV8xQVQ1RzJiYWlHVXFTU1BvMnA3NW9J?oc=5",
+      "fetched_at": "2026-06-17T05:23:25.570605+00:00"
+    },
+    {
+      "id": "590ee7af75f2",
+      "title": "FDA provides anticipated timeline for resolution of breast biopsy needle shortage - Radiology Business",
+      "date": "2026-06-16",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Title: FDA provides anticipated timeline for resolution of breast biopsy needle shortage - Radiology Business\nSource: Google News\nDate: Tue, 16 Jun 2026 19:32:51 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONEJ4VU9udmtRQkNfNmprQlUtUERKQ1NVNVl6Nnl3bkpSbnF6U1NIV1lRRmV4alFTUEl5TktNRE9RekFCeFZSc0tIZ25LV09abzkwVEtvUjl3NWlNRmtIbEVuOFpkVTc4VElpdzlvcmZRS2NPSTRyTDNTZGFTd1Z6LUNpaVJfcnZHTjVtQ19RZ1U5b1ZBeU4zakg1MnU1b1BrR1FLTnYwXy1acURWeW16ZDVzdDN2dw?oc=5",
+      "fetched_at": "2026-06-17T05:23:36.622399+00:00"
+    },
+    {
+      "id": "85d5169015d4",
+      "title": "FDA Announces Recall of Popular Antidepressant Over Possible Carcinogen Risk - Health: Trusted and Empathetic Health and",
+      "date": "2026-06-16",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: FDA Announces Recall of Popular Antidepressant Over Possible Carcinogen Risk - Health: Trusted and Empathetic Health and Wellness Information\nSource: Google News\nDate: Tue, 16 Jun 2026 19:57:49 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51TVdRNDRra3hqelpZaHByaWlZcUtxUkRKci1iRU9ienBnMngxT0c1THVXbWtqYjJJdHlZTlJDa2lOV2N4YUh4c1BTYk1zRWFyQWZkQ2ZoQU1iRFNIRWJMZmotRGRWZVRFVWpUV2l1blA?oc=5",
+      "fetched_at": "2026-06-17T05:23:30.595391+00:00"
+    },
     {
       "id": "0f6a81086854",
       "title": "FDA Alerts on Shortage of Breast Biopsy Needles - MedPage Today",
@@ -553,54 +601,6 @@
       "key_actions": "Escalate to QA leadership for site-specific action plan.",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPci1PMlQ0TTVtalExR3plSDAxVmlIb1pJWnZubGo1M0xJdFVWd3VzNi1iZDFVTGdScVVLSE1lV1FlQUd6eVNGZVppX2M2WHkzVEQ2NldvV244TnJnNVlGZ2p2YS04NGFwNVpyRElNR0c1dk5qd1NRcjlSeXl2SlBsc2xZVDMyOWUzdV9vZi1hb0s5SU5Zd19qSDlLaUNTS28?oc=5",
       "fetched_at": "2026-06-13T11:31:02.559499+00:00"
-    },
-    {
-      "id": "00c23c77f7ac",
-      "title": "EMA recommends approval for ranibizumab biosimilar Vislyfa - Generics and Biosimilars Initiative",
-      "date": "2026-06-12",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Title: EMA recommends approval for ranibizumab biosimilar Vislyfa - Generics and Biosimilars Initiative\nSource: European Medicines Agency\nDate: Fri, 12 Jun 2026 14:16:32 GMT",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNU1I5ZXpmR3dKSDF4bXlyZTVBRE81b1gzaDRwSHJYWVRkYjBsUUNUTVhXLWY4bkFwbGZ1dmJ2UkJBWTFNZS1iZEpOZjNKeVUzb1RTYnNWVG9FaTN1M1o0VGlHSkc2cjBKa01vdVNYc05hUk1zTVdpUTA5SzN1NGwwYWJGNThxTER0RTVaajVrNXpaMDFCOUlNMlFFN1c4X0E?oc=5",
-      "fetched_at": "2026-06-13T11:30:57.547513+00:00"
-    },
-    {
-      "id": "d9509a2197da",
-      "title": "Snack recall hits 21 states after dangerous metal contamination discovered in popular product - AL.com",
-      "date": "2026-06-12",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Snack recall hits 21 states after dangerous metal contamination discovered in popular product - AL.com\nSource: Google News\nDate: Fri, 12 Jun 2026 17:51:00 GMT",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPbjc0Wkh1TXpzazJkX3p5VDRSeDNEQ1pJeEFLdnJiVnVhYzcxNVhJTlJRVXIwa1JnTDZnTGhOWkdVcmlNbUd0RTFnRkZJSTh3ZHhtYzdPOHN3YjZ1NUxhb0h6N2djWjlQSVpHaG9CV2xmM0U0dkhrZkFJakJORkRyUWk0VUF3cGN2NW45SFpGQzFrOUdGdUdPTzN1UmZVSm5wZ3BGR1hHMFROR0FudGVUdHFWLWxmc0RrRDNWV0pCdnQtOFBzZmJxVUV30gHeAUFVX3lxTE9aUVo5MVp4c3VOMFdOdGh0MEt2X1NBUjhOLTN5ZWdSRllLRE5PbXB2UlFFcEJUWFFodm0wRWZ3MHdWMTdmMFRWV2lrMmplRnJCZ1RWZ1o2RDhid0dlMlA0YWtxREhNcWNVd2s5SFZUYUFuY29tU1Q0UmhPRUsxRlJ2NjNDeTMyUHU5QTVIejJCVnFpeTVtVWRMR1FRczkxaEcxUU8xV25POUZXcC1VUldUOFlRRFA2SWE4TU03VVJTNjlRMEt3MmZ6VDJ0czA4R1dFX3kzQzBLa2czRkVxQQ?oc=5",
-      "fetched_at": "2026-06-13T11:28:50.187068+00:00"
-    },
-    {
-      "id": "b15cc6601d4e",
-      "title": "FDA recalls Farm Rich pizza snack over possible metal contamination - Click2Houston",
-      "date": "2026-06-12",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: FDA recalls Farm Rich pizza snack over possible metal contamination - Click2Houston\nSource: Google News\nDate: Fri, 12 Jun 2026 12:30:56 GMT",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdGNjc3RVUTNUUjBQbGFSV1lMblBZS2FJdXg0LVRmMTZtd2NXR3ZDMnprdzBUX2w3YnpTUWZyeEZZQmRNdUJwaHpYUXFLTzRwdmVzLVV4cTlWbXFaeks1Y043UjhFelJGb3RCV0gzaUhfUGdfZWhTQURkS3VGV3NNVzQ4ZkExYU9Hemw0TkphY3FNd3pDZngteEo3OGdNVE5WZkhuVDd4cENJcjU3MEZPNU9vVGd3UGZ5NFRCdg?oc=5",
-      "fetched_at": "2026-06-13T11:28:45.163039+00:00"
-    },
-    {
-      "id": "aa41740fad88",
-      "title": "AstraZeneca gets CDSCO nod for Enhertu for breast cancer - scanx.trade",
-      "date": "2026-06-11",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: AstraZeneca gets CDSCO nod for Enhertu for breast cancer - scanx.trade\nSource: CDSCO India\nDate: Thu, 11 Jun 2026 23:59:46 GMT",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNVlJ5emtXcTFjUDdCSXFHYjREck5IZFFoTmNuZ0tIQzBKNFhkOWpwLU11NFRRSURzRjQ5cEZrc3pkbnVBbEpvZVZIYXhQUVNjRW5ieTVra1U2NnRKaW90SnI0dkpMQl9ObEpxSE9kUzFpY0VqQ3hmUHRZS01zQ2dVU2tNcm90dm9sdUhsTm1weGJkN2N4anI2dG8zZnY0UWc2eGdjazhBcXRSY1hFUmxQT1R5SWFBZEpXNXNtRDBVd3NDU1ZzQjNyRzhobERubWdBNnBkbmVRMkREUzhUNDVKQnBZRjgxYkE?oc=5",
-      "fetched_at": "2026-06-13T11:31:17.854007+00:00"
     }
   ]
 }
