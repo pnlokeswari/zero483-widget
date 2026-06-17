@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-06-17T05:24:37.389827+00:00",
+  "last_updated": "2026-06-17T10:14:22.384411+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "fe00dbe5bf19",
+      "title": "Zai Lab’s zocilurtatug pelitecan secures EMA orphan drug status - Pharmaceutical Technology",
+      "date": "2026-06-17",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: Zai Lab’s zocilurtatug pelitecan secures EMA orphan drug status - Pharmaceutical Technology\nSource: European Medicines Agency\nDate: Wed, 17 Jun 2026 09:00:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPZ2lkNmdQRHdWUGhIcXVXUnVjeE1PM3dSTkI2X1NRTnhZQVRKdUljQlFTTW03MWMyOEd4OVI3N19yaFduZVY2QWxkX25iUjFBbXRJX3VTd3U1SDVubkstTVJDLWJlV2N4TnJuWWlyZG80Vnd4VVZucm40Z3l0S3N1X284YUY2US1fSjJvX3NTSFVMY1dh?oc=5",
+      "fetched_at": "2026-06-17T10:14:21.407187+00:00"
+    },
+    {
+      "id": "64704ba1a691",
+      "title": "Drug Shortage: Sterile Water Irrigant",
+      "date": "2026-06-17",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Generic name: Sterile Water Irrigant\nBrand name: N/A\nStatus: Current\nPresentations: []",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/search?q=FDA+Shortage+Sterile+Water+Irrigant",
+      "fetched_at": "2026-06-17T10:13:21.334948+00:00"
+    },
+    {
+      "id": "c835e00dd712",
+      "title": "Over 11,000 Bottles of Blood Pressure Medications Recalled for 'Failed Dissolution Specifications' - People.com",
+      "date": "2026-06-17",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Over 11,000 Bottles of Blood Pressure Medications Recalled for 'Failed Dissolution Specifications' - People.com\nSource: Google News\nDate: Wed, 17 Jun 2026 04:46:12 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTjg5OUhKSjdHRXlwOUlxb2xJNEJfbVFGbVhLVUpMQkIybzlWWnlacDhtSVJxN3pXMlB2bVFXa2QzSWhEcU1mZmJNejRWTDZWbHlBZEdRazI2NHlyQjdNbjZnS2xzbmFNd1dyYnNoT0ZHeVUzVEJWSUVDajZoN3BxYzFzcWFKQlg2dmhVbHdHVjZKbzhtZVRYbnpJMkRSMVktTTMxZDZ1QlBjTGR1RnUxTVIzTU9BbGdEUGZfV19YemlvdVg5bnBSal8wMU1hQQ?oc=5",
+      "fetched_at": "2026-06-17T10:13:15.801558+00:00"
+    },
     {
       "id": "e57017805a6a",
       "title": "Korea's Drug Agency Completes First Joint Review With EMA - Seoul Economic Daily",
@@ -565,42 +601,6 @@
       "key_actions": "Escalate to QA leadership for site-specific action plan.",
       "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMjdNYmx3c2RISTA0NzJkV19Wa0Z0bTRFUTFlOGN4OEVUNUs1M1VpT1Vqa0pXdm8wa3lQM2tyWldFUUJJRmNCeFJyVm5qNUNBSk4zSlhBUDJENFZOclh5eENUTG5uVlJkaVhENG5KN1BwQTFfLTYwcHpLa0d3cEJhbG9rSUozUDRhbUMzXzcyVzM0UGF1cEdB?oc=5",
       "fetched_at": "2026-06-13T11:29:53.851666+00:00"
-    },
-    {
-      "id": "23c7b1f38812",
-      "title": "Alfredo sauce sold in 41 states recalled over Salmonella concerns - NewsNation",
-      "date": "2026-06-12",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Alfredo sauce sold in 41 states recalled over Salmonella concerns - NewsNation\nSource: Google News\nDate: Fri, 12 Jun 2026 11:27:09 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQlhtajFoMXZlOVZDMEVqYl9adkREMmg5c2hvN1hLaTlEbUoyMkZGR1Q5aGU3SnJ1ZFhrazVMNFBETC1ZMXI1ZXFoVmFwcXU4VldZakZQa1NuR3lFUEdRLVRoblk0UkdLNkhSYUctRHFTTXA1Qy1fNUdPUlJXQm9zRjdQV0JZbEHSAYwBQVVfeXFMT19zd3cwX1lVd0o1VEpNMGtqejV5ODYzd1pNNnBhSmFMTEFGcnlwX05VU2dFSXBwSlRqT081SDc1V19vWHlVY0M4N1ZNYk9UdWRIVzlXeFZ0cUFpNTF1aWN4S3prdlcwZkZtY3ZJV195MTVHREI1UF9PRGJnbXoxOFFKb1Y3NVhKZmJMUEU?oc=5",
-      "fetched_at": "2026-06-13T14:36:10.253092+00:00"
-    },
-    {
-      "id": "7e4d82a163a0",
-      "title": "CDSCO’s cosmetic regulations: The rules exist. The enforcement does not - Express Pharma",
-      "date": "2026-06-12",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: CDSCO’s cosmetic regulations: The rules exist. The enforcement does not - Express Pharma\nSource: CDSCO India\nDate: Fri, 12 Jun 2026 12:01:13 GMT",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPc1dzVnFVdjRCVG5xajJFZVBaX3dpd0RiQ3B4Mko1dmRGaUNBXzdXTS0xSWFSYlJsY2NPNi1aSzNlVHNwM3luUHg2cExndEZVVS1yVmgzam9iOHhuWEthbjdpeGJ2TUgtUmNrR1ZoTjRrWEhRa2FDVjdKZk82TGVNZFN2enNtR3JMZTVMM3kxTUF2cTVSZU81Q3U1Mzd2ZnPSAaQBQVVfeXFMTWRjNmtIc2JmSGlUaWZ1ektnWEtpT1VnMWhSakNzOHF0cEwwT2ZITjFXVGFlT1dIS1dMcFBwVkdvSmhDTzUwajBtWFR3RTh0Y2tQcWNMaXJOZWR0SjBBbUUySV8xblZMdDRycWFoZmFIRkd4b3lGQTUyMjJTcTBBVEQwbHlLa1hXQnYxbWlMRG9pVjl6bXZNSmllYnljUVF1eXhWU3Q?oc=5",
-      "fetched_at": "2026-06-13T11:31:07.815179+00:00"
-    },
-    {
-      "id": "cd6de54e49b3",
-      "title": "Highlights from EMA pharmacovigilance committee meeting - The Pharma Letter",
-      "date": "2026-06-12",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Highlights from EMA pharmacovigilance committee meeting - The Pharma Letter\nSource: European Medicines Agency\nDate: Fri, 12 Jun 2026 22:53:28 GMT",
-      "compliance_impact": "Review and assess the impact on your site's quality systems.",
-      "key_actions": "Escalate to QA leadership for site-specific action plan.",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPci1PMlQ0TTVtalExR3plSDAxVmlIb1pJWnZubGo1M0xJdFVWd3VzNi1iZDFVTGdScVVLSE1lV1FlQUd6eVNGZVppX2M2WHkzVEQ2NldvV244TnJnNVlGZ2p2YS04NGFwNVpyRElNR0c1dk5qd1NRcjlSeXl2SlBsc2xZVDMyOWUzdV9vZi1hb0s5SU5Zd19qSDlLaUNTS28?oc=5",
-      "fetched_at": "2026-06-13T11:31:02.559499+00:00"
     }
   ]
 }
