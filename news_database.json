@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-06-18T09:53:14.487002+00:00",
+  "last_updated": "2026-06-18T13:48:00.608657+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "95ec3645c34a",
+      "title": "WuXi Biologics Suzhou Center Passes EMA GMP Inspection - Contract Pharma",
+      "date": "2026-06-18",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: WuXi Biologics Suzhou Center Passes EMA GMP Inspection - Contract Pharma\nSource: European Medicines Agency\nDate: Thu, 18 Jun 2026 13:38:06 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZFBxSmhmYkxEUVMyeWI2dHU5bkRSWmxUX1hKQ1czUU01blFndnlRXzgwQmh4a1p5SXIzUUpfdEhxVmE0aVdHQ3RveENFQi1QUUVPX0wxRWNRQ1pManpIbnNFY0QzSl9iMzB0OFlrbXhfSWp0ZEt5TFB0dmxkMDhkQXZzYUEyWlNvQ0JNSlRPNXNqY1d0SXNkS1VTcDVJbW1JSmc?oc=5",
+      "fetched_at": "2026-06-18T13:47:59.277893+00:00"
+    },
+    {
+      "id": "aecc56216f7a",
+      "title": "Lupin Shares Jump Over 2.5% as US Drug Approval Boosts Investor Sentiment - HDFC Sky",
+      "date": "2026-06-18",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: Lupin Shares Jump Over 2.5% as US Drug Approval Boosts Investor Sentiment - HDFC Sky\nSource: Google News\nDate: Thu, 18 Jun 2026 11:54:34 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVU5JYWItT3F3X1c4TDlsQUxPOXFDWUVwMkEweVdxWWRIZ3RZWHdGODJaTDJYbWJVMTVPZDlsR3IzSkVGU2tQN2RYNmtTQmFlcnZ2SkFGbXBwSVlJb0Jpc0M0VWZUX3l4MU1na25UNEFGWVY3VEhMaVhaalJsbmRHaQ?oc=5",
+      "fetched_at": "2026-06-18T13:47:20.572391+00:00"
+    },
     {
       "id": "a82f1009b6a1",
       "title": "GSK and Spero's oral carbapenem is first to win FDA approval for cUTIs - FirstWord Pharma",
@@ -577,30 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcHotZmc4czdXWGNJLWFJOGg5WC1JXzNwMUtWeWV6WlFyNEJCZDVzREJWOHUyd2lFd3ZmbXhHQlhidnp3NDA4SDZlc3JkcUZmZ2ZOeXdBLS1zajNnMTBYLXNVd18yczZFTWZSWFhNNEpOMGxYYTZfRFR2QlhrTFBueUhoZEpPZGtBNW5wREE0YjhWZUpfN2daUnpEbTNnR2lRLUVHZVB3?oc=5",
       "fetched_at": "2026-06-17T23:56:44.719864+00:00"
-    },
-    {
-      "id": "590ee7af75f2",
-      "title": "FDA provides anticipated timeline for resolution of breast biopsy needle shortage - Radiology Business",
-      "date": "2026-06-16",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "Title: FDA provides anticipated timeline for resolution of breast biopsy needle shortage - Radiology Business\nSource: Google News\nDate: Tue, 16 Jun 2026 19:32:51 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONEJ4VU9udmtRQkNfNmprQlUtUERKQ1NVNVl6Nnl3bkpSbnF6U1NIV1lRRmV4alFTUEl5TktNRE9RekFCeFZSc0tIZ25LV09abzkwVEtvUjl3NWlNRmtIbEVuOFpkVTc4VElpdzlvcmZRS2NPSTRyTDNTZGFTd1Z6LUNpaVJfcnZHTjVtQ19RZ1U5b1ZBeU4zakg1MnU1b1BrR1FLTnYwXy1acURWeW16ZDVzdDN2dw?oc=5",
-      "fetched_at": "2026-06-17T05:23:36.622399+00:00"
-    },
-    {
-      "id": "85d5169015d4",
-      "title": "FDA Announces Recall of Popular Antidepressant Over Possible Carcinogen Risk - Health: Trusted and Empathetic Health and",
-      "date": "2026-06-16",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: FDA Announces Recall of Popular Antidepressant Over Possible Carcinogen Risk - Health: Trusted and Empathetic Health and Wellness Information\nSource: Google News\nDate: Tue, 16 Jun 2026 19:57:49 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51TVdRNDRra3hqelpZaHByaWlZcUtxUkRKci1iRU9ienBnMngxT0c1THVXbWtqYjJJdHlZTlJDa2lOV2N4YUh4c1BTYk1zRWFyQWZkQ2ZoQU1iRFNIRWJMZmotRGRWZVRFVWpUV2l1blA?oc=5",
-      "fetched_at": "2026-06-17T05:23:30.595391+00:00"
     }
   ]
 }
