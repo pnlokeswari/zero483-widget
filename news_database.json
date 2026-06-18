@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-18T05:15:47.069721+00:00",
+  "last_updated": "2026-06-18T09:53:14.487002+00:00",
   "total_items": 50,
   "items": [
     {
@@ -37,6 +37,30 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/search?q=FDA+Shortage+Remifentanil+Hydrochloride+Injection",
       "fetched_at": "2026-06-18T05:14:00.527420+00:00"
+    },
+    {
+      "id": "52bb10484396",
+      "title": "FDA Issues Guidance to Exempt Certain Med Devices from Premarket Notification - In Compliance Magazine",
+      "date": "2026-06-17",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: FDA Issues Guidance to Exempt Certain Med Devices from Premarket Notification - In Compliance Magazine\nSource: Google News\nDate: Wed, 17 Jun 2026 19:18:51 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNV2hfb0pwN2hVd0J1LU9INFdyZ2VMVFZ5eHZjNjBuTFVoRHdzRGt1Rkxpa3dENTV5UVVzdnk0NVJRS2NvM1R0b0lJS0M3NU1TTkoyWUtSTDNkN1BPbDRSeGh1ZWNLeG1lZ3lfcDVvdDc3ZEJQemQ3dG1DdWdyVlhYTzB4WnJYazM5R005X1YzTEJma2Q1LTN5clBMeHBpM3dfSDBjbmZYSnNEQdIBsgFBVV95cUxQMkY5UUlGVGFSZVNMbmVteWIzYlFnc3BwVW5uYm5sbi1Qd0tRemNSbUNyT05kU0ViNFNuOHRFNFlOWXRPU2JGdXZOeUZGQmNqdTQ1cERaTjBLblNZNEpGOTJBdDlhamdJWG1ORGlFZ1hlNmIyTHBFYkpmN0M0QjQwY0RMVzdYVm5PNkhCUUxoQk1zX0xXVmZlZTNISURBekVVUE9feGFnTlc0MHhGMkw2ZGRn?oc=5",
+      "fetched_at": "2026-06-18T09:52:57.636448+00:00"
+    },
+    {
+      "id": "d86ca0b59534",
+      "title": "4 years after snub, GSK partnership helps Spero get Utebzi across FDA finish line - Fierce Pharma",
+      "date": "2026-06-17",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: 4 years after snub, GSK partnership helps Spero get Utebzi across FDA finish line - Fierce Pharma\nSource: Google News\nDate: Wed, 17 Jun 2026 19:20:09 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSVBnSkltbVFOOEZZMUM3TVZBaktYeTk0VktRNXJNVTdsMjJMRXFPRFhnb0pwekN3djJNd1A4NnIwUDJ1b29PUDBPLVVyRmhHLTRxNU5KM045Y1BBTlhnbEVDTnJuYmV1Y1FCcFRiWUVfS1V2QXNjVDZ6VVFoa2t0NWpGdVdjWG5DX2NpQmlyZEVzcEJyRHJodGVhN1F0ZHktTEplWDBuLXRCTFg0MzNDcVJvbmNVTVRW?oc=5",
+      "fetched_at": "2026-06-18T09:52:24.813807+00:00"
     },
     {
       "id": "416e99e9d9f6",
@@ -387,6 +411,30 @@
       "fetched_at": "2026-06-17T05:23:25.570605+00:00"
     },
     {
+      "id": "8e58ebee7df0",
+      "title": "Allergan Aesthetics Receives U.S. FDA Approval for SKINVIVE by JUVÉDERM® for the Improvement of Neck Appearance - AbbVie",
+      "date": "2026-06-16",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: Allergan Aesthetics Receives U.S. FDA Approval for SKINVIVE by JUVÉDERM® for the Improvement of Neck Appearance - AbbVie News Center\nSource: Google News\nDate: Tue, 16 Jun 2026 12:03:07 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNc3ZPU1lHWFdpVGZGY2hFQVpwZUZmdnFTQ1ZYUHRTRG9EOHJSaENyVE9qX29YakxhVzBWU2xJMlVCUE80TXkyVXBEY2tadlNjRDVDMmRhWUZtQlNyeXdIUGRXRUhSNVc3SEl5bE9LQXNJaHdvTDhKb2VwOXgwdnN1b1dyLTBJMEJiX3J3WDVwTzVUZmdzMDlPdk9IYzNWS2pUVHJ5ZUV6SUtuS2c5NWZqb0JKUThvNm1aTVZsQlZ6UGpHYThtTVVxa3RSdWkwbi13YUg1OWc4V2dKakpmbWNV?oc=5",
+      "fetched_at": "2026-06-18T09:52:19.794510+00:00"
+    },
+    {
+      "id": "b1427356b6dc",
+      "title": "FDA device shortage update includes bloodlines, biopsy needles and more - Medical Design & Outsourcing",
+      "date": "2026-06-16",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Title: FDA device shortage update includes bloodlines, biopsy needles and more - Medical Design & Outsourcing\nSource: Google News\nDate: Tue, 16 Jun 2026 19:02:32 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPT0NsU0sxWE5fazU0aHNaekp5cnpUYjBkMl9hMGxqejhVczhLcjdOUGFyTkVad2RucFJNT056SHlUaXJBX3FfZV9pSVBFUTh1MTZURnpJak5GZUdheDJpbGlqa1FTRnJCbzh3SVFnY1p4dlRhMTc4aEJadW5xejVvZEFvcy1PcmZydEZtNGlpeEJPNjY2dmlpb3RR?oc=5",
+      "fetched_at": "2026-06-18T09:51:43.330048+00:00"
+    },
+    {
       "id": "40615026ced8",
       "title": "Medical Product Alert N°2/2026: Falsified JAKAVI (ruxolitinib) - World Health Organization (WHO)",
       "date": "2026-06-16",
@@ -553,54 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51TVdRNDRra3hqelpZaHByaWlZcUtxUkRKci1iRU9ienBnMngxT0c1THVXbWtqYjJJdHlZTlJDa2lOV2N4YUh4c1BTYk1zRWFyQWZkQ2ZoQU1iRFNIRWJMZmotRGRWZVRFVWpUV2l1blA?oc=5",
       "fetched_at": "2026-06-17T05:23:30.595391+00:00"
-    },
-    {
-      "id": "0f6a81086854",
-      "title": "FDA Alerts on Shortage of Breast Biopsy Needles - MedPage Today",
-      "date": "2026-06-16",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "Title: FDA Alerts on Shortage of Breast Biopsy Needles - MedPage Today\nSource: Google News\nDate: Tue, 16 Jun 2026 21:07:04 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5CQWxvQjlQNUQ5bnQtc052NlVpY19aRGdmZ2gySjNoOEV2QklpcWxjNUdxNEV5OTZNc3RPcU01UzNhNG5UV1gtemRmZktINjc0VXhCdUVWYVpYZEo2bW5QbUJybm9wX2F0dmRJYUtpVTA1MGFYSXc?oc=5",
-      "fetched_at": "2026-06-16T22:28:23.067373+00:00"
-    },
-    {
-      "id": "3002f1b60c9a",
-      "title": "GE Healthcare Integrated and Stand-Alone Resuscitation systems",
-      "date": "2026-06-16",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: GE Healthcare Integrated and Stand-Alone Resuscitation systems\nSource: Health Canada\nDate: 2026-06-16T12:00:00",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/ge-healthcare-integrated-and-stand-alone-resuscitation-systems",
-      "fetched_at": "2026-06-16T20:26:28.601738+00:00"
-    },
-    {
-      "id": "438895735d20",
-      "title": "Unauthorized soft-shelled hyperbaric chambers may pose serious health risks 2026-06-16",
-      "date": "2026-06-16",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Unauthorized soft-shelled hyperbaric chambers may pose serious health risks 2026-06-16\nSource: Health Canada\nDate: 2026-06-16T12:00:00",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/unauthorized-soft-shelled-hyperbaric-chambers-may-pose-serious-health-risks-2026-06-16",
-      "fetched_at": "2026-06-16T20:26:23.585898+00:00"
-    },
-    {
-      "id": "21e7394fdd82",
-      "title": "Lancora Tablets; Broken / partial tablets in blister pack",
-      "date": "2026-06-16",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Lancora Tablets; Broken / partial tablets in blister pack\nSource: Health Canada\nDate: 2026-06-16T12:00:00",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/lancora-tablets-broken-partial-tablets-blister-pack",
-      "fetched_at": "2026-06-16T20:26:18.567778+00:00"
     }
   ]
 }
