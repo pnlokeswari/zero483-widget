@@ -1,7 +1,79 @@
 {
-  "last_updated": "2026-06-18T13:48:00.608657+00:00",
+  "last_updated": "2026-06-18T17:42:09.057690+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "b04b8d5b0e45",
+      "title": "MED-RX Wound Care Kit",
+      "date": "2026-06-18",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: MED-RX Wound Care Kit\nSource: Health Canada\nDate: 2026-06-18T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/med-rx-wound-care-kit",
+      "fetched_at": "2026-06-18T17:42:07.518441+00:00"
+    },
+    {
+      "id": "43d3e7bcbeba",
+      "title": "Atellica CH Enzymatic Hemoglobin A1c (A1c_E) assay ",
+      "date": "2026-06-18",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Atellica CH Enzymatic Hemoglobin A1c (A1c_E) assay \nSource: Health Canada\nDate: 2026-06-18T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/atellica-ch-enzymatic-hemoglobin-a1c-a1ce-assay",
+      "fetched_at": "2026-06-18T17:42:02.508911+00:00"
+    },
+    {
+      "id": "5c741cbaa6b4",
+      "title": "FDA’s draft Q&A guidance on patent submission forms: A few practical tips worth noting - www.hoganlovells.com",
+      "date": "2026-06-18",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: FDA’s draft Q&A guidance on patent submission forms: A few practical tips worth noting - www.hoganlovells.com\nSource: Google News\nDate: Thu, 18 Jun 2026 01:42:10 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNamRSUDQ3bk1pb1o3RmpSMDhCdWNsNWtqTDVacDhRbUZjTzFzNWJ3VWcxbVIyLTd4UGEzbnFJQTFpRENtRHQ3dnhTLVhQZ2FLOWxSVHRHZXF3VnNBNTJxbzljRUwzTEZqYV80cFlVdXpZZlM1c2Vtdkd0VUxadTVFb1doUXdvUVRYd3Y1ZnFpUXpsZ2g0Wm5LbTJLLWh6U0Jmc0pBaV9LbUdYbEotaG4tZ1pWdm5xa1kxeFFvS1ZiYW1uZy1tdEpv?oc=5",
+      "fetched_at": "2026-06-18T17:41:51.952181+00:00"
+    },
+    {
+      "id": "cdd9e5bd72eb",
+      "title": "Zoll receives FDA warning letter over quality concerns - MedTech Dive",
+      "date": "2026-06-18",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "Title: Zoll receives FDA warning letter over quality concerns - MedTech Dive\nSource: Google News\nDate: Thu, 18 Jun 2026 16:22:24 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQcnZuUjFOT2w2RTBYRS0tdGxuWkdFQU1nWklJVzc3bWkydVhTTUlqSTBFLWRuRk1JQmdmNVVMeWZ4c1o0Qk1DOUpkTUJHc3dHU3lWZVYzUzUxQkFmOW00ZVJVVHFablFUSzVkWjZPTGtxOXRVbDRDS19nMlgxVW9PbGJoQ3g5eHN5VzZKc3IwM3Y5blppb0ZzaDJGVQ?oc=5",
+      "fetched_at": "2026-06-18T17:41:46.397900+00:00"
+    },
+    {
+      "id": "ff030679c02c",
+      "title": "New generic drug for flu treatment receives FDA approval - Kentucky Today",
+      "date": "2026-06-18",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: New generic drug for flu treatment receives FDA approval - Kentucky Today\nSource: Google News\nDate: Thu, 18 Jun 2026 15:35:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQN2tTNmJVVVlSYUpGaXBFQ2RSOG03VzVKT25pZERSNU1XNWpkbHhnSmthZlFHNF8zQThHbEdFR2luczFWb3hHeU5Kb3JuY2NlNlEyYi01R2FHMUJCc01UMnVjOVBycUlxazNvZmR5OGdsck9yUUdMbUVMRFpSRWltbU9qWkx2ZjF0NHVHejItUWpXcWUzU1hhQXF4SG0zNHVOelJnSXlRWVR6RlVCeDRRTW9IQlktUzVTWnF2bnMwWjlmMHpOaW1DNGk2VkdueDNlSXJiN1RDYnRubHhITVRLUFV0cVA?oc=5",
+      "fetched_at": "2026-06-18T17:41:24.679510+00:00"
+    },
+    {
+      "id": "140a8bb7e51e",
+      "title": "FDA Warns of Ongoing Breast Biopsy Needle Shortage - The ASCO Post",
+      "date": "2026-06-18",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Title: FDA Warns of Ongoing Breast Biopsy Needle Shortage - The ASCO Post\nSource: Google News\nDate: Thu, 18 Jun 2026 15:51:55 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTlNKNDhleXdBc3BETG4zNFg1eEJFSWZ6ZzBSTS1USzJ1TVRCamRnVmFQWkpoQ2xoNThvNUM4ajJWMlU2NkNvQ2Ewc2FhX0ZuTC14Z1Fzc3B4R1JuR1dQN211bGc2WXVHa3VMb0xzWGVGd2VubzdXbVlfSG5tbl9DcEtkNEVILTJ2YUg5U2JoTnQ?oc=5",
+      "fetched_at": "2026-06-18T17:40:48.809023+00:00"
+    },
     {
       "id": "95ec3645c34a",
       "title": "WuXi Biologics Suzhou Center Passes EMA GMP Inspection - Contract Pharma",
@@ -435,6 +507,18 @@
       "fetched_at": "2026-06-17T05:23:25.570605+00:00"
     },
     {
+      "id": "85d5169015d4",
+      "title": "FDA Announces Recall of Popular Antidepressant Over Possible Carcinogen Risk - Health: Trusted and Empathetic Health and",
+      "date": "2026-06-16",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: FDA Announces Recall of Popular Antidepressant Over Possible Carcinogen Risk - Health: Trusted and Empathetic Health and Wellness Information\nSource: Google News\nDate: Tue, 16 Jun 2026 19:57:49 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51TVdRNDRra3hqelpZaHByaWlZcUtxUkRKci1iRU9ienBnMngxT0c1THVXbWtqYjJJdHlZTlJDa2lOV2N4YUh4c1BTYk1zRWFyQWZkQ2ZoQU1iRFNIRWJMZmotRGRWZVRFVWpUV2l1blA?oc=5",
+      "fetched_at": "2026-06-18T17:40:38.158996+00:00"
+    },
+    {
       "id": "8e58ebee7df0",
       "title": "Allergan Aesthetics Receives U.S. FDA Approval for SKINVIVE by JUVÉDERM® for the Improvement of Neck Appearance - AbbVie",
       "date": "2026-06-16",
@@ -517,90 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcG1kR0pWQUNray1abFJ0Q3BQbHZLcVk3Umd0RDBpWG5rODNZbDM2NTJaTkh6UlRxaUdYN1psdDc2SVp4T0N5Nk9PTFlSc2EzY3NnTl9IX1BVMXp6dlhzODJtaEo0QlNoQTBGdGxrSVJDODdFdHZhdzhWdVRoM3p1ZVEtc0hJQmMxOFpobXVfdF9NX2pCRGZ0R0dtT0c0NUczTml0R2xwbjZ3SXQzVmJuVlk5UGpzUGJKakJhZjBGRDc?oc=5",
       "fetched_at": "2026-06-18T05:13:55.165944+00:00"
-    },
-    {
-      "id": "6162d30ba705",
-      "title": "Antidepressant recalled due to presence of potentially cancer-causing impurity - ABC News - Breaking News, Latest News a",
-      "date": "2026-06-16",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Antidepressant recalled due to presence of potentially cancer-causing impurity - ABC News - Breaking News, Latest News and Videos\nSource: Google News\nDate: Tue, 16 Jun 2026 02:45:04 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYnZFdWt3bzY4YTFqVXBpRWFIQUlVdEVlY0hYUGRMSlZlbXFVYnEzbE5zbHlQSWtIbWZ2X0R5NnhlOUR3VEZ3NzdGaURwVGlyWW1XS29INDZlRWlWdTB3Y1pZU1ZIc0lqa0xESndTcDRqSzBaXzhsZ3NUM1Bac1VtdENFYjdveDVYMFp1bTVWS0hmUm9wdTJhXzZueDBmLTdNSXI4Tlc2TW05QTZqYlctbFJPeGlid01GTUxNRXpTN0RMQdIBxwFBVV95cUxQQ3g0RVJBUWptQTl6ZFVjQ3BUU3FEMkZ6X0I3WHA3bnZRVFJHOVR0YzJXWTZjQnFWel90OThWSmpVRkhCUTVITmdWMFBNYzV4SkN3dmZ4bVRwTEZiU1UzVHJsVVhmQUhUR05xUjR4SEh0cUNYZjFnOVVpVjVkWTJZTFBudk1HUU5uZURKbFpRbG1nQVRxeVRsMm1RUGF6ZUFOdUg2TmQwVWdJY01fQ3RmX2wzVzV3OTV3UThMeEROLURQQWF5VDZj?oc=5",
-      "fetched_at": "2026-06-18T05:13:45.125905+00:00"
-    },
-    {
-      "id": "3a8b444546e3",
-      "title": "Interference study backs Intelligent Bio (NASDAQ: INBS) U.S. codeine test - Stock Titan",
-      "date": "2026-06-16",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Interference study backs Intelligent Bio (NASDAQ: INBS) U.S. codeine test - Stock Titan\nSource: Google News\nDate: Tue, 16 Jun 2026 20:30:35 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZGZyXzY0aGRCQURVQ0NnR1d4YjlRX1RfZnFkN29Wd3k5UUpMeXpwM3ZNV19lMkZ6Vm5LakRJNEZGamRuVi14dU1FdUxsUHhGRUtEeE9NWE1GVXROcV82N2xkUFBEclFhWWJlb1dqUkFvT3Z4Nm5GRUp6OUZzWEdyRjhNRDVyRW41S29xUm5oV0taWHZFaVpVNE9YUG9ib2dDb0IyWldnVWVxYTJKV1lHNENYY0lUODdlcmc?oc=5",
-      "fetched_at": "2026-06-17T23:57:29.919010+00:00"
-    },
-    {
-      "id": "27b872407508",
-      "title": "The Peptide Surge: Counseling Guidance on GLP-1s, Compounded Therapies, and What Patients Want to Know - Pharmacy Times",
-      "date": "2026-06-16",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: The Peptide Surge: Counseling Guidance on GLP-1s, Compounded Therapies, and What Patients Want to Know - Pharmacy Times\nSource: Google News\nDate: Tue, 16 Jun 2026 17:31:05 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUDRJLV8wa1o0QVlPeVBnRWotTGFCU1NJTUR4T1JrdUtCZ1lHWnRaMWZ1QndVSTJMMGkyWTFhdE01dDA5VFFUa3Z6V0hHS1llanNGdk1DSGpYYzZDRU45X1JLR3ppblVuWlpQbzhNaTROcUw1dFVWTUtvQmdqS1JZdndCOF9MX28ySHBna3c3cmZ1TlVhZUZXb1BJcUhoa05TenJPZGhXMzBVaEVUVXdhdVdQT2ZCZ1ZjR0NXZnhXZW5rNHJuMk5CNWJ0Qkcxblk?oc=5",
-      "fetched_at": "2026-06-17T23:57:24.897494+00:00"
-    },
-    {
-      "id": "5086fb424fa8",
-      "title": "Intelligent Bio Solutions Initiates Interference Study to Support FDA 510(k) Submission for Drug Screening System - Quiv",
-      "date": "2026-06-16",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Intelligent Bio Solutions Initiates Interference Study to Support FDA 510(k) Submission for Drug Screening System - Quiver Quantitative\nSource: Google News\nDate: Tue, 16 Jun 2026 12:43:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQUUZTOHFWT1BienlGTVU2RFNPS24yRkNlQWJIUFMwS25OOG5WMk9CakRrbmZwWEVVbUNwRlUta3g2cUNrTGJvU2RGWVVDMy1EUlNFOEdTSzJiLVRxYnFZa3BqR3ZiM3dheGZ2a1Zzd2dMSjZIQ1FqN0R3b1lyZ0kwVXljMVFuU29qSTJOLXp0c1doNHFxbUFUbkhGMzJoZ29QUWNkQm41N3ItUmN0S1RtSmRqZnpZT2NtMG5qNExJcnUySXlNb3pZZ1VEU1otcmhCSlpWd2NxaWxXMlM4NndzbFpBc3k?oc=5",
-      "fetched_at": "2026-06-17T23:57:19.871618+00:00"
-    },
-    {
-      "id": "6bff9fb65135",
-      "title": "Jazz and PharmaMar Just Ran Out of Runway: Zepzelca’s Confirmatory Failure Is an Accelerated Approval System Under Stres",
-      "date": "2026-06-16",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Jazz and PharmaMar Just Ran Out of Runway: Zepzelca’s Confirmatory Failure Is an Accelerated Approval System Under Stress - The Clinical Trial Vanguard\nSource: Google News\nDate: Tue, 16 Jun 2026 06:53:22 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNX01EWU5UV1NyRmRidm9ldWdfWmp1ZlhVQXQ3YlJFa0F2djZ0X3dYal9McTB6WUNvVGdhSTlOSmZVQU1KbUtrQ0ZQTHVqeExYNC00SHpfbkQ4WTU3QTY0QWtQTGJTLWpqSlhXYnBwTHd1cGhKVXFlbzV0R1JLdkw2b3otLWNRSk5DSGNEMF9POGFyX2pnc3BFTS10OUYtUGc3Qkc1WDYzMm1kVmxyNWd6WGcxSzgwZkYwbU5udjM2MTJ5clBWV1NZLVZKSW9paFhtZUh5eDNRQWxXWG51cUg1czNqVkJTelowYmx6MTFWOE5Qd1NING1SMEQwUUxDY3k5NlZ4ajlB?oc=5",
-      "fetched_at": "2026-06-17T23:57:09.831896+00:00"
-    },
-    {
-      "id": "1e049c0ca5df",
-      "title": "Adaptive DBS Just Ran a Randomized Trial on Gait. The Endpoints FDA Needs to Validate Next Are Nowhere in Current Guidan",
-      "date": "2026-06-16",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Adaptive DBS Just Ran a Randomized Trial on Gait. The Endpoints FDA Needs to Validate Next Are Nowhere in Current Guidance. - The Clinical Trial Vanguard\nSource: Google News\nDate: Tue, 16 Jun 2026 06:53:22 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQMXhSMDBDTzJGLU9FX09VVzVTaHNYRV9ZcFFDSmpHWUFKLVZ1LVFOMVIycS04S1UtdG8tV3NjMGFFQzVDMUVxd0RXN0ZCbTQyTmg4a3MzMXptLWQ0N1NiMDNPWXJ4ckFweUJzcmw5QkdPa3MxNGpwZm8xbWZJdS01bkdNWDFaTHFUNGxGN1Zxb2Q0U1l4ZjBVLWp5TFlCX3c2aUltMDhXU3U1WF80empoVUdtMHlCa3ZsTS0xTUoxMGJYM1VsV2I5SlUteUFuYnBJdll3UERvNjJwSW4zaHFhUWRZei0wQmhiTEdNQmZFTW9mY1pUY1BxNDB1M1dNenF1NXlEMWJ1T1VidW9X?oc=5",
-      "fetched_at": "2026-06-17T23:57:04.807821+00:00"
-    },
-    {
-      "id": "1241dd7ee2b0",
-      "title": "The FDA’s Bayesian Guidance Could Quietly Reshape Clinical Trial Design - MedCity News",
-      "date": "2026-06-16",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: The FDA’s Bayesian Guidance Could Quietly Reshape Clinical Trial Design - MedCity News\nSource: Google News\nDate: Tue, 16 Jun 2026 13:52:46 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcHotZmc4czdXWGNJLWFJOGg5WC1JXzNwMUtWeWV6WlFyNEJCZDVzREJWOHUyd2lFd3ZmbXhHQlhidnp3NDA4SDZlc3JkcUZmZ2ZOeXdBLS1zajNnMTBYLXNVd18yczZFTWZSWFhNNEpOMGxYYTZfRFR2QlhrTFBueUhoZEpPZGtBNW5wREE0YjhWZUpfN2daUnpEbTNnR2lRLUVHZVB3?oc=5",
-      "fetched_at": "2026-06-17T23:56:44.719864+00:00"
     }
   ]
 }
