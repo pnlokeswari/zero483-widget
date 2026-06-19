@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-06-19T07:38:04.774847+00:00",
+  "last_updated": "2026-06-19T12:31:03.774083+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "b73cf3e65531",
+      "title": "Behind the scenes at fast-growing Empower Pharmacy with CEO Shaun Noorian - The Business Journals",
+      "date": "2026-06-19",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: Behind the scenes at fast-growing Empower Pharmacy with CEO Shaun Noorian - The Business Journals\nSource: Google News\nDate: Fri, 19 Jun 2026 10:00:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZFhGMHJObGhua0dzYUNDVG1UWnVtbGd1TktWWDRUYnB3b2t5aWxDU3V0bDJzRTFRYTJlck1aS2pTSmEtTHZZeW1FMjc3cHAwLUNraktjREZEMnNMOVhTc1pBa2IzWUV2eXRPOW1TdVA1Q0xSQTRWTEpCa2JCQk9pTlU2SWJBM0RMdUxxVFZHcHRoTS1KMVQ0amxZNm1hZw?oc=5",
+      "fetched_at": "2026-06-19T12:31:01.949075+00:00"
+    },
+    {
+      "id": "8a89c3521832",
+      "title": "Alembic Pharmaceuticals receives USFDA approval for Binimetinib Tablets, 45 mg - Business Standard",
+      "date": "2026-06-19",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: Alembic Pharmaceuticals receives USFDA approval for Binimetinib Tablets, 45 mg - Business Standard\nSource: Google News\nDate: Fri, 19 Jun 2026 08:35:02 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNME9uMEtKQ3lzeExoVjRCbno1M0NTdWJsMXlsZXhfMlNscXJoRl9oc1A2VDZCeDcwWjNoSUQ1SEZJRmVRekhleW51Z3RmZDM0MTVWQzM3Y0NZaWIxX0JuUTdoUWt3TGtWdTlFRFF4YzFFUDVZVTVjM25GNURVdXdNRFRCUHJ3SDlfakc2UWFOLUowMzBWcTQ1eFJlWFIycWQxbmhveU9VM3NlODZtUEowMVc5LVUtS1FPUGQ3cUd6ZXhzQlZYUTJHTVJJMC1EQ0ViX3BSMTBLbVNhdF84QkpSSVFiNjh5YWZLcWZCSXBsS1fSAfYBQVVfeXFMTnd5OWNLQUpKU0U2b1RrcTFWLUlTMm9fRGxES3FTeWdCckdGN1F0ZDdYb3dVcUlpYTl6YlNESl93TTVvcGlqRGVHMmhmUVRkRWNaeXF1Q193WmRwR0d0LXI0OXZnd2hrdFZxbUg0dHVLenYyVDg2NEZJeThyVkRXVWZEQ2FVX2xSeS10eWY1S08wdWw2RHpLY294MFJ6ajRaZGY5OF9Vc01hb1RtbHhZUnlVLURBQkwzeE5uV28tZnZEQnB1cE9fQU42ZDNtWkRFS2ZWckFPT05hWlpzTFR3Z2E4TWY5UTdnZjg3UGtKZkZOaFBOTFNn?oc=5",
+      "fetched_at": "2026-06-19T12:30:38.587468+00:00"
+    },
     {
       "id": "b456eb0a8e4f",
       "title": "Drug Shortage: Carboplatin Injection",
@@ -577,30 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBSaHZvMThONnNhWENmd1NRdngtYW8tUnh0SGRWbGgwZ1ZhTnF6ZDlxdkxLNzUxQlJfRzQ5SDhkVXV0Ukh5ZUNuWVh2VXZaSkppeGYyMlRIZGljWnVmLW5fRV8xQVQ1RzJiYWlHVXFTU1BvMnA3NW9J?oc=5",
       "fetched_at": "2026-06-17T05:23:25.570605+00:00"
-    },
-    {
-      "id": "40615026ced8",
-      "title": "Medical Product Alert N°2/2026: Falsified JAKAVI (ruxolitinib) - World Health Organization (WHO)",
-      "date": "2026-06-16",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: Medical Product Alert N°2/2026: Falsified JAKAVI (ruxolitinib) - World Health Organization (WHO)\nSource: World Health Organization\nDate: Tue, 16 Jun 2026 09:22:30 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYU1oc05tLXd5TGQ1aVRwNG9iRlgzdGFndU9KNVRDbWFxSjZ3aTV1N0RqNG9MQTNUdV83NWhvTE9vVTlDQU1VT0t6Y1UwN2c2amxINE5oWkU4N0I5eXRRRHBXS2xjdTJ3SEkwenpqbU9BYXBOejR3QWNBM25IeURxSFJGU0lwZmhZUEFvN3dfRjE0YUN0bUEtT2FDQUgwaFFIM2g3SzNB?oc=5",
-      "fetched_at": "2026-06-19T07:38:04.264449+00:00"
-    },
-    {
-      "id": "f29f8439eeb5",
-      "title": "Colorado wins FDA approval for Canadian drug importation plan after years of effort - The Business Journals",
-      "date": "2026-06-16",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Title: Colorado wins FDA approval for Canadian drug importation plan after years of effort - The Business Journals\nSource: Google News\nDate: Tue, 16 Jun 2026 14:19:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQLTBmZl9IS1pQSmZlaFNmVThmRVZkZUk3dFVqTFZLdVlNb09WQnhBR2F6LXRrSXdHTEZLeVVNMktYcnliYXdYRXlXT2dTR3FBb083OXljb0tlOTRaWnRqMHIteWExSXVDT3FQYmNRbE95Yl9wOE9seFVKc3VKTmdETnI4YmZwakxSYy00VU1UblA2OWlhREUxM09lZ3A4Z0Z5QjBHbw?oc=5",
-      "fetched_at": "2026-06-19T07:37:40.672520+00:00"
     }
   ]
 }
