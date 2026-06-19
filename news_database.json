@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-19T20:13:47.450002+00:00",
+  "last_updated": "2026-06-19T21:43:24.305878+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "3a9f5fff907a",
+      "title": "Popular antidepressant recalled over high levels of a cancer-causing compound - NBC New York",
+      "date": "2026-06-19",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Popular antidepressant recalled over high levels of a cancer-causing compound - NBC New York\nSource: Google News\nDate: Fri, 19 Jun 2026 17:32:05 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOblhpbGdUdk5NempSRzFrdThBWks2elBQUEZkZzhiVGxDR2ktdGU1a3FYMGZkOF9VdmFOcUc4dVNzRmtMUnhMcVNtcUNJLU9Qc3BDb2FibXM5eUhSbzFmOXJGOUhENm80TGxiUkdTRXQ3dVM3WURJSEVMWUlIREtFdEVIYUpnQU1RWjJuTnd4NzhrSGR5Z29ERzYycEluUGZER2xaSU05OU9US3hfbFZUWHplSHRNa3ZMWkhSetIBxAFBVV95cUxOdzFjejk5VmtiMUlaekIxdE5aMzAxLUM3YjFncUhwOWZxNVBzWkZfVEsyczJPbUtsNm5IbVI2QWFRTnZRTUtkMXFaWnlVTnBvc1BKNnRfTENaUWU5SFNqVmVRNWNybEVGZ3Jod1FrMk5NekktT0NNRDhBaU1IY2pnRjF1T3JEcHNPcVQydEFqam8zaTZXT0VVbnlpZ3I0Y2d4clpWWUVJN2pMMDFiTGp3Q1c1bUVVbzlObkhER04tSF9zT0Z0?oc=5",
+      "fetched_at": "2026-06-19T21:42:29.062446+00:00"
+    },
     {
       "id": "67abdcfde748",
       "title": "FARADRIVE™ Steerable Sheath",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/corneat-kpro",
       "fetched_at": "2026-06-17T17:30:25.128129+00:00"
-    },
-    {
-      "id": "0146ba7a07d1",
-      "title": "Single Use Distal Cover",
-      "date": "2026-06-17",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Single Use Distal Cover\nSource: Health Canada\nDate: 2026-06-17T12:00:00",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/single-use-distal-cover-0",
-      "fetched_at": "2026-06-17T17:30:20.119847+00:00"
     }
   ]
 }
