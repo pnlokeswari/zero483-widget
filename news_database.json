@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-06-19T12:31:03.774083+00:00",
+  "last_updated": "2026-06-19T15:50:58.940484+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "e5cb6ff1e884",
+      "title": "CDSCO bars HCG Hospital's Bengaluru unit from new clinical trials - Business Standard",
+      "date": "2026-06-19",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "Title: CDSCO bars HCG Hospital's Bengaluru unit from new clinical trials - Business Standard\nSource: CDSCO India\nDate: Fri, 19 Jun 2026 13:18:51 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNb1VNbUdDSGltVkFHVGtBVnNEZ1N3cWhKTTZ4UmhraUpZcFZuZGhjRlJiX1FZRk5acTlXZFBkRHBYdVpxSDhOdzd1RTQyX0tYU1o4WWwzS1NLMEZMU1BLVDhBVnF3ckx1RV9FNTF3MVVOWHRzMVJxcDBsOVRtekRRckRncHVJeEYyRFZkdmExSXowdzZsQ0lQQnJYVnBZa1hPcV84LVlKaFE5LTBKWWNNNFV1WnBNM0Z1UmhWdk9KejZDY3Rmazh6UWo4aWVrVmhHR0FtdWxXMi01V2fSAeABQVVfeXFMTVdTNUY2eDlWczFZTmlDNDlQZkkxNGlKc3pZMTZTRjlvTkdlRl9hNXFlak5pejUySjJ2cGlFQ2VYLUhPR2NXWXp5VGZDQWdyRGdpcjk5NDZGbXNsMTVTOUoyYWJVd0JwZTU2bnd1ZkR5djYxZjhycWthVk1pQ1NfZV9Kc1AzelQ5UXZiMTJsaUhHeE1FMjkzN1c4RzZ1bjVSQ1cxRXdtbGJDbnNzUFZLODF3M3J3aVNNaGZKSTRkSWR3bVJVX1RJOVJyWTgtUURpaEpkR3ptUEpxNE5LYkhJWXg?oc=5",
+      "fetched_at": "2026-06-19T15:50:58.940354+00:00"
+    },
+    {
+      "id": "d2e96c1e1a8e",
+      "title": "FDA Recalls Alyacen Birth Control Dosages Nationwide - Legal Reader",
+      "date": "2026-06-19",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: FDA Recalls Alyacen Birth Control Dosages Nationwide - Legal Reader\nSource: Google News\nDate: Fri, 19 Jun 2026 14:10:21 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaFhDcURHbjJxbHdHMmtzcUliOFg3OEJ2WU9SZ29VX2tISC1uWV9lOHEzU1FJMkxKYTl1OXExdlltaWpyZXVDUVcxU2h4S2ljbjNmbEdmdjdDamtGWTY4b01sN2x1V1dpbHh5X2ktLXA5dFNvV2tUb0lwVzRxZUJiVGM1S1pRMFlV?oc=5",
+      "fetched_at": "2026-06-19T15:49:52.654281+00:00"
+    },
+    {
+      "id": "21c5b488f764",
+      "title": "Nearly 375,000 bottles of duloxetine recalled over cancer-linked impurity - Houston Chronicle",
+      "date": "2026-06-19",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Nearly 375,000 bottles of duloxetine recalled over cancer-linked impurity - Houston Chronicle\nSource: Google News\nDate: Fri, 19 Jun 2026 13:13:46 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaE9LY3NCT281NnJGQk15cFc3ZHlLS2RTSk5RNGlFZjA0VG92WXdZcDkyTjFNaUNvVDdrRS1TNFlvUjV5RjNmWUo0Wm9BYjJlVzF0bWptVDJ3UXkyUlJzLWdUVVhnRkZwLTlrTVd0cWZLbWJzZTQyajhjZjh2YjhaQ2FmLWM4dkM1MFQ0MWR0RVBYb1k1bmo5NlJiYXVpV0NtUUdrWEE4S2J4cHdmLWZFeWdhZWN0dw?oc=5",
+      "fetched_at": "2026-06-19T15:49:42.613711+00:00"
+    },
     {
       "id": "b73cf3e65531",
       "title": "Behind the scenes at fast-growing Empower Pharmacy with CEO Shaun Noorian - The Business Journals",
@@ -565,42 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/search?q=FDA+Shortage+Sterile+Water+Irrigant",
       "fetched_at": "2026-06-17T10:13:21.334948+00:00"
-    },
-    {
-      "id": "c835e00dd712",
-      "title": "Over 11,000 Bottles of Blood Pressure Medications Recalled for 'Failed Dissolution Specifications' - People.com",
-      "date": "2026-06-17",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Over 11,000 Bottles of Blood Pressure Medications Recalled for 'Failed Dissolution Specifications' - People.com\nSource: Google News\nDate: Wed, 17 Jun 2026 04:46:12 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTjg5OUhKSjdHRXlwOUlxb2xJNEJfbVFGbVhLVUpMQkIybzlWWnlacDhtSVJxN3pXMlB2bVFXa2QzSWhEcU1mZmJNejRWTDZWbHlBZEdRazI2NHlyQjdNbjZnS2xzbmFNd1dyYnNoT0ZHeVUzVEJWSUVDajZoN3BxYzFzcWFKQlg2dmhVbHdHVjZKbzhtZVRYbnpJMkRSMVktTTMxZDZ1QlBjTGR1RnUxTVIzTU9BbGdEUGZfV19YemlvdVg5bnBSal8wMU1hQQ?oc=5",
-      "fetched_at": "2026-06-17T10:13:15.801558+00:00"
-    },
-    {
-      "id": "e57017805a6a",
-      "title": "Korea's Drug Agency Completes First Joint Review With EMA - Seoul Economic Daily",
-      "date": "2026-06-17",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Korea's Drug Agency Completes First Joint Review With EMA - Seoul Economic Daily\nSource: European Medicines Agency\nDate: Wed, 17 Jun 2026 00:48:52 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYmdudTB1VUFCd2FkNWd1ZGlsaGNxU3JtY2ZCcFVMZDh1WjdNaTQtdWxNZl9lVkJnTXFuYl9kbXJwMVRTUzZraUpzeTIwQnJDM2p0VXBNTU9hSmJyLUFmVHlPX0NQX1pBTzh0TXg5Q3VBSkFDTWJEaXZRVVVySkhBRkRYT3I4XzZYbkZUVTJtMERuVmp0NXg2cXE1M0RXVE0?oc=5",
-      "fetched_at": "2026-06-17T05:24:36.439865+00:00"
-    },
-    {
-      "id": "62ad06f3ab9f",
-      "title": "3 Birth Control Drugs Have Been Recalled Nationwide: FDA - The Healthy",
-      "date": "2026-06-17",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: 3 Birth Control Drugs Have Been Recalled Nationwide: FDA - The Healthy\nSource: Google News\nDate: Wed, 17 Jun 2026 02:16:12 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBSaHZvMThONnNhWENmd1NRdngtYW8tUnh0SGRWbGgwZ1ZhTnF6ZDlxdkxLNzUxQlJfRzQ5SDhkVXV0Ukh5ZUNuWVh2VXZaSkppeGYyMlRIZGljWnVmLW5fRV8xQVQ1RzJiYWlHVXFTU1BvMnA3NW9J?oc=5",
-      "fetched_at": "2026-06-17T05:23:25.570605+00:00"
     }
   ]
 }
