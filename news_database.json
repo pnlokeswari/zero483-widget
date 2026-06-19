@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-06-19T15:50:58.940484+00:00",
+  "last_updated": "2026-06-19T18:16:16.297746+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "67abdcfde748",
+      "title": "FARADRIVE™ Steerable Sheath",
+      "date": "2026-06-19",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: FARADRIVE™ Steerable Sheath\nSource: Health Canada\nDate: 2026-06-19T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/faradrivetm-steerable-sheath",
+      "fetched_at": "2026-06-19T18:16:09.521182+00:00"
+    },
+    {
+      "id": "a892b9482365",
+      "title": "BD MaxPlus ™ Connector Minibore Extension Set",
+      "date": "2026-06-19",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: BD MaxPlus ™ Connector Minibore Extension Set\nSource: Health Canada\nDate: 2026-06-19T12:00:00",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/bd-maxplus-tm-connector-minibore-extension-set",
+      "fetched_at": "2026-06-19T18:16:04.510929+00:00"
+    },
+    {
+      "id": "976718d26f04",
+      "title": "FDA Issues New Guidance for Submitting Patent Information for Listing in the “Orange Book” - JD Supra",
+      "date": "2026-06-19",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "Title: FDA Issues New Guidance for Submitting Patent Information for Listing in the “Orange Book” - JD Supra\nSource: Google News\nDate: Fri, 19 Jun 2026 16:28:33 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPakJsV3ZWRzAyQVoyb1lUNE01dFZGQzlIRVFxd2RiZHktU1dxUTZiTjVqWFhYaklYcWcxSHR3SlhVbFZ2Q0R2MUdpaU9XMFhKRy1QN2xuTXk2VXdiX3Z2cmFMZ0JxMlZaM1RoS3gyTnMwaWE4RmVZVFlBNkhBMF9rUERLU0I3UVNv?oc=5",
+      "fetched_at": "2026-06-19T18:15:58.970427+00:00"
+    },
     {
       "id": "e5cb6ff1e884",
       "title": "CDSCO bars HCG Hospital's Bengaluru unit from new clinical trials - Business Standard",
@@ -73,6 +109,18 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/search?q=FDA+Shortage+Carboplatin+Injection",
       "fetched_at": "2026-06-19T07:36:53.847384+00:00"
+    },
+    {
+      "id": "9b5bb66df4cf",
+      "title": "FDA recalls duloxetine over possible cancer-causing chemical - Alton Telegraph",
+      "date": "2026-06-18",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: FDA recalls duloxetine over possible cancer-causing chemical - Alton Telegraph\nSource: Google News\nDate: Thu, 18 Jun 2026 19:01:20 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQ3dUY3RoSWpfTV9CVUFUd29WM1p2cW51c0VUMG5hNFNKZ2Fna2VjWUNybXY0ekVlSGg4ZHRudldkTFZRSDlPYVNhT2lPNXZTWi1EQUkwNm5sMGJIajJnVnRqd1lCdF9lZWNrSkE0NUdzb3JZdkRhZmxuRHRQb0VMcnloREdHcmZHZnAyRS0xb3VRQQ?oc=5",
+      "fetched_at": "2026-06-19T18:15:03.996501+00:00"
     },
     {
       "id": "c49912d6da4e",
@@ -253,6 +301,30 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/search?q=FDA+Shortage+Remifentanil+Hydrochloride+Injection",
       "fetched_at": "2026-06-18T05:14:00.527420+00:00"
+    },
+    {
+      "id": "edf696631da1",
+      "title": "EXCLUSIVE: CDSCO suspends HCG Hospital’s Ethics Committee for 24 months - The South First",
+      "date": "2026-06-17",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "Title: EXCLUSIVE: CDSCO suspends HCG Hospital’s Ethics Committee for 24 months - The South First\nSource: CDSCO India\nDate: Wed, 17 Jun 2026 10:39:05 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbFFUSGhoRi1VT2hJNDZBQTlfalFTVGFtc2ZuYmk2YXZnZ3FVWHg0N0Yxd09FQjJFQm52SGNZTURjM2E1ZEdwdVpjY3BVWm45TmhJYWNRbHF1U25nTUZ5a09ZZ1dyV1BmZzNCS2JhdEpkZHcwTmdrRjcxMU81d2pIMFl1YXA0VzZLVFMxU3loZldlbFZjSTNnS0F0M3R2N3dZLXM2MkJ0QTVuRTdsNldPN2ZUTQ?oc=5",
+      "fetched_at": "2026-06-19T18:16:16.297659+00:00"
+    },
+    {
+      "id": "c835e00dd712",
+      "title": "Over 11,000 Bottles of Blood Pressure Medications Recalled for 'Failed Dissolution Specifications' - People.com",
+      "date": "2026-06-17",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Over 11,000 Bottles of Blood Pressure Medications Recalled for 'Failed Dissolution Specifications' - People.com\nSource: Google News\nDate: Wed, 17 Jun 2026 04:46:12 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTjg5OUhKSjdHRXlwOUlxb2xJNEJfbVFGbVhLVUpMQkIybzlWWnlacDhtSVJxN3pXMlB2bVFXa2QzSWhEcU1mZmJNejRWTDZWbHlBZEdRazI2NHlyQjdNbjZnS2xzbmFNd1dyYnNoT0ZHeVUzVEJWSUVDajZoN3BxYzFzcWFKQlg2dmhVbHdHVjZKbzhtZVRYbnpJMkRSMVktTTMxZDZ1QlBjTGR1RnUxTVIzTU9BbGdEUGZfV19YemlvdVg5bnBSal8wMU1hQQ?oc=5",
+      "fetched_at": "2026-06-19T18:14:58.978587+00:00"
     },
     {
       "id": "89448e100027",
@@ -529,78 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/polyflex-powder-suspension-cracked-vials",
       "fetched_at": "2026-06-17T17:30:15.109921+00:00"
-    },
-    {
-      "id": "67ace466d440",
-      "title": "HLB Shares Swing on FDA Approval Hopes - Businesskorea",
-      "date": "2026-06-17",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Title: HLB Shares Swing on FDA Approval Hopes - Businesskorea\nSource: Google News\nDate: Wed, 17 Jun 2026 09:07:24 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBJTy11UFVRSUJjRU5OTmZtdFF3d3p3ZHozMzZsaFdkTWNyQ3pyOHJqbE9uWnppYk5fMVNwNGlaOEVoRmZSN2RrSmkwQS00MnZfWHpwMFZPN096UC1XTzBBMkVybWlEbmc4T2V5Zlc3dS1SSHhu?oc=5",
-      "fetched_at": "2026-06-17T17:29:51.858743+00:00"
-    },
-    {
-      "id": "81fd78203f6e",
-      "title": "Needles Used to Detect Breast Cancer in Shortage After Recall - Bloomberg.com",
-      "date": "2026-06-17",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "Title: Needles Used to Detect Breast Cancer in Shortage After Recall - Bloomberg.com\nSource: Google News\nDate: Wed, 17 Jun 2026 16:34:48 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOcUFPYU5kS1lnY3dMalBvS2xXdUc4cXV4M0pPOVNUdGJ4N3BNRGtsVEVrLWgwNHBnRnRiYkZQelNzd0JtU3lNZmxqQkkxQk9fM1F0dnNkTWtkaFNiV3hTTU9PeElIZm9xS3U0RW14QUg4TVh5OExwV2MzRTlnTVgwOExIR2ozRW5LN1VpaUM4NUtxcktVNHhWLTdkMVdWckxfa0FRZnQxTnRFemREVUtUc29BSElLOEtJYU5vNk1NNDFHQXFfY181dTN4Z0VWNnM?oc=5",
-      "fetched_at": "2026-06-17T17:29:10.454958+00:00"
-    },
-    {
-      "id": "56977b0c2b29",
-      "title": "FDA warns breast biopsy needle shortage to continue into 2027 - MedTech Dive",
-      "date": "2026-06-17",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "Title: FDA warns breast biopsy needle shortage to continue into 2027 - MedTech Dive\nSource: Google News\nDate: Wed, 17 Jun 2026 15:47:06 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVmJObUQ0RnF1a2dvR2xBOG9fMnY4azF2OEpSU3ZtZUxSVHhqTVBYeUd3MGNlRURMcFdCYTZpYWxJV2xHcFE0RmFJeV9ZS0NxVkUtd2RvbGxBOVJkdnNtRFQ1VHBvV09kZkk0ZDFoSzhRLXBzRkpiaVNRbFdOSlo5T3hDNEZFZFJPeF9pYk5fOFcxSzI4eGI2eDNTV3g2Q3YxMHpVdw?oc=5",
-      "fetched_at": "2026-06-17T17:29:05.436730+00:00"
-    },
-    {
-      "id": "edf696631da1",
-      "title": "EXCLUSIVE: CDSCO suspends HCG Hospital’s Ethics Committee for 24 months - The South First",
-      "date": "2026-06-17",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "Title: EXCLUSIVE: CDSCO suspends HCG Hospital’s Ethics Committee for 24 months - The South First\nSource: CDSCO India\nDate: Wed, 17 Jun 2026 10:35:24 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbFFUSGhoRi1VT2hJNDZBQTlfalFTVGFtc2ZuYmk2YXZnZ3FVWHg0N0Yxd09FQjJFQm52SGNZTURjM2E1ZEdwdVpjY3BVWm45TmhJYWNRbHF1U25nTUZ5a09ZZ1dyV1BmZzNCS2JhdEpkZHcwTmdrRjcxMU81d2pIMFl1YXA0VzZLVFMxU3loZldlbFZjSTNnS0F0M3R2N3dZLXM2MkJ0QTVuRTdsNldPN2ZUTQ?oc=5",
-      "fetched_at": "2026-06-17T14:08:45.691012+00:00"
-    },
-    {
-      "id": "fe00dbe5bf19",
-      "title": "Zai Lab’s zocilurtatug pelitecan secures EMA orphan drug status - Pharmaceutical Technology",
-      "date": "2026-06-17",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: Zai Lab’s zocilurtatug pelitecan secures EMA orphan drug status - Pharmaceutical Technology\nSource: European Medicines Agency\nDate: Wed, 17 Jun 2026 09:00:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPZ2lkNmdQRHdWUGhIcXVXUnVjeE1PM3dSTkI2X1NRTnhZQVRKdUljQlFTTW03MWMyOEd4OVI3N19yaFduZVY2QWxkX25iUjFBbXRJX3VTd3U1SDVubkstTVJDLWJlV2N4TnJuWWlyZG80Vnd4VVZucm40Z3l0S3N1X284YUY2US1fSjJvX3NTSFVMY1dh?oc=5",
-      "fetched_at": "2026-06-17T10:14:21.407187+00:00"
-    },
-    {
-      "id": "64704ba1a691",
-      "title": "Drug Shortage: Sterile Water Irrigant",
-      "date": "2026-06-17",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "Generic name: Sterile Water Irrigant\nBrand name: N/A\nStatus: Current\nPresentations: []",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/search?q=FDA+Shortage+Sterile+Water+Irrigant",
-      "fetched_at": "2026-06-17T10:13:21.334948+00:00"
     }
   ]
 }

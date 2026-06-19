@@ -6,6 +6,21 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/faradrive-steerable-sheath.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/bd-maxplus-connector-minibore-extension-set.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/fda-issues-new-guidance-for-submitting-patent-information-for-listing-in-the-orange-book-jd-supra.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/cdsco-bars-hcg-hospital-s-bengaluru-unit-from-new-clinical-trials-business-standard.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -32,6 +47,11 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/drug-shortage-carboplatin-injection.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/fda-recalls-duloxetine-over-possible-cancer-causing-chemical-alton-telegraph.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -107,6 +127,16 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/drug-shortage-remifentanil-hydrochloride-injection.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/exclusive-cdsco-suspends-hcg-hospital-s-ethics-committee-for-24-months-the-south-first.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/over-11-000-bottles-of-blood-pressure-medications-recalled-for-failed-dissolution-specifications-people-com.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -222,36 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/polyflex-powder-for-suspension-cracked-vials.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/hlb-shares-swing-on-fda-approval-hopes-businesskorea.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/needles-used-to-detect-breast-cancer-in-shortage-after-recall-bloomberg-com.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/fda-warns-breast-biopsy-needle-shortage-to-continue-into-2027-medtech-dive.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/exclusive-cdsco-suspends-hcg-hospital-s-ethics-committee-for-24-months-the-south-first.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/zai-lab-s-zocilurtatug-pelitecan-secures-ema-orphan-drug-status-pharmaceutical-technology.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/drug-shortage-sterile-water-irrigant.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
