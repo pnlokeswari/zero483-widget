@@ -131,6 +131,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/fda-warns-breast-biopsy-needle-shortage-to-continue-into-2027-medtech-dive.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/exclusive-cdsco-suspends-hcg-hospital-s-ethics-committee-for-24-months-the-south-first.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -247,11 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/single-use-distal-cover.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/polyflex-powder-for-suspension-cracked-vials.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

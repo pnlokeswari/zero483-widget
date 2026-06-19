@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-19T18:16:16.297746+00:00",
+  "last_updated": "2026-06-19T20:13:47.450002+00:00",
   "total_items": 50,
   "items": [
     {
@@ -303,6 +303,18 @@
       "fetched_at": "2026-06-18T05:14:00.527420+00:00"
     },
     {
+      "id": "56977b0c2b29",
+      "title": "FDA warns breast biopsy needle shortage to continue into 2027 - MedTech Dive",
+      "date": "2026-06-17",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Title: FDA warns breast biopsy needle shortage to continue into 2027 - MedTech Dive\nSource: Google News\nDate: Wed, 17 Jun 2026 15:47:06 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVmJObUQ0RnF1a2dvR2xBOG9fMnY4azF2OEpSU3ZtZUxSVHhqTVBYeUd3MGNlRURMcFdCYTZpYWxJV2xHcFE0RmFJeV9ZS0NxVkUtd2RvbGxBOVJkdnNtRFQ1VHBvV09kZkk0ZDFoSzhRLXBzRkpiaVNRbFdOSlo5T3hDNEZFZFJPeF9pYk5fOFcxSzI4eGI2eDNTV3g2Q3YxMHpVdw?oc=5",
+      "fetched_at": "2026-06-19T20:12:52.770170+00:00"
+    },
+    {
       "id": "edf696631da1",
       "title": "EXCLUSIVE: CDSCO suspends HCG Hospital’s Ethics Committee for 24 months - The South First",
       "date": "2026-06-17",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/single-use-distal-cover-0",
       "fetched_at": "2026-06-17T17:30:20.119847+00:00"
-    },
-    {
-      "id": "0cb28371fa36",
-      "title": "Polyflex powder for suspension; Cracked vials",
-      "date": "2026-06-17",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Polyflex powder for suspension; Cracked vials\nSource: Health Canada\nDate: 2026-06-17T12:00:00",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/polyflex-powder-suspension-cracked-vials",
-      "fetched_at": "2026-06-17T17:30:15.109921+00:00"
     }
   ]
 }
