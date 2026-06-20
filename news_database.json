@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-19T23:35:33.854499+00:00",
+  "last_updated": "2026-06-20T04:50:28.892002+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "1b4748e2f98e",
+      "title": "Preservative-free Bimatoprost Gel Gains FDA Approval - Review of Optometry",
+      "date": "2026-06-19",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: Preservative-free Bimatoprost Gel Gains FDA Approval - Review of Optometry\nSource: Google News\nDate: Fri, 19 Jun 2026 19:00:35 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOb2lNcjlyNFNKMjJoZFlKTnJpNFlsYjBLdVEtRDRrYXZvTXpuZDZBeUFkX3NHNnhMRkM3TjBFYkVRS3d5WllHNjcxSXdrYjJPajdUT29tRlNRMlY2TlJCcWQxWmNSck1pZzQyU1cxd054dUMwY0dHM3Y0dDZPZG1DZVpjcnQ3T2FJZnFMMXBMZHp0X0ppSHRqTWxUNi1oQW8?oc=5",
+      "fetched_at": "2026-06-20T04:50:09.927867+00:00"
+    },
     {
       "id": "3a9f5fff907a",
       "title": "Popular antidepressant recalled over high levels of a cancer-causing compound - NBC New York",
@@ -315,6 +327,18 @@
       "fetched_at": "2026-06-18T05:14:00.527420+00:00"
     },
     {
+      "id": "659f36f84c62",
+      "title": "FDA Duloxetine Recall Highlights Generic Manufacturing Quality Gaps - PharmTech.com",
+      "date": "2026-06-17",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: FDA Duloxetine Recall Highlights Generic Manufacturing Quality Gaps - PharmTech.com\nSource: Google News\nDate: Wed, 17 Jun 2026 15:12:39 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUFQtV0RDbnBtaDFCME13bGhLZU9TN2JhVVl5dFVlVS0tVGI4YkU5ZGRCb2FjYTVCcXJ5aHZrcGNzQmtlN3ZMc1VsMEdqTzFYN0tKWjhEc2NBWE5QSjlCcGhndTNzRHQ0dHROcW1kTS1XdldVazBpZzBwd2w2Wk93cVVDUHp1T19OZ2N4eDBScUQtaUxFNnBiWTFLend1dGM?oc=5",
+      "fetched_at": "2026-06-20T04:49:27.859602+00:00"
+    },
+    {
       "id": "4a625d08c81b",
       "title": "Zai Lab’s zocilurtatug pelitecan secures EMA orphan drug status - Yahoo Finance",
       "date": "2026-06-17",
@@ -577,30 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/plumtm-precision-iv-pumps",
       "fetched_at": "2026-06-17T19:38:16.725154+00:00"
-    },
-    {
-      "id": "8227c3a65832",
-      "title": "Outbreak Investigation of Infant Botulism: Powdered Infant Formula (June 2026) - fda.gov",
-      "date": "2026-06-17",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Outbreak Investigation of Infant Botulism: Powdered Infant Formula (June 2026) - fda.gov\nSource: Google News\nDate: Wed, 17 Jun 2026 12:40:00 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdWIzNDUxbG1ZY1BXR2Jra3otQ0JtcmZhVHQ0aDV5elZXaVYzbTk1OWppWkJPTEQ0aTl2azFSRUJ3eXBXbVRaSHEzYmpXY2I5X3FGdzBaN0JickJHZkxLREpHdFNuNHZTUzdEdGNhSzVlbHBSUHpZQVlMdWQ4eHl5SFZtMklGcXdNcXowVjZydUxxUFRlbnJWQTY4ZXExZjQ3Ykh6R0VMeFE3S0p0enBKV2ZqZmtlNG1hbG55dXFQekhoOUU?oc=5",
-      "fetched_at": "2026-06-17T19:37:12.898250+00:00"
-    },
-    {
-      "id": "717a5c08e937",
-      "title": "HALYARD* PUREZERO* Ultraviolet* Nitrile Exam Gloves",
-      "date": "2026-06-17",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: HALYARD* PUREZERO* Ultraviolet* Nitrile Exam Gloves\nSource: Health Canada\nDate: 2026-06-17T12:00:00",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/halyard-purezero-ultraviolet-nitrile-exam-gloves",
-      "fetched_at": "2026-06-17T17:30:30.142597+00:00"
     }
   ]
 }
