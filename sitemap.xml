@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/drug-shortage-rifampin-capsule.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/government-bans-16-fixed-drug-combinations-over-health-safety-concerns-business-standard.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -72,6 +77,11 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/drug-shortage-carboplatin-injection.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/regulatory-tracker-fda-accepts-roche-s-application-for-lunsumio-polivy-combo-fierce-pharma.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -242,16 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/fda-guidance-could-shape-rare-disease-gene-therapy-development-aadc-news.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/ut-san-antonio-study-as-fda-approved-semaglutide-for-weight-management-calls-to-poison-control-centers-skyrocketed-in.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/the-fda-s-bayesian-guidance-sounds-like-good-news-for-sponsors-sites-will-feel-it-differently-the-clinical-trial-van.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
