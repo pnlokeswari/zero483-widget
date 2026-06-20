@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/fda-sets-highest-risk-level-for-common-over-the-counter-drug-the-healthy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/drug-shortage-rifampin-capsule.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -247,11 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/rare-disease-nonprofits-de-risk-development-with-orphan-drug-designation-and-early-talks-with-the-fda-clinical-leader.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/fda-guidance-could-shape-rare-disease-gene-therapy-development-aadc-news.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

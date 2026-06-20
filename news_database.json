@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-20T17:00:30.198636+00:00",
+  "last_updated": "2026-06-20T18:54:18.821758+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "48e7c29191f4",
+      "title": "FDA Sets Highest Risk Level for Common Over-the-Counter Drug - The Healthy",
+      "date": "2026-06-20",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: FDA Sets Highest Risk Level for Common Over-the-Counter Drug - The Healthy\nSource: Google News\nDate: Sat, 20 Jun 2026 15:22:19 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYl9odVlxbWxNUzI4MWJjQmVyLVdnYndkM1Z2SG52WVktWGRMWmFNM1pQekdXV2NwQ3k5SGhHa1NtVF9CUk90ZHo3MEdxMEtPRlUzNVZPWmR1SzdKdGhicWF4VUNIQS1HdmN6SmFjbERRTWVhaUNXeWhHU3M3SmJsZkljSlVybkgtRi10N3EwN1RoVUFCTVFpSg?oc=5",
+      "fetched_at": "2026-06-20T18:53:27.681261+00:00"
+    },
     {
       "id": "2c3cd6f2726a",
       "title": "Drug Shortage: Rifampin Capsule",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZjg4NGc4WDlidDFMTEFxTEtTclE5Tm9qdS1LcHhkbmVVVUpFc0pTTWktclNtbmVxdWtjT3RUT0NVUzlueXZKN3FVTFJ5bHE5THlwVTNIR0tfQVpKbnV2b2RxSmdDdW15NDl3bDhNdnVoVGNLT3FpN3FxMW5idUkyRHdYYXdvTlNXY3E3Ukw4U0M4SWRqWlZDeGVIdFJhejdCMFRzRVBnNjZpS3RpeG9QaGI1bTFGdE1LZERWUzVnQk5QckVyS1FidkV2ZmNFWGVZUGZFa2FzXzQ?oc=5",
       "fetched_at": "2026-06-17T23:56:59.784886+00:00"
-    },
-    {
-      "id": "aedc7dfa1638",
-      "title": "FDA guidance could shape rare disease gene therapy development - AADC News",
-      "date": "2026-06-17",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: FDA guidance could shape rare disease gene therapy development - AADC News\nSource: Google News\nDate: Wed, 17 Jun 2026 17:00:57 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaHVFQ2FydWJNWi1hNWJfSC1telZIQmVJZHMwYlV3U0VfWW1hWXZvRWtQTDJ5U3NPN2h6VWRtU1V1Q3REQmhSQjZaUEtTYmdkRVNaNlNfc1pfVjhWQ09ubm1oWUU0aFliTjJUM0dKZ09kMW9jQzVNWFNMOTV0MGNvaXotZVMxalR0YTdv?oc=5",
-      "fetched_at": "2026-06-17T23:56:54.762537+00:00"
     }
   ]
 }
