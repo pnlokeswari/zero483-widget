@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/government-bans-16-fixed-drug-combinations-over-health-safety-concerns-business-standard.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/sun-pharma-recalls-chemo-asthma-drugs-in-us-etpharma-com.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -151,6 +156,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/after-fda-sign-off-colorado-s-drug-import-plan-faces-tough-road-ahead-fierce-pharma.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/fda-says-shortage-of-breast-biopsy-needles-expected-to-last-until-2027-american-hospital-association.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/outbreak-investigation-of-infant-botulism-powdered-infant-formula-june-2026-fda-gov.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -237,21 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/the-fda-s-bayesian-guidance-sounds-like-good-news-for-sponsors-sites-will-feel-it-differently-the-clinical-trial-van.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/drug-shortage-methylprednisolone-acetate-injection.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/drug-shortage-lisdexamfetamine-dimesylate-capsule.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/after-fda-sign-off-colorado-s-drug-import-plan-faces-tough-road-ahead-fierce-pharma.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

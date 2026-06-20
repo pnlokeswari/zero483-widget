@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-20T09:52:25.464559+00:00",
+  "last_updated": "2026-06-20T11:30:32.170770+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "e75a7409bc6a",
+      "title": "Government bans 16 fixed drug combinations over health safety concerns - Business Standard",
+      "date": "2026-06-20",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "Title: Government bans 16 fixed drug combinations over health safety concerns - Business Standard\nSource: CDSCO India\nDate: Sat, 20 Jun 2026 09:25:53 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOM3g5SU5GQWd6LXBvdUNreEVBWksxTUxHWDBhZWNfaGRobElDRWx4dFdtVmhuUk5FamJCcXZ0RHdZZWhYNEhHUDNJc2ZQd0ZVM2ZoeEdHUG9Gb2dLcVFEd044bmQtV05CdG9YM1hma3JMWVNqSHJCNHZOVk53a2hKWXItcUlIZmFNRFhJREw3ZmJCd2x6cjI4RjBFeGs1ZEdUWG11YU84ZTNJaHhOdEx2Tm9DUDJJVVZZSlNCVldVbVZxd9IBxwFBVV95cUxPWFQ1Tko5bWVxNTJQQkgxMGxHWUJKbWNudmlsMEtiN1JVZTZvTTZRRlc0SW5YdXBidHptZUZ1QUJaUTd5bWxQMVZyRUpvOS1qclhtaXBIc3RpRzRDYW92UThvWGp2WjNMNENuVjFuWkZtMHQtc2ZNc3FGN3YtYnE2NkQ5WUVXLVpBU1FERXROM3QzcVVfdTJtbk42VG9WV2FiOHFteUh6MHQtc3BJVkh1UVphaEVFT21Bejlrb0hUTmxyRWRDRkFJ?oc=5",
+      "fetched_at": "2026-06-20T11:30:32.170680+00:00"
+    },
     {
       "id": "05e30167bd71",
       "title": "Sun Pharma recalls Chemo, asthma drugs in US - ETPharma.com",
@@ -351,6 +363,30 @@
       "fetched_at": "2026-06-18T05:14:00.527420+00:00"
     },
     {
+      "id": "3c3765bab11f",
+      "title": "After FDA sign-off, Colorado's drug import plan faces tough road ahead - Fierce Pharma",
+      "date": "2026-06-17",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "Title: After FDA sign-off, Colorado's drug import plan faces tough road ahead - Fierce Pharma\nSource: Google News\nDate: Wed, 17 Jun 2026 14:30:39 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTWFYWGZycTJXel9FUm01dE8yUVZnNVA2RlRRN3lLbW1LaGFhLWtLSGdNMUpxQ1hIQnZOay0yVm1JUFBXUTVVZFdpa2JsR0N0Tm5EblR4dERyWVZVSVhlQ2RRRXhjUWlyMzZ2bUtRMmtERlV2ZUxHbm1GdmRocG1kUWNEMlRadVFRUDkwb2VNZ0x0MGlLdFE3YWl3MEUzM011Y3YzVVd2dl9EQWVpYlE?oc=5",
+      "fetched_at": "2026-06-20T11:30:07.480619+00:00"
+    },
+    {
+      "id": "f88e86063ba4",
+      "title": "FDA says shortage of breast biopsy needles expected to last until 2027 - American Hospital Association",
+      "date": "2026-06-17",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Title: FDA says shortage of breast biopsy needles expected to last until 2027 - American Hospital Association\nSource: Google News\nDate: Wed, 17 Jun 2026 20:41:55 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNaWQxSVM1X1FYb1J6VHd5dGFnakN3Q3JNQlJvMjFWcjRPZmdRXzhXOHBVVFhRZ3hCYlYtQm5iOGZ2cTRZaGVBMzRVdTA3SEFSaWhXaTh5b25LUWhHSWxXMGdodDZEeHpGV096SEZDWjFQZTMxZFVCZzRmejgzRGRqbkpiNkZvbDlLeUNzbmpQeDRpdnpaa1pIcS1FblBpUzBhMDVZMmVHTWxuNFI4NXc?oc=5",
+      "fetched_at": "2026-06-20T11:29:31.284197+00:00"
+    },
+    {
       "id": "8227c3a65832",
       "title": "Outbreak Investigation of Infant Botulism: Powdered Infant Formula (June 2026) - fda.gov",
       "date": "2026-06-17",
@@ -565,42 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQOEI0RUxBWDBzVmdwT1pqdXltNXVVVlk0azM4VHd0QzVEY1owdVpWcVFxaTYtYVN2NlBCUkJsRXRUbnoxU192ODFFb3JKcURNdWRDSXdvRmxZSDRoYkhIc3c0S2RYLW82cXBkNzI2eUVlNEl3Nzg5QnhPOE9wOFZzM2dHS3ZvUUFFSUx4ZWNNcnhDSmtDN0RFS3ZweWdOZTZFdGlIbDAxdV82VENYblh1WE5ncGF6QTdJanp5cktJMXgwNjFHMHZvU3kzVUVMM1gwUmtwd0ZEV3M5SjMwQlUxM0I4UnQ1eGxnZGdNcw?oc=5",
       "fetched_at": "2026-06-17T23:56:39.706123+00:00"
-    },
-    {
-      "id": "dd49434b9f4d",
-      "title": "Drug Shortage: Methylprednisolone Acetate Injection",
-      "date": "2026-06-17",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "Generic name: Methylprednisolone Acetate Injection\nBrand name: N/A\nStatus: Current\nPresentations: []",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/search?q=FDA+Shortage+Methylprednisolone+Acetate+Injection",
-      "fetched_at": "2026-06-17T23:55:30.294003+00:00"
-    },
-    {
-      "id": "0bcff804242f",
-      "title": "Drug Shortage: Lisdexamfetamine Dimesylate Capsule",
-      "date": "2026-06-17",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "Generic name: Lisdexamfetamine Dimesylate Capsule\nBrand name: N/A\nStatus: Current\nPresentations: []",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/search?q=FDA+Shortage+Lisdexamfetamine+Dimesylate+Capsule",
-      "fetched_at": "2026-06-17T23:55:25.263979+00:00"
-    },
-    {
-      "id": "3c3765bab11f",
-      "title": "After FDA sign-off, Colorado's drug import plan faces tough road ahead - Fierce Pharma",
-      "date": "2026-06-17",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "Title: After FDA sign-off, Colorado's drug import plan faces tough road ahead - Fierce Pharma\nSource: Google News\nDate: Wed, 17 Jun 2026 14:30:39 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTWFYWGZycTJXel9FUm01dE8yUVZnNVA2RlRRN3lLbW1LaGFhLWtLSGdNMUpxQ1hIQnZOay0yVm1JUFBXUTVVZFdpa2JsR0N0Tm5EblR4dERyWVZVSVhlQ2RRRXhjUWlyMzZ2bUtRMmtERlV2ZUxHbm1GdmRocG1kUWNEMlRadVFRUDkwb2VNZ0x0MGlLdFE3YWl3MEUzM011Y3YzVVd2dl9EQWVpYlE?oc=5",
-      "fetched_at": "2026-06-17T22:20:00.415037+00:00"
     }
   ]
 }
