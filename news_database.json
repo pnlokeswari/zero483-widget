@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-20T08:32:29.406242+00:00",
+  "last_updated": "2026-06-20T09:52:25.464559+00:00",
   "total_items": 50,
   "items": [
     {
@@ -13,6 +13,18 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONkVxWWItTTNEY3VWNEFSTUxuQllWSGQtMW1YbjJwNWUtSlM3c1RoVUNRRW1kYlIzczNtTUtSMzN3cThldHpwMThMcF9mNlpQRW5UbVRPNC1OWTdVMWJYUTBEN24wRXk2MWhsbHkwMVNoRTRTaG9NcEtCaWhTNEM3WDBpSTJOS1hhN1RwSy01RHYtM0x5bnd2bjMwUzRYNmg0WFlOb0xDcFZDV2RwX1RNdDR3QkM5WU4yZ1HSAb8BQVVfeXFMTTdVZlRCTU1XM2k0NnJ3aG5Nczc2NlFTXzFfNjdpcnZvRm4tc25nOFE1S3R5dUlLTXl0U0Y4elgycGZPd282ak9CWFV0Q0E3LWwyZ2xqZS1FVVQxOVJYdUctLWsxX3hlNGdQbzJ6MFlIQWRIR3ZaaElUazM2bjkyXzhVUzMtOW0zTHlBZGdicHlZUTUybXNNbDYza0hHSVNuVmVpdEtIOXVZcWRMeFBNSDF2TmtRU2htNjBvSmYzcU0?oc=5",
       "fetched_at": "2026-06-20T08:31:38.209956+00:00"
+    },
+    {
+      "id": "e3f343be4aaf",
+      "title": "A Practical Guide for Pharmacy Drug Shortages - Drug Topics",
+      "date": "2026-06-19",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "Title: A Practical Guide for Pharmacy Drug Shortages - Drug Topics\nSource: Google News\nDate: Fri, 19 Jun 2026 19:50:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOWWRJc0dCVWk0V2J5RzFhM09NcU82QTF6US1LeURXQ0ttZDRwb1hfTlpzOVlvU3FreWc0SDVnLXhkX1FMNzg1V252X2xYRm5NbFc5ZVZoRzhZMEIxMElla2NkLWRaeDl1VVF2bU9rNFA0Q2I4Q2ExWUFka2w2R1RuS2JTZw?oc=5",
+      "fetched_at": "2026-06-20T09:51:35.350879+00:00"
     },
     {
       "id": "1b4748e2f98e",
@@ -589,18 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTWFYWGZycTJXel9FUm01dE8yUVZnNVA2RlRRN3lLbW1LaGFhLWtLSGdNMUpxQ1hIQnZOay0yVm1JUFBXUTVVZFdpa2JsR0N0Tm5EblR4dERyWVZVSVhlQ2RRRXhjUWlyMzZ2bUtRMmtERlV2ZUxHbm1GdmRocG1kUWNEMlRadVFRUDkwb2VNZ0x0MGlLdFE3YWl3MEUzM011Y3YzVVd2dl9EQWVpYlE?oc=5",
       "fetched_at": "2026-06-17T22:20:00.415037+00:00"
-    },
-    {
-      "id": "f88e86063ba4",
-      "title": "FDA says shortage of breast biopsy needles expected to last until 2027 - American Hospital Association",
-      "date": "2026-06-17",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "Title: FDA says shortage of breast biopsy needles expected to last until 2027 - American Hospital Association\nSource: Google News\nDate: Wed, 17 Jun 2026 20:41:55 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNaWQxSVM1X1FYb1J6VHd5dGFnakN3Q3JNQlJvMjFWcjRPZmdRXzhXOHBVVFhRZ3hCYlYtQm5iOGZ2cTRZaGVBMzRVdTA3SEFSaWhXaTh5b25LUWhHSWxXMGdodDZEeHpGV096SEZDWjFQZTMxZFVCZzRmejgzRGRqbkpiNkZvbDlLeUNzbmpQeDRpdnpaa1pIcS1FblBpUzBhMDVZMmVHTWxuNFI4NXc?oc=5",
-      "fetched_at": "2026-06-17T22:19:19.250694+00:00"
     }
   ]
 }
