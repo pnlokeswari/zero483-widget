@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/sun-pharma-recalls-chemo-asthma-drugs-in-us-etpharma-com.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/preservative-free-bimatoprost-gel-gains-fda-approval-review-of-optometry.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -141,6 +146,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/outbreak-investigation-of-infant-botulism-powdered-infant-formula-june-2026-fda-gov.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/fda-duloxetine-recall-highlights-generic-manufacturing-quality-gaps-pharmtech-com.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -242,16 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/fda-says-shortage-of-breast-biopsy-needles-expected-to-last-until-2027-american-hospital-association.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/artis-icono-ceiling.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/plum-precision-iv-pumps.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-20T04:50:28.892002+00:00",
+  "last_updated": "2026-06-20T08:32:29.406242+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "05e30167bd71",
+      "title": "Sun Pharma recalls Chemo, asthma drugs in US - ETPharma.com",
+      "date": "2026-06-20",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Sun Pharma recalls Chemo, asthma drugs in US - ETPharma.com\nSource: Google News\nDate: Sat, 20 Jun 2026 06:28:24 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONkVxWWItTTNEY3VWNEFSTUxuQllWSGQtMW1YbjJwNWUtSlM3c1RoVUNRRW1kYlIzczNtTUtSMzN3cThldHpwMThMcF9mNlpQRW5UbVRPNC1OWTdVMWJYUTBEN24wRXk2MWhsbHkwMVNoRTRTaG9NcEtCaWhTNEM3WDBpSTJOS1hhN1RwSy01RHYtM0x5bnd2bjMwUzRYNmg0WFlOb0xDcFZDV2RwX1RNdDR3QkM5WU4yZ1HSAb8BQVVfeXFMTTdVZlRCTU1XM2k0NnJ3aG5Nczc2NlFTXzFfNjdpcnZvRm4tc25nOFE1S3R5dUlLTXl0U0Y4elgycGZPd282ak9CWFV0Q0E3LWwyZ2xqZS1FVVQxOVJYdUctLWsxX3hlNGdQbzJ6MFlIQWRIR3ZaaElUazM2bjkyXzhVUzMtOW0zTHlBZGdicHlZUTUybXNNbDYza0hHSVNuVmVpdEtIOXVZcWRMeFBNSDF2TmtRU2htNjBvSmYzcU0?oc=5",
+      "fetched_at": "2026-06-20T08:31:38.209956+00:00"
+    },
     {
       "id": "1b4748e2f98e",
       "title": "Preservative-free Bimatoprost Gel Gains FDA Approval - Review of Optometry",
@@ -327,6 +339,18 @@
       "fetched_at": "2026-06-18T05:14:00.527420+00:00"
     },
     {
+      "id": "8227c3a65832",
+      "title": "Outbreak Investigation of Infant Botulism: Powdered Infant Formula (June 2026) - fda.gov",
+      "date": "2026-06-17",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "Title: Outbreak Investigation of Infant Botulism: Powdered Infant Formula (June 2026) - fda.gov\nSource: Google News\nDate: Wed, 17 Jun 2026 12:40:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdWIzNDUxbG1ZY1BXR2Jra3otQ0JtcmZhVHQ0aDV5elZXaVYzbTk1OWppWkJPTEQ0aTl2azFSRUJ3eXBXbVRaSHEzYmpXY2I5X3FGdzBaN0JickJHZkxLREpHdFNuNHZTUzdEdGNhSzVlbHBSUHpZQVlMdWQ4eHl5SFZtMklGcXdNcXowVjZydUxxUFRlbnJWQTY4ZXExZjQ3Ykh6R0VMeFE3S0p0enBKV2ZqZmtlNG1hbG55dXFQekhoOUU?oc=5",
+      "fetched_at": "2026-06-20T08:31:33.185041+00:00"
+    },
+    {
       "id": "659f36f84c62",
       "title": "FDA Duloxetine Recall Highlights Generic Manufacturing Quality Gaps - PharmTech.com",
       "date": "2026-06-17",
@@ -577,30 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNaWQxSVM1X1FYb1J6VHd5dGFnakN3Q3JNQlJvMjFWcjRPZmdRXzhXOHBVVFhRZ3hCYlYtQm5iOGZ2cTRZaGVBMzRVdTA3SEFSaWhXaTh5b25LUWhHSWxXMGdodDZEeHpGV096SEZDWjFQZTMxZFVCZzRmejgzRGRqbkpiNkZvbDlLeUNzbmpQeDRpdnpaa1pIcS1FblBpUzBhMDVZMmVHTWxuNFI4NXc?oc=5",
       "fetched_at": "2026-06-17T22:19:19.250694+00:00"
-    },
-    {
-      "id": "24b0b8447524",
-      "title": "ARTIS icono ceiling",
-      "date": "2026-06-17",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: ARTIS icono ceiling\nSource: Health Canada\nDate: 2026-06-17T12:00:00",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/artis-icono-ceiling-0",
-      "fetched_at": "2026-06-17T19:38:21.733685+00:00"
-    },
-    {
-      "id": "5540cd0dc282",
-      "title": "Plum™ Precision IV Pumps",
-      "date": "2026-06-17",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Plum™ Precision IV Pumps\nSource: Health Canada\nDate: 2026-06-17T12:00:00",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/plumtm-precision-iv-pumps",
-      "fetched_at": "2026-06-17T19:38:16.725154+00:00"
     }
   ]
 }
