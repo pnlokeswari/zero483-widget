@@ -174,36 +174,40 @@ def build_gemini_client():
 
 def ai_analyze(client, title: str, raw_text: str, retries: int = 3) -> dict:
     """
-    Ask Gemini to produce:
-      - summary (2-3 sentences, plain language)
-      - compliance_impact (2-3 bullet points for pharma QA professionals)
-      - key_actions (1-2 immediate steps)
-    Returns a dict; falls back to basic text if AI is unavailable.
-    Automatically retries on 429 rate-limit errors with the suggested delay.
+    Ask Gemini to produce a comprehensive, SEO-optimized blog post in JSON format:
+      - seo_title
+      - seo_description
+      - summary (HTML formatted)
+      - industry_context (HTML formatted)
+      - compliance_impact (HTML formatted)
+      - key_actions (HTML formatted)
     """
     if client is None:
         truncated = raw_text[:600].strip()
         return {
-            "summary": truncated if truncated else title,
-            "compliance_impact": (
-                "Review this update and assess its relevance to your quality systems. "
-                "Consult with your regulatory affairs team for site-specific impact."
-            ),
-            "key_actions": "Review and escalate to QA leadership as appropriate.",
+            "primary_company_name": None,
+            "seo_title": title,
+            "seo_description": "USFDA Pharma Alert. Review this update and assess its relevance to your quality systems.",
+            "summary": f"<p>{truncated if truncated else title}</p>",
+            "industry_context": "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>",
+            "compliance_impact": "<ul><li>Review this update and assess its relevance to your quality systems.</li><li>Consult with your regulatory affairs team for site-specific impact.</li></ul>",
+            "key_actions": "<ul><li>Review and escalate to QA leadership as appropriate.</li></ul>",
         }
 
-    prompt = f"""You are a senior pharmaceutical GMP auditor and regulatory affairs expert \
+    prompt = f"""You are a senior pharmaceutical GMP auditor and an expert SEO Content Writer \
 with extensive knowledge of USFDA inspection readiness and Zero 483 culture.
 
-Analyse this FDA regulatory update and provide a response in this exact JSON format \
-(no markdown code fence, just raw JSON):
+Write a comprehensive, SEO-optimized blog post (approx 400-500 words) analysing this FDA regulatory update. \
+Provide your response in this exact JSON format (no markdown code fence, just raw JSON):
 
 {{
-  "summary": "2-3 plain-language sentences summarising what happened.",
-  "compliance_impact": "2-3 concise bullet points (starting with *) describing the \
-specific impact on pharmaceutical inspection readiness and quality systems.",
-  "key_actions": "1-2 immediate action items a Quality Assurance Manager should take \
-today."
+  "primary_company_name": "The exact name of the pharmaceutical company involved (e.g., 'Sun Pharmaceutical Industries Ltd.'). If this is a general FDA guidance or the primary company is not explicitly and undeniably the subject of the alert, you MUST output null. Do not guess.",
+  "seo_title": "A highly engaging, keyword-rich headline (e.g., 'FDA Recall 2026: [Drug Name]')",
+  "seo_description": "A 150-160 character meta description optimized for Google search results.",
+  "summary": "A comprehensive 3-paragraph explanation of what happened, formatted with HTML <p> tags.",
+  "industry_context": "A detailed paragraph explaining why this matters to the broader pharmaceutical industry, formatted with HTML <p> tags.",
+  "compliance_impact": "3-5 concise bullet points describing the specific impact on pharmaceutical inspection readiness and quality systems (formatted as an HTML <ul> list).",
+  "key_actions": "3-5 immediate action items a Quality Assurance Manager should take today (formatted as an HTML <ul> list)."
 }}
 
 TITLE: {title}
@@ -213,9 +217,13 @@ TITLE: {title}
 
     if getattr(client, "quota_exhausted", False):
         return {
-            "summary": raw_text[:400].strip(),
-            "compliance_impact": "Review and assess the impact on your site's quality systems.",
-            "key_actions": "Escalate to QA leadership for site-specific action plan.",
+            "primary_company_name": None,
+            "seo_title": title,
+            "seo_description": "USFDA Pharma Alert. Review this update and assess its relevance to your quality systems.",
+            "summary": f"<p>{raw_text[:400].strip()}</p>",
+            "industry_context": "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>",
+            "compliance_impact": "<ul><li>Review and assess the impact on your site's quality systems.</li></ul>",
+            "key_actions": "<ul><li>Escalate to QA leadership for site-specific action plan.</li></ul>",
         }
 
     for attempt in range(retries):
@@ -1162,20 +1170,45 @@ def generate_sitemap(db: dict) -> None:
         "  </url>"
     )
     
+    
     # 2. Add individual alert page URLs
+    unique_companies = set()
     for item in db.get("items", []):
+        comp = item.get("primary_company_name")
+        if comp:
+            unique_companies.add(comp.title())
+            
         title_raw = item.get("title", "")
         slug = re.sub(r'[^a-zA-Z0-9]+', '-', title_raw.lower()).strip('-')
         if not slug:
             continue
         url_nodes.append(
-            f"  <url>\n"
-            f"    <loc>https://alerts.zero483.com/alerts/{slug}.html</loc>\n"
-            f"    <changefreq>monthly</changefreq>\n"
-            f"    <priority>0.8</priority>\n"
+            f"  <url>\\n"
+            f"    <loc>https://alerts.zero483.com/alerts/{slug}.html</loc>\\n"
+            f"    <changefreq>monthly</changefreq>\\n"
+            f"    <priority>0.8</priority>\\n"
             f"  </url>"
         )
         
+    # 3. Add company pages
+    if unique_companies:
+        url_nodes.append(
+            f"  <url>\\n"
+            f"    <loc>https://alerts.zero483.com/companies.html</loc>\\n"
+            f"    <changefreq>daily</changefreq>\\n"
+            f"    <priority>0.9</priority>\\n"
+            f"  </url>"
+        )
+        for comp in unique_companies:
+            comp_slug = re.sub(r'[^a-zA-Z0-9]+', '-', comp.lower()).strip('-')
+            url_nodes.append(
+                f"  <url>\\n"
+                f"    <loc>https://alerts.zero483.com/company/{comp_slug}.html</loc>\\n"
+                f"    <changefreq>weekly</changefreq>\\n"
+                f"    <priority>0.8</priority>\\n"
+                f"  </url>"
+            )
+
     sitemap = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -1207,10 +1240,16 @@ def generate_seo_pages(db: dict) -> None:
             
         existing_slugs.add(slug + ".html")
         
-        escaped_title = html.escape(title_raw)
-        escaped_summary = html.escape(item.get("summary", ""))
-        escaped_impact = html.escape(item.get("compliance_impact", ""))
-        escaped_actions = html.escape(item.get("key_actions", ""))
+        # Extract new SEO fields or fallback
+        seo_title = html.escape(item.get("seo_title", title_raw))
+        seo_desc = html.escape(item.get("seo_description", f"USFDA Pharma Alert - {title_raw}. Analysis and compliance impact."))
+        
+        # We do NOT html escape these because the AI was instructed to output HTML tags (<p>, <ul>)
+        ai_summary = item.get("summary", f"<p>{html.escape(item.get('summary', title_raw))}</p>")
+        ai_context = item.get("industry_context", "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>")
+        ai_impact = item.get("compliance_impact", f"<p>{html.escape(item.get('compliance_impact', ''))}</p>")
+        ai_actions = item.get("key_actions", f"<p>{html.escape(item.get('key_actions', ''))}</p>")
+        
         category = html.escape(item.get("category", ""))
         severity = html.escape(item.get("severity", ""))
         date_str = html.escape(item.get("date", ""))
@@ -1218,13 +1257,44 @@ def generate_seo_pages(db: dict) -> None:
         # Determine severity class color
         sev_color = "#dc2626" if severity == "High" else ("#d97706" if severity == "Medium" else "#16a34a")
         
+        canonical_url = f"https://alerts.zero483.com/alerts/{slug}.html"
+        
+        # JSON-LD Schema
+        schema_json = {
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": seo_title,
+            "description": seo_desc,
+            "datePublished": date_str,
+            "author": {
+                "@type": "Organization",
+                "name": "Zero483 Automated Monitoring"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zero483",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://alerts.zero483.com/logo.png"
+                }
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": canonical_url
+            }
+        }
+        
         html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{escaped_title} | USFDA Alert Zero483</title>
-  <meta name="description" content="USFDA Pharma Alert - {escaped_title}. Analysis, compliance impact, and key quality assurance actions for manufacturers and pharmacists." />
+  <title>{seo_title} | USFDA Alert Zero483</title>
+  <meta name="description" content="{seo_desc}" />
+  <link rel="canonical" href="{canonical_url}" />
+  <script type="application/ld+json">
+{json.dumps(schema_json, indent=2)}
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet" />
@@ -1254,9 +1324,13 @@ def generate_seo_pages(db: dict) -> None:
     a:hover {{
       text-decoration: underline;
     }}
-    .back-link {{
-      display: inline-block;
+    .breadcrumb {{
+      font-size: 0.85rem;
+      color: #64748b;
       margin-bottom: 24px;
+    }}
+    .breadcrumb a {{
+      color: #64748b;
     }}
     .category-badge {{
       display: inline-block;
@@ -1293,7 +1367,7 @@ def generate_seo_pages(db: dict) -> None:
     .section {{
       margin-bottom: 30px;
     }}
-    h3 {{
+    h2 {{
       font-family: 'Merriweather', serif;
       font-size: 1.25rem;
       font-weight: 700;
@@ -1316,38 +1390,59 @@ def generate_seo_pages(db: dict) -> None:
       font-size: 0.9rem;
       color: #64748b;
     }}
+    ul {{
+      padding-left: 20px;
+    }}
+    li {{
+      margin-bottom: 8px;
+    }}
   </style>
 </head>
 <body>
   <div class="container">
-    <a href="https://www.zero483.com/USFDA-news" class="back-link">&larr; Back to USFDA Live Tracker</a>
+    <nav class="breadcrumb">
+      <a href="https://www.zero483.com/USFDA-news">Home</a> &gt; 
+      <a href="https://alerts.zero483.com/index.html">Alerts</a> &gt; 
+      <span>{seo_title}</span>
+    </nav>
     <br/>
-    <span class="category-badge badge-{category.replace(' ', '')}">{category}</span>
-    <h1>{escaped_title}</h1>
+    <article>
+      <header>
+        <span class="category-badge badge-{category.replace(' ', '')}">{category}</span>
+        <h1>{seo_title}</h1>
+        
+        <div class="metadata">
+          <strong>Published:</strong> <time datetime="{date_str}">{date_str}</time> &nbsp;|&nbsp; 
+          <strong>Severity:</strong> <span style="color: {sev_color}; font-weight: bold;">{severity}</span>
+        </div>
+      </header>
+      
+      <main>
+        <div class="section">
+          <h2>Alert Summary</h2>
+          {ai_summary}
+        </div>
+        
+        <div class="section">
+          <h2>Industry Context</h2>
+          {ai_context}
+        </div>
+        
+        <div class="section">
+          <h2>Compliance & Audit Impact</h2>
+          {ai_impact}
+        </div>
+        
+        <div class="action-box">
+          <strong>Immediate QA Action Items:</strong>
+          {ai_actions}
+        </div>
+      </main>
+    </article>
     
-    <div class="metadata">
-      <strong>Published:</strong> {date_str} &nbsp;|&nbsp; 
-      <strong>Severity:</strong> <span style="color: {sev_color}; font-weight: bold;">{severity}</span>
-    </div>
-    
-    <div class="section">
-      <h3>Alert Summary</h3>
-      <p style="white-space: pre-line;">{escaped_summary}</p>
-    </div>
-    
-    <div class="section">
-      <h3>Compliance & Audit Impact</h3>
-      <p style="white-space: pre-line;">{escaped_impact}</p>
-    </div>
-    
-    <div class="action-box">
-      <strong>Immediate QA Action Items:</strong>
-      <p style="white-space: pre-line; margin-top: 8px; font-weight: 500;">{escaped_actions}</p>
-    </div>
-    
-    <div class="footer">
+    <footer class="footer">
       <p>Brought to you by <a href="https://www.zero483.com">Zero483.com</a>. Automated USFDA Compliance Monitoring.</p>
-    </div>
+    </footer>
   </div>
 </body>
 </html>
@@ -1366,6 +1461,219 @@ def generate_seo_pages(db: dict) -> None:
                 pass
                 
     print(f"\n[SEO READY] Generated {len(existing_slugs)} static alert pages inside /alerts folder.")
+
+
+
+def generate_company_pages(db: dict) -> None:
+    """Generate dynamic directory and profile pages for specific pharmaceutical companies."""
+    import html
+    from collections import defaultdict
+    
+    company_dir = BASE_DIR / "company"
+    company_dir.mkdir(exist_ok=True)
+    
+    # Group items by company
+    companies = defaultdict(list)
+    for item in db.get("items", []):
+        comp = item.get("primary_company_name")
+        if comp:
+            companies[comp.title()].append(item)
+            
+    if not companies:
+        return
+        
+    css_style = """
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #0f172a; background: #f8f9fa; padding: 40px 20px; margin: 0; }
+    .container { max-width: 800px; margin: 0 auto; background: #ffffff; padding: 40px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    a { color: #2563eb; text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    .breadcrumb { font-size: 0.85rem; color: #64748b; margin-bottom: 24px; }
+    h1 { font-family: 'Merriweather', serif; font-size: 2.2rem; font-weight: 900; line-height: 1.3; margin-top: 0; margin-bottom: 10px; }
+    .company-meta { font-size: 1rem; color: #475569; margin-bottom: 30px; border-bottom: 2px solid #e2e8f0; padding-bottom: 20px; }
+    .alert-card { background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid #dc2626; padding: 20px; border-radius: 4px; margin-bottom: 20px; transition: box-shadow 0.2s; }
+    .alert-card:hover { box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left-color: #b91c1c; }
+    .alert-card.recall { border-left-color: #ea580c; }
+    .alert-card.warning-letter { border-left-color: #dc2626; }
+    .alert-date { font-size: 0.85rem; color: #64748b; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .alert-title { font-family: 'Merriweather', serif; font-size: 1.2rem; font-weight: 700; margin-top: 0; margin-bottom: 10px; }
+    .alert-title a { color: #0f172a; }
+    .alert-summary { font-size: 0.95rem; color: #475569; margin: 0; }
+    .footer { margin-top: 40px; border-top: 1px solid #e2e8f0; padding-top: 20px; text-align: center; font-size: 0.9rem; color: #64748b; }
+    
+    .directory-list { list-style: none; padding: 0; }
+    .directory-list li { margin-bottom: 10px; padding: 15px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; }
+    .badge { background: #ef4444; color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.8rem; font-weight: bold; }
+    """
+    
+    # Generate Main Directory Index
+    sorted_comps = sorted(companies.items(), key=lambda x: x[0])
+    dir_items = ""
+    for comp, items in sorted_comps:
+        comp_slug = re.sub(r'[^a-zA-Z0-9]+', '-', comp.lower()).strip('-')
+        dir_items += f'<li><a href="company/{comp_slug}.html">{comp}</a> <span class="badge">{len(items)} Alerts</span></li>\n'
+        
+    index_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmaceutical Compliance Directory | Zero483</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+  <style>{css_style}</style>
+</head>
+<body>
+  <div class="container">
+    <div class="breadcrumb"><a href="/index.html">Zero483 Home</a> &gt; Company Directory</div>
+    <header>
+      <h1>Pharma Compliance Directory</h1>
+      <p class="company-meta">A complete database of historical FDA enforcement reports, warning letters, and drug recalls organized by manufacturer.</p>
+    </header>
+    <main>
+      <ul class="directory-list">
+        {dir_items}
+      </ul>
+    </main>
+    <footer class="footer"><p>Automated FDA Compliance tracking by <a href="https://www.zero483.com">Zero483</a>.</p></footer>
+  </div>
+</body>
+</html>"""
+    (BASE_DIR / "companies.html").write_text(index_html, encoding="utf-8")
+    
+    # Generate Widget
+    widget_html = f"""<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  body {{ font-family: 'Inter', sans-serif; background: transparent; margin: 0; padding: 10px; }}
+  .directory-list {{ list-style: none; padding: 0; margin: 0; }}
+  .directory-list li {{ margin-bottom: 8px; padding: 12px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }}
+  a {{ color: #2563eb; text-decoration: none; font-weight: 600; font-size: 0.95rem; }}
+  a:hover {{ text-decoration: underline; }}
+  .badge {{ background: #fee2e2; color: #ef4444; padding: 3px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: bold; border: 1px solid #fca5a5; }}
+</style>
+</head>
+<body>
+  <ul class="directory-list">
+    {dir_items}
+  </ul>
+</body>
+</html>"""
+    (BASE_DIR / "company_widget.html").write_text(widget_html, encoding="utf-8")
+    
+    # Generate Individual Company Pages
+    existing_slugs = set()
+    for comp, items in companies.items():
+        comp_slug = re.sub(r'[^a-zA-Z0-9]+', '-', comp.lower()).strip('-')
+        existing_slugs.add(comp_slug + ".html")
+        
+        cards_html = ""
+        # Sort items chronologically descending
+        items_sorted = sorted(items, key=lambda x: x.get("date", ""), reverse=True)
+        
+        for item in items_sorted:
+            date_str = item.get("date", "")
+            title = item.get("seo_title", item.get("title", ""))
+            summary = item.get("summary", "")
+            
+            # extract text from summary paragraphs
+            clean_summary = re.sub(r'<[^>]+>', '', summary)[:200] + "..."
+            
+            cat = item.get("category", "").lower()
+            css_class = "recall" if "recall" in cat else "warning-letter"
+            
+            alert_slug = re.sub(r'[^a-zA-Z0-9]+', '-', item.get("title", "").lower()).strip('-')
+            link = f"../alerts/{alert_slug}.html"
+            
+            cards_html += f"""
+      <div class="alert-card {css_class}">
+        <div class="alert-date">{date_str} • {item.get('category', '').upper()}</div>
+        <h3 class="alert-title"><a href="{link}" target="_parent">{title}</a></h3>
+        <p class="alert-summary">{clean_summary}</p>
+      </div>"""
+      
+        page_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{comp} - FDA Compliance Profile | Zero483</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+  <style>{css_style}</style>
+</head>
+<body>
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="/index.html">Zero483 Home</a> &gt; <a href="/companies.html">Company Directory</a> &gt; {comp}
+    </div>
+    <header>
+      <h1>{comp}</h1>
+      <div class="company-meta">
+        <strong>History:</strong> {len(items)} FDA Enforcement Reports/Alerts on Record
+      </div>
+    </header>
+    <main>
+      <h2>Historical Compliance Alerts</h2>
+      {cards_html}
+    </main>
+    <footer class="footer">
+      <p>Automated FDA Compliance tracking by <a href="https://www.zero483.com">Zero483</a>.</p>
+    </footer>
+  </div>
+</body>
+</html>"""
+        (company_dir / (comp_slug + ".html")).write_text(page_html, encoding="utf-8")
+        
+    print(f"\n[SEO READY] Generated Directory for {len(companies)} companies inside /company folder.")
+
+
+
+def ping_indexnow(db: dict):
+    """Pings the IndexNow API to instantly index new URLs."""
+    import urllib.request
+    import json
+    
+    # Get the 10 most recent items to ensure they are indexed
+    items = sorted(db.get("items", []), key=lambda x: x.get("date", ""), reverse=True)[:10]
+    if not items:
+        return
+        
+    key = "5d3bbf14bf914b8eb7906b0e3b5a479a"
+    host = "alerts.zero483.com"
+    urlList = []
+    
+    for item in items:
+        title_raw = item.get("title", "")
+        slug = re.sub(r'[^a-zA-Z0-9]+', '-', title_raw.lower()).strip('-')
+        if slug:
+            urlList.append(f"https://{host}/alerts/{slug}.html")
+        comp = item.get("primary_company_name")
+        if comp:
+            comp_slug = re.sub(r'[^a-zA-Z0-9]+', '-', comp.lower()).strip('-')
+            urlList.append(f"https://{host}/company/{comp_slug}.html")
+    
+    # Also ping the homepage
+    urlList.append(f"https://{host}/index.html")
+    
+    payload = {
+        "host": host,
+        "key": key,
+        "keyLocation": f"https://{host}/{key}.txt",
+        "urlList": urlList
+    }
+    
+    api_url = "https://api.indexnow.org/indexnow"
+    try:
+        req = urllib.request.Request(api_url, data=json.dumps(payload).encode('utf-8'), 
+                                     headers={"Content-Type": "application/json", "charset": "utf-8"},
+                                     method="POST")
+        with urllib.request.urlopen(req) as response:
+            if response.status in [200, 202]:
+                print(f"  [OK] IndexNow Ping successful. Sent {len(urlList)} URLs to search engines in real-time.")
+            else:
+                print(f"  [WARNING] IndexNow returned status code: {response.status}")
+    except Exception as e:
+        print(f"  [ERROR] IndexNow Ping failed: {e}")
 
 
 def upload_file_to_github(content: str, filename: str):
@@ -1466,6 +1774,11 @@ def main():
     generate_citizen_widget(db)
     rss_content = generate_rss_feed(db)
     generate_seo_pages(db)
+    generate_company_pages(db)
+    
+    print("   -> Pinging Search Engines for Real-Time Indexing...")
+    ping_indexnow(db)
+    
     print("   -> Attempting automatic upload to GitHub Pages for RSS feed...")
     upload_file_to_github(rss_content, "feed.xml")
     
