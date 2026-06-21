@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T01:59:02.682242+00:00",
+  "last_updated": "2026-06-21T07:16:10.014835+00:00",
   "total_items": 50,
   "items": [
     {
@@ -229,6 +229,42 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/search?q=FDA+Shortage+Carboplatin+Injection",
       "fetched_at": "2026-06-19T07:36:53.847384+00:00"
+    },
+    {
+      "id": "2b7adcad9be0",
+      "title": "Opinion - The FDA’s data on mifepristone can’t be trusted — here’s why - Yahoo",
+      "date": "2026-06-18",
+      "category": "Adverse Event",
+      "severity": "High",
+      "summary": "Title: Opinion - The FDA’s data on mifepristone can’t be trusted — here’s why - Yahoo\nSource: Google News\nDate: Thu, 18 Jun 2026 13:00:00 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQXVwNThzUFhlOU1kclJIVVhrZ09MSWRveXpSMlFwWEtIczFJVWlkZjBHNEcyaUlUR0ZGcFpqRXBYYjFOOFp4TkVVLTVMUzhrU2t0UzYxdkE2VzZLaktYMXYtbWQ3V2IxbTFVUnU3YWNRdThDdzJLQmVlYkZvbXBhR0RQNEplNEoxTHZSMnoweG92SXZMTWc?oc=5",
+      "fetched_at": "2026-06-21T07:16:06.727558+00:00"
+    },
+    {
+      "id": "e0e2d4894039",
+      "title": "FDA’s Focus Returns to Compounding and Telehealth: Another Wave of Warning Letters - The National Law Review",
+      "date": "2026-06-18",
+      "category": "Adverse Event",
+      "severity": "High",
+      "summary": "Title: FDA’s Focus Returns to Compounding and Telehealth: Another Wave of Warning Letters - The National Law Review\nSource: Google News\nDate: Thu, 18 Jun 2026 23:57:46 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOc1hicDVoMzVCVHlPN293Yk5rNEdEcnpyTGNNWkNxRE5TS0UtdW9WcGU2akVlRHpyYjRMQl9tay01N2hVMENQU0F1ZFpiUGVRemNFVjgyN0trcXU3RzVmeFNMZVJqQVNIYXBBSTBzLUJnNW9GTm5tMjd0TDBnRTdBMktZUG5DSzRoYmRYUk1rQzdzTThhWTFQRS1mSmVMNEtGemJtQWoxTUJKTHPSAbABQVVfeXFMUE5kOGtLWk05cWdNNFhUMjBRWjE1MTg1VjZOckdwQmZfVE5uLXZfZTBqRWs2RjlZanlWa0plVVNtcXhmcWxyWXJGSExsNU1JLUk2dGlvb3lOM1F4dGR5U1lKNmpIREw2aHpGQTRmY2FscUtsMEQzLVNTaG5rbXFFZ3JtTzUxRFFwbkxheHR4dm5sb2JJT083QUJWbk0zc0RoQ2tEb1BZU0FEbEVONFp3a0g?oc=5",
+      "fetched_at": "2026-06-21T07:16:01.710556+00:00"
+    },
+    {
+      "id": "ba5342d1c205",
+      "title": "HHS Announces Requested Updates to Testosterone Therapy Product Labels - HHS.gov",
+      "date": "2026-06-18",
+      "category": "Adverse Event",
+      "severity": "High",
+      "summary": "Title: HHS Announces Requested Updates to Testosterone Therapy Product Labels - HHS.gov\nSource: Google News\nDate: Thu, 18 Jun 2026 19:01:08 GMT",
+      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
+      "key_actions": "Review and escalate to QA leadership as appropriate.",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbjI0dVYxOEtKRnA2bHRIMTR1QjVTZTU0aFl5RWJ3YkdXdzdNek1Ua3ZtenlTT29EVTRkRkhWUF9weUdHNDJOallVSkM3Sm5oSlVoM3FzRnVUb1BaZGtoRndkQ2hjU2lHSGlZOXVMaEhvWG5TTFJOMXpPbWVpV0dxbTJPX2toQXZOdUlrZXNNNA?oc=5",
+      "fetched_at": "2026-06-21T07:15:56.687478+00:00"
     },
     {
       "id": "e2adbb62c687",
@@ -565,42 +601,6 @@
       "key_actions": "Review and escalate to QA leadership as appropriate.",
       "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbFFUSGhoRi1VT2hJNDZBQTlfalFTVGFtc2ZuYmk2YXZnZ3FVWHg0N0Yxd09FQjJFQm52SGNZTURjM2E1ZEdwdVpjY3BVWm45TmhJYWNRbHF1U25nTUZ5a09ZZ1dyV1BmZzNCS2JhdEpkZHcwTmdrRjcxMU81d2pIMFl1YXA0VzZLVFMxU3loZldlbFZjSTNnS0F0M3R2N3dZLXM2MkJ0QTVuRTdsNldPN2ZUTQ?oc=5",
       "fetched_at": "2026-06-19T18:16:16.297659+00:00"
-    },
-    {
-      "id": "c835e00dd712",
-      "title": "Over 11,000 Bottles of Blood Pressure Medications Recalled for 'Failed Dissolution Specifications' - People.com",
-      "date": "2026-06-17",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "Title: Over 11,000 Bottles of Blood Pressure Medications Recalled for 'Failed Dissolution Specifications' - People.com\nSource: Google News\nDate: Wed, 17 Jun 2026 04:46:12 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTjg5OUhKSjdHRXlwOUlxb2xJNEJfbVFGbVhLVUpMQkIybzlWWnlacDhtSVJxN3pXMlB2bVFXa2QzSWhEcU1mZmJNejRWTDZWbHlBZEdRazI2NHlyQjdNbjZnS2xzbmFNd1dyYnNoT0ZHeVUzVEJWSUVDajZoN3BxYzFzcWFKQlg2dmhVbHdHVjZKbzhtZVRYbnpJMkRSMVktTTMxZDZ1QlBjTGR1RnUxTVIzTU9BbGdEUGZfV19YemlvdVg5bnBSal8wMU1hQQ?oc=5",
-      "fetched_at": "2026-06-19T18:14:58.978587+00:00"
-    },
-    {
-      "id": "89448e100027",
-      "title": "FDA recalls over 350,000 bottles of antidepressants for increased levels of carcinogens - WKRC",
-      "date": "2026-06-17",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "Title: FDA recalls over 350,000 bottles of antidepressants for increased levels of carcinogens - WKRC\nSource: Google News\nDate: Wed, 17 Jun 2026 00:04:58 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxNd2prSVlZZHJaRlFOQzhYT1Y0UTNPSTZldGxWdnNXNXFzeE45X0FSdk1OeC1FcndpWEMzZU5QNEc0ckRHWGpRY1owMUdMZ2E2dG5DSGs0Nkc0MzEzQTdNTzZJZ2xmU3RZTmVmMDE5LVZrT29RSlI4N3UwU3FfVmRIT0Q0SG0zU3RVdnNtYnN3eFMxSnpFZlZFeHpyZGpyb3pra05xMTRRMTJvdFB2ZVY0Vk5jc2NDcE54Y3U1VkFtUnhaR196TktCdm9SbF9kdEwzN2ZRZFYzTnhZMjY5NHgyT214OUxaZUZjOHNaUWZUQjNlUlJZWnJEX2MxMjVTZk5DbUVKdE9WTWlMcW95bjJuUnV3SjZHR3lWUDE0YXFnLS1nSWd5dmRhYXdqNmZNVG1RUHA4QnB1RXhuUjVpbS10X0oyZmc?oc=5",
-      "fetched_at": "2026-06-18T20:44:37.299873+00:00"
-    },
-    {
-      "id": "52bb10484396",
-      "title": "FDA Issues Guidance to Exempt Certain Med Devices from Premarket Notification - In Compliance Magazine",
-      "date": "2026-06-17",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "Title: FDA Issues Guidance to Exempt Certain Med Devices from Premarket Notification - In Compliance Magazine\nSource: Google News\nDate: Wed, 17 Jun 2026 19:18:51 GMT",
-      "compliance_impact": "Review this update and assess its relevance to your quality systems. Consult with your regulatory affairs team for site-specific impact.",
-      "key_actions": "Review and escalate to QA leadership as appropriate.",
-      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNV2hfb0pwN2hVd0J1LU9INFdyZ2VMVFZ5eHZjNjBuTFVoRHdzRGt1Rkxpa3dENTV5UVVzdnk0NVJRS2NvM1R0b0lJS0M3NU1TTkoyWUtSTDNkN1BPbDRSeGh1ZWNLeG1lZ3lfcDVvdDc3ZEJQemQ3dG1DdWdyVlhYTzB4WnJYazM5R005X1YzTEJma2Q1LTN5clBMeHBpM3dfSDBjbmZYSnNEQdIBsgFBVV95cUxQMkY5UUlGVGFSZVNMbmVteWIzYlFnc3BwVW5uYm5sbi1Qd0tRemNSbUNyT05kU0ViNFNuOHRFNFlOWXRPU2JGdXZOeUZGQmNqdTQ1cERaTjBLblNZNEpGOTJBdDlhamdJWG1ORGlFZ1hlNmIyTHBFYkpmN0M0QjQwY0RMVzdYVm5PNkhCUUxoQk1zX0xXVmZlZTNISURBekVVUE9feGFnTlc0MHhGMkw2ZGRn?oc=5",
-      "fetched_at": "2026-06-18T09:52:57.636448+00:00"
     }
   ]
 }

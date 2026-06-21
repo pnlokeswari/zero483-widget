@@ -101,6 +101,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://alerts.zero483.com/alerts/opinion-the-fda-s-data-on-mifepristone-can-t-be-trusted-here-s-why-yahoo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/fda-s-focus-returns-to-compounding-and-telehealth-another-wave-of-warning-letters-the-national-law-review.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alerts.zero483.com/alerts/hhs-announces-requested-updates-to-testosterone-therapy-product-labels-hhs-gov.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alerts.zero483.com/alerts/magdalena-biosciences-a-joint-venture-between-jaguar-health-and-filament-health-announces-positive-results-of-preclini.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -237,21 +252,6 @@
   </url>
   <url>
     <loc>https://alerts.zero483.com/alerts/exclusive-cdsco-suspends-hcg-hospital-s-ethics-committee-for-24-months-the-south-first.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/over-11-000-bottles-of-blood-pressure-medications-recalled-for-failed-dissolution-specifications-people-com.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/fda-recalls-over-350-000-bottles-of-antidepressants-for-increased-levels-of-carcinogens-wkrc.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alerts.zero483.com/alerts/fda-issues-guidance-to-exempt-certain-med-devices-from-premarket-notification-in-compliance-magazine.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
