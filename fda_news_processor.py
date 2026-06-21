@@ -1546,6 +1546,9 @@ def generate_company_pages(db: dict) -> None:
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   body {{ font-family: 'Inter', sans-serif; background: transparent; margin: 0; padding: 10px; }}
+  .header {{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }}
+  .title {{ font-size: 1.1rem; font-weight: 700; color: #0f172a; margin: 0; }}
+  .updated {{ font-size: 0.8rem; color: #64748b; font-weight: 600; background: #f1f5f9; padding: 4px 8px; border-radius: 4px; }}
   .directory-list {{ list-style: none; padding: 0; margin: 0; }}
   .directory-list li {{ margin-bottom: 8px; padding: 12px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }}
   a {{ color: #2563eb; text-decoration: none; font-weight: 600; font-size: 0.95rem; }}
@@ -1554,6 +1557,10 @@ def generate_company_pages(db: dict) -> None:
 </style>
 </head>
 <body>
+  <div class="header">
+    <h3 class="title">Company Directory</h3>
+    <span class="updated">Last Updated: {datetime.now(timezone.utc).strftime('%b %d, %Y')}</span>
+  </div>
   <ul class="directory-list">
     {dir_items}
   </ul>
