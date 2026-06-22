@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T22:42:12.824405+00:00",
+  "last_updated": "2026-06-22T02:00:59.161892+00:00",
   "total_items": 50,
   "items": [
     {
@@ -85,6 +85,18 @@
       "key_actions": "<ul><li>Escalate to QA leadership for site-specific action plan.</li></ul>",
       "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYl9odVlxbWxNUzI4MWJjQmVyLVdnYndkM1Z2SG52WVktWGRMWmFNM1pQekdXV2NwQ3k5SGhHa1NtVF9CUk90ZHo3MEdxMEtPRlUzNVZPWmR1SzdKdGhicWF4VUNIQS1HdmN6SmFjbERRTWVhaUNXeWhHU3M3SmJsZkljSlVybkgtRi10N3EwN1RoVUFCTVFpSg?oc=5",
       "fetched_at": "2026-06-21T08:47:31.169732+00:00"
+    },
+    {
+      "id": "b73cf3e65531",
+      "title": "Behind the scenes at fast-growing Empower Pharmacy with CEO Shaun Noorian - The Business Journals",
+      "date": "2026-06-19",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: Behind the scenes at fast-growing Empower Pharmacy with CEO Shaun Noorian - The Business Journals\nSource: Google News\nDate: Fri, 19 Jun 2026 10:00:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review this update and assess its relevance to your quality systems.</li><li>Consult with your regulatory affairs team for site-specific impact.</li></ul>",
+      "key_actions": "<ul><li>Review and escalate to QA leadership as appropriate.</li></ul>",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZFhGMHJObGhua0dzYUNDVG1UWnVtbGd1TktWWDRUYnB3b2t5aWxDU3V0bDJzRTFRYTJlck1aS2pTSmEtTHZZeW1FMjc3cHAwLUNraktjREZEMnNMOVhTc1pBa2IzWUV2eXRPOW1TdVA1Q0xSQTRWTEpCa2JCQk9pTlU2SWJBM0RMdUxxVFZHcHRoTS1KMVQ0amxZNm1hZw?oc=5",
+      "fetched_at": "2026-06-22T02:00:57.552820+00:00"
     },
     {
       "id": "976718d26f04",
@@ -680,21 +692,6 @@
       "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1HR2pJQXJsR0JMdGpBX2JINnZaLTk0S3JUd1dsWDVWTVp1WlpDSUs5ZFlzNC03ZTQySzJ4cTZOelRQM2JqUHJiUkxac3llMUE0Tlo0Mlk2ZmZqeXRVSEJ4aUg0TVlYRUFmT2pNVUhsVFQ3MURPelB0amtNNnZBUQ?oc=5",
       "fetched_at": "2026-06-07T14:15:16.066032+00:00",
       "seo_title": "Regulatory tracker: AbbVie's Elahere cleared for use on NHS England - Fierce Pharma",
-      "seo_description": "USFDA Pharma Alert. Review this update and assess its relevance to your quality systems.",
-      "industry_context": "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>"
-    },
-    {
-      "id": "8241cb5e02c8",
-      "title": "As pro-life pressure ramps up on Trump, FDA is investigating safety of abortion pill: WSJ - Fierce Pharma",
-      "date": "2026-06-05",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "<p>Title: As pro-life pressure ramps up on Trump, FDA is investigating safety of abortion pill: WSJ - Fierce Pharma\nSource: Google News\nDate: Fri, 05 Jun 2026 15:06:57 GMT</p>",
-      "compliance_impact": "<ul><li>Review and assess the impact on your site's quality systems.</li></ul>",
-      "key_actions": "<ul><li>Escalate to QA leadership for site-specific action plan.</li></ul>",
-      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMlZIWlFQT1ZnTEpTSld6Zk01NmY2X1NrLVFQY3hsbTN6R1ZCTmhjZV9WdFpfMHJyQzNEdy1vcHNGcW5WNjJxM3NlWTJxVThyQUYwd09iaXFDZENibVJZeExSQnN1dzM3NWFfa09KeTZlNkpFWlZWTHEzakhMbjJIWTVCQlRoYlhmNUFkY1RyYzJDVXlBVlg0blBqcjlMUGxNa0RobUVObTNsWFhi?oc=5",
-      "fetched_at": "2026-06-07T14:14:39.486848+00:00",
-      "seo_title": "As pro-life pressure ramps up on Trump, FDA is investigating safety of abortion pill: WSJ - Fierce Pharma",
       "seo_description": "USFDA Pharma Alert. Review this update and assess its relevance to your quality systems.",
       "industry_context": "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>"
     }
