@@ -538,7 +538,7 @@
       const catClass = categoryClass(item.category);
       
       return `
-        <a class="z483-card" href="${escHtml(item.source_url)}" target="_blank" rel="noopener noreferrer">
+        <a class="z483-card" href="alerts/${escHtml(item.slug || item.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''))}.html" target="_blank" rel="noopener noreferrer">
           <header class="z483-card-top">
             <div class="z483-badges">
               <span class="z483-badge ${catClass}">${escHtml(item.category)}</span>
