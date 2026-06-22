@@ -197,7 +197,7 @@ def ai_analyze(client, title: str, raw_text: str, retries: int = 3) -> dict:
     prompt = f"""You are a senior pharmaceutical GMP auditor and an expert SEO Content Writer \
 with extensive knowledge of USFDA inspection readiness and Zero 483 culture.
 
-Write a comprehensive, SEO-optimized blog post (approx 400-500 words) analysing this FDA regulatory update. \
+Write a highly-detailed, comprehensive, SEO-optimized blog post (approx 800-1000 words) deeply analysing this FDA regulatory update. \
 Provide your response in this exact JSON format (no markdown code fence, just raw JSON):
 
 {{
@@ -229,7 +229,7 @@ TITLE: {title}
     for attempt in range(retries):
         try:
             response = client.models.generate_content(
-                model="gemini-2.0-flash",
+                model="gemini-2.5-flash",
                 contents=prompt,
             )
             text = response.text.strip()
@@ -240,19 +240,28 @@ TITLE: {title}
 
         except Exception as exc:
             exc_str = str(exc)
+            is_rate_limit = "429" in exc_str or "RESOURCE_EXHAUSTED" in exc_str
+            is_unavailable = "503" in exc_str or "UNAVAILABLE" in exc_str or "high demand" in exc_str.lower()
 
-            # Handle 429 rate-limit: extract retry delay from error and wait
-            if "429" in exc_str or "RESOURCE_EXHAUSTED" in exc_str:
-                # Try to parse the suggested retry delay from the error message
-                delay_match = re.search(r"retryDelay.*?(\d+)s", exc_str)
-                wait_secs = int(delay_match.group(1)) + 5 if delay_match else 15
+            if is_rate_limit or is_unavailable:
+                wait_secs = 10
+                if is_rate_limit:
+                    delay_match = re.search(r"retryDelay.*?(\d+)s", exc_str)
+                    wait_secs = int(delay_match.group(1)) + 5 if delay_match else 15
+                    err_type = "RATE LIMIT"
+                else:
+                    err_type = "TEMPORARY 503"
+
                 if attempt < retries - 1:
-                    print(f"  [RATE LIMIT] Gemini quota hit. Waiting {wait_secs}s before retry {attempt+2}/{retries}...")
+                    print(f"  [{err_type}] Gemini issue. Waiting {wait_secs}s before retry {attempt+2}/{retries}...")
                     time.sleep(wait_secs)
                     continue
                 else:
-                    print(f"  [RATE LIMIT] Gemini quota exhausted. Disabling AI for remaining items to save time.")
-                    client.quota_exhausted = True
+                    if is_rate_limit:
+                        print(f"  [RATE LIMIT] Gemini quota exhausted. Disabling AI for remaining items to save time.")
+                        client.quota_exhausted = True
+                    else:
+                        print(f"  [TEMPORARY 503] Exhausted retries due to service unavailability.")
             else:
                 print(f"  [AI ERROR] {exc_str[:200]}")
 
@@ -963,7 +972,7 @@ Text: {raw_text[:1000]}
 """
     try:
         response = client.models.generate_content(
-            model="gemini-2.0-flash",
+            model="gemini-2.5-flash",
             contents=prompt,
         )
         text = response.text.strip()
