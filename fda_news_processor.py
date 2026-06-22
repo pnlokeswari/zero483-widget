@@ -63,6 +63,7 @@ FDA_API_KEY    = os.getenv("FDA_API_KEY", "")
 MAX_ITEMS_DB   = 50          # Max total items to keep in the database
 FETCH_LIMIT    = 10          # Items to fetch per source per run
 DAYS_LOOKBACK  = 2           # Only include items from past N days (48 hours)
+MAX_NEW_ITEMS_PER_RUN = 3    # Limit newly published articles per run to avoid rate limits
 
 # openFDA API base
 OPENFDA_BASE = "https://api.fda.gov"
@@ -229,7 +230,7 @@ TITLE: {title}
     for attempt in range(retries):
         try:
             response = client.models.generate_content(
-                model="gemini-2.5-flash",
+                model="gemini-3.5-flash",
                 contents=prompt,
             )
             text = response.text.strip()
@@ -972,7 +973,7 @@ Text: {raw_text[:1000]}
 """
     try:
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.5-flash",
             contents=prompt,
         )
         text = response.text.strip()
@@ -1012,6 +1013,10 @@ def merge_items(db: dict, new_items: list[dict], client) -> int:
     added = 0
 
     for raw in new_items:
+        if added >= MAX_NEW_ITEMS_PER_RUN:
+            print(f"\n  [LIMIT] Reached limit of {MAX_NEW_ITEMS_PER_RUN} new items per run. Skipping remaining items.")
+            break
+
         if raw["_id"] in existing_ids:
             continue
 
