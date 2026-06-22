@@ -1258,11 +1258,42 @@ def generate_seo_pages(db: dict) -> None:
         seo_title = html.escape(item.get("seo_title", title_raw))
         seo_desc = html.escape(item.get("seo_description", f"USFDA Pharma Alert - {title_raw}. Analysis and compliance impact."))
         
-        # We do NOT html escape these because the AI was instructed to output HTML tags (<p>, <ul>)
-        ai_summary = item.get("summary", f"<p>{html.escape(item.get('summary', title_raw))}</p>")
-        ai_context = item.get("industry_context", "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>")
-        ai_impact = item.get("compliance_impact", f"<p>{html.escape(item.get('compliance_impact', ''))}</p>")
-        ai_actions = item.get("key_actions", f"<p>{html.escape(item.get('key_actions', ''))}</p>")
+        # Safely extract AI fields (handling both strings and lists from older database schemas)
+        summary_val = item.get("summary")
+        if not summary_val:
+            ai_summary = f"<p>{html.escape(title_raw)}</p>"
+        else:
+            if isinstance(summary_val, list):
+                ai_summary = "".join(f"<p>{html.escape(x)}</p>" for x in summary_val)
+            else:
+                ai_summary = str(summary_val)
+
+        context_val = item.get("industry_context")
+        if not context_val:
+            ai_context = "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>"
+        else:
+            if isinstance(context_val, list):
+                ai_context = "".join(f"<p>{html.escape(x)}</p>" for x in context_val)
+            else:
+                ai_context = str(context_val)
+
+        impact_val = item.get("compliance_impact")
+        if not impact_val:
+            ai_impact = "<p>Review and assess the impact on your site's quality systems.</p>"
+        else:
+            if isinstance(impact_val, list):
+                ai_impact = "<ul>" + "".join(f"<li>{html.escape(x)}</li>" for x in impact_val) + "</ul>"
+            else:
+                ai_impact = str(impact_val)
+
+        actions_val = item.get("key_actions")
+        if not actions_val:
+            ai_actions = "<p>Escalate to QA leadership for site-specific action plan.</p>"
+        else:
+            if isinstance(actions_val, list):
+                ai_actions = "<ul>" + "".join(f"<li>{html.escape(x)}</li>" for x in actions_val) + "</ul>"
+            else:
+                ai_actions = str(actions_val)
         
         category = html.escape(item.get("category", ""))
         severity = html.escape(item.get("severity", ""))
