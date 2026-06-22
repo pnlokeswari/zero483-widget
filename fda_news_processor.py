@@ -1034,17 +1034,25 @@ def merge_items(db: dict, new_items: list[dict], client) -> int:
         # Use 5s to have comfortable headroom
         time.sleep(5.0)
 
+        title_raw = raw["_title"]
+        slug = re.sub(r'[^a-zA-Z0-9]+', '-', title_raw.lower()).strip('-')
+
         record = {
-            "id":               raw["_id"],
-            "title":            raw["_title"],
-            "date":             raw["_date"],
-            "category":         raw["_category"],
-            "severity":         raw["_severity"],
-            "summary":          analysis.get("summary", ""),
-            "compliance_impact":analysis.get("compliance_impact", ""),
-            "key_actions":      analysis.get("key_actions", ""),
-            "source_url":       raw["_url"],
-            "fetched_at":       datetime.now(timezone.utc).isoformat(),
+            "id":                   raw["_id"],
+            "title":                title_raw,
+            "slug":                 slug,
+            "date":                 raw["_date"],
+            "category":             raw["_category"],
+            "severity":             raw["_severity"],
+            "summary":              analysis.get("summary", ""),
+            "compliance_impact":    analysis.get("compliance_impact", ""),
+            "key_actions":          analysis.get("key_actions", ""),
+            "industry_context":     analysis.get("industry_context", ""),
+            "seo_title":            analysis.get("seo_title", title_raw),
+            "seo_description":      analysis.get("seo_description", ""),
+            "primary_company_name":  analysis.get("primary_company_name", None),
+            "source_url":           raw["_url"],
+            "fetched_at":           datetime.now(timezone.utc).isoformat(),
         }
         db["items"].insert(0, record)
         existing_ids.add(raw["_id"])
