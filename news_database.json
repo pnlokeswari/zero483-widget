@@ -1,7 +1,41 @@
 {
-  "last_updated": "2026-06-23T19:26:06.937772+00:00",
+  "last_updated": "2026-06-23T21:12:56.455457+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "67f07f378dda",
+      "title": "Optima XR240amx X-Ray System",
+      "slug": "optima-xr240amx-x-ray-system",
+      "date": "2026-06-23",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Optima XR240amx X-Ray System\nSource: Health Canada\nDate: 2026-06-23T12:00:00</p>",
+      "compliance_impact": "<ul><li>Review this update and assess its relevance to your quality systems.</li><li>Consult with your regulatory affairs team for site-specific impact.</li></ul>",
+      "key_actions": "<ul><li>Review and escalate to QA leadership as appropriate.</li></ul>",
+      "industry_context": "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>",
+      "seo_title": "Optima XR240amx X-Ray System",
+      "seo_description": "USFDA Pharma Alert. Review this update and assess its relevance to your quality systems.",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/optima-xr240amx-x-ray-system",
+      "fetched_at": "2026-06-23T21:12:54.904021+00:00"
+    },
+    {
+      "id": "2ed57438e2f0",
+      "title": "Highest FDA recall issued for certain catheters, heart pump controllers - American Hospital Association",
+      "slug": "highest-fda-recall-issued-for-certain-catheters-heart-pump-controllers-american-hospital-association",
+      "date": "2026-06-23",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Highest FDA recall issued for certain catheters, heart pump controllers - American Hospital Association\nSource: Google News\nDate: Tue, 23 Jun 2026 20:55:25 GMT</p>",
+      "compliance_impact": "<ul><li>Review this update and assess its relevance to your quality systems.</li><li>Consult with your regulatory affairs team for site-specific impact.</li></ul>",
+      "key_actions": "<ul><li>Review and escalate to QA leadership as appropriate.</li></ul>",
+      "industry_context": "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>",
+      "seo_title": "Highest FDA recall issued for certain catheters, heart pump controllers - American Hospital Association",
+      "seo_description": "USFDA Pharma Alert. Review this update and assess its relevance to your quality systems.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPV01yaEVLeTZvYzNOeVBCckhGSUtDM21UQVBmOTg0WGF3Sy1tZHUyZ2pQSkI3MnZqcVJVdUFQUnppVngzYzY3NHNadWozUEo1eFB0aWlfQUZ0TE9hWmx2VnRtdUNUb0tfUS1wLWJ4cmctTjZLMG1jNW9yaTNKMG1zcURWYnhVMWxSQTZiMV9lMGlObGo0OFJuYWhjcGlHMFQ4WWRmdzMyM1dUUDhCU2NxZA?oc=5",
+      "fetched_at": "2026-06-23T21:12:14.700921+00:00"
+    },
     {
       "id": "460ffb74aecd",
       "title": "A.T.S® 4000 TS Tourniquet Systems Single and Dual Hose with CPC Connectors",
@@ -766,30 +800,6 @@
       "key_actions": "<ul><li>Escalate to QA leadership for site-specific action plan.</li></ul>",
       "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaE9LY3NCT281NnJGQk15cFc3ZHlLS2RTSk5RNGlFZjA0VG92WXdZcDkyTjFNaUNvVDdrRS1TNFlvUjV5RjNmWUo0Wm9BYjJlVzF0bWptVDJ3UXkyUlJzLWdUVVhnRkZwLTlrTVd0cWZLbWJzZTQyajhjZjh2YjhaQ2FmLWM4dkM1MFQ0MWR0RVBYb1k1bmo5NlJiYXVpV0NtUUdrWEE4S2J4cHdmLWZFeWdhZWN0dw?oc=5",
       "fetched_at": "2026-06-21T08:47:46.285125+00:00"
-    },
-    {
-      "id": "3a9f5fff907a",
-      "title": "Popular antidepressant recalled over high levels of a cancer-causing compound - NBC New York",
-      "date": "2026-06-19",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Popular antidepressant recalled over high levels of a cancer-causing compound - NBC New York\nSource: Google News\nDate: Fri, 19 Jun 2026 17:32:05 GMT</p>",
-      "compliance_impact": "<ul><li>Review and assess the impact on your site's quality systems.</li></ul>",
-      "key_actions": "<ul><li>Escalate to QA leadership for site-specific action plan.</li></ul>",
-      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOblhpbGdUdk5NempSRzFrdThBWks2elBQUEZkZzhiVGxDR2ktdGU1a3FYMGZkOF9VdmFOcUc4dVNzRmtMUnhMcVNtcUNJLU9Qc3BDb2FibXM5eUhSbzFmOXJGOUhENm80TGxiUkdTRXQ3dVM3WURJSEVMWUlIREtFdEVIYUpnQU1RWjJuTnd4NzhrSGR5Z29ERzYycEluUGZER2xaSU05OU9US3hfbFZUWHplSHRNa3ZMWkhSetIBxAFBVV95cUxOdzFjejk5VmtiMUlaekIxdE5aMzAxLUM3YjFncUhwOWZxNVBzWkZfVEsyczJPbUtsNm5IbVI2QWFRTnZRTUtkMXFaWnlVTnBvc1BKNnRfTENaUWU5SFNqVmVRNWNybEVGZ3Jod1FrMk5NekktT0NNRDhBaU1IY2pnRjF1T3JEcHNPcVQydEFqam8zaTZXT0VVbnlpZ3I0Y2d4clpWWUVJN2pMMDFiTGp3Q1c1bUVVbzlObkhER04tSF9zT0Z0?oc=5",
-      "fetched_at": "2026-06-21T08:47:41.244781+00:00"
-    },
-    {
-      "id": "c49912d6da4e",
-      "title": "WuXi Biologics Strengthens Regulatory Credentials with Repeat EMA GMP Approval - BioPharma APAC",
-      "date": "2026-06-18",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: WuXi Biologics Strengthens Regulatory Credentials with Repeat EMA GMP Approval - BioPharma APAC\nSource: European Medicines Agency\nDate: Thu, 18 Jun 2026 19:14:46 GMT</p>",
-      "compliance_impact": "<ul><li>Review and assess the impact on your site's quality systems.</li></ul>",
-      "key_actions": "<ul><li>Escalate to QA leadership for site-specific action plan.</li></ul>",
-      "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObnRVbXBpM3RaaU5rRld3NWFoZk5RNFVfQllWR21rYkRnSnJPNGk2RzBzRXBUNTBuRjd3SV9iWGxVVzFJYUI4ZHRDcnk1NmxOdEtxQ3djZEFfcE9fbTZmcmx4Y2R1eTc3OGpaWGtpVENfVjZXOENQVzZxTkV3VzZYOGFwYjdUei1vTU9XU3UyYXJ0Q1RXU3NHQXR2aHRsbnBIdHpna1BnRkFuMlpUWUNELVd0NDF3OGFfbHJTVkhfaw?oc=5",
-      "fetched_at": "2026-06-21T08:49:42.260247+00:00"
     }
   ]
 }
