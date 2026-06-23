@@ -5,10 +5,14 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/159-drug-samples-fail-cdsco-quality-test-in-may-one-flagged-spurious-indiamedtoday.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/usfda-seeks-indian-pharma-help-to-tackle-shortage-of-key-cancer-drug-pharma-stocks-in-focus-moneycontrol-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/chlorthalidone-recall-fda-flags-second-india-made-blood-pressure-drug-health-and-me.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/yuhan-corporation-s-gaucher-disease-drug-candidate-yh35995-designated-as-orphan-drug-by-european-ema.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/yuhan-secures-ema-orphan-drug-designation-for-gaucher-disease-candidate-koreabiomed-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/zydus-sun-pharma-dr-reddy-s-in-focus-us-cancer-drug-shortage-puts-india-s-pharma-stocks-in-focus-ndtv-profit.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-amphetamine-aspartate-monohydrate-amphetamine-sulfate-dextroamphetamine-saccha.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-regulator-flagged-159-samples-substandard-in-may-1-found-spurious-the-times-of-india.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/gyrus-acmi-classic-series-continuous-flow-resectoscope.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/patients-urged-to-check-bottles-after-fda-announces-drug-recall-cleveland-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-flags-159-drug-samples-as-not-of-standard-quality-in-may-2026-safety-alert-daily-pioneer.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -51,10 +55,6 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/selenia-dimensions-2d-3d-mammography-systems.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/aptima-hiv-quant-dx-assay-hcv-quant-dx-assay-and-hbv-quant-assay-software.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/etms-70-mm-cooled-coil.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/alembic-pharma-receives-usfda-approval-for-tretinoin-cream-machine-maker.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-s-cosmetic-regulations-the-rules-exist-the-enforcement-does-not-express-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/highlights-from-ema-pharmacovigilance-committee-meeting-the-pharma-letter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-recommends-approval-for-ranibizumab-biosimilar-vislyfa-generics-and-biosimilars-initiative.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/companies.html</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/siemens-healthineers.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
