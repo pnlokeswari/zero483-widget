@@ -1,7 +1,24 @@
 {
-  "last_updated": "2026-06-23T22:48:11.581547+00:00",
+  "last_updated": "2026-06-24T01:24:17.511273+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "540b9c278263",
+      "title": "HHS and FDA propose clinical trial reforms to expedite drug development - RAPS.org",
+      "slug": "hhs-and-fda-propose-clinical-trial-reforms-to-expedite-drug-development-raps-org",
+      "date": "2026-06-23",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: HHS and FDA propose clinical trial reforms to expedite drug development - RAPS.org\nSource: Google News\nDate: Tue, 23 Jun 2026 20:11:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review this update and assess its relevance to your quality systems.</li><li>Consult with your regulatory affairs team for site-specific impact.</li></ul>",
+      "key_actions": "<ul><li>Review and escalate to QA leadership as appropriate.</li></ul>",
+      "industry_context": "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>",
+      "seo_title": "HHS and FDA propose clinical trial reforms to expedite drug development - RAPS.org",
+      "seo_description": "USFDA Pharma Alert. Review this update and assess its relevance to your quality systems.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdHIyVzROT1VmRTlSVE43STFiQ1hsekl1Z29leFVxVkF3SG1IaHRIRzk5Z1NMM0l5QVlYMjk3VXkzclhBS2tVY2tmeG9mcC1xdXNxXzl4NkVXNmtOa19rck1GOFRPNm90YkhTbl9FTWJ1T0ZBS09QYUxsTl9VZ2FHSnpSaUtCQUpxLTh6ZFkzU0pvTTl4ZE9uYkhwdHZxRzVBV25WdmgyS3ppdw?oc=5",
+      "fetched_at": "2026-06-24T01:24:15.157713+00:00"
+    },
     {
       "id": "67f07f378dda",
       "title": "Optima XR240amx X-Ray System",
@@ -788,18 +805,6 @@
       "key_actions": "<ul><li>Escalate to QA leadership for site-specific action plan.</li></ul>",
       "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPakJsV3ZWRzAyQVoyb1lUNE01dFZGQzlIRVFxd2RiZHktU1dxUTZiTjVqWFhYaklYcWcxSHR3SlhVbFZ2Q0R2MUdpaU9XMFhKRy1QN2xuTXk2VXdiX3Z2cmFMZ0JxMlZaM1RoS3gyTnMwaWE4RmVZVFlBNkhBMF9rUERLU0I3UVNv?oc=5",
       "fetched_at": "2026-06-21T08:49:13.985734+00:00"
-    },
-    {
-      "id": "a6d9efd62a6d",
-      "title": "Nearly 375,000 bottles of antidepressant recalled over cancer-linked impurity - Houston Chronicle",
-      "date": "2026-06-19",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Nearly 375,000 bottles of antidepressant recalled over cancer-linked impurity - Houston Chronicle\nSource: Google News\nDate: Fri, 19 Jun 2026 13:13:46 GMT</p>",
-      "compliance_impact": "<ul><li>Review and assess the impact on your site's quality systems.</li></ul>",
-      "key_actions": "<ul><li>Escalate to QA leadership for site-specific action plan.</li></ul>",
-      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaE9LY3NCT281NnJGQk15cFc3ZHlLS2RTSk5RNGlFZjA0VG92WXdZcDkyTjFNaUNvVDdrRS1TNFlvUjV5RjNmWUo0Wm9BYjJlVzF0bWptVDJ3UXkyUlJzLWdUVVhnRkZwLTlrTVd0cWZLbWJzZTQyajhjZjh2YjhaQ2FmLWM4dkM1MFQ0MWR0RVBYb1k1bmo5NlJiYXVpV0NtUUdrWEE4S2J4cHdmLWZFeWdhZWN0dw?oc=5",
-      "fetched_at": "2026-06-21T08:47:46.285125+00:00"
     }
   ]
 }
