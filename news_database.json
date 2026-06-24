@@ -1,7 +1,24 @@
 {
-  "last_updated": "2026-06-24T05:32:30.950143+00:00",
+  "last_updated": "2026-06-24T09:56:10.466428+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "db3ad6b1eff9",
+      "title": "Drug Shortage: Lisdexamfetamine Dimesylate Tablet, Chewable",
+      "slug": "drug-shortage-lisdexamfetamine-dimesylate-tablet-chewable",
+      "date": "2026-06-24",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Lisdexamfetamine Dimesylate Tablet, Chewable\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "<ul><li>Review this update and assess its relevance to your quality systems.</li><li>Consult with your regulatory affairs team for site-specific impact.</li></ul>",
+      "key_actions": "<ul><li>Review and escalate to QA leadership as appropriate.</li></ul>",
+      "industry_context": "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>",
+      "seo_title": "Drug Shortage: Lisdexamfetamine Dimesylate Tablet, Chewable",
+      "seo_description": "USFDA Pharma Alert. Review this update and assess its relevance to your quality systems.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/search?q=FDA+Shortage+Lisdexamfetamine+Dimesylate+Tablet%2C+Chewable",
+      "fetched_at": "2026-06-24T09:55:29.877292+00:00"
+    },
     {
       "id": "5803189347b1",
       "title": "CDSCO Flags 159 Drug Samples as Substandard in May; One Found Spurious, Himachal Pradesh Accounts for Over 25% of Failur",
@@ -18,6 +35,23 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE45S2FRUTdnTThEOFZIM1VpVzctYlhtVGd0ZENvYW51V0tydEVsZkxvdHlFU3BWSmZNbHdPcndvZmFGcmNUTzhCR0RYY0Z6SW83VUlqUWY1c1JGTm95Sm93RlowRQ?oc=5",
       "fetched_at": "2026-06-24T05:32:30.950050+00:00"
+    },
+    {
+      "id": "1850a85db7d6",
+      "title": "ImmunityBio Founder Pushes Back After FDA Warning Letter Over Anktiva Claims — Says Ad 'Never Aired At All' - Stocktwits",
+      "slug": "immunitybio-founder-pushes-back-after-fda-warning-letter-over-anktiva-claims-says-ad-never-aired-at-all-stocktwits",
+      "date": "2026-06-23",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "<p>Title: ImmunityBio Founder Pushes Back After FDA Warning Letter Over Anktiva Claims — Says Ad 'Never Aired At All' - Stocktwits\nSource: Google News\nDate: Tue, 23 Jun 2026 02:40:38 GMT</p>",
+      "compliance_impact": "<ul><li>Review this update and assess its relevance to your quality systems.</li><li>Consult with your regulatory affairs team for site-specific impact.</li></ul>",
+      "key_actions": "<ul><li>Review and escalate to QA leadership as appropriate.</li></ul>",
+      "industry_context": "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>",
+      "seo_title": "ImmunityBio Founder Pushes Back After FDA Warning Letter Over Anktiva Claims — Says Ad 'Never Aired At All' - Stocktwits",
+      "seo_description": "USFDA Pharma Alert. Review this update and assess its relevance to your quality systems.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMEZKVkZaR0xXRXl1cHVvaEVRaUtyRmFiQTNLeDNrN1VfTzFVOHdZN25IWDFOcklab3pnYnNqLUlkMEgyR2tQa1JxTi04TjFYQnMxZjRzbzkwUzJDQ1BVdjhYeWx3UXExUGljOERsQkR5TTl3c2FGdkpOZHFST3RQdWhYRThfTHY1a3Z0YXZVckU5VlMxQkhGRDlHS3lkbDcxSXpybUtBTk5naHFVQjhyVEFiakZDMlc5YXhJRkltaE1FdWs?oc=5",
+      "fetched_at": "2026-06-24T09:56:07.594870+00:00"
     },
     {
       "id": "540b9c278263",
@@ -786,30 +820,6 @@
       "key_actions": "<ul><li>Escalate to QA leadership for site-specific action plan.</li></ul>",
       "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbDdhdzNJVUFzdnNuZk42QXptMjRmRGRJdWNIZURYNlZJYVBGNXZvV0V0LWxOMlVnTURPMkpScDhRTHJ6Z1NrNENVTU9TbmRtWlFtQmFIMnA3aTVzektrUkh4ZDZpaHQyWC1CYlhRZkFYWFVlZEYzLUNrMWY3Z2hETTRFV21wQ3Z1Z2wxOVZkWW55d1NWMlQ1RmJqamRqUHFCN2p2S3ZBeTJ5c1lmVUZj0gG0AUFVX3lxTE5TM0RGTjhSbjk3eElndlR5UTY2YmxsVHJCVnlOZ3BLcU1kUkthR1RkM2I2c0thZ0ZaVWhzSmt3Z1lxaGdBWVZOSWhjVVBpVkhCdXEtSGRmaGlzVWJYem9UUmlWdThmN1dpQ2I1cFN4Q0FMVV9sYjZDQzBmZHNpSS1yS0ViVzhoU1NLX1BrdmV4bHpjc1FfcUxvbl9aQ1FUdVFMR0Jab1A1ajZ6WUpiR0QxQk1Ibw?oc=5",
       "fetched_at": "2026-06-21T08:47:36.203552+00:00"
-    },
-    {
-      "id": "48e7c29191f4",
-      "title": "FDA Sets Highest Risk Level for Common Over-the-Counter Drug - The Healthy",
-      "date": "2026-06-20",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: FDA Sets Highest Risk Level for Common Over-the-Counter Drug - The Healthy\nSource: Google News\nDate: Sat, 20 Jun 2026 15:22:19 GMT</p>",
-      "compliance_impact": "<ul><li>Review and assess the impact on your site's quality systems.</li></ul>",
-      "key_actions": "<ul><li>Escalate to QA leadership for site-specific action plan.</li></ul>",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYl9odVlxbWxNUzI4MWJjQmVyLVdnYndkM1Z2SG52WVktWGRMWmFNM1pQekdXV2NwQ3k5SGhHa1NtVF9CUk90ZHo3MEdxMEtPRlUzNVZPWmR1SzdKdGhicWF4VUNIQS1HdmN6SmFjbERRTWVhaUNXeWhHU3M3SmJsZkljSlVybkgtRi10N3EwN1RoVUFCTVFpSg?oc=5",
-      "fetched_at": "2026-06-21T08:47:31.169732+00:00"
-    },
-    {
-      "id": "b73cf3e65531",
-      "title": "Behind the scenes at fast-growing Empower Pharmacy with CEO Shaun Noorian - The Business Journals",
-      "date": "2026-06-19",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: Behind the scenes at fast-growing Empower Pharmacy with CEO Shaun Noorian - The Business Journals\nSource: Google News\nDate: Fri, 19 Jun 2026 10:00:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review this update and assess its relevance to your quality systems.</li><li>Consult with your regulatory affairs team for site-specific impact.</li></ul>",
-      "key_actions": "<ul><li>Review and escalate to QA leadership as appropriate.</li></ul>",
-      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZFhGMHJObGhua0dzYUNDVG1UWnVtbGd1TktWWDRUYnB3b2t5aWxDU3V0bDJzRTFRYTJlck1aS2pTSmEtTHZZeW1FMjc3cHAwLUNraktjREZEMnNMOVhTc1pBa2IzWUV2eXRPOW1TdVA1Q0xSQTRWTEpCa2JCQk9pTlU2SWJBM0RMdUxxVFZHcHRoTS1KMVQ0amxZNm1hZw?oc=5",
-      "fetched_at": "2026-06-22T02:00:57.552820+00:00"
     }
   ]
 }
