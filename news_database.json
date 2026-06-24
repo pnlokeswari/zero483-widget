@@ -1,7 +1,24 @@
 {
-  "last_updated": "2026-06-24T01:24:17.511273+00:00",
+  "last_updated": "2026-06-24T05:32:30.950143+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "5803189347b1",
+      "title": "CDSCO Flags 159 Drug Samples as Substandard in May; One Found Spurious, Himachal Pradesh Accounts for Over 25% of Failur",
+      "slug": "cdsco-flags-159-drug-samples-as-substandard-in-may-one-found-spurious-himachal-pradesh-accounts-for-over-25-of-failur",
+      "date": "2026-06-24",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: CDSCO Flags 159 Drug Samples as Substandard in May; One Found Spurious, Himachal Pradesh Accounts for Over 25% of Failures - drugscontrol.org\nSource: CDSCO India\nDate: Wed, 24 Jun 2026 03:27:47 GMT</p>",
+      "compliance_impact": "<ul><li>Review this update and assess its relevance to your quality systems.</li><li>Consult with your regulatory affairs team for site-specific impact.</li></ul>",
+      "key_actions": "<ul><li>Review and escalate to QA leadership as appropriate.</li></ul>",
+      "industry_context": "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>",
+      "seo_title": "CDSCO Flags 159 Drug Samples as Substandard in May; One Found Spurious, Himachal Pradesh Accounts for Over 25% of Failur",
+      "seo_description": "USFDA Pharma Alert. Review this update and assess its relevance to your quality systems.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE45S2FRUTdnTThEOFZIM1VpVzctYlhtVGd0ZENvYW51V0tydEVsZkxvdHlFU3BWSmZNbHdPcndvZmFGcmNUTzhCR0RYY0Z6SW83VUlqUWY1c1JGTm95Sm93RlowRQ?oc=5",
+      "fetched_at": "2026-06-24T05:32:30.950050+00:00"
+    },
     {
       "id": "540b9c278263",
       "title": "HHS and FDA propose clinical trial reforms to expedite drug development - RAPS.org",
@@ -793,18 +810,6 @@
       "key_actions": "<ul><li>Review and escalate to QA leadership as appropriate.</li></ul>",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZFhGMHJObGhua0dzYUNDVG1UWnVtbGd1TktWWDRUYnB3b2t5aWxDU3V0bDJzRTFRYTJlck1aS2pTSmEtTHZZeW1FMjc3cHAwLUNraktjREZEMnNMOVhTc1pBa2IzWUV2eXRPOW1TdVA1Q0xSQTRWTEpCa2JCQk9pTlU2SWJBM0RMdUxxVFZHcHRoTS1KMVQ0amxZNm1hZw?oc=5",
       "fetched_at": "2026-06-22T02:00:57.552820+00:00"
-    },
-    {
-      "id": "976718d26f04",
-      "title": "FDA Issues New Guidance for Submitting Patent Information for Listing in the “Orange Book” - JD Supra",
-      "date": "2026-06-19",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: FDA Issues New Guidance for Submitting Patent Information for Listing in the “Orange Book” - JD Supra\nSource: Google News\nDate: Fri, 19 Jun 2026 16:28:33 GMT</p>",
-      "compliance_impact": "<ul><li>Review and assess the impact on your site's quality systems.</li></ul>",
-      "key_actions": "<ul><li>Escalate to QA leadership for site-specific action plan.</li></ul>",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPakJsV3ZWRzAyQVoyb1lUNE01dFZGQzlIRVFxd2RiZHktU1dxUTZiTjVqWFhYaklYcWcxSHR3SlhVbFZ2Q0R2MUdpaU9XMFhKRy1QN2xuTXk2VXdiX3Z2cmFMZ0JxMlZaM1RoS3gyTnMwaWE4RmVZVFlBNkhBMF9rUERLU0I3UVNv?oc=5",
-      "fetched_at": "2026-06-21T08:49:13.985734+00:00"
     }
   ]
 }
