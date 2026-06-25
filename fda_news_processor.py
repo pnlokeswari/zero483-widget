@@ -173,9 +173,9 @@ def build_gemini_client():
     return client
 
 
-def ai_analyze(client, title: str, raw_text: str, retries: int = 3) -> dict:
+def ai_analyze(client, title: str, raw_text: str, length_mode: str = "long", retries: int = 3) -> dict:
     """
-    Ask Gemini to produce a comprehensive, SEO-optimized blog post in JSON format:
+    Ask Gemini to produce an engaging, SEO-optimized blog post in JSON format:
       - seo_title
       - seo_description
       - summary (HTML formatted)
@@ -188,49 +188,73 @@ def ai_analyze(client, title: str, raw_text: str, retries: int = 3) -> dict:
         return {
             "primary_company_name": None,
             "seo_title": title,
-            "seo_description": "USFDA Pharma Alert. Review this update and assess its relevance to your quality systems.",
+            "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
             "summary": f"<p>{truncated if truncated else title}</p>",
-            "industry_context": "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>",
-            "compliance_impact": "<ul><li>Review this update and assess its relevance to your quality systems.</li><li>Consult with your regulatory affairs team for site-specific impact.</li></ul>",
-            "key_actions": "<ul><li>Review and escalate to QA leadership as appropriate.</li></ul>",
+            "industry_context": "<p>Staying updated on regulatory actions is key to understanding market dynamics and product quality standards.</p>",
+            "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li><li>Monitor official channels for further announcements or updates.</li></ul>",
+            "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
         }
 
-    prompt = f"""You are a senior pharmaceutical GMP auditor and an expert SEO Content Writer \
-with extensive knowledge of USFDA inspection readiness and Zero 483 culture.
+    if length_mode == "long":
+        word_count_guideline = """
+Write a highly-detailed, comprehensive, SEO-optimized blog post (approx 800-1000 words total) deeply analysing this regulatory update.
+Follow these specific section guidelines:
+- "summary": A comprehensive 3-4 paragraph explanation of what happened, written in a clear, detailed, storytelling style. (Aim for 350-400 words)
+- "industry_context": A detailed 2-3 paragraph section explaining the background, product history, therapeutic relevance, and wider implications. (Aim for 300 words)
+- "compliance_impact": 4-5 detailed bullet points describing the key implications for stakeholders, patients, consumers, or the market. (Aim for 150-200 words)
+- "key_actions": 3-5 detailed bullet points describing recommended next steps, advice, or takeaways for the readers. (Aim for 100-150 words)
+"""
+    else:
+        word_count_guideline = """
+Write a concise, high-impact, SEO-optimized article (approx 250-300 words total) summarizing this regulatory update.
+Follow these specific section guidelines:
+- "summary": A brief 1-2 paragraph explanation of what happened. (Aim for 100-120 words)
+- "industry_context": A concise paragraph explaining the background and immediate context. (Aim for 80 words)
+- "compliance_impact": 2-3 clear, short bullet points outlining the key implications. (Aim for 50-60 words)
+- "key_actions": 2-3 short bullet points listing practical next steps. (Aim for 30-40 words)
+"""
 
-Write a highly-detailed, comprehensive, SEO-optimized blog post (approx 800-1000 words) deeply analysing this FDA regulatory update. \
-Provide your response in this exact JSON format (no markdown code fence, just raw JSON):
+    prompt = f"""You are a professional medical journalist, regulatory affairs analyst, and expert SEO Content Writer.
+Your task is to write an engaging, easy-to-understand blog post analysing this USFDA regulatory update.
 
+CRITICAL INSTRUCTIONS:
+- Tone and Style: Write in an accessible, informative, and engaging narrative style. Do NOT target "QA managers", "GMP auditors", or talk specifically about "Quality Assurance (QA) people". Avoid dry compliance checklists or audit jargon (like CAPA, OOS, inspection readiness, etc.). Write so that any reader (general public, patient, investor, or industry professional) can fully understand the situation and why it matters.
+- Structure: Your response must be a single raw JSON object matching the schema below. Do NOT wrap it in markdown code block fences (like ```json), just return raw JSON text.
+
+WORD COUNT & SECTION GUIDELINES:
+{word_count_guideline}
+
+JSON SCHEMA:
 {{
-  "primary_company_name": "The exact name of the pharmaceutical company involved (e.g., 'Sun Pharmaceutical Industries Ltd.'). If this is a general FDA guidance or the primary company is not explicitly and undeniably the subject of the alert, you MUST output null. Do not guess.",
-  "seo_title": "A highly engaging, keyword-rich headline (e.g., 'FDA Recall 2026: [Drug Name]')",
+  "primary_company_name": "The exact name of the company/manufacturer involved (e.g., 'Sun Pharmaceutical Industries Ltd.'). If this is a general guidance or the primary company is not explicitly the subject, output null. Do not guess.",
+  "seo_title": "A highly engaging, keyword-rich headline (e.g., 'FDA Recall: [Product Name]')",
   "seo_description": "A 150-160 character meta description optimized for Google search results.",
-  "summary": "A comprehensive 3-paragraph explanation of what happened, formatted with HTML <p> tags.",
-  "industry_context": "A detailed paragraph explaining why this matters to the broader pharmaceutical industry, formatted with HTML <p> tags.",
-  "compliance_impact": "3-5 concise bullet points describing the specific impact on pharmaceutical inspection readiness and quality systems (formatted as an HTML <ul> list).",
-  "key_actions": "3-5 immediate action items a Quality Assurance Manager should take today (formatted as an HTML <ul> list)."
+  "summary": "The summary section formatted with HTML <p> tags according to the guidelines.",
+  "industry_context": "The industry context section formatted with HTML <p> tags according to the guidelines.",
+  "compliance_impact": "The implications section formatted as an HTML <ul> list with <li> elements.",
+  "key_actions": "The recommended actions section formatted as an HTML <ul> list with <li> elements."
 }}
 
 TITLE: {title}
 ---
-{raw_text[:1500]}
+{raw_text[:1800]}
 """
 
     if getattr(client, "quota_exhausted", False):
         return {
             "primary_company_name": None,
             "seo_title": title,
-            "seo_description": "USFDA Pharma Alert. Review this update and assess its relevance to your quality systems.",
+            "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
             "summary": f"<p>{raw_text[:400].strip()}</p>",
-            "industry_context": "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>",
-            "compliance_impact": "<ul><li>Review and assess the impact on your site's quality systems.</li></ul>",
-            "key_actions": "<ul><li>Escalate to QA leadership for site-specific action plan.</li></ul>",
+            "industry_context": "<p>Regulatory compliance and transparency are critical to maintaining public safety and product trust.</p>",
+            "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li><li>Monitor official channels for further announcements or updates.</li></ul>",
+            "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
         }
 
     for attempt in range(retries):
         try:
             response = client.models.generate_content(
-                model="gemini-3.5-flash",
+                model="gemini-2.5-flash",
                 contents=prompt,
             )
             text = response.text.strip()
@@ -268,7 +292,16 @@ TITLE: {title}
 
             # Fallback on final attempt or non-rate-limit error
             return {
-                "summary": raw_text[:400].strip(),
+                "summary": f"<p>{raw_text[:400].strip()}</p>",
+                "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+                "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+            }
+
+    return {
+        "summary": f"<p>{raw_text[:400].strip()}</p>",
+        "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+        "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+    }mary": raw_text[:400].strip(),
                 "compliance_impact": "Review and assess the impact on your site's quality systems.",
                 "key_actions": "Escalate to QA leadership for site-specific action plan.",
             }
@@ -973,7 +1006,7 @@ Text: {raw_text[:1000]}
 """
     try:
         response = client.models.generate_content(
-            model="gemini-3.5-flash",
+            model="gemini-2.5-flash",
             contents=prompt,
         )
         text = response.text.strip()
@@ -1002,6 +1035,15 @@ def is_duplicate_title(new_title: str, existing_titles: list, threshold: float =
     return False
 
 
+def count_long_forms_for_date(db: dict, date_str: str) -> int:
+    """Count how many long-form articles exist in the database for the given date."""
+    count = 0
+    for item in db.get("items", []):
+        if item.get("date") == date_str and item.get("is_long_form", False):
+            count += 1
+    return count
+
+
 def merge_items(db: dict, new_items: list[dict], client) -> int:
     """
     Add new items to the database, skipping duplicates and non-pharma content.
@@ -1028,11 +1070,25 @@ def merge_items(db: dict, new_items: list[dict], client) -> int:
             print(f"\n  [SKIP] Duplicate topic detected: {raw['_title'][:60]}...")
             continue
 
-        print(f"\n  >> Analysing: {raw['_title'][:70]}...")
-        analysis = ai_analyze(client, raw["_title"], raw["_raw"])
+        # Count how many long forms exist for this date in database (including this run)
+        current_long_count = count_long_forms_for_date(db, raw["_date"])
+        length_mode = "long" if current_long_count < 3 else "short"
+
+        print(f"\n  >> Analysing: {raw['_title'][:70]} (Mode: {length_mode.upper()})...")
+        analysis = ai_analyze(client, raw["_title"], raw["_raw"], length_mode=length_mode)
         # Stay within Gemini free tier: 15 req/min = 1 req per 4s minimum
         # Use 5s to have comfortable headroom
         time.sleep(5.0)
+
+        # Detect if we successfully generated a long-form article
+        # Truncated fallback has short summary and no is_long_form key
+        summary_text = analysis.get("summary", "")
+        clean_text = re.sub(r'<[^>]*>', '', summary_text)
+        word_count = len(clean_text.split())
+        
+        is_long_form = False
+        if length_mode == "long" and word_count > 150:
+            is_long_form = True
 
         title_raw = raw["_title"]
         slug = re.sub(r'[^a-zA-Z0-9]+', '-', title_raw.lower()).strip('-')
@@ -1049,6 +1105,22 @@ def merge_items(db: dict, new_items: list[dict], client) -> int:
             "key_actions":          analysis.get("key_actions", ""),
             "industry_context":     analysis.get("industry_context", ""),
             "seo_title":            analysis.get("seo_title", title_raw),
+            "seo_description":      analysis.get("seo_description", ""),
+            "primary_company_name":  analysis.get("primary_company_name", None),
+            "source_url":           raw["_url"],
+            "fetched_at":           datetime.now(timezone.utc).isoformat(),
+            "is_long_form":         is_long_form,
+        }
+        db["items"].insert(0, record)
+        existing_ids.add(raw["_id"])
+        existing_titles.append(raw["_title"])
+        added += 1
+
+    # Sort all items by date descending to show today's/freshest news first
+    db["items"].sort(key=lambda x: (x.get("date", ""), x.get("fetched_at", "")), reverse=True)
+    # Trim to MAX_ITEMS_DB keeping newest first
+    db["items"] = db["items"][:MAX_ITEMS_DB]
+    return added", title_raw),
             "seo_description":      analysis.get("seo_description", ""),
             "primary_company_name":  analysis.get("primary_company_name", None),
             "source_url":           raw["_url"],
@@ -1310,6 +1382,7 @@ def generate_seo_pages(db: dict) -> None:
         # Determine severity class color
         sev_color = "#dc2626" if severity == "High" else ("#d97706" if severity == "Medium" else "#16a34a")
         
+        source_url = html.escape(item.get("source_url", ""))
         canonical_url = f"https://alerts.zero483.com/alerts/{slug}.html"
         
         # JSON-LD Schema
@@ -1466,28 +1539,29 @@ def generate_seo_pages(db: dict) -> None:
         
         <div class="metadata">
           <strong>Published:</strong> <time datetime="{date_str}">{date_str}</time> &nbsp;|&nbsp; 
-          <strong>Severity:</strong> <span style="color: {sev_color}; font-weight: bold;">{severity}</span>
+          <strong>Severity:</strong> <span style="color: {sev_color}; font-weight: bold;">{severity}</span> &nbsp;|&nbsp;
+          <strong>Source:</strong> <a href="{source_url}" target="_blank" rel="noopener noreferrer">Original Publication</a>
         </div>
       </header>
       
       <main>
         <div class="section">
-          <h2>Alert Summary</h2>
+          <h2>Article Analysis & Summary</h2>
           {ai_summary}
         </div>
         
         <div class="section">
-          <h2>Industry Context</h2>
+          <h2>Context & Background</h2>
           {ai_context}
         </div>
         
         <div class="section">
-          <h2>Compliance & Audit Impact</h2>
+          <h2>Key Implications & Public Impact</h2>
           {ai_impact}
         </div>
         
         <div class="action-box">
-          <strong>Immediate QA Action Items:</strong>
+          <strong>Key Takeaways & Recommended Actions:</strong>
           {ai_actions}
         </div>
       </main>
