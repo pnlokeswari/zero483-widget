@@ -1727,7 +1727,7 @@ def ping_indexnow(db: dict):
         req = urllib.request.Request(api_url, data=json.dumps(payload).encode('utf-8'), 
                                      headers={"Content-Type": "application/json", "charset": "utf-8"},
                                      method="POST")
-        with urllib.request.urlopen(req) as response:
+        with urllib.request.urlopen(req, timeout=20) as response:
             if response.status in [200, 202]:
                 print(f"  [OK] IndexNow Ping successful. Sent {len(urlList)} URLs to search engines in real-time.")
             else:
@@ -1758,7 +1758,7 @@ def upload_file_to_github(content: str, filename: str):
     sha = None
     try:
         req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req) as response:
+        with urllib.request.urlopen(req, timeout=20) as response:
             data = json.loads(response.read().decode('utf-8'))
             sha = data.get('sha')
     except urllib.error.HTTPError as e:
@@ -1782,7 +1782,7 @@ def upload_file_to_github(content: str, filename: str):
         
     try:
         req = urllib.request.Request(url, data=json.dumps(payload).encode('utf-8'), headers=headers, method="PUT")
-        with urllib.request.urlopen(req) as response:
+        with urllib.request.urlopen(req, timeout=20) as response:
             if response.status in (200, 201):
                 print(f"  [OK] Successfully pushed {filename} live to: https://{owner}.github.io/{repo}/{filename}")
             else:
