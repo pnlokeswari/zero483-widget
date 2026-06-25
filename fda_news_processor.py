@@ -972,44 +972,28 @@ def save_database(db: dict) -> None:
 
 
 def ai_verify_pharma_relevance(client, title: str, raw_text: str) -> bool:
-    """Uses Gemini to check if the news item is relevant to human pharma, biologics, vaccines, or medical devices."""
-    if client is None or getattr(client, "quota_exhausted", False):
-        return True  # Fallback to True if AI is unavailable (pre-filtering already passed)
-
-    prompt = f"""You are a pharmaceutical regulatory compliance classifier.
-Analyze the following news item title and text. Determine if it is relevant to human pharmaceutical products, biologics, vaccines, gene therapies, or medical devices.
-Exclude cosmetics, pet food, animal drugs, general foods/beverages, and consumer items.
-However, keep dietary supplements or cosmetics if they contain undeclared active pharmaceutical ingredients (like sildenafil, tadalafil, or steroids).
-
-Format your response as a raw JSON object only (no markdown, no backticks):
-{{
-  "relevant": true or false,
-  "reason": "a brief 1-sentence explanation"
-}}
-
-Title: {title}
-Text: {raw_text[:1000]}
-"""
-    try:
-        response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=prompt,
-        )
-        text = response.text.strip()
-        text = re.sub(r"^```(?:json)?", "", text).strip()
-        text = re.sub(r"```$", "", text).strip()
-        result = json.loads(text)
-        is_rel = result.get("relevant", False)
-        print(f"  [AI Relevance Filter] {'RELEVANT' if is_rel else 'NOT RELEVANT'} - Reason: {result.get('reason', '')}")
-        return is_rel
-    except Exception as e:
-        print(f"  [AI Relevance Error] {e}. Falling back to pre-filtering results.")
-        return True
-
+    """Deprecated AI relevance check to save API quota."""
+    return True
 
 def is_pharma_relevant(title: str, raw_text: str, client=None) -> bool:
-    """Filter out non-pharmaceutical/non-medical device news."""
-    return ai_verify_pharma_relevance(client, title, raw_text)
+    """Filter out non-pharmaceutical/non-medical device news using fast keyword rules to save API quota."""
+    text_lower = (title + " " + raw_text).lower()
+    
+    # Exclude obvious non-human-pharma items
+    exclusion_keywords = [
+        "pet food", "dog food", "cat food", "veterinary", "animal drug",
+        "ice cream", "cheese", "salad", "vegetable", "fruit", "onion",
+        "salmonella", "listeria monocytogenes", "e. coli"
+    ]
+    
+    # Keep if it contains specific pharma/device words even if it hits exclusions
+    inclusion_keywords = ["pharma", "drug", "device", "biologic", "vaccine", "therapy", "clinical"]
+    
+    if any(ex in text_lower for ex in exclusion_keywords):
+        if not any(inc in text_lower for inc in inclusion_keywords):
+            return False
+            
+    return True
 
 
 def is_duplicate_title(new_title: str, existing_titles: list, threshold: float = 0.65) -> bool:
