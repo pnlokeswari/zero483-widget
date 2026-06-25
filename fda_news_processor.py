@@ -190,9 +190,9 @@ def ai_analyze(client, title: str, raw_text: str, length_mode: str = "long", ret
             "seo_title": title,
             "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
             "summary": f"<p>{truncated if truncated else title}</p>",
-            "industry_context": "<p>Staying updated on regulatory actions is key to understanding market dynamics and product quality standards.</p>",
-            "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li><li>Monitor official channels for further announcements or updates.</li></ul>",
-            "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+            "industry_context": "",
+            "compliance_impact": "",
+            "key_actions": "",
         }
 
     if length_mode == "long":
@@ -218,6 +218,7 @@ Follow these specific section guidelines:
 Your task is to write an engaging, easy-to-understand blog post analysing this USFDA regulatory update.
 
 CRITICAL INSTRUCTIONS:
+- Knowledge Enrichment: Use your broad medical and regulatory knowledge base to explain the background of the medicine, the condition it treats, or the history of the issue. Even if the raw text is very brief, flesh out the article with deep context to make it an attractive, highly informative post.
 - Tone and Style: Write in an accessible, informative, and engaging narrative style. Do NOT target "QA managers", "GMP auditors", or talk specifically about "Quality Assurance (QA) people". Avoid dry compliance checklists or audit jargon (like CAPA, OOS, inspection readiness, etc.). Write so that any reader (general public, patient, investor, or industry professional) can fully understand the situation and why it matters.
 - Structure: Your response must be a single raw JSON object matching the schema below. Do NOT wrap it in markdown code block fences (like ```json), just return raw JSON text.
 
@@ -246,9 +247,9 @@ TITLE: {title}
             "seo_title": title,
             "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
             "summary": f"<p>{raw_text[:400].strip()}</p>",
-            "industry_context": "<p>Regulatory compliance and transparency are critical to maintaining public safety and product trust.</p>",
-            "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li><li>Monitor official channels for further announcements or updates.</li></ul>",
-            "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+            "industry_context": "",
+            "compliance_impact": "",
+            "key_actions": "",
         }
 
     for attempt in range(retries):
