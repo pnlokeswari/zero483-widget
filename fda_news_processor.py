@@ -387,10 +387,7 @@ def fetch_drug_shortages(limit: int = FETCH_LIMIT) -> list[dict]:
             "_category": "Drug Shortage",
             "_severity":  assess_severity(raw_text),
             "_raw":      raw_text,
-            "_url":      (
-                f"https://news.google.com/search?q="
-                f"FDA+Shortage+{urllib.parse.quote_plus(r.get('generic_name', r.get('proprietary_name', '')))}"
-            ),
+            "_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
         })
     print(f"  Fetched {len(items)} shortage items.")
     return items
@@ -505,10 +502,7 @@ def fetch_adverse_events_summary(limit: int = FETCH_LIMIT) -> list[dict]:
             "_category": "Adverse Event",
             "_severity":  "High",
             "_raw":      raw_text,
-            "_url":      (
-                f"https://news.google.com/search?q="
-                f"FDA+Adverse+Event+{urllib.parse.quote_plus(drug_names[:30])}"
-            ),
+            "_url": "https://www.fda.gov/drugs/questions-and-answers-fdas-adverse-event-reporting-system-faers/fda-adverse-event-reporting-system-faers-public-dashboard",
         })
     print(f"  Fetched {len(items)} adverse event items.")
     return items
