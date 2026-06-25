@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-06-25T21:12:56.294561+00:00",
+  "last_updated": "2026-06-25T22:58:40.236919+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "b65c936c1c1c",
+      "title": "Investigational heart drug for nonobstructive HCM one step closer to FDA approval - Cardiovascular Business",
+      "slug": "investigational-heart-drug-for-nonobstructive-hcm-one-step-closer-to-fda-approval-cardiovascular-business",
+      "date": "2026-06-25",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: Investigational heart drug for nonobstructive HCM one step closer to FDA approval - Cardiovascular Business\nSource: Google News\nDate: Thu, 25 Jun 2026 14:19:44 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Investigational heart drug for nonobstructive HCM one step closer to FDA approval - Cardiovascular Business",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOTnpmT3Eta3B1NWUwWUt2cVFzdnBBQ0VETm1ld2FuR1pkNk5FRlFjVlNEYmJWLXRMMUVoUld4SnlQSkRWOEVmNmtRTDU2N212R1dYVHpQa2lnUC14YVJWcy1rVDRPcVRNS2x0dTJlOTI1Q2JyTmVlSVhMYTVxTHpOV3ZWZi1IVVJvMjB3NFV1RmlBMUxibE03ek82RVV6TUhrQ2lFNkxINVBVVmQyQTl3VXJLS2NBb25HNzdCRG5BaUpSVk9YTkVTUFJlSUZ6UFU1VDFOZEg0dUJjWjVqZ0NvSnZqOGpseUg2czZsS1N3?oc=5",
+      "fetched_at": "2026-06-25T22:58:20.174452+00:00",
+      "is_long_form": false
+    },
     {
       "id": "f42bfaae7fb4",
       "title": "FDA SIDE EFFECTS UPDATE: Migraine Drug Constipation Risk, Boxed Warning Update for Methotrexate - MedShadow Foundation",
@@ -810,18 +828,6 @@
       "key_actions": "<ul><li></li></ul>",
       "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbDdhdzNJVUFzdnNuZk42QXptMjRmRGRJdWNIZURYNlZJYVBGNXZvV0V0LWxOMlVnTURPMkpScDhRTHJ6Z1NrNENVTU9TbmRtWlFtQmFIMnA3aTVzektrUkh4ZDZpaHQyWC1CYlhRZkFYWFVlZEYzLUNrMWY3Z2hETTRFV21wQ3Z1Z2wxOVZkWW55d1NWMlQ1RmJqamRqUHFCN2p2S3ZBeTJ5c1lmVUZj0gG0AUFVX3lxTE5TM0RGTjhSbjk3eElndlR5UTY2YmxsVHJCVnlOZ3BLcU1kUkthR1RkM2I2c0thZ0ZaVWhzSmt3Z1lxaGdBWVZOSWhjVVBpVkhCdXEtSGRmaGlzVWJYem9UUmlWdThmN1dpQ2I1cFN4Q0FMVV9sYjZDQzBmZHNpSS1yS0ViVzhoU1NLX1BrdmV4bHpjc1FfcUxvbl9aQ1FUdVFMR0Jab1A1ajZ6WUpiR0QxQk1Ibw?oc=5",
       "fetched_at": "2026-06-21T08:47:36.203552+00:00"
-    },
-    {
-      "id": "48e7c29191f4",
-      "title": "FDA Sets Highest Risk Level for Common Over-the-Counter Drug - The Healthy",
-      "date": "2026-06-20",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: FDA Sets Highest Risk Level for Common Over-the-Counter Drug - The Healthy\nSource: Google News\nDate: Sat, 20 Jun 2026 15:22:19 GMT</p>",
-      "compliance_impact": "<ul><li></li></ul>",
-      "key_actions": "<ul><li></li></ul>",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYl9odVlxbWxNUzI4MWJjQmVyLVdnYndkM1Z2SG52WVktWGRMWmFNM1pQekdXV2NwQ3k5SGhHa1NtVF9CUk90ZHo3MEdxMEtPRlUzNVZPWmR1SzdKdGhicWF4VUNIQS1HdmN6SmFjbERRTWVhaUNXeWhHU3M3SmJsZkljSlVybkgtRi10N3EwN1RoVUFCTVFpSg?oc=5",
-      "fetched_at": "2026-06-21T08:47:31.169732+00:00"
     }
   ]
 }
