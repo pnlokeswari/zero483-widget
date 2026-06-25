@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24T23:40:27.664182+00:00",
+  "last_updated": "2026-06-25T04:42:17.515169+00:00",
   "total_items": 50,
   "items": [
     {
@@ -273,6 +273,23 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE45S2FRUTdnTThEOFZIM1VpVzctYlhtVGd0ZENvYW51V0tydEVsZkxvdHlFU3BWSmZNbHdPcndvZmFGcmNUTzhCR0RYY0Z6SW83VUlqUWY1c1JGTm95Sm93RlowRQ?oc=5",
       "fetched_at": "2026-06-24T05:32:30.950050+00:00"
+    },
+    {
+      "id": "cd437ea89b62",
+      "title": "Nature Medicine’s June 2026 Benchmark Study Reveals General-Purpose LLMs Outperform FDA-Cleared Clinical AI — and Expose",
+      "slug": "nature-medicine-s-june-2026-benchmark-study-reveals-general-purpose-llms-outperform-fda-cleared-clinical-ai-and-expose",
+      "date": "2026-06-23",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: Nature Medicine’s June 2026 Benchmark Study Reveals General-Purpose LLMs Outperform FDA-Cleared Clinical AI — and Exposes a Validation Gap Regulators Have Not Closed - The Clinical Trial Vanguard\nSource: Google News\nDate: Tue, 23 Jun 2026 06:59:04 GMT</p>",
+      "compliance_impact": "<ul><li>Review this update and assess its relevance to your quality systems.</li><li>Consult with your regulatory affairs team for site-specific impact.</li></ul>",
+      "key_actions": "<ul><li>Review and escalate to QA leadership as appropriate.</li></ul>",
+      "industry_context": "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>",
+      "seo_title": "Nature Medicine’s June 2026 Benchmark Study Reveals General-Purpose LLMs Outperform FDA-Cleared Clinical AI — and Expose",
+      "seo_description": "USFDA Pharma Alert. Review this update and assess its relevance to your quality systems.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxOalh4M2lZcWdqN1JVNE1RUUpiaV8yN1ZQOVNqSGRQYUNPUGQtc0tOSDVYbm1EQ183cGtiVlBUTWJuaEJ3NlI0OVJleFljbzhHX3dvaXFSS2lDNVdOT0ZYRlMzRHZ4MlBxVk1ybmluS2trQW42ZjlQb1l0czBNUzJPdGF4c2cwUW8tRGFjNnpFTlZDMC1fQThSd1ZZMHp4OWJvSXNnVjFvZ1lDYTVRVnlXTWk5M0JDdjMtaXgzUkNaZVMwQUZfaWZvOUd2Tk9pd2ZkQk5rX1hDdGJHR1VVeGJXRFZzcWpIVkk1QmlWREd1bHd4UXJCMXpDYU1EZEs5M2tpOWxiNnZFZUkxUlZsZkVzTGsycU8ydTMyWGF5MWFHUHc0aUpjVFJkRDFFd08ySWJlRjhr?oc=5",
+      "fetched_at": "2026-06-25T04:42:15.544633+00:00"
     },
     {
       "id": "12727bbfbf28",
@@ -834,23 +851,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQnN3WDN3R2loM3RuRk1jSUhNMlZJRmhlNnZCMkU5VmpQVVRmY2lXU3dpSWtJb05OM3NQWDc0VUdBRXlYaFJZOGtUTWpXT2RZVkM1N1llSGU0YjIyRlFnNGVEMXpJOVo2WUtZeWd0eXdsNWVBSUpvT1NRMTNXTFFnb0hOM1gxNm5UR1d6eVZtcHVieF8zRnBKN3drQ0NaUzVSYXhyR1hYZU8?oc=5",
       "fetched_at": "2026-06-22T21:38:55.337016+00:00"
-    },
-    {
-      "id": "2c3cd6f2726a",
-      "title": "Drug Shortage: Rifampin Capsule",
-      "slug": "drug-shortage-rifampin-capsule",
-      "date": "2026-06-22",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Generic name: Rifampin Capsule\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
-      "compliance_impact": "<ul><li>Review this update and assess its relevance to your quality systems.</li><li>Consult with your regulatory affairs team for site-specific impact.</li></ul>",
-      "key_actions": "<ul><li>Review and escalate to QA leadership as appropriate.</li></ul>",
-      "industry_context": "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>",
-      "seo_title": "Drug Shortage: Rifampin Capsule",
-      "seo_description": "USFDA Pharma Alert. Review this update and assess its relevance to your quality systems.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/search?q=FDA+Shortage+Rifampin+Capsule",
-      "fetched_at": "2026-06-22T21:38:14.035176+00:00"
     }
   ]
 }
