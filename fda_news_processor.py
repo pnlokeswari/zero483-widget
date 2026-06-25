@@ -1111,21 +1111,6 @@ def merge_items(db: dict, new_items: list[dict], client) -> int:
     db["items"].sort(key=lambda x: (x.get("date", ""), x.get("fetched_at", "")), reverse=True)
     # Trim to MAX_ITEMS_DB keeping newest first
     db["items"] = db["items"][:MAX_ITEMS_DB]
-    return added", title_raw),
-            "seo_description":      analysis.get("seo_description", ""),
-            "primary_company_name":  analysis.get("primary_company_name", None),
-            "source_url":           raw["_url"],
-            "fetched_at":           datetime.now(timezone.utc).isoformat(),
-        }
-        db["items"].insert(0, record)
-        existing_ids.add(raw["_id"])
-        existing_titles.append(raw["_title"])
-        added += 1
-
-    # Sort all items by date descending to show today's/freshest news first
-    db["items"].sort(key=lambda x: (x.get("date", ""), x.get("fetched_at", "")), reverse=True)
-    # Trim to MAX_ITEMS_DB keeping newest first
-    db["items"] = db["items"][:MAX_ITEMS_DB]
     return added
 
 
