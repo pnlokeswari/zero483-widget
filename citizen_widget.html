@@ -507,6 +507,10 @@
   };
 
   // Utilities
+  function stripHtml(s) {
+    return String(s || '').replace(/<[^>]*>?/gm, '');
+  }
+
   function escHtml(s) {
     return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
@@ -546,8 +550,8 @@
             <time class="z483-date">${formatDate(item.date)}</time>
           </header>
           
-          <h3 class="z483-card-title">${escHtml(item.title)}</h3>
-          <p class="z483-card-summary">${escHtml(item.summary)}</p>
+          <h3 class="z483-card-title">${escHtml(stripHtml(item.title))}</h3>
+          <p class="z483-card-summary">${escHtml(stripHtml(item.summary))}</p>
           
           <div class="z483-action-row">
             <div class="z483-share-group">
