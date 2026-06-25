@@ -1320,7 +1320,7 @@ def generate_seo_pages(db: dict) -> None:
 
         context_val = item.get("industry_context")
         if not context_val:
-            ai_context = "<p>Regulatory compliance is critical to maintaining product quality and patient safety.</p>"
+            ai_context = ""
         else:
             if isinstance(context_val, list):
                 ai_context = "".join(f"<p>{html.escape(x)}</p>" for x in context_val)
@@ -1329,7 +1329,7 @@ def generate_seo_pages(db: dict) -> None:
 
         impact_val = item.get("compliance_impact")
         if not impact_val:
-            ai_impact = "<p>Review and assess the impact on your site's quality systems.</p>"
+            ai_impact = ""
         else:
             if isinstance(impact_val, list):
                 ai_impact = "<ul>" + "".join(f"<li>{html.escape(x)}</li>" for x in impact_val) + "</ul>"
@@ -1338,7 +1338,7 @@ def generate_seo_pages(db: dict) -> None:
 
         actions_val = item.get("key_actions")
         if not actions_val:
-            ai_actions = "<p>Escalate to QA leadership for site-specific action plan.</p>"
+            ai_actions = ""
         else:
             if isinstance(actions_val, list):
                 ai_actions = "<ul>" + "".join(f"<li>{html.escape(x)}</li>" for x in actions_val) + "</ul>"
@@ -1519,21 +1519,29 @@ def generate_seo_pages(db: dict) -> None:
           <h2>Article Analysis & Summary</h2>
           {ai_summary}
         </div>
-        
+        """
+        if ai_context and ai_context.strip() != "":
+            html_content += f"""
         <div class="section">
           <h2>Context & Background</h2>
           {ai_context}
         </div>
-        
+        """
+        if ai_impact and ai_impact.strip() != "":
+            html_content += f"""
         <div class="section">
           <h2>Key Implications & Public Impact</h2>
           {ai_impact}
         </div>
-        
+        """
+        if ai_actions and ai_actions.strip() != "":
+            html_content += f"""
         <div class="action-box">
           <strong>Key Takeaways & Recommended Actions:</strong>
           {ai_actions}
         </div>
+        """
+        html_content += """
       </main>
     </article>
     
