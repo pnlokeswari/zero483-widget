@@ -468,25 +468,6 @@
     window.location.href = "mailto:?subject=" + encodeURIComponent("FDA Alert: " + title) + "&body=" + encodeURIComponent("Read more here: " + shareUrl);
   };
 
-  window.shareFacebook = function(e, btn) {
-    e.preventDefault(); e.stopPropagation();
-    const shareUrl = "https://www.zero483.com/USFDA-news?q=" + encodeURIComponent(btn.getAttribute('data-title') || "Update");
-    window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(shareUrl), "_blank");
-  };
-
-  window.shareTwitter = function(e, btn) {
-    e.preventDefault(); e.stopPropagation();
-    const title = btn.getAttribute('data-title') || "Update";
-    const shareUrl = "https://www.zero483.com/USFDA-news?q=" + encodeURIComponent(title);
-    window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent("FDA Alert: " + title) + "&url=" + encodeURIComponent(shareUrl), "_blank");
-  };
-
-  window.shareEmail = function(e, btn) {
-    e.preventDefault(); e.stopPropagation();
-    const title = btn.getAttribute('data-title') || "Update";
-    const shareUrl = "https://www.zero483.com/USFDA-news?q=" + encodeURIComponent(title);
-    window.location.href = "mailto:?subject=" + encodeURIComponent("FDA Alert: " + title) + "&body=" + encodeURIComponent("Read more here: " + shareUrl);
-  };
 
   window.copyShareLink = function(e, btn) {
     e.preventDefault();
