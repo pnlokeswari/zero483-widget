@@ -301,15 +301,6 @@ TITLE: {title}
         "summary": f"<p>{raw_text[:400].strip()}</p>",
         "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
         "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-    }mary": raw_text[:400].strip(),
-                "compliance_impact": "Review and assess the impact on your site's quality systems.",
-                "key_actions": "Escalate to QA leadership for site-specific action plan.",
-            }
-
-    return {
-        "summary": raw_text[:400].strip(),
-        "compliance_impact": "Review and assess the impact on your site's quality systems.",
-        "key_actions": "Escalate to QA leadership for site-specific action plan.",
     }
 
 
