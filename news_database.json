@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-06-26T18:14:04.923216+00:00",
+  "last_updated": "2026-06-26T20:19:57.600267+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "addfd6a37351",
+      "title": "Drug Shortage: Furosemide Oral Solution",
+      "slug": "drug-shortage-furosemide-oral-solution",
+      "date": "2026-06-26",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Furosemide Oral Solution\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Furosemide Oral Solution",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-06-26T20:19:21.001675+00:00",
+      "is_long_form": false
+    },
     {
       "id": "4710fa5ba594",
       "title": "CDSCO tightens approval norms for modified-release pharma intermediates - Moneycontrol.com",
@@ -865,24 +883,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYzN6c1N2Tm1Wb2tNQXBGSDVKOENQdW5ub1BBZml2eG4zRExHOUNIMkpYUV9yanZwQjFlLUo2aERTa3g1UjhPX3R4c0FsUmpVT3hRY3lSUU5OcUtoM0JPWTBLQlNoZnhaTk5LbWhnOE1fSVBQazBPYWRuRnZJcDJQRFhIQ0w4TEZZSUc3T3JDRkxGVkZnaXRveGFWcEk4VHdMbTVPLQ?oc=5",
       "fetched_at": "2026-06-26T18:13:48.238054+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "540b9c278263",
-      "title": "HHS and FDA propose clinical trial reforms to expedite drug development - RAPS.org",
-      "slug": "hhs-and-fda-propose-clinical-trial-reforms-to-expedite-drug-development-raps-org",
-      "date": "2026-06-23",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: HHS and FDA propose clinical trial reforms to expedite drug development - RAPS.org\nSource: Google News\nDate: Tue, 23 Jun 2026 20:11:00 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "HHS and FDA propose clinical trial reforms to expedite drug development - RAPS.org",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdHIyVzROT1VmRTlSVE43STFiQ1hsekl1Z29leFVxVkF3SG1IaHRIRzk5Z1NMM0l5QVlYMjk3VXkzclhBS2tVY2tmeG9mcC1xdXNxXzl4NkVXNmtOa19rck1GOFRPNm90YkhTbl9FTWJ1T0ZBS09QYUxsTl9VZ2FHSnpSaUtCQUpxLTh6ZFkzU0pvTTl4ZE9uYkhwdHZxRzVBV25WdmgyS3ppdw?oc=5",
-      "fetched_at": "2026-06-26T15:41:54.983919+00:00",
       "is_long_form": false
     }
   ]
