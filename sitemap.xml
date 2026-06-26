@@ -5,6 +5,10 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-recommends-revoking-marketing-authorisation-for-amgen-s-rare-disease-drug-reuters.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/meeting-highlights-from-the-committee-for-medicinal-products-for-human-use-chmp-22-25-june-2026-european-medicines-a.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/remifentanil-hydrochloride-for-injection-out-of-specification-assay-impurity.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/acadia-pharmaceuticals-stock-rises-on-eu-drug-approval-recommendation-investing-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/maat-pharma-ema-issues-negative-opinion-on-xervyteg-reassessment-requested-id-al-investisseur.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-asks-states-port-offices-to-step-up-screening-to-curb-imports-of-illegal-drugs-the-economic-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/ema-committee-issues-negative-opinion-on-maat-pharma-s-maat013-investing-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -51,10 +55,6 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/nature-medicine-s-june-2026-benchmark-study-reveals-general-purpose-llms-outperform-fda-cleared-clinical-ai-and-expose.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/us-fda-updates-guidance-to-speed-up-drug-development-reuters.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/hhs-and-fda-propose-clinical-trial-reforms-to-expedite-drug-development-raps-org.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/zydus-sun-pharma-dr-reddy-s-in-focus-us-cancer-drug-shortage-puts-india-s-pharma-stocks-in-focus-ndtv-profit.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/us-turn-to-indian-pharmaceuticals-amid-critical-cancer-drug-shortage-ndtv.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-approval-lo-junel-fe-teva-pharms-inc.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-flags-159-drug-samples-as-not-of-standard-quality-in-may-2026-safety-alert-daily-pioneer.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/companies.html</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/jaguar-health.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/maat-pharma.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
