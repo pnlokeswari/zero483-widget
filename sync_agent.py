@@ -57,7 +57,8 @@ def send_email(to_email, subject, html_content):
     msg.attach(part)
     
     try:
-        server = smtplib.SMTP_SSL("smtpout.secureserver.net", 465)
+        server = smtplib.SMTP(SMTP_HOST, 587)
+        server.starttls()
         server.login(USER_EMAIL, USER_PASS)
         server.sendmail(USER_EMAIL, to_email, msg.as_string())
         server.quit()
