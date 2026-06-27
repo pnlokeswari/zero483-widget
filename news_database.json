@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27T08:13:54.691222+00:00",
+  "last_updated": "2026-06-27T10:41:10.372677+00:00",
   "total_items": 50,
   "items": [
     {
@@ -73,6 +73,42 @@
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-06-27T07:52:59.422309+00:00",
       "is_long_form": true
+    },
+    {
+      "id": "d4b0b9e5080e",
+      "title": "June 2026 batch of EMA/CHMP recommendations - The Pharma Letter",
+      "slug": "june-2026-batch-of-ema-chmp-recommendations-the-pharma-letter",
+      "date": "2026-06-26",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: June 2026 batch of EMA/CHMP recommendations - The Pharma Letter\nSource: European Medicines Agency\nDate: Fri, 26 Jun 2026 16:12:10 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "June 2026 batch of EMA/CHMP recommendations - The Pharma Letter",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbzVGUGdCclR1ZTJUb1BKZEM1eGJaWW9zQ3puRG5ZbG1lU3o4eUV0Z003SEwyRjBmTHVhRHN5bkx5eV9hMGt6dnlwNllCNzN5V1cxSjdicUlWMUhyLWZ1VHZxY0Q4UGJyM3NUdnFkeTZhS0gxb25YUFhxel9YYjJjc0tnMmJ4U01iSWliVmRQWlI?oc=5",
+      "fetched_at": "2026-06-27T10:41:09.487163+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "feb739d1e8f7",
+      "title": "Latest CHMP decisions led by recommendation to revoke approval of Amgen's Tavneos - FirstWord Pharma",
+      "slug": "latest-chmp-decisions-led-by-recommendation-to-revoke-approval-of-amgen-s-tavneos-firstword-pharma",
+      "date": "2026-06-26",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>The European Medicines Agency's (EMA) Committee for Medicinal Products for Human Use (CHMP) has delivered a significant recommendation: the revocation of marketing authorization for Amgen's drug, Tavneos (avacopan). This decision, if finalized, would mean that Tavneos can no longer be sold or used in the European Union. Tavneos is a critical treatment for ANCA-associated vasculitis (AAV), a rare and serious autoimmune disease that causes inflammation of blood vessels, potentially leading to organ damage. While the specific reasons for this recommendation were not detailed in the brief update, such actions typically stem from a re-evaluation of the drug's benefit-risk profile or new safety concerns arising from post-market surveillance.</p>",
+      "compliance_impact": "<ul><li><b>Market Access Loss:</b> Amgen faces the immediate loss of its European market for Tavneos, impacting revenue and patient access.</li><li><b>Patient Treatment Shifts:</b> Patients currently on Tavneos in Europe may need to transition to alternative therapies, guided by their healthcare providers.</li><li><b>Heightened Regulatory Scrutiny:</b> This action signals the EMA's ongoing rigorous post-market surveillance and willingness to act decisively based on new data.</li></ul>",
+      "key_actions": "<ul><li><b>Amgen's Response:</b> Amgen is expected to review the CHMP's detailed reasoning and may appeal the recommendation or seek a re-examination.</li><li><b>Healthcare Provider Guidance:</b> Clinicians should prepare to counsel patients on potential treatment adjustments and monitor for official EMA communications.</li><li><b>Investor Implications:</b> Stakeholders will closely watch Amgen's official response and any potential ripple effects on other markets or ongoing trials.</li></ul>",
+      "industry_context": "<p>Tavneos, an oral C5aR inhibitor, represented a significant advancement in treating ANCA-associated vasculitis, offering a steroid-sparing option that could reduce reliance on corticosteroids and their associated side effects. Originally developed by ChemoCentryx, the drug gained further prominence following Amgen's acquisition of the company in 2022. Regulatory actions to revoke approval are rare and underscore the stringent oversight maintained by health authorities to ensure medicines remain safe and effective throughout their lifecycle.</p>",
+      "seo_title": "EMA Recommends Revocation of Amgen's Tavneos Approval for Vasculitis",
+      "seo_description": "The European Medicines Agency (EMA) has recommended revoking the marketing authorization for Amgen's Tavneos, a key drug for ANCA-associated vasculitis.",
+      "primary_company_name": "Amgen",
+      "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBXRjdvUjJwdTZrSm8zdDY4c1ZKSlFCZWlhbS1Ub2xOQUpYY3laZEg5alJ1NDNNSW94UXVLSzdkYTROSElWODY2SnhZb0N4emtQcTJF?oc=5",
+      "fetched_at": "2026-06-27T10:39:21.941643+00:00",
+      "is_long_form": false
     },
     {
       "id": "c8b01e4a2ed3",
@@ -847,40 +883,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZlR3aGNwa2cySjVDWGpnOE1tRlVDLXYtemdwVHRFVW9DZnNyang5UzR5azJhdjA5QnV3eWRTM3N6cDFqV3gyNVg5ZGpxRGhnSVdOOUg0R0FvRnRmaHNPYWk4OThlYnlRRmNtZTloSHF2bzhGNUVHS0luWU1rVDJJZmQtMzhSMVkyd0lqUzJsSVEwWTZQXzl1OTFBSGVvYVNaMkV5QlhRUEh5WkRVWWFYbm9SNW93T1hFbEJVV3VuSE5vd09aM3NV?oc=5",
       "fetched_at": "2026-06-25T15:59:55.177676+00:00"
-    },
-    {
-      "id": "79768a5e744a",
-      "title": "Urgent FDA drug recall: Check your medication bottles immediately - SILive.com",
-      "slug": "urgent-fda-drug-recall-check-your-medication-bottles-immediately-silive-com",
-      "date": "2026-06-23",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Urgent FDA drug recall: Check your medication bottles immediately - SILive.com\nSource: Google News\nDate: Tue, 23 Jun 2026 16:15:00 GMT</p>",
-      "compliance_impact": "<ul><li></li><li></li></ul>",
-      "key_actions": "<ul><li></li></ul>",
-      "industry_context": "<p></p>",
-      "seo_title": "Urgent FDA drug recall: Check your medication bottles immediately - SILive.com",
-      "seo_description": "USFDA Pharma Alert. Review this update and assess its relevance to your quality systems.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMG4xcEVVbVNaUzZRMklIT0RFN1RxVHlacmI2eW5vcXRJVlNGempndXlaVXlIV2gwWHpySTAyaDlZU2tIT3RDZWNvZ0RtamVqVVJickdpWW1UOVV3TE9ITE41bjFRTGJxZF9LUmZhVXlVSTZEOTh6cDRRRDFfY09VbGtHcmZ5alFJR0o3elBDVDlkeHRaNjB3NTNEcHBVUzJKV1RLQWlCbVTSAbwBQVVfeXFMTUxGajVxTUdHV2V5ZXhNSzV1NEY2ckY1OHBNNzQycUZFVFZDZnUxYmhOSTdaazFCTWJ2ZXVQYUkzeTlaNWQzMHpjTHFsTjFRdTdQS2pCVkhGWnJwWjg0N3p6SmZYdlJlVlE0V0czc0xtbUtVUFZrVURTc1lJNmxjcVpSUmd3dTk3ZkNyWVBIdC11RmJIT0IxQWF5dTF0eDNjWDlyMVA5RGQ5NVZVQUhXcllJTnJxdWhYdGZRZUQ?oc=5",
-      "fetched_at": "2026-06-25T15:59:18.476209+00:00"
-    },
-    {
-      "id": "b459ad1fdbe8",
-      "title": "Blood pressure drug recall hits nationwide over defect— what to know now - The News Journal",
-      "slug": "blood-pressure-drug-recall-hits-nationwide-over-defect-what-to-know-now-the-news-journal",
-      "date": "2026-06-23",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Blood pressure drug recall hits nationwide over defect— what to know now - The News Journal\nSource: Google News\nDate: Tue, 23 Jun 2026 15:12:00 GMT</p>",
-      "compliance_impact": "<ul><li></li><li></li></ul>",
-      "key_actions": "<ul><li></li></ul>",
-      "industry_context": "<p></p>",
-      "seo_title": "Blood pressure drug recall hits nationwide over defect— what to know now - The News Journal",
-      "seo_description": "USFDA Pharma Alert. Review this update and assess its relevance to your quality systems.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPWGpfU0JPNFBBN0huUEgwZGtqaTZIVm1hTnh4TUl6N0llU0lhR1RVdWVvOXdMOE83NmwwQ1hYTE5QTkd1d1ZRZWpVVUEyTFhicVB5QWY0ZVhnLUVTRW8tSGVVMUYwaUEwYlQxd2dyLVRyanAwc2ZUVXlsMVNCZ1dJd1JvWEJmRl81dkxDUFA5amFub3hnQS05Y0VrNWJ0WU1RTVFIWFo3d3N1NHowSUhqNzhlRWFZai1sNVFCd0oyQUZCaGltQ3RPeFA1azZmM2NmRkhiRE1fRQ?oc=5",
-      "fetched_at": "2026-06-25T15:59:13.458752+00:00"
     }
   ]
 }
