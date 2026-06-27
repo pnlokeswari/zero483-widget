@@ -10,8 +10,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Credentials
-IMAP_HOST = os.getenv("IMAP_HOST", "imap.titan.email")
-SMTP_HOST = os.getenv("SMTP_HOST", "smtp.titan.email")
+IMAP_HOST = os.getenv("IMAP_HOST", "imap.secureserver.net")
+SMTP_HOST = os.getenv("SMTP_HOST", "smtpout.secureserver.net")
 SMTP_PORT = int(os.getenv("SMTP_PORT", 465))
 USER_EMAIL = os.getenv("SMTP_USER")
 USER_PASS = os.getenv("SMTP_PASS")
@@ -44,27 +44,29 @@ def append_subscriber(new_email):
         f.write(f"\n{new_email}")
     print(f"Added {new_email} to {SUBSCRIBERS_FILE}")
 
-def send_welcome_email(recipient_email):
+def send_email(to_email, subject, html_content):
+    if not USER_EMAIL or not USER_PASS:
+        return
+        
+    msg = MIMEMultipart("alternative")
+    msg['Subject'] = subject
+    msg['From'] = f"Zero483 <{USER_EMAIL}>"
+    msg['To'] = to_email
+    
+    part = MIMEText(html_content, "html")
+    msg.attach(part)
+    
     try:
-        if SMTP_PORT == 465:
-            server = smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT)
-        else:
-            server = smtplib.SMTP(SMTP_HOST, SMTP_PORT)
-            server.starttls()
-            
+        server = smtplib.SMTP_SSL("smtpout.secureserver.net", 465)
         server.login(USER_EMAIL, USER_PASS)
-        
-        msg = MIMEMultipart("alternative")
-        msg["Subject"] = WELCOME_SUBJECT
-        msg["From"] = f"Zero483 <{USER_EMAIL}>"
-        msg["To"] = recipient_email
-        
-        msg.attach(MIMEText(WELCOME_HTML, "html"))
-        server.sendmail(USER_EMAIL, recipient_email, msg.as_string())
+        server.sendmail(USER_EMAIL, to_email, msg.as_string())
         server.quit()
-        print(f"Welcome email sent to {recipient_email}")
+        print(f"Sent welcome email to {to_email}")
     except Exception as e:
-        print(f"Failed to send welcome email to {recipient_email}: {e}")
+        print(f"Failed to send welcome email to {to_email}: {e}")
+
+def send_welcome_email(recipient_email):
+    send_email(recipient_email, WELCOME_SUBJECT, WELCOME_HTML)
 
 def check_for_new_subscribers():
     if not USER_EMAIL or not USER_PASS:
@@ -78,7 +80,7 @@ def check_for_new_subscribers():
         mail.select("inbox")
         
         # Search for unread emails from formspree
-        status, messages = mail.search(None, '(UNSEEN FROM "submissions@formspree.io")')
+        status, messages = mail.search(None, '(UNSEEN SUBJECT "New submission")')
         
         if status != "OK":
             print("Failed to search inbox.")
