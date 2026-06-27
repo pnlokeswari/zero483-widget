@@ -10,7 +10,7 @@ import google.generativeai as genai
 # Load environment variables
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-SMTP_HOST = os.getenv("SMTP_HOST", "smtp.titan.email")
+SMTP_HOST = os.getenv("SMTP_HOST", "smtpout.secureserver.net")
 SMTP_PORT = int(os.getenv("SMTP_PORT", 465))
 SMTP_USER = os.getenv("SMTP_USER")
 SMTP_PASS = os.getenv("SMTP_PASS")
