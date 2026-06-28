@@ -2,8 +2,8 @@ name: Weekly Newsletter Agent
 
 on:
   schedule:
-    # Runs at 9:00 AM IST (3:30 AM UTC) every Friday
-    - cron: '30 3 * * 5'
+    # Runs at 9:11 AM IST (3:41 AM UTC) every Friday (off-peak to avoid GitHub queue delays)
+    - cron: '41 3 * * 5'
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 jobs:
