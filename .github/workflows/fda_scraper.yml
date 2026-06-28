@@ -2,8 +2,8 @@ name: Daily FDA Scraper
 
 on:
   schedule:
-    # Runs at minute 30 past every hour (top of the hour in IST)
-    - cron: '30 * * * *'
+    # Runs at minute 47 past every hour (off-peak to avoid GitHub queue delays)
+    - cron: '47 * * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 jobs:
