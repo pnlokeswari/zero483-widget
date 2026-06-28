@@ -81,7 +81,7 @@ def check_for_new_subscribers():
         mail.select("inbox")
         
         # Search for unread emails from formspree
-        status, messages = mail.search(None, '(UNSEEN SUBJECT "New submission")')
+        status, messages = mail.search(None, 'UNSEEN', 'FROM', '"noreply@formspree.io"')
         
         if status != "OK":
             print("Failed to search inbox.")
