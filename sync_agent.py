@@ -53,8 +53,15 @@ def send_email(to_email, subject, html_content):
     msg['From'] = f"Zero483 <{USER_EMAIL}>"
     msg['To'] = to_email
     
-    part = MIMEText(html_content, "html")
-    msg.attach(part)
+    # Plain text version to avoid spam filters
+    import re
+    text_content = re.sub('<[^<]+>', '', html_content).replace('&nbsp;', ' ').strip()
+    
+    part1 = MIMEText(text_content, "plain")
+    part2 = MIMEText(html_content, "html")
+    
+    msg.attach(part1)
+    msg.attach(part2)
     
     try:
         server = smtplib.SMTP(SMTP_HOST, 587)
