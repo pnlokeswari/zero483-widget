@@ -358,10 +358,35 @@
       <p>Official breaking updates, recalls, and approvals for inspection readiness.</p>
     </div>
     <div style="display:flex; gap:12px; align-items:center;">
-      <form action="https://formspree.io/f/xaqgjywo" method="POST" style="display:flex; gap:8px;">
-        <input type="email" name="email" placeholder="Join our Newsletter..." required style="padding:8px 12px; border:1px solid var(--z-border); border-radius:6px; font-size:0.9rem; outline:none;" />
-        <button type="submit" style="padding:8px 16px; background:var(--z-accent); color:#fff; border:none; border-radius:6px; cursor:pointer; font-weight:600; font-size:0.9rem;">Subscribe Free</button>
+      <form id="subscribe-form" style="display:flex; gap:8px;" onsubmit="handleSubscribe(event)">
+        <input type="email" id="subscriber-email" name="email" placeholder="Join our Newsletter..." required style="padding:8px 12px; border:1px solid var(--z-border); border-radius:6px; font-size:0.9rem; outline:none;" />
+        <button type="submit" id="subscribe-btn" style="padding:8px 16px; background:var(--z-accent); color:#fff; border:none; border-radius:6px; cursor:pointer; font-weight:600; font-size:0.9rem;">Subscribe Free</button>
       </form>
+      <script>
+      function handleSubscribe(e) {
+        e.preventDefault();
+        const emailInput = document.getElementById('subscriber-email');
+        const btn = document.getElementById('subscribe-btn');
+        const email = emailInput.value;
+        if(!email) return;
+        
+        btn.innerText = "Subscribing...";
+        btn.disabled = true;
+        
+        fetch("https://hook.eu1.make.com/vj7ke24fdccg9fiysup5y4x687ifjksq", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: email })
+        }).then(response => {
+          btn.innerText = "Subscribed!";
+          btn.style.background = "#28a745";
+          emailInput.value = "";
+        }).catch(err => {
+          btn.innerText = "Error!";
+          btn.style.background = "#dc3545";
+        });
+      }
+      </script>
       <div class="z483-live-badge">
         <span class="z483-live-dot"></span>Live Feed
       </div>
