@@ -2,8 +2,8 @@ name: Hourly Sync & Welcome Agent
 
 on:
   schedule:
-    # Runs at the top of every hour
-    - cron: '0 * * * *'
+    # Runs at minute 13 past every hour (off-peak to avoid GitHub queue delays)
+    - cron: '13 * * * *'
   workflow_dispatch: # Allows manual trigger
 
 jobs:
