@@ -5,6 +5,16 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/astrazeneca-s-enhertu-wins-eu-nod-for-her2-positive-solid-tumors-tradingview.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-advisors-say-csl-s-tavneos-should-be-pulled-from-sale-pharmaphorum.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-backs-market-rollback-of-rare-disease-drug-tavneos-over-data-concerns-yahoo.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/infinion-cx-contact-lead-kit.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/abiomed-introducer-kits-with-impella-heart-pumps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-explains-how-to-respond-to-form-483-observations-in-new-draft-guidance-pharmaceutical-online.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/citizens-reiterates-viridian-stock-rating-on-fda-drug-approval-investing-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/viridian-wins-fda-approval-for-lumvoa-for-thyroid-eye-disease-pharmatimes.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/production-problems-hamper-lantheus-bid-for-fda-approval-of-radiopharma-dx-kit-fierce-biotech.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/nearly-1-million-bottles-of-heart-and-kidney-medication-recalled-over-foreign-substance-found-on-tablets-fox-business.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/6-medicine-samples-from-kashmir-fail-drug-tests-in-a-month-cdsco-greater-kashmir.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/upsc-invites-applications-for-186-drug-inspector-posts-under-cdsco-check-eligibility-and-selection-proce-the-times-of.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/modified-release-drug-intermediates-need-central-approval-others-can-seek-state-licence-clarifies-cdsco-medical-dial.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -14,6 +24,10 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/remifentanil-hydrochloride-for-injection-out-of-specification-assay-impurity.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-bupivacaine-hydrochloride-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-methylprednisolone-acetate-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/new-parkinson-s-drug-combines-immediate-and-slow-release-medscape.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-recommends-revoking-marketing-authorisation-for-amgen-s-rare-disease-drug-tradingview.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/outbreak-investigation-of-infant-botulism-powdered-infant-formula-june-2026-fda-gov.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/thousands-of-bottles-of-popular-blood-pressure-medication-recalled-across-the-u-s-today-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/june-2026-batch-of-ema-chmp-recommendations-the-pharma-letter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/ema-committee-issues-negative-opinion-on-maat-pharma-s-maat013-investing-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/new-data-lead-to-decision-to-revoke-autoimmune-disease-drug-medscape.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -41,20 +55,6 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/state-drug-alert-111-batches-including-paracetamol-telmisartan-fail-cdsco-quality-tests-medical-dialogues.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/eli-lilly-brings-rs-2-15-lakh-cancer-drug-tanstrive-to-india-after-cdsco-approval-moneycontrol-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-side-effects-update-migraine-drug-constipation-risk-boxed-warning-update-for-methotrexate-medshadow-foundation.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/investigational-heart-drug-for-nonobstructive-hcm-one-step-closer-to-fda-approval-cardiovascular-business.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-dextrose-monohydrate-10-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-clarifies-regulatory-pathway-for-formulation-intermediates-express-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/argon-medical-devices-l-cath-picc-and-midline-catheters.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/uhi-4-high-flow-insufflation-system-insufflator.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/infinion-cx-contact-lead-kit.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/jubilant-hollisterstier-gets-fda-warning-letter-for-quality-control-problems-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/stricter-drug-regulations-a-new-era-of-quality-control-devdiscourse.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/industry-asks-fda-for-harmonization-clarification-in-fermentation-semi-synthetic-antibiotics-guidance-raps-org.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-updates-master-protocol-what-developers-need-to-know-pharmtech-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/ionis-receives-fda-approval-for-severe-hypertriglyceridemia-drug-investing-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-recall-raises-concern-over-blood-pressure-drug-thestreet-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-flags-46-drug-batches-including-thyroxine-amoxycillin-clavulanate-as-nsq-in-may-2026-medical-dialogues.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-drops-whoop-warning-letter-over-blood-pressure-feature-medtech-dive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/companies.html</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/eli-lilly-and-company.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/vera-health.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
