@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet" />
   <style>
-    /* ─── Reset & Scope ───────────────────────────────────────────── */
+    /* â”€â”€â”€ Reset & Scope â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .z483-widget *,
     .z483-widget *::before,
     .z483-widget *::after {
@@ -17,7 +17,7 @@
       padding: 0;
     }
 
-    /* ─── Design Tokens (Premium Light Theme) ────────────────────── */
+    /* â”€â”€â”€ Design Tokens (Premium Light Theme) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .z483-widget {
       --z-bg:           #f8f9fa;
       --z-surface:      #ffffff;
@@ -52,7 +52,7 @@
       margin: 0;
     }
 
-    /* ─── Header ─────────────────────────────────────────────────── */
+    /* â”€â”€â”€ Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .z483-header {
       display: flex;
       align-items: center;
@@ -107,7 +107,7 @@
       100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); transform: scale(1); opacity: 1; }
     }
 
-    /* ─── Search ─────────────────────────────────────────────────── */
+    /* â”€â”€â”€ Search â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .z483-search-wrap {
       position: relative;
       margin-bottom: 20px;
@@ -142,7 +142,7 @@
       box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
     }
 
-    /* ─── Filter Chips ───────────────────────────────────────────── */
+    /* â”€â”€â”€ Filter Chips â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .z483-filters {
       display: flex;
       flex-wrap: wrap;
@@ -175,14 +175,14 @@
       color: #fff;
     }
 
-    /* ─── Feed Layout ────────────────────────────────────────────── */
+    /* â”€â”€â”€ Feed Layout â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .z483-feed {
       display: flex;
       flex-direction: column;
       gap: 24px;
     }
 
-    /* ─── Article Card ───────────────────────────────────────────── */
+    /* â”€â”€â”€ Article Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .z483-card {
       background: var(--z-surface);
       border: 1px solid var(--z-border);
@@ -305,7 +305,7 @@
       color: var(--z-accent-glow);
     }
 
-    /* ─── Empty / Loading ────────────────────────────────────────── */
+    /* â”€â”€â”€ Empty / Loading â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .z483-state {
       padding: 64px 20px;
       text-align: center;
@@ -375,15 +375,17 @@
         
         fetch("https://hook.eu1.make.com/6gshw5et3mftrcl1kax5wxb250ysg4g9", {
           method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: "email=" + encodeURIComponent(email)
-        }).then(response => {
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: email, to: email, subscriber_email: email, timestamp: new Date().toISOString() })
+        }).then(function(response) {
           btn.innerText = "Subscribed!";
           btn.style.background = "#28a745";
           emailInput.value = "";
-        }).catch(err => {
-          btn.innerText = "Error!";
+          setTimeout(function(){ btn.innerText = "Subscribe Free"; btn.style.background = ""; btn.disabled = false; }, 4000);
+        }).catch(function(err) {
+          btn.innerText = "Error - Try Again";
           btn.style.background = "#dc3545";
+          btn.disabled = false;
         });
       }
       </script>
@@ -400,7 +402,7 @@
         <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
       </svg>
     </span>
-    <input id="z483-search" class="z483-search" type="text" placeholder="Search recalls, approvals, warnings…" />
+    <input id="z483-search" class="z483-search" type="text" placeholder="Search recalls, approvals, warningsâ€¦" />
   </div>
 
   <!-- Filter chips -->
@@ -570,7 +572,7 @@
     if (!items.length) {
       feed.innerHTML = `
         <div class="z483-state">
-          <h3>✅ All Clear</h3>
+          <h3>âœ… All Clear</h3>
           <p>No new updates were found for this category in the last 7 days. The strict 7-day filter is active.</p>
         </div>`;
       return;
@@ -630,7 +632,7 @@
             </div>
             <div style="display: flex; gap: 16px; align-items: center;">
               <a href="https://alerts.zero483.com/alerts/${escHtml(item.slug)}.html" target="_blank" onclick="event.stopPropagation();" style="font-size: 0.9rem; font-weight: 600; color: var(--z-text-muted); text-decoration: none; transition: color var(--z-transition);" onmouseover="this.style.color='var(--z-accent)'" onmouseout="this.style.color='var(--z-text-muted)'">
-                ${item.is_long_form ? '⭐ Zero483 Analysis' : 'Zero483 Analysis'}
+                ${item.is_long_form ? 'â­ Zero483 Analysis' : 'Zero483 Analysis'}
               </a>
               <a class="z483-read-link" href="${escHtml(item.source_url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
                 Read Full Article
