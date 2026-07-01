@@ -1,4 +1,4 @@
-"""
+﻿"""
 USFDA Pharma News Processor for Zero483.com
 ============================================
 Fetches the latest pharmaceutical regulatory news from:
@@ -40,7 +40,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != 'utf-8':
 if sys.stderr.encoding and sys.stderr.encoding.lower() != 'utf-8':
     sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 
-# ── Dependency check ──────────────────────────────────────────────────────────
+# â”€â”€ Dependency check â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 try:
     from dotenv import load_dotenv
     load_dotenv()
@@ -55,7 +55,7 @@ except ImportError:
     print("[WARNING] google-genai not installed. AI summaries will be skipped.")
     print("          Install with: pip install google-genai")
 
-# ── Configuration ─────────────────────────────────────────────────────────────
+# â”€â”€ Configuration â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 BASE_DIR       = Path(__file__).parent
 DATABASE_FILE  = BASE_DIR / "news_database.json"
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
@@ -101,7 +101,7 @@ SEVERITY_KEYWORDS = {
 }
 
 
-# ── Utility helpers ───────────────────────────────────────────────────────────
+# â”€â”€ Utility helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 def http_get(url: str, timeout: int = 20) -> dict | None:
     """Perform a GET request and return parsed JSON, or None on failure."""
@@ -156,7 +156,7 @@ def cutoff_date() -> str:
     return (datetime.now(timezone.utc) - timedelta(days=DAYS_LOOKBACK)).strftime("%Y%m%d")
 
 
-# ── Gemini AI analysis ────────────────────────────────────────────────────────
+# â”€â”€ Gemini AI analysis â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 def build_gemini_client():
     """Initialize Gemini client if key is available."""
@@ -306,7 +306,7 @@ TITLE: {title}
 
 
 
-# ── Data sources ──────────────────────────────────────────────────────────────
+# â”€â”€ Data sources â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 def fetch_drug_recalls(limit: int = FETCH_LIMIT) -> list[dict]:
     """Fetch recent drug enforcement/recall reports from openFDA."""
@@ -951,7 +951,7 @@ def fetch_cdsco_alerts(limit: int = FETCH_LIMIT) -> list[dict]:
     return items
 
 
-# ── Database I/O ──────────────────────────────────────────────────────────────
+# â”€â”€ Database I/O â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 def load_database() -> dict:
     """Load existing database from JSON file, or return fresh structure."""
@@ -1733,7 +1733,7 @@ def generate_company_pages(db: dict) -> None:
             
             cards_html += f"""
       <div class="alert-card {css_class}">
-        <div class="alert-date">{date_str} • {item.get('category', '').upper()}</div>
+        <div class="alert-date">{date_str} â€¢ {item.get('category', '').upper()}</div>
         <h3 class="alert-title"><a href="{link}" target="_parent">{title}</a></h3>
         <p class="alert-summary">{clean_summary}</p>
       </div>"""
@@ -1877,7 +1877,7 @@ def upload_file_to_github(content: str, filename: str):
         print(f"  [ERROR] Failed to push {filename} to GitHub: {e}")
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
+# â”€â”€ Main â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 def main():
     print("=" * 60)
@@ -1933,3 +1933,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
