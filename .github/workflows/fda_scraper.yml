@@ -44,4 +44,4 @@ jobs:
         git add *.html *.json *.xml || echo "Staging catch-all"
         git commit -m "Auto-update FDA news database, widgets, and SEO pages" || echo "No changes to commit"
         git pull --rebase origin main
-        git push
+        git push origin HEAD:main
