@@ -39,9 +39,10 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git pull --rebase origin main
         git add news_database.json widget_ready_for_zoho.html citizen_ready.html feed.xml index.html citizen.html || echo "Some files not found"
         git add alerts/*.html || echo "Staging individual alerts"
         git add *.html *.json *.xml || echo "Staging catch-all"
-        git commit -m "Auto-update FDA news database, widgets, and SEO pages" || echo "No changes to commit"
-        git pull --rebase origin main
+        git diff --cached --quiet && echo "No changes to commit" && exit 0
+        git commit -m "Auto-update FDA news database, widgets, and SEO pages"
         git push origin HEAD:main
