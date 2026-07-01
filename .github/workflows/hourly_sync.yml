@@ -43,4 +43,4 @@ jobs:
         git add subscribers.txt || echo "No new subscribers to add"
         git commit -m "Auto-sync new subscribers via IMAP" || echo "No changes to commit"
         git pull --rebase origin main
-        git push
+        git push origin HEAD:main
