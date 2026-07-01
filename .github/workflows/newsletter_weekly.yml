@@ -45,4 +45,4 @@ jobs:
         git add newsletter_archive.html sitemap.xml || echo "No changes to index"
         git commit -m "Auto-publish weekly newsletter archive for SEO" || echo "No changes to commit"
         git pull --rebase origin main
-        git push
+        git push origin HEAD:main
