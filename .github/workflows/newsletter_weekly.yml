@@ -41,8 +41,9 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git pull --rebase origin main
         git add newsletters/*.html || echo "No new newsletters"
         git add newsletter_archive.html sitemap.xml || echo "No changes to index"
-        git commit -m "Auto-publish weekly newsletter archive for SEO" || echo "No changes to commit"
-        git pull --rebase origin main
+        git diff --cached --quiet && echo "No changes to commit" && exit 0
+        git commit -m "Auto-publish weekly newsletter archive for SEO"
         git push origin HEAD:main
