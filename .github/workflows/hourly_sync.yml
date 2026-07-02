@@ -40,7 +40,7 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git pull --rebase origin main
+        git pull --rebase --autostash origin main
         git add subscribers.txt || echo "No new subscribers to add"
         git diff --cached --quiet && echo "No changes to commit" && exit 0
         git commit -m "Auto-sync new subscribers via IMAP"
