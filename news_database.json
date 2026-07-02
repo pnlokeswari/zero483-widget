@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-02T21:51:55.472964+00:00",
+  "last_updated": "2026-07-02T23:49:51.575581+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "1a8c09a430be",
+      "title": "Drug Shortage: Methylphenidate Hydrochloride Tablet, Extended Release",
+      "slug": "drug-shortage-methylphenidate-hydrochloride-tablet-extended-release",
+      "date": "2026-07-02",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Methylphenidate Hydrochloride Tablet, Extended Release\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Methylphenidate Hydrochloride Tablet, Extended Release",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-07-02T23:49:15.781288+00:00",
+      "is_long_form": false
+    },
     {
       "id": "d2478b1d4d3c",
       "title": "HUTCHMED stock surges on China gastric cancer drug approval By Investing.com - Investing.com Nigeria",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTGd2SGtCWVFSTjJWcm1JSDNXNlBIbi1oREZMTVhyNTNpRDcyMUJRelhwbWFfRUY3NWtDYllFX1V6MDdnaDZZMVd2TUYzbkI4cnhNN1NxaWJ0MHJnc29GQXoyY3dzTW4wU3FEWm9CWVZob0ZVcGV6QTdGX243YTdvSk9IR0NTUUIzVmZmNHhYRi1iaXM?oc=5",
       "fetched_at": "2026-06-29T17:23:53.960979+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "7bde52006e77",
-      "title": "Infinion™ CX Contact Lead Kit",
-      "slug": "infinion-cx-contact-lead-kit",
-      "date": "2026-06-29",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Infinion™ CX Contact Lead Kit\nSource: Health Canada\nDate: 2026-06-24T12:00:00</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Infinion™ CX Contact Lead Kit",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/infiniontm-cx-contact-lead-kit",
-      "fetched_at": "2026-06-29T17:23:48.021121+00:00",
       "is_long_form": false
     }
   ]
