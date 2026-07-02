@@ -39,7 +39,7 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git pull --rebase origin main
+        git pull --rebase --autostash origin main
         git add news_database.json widget_ready_for_zoho.html citizen_ready.html feed.xml index.html citizen.html || echo "Some files not found"
         git add alerts/*.html || echo "Staging individual alerts"
         git add *.html *.json *.xml || echo "Staging catch-all"
