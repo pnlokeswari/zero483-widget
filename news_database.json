@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-03T15:39:55.775618+00:00",
+  "last_updated": "2026-07-03T16:35:57.161233+00:00",
   "total_items": 50,
   "items": [
     {
@@ -432,6 +432,24 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-07-02T17:21:27.357987+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "4901e48f3a3c",
+      "title": "Orca Bio’s Tregzi wins FDA approval - The Pharma Letter",
+      "slug": "orca-bio-s-tregzi-wins-fda-approval-the-pharma-letter",
+      "date": "2026-07-01",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: Orca Bio’s Tregzi wins FDA approval - The Pharma Letter\nSource: Google News\nDate: Wed, 01 Jul 2026 08:44:48 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Orca Bio’s Tregzi wins FDA approval - The Pharma Letter",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSG1VUnhvMm9ZV0N4NnZMU19TaS1sRVRkdS1FcTgtSkNjM1F3dU1pT2hwdlJNa3lmVXVldnlpT09JbWF2c2o2NjFPd1Y0MWpiNE53QnhtTjZva3hjQ1lpaXhCcEF3UVlNSkZJX0ZxQ1B0Z01DT3piVXJLQ0RMWTR6ZXMxbXNlWU0?oc=5",
+      "fetched_at": "2026-07-03T16:35:37.185075+00:00",
       "is_long_form": false
     },
     {
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeElFVHpVQXh2RlY3TUdJV3NEdmJFZ2YtVHhrT2ZHa3FEUVNUU290VmE0OHRJUVJQSVV2SndXTVRjd3NoaExMVVpYTXBOT3NZODhyVUYya1ZBZEhERmE3b29IYmt0WE5sNUNmWGNDSjd2aXFFQlJncWVoMzRTZ0FIdVc0SUh6QjFUdDMxdkx0RnlteGhCbkZ0dA?oc=5",
       "fetched_at": "2026-07-01T01:33:56.845496+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "5b056dce90c6",
-      "title": "Widely used heart, kidney medications recalled due to ‘foreign substance' - NBC 5 Chicago",
-      "slug": "widely-used-heart-kidney-medications-recalled-due-to-foreign-substance-nbc-5-chicago",
-      "date": "2026-06-29",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Widely used heart, kidney medications recalled due to ‘foreign substance' - NBC 5 Chicago\nSource: Google News\nDate: Mon, 29 Jun 2026 17:10:26 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Widely used heart, kidney medications recalled due to ‘foreign substance' - NBC 5 Chicago",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcW1keENJRFRWZ0F1ZDBNU3lBdFdKYklKNDkwdkhlYjRsN1BZT3VPTFhMbEZXWEI4anN3VHBweDN5MVRBZGJUMG1lcHFqQjh2VExuRGpnSVQwRlpvUlVhaVRqekJ0SFZLcTJ4UnNXYTc1aV9HNzRxS18zVW5JM0twVEhzY28tX2lpanI4UzFjNnFodFJnUmtKTGRoa3IwZ2x5TXViMFdnMNIBrwFBVV95cUxOTGtjVWZEbG5iNHZSdDI1R1VSZTZpdEdZaHB5bEFROVNkZHc0Szc4VVJ3N0V0bkgzYXZsZGdQbzNtUFk3V1lLaFVieUg3SFJ3X3BiS1I1ZnppUGIwb3ZaQXJBQ2VRdWFBSWJNV2U2Vjc3Y3Z1b2lSYjdZWDhHcTN4dUlQRXFVQW1takdlOWFtSnpYcDFhXy1TLXc5LWNpbFVpTGQ3T3pBN2FWcXlWSTdZ?oc=5",
-      "fetched_at": "2026-07-01T01:33:20.496584+00:00",
       "is_long_form": false
     }
   ]
