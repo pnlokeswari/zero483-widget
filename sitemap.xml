@@ -5,6 +5,8 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/government-to-audit-81-years-of-drug-approvals-for-safety-review-the420-in.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/urinary-catheter-trays-containing-cliniclean-pericare-wipes.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/hybrid-hydrophilic-microguidewire.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/intramedullary-bone-saw-blade-assembly.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/omni-tract-surgical-retractor-system.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -31,6 +33,7 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-clonazepam-tablet.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-albuterol-sulfate-solution.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-amphetamine-aspartate-monohydrate-amphetamine-sulfate-dextroamphetamine-saccha.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/nearly-1-million-bottles-of-heart-and-kidney-medication-recalled-fda-warns-prevention.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/orca-bio-s-tregzi-wins-fda-approval-the-pharma-letter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/lupin-announces-ema-approval-for-namuscla-tradingview.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/a-primer-on-retatrutide-and-compassionate-use-politifact.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -52,7 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/hamlet-b-ema-phase-iii-approval-drug-release-and-u-s-clinical-expansion-mark-major-june-milestones-tradingview.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/zai-lab-limited-zlab-gains-ema-orphan-drug-designation-for-dll3-targeting-cancer-therapy-yahoo-finance.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/india-s-first-homegrown-antibiotic-zaynich-gets-us-fda-approval-here-s-what-you-need-to-know-about-the-drug-ndtv.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/uncy-stock-clocks-worst-day-in-a-year-analysts-keep-buy-ratings-despite-5-12-month-delay-in-drug-approval-tradingv.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-lists-nationwide-recall-of-over-11-000-bottles-of-blood-pressure-drug-the-well-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-recalls-over-3-000-bottles-of-cholesterol-drug-fenofibrate-newsnation.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
