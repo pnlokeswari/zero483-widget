@@ -1,4 +1,4 @@
-﻿"""
+"""
 USFDA Pharma News Processor for Zero483.com
 ============================================
 Fetches the latest pharmaceutical regulatory news from:
@@ -1822,59 +1822,7 @@ def ping_indexnow(db: dict):
         print(f"  [ERROR] IndexNow Ping failed: {e}")
 
 
-def upload_file_to_github(content: str, filename: str):
-    """Uploads a file directly to GitHub Pages."""
-    owner = "pnlokeswari"
-    repo = "zero483-widget"
-    url = f"https://api.github.com/repos/{owner}/{repo}/contents/{filename}"
-    
-    token = os.environ.get("GITHUB_TOKEN")
-    if not token:
-        print(f"  [WARNING] GITHUB_TOKEN not found in environment. Skipping upload of {filename}.")
-        print("  -> Create a .env file with GITHUB_TOKEN=your_token to enable automatic GitHub deployments.")
-        return
-        
-    headers = {
-        "Authorization": f"token {token}",
-        "Accept": "application/vnd.github.v3+json",
-        "User-Agent": "Zero483-Automation"
-    }
-    
-    # 1. Get current file SHA if it exists
-    sha = None
-    try:
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req, timeout=20) as response:
-            data = json.loads(response.read().decode('utf-8'))
-            sha = data.get('sha')
-    except urllib.error.HTTPError as e:
-        if e.code == 404:
-            pass # File doesn't exist yet, which is fine
-        else:
-            print(f"  [ERROR] Failed to fetch current GitHub file state for {filename}: {e}")
-            return
-    except Exception as e:
-        print(f"  [ERROR] Unexpected error: {e}")
-        return
 
-    # 2. Upload new content
-    encoded_content = base64.b64encode(content.encode('utf-8')).decode('utf-8')
-    payload = {
-        "message": f"Automated {filename} update: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
-        "content": encoded_content
-    }
-    if sha:
-        payload["sha"] = sha
-        
-    try:
-        req = urllib.request.Request(url, data=json.dumps(payload).encode('utf-8'), headers=headers, method="PUT")
-        with urllib.request.urlopen(req, timeout=20) as response:
-            if response.status in (200, 201):
-                print(f"  [OK] Successfully pushed {filename} live to: https://{owner}.github.io/{repo}/{filename}")
-            else:
-                print(f"  [ERROR] Unexpected status code: {response.status}")
-    except Exception as e:
-        print(f"  [ERROR] Failed to push {filename} to GitHub: {e}")
 
 
 # â”€â”€ Main â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -1925,8 +1873,7 @@ def main():
     print("   -> Pinging Search Engines for Real-Time Indexing...")
     ping_indexnow(db)
     
-    print("   -> Attempting automatic upload to GitHub Pages for RSS feed...")
-    upload_file_to_github(rss_content, "feed.xml")
+
     
     print(f"\n[DONE] {total_new} new items added.")
 
