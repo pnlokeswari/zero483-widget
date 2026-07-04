@@ -361,35 +361,52 @@
     }
 
   
-    /* â”€â”€â”€ Ticker â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ─── Ticker & Featured Modern Styles ────────────────────────── */
     .z483-ticker-wrap {
       width: 100%;
       overflow: hidden;
-      background: var(--z-high-bg);
-      border: 1px solid #fecaca;
-      border-radius: var(--z-radius-sm);
-      padding: 10px 0;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: var(--z-radius);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      padding: 8px 0;
       margin-bottom: 24px;
       display: flex;
       align-items: center;
       position: relative;
     }
     .z483-ticker-label {
-      background: var(--z-high);
+      background: linear-gradient(135deg, #ef4444, #dc2626);
       color: white;
-      font-weight: 700;
-      font-size: 0.8rem;
-      padding: 4px 12px;
-      border-radius: 4px;
+      font-weight: 800;
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      padding: 6px 14px;
+      border-radius: 20px;
       margin-left: 12px;
       margin-right: 12px;
       z-index: 10;
       white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 2px 10px rgba(220, 38, 38, 0.3);
+    }
+    .z483-ticker-label::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+      animation: z483-pulse 1.5s infinite;
     }
     .z483-ticker {
       display: flex;
       white-space: nowrap;
-      animation: ticker-scroll 30s linear infinite;
+      animation: ticker-scroll 35s linear infinite;
     }
     .z483-ticker:hover {
       animation-play-state: paused;
@@ -399,15 +416,38 @@
       padding: 0 20px;
       font-size: 0.95rem;
       font-weight: 600;
-      color: var(--z-high);
+      color: var(--z-text);
       text-decoration: none;
+      transition: color var(--z-transition);
     }
     .z483-ticker-item:hover {
+      color: var(--z-accent);
       text-decoration: underline;
     }
     @keyframes ticker-scroll {
       0%   { transform: translateX(0); }
       100% { transform: translateX(-50%); }
+    }
+    
+    .z483-featured-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, #FFD700 0%, #F59E0B 100%);
+      color: #fff;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-weight: 800;
+      font-size: 0.8rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.25);
+      border: 1px solid rgba(255,255,255,0.4);
+    }
+    .z483-card-featured {
+      border-left: 4px solid #F59E0B !important;
+      background: linear-gradient(to right, rgba(245, 158, 11, 0.03), transparent) !important;
     }
   </style>
 </head>
@@ -533,8 +573,8 @@
       const tickerContent = document.getElementById('z483-ticker-content');
       if (tickerWrap && tickerContent && allItems.length > 0) {
         const top5 = allItems.slice(0, 5);
-        let tHtml = top5.map(i => `<a href="${escHtml(i.source_url)}" target="_blank" class="z483-ticker-item">${escHtml(stripHtml(i.title))}</a>`).join(' â€¢ ');
-        tickerContent.innerHTML = tHtml + ' â€¢ ' + tHtml; // Duplicate for seamless scroll
+        let tHtml = top5.map(i => `<a href="${escHtml(i.source_url)}" target="_blank" class="z483-ticker-item">${escHtml(stripHtml(i.title))}</a>`).join(' &bull; ');
+        tickerContent.innerHTML = tHtml + ' &bull; ' + tHtml; // Duplicate for seamless scroll
         tickerWrap.style.display = 'flex';
       }
   });
@@ -552,8 +592,8 @@
       const tickerContent = document.getElementById('z483-ticker-content');
       if (tickerWrap && tickerContent && allItems.length > 0) {
         const top5 = allItems.slice(0, 5);
-        let tHtml = top5.map(i => `<a href="${escHtml(i.source_url)}" target="_blank" class="z483-ticker-item">${escHtml(stripHtml(i.title))}</a>`).join(' â€¢ ');
-        tickerContent.innerHTML = tHtml + ' â€¢ ' + tHtml; // Duplicate for seamless scroll
+        let tHtml = top5.map(i => `<a href="${escHtml(i.source_url)}" target="_blank" class="z483-ticker-item">${escHtml(stripHtml(i.title))}</a>`).join(' &bull; ');
+        tickerContent.innerHTML = tHtml + ' &bull; ' + tHtml; // Duplicate for seamless scroll
         tickerWrap.style.display = 'flex';
       }
   });
@@ -682,7 +722,7 @@
       const featuredBadge = isFeatured ? `<div style="background: #fffbeb; color: #d97706; padding: 6px 12px; border-radius: 6px; font-weight: 700; font-size: 0.85rem; margin-bottom: 12px; border: 1px solid #fde68a; display: inline-block;">â­  Featured Analysis (1,000 Words)</div>` : '';
       
       return `
-        <div class="z483-card" style="cursor: pointer; ${isFeatured ? 'border-left: 4px solid #d97706;' : ''}" style="cursor: pointer;" onclick="if (!window.getSelection().toString()) window.open('${escHtml(item.source_url)}', '_blank')">
+        <div class="z483-card " style="cursor: pointer;" style="cursor: pointer;" onclick="if (!window.getSelection().toString()) window.open('${escHtml(item.source_url)}', '_blank')">
           <header class="z483-card-top">
             <div class="z483-badges">
               <span class="z483-badge ${catClass}">${escHtml(item.category)}</span>
@@ -750,7 +790,7 @@
             </div>
           </div>
         </div>`;
-    }).join('');
+    }).join(' &bull; ');
   }
 
   function applyFilters() {
@@ -784,8 +824,8 @@
       const tickerContent = document.getElementById('z483-ticker-content');
       if (tickerWrap && tickerContent && allItems.length > 0) {
         const top5 = allItems.slice(0, 5);
-        let tHtml = top5.map(i => `<a href="${escHtml(i.source_url)}" target="_blank" class="z483-ticker-item">${escHtml(stripHtml(i.title))}</a>`).join(' â€¢ ');
-        tickerContent.innerHTML = tHtml + ' â€¢ ' + tHtml; // Duplicate for seamless scroll
+        let tHtml = top5.map(i => `<a href="${escHtml(i.source_url)}" target="_blank" class="z483-ticker-item">${escHtml(stripHtml(i.title))}</a>`).join(' &bull; ');
+        tickerContent.innerHTML = tHtml + ' &bull; ' + tHtml; // Duplicate for seamless scroll
         tickerWrap.style.display = 'flex';
       }
     } else {
