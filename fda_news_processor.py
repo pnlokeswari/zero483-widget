@@ -1662,7 +1662,7 @@ def generate_company_pages(db: dict) -> None:
 </head>
 <body>
   <div class="container">
-    {f'<div style="background: #fffbeb; color: #d97706; padding: 8px 16px; border-radius: 6px; font-weight: 700; font-size: 0.9rem; margin-bottom: 24px; border: 1px solid #fde68a; display: inline-block;">â­  Featured 1,000-Word Analysis</div>' if item.get('is_long_form') else ''}
+    {f'<div class="z483-featured-badge" style="display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #FFD700 0%, #F59E0B 100%); color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,0.15); padding: 6px 14px; border-radius: 20px; font-weight: 800; font-size: 0.8rem; letter-spacing: 0.5px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.25); border: 1px solid rgba(255,255,255,0.4);"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg> Featured 1,000-Word Analysis</div>' if item.get('is_long_form') else ''}
     <div class="breadcrumb"><a href="/index.html">Zero483 Home</a> &gt; Company Directory</div>
     <header>
       <h1>Pharma Compliance Directory</h1>
@@ -1750,7 +1750,7 @@ def generate_company_pages(db: dict) -> None:
 </head>
 <body>
   <div class="container">
-    {f'<div style="background: #fffbeb; color: #d97706; padding: 8px 16px; border-radius: 6px; font-weight: 700; font-size: 0.9rem; margin-bottom: 24px; border: 1px solid #fde68a; display: inline-block;">â­  Featured 1,000-Word Analysis</div>' if item.get('is_long_form') else ''}
+    {f'<div class="z483-featured-badge" style="display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #FFD700 0%, #F59E0B 100%); color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,0.15); padding: 6px 14px; border-radius: 20px; font-weight: 800; font-size: 0.8rem; letter-spacing: 0.5px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.25); border: 1px solid rgba(255,255,255,0.4);"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg> Featured 1,000-Word Analysis</div>' if item.get('is_long_form') else ''}
     <div class="breadcrumb">
       <a href="/index.html">Zero483 Home</a> &gt; <a href="/companies.html">Company Directory</a> &gt; {comp}
     </div>
