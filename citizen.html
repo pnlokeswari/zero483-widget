@@ -688,7 +688,7 @@
       
       
       const isFeatured = item.is_long_form;
-      const featuredBadge = isFeatured ? `<div style="background: #fffbeb; color: #d97706; padding: 6px 12px; border-radius: 6px; font-weight: 700; font-size: 0.85rem; margin-bottom: 12px; border: 1px solid #fde68a; display: inline-block;">â­  Featured Analysis (1,000 Words)</div>` : '';
+      const featuredBadge = isFeatured ? <div class="z483-featured-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg> Featured Deep Insight</div> : '';
       
       return `
         <div class="z483-card " style="cursor: pointer;" style="cursor: pointer;" onclick="if (!window.getSelection().toString()) window.open('${escHtml(item.source_url)}', '_blank')">
