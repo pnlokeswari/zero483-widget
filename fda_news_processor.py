@@ -270,10 +270,10 @@ TITLE: {title}
             is_unavailable = "503" in exc_str or "UNAVAILABLE" in exc_str or "high demand" in exc_str.lower()
 
             if is_rate_limit or is_unavailable:
-                wait_secs = 10
+                wait_secs = 60
                 if is_rate_limit:
                     delay_match = re.search(r"retryDelay.*?(\d+)s", exc_str)
-                    wait_secs = int(delay_match.group(1)) + 5 if delay_match else 15
+                    wait_secs = int(delay_match.group(1)) + 5 if delay_match else 65
                     err_type = "RATE LIMIT"
                 else:
                     err_type = "TEMPORARY 503"
@@ -284,8 +284,8 @@ TITLE: {title}
                     continue
                 else:
                     if is_rate_limit:
-                        print(f"  [RATE LIMIT] Gemini quota exhausted. Disabling AI for remaining items to save time.")
-                        client.quota_exhausted = True
+                        print(f"  [RATE LIMIT] Gemini quota exhausted for this item. Skipping AI for this specific item but keeping it active for others.")
+                        # Removed client.quota_exhausted = True so it continues for next items
                     else:
                         print(f"  [TEMPORARY 503] Exhausted retries due to service unavailability.")
             else:
