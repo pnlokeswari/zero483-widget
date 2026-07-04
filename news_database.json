@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-04T16:44:07.517688+00:00",
-  "total_items": 35,
+  "last_updated": "2026-07-04T17:46:02.954476+00:00",
+  "total_items": 36,
   "items": [
     {
       "id": "3901de31b0ff",
@@ -217,6 +217,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPUm43S2JweXFldTBXdVdfYk0tMkxlQzdYREQtUFUwUk9xc1JJbUl6LTFUazBJUG5ZQkNKOHRaWVFKZjZZTkdLdE1PVU9vOExXUGlNR1pCTkZEVEFpeUhTeGVpVnAxSzV2MTBMaHNjRFpmbE5WRG5HMFF5N0tTSTF2MGNFXzJJODVkb2JVaw?oc=5",
       "fetched_at": "2026-07-04T07:02:03.493492+00:00",
       "is_long_form": true
+    },
+    {
+      "id": "c94160dc9097",
+      "title": "Approval of Parkinson’s therapy urged in Europe under brand name Hopledo - Parkinson's News Today",
+      "slug": "approval-of-parkinson-s-therapy-urged-in-europe-under-brand-name-hopledo-parkinson-s-news-today",
+      "date": "2026-07-01",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>In a significant development for the Parkinson's community, the European Medicines Agency (EMA) has taken a crucial step towards expanding treatment options. Its Committee for Medicinal Products for Human Use (CHMP) has issued a positive recommendation for \"Hopledo,\" a novel therapy aimed at individuals living with Parkinson's disease. This endorsement means the treatment is one step closer to receiving final marketing authorization from the European Commission, potentially making it available to patients across the European Union. This move offers renewed hope for improved symptom management and quality of life, highlighting the EMA's rigorous evaluation process for new medical innovations designed to address unmet patient needs.</p>",
+      "compliance_impact": "<ul><li>Hopledo is significantly closer to market authorization, expanding treatment choices for Parkinson's patients in Europe.</li><li>Reinforces the EMA's robust assessment framework for novel pharmaceutical products, ensuring patient safety and efficacy.</li><li>Sets a precedent for future innovations in neurodegenerative disease treatment within the European market.</li></ul>",
+      "key_actions": "<ul><li>Industry stakeholders must now await the European Commission's final marketing authorization decision.</li><li>Healthcare providers and patients should monitor updates regarding Hopledo's availability and integration into clinical guidelines.</li><li>Pharmaceutical companies should finalize launch preparations and distribution strategies for the European market.</li></ul>",
+      "industry_context": "<p>Parkinson's disease is a progressive neurodegenerative disorder affecting millions globally, causing debilitating motor and non-motor symptoms. Current treatments manage symptoms without halting disease progression, creating an urgent need for innovative therapies. The European Medicines Agency's (EMA) Committee for Medicinal Products for Human Use (CHMP) positive recommendation for Hopledo is a pivotal regulatory milestone. It confirms the therapy has met stringent scientific standards for quality, safety, and efficacy, bringing a crucial new option closer to European patients.</p>",
+      "seo_title": "Hopledo Gains Key EMA Nod: New Hope for Parkinson's Patients in Europe",
+      "seo_description": "The European Medicines Agency committee has recommended Hopledo for Parkinson's disease. Discover what this means for patients and the path to market approval.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTWV2a0dUbFExWjZlbTY3VnpSZWJ6NFEwTndUU0dwX3VCbFpKSWYyOVlRZm5uUGc2QmdQOFhqYndlMjlrZkFlcVViM19lQ3FLckFUV00tZm12SWM5bHpmQk9HWEtCV3BiTkU3OXVIRlJMVGNwVkwyMzR4Vk1tMGtzYkFXQ2ljV01odkdCOWI3eER3R3QzaVpMNXdrbVV5cktzaXAxRzJ5cjE?oc=5",
+      "fetched_at": "2026-07-04T17:46:02.048949+00:00",
+      "is_long_form": false
     },
     {
       "id": "93713b315017",
