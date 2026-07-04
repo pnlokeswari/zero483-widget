@@ -1662,6 +1662,7 @@ def generate_company_pages(db: dict) -> None:
 </head>
 <body>
   <div class="container">
+    {f'<div style="background: #fffbeb; color: #d97706; padding: 8px 16px; border-radius: 6px; font-weight: 700; font-size: 0.9rem; margin-bottom: 24px; border: 1px solid #fde68a; display: inline-block;">â­  Featured 1,000-Word Analysis</div>' if item.get('is_long_form') else ''}
     <div class="breadcrumb"><a href="/index.html">Zero483 Home</a> &gt; Company Directory</div>
     <header>
       <h1>Pharma Compliance Directory</h1>
@@ -1749,6 +1750,7 @@ def generate_company_pages(db: dict) -> None:
 </head>
 <body>
   <div class="container">
+    {f'<div style="background: #fffbeb; color: #d97706; padding: 8px 16px; border-radius: 6px; font-weight: 700; font-size: 0.9rem; margin-bottom: 24px; border: 1px solid #fde68a; display: inline-block;">â­  Featured 1,000-Word Analysis</div>' if item.get('is_long_form') else ''}
     <div class="breadcrumb">
       <a href="/index.html">Zero483 Home</a> &gt; <a href="/companies.html">Company Directory</a> &gt; {comp}
     </div>
