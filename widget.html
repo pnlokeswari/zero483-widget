@@ -3,6 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="USFDA Pharma News & Alerts. Live tracking of drug recalls, shortages, and warning letters with AI-powered compliance analysis." />
+  <meta name="keywords" content="FDA, drug recall, pharma compliance, warning letter, openFDA, drug shortage" />
+  <meta property="og:title" content="USFDA Pharma News | Zero483" />
+  <meta property="og:description" content="Live tracking of drug recalls, shortages, and warning letters with AI-powered compliance analysis." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Zero483",
+    "url": "https://www.zero483.com",
+    "description": "USFDA Pharma News & Alerts"
+  }
+  </script>
   <title>USFDA Pharma News | Zero483</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -345,6 +360,55 @@
       50%       { opacity: 1; }
     }
 
+  
+    /* â”€â”€â”€ Ticker â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .z483-ticker-wrap {
+      width: 100%;
+      overflow: hidden;
+      background: var(--z-high-bg);
+      border: 1px solid #fecaca;
+      border-radius: var(--z-radius-sm);
+      padding: 10px 0;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    .z483-ticker-label {
+      background: var(--z-high);
+      color: white;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 4px 12px;
+      border-radius: 4px;
+      margin-left: 12px;
+      margin-right: 12px;
+      z-index: 10;
+      white-space: nowrap;
+    }
+    .z483-ticker {
+      display: flex;
+      white-space: nowrap;
+      animation: ticker-scroll 30s linear infinite;
+    }
+    .z483-ticker:hover {
+      animation-play-state: paused;
+    }
+    .z483-ticker-item {
+      display: inline-block;
+      padding: 0 20px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--z-high);
+      text-decoration: none;
+    }
+    .z483-ticker-item:hover {
+      text-decoration: underline;
+    }
+    @keyframes ticker-scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
   </style>
 </head>
 <body>
@@ -393,6 +457,12 @@
     </div>
   </header>
 
+  <!-- Breaking News Ticker -->
+  <div class="z483-ticker-wrap" id="z483-ticker-wrap" style="display:none;">
+    <div class="z483-ticker-label">BREAKING</div>
+    <div class="z483-ticker" id="z483-ticker-content"></div>
+  </div>
+
   <!-- Search -->
   <div class="z483-search-wrap">
     <span class="z483-search-icon">
@@ -431,6 +501,14 @@
       <div class="z483-skel-bar" style="height:16px;width:60%"></div>
     </div>
   </main>
+  <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--z-border); text-align: center; color: var(--z-text-dim); font-size: 0.85rem;">
+    <div style="display: flex; justify-content: center; gap: 8px; align-items: center; margin-bottom: 12px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
+      <span style="font-weight: 600; color: var(--z-text-muted);">Data Verified & Sourced Directly from openFDA</span>
+    </div>
+    <p>&copy; 2026 Zero483. All rights reserved. For educational and compliance awareness only.</p>
+  </footer>
+
 
 </div>
 
@@ -449,6 +527,16 @@
   searchInput.addEventListener('input', (e) => {
     searchQuery = e.target.value;
     applyFilters();
+      
+      // Initialize Ticker
+      const tickerWrap = document.getElementById('z483-ticker-wrap');
+      const tickerContent = document.getElementById('z483-ticker-content');
+      if (tickerWrap && tickerContent && allItems.length > 0) {
+        const top5 = allItems.slice(0, 5);
+        let tHtml = top5.map(i => `<a href="${escHtml(i.source_url)}" target="_blank" class="z483-ticker-item">${escHtml(stripHtml(i.title))}</a>`).join(' â€¢ ');
+        tickerContent.innerHTML = tHtml + ' â€¢ ' + tHtml; // Duplicate for seamless scroll
+        tickerWrap.style.display = 'flex';
+      }
   });
 
   filterWrap.addEventListener('click', (e) => {
@@ -458,6 +546,16 @@
     activeFilter = e.target.getAttribute('data-filter');
     activeFilter = e.target.getAttribute('data-filter');
     applyFilters();
+      
+      // Initialize Ticker
+      const tickerWrap = document.getElementById('z483-ticker-wrap');
+      const tickerContent = document.getElementById('z483-ticker-content');
+      if (tickerWrap && tickerContent && allItems.length > 0) {
+        const top5 = allItems.slice(0, 5);
+        let tHtml = top5.map(i => `<a href="${escHtml(i.source_url)}" target="_blank" class="z483-ticker-item">${escHtml(stripHtml(i.title))}</a>`).join(' â€¢ ');
+        tickerContent.innerHTML = tHtml + ' â€¢ ' + tHtml; // Duplicate for seamless scroll
+        tickerWrap.style.display = 'flex';
+      }
   });
 
   window.shareWhatsApp = function(e, btn) {
@@ -579,15 +677,26 @@
     feed.innerHTML = items.map(item => {
       const catClass = categoryClass(item.category);
       
+      
+      const isFeatured = item.is_long_form;
+      const featuredBadge = isFeatured ? `<div style="background: #fffbeb; color: #d97706; padding: 6px 12px; border-radius: 6px; font-weight: 700; font-size: 0.85rem; margin-bottom: 12px; border: 1px solid #fde68a; display: inline-block;">â­  Featured Analysis (1,000 Words)</div>` : '';
+      
       return `
-        <div class="z483-card" style="cursor: pointer;" onclick="if (!window.getSelection().toString()) window.open('${escHtml(item.source_url)}', '_blank')">
+        <div class="z483-card" style="cursor: pointer; ${isFeatured ? 'border-left: 4px solid #d97706;' : ''}" style="cursor: pointer;" onclick="if (!window.getSelection().toString()) window.open('${escHtml(item.source_url)}', '_blank')">
           <header class="z483-card-top">
             <div class="z483-badges">
               <span class="z483-badge ${catClass}">${escHtml(item.category)}</span>
             </div>
             <time class="z483-date">${formatDate(item.date)}</time>
           </header>
+
+  <!-- Breaking News Ticker -->
+  <div class="z483-ticker-wrap" id="z483-ticker-wrap" style="display:none;">
+    <div class="z483-ticker-label">BREAKING</div>
+    <div class="z483-ticker" id="z483-ticker-content"></div>
+  </div>
           
+          ${featuredBadge}
           <h3 class="z483-card-title">${escHtml(stripHtml(item.title))}</h3>
           <p class="z483-card-summary">${escHtml(truncateSummary(item.summary))}</p>
           
@@ -669,6 +778,16 @@
       }
       
       applyFilters();
+      
+      // Initialize Ticker
+      const tickerWrap = document.getElementById('z483-ticker-wrap');
+      const tickerContent = document.getElementById('z483-ticker-content');
+      if (tickerWrap && tickerContent && allItems.length > 0) {
+        const top5 = allItems.slice(0, 5);
+        let tHtml = top5.map(i => `<a href="${escHtml(i.source_url)}" target="_blank" class="z483-ticker-item">${escHtml(stripHtml(i.title))}</a>`).join(' â€¢ ');
+        tickerContent.innerHTML = tHtml + ' â€¢ ' + tHtml; // Duplicate for seamless scroll
+        tickerWrap.style.display = 'flex';
+      }
     } else {
       feed.innerHTML = `
         <div class="z483-state">
