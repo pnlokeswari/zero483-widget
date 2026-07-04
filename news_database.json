@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-04T01:22:22.242631+00:00",
+  "last_updated": "2026-07-04T05:31:56.637604+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "70fa148bf80a",
+      "title": "Drug Shortage: Remifentanil Hydrochloride Injection",
+      "slug": "drug-shortage-remifentanil-hydrochloride-injection",
+      "date": "2026-07-04",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Remifentanil Hydrochloride Injection\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Remifentanil Hydrochloride Injection",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-07-04T05:31:15.746732+00:00",
+      "is_long_form": false
+    },
     {
       "id": "9a474dae3925",
       "title": "Hybrid Hydrophilic Microguidewire",
@@ -198,6 +216,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPUm43S2JweXFldTBXdVdfYk0tMkxlQzdYREQtUFUwUk9xc1JJbUl6LTFUazBJUG5ZQkNKOHRaWVFKZjZZTkdLdE1PVU9vOExXUGlNR1pCTkZEVEFpeUhTeGVpVnAxSzV2MTBMaHNjRFpmbE5WRG5HMFF5N0tTSTF2MGNFXzJJODVkb2JVaw?oc=5",
       "fetched_at": "2026-07-04T01:20:15.051328+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "15f964bb647d",
+      "title": "A primer on retatrutide and compassionate use - PolitiFact",
+      "slug": "a-primer-on-retatrutide-and-compassionate-use-politifact",
+      "date": "2026-07-01",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: A primer on retatrutide and compassionate use - PolitiFact\nSource: Google News\nDate: Wed, 01 Jul 2026 18:44:37 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "A primer on retatrutide and compassionate use - PolitiFact",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcmtRZVpXRnZQOVdoSFE5eXZRZV9fbW1MaEV1ZnEyMURJM1F0bWN1M1hWWWhaaExiRVowUVZyNUNUOEFJam5zQ05KeTZ6cmwyQkhscUF6UnBSNmhCeE9iQVJMUHVCbjhqYngxU3R4OFlDNHB0MFVNYV9CMU5DSHVnZ0xLLVkxWmptc1NPLTZWSDVrMWp0X1E?oc=5",
+      "fetched_at": "2026-07-04T05:31:37.437335+00:00",
       "is_long_form": false
     },
     {
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQQUNwaXdvNEVzMjFPZFVrRXRzSVhSQ2lLckNKcmJBcXlkamtaa3VmOHl5bzJlN3FfMlZnR3Z3RGxBVEp2bVFHclBtQTE5UXpycXd2TE5xUU83Z3FQVFRYSDl6S1Z6dHZuVEg0dnZpeXBQbWtuUTdGNXB0RjVTb2k5VFRyOEFVUVN3OS0xMExUak9FTVdqTVNDWHQxRHQzdGhTZmt5S0I4NFZpYzA4RUl4cVR5Qkh4R2djV0Q4UlpZakNKdkhyU0w5d2o5TGs4M1BZbVJnT0FrNll1YU9lU09WUkJXSjJ4MGlrSTlBT25VTFhJRktwTkgyOdIB_gFBVV95cUxOZ3dJTkZUcF9oVTdEN2IySzNmN0plUHNzaFRlZGJ5STZuT3Uyaks3Q3dnZ1pJTmdPSldqMFZhN1pSNkpVOUtwb3VURUE3R19GMHhWRjd5NkFua2R4R016WUw5Wkt3NEMxQkdXY1JzZl9TV2RzaC1CVHotZ05GdEtlUTFQU09sUnpMNkVJUmVTcTI3S2ZGOGU5elpGZVJTNVJ1TFFKSXJleG1mZHg0N1Z1UF82V0dBenQzM09xalVVRHc2eHM1NUhXRk5jLWw1dEV5R281RmpxLWV2NTVqQmxoVlZTNF92N3hsaGtISXZOMVFUUzRHQWFUUVBxT1pjQQ?oc=5",
       "fetched_at": "2026-06-28T13:41:47.724509+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "241db93b6fe5",
-      "title": "Alembic Pharma Receives USFDA Approval for Generic Influenza Drug Tamiflu - Medical Dialogues",
-      "slug": "alembic-pharma-receives-usfda-approval-for-generic-influenza-drug-tamiflu-medical-dialogues",
-      "date": "2026-06-28",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Alembic Pharma Receives USFDA Approval for Generic Influenza Drug Tamiflu - Medical Dialogues\nSource: Google News\nDate: Sun, 28 Jun 2026 07:30:30 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Alembic Pharma Receives USFDA Approval for Generic Influenza Drug Tamiflu - Medical Dialogues",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPby1IelRsVU1YdW0zamdBMzY4dlh2MHVQbF9HdVhKTV83NUNCbVhEY05RNHVaaEdZQ2JXd2o3ZGp3elUwTFcxQmZjcVl4VzctZ0dTOWJWVXFYcDNSTDFaQnNCdVJSYXZBMmoxU1hnRl8xc2RwaVFSRG1vWXVJbDlfQW1vUExVMVpxcUlkNnh4MnlUY2JsdEQ5N0QwblR4dUYzZnZXZGVXRVlaaW96VmFmTnVVMUJlSV9GWjQzYmR6ZmU5MmlYSnpxbtIBzgFBVV95cUxOOFVoOFA5bzRLUkoxWXg2UDlwZWptcU1MTGg4TzMzREd2clVQTEg5UkoxeXcyVGpKa28wekZkUnNTS2Z3T0tqalloQ1dna1FCWGxhSFRZM0ZqWDNFTVc0ZXVJaDYzeDJ1OVVXV0tuTjRGcHIzTjIzaUdUdThOYk05azV6NUFfVkE0RWdDSFlka2NENFdWMGVibTNfeGFXdDZ3c0ZYWGpfMkdtbHF1WGc3RTVjR2tZOG9BdHkwTnNqUFZSbVBpQVJja2hBRnZpQQ?oc=5",
-      "fetched_at": "2026-06-28T13:40:52.421186+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "94118a4b4a2f",
-      "title": "Generic Enzalutamide Tablets Granted Tentative FDA Approval for Prostate Cancer - OncLive",
-      "slug": "generic-enzalutamide-tablets-granted-tentative-fda-approval-for-prostate-cancer-onclive",
-      "date": "2026-06-28",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Generic Enzalutamide Tablets Granted Tentative FDA Approval for Prostate Cancer - OncLive\nSource: Google News\nDate: Sun, 28 Jun 2026 12:50:41 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Generic Enzalutamide Tablets Granted Tentative FDA Approval for Prostate Cancer - OncLive",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQT1BsQW9QWmhrb0pLcDRXQ3ZJWWRkdEtCN0pUNUVjeVlVeHE5VlFySGhzdU5KaUxrTTY5blZaaXZCOTBoSTZOTW5KTGVYdjcwRXIwT2hjLWRPYTl6TmdVUjFWM2twaFhTajJvZ05xNzRDdUJCUE1KWVZDWG5DYjhyZmVwdzRRR21Ddm1xMFh5blJ0Qlhta1FWQ2NjVlpmRnA3Vm1vb2JpbGZ3TVdQ?oc=5",
-      "fetched_at": "2026-06-28T13:40:47.391495+00:00",
       "is_long_form": false
     }
   ]

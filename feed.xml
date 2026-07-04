@@ -4,8 +4,19 @@
     <title>Zero483 FDA Pharma Alerts</title>
     <description>Live tracker for FDA drug recalls, warning letters, and guidance.</description>
     <link>https://www.zero483.com/USFDA-news</link>
-    <lastBuildDate>Sat, 04 Jul 2026 01:22:22 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 05:31:56 GMT</lastBuildDate>
 
+    <item>
+      <title>Drug Shortage: Remifentanil Hydrochloride Injection</title>
+      <description>&lt;p&gt;Generic name: Remifentanil Hydrochloride Injection
+Brand name: N/A
+Status: Current
+Presentations: []&lt;/p&gt;</description>
+      <link>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Remifentanil%20Hydrochloride%20Injection</link>
+      <guid>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Remifentanil%20Hydrochloride%20Injection</guid>
+      <category>Drug Shortage</category>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Hybrid Hydrophilic Microguidewire</title>
       <description>&lt;p&gt;Title: Hybrid Hydrophilic Microguidewire
@@ -117,6 +128,16 @@ Date: Thu, 02 Jul 2026 14:10:37 GMT&lt;/p&gt;</description>
       <guid>https://www.zero483.com/USFDA-news?q=FDA%20escalates%20recall%20of%20Utz%20brand%20potato%20chips%20before%20July%20Fourth%20holiday%20-%20Los%20Angeles%20Times</guid>
       <category>Recall</category>
       <pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>A primer on retatrutide and compassionate use - PolitiFact</title>
+      <description>&lt;p&gt;Title: A primer on retatrutide and compassionate use - PolitiFact
+Source: Google News
+Date: Wed, 01 Jul 2026 18:44:37 GMT&lt;/p&gt;</description>
+      <link>https://www.zero483.com/USFDA-news?q=A%20primer%20on%20retatrutide%20and%20compassionate%20use%20-%20PolitiFact</link>
+      <guid>https://www.zero483.com/USFDA-news?q=A%20primer%20on%20retatrutide%20and%20compassionate%20use%20-%20PolitiFact</guid>
+      <category>Drug Approval</category>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>Lupin Announces EMA Approval for NaMuscla® Expansion for Pediatric Indication with New Strengths - lupin.com</title>
@@ -487,26 +508,6 @@ Date: Sun, 28 Jun 2026 07:30:00 GMT&lt;/p&gt;</description>
       <link>https://www.zero483.com/USFDA-news?q=Modified-Release%20Drug%20Intermediates%20Need%20Central%20Approval%2C%20Others%20Can%20Seek%20State%20Licence%2C%20Clarifies%20CDSCO%20-%20Medical%20Dial</link>
       <guid>https://www.zero483.com/USFDA-news?q=Modified-Release%20Drug%20Intermediates%20Need%20Central%20Approval%2C%20Others%20Can%20Seek%20State%20Licence%2C%20Clarifies%20CDSCO%20-%20Medical%20Dial</guid>
       <category>Warning Letter</category>
-      <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Alembic Pharma Receives USFDA Approval for Generic Influenza Drug Tamiflu - Medical Dialogues</title>
-      <description>&lt;p&gt;Title: Alembic Pharma Receives USFDA Approval for Generic Influenza Drug Tamiflu - Medical Dialogues
-Source: Google News
-Date: Sun, 28 Jun 2026 07:30:30 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Alembic%20Pharma%20Receives%20USFDA%20Approval%20for%20Generic%20Influenza%20Drug%20Tamiflu%20-%20Medical%20Dialogues</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Alembic%20Pharma%20Receives%20USFDA%20Approval%20for%20Generic%20Influenza%20Drug%20Tamiflu%20-%20Medical%20Dialogues</guid>
-      <category>Drug Approval</category>
-      <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Generic Enzalutamide Tablets Granted Tentative FDA Approval for Prostate Cancer - OncLive</title>
-      <description>&lt;p&gt;Title: Generic Enzalutamide Tablets Granted Tentative FDA Approval for Prostate Cancer - OncLive
-Source: Google News
-Date: Sun, 28 Jun 2026 12:50:41 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Generic%20Enzalutamide%20Tablets%20Granted%20Tentative%20FDA%20Approval%20for%20Prostate%20Cancer%20-%20OncLive</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Generic%20Enzalutamide%20Tablets%20Granted%20Tentative%20FDA%20Approval%20for%20Prostate%20Cancer%20-%20OncLive</guid>
-      <category>Drug Approval</category>
       <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
