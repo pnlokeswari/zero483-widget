@@ -849,7 +849,176 @@
     init();
   }
 
+<!-- ═══════════════════════════════════════════════════════════════════
+     ZERO483 FLOATING QUOTE WIDGET
+     ═══════════════════════════════════════════════════════════════════ -->
+<style>
+#cqw-fab{position:fixed;bottom:28px;right:28px;width:62px;height:62px;border-radius:50%;background:linear-gradient(135deg,#3b82f6,#6366f1);color:#fff;border:none;cursor:pointer;box-shadow:0 6px 24px rgba(99,102,241,.5);display:flex;align-items:center;justify-content:center;font-size:1.5rem;z-index:9999;transition:transform .3s,box-shadow .3s;animation:cqw-pulse 2.5s infinite;}
+#cqw-fab:hover{transform:scale(1.1);box-shadow:0 8px 30px rgba(99,102,241,.7);animation:none;}
+@keyframes cqw-pulse{0%,100%{box-shadow:0 6px 24px rgba(99,102,241,.5);}50%{box-shadow:0 6px 36px rgba(99,102,241,.9);}}
+#cqw-tooltip{position:fixed;bottom:38px;right:100px;background:#0f172a;color:#fff;padding:.45rem .9rem;border-radius:8px;font-size:.82rem;font-weight:600;font-family:'Inter',sans-serif;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.25);z-index:9998;pointer-events:none;opacity:1;transition:opacity .3s;}
+#cqw-badge{position:fixed;bottom:72px;right:24px;background:#ef4444;color:#fff;width:20px;height:20px;border-radius:50%;font-size:.7rem;font-weight:700;display:flex;align-items:center;justify-content:center;z-index:10000;box-shadow:0 2px 6px rgba(239,68,68,.5);}
+#cqw-panel{position:fixed;bottom:105px;right:28px;width:380px;max-height:85vh;background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.2);z-index:9997;display:none;flex-direction:column;overflow:hidden;font-family:'Inter',sans-serif;border:1px solid rgba(0,0,0,.06);transform:scale(.85) translateY(20px);opacity:0;transition:transform .3s ease,opacity .3s ease;transform-origin:bottom right;}
+#cqw-panel.open{display:flex;transform:scale(1) translateY(0);opacity:1;}
+.cqw-ph{background:linear-gradient(135deg,#1e3a5f,#3b82f6);padding:1.1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
+.cqw-ph-info{display:flex;align-items:center;gap:.75rem;}
+.cqw-ph-av{width:38px;height:38px;background:rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+.cqw-ph h4{color:#fff;font-size:.95rem;font-weight:600;margin:0;}
+.cqw-ph p{color:rgba(255,255,255,.7);font-size:.75rem;margin:0;}
+.cqw-x{background:rgba(255,255,255,.15);border:none;color:#fff;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:.9rem;display:flex;align-items:center;justify-content:center;transition:background .2s;}
+.cqw-x:hover{background:rgba(255,255,255,.3);}
+.cqw-body{padding:1.25rem;overflow-y:auto;flex:1;}
+.cqw-fg{margin-bottom:1rem;position:relative;}
+.cqw-fg label{display:block;font-size:.72rem;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.35rem;}
+.cqw-fg input{width:100%;padding:.7rem .9rem;background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:10px;color:#1e293b;font-size:.875rem;font-family:'Inter',sans-serif;outline:none;transition:border-color .2s,box-shadow .2s;}
+.cqw-fg input:focus{border-color:#3b82f6;box-shadow:0 0 0 3px rgba(59,130,246,.12);}
+.cqw-fg input:disabled{opacity:.5;cursor:not-allowed;}
+#cqw-ac{position:absolute;top:calc(100% + 4px);left:0;right:0;background:#fff;border:1.5px solid #e2e8f0;border-radius:10px;max-height:170px;overflow-y:auto;z-index:10001;display:none;box-shadow:0 8px 25px rgba(0,0,0,.12);}
+#cqw-ac.open{display:block;}
+.cqw-ai{padding:.65rem .9rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #f1f5f9;transition:background .15s;}
+.cqw-ai:last-child{border-bottom:none;}
+.cqw-ai:hover{background:#eff6ff;}
+.cqw-ai .n{font-size:.82rem;font-weight:500;color:#1e293b;}
+.cqw-ai .c{font-size:.72rem;color:#94a3b8;}
+.cqw-sb{display:none;align-items:center;gap:.4rem;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:7px;padding:.4rem .75rem;margin-top:.4rem;color:#16a34a;font-size:.75rem;font-weight:500;}
+.cqw-sb.show{display:flex;}
+.cqw-2{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;}
+.cqw-btn{width:100%;padding:.9rem;margin-top:.25rem;background:linear-gradient(135deg,#3b82f6,#6366f1);border:none;border-radius:10px;color:#fff;font-size:.9rem;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;transition:transform .2s,box-shadow .2s,opacity .2s;display:flex;align-items:center;justify-content:center;gap:.5rem;}
+.cqw-btn:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 6px 20px rgba(99,102,241,.4);}
+.cqw-btn:disabled{opacity:.55;cursor:not-allowed;transform:none;}
+.cqw-sp{width:16px;height:16px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:cqw-spin .7s linear infinite;display:none;}
+@keyframes cqw-spin{to{transform:rotate(360deg);}}
+#cqw-st{text-align:center;font-size:.75rem;color:#94a3b8;margin-top:.6rem;min-height:1rem;}
+#cqw-st.err{color:#ef4444;}#cqw-st.ok{color:#22c55e;}
+#cqw-ok{display:none;text-align:center;padding:2rem 1rem;animation:cqw-fu .4s ease;}
+#cqw-ok.show{display:block;}
+@keyframes cqw-fu{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+#cqw-ok .ik{font-size:3.5rem;margin-bottom:.75rem;}
+#cqw-ok h3{font-size:1.1rem;font-weight:700;color:#1e293b;margin-bottom:.5rem;}
+#cqw-ok p{font-size:.82rem;color:#64748b;line-height:1.6;}
+#cqw-again{margin-top:1rem;background:none;border:1.5px solid #3b82f6;color:#3b82f6;border-radius:8px;padding:.6rem 1.2rem;cursor:pointer;font-size:.82rem;font-weight:600;font-family:'Inter',sans-serif;transition:all .2s;}
+#cqw-again:hover{background:#3b82f6;color:#fff;}
+@media(max-width:480px){#cqw-panel{width:calc(100vw - 24px);right:12px;bottom:90px;}#cqw-fab{bottom:16px;right:16px;}}
+</style>
+
+<div id="cqw-badge">1</div>
+<div id="cqw-tooltip">💬 Get a Quote</div>
+<button id="cqw-fab" onclick="cqwToggle()" title="Request a Quote">⚗️</button>
+
+<div id="cqw-panel">
+  <div class="cqw-ph">
+    <div class="cqw-ph-info">
+      <div class="cqw-ph-av">⚗️</div>
+      <div><h4>Zero483 — Instant Quote</h4><p>🟢 Replies within 1 hour</p></div>
+    </div>
+    <button class="cqw-x" onclick="cqwToggle()">✕</button>
+  </div>
+  <div class="cqw-body">
+    <div id="cqw-form">
+      <div class="cqw-fg">
+        <label>Chemical Name or CAS Number *</label>
+        <input type="text" id="cqw-search" placeholder="e.g. N-nitroso Tryptophol" autocomplete="off">
+        <div id="cqw-ac"></div>
+        <div id="cqw-sel" class="cqw-sb">✔ &nbsp;<span id="cqw-seltxt"></span></div>
+      </div>
+      <div class="cqw-fg"><label>Quantity (mg) *</label><input type="number" id="cqw-qty" value="10" min="1"></div>
+      <div class="cqw-2">
+        <div class="cqw-fg"><label>Your Name</label><input type="text" id="cqw-name" placeholder="Dr. Raj Kumar"></div>
+        <div class="cqw-fg"><label>Company</label><input type="text" id="cqw-co" placeholder="Pharma Ltd."></div>
+      </div>
+      <div class="cqw-fg"><label>Email Address *</label><input type="email" id="cqw-email" placeholder="you@company.com"></div>
+      <button class="cqw-btn" id="cqw-btn" onclick="cqwSubmit()">
+        <span id="cqw-btntxt">📧 Email Me My Quote</span>
+        <div class="cqw-sp" id="cqw-sp"></div>
+      </button>
+      <div id="cqw-st">Loading chemical database...</div>
+    </div>
+    <div id="cqw-ok">
+      <div class="ik">✅</div>
+      <h3>Quote Sent!</h3>
+      <p>Please check your inbox. Our team will follow up shortly.</p>
+      <button id="cqw-again" onclick="cqwReset()">Request Another Quote</button>
+    </div>
+  </div>
+</div>
+
+<script>
+var CQW_WH='https://hook.eu1.make.com/e2md1h96uvrn4hov96a7zg4c7m4o4a84';
+var CQW_CO='Zero483';
+var CQW_CUR='$';
+var CQW_SH=50;
+var CQW_CSV='https://alerts.zero483.com/pricing.csv';
+var CQW_FB=[
+  {name:'N-nitroso Tryptophol',cat:'E040038',cas:'NA',formula:'C10H10N2O2',weight:'190.20 g/mol',chemName:'2-(1-nitroso-1H-indol-3-yl)ethanol',purity:'98.5',price:150},
+  {name:'Aspirin Impurity A',cat:'A010001',cas:'50-78-2',formula:'C9H8O4',weight:'180.16 g/mol',chemName:'2-acetoxybenzoic acid',purity:'99.5',price:45},
+  {name:'Ibuprofen Impurity B',cat:'I020015',cas:'134-85-0',formula:'C13H18O2',weight:'206.28 g/mol',chemName:'2-(4-isobutylphenyl)propanoic acid',purity:'98.0',price:60.5},
+  {name:'Ibuprofen Impurity C',cat:'I020016',cas:'15687-27-1',formula:'C13H18O2',weight:'206.28 g/mol',chemName:'Ibuprofen related compound C',purity:'99.1',price:55},
+  {name:'Caffeine Impurity A',cat:'C030010',cas:'58-08-2',formula:'C8H10N4O2',weight:'194.19 g/mol',chemName:'1,3,7-Trimethylpurine-2,6-dione',purity:'97.5',price:30},
+  {name:'Paracetamol Impurity K',cat:'P050022',cas:'103-90-2',formula:'C8H9NO2',weight:'151.16 g/mol',chemName:'N-acetyl-p-aminophenol',purity:'99.9',price:40},
+  {name:'Guaifenesin Impurity D',cat:'G010033',cas:'93-14-1',formula:'C10H14O4',weight:'198.21 g/mol',chemName:'3-(2-methoxyphenoxy)-1,2-propanediol',purity:'99.0',price:75.25},
+  {name:'Indomethacin Impurity A',cat:'N030011',cas:'53-86-1',formula:'C19H16ClNO4',weight:'357.79 g/mol',chemName:'1-(4-chlorobenzoyl)-5-methoxy-1H-indole-3-acetic acid',purity:'98.5',price:120}
+];
+var cqwCat=[],cqwSel=null,cqwOpen=false;
+function cqwToggle(){
+  var p=document.getElementById('cqw-panel'),b=document.getElementById('cqw-fab'),t=document.getElementById('cqw-tooltip'),bg=document.getElementById('cqw-badge');
+  cqwOpen=!cqwOpen;
+  if(cqwOpen){p.classList.add('open');b.textContent='✕';t.style.opacity='0';bg.style.display='none';}
+  else{p.classList.remove('open');b.textContent='⚗️';t.style.opacity='1';}
+}
+document.addEventListener('click',function(e){
+  var p=document.getElementById('cqw-panel'),b=document.getElementById('cqw-fab');
+  if(cqwOpen&&!p.contains(e.target)&&e.target!==b){p.classList.remove('open');b.textContent='⚗️';cqwOpen=false;document.getElementById('cqw-tooltip').style.opacity='1';}
+  if(!e.target.closest('.cqw-fg'))document.getElementById('cqw-ac').classList.remove('open');
+});
+(function(){
+  var s=document.createElement('script');
+  s.src='https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js';
+  s.onload=function(){
+    Papa.parse(CQW_CSV,{download:true,header:true,skipEmptyLines:true,
+      complete:function(r){cqwCat=r.data.length?r.data.map(function(row){return{name:row['Impurity Name']||'',cat:row['CAT No']||'',cas:row['CAS Number']||'',formula:row['Mol Formula']||'',weight:row['Mol Weight']||'',chemName:row['Chemical Name']||'',purity:row['Purity %']||'',price:parseFloat(row['Price per mg'])||0};}):CQW_FB;cqwSt(cqwCat.length+' chemicals loaded','ok');},
+      error:function(){cqwCat=CQW_FB;cqwSt(CQW_FB.length+' chemicals loaded','ok');}
+    });
+  };
+  s.onerror=function(){cqwCat=CQW_FB;cqwSt(CQW_FB.length+' chemicals loaded','ok');};
+  document.head.appendChild(s);
+})();
+function cqwSt(m,c){var e=document.getElementById('cqw-st');e.textContent=m;e.className=c||'';}
+document.getElementById('cqw-search').addEventListener('input',function(){
+  var q=this.value.trim().toLowerCase(),l=document.getElementById('cqw-ac');
+  cqwSel=null;document.getElementById('cqw-sel').classList.remove('show');
+  if(!q||q.length<2){l.classList.remove('open');return;}
+  var hits=cqwCat.filter(function(c){return c.name.toLowerCase().includes(q)||c.cas.toLowerCase().includes(q);}).slice(0,7);
+  l.innerHTML=hits.length?hits.map(function(c,i){return'<div class="cqw-ai" onclick="cqwPick('+i+')"><span class="n">'+c.name+'</span><span class="c">CAS: '+c.cas+'</span></div>';}).join(''):'<div class="cqw-ai"><span class="n" style="color:#94a3b8">No results</span></div>';
+  l._h=hits;l.classList.add('open');
+});
+function cqwPick(i){var l=document.getElementById('cqw-ac');cqwSel=l._h[i];document.getElementById('cqw-search').value=cqwSel.name;document.getElementById('cqw-seltxt').textContent=cqwSel.name+' | CAT: '+cqwSel.cat;document.getElementById('cqw-sel').classList.add('show');l.classList.remove('open');cqwSt('','');}
+function cqwBuildEmail(d){return'<!DOCTYPE html><html><head><meta charset="UTF-8"><style>body{font-family:Arial,sans-serif;background:#f4f4f4;margin:0;padding:0}.wrap{max-width:600px;margin:30px auto;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.08)}.hdr{background:linear-gradient(135deg,#1e3a5f,#3b82f6);padding:28px 36px;color:#fff}.hdr h1{margin:0;font-size:20px;font-weight:700}.hdr p{margin:5px 0 0;font-size:12px;opacity:.8}.bd{padding:28px 36px}.gr{font-size:15px;color:#1e293b;margin-bottom:18px}table{width:100%;border-collapse:collapse;margin:16px 0}th{background:#f8fafc;color:#64748b;font-size:11px;text-transform:uppercase;letter-spacing:.05em;padding:9px 12px;text-align:left;border-bottom:2px solid #e2e8f0}td{padding:11px 12px;border-bottom:1px solid #f1f5f9;color:#334155;font-size:13px}tr:last-child td{border-bottom:none}td.l{color:#94a3b8;width:42%}.tot td{background:#eff6ff;font-weight:700;color:#1d4ed8!important;font-size:15px!important}.ft{background:#f8fafc;padding:18px 36px;text-align:center;font-size:11px;color:#94a3b8;border-top:1px solid #e2e8f0}.cta{display:inline-block;margin:16px 0 8px;padding:11px 26px;background:linear-gradient(135deg,#3b82f6,#6366f1);color:#fff;text-decoration:none;border-radius:8px;font-weight:600;font-size:13px}</style></head><body><div class="wrap"><div class="hdr"><h1>'+d.cn+' — Official Quotation</h1><p>Certified Reference Standards &amp; Pharmaceutical Impurities</p></div><div class="bd"><p class="gr">Dear '+d.cname+',</p><p style="color:#475569;font-size:13px;line-height:1.7">Thank you for your interest in <strong>'+d.cn+'</strong>. Please find below your official quotation.</p><table><tr><th colspan="2">Product Information</th></tr><tr><td class="l">Impurity Name</td><td><strong>'+d.item+'</strong></td></tr><tr><td class="l">CAT No</td><td>'+d.cat+'</td></tr><tr><td class="l">CAS Number</td><td>'+d.cas+'</td></tr><tr><td class="l">Molecular Formula</td><td>'+d.formula+'</td></tr><tr><td class="l">Molecular Weight</td><td>'+d.weight+'</td></tr><tr><td class="l">Chemical Name</td><td>'+d.chemname+'</td></tr><tr><td class="l">Purity</td><td>'+d.purity+'%</td></tr></table><table><tr><th colspan="2">Pricing Breakdown</th></tr><tr><td class="l">Quantity</td><td>'+d.qty+' mg</td></tr><tr><td class="l">Base Price</td><td>'+d.base+'</td></tr><tr><td class="l">Shipping &amp; Handling</td><td>'+d.ship+'</td></tr><tr class="tot"><td class="l">Total Estimate</td><td>'+d.total+'</td></tr></table><p style="color:#64748b;font-size:12px;line-height:1.7"><strong>Note:</strong> This is an estimated quotation. Final pricing may vary.</p><center><a class="cta" href="mailto:support@zero483.com?subject=Order - '+d.item+'">Reply to Confirm Order</a></center></div><div class="ft"><strong>'+d.cn+'</strong> | support@zero483.com<br>Generated: '+d.ts+'</div></div></body></html>';}
+async function cqwSubmit(){
+  var email=document.getElementById('cqw-email').value.trim(),qty=parseFloat(document.getElementById('cqw-qty').value)||1,name=document.getElementById('cqw-name').value.trim(),co=document.getElementById('cqw-co').value.trim();
+  if(!cqwSel){cqwSt('⚠ Please select a chemical from the dropdown.','err');return;}
+  if(!email||!email.includes('@')||!email.includes('.')){cqwSt('⚠ Please enter a valid email address.','err');return;}
+  var base=qty*cqwSel.price,total=base+CQW_SH,now=new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata'});
+  var d={cn:CQW_CO,cname:name||'Valued Customer',email:email,co:co,item:cqwSel.name,cat:cqwSel.cat,cas:cqwSel.cas,formula:cqwSel.formula,weight:cqwSel.weight,chemname:cqwSel.chemName,purity:cqwSel.purity,qty:qty,base:CQW_CUR+base.toFixed(2),ship:CQW_CUR+CQW_SH.toFixed(2),total:CQW_CUR+total.toFixed(2),ts:now};
+  d.email_body=cqwBuildEmail(d);
+  var payload={customer_name:d.cname,customer_email:d.email,customer_company:d.co,company_name:d.cn,item_name:d.item,cat_no:d.cat,cas_number:d.cas,mol_formula:d.formula,mol_weight:d.weight,chemical_name:d.chemname,purity:d.purity,quantity_mg:d.qty,base_price_formatted:d.base,shipping_fee_formatted:d.ship,total_quote_formatted:d.total,timestamp:d.ts,email_body:d.email_body};
+  document.getElementById('cqw-btntxt').textContent='Sending...';document.getElementById('cqw-sp').style.display='block';document.getElementById('cqw-btn').disabled=true;cqwSt('Sending request...','');
+  try{await fetch(CQW_WH,{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(payload).toString(),mode:'no-cors'});}catch(e){console.warn(e);}
+  document.getElementById('cqw-form').style.display='none';document.getElementById('cqw-ok').classList.add('show');
+}
+function cqwReset(){
+  cqwSel=null;
+  ['cqw-search','cqw-name','cqw-co','cqw-email'].forEach(function(id){document.getElementById(id).value='';});
+  document.getElementById('cqw-qty').value=10;
+  document.getElementById('cqw-sel').classList.remove('show');
+  document.getElementById('cqw-form').style.display='';
+  document.getElementById('cqw-ok').classList.remove('show');
+  document.getElementById('cqw-btn').disabled=false;
+  document.getElementById('cqw-btntxt').textContent='📧 Email Me My Quote';
+  document.getElementById('cqw-sp').style.display='none';
+  cqwSt('','');
+}
 </script>
+<!-- ═══════════════════════════════════════════════════════════════════ -->
 
 </body>
 </html>
