@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-07T20:50:09.915193+00:00",
+  "last_updated": "2026-07-07T22:19:12.881204+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "e88d60e917af",
+      "title": "GLP-1 Receptor Agonist Exposures Reported to Poison Center Up After FDA Approval for Weight Loss - Optometry Advisor",
+      "slug": "glp-1-receptor-agonist-exposures-reported-to-poison-center-up-after-fda-approval-for-weight-loss-optometry-advisor",
+      "date": "2026-07-07",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: GLP-1 Receptor Agonist Exposures Reported to Poison Center Up After FDA Approval for Weight Loss - Optometry Advisor\nSource: Google News\nDate: Tue, 07 Jul 2026 04:00:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "GLP-1 Receptor Agonist Exposures Reported to Poison Center Up After FDA Approval for Weight Loss - Optometry Advisor",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPaEtKODNlM3VhSzhFeG5WMl9TeWtsQUU1cnYxNjduSzd6UW56cmNhN2xPV2Zpakl3Vkp4MjVXMlpHUFRMZXBKNFV5NTFNYkhRNzMwQ3BDejNvSC1tdmxPN1k1M2JxTk9RSjlGdDIzWDFkRmxNTHY2MTBWUFh2YndmMjg2QnJXT1I2X0VMVVdNNXphTHQydHJHR1hlN29XeW5LdzhRajlmQmFJaDBpZ2RfaTIwYzJ3TTRPSE5qazNDZExsOTJqTUsza1ZaTDAtYTFX?oc=5",
+      "fetched_at": "2026-07-07T22:13:09.663196+00:00",
+      "is_long_form": false
+    },
     {
       "id": "4fe13845c6d7",
       "title": "CDSCO Examines Use of Similar Pharma Brand Names for Different Medicines, Seeks Stakeholder Feedback - Medical Dialogues",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm?Event=99136",
       "fetched_at": "2026-07-06T17:31:55.974820+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "52b27db332de",
-      "title": "Drug Recall: Povi-One, 10% Povidone-Iodine Oral Antiseptic, Packaged by Elevate Oral Care, LL",
-      "slug": "drug-recall-povi-one-10-povidone-iodine-oral-antiseptic-packaged-by-elevate-oral-care-ll",
-      "date": "2026-06-04",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Recalling firm: Elevate Oral Care\nProduct: Povi-One, 10% Povidone-Iodine Oral Antiseptic, Packaged by Elevate Oral Care, LLC, 346 Pike Road, Suite 6, West Palm Beach, FL 33411, NDC 57511-0611-1.\nReason: sub potency\nClassification: Class II\nStatus: Ongoing\nDistribution: Nationwide\nQuantity: 8132 6-packs & 2262 2-packs</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Drug Recall: Povi-One, 10% Povidone-Iodine Oral Antiseptic, Packaged by Elevate Oral Care, LL",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm?Event=99191",
-      "fetched_at": "2026-07-06T21:17:10.063982+00:00",
       "is_long_form": false
     }
   ]
