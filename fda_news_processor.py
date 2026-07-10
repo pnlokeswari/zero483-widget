@@ -1971,9 +1971,68 @@ def main():
     
     print("   -> Pinging Search Engines for Real-Time Indexing...")
     ping_indexnow(db)
-    
 
-    
+    # ── LinkedIn Auto-Poster ──────────────────────────────────────────
+    # Posts the newest article to LinkedIn Company Page via Make.com
+    LINKEDIN_WEBHOOK = os.getenv("LINKEDIN_WEBHOOK", "")
+    if LINKEDIN_WEBHOOK and total_new > 0 and db.get("items"):
+        try:
+            newest = db["items"][0]  # Most recent item
+            cat    = newest.get("category", "FDA Alert")
+            title  = newest.get("title", "")[:200]
+            summary = newest.get("summary", "")[:400]
+            url    = newest.get("source_url", "https://www.zero483.com")
+            sev    = newest.get("severity", "")
+            company = newest.get("primary_company_name", "")
+
+            # Build hashtags based on category
+            tag_map = {
+                "Recall":         "#FDARecall #PharmaCompliance #DrugRecall",
+                "Drug Approval":  "#FDAApproval #NewDrug #Pharma",
+                "Drug Shortage":  "#DrugShortage #PharmaSupplyChain #FDA",
+                "Warning Letter": "#FDAWarning #GMP #PharmaCompliance",
+                "Form 483":       "#Form483 #FDAInspection #QualityControl",
+                "Guidance":       "#FDAGuidance #Regulatory #Pharma",
+                "Adverse Event":  "#AdverseEvent #PharmaVigilance #FDA",
+            }
+            hashtags = tag_map.get(cat, "#FDA #PharmaNews #Compliance")
+
+            post_text = (
+                f"🔔 {cat.upper()} ALERT\n\n"
+                f"{title}\n\n"
+                f"{summary[:300]}...\n\n"
+                f"{'🏢 Company: ' + company + chr(10) if company else ''}"
+                f"{'⚠️ Severity: ' + sev + chr(10) if sev else ''}"
+                f"\n🔗 Read more: {url}\n\n"
+                f"{hashtags}\n"
+                f"#Zero483 #RegulatoryIntelligence #InspectionReadiness"
+            )
+
+            payload = urllib.parse.urlencode({
+                "post_text":    post_text,
+                "article_title": title,
+                "article_url":  url,
+                "category":     cat,
+                "severity":     sev,
+                "company":      company,
+                "hashtags":     hashtags,
+                "timestamp":    datetime.now().strftime("%Y-%m-%d %H:%M IST"),
+            }).encode("utf-8")
+
+            req = urllib.request.Request(
+                LINKEDIN_WEBHOOK,
+                data=payload,
+                headers={"Content-Type": "application/x-www-form-urlencoded"},
+                method="POST"
+            )
+            urllib.request.urlopen(req, context=SSL_CONTEXT, timeout=15)
+            print(f"  [LinkedIn] Posted: {title[:60]}...")
+        except Exception as exc:
+            print(f"  [LinkedIn] Could not post: {exc}")
+    elif not LINKEDIN_WEBHOOK:
+        print("  [LinkedIn] Skipped — LINKEDIN_WEBHOOK not set in environment.")
+    # ─────────────────────────────────────────────────────────────────
+
     print(f"\n[DONE] {total_new} new items added.")
 
 
