@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-10T22:57:13.254141+00:00",
+  "last_updated": "2026-07-10T23:56:10.220126+00:00",
   "total_items": 50,
   "items": [
     {
@@ -217,6 +217,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNekE0T2xyMGFGZzQ0S3hTXzNEYWdhOTJrY293dWZJRkltNWJ3OG1iOHNHd2J2VDhIOXc0WXlTVC1telo2c0FZMWpnS19PNGN0Uy1rOHJWNkVicVBFanFqeHRCWGgzZ0MtbVJhUEViQ2NYUDlHeVdqODN2Z0QtWGRJYTIyRlI5bFlKREFucFJtUVlITXM?oc=5",
       "fetched_at": "2026-07-10T18:16:25.894708+00:00",
       "is_long_form": true
+    },
+    {
+      "id": "3cd2d461ad44",
+      "title": "Transparency push in drug regulation: CDSCO recommends to publicly name firms facing suspension - Deccan Herald",
+      "slug": "transparency-push-in-drug-regulation-cdsco-recommends-to-publicly-name-firms-facing-suspension-deccan-herald",
+      "date": "2026-07-09",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "<p>Title: Transparency push in drug regulation: CDSCO recommends to publicly name firms facing suspension - Deccan Herald\nSource: CDSCO India\nDate: Thu, 09 Jul 2026 08:45:59 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Transparency push in drug regulation: CDSCO recommends to publicly name firms facing suspension - Deccan Herald",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNF9wNGtkMzVoWUE5YWZjZmhqakRFOXU2Z3NZYUNpYlBzYWxZcjRBX05NdGVRTzc2MDVoUXVfbzhWMER3Rms4c1drdVdQcElHdEZGWWQ5ZXp0N0JNTUhJTTN2UlBtbGtWMExXT19lbFpkWVZFcHZlYUJrSTNlajg4akZXTDQtOHhTQkUxeEN4dlpSLWI0TVlxQUVFdEI0a1ZEMzFYX1lHWV8tMUZQdVhiWU5XMm51em94ZVFKbW1aQ1FuNXdMVFZwb3B1U3lhdGpQVlhTV3VXdjlNUkhMZVVvUWwtQQ?oc=5",
+      "fetched_at": "2026-07-10T23:56:10.220025+00:00",
+      "is_long_form": false
     },
     {
       "id": "c2023b8e00ce",
@@ -883,24 +901,6 @@
       "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761530",
       "fetched_at": "2026-07-04T07:06:50.283177+00:00",
       "is_long_form": true
-    },
-    {
-      "id": "c8240e11d853",
-      "title": "Drug Recall: DULOXETINE D/R, a) 30 mg (NDC 61919-482-30), 30 Caps; b) 30 mg (NDC 61919-482-60",
-      "slug": "drug-recall-duloxetine-d-r-a-30-mg-ndc-61919-482-30-30-caps-b-30-mg-ndc-61919-482-60",
-      "date": "2026-06-22",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Recalling firm: Direct Rx\nProduct: DULOXETINE D/R, a) 30 mg (NDC 61919-482-30), 30 Caps; b) 30 mg (NDC 61919-482-60), 60 Caps; CYMBALTA, Packaged and Distributed by Direct Rx.\nReason: CGMP Deviations: Presence of N-nitroso-duloxetine impurity above FDA recommended interim limit\nClassification: Class II\nStatus: Ongoing\nDistribution: U.S. Nationwide\nQuantity: 263 Bottles</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Drug Recall: DULOXETINE D/R, a) 30 mg (NDC 61919-482-30), 30 Caps; b) 30 mg (NDC 61919-482-60",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm?Event=99269",
-      "fetched_at": "2026-07-10T20:08:09.875738+00:00",
-      "is_long_form": false
     }
   ]
 }
