@@ -1642,9 +1642,9 @@ def generate_seo_pages(db: dict) -> None:
       
       <div class="share-container">
         <span style="font-weight:600; color:#64748b; font-size:0.95rem;">Share this alert:</span>
-        <a class="share-btn linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url={{canonical_url}}" target="_blank">LinkedIn</a>
-        <a class="share-btn twitter" href="https://twitter.com/intent/tweet?url={{canonical_url}}&text={{seo_title}}" target="_blank">X (Twitter)</a>
-        <a class="share-btn email" href="mailto:?subject={{seo_title}}&body=Read this FDA alert: {{canonical_url}}">Email</a>
+        <a class="share-btn linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url={canonical_url}" target="_blank">LinkedIn</a>
+        <a class="share-btn twitter" href="https://twitter.com/intent/tweet?url={canonical_url}&text={seo_title}" target="_blank">X (Twitter)</a>
+        <a class="share-btn email" href="mailto:?subject={seo_title}&body=Read this FDA alert: {canonical_url}">Email</a>
       </div>
 
       <div class="subscribe-box">
