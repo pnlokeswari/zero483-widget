@@ -158,6 +158,68 @@
       display: block;
       margin-bottom: 12px;
     }
+    .share-container {
+      display: flex;
+      gap: 12px;
+      margin: 30px 0;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .share-btn {
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .share-btn.linkedin { background: #0a66c2; }
+    .share-btn.linkedin:hover { background: #004182; color: #fff; text-decoration: none; }
+    .share-btn.twitter { background: #000000; }
+    .share-btn.twitter:hover { background: #333333; color: #fff; text-decoration: none; }
+    .share-btn.email { background: #64748b; }
+    .share-btn.email:hover { background: #475569; color: #fff; text-decoration: none; }
+    .subscribe-box {
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .subscribe-box h3 {
+      font-family: 'Merriweather', serif;
+      margin-top: 0;
+      color: #0369a1;
+      margin-bottom: 12px;
+    }
+    .subscribe-input {
+      padding: 12px 16px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 300px;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    .subscribe-btn {
+      padding: 12px 24px;
+      background: #0284c7;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .subscribe-btn:hover {
+      background: #0369a1;
+    }
     .footer {
       margin-top: 50px;
       border-top: 1px solid #e2e8f0;
@@ -222,6 +284,41 @@ Date: Sat, 04 Jul 2026 02:35:59 GMT</p>
         </div>
         
       </main>
+      
+      <div class="share-container">
+        <span style="font-weight:600; color:#64748b; font-size:0.95rem;">Share this alert:</span>
+        <a class="share-btn linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url={canonical_url}" target="_blank">LinkedIn</a>
+        <a class="share-btn twitter" href="https://twitter.com/intent/tweet?url={canonical_url}&text={seo_title}" target="_blank">X (Twitter)</a>
+        <a class="share-btn email" href="mailto:?subject={seo_title}&body=Read this FDA alert: {canonical_url}">Email</a>
+      </div>
+
+      <div class="subscribe-box">
+        <h3>Stay Ahead of FDA Compliance</h3>
+        <p style="color:#334155; font-size:0.95rem; margin-bottom:20px;">Get critical regulatory updates, warning letters, and drug shortages delivered straight to your inbox.</p>
+        <div style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+          <input type="email" id="seo-sub-email" class="subscribe-input" placeholder="Enter your email address">
+          <button onclick="seoSubscribe()" class="subscribe-btn">Subscribe Free</button>
+        </div>
+        <p id="seo-sub-msg" style="color:#16a34a; font-weight:600; display:none; margin-top:15px;">Subscribed successfully! Welcome aboard.</p>
+      </div>
+
+      <script>
+      function seoSubscribe() {
+          var email = document.getElementById('seo-sub-email').value;
+          if(!email) return;
+          var payload = new URLSearchParams({ subscriber_email: email, source: 'Zero483 SEO Article', timestamp: new Date().toLocaleString() });
+          fetch('https://hook.eu1.make.com/6gshw5et3mftrcl1kax5wxb250ysg4g9', { 
+            method: 'POST', 
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'}, 
+            body: payload.toString(), 
+            mode: 'no-cors' 
+          }).then(() => {
+            document.getElementById('seo-sub-msg').style.display = 'block';
+            document.getElementById('seo-sub-email').value = '';
+          });
+      }
+      </script>
+
     </article>
     
     <footer class="footer">
