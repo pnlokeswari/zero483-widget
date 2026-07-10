@@ -2,9 +2,8 @@ name: Daily FDA Scraper
 
 on:
   schedule:
-    # Runs at minute 47 past every hour (off-peak to avoid GitHub queue delays)
     - cron: '47 * * * *'
-  workflow_dispatch: # Allows manual trigger from GitHub UI
+  workflow_dispatch:
 
 jobs:
   run-scraper:
@@ -41,7 +40,7 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git pull --rebase --autostash origin main
         git add news_database.json widget_ready_for_zoho.html citizen_ready.html feed.xml index.html citizen.html || echo "Some files not found"
-        git add alerts/*.html || echo "Staging individual alerts"
+        git add --all alerts/ || echo "Staging individual alerts including deletions"
         git add *.html *.json *.xml || echo "Staging catch-all"
         git diff --cached --quiet && echo "No changes to commit" && exit 0
         git commit -m "Auto-update FDA news database, widgets, and SEO pages"
