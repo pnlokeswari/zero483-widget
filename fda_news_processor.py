@@ -1503,14 +1503,14 @@ def generate_seo_pages(db: dict) -> None:
       display: block;
       margin-bottom: 12px;
     }}
-    .share-container {
+    .share-container {{
       display: flex;
       gap: 12px;
       margin: 30px 0;
       align-items: center;
       flex-wrap: wrap;
-    }
-    .share-btn {
+    }}
+    .share-btn {{
       padding: 8px 16px;
       border-radius: 20px;
       font-size: 0.9rem;
@@ -1521,28 +1521,28 @@ def generate_seo_pages(db: dict) -> None:
       display: inline-flex;
       align-items: center;
       gap: 8px;
-    }
-    .share-btn.linkedin { background: #0a66c2; }
-    .share-btn.linkedin:hover { background: #004182; color: #fff; text-decoration: none; }
-    .share-btn.twitter { background: #000000; }
-    .share-btn.twitter:hover { background: #333333; color: #fff; text-decoration: none; }
-    .share-btn.email { background: #64748b; }
-    .share-btn.email:hover { background: #475569; color: #fff; text-decoration: none; }
-    .subscribe-box {
+    }}
+    .share-btn.linkedin {{ background: #0a66c2; }}
+    .share-btn.linkedin:hover {{ background: #004182; color: #fff; text-decoration: none; }}
+    .share-btn.twitter {{ background: #000000; }}
+    .share-btn.twitter:hover {{ background: #333333; color: #fff; text-decoration: none; }}
+    .share-btn.email {{ background: #64748b; }}
+    .share-btn.email:hover {{ background: #475569; color: #fff; text-decoration: none; }}
+    .subscribe-box {{
       background: #f0f9ff;
       border: 1px solid #bae6fd;
       padding: 30px;
       border-radius: 12px;
       text-align: center;
       margin-top: 50px;
-    }
-    .subscribe-box h3 {
+    }}
+    .subscribe-box h3 {{
       font-family: 'Merriweather', serif;
       margin-top: 0;
       color: #0369a1;
       margin-bottom: 12px;
-    }
-    .subscribe-input {
+    }}
+    .subscribe-input {{
       padding: 12px 16px;
       border: 1px solid #cbd5e1;
       border-radius: 8px;
@@ -1550,8 +1550,8 @@ def generate_seo_pages(db: dict) -> None:
       max-width: 300px;
       font-size: 1rem;
       margin-bottom: 10px;
-    }
-    .subscribe-btn {
+    }}
+    .subscribe-btn {{
       padding: 12px 24px;
       background: #0284c7;
       color: white;
@@ -1561,10 +1561,10 @@ def generate_seo_pages(db: dict) -> None:
       font-weight: 600;
       cursor: pointer;
       transition: background 0.2s;
-    }
-    .subscribe-btn:hover {
+    }}
+    .subscribe-btn:hover {{
       background: #0369a1;
-    }
+    }}
     .footer {{
       margin-top: 50px;
       border-top: 1px solid #e2e8f0;
