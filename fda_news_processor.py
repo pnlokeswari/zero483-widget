@@ -197,21 +197,21 @@ def ai_analyze(client, title: str, raw_text: str, length_mode: str = "long", ret
 
     if length_mode == "long":
         word_count_guideline = """
-Write a highly-detailed, comprehensive, SEO-optimized blog post (approx 800-1000 words total) deeply analysing this regulatory update.
+Write a highly-detailed, comprehensive, SEO-optimized blog post (approx 1000 words total) deeply analysing this regulatory update.
 Follow these specific section guidelines:
-- "summary": A comprehensive 3-4 paragraph explanation of what happened, written in a clear, detailed, storytelling style. (Aim for 350-400 words)
-- "industry_context": A detailed 2-3 paragraph section explaining the background, product history, therapeutic relevance, and wider implications. (Aim for 300 words)
+- "summary": A comprehensive 4-5 paragraph explanation of what happened, written in a clear, detailed, storytelling style. (Aim for 400-450 words). The very first paragraph MUST start by explicitly declaring this as a **Featured Article** on Zero483.
+- "industry_context": A detailed 3-4 paragraph section explaining the background, product history, therapeutic relevance, and wider implications. (Aim for 300 words)
 - "compliance_impact": 4-5 detailed bullet points describing the key implications for stakeholders, patients, consumers, or the market. (Aim for 150-200 words)
 - "key_actions": 3-5 detailed bullet points describing recommended next steps, advice, or takeaways for the readers. (Aim for 100-150 words)
 """
     else:
         word_count_guideline = """
-Write a concise, high-impact, SEO-optimized article (approx 250-300 words total) summarizing this regulatory update.
+Write a very concise, high-impact, SEO-optimized article (approx 100 words total) briefly summarizing this regulatory update.
 Follow these specific section guidelines:
-- "summary": A brief 1-2 paragraph explanation of what happened. (Aim for 100-120 words)
-- "industry_context": A concise paragraph explaining the background and immediate context. (Aim for 80 words)
-- "compliance_impact": 2-3 clear, short bullet points outlining the key implications. (Aim for 50-60 words)
-- "key_actions": 2-3 short bullet points listing practical next steps. (Aim for 30-40 words)
+- "summary": A brief 1-paragraph explanation of what happened. (Aim for 40-50 words)
+- "industry_context": A short sentence explaining the immediate context. (Aim for 20-30 words)
+- "compliance_impact": 1-2 very short bullet points. (Aim for 15-20 words)
+- "key_actions": 1-2 very short bullet points. (Aim for 10-20 words)
 """
 
     prompt = f"""You are a professional medical journalist, regulatory affairs analyst, and expert SEO Content Writer.
