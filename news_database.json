@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-13T01:26:12.611858+00:00",
+  "last_updated": "2026-07-13T05:20:13.729164+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "679565bcd068",
+      "title": "HLB Determined to Retry Liver Cancer Drug Approval: \"Multiple Cases of FDA Approval After Three CRLs\" - 아시아경제",
+      "slug": "hlb-determined-to-retry-liver-cancer-drug-approval-multiple-cases-of-fda-approval-after-three-crls",
+      "date": "2026-07-12",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: HLB Determined to Retry Liver Cancer Drug Approval: \"Multiple Cases of FDA Approval After Three CRLs\" - 아시아경제\nSource: Google News\nDate: Sun, 12 Jul 2026 23:57:26 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "HLB Determined to Retry Liver Cancer Drug Approval: \"Multiple Cases of FDA Approval After Three CRLs\" - 아시아경제",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBrTTgxdkVjRmlGemlhNXV3d0Y4cmdiT2xpSFpJaEFMd3k0cjlNckhhaFVPeU9rblRYSk9oVDJzMGxWdUxPVzFROEp4M2lacmd5Ni11bmNjcU5ERnRod1djVkJKUWFlVWF6WlJscl9oTFE1NTZrbXkxTVY2QQ?oc=5",
+      "fetched_at": "2026-07-13T05:14:09.876170+00:00",
+      "is_long_form": false
+    },
     {
       "id": "efb0506b9211",
       "title": "WuXi Biologics earns FDA approval for China drug substance facility - megaproject.com",
@@ -883,24 +901,6 @@
       "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMEZKVkZaR0xXRXl1cHVvaEVRaUtyRmFiQTNLeDNrN1VfTzFVOHdZN25IWDFOcklab3pnYnNqLUlkMEgyR2tQa1JxTi04TjFYQnMxZjRzbzkwUzJDQ1BVdjhYeWx3UXExUGljOERsQkR5TTl3c2FGdkpOZHFST3RQdWhYRThfTHY1a3Z0YXZVckU5VlMxQkhGRDlHS3lkbDcxSXpybUtBTk5naHFVQjhyVEFiakZDMlc5YXhJRkltaE1FdWs?oc=5",
       "fetched_at": "2026-07-04T07:10:37.595288+00:00",
       "is_long_form": true
-    },
-    {
-      "id": "f62358ccd993",
-      "title": "A former AI regulator, now in industry, says biopharma is reading FDA’s guidance wrong - STAT",
-      "slug": "a-former-ai-regulator-now-in-industry-says-biopharma-is-reading-fda-s-guidance-wrong-stat",
-      "date": "2026-07-02",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: A former AI regulator, now in industry, says biopharma is reading FDA’s guidance wrong - STAT\nSource: Google News\nDate: Thu, 02 Jul 2026 08:33:05 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "A former AI regulator, now in industry, says biopharma is reading FDA’s guidance wrong - STAT",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOS3hjWTZkN2xOa0FfNVhzNEctdGlFUVZodnJBd1gteTBUN2ozeUZMSjNwNVNlaWtUb3RpS01aZl9oR05rcUhNVC1ySFdjUFNSSHE3RDJOdVc3UHN2eHhMemVvS2h1SlNuMUlDN3pkblRfRkRhNDJCVmYyUGxjUW1EQVhXVkxkUGQ3QXY2cXdURW9ieTRDNFVGVzF2Y2JNU1Fx?oc=5",
-      "fetched_at": "2026-07-04T07:12:10.753766+00:00",
-      "is_long_form": false
     }
   ]
 }
