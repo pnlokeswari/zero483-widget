@@ -5,6 +5,8 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-takes-first-step-toward-de-facto-ad-ban-what-to-know-prweek.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/psychedelics-fda-offers-clarifications-compromises-in-final-clinical-trial-guidance-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/apo-tiotropium-capsules-out-of-specification-particle-size.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/oribe-serene-scalp-densifying-shampoo-presence-of-bacterial-contamination.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-directs-inclusion-of-fixed-drug-eruption-warning-in-metronidazole-prescribing-information-medical-dialogues.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -53,11 +55,9 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/octapharma-usa-announces-expanded-fda-approval-of-wilate-for-von-willebrand-disease-prophylaxis-in-children-younger-tha.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-seeks-tougher-curbs-on-similar-sounding-drug-brand-names-to-reduce-prescription-errors-boldnewsonline-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/vera-therapeutics-first-in-class-kidney-disease-drug-lands-speedy-fda-approval-medcity-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-asks-pharma-firms-to-update-vancomycin-labels-with-dress-syndrome-adr-medical-dialogues.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/pharmalittle-we-re-reading-about-a-vera-kidney-drug-approval-a-u-k-enhertu-pricing-deal-and-more-stat.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/companies.html</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/wuxi-biologics.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/lupin.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/tolerogenixx.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/wuxi-biologics.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/immunitybio.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
