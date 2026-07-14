@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-13T23:53:13.031666+00:00",
+  "last_updated": "2026-07-14T01:21:32.292398+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "48c7774f4644",
+      "title": "Ireland's drug approval system needs major overhaul - Irish Examiner",
+      "slug": "ireland-s-drug-approval-system-needs-major-overhaul-irish-examiner",
+      "date": "2026-07-14",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: Ireland's drug approval system needs major overhaul - Irish Examiner\nSource: Google News\nDate: Tue, 14 Jul 2026 00:00:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Ireland's drug approval system needs major overhaul - Irish Examiner",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0zRFJYWHB0WjZmbmRGdElHSG4zbFZUcEg3amgxT0tDN1otNnRKNXVqUHdLUWdtazdIVFJsQlMwTW9SNnN5eXRiUVlPQUdoUl95V3RXdUZFX2F2bEdHaThSTDZSOUl0T1dNalZmZy0ycG51bV84UDZaa1c4T2g?oc=5",
+      "fetched_at": "2026-07-14T01:16:09.260237+00:00",
+      "is_long_form": false
+    },
     {
       "id": "803244d15f84",
       "title": "FDA takes first step toward ‘de facto’ ad ban: What to know - PRWeek",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOM3Zvb0tNdXR1RDB5dExDS0laaEhWaFhCZy1sQjdmYkQ5MHVqSmJiSDRSOGxRVEx3VjI4RWZRSjBHaXdVaHg3Rm03SVBmck82WUEyTU1lSkw5bnJHS3E0dUlGdEowQmdhZnZjRk9zazBQa0FJQXJpckJUMTVrckRYN1BfNTlPVkJVeWlDOWhVQVRzWExNbnJraS11Z29JQldqejZnZFNUc0x1M1VTSXJXZ0g2dHVVdnpPMy1UYzR6ellVZ9IBwgFBVV95cUxOM3Zvb0tNdXR1RDB5dExDS0laaEhWaFhCZy1sQjdmYkQ5MHVqSmJiSDRSOGxRVEx3VjI4RWZRSjBHaXdVaHg3Rm03SVBmck82WUEyTU1lSkw5bnJHS3E0dUlGdEowQmdhZnZjRk9zazBQa0FJQXJpckJUMTVrckRYN1BfNTlPVkJVeWlDOWhVQVRzWExNbnJraS11Z29JQldqejZnZFNUc0x1M1VTSXJXZ0g2dHVVdnpPMy1UYzR6ellVZw?oc=5",
       "fetched_at": "2026-07-10T20:33:10.115301+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "9982f5ce4da5",
-      "title": "Vera Therapeutics’ First-in-Class Kidney Disease Drug Lands Speedy FDA Approval - MedCity News",
-      "slug": "vera-therapeutics-first-in-class-kidney-disease-drug-lands-speedy-fda-approval-medcity-news",
-      "date": "2026-07-08",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Vera Therapeutics’ First-in-Class Kidney Disease Drug Lands Speedy FDA Approval - MedCity News\nSource: Google News\nDate: Wed, 08 Jul 2026 22:57:44 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Vera Therapeutics’ First-in-Class Kidney Disease Drug Lands Speedy FDA Approval - MedCity News",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZlhMeU9jWHd6U3lIXzNpY2M2WDBkMnhyZTBOLVBqR0c5VHljNUR3VklGN3FJWnhoOXpuLUhfdG5zOEJBcVVOZDdjUlFXZkJIOUFOQVJkQURPY1FVcXVOT3B3elZIbnlSa0dLdEhCT1ZQaERlODc0T19aS2QzSTFnaDBsV3RQTC13NDdRUG9JUzBQYWNWcGhLMnA2dnRZVFJ4MS1Vdm9rUnJrWXpyb0c4RS05NVE?oc=5",
-      "fetched_at": "2026-07-10T20:25:09.338679+00:00",
       "is_long_form": false
     }
   ]
