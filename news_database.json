@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-17T22:06:09.924197+00:00",
+  "last_updated": "2026-07-17T23:07:09.828355+00:00",
   "total_items": 50,
   "items": [
     {
@@ -252,6 +252,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNW1vN0lZVFptQ1Z4alRUMGZOZ0JZdlU5WlRWbFJXUmtIOS1DajFhVzc0czI2alNCVm1NMlAtTXBxVHFSVEhPVmFEWGQyLVZCamJlcEF3dTF2WWpHMVhPejRXa29YREk2NE40QXVfTkJqNjQ2bi0yTFF1TXlyd00wMmstR195eW9kSXdidUZTN1RDSWlYUklPYll6MnRYellkY1BObWsyNU9xQkFwUU03N09QZC1zdDZCNWkxaDZPTVhmQUtvc2xTTXB1TTVkTXJUdGfSAdcBQVVfeXFMTUxoUFhJRDdBbThKblNkU0lvZGNvSnhiazFkbE9YaWl6NU9LWWpUZWZCSmFNdXc2clVkdEZYRmpkU2l0MG8wcDJMOGlSYU5NUjNReGVwU3ktekwxcUptZTZFOV9hZXUxRjE0LWZ2Z3VUVHdicnVVQXVrdG9SNDNKeVdCSzkyazFIUzhndnl3WDM4anA1c0ZDNWl4eG41cXRkUVY3U0ZOU3lDQjhNYnB0VDd6NGQ0U3hReDlpWGhZZU1URjFvUDdraV9LUFJGR21jRG9JcDl6ejA?oc=5",
       "fetched_at": "2026-07-17T09:39:09.487814+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "e030db275ab8",
+      "title": "FDA’s first AI-focused cGMP warning letter signals new scrutiny for manufacturers - BioSpace",
+      "slug": "fda-s-first-ai-focused-cgmp-warning-letter-signals-new-scrutiny-for-manufacturers-biospace",
+      "date": "2026-07-16",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "<p>Title: FDA’s first AI-focused cGMP warning letter signals new scrutiny for manufacturers - BioSpace\nSource: Google News\nDate: Thu, 16 Jul 2026 14:12:34 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "FDA’s first AI-focused cGMP warning letter signals new scrutiny for manufacturers - BioSpace",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOT3Q1N3lqNDJNck5nR0gtRzZLUkU1RTd1S0hXd2dOYzBJczJCNjFPN1J3MVJtblIwRXRSQmgySHEzUGl6U2VhWE9XT25QLXNlZDc1cnpuRFZSQ3RSNE9oRjJVaXduckh5QVR4VHQ3N0psYmZHeWs5R2QwTTFMWjkxVkJZRlpXNjB3MzhuZXFaTzNDY1BnalhuVnVVTnlIMkNhUHRzTlhUU2NXQXIyUXNvQ3Nn?oc=5",
+      "fetched_at": "2026-07-17T22:55:09.719626+00:00",
       "is_long_form": false
     },
     {
@@ -845,7 +863,7 @@
       "seo_description": "",
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOaC11SFpCY1F6ZkFkbGU4c205MWMtUHk1WFRUWXhheGNBeXJsZU1LbVVMR1E4V2g4R0duU0VfdWZLYVRvMjlrSGV0d2NScXhXQWFsM2N6YU42NVpSOElyaWViMTFVcm43YlRtaUNzcDRab0oyVFFwaVJSSURxSDBSRUdLWHVNYUxBY1MwaXJRQUVEVzE2UFRmZzQzcEZsbHpPbVRxSTFQTzRoVURjOVdaRDQ4eVRWQ1duOVQyWEhtUjNjejVsVUhMQXlKbEIybE4xM3d3MHJZX0pHNDRNVzBHUGs2SnFEOEYtYnlLYXluUEZRenJQY3hGVUVwaHplUDduODhJ?oc=5",
-      "fetched_at": "2026-07-17T22:06:09.910311+00:00",
+      "fetched_at": "2026-07-17T23:07:09.810844+00:00",
       "is_long_form": false
     },
     {
@@ -863,7 +881,7 @@
       "seo_description": "",
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOT2ZtTERXX3dQT0wzbjNxVzZZU1hnZW1peTZOY3VDOEJQT196QzVOZkhjckQ3TElvblptNEs5TVd3WW13V2xWSUowdm1pLUxOUHJ2VVotbTNnV1BGcmsyZVBBN0NhT3l1N011aEY3R2JKazZOTmxTQ1ZDd05iZlpMZ1h0WUVacFRMNGdWWUJrM0ptUFRqQWF3SVQ3Rl9uNjk3MDI5YTBWSTF3Y0FOb2tnbU5TbjBDMXp6MEFTUUpqSUk1M2lwWGRKclJEdzU?oc=5",
-      "fetched_at": "2026-07-17T22:04:09.321071+00:00",
+      "fetched_at": "2026-07-17T23:05:09.332049+00:00",
       "is_long_form": false
     },
     {
@@ -881,25 +899,7 @@
       "seo_description": "",
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObHdfSTBDQUNzeU8xVUtMQ2hnc2xLc1p3bXBrRmM2U0c4dUh2Zy1TTUpac2I5MmxnV2FHc3NfVFpCWVdNaXhKaVhmZk96b0Vjc21zbl93NFIyY3g2NEJXRXptNWVnU3hiX0FXVzlYWFc2SWY4djlRZC00QVVReUlwcjR0dG13MFFEeWVLRC1BZVdWdnFYVDhFWFphbG5ycnlVVmhrVnFUTjB3dw?oc=5",
-      "fetched_at": "2026-07-17T22:02:09.909431+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "cef0957dd185",
-      "title": "FDA Schedules Psychedelics Hearing, Amid New Push for Medical Approval - Filter",
-      "slug": "fda-schedules-psychedelics-hearing-amid-new-push-for-medical-approval-filter",
-      "date": "2026-07-15",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: FDA Schedules Psychedelics Hearing, Amid New Push for Medical Approval - Filter\nSource: Google News\nDate: Wed, 15 Jul 2026 17:06:08 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "FDA Schedules Psychedelics Hearing, Amid New Push for Medical Approval - Filter",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNeDNOZm9Zbmpadm4zU0ZoOUNyMURfbTFUZS1yclFUX3U5U3YzRXF6LUR6NmJ3RGExRU1BWWczV2E4ZE9sb0Z2YmdFdmhlbjFZUmNxVTF2bXB3VWR1cW9Fd2UyZG9EYlRacW1LeEtIeVBmVy05d3d5UW4wS0tqelc5bnpEWDViU2VSZGJqaHJRcGd6bVdhVERr?oc=5",
-      "fetched_at": "2026-07-17T22:00:09.640528+00:00",
+      "fetched_at": "2026-07-17T23:03:09.754295+00:00",
       "is_long_form": false
     }
   ]
