@@ -5,6 +5,7 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-remifentanil-hydrochloride-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/biocon-malaysia-gets-ema-approval-to-supply-semglee-insulin-to-europe-medical-dialogues.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/merck-mrk-wins-fda-approval-for-first-once-daily-oral-pcsk9-drug-simplywall-st.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-issues-recall-notice-for-pillsbury-bread-rolls-the-presidential-prayer-team.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -27,6 +28,8 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/merck-wins-fda-approval-for-oral-ldl-cholesterol-drug-njbiz.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/amneal-expands-iohexol-injection-portfolio-with-u-s-fda-approval-of-additional-strengths-and-presentations-yahoo-fina.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/novo-s-weight-loss-drug-wegovy-gets-cdsco-approval-for-fatty-liver-disease-india-news-hindustan-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/astrazeneca-pharma-receives-cdsco-approval-to-import-and-sell-benralizumab-for-hes-patients-aged-12-sahi.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/biocon-says-biocon-malaysia-receives-ema-approval-for-new-drug-product-fill-finish-unit-for-insulins-tradingview.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-approval-enlicitide-merck-sharp-and-dohme-llc.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-s-first-ai-focused-cgmp-warning-letter-signals-new-scrutiny-for-manufacturers-biospace.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-cromolyn-sodium-concentrate.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -52,12 +55,9 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/merck-co-s-cholesterol-cutting-drug-lipfendra-wins-fda-approval-the-pharma-letter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/a-breast-cancer-trial-can-now-enroll-patients-who-waited-up-to-a-year-stock-titan.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-earns-fda-approval-for-treating-new-world-screwworm-in-horses-morning-ag-clips.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/merck-s-cholesterol-pill-gets-us-fda-approval-reuters.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/astrazeneca-pharma-receives-cdsco-approval-to-import-and-sell-benralizumab-for-hes-patients-aged-12-sahi.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/biocon-says-biocon-malaysia-receives-ema-approval-for-new-drug-product-fill-finish-unit-for-insulins-tradingview.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/companies.html</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/merck-sharp-and-dohme-llc.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/general-mills.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/amneal-pharmaceuticals-inc.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/merck.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/general-mills.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
