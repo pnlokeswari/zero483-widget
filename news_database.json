@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-18T01:39:09.271014+00:00",
+  "last_updated": "2026-07-18T05:02:09.788853+00:00",
   "total_items": 50,
   "items": [
     {
@@ -270,6 +270,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNW1vN0lZVFptQ1Z4alRUMGZOZ0JZdlU5WlRWbFJXUmtIOS1DajFhVzc0czI2alNCVm1NMlAtTXBxVHFSVEhPVmFEWGQyLVZCamJlcEF3dTF2WWpHMVhPejRXa29YREk2NE40QXVfTkJqNjQ2bi0yTFF1TXlyd00wMmstR195eW9kSXdidUZTN1RDSWlYUklPYll6MnRYellkY1BObWsyNU9xQkFwUU03N09QZC1zdDZCNWkxaDZPTVhmQUtvc2xTTXB1TTVkTXJUdGfSAdcBQVVfeXFMTUxoUFhJRDdBbThKblNkU0lvZGNvSnhiazFkbE9YaWl6NU9LWWpUZWZCSmFNdXc2clVkdEZYRmpkU2l0MG8wcDJMOGlSYU5NUjNReGVwU3ktekwxcUptZTZFOV9hZXUxRjE0LWZ2Z3VUVHdicnVVQXVrdG9SNDNKeVdCSzkyazFIUzhndnl3WDM4anA1c0ZDNWl4eG41cXRkUVY3U0ZOU3lDQjhNYnB0VDd6NGQ0U3hReDlpWGhZZU1URjFvUDdraV9LUFJGR21jRG9JcDl6ejA?oc=5",
       "fetched_at": "2026-07-17T09:39:09.487814+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "60aa09d1f925",
+      "title": "Drug Approval: ENLICITIDE - MERCK SHARP AND DOHME LLC",
+      "slug": "drug-approval-enlicitide-merck-sharp-and-dohme-llc",
+      "date": "2026-07-16",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Merck Sharp and Dohme LLC's novel drug, Enlicitide, has received anticipated U.S. FDA approval for its original application, with an official status date set for July 16, 2026. This pivotal moment signals a significant step forward for a potential new therapeutic option, particularly in addressing prevalent metabolic health conditions.</p>",
+      "compliance_impact": "<ul><li>Solidifies Merck's pathway for future market entry.</li><li>Requires robust pre-launch planning and operational readiness.</li></ul>",
+      "key_actions": "<ul><li>Companies should finalize commercialization strategies.</li><li>Healthcare professionals can monitor for official launch announcements.</li></ul>",
+      "industry_context": "<p>This anticipated green light underscores the pharmaceutical industry's persistent dedication to innovation, driving the development of novel treatments for widespread global health challenges, including metabolic disorders.</p>",
+      "seo_title": "Anticipated FDA Approval: Merck's Enlicitide for Metabolic Health Nears Launch",
+      "seo_description": "Merck's novel drug, Enlicitide, is on track for FDA approval, signaling a major advance for new metabolic health treatments. Learn what this means.",
+      "primary_company_name": "MERCK SHARP AND DOHME LLC",
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220848",
+      "fetched_at": "2026-07-18T04:36:27.443496+00:00",
       "is_long_form": false
     },
     {
@@ -881,25 +899,7 @@
       "seo_description": "",
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOaC11SFpCY1F6ZkFkbGU4c205MWMtUHk1WFRUWXhheGNBeXJsZU1LbVVMR1E4V2g4R0duU0VfdWZLYVRvMjlrSGV0d2NScXhXQWFsM2N6YU42NVpSOElyaWViMTFVcm43YlRtaUNzcDRab0oyVFFwaVJSSURxSDBSRUdLWHVNYUxBY1MwaXJRQUVEVzE2UFRmZzQzcEZsbHpPbVRxSTFQTzRoVURjOVdaRDQ4eVRWQ1duOVQyWEhtUjNjejVsVUhMQXlKbEIybE4xM3d3MHJZX0pHNDRNVzBHUGs2SnFEOEYtYnlLYXluUEZRenJQY3hGVUVwaHplUDduODhJ?oc=5",
-      "fetched_at": "2026-07-18T01:39:09.253563+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "bb150a1d6ec4",
-      "title": "India approves world's first synthetic CBD oral solution for anxiety treatment - Deccan Herald",
-      "slug": "india-approves-world-s-first-synthetic-cbd-oral-solution-for-anxiety-treatment-deccan-herald",
-      "date": "2026-07-15",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: India approves world's first synthetic CBD oral solution for anxiety treatment - Deccan Herald\nSource: CDSCO India\nDate: Wed, 15 Jul 2026 09:19:15 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "India approves world's first synthetic CBD oral solution for anxiety treatment - Deccan Herald",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOT2ZtTERXX3dQT0wzbjNxVzZZU1hnZW1peTZOY3VDOEJQT196QzVOZkhjckQ3TElvblptNEs5TVd3WW13V2xWSUowdm1pLUxOUHJ2VVotbTNnV1BGcmsyZVBBN0NhT3l1N011aEY3R2JKazZOTmxTQ1ZDd05iZlpMZ1h0WUVacFRMNGdWWUJrM0ptUFRqQWF3SVQ3Rl9uNjk3MDI5YTBWSTF3Y0FOb2tnbU5TbjBDMXp6MEFTUUpqSUk1M2lwWGRKclJEdzU?oc=5",
-      "fetched_at": "2026-07-18T01:37:09.741203+00:00",
+      "fetched_at": "2026-07-18T05:02:09.788782+00:00",
       "is_long_form": false
     }
   ]
