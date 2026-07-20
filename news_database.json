@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-20T22:58:13.704909+00:00",
+  "last_updated": "2026-07-20T23:58:12.511730+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "70b3ed1103bc",
+      "title": "FDA Updates Nationwide Blood Pressure Drug Recall - Yahoo News Singapore",
+      "slug": "fda-updates-nationwide-blood-pressure-drug-recall-yahoo-news-singapore",
+      "date": "2026-07-20",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: FDA Updates Nationwide Blood Pressure Drug Recall - Yahoo News Singapore\nSource: Google News\nDate: Mon, 20 Jul 2026 20:32:15 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "FDA Updates Nationwide Blood Pressure Drug Recall - Yahoo News Singapore",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMlFMd1M1dTFha2N6bTFKUUFXV3BkZ0pCM3hCbHhWQUZKNjljUzBaT1hjYlJ6S2JGSEROaXROcWNpUXh0MUVRRElNOFhuY0p1UmpqM1FaMWU0MWVYeUFISWt5SDVzNzlDNjFHWkZzQ1NXUFdfNlhpOTdSYmZtQWxId0VSaG8?oc=5",
+      "fetched_at": "2026-07-20T23:46:09.282205+00:00",
+      "is_long_form": false
+    },
     {
       "id": "d89bae887782",
       "title": "FDA Grants Tentative Approval to Generic Olaparib Tablets - Oncology Nursing News",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPYjh3eThfMWxMTlhVSFhEQkF5dGt4bUhFTWJESmpQX2dYTVFUc2tRb2pUQjN3TVlkVnZGcVJSRll6SVRWYUo2QlZZZ3VtNGo0R3g2cDdrNVpBQ1BCUWFyU0FxbzBUcGlsT2NBTEYtb3dmdE9JZExJUmVPNXpLbHFIUTR0emNQVHowdnhyYkxPUE1HN1VBUTZCN19HSVNIMlZJd1RaTllMWXk2Y1JveG1sQ1F4RnNQaWNsdkF4ZVpwWDVSbHJJUWpSVkVWWUxKRm1KRUh3WjMzdDNuZjl2TC1mMUJfS0U0aDRRbkd3eXdJTG9JendVV1VQVzZ4R0tPOXpLM0RhNDdWY0hsZ2YxcUg5RQ?oc=5",
       "fetched_at": "2026-07-16T20:43:10.004483+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "b5526fa12eb6",
-      "title": "V-Loc™ 90 and 180 Suture Products ",
-      "slug": "v-loc-90-and-180-suture-products",
-      "date": "2026-07-16",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Health Canada recently issued an update concerning V-Loc™ 90 and 180 Suture Products. These absorbable barbed sutures, widely used in various surgical procedures to approximate tissue without knot tying, are facing renewed regulatory scrutiny. This alert underscores the critical importance of medical device safety and robust oversight to protect patients and ensure product integrity.</p>",
-      "compliance_impact": "<ul><li>Increased regulatory focus on the safety and performance of surgical sutures.</li><li>Potential for similar actions by other global health authorities, impacting market access.</li></ul>",
-      "key_actions": "<ul><li>Manufacturers must review quality systems for their suture product lines.</li><li>Healthcare providers should monitor for updated guidance on medical device use.</li></ul>",
-      "industry_context": "<p>This regulatory action by Health Canada serves as a vital reminder for medical device manufacturers worldwide, including those regulated by the FDA, about continuous post-market surveillance and stringent quality control for surgical instruments.</p>",
-      "seo_title": "Surgical Suture Safety Alert: V-Loc™ 90 & 180 Products Under Regulatory Scrutiny",
-      "seo_description": "Health Canada issued an update regarding V-Loc™ 90 and 180 sutures, highlighting potential regulatory concerns for these barbed surgical products. Understand the impact on patient safety and medical device compliance.",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/v-loctm-90-and-180-suture-products",
-      "fetched_at": "2026-07-16T20:04:18.906900+00:00",
       "is_long_form": false
     }
   ]
