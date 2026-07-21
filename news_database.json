@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-21T10:53:48.423193+00:00",
+  "last_updated": "2026-07-21T13:10:10.191553+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "cd6475936428",
+      "title": "AstraZeneca launches Breztri in USA asthma after FDA approval - The Pharma Letter",
+      "slug": "astrazeneca-launches-breztri-in-usa-asthma-after-fda-approval-the-pharma-letter",
+      "date": "2026-07-21",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>AstraZeneca has officially launched Breztri Aerosphere in the USA for adult asthma patients, following recent FDA approval. This introduces a new triple-therapy inhaler (budesonide, glycopyrronium, formoterol fumarate), offering a crucial new option for moderate to severe asthma.</p>",
+      "compliance_impact": "<ul><li>Expands FDA-approved asthma treatments.</li><li>Enhances patient access to a new therapeutic option.</li></ul>",
+      "key_actions": "<ul><li>Patients should consult doctors about Breztri suitability.</li><li>Healthcare providers should review updated prescribing information.</li></ul>",
+      "industry_context": "<p>Previously for COPD, Breztri's asthma market expansion marks a significant advancement in respiratory care, broadening choices for patients and prescribers.</p>",
+      "seo_title": "AstraZeneca Breztri Now Available for Asthma in USA After FDA Approval",
+      "seo_description": "AstraZeneca launches Breztri Aerosphere in the US for asthma following FDA approval. This new triple therapy offers expanded treatment options for patients.",
+      "primary_company_name": "AstraZeneca",
+      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRVFQa2E4aWRXc2ZLVmRwQlVqclJncGlBa1VyUXUzUWRfOUFFcENkRlk3NHMyR1VCS0xZVTRBdlhYQVk2cmJTeGxrdS1yZ2FSZWMwOFRqdl9jZ09CYTEwbDZ4d2IyY2tUT25pSk9qME8yUWo2UmdHcGl4WmZnLWRZTWZyMlpFQmpOajIxSlpnSEpDeGpETEp5bzl2T3cwVjRHUzFudFlhSFU?oc=5",
+      "fetched_at": "2026-07-21T13:07:16.595113+00:00",
+      "is_long_form": false
+    },
     {
       "id": "05a75ebe536e",
       "title": "CDSCO proposes to ban “Same Brand, Different Drug” practice - Express Pharma",
@@ -73,6 +91,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPZTRYRXlFbjJEd0dRMDNZRU1Edm9RbnY5SHp4YTJObk5PMGVoM19CSjBISFhGbWpaTF9IbzZjNzhnZGMtdFJGZThEZUhjQ0xranpTNTR5bUdwTWs3My13Y2ZWZlE0a3RmOHdsOTl1VDB3NVk2ejc1TDk0c2VTak9LaFE5MlAzSkdoQnZUbGd2Y1JoYklLejhLa1I0SzB1YkpDUmZWZFdlOUxPYW16YzF6ZFlZOHhuWmlER2NIZjVuWFgtX1BjY0RmeUdndmd4STZYeUQ4WmJTUWl2Z2VYVENZX2pWYmNLZUl3djAzMXhzRGZLcmpX?oc=5",
       "fetched_at": "2026-07-21T07:59:23.897840+00:00",
       "is_long_form": true
+    },
+    {
+      "id": "4e6f84f851aa",
+      "title": "Scholar Rock says EU opinion on SMA drug may be pushed to later in 2026 - Reuters",
+      "slug": "scholar-rock-says-eu-opinion-on-sma-drug-may-be-pushed-to-later-in-2026-reuters",
+      "date": "2026-07-20",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: Scholar Rock says EU opinion on SMA drug may be pushed to later in 2026 - Reuters\nSource: European Medicines Agency\nDate: Mon, 20 Jul 2026 15:40:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Scholar Rock says EU opinion on SMA drug may be pushed to later in 2026 - Reuters",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOV3M5VHQ5Q0FSNU9FS294SnNncmo3M1ZRY1VGZGxrUVRPUmV1cHFuUGx1aVhlQVlVOXVzaUpJWkFaa25jMVJVLVhJYWIwY2Z3TmRJOFRuYzVpazZiQ2VjOFhuSG1nSVdXRUJyVnlERS1TRFA5WUw3M09UbkQzRmxfRF9FenZsTm9VZWNqTm5kT1BWR3FqX1JYVFBaTGFNOTRrdnNZSllNSXBYcEo0cm1EOWY1Y2tpZw?oc=5",
+      "fetched_at": "2026-07-21T13:10:09.242091+00:00",
+      "is_long_form": false
     },
     {
       "id": "cea3e4a16f30",
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-07-16T23:45:09.880751+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "226d7e6dc1fb",
-      "title": "Drug Shortage: Isocarboxazid Tablet",
-      "slug": "drug-shortage-isocarboxazid-tablet",
-      "date": "2026-07-16",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Generic name: Isocarboxazid Tablet\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Drug Shortage: Isocarboxazid Tablet",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
-      "fetched_at": "2026-07-16T22:46:09.274616+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "bd9086fe1180",
-      "title": "Vanda gets EMA orphan drug designation for imsidolimab in GPP By Investing.com - Investing.com Canada",
-      "slug": "vanda-gets-ema-orphan-drug-designation-for-imsidolimab-in-gpp-by-investing-com-investing-com-canada",
-      "date": "2026-07-16",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: Vanda gets EMA orphan drug designation for imsidolimab in GPP By Investing.com - Investing.com Canada\nSource: European Medicines Agency\nDate: Thu, 16 Jul 2026 20:42:10 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Vanda gets EMA orphan drug designation for imsidolimab in GPP By Investing.com - Investing.com Canada",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOdGZaamt2ZUhLeGFUWkU3b1ZXYVp0bWc4OGRKdnVvcWppNVFwLTlUdGFIdUktOF94U3U3Sy1HWjZqZFZoMWN5UTJtVDVDSk5Gc1hIb1pwSTJ6WVE4YmtzblFldWVUZnppUmtMSUFvQlVqR043VWRWT1lmeFdtUGluOXBtNWlSeTFlUExqamtoczBacTBLZGhzR3c1eGhndnZhdTk2M0dZRUlOZUlOZFlFSnlVQ2tSZVdFR01SbkJaVQ?oc=5",
-      "fetched_at": "2026-07-16T22:11:09.789672+00:00",
       "is_long_form": false
     }
   ]
