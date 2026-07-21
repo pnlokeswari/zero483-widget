@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-21T17:24:12.139793+00:00",
+  "last_updated": "2026-07-21T19:07:11.616118+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "701f83420d99",
+      "title": "Cardinal Health - Presource® Kits Containing the Ritmed® Neurological Sponges",
+      "slug": "cardinal-health-presource-kits-containing-the-ritmed-neurological-sponges",
+      "date": "2026-07-21",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Cardinal Health - Presource® Kits Containing the Ritmed® Neurological Sponges\nSource: Health Canada\nDate: 2026-07-21T12:00:00</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Cardinal Health - Presource® Kits Containing the Ritmed® Neurological Sponges",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/cardinal-health-presourcer-kits-containing-ritmedr-neurological-sponges",
+      "fetched_at": "2026-07-21T19:07:10.098132+00:00",
+      "is_long_form": false
+    },
     {
       "id": "78c16e4db274",
       "title": "FDA Issues Warning Letter Over APAPs - Sleep Review",
@@ -883,24 +901,6 @@
       "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRDVzamV6dGN4TkVOX3VJeTFqZDYyRzFnaU5FMndtNElmaXgzYUJBbGwtQjBvbTNLeGdaVXBrQzVkbnRaS19hUXE3dGs1dFBKLXpOeHpBdHJDMHhTQWRIb1ZHNlA4VEdlcVBtVUdjaEszbzF0dXlNbTNEQTlNTFJTOFBNaG83eFJsdjgzeG5hb1UxWnZOOGc?oc=5",
       "fetched_at": "2026-07-17T12:58:27.052368+00:00",
       "is_long_form": true
-    },
-    {
-      "id": "b53e9e857312",
-      "title": "Novo’s weight-loss drug Wegovy gets CDSCO approval for fatty liver disease | India News - Hindustan Times",
-      "slug": "novo-s-weight-loss-drug-wegovy-gets-cdsco-approval-for-fatty-liver-disease-india-news-hindustan-times",
-      "date": "2026-07-17",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "<p>Title: Novo’s weight-loss drug Wegovy gets CDSCO approval for fatty liver disease | India News - Hindustan Times\nSource: CDSCO India\nDate: Fri, 17 Jul 2026 09:05:30 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Novo’s weight-loss drug Wegovy gets CDSCO approval for fatty liver disease | India News - Hindustan Times",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNW1vN0lZVFptQ1Z4alRUMGZOZ0JZdlU5WlRWbFJXUmtIOS1DajFhVzc0czI2alNCVm1NMlAtTXBxVHFSVEhPVmFEWGQyLVZCamJlcEF3dTF2WWpHMVhPejRXa29YREk2NE40QXVfTkJqNjQ2bi0yTFF1TXlyd00wMmstR195eW9kSXdidUZTN1RDSWlYUklPYll6MnRYellkY1BObWsyNU9xQkFwUU03N09QZC1zdDZCNWkxaDZPTVhmQUtvc2xTTXB1TTVkTXJUdGfSAdcBQVVfeXFMTUxoUFhJRDdBbThKblNkU0lvZGNvSnhiazFkbE9YaWl6NU9LWWpUZWZCSmFNdXc2clVkdEZYRmpkU2l0MG8wcDJMOGlSYU5NUjNReGVwU3ktekwxcUptZTZFOV9hZXUxRjE0LWZ2Z3VUVHdicnVVQXVrdG9SNDNKeVdCSzkyazFIUzhndnl3WDM4anA1c0ZDNWl4eG41cXRkUVY3U0ZOU3lDQjhNYnB0VDd6NGQ0U3hReDlpWGhZZU1URjFvUDdraV9LUFJGR21jRG9JcDl6ejA?oc=5",
-      "fetched_at": "2026-07-17T09:39:09.487814+00:00",
-      "is_long_form": false
     }
   ]
 }
