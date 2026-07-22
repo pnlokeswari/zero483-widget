@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-22T01:18:13.599744+00:00",
+  "last_updated": "2026-07-22T05:06:13.001408+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "d17885694f3a",
+      "title": "Allergy medication recalled over possible drug mix-up that could trigger 'life-threatening' reactions - Fox Business",
+      "slug": "allergy-medication-recalled-over-possible-drug-mix-up-that-could-trigger-life-threatening-reactions-fox-business",
+      "date": "2026-07-22",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Allergy medication recalled over possible drug mix-up that could trigger 'life-threatening' reactions - Fox Business\nSource: Google News\nDate: Wed, 22 Jul 2026 00:57:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Allergy medication recalled over possible drug mix-up that could trigger 'life-threatening' reactions - Fox Business",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQYk9XbWZ4YUZaOFB3dzFhS0NUQWJZVFFEWDJSLWtncFcxYkFURkNmbm1wVmh3RDNSQ1RlRVB3TDl3cjFVZFloN3ZCUjRWNWlvZEpxXzhnY2tHc09rbGczSFQ5XzJDOFBpaElzZ2RCVUVCVWJxNGV6RkxQVndGUHBGX0t1dXFveFRXMzVXakhSdVJ4RmJPMFo1aXVSZ0dQVjNFaTkwYjg4dXZIcEhHM2duOS15aXlwcHhDWWhHWTl30gHDAUFVX3lxTE5INkhhNGRsZ3M4YmFiYkI3aWxrTVEyd3F3dmtFVm5ia3FzZzN0R1drNjNfcGQtNFhoWDZleXFfd3Z0NUVZZDJEYVlwVFlYNE5La19UbGRPekpES0U3SUxub0NjUDNFa292ZFg2ZFhiR08xcUo0Z181d3FDV3ZZdUFvZUVIclQxUXhOZU9GTW9aYnd2ZXlVNWpUWUxUQmlEOG03NnZoZFR3LU5tVFp6WFdqSTlVNTBrNEZtYWtmT3R1WHlfaw?oc=5",
+      "fetched_at": "2026-07-22T04:56:09.510896+00:00",
+      "is_long_form": false
+    },
     {
       "id": "b6ace1ac6423",
       "title": "FDA's action plan for AI in drug development: What scientists need to know - Drug Discovery News",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/4k-uhd-lcd-monitor",
       "fetched_at": "2026-07-17T15:22:09.640589+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "06d4c57683ea",
-      "title": "Novo, Alvotech face continued FDA scrutiny at plants tied to recent FDA rejections - Fierce Pharma",
-      "slug": "novo-alvotech-face-continued-fda-scrutiny-at-plants-tied-to-recent-fda-rejections-fierce-pharma",
-      "date": "2026-07-17",
-      "category": "Form 483",
-      "severity": "High",
-      "summary": "<p>Title: Novo, Alvotech face continued FDA scrutiny at plants tied to recent FDA rejections - Fierce Pharma\nSource: Google News\nDate: Fri, 17 Jul 2026 14:56:06 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Novo, Alvotech face continued FDA scrutiny at plants tied to recent FDA rejections - Fierce Pharma",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVTBrVFFwT2g5YWpZVlJ1SjAzZ05RUjNsQkxYWHEwT0phT0U2RWRmcU15VlpEa2V6dGJtQ0NaeHNfdEF6ck12eUtnc3l0NWNWSGMydzN4MmFTTkJIX0lkUGxxRmhDSlNlMmhIU3BsUHNjZ19DX1RkaXlqNDdzMlhTanliLXhEMENucVNPcklPRXZmY0lKY1dOQjZsMUp1bFlOelZvelVveFg1eE9fQW0wbQ?oc=5",
-      "fetched_at": "2026-07-17T15:18:10.039277+00:00",
       "is_long_form": false
     }
   ]
