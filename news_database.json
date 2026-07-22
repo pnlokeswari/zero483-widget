@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-22T22:18:16.439638+00:00",
+  "last_updated": "2026-07-22T23:04:58.603417+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "e3cab1375a94",
+      "title": "Drug Shortage: Epinephrine Bitartrate, Lidocaine Hydrochloride Injection",
+      "slug": "drug-shortage-epinephrine-bitartrate-lidocaine-hydrochloride-injection",
+      "date": "2026-07-22",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Epinephrine Bitartrate, Lidocaine Hydrochloride Injection\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Epinephrine Bitartrate, Lidocaine Hydrochloride Injection",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-07-22T22:52:09.987802+00:00",
+      "is_long_form": false
+    },
     {
       "id": "7a3d8438ceea",
       "title": "GSK secures first lung cancer approval as FDA clears Jideytro in quick payoff from Nuvalent deal - Fierce Pharma",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOb2hMSm9VR2ZVM0RmUWlrWkdnaEpHRXRtWVBzcm9zdWpzeFZHNmNBRnM0d0J6aWdNQmhpQ29kV2pXblc2REJYT0VXaXd1ckY4MzRmb2JsRVVUVmJTam5kNVVqOU9zYW5vRmEyaHFocHlVWGVrTm55aUlseW81MGhhOFh4UGdrU2xzT3ZSN25PMTNFYl9UeUF5Y3ptSWRDbXI0eldIQl9lTU1tQnZrd3pQSkFaSjhmd2RGYW1xVEVSOENKN3BJd25qQUZqbjFhaHdZb2djeTk1dExlYWxtbzBPYWdHQi1kUU5ZckhIUVlDSGQ3R1hoaFNITkNBZWdlNUtJ0gGGAkFVX3lxTE93QW5UZXRWVHZmVVdKUkd6dXAzdlpkMlExZjlNNWd3UzBXWmdqRjRDbWhDd094ZlBZUXViRkRtZko1Ylp0RGxYckc1NTdOcU1fU0RjWUlXcjA0NlJfd3dqSUVfa1R5NDctM1JhZUd0UmJocnZCY0NOSFRDdUE2b1o2Tm1vc0pIQkJmWXFRbjVUU25fYlFpLWl2R2Y0V3NPVm80U2xXc1VUY0QwUk9LMjRKYTk1dTFpS2k3SDRYclNESTNPejM1QS1YelAzNUl1YWxFOHROSHRvUUZDYVNoc21ibk52Vnc3MUp0S0gwNGpDT0s1VURZR0JLRXc2WW43WHBuUzE5dHc?oc=5",
       "fetched_at": "2026-07-20T13:46:09.567112+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "d0268685e867",
-      "title": "FDA Drug Approval Decisions Expected in August 2026 - Infectious Disease Advisor",
-      "slug": "fda-drug-approval-decisions-expected-in-august-2026-infectious-disease-advisor",
-      "date": "2026-07-20",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: FDA Drug Approval Decisions Expected in August 2026 - Infectious Disease Advisor\nSource: Google News\nDate: Mon, 20 Jul 2026 04:00:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "FDA Drug Approval Decisions Expected in August 2026 - Infectious Disease Advisor",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVGxhMDhZdXRNWld5cm8yQngxT0xiNnd0TXNneXhoYThwV2ZzSXJxckdERW9YRHBuOUVWLW04YzNmbWN4WkhGRTl5b1o5MmlBWDlxLWZ5OWlJdDJYWm9UTndsRWRTWEl6b1BWOGlRMHVWaS1hLTdibHpTVnVPTmFBQXQ4Wkp4dmthQU1taGVKSk9aMlR0YWlNN0U0UFhOYkU?oc=5",
-      "fetched_at": "2026-07-20T13:38:09.349181+00:00",
       "is_long_form": false
     }
   ]
