@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23T00:07:09.952509+00:00",
+  "last_updated": "2026-07-23T01:28:13.798820+00:00",
   "total_items": 50,
   "items": [
     {
@@ -687,6 +687,24 @@
       "is_long_form": true
     },
     {
+      "id": "90a75b1ef75c",
+      "title": "Judge Tosses Vanda’s Fight Against FDA’s Drug Approval Structure - Bloomberg Law News",
+      "slug": "judge-tosses-vanda-s-fight-against-fda-s-drug-approval-structure-bloomberg-law-news",
+      "date": "2026-07-20",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: Judge Tosses Vanda’s Fight Against FDA’s Drug Approval Structure - Bloomberg Law News\nSource: Google News\nDate: Mon, 20 Jul 2026 14:29:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Judge Tosses Vanda’s Fight Against FDA’s Drug Approval Structure - Bloomberg Law News",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNN01maWZJWmVQdFJBWTlwaFFvaG9TWnVCWkM5akNhRU1oNElfNVA1ZmZtYUFKU3RKSGxOU3N1cXh1LTY2RUlSbFdlckJsVnk5UDh6MUlnWUU2OUVVUzdnTlhVcTB6bVIzekxOcUxQQWpNTXkwaWNzWGczUENWUG1HdzhxbUpHUzZGSFBmSmZhZF90dmU4eWVRcXdNVUkzMzhmbWlPblFDQQ?oc=5",
+      "fetched_at": "2026-07-23T01:22:09.793328+00:00",
+      "is_long_form": false
+    },
+    {
       "id": "185ed14d6443",
       "title": "Emcure Pharma gets CDSCO nod to market Poviztra for fatty liver treatment - The Economic Times",
       "slug": "emcure-pharma-gets-cdsco-nod-to-market-poviztra-for-fatty-liver-treatment-the-economic-times",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNkVsUHZxcFhmMGtuYVlDOUQzVjFnTURESFFjcU1IR1ZqcXpDXzBNczBiNWZGeUQtWjlwSTFURTJSXzVmWGU1dlJHZ0t0WUttMW9uN0RNSlJTdXE0RGFxOThjdE92ejBvQkZ4N3MxZmpuOEx0emRFWWtGM0szU0JUb2lGOWlJS2pPdVk3WnlyUkVjQ3pMb1ZMaW14QTJacXRnU195cA?oc=5",
       "fetched_at": "2026-07-20T17:23:10.254182+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "64c6093e0440",
-      "title": "Philips Achieva and Ingenia Systems",
-      "slug": "philips-achieva-and-ingenia-systems",
-      "date": "2026-07-20",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Philips Achieva and Ingenia Systems\nSource: Health Canada\nDate: 2026-07-20T12:00:00</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Philips Achieva and Ingenia Systems",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/philips-achieva-and-ingenia-systems",
-      "fetched_at": "2026-07-20T17:21:09.265281+00:00",
       "is_long_form": false
     }
   ]
