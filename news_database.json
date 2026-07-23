@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23T13:31:09.566699+00:00",
+  "last_updated": "2026-07-23T15:52:10.681330+00:00",
   "total_items": 50,
   "items": [
     {
@@ -543,6 +543,24 @@
       "is_long_form": false
     },
     {
+      "id": "4e6f84f851aa",
+      "title": "Scholar Rock says EU opinion on SMA drug may be pushed to later in 2026 - Reuters",
+      "slug": "scholar-rock-says-eu-opinion-on-sma-drug-may-be-pushed-to-later-in-2026-reuters",
+      "date": "2026-07-21",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: Scholar Rock says EU opinion on SMA drug may be pushed to later in 2026 - Reuters\nSource: European Medicines Agency\nDate: Tue, 21 Jul 2026 14:57:46 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Scholar Rock says EU opinion on SMA drug may be pushed to later in 2026 - Reuters",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOV3M5VHQ5Q0FSNU9FS294SnNncmo3M1ZRY1VGZGxrUVRPUmV1cHFuUGx1aVhlQVlVOXVzaUpJWkFaa25jMVJVLVhJYWIwY2Z3TmRJOFRuYzVpazZiQ2VjOFhuSG1nSVdXRUJyVnlERS1TRFA5WUw3M09UbkQzRmxfRF9FenZsTm9VZWNqTm5kT1BWR3FqX1JYVFBaTGFNOTRrdnNZSllNSXBYcEo0cm1EOWY1Y2tpZw?oc=5",
+      "fetched_at": "2026-07-23T15:52:09.770910+00:00",
+      "is_long_form": false
+    },
+    {
       "id": "20961149ae95",
       "title": "FDA Updates Nationwide Blood Pressure Drug Recall - The Healthy @Reader's Digest",
       "slug": "fda-updates-nationwide-blood-pressure-drug-recall-the-healthy-reader-s-digest",
@@ -867,39 +885,21 @@
       "is_long_form": true
     },
     {
-      "id": "61c7cab31cdd",
-      "title": "Troubling Findings in Study of GLP-1 Compounders - MedPage Today",
-      "slug": "troubling-findings-in-study-of-glp-1-compounders-medpage-today",
+      "id": "d89bae887782",
+      "title": "FDA Grants Tentative Approval to Generic Olaparib Tablets - Oncology Nursing News",
+      "slug": "fda-grants-tentative-approval-to-generic-olaparib-tablets-oncology-nursing-news",
       "date": "2026-07-20",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Title: Troubling Findings in Study of GLP-1 Compounders - MedPage Today\nSource: Google News\nDate: Mon, 20 Jul 2026 19:04:29 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Troubling Findings in Study of GLP-1 Compounders - MedPage Today",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5qQV8ySzA4LThjdFdBSmZnTTNBWDdoQVg2MFZFR0ZRenpZcVloUXdzQ2dYSWlYYThRMTlnWUVXV3RGWXpjYmdlbktzX2d1a1NPVWlkNVZlNUhVWVo0UWw0dm1jcnJGZw?oc=5",
-      "fetched_at": "2026-07-23T13:17:10.136318+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "4e6f84f851aa",
-      "title": "Scholar Rock says EU opinion on SMA drug may be pushed to later in 2026 - Reuters",
-      "slug": "scholar-rock-says-eu-opinion-on-sma-drug-may-be-pushed-to-later-in-2026-reuters",
-      "date": "2026-07-20",
-      "category": "Guidance",
+      "category": "Drug Approval",
       "severity": "Low",
-      "summary": "<p>Title: Scholar Rock says EU opinion on SMA drug may be pushed to later in 2026 - Reuters\nSource: European Medicines Agency\nDate: Mon, 20 Jul 2026 15:40:00 GMT</p>",
+      "summary": "<p>Title: FDA Grants Tentative Approval to Generic Olaparib Tablets - Oncology Nursing News\nSource: Google News\nDate: Mon, 20 Jul 2026 16:04:36 GMT</p>",
       "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
       "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
       "industry_context": "",
-      "seo_title": "Scholar Rock says EU opinion on SMA drug may be pushed to later in 2026 - Reuters",
+      "seo_title": "FDA Grants Tentative Approval to Generic Olaparib Tablets - Oncology Nursing News",
       "seo_description": "",
       "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOV3M5VHQ5Q0FSNU9FS294SnNncmo3M1ZRY1VGZGxrUVRPUmV1cHFuUGx1aVhlQVlVOXVzaUpJWkFaa25jMVJVLVhJYWIwY2Z3TmRJOFRuYzVpazZiQ2VjOFhuSG1nSVdXRUJyVnlERS1TRFA5WUw3M09UbkQzRmxfRF9FenZsTm9VZWNqTm5kT1BWR3FqX1JYVFBaTGFNOTRrdnNZSllNSXBYcEo0cm1EOWY1Y2tpZw?oc=5",
-      "fetched_at": "2026-07-23T11:07:09.826151+00:00",
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSFBzcWlrdEFZX0tsbVhqMDViY3pmUDU4UmRqNDY1TUU5bXhEbmtTMV8xS0pBT1BSaV9Pb2hJQUxWZmdHY2RHdVpzTXY2OHhyV29jalRuTFpWY0ZyczEzU0g3RkFlTEo1djJWdU8yaXR1aXllWFJZTEpGWUdPemdLQVYxTktPcHFaTm1LN1UtTDBweWMtNmhsbw?oc=5",
+      "fetched_at": "2026-07-23T15:44:09.267510+00:00",
       "is_long_form": false
     }
   ]
