@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23T05:22:14.091556+00:00",
+  "last_updated": "2026-07-23T08:07:09.184039+00:00",
   "total_items": 50,
   "items": [
     {
@@ -453,6 +453,24 @@
       "is_long_form": false
     },
     {
+      "id": "20961149ae95",
+      "title": "FDA Updates Nationwide Blood Pressure Drug Recall - The Healthy @Reader's Digest",
+      "slug": "fda-updates-nationwide-blood-pressure-drug-recall-the-healthy-reader-s-digest",
+      "date": "2026-07-21",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>The U.S. FDA has issued an updated alert regarding a nationwide recall of specific blood pressure medications. This critical action stems from concerns over potential impurities, often linked to nitrosamines, affecting drugs prescribed for hypertension and heart conditions, underscoring a commitment to public safety.</p>",
+      "compliance_impact": "<ul><li>Increased scrutiny on pharmaceutical manufacturing and ingredient sourcing.</li><li>Potential market adjustments for certain blood pressure drug suppliers.</li></ul>",
+      "key_actions": "<ul><li>Patients should consult their doctor or pharmacist about affected medications.</li><li>Manufacturers must enhance impurity detection and control protocols.</li></ul>",
+      "industry_context": "<p>This update follows previous recalls of \"sartan\" drugs (e.g., valsartan) linked to nitrosamine impurities. It underscores ongoing vigilance in the pharmaceutical supply chain.</p>",
+      "seo_title": "FDA Expands Blood Pressure Drug Recall: Key Updates for Patients",
+      "seo_description": "The FDA has updated its nationwide recall of certain blood pressure medications. Learn what this means for patient safety and drug manufacturing standards.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQeEVCOTRyS1hKWDY4Yk93VTRaSHZiRk5ZRThXVGk4MGFRRmg2RVIyb25ObGNhb1NnNWl4M1hXTmNpT0NKcW14Y29GS2FVNWU1N1BJU2FKWG1OWWppMkhrRktpOTNGVlNJNFpRbUxGZ3B5NDhHLTFVQmQzak5hVGU5WUE0SmJKbFZuR3FQbHJB?oc=5",
+      "fetched_at": "2026-07-23T08:03:52.259882+00:00",
+      "is_long_form": false
+    },
+    {
       "id": "b6ace1ac6423",
       "title": "FDA's action plan for AI in drug development: What scientists need to know - Drug Discovery News",
       "slug": "fda-s-action-plan-for-ai-in-drug-development-what-scientists-need-to-know-drug-discovery-news",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQc0VpbjJYc05OYnRDQmtRQzJ3ZThkdFpaQy1ZRWZXT3luN240X2Y5THNhUEpaTDFMWE50c2dfd0FYTjV6Yl9jRVo2bTVERFI0Y0F6d1JXeHlOaEZOMUVYV21PUmh1SWd4RHoxRkV3S1ZlTVpQNGJUSmVYTG5TRzdQRjI3cmxFeEdna0RVd2R3NUNsSkZHdUcySU5nUDBUdTcyME43TDh4YUlCYkkxOTJlM2RkVmw2MnkyeDRxZVNIemxSSXBkbVkyU0NrNHE5cm1L0gHWAUFVX3lxTE5BeGdvcXFRZUFJTFBqVG5NM19TR1E0NW9UZmk1NkI4Q3pJR1NMcWI2LVpWYTRjSldwcVBJNlpCeEJNOFdHUVR2d1lNSTRVOVhEa2ppLWNtOFZwQTBYU1FCZWNHblZra0RXNWxyM1cyUmVRcGluY1o3amJ0Ni1CTjUwZV9WbkpaZDdIaFZTMllaVWxCLVBjNWNQZ0c2cXVUTHF5RC1OS1NjN1QxQ0RPRGVvZTRYc3dHVFphcDJydnFySTg3VC1KbVNjNDhqckxxSDZDeVdCQ2c?oc=5",
       "fetched_at": "2026-07-21T05:07:09.901946+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "3fc57a8d595e",
-      "title": "New breast cancer drug gedatolisib wins FDA approval, doubling progression-free survival in advanced cases - eciks.org",
-      "slug": "new-breast-cancer-drug-gedatolisib-wins-fda-approval-doubling-progression-free-survival-in-advanced-cases-eciks-org",
-      "date": "2026-07-20",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: New breast cancer drug gedatolisib wins FDA approval, doubling progression-free survival in advanced cases - eciks.org\nSource: Google News\nDate: Mon, 20 Jul 2026 18:36:11 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "New breast cancer drug gedatolisib wins FDA approval, doubling progression-free survival in advanced cases - eciks.org",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE53M3pfMkg1MUFHckNfNnR3RE9JX1c5Y0Y4WmFORjdTVXVxRWJfMTRNR3NYUlNycGpmWndEWjZRcF9ZRVZLNkpxRFlNOUhuU0t2SEo4ZFZuQm9KZEhYYkhXZDRUSmR2ZjN6QkZtTlk2SmQtZXYtQlJj?oc=5",
-      "fetched_at": "2026-07-21T01:18:09.599823+00:00",
       "is_long_form": false
     }
   ]
