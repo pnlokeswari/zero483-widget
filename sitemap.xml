@@ -5,6 +5,11 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/july-2026-ema-chmp-medicines-recommended-for-approval-the-pharma-letter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-side-effects-update-low-blood-sugar-warning-for-xeljanz-rinvoq-and-other-jak-inhibitors-medshadow-foundation.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/sanofi-abandons-eczema-drug-approval-efforts-in-another-blow-to-ox40-class-pharmaceutical-technology.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/1-6-million-eggs-recalled-see-products-affected-states-usa-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-recalls-popular-thyroid-medication-nationwide-prevention.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/meeting-highlights-from-the-committee-for-medicinal-products-for-human-use-chmp-20-23-july-2026-european-medicines-a.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-directs-states-to-intensify-checks-on-unregistered-imported-cosmetics-storyboard18.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/allergy-medication-sold-nationwide-recalled-for-potentially-life-threatening-mix-up-with-wrong-pills-kptv.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -50,11 +55,6 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/allergy-medication-recalled-over-possible-drug-mix-up-that-could-trigger-life-threatening-reactions-fox-business.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/bottles-of-antihistamine-tablets-recalled-see-the-affected-products-usa-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/alembic-site-slapped-with-fda-warning-letter-over-patient-consent-concerns-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-approval-pitolisant-hydrochloride-novitium-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-proposes-to-ban-same-brand-different-drug-practice-express-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/emcure-pharma-up-3-after-cdsco-approves-semaglutide-for-mash-treatment-business-standard.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/scholar-rock-says-eu-opinion-on-sma-drug-may-be-pushed-to-later-in-2026-reuters.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-updates-nationwide-blood-pressure-drug-recall-the-healthy-reader-s-digest.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/companies.html</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/gsk.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
