@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-23T23:49:13.595643+00:00",
+  "last_updated": "2026-07-24T01:22:12.738766+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "a74056f5bde7",
+      "title": "Eli Lilly Cleared Two More Trials For Its Next-Generation Obesity Drug. It Will Seek FDA Approval Next Year - Internatio",
+      "slug": "eli-lilly-cleared-two-more-trials-for-its-next-generation-obesity-drug-it-will-seek-fda-approval-next-year-internatio",
+      "date": "2026-07-23",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: Eli Lilly Cleared Two More Trials For Its Next-Generation Obesity Drug. It Will Seek FDA Approval Next Year - International Business Times\nSource: Google News\nDate: Thu, 23 Jul 2026 23:03:02 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Eli Lilly Cleared Two More Trials For Its Next-Generation Obesity Drug. It Will Seek FDA Approval Next Year - Internatio",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPMFd0UHhkWjAwVmxfdnNwTmhPUEloTF81M1ZqTm0zNkdQNlJXWnV0WTlaQXZoRGFJVkNRTkh0Ym5pbi16ZnJYdXhiRWhxQTRoZWRpWm05VVNGZm41VDdwUjU1QVl4ckU2SXBFaERBcW5zSU9kcTdPYnFuQ0xRRkJfaXVOa0RJMTRGTm9pU1VyUW9OUGhlWFpFdUlYQk9qbGV4Z3E3NFZWSS1yTTJQUFpNeHVZTTMwVnNNZGgtakF1Y1FKaXJnMXhzaQ?oc=5",
+      "fetched_at": "2026-07-24T01:18:10.025722+00:00",
+      "is_long_form": false
+    },
     {
       "id": "1584403248a0",
       "title": "CDSCO Probes Two Suspected Spurious Antibiotic Batches of Cefixime, Amoxycillin-Clavulanate - Medical Dialogues",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-07-21T17:08:09.451773+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "0bcff804242f",
-      "title": "Drug Shortage: Lisdexamfetamine Dimesylate Capsule",
-      "slug": "drug-shortage-lisdexamfetamine-dimesylate-capsule",
-      "date": "2026-07-21",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Generic name: Lisdexamfetamine Dimesylate Capsule\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Drug Shortage: Lisdexamfetamine Dimesylate Capsule",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
-      "fetched_at": "2026-07-21T17:06:09.921157+00:00",
       "is_long_form": false
     }
   ]
