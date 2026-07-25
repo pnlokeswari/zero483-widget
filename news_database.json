@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-25T14:28:13.203808+00:00",
+  "last_updated": "2026-07-25T16:03:12.230607+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "ce7dd1bcedcc",
+      "title": "FDA approval for first-in-class in ADHD drug Simtriyo - The Pharma Letter",
+      "slug": "fda-approval-for-first-in-class-in-adhd-drug-simtriyo-the-pharma-letter",
+      "date": "2026-07-25",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: FDA approval for first-in-class in ADHD drug Simtriyo - The Pharma Letter\nSource: Google News\nDate: Sat, 25 Jul 2026 14:26:15 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "FDA approval for first-in-class in ADHD drug Simtriyo - The Pharma Letter",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcVFSUWc3b1M0RURtbWZnLXIyWGQzcWVHZ09ZQ0NSMzUxZ0hzelpHaHNfeHZodEo4RlY0OEtra181VWltdFNPVDg5XzIxaUVSZlRIR2lreEh0Q0ZJQ2NuSzJ3bTJKaTh3VVFhMHhYNjl1U1ByMEJZcWprWW1uWDg3Z2FqNk53TEdqaWdrd3NHMEhTcDdaaG1vaWhtdzNzUQ?oc=5",
+      "fetched_at": "2026-07-25T15:57:10.134739+00:00",
+      "is_long_form": false
+    },
     {
       "id": "0bcff804242f",
       "title": "Drug Shortage: Lisdexamfetamine Dimesylate Capsule",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/heartsiner-samaritanr-pad-sam-350psam-360psam-500p",
       "fetched_at": "2026-07-22T19:06:09.251564+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "ee3510431613",
-      "title": "Common antihistamine recalled over potentially dangerous contamination - Houston Chronicle",
-      "slug": "common-antihistamine-recalled-over-potentially-dangerous-contamination-houston-chronicle",
-      "date": "2026-07-22",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Common antihistamine recalled over potentially dangerous contamination - Houston Chronicle\nSource: Google News\nDate: Wed, 22 Jul 2026 14:33:46 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Common antihistamine recalled over potentially dangerous contamination - Houston Chronicle",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaHhIUGpXc0FHZ0Nmb3lBYTJ5VHBsaTl1M29aWHQ1ODhqUGZlczd6RzJ2NkhOM0o4UTBIZHZWLWFuOEhEeUlxeWh3dmRVeFdvVnNTcVgzWGRnQURoVWo0Mzk3bW1ST1ZNa2NwQkJfQ0M4NWVjeWJNd2luUEh6cFFsVFpPYm1WMjRUTExCc3lyaHJpNG1VYUZMU2xWOThPaGF0?oc=5",
-      "fetched_at": "2026-07-22T18:52:09.981064+00:00",
       "is_long_form": false
     }
   ]
