@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T23:03:09.889659+00:00",
+  "last_updated": "2026-07-25T00:03:12.121081+00:00",
   "total_items": 50,
   "items": [
     {
@@ -579,6 +579,24 @@
       "is_long_form": false
     },
     {
+      "id": "a9baf9cff28b",
+      "title": "Antihistamine recall across the U.S. triggered by heartburn drug contamination risk, FDA says - CBS News",
+      "slug": "antihistamine-recall-across-the-u-s-triggered-by-heartburn-drug-contamination-risk-fda-says-cbs-news",
+      "date": "2026-07-22",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Antihistamine recall across the U.S. triggered by heartburn drug contamination risk, FDA says - CBS News\nSource: Google News\nDate: Wed, 22 Jul 2026 14:50:40 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Antihistamine recall across the U.S. triggered by heartburn drug contamination risk, FDA says - CBS News",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1FUThVVl9aWXhGMzhSbW1YWHZTMHJhV3JWckFQUWg4T29YWVJHSW5lREhwSkZJWmJJSUdxZHFla0xaNVF4T1NOZUpDbzNpNjk3YllpUncya1o0RHNkRUhJM09MVWE5NllQSTRoLXZnWnoyYThYcWc?oc=5",
+      "fetched_at": "2026-07-24T23:51:09.241419+00:00",
+      "is_long_form": false
+    },
+    {
       "id": "a7a3ed4a1cb6",
       "title": "Intas gets CDSCO nod for breast cancer drug Trastuzumab Emtansine - ETPharma.com",
       "slug": "intas-gets-cdsco-nod-for-breast-cancer-drug-trastuzumab-emtansine-etpharma-com",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/dca-vantager-hba1c-dx-claim",
       "fetched_at": "2026-07-22T15:41:09.479267+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "340134fb1bce",
-      "title": "Cetirizine recall: Antihistamine tablets may be cross-contaminated and 'life-threatening,' says FDA - Fast Company",
-      "slug": "cetirizine-recall-antihistamine-tablets-may-be-cross-contaminated-and-life-threatening-says-fda-fast-company",
-      "date": "2026-07-22",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Cetirizine recall: Antihistamine tablets may be cross-contaminated and 'life-threatening,' says FDA - Fast Company\nSource: Google News\nDate: Wed, 22 Jul 2026 14:30:56 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Cetirizine recall: Antihistamine tablets may be cross-contaminated and 'life-threatening,' says FDA - Fast Company",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWU0wR0JWZEI2MjZXX0RiamlrTTV0MW5XdzdodWJRejkzWjRfSkpqM2tqcVZpejRnMGR1dXZCUHVtWVhoMGM1bTZzZWlRV3FLSE1hYVJYbUhrZzBIbFlaa3cwZGo5NXFETFEtRlpORTBoY2paVjhVTF9FRDlGOVNpZW92TFNNMDhpYkVRRGxJTkJNbW5Tb0N1UEZjSUFidnJq?oc=5",
-      "fetched_at": "2026-07-22T15:29:09.461244+00:00",
       "is_long_form": false
     }
   ]
