@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-27T12:54:26.215891+00:00",
+  "last_updated": "2026-07-27T15:46:12.698818+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "06d333fa2848",
+      "title": "Outlook finally claims FDA approval for AMD drug - pharmaphorum",
+      "slug": "outlook-finally-claims-fda-approval-for-amd-drug-pharmaphorum",
+      "date": "2026-07-27",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Outlook Therapeutics has announced US FDA approval for its new drug targeting Age-related Macular Degeneration (AMD). This significant milestone means a new therapeutic option is now available for patients suffering from this leading cause of vision loss, bringing renewed hope to millions.</p>",
+      "compliance_impact": "<ul><li>Establishes a new, FDA-cleared treatment standard for AMD patients.</li><li>Validates Outlook's rigorous clinical development and regulatory strategy.</li></ul>",
+      "key_actions": "<ul><li>Healthcare providers can now consider this new option for AMD patients.</li><li>Outlook can proceed with market launch and commercialization.</li></ul>",
+      "industry_context": "<p>The approval marks a pivotal moment in ophthalmology, signifying a robust advancement in treating a debilitating eye condition prevalent in older populations.</p>",
+      "seo_title": "FDA Approves Outlook's AMD Drug: A New Hope for Vision Loss",
+      "seo_description": "Breaking News: Outlook secures FDA approval for its Age-related Macular Degeneration (AMD) drug, offering a vital new treatment option for millions.",
+      "primary_company_name": "Outlook",
+      "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5wdUxPcnZ0V21nSVEzWDl3blBDY3FTSTlDLWdiSFFkX0xGUElVNWpqU0k2UVVsbTBjUVhTMS1VMTRkTTZVQWhLUXRFYVNZWHdJVGw1M2RDRm85ekhLT2c0MWlMVG9BQm1GX3hNWV9GcUZvSjNrcEVsN29oZmdlX1U?oc=5",
+      "fetched_at": "2026-07-27T15:40:14.600065+00:00",
+      "is_long_form": false
+    },
     {
       "id": "1b73593776e8",
       "title": "Sun Pharma Says Philogen Resubmits Marketing Authorization Application To EMA For Nidlegy In Melanoma - TradingView",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbmxlYXhCR0lnMUtTUXFZeTlETEl0aHFtZjB4UHVqVjZRU2xiUUNXMnV5dW5lWHJWLVNnZ0R6WVhCUU02OXdqR1lqMmJSWTJGWFp1OWhZRDVCbV9aOTlEaUlaRGtOU0dHQUZ1MFk0VFlDdkZERGFmSjFuQnp2R0xlMGtLeXJVVldFU2V5cXo1OFFqQml0TFpDSDJoYU52dFYxTXlVanNnYmdodVJSNTNMTdIBtgFBVV95cUxOMDdnek1OYmhJU3RzWHpSOU9qaTNZczUwMEhjbVA5b181eTlGc0ZzdnZ2ZnlwYVQwb1c3RUg5M3BsOHFpZkpLQ3hrTm5OLW43YU5CZzlLa0hra1ozTkNla1hFRXVBUG44WFpkUlQ0ZjBhT3B1QWFjQWU4YUlBdU1KWjRIamlDOGFHWklnQlRhYms1MGN1UU04OURycGY1ZHVNcGFtclE2MjBfODlsdXF3alhfb0ZRUQ?oc=5",
       "fetched_at": "2026-07-24T05:00:16.998156+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "8cde54d7cc4a",
-      "title": "FDA: Iceberg Lettuce Recall Stands After False Positive for Cyclospora - Vaccine Advisor",
-      "slug": "fda-iceberg-lettuce-recall-stands-after-false-positive-for-cyclospora-vaccine-advisor",
-      "date": "2026-07-22",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: FDA: Iceberg Lettuce Recall Stands After False Positive for Cyclospora - Vaccine Advisor\nSource: Google News\nDate: Wed, 22 Jul 2026 04:00:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "FDA: Iceberg Lettuce Recall Stands After False Positive for Cyclospora - Vaccine Advisor",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeFVyYXgwb1hldWRWQXFiZ3k1aHk5anl1alpoYnpWamJoLVdhdE4wS0RMYTJuS0pzSTRlQVRJNHdRS0g1MnZzNXU2Y2w1NGFvRXVlMVE3azdjV3ZIQ0dOOGw5MVZ5OXR3UE5oeklIQVo3bmpBWlhxTDFzbnBPZXpkNzQ0VFNMLVhMazR4aUtwdUtCU3RnRFhqRXRGZ29tbzhlZWJ4YkU5M25nZw?oc=5",
-      "fetched_at": "2026-07-24T04:58:09.472370+00:00",
       "is_long_form": false
     }
   ]
