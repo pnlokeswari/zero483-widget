@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-28T00:01:12.378489+00:00",
+  "last_updated": "2026-07-28T01:23:12.777336+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "22b81a713d7d",
+      "title": "Thyroid drug recall affects multiple dosage strengths across U.S. - News4JAX",
+      "slug": "thyroid-drug-recall-affects-multiple-dosage-strengths-across-u-s-news4jax",
+      "date": "2026-07-27",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Thyroid drug recall affects multiple dosage strengths across U.S. - News4JAX\nSource: Google News\nDate: Mon, 27 Jul 2026 15:13:53 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Thyroid drug recall affects multiple dosage strengths across U.S. - News4JAX",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNmtPeW5yU2lXS3J6WU1kUW50TGt0Vl85VTlwZVZvV3EyNXJyWXZpWXhjZmwwalI0QktWci04eXVxVDZmUERINjhqdGE0N2g0aUZad2JXN3JPc3YwR1Fqd0xnYmZIRzVqZWNTVTlza2I4WXk2S2NqOHRqQkQ4TkpuVjNmVGVpVWxWZVVKNnM4ajA5eUREREdJZHZtWGxFbzU2TExXVEZSdWw?oc=5",
+      "fetched_at": "2026-07-28T01:12:09.654898+00:00",
+      "is_long_form": false
+    },
     {
       "id": "f77fc9f2f0ca",
       "title": "Spacelabs Healthcare Xhibit® Central Station",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxObGFIeXlIdF9fWDhVZXZ6WWRLLXhYQ0pjZzAzLU5sbVNiU1puSGllMEZYNlRIZF9ZeUdUS3JlV0JDODRTRDhZcjBqN2dDSVpRSmZvUjJNTDI1dGdlRVdnMDBZVjBWVGxNSHR1RHZRQXpybXdxY2htZ2c0UVZ6SGlzVmt2WmhkTzN2UWdlc29kODZVaHg2UzJCOEFodXp4dw?oc=5",
       "fetched_at": "2026-07-23T17:18:09.366233+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "2854dc31f0e8",
-      "title": "Why America’s Drug Shortages Are Lasting Longer - The Seattle Medium",
-      "slug": "why-america-s-drug-shortages-are-lasting-longer-the-seattle-medium",
-      "date": "2026-07-23",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Recent reports reveal critical medicine shortages in the U.S. now last longer. This persistent scarcity often stems from vulnerable global supply chains, manufacturing issues, and raw material access, severely impacting patient care and public health.</p>",
-      "compliance_impact": "<ul>\n<li>FDA increases scrutiny on manufacturing quality and supply chains.</li>\n<li>Companies face pressure for consistent medicine availability.</li>\n</ul>",
-      "key_actions": "<ul>\n<li>Prioritize resilient manufacturing and diversified raw material sources.</li>\n<li>Strengthen proactive communication with regulatory agencies.</li>\n</ul>",
-      "industry_context": "<p>This trend underscores an urgent need for the pharmaceutical industry and regulators to strengthen supply chain resilience and ensure consistent drug availability.</p>",
-      "seo_title": "America's Persistent Drug Shortages: Unpacking the Crisis",
-      "seo_description": "Explore why critical medicine shortages are lasting longer in the US. Understand the regulatory challenges, supply chain issues, and what it means for patients and healthcare.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1qeGxNbUlBMW5FZjhZUUF5b3U5X1kyT0RsZ1NEeElkbGt4RlNYc29WT0pST05Udk9nSXZuM2I0ZFJXMUZvQUlEWXk0YkFBejRtQmEzS0d3Ym1aZXgwdWZmX1RaMGdiNGVOWW1KdWlIOEpRakVJN3F2RkxqYWNrUQ?oc=5",
-      "fetched_at": "2026-07-23T17:08:20.451976+00:00",
       "is_long_form": false
     }
   ]
