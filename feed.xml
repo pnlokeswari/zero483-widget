@@ -4,8 +4,18 @@
     <title>Zero483 FDA Pharma Alerts</title>
     <description>Live tracker for FDA drug recalls, warning letters, and guidance.</description>
     <link>https://www.zero483.com/USFDA-news</link>
-    <lastBuildDate>Wed, 29 Jul 2026 13:39:10 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 15:50:11 GMT</lastBuildDate>
 
+    <item>
+      <title>Azurion Systems</title>
+      <description>&lt;p&gt;Title: Azurion Systems
+Source: Health Canada
+Date: 2026-07-29T12:00:00&lt;/p&gt;</description>
+      <link>https://www.zero483.com/USFDA-news?q=Azurion%20Systems</link>
+      <guid>https://www.zero483.com/USFDA-news?q=Azurion%20Systems</guid>
+      <category>Recall</category>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Atsena gains EMA orphan status for two gene therapies - PharmaTimes</title>
       <description>&lt;p&gt;Title: Atsena gains EMA orphan status for two gene therapies - PharmaTimes
@@ -481,16 +491,6 @@ Date: Mon, 27 Jul 2026 12:43:30 GMT&lt;/p&gt;</description>
       <guid>https://www.zero483.com/USFDA-news?q=FDA%20Recalls%20Popular%20Thyroid%20Medication%3A%20What%20Levothyroxine%20Users%20Need%20to%20Know%20-%20Health%20and%20Me</guid>
       <category>Recall</category>
       <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>ImmunityBio Founder Pushes Back After FDA Warning Letter Over Anktiva Claims — Says Ad &#x27;Never Aired At All&#x27; - Stocktwits</title>
-      <description>&lt;p&gt;Title: ImmunityBio Founder Pushes Back After FDA Warning Letter Over Anktiva Claims — Says Ad &#x27;Never Aired At All&#x27; - Stocktwits
-Source: Google News
-Date: Sun, 26 Jul 2026 01:54:44 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=ImmunityBio%20Founder%20Pushes%20Back%20After%20FDA%20Warning%20Letter%20Over%20Anktiva%20Claims%20%E2%80%94%20Says%20Ad%20%27Never%20Aired%20At%20All%27%20-%20Stocktwits</link>
-      <guid>https://www.zero483.com/USFDA-news?q=ImmunityBio%20Founder%20Pushes%20Back%20After%20FDA%20Warning%20Letter%20Over%20Anktiva%20Claims%20%E2%80%94%20Says%20Ad%20%27Never%20Aired%20At%20All%27%20-%20Stocktwits</guid>
-      <category>Warning Letter</category>
-      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>

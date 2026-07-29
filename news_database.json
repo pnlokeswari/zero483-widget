@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-29T13:39:10.546838+00:00",
+  "last_updated": "2026-07-29T15:50:11.098421+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "69aa66da7e06",
+      "title": "Azurion Systems",
+      "slug": "azurion-systems",
+      "date": "2026-07-29",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Azurion Systems\nSource: Health Canada\nDate: 2026-07-29T12:00:00</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Azurion Systems",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/azurion-systems-0",
+      "fetched_at": "2026-07-29T15:50:09.416694+00:00",
+      "is_long_form": false
+    },
     {
       "id": "6a137e1473c0",
       "title": "Atsena gains EMA orphan status for two gene therapies - PharmaTimes",
@@ -883,24 +901,6 @@
       "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNZU9jUXR2Sm1sbFRxdTVEbk81a2JVOXI3WC0zNk1tTWgwTWw2Q3hDMUdxQy1yLXFNN3dlRFFGOUp0X3JnYUxRRlBSd0xqRVNJTDRwTWFOeHA0NVpUckNCZFAyR2JidEpWdmNpSFVzNDFjSEFhdVNYRnlIVklISkVjU1pEdEdYYncwVzdiek83SVJFWi1wbWtSeWU2Q3pYYVRlRy1pdnJTUEIzZmdFOExTVEFJUTd0LXhGdXp5ZkNXTnN0NVJQVV8wcVU3LWJUQjA?oc=5",
       "fetched_at": "2026-07-27T05:32:43.638488+00:00",
       "is_long_form": true
-    },
-    {
-      "id": "1850a85db7d6",
-      "title": "ImmunityBio Founder Pushes Back After FDA Warning Letter Over Anktiva Claims — Says Ad 'Never Aired At All' - Stocktwits",
-      "slug": "immunitybio-founder-pushes-back-after-fda-warning-letter-over-anktiva-claims-says-ad-never-aired-at-all-stocktwits",
-      "date": "2026-07-26",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "<p>Title: ImmunityBio Founder Pushes Back After FDA Warning Letter Over Anktiva Claims — Says Ad 'Never Aired At All' - Stocktwits\nSource: Google News\nDate: Sun, 26 Jul 2026 01:54:44 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "ImmunityBio Founder Pushes Back After FDA Warning Letter Over Anktiva Claims — Says Ad 'Never Aired At All' - Stocktwits",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMEZKVkZaR0xXRXl1cHVvaEVRaUtyRmFiQTNLeDNrN1VfTzFVOHdZN25IWDFOcklab3pnYnNqLUlkMEgyR2tQa1JxTi04TjFYQnMxZjRzbzkwUzJDQ1BVdjhYeWx3UXExUGljOERsQkR5TTl3c2FGdkpOZHFST3RQdWhYRThfTHY1a3Z0YXZVckU5VlMxQkhGRDlHS3lkbDcxSXpybUtBTk5naHFVQjhyVEFiakZDMlc5YXhJRkltaE1FdWs?oc=5",
-      "fetched_at": "2026-07-28T12:44:09.506685+00:00",
-      "is_long_form": false
     }
   ]
 }
