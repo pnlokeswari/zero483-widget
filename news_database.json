@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-28T23:56:13.098505+00:00",
+  "last_updated": "2026-07-29T01:26:10.874329+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "e35869b6878f",
+      "title": "Lawsuit probes Omeros over stock drop after EMA rejects drug approval - Pluang",
+      "slug": "lawsuit-probes-omeros-over-stock-drop-after-ema-rejects-drug-approval-pluang",
+      "date": "2026-07-29",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: Lawsuit probes Omeros over stock drop after EMA rejects drug approval - Pluang\nSource: European Medicines Agency\nDate: Wed, 29 Jul 2026 00:59:40 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Lawsuit probes Omeros over stock drop after EMA rejects drug approval - Pluang",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVFZfczQzNDJEQ3lqU0NHNURaVHFXWTVFck80OXFQekx0QWtpaTJJQUxhRWNZb2ItTThsb3dETFg1UGJhdVp1VDRLU1pndmN1RmJuVXluVzRhV1V5eEZPUE9vQmhBMHRyam9fUWJ1VmJzMW1FTEZta1BuU2MxRVFZTW5sZHlQOVMwZThSeHljcGtKbU1rVHJOY2Y0Y0hGRm1iZUFr?oc=5",
+      "fetched_at": "2026-07-29T01:26:09.737636+00:00",
+      "is_long_form": false
+    },
     {
       "id": "4607dfb172df",
       "title": "Lupin gets FDA approval for Diazepam Injection, USP - Chain Drug Review",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/heartsiner-samaritanr-pad-sam-350psam-360psam-500p-membrane-tail",
       "fetched_at": "2026-07-25T18:59:09.779443+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "7022890ce569",
-      "title": "Often-Prescribed Thyroid Drug Recalled Across the US - NTD News",
-      "slug": "often-prescribed-thyroid-drug-recalled-across-the-us-ntd-news",
-      "date": "2026-07-25",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Often-Prescribed Thyroid Drug Recalled Across the US - NTD News\nSource: Google News\nDate: Sat, 25 Jul 2026 04:07:07 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Often-Prescribed Thyroid Drug Recalled Across the US - NTD News",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaUItUTQyeWd2empXWmF1WV9fdmIydDlJRnR4b29VQ2lfVU5KblZfQzhoRkR1eDduZFpOUW9oUGN6RkpRZ3VoQWEtWFdJaWZVRWU0NGtuT0RCaWdsTU01X21NcnNGNEVwV1F1VG9JaE1CdmxCYTFKMlNOMnpvYzhEb2FaX3hOdzdIQkNfVWs4aW1vRnhRcGJHck1WMU5SMmg1UG1z?oc=5",
-      "fetched_at": "2026-07-25T18:46:09.538051+00:00",
       "is_long_form": false
     }
   ]
