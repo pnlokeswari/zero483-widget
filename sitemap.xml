@@ -5,6 +5,8 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/seventeen-peptide-guidance-revised-what-developers-need-to-know-pharmtech-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/gland-pharma-wins-usfda-approval-for-generic-bridion-injection-launches-product-in-us-medical-dialogues.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-lisdexamfetamine-dimesylate-tablet-chewable.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-recalls-millions-of-cooling-eye-drops-over-sterility-concerns-news4jax.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-seeks-stakeholder-feedback-on-regulating-pharma-brand-name-extensions-moneycontrol-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -37,6 +39,9 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/nature-medicine-s-2026-medical-ai-superintelligence-framework-signals-what-fda-benchmarking-guidance-has-not-yet-address.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-approves-indian-pharma-companies-for-eu-api-exports-opening-new-growth-opportunities-sangri-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-mandates-inclusion-of-fixed-drug-eruption-as-adr-in-package-insert-of-aceclofenac-and-ibuprofen-pharmabiz-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-recommends-granting-marketing-authorisation-approval-for-nezglyal-pmlive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-approves-otsuka-s-adhd-drug-simtriyo-teeing-up-its-next-major-cns-launch-fiercepharma-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/first-in-class-drug-for-adhd-wins-fda-approval-medpage-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/otlk-stock-jumps-overnight-after-fda-approval-of-wet-amd-drug-analysts-see-nearly-300-upside-stocktwits.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/outlook-finally-claims-fda-approval-for-amd-drug-pharmaphorum.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-approval-diazepam-lupin.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -50,9 +55,6 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-sterile-water-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-recalls-levothyroxine-sodium-tablets-here-s-what-to-know-nbc-7-san-diego.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/harmonic-arts-holy-basil-tincture-out-of-specification-total-aerobic-microbial-count.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/sphere-9-catheter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/a-new-adhd-drug-just-got-fda-approval-here-s-what-makes-it-different-caledonian-record.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/antihistamine-recall-across-the-u-s-triggered-by-heartburn-drug-contamination-risk-fda-says-wwaytv3.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/thyroid-medicine-levothyroxine-recalled-nationwide-fda-newsnation.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-recommends-granting-marketing-authorisation-approval-for-nezglyal-pmlive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/companies.html</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/otsuka-pharmaceutical-co-ltd.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
