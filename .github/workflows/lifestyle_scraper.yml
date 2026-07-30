@@ -1,0 +1,42 @@
+name: Pinterest Lifestyle Generator
+
+on:
+  schedule:
+    - cron: '0 8 * * 1' # Runs every Monday at 8 AM UTC
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  generate_lifestyle_blog:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install google-genai python-dotenv
+
+    - name: Run Pinterest Blog Generator
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      run: |
+        python pinterest_blog_generator.py
+
+    - name: Commit Lifestyle Blog Updates
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        # Only add the lifestyle directory and related generator files
+        git add lifestyle/ amazon_links.txt || echo "Nothing to add"
+        git commit -m "Auto-generated Pinterest lifestyle blogs" || echo "No changes to commit"
+        git push origin HEAD:main
