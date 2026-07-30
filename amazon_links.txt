@@ -1,0 +1,5 @@
+# Paste the Amazon Affiliate URLs or ASINs you want to turn into blog posts below.
+# Each line should be ONE product link or topic.
+# Example:
+# https://www.amazon.com/dp/B08F7N8CJD?tag=yourtag-20
+# or just provide a topic like: "Best organic skincare routines for summer 2026"
