@@ -5,6 +5,8 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/lupin-launches-sugammadex-injection-following-us-fda-approval-sahi.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/lupin-announces-u-s-fda-approval-and-launch-of-sugammadex-injection-pr-newswire.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-tightens-drug-approval-rules-seeks-indian-clinical-data-tehelka.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/active-u-s-drug-shortages-have-risen-to-223-and-two-official-counts-disagree-on-the-scale-medical-daily.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/immunitybio-stock-jumps-on-uae-drug-approval-for-anktiva-by-investing-com-investing-com-south-africa.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -51,8 +53,6 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/nature-medicine-s-2026-medical-ai-superintelligence-framework-signals-what-fda-benchmarking-guidance-has-not-yet-address.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-approves-indian-pharma-companies-for-eu-api-exports-opening-new-growth-opportunities-sangri-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-mandates-inclusion-of-fixed-drug-eruption-as-adr-in-package-insert-of-aceclofenac-and-ibuprofen-pharmabiz-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/regeneron-says-drug-approval-irrelevant-in-antitrust-case-law360.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-recalls-levothyroxine-sodium-tablets-here-s-what-to-know-nbc-7-san-diego.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-approves-otsuka-s-adhd-drug-simtriyo-teeing-up-its-next-major-cns-launch-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/first-in-class-drug-for-adhd-wins-fda-approval-medpage-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-approval-diazepam-lupin.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/the-fda-issued-a-recall-on-thyroid-medication-nationwide-eatingwell.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
