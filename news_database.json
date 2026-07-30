@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-30T21:00:13.413423+00:00",
+  "last_updated": "2026-07-30T22:08:10.690873+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "71aa236dc513",
+      "title": "Femyso: Affected lot may contain two green Mifepristone cartons or two pink Misoprostol cartons instead of one of each.",
+      "slug": "femyso-affected-lot-may-contain-two-green-mifepristone-cartons-or-two-pink-misoprostol-cartons-instead-of-one-of-each",
+      "date": "2026-07-30",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Femyso: Affected lot may contain two green Mifepristone cartons or two pink Misoprostol cartons instead of one of each.\nSource: Health Canada\nDate: 2026-07-30T12:00:00</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Femyso: Affected lot may contain two green Mifepristone cartons or two pink Misoprostol cartons instead of one of each.",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/femyso-affected-lot-may-contain-two-green-mifepristone-cartons-or-two-pink-misoprostol",
+      "fetched_at": "2026-07-30T22:08:09.294905+00:00",
+      "is_long_form": false
+    },
     {
       "id": "8f1f63f30e04",
       "title": "Emera’s New Mexico Gas sale is expected to bring $650M-$700M after tax - Stock Titan",
@@ -883,24 +901,6 @@
       "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdFJVTVd5NFA5aE5WUjFFVXR5RUstMXF4ZkJ0N1E0XzNnaW5hWXpia3o3enpsdEt3VjRrN3I3Rk9lMnluQ0FGZ0wzaEdZQ1dpVkJPeFNGM2x3UFhldDRCdXUtVzFuLWhLZ3BXY3FoRkNwckYtTFpqeUJSa01va3FJU0FhTkgzSjJsREowb29ySXBUS1UzbGR1Qm9aZDRJN1l0dmVr?oc=5",
       "fetched_at": "2026-07-28T10:19:43.658409+00:00",
       "is_long_form": true
-    },
-    {
-      "id": "1e24e80d1be0",
-      "title": "Nature Medicine’s 2026 Medical AI Superintelligence Framework Signals What FDA Benchmarking Guidance Has Not Yet Address",
-      "slug": "nature-medicine-s-2026-medical-ai-superintelligence-framework-signals-what-fda-benchmarking-guidance-has-not-yet-address",
-      "date": "2026-07-28",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: Nature Medicine’s 2026 Medical AI Superintelligence Framework Signals What FDA Benchmarking Guidance Has Not Yet Addressed - The Clinical Trial Vanguard\nSource: Google News\nDate: Tue, 28 Jul 2026 06:51:04 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Nature Medicine’s 2026 Medical AI Superintelligence Framework Signals What FDA Benchmarking Guidance Has Not Yet Address",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOMkdBNVUtanltTXZqOF9rTTAzb2kwQVFhc2d4b0thSmdtb09oVW9CY1JXY2g1UGJITzZBU1UxTktveXpWalNJVWdkRWlmelVKMnBEdW1XSXpMc2hhN2FaTjd0dXJwUk9IR0VnTXJmZ0xyYWZUbnJoaDU5VEY0eWZudXNhckhXSDhhZk02bW9NVndJdE5DWG81bWRLbHhZTTRGT0VGM09hajRCeUQ1WlVqUGVfbDBDSnRISEZJSm91bFI0OTRCZkR6UXhDNm1Ja0tFNUdZVVoyTnBOQlhmZ1hKNzRQTGRzSGk4cUhUWk9QN203ME9hamt0ZWpWT04?oc=5",
-      "fetched_at": "2026-07-28T10:19:16.141565+00:00",
-      "is_long_form": false
     }
   ]
 }

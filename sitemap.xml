@@ -5,6 +5,7 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/femyso-affected-lot-may-contain-two-green-mifepristone-cartons-or-two-pink-misoprostol-cartons-instead-of-one-of-each.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/emera-s-new-mexico-gas-sale-is-expected-to-bring-650m-700m-after-tax-stock-titan.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/pharmasave-regular-strength-dairy-digestive-supplement-lactase-enzyme-affected-lot-is-labelled-with-the-incorrect-natur.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/meitheal-pharmaceuticals-announces-fda-approval-of-garzulys-insulin-aspart-fsan-injection-business-wire.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -54,5 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/two-tumor-markers-will-guide-lantern-pharma-s-bladder-cancer-trial-stock-titan.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/alembic-pharma-gets-usfda-approval-for-generic-chronic-constipation-treatment-tablets-the-economic-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/final-fda-guidances-to-expand-participation-in-cancer-clinical-trials-the-pharma-letter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/nature-medicine-s-2026-medical-ai-superintelligence-framework-signals-what-fda-benchmarking-guidance-has-not-yet-address.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
