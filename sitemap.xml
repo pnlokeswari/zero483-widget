@@ -5,7 +5,9 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/south-korea-streamlines-new-drug-approvals-trims-reviews-for-orphan-drugs-chosunbiz-chosunbiz.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/june-2026-cdmo-opportunities-and-threats-report-bioprocess-online.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/popular-thyroid-medication-nationwide-fda-warns-aol-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-updates-product-specific-guidelines-for-injectable-peptides-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/compounding-must-not-become-a-drug-approval-shortcut-for-big-wellness-washington-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/femyso-affected-lot-may-contain-two-green-mifepristone-cartons-or-two-pink-misoprostol-cartons-instead-of-one-of-each.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -32,6 +34,9 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/atsena-gains-ema-orphan-status-for-two-gene-therapies-pharmatimes.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/why-one-drug-brand-can-no-longer-mean-one-medicine-cdsco-moves-to-tackle-confusing-brand-name-extensions-the-south-fi.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/lawsuit-probes-omeros-over-stock-drop-after-ema-rejects-drug-approval-pluang.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/astrazeneca-pharma-india-receives-cdsco-approval-for-her2-positive-stage-ii-or-iii-early-breast-cancer-treatment-biosp.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/lantern-pharma-s-bladder-cancer-trial-cleared-by-ema-investing-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/lantern-pharma-ltrn-gains-ema-approval-for-phase-1b-2-trial-in-bladder-cancer-gurufocus.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/nature-medicine-s-2026-medical-ai-superintelligence-framework-signals-what-fda-benchmarking-guidance-has-not-yet-address.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-mandates-inclusion-of-fixed-drug-eruption-as-adr-in-package-insert-of-aceclofenac-and-ibuprofen-pharmabiz-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/a-new-adhd-drug-just-got-fda-approval-here-s-what-makes-it-different-local-news-8.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -50,9 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/astrazeneca-gets-cdsco-nod-for-expanded-enhertu-indication-in-her2-positive-breast-cancer-indian-pharma-post.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/oxygen-100-gas-cylinders-containing-commercial-grade-oxygen.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/iqecg-digital-ecg.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/enveric-biosciences-welcomes-final-fda-guidance-for-psychedelic-drug-development-investing-news-network.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/nationwide-recall-issued-for-injectable-drug-after-glass-paraformaldehyde-detected-masslive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/astrazeneca-pharma-india-gets-cdsco-approval-for-enhertu-in-breast-cancer-scanx-trade.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/astrazeneca-pharma-india-gets-cdsco-nod-to-import-and-distribute-breast-cancer-treatment-drug-cnbc-tv18.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/lantern-pharma-s-bladder-cancer-trial-cleared-by-ema-investing-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
