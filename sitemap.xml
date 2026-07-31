@@ -5,6 +5,8 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/polpharma-biologics-announces-fda-and-ema-acceptance-for-review-of-pb016-vedolizumab-biosimilar-candidate-yahoo-financ.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/korea-streamlines-orphan-to-new-drug-approval-to-speed-reviews-seoul-economic-daily.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/south-korea-streamlines-new-drug-approvals-trims-reviews-for-orphan-drugs-chosunbiz-chosunbiz.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/june-2026-cdmo-opportunities-and-threats-report-bioprocess-online.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/popular-thyroid-medication-nationwide-fda-warns-aol-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -34,6 +36,8 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/atsena-gains-ema-orphan-status-for-two-gene-therapies-pharmatimes.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/why-one-drug-brand-can-no-longer-mean-one-medicine-cdsco-moves-to-tackle-confusing-brand-name-extensions-the-south-fi.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/lawsuit-probes-omeros-over-stock-drop-after-ema-rejects-drug-approval-pluang.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/astrazeneca-gets-cdsco-nod-for-expanded-enhertu-indication-in-her2-positive-breast-cancer-indian-pharma-post.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/enveric-biosciences-welcomes-final-fda-guidance-for-psychedelic-drug-development-investing-news-network.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/astrazeneca-pharma-india-receives-cdsco-approval-for-her2-positive-stage-ii-or-iii-early-breast-cancer-treatment-biosp.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/lantern-pharma-s-bladder-cancer-trial-cleared-by-ema-investing-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/lantern-pharma-ltrn-gains-ema-approval-for-phase-1b-2-trial-in-bladder-cancer-gurufocus.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -51,8 +55,8 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/how-2-fda-citations-complicate-hengrui-elevar-s-push-for-liver-cancer-combo-approval-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/blanketrol-ii-115v-and-blanketrol-iii-115v.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cipla-receives-u-s-fda-approval-for-generic-of-asthma-copd-drug-the-hindu.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-hydromorphone-hydrochloride-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/astrazeneca-gets-cdsco-nod-for-expanded-enhertu-indication-in-her2-positive-breast-cancer-indian-pharma-post.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/oxygen-100-gas-cylinders-containing-commercial-grade-oxygen.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/iqecg-digital-ecg.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/companies.html</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/polpharma-biologics.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/enveric-biosciences.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/astrazeneca.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
