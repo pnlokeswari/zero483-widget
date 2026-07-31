@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zero483 Pinterest Blog Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --border: rgba(255, 255, 255, 0.1);
+      --accent: #E60023; /* Pinterest Red */
+      --accent-hover: #ad081b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --success: #10b981;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .badge {
+      background: rgba(230, 0, 35, 0.15);
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border: 1px solid rgba(230, 0, 35, 0.3);
+    }
+
+    main {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 24px;
+      padding: 24px 32px;
+      max-width: 1600px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .sidebar-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .glass-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .glass-card h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      color: var(--text);
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+
+    input[type="text"]:focus, textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(230, 0, 35, 0.2);
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-success {
+      background: var(--success);
+      color: white;
+    }
+
+    .btn-success:hover {
+      background: #059669;
+    }
+
+    .draft-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 250px;
+      overflow-y: auto;
+    }
+
+    .draft-item {
+      background: rgba(15, 23, 42, 0.4);
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: all 0.2s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .draft-item:hover, .draft-item.active {
+      border-color: var(--accent);
+      background: rgba(230, 0, 35, 0.1);
+    }
+
+    .preview-container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .preview-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .preview-frame-wrap {
+      flex: 1;
+      min-height: 650px;
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      position: relative;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .status-toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #1e293b;
+      border: 1px solid var(--success);
+      color: var(--text);
+      padding: 12px 20px;
+      border-radius: 10px;
+      display: none;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.163 0 7.398 2.967 7.398 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+      <h1>Zero483 Pinterest Blog Studio</h1>
+      <span class="badge">Local Admin</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="sidebar-panel">
+      
+      <!-- New Post Generator -->
+      <div class="glass-card">
+        <h2>✨ Generate New Draft</h2>
+        <form id="gen-form">
+          <div class="form-group">
+            <label>Amazon Affiliate URL *</label>
+            <input type="text" id="amazon_url" placeholder="https://www.amazon.in/dp/..." required />
+          </div>
+          <div class="form-group">
+            <label>Product Title / Keywords (Recommended)</label>
+            <input type="text" id="product_title" placeholder="e.g. Maybelline Waterproof Mascara" />
+          </div>
+          <div class="form-group">
+            <label>Product Image URL (Optional)</label>
+            <input type="text" id="image_url" placeholder="https://m.media-amazon.com/..." />
+          </div>
+          <button type="submit" class="btn btn-primary" id="gen-btn">
+            🚀 Generate AI Draft
+          </button>
+        </form>
+      </div>
+
+      <!-- Saved Drafts List -->
+      <div class="glass-card">
+        <h2>📁 Saved Drafts</h2>
+        <div class="draft-list" id="draft-list">
+          <!-- Populated by JS -->
+          <div style="color: var(--text-muted); font-size: 0.85rem;">Loading drafts...</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Live Preview & Editor Area -->
+    <div class="preview-container">
+      <div class="glass-card" style="height: 100%; display: flex; flex-direction: column;">
+        <div class="preview-header">
+          <div>
+            <h2 style="margin-bottom: 4px;">👁️ Live Preview & Editor</h2>
+            <p style="font-size: 0.8rem; color: var(--text-muted);" id="current-draft-label">Select or generate a draft to edit</p>
+          </div>
+          <div style="display: flex; gap: 12px;">
+            <button class="btn btn-success" id="publish-btn" style="width: auto; padding: 10px 24px;" disabled>
+              🌐 Publish to Live Site
+            </button>
+          </div>
+        </div>
+        
+        <div class="preview-frame-wrap">
+          <iframe id="preview-frame" src="about:blank"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="status-toast" id="toast">Task completed successfully!</div>
+
+  <script>
+    let activeDraftFile = null;
+
+    // Load Drafts
+    async function loadDrafts() {
+      const res = await fetch('/api/drafts');
+      const drafts = await res.json();
+      const listEl = document.getElementById('draft-list');
+      
+      if(!drafts.length) {
+        listEl.innerHTML = '<div style="color: var(--text-muted); font-size: 0.85rem;">No drafts found. Create one above!</div>';
+        return;
+      }
+
+      listEl.innerHTML = drafts.map(d => `
+        <div class="draft-item ${d.filename === activeDraftFile ? 'active' : ''}" onclick="openDraft('${d.filename}')">
+          <span>📄 ${d.filename}</span>
+          <small style="color:var(--text-muted);">${d.date}</small>
+        </div>
+      `).join('');
+    }
+
+    // Open Draft in Frame
+    function openDraft(filename) {
+      activeDraftFile = filename;
+      document.getElementById('current-draft-label').innerText = 'Viewing Draft: ' + filename;
+      document.getElementById('preview-frame').src = '/drafts/' + filename;
+      document.getElementById('publish-btn').disabled = false;
+      loadDrafts();
+    }
+
+    // Generate Draft Form
+    document.getElementById('gen-form').onsubmit = async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('gen-btn');
+      btn.innerText = '⏳ AI is writing draft...';
+      btn.disabled = true;
+
+      const body = {
+        amazon_url: document.getElementById('amazon_url').value,
+        product_title: document.getElementById('product_title').value,
+        image_url: document.getElementById('image_url').value
+      };
+
+      try {
+        const res = await fetch('/api/generate-draft', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(body)
+        });
+        const data = await res.json();
+        
+        if(data.success) {
+          showToast('Draft generated successfully!');
+          openDraft(data.filename);
+        } else {
+          alert('Error: ' + data.error);
+        }
+      } catch(err) {
+        alert('Failed to generate draft: ' + err.message);
+      } finally {
+        btn.innerText = '🚀 Generate AI Draft';
+        btn.disabled = false;
+      }
+    };
+
+    // Publish Button
+    document.getElementById('publish-btn').onclick = async () => {
+      if(!activeDraftFile) return;
+      
+      if(!confirm('Are you sure you want to publish "' + activeDraftFile + '" to the live Zero483 website?')) return;
+
+      const btn = document.getElementById('publish-btn');
+      btn.innerText = '⏳ Pushing to GitHub...';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch('/api/publish', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({filename: activeDraftFile})
+        });
+        const data = await res.json();
+
+        if(data.success) {
+          showToast('Published live to GitHub!');
+          alert('🎉 Post is published! Live URL: ' + data.live_url);
+        } else {
+          alert('Publish Error: ' + data.error);
+        }
+      } catch(err) {
+        alert('Failed to publish: ' + err.message);
+      } finally {
+        btn.innerText = '🌐 Publish to Live Site';
+        btn.disabled = false;
+      }
+    };
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.innerText = msg;
+      toast.style.display = 'block';
+      setTimeout(() => toast.style.display = 'none', 3000);
+    }
+
+    // Initial Load
+    loadDrafts();
+  </script>
+</body>
+</html>
