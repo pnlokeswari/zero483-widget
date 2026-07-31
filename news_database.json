@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-07-30T23:58:11.675946+00:00",
+  "last_updated": "2026-07-31T01:30:10.923252+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "cd2ee2406df0",
+      "title": "June 2026 — CDMO Opportunities And Threats Report - Bioprocess Online",
+      "slug": "june-2026-cdmo-opportunities-and-threats-report-bioprocess-online",
+      "date": "2026-07-31",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: June 2026 — CDMO Opportunities And Threats Report - Bioprocess Online\nSource: European Medicines Agency\nDate: Fri, 31 Jul 2026 00:10:58 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "June 2026 — CDMO Opportunities And Threats Report - Bioprocess Online",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxON3FSMm1TWll1dUF2X0FxYXlyd3dTY0QyYXJva0JDU3AtcEtvUmVBSHlKWmlHbmQ3V2UwTmxLX1E4WGF3amhja0tsajdSUGhMNmtZWXpOVHcwNEFOYUo5NXpKbXF6UTYzRy1jODRRcWE0eHVSaXhaSXBwU0RDcFZrMm9DclJwNU5PWWRfMw?oc=5",
+      "fetched_at": "2026-07-31T01:30:09.957005+00:00",
+      "is_long_form": false
+    },
     {
       "id": "1e53a2889ca1",
       "title": "FDA updates product-specific guidelines for injectable peptides - RAPS",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVpWEhpLTJpc0lJZ0NTN3FVZW9sZUJNR2pqdnhBR2tPbXJnSGpnQnFURzFQUXJoLUo2UlRac1htS21rMHhockFnVXlGNWwzRVpQaHQ5Ry1VYjRnRWNKMWhDYWIwWUwwanYzUE0zT3lmVnlWbllrd0ZZWlg0TVlkZ0RhR1otc0FYZUU1bEFzLXhjUWtKcXVSYWlJVzE5M1lORlBXclg3OVJITFB1?oc=5",
       "fetched_at": "2026-07-28T12:50:09.253441+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "a17dd8d5d677",
-      "title": "Lantern Pharma (LTRN) Gains EMA Approval for Phase 1b/2 Trial in Bladder Cancer - GuruFocus",
-      "slug": "lantern-pharma-ltrn-gains-ema-approval-for-phase-1b-2-trial-in-bladder-cancer-gurufocus",
-      "date": "2026-07-28",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Lantern Pharma (LTRN) Gains EMA Approval for Phase 1b/2 Trial in Bladder Cancer - GuruFocus\nSource: European Medicines Agency\nDate: Tue, 28 Jul 2026 12:33:57 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Lantern Pharma (LTRN) Gains EMA Approval for Phase 1b/2 Trial in Bladder Cancer - GuruFocus",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQV0pkN1pEcnNDSms0b2VuaHl2bXdMZUJ0NkVKa3NGNlE0Tmd2ejRyYVphRFF6aGIxazdDNi1ReldpekFCM0Z6MUVxaWdtc3h1MS1xa3VWaEY4ZFhLU1VHZDdUVzQ2V3hvWVA3cDJaV1UwY054djAzOW5tcTlpNWliSEFrdGdXc0J1d3NkbWxSU3RhblpVNGN5VlVoTVpCSXlFSG5XQW9mbXNoR3QxX1pkX214WkJ0Zw?oc=5",
-      "fetched_at": "2026-07-28T12:48:09.698038+00:00",
       "is_long_form": false
     }
   ]
