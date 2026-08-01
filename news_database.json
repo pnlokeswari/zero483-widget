@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-01T17:59:13.029968+00:00",
+  "last_updated": "2026-08-01T18:58:17.180429+00:00",
   "total_items": 50,
   "items": [
     {
@@ -19,6 +19,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdkg3S1VISVJZU0NCLWlqbW4wM00wX01tVXhDSE5qUHNMNFRCRHAxVkc1ZlZuQzJOT3FhdEJocFY0b0licHp1cTcxdEFBUFZkVkxkS01iTXp1cGdfMUR0OUxoMGNUWnl2VTFjb1QxTzVkNEQ1NVBfSVNGMDVGZjBBV2tUZm9MYnc?oc=5",
       "fetched_at": "2026-08-01T11:48:27.504416+00:00",
       "is_long_form": true
+    },
+    {
+      "id": "1d20d580b45b",
+      "title": "Millions of eye drops recalled nationwide over sterility concerns - NBC 5 Dallas-Fort Worth",
+      "slug": "millions-of-eye-drops-recalled-nationwide-over-sterility-concerns-nbc-5-dallas-fort-worth",
+      "date": "2026-07-31",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Millions of eye drops recalled nationwide over sterility concerns - NBC 5 Dallas-Fort Worth\nSource: Google News\nDate: Fri, 31 Jul 2026 10:16:01 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Millions of eye drops recalled nationwide over sterility concerns - NBC 5 Dallas-Fort Worth",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVU5mVDZCcl9ienI2amVFWUJyM3hFZldEcGlLU2cybVJnR1VhMjJaZy13WUh6bHVCdDgwOE9GRnBKMVg5eTFPRXJtSnlyZ3Z1TkZXd3ljQzA0REc4QUFGWElpdF9uTkpiRkh1QVdIcHRNWlJaUjBmSml5V0wwU0J1ZFRrRTRYX1NhZ3BjZDZNVU5qLVdIUDJNeUEzbUczRGJzc2l2NdIBrAFBVV95cUxQVE9xOGdad2RTeTFheS1iVzFGSC1hc0hrblRWQ1F2SVlkMU5CbDJETXhneGNrLWNNOGs3S3BROGRYZ3FiQUpENGszWE9OZjRWNl9kRm1rZ2xQNk05Uml5Rzhsc0hvR043OG5kOWdvWWJQWVZGT3FkaDN1RmFzVzhUR0Q4WndNcEJhb2taVHJnWVV0LTJfTWV4R1ljOS1UdEd6UDdTX1YtVWhCcHR1?oc=5",
+      "fetched_at": "2026-08-01T18:46:10.221077+00:00",
+      "is_long_form": false
     },
     {
       "id": "069f9f05eb26",
@@ -883,24 +901,6 @@
       "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOb2JSUWxfekRaeHp0cUNHenAzS2FEd3dwMlQ3a1l2YWREeklQUllvWVIyWU5SMVpzWnFPUW8yTWhGWDV5NmpJMzh3bmowRTdURS1lbUhuMVpPbndLZGsxbWtaS2xONnlzWlQ0UHItaEZUam5IVmpzWUtnbkZsTHFtRGFVSDFiMVVxQ0ExZllmeGRRVUNYX3dXQjZuejItekNONWduN3VjT0l2QTA?oc=5",
       "fetched_at": "2026-07-31T08:25:23.377172+00:00",
       "is_long_form": true
-    },
-    {
-      "id": "f1b22f557896",
-      "title": "AstraZeneca Pharma India receives CDSCO approval for HER2-positive stage II or III early breast cancer treatment - BioSp",
-      "slug": "astrazeneca-pharma-india-receives-cdsco-approval-for-her2-positive-stage-ii-or-iii-early-breast-cancer-treatment-biosp",
-      "date": "2026-07-28",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "<p>Title: AstraZeneca Pharma India receives CDSCO approval for HER2-positive stage II or III early breast cancer treatment - BioSpectrum India\nSource: CDSCO India\nDate: Tue, 28 Jul 2026 16:50:38 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "AstraZeneca Pharma India receives CDSCO approval for HER2-positive stage II or III early breast cancer treatment - BioSp",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQRzJjR1k4UUFFYU51S0M1cFd5cTZzNTA0OTBIU09sYnA2cnhJVUw1bndjVWFTY1VQWm8xbVR2dGlTSnhMMUtpdHU5WTJDdnJKdExjbnZsalVuRWxLSGl6N0ZPaFMxcXZhMVNwU3hEWmNOUmF3RkMxNnd6bG85ZjB1MzIyWVNOcjZTMkpqcnUxNDRzZjdCT0lsSVlpSDA1bUVLM0VUVUFqdHlycFhtUDNpOE1PbDJGSThYcDN4a1VsVng1Q0hsUF9qSGotb19La0Z6VWRGRVdsU2thVkpSZjF4TzV0M0NPYnRCNDhNVmx5OHhfbmkxYVFj?oc=5",
-      "fetched_at": "2026-07-31T05:27:09.365517+00:00",
-      "is_long_form": false
     }
   ]
 }
