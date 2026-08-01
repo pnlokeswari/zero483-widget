@@ -1,0 +1,798 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conquering 5 Years of Dandruff: My Honest Bare Anatomy Shampoo Review</title>
+  <meta name="description" content="After 5 years of stubborn dandruff, I finally found a solution. Read my honest, in-depth review of the Bare Anatomy Expert Anti-Dandruff Shampoo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sage:       #6b8f71;
+      --sage-lt:    #a8c5a0;
+      --sage-pale:  #eef4ee;
+      --cream:      #fdfaf5;
+      --warm:       #f5efe4;
+      --tan:        #e8dccb;
+      --gold:       #c49a3c;
+      --gold-lt:    #ddb95a;
+      --rust:       #b5541e;
+      --dark:       #1c1a17;
+      --mid:        #3d3529;
+      --text:       #2a2419;
+      --muted:      #7a6e5e;
+      --border:     #ddd5c4;
+      --radius-sm:  10px;
+      --radius-md:  20px;
+      --radius-lg:  32px;
+      --shadow-sm:  0 2px 16px rgba(40,30,10,.07);
+      --shadow-md:  0 8px 36px rgba(40,30,10,.12);
+      --shadow-lg:  0 24px 64px rgba(40,30,10,.17);
+      --t:          .35s cubic-bezier(.4,0,.2,1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    /* ── PROGRESS BAR ── */
+    #progress-bar {
+      position: fixed; top: 0; left: 0; height: 3px;
+      width: 0%; background: linear-gradient(90deg, var(--sage), var(--gold-lt));
+      z-index: 9999; transition: width .1s linear;
+      border-radius: 0 3px 3px 0;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 100vh;
+      background: var(--dark);
+    }
+
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+    }
+
+    .hero-left {
+      position: relative;
+      overflow: hidden;
+      background: #111;
+    }
+
+    .hero-product-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      animation: imgScale 18s ease-in-out infinite alternate;
+    }
+
+    @keyframes imgScale {
+      from { transform: scale(1); }
+      to   { transform: scale(1.06); }
+    }
+
+    .hero-left-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(28,26,23,.1) 0%, rgba(28,26,23,.35) 100%);
+    }
+
+    .hero-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(2.5rem, 7vw, 5rem) clamp(2rem, 5vw, 4rem);
+      background: linear-gradient(150deg, #1c1a17 0%, #2d2318 60%, #1c1a17 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-right::before {
+      content: '';
+      position: absolute;
+      top: -120px; right: -120px;
+      width: 380px; height: 380px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(107,143,113,.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-right::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -80px;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(196,154,60,.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      background: rgba(107,143,113,.2);
+      border: 1px solid rgba(107,143,113,.4);
+      color: var(--sage-lt);
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      padding: .4rem .9rem;
+      border-radius: 999px;
+      margin-bottom: 1.75rem;
+      width: fit-content;
+      animation: fadeUp .7s ease both;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(2.1rem, 4.5vw, 3.5rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      animation: fadeUp .7s .1s ease both;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold-lt);
+    }
+
+    .hero-tagline {
+      font-size: 1rem;
+      color: rgba(255,255,255,.6);
+      line-height: 1.75;
+      margin-bottom: 2.25rem;
+      animation: fadeUp .7s .2s ease both;
+    }
+
+    .hero-meta-row {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      animation: fadeUp .7s .3s ease both;
+    }
+
+    .hero-chip {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .8rem;
+      color: rgba(255,255,255,.5);
+      font-weight: 500;
+    }
+
+    .hero-chip-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--sage-lt);
+      display: inline-block;
+    }
+
+    /* ── LAYOUT ── */
+    .page-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 clamp(1.25rem, 5vw, 2.5rem);
+    }
+
+    /* ── INTRO CARD ── */
+    .intro-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: clamp(2rem, 5vw, 3.25rem);
+      margin-top: -3rem;
+      position: relative;
+      z-index: 10;
+      box-shadow: var(--shadow-lg);
+      animation: fadeUp 1s .4s ease both;
+    }
+
+    .intro-card p {
+      font-size: 1.06rem;
+      color: var(--mid);
+      line-height: 1.9;
+    }
+
+    .intro-card p + p { margin-top: 1rem; }
+
+    .hl { font-weight: 700; color: var(--sage); }
+
+    /* ── SECTIONS ── */
+    section { margin-top: clamp(3.5rem, 8vw, 5.5rem); }
+
+    .sec-tag {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      font-size: .7rem;
+      font-weight: 800;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--sage);
+      margin-bottom: .6rem;
+    }
+
+    .sec-tag::before {
+      content: '';
+      display: block;
+      width: 28px; height: 2px;
+      background: linear-gradient(90deg, var(--sage), var(--gold));
+      border-radius: 2px;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.7rem, 4vw, 2.6rem);
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.22;
+      margin-bottom: 1.5rem;
+    }
+
+    .lead { font-size: 1.04rem; color: var(--mid); margin-bottom: 2rem; }
+
+    /* ── INGREDIENT CARDS ── */
+    .ing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.1rem;
+    }
+
+    @media (max-width: 600px) { .ing-grid { grid-template-columns: 1fr; } }
+
+    .ing-card {
+      background: var(--warm);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1.25rem;
+      position: relative;
+      overflow: hidden;
+      transition: transform var(--t), box-shadow var(--t);
+    }
+
+    .ing-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .ing-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--accent, linear-gradient(90deg, var(--sage), var(--sage-lt)));
+    }
+
+    .ing-card:nth-child(1) { --accent: linear-gradient(90deg,#c49a3c,#ddb95a); }
+    .ing-card:nth-child(2) { --accent: linear-gradient(90deg,#6b8f71,#a8c5a0); }
+    .ing-card:nth-child(3) { --accent: linear-gradient(90deg,#7b5ea7,#b09ad4); }
+
+    .ing-emoji {
+      font-size: 1.75rem;
+      margin-bottom: .9rem;
+      display: block;
+    }
+
+    .ing-name {
+      font-weight: 700;
+      font-size: .92rem;
+      color: var(--dark);
+      margin-bottom: .2rem;
+    }
+
+    .ing-role {
+      font-size: .72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      color: var(--muted);
+      margin-bottom: .7rem;
+    }
+
+    .ing-desc {
+      font-size: .84rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* ── QUOTE / EXPERIENCE ── */
+    .experience-wrap {
+      background: linear-gradient(140deg, #1c1a17, #2d2318);
+      border-radius: var(--radius-lg);
+      padding: clamp(2rem, 5vw, 3.5rem);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .experience-wrap::before {
+      content: '\201C';
+      position: absolute;
+      top: -1.5rem; left: 1.5rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 12rem;
+      color: rgba(107,143,113,.12);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .experience-wrap h2 { color: #fff; }
+
+    .experience-wrap p {
+      color: rgba(255,255,255,.72);
+      font-size: 1.02rem;
+      line-height: 1.9;
+      margin-top: 1rem;
+    }
+
+    /* ── RESULTS ── */
+    .results-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .result-card {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.4rem 1.6rem;
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--t), box-shadow var(--t);
+    }
+
+    .result-card:hover {
+      transform: translateX(8px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--sage-lt);
+    }
+
+    .result-badge {
+      flex-shrink: 0;
+      width: 46px; height: 46px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+    }
+
+    .result-card:nth-child(1) .result-badge { background: rgba(196,154,60,.12); }
+    .result-card:nth-child(2) .result-badge { background: rgba(107,143,113,.12); }
+    .result-card:nth-child(3) .result-badge { background: rgba(123,94,167,.12); }
+
+    .result-card strong {
+      display: block;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: .3rem;
+    }
+
+    .result-card p {
+      font-size: .91rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* ── PROS CONS ── */
+    .pc-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (max-width: 500px) { .pc-wrap { grid-template-columns: 1fr; } }
+
+    .pros-card, .cons-card {
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+    }
+
+    .pros-card {
+      background: rgba(107,143,113,.08);
+      border: 1.5px solid rgba(107,143,113,.22);
+    }
+
+    .cons-card {
+      background: rgba(181,84,30,.07);
+      border: 1.5px solid rgba(181,84,30,.18);
+    }
+
+    .pc-head {
+      display: flex;
+      align-items: center;
+      gap: .55rem;
+      font-weight: 800;
+      font-size: 1rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .pros-card .pc-head { color: var(--sage); }
+    .cons-card .pc-head { color: var(--rust); }
+
+    .pc-list { list-style: none; display: flex; flex-direction: column; gap: .6rem; }
+
+    .pc-list li {
+      display: flex;
+      gap: .7rem;
+      font-size: .88rem;
+      line-height: 1.6;
+      color: var(--text);
+    }
+
+    .pc-dot {
+      flex-shrink: 0;
+      margin-top: .35rem;
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .55rem;
+      font-weight: 900;
+    }
+
+    .pros-card .pc-dot { background: var(--sage); color: #fff; }
+    .cons-card .pc-dot { background: var(--rust); color: #fff; }
+
+    .pc-list a {
+      color: var(--gold);
+      font-weight: 600;
+      text-underline-offset: 3px;
+    }
+
+    /* ── VERDICT ── */
+    .verdict-wrap {
+      background: linear-gradient(140deg, #1c1a17 0%, #2a2010 50%, #1c1a17 100%);
+      border-radius: var(--radius-lg);
+      padding: clamp(2.5rem, 7vw, 4.5rem) clamp(2rem, 5vw, 3.5rem);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .verdict-wrap::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(107,143,113,.2), transparent);
+      pointer-events: none;
+    }
+
+    .star-row {
+      font-size: 1.8rem;
+      letter-spacing: .2em;
+      display: block;
+      margin-bottom: 1.25rem;
+    }
+
+    .verdict-wrap h2 {
+      color: #fff;
+      margin-bottom: 1.1rem;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+    }
+
+    .verdict-wrap p {
+      color: rgba(255,255,255,.68);
+      font-size: 1.04rem;
+      max-width: 540px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.9;
+    }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .75rem;
+      background: linear-gradient(135deg, var(--sage) 0%, #4a7350 100%);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 1.1rem 2.5rem;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: transform var(--t), box-shadow var(--t);
+      box-shadow: 0 8px 28px rgba(107,143,113,.45);
+      letter-spacing: .02em;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 16px 40px rgba(107,143,113,.55);
+    }
+
+    .cta-sub {
+      display: block;
+      margin-top: 1rem;
+      font-size: .8rem;
+      color: rgba(255,255,255,.35);
+    }
+
+    /* ── DISCLAIMER ── */
+    .disclaimer {
+      margin-top: 3.5rem;
+      padding: 1.1rem 1.5rem;
+      background: var(--warm);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: .82rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      margin-top: clamp(4rem, 9vw, 7rem);
+      background: var(--dark);
+      padding: 2rem clamp(1.25rem, 5vw, 2.5rem);
+      text-align: center;
+      color: rgba(255,255,255,.3);
+      font-size: .82rem;
+    }
+
+    footer strong { color: var(--sage-lt); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .75s ease, transform .75s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="progress-bar"></div>
+
+  <!-- ── HERO ── -->
+  <header class="hero">
+    <div class="hero-left">
+      <img
+        src="bare_anatomy_product.png"
+        alt="Bare Anatomy Expert Anti-Dandruff Shampoo - Before and After"
+        class="hero-product-img"
+      />
+      <div class="hero-left-overlay"></div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-tag">&#9733; Personal Review</div>
+
+      <h1 class="hero-title">
+        Conquering <em>5 Years</em> of Dandruff &mdash;
+        My Honest Bare Anatomy Shampoo Review
+      </h1>
+
+      <p class="hero-tagline">
+        From constant flakes and scalp irritation to genuinely healthy hair &mdash;
+        here's exactly what worked for me after years of failed attempts.
+      </p>
+
+      <div class="hero-meta-row">
+        <span class="hero-chip"><span class="hero-chip-dot"></span> August 2026</span>
+        <span class="hero-chip"><span class="hero-chip-dot"></span> 8 min read</span>
+        <span class="hero-chip"><span class="hero-chip-dot"></span> Hair &amp; Scalp Care</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── CONTENT ── -->
+  <main>
+    <div class="page-wrap">
+
+      <!-- Intro -->
+      <div class="intro-card reveal">
+        <p>
+          If you've been struggling with a flaky, itchy scalp for what feels like forever, you're not alone.
+          I battled <span class="hl">severe dandruff for five long years</span>. I tried countless home remedies,
+          over-the-counter shampoos, and "miracle" cures &mdash; only to end up with temporary relief or,
+          worse, dried-out, frizzy hair.
+        </p>
+        <p>
+          It wasn't until I discovered the <span class="hl">Bare Anatomy Expert Anti-Dandruff Shampoo</span>
+          that I finally saw real, lasting results. Today I'm sharing my full experience &mdash; the ingredients,
+          the application, the results, and whether it's worth every rupee.
+        </p>
+      </div>
+
+      <!-- Why Bare Anatomy -->
+      <section class="reveal">
+        <div class="sec-tag">The Science</div>
+        <h2>Why Did I Choose Bare Anatomy?</h2>
+        <p class="lead">
+          My breaking point was realizing standard shampoos weren't cutting it. I needed something
+          scientifically formulated. What caught my eye was the <strong>"Bare Flake Reduction Technology"</strong>
+          &mdash; a powerful trio of active ingredients:
+        </p>
+
+        <div class="ing-grid">
+          <div class="ing-card">
+            <span class="ing-emoji">&#129514;</span>
+            <div class="ing-name">Salicylic Acid (BHA)</div>
+            <div class="ing-role">Star Ingredient</div>
+            <p class="ing-desc">Gently exfoliates the scalp, breaking down dead skin cells and clearing the buildup that causes visible flakes.</p>
+          </div>
+          <div class="ing-card">
+            <span class="ing-emoji">&#127807;</span>
+            <div class="ing-name">Piroctone Olamine</div>
+            <div class="ing-role">Antifungal Agent</div>
+            <p class="ing-desc">Targets Malassezia &mdash; the root-cause fungus behind dandruff &mdash; controlling growth and reducing recurrence.</p>
+          </div>
+          <div class="ing-card">
+            <span class="ing-emoji">&#128138;</span>
+            <div class="ing-name">Biotin (Vitamin B7)</div>
+            <div class="ing-role">Strengthening</div>
+            <p class="ing-desc">Strengthens the scalp barrier and supports healthier hair from the roots, preventing hair loss linked to harsh treatments.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="reveal">
+        <div class="experience-wrap">
+          <div class="sec-tag" style="color:var(--sage-lt);">Application</div>
+          <h2>The Application &amp; Experience</h2>
+          <p>
+            The shampoo has a smooth texture and <strong style="color:#fff;">lathers exceptionally well</strong>.
+            The scent is subtle and refreshing &mdash; a huge relief compared to the strong medicinal smell of
+            typical dandruff treatments.
+          </p>
+          <p>
+            I focus the product directly on my scalp, gently massaging it in to let the Salicylic Acid do its
+            work. It never leaves my scalp feeling stripped or tight &mdash; a common complaint with other
+            products I've tried.
+          </p>
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section class="reveal">
+        <div class="sec-tag">The Results</div>
+        <h2>Does It Actually Work?</h2>
+
+        <div class="results-grid">
+          <div class="result-card">
+            <div class="result-badge">&#9889;</div>
+            <div>
+              <strong>Immediate Relief</strong>
+              <p>The intense itching and irritation significantly decreased after just a few washes.</p>
+            </div>
+          </div>
+          <div class="result-card">
+            <div class="result-badge">&#10052;</div>
+            <div>
+              <strong>Visible Flake Reduction</strong>
+              <p>The embarrassing white flakes on my shoulders are a thing of the past. Bare Anatomy claims up to 100% dandruff reduction &mdash; in my experience, it genuinely delivers.</p>
+            </div>
+          </div>
+          <div class="result-card">
+            <div class="result-badge">&#10024;</div>
+            <div>
+              <strong>Healthier, Softer Hair</strong>
+              <p>Unlike previous treatments that left my hair feeling like straw, the Biotin in this formula helped maintain softness and manageability.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pros & Cons -->
+      <section class="reveal">
+        <div class="sec-tag">Key Takeaways</div>
+        <h2>Pros &amp; Cons</h2>
+
+        <div class="pc-wrap">
+          <div class="pros-card">
+            <div class="pc-head">&#128077; The Good</div>
+            <ul class="pc-list">
+              <li><span class="pc-dot">&#10003;</span><span>Highly effective at eliminating stubborn dandruff &amp; flakes</span></li>
+              <li><span class="pc-dot">&#10003;</span><span>Soothes intense scalp itchiness and irritation</span></li>
+              <li><span class="pc-dot">&#10003;</span><span>Proven actives: Salicylic Acid &amp; Piroctone Olamine</span></li>
+              <li><span class="pc-dot">&#10003;</span><span>Biotin strengthens hair and maintains moisture</span></li>
+              <li><span class="pc-dot">&#10003;</span><span>Cruelty-free, vegan, and sulfate-free</span></li>
+            </ul>
+          </div>
+
+          <div class="cons-card">
+            <div class="pc-head">&#128078; Watch Out For</div>
+            <ul class="pc-list">
+              <li>
+                <span class="pc-dot">!</span>
+                <span>
+                  Slightly drying without a conditioner &mdash; pair it with a
+                  <a href="https://amzn.to/4xzf8I3" target="_blank" rel="noopener">hydrating mask</a>
+                  or their
+                  <a href="https://amzn.to/4wyLx13" target="_blank" rel="noopener">matching conditioner</a>
+                </span>
+              </li>
+              <li><span class="pc-dot">!</span><span>Pricier than standard drugstore shampoos</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Verdict -->
+      <section class="reveal">
+        <div class="verdict-wrap">
+          <span class="star-row">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <h2>Final Verdict: Is It Worth It?</h2>
+          <p>
+            If you have an oily scalp prone to buildup, or if you're dealing with stubborn, recurring dandruff &mdash;
+            <strong style="color:var(--sage-lt);">yes, absolutely.</strong> It's a scientifically backed,
+            results-driven solution that finally ended my five-year struggle.
+            Ready to say goodbye to flakes for good?
+          </p>
+          <a
+            id="cta-amazon"
+            href="https://amzn.to/3TvNhcU"
+            target="_blank"
+            rel="noopener sponsored"
+            class="cta-btn"
+          >
+            &#128722;&nbsp; Get Bare Anatomy on Amazon
+          </a>
+          <span class="cta-sub">Free delivery available &nbsp;&bull;&nbsp; Easy returns</span>
+        </div>
+      </section>
+
+      <!-- Disclaimer -->
+      <div class="disclaimer reveal">
+        <strong>Affiliate Disclosure:</strong> This post contains affiliate links. If you purchase through these
+        links, I may earn a small commission at no extra cost to you. Thank you for your support!
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&#10084; Written with love &nbsp;&bull;&nbsp; <strong>Bare Anatomy Anti-Dandruff Review</strong> &nbsp;&bull;&nbsp; &copy; 2026</p>
+  </footer>
+
+  <script>
+    // Reading progress
+    const bar = document.getElementById('progress-bar');
+    window.addEventListener('scroll', () => {
+      const pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+      bar.style.width = pct + '%';
+    });
+
+    // Scroll reveal
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>
