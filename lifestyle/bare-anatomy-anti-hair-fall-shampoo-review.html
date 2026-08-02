@@ -358,6 +358,47 @@
       margin-bottom: 0;
     }
 
+    /* ── BOUGHT TOGETHER ── */
+    .bought-together {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .bt-item {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform var(--t), box-shadow var(--t);
+    }
+
+    .bt-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--blue-lt);
+    }
+
+    .bt-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: .6rem 1.2rem;
+      background: rgba(59,91,219,.1);
+      color: var(--blue);
+      text-decoration: none;
+      border-radius: 99px;
+      font-size: .85rem;
+      font-weight: 700;
+      transition: all var(--t);
+    }
+
+    .bt-link:hover {
+      background: var(--blue);
+      color: #fff;
+    }
+
     /* ── TECHNOLOGY CALLOUT ── */
     .tech-wrap {
       background: linear-gradient(140deg, #0f172a, #1a2340);
@@ -647,6 +688,27 @@
             Check Price on Amazon India
           </a>
           <span class="cta-sub">Affiliate link &mdash; we may earn a small commission at no extra cost to you.</span>
+        </div>
+      </section>
+
+      <!-- Complete Your Routine -->
+      <section class="reveal">
+        <div class="sec-tag">Complete Your Routine</div>
+        <h2>Frequently Bought Together</h2>
+        <p class="lead">For best results, we recommend pairing the Anti-Hair Fall Shampoo with these Bare Anatomy essentials:</p>
+        <div class="bought-together">
+          <div class="bt-item">
+            <strong>Hair Fall Control Mask</strong>
+            <a href="https://link.amazon/B0fvZFCPz" target="_blank" rel="noopener sponsored" class="bt-link">View on Amazon</a>
+          </div>
+          <div class="bt-item">
+            <strong>Hair Fall Control Serum</strong>
+            <a href="https://link.amazon/B0gCnkfUf" target="_blank" rel="noopener sponsored" class="bt-link">View on Amazon</a>
+          </div>
+          <div class="bt-item">
+            <strong>Leave-In Conditioner</strong>
+            <a href="https://link.amazon/B0iPayj8O" target="_blank" rel="noopener sponsored" class="bt-link">View on Amazon</a>
+          </div>
         </div>
       </section>
 
