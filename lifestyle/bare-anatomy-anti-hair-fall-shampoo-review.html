@@ -562,10 +562,6 @@
   </style>
 </head>
 <body>
-  <!-- Facebook SDK -->
-  <div id="fb-root"></div>
-  <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"></script>
-
   <div id="progress-bar"></div>
 
   <!-- ── HERO ── -->
@@ -731,13 +727,25 @@
         </div>
       </section>
 
-      <!-- Facebook Comments -->
+      <!-- Disqus Comments -->
       <section class="reveal">
         <div class="sec-tag">Community</div>
         <h2>Leave a Comment</h2>
-        <p class="lead" style="margin-bottom: 1rem;">Have you tried Bare Anatomy? Share your experience with us!</p>
-        <div style="background: #fff; padding: 1.5rem 1rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--border); overflow: hidden;">
-          <div class="fb-comments" data-href="https://alerts.zero483.com/lifestyle/bare-anatomy-anti-hair-fall-shampoo-review.html" data-width="100%" data-numposts="5"></div>
+        <div style="background: #fff; padding: 1.5rem 1rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--border); overflow: hidden; margin-top: 1rem;">
+          <div id="disqus_thread"></div>
+          <script>
+              var disqus_config = function () {
+                  this.page.url = "https://alerts.zero483.com/lifestyle/bare-anatomy-anti-hair-fall-shampoo-review.html";
+                  this.page.identifier = "bare-anatomy-anti-hair-fall-shampoo-review";
+              };
+              (function() {
+                  var d = document, s = d.createElement('script');
+                  s.src = 'https://zero483.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </div>
       </section>
 
