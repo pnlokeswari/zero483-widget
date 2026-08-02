@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T20:09:12.812838+00:00",
+  "last_updated": "2026-08-02T21:53:32.106512+00:00",
   "total_items": 50,
   "items": [
     {
@@ -36,6 +36,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPRlFudW5vNTRIWEViMG1vOUMxLXJ4cjh4UVJwUFAxbkNNQnl5N3I5SFI0UXgzWUNOS0FpZ3lJbkVxLUQ1c3pVY2EwR1k2RVk1c2hVNE9YVWVzOVVKbTdsV0Y1MXdYV0FzblVKNXEzNjFPc0hrQTJobnl4djVLOFpBaVZEQy1IQkdOQ3RiUkdFMm9EVXhYdGdHU2h2OFJhODVDR2MxOUNlUi1aajg0WlhyWTZJT2FDOWg1MS1oOXNXNkxUbXFSRDFJSzJNMWpUQXFhdGJCNdIB2gFBVV95cUxQSmM2UWxGVWRBY1NfcU1HdzdXeTdHX19MNjN6WndMalkwaDVwVjRNYU1TektINmVxTlNhX2lJLURfWTF5U3kxSlBRTXhTZXByV3VDN3FYT2RReEpBa0F3TlhCSXgyckc4Qklwd25idTZnUTZiNkxtNHZmZzFjeDZYOFIxR0JNUFhWbWs0bEFLMkc5WUpKMzYyaEx5V1J3TGgwekhPZWQ5QUM1YVp6ZnlCR2dIVW9tLWhZdklQRU5SMEJBcFo1alZoaEJTWTBRR1libktrVWVxVmd6UQ?oc=5",
       "fetched_at": "2026-08-02T12:56:09.771649+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "f4b9130dba69",
+      "title": "FDA Recalls Prescription Blood Thinner Nationwide - Prevention",
+      "slug": "fda-recalls-prescription-blood-thinner-nationwide-prevention",
+      "date": "2026-08-01",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: FDA Recalls Prescription Blood Thinner Nationwide - Prevention\nSource: Google News\nDate: Sat, 01 Aug 2026 12:08:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "FDA Recalls Prescription Blood Thinner Nationwide - Prevention",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbUJXVVNsZEk2WVFPMERiZ2xVU0prRjZpRUcwVGRvYno2WU9zYTBVamxxYnJSRGt0WFBSV05SMm1TeU5ZUjBqeXB1bzVvMWYyVkNMenpWc3drYUFicHJSZkc3d3dHV3lBZUFnX1ZSamdGWm5pTjdwaTNtazJlSXB1cjdQWTlSWDQ?oc=5",
+      "fetched_at": "2026-08-02T21:42:10.054100+00:00",
       "is_long_form": false
     },
     {
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVG5vakhvWktqN3Z6U3pHaThQaG5yNTNCQ3IyRk5tNkNEOXd0bDE1b2p3ZU9ERm9qbk56ZTA0eDlYdjhmajF0QVF6c2ZBTXNtUUVLcGhnQWNjUjVUWWlNeVdRU3BPRHZIVkZMVnptNU9SVW52Nm1JcTdZNFZobXpOTVkxZFJGTzhnMnFBUGxXZkNvdndKd0h5QkZ2U1I1dndyQlVKSHhLWmFtZ3EyNWFGWE5B?oc=5",
       "fetched_at": "2026-07-31T20:21:09.247321+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "53e33d78ecb2",
-      "title": "How 2 FDA citations complicate Hengrui, Elevar’s push for liver cancer combo approval - Fierce Pharma",
-      "slug": "how-2-fda-citations-complicate-hengrui-elevar-s-push-for-liver-cancer-combo-approval-fierce-pharma",
-      "date": "2026-07-28",
-      "category": "Form 483",
-      "severity": "High",
-      "summary": "<p>Title: How 2 FDA citations complicate Hengrui, Elevar’s push for liver cancer combo approval - Fierce Pharma\nSource: Google News\nDate: Tue, 28 Jul 2026 19:02:18 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "How 2 FDA citations complicate Hengrui, Elevar’s push for liver cancer combo approval - Fierce Pharma",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPY3hDSVZwd2FnV19WM1Rsa1JrMzllejMtcjlTYXRkVXNPNmI3bm5lN21iT05rZVBNR3JiU1RvckZwN0pVNUhFYW1uYVl6Qmxsc2VEcDRyeU9wLU5fTS03bkdMQURVbGtrYXNKZl9nU0hQcFd0bFdpcFJJXzZyeFJoRUswWlVuZ2tHeGJadkFBOENzdF9lbC1pUDBaLXFmV29LSkJPQWdrY2FVYXZDT3BKOGkzZVo?oc=5",
-      "fetched_at": "2026-07-31T13:38:09.443809+00:00",
       "is_long_form": false
     }
   ]
