@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-03T19:20:34.105972+00:00",
+  "last_updated": "2026-08-03T21:02:12.789459+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "aa0f5e437757",
+      "title": "FDA announces highest recall for certain ventilators, introducer kits - American Hospital Association",
+      "slug": "fda-announces-highest-recall-for-certain-ventilators-introducer-kits-american-hospital-association",
+      "date": "2026-08-03",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>The U.S. FDA has announced a Class I recall, its most serious type, for specific ventilators and introducer kits. This urgent action signifies that continued use of these medical devices, crucial for breathing support and medical procedures, could lead to severe injury or even death, demanding immediate attention from healthcare providers and patients alike.</p>",
+      "compliance_impact": "<ul><li>Immediate cessation of use and quarantine of all affected devices.</li><li>Mandatory compliance with updated FDA safety guidelines and instructions.</li></ul>",
+      "key_actions": "<ul><li>Healthcare facilities must identify and quarantine all recalled units.</li><li>Patients using affected devices should promptly consult their physician.</li></ul>",
+      "industry_context": "<p>Class I recalls are rare and underscore significant product safety breaches, often pointing to critical manufacturing defects or design flaws that pose direct, life-threatening risks in vital medical procedures where devices like ventilators are life-sustaining.</p>",
+      "seo_title": "Urgent: FDA Issues Highest-Level Class I Recall for Ventilators & Introducer Kits",
+      "seo_description": "The FDA announced a critical Class I recall for specific ventilators and introducer kits. Understand the serious risks and immediate actions required for patient safety.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZkpQVU1OWGRabXBaQUFqNXNIOURrdHBZMHJwc3B4RkxxWG9vaUl4Z19ib0t4TTd4Q0lJUW8zeEE1U3FQTzU4cEt4SDViV2F5ZlBCQnZBZnBZS3prYnRMQnJ4Tl90RGlXb1dNd0pBZlJMMkIydjlKdEhUaG53ZGdkenY4RVRtOEE1b01Pd0FPZ0VybEh0UWpVN2lzcmZzOUlMOExtbEdIUXg2MnNHMnc?oc=5",
+      "fetched_at": "2026-08-03T20:50:17.679487+00:00",
+      "is_long_form": false
+    },
     {
       "id": "2ca1871abbbb",
       "title": "Polpharma Biologics gains FDA and EMA review acceptances - PharmaTimes",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOb3ozZElVcHg3SDNhZGxlSThycGV2NU5YU21JRmVfakJuZHNrWGZhVEJTX3FRMUVVam5BRS1sam1ZM2lBbzVqa1dnTGFFUjBGb0YtczQ3UVFsamxTblpCNk5DWjZrVFgzZHpWWWdHMm5sekRfUjBPWUhMMk4zRmJpLTJnQzZMSHpsMF85Q0hhYWxjdzNGZjBndzZ4RjhCSEtKOElqdTAxNExqNHZ6SDE0MzQwWDg0OXJ6NmxxUmhNTWpUalpfcG1QOFlESmdVbnQzbGtENkFBd23SAd4BQVVfeXFMTzEzZmlqM1VUOFdNVXROOXZ5eGs0am5BemxjbDhETkJ6TTZxWHk5aGIzYXdjT2QwSVM5OWF1TVRxb2NoM2RPbENXMjN6ajhiSHdlZS0wSW1mejJMcTBFNWwzbDFxc0hlN0dWamUxRnhoelFlY2pBWHdLbE9RWGJnLWw2OW5weEFWZk9HYnVUa3ROS2REZ0MwQ0trd1RyeEhNOHBpMzQ1RHJ5eUtuSktUbTN2djVVbThqeHVDOVMtM19aVzZGSjBZbURTQTFxM09TTmxvZlFzcjVEVVRtLWl3?oc=5",
       "fetched_at": "2026-07-29T21:46:09.704137+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "db3ad6b1eff9",
-      "title": "Drug Shortage: Lisdexamfetamine Dimesylate Tablet, Chewable",
-      "slug": "drug-shortage-lisdexamfetamine-dimesylate-tablet-chewable",
-      "date": "2026-07-29",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Generic name: Lisdexamfetamine Dimesylate Tablet, Chewable\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Drug Shortage: Lisdexamfetamine Dimesylate Tablet, Chewable",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
-      "fetched_at": "2026-07-29T20:07:09.539824+00:00",
       "is_long_form": false
     }
   ]
