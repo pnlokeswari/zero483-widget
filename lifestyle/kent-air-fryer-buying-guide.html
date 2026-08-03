@@ -3,703 +3,1058 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Best Kent Air Fryer for Your Indian Family | 2026 Guide</title>
-  <meta name="description" content="Find the perfect Kent Air Fryer for your Indian family of 2 to 5+ people. Quick comparison, honest advice, and direct Amazon links." />
-  <meta property="og:title" content="Best Kent Air Fryer for Your Indian Family | 2026 Guide" />
-  <meta property="og:description" content="Quick comparison guide to find the perfect air fryer for your household size." />
+  <title>Best Kent Air Fryer for Indian Families | Samosas, Pakoras & More — 2026 Guide</title>
+  <meta name="description" content="Which Kent Air Fryer is right for your Indian kitchen? From quick samosas for 2 to pakoras for the whole family — find your perfect match." />
+  <meta property="og:title" content="Best Kent Air Fryer for Indian Families | 2026 Guide" />
+  <meta property="og:description" content="From samosas to tandoori chicken — find your perfect Kent Air Fryer based on your family size and favourite Indian recipes." />
   <meta property="og:image" content="https://m.media-amazon.com/images/I/71zgJXZMf4L._SL1500_.jpg" />
   <meta property="og:type" content="article" />
   <meta name="pinterest-rich-pin" content="true" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --orange: #FF6B35;
-      --orange-lt: #FF9A6C;
-      --red:    #E60023;
-      --dark:   #1A1A2E;
-      --navy:   #16213E;
-      --green:  #0FA36D;
-      --yellow: #FFD166;
-      --bg:     #F8F7F4;
-      --white:  #FFFFFF;
-      --border: #E8E4DF;
-      --text:   #2D2D2D;
-      --muted:  #888;
-      --radius: 18px;
-      --shadow: 0 8px 32px rgba(0,0,0,0.09);
-      --t: 0.3s cubic-bezier(0.4,0,0.2,1);
+      --saffron:   #FF6B1A;
+      --saffron-lt:#FF9A55;
+      --saffron-bg:#FFF5EC;
+      --green:     #1A8F5E;
+      --green-lt:  #27C17E;
+      --green-bg:  #EDFAF4;
+      --indigo:    #3B4FDB;
+      --indigo-bg: #EEF0FD;
+      --red:       #D42B2B;
+      --dark:      #111827;
+      --navy:      #1E2B4A;
+      --cream:     #FFFDF8;
+      --warm:      #FAF6EF;
+      --border:    #EDE8E0;
+      --text:      #2D2D2D;
+      --muted:     #888;
+      --radius:    20px;
+      --r-sm:      12px;
+      --shadow:    0 8px 40px rgba(0,0,0,0.08);
+      --shadow-sm: 0 2px 16px rgba(0,0,0,0.05);
+      --t:         .35s cubic-bezier(.4,0,.2,1);
     }
 
     html { scroll-behavior: smooth; }
-
     body {
       font-family: 'Nunito', sans-serif;
-      background: var(--bg);
+      background: var(--cream);
       color: var(--text);
-      line-height: 1.7;
+      line-height: 1.75;
       overflow-x: hidden;
+    }
+
+    /* ── PROGRESS BAR ── */
+    #progress {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0;
+      background: linear-gradient(90deg, var(--saffron), #FFCC44);
+      z-index: 9999; transition: width .1s linear;
     }
 
     /* ── HERO ── */
     .hero {
-      background: linear-gradient(145deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%);
-      padding: 48px 20px 80px;
-      text-align: center;
+      min-height: 92vh;
+      background: linear-gradient(160deg, #111827 0%, #1E2B4A 55%, #0F3460 100%);
       position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 0 60px;
       overflow: hidden;
     }
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(255,107,53,0.2), transparent);
+    .hero-bg-pattern {
+      position: absolute; inset: 0;
+      background-image: radial-gradient(circle at 20% 20%, rgba(255,107,26,.15) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(59,79,219,.15) 0%, transparent 50%);
     }
-    .hero-badge {
-      display: inline-block;
-      background: rgba(255,107,53,0.15);
-      border: 1px solid rgba(255,107,53,0.4);
-      color: var(--orange-lt);
+    .hero-top-strip {
+      position: absolute; top: 0; left: 0; right: 0;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .site-tag {
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: rgba(255,255,255,.5);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .hero-date {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,.4);
+      font-weight: 600;
+    }
+
+    .hero-content {
+      position: relative;
+      padding: 0 22px;
+      max-width: 700px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,107,26,.12);
+      border: 1px solid rgba(255,107,26,.3);
+      color: var(--saffron-lt);
       font-size: 0.72rem;
       font-weight: 800;
-      letter-spacing: 0.15em;
+      letter-spacing: .14em;
       text-transform: uppercase;
-      padding: 6px 16px;
+      padding: 7px 16px;
       border-radius: 99px;
-      margin-bottom: 18px;
+      margin-bottom: 22px;
     }
+
     .hero h1 {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(1.9rem, 6vw, 3rem);
+      font-size: clamp(2.2rem, 7vw, 3.8rem);
       color: #fff;
-      line-height: 1.2;
-      margin-bottom: 16px;
-      position: relative;
+      line-height: 1.15;
+      margin-bottom: 18px;
     }
-    .hero h1 span { color: var(--orange); }
-    .hero p {
-      color: rgba(255,255,255,0.65);
-      font-size: 1rem;
+    .hero h1 em {
+      font-style: italic;
+      color: var(--saffron);
+    }
+
+    .hero-lead {
+      color: rgba(255,255,255,.65);
+      font-size: clamp(0.95rem, 2.5vw, 1.1rem);
       max-width: 480px;
-      margin: 0 auto 28px;
-      position: relative;
+      margin-bottom: 30px;
     }
-    .hero-meta {
+
+    .hero-chips {
       display: flex;
-      justify-content: center;
-      gap: 16px;
       flex-wrap: wrap;
-      position: relative;
+      gap: 10px;
+      margin-bottom: 32px;
     }
-    .hero-chip {
-      background: rgba(255,255,255,0.08);
-      color: rgba(255,255,255,0.6);
+    .hchip {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.7);
       font-size: 0.78rem;
       font-weight: 700;
-      padding: 5px 14px;
+      padding: 6px 14px;
       border-radius: 99px;
-      border: 1px solid rgba(255,255,255,0.1);
     }
 
-    /* ── QUICK PICK STRIP ── */
-    .quick-strip {
-      background: var(--orange);
-      padding: 16px 20px;
-      text-align: center;
+    .hero-scroll-hint {
+      color: rgba(255,255,255,.3);
+      font-size: 0.75rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
-    .quick-strip p {
-      color: #fff;
-      font-size: 0.88rem;
-      font-weight: 700;
+    .hero-scroll-hint span {
+      display: inline-block;
+      width: 1px;
+      height: 24px;
+      background: rgba(255,255,255,.2);
+      animation: scrollPulse 2s ease-in-out infinite;
     }
-    .quick-strip a {
-      color: #fff;
-      text-decoration: underline;
+    @keyframes scrollPulse {
+      0%, 100% { opacity: .3; transform: scaleY(1); }
+      50% { opacity: .8; transform: scaleY(1.5); }
     }
 
-    /* ── WRAPPER ── */
-    .wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
-
-    /* ── DECISION BOX ── */
-    .decision-box {
-      background: var(--white);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      margin: -40px auto 0;
+    /* ── DECISION PANEL ── */
+    .panel-wrap {
+      max-width: 720px;
+      margin: -44px auto 0;
+      padding: 0 16px;
       position: relative;
-      z-index: 5;
+      z-index: 10;
+    }
+
+    .decision-panel {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.14);
       overflow: hidden;
     }
-    .decision-box .db-header {
-      background: var(--dark);
+    .dp-header {
+      background: var(--saffron);
       padding: 18px 24px;
       display: flex;
       align-items: center;
       gap: 10px;
     }
-    .decision-box .db-header h2 {
+    .dp-header h2 {
       color: #fff;
-      font-size: 1.05rem;
-      font-weight: 800;
+      font-size: 1rem;
+      font-weight: 900;
     }
-    .decision-box .db-header .icon {
-      font-size: 1.4rem;
-    }
-    .decision-row {
-      display: flex;
+    .dp-row {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
       align-items: center;
-      padding: 14px 20px;
-      border-bottom: 1px solid var(--border);
       gap: 14px;
+      padding: 15px 20px;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
       transition: background var(--t);
+      text-decoration: none;
     }
-    .decision-row:last-child { border-bottom: none; }
-    .decision-row:hover { background: #fdf9f6; }
-    .family-badge {
-      flex-shrink: 0;
-      background: #FFF3EE;
-      color: var(--orange);
-      font-size: 0.75rem;
-      font-weight: 800;
+    .dp-row:last-child { border-bottom: none; }
+    .dp-row:hover { background: var(--saffron-bg); }
+    .dp-size {
+      background: var(--saffron-bg);
+      color: var(--saffron);
+      font-size: 0.72rem;
+      font-weight: 900;
       padding: 5px 10px;
       border-radius: 8px;
-      min-width: 90px;
+      min-width: 85px;
       text-align: center;
-    }
-    .decision-row .rec {
-      flex: 1;
-      font-size: 0.88rem;
-      color: var(--text);
-    }
-    .decision-row .rec strong { color: var(--dark); }
-    .decision-row .pick-btn {
-      flex-shrink: 0;
-      background: var(--dark);
-      color: #fff;
-      font-size: 0.75rem;
-      font-weight: 800;
-      padding: 7px 14px;
-      border-radius: 99px;
-      text-decoration: none;
-      transition: background var(--t);
       white-space: nowrap;
     }
-    .decision-row .pick-btn:hover { background: var(--orange); }
+    .dp-text {
+      font-size: 0.88rem;
+      color: var(--text);
+      line-height: 1.4;
+    }
+    .dp-text strong { color: var(--dark); font-weight: 800; }
+    .dp-text small { color: var(--muted); font-size: 0.78rem; display: block; margin-top: 2px; }
+    .dp-arrow {
+      color: var(--saffron);
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
 
-    /* ── SECTION TITLE ── */
-    .section-title {
+    /* ── GENERAL LAYOUT ── */
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .section-head {
       text-align: center;
-      margin: 48px 0 28px;
+      margin: 56px 0 32px;
     }
-    .section-title .label {
+    .s-tag {
       display: inline-block;
-      font-size: 0.7rem;
-      font-weight: 800;
-      letter-spacing: 0.18em;
+      font-size: 0.68rem;
+      font-weight: 900;
+      letter-spacing: .18em;
       text-transform: uppercase;
-      color: var(--orange);
-      background: rgba(255,107,53,0.1);
-      border: 1px solid rgba(255,107,53,0.2);
-      padding: 4px 14px;
+      color: var(--saffron);
+      background: var(--saffron-bg);
+      border: 1px solid rgba(255,107,26,.2);
+      padding: 5px 14px;
       border-radius: 99px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
-    .section-title h2 {
+    .section-head h2 {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-size: clamp(1.7rem, 4.5vw, 2.4rem);
       color: var(--dark);
+      line-height: 1.2;
+    }
+    .section-head p {
+      color: var(--muted);
+      font-size: .95rem;
+      margin-top: 10px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ── STORY SECTION ── */
+    .story-card {
+      background: var(--dark);
+      border-radius: var(--radius);
+      padding: clamp(24px, 5vw, 40px);
+      color: rgba(255,255,255,.8);
+      font-size: .95rem;
+      line-height: 1.85;
+      position: relative;
+      overflow: hidden;
+    }
+    .story-card::before {
+      content: '"';
+      position: absolute;
+      top: -20px; left: 16px;
+      font-family: 'Playfair Display', serif;
+      font-size: 12rem;
+      color: rgba(255,107,26,.08);
+      line-height: 1;
+    }
+    .story-card strong { color: #fff; }
+    .story-card .highlight {
+      color: var(--saffron-lt);
+      font-weight: 700;
+    }
+
+    /* ── RECIPE TICKER ── */
+    .recipe-ticker {
+      background: var(--warm);
+      border: 1px solid var(--border);
+      border-radius: var(--r-sm);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 24px 0;
+      overflow: hidden;
+    }
+    .ticker-label {
+      flex-shrink: 0;
+      font-size: 0.7rem;
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--saffron);
+      background: var(--saffron-bg);
+      padding: 4px 10px;
+      border-radius: 99px;
+    }
+    .ticker-items {
+      display: flex;
+      gap: 12px;
+      overflow: hidden;
+    }
+    .ticker-item {
+      white-space: nowrap;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text);
     }
 
     /* ── PRODUCT CARDS ── */
-    .cards { display: flex; flex-direction: column; gap: 24px; }
-
     .pcard {
-      background: var(--white);
+      background: #fff;
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       overflow: hidden;
+      margin-bottom: 28px;
       border: 2px solid transparent;
-      transition: transform var(--t), box-shadow var(--t), border-color var(--t);
+      transition: transform var(--t), border-color var(--t), box-shadow var(--t);
     }
     .pcard:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 16px 48px rgba(0,0,0,0.13);
-      border-color: var(--orange);
+      transform: translateY(-5px);
+      border-color: var(--saffron);
+      box-shadow: 0 20px 60px rgba(255,107,26,.12);
     }
-    .pcard-img-wrap {
+    .pcard-featured { border-color: var(--saffron); }
+
+    .pcard-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 200px;
+    }
+    @media (max-width: 480px) {
+      .pcard-top { grid-template-columns: 1fr; }
+    }
+
+    .pcard-img-half {
+      background: linear-gradient(135deg, #f7f3ee, #ede8e0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
       position: relative;
-      background: linear-gradient(135deg, #f4f0ec, #ece8e3);
-      text-align: center;
-      padding: 24px;
+      overflow: hidden;
     }
-    .pcard-img-wrap img {
+    .pcard-img-half img {
       width: 100%;
-      max-width: 220px;
-      height: 200px;
+      max-width: 160px;
+      height: 180px;
       object-fit: contain;
       display: block;
-      margin: 0 auto;
     }
+
     .pcard-flag {
       position: absolute;
-      top: 16px;
-      left: 16px;
-      color: #fff;
-      font-size: 0.68rem;
+      top: 12px; left: 12px;
+      font-size: 0.65rem;
       font-weight: 900;
-      letter-spacing: 0.08em;
+      letter-spacing: .06em;
       text-transform: uppercase;
-      padding: 5px 12px;
+      color: #fff;
+      padding: 5px 11px;
       border-radius: 99px;
     }
-    .flag-budget   { background: var(--green); }
-    .flag-popular  { background: var(--orange); }
-    .flag-family   { background: var(--navy); }
-    .flag-large    { background: #7C3AED; }
+    .flag-budget  { background: var(--green); }
+    .flag-popular { background: var(--saffron); }
+    .flag-family  { background: var(--indigo); }
+    .flag-large   { background: var(--red); }
 
-    .pcard-body { padding: 22px 20px 24px; }
+    .pcard-info-half {
+      padding: 22px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
     .pcard-ideal {
-      font-size: 0.72rem;
-      font-weight: 800;
-      letter-spacing: 0.1em;
+      font-size: 0.68rem;
+      font-weight: 900;
+      letter-spacing: .12em;
       text-transform: uppercase;
-      color: var(--orange);
+      color: var(--saffron);
       margin-bottom: 6px;
     }
     .pcard-name {
       font-family: 'Playfair Display', serif;
-      font-size: 1.45rem;
+      font-size: 1.35rem;
       color: var(--dark);
+      line-height: 1.2;
       margin-bottom: 14px;
     }
+    .spec-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 0.82rem;
+    }
+    .spec-row .spec-k { color: var(--muted); font-weight: 600; min-width: 60px; }
+    .spec-row .spec-v { color: var(--dark); font-weight: 800; }
 
-    /* Spec pills */
-    .spec-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
-    .spec-pill {
-      background: #F4F1ED;
+    .pcard-bottom { padding: 0 20px 22px; }
+
+    .recipe-chips-wrap {
+      padding: 16px 20px;
+      background: var(--warm);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .recipe-chips-label {
+      font-size: 0.68rem;
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+    .recipe-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+    .r-chip {
+      background: #fff;
+      border: 1px solid var(--border);
       border-radius: 99px;
       font-size: 0.78rem;
       font-weight: 700;
-      color: var(--dark);
-      padding: 5px 12px;
-      display: flex;
-      align-items: center;
-      gap: 5px;
+      color: var(--text);
+      padding: 4px 12px;
     }
-    .spec-pill span { color: var(--muted); font-weight: 600; }
 
-    .pcard-desc {
-      font-size: 0.9rem;
+    .pcard-story {
+      padding: 18px 20px 0;
+      font-size: 0.88rem;
       color: #555;
-      line-height: 1.65;
-      margin-bottom: 20px;
+      line-height: 1.7;
     }
+
     .pcard-cta {
       display: block;
-      width: 100%;
       background: var(--dark);
       color: #fff;
       text-align: center;
-      padding: 14px;
-      border-radius: 12px;
+      padding: 14px 20px;
+      border-radius: var(--r-sm);
       text-decoration: none;
-      font-weight: 800;
-      font-size: 0.95rem;
-      transition: background var(--t);
+      font-weight: 900;
+      font-size: 0.92rem;
+      margin-top: 18px;
+      transition: background var(--t), transform var(--t);
     }
-    .pcard-cta:hover { background: var(--orange); }
-    .pcard-cta .amz-logo { opacity: 0.7; font-size: 0.8rem; font-weight: 600; }
+    .pcard-cta:hover { background: var(--saffron); transform: scale(1.01); }
 
-    /* ── COMPARISON TABLE ── */
-    .table-wrap {
-      background: var(--white);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
+    /* ── FEATURED CARD ── */
+    .pcard-featured-banner {
+      background: linear-gradient(90deg, var(--saffron), #FFAA44);
+      color: #fff;
+      text-align: center;
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 8px;
+    }
+
+    /* ── RECIPE IDEAS SECTION ── */
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+      gap: 14px;
       margin: 28px 0;
     }
+    .recipe-tile {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 14px;
+      text-align: center;
+      transition: transform var(--t), box-shadow var(--t);
+    }
+    .recipe-tile:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-sm);
+    }
+    .recipe-emoji { font-size: 2rem; display: block; margin-bottom: 8px; }
+    .recipe-name {
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 4px;
+    }
+    .recipe-time {
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    /* ── COMPARISON TABLE ── */
+    .table-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
     .table-scroll { overflow-x: auto; }
-    table { width: 100%; border-collapse: collapse; min-width: 480px; }
+    table { width: 100%; border-collapse: collapse; min-width: 500px; }
     th {
       background: var(--dark);
-      color: rgba(255,255,255,0.85);
-      font-size: 0.8rem;
+      color: rgba(255,255,255,.8);
+      font-size: 0.75rem;
       font-weight: 800;
-      letter-spacing: 0.06em;
+      letter-spacing: .08em;
       text-transform: uppercase;
       padding: 14px 16px;
       text-align: left;
     }
     td {
       padding: 13px 16px;
-      font-size: 0.88rem;
+      font-size: 0.86rem;
       border-bottom: 1px solid var(--border);
       vertical-align: middle;
     }
     tr:last-child td { border-bottom: none; }
     tr:nth-child(even) td { background: #FAFAF8; }
-    .best-badge {
+    .best-row td { background: #FFF8F0 !important; }
+    .best-row td:first-child { border-left: 3px solid var(--saffron); }
+    .top-pick {
       display: inline-block;
-      background: var(--green);
+      background: var(--saffron);
       color: #fff;
-      font-size: 0.65rem;
-      font-weight: 800;
+      font-size: 0.6rem;
+      font-weight: 900;
       padding: 2px 8px;
       border-radius: 99px;
       margin-left: 6px;
       vertical-align: middle;
     }
 
-    /* ── WHY SECTION ── */
-    .why-list { display: flex; flex-direction: column; gap: 14px; margin: 20px 0; }
-    .why-item {
-      display: flex;
-      align-items: flex-start;
+    /* ── TIPS SECTION ── */
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       gap: 14px;
-      background: var(--white);
+      margin: 24px 0;
+    }
+    .tip-card {
+      background: #fff;
+      border: 1px solid var(--border);
       border-radius: 14px;
-      padding: 16px 18px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      padding: 20px 18px;
+      transition: transform var(--t);
     }
-    .why-icon {
-      font-size: 1.6rem;
-      flex-shrink: 0;
-      width: 44px;
-      height: 44px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #FFF3EE;
-      border-radius: 12px;
-    }
-    .why-item strong { display: block; font-size: 0.95rem; color: var(--dark); margin-bottom: 3px; }
-    .why-item p { font-size: 0.85rem; color: var(--muted); margin: 0; }
+    .tip-card:hover { transform: translateY(-3px); }
+    .tip-icon { font-size: 1.8rem; margin-bottom: 10px; display: block; }
+    .tip-title { font-size: 0.9rem; font-weight: 800; color: var(--dark); margin-bottom: 5px; }
+    .tip-body { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
 
-    /* ── STICKY FOOTER CTA ── */
-    .sticky-footer {
+    /* ── STICKY CTA ── */
+    .sticky-cta {
       position: fixed;
       bottom: 0; left: 0; right: 0;
       background: var(--dark);
       padding: 14px 20px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       gap: 12px;
       z-index: 999;
-      box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+      box-shadow: 0 -4px 24px rgba(0,0,0,.2);
+      transform: translateY(0);
+      transition: transform var(--t);
     }
-    .sticky-footer p { color: rgba(255,255,255,0.7); font-size: 0.78rem; margin: 0; }
-    .sticky-footer p strong { color: #fff; display: block; }
-    .sticky-cta {
+    .sticky-cta.hidden { transform: translateY(100%); }
+    .sticky-left { line-height: 1.3; }
+    .sticky-left small { font-size: 0.72rem; color: rgba(255,255,255,.5); display: block; }
+    .sticky-left strong { font-size: 0.9rem; color: #fff; }
+    .sticky-btn {
       flex-shrink: 0;
-      background: var(--orange);
+      background: var(--saffron);
       color: #fff;
       text-decoration: none;
-      font-weight: 800;
+      font-weight: 900;
       font-size: 0.85rem;
-      padding: 10px 20px;
+      padding: 11px 22px;
       border-radius: 99px;
       white-space: nowrap;
       transition: background var(--t);
     }
-    .sticky-cta:hover { background: var(--orange-lt); }
+    .sticky-btn:hover { background: var(--saffron-lt); }
 
-    /* ── PINTEREST FLOAT ── */
+    /* ── PIN BUTTON ── */
     .pin-float {
       position: fixed;
-      top: 16px; right: 16px;
-      background: var(--red);
+      top: 20px; right: 16px;
+      background: #E60023;
       color: #fff;
       text-decoration: none;
-      font-size: 0.78rem;
+      font-size: 0.75rem;
       font-weight: 800;
-      padding: 8px 16px;
+      padding: 8px 15px;
       border-radius: 99px;
       display: flex;
       align-items: center;
       gap: 6px;
       z-index: 1000;
-      box-shadow: 0 4px 16px rgba(230,0,35,0.4);
+      box-shadow: 0 4px 18px rgba(230,0,35,.4);
+      transition: transform var(--t);
     }
+    .pin-float:hover { transform: scale(1.05); }
 
     /* ── DISCLAIMER ── */
     .disclaimer {
       text-align: center;
-      font-size: 0.75rem;
+      font-size: 0.74rem;
       color: var(--muted);
-      padding: 24px 16px 100px;
-      line-height: 1.6;
+      padding: 28px 16px 110px;
+      line-height: 1.65;
+      border-top: 1px solid var(--border);
+      margin-top: 50px;
     }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,.4);
+      text-align: center;
+      font-size: 0.78rem;
+      padding: 20px;
+      padding-bottom: calc(20px + env(safe-area-inset-bottom));
+    }
+    footer strong { color: var(--saffron); }
 
     /* ── REVEAL ANIMATION ── */
     .reveal {
       opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
+      transform: translateY(28px);
+      transition: opacity .7s ease, transform .7s ease;
     }
     .reveal.visible { opacity: 1; transform: none; }
   </style>
 </head>
 <body>
 
-  <!-- Pinterest Floating Button -->
-  <a class="pin-float" href="https://pinterest.com/pin/create/button/?url=https://alerts.zero483.com/lifestyle/kent-air-fryer-buying-guide.html&media=https://m.media-amazon.com/images/I/71zgJXZMf4L._SL1500_.jpg&description=Best Kent Air Fryer for Indian Families 2026" target="_blank" rel="noopener">
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.163 0 7.398 2.967 7.398 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
-    Save to Pinterest
+  <div id="progress"></div>
+
+  <!-- Pinterest Float -->
+  <a class="pin-float" href="https://pinterest.com/pin/create/button/?url=https://alerts.zero483.com/lifestyle/kent-air-fryer-buying-guide.html&media=https://m.media-amazon.com/images/I/71zgJXZMf4L._SL1500_.jpg&description=Best+Kent+Air+Fryer+for+Indian+Families+2026" target="_blank" rel="noopener">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.163 0 7.398 2.967 7.398 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+    Save
   </a>
 
   <!-- HERO -->
-  <div class="hero">
-    <div class="hero-badge">🍟 2026 Buying Guide — Indian Households</div>
-    <h1>Which Kent Air Fryer is<br/><span>Right for Your Family?</span></h1>
-    <p>Stop guessing. Get guilt-free samosas, pakoras & tikkas — matched to your exact household size.</p>
-    <div class="hero-meta">
-      <span class="hero-chip">⚡ 2–5 People Covered</span>
-      <span class="hero-chip">🏠 Indian Kitchen Tested</span>
-      <span class="hero-chip">⏱️ 3 Min Read</span>
+  <section class="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-top-strip">
+      <div class="site-tag">Zero483 Lifestyle</div>
+      <div class="hero-date">August 2026 • Updated</div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">🍟 Indian Kitchen Guide · 2026</div>
+      <h1>Guilt-Free <em>Samosas.</em><br/>Which Kent Air Fryer<br/>is Made for <em>Your</em> Family?</h1>
+      <p class="hero-lead">From crispy pakoras for two to tandoori chicken for the whole joint family — we've matched every Kent model to real Indian homes and real Indian recipes.</p>
+      <div class="hero-chips">
+        <span class="hchip">🏠 2–5+ People Covered</span>
+        <span class="hchip">🫙 80% Less Oil</span>
+        <span class="hchip">⏱️ 4 Min Read</span>
+        <span class="hchip">₹ All Budgets</span>
+      </div>
+      <div class="hero-scroll-hint">
+        <span></span> Scroll to find your perfect match
+      </div>
+    </div>
+  </section>
+
+  <!-- DECISION PANEL -->
+  <div class="panel-wrap">
+    <div class="decision-panel reveal">
+      <div class="dp-header">
+        <span>⚡</span>
+        <h2>Tell me your family size — I'll tell you exactly what to buy</h2>
+      </div>
+      <a class="dp-row" href="#classic-4l">
+        <div class="dp-size">👫 1–2 People</div>
+        <div class="dp-text">
+          <strong>Kent Classic 4L</strong>
+          <small>Budget pick · Quick samosas for couples & bachelors</small>
+        </div>
+        <div class="dp-arrow">→</div>
+      </a>
+      <a class="dp-row" href="#digital-4l">
+        <div class="dp-size">👨‍👩‍👦 2–3 People</div>
+        <div class="dp-text">
+          <strong>Kent Digital 4L</strong>
+          <small>Most popular · Digital presets, easy daily cooking</small>
+        </div>
+        <div class="dp-arrow">→</div>
+      </a>
+      <a class="dp-row" href="#digital-8l">
+        <div class="dp-size">👨‍👩‍👧‍👦 3–5 People</div>
+        <div class="dp-text">
+          <strong>Kent Digital 8L ⭐</strong>
+          <small>Our top pick · No more cooking in batches!</small>
+        </div>
+        <div class="dp-arrow">→</div>
+      </a>
+      <a class="dp-row" href="#oven-12l">
+        <div class="dp-size">🏠 5+ / Joint</div>
+        <div class="dp-text">
+          <strong>Kent Oven 12L</strong>
+          <small>Joint families & hosting · Rotisserie included</small>
+        </div>
+        <div class="dp-arrow">→</div>
+      </a>
     </div>
   </div>
 
-  <!-- QUICK STRIP -->
-  <div class="quick-strip">
-    <p>👨‍👩‍👧‍👦 Family of 3–5? <a href="#digital-8l">The 8L Digital is your best bet →</a></p>
-  </div>
-
-  <!-- QUICK DECISION BOX -->
   <div class="wrap">
-    <div class="decision-box reveal">
-      <div class="db-header">
-        <span class="icon">⚡</span>
-        <h2>Tell me your family size → I'll pick for you</h2>
-      </div>
-      <div class="decision-row">
-        <div class="family-badge">1–2 people</div>
-        <div class="rec">Couple / Bachelor? <strong>Classic 4L</strong> saves money</div>
-        <a class="pick-btn" href="#classic-4l">See it</a>
-      </div>
-      <div class="decision-row">
-        <div class="family-badge">2–3 people</div>
-        <div class="rec">Small family? <strong>Digital 4L</strong> for convenience</div>
-        <a class="pick-btn" href="#digital-4l">See it</a>
-      </div>
-      <div class="decision-row">
-        <div class="family-badge">3–5 people</div>
-        <div class="rec">Standard family? <strong>Digital 8L</strong> — no re-cooking!</div>
-        <a class="pick-btn" href="#digital-8l">See it ⭐</a>
-      </div>
-      <div class="decision-row">
-        <div class="family-badge">5+ people</div>
-        <div class="rec">Joint family / hosting? <strong>Oven 12L</strong></div>
-        <a class="pick-btn" href="#oven-12l">See it</a>
+
+    <!-- STORY SECTION -->
+    <div class="section-head reveal">
+      <div class="s-tag">The Real Problem</div>
+      <h2>Sound Familiar?</h2>
+    </div>
+
+    <div class="story-card reveal">
+      <p>It's 5:30 PM. Your family just got home. Someone in the kitchen goes, <strong>"Kuch crispy banana hai aaj?"</strong> You know the drill — heating up oil, the kadhai comes out, the smoke alarm goes off, and then 30 minutes of scrubbing.</p>
+      <br/>
+      <p>The <span class="highlight">Kent Air Fryer changes all of this.</span> Imagine aloo tikki, paneer pakoras, chicken wings, or even dhokla — all done in under 15 minutes, with almost no oil, and zero guilt. But the real question Indian families ask is: <strong>which size is right for my family?</strong> Buying too small means cooking in painful batches. Buying too large is a waste of electricity and counter space.</p>
+      <br/>
+      <p>We tested all four Kent models against <span class="highlight">real Indian scenarios</span> — so you don't have to guess.</p>
+    </div>
+
+    <!-- RECIPES TICKER -->
+    <div class="recipe-ticker reveal">
+      <div class="ticker-label">Makes</div>
+      <div class="ticker-items">
+        <span class="ticker-item">🥟 Samosas</span>
+        <span class="ticker-item">•</span>
+        <span class="ticker-item">🍗 Tandoori Chicken</span>
+        <span class="ticker-item">•</span>
+        <span class="ticker-item">🧅 Pyaz Pakora</span>
+        <span class="ticker-item">•</span>
+        <span class="ticker-item">🥔 Aloo Tikki</span>
+        <span class="ticker-item">•</span>
+        <span class="ticker-item">🫘 Chana Snacks</span>
+        <span class="ticker-item">•</span>
+        <span class="ticker-item">🍕 Mini Pizzas</span>
+        <span class="ticker-item">•</span>
+        <span class="ticker-item">🥜 Roasted Makhana</span>
+        <span class="ticker-item">•</span>
+        <span class="ticker-item">🐟 Crispy Fish</span>
       </div>
     </div>
 
-    <!-- WHY AIR FRYER -->
-    <div class="section-title reveal">
-      <div class="label">Why Switch?</div>
-      <h2>Why Indian Families Love Air Fryers</h2>
+    <!-- RECIPE IDEAS -->
+    <div class="section-head reveal">
+      <div class="s-tag">Indian Recipes</div>
+      <h2>Your Favourite Indian Dishes, Air-Fried</h2>
+      <p>Everything you love — but lighter, faster, and without the mess.</p>
     </div>
-    <div class="why-list reveal">
-      <div class="why-item">
-        <div class="why-icon">🫙</div>
-        <div>
-          <strong>80% Less Oil</strong>
-          <p>Same crispy samosas, pakoras, and aloo fries — without drowning in oil.</p>
-        </div>
-      </div>
-      <div class="why-item">
-        <div class="why-icon">⚡</div>
-        <div>
-          <strong>Ready in Minutes</strong>
-          <p>No preheating a big oven. Evening snacks are done in 10–15 minutes flat.</p>
-        </div>
-      </div>
-      <div class="why-item">
-        <div class="why-icon">🧹</div>
-        <div>
-          <strong>Easy Cleanup</strong>
-          <p>No oily kadhai to scrub. The basket is non-stick and dishwasher safe.</p>
-        </div>
-      </div>
+
+    <div class="recipe-grid reveal">
+      <div class="recipe-tile"><span class="recipe-emoji">🥟</span><div class="recipe-name">Samosa</div><div class="recipe-time">⏱ 12 min</div></div>
+      <div class="recipe-tile"><span class="recipe-emoji">🧅</span><div class="recipe-name">Pyaz Pakora</div><div class="recipe-time">⏱ 10 min</div></div>
+      <div class="recipe-tile"><span class="recipe-emoji">🍗</span><div class="recipe-name">Tandoori Chicken</div><div class="recipe-time">⏱ 25 min</div></div>
+      <div class="recipe-tile"><span class="recipe-emoji">🥔</span><div class="recipe-name">Aloo Tikki</div><div class="recipe-time">⏱ 15 min</div></div>
+      <div class="recipe-tile"><span class="recipe-emoji">🧀</span><div class="recipe-name">Paneer Tikka</div><div class="recipe-time">⏱ 15 min</div></div>
+      <div class="recipe-tile"><span class="recipe-emoji">🍖</span><div class="recipe-name">Seekh Kebab</div><div class="recipe-time">⏱ 18 min</div></div>
+      <div class="recipe-tile"><span class="recipe-emoji">🥜</span><div class="recipe-name">Masala Makhana</div><div class="recipe-time">⏱ 8 min</div></div>
+      <div class="recipe-tile"><span class="recipe-emoji">🐟</span><div class="recipe-name">Crispy Fish Fry</div><div class="recipe-time">⏱ 14 min</div></div>
     </div>
 
     <!-- PRODUCT CARDS -->
-    <div class="section-title reveal">
-      <div class="label">The Lineup</div>
-      <h2>All 4 Kent Models Compared</h2>
+    <div class="section-head reveal">
+      <div class="s-tag">The Models</div>
+      <h2>Which One is Made for Your Home?</h2>
+      <p>Honest breakdown with real-life Indian household scenarios.</p>
     </div>
 
-    <div class="cards">
-
-      <!-- Classic 4L -->
-      <div class="pcard reveal" id="classic-4l">
-        <div class="pcard-img-wrap">
+    <!-- Card 1: Classic 4L -->
+    <div class="pcard reveal" id="classic-4l">
+      <div class="pcard-top">
+        <div class="pcard-img-half">
           <img src="https://m.media-amazon.com/images/I/61aRZ4tPj7L._SL1500_.jpg" alt="Kent Classic 4L Air Fryer" loading="lazy" />
           <span class="pcard-flag flag-budget">Budget Pick</span>
         </div>
-        <div class="pcard-body">
+        <div class="pcard-info-half">
           <div class="pcard-ideal">👫 Best for 1–2 People</div>
           <div class="pcard-name">Kent Classic 4L</div>
-          <div class="spec-pills">
-            <div class="spec-pill">🔋 <span>Power:</span> 1300W</div>
-            <div class="spec-pill">🪣 <span>Size:</span> 4 Litres</div>
-            <div class="spec-pill">🎛️ <span>Control:</span> Dial Knob</div>
-            <div class="spec-pill">⏱️ <span>Timer:</span> Up to 30 min</div>
-          </div>
-          <p class="pcard-desc">No-nonsense and ultra-durable. If you're a couple or bachelor who just wants to quickly make crispy snacks without fiddling with apps or presets, this is your pick. Easy to use, easy to clean, and easy on the wallet.</p>
-          <a class="pcard-cta" href="https://link.amazon/B0a5Drsiy" target="_blank" rel="noopener sponsored">
-            Check Price on Amazon 🛒
-          </a>
+          <div class="spec-row"><span class="spec-k">Capacity</span><span class="spec-v">4 Litres</span></div>
+          <div class="spec-row"><span class="spec-k">Power</span><span class="spec-v">1300W</span></div>
+          <div class="spec-row"><span class="spec-k">Control</span><span class="spec-v">Dial Knob</span></div>
+          <div class="spec-row"><span class="spec-k">Timer</span><span class="spec-v">Up to 30 min</span></div>
         </div>
       </div>
+      <div class="recipe-chips-wrap">
+        <div class="recipe-chips-label">🍽️ Perfect for making</div>
+        <div class="recipe-chips">
+          <span class="r-chip">🥟 4–5 Samosas</span>
+          <span class="r-chip">🧅 Pyaz Pakora</span>
+          <span class="r-chip">🥔 Aloo Tikki</span>
+          <span class="r-chip">🍗 2 Chicken Pieces</span>
+        </div>
+      </div>
+      <div class="pcard-story">
+        <p><strong>The Scenario:</strong> You're a working couple in a 1 BHK or a student in a hostel/PG. You don't need to cook for 5 people — just a quick, healthy evening snack or a light dinner. You want something simple that works without an instruction manual. The Classic 4L is that appliance. Dial it, wait, eat. No digital menus, no confusion, just crispy results.</p>
+      </div>
+      <div class="pcard-bottom">
+        <a class="pcard-cta" href="https://link.amazon/B0a5Drsiy" target="_blank" rel="noopener sponsored">Check Price on Amazon 🛒</a>
+      </div>
+    </div>
 
-      <!-- Digital 4L -->
-      <div class="pcard reveal" id="digital-4l">
-        <div class="pcard-img-wrap">
+    <!-- Card 2: Digital 4L -->
+    <div class="pcard reveal" id="digital-4l">
+      <div class="pcard-top">
+        <div class="pcard-img-half">
           <img src="https://m.media-amazon.com/images/I/71zgJXZMf4L._SL1500_.jpg" alt="Kent Digital 4L Air Fryer" loading="lazy" />
           <span class="pcard-flag flag-popular">Most Popular</span>
         </div>
-        <div class="pcard-body">
+        <div class="pcard-info-half">
           <div class="pcard-ideal">👨‍👩‍👦 Best for 2–3 People</div>
           <div class="pcard-name">Kent Digital 4L</div>
-          <div class="spec-pills">
-            <div class="spec-pill">🔋 <span>Power:</span> 1400W</div>
-            <div class="spec-pill">🪣 <span>Size:</span> 4 Litres</div>
-            <div class="spec-pill">📱 <span>Control:</span> Digital Touch</div>
-            <div class="spec-pill">⏱️ <span>Timer:</span> Up to 60 min</div>
-            <div class="spec-pill">🍗 <span>Presets:</span> 7–10</div>
-          </div>
-          <p class="pcard-desc">The most popular choice for small Indian families. Digital presets mean one-touch cooking for chicken tikka, french fries, and vegetables. Slightly more powerful than the Classic for crispier results in less time.</p>
-          <a class="pcard-cta" href="https://link.amazon/B0fwncK57" target="_blank" rel="noopener sponsored">
-            Check Price on Amazon 🛒
-          </a>
+          <div class="spec-row"><span class="spec-k">Capacity</span><span class="spec-v">4 Litres</span></div>
+          <div class="spec-row"><span class="spec-k">Power</span><span class="spec-v">1400W</span></div>
+          <div class="spec-row"><span class="spec-k">Control</span><span class="spec-v">Digital Touch</span></div>
+          <div class="spec-row"><span class="spec-k">Presets</span><span class="spec-v">7–10 Modes</span></div>
+          <div class="spec-row"><span class="spec-k">Timer</span><span class="spec-v">Up to 60 min</span></div>
         </div>
       </div>
-
-      <!-- Digital 8L -->
-      <div class="pcard reveal" id="digital-8l">
-        <div class="pcard-img-wrap">
-          <img src="https://m.media-amazon.com/images/I/816RQh3J2qL._SL1500_.jpg" alt="Kent Digital 8L Air Fryer" loading="lazy" />
-          <span class="pcard-flag flag-family">⭐ Family Choice</span>
+      <div class="recipe-chips-wrap">
+        <div class="recipe-chips-label">🍽️ Perfect for making</div>
+        <div class="recipe-chips">
+          <span class="r-chip">🧀 Paneer Tikka</span>
+          <span class="r-chip">🍗 Tandoori Chicken</span>
+          <span class="r-chip">🥟 6–7 Samosas</span>
+          <span class="r-chip">🍕 Mini Pizza</span>
+          <span class="r-chip">🥜 Makhana</span>
         </div>
-        <div class="pcard-body">
+      </div>
+      <div class="pcard-story">
+        <p><strong>The Scenario:</strong> Nuclear family of 3 — parents and one child. You cook Indian food daily and love weekend specials. The digital presets mean Maa can tap "Chicken" and not worry about temperature. It's 100W more powerful than the Classic, so results are noticeably crispier. This is the sweet spot for most small Indian families in 2BHK flats.</p>
+      </div>
+      <div class="pcard-bottom">
+        <a class="pcard-cta" href="https://link.amazon/B0fwncK57" target="_blank" rel="noopener sponsored">Check Price on Amazon 🛒</a>
+      </div>
+    </div>
+
+    <!-- Card 3: Digital 8L ⭐ FEATURED -->
+    <div class="pcard pcard-featured reveal" id="digital-8l">
+      <div class="pcard-featured-banner">⭐ Our Top Pick for Most Indian Families ⭐</div>
+      <div class="pcard-top">
+        <div class="pcard-img-half">
+          <img src="https://m.media-amazon.com/images/I/816RQh3J2qL._SL1500_.jpg" alt="Kent Digital 8L Air Fryer" loading="lazy" />
+          <span class="pcard-flag flag-family">Family Choice</span>
+        </div>
+        <div class="pcard-info-half">
           <div class="pcard-ideal">👨‍👩‍👧‍👦 Best for 3–5 People</div>
           <div class="pcard-name">Kent Digital 8L</div>
-          <div class="spec-pills">
-            <div class="spec-pill">🔋 <span>Power:</span> 1700W</div>
-            <div class="spec-pill">🪣 <span>Size:</span> 8 Litres</div>
-            <div class="spec-pill">📱 <span>Control:</span> Digital Touch</div>
-            <div class="spec-pill">⏱️ <span>Timer:</span> Up to 60 min</div>
-          </div>
-          <p class="pcard-desc"><strong>🏆 The #1 recommendation for a standard Indian family.</strong> A 4L fryer for a family of 4–5 means cooking in multiple batches — the first batch goes cold while you wait! The 8L cooks everyone's pakoras, fries, and tikka at once. No compromises.</p>
-          <a class="pcard-cta" href="https://link.amazon/B028hzQnO" target="_blank" rel="noopener sponsored">
-            Check Price on Amazon 🛒
-          </a>
+          <div class="spec-row"><span class="spec-k">Capacity</span><span class="spec-v">8 Litres</span></div>
+          <div class="spec-row"><span class="spec-k">Power</span><span class="spec-v">1700W</span></div>
+          <div class="spec-row"><span class="spec-k">Control</span><span class="spec-v">Digital Touch</span></div>
+          <div class="spec-row"><span class="spec-k">Presets</span><span class="spec-v">7–10 Modes</span></div>
+          <div class="spec-row"><span class="spec-k">Timer</span><span class="spec-v">Up to 60 min</span></div>
         </div>
       </div>
+      <div class="recipe-chips-wrap">
+        <div class="recipe-chips-label">🍽️ Makes enough for the whole family in ONE go</div>
+        <div class="recipe-chips">
+          <span class="r-chip">🥟 12–15 Samosas</span>
+          <span class="r-chip">🧅 Full Pakora Plate</span>
+          <span class="r-chip">🍗 Full Chicken</span>
+          <span class="r-chip">🧀 Paneer Tikka for 5</span>
+          <span class="r-chip">🐟 Fish Fry</span>
+          <span class="r-chip">🍖 Kebab Platter</span>
+        </div>
+      </div>
+      <div class="pcard-story">
+        <p><strong>The Scenario:</strong> Standard Indian family of 4–5 in a 3BHK. Here's the harsh truth about a 4L fryer for your family — by the time the second batch is ready, the first batch has gone cold. Nobody is happy. The 8L solves this completely. Cook 12–15 samosas, a full plate of pakoras, or tandoori chicken for everyone in a single batch. Evening snack time actually becomes enjoyable. This is the #1 air fryer for the average Indian household, and the extra capacity is absolutely worth it.</p>
+      </div>
+      <div class="pcard-bottom">
+        <a class="pcard-cta" href="https://link.amazon/B028hzQnO" target="_blank" rel="noopener sponsored">Check Price on Amazon 🛒</a>
+      </div>
+    </div>
 
-      <!-- Oven 12L -->
-      <div class="pcard reveal" id="oven-12l">
-        <div class="pcard-img-wrap">
+    <!-- Card 4: Oven 12L -->
+    <div class="pcard reveal" id="oven-12l">
+      <div class="pcard-top">
+        <div class="pcard-img-half">
           <img src="https://m.media-amazon.com/images/I/71Aud8yUQxL._SL1500_.jpg" alt="Kent Digital Oven 12L" loading="lazy" />
-          <span class="pcard-flag flag-large">Large Family</span>
+          <span class="pcard-flag flag-large">Joint Family</span>
         </div>
-        <div class="pcard-body">
-          <div class="pcard-ideal">🏠 Best for 5+ People & Hosting</div>
-          <div class="pcard-name">Kent Digital Oven 12L</div>
-          <div class="spec-pills">
-            <div class="spec-pill">🔋 <span>Power:</span> 1700W</div>
-            <div class="spec-pill">🪣 <span>Size:</span> 12 Litres</div>
-            <div class="spec-pill">📱 <span>Control:</span> Touch + Display</div>
-            <div class="spec-pill">🍗 <span>Rotisserie:</span> Yes!</div>
-          </div>
-          <p class="pcard-desc">For joint families or those who love to host. This isn't just an air fryer — it's a full oven. Roast a whole chicken, bake a cake, or grill paneer for 10 people at once. A true all-in-one appliance that can replace your microwave oven.</p>
-          <a class="pcard-cta" href="https://link.amazon/B01NovpYw" target="_blank" rel="noopener sponsored">
-            Check Price on Amazon 🛒
-          </a>
+        <div class="pcard-info-half">
+          <div class="pcard-ideal">🏠 Best for 5+ / Hosting</div>
+          <div class="pcard-name">Kent Oven 12L</div>
+          <div class="spec-row"><span class="spec-k">Capacity</span><span class="spec-v">12 Litres</span></div>
+          <div class="spec-row"><span class="spec-k">Power</span><span class="spec-v">1700W</span></div>
+          <div class="spec-row"><span class="spec-k">Control</span><span class="spec-v">Touch + Display</span></div>
+          <div class="spec-row"><span class="spec-k">Rotisserie</span><span class="spec-v">✅ Yes!</span></div>
+          <div class="spec-row"><span class="spec-k">Timer</span><span class="spec-v">Extended Cycles</span></div>
         </div>
       </div>
-
+      <div class="recipe-chips-wrap">
+        <div class="recipe-chips-label">🍽️ Goes beyond air frying</div>
+        <div class="recipe-chips">
+          <span class="r-chip">🍗 Whole Rotisserie Chicken</span>
+          <span class="r-chip">🎂 Bake a Cake</span>
+          <span class="r-chip">🥩 Seekh Kebabs for 10</span>
+          <span class="r-chip">🍕 Large Pizza</span>
+          <span class="r-chip">🫙 Dehydrate Fruits</span>
+        </div>
+      </div>
+      <div class="pcard-story">
+        <p><strong>The Scenario:</strong> You have a joint family of 6–8 people, or you're the type who loves hosting friends for parties and Diwali gatherings. This isn't just an air fryer — it's a full oven with a rotisserie function. You can roast a whole chicken on a spit, bake a vanilla cake for someone's birthday, make large batches of kebabs for guests, and even dehydrate mangoes or amla. It can genuinely replace a standalone microwave oven. Bigger footprint, but if you have the counter space, nothing beats it.</p>
+      </div>
+      <div class="pcard-bottom">
+        <a class="pcard-cta" href="https://link.amazon/B01NovpYw" target="_blank" rel="noopener sponsored">Check Price on Amazon 🛒</a>
+      </div>
     </div>
 
     <!-- COMPARISON TABLE -->
-    <div class="section-title reveal">
-      <div class="label">Side-by-Side</div>
-      <h2>Feature Comparison Table</h2>
+    <div class="section-head reveal">
+      <div class="s-tag">Side by Side</div>
+      <h2>Full Feature Comparison</h2>
     </div>
 
-    <div class="table-wrap reveal">
+    <div class="table-card reveal">
       <div class="table-scroll">
         <table>
           <thead>
             <tr>
               <th>Model</th>
-              <th>Size</th>
+              <th>Capacity</th>
               <th>Power</th>
-              <th>Control</th>
+              <th>Control Type</th>
               <th>Best For</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>Classic 4L</strong></td>
-              <td>4L</td>
-              <td>1300W</td>
-              <td>Dial Knob</td>
-              <td>Couples / Budget</td>
+              <td><strong>Classic 4L</strong></td><td>4L</td><td>1300W</td><td>Dial Knob</td><td>Couples, Budget</td>
             </tr>
             <tr>
-              <td><strong>Digital 4L</strong></td>
-              <td>4L</td>
-              <td>1400W</td>
-              <td>Digital (7–10 presets)</td>
-              <td>Small families</td>
+              <td><strong>Digital 4L</strong></td><td>4L</td><td>1400W</td><td>Digital (7–10 presets)</td><td>Small family</td>
+            </tr>
+            <tr class="best-row">
+              <td><strong>Digital 8L</strong><span class="top-pick">Top Pick</span></td><td>8L</td><td>1700W</td><td>Digital (7–10 presets)</td><td>3–5 people</td>
             </tr>
             <tr>
-              <td><strong>Digital 8L</strong></td>
-              <td>8L</td>
-              <td>1700W</td>
-              <td>Digital (7–10 presets)</td>
-              <td>3–5 people <span class="best-badge">Top Pick</span></td>
-            </tr>
-            <tr>
-              <td><strong>Oven 12L</strong></td>
-              <td>12L</td>
-              <td>1700W</td>
-              <td>Touch + Display + Rotisserie</td>
-              <td>Joint families</td>
+              <td><strong>Oven 12L</strong></td><td>12L</td><td>1700W</td><td>Touch + Display + Rotisserie</td><td>Joint family / Hosting</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
 
-    <div class="disclaimer">
-      <em>Affiliate Disclosure: This post contains Amazon affiliate links. If you purchase through these links, we may earn a small commission at no additional cost to you. Prices and availability are subject to change.</em>
+    <!-- TIPS SECTION -->
+    <div class="section-head reveal">
+      <div class="s-tag">Pro Tips</div>
+      <h2>Get the Best Results from Your Air Fryer</h2>
     </div>
+
+    <div class="tips-grid reveal">
+      <div class="tip-card">
+        <span class="tip-icon">💧</span>
+        <div class="tip-title">Light Oil Spray Works Best</div>
+        <div class="tip-body">A light spray of oil (not drizzle) gives the crispiest results — especially for samosas and tikki.</div>
+      </div>
+      <div class="tip-card">
+        <span class="tip-icon">🔄</span>
+        <div class="tip-title">Flip Halfway Through</div>
+        <div class="tip-body">Flip pakoras, chicken pieces, or fish halfway through for even golden crispiness on both sides.</div>
+      </div>
+      <div class="tip-card">
+        <span class="tip-icon">📏</span>
+        <div class="tip-title">Don't Overcrowd the Basket</div>
+        <div class="tip-body">Air needs to circulate. Leave small gaps between pieces. This is exactly why the 8L is better for families.</div>
+      </div>
+      <div class="tip-card">
+        <span class="tip-icon">🌡️</span>
+        <div class="tip-title">Pre-heat for 3 Minutes</div>
+        <div class="tip-body">A quick 3-min preheat at 180°C gives perfectly consistent results, especially for paneer and chicken.</div>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <em>Affiliate Disclosure: This post contains Amazon affiliate links. If you purchase through these links, we may earn a small commission at no additional cost to you. All product details are verified at time of writing and subject to change.</em>
+    </div>
+
   </div>
 
-  <!-- STICKY FOOTER CTA -->
-  <div class="sticky-footer">
-    <p><strong>Family of 3–5?</strong> Don't miss out on the best deal</p>
-    <a class="sticky-cta" href="https://link.amazon/B028hzQnO" target="_blank" rel="noopener sponsored">Buy 8L on Amazon</a>
+  <footer>
+    <p>&copy; 2026 <strong>Zero483 Lifestyle</strong> — Honest reviews for Indian homes.</p>
+  </footer>
+
+  <!-- Sticky CTA -->
+  <div class="sticky-cta" id="stickyCta">
+    <div class="sticky-left">
+      <small>Best for most Indian families</small>
+      <strong>Kent Digital 8L → Check Price</strong>
+    </div>
+    <a class="sticky-btn" href="https://link.amazon/B028hzQnO" target="_blank" rel="noopener sponsored">Buy on Amazon</a>
   </div>
 
   <script>
-    // Scroll reveal animation
+    // Scroll Reveal
     const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
+    const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
+        if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); }
       });
-    }, { threshold: 0.1 });
-    reveals.forEach(r => observer.observe(r));
+    }, { threshold: 0.08 });
+    reveals.forEach(r => revealObserver.observe(r));
+
+    // Progress bar
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const maxScroll = document.body.scrollHeight - window.innerHeight;
+      document.getElementById('progress').style.width = (scrolled / maxScroll * 100) + '%';
+    });
+
+    // Hide sticky CTA at top of page
+    const stickyCta = document.getElementById('stickyCta');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY < 300) {
+        stickyCta.classList.add('hidden');
+      } else {
+        stickyCta.classList.remove('hidden');
+      }
+    });
+    stickyCta.classList.add('hidden');
   </script>
 </body>
 </html>
