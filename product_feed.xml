@@ -3,7 +3,7 @@
   <channel>
     <title>Zero483 Lifestyle Products</title>
     <link>https://alerts.zero483.com</link>
-    <description>Product feed for Zero483 Lifestyle reviews, kitchen appliances, fashion, and beauty products.</description>
+    <description>Master product feed for Zero483 Lifestyle reviews, fashion, appliances, beauty, and home decor.</description>
     
     <!-- Item 1: Kent Digital 8L Air Fryer -->
     <item>
@@ -11,7 +11,7 @@
       <title>Kent Digital 8L Air Fryer (1700W) for 3-5 People</title>
       <description>Top recommendation for standard Indian families. 8L capacity, 1700W power, digital touch controls, 7-10 presets for guilt-free samosas and pakoras.</description>
       <link>https://alerts.zero483.com/lifestyle/kent-air-fryer-buying-guide.html#digital-8l</link>
-      <g:image_link>https://m.media-amazon.com/images/I/816RQh3J2qL._SL1500_.jpg</g:image_link>
+      <g:image_link>https://alerts.zero483.com/lifestyle/kent-8l.jpg</g:image_link>
       <g:price>4999 INR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -25,7 +25,7 @@
       <title>Kent Digital 4L Air Fryer (1400W) for Small Families</title>
       <description>Popular air fryer for 2-3 people. Digital touch controls, 1400W power, touch presets for easy oil-free snacks in Indian kitchens.</description>
       <link>https://alerts.zero483.com/lifestyle/kent-air-fryer-buying-guide.html#digital-4l</link>
-      <g:image_link>https://m.media-amazon.com/images/I/71zgJXZMf4L._SL1500_.jpg</g:image_link>
+      <g:image_link>https://alerts.zero483.com/lifestyle/kent-4l-digital.jpg</g:image_link>
       <g:price>3499 INR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -39,7 +39,7 @@
       <title>Kent Classic 4L Air Fryer (1300W) Budget Pick</title>
       <description>Simple dial knob air fryer for couples and bachelors. 4L capacity, 1300W power, easy to use, easy to clean.</description>
       <link>https://alerts.zero483.com/lifestyle/kent-air-fryer-buying-guide.html#classic-4l</link>
-      <g:image_link>https://m.media-amazon.com/images/I/61aRZ4tPj7L._SL1500_.jpg</g:image_link>
+      <g:image_link>https://alerts.zero483.com/lifestyle/kent-4l-classic.jpg</g:image_link>
       <g:price>2999 INR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -103,13 +103,27 @@
       <g:google_product_category>Health &amp; Beauty &gt; Personal Care &gt; Hair Care &gt; Hair Styling Products</g:google_product_category>
     </item>
 
-    <!-- Item 8: Nifty Peacock Blue Baggy Jeans -->
+    <!-- Item 8: Bare Anatomy Leave-In Conditioner -->
+    <item>
+      <g:id>bare-anatomy-leave-in-conditioner</g:id>
+      <title>Bare Anatomy Anti-Hair Fall Leave-In Conditioner</title>
+      <description>Nourishing leave-in conditioner for frizz-free, manageable hair. Protects hair strands and locks in moisture.</description>
+      <link>https://alerts.zero483.com/lifestyle/bare-anatomy-anti-hair-fall-shampoo-review.html</link>
+      <g:image_link>https://m.media-amazon.com/images/I/41YLe0BPPuL._SL1000_.jpg</g:image_link>
+      <g:price>499 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Bare Anatomy</g:brand>
+      <g:google_product_category>Health &amp; Beauty &gt; Personal Care &gt; Hair Care &gt; Shampoo &amp; Conditioner</g:google_product_category>
+    </item>
+
+    <!-- Item 9: Nifty Peacock Blue Baggy Jeans -->
     <item>
       <g:id>nifty-baggy-jeans-peacock-blue</g:id>
       <title>Nifty Women's High Waist Baggy Jeans (Peacock Blue)</title>
       <description>High waist stretchable denim baggy jeans for women. Wide leg relaxed fit with tummy control waistband.</description>
       <link>https://alerts.zero483.com/lifestyle/women-high-waist-baggy-jeans-guide.html</link>
-      <g:image_link>https://m.media-amazon.com/images/I/71gojGAoGJL._SY741_.jpg</g:image_link>
+      <g:image_link>https://alerts.zero483.com/lifestyle/jeans-peacock.jpg</g:image_link>
       <g:price>899 INR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -117,13 +131,13 @@
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Pants &gt; Jeans</g:google_product_category>
     </item>
 
-    <!-- Item 9: Nifty Classic Blue Baggy Jeans -->
+    <!-- Item 10: Nifty Classic Blue Baggy Jeans -->
     <item>
       <g:id>nifty-baggy-jeans-classic-blue</g:id>
       <title>Nifty Women's High Waist Baggy Jeans (Classic Blue)</title>
       <description>Timeless classic blue high-waist stretchable denim jeans. Perfect for college, casual outings &amp; streetwear looks.</description>
       <link>https://alerts.zero483.com/lifestyle/women-high-waist-baggy-jeans-guide.html</link>
-      <g:image_link>https://m.media-amazon.com/images/I/61MNdl7nrfL._SY741_.jpg</g:image_link>
+      <g:image_link>https://alerts.zero483.com/lifestyle/jeans-classic.jpg</g:image_link>
       <g:price>899 INR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -131,13 +145,13 @@
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Pants &gt; Jeans</g:google_product_category>
     </item>
 
-    <!-- Item 10: Nifty Light Blue Baggy Jeans -->
+    <!-- Item 11: Nifty Light Blue Baggy Jeans -->
     <item>
       <g:id>nifty-baggy-jeans-light-blue</g:id>
       <title>Nifty Women's High Waist Baggy Jeans (Light Blue)</title>
       <description>Light washed high waist baggy jeans for women. Comfortable stretchable denim for summer styling and everyday wear.</description>
       <link>https://alerts.zero483.com/lifestyle/women-high-waist-baggy-jeans-guide.html</link>
-      <g:image_link>https://m.media-amazon.com/images/I/71oVkXMBIfL._SY741_.jpg</g:image_link>
+      <g:image_link>https://alerts.zero483.com/lifestyle/jeans-light.jpg</g:image_link>
       <g:price>899 INR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -145,18 +159,74 @@
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Pants &gt; Jeans</g:google_product_category>
     </item>
 
-    <!-- Item 11: Nifty Deep Indigo Baggy Jeans -->
+    <!-- Item 12: Nifty Deep Indigo Baggy Jeans -->
     <item>
       <g:id>nifty-baggy-jeans-indigo</g:id>
       <title>Nifty Women's High Waist Baggy Jeans (Deep Indigo)</title>
       <description>Dark indigo high waist stretchable baggy jeans. Flattering silhouette for casual &amp; smart-casual outfits.</description>
       <link>https://alerts.zero483.com/lifestyle/women-high-waist-baggy-jeans-guide.html</link>
-      <g:image_link>https://m.media-amazon.com/images/I/71uUGAPSFjL._SY741_.jpg</g:image_link>
+      <g:image_link>https://alerts.zero483.com/lifestyle/jeans-indigo.jpg</g:image_link>
       <g:price>899 INR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>Nifty</g:brand>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Pants &gt; Jeans</g:google_product_category>
+    </item>
+
+    <!-- Item 13: Aesthetic Ceramic Vases -->
+    <item>
+      <g:id>ceramic-vases-home-decor</g:id>
+      <title>Minimalist Ceramic Vases Set for Home Decor</title>
+      <description>Aesthetic Nordic ceramic flower vases for living room dining table &amp; office home decor.</description>
+      <link>https://alerts.zero483.com/lifestyle/minimalist-magic-the-aesthetic-ceramic-vases-your-home-needs.html</link>
+      <g:image_link>https://alerts.zero483.com/lifestyle/minimalist-magic-the-aesthetic-ceramic-vases-your-home-needs.html</g:image_link>
+      <g:price>999 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Zero483 Home</g:brand>
+      <g:google_product_category>Home &amp; Garden &gt; Decor &gt; Vases</g:google_product_category>
+    </item>
+
+    <!-- Item 14: Silver Evil Eye Charm Bracelet -->
+    <item>
+      <g:id>silver-evil-eye-bracelet</g:id>
+      <title>Silver Evil Eye Charm Bracelet for Women</title>
+      <description>Protection &amp; style combined. Elegant silver evil eye charm wristband for daily wear &amp; gifting.</description>
+      <link>https://alerts.zero483.com/lifestyle/silver-evil-eye-charm-bracelet-for-women.html</link>
+      <g:image_link>https://alerts.zero483.com/lifestyle/silver-evil-eye-charm-bracelet-for-women.html</g:image_link>
+      <g:price>499 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Zero483 Jewelry</g:brand>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Jewelry &gt; Bracelets</g:google_product_category>
+    </item>
+
+    <!-- Item 15: Maybelline Mascara -->
+    <item>
+      <g:id>maybelline-mascara-bubble</g:id>
+      <title>Maybelline Colossal Bubble Waterproof Mascara</title>
+      <description>Ultimate volume &amp; curl waterproof mascara for smudge-proof, all-day eye makeup.</description>
+      <link>https://alerts.zero483.com/lifestyle/maybelline-colossal-bubble-waterproof-mascara-review.html</link>
+      <g:image_link>https://alerts.zero483.com/lifestyle/maybelline-colossal-bubble-waterproof-mascara-review.html</g:image_link>
+      <g:price>399 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Maybelline</g:brand>
+      <g:google_product_category>Health &amp; Beauty &gt; Personal Care &gt; Cosmetics &gt; Makeup &gt; Eye Makeup &gt; Mascara</g:google_product_category>
+    </item>
+
+    <!-- Item 16: Aesthetic Car Phone Mount Holder -->
+    <item>
+      <g:id>aesthetic-car-phone-holder</g:id>
+      <title>Aesthetic Universal Car Phone Mount Holder</title>
+      <description>360-degree rotation phone mount for dashboard &amp; AC vent. Secure grip for hands-free navigation.</description>
+      <link>https://alerts.zero483.com/lifestyle/upgrade-your-commute-why-this-aesthetic-car-phone-holder-is-a-must-have.html</link>
+      <g:image_link>https://alerts.zero483.com/lifestyle/upgrade-your-commute-why-this-aesthetic-car-phone-holder-is-a-must-have.html</g:image_link>
+      <g:price>499 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Zero483 Auto</g:brand>
+      <g:google_product_category>Vehicles &amp; Parts &gt; Vehicle Parts &amp; Accessories &gt; Vehicle Electronics Accessories &gt; GPS &amp; Cell Phone Accessories</g:google_product_category>
     </item>
 
   </channel>
