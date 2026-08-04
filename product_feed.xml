@@ -3,7 +3,7 @@
   <channel>
     <title>Zero483 Lifestyle Products</title>
     <link>https://alerts.zero483.com</link>
-    <description>Product feed for Zero483 Lifestyle reviews, kitchen appliances, and beauty products.</description>
+    <description>Product feed for Zero483 Lifestyle reviews, kitchen appliances, fashion, and beauty products.</description>
     
     <!-- Item 1: Kent Digital 8L Air Fryer -->
     <item>
@@ -101,6 +101,62 @@
       <g:condition>new</g:condition>
       <g:brand>Bare Anatomy</g:brand>
       <g:google_product_category>Health &amp; Beauty &gt; Personal Care &gt; Hair Care &gt; Hair Styling Products</g:google_product_category>
+    </item>
+
+    <!-- Item 8: Nifty Peacock Blue Baggy Jeans -->
+    <item>
+      <g:id>nifty-baggy-jeans-peacock-blue</g:id>
+      <title>Nifty Women's High Waist Baggy Jeans (Peacock Blue)</title>
+      <description>High waist stretchable denim baggy jeans for women. Wide leg relaxed fit with tummy control waistband.</description>
+      <link>https://alerts.zero483.com/lifestyle/women-high-waist-baggy-jeans-guide.html</link>
+      <g:image_link>https://m.media-amazon.com/images/I/71gojGAoGJL._SY741_.jpg</g:image_link>
+      <g:price>899 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nifty</g:brand>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Pants &gt; Jeans</g:google_product_category>
+    </item>
+
+    <!-- Item 9: Nifty Classic Blue Baggy Jeans -->
+    <item>
+      <g:id>nifty-baggy-jeans-classic-blue</g:id>
+      <title>Nifty Women's High Waist Baggy Jeans (Classic Blue)</title>
+      <description>Timeless classic blue high-waist stretchable denim jeans. Perfect for college, casual outings &amp; streetwear looks.</description>
+      <link>https://alerts.zero483.com/lifestyle/women-high-waist-baggy-jeans-guide.html</link>
+      <g:image_link>https://m.media-amazon.com/images/I/61MNdl7nrfL._SY741_.jpg</g:image_link>
+      <g:price>899 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nifty</g:brand>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Pants &gt; Jeans</g:google_product_category>
+    </item>
+
+    <!-- Item 10: Nifty Light Blue Baggy Jeans -->
+    <item>
+      <g:id>nifty-baggy-jeans-light-blue</g:id>
+      <title>Nifty Women's High Waist Baggy Jeans (Light Blue)</title>
+      <description>Light washed high waist baggy jeans for women. Comfortable stretchable denim for summer styling and everyday wear.</description>
+      <link>https://alerts.zero483.com/lifestyle/women-high-waist-baggy-jeans-guide.html</link>
+      <g:image_link>https://m.media-amazon.com/images/I/71oVkXMBIfL._SY741_.jpg</g:image_link>
+      <g:price>899 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nifty</g:brand>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Pants &gt; Jeans</g:google_product_category>
+    </item>
+
+    <!-- Item 11: Nifty Deep Indigo Baggy Jeans -->
+    <item>
+      <g:id>nifty-baggy-jeans-indigo</g:id>
+      <title>Nifty Women's High Waist Baggy Jeans (Deep Indigo)</title>
+      <description>Dark indigo high waist stretchable baggy jeans. Flattering silhouette for casual &amp; smart-casual outfits.</description>
+      <link>https://alerts.zero483.com/lifestyle/women-high-waist-baggy-jeans-guide.html</link>
+      <g:image_link>https://m.media-amazon.com/images/I/71uUGAPSFjL._SY741_.jpg</g:image_link>
+      <g:price>899 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nifty</g:brand>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Pants &gt; Jeans</g:google_product_category>
     </item>
 
   </channel>
