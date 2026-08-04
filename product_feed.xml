@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>Zero483 Lifestyle Products</title>
+    <link>https://alerts.zero483.com</link>
+    <description>Product feed for Zero483 Lifestyle reviews, kitchen appliances, and beauty products.</description>
+    
+    <!-- Item 1: Kent Digital 8L Air Fryer -->
+    <item>
+      <g:id>kent-air-fryer-8l</g:id>
+      <title>Kent Digital 8L Air Fryer (1700W) for 3-5 People</title>
+      <description>Top recommendation for standard Indian families. 8L capacity, 1700W power, digital touch controls, 7-10 presets for guilt-free samosas and pakoras.</description>
+      <link>https://alerts.zero483.com/lifestyle/kent-air-fryer-buying-guide.html#digital-8l</link>
+      <g:image_link>https://m.media-amazon.com/images/I/816RQh3J2qL._SL1500_.jpg</g:image_link>
+      <g:price>4999 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Kent</g:brand>
+      <g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Kitchen Appliances &gt; Deep Fryers &amp; Air Fryers</g:google_product_category>
+    </item>
+
+    <!-- Item 2: Kent Digital 4L Air Fryer -->
+    <item>
+      <g:id>kent-air-fryer-4l-digital</g:id>
+      <title>Kent Digital 4L Air Fryer (1400W) for Small Families</title>
+      <description>Popular air fryer for 2-3 people. Digital touch controls, 1400W power, touch presets for easy oil-free snacks in Indian kitchens.</description>
+      <link>https://alerts.zero483.com/lifestyle/kent-air-fryer-buying-guide.html#digital-4l</link>
+      <g:image_link>https://m.media-amazon.com/images/I/71zgJXZMf4L._SL1500_.jpg</g:image_link>
+      <g:price>3499 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Kent</g:brand>
+      <g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Kitchen Appliances &gt; Deep Fryers &amp; Air Fryers</g:google_product_category>
+    </item>
+
+    <!-- Item 3: Kent Classic 4L Air Fryer -->
+    <item>
+      <g:id>kent-air-fryer-4l-classic</g:id>
+      <title>Kent Classic 4L Air Fryer (1300W) Budget Pick</title>
+      <description>Simple dial knob air fryer for couples and bachelors. 4L capacity, 1300W power, easy to use, easy to clean.</description>
+      <link>https://alerts.zero483.com/lifestyle/kent-air-fryer-buying-guide.html#classic-4l</link>
+      <g:image_link>https://m.media-amazon.com/images/I/61aRZ4tPj7L._SL1500_.jpg</g:image_link>
+      <g:price>2999 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Kent</g:brand>
+      <g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Kitchen Appliances &gt; Deep Fryers &amp; Air Fryers</g:google_product_category>
+    </item>
+
+    <!-- Item 4: Kent Digital Oven 12L -->
+    <item>
+      <g:id>kent-air-fryer-oven-12l</g:id>
+      <title>Kent Digital Oven 12L Air Fryer with Rotisserie</title>
+      <description>Large 12L air fryer oven for joint families and hosting. Features rotisserie function, digital display, roast whole chicken, bake cakes.</description>
+      <link>https://alerts.zero483.com/lifestyle/kent-air-fryer-buying-guide.html#oven-12l</link>
+      <g:image_link>https://m.media-amazon.com/images/I/71Aud8yUQxL._SL1500_.jpg</g:image_link>
+      <g:price>7999 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Kent</g:brand>
+      <g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Kitchen Appliances &gt; Deep Fryers &amp; Air Fryers</g:google_product_category>
+    </item>
+
+    <!-- Item 5: Bare Anatomy Anti-Hair Fall Shampoo -->
+    <item>
+      <g:id>bare-anatomy-anti-hair-fall-shampoo</g:id>
+      <title>Bare Anatomy Expert Anti-Hair Fall Shampoo (250ml)</title>
+      <description>5X Hair Fall Control powered by AdenoGrow Technology™, Peptides &amp; Adenosine. Strengthens hair roots and reduces breakage.</description>
+      <link>https://alerts.zero483.com/lifestyle/bare-anatomy-anti-hair-fall-shampoo-review.html</link>
+      <g:image_link>https://alerts.zero483.com/lifestyle/bare-anatomy-anti-hair-fall.jpg</g:image_link>
+      <g:price>549 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Bare Anatomy</g:brand>
+      <g:google_product_category>Health &amp; Beauty &gt; Personal Care &gt; Hair Care &gt; Shampoo &amp; Conditioner</g:google_product_category>
+    </item>
+
+    <!-- Item 6: Bare Anatomy Hair Mask -->
+    <item>
+      <g:id>bare-anatomy-hair-mask</g:id>
+      <title>Bare Anatomy Hair Fall Control Mask</title>
+      <description>Deep conditioning mask for weak and brittle hair. Pairs perfectly with anti-hair fall shampoo for stronger locks.</description>
+      <link>https://alerts.zero483.com/lifestyle/bare-anatomy-anti-hair-fall-shampoo-review.html</link>
+      <g:image_link>https://m.media-amazon.com/images/I/613Y+PylPPL._SL1000_.jpg</g:image_link>
+      <g:price>599 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Bare Anatomy</g:brand>
+      <g:google_product_category>Health &amp; Beauty &gt; Personal Care &gt; Hair Care &gt; Hair Masks</g:google_product_category>
+    </item>
+
+    <!-- Item 7: Bare Anatomy Hair Serum -->
+    <item>
+      <g:id>bare-anatomy-hair-serum</g:id>
+      <title>Bare Anatomy Hair Fall Control Serum</title>
+      <description>Targeted hair serum to stimulate scalp &amp; reduce hair shedding. Lightweight non-greasy formula.</description>
+      <link>https://alerts.zero483.com/lifestyle/bare-anatomy-anti-hair-fall-shampoo-review.html</link>
+      <g:image_link>https://m.media-amazon.com/images/I/41X5PoGzHXL._SL1000_.jpg</g:image_link>
+      <g:price>699 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Bare Anatomy</g:brand>
+      <g:google_product_category>Health &amp; Beauty &gt; Personal Care &gt; Hair Care &gt; Hair Styling Products</g:google_product_category>
+    </item>
+
+  </channel>
+</rss>
