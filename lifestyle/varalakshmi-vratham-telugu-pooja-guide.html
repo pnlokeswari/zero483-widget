@@ -648,5 +648,106 @@
       document.getElementById('progress').style.width = (scrolled / maxScroll * 100) + '%';
     });
   </script>
+
+  <!-- FLOATING PUJA PRODUCTS DOCK -->
+  <div id="floating-puja-dock" style="position:fixed; bottom:0; left:0; right:0; background:rgba(255,255,255,0.98); backdrop-filter:blur(12px); border-top:2px solid #FCD34D; box-shadow:0 -6px 25px rgba(0,0,0,0.12); z-index:999; padding:10px 14px; transition:transform 0.3s ease;">
+    <div style="max-width:720px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+      <div style="display:flex; align-items:center; gap:8px;">
+        <span style="font-size:1.1rem;">🪔</span>
+        <strong style="font-size:0.85rem; color:#92400E;">వరలక్ష్మీ పూజా సామాగ్రి &amp; రిటర్న్ గిఫ్ట్స్</strong>
+      </div>
+      <button onclick="toggleDock()" id="dock-btn" style="background:#FEF3C7; border:1px solid #FCD34D; color:#78350F; font-size:0.72rem; font-weight:800; padding:4px 10px; border-radius:99px; cursor:pointer;">చిన్నది చేయి 🔻</button>
+    </div>
+    
+    <div id="dock-carousel" style="display:flex; gap:12px; overflow-x:auto; padding-bottom:6px; scroll-behavior:smooth;">
+      <!-- Product 1 -->
+      <a href="https://link.amazon/B0dupDIge" target="_blank" rel="noopener sponsored" style="flex:0 0 140px; background:#FFFDF5; border:1px solid #FDE68A; border-radius:12px; padding:8px; text-decoration:none; color:#1F2937; text-align:center;">
+        <img src="https://m.media-amazon.com/images/I/81aP6PTo8xL._SL1500_.jpg" style="width:100%; height:80px; object-fit:contain; border-radius:8px;" alt="కలశం" />
+        <div style="font-size:0.75rem; font-weight:700; margin:4px 0; color:#374151; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">పూజా కలశం సెట్</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.68rem; font-weight:800; padding:3px 6px; border-radius:6px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 2 -->
+      <a href="https://link.amazon/B083nbMIg" target="_blank" rel="noopener sponsored" style="flex:0 0 140px; background:#FFFDF5; border:1px solid #FDE68A; border-radius:12px; padding:8px; text-decoration:none; color:#1F2937; text-align:center;">
+        <img src="https://m.media-amazon.com/images/I/814wwnDQ1gL._SL1500_.jpg" style="width:100%; height:80px; object-fit:contain; border-radius:8px;" alt="రాధా కృష్ణ దివ్య విగ్రహం" />
+        <div style="font-size:0.75rem; font-weight:700; margin:4px 0; color:#374151; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">రాధా కృష్ణ దీపం ఐడల్</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.68rem; font-weight:800; padding:3px 6px; border-radius:6px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 3 -->
+      <a href="https://link.amazon/B05WDP4V7" target="_blank" rel="noopener sponsored" style="flex:0 0 140px; background:#FFFDF5; border:1px solid #FDE68A; border-radius:12px; padding:8px; text-decoration:none; color:#1F2937; text-align:center;">
+        <img src="https://m.media-amazon.com/images/I/71GsMcK7I-L._SL1448_.jpg" style="width:100%; height:80px; object-fit:contain; border-radius:8px;" alt="పసుపు కుంకుమ సెట్" />
+        <div style="font-size:0.75rem; font-weight:700; margin:4px 0; color:#374151; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">పసుపు కుంకుమ (10 ప్యాక్)</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.68rem; font-weight:800; padding:3px 6px; border-radius:6px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 4 -->
+      <a href="https://link.amazon/B07tWJGBX" target="_blank" rel="noopener sponsored" style="flex:0 0 140px; background:#FFFDF5; border:1px solid #FDE68A; border-radius:12px; padding:8px; text-decoration:none; color:#1F2937; text-align:center;">
+        <img src="https://m.media-amazon.com/images/I/71SBcke16VL._SL1500_.jpg" style="width:100%; height:80px; object-fit:contain; border-radius:8px;" alt="ఎఖాస పసుపు కుంకుమ" />
+        <div style="font-size:0.75rem; font-weight:700; margin:4px 0; color:#374151; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">రిటర్న్ గిఫ్ట్స్ ప్యాక్</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.68rem; font-weight:800; padding:3px 6px; border-radius:6px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 5 -->
+      <a href="https://link.amazon/B08HTnEgv" target="_blank" rel="noopener sponsored" style="flex:0 0 140px; background:#FFFDF5; border:1px solid #FDE68A; border-radius:12px; padding:8px; text-decoration:none; color:#1F2937; text-align:center;">
+        <img src="https://m.media-amazon.com/images/I/71cpJOk5tqL._SL1500_.jpg" style="width:100%; height:80px; object-fit:contain; border-radius:8px;" alt="తాంబూలం జూట్ బ్యాగ్స్" />
+        <div style="font-size:0.75rem; font-weight:700; margin:4px 0; color:#374151; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">తాంబూలం జూట్ బ్యాగ్స్ (10)</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.68rem; font-weight:800; padding:3px 6px; border-radius:6px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 6 -->
+      <a href="https://link.amazon/B04ODdUer" target="_blank" rel="noopener sponsored" style="flex:0 0 140px; background:#FFFDF5; border:1px solid #FDE68A; border-radius:12px; padding:8px; text-decoration:none; color:#1F2937; text-align:center;">
+        <img src="https://m.media-amazon.com/images/I/71llQRP5fmL._SL1500_.jpg" style="width:100%; height:80px; object-fit:contain; border-radius:8px;" alt="కమలం పసుపు కుంకుమ డామ్" />
+        <div style="font-size:0.75rem; font-weight:700; margin:4px 0; color:#374151; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">లోటస్ డిజైన్ హోల్డర్</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.68rem; font-weight:800; padding:3px 6px; border-radius:6px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 7 -->
+      <a href="https://link.amazon/B0iwWx8wv" target="_blank" rel="noopener sponsored" style="flex:0 0 140px; background:#FFFDF5; border:1px solid #FDE68A; border-radius:12px; padding:8px; text-decoration:none; color:#1F2937; text-align:center;">
+        <img src="https://m.media-amazon.com/images/I/71FkVWBJkDL._SL1500_.jpg" style="width:100%; height:80px; object-fit:contain; border-radius:8px;" alt="కామధేను ఆవు తాంబూలం సెట్" />
+        <div style="font-size:0.75rem; font-weight:700; margin:4px 0; color:#374151; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">గోవు తాంబూలం సెట్</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.68rem; font-weight:800; padding:3px 6px; border-radius:6px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 8 -->
+      <a href="https://link.amazon/B08drBHlj" target="_blank" rel="noopener sponsored" style="flex:0 0 140px; background:#FFFDF5; border:1px solid #FDE68A; border-radius:12px; padding:8px; text-decoration:none; color:#1F2937; text-align:center;">
+        <img src="https://m.media-amazon.com/images/I/91AUzRylxfL._SL1500_.jpg" style="width:100%; height:80px; object-fit:contain; border-radius:8px;" alt="రవిక పీస్ ప్లేట్ కాంబో" />
+        <div style="font-size:0.75rem; font-weight:700; margin:4px 0; color:#374151; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">రవిక గుడ్డ + ప్లేట్ కాంబో</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.68rem; font-weight:800; padding:3px 6px; border-radius:6px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 9 -->
+      <a href="https://link.amazon/B03r9IcDC" target="_blank" rel="noopener sponsored" style="flex:0 0 140px; background:#FFFDF5; border:1px solid #FDE68A; border-radius:12px; padding:8px; text-decoration:none; color:#1F2937; text-align:center;">
+        <img src="https://m.media-amazon.com/images/I/815y9BKodaL._SL1500_.jpg" style="width:100%; height:80px; object-fit:contain; border-radius:8px;" alt="గోవు పసుపు కుంకుమ హోల్డర్" />
+        <div style="font-size:0.75rem; font-weight:700; margin:4px 0; color:#374151; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">సిల్వర్ గోవు హోల్డర్</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.68rem; font-weight:800; padding:3px 6px; border-radius:6px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 10 -->
+      <a href="https://link.amazon/B0cAdb7Y4" target="_blank" rel="noopener sponsored" style="flex:0 0 140px; background:#FFFDF5; border:1px solid #FDE68A; border-radius:12px; padding:8px; text-decoration:none; color:#1F2937; text-align:center;">
+        <img src="https://m.media-amazon.com/images/I/81VLBAcPEYL._SL1500_.jpg" style="width:100%; height:80px; object-fit:contain; border-radius:8px;" alt="జాయింట్ కుంకుమ సీసాలు 25 ప్యాక్" />
+        <div style="font-size:0.75rem; font-weight:700; margin:4px 0; color:#374151; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">రిటర్న్ గిఫ్ట్స్ (25 ప్యాక్)</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.68rem; font-weight:800; padding:3px 6px; border-radius:6px;">Amazon 🛒</span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    let dockOpen = true;
+    function toggleDock() {
+      const carousel = document.getElementById('dock-carousel');
+      const btn = document.getElementById('dock-btn');
+      if (dockOpen) {
+        carousel.style.display = 'none';
+        btn.innerHTML = 'సామాగ్రి చూడండి 🛍️';
+        dockOpen = false;
+      } else {
+        carousel.style.display = 'flex';
+        btn.innerHTML = 'చిన్నది చేయి 🔻';
+        dockOpen = true;
+      }
+    }
+  </script>
+
 </body>
 </html>
