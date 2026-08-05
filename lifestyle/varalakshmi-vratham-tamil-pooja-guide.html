@@ -163,31 +163,86 @@
     </div>
   </div>
 
+  
   <!-- RIGHT SIDE FLOATING PUJA PRODUCTS WIDGET -->
-  <div id="side-puja-widget" style="position:fixed; right:12px; top:120px; width:210px; max-height:75vh; background:rgba(255,255,255,0.96); backdrop-filter:blur(10px); border:2px solid #FCD34D; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,0.15); z-index:999; padding:12px 10px; display:flex; flex-direction:column;">
+  <div id="side-puja-widget" style="position:fixed; right:12px; top:120px; width:210px; max-height:75vh; background:rgba(255,255,255,0.96); backdrop-filter:blur(10px); border:2px solid #FCD34D; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,0.15); z-index:999; padding:12px 10px; display:flex; flex-direction:column; transition:transform 0.3s ease;">
     <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px; border-bottom:1px solid #FDE68A; padding-bottom:6px;">
       <span style="font-size:0.84rem; font-weight:800; color:#92400E;">🪔 தாம்பூலம் &amp; பரிசு பொருட்கள்</span>
-      <button onclick="toggleSideWidget()" style="background:#FEF3C7; border:1px solid #FCD34D; color:#78350F; font-size:0.68rem; font-weight:800; padding:2px 6px; border-radius:99px; cursor:pointer;">❌</button>
+      <button onclick="toggleSideWidget()" id="side-btn" style="background:#FEF3C7; border:1px solid #FCD34D; color:#78350F; font-size:0.68rem; font-weight:800; padding:2px 6px; border-radius:99px; cursor:pointer;">❌</button>
     </div>
-    <div id="side-items-list" style="overflow-y:auto; flex:1; display:flex; flex-direction:column; gap:10px;">
-      <a href="https://link.amazon/B0dupDIge" target="_blank" rel="noopener sponsored" style="background:#FFFDF5; border:1px solid #FDE68A; border-radius:10px; padding:6px; text-decoration:none; color:#1F2937; text-align:center;">
+
+    <div id="side-items-list" style="overflow-y:auto; -webkit-overflow-scrolling:touch; flex:1; display:flex; flex-direction:column; gap:10px; padding-right:2px; scroll-behavior:smooth;">
+      <!-- Product 1 -->
+      <a href="https://link.amazon/B0dupDIge" target="_blank" rel="noopener sponsored" style="background:#FFFDF5; border:1px solid #FDE68A; border-radius:10px; padding:6px; text-decoration:none; color:#1F2937; text-align:center; display:block;">
         <img src="https://m.media-amazon.com/images/I/81aP6PTo8xL._SL1500_.jpg" style="width:100%; height:130px; object-fit:contain; border-radius:6px;" alt="கலசம்" />
-        <div style="font-size:0.84rem; font-weight:700; margin:4px 0;">பூஜை கலசம் செட்</div>
+        <div style="font-size:0.84rem; font-weight:700; margin:4px 0; color:#374151;">பூஜை கலசம் செட்</div>
         <span style="display:block; background:#D97706; color:#fff; font-size:0.65rem; font-weight:800; padding:2px 4px; border-radius:4px;">Amazon 🛒</span>
       </a>
-      <a href="https://link.amazon/B08HTnEgv" target="_blank" rel="noopener sponsored" style="background:#FFFDF5; border:1px solid #FDE68A; border-radius:10px; padding:6px; text-decoration:none; color:#1F2937; text-align:center;">
+
+      <!-- Product 2 -->
+      <a href="https://link.amazon/B083nbMIg" target="_blank" rel="noopener sponsored" style="background:#FFFDF5; border:1px solid #FDE68A; border-radius:10px; padding:6px; text-decoration:none; color:#1F2937; text-align:center; display:block;">
+        <img src="https://m.media-amazon.com/images/I/814wwnDQ1gL._SL1500_.jpg" style="width:100%; height:130px; object-fit:contain; border-radius:6px;" alt="ராதா கிருஷ்ணர் சிலை" />
+        <div style="font-size:0.84rem; font-weight:700; margin:4px 0; color:#374151;">ராதா கிருஷ்ணர் தீபம்</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.65rem; font-weight:800; padding:2px 4px; border-radius:4px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 3 -->
+      <a href="https://link.amazon/B05WDP4V7" target="_blank" rel="noopener sponsored" style="background:#FFFDF5; border:1px solid #FDE68A; border-radius:10px; padding:6px; text-decoration:none; color:#1F2937; text-align:center; display:block;">
+        <img src="https://m.media-amazon.com/images/I/71GsMcK7I-L._SL1448_.jpg" style="width:100%; height:130px; object-fit:contain; border-radius:6px;" alt="மஞ்சள் குங்குமம் செட்" />
+        <div style="font-size:0.84rem; font-weight:700; margin:4px 0; color:#374151;">மஞ்சள் குங்குமம் (10)</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.65rem; font-weight:800; padding:2px 4px; border-radius:4px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 4 -->
+      <a href="https://link.amazon/B07tWJGBX" target="_blank" rel="noopener sponsored" style="background:#FFFDF5; border:1px solid #FDE68A; border-radius:10px; padding:6px; text-decoration:none; color:#1F2937; text-align:center; display:block;">
+        <img src="https://m.media-amazon.com/images/I/71SBcke16VL._SL1500_.jpg" style="width:100%; height:130px; object-fit:contain; border-radius:6px;" alt="எகாசா மஞ்சள் குங்குமம்" />
+        <div style="font-size:0.84rem; font-weight:700; margin:4px 0; color:#374151;">தாம்பூல பரிசுகள் (10)</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.65rem; font-weight:800; padding:2px 4px; border-radius:4px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 5 -->
+      <a href="https://link.amazon/B08HTnEgv" target="_blank" rel="noopener sponsored" style="background:#FFFDF5; border:1px solid #FDE68A; border-radius:10px; padding:6px; text-decoration:none; color:#1F2937; text-align:center; display:block;">
         <img src="https://m.media-amazon.com/images/I/71cpJOk5tqL._SL1500_.jpg" style="width:100%; height:130px; object-fit:contain; border-radius:6px;" alt="தாம்பூல பைகள்" />
-        <div style="font-size:0.84rem; font-weight:700; margin:4px 0;">தாம்பூல பைகள் (10)</div>
+        <div style="font-size:0.84rem; font-weight:700; margin:4px 0; color:#374151;">தாம்பூல பைகள் (10)</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.65rem; font-weight:800; padding:2px 4px; border-radius:4px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 6 -->
+      <a href="https://link.amazon/B04ODdUer" target="_blank" rel="noopener sponsored" style="background:#FFFDF5; border:1px solid #FDE68A; border-radius:10px; padding:6px; text-decoration:none; color:#1F2937; text-align:center; display:block;">
+        <img src="https://m.media-amazon.com/images/I/71llQRP5fmL._SL1500_.jpg" style="width:100%; height:130px; object-fit:contain; border-radius:6px;" alt="தாமரை ஹோல்டர்" />
+        <div style="font-size:0.84rem; font-weight:700; margin:4px 0; color:#374151;">தாமரை ஹோல்டர்</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.65rem; font-weight:800; padding:2px 4px; border-radius:4px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 7 -->
+      <a href="https://link.amazon/B0iwWx8wv" target="_blank" rel="noopener sponsored" style="background:#FFFDF5; border:1px solid #FDE68A; border-radius:10px; padding:6px; text-decoration:none; color:#1F2937; text-align:center; display:block;">
+        <img src="https://m.media-amazon.com/images/I/71FkVWBJkDL._SL1500_.jpg" style="width:100%; height:130px; object-fit:contain; border-radius:6px;" alt="காமதேனு பசு செட்" />
+        <div style="font-size:0.84rem; font-weight:700; margin:4px 0; color:#374151;">பசு தாம்பூல செட்</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.65rem; font-weight:800; padding:2px 4px; border-radius:4px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 8 -->
+      <a href="https://link.amazon/B08drBHlj" target="_blank" rel="noopener sponsored" style="background:#FFFDF5; border:1px solid #FDE68A; border-radius:10px; padding:6px; text-decoration:none; color:#1F2937; text-align:center; display:block;">
+        <img src="https://m.media-amazon.com/images/I/91AUzRylxfL._SL1500_.jpg" style="width:100%; height:130px; object-fit:contain; border-radius:6px;" alt="பிளவுஸ் துணி காம்போ" />
+        <div style="font-size:0.84rem; font-weight:700; margin:4px 0; color:#374151;">பிளவுஸ் துணி + தட்டு</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.65rem; font-weight:800; padding:2px 4px; border-radius:4px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 9 -->
+      <a href="https://link.amazon/B03r9IcDC" target="_blank" rel="noopener sponsored" style="background:#FFFDF5; border:1px solid #FDE68A; border-radius:10px; padding:6px; text-decoration:none; color:#1F2937; text-align:center; display:block;">
+        <img src="https://m.media-amazon.com/images/I/815y9BKodaL._SL1500_.jpg" style="width:100%; height:130px; object-fit:contain; border-radius:6px;" alt="வெள்ளி பசு ஹோல்டர்" />
+        <div style="font-size:0.84rem; font-weight:700; margin:4px 0; color:#374151;">வெள்ளி பசு ஹோல்டர்</div>
+        <span style="display:block; background:#D97706; color:#fff; font-size:0.65rem; font-weight:800; padding:2px 4px; border-radius:4px;">Amazon 🛒</span>
+      </a>
+
+      <!-- Product 10 -->
+      <a href="https://link.amazon/B0cAdb7Y4" target="_blank" rel="noopener sponsored" style="background:#FFFDF5; border:1px solid #FDE68A; border-radius:10px; padding:6px; text-decoration:none; color:#1F2937; text-align:center; display:block;">
+        <img src="https://m.media-amazon.com/images/I/81VLBAcPEYL._SL1500_.jpg" style="width:100%; height:130px; object-fit:contain; border-radius:6px;" alt="குங்கும பாட்டில்கள் 25 பேக்" />
+        <div style="font-size:0.84rem; font-weight:700; margin:4px 0; color:#374151;">தாம்பூல பரிசுகள் (25)</div>
         <span style="display:block; background:#D97706; color:#fff; font-size:0.65rem; font-weight:800; padding:2px 4px; border-radius:4px;">Amazon 🛒</span>
       </a>
     </div>
   </div>
 
-  <script>
-    function toggleSideWidget() {
-      const widget = document.getElementById('side-puja-widget');
-      widget.style.display = widget.style.display === 'none' ? 'flex' : 'none';
-    }
-  </script>
 </body>
 </html>
