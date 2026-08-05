@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Zero483 Lifestyle Blog & Reviews</title>
-    <description>Latest product reviews, fashion guides, home decor & kitchen appliance recommendations.</description>
+    <title>Zero483 Lifestyle Blog &amp; Reviews</title>
+    <description>Latest product reviews, fashion guides, home decor &amp; kitchen appliance recommendations.</description>
     <link>https://alerts.zero483.com</link>
-    <lastBuildDate>Wed, 05 Aug 2026 06:40:00 GMT</lastBuildDate>
+    <atom:link href="https://alerts.zero483.com/lifestyle_feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Aug 2026 06:40:00 +0000</lastBuildDate>
 
     <item>
       <title>High Waist Baggy Jeans for Women | Style &amp; Fit Guide 2026</title>
       <description>Discover why Nifty High-Waist Stretchable Baggy Jeans are a wardrobe essential. Comfort, style, and fit guide for college, office &amp; casual wear. #BaggyJeans #WomensFashionIndia #HighWaistJeans #StreetwearIndia</description>
       <link>https://alerts.zero483.com/lifestyle/women-high-waist-baggy-jeans-guide.html</link>
-      <guid>https://alerts.zero483.com/lifestyle/women-high-waist-baggy-jeans-guide.html</guid>
-      <pubDate>Wed, 05 Aug 2026 06:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://alerts.zero483.com/lifestyle/women-high-waist-baggy-jeans-guide.html</guid>
+      <pubDate>Wed, 05 Aug 2026 06:00:00 +0000</pubDate>
       <enclosure url="https://alerts.zero483.com/lifestyle/jeans-peacock.jpg" length="105580" type="image/jpeg" />
       <media:content url="https://alerts.zero483.com/lifestyle/jeans-peacock.jpg" medium="image" />
     </item>
@@ -20,8 +21,8 @@
       <title>Which Kent Air Fryer is Right for Your Indian Family? (2026 Buying Guide)</title>
       <description>From quick samosas for 2 to full pakora platters for 5+ people — compare all 4 Kent Air Fryer models for Indian kitchens with 80% less oil. #AirFryerIndia #IndianKitchen #KentAirFryer #HealthyCooking</description>
       <link>https://alerts.zero483.com/lifestyle/kent-air-fryer-buying-guide.html</link>
-      <guid>https://alerts.zero483.com/lifestyle/kent-air-fryer-buying-guide.html</guid>
-      <pubDate>Mon, 03 Aug 2026 21:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://alerts.zero483.com/lifestyle/kent-air-fryer-buying-guide.html</guid>
+      <pubDate>Mon, 03 Aug 2026 21:00:00 +0000</pubDate>
       <enclosure url="https://alerts.zero483.com/lifestyle/kent-8l.jpg" length="150000" type="image/jpeg" />
       <media:content url="https://alerts.zero483.com/lifestyle/kent-8l.jpg" medium="image" />
     </item>
@@ -30,8 +31,8 @@
       <title>5X Hair Fall Control — Bare Anatomy Anti-Hair Fall Shampoo Review</title>
       <description>Struggling with hair fall? Bare Anatomy Expert Anti-Hair Fall Shampoo uses AdenoGrow Technology™ and Peptides to strengthen hair from roots. #BareAnatomy #HairCareIndia #AntiHairFall #BeautyReview</description>
       <link>https://alerts.zero483.com/lifestyle/bare-anatomy-anti-hair-fall-shampoo-review.html</link>
-      <guid>https://alerts.zero483.com/lifestyle/bare-anatomy-anti-hair-fall-shampoo-review.html</guid>
-      <pubDate>Sun, 02 Aug 2026 15:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://alerts.zero483.com/lifestyle/bare-anatomy-anti-hair-fall-shampoo-review.html</guid>
+      <pubDate>Sun, 02 Aug 2026 15:00:00 +0000</pubDate>
       <enclosure url="https://alerts.zero483.com/lifestyle/bare-anatomy-anti-hair-fall.jpg" length="105580" type="image/jpeg" />
       <media:content url="https://alerts.zero483.com/lifestyle/bare-anatomy-anti-hair-fall.jpg" medium="image" />
     </item>
