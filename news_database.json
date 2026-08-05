@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-05T11:08:16.713457+00:00",
+  "last_updated": "2026-08-05T13:28:11.003927+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "ae8d0f0b8d40",
+      "title": "FilmArray® NGDS Warrior Panel",
+      "slug": "filmarray-ngds-warrior-panel",
+      "date": "2026-08-05",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: FilmArray® NGDS Warrior Panel\nSource: Health Canada\nDate: 2026-08-05T12:00:00</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "FilmArray® NGDS Warrior Panel",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/filmarrayr-ngds-warrior-panel",
+      "fetched_at": "2026-08-05T13:28:09.225956+00:00",
+      "is_long_form": false
+    },
     {
       "id": "f1dc5ff2d8cb",
       "title": "Centre directs CDSCO to tighten surveillance on GLP-1 drugs amid surrogate advertising concerns - Deccan Herald",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOX2owei1RUWk2M3JyTVpIejM5T09GUDNUT2h5dmhSeVFic2dycmY2T0ZoUnc5Q3lITl83TjJLWHc4NkotcmZ6RHpVdVROd0dNWmdJQXExSVg3YS02eHA3cE1YN1R0NlRvUl84Ujg4YjlBMlhFSjc3WlJuX29nT2dLNjRESURMa0ZYaHNwZkpVLXgzNXFkNG1aT25sdGNxQmZTYy1Yd1NHMkJpeDhn?oc=5",
       "fetched_at": "2026-07-04T07:09:22.238694+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "15f964bb647d",
-      "title": "A primer on retatrutide and compassionate use - PolitiFact",
-      "slug": "a-primer-on-retatrutide-and-compassionate-use-politifact",
-      "date": "2026-07-01",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Recent public and regulatory discussions have brought increased attention to the critical pathways available for patients seeking access to investigational medicines, particularly focusing on groundbreaking compounds like retatrutide. Retatrutide, a promising new drug developed by Eli Lilly, is currently under investigation for its potential in treating obesity and related metabolic conditions. The concept of \"compassionate use,\" officially known as \"Expanded Access,\" allows patients with serious or life-threatening conditions to access unapproved drugs outside of clinical trials when no other treatment options are available. This renewed focus by the FDA aims to clarify the stringent yet vital process for these exceptions.</p>",
-      "compliance_impact": "<ul><li><b>Enhanced Clarity for Patients:</b> Increased transparency regarding eligibility criteria and the application process for compassionate use programs.</li><li><b>Guidance for Healthcare Providers:</b> Reinforcement of the steps and responsibilities involved in submitting expanded access requests to the FDA.</li><li><b>Scrutiny on Drug Developers:</b> Pharmaceutical companies may face greater expectations for clear policies and efficient processes for their investigational drug access programs.</li></ul>",
-      "key_actions": "<ul><li><b>Patients & Families:</b> Discuss all treatment options, including expanded access, thoroughly with your treating physician.</li><li><b>Healthcare Professionals:</b> Familiarize yourselves with the latest FDA guidance on submitting expanded access requests.</li><li><b>Drug Manufacturers:</b> Review and optimize internal processes for evaluating and managing expanded access requests responsibly.</li></ul>",
-      "industry_context": "<p>In the rapidly evolving landscape of drug development, innovative therapies like retatrutide generate significant patient hope long before full FDA approval. While rigorous clinical trials are essential to establish a drug's safety and efficacy, the FDA's expanded access program serves as a critical bridge. This program balances the urgent needs of patients with the imperative to maintain scientific integrity and ensure patient safety, making it a complex but vital component of medical care.</p>",
-      "seo_title": "Retatrutide & Compassionate Use: Navigating FDA Expanded Access for Promising Treatments",
-      "seo_description": "Demystify FDA compassionate use for investigational drugs like retatrutide. Understand patient access to promising treatments outside of clinical trials.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcmtRZVpXRnZQOVdoSFE5eXZRZV9fbW1MaEV1ZnEyMURJM1F0bWN1M1hWWWhaaExiRVowUVZyNUNUOEFJam5zQ05KeTZ6cmwyQkhscUF6UnBSNmhCeE9iQVJMUHVCbjhqYngxU3R4OFlDNHB0MFVNYV9CMU5DSHVnZ0xLLVkxWmptc1NPLTZWSDVrMWp0X1E?oc=5",
-      "fetched_at": "2026-07-04T07:07:48.326372+00:00",
       "is_long_form": false
     }
   ]
