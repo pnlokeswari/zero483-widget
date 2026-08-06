@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-06T08:10:11.938205+00:00",
+  "last_updated": "2026-08-06T11:10:13.359231+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "c1222a235dad",
+      "title": "Merck seeks FDA approval to expand RSV drug to second season By Investing.com - Investing.com Canada",
+      "slug": "merck-seeks-fda-approval-to-expand-rsv-drug-to-second-season-by-investing-com-investing-com-canada",
+      "date": "2026-08-06",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Merck has submitted an application to the FDA for expanded approval of its Respiratory Syncytial Virus (RSV) drug. This new filing aims to extend the drug's approved usage to cover a second season, potentially offering prolonged protection against this common and sometimes severe respiratory infection, especially for vulnerable populations.</p>",
+      "compliance_impact": "<ul><li>FDA will rigorously review new clinical data supporting extended multi-season use.</li><li>Potential for setting a new standard in long-term respiratory virus prevention.</li></ul>",
+      "key_actions": "<ul><li>Monitor FDA's decision timeline on Merck's application for key updates.</li><li>Healthcare providers should prepare for potential new guidance on RSV prophylaxis.</li></ul>",
+      "industry_context": "<p>This move highlights the growing pharmaceutical interest in addressing RSV, a virus that causes significant seasonal illness, and represents a potential advancement in prophylactic strategies.</p>",
+      "seo_title": "Merck Seeks FDA Expansion for RSV Drug: Extended Protection on the Horizon?",
+      "seo_description": "Merck is seeking FDA approval to expand its RSV drug to a second season, potentially offering extended protection against the respiratory virus. Learn the implications.",
+      "primary_company_name": "Merck",
+      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQempYRVNESE16OW9NODNhcmdHT0lkYXhZQ09jVkd0MzJ4czhIbU56dVN5MHdMT2pyQXQwODNseHpPM1RCV2pRUmxyNGF5XzBWSU4xeUZBZWtVdnNQS1g5aUFXS3JILTM5RURIdVFqWlo4NVRvYlFKUkZ1X25BZXRBdm80MktEaWlNeXZRdmp5RHg2QlQ3bmVKN0loXzFJTnNlR21lQnhTb2NEZFQtMi1fX1NIQUQ1aHBqWjVUNEh3?oc=5",
+      "fetched_at": "2026-08-06T11:08:51.120617+00:00",
+      "is_long_form": false
+    },
     {
       "id": "cf83b4ad934d",
       "title": "Drug Shortage: Technetium TC-99M Pyrophosphate Kit Injection",
@@ -883,24 +901,6 @@
       "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219996",
       "fetched_at": "2026-08-04T19:11:46.045838+00:00",
       "is_long_form": true
-    },
-    {
-      "id": "69460864de70",
-      "title": "Drug Approval: Unknown product - FRESENIUS KABI USA LLC",
-      "slug": "drug-approval-unknown-product-fresenius-kabi-usa-llc",
-      "date": "2026-07-29",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Application: NDA220381\nSponsor: FRESENIUS KABI USA LLC\nProduct: Unknown product\nSubmission type: ORIG\nSubmission class: Type 2 - New Active Ingredient\nStatus: AP\nStatus date: 20260729</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Drug Approval: Unknown product - FRESENIUS KABI USA LLC",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220381",
-      "fetched_at": "2026-08-04T17:35:09.707378+00:00",
-      "is_long_form": false
     }
   ]
 }
