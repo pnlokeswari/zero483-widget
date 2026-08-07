@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-07T10:52:12.860713+00:00",
+  "last_updated": "2026-08-07T11:44:09.596112+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "5a129b2c46e9",
+      "title": "CDSCO to hold quarterly stakeholder meetings to discuss regulatory framework and procedures - Express Pharma",
+      "slug": "cdsco-to-hold-quarterly-stakeholder-meetings-to-discuss-regulatory-framework-and-procedures-express-pharma",
+      "date": "2026-08-07",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "<p>Title: CDSCO to hold quarterly stakeholder meetings to discuss regulatory framework and procedures - Express Pharma\nSource: CDSCO India\nDate: Fri, 07 Aug 2026 04:35:33 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "CDSCO to hold quarterly stakeholder meetings to discuss regulatory framework and procedures - Express Pharma",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRjVNbUZpYjlGd083TkthVTB4OXAzbGlQakozclotSHlXTGxmbnFLSlpNdTlPckpBS1lGMmJmR3d0cDRmVDJjZ25DaWkwUHptUzRheTE0M0lLNHJ0MXR3c2dnc3pJZi1JenNFZjRtV1g2XzR4NmxfOVBmeUdkbTQwdDc5SW1lV1ZndkpPQTgwMHNlMHBuelVvM3ozMDk5elQ3ZFpndjhZX0RNOHFrckw4VHU5bE9hS0FVTm9nOFpB?oc=5",
+      "fetched_at": "2026-08-07T11:44:09.596045+00:00",
+      "is_long_form": false
+    },
     {
       "id": "ee96e2c4bbfb",
       "title": "Dabur India Gets US FDA Warning for Silvassa Facility, Data Integrity - Storyboard18",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/pharmasave-regular-strength-dairy-digestive-supplement-lactase-enzyme-affected-lot",
       "fetched_at": "2026-08-04T17:55:09.819658+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "82184a66616b",
-      "title": "Needle Kit For Powered Driver",
-      "slug": "needle-kit-for-powered-driver",
-      "date": "2026-08-04",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Needle Kit For Powered Driver\nSource: Health Canada\nDate: 2026-08-04T12:00:00</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Needle Kit For Powered Driver",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/needle-kit-powered-driver",
-      "fetched_at": "2026-08-04T17:53:09.381342+00:00",
       "is_long_form": false
     }
   ]
