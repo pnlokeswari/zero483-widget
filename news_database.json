@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-07T12:45:12.704451+00:00",
+  "last_updated": "2026-08-07T14:15:13.710689+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "b0a1a9915f59",
+      "title": "Fresenius Kabi recalls mislabeled morphine lot that could cause overdose death - Fierce Pharma",
+      "slug": "fresenius-kabi-recalls-mislabeled-morphine-lot-that-could-cause-overdose-death-fierce-pharma",
+      "date": "2026-08-07",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Fresenius Kabi recalls mislabeled morphine lot that could cause overdose death - Fierce Pharma\nSource: Google News\nDate: Fri, 07 Aug 2026 13:29:33 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Fresenius Kabi recalls mislabeled morphine lot that could cause overdose death - Fierce Pharma",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONUZRM1FQVDRPa2k0b1NVa1lJdFVQNU1pUzczX3QxWFhxcm1XbmZNakR2X1JvZHFFR1RCNWVDeDN3blZtY1RqUFNGMHVuX2FCRXZ1alZPLWZmb25JZVVHN2lwal9XUGtrR3JQQmVXSW9hNU5ubHk0ai1EM3lwVU1GRktkSWdiQmhlOVpqS0RnS3FPYWR3SUxWWWNoMkVvZVJqWHlFazJBemgwanRsVzY4em4zMFNzakU?oc=5",
+      "fetched_at": "2026-08-07T14:03:10.116371+00:00",
+      "is_long_form": false
+    },
     {
       "id": "5a129b2c46e9",
       "title": "CDSCO to hold quarterly stakeholder meetings to discuss regulatory framework and procedures - Express Pharma",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/femyso-affected-lot-may-contain-two-green-mifepristone-cartons-or-two-pink-misoprostol",
       "fetched_at": "2026-08-04T17:57:09.195710+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "13b4743693df",
-      "title": "Pharmasave Regular Strength Dairy Digestive Supplement Lactase Enzyme: Affected lot is labelled with the incorrect Natur",
-      "slug": "pharmasave-regular-strength-dairy-digestive-supplement-lactase-enzyme-affected-lot-is-labelled-with-the-incorrect-natur",
-      "date": "2026-08-04",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Pharmasave Regular Strength Dairy Digestive Supplement Lactase Enzyme: Affected lot is labelled with the incorrect Natural Product Number (NPN) on the carton. \nSource: Health Canada\nDate: 2026-07-30T12:00:00</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Pharmasave Regular Strength Dairy Digestive Supplement Lactase Enzyme: Affected lot is labelled with the incorrect Natur",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/pharmasave-regular-strength-dairy-digestive-supplement-lactase-enzyme-affected-lot",
-      "fetched_at": "2026-08-04T17:55:09.819658+00:00",
       "is_long_form": false
     }
   ]
