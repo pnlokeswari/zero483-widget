@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-07T17:43:12.863412+00:00",
+  "last_updated": "2026-08-07T18:49:10.605441+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "5346857f5c05",
+      "title": "How the EMA is Speeding Up New Drug Approvals - PharmTech.com",
+      "slug": "how-the-ema-is-speeding-up-new-drug-approvals-pharmtech-com",
+      "date": "2026-08-07",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: How the EMA is Speeding Up New Drug Approvals - PharmTech.com\nSource: European Medicines Agency\nDate: Fri, 07 Aug 2026 18:03:40 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "How the EMA is Speeding Up New Drug Approvals - PharmTech.com",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPWWxKOUVJQnluQWdpVmpzT0pHZ3k4N2hHaU94dlNLVFI4UkdfVkZVbUVtWmFGUFNvMzUteFMxRW5WNDBUYlB5amQ3TW9SZGtIVkxmWkQ5VlBKbC1VOV94R0w0R2tFMUxwdkFwRUNiRDdObEpVZHVpMG9UM1B3N1Z2VXRuSGs?oc=5",
+      "fetched_at": "2026-08-07T18:49:09.708108+00:00",
+      "is_long_form": false
+    },
     {
       "id": "744c0d9ea5c2",
       "title": "Replimune Wins FDA Skin Cancer Drug Approval on Third Try. Why the Stock Is Down. - Barron's",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/blanketrolr-ii-115v-and-blanketrolr-iii-115v",
       "fetched_at": "2026-08-04T19:22:10.040077+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "69aa66da7e06",
-      "title": "Azurion Systems",
-      "slug": "azurion-systems",
-      "date": "2026-08-04",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Azurion Systems\nSource: Health Canada\nDate: 2026-07-29T12:00:00</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Azurion Systems",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/azurion-systems-0",
-      "fetched_at": "2026-08-04T19:20:09.423330+00:00",
       "is_long_form": false
     }
   ]
