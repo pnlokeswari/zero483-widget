@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-07T14:15:13.710689+00:00",
+  "last_updated": "2026-08-07T15:49:11.134485+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "6b762074328f",
+      "title": "Bravo - Capsule Delivery System",
+      "slug": "bravo-capsule-delivery-system",
+      "date": "2026-08-07",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Bravo - Capsule Delivery System\nSource: Health Canada\nDate: 2026-08-07T12:00:00</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Bravo - Capsule Delivery System",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/bravo-capsule-delivery-system",
+      "fetched_at": "2026-08-07T15:49:09.712818+00:00",
+      "is_long_form": false
+    },
     {
       "id": "b0a1a9915f59",
       "title": "Fresenius Kabi recalls mislabeled morphine lot that could cause overdose death - Fierce Pharma",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNM1pZazdkTnA2WTN2VVZRQXpNejl6QkRBMElzTXYyeTcyZ1A1X1lyb0hFVXRWUDVUOFlVaHpNM1J1ZHJlNXRpbWtXbnVvM1pGc0RYM2ItWnd1aUQzRWlRcDByaEVqZUoyTzBBVjNQV2I5NndpVFUwdGktT3Z4UTB2cjRuRXltb0J2ZTdDeDAyYUVLQXctcEM3Wk5mV29JZjJ5SkFFTFZjeHk5NDVUM1N0MkhqRmQzRkRRc0FTa0htdGFnaGh0cFhqY3kzY05oZ9IB0wFBVV95cUxPaU92blM5ZFUwUU42RkJZUVdMd1RTN0dmMGJJQTN2U01xclhEWTY3X3c1anRnV09PUVYxNnl0VWNoNkNZZUVmMFRLbnNrbXFwY1FFWXU5NU4zTVZMUlRMZ3BpNnhuWWJGVWJpcEwyc25zNy1oYnhUc0lHZmF5NkpsWF9jRWpMWFJCXzlWMWRmcmtYc3AxdkxBNWV0ZkFsek9DM2x3TnEyemN4N0xWTnVHVjh1b0dxQzdvcVVtSkZ3YXpxVHRodTBubWQyM0hFSDBWc2Z3?oc=5",
       "fetched_at": "2026-08-04T18:03:10.043768+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "71aa236dc513",
-      "title": "Femyso: Affected lot may contain two green Mifepristone cartons or two pink Misoprostol cartons instead of one of each.",
-      "slug": "femyso-affected-lot-may-contain-two-green-mifepristone-cartons-or-two-pink-misoprostol-cartons-instead-of-one-of-each",
-      "date": "2026-08-04",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Femyso: Affected lot may contain two green Mifepristone cartons or two pink Misoprostol cartons instead of one of each.\nSource: Health Canada\nDate: 2026-07-30T12:00:00</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Femyso: Affected lot may contain two green Mifepristone cartons or two pink Misoprostol cartons instead of one of each.",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/femyso-affected-lot-may-contain-two-green-mifepristone-cartons-or-two-pink-misoprostol",
-      "fetched_at": "2026-08-04T17:57:09.195710+00:00",
       "is_long_form": false
     }
   ]
