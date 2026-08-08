@@ -1,489 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Zero483 FDA Pharma Alerts</title>
-    <description>Live tracker for FDA drug recalls, warning letters, and guidance.</description>
-    <link>https://www.zero483.com/USFDA-news</link>
-    <lastBuildDate>Sat, 08 Aug 2026 15:21:13 GMT</lastBuildDate>
 
     <item>
-      <title>AstraZeneca Pharma gets CDSCO nod to market Enhertu for additional indication - Business Standard</title>
-      <description>&lt;p&gt;Title: AstraZeneca Pharma gets CDSCO nod to market Enhertu for additional indication - Business Standard
-Source: CDSCO India
-Date: Sat, 08 Aug 2026 12:20:02 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=AstraZeneca%20Pharma%20gets%20CDSCO%20nod%20to%20market%20Enhertu%20for%20additional%20indication%20-%20Business%20Standard</link>
-      <guid>https://www.zero483.com/USFDA-news?q=AstraZeneca%20Pharma%20gets%20CDSCO%20nod%20to%20market%20Enhertu%20for%20additional%20indication%20-%20Business%20Standard</guid>
-      <category>Warning Letter</category>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
+      <title>వరలక్ష్మి వ్రత సులభ పూజా విధాన మత్తు కథె 2026 (Kannada Guide)</title>
+      <description>ఇంట్లోనే వరలక్ష్మి వ్రత సులభ పూజా విధాన, 2026 ముహూర్త సమయగళు, చారుమతి వరలక్ష్మి వ్రత కథె మత్తు వివరగళు. #VaralakshmiVratham #KannadaPuja #VaralakshmiPooja</description>
+      <link>https://alerts.zero483.com/lifestyle/varalakshmi-vratham-kannada-pooja-guide.html</link>
+      <guid isPermaLink="true">https://alerts.zero483.com/lifestyle/varalakshmi-vratham-kannada-pooja-guide.html</guid>
+      <pubDate>Wed, 05 Aug 2026 23:00:00 +0000</pubDate>
+      <enclosure url="https://alerts.zero483.com/lifestyle/varalakshmi_devi.jpg" length="105580" type="image/jpeg" />
+      <media:content url="https://alerts.zero483.com/lifestyle/varalakshmi_devi.jpg" medium="image" />
     </item>
+
     <item>
-      <title>ADHD: First New Drug Class in Decades Gets FDA Approval - Denkstrom</title>
-      <description>&lt;p&gt;Title: ADHD: First New Drug Class in Decades Gets FDA Approval - Denkstrom
-Source: Google News
-Date: Sat, 08 Aug 2026 00:15:45 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=ADHD%3A%20First%20New%20Drug%20Class%20in%20Decades%20Gets%20FDA%20Approval%20-%20Denkstrom</link>
-      <guid>https://www.zero483.com/USFDA-news?q=ADHD%3A%20First%20New%20Drug%20Class%20in%20Decades%20Gets%20FDA%20Approval%20-%20Denkstrom</guid>
-      <category>Drug Approval</category>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
+      <title>வரலட்சுமி விரதம் எளிய பூஜை முறை மற்றும் கதை 2026 (Tamil Guide)</title>
+      <description>வீட்டிலேயே வரலட்சுமி விரதம் எளிய முறையில் செய்வது எப்படி? 2026 முகூர்த்த நேரங்கள், சாருமதி வரலட்சுமி விரத கதை. #VaralakshmiVratham #TamilPooja #VaralakshmiPuja</description>
+      <link>https://alerts.zero483.com/lifestyle/varalakshmi-vratham-tamil-pooja-guide.html</link>
+      <guid isPermaLink="true">https://alerts.zero483.com/lifestyle/varalakshmi-vratham-tamil-pooja-guide.html</guid>
+      <pubDate>Wed, 05 Aug 2026 23:05:00 +0000</pubDate>
+      <enclosure url="https://alerts.zero483.com/lifestyle/varalakshmi_devi.jpg" length="105580" type="image/jpeg" />
+      <media:content url="https://alerts.zero483.com/lifestyle/varalakshmi_devi.jpg" medium="image" />
     </item>
+
+    <title>Zero483 Lifestyle Blog &amp; Reviews</title>
+    <description>Latest product reviews, fashion guides, home decor &amp; spiritual guides.</description>
+    <link>https://alerts.zero483.com</link>
+    <atom:link href="https://alerts.zero483.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Aug 2026 21:25:00 +0000</lastBuildDate>
+
     <item>
-      <title>Drug Shortage: Quinapril/Hydrochlorothiazide Tablet</title>
-      <description>&lt;p&gt;Generic name: Quinapril/Hydrochlorothiazide Tablet
-Brand name: N/A
-Status: Current
-Presentations: []&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Quinapril/Hydrochlorothiazide%20Tablet</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Quinapril/Hydrochlorothiazide%20Tablet</guid>
-      <category>Drug Shortage</category>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
+      <title>వరలక్ష్మీ వ్రతం సులభమైన పూజా విధానం 2026 (ఇంట్లోనే ఎలా చేసుకోవాలి?)</title>
+      <description>వరలక్ష్మీ వ్రతం ఇంట్లోనే సులభంగా ఎలా చేసుకోవాలి? 2026 ముహూర్త సమయాలు, కలశ స్థాపన, 9 ముడుల తోరం, మంత్రాలు మరియు నియమాలు పూర్తి వివరాలు. #VaralakshmiVratham #VaralakshmiPuja #TeluguPuja #LakshmiPuja</description>
+      <link>https://alerts.zero483.com/lifestyle/varalakshmi-vratham-telugu-pooja-guide.html</link>
+      <guid isPermaLink="true">https://alerts.zero483.com/lifestyle/varalakshmi-vratham-telugu-pooja-guide.html</guid>
+      <pubDate>Wed, 05 Aug 2026 21:25:00 +0000</pubDate>
+      <enclosure url="https://alerts.zero483.com/lifestyle/varalakshmi_devi.jpg" length="105580" type="image/jpeg" />
+      <media:content url="https://alerts.zero483.com/lifestyle/varalakshmi_devi.jpg" medium="image" />
     </item>
+
     <item>
-      <title>AstraZeneca Pharma India secures CDSCO approval for Enhertu in new breast cancer use - scanx.trade</title>
-      <description>&lt;p&gt;Title: AstraZeneca Pharma India secures CDSCO approval for Enhertu in new breast cancer use - scanx.trade
-Source: CDSCO India
-Date: Sat, 08 Aug 2026 06:31:12 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=AstraZeneca%20Pharma%20India%20secures%20CDSCO%20approval%20for%20Enhertu%20in%20new%20breast%20cancer%20use%20-%20scanx.trade</link>
-      <guid>https://www.zero483.com/USFDA-news?q=AstraZeneca%20Pharma%20India%20secures%20CDSCO%20approval%20for%20Enhertu%20in%20new%20breast%20cancer%20use%20-%20scanx.trade</guid>
-      <category>Warning Letter</category>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
+      <title>Varalakshmi Vratham Simple Pooja Guide at Home (2026 Step-by-Step Guide)</title>
+      <description>A complete step-by-step Varalakshmi Vratham pooja guide for performing at home. Includes 2026 muhurtham timings, 9-knot toram guide, simple mantras &amp; FAQs. #VaralakshmiVratham #VaralakshmiPuja #PujaAtHome #LakshmiPuja</description>
+      <link>https://alerts.zero483.com/lifestyle/varalakshmi-vratham-simple-pooja-guide.html</link>
+      <guid isPermaLink="true">https://alerts.zero483.com/lifestyle/varalakshmi-vratham-simple-pooja-guide.html</guid>
+      <pubDate>Wed, 05 Aug 2026 21:20:00 +0000</pubDate>
+      <enclosure url="https://alerts.zero483.com/lifestyle/varalakshmi_devi.jpg" length="105580" type="image/jpeg" />
+      <media:content url="https://alerts.zero483.com/lifestyle/varalakshmi_devi.jpg" medium="image" />
     </item>
+
     <item>
-      <title>EMA issues updated guidance on shortage prevention plans ahead of legal deadline - RAPS</title>
-      <description>&lt;p&gt;Title: EMA issues updated guidance on shortage prevention plans ahead of legal deadline - RAPS
-Source: European Medicines Agency
-Date: Fri, 07 Aug 2026 20:49:00 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=EMA%20issues%20updated%20guidance%20on%20shortage%20prevention%20plans%20ahead%20of%20legal%20deadline%20-%20RAPS</link>
-      <guid>https://www.zero483.com/USFDA-news?q=EMA%20issues%20updated%20guidance%20on%20shortage%20prevention%20plans%20ahead%20of%20legal%20deadline%20-%20RAPS</guid>
-      <category>Drug Shortage</category>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
+      <title>High Waist Baggy Jeans for Women | Style &amp; Fit Guide 2026</title>
+      <description>Discover why Nifty High-Waist Stretchable Baggy Jeans are a wardrobe essential. Comfort, style, and fit guide for college, office &amp; casual wear. #BaggyJeans #WomensFashionIndia #HighWaistJeans #StreetwearIndia</description>
+      <link>https://alerts.zero483.com/lifestyle/women-high-waist-baggy-jeans-guide.html</link>
+      <guid isPermaLink="true">https://alerts.zero483.com/lifestyle/women-high-waist-baggy-jeans-guide.html</guid>
+      <pubDate>Wed, 05 Aug 2026 06:00:00 +0000</pubDate>
+      <enclosure url="https://alerts.zero483.com/lifestyle/jeans-peacock.jpg" length="105580" type="image/jpeg" />
+      <media:content url="https://alerts.zero483.com/lifestyle/jeans-peacock.jpg" medium="image" />
     </item>
-    <item>
-      <title>OPPI welcomes CDSCO’s initiative to institutionalize quarterly stakeholder meetings - Indian Pharma Post</title>
-      <description>&lt;p&gt;Title: OPPI welcomes CDSCO’s initiative to institutionalize quarterly stakeholder meetings - Indian Pharma Post
-Source: CDSCO India
-Date: Fri, 07 Aug 2026 06:06:22 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=OPPI%20welcomes%20CDSCO%E2%80%99s%20initiative%20to%20institutionalize%20quarterly%20stakeholder%20meetings%20-%20Indian%20Pharma%20Post</link>
-      <guid>https://www.zero483.com/USFDA-news?q=OPPI%20welcomes%20CDSCO%E2%80%99s%20initiative%20to%20institutionalize%20quarterly%20stakeholder%20meetings%20-%20Indian%20Pharma%20Post</guid>
-      <category>Warning Letter</category>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>CBI books CDSCO official, pharma MD in bribery for clearance case - The Times of India</title>
-      <description>&lt;p&gt;Title: CBI books CDSCO official, pharma MD in bribery for clearance case - The Times of India
-Source: CDSCO India
-Date: Fri, 07 Aug 2026 18:50:00 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=CBI%20books%20CDSCO%20official%2C%20pharma%20MD%20in%20bribery%20for%20clearance%20case%20-%20The%20Times%20of%20India</link>
-      <guid>https://www.zero483.com/USFDA-news?q=CBI%20books%20CDSCO%20official%2C%20pharma%20MD%20in%20bribery%20for%20clearance%20case%20-%20The%20Times%20of%20India</guid>
-      <category>Drug Approval</category>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Fresenius receives FDA, EMA acceptance for review of vedolizumab biosimilar candidate - Drug Store News</title>
-      <description>&lt;p&gt;Title: Fresenius receives FDA, EMA acceptance for review of vedolizumab biosimilar candidate - Drug Store News
-Source: European Medicines Agency
-Date: Fri, 07 Aug 2026 14:04:51 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Fresenius%20receives%20FDA%2C%20EMA%20acceptance%20for%20review%20of%20vedolizumab%20biosimilar%20candidate%20-%20Drug%20Store%20News</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Fresenius%20receives%20FDA%2C%20EMA%20acceptance%20for%20review%20of%20vedolizumab%20biosimilar%20candidate%20-%20Drug%20Store%20News</guid>
-      <category>Guidance</category>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Moderna&#x27;s mRNA Flu Vaccine Wins FDA Approval - labroots.com</title>
-      <description>&lt;p&gt;Title: Moderna&#x27;s mRNA Flu Vaccine Wins FDA Approval - labroots.com
-Source: Google News
-Date: Fri, 07 Aug 2026 15:32:00 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Moderna%27s%20mRNA%20Flu%20Vaccine%20Wins%20FDA%20Approval%20-%20labroots.com</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Moderna%27s%20mRNA%20Flu%20Vaccine%20Wins%20FDA%20Approval%20-%20labroots.com</guid>
-      <category>Drug Approval</category>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>How the EMA is Speeding Up New Drug Approvals - PharmTech.com</title>
-      <description>&lt;p&gt;Title: How the EMA is Speeding Up New Drug Approvals - PharmTech.com
-Source: European Medicines Agency
-Date: Fri, 07 Aug 2026 18:03:40 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=How%20the%20EMA%20is%20Speeding%20Up%20New%20Drug%20Approvals%20-%20PharmTech.com</link>
-      <guid>https://www.zero483.com/USFDA-news?q=How%20the%20EMA%20is%20Speeding%20Up%20New%20Drug%20Approvals%20-%20PharmTech.com</guid>
-      <category>Drug Approval</category>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Replimune Wins FDA Skin Cancer Drug Approval on Third Try. Why the Stock Is Down. - Barron&#x27;s</title>
-      <description>&lt;p&gt;Title: Replimune Wins FDA Skin Cancer Drug Approval on Third Try. Why the Stock Is Down. - Barron&#x27;s
-Source: Google News
-Date: Fri, 07 Aug 2026 16:36:00 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Replimune%20Wins%20FDA%20Skin%20Cancer%20Drug%20Approval%20on%20Third%20Try.%20Why%20the%20Stock%20Is%20Down.%20-%20Barron%27s</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Replimune%20Wins%20FDA%20Skin%20Cancer%20Drug%20Approval%20on%20Third%20Try.%20Why%20the%20Stock%20Is%20Down.%20-%20Barron%27s</guid>
-      <category>Drug Approval</category>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Eli Lilly offers new weight loss drug to some patients before FDA approval - LiveNOW from FOX</title>
-      <description>&lt;p&gt;Title: Eli Lilly offers new weight loss drug to some patients before FDA approval - LiveNOW from FOX
-Source: Google News
-Date: Fri, 07 Aug 2026 15:20:40 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Eli%20Lilly%20offers%20new%20weight%20loss%20drug%20to%20some%20patients%20before%20FDA%20approval%20-%20LiveNOW%20from%20FOX</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Eli%20Lilly%20offers%20new%20weight%20loss%20drug%20to%20some%20patients%20before%20FDA%20approval%20-%20LiveNOW%20from%20FOX</guid>
-      <category>Drug Approval</category>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Bravo - Capsule Delivery System</title>
-      <description>&lt;p&gt;Title: Bravo - Capsule Delivery System
-Source: Health Canada
-Date: 2026-08-07T12:00:00&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Bravo%20-%20Capsule%20Delivery%20System</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Bravo%20-%20Capsule%20Delivery%20System</guid>
-      <category>Recall</category>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Fresenius Kabi recalls mislabeled morphine lot that could cause overdose death - Fierce Pharma</title>
-      <description>&lt;p&gt;Title: Fresenius Kabi recalls mislabeled morphine lot that could cause overdose death - Fierce Pharma
-Source: Google News
-Date: Fri, 07 Aug 2026 13:29:33 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Fresenius%20Kabi%20recalls%20mislabeled%20morphine%20lot%20that%20could%20cause%20overdose%20death%20-%20Fierce%20Pharma</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Fresenius%20Kabi%20recalls%20mislabeled%20morphine%20lot%20that%20could%20cause%20overdose%20death%20-%20Fierce%20Pharma</guid>
-      <category>Recall</category>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>CDSCO to hold quarterly stakeholder meetings to discuss regulatory framework and procedures - Express Pharma</title>
-      <description>&lt;p&gt;Title: CDSCO to hold quarterly stakeholder meetings to discuss regulatory framework and procedures - Express Pharma
-Source: CDSCO India
-Date: Fri, 07 Aug 2026 04:35:33 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=CDSCO%20to%20hold%20quarterly%20stakeholder%20meetings%20to%20discuss%20regulatory%20framework%20and%20procedures%20-%20Express%20Pharma</link>
-      <guid>https://www.zero483.com/USFDA-news?q=CDSCO%20to%20hold%20quarterly%20stakeholder%20meetings%20to%20discuss%20regulatory%20framework%20and%20procedures%20-%20Express%20Pharma</guid>
-      <category>Warning Letter</category>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Dabur India Gets US FDA Warning for Silvassa Facility, Data Integrity - Storyboard18</title>
-      <description>&lt;p&gt;Title: Dabur India Gets US FDA Warning for Silvassa Facility, Data Integrity - Storyboard18
-Source: Google News
-Date: Fri, 07 Aug 2026 05:27:17 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Dabur%20India%20Gets%20US%20FDA%20Warning%20for%20Silvassa%20Facility%2C%20Data%20Integrity%20-%20Storyboard18</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Dabur%20India%20Gets%20US%20FDA%20Warning%20for%20Silvassa%20Facility%2C%20Data%20Integrity%20-%20Storyboard18</guid>
-      <category>Form 483</category>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>HEALON EndoCoat PRO</title>
-      <description>&lt;p&gt;Title: HEALON EndoCoat PRO
-Source: Health Canada
-Date: 2026-08-06T12:00:00&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=HEALON%20EndoCoat%20PRO</link>
-      <guid>https://www.zero483.com/USFDA-news?q=HEALON%20EndoCoat%20PRO</guid>
-      <category>Recall</category>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>One lot of New Roots Herbal Probiotic Intensity recalled due to incorrect “No Dairy” claim</title>
-      <description>&lt;p&gt;Title: One lot of New Roots Herbal Probiotic Intensity recalled due to incorrect “No Dairy” claim
-Source: Health Canada
-Date: 2026-08-06T12:00:00&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=One%20lot%20of%20New%20Roots%20Herbal%20Probiotic%20Intensity%20recalled%20due%20to%20incorrect%20%E2%80%9CNo%20Dairy%E2%80%9D%20claim</link>
-      <guid>https://www.zero483.com/USFDA-news?q=One%20lot%20of%20New%20Roots%20Herbal%20Probiotic%20Intensity%20recalled%20due%20to%20incorrect%20%E2%80%9CNo%20Dairy%E2%80%9D%20claim</guid>
-      <category>Recall</category>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>The FDA Just Issued a Recall on Blood Thinners Nationwide - EatingWell</title>
-      <description>&lt;p&gt;The U.S. FDA has issued a nationwide recall for specific blood thinner medications. This crucial action highlights potential safety or efficacy concerns, vital for drugs that prevent life-threatening conditions like strokes and blood clots. Patients should contact their healthcare provider immediately.&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=The%20FDA%20Just%20Issued%20a%20Recall%20on%20Blood%20Thinners%20Nationwide%20-%20EatingWell</link>
-      <guid>https://www.zero483.com/USFDA-news?q=The%20FDA%20Just%20Issued%20a%20Recall%20on%20Blood%20Thinners%20Nationwide%20-%20EatingWell</guid>
-      <category>Recall</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Replimune melanoma drug snags coveted FDA approval after yearlong clash, two rejections - Endpoints News</title>
-      <description>&lt;p&gt;Title: Replimune melanoma drug snags coveted FDA approval after yearlong clash, two rejections - Endpoints News
-Source: Google News
-Date: Thu, 06 Aug 2026 20:03:00 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Replimune%20melanoma%20drug%20snags%20coveted%20FDA%20approval%20after%20yearlong%20clash%2C%20two%20rejections%20-%20Endpoints%20News</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Replimune%20melanoma%20drug%20snags%20coveted%20FDA%20approval%20after%20yearlong%20clash%2C%20two%20rejections%20-%20Endpoints%20News</guid>
-      <category>Drug Approval</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Twice Rejected Replimune Cancer Drug Finally Gets FDA Approval - Bloomberg</title>
-      <description>&lt;p&gt;Title: Twice Rejected Replimune Cancer Drug Finally Gets FDA Approval - Bloomberg
-Source: Google News
-Date: Thu, 06 Aug 2026 20:04:47 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Twice%20Rejected%20Replimune%20Cancer%20Drug%20Finally%20Gets%20FDA%20Approval%20-%20Bloomberg</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Twice%20Rejected%20Replimune%20Cancer%20Drug%20Finally%20Gets%20FDA%20Approval%20-%20Bloomberg</guid>
-      <category>Drug Approval</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Euro Roundup: EMA seeks feedback on streamlining drug development for life-threatening diseases - RAPS</title>
-      <description>&lt;p&gt;Title: Euro Roundup: EMA seeks feedback on streamlining drug development for life-threatening diseases - RAPS
-Source: European Medicines Agency
-Date: Thu, 06 Aug 2026 19:25:00 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Euro%20Roundup%3A%20EMA%20seeks%20feedback%20on%20streamlining%20drug%20development%20for%20life-threatening%20diseases%20-%20RAPS</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Euro%20Roundup%3A%20EMA%20seeks%20feedback%20on%20streamlining%20drug%20development%20for%20life-threatening%20diseases%20-%20RAPS</guid>
-      <category>Guidance</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What the FDA&#x27;s Botox Warning Letter Means for DSCSA Compliance - natlawreview.com</title>
-      <description>&lt;p&gt;Title: What the FDA&#x27;s Botox Warning Letter Means for DSCSA Compliance - natlawreview.com
-Source: Google News
-Date: Thu, 06 Aug 2026 19:10:42 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=What%20the%20FDA%27s%20Botox%20Warning%20Letter%20Means%20for%20DSCSA%20Compliance%20-%20natlawreview.com</link>
-      <guid>https://www.zero483.com/USFDA-news?q=What%20the%20FDA%27s%20Botox%20Warning%20Letter%20Means%20for%20DSCSA%20Compliance%20-%20natlawreview.com</guid>
-      <category>Warning Letter</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>After two rejections and mass layoffs, Replimune melanoma drug wins FDA approval - The Business Journals</title>
-      <description>&lt;p&gt;Title: After two rejections and mass layoffs, Replimune melanoma drug wins FDA approval - The Business Journals
-Source: Google News
-Date: Thu, 06 Aug 2026 21:13:00 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=After%20two%20rejections%20and%20mass%20layoffs%2C%20Replimune%20melanoma%20drug%20wins%20FDA%20approval%20-%20The%20Business%20Journals</link>
-      <guid>https://www.zero483.com/USFDA-news?q=After%20two%20rejections%20and%20mass%20layoffs%2C%20Replimune%20melanoma%20drug%20wins%20FDA%20approval%20-%20The%20Business%20Journals</guid>
-      <category>Drug Approval</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Replimune secures FDA approval for melanoma therapy Tudriqev after long regulatory battle - Fierce Pharma</title>
-      <description>&lt;p&gt;Title: Replimune secures FDA approval for melanoma therapy Tudriqev after long regulatory battle - Fierce Pharma
-Source: Google News
-Date: Thu, 06 Aug 2026 20:41:48 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Replimune%20secures%20FDA%20approval%20for%20melanoma%20therapy%20Tudriqev%20after%20long%20regulatory%20battle%20-%20Fierce%20Pharma</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Replimune%20secures%20FDA%20approval%20for%20melanoma%20therapy%20Tudriqev%20after%20long%20regulatory%20battle%20-%20Fierce%20Pharma</guid>
-      <category>Drug Approval</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Replimune rebounds to win FDA approval of melanoma drug - biopharmadive.com</title>
-      <description>&lt;p&gt;Title: Replimune rebounds to win FDA approval of melanoma drug - biopharmadive.com
-Source: Google News
-Date: Thu, 06 Aug 2026 21:16:19 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Replimune%20rebounds%20to%20win%20FDA%20approval%20of%20melanoma%20drug%20-%20biopharmadive.com</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Replimune%20rebounds%20to%20win%20FDA%20approval%20of%20melanoma%20drug%20-%20biopharmadive.com</guid>
-      <category>Drug Approval</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Takeda Achieves Major Milestone With Holistic Narcolepsy Drug Approval - Benzinga</title>
-      <description>&lt;p&gt;Takeda Pharmaceutical has secured FDA approval for its new narcolepsy drug, a significant advancement for patients battling this chronic neurological sleep disorder. This &#x27;holistic&#x27; treatment offers a promising new option, addressing unmet needs in managing narcolepsy symptoms like excessive daytime sleepiness and cataplexy.&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Takeda%20Achieves%20Major%20Milestone%20With%20Holistic%20Narcolepsy%20Drug%20Approval%20-%20Benzinga</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Takeda%20Achieves%20Major%20Milestone%20With%20Holistic%20Narcolepsy%20Drug%20Approval%20-%20Benzinga</guid>
-      <category>Drug Approval</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Takeda wins U.S. FDA approval for narcolepsy drug ORZEYFUL - International Business Times</title>
-      <description>&lt;p&gt;Title: Takeda wins U.S. FDA approval for narcolepsy drug ORZEYFUL - International Business Times
-Source: Google News
-Date: Thu, 06 Aug 2026 15:36:29 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Takeda%20wins%20U.S.%20FDA%20approval%20for%20narcolepsy%20drug%20ORZEYFUL%20-%20International%20Business%20Times</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Takeda%20wins%20U.S.%20FDA%20approval%20for%20narcolepsy%20drug%20ORZEYFUL%20-%20International%20Business%20Times</guid>
-      <category>Drug Approval</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Takeda gains FDA nod for first-in-class narcolepsy treatment Orzeyful - Fierce Pharma</title>
-      <description>&lt;p&gt;Title: Takeda gains FDA nod for first-in-class narcolepsy treatment Orzeyful - Fierce Pharma
-Source: Google News
-Date: Thu, 06 Aug 2026 15:10:41 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Takeda%20gains%20FDA%20nod%20for%20first-in-class%20narcolepsy%20treatment%20Orzeyful%20-%20Fierce%20Pharma</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Takeda%20gains%20FDA%20nod%20for%20first-in-class%20narcolepsy%20treatment%20Orzeyful%20-%20Fierce%20Pharma</guid>
-      <category>Drug Approval</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Beckman Coulter AU Immunochemistry System - AU480 Analyzer</title>
-      <description>&lt;p&gt;Title: Beckman Coulter AU Immunochemistry System - AU480 Analyzer
-Source: Health Canada
-Date: 2026-08-06T12:00:00&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Beckman%20Coulter%20AU%20Immunochemistry%20System%20-%20AU480%20Analyzer</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Beckman%20Coulter%20AU%20Immunochemistry%20System%20-%20AU480%20Analyzer</guid>
-      <category>Recall</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Takeda&#x27;s first-in-class narcolepsy drug claims FDA approval - pharmaphorum</title>
-      <description>&lt;p&gt;Title: Takeda&#x27;s first-in-class narcolepsy drug claims FDA approval - pharmaphorum
-Source: Google News
-Date: Thu, 06 Aug 2026 11:52:10 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Takeda%27s%20first-in-class%20narcolepsy%20drug%20claims%20FDA%20approval%20-%20pharmaphorum</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Takeda%27s%20first-in-class%20narcolepsy%20drug%20claims%20FDA%20approval%20-%20pharmaphorum</guid>
-      <category>Drug Approval</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Merck seeks FDA approval to expand RSV drug to second season By Investing.com - Investing.com Canada</title>
-      <description>&lt;p&gt;Merck has submitted an application to the FDA for expanded approval of its Respiratory Syncytial Virus (RSV) drug. This new filing aims to extend the drug&#x27;s approved usage to cover a second season, potentially offering prolonged protection against this common and sometimes severe respiratory infection, especially for vulnerable populations.&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Merck%20seeks%20FDA%20approval%20to%20expand%20RSV%20drug%20to%20second%20season%20By%20Investing.com%20-%20Investing.com%20Canada</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Merck%20seeks%20FDA%20approval%20to%20expand%20RSV%20drug%20to%20second%20season%20By%20Investing.com%20-%20Investing.com%20Canada</guid>
-      <category>Drug Approval</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Drug Shortage: Technetium TC-99M Pyrophosphate Kit Injection</title>
-      <description>&lt;p&gt;&lt;b&gt;Featured Article&lt;/b&gt; on Zero483: The medical community is facing a significant challenge as the U.S. Food and Drug Administration (FDA) confirms a critical shortage of Technetium TC-99M Pyrophosphate Kit Injection. This radiopharmaceutical, while perhaps unfamiliar to the general public, plays an indispensable role in nuclear medicine diagnostics, particularly in the accurate and timely detection of serious cardiac conditions. A shortage of such a vital diagnostic tool sends ripples across the healthcare landscape, impacting patient care, clinical decision-making, and the operational efficiency of hospitals and imaging centers nationwide.&lt;/p&gt;&lt;p&gt;The critical nature of this shortage stems from Technetium TC-99M Pyrophosphate&#x27;s unique diagnostic capabilities. While historically used for detecting acute myocardial infarction (heart attacks), its importance has surged dramatically in recent years due to its pivotal role in the non-invasive diagnosis of transthyretin cardiac amyloidosis (ATTR-CM). ATTR-CM is a progressive and often fatal heart disease caused by the abnormal deposition of misfolded transthyretin protein in the heart muscle. Early and accurate diagnosis of ATTR-CM is paramount for initiating life-saving treatments, which can significantly slow disease progression and improve patient outcomes. The pyrophosphate scan has revolutionized ATTR-CM diagnosis, offering a non-biopsy dependent method that is both highly sensitive and specific.&lt;/p&gt;&lt;p&gt;Radiopharmaceutical shortages are unfortunately not uncommon, often stemming from the intricate and vulnerable global supply chain for medical isotopes. The parent isotope, Molybdenum-99 (Mo-99), from which Technetium-99m (Tc-99m) is derived, is produced in a limited number of aging nuclear reactors worldwide. Any disruption – be it reactor maintenance, unexpected shutdowns, or logistical challenges in transport – can cascade rapidly, affecting the availability of various Tc-99m-based diagnostic agents. Furthermore, specific manufacturing issues related to the &#x27;kits&#x27; that allow for the on-site preparation of the final radiopharmaceutical can also contribute to scarcity, exacerbating an already fragile supply network.&lt;/p&gt;&lt;p&gt;This current shortage means that patients suspected of having ATTR-CM or other conditions requiring a pyrophosphate scan may experience delays in diagnosis, or clinicians may be forced to pursue alternative, potentially more invasive, costly, or less accurate diagnostic pathways. For a disease like ATTR-CM, where prognosis is heavily tied to early intervention, such delays can have profound and irreversible consequences. The situation underscores the urgent need for robust supply chain management, innovative solutions, and collaborative efforts across the industry to safeguard access to essential diagnostic tools that underpin modern medical care.&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Technetium%20TC-99M%20Pyrophosphate%20Kit%20Injection</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Technetium%20TC-99M%20Pyrophosphate%20Kit%20Injection</guid>
-      <category>Drug Shortage</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Drug Shortage: Carboplatin Injection</title>
-      <description>&lt;p&gt;This &lt;b&gt;Featured Article&lt;/b&gt; on Zero483 delves into the pressing issue of the carboplatin injection shortage, a critical development recently highlighted by the U.S. Food and Drug Administration (FDA). Carboplatin is not just another medication; it&#x27;s a cornerstone chemotherapy drug used globally to combat a wide array of cancers. Its current &#x27;shortage&#x27; status means that the availability of this life-saving treatment is severely constrained, sending ripples of concern through the oncology community, patients, and their families across the nation.&lt;/p&gt;
-&lt;p&gt;Carboplatin belongs to a class of drugs known as platinum-based alkylating agents. These powerful compounds work by interfering with the DNA of rapidly dividing cancer cells, preventing them from multiplying and ultimately leading to their destruction. It is a workhorse in cancer treatment, frequently prescribed for common malignancies such as ovarian cancer, non-small cell lung cancer, head and neck cancers, and even certain types of testicular cancer. Often used in combination with other chemotherapy agents, or as part of a neoadjuvant (before surgery) or adjuvant (after surgery) regimen, its broad utility makes a shortage particularly devastating.&lt;/p&gt;
-&lt;p&gt;The immediate fallout of such a shortage is profound. Oncologists are faced with the difficult task of rationing existing supplies, prioritizing patients based on various clinical factors, or seeking less optimal, potentially more toxic, or less effective alternative treatments. For patients already grappling with a cancer diagnosis, the news of their prescribed medication being scarce adds immense psychological burden, uncertainty, and fear. Treatment delays, changes in protocol, or even the impossibility of receiving the standard-of-care regimen become real and terrifying prospects.&lt;/p&gt;
-&lt;p&gt;Drug shortages are complex phenomena, often stemming from a confluence of factors including manufacturing difficulties, raw material scarcity, increased demand, quality control issues at production facilities, or even logistical challenges within the intricate global pharmaceutical supply chain. While the FDA works tirelessly to monitor these situations and collaborate with manufacturers to mitigate impacts, the reality is that resolving a shortage for a complex injectable medication like carboplatin can take significant time and coordinated effort.&lt;/p&gt;
-&lt;p&gt;This situation underscores the delicate balance of the pharmaceutical ecosystem and the critical need for robust, resilient supply chains. The FDA&#x27;s declaration serves as a stark reminder of how vulnerable access to essential medicines can be, prompting a collective call to action for all stakeholders – from drug producers and healthcare providers to policymakers and regulatory bodies – to ensure that patients are not deprived of the treatments they desperately need.&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Carboplatin%20Injection</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Carboplatin%20Injection</guid>
-      <category>Drug Shortage</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Drug Shortage: Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccha</title>
-      <description>&lt;p&gt;&lt;b&gt;Featured Article on Zero483.&lt;/b&gt; The United States Food and Drug Administration (FDA) has issued a critical alert, confirming a nationwide shortage of several widely-prescribed amphetamine-based medications. This update specifically affects formulations containing Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, and Dextroamphetamine Sulfate Tablets, which are the active pharmaceutical ingredients found in generic versions of Adderall, a cornerstone treatment for Attention-Deficit/Hyperactivity Disorder (ADHD). This declaration sends ripples of concern through the patient community, healthcare providers, and the pharmaceutical industry alike, impacting millions who rely on these prescriptions daily.&lt;/p&gt;&lt;p&gt;The FDA’s announcement underscores a growing challenge in ensuring consistent access to essential medicines. While specific reasons for the current shortfall are complex and multifaceted, they typically involve a combination of factors, including a significant increase in demand for ADHD medications, manufacturing delays, raw material constraints, and logistical hurdles within the intricate pharmaceutical supply chain. For individuals managing ADHD, these amphetamine-based medications are not merely conveniences; they are vital tools that enable better focus, impulse control, and daily functioning, significantly improving quality of life, academic performance, and professional productivity.&lt;/p&gt;&lt;p&gt;This isn&#x27;t just about a scarcity of pills; it represents a profound disruption in the lives of millions of Americans who rely on these prescriptions. Patients, particularly children, adolescents, and young adults, often experience significant adverse effects when their medication regimen is interrupted or they are forced to switch to less suitable alternatives. These effects can range from a resurgence of debilitating ADHD symptoms—such as difficulty concentrating, impulsivity, and hyperactivity—to increased anxiety, stress, and a tangible reduction in their ability to perform daily tasks.&lt;/p&gt;&lt;p&gt;The FDA continues to work closely with manufacturers to mitigate the impact of this shortage and restore full supply as quickly as possible. However, the declaration serves as a stark reminder of the vulnerabilities within the global drug supply network. It prompts a broader conversation about national drug security, the need for robust contingency planning, and the importance of supply chain resilience. This situation highlights the critical need for transparent communication from regulators and proactive strategies from manufacturers to safeguard patient access to vital treatments, ensuring that those living with ADHD can maintain their prescribed therapeutic regimens without undue interruption.&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Amphetamine%20Aspartate%20Monohydrate%2C%20Amphetamine%20Sulfate%2C%20Dextroamphetamine%20Saccha</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Amphetamine%20Aspartate%20Monohydrate%2C%20Amphetamine%20Sulfate%2C%20Dextroamphetamine%20Saccha</guid>
-      <category>Drug Shortage</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>FDA Guidance, Clinical Pipelines, and the Emerging Deal Landscape of Psychedelic Therapeutics - JD Supra</title>
-      <description>&lt;p&gt;Title: FDA Guidance, Clinical Pipelines, and the Emerging Deal Landscape of Psychedelic Therapeutics - JD Supra
-Source: Google News
-Date: Wed, 05 Aug 2026 16:55:08 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=FDA%20Guidance%2C%20Clinical%20Pipelines%2C%20and%20the%20Emerging%20Deal%20Landscape%20of%20Psychedelic%20Therapeutics%20-%20JD%20Supra</link>
-      <guid>https://www.zero483.com/USFDA-news?q=FDA%20Guidance%2C%20Clinical%20Pipelines%2C%20and%20the%20Emerging%20Deal%20Landscape%20of%20Psychedelic%20Therapeutics%20-%20JD%20Supra</guid>
-      <category>Guidance</category>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Some patients to score new super-effective &#x27;Triple G&#x27; weight loss drug — before FDA approval - New York Post</title>
-      <description>&lt;p&gt;Title: Some patients to score new super-effective &#x27;Triple G&#x27; weight loss drug — before FDA approval - New York Post
-Source: Google News
-Date: Wed, 05 Aug 2026 15:20:00 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Some%20patients%20to%20score%20new%20super-effective%20%27Triple%20G%27%20weight%20loss%20drug%20%E2%80%94%20before%20FDA%20approval%20-%20New%20York%20Post</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Some%20patients%20to%20score%20new%20super-effective%20%27Triple%20G%27%20weight%20loss%20drug%20%E2%80%94%20before%20FDA%20approval%20-%20New%20York%20Post</guid>
-      <category>Drug Approval</category>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Drug Approval: ORZEYFUL - TAKEDA PHARMS USA</title>
-      <description>&lt;p&gt;The U.S. Food and Drug Administration (FDA) has officially approved ORZEYFUL, a novel therapeutic developed by TAKEDA PHARMS USA, effective August 5, 2026. This approval marks ORZEYFUL as a New Molecular Entity (NME), signifying a significant advancement in medical science and bringing a new treatment option to patients in need.&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Drug%20Approval%3A%20ORZEYFUL%20-%20TAKEDA%20PHARMS%20USA</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Drug%20Approval%3A%20ORZEYFUL%20-%20TAKEDA%20PHARMS%20USA</guid>
-      <category>Drug Approval</category>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>CDSCO to Launch First Phase of End-to-End Digital Drug Regulatory Platform Within 18 Months: DCGI - Digital Health News</title>
-      <description>&lt;p&gt;Title: CDSCO to Launch First Phase of End-to-End Digital Drug Regulatory Platform Within 18 Months: DCGI - Digital Health News
-Source: CDSCO India
-Date: Wed, 05 Aug 2026 10:12:00 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=CDSCO%20to%20Launch%20First%20Phase%20of%20End-to-End%20Digital%20Drug%20Regulatory%20Platform%20Within%2018%20Months%3A%20DCGI%20-%20Digital%20Health%20News</link>
-      <guid>https://www.zero483.com/USFDA-news?q=CDSCO%20to%20Launch%20First%20Phase%20of%20End-to-End%20Digital%20Drug%20Regulatory%20Platform%20Within%2018%20Months%3A%20DCGI%20-%20Digital%20Health%20News</guid>
-      <category>Warning Letter</category>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Let the orexin market begin: Takeda snags FDA approval for narcolepsy type 1 drug - Endpoints News</title>
-      <description>&lt;p&gt;Takeda Pharmaceuticals has secured groundbreaking FDA approval for its new narcolepsy type 1 treatment. This significant milestone introduces an innovative orexin-based drug, marking the official commencement of the highly anticipated orexin therapeutic market and offering new hope for patients living with this chronic sleep disorder.&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Let%20the%20orexin%20market%20begin%3A%20Takeda%20snags%20FDA%20approval%20for%20narcolepsy%20type%201%20drug%20-%20Endpoints%20News</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Let%20the%20orexin%20market%20begin%3A%20Takeda%20snags%20FDA%20approval%20for%20narcolepsy%20type%201%20drug%20-%20Endpoints%20News</guid>
-      <category>Drug Approval</category>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Germantown biopharma Precigen turns first quarterly profit after key drug scores FDA approval - The Business Journals</title>
-      <description>&lt;p&gt;Title: Germantown biopharma Precigen turns first quarterly profit after key drug scores FDA approval - The Business Journals
-Source: Google News
-Date: Wed, 05 Aug 2026 19:25:00 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Germantown%20biopharma%20Precigen%20turns%20first%20quarterly%20profit%20after%20key%20drug%20scores%20FDA%20approval%20-%20The%20Business%20Journals</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Germantown%20biopharma%20Precigen%20turns%20first%20quarterly%20profit%20after%20key%20drug%20scores%20FDA%20approval%20-%20The%20Business%20Journals</guid>
-      <category>Drug Approval</category>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>FDA finalizes antimicrobial animal drug safety guidance - Feedstuffs</title>
-      <description>&lt;p&gt;Title: FDA finalizes antimicrobial animal drug safety guidance - Feedstuffs
-Source: Google News
-Date: Wed, 05 Aug 2026 22:11:51 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=FDA%20finalizes%20antimicrobial%20animal%20drug%20safety%20guidance%20-%20Feedstuffs</link>
-      <guid>https://www.zero483.com/USFDA-news?q=FDA%20finalizes%20antimicrobial%20animal%20drug%20safety%20guidance%20-%20Feedstuffs</guid>
-      <category>Guidance</category>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Gillibrand, Scott press FDA on shortage of cancer drugs - suncommunitynews.com</title>
-      <description>&lt;p&gt;Senators Kirsten Gillibrand and Rick Scott are pressing the FDA to urgently address the severe national shortage of crucial cancer medications. This bipartisan effort highlights the critical impact on patient care, underscoring the immediate need for concrete actions to secure access to life-saving treatments across the U.S.&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Gillibrand%2C%20Scott%20press%20FDA%20on%20shortage%20of%20cancer%20drugs%20-%20suncommunitynews.com</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Gillibrand%2C%20Scott%20press%20FDA%20on%20shortage%20of%20cancer%20drugs%20-%20suncommunitynews.com</guid>
-      <category>Drug Shortage</category>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Drug Shortage: Dexmedetomidine Hydrochloride Injection</title>
-      <description>&lt;p&gt;The US FDA has confirmed an ongoing shortage of Dexmedetomidine Hydrochloride Injection, a critical medication. This powerful sedative is essential for patients in intensive care units, supporting ventilation and facilitating various medical procedures, making its availability vital for hospital operations.&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Dexmedetomidine%20Hydrochloride%20Injection</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Dexmedetomidine%20Hydrochloride%20Injection</guid>
-      <category>Drug Shortage</category>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Drug Shortage: Lisdexamfetamine Dimesylate Capsule</title>
-      <description>&lt;p&gt;The US FDA confirms a current shortage of Lisdexamfetamine Dimesylate capsules, the generic for Vyvanse. This critical medication treats Attention-Deficit/Hyperactivity Disorder (ADHD) and Binge Eating Disorder. The scarcity presents significant challenges for patients dependent on it for daily health management.&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Lisdexamfetamine%20Dimesylate%20Capsule</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Lisdexamfetamine%20Dimesylate%20Capsule</guid>
-      <category>Drug Shortage</category>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Indian Pharma Alliance Works with CDSCO to Regularize ‘Legacy’ Drug Approvals - NAVLIN DAILY</title>
-      <description>&lt;p&gt;Title: Indian Pharma Alliance Works with CDSCO to Regularize ‘Legacy’ Drug Approvals - NAVLIN DAILY
-Source: CDSCO India
-Date: Wed, 05 Aug 2026 12:54:50 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Indian%20Pharma%20Alliance%20Works%20with%20CDSCO%20to%20Regularize%20%E2%80%98Legacy%E2%80%99%20Drug%20Approvals%20-%20NAVLIN%20DAILY</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Indian%20Pharma%20Alliance%20Works%20with%20CDSCO%20to%20Regularize%20%E2%80%98Legacy%E2%80%99%20Drug%20Approvals%20-%20NAVLIN%20DAILY</guid>
-      <category>Warning Letter</category>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Mucinex 12HR Cold &amp; Fever Multi-Symptom Earns FDA Approval - empr.com</title>
-      <description>&lt;p&gt;The U.S. FDA has approved Mucinex 12HR Cold &amp; Fever Multi-Symptom, offering consumers a new, comprehensive over-the-counter option for common cold and flu relief. This medication targets congestion, cough, fever, and pain with extended 12-hour duration.&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Mucinex%2012HR%20Cold%20%26%20Fever%20Multi-Symptom%20Earns%20FDA%20Approval%20-%20empr.com</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Mucinex%2012HR%20Cold%20%26%20Fever%20Multi-Symptom%20Earns%20FDA%20Approval%20-%20empr.com</guid>
-      <category>Drug Approval</category>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>ImmunityBio Founder Pushes Back After FDA Warning Letter Over Anktiva Claims — Says Ad &#x27;Never Aired At All&#x27; - Stocktwits</title>
-      <description>&lt;p&gt;Title: ImmunityBio Founder Pushes Back After FDA Warning Letter Over Anktiva Claims — Says Ad &#x27;Never Aired At All&#x27; - Stocktwits
-Source: Google News
-Date: Wed, 05 Aug 2026 14:00:36 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=ImmunityBio%20Founder%20Pushes%20Back%20After%20FDA%20Warning%20Letter%20Over%20Anktiva%20Claims%20%E2%80%94%20Says%20Ad%20%27Never%20Aired%20At%20All%27%20-%20Stocktwits</link>
-      <guid>https://www.zero483.com/USFDA-news?q=ImmunityBio%20Founder%20Pushes%20Back%20After%20FDA%20Warning%20Letter%20Over%20Anktiva%20Claims%20%E2%80%94%20Says%20Ad%20%27Never%20Aired%20At%20All%27%20-%20Stocktwits</guid>
-      <category>Warning Letter</category>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Takeda wins FDA approval for first drug to treat full range of narcolepsy type 1 symptoms - PharmaLive</title>
-      <description>&lt;p&gt;Title: Takeda wins FDA approval for first drug to treat full range of narcolepsy type 1 symptoms - PharmaLive
-Source: Google News
-Date: Wed, 05 Aug 2026 20:18:10 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Takeda%20wins%20FDA%20approval%20for%20first%20drug%20to%20treat%20full%20range%20of%20narcolepsy%20type%201%20symptoms%20-%20PharmaLive</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Takeda%20wins%20FDA%20approval%20for%20first%20drug%20to%20treat%20full%20range%20of%20narcolepsy%20type%201%20symptoms%20-%20PharmaLive</guid>
-      <category>Drug Approval</category>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Drug Shortage: Cromolyn Sodium Concentrate</title>
-      <description>&lt;p&gt;The FDA has issued an alert regarding a current shortage of Cromolyn Sodium Concentrate, a critical medication used to manage conditions like mastocytosis and severe gastrointestinal allergies. This shortage poses significant challenges for patients relying on this essential mast cell stabilizer, which helps reduce inflammatory responses.&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Cromolyn%20Sodium%20Concentrate</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Cromolyn%20Sodium%20Concentrate</guid>
-      <category>Drug Shortage</category>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
+
   </channel>
 </rss>
