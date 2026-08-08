@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit Lookbook | Dynamic Visual Lookbook</title>
+  <meta name="description" content="Explore this interactive fashion lookbook. Click any photo to shop directly on Myntra." />
+  <meta property="og:title" content="HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit Lookbook" />
+  <meta property="og:type" content="article" />
+  <meta name="pinterest-rich-pin" content="true" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-red: #e60023;
+      --pink-accent: #ec4899;
+      --bg-dark: #0b0f19;
+      --card-bg: rgba(30, 41, 59, 0.65);
+      --glass-border: rgba(255, 255, 255, 0.12);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    
+    body {
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(230, 0, 35, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(236, 72, 153, 0.15) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(99, 102, 241, 0.12) 0px, transparent 50%);
+      background-attachment: fixed;
+      color: #f8fafc;
+      padding: 40px 18px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .lookbook-container { max-width: 1150px; width: 100%; }
+    
+    header { text-align: center; margin-bottom: 45px; position: relative; }
+    
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(236, 72, 153, 0.12);
+      border: 1px solid rgba(236, 72, 153, 0.3);
+      color: #f472b6;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 15px rgba(236, 72, 153, 0.15);
+    }
+    
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.6rem;
+      font-weight: 900;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.25;
+      letter-spacing: -0.5px;
+    }
+    
+    .sub-tag {
+      color: #94a3b8;
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+    .sub-tag strong { color: #f472b6; font-weight: 700; }
+
+    /* Responsive Grid */
+    .lookbook-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 26px;
+    }
+    @media (max-width: 650px) {
+      .lookbook-grid { grid-template-columns: 1fr; gap: 20px; }
+      h1 { font-size: 1.9rem; }
+    }
+
+    /* Lookbook Card */
+    .lookbook-item {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .lookbook-item:hover {
+      transform: translateY(-8px) scale(1.01);
+      border-color: rgba(236, 72, 153, 0.5);
+      box-shadow: 0 20px 40px -10px rgba(230, 0, 35, 0.35), 0 0 20px rgba(236, 72, 153, 0.2);
+    }
+
+    .image-link {
+      display: block;
+      text-decoration: none;
+      position: relative;
+      width: 100%;
+      color: inherit;
+    }
+
+    .image-frame {
+      position: relative;
+      width: 100%;
+      padding-top: 133.33%; /* 3:4 aspect ratio */
+      overflow: hidden;
+      background: #1e293b;
+    }
+
+    /* Ken Burns Floating Animation */
+    .animated-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+      animation: kenBurnsContinuous 14s ease-in-out infinite alternate;
+    }
+
+    .img-delay-1 { animation-delay: -3s; }
+    .img-delay-2 { animation-delay: -7s; }
+
+    @keyframes kenBurnsContinuous {
+      0% { transform: scale(1) translate(0%, 0%); }
+      50% { transform: scale(1.09) translate(-1.5%, -1%); }
+      100% { transform: scale(1.03) translate(1%, 1.5%); }
+    }
+
+    .lookbook-item:hover .animated-img {
+      transform: scale(1.12) !important;
+      animation-play-state: paused;
+    }
+
+    /* Shimmer Light Reflection */
+    .shimmer-overlay {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+      transition: left 0.7s ease;
+      pointer-events: none;
+    }
+    .lookbook-item:hover .shimmer-overlay {
+      left: 140%;
+    }
+
+    /* Top Badge Tag */
+    .badge-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      z-index: 2;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Card Footer Overlay */
+    .card-footer-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px 16px 16px 16px;
+      background: linear-gradient(to top, rgba(11, 15, 25, 0.95) 0%, rgba(11, 15, 25, 0.6) 65%, transparent 100%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .prod-name-title {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: #f1f5f9;
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Pulsing Shop Button */
+    .shop-overlay-btn {
+      align-self: flex-start;
+      background: linear-gradient(135deg, #e60023 0%, #ec4899 100%);
+      color: #ffffff;
+      padding: 9px 18px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 15px rgba(230, 0, 35, 0.4);
+      transition: all 0.3s ease;
+      animation: pulseBtn 2.5s infinite;
+    }
+
+    @keyframes pulseBtn {
+      0%, 100% { box-shadow: 0 4px 15px rgba(230, 0, 35, 0.4); }
+      50% { box-shadow: 0 6px 22px rgba(236, 72, 153, 0.7); }
+    }
+
+    .lookbook-item:hover .shop-overlay-btn {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #ec4899 0%, #e60023 100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="lookbook-container">
+    <header>
+      <div class="header-badge">✨ Interactive Fashion Lookbook</div>
+      <h1>HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit Lookbook</h1>
+      <p class="sub-tag">👆 <strong>Tap any photo</strong> to shop the exact outfit directly on Myntra</p>
+    </header>
+
+    <div class="lookbook-grid">
+      
+            <div class="lookbook-item" style="animation-delay: 0.1s;">
+                <a href="https://myntr.it/brFoq25" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit on Myntra">
+                    <div class="image-frame">
+                        <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/17/8bKfGfjl_b7d46d019a274da2a3504ff1f65b175e.jpg" alt="HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit Look #1" loading="lazy" class="animated-img img-delay-1" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                    
+                    <div class="badge-tag">
+                        <span>✨ HRX by Hrithik Roshan • ₹3299</span>
+                    </div>
+
+                    <div class="card-footer-info">
+                        <div class="prod-name-title">HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit</div>
+                        <div class="shop-overlay-btn">
+                            <span>🛍️ Shop on Myntra &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="lookbook-item" style="animation-delay: 0.2s;">
+                <a href="https://myntr.it/brFoq25" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit on Myntra">
+                    <div class="image-frame">
+                        <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/17/oBEUUzHm_580be81b860346b5bac33298f4344782.jpg" alt="HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit Look #2" loading="lazy" class="animated-img img-delay-2" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                    
+                    <div class="badge-tag">
+                        <span>✨ HRX by Hrithik Roshan • ₹3299</span>
+                    </div>
+
+                    <div class="card-footer-info">
+                        <div class="prod-name-title">HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit</div>
+                        <div class="shop-overlay-btn">
+                            <span>🛍️ Shop on Myntra &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="lookbook-item" style="animation-delay: 0.3s;">
+                <a href="https://myntr.it/brFoq25" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit on Myntra">
+                    <div class="image-frame">
+                        <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/17/mx2omUTl_28a3b69dac434fa191fd245e2de0c693.jpg" alt="HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit Look #3" loading="lazy" class="animated-img img-delay-0" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                    
+                    <div class="badge-tag">
+                        <span>✨ HRX by Hrithik Roshan • ₹3299</span>
+                    </div>
+
+                    <div class="card-footer-info">
+                        <div class="prod-name-title">HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit</div>
+                        <div class="shop-overlay-btn">
+                            <span>🛍️ Shop on Myntra &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="lookbook-item" style="animation-delay: 0.4s;">
+                <a href="https://myntr.it/brFoq25" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit on Myntra">
+                    <div class="image-frame">
+                        <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/17/STJxrqat_15849f5dac5f458b9eafd6b8721db882.jpg" alt="HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit Look #4" loading="lazy" class="animated-img img-delay-1" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                    
+                    <div class="badge-tag">
+                        <span>✨ HRX by Hrithik Roshan • ₹3299</span>
+                    </div>
+
+                    <div class="card-footer-info">
+                        <div class="prod-name-title">HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit</div>
+                        <div class="shop-overlay-btn">
+                            <span>🛍️ Shop on Myntra &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="lookbook-item" style="animation-delay: 0.5s;">
+                <a href="https://myntr.it/brFoq25" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit on Myntra">
+                    <div class="image-frame">
+                        <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/17/LnmfGOhW_7d3236a65ced4ba38b4d89edd1c6262d.jpg" alt="HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit Look #5" loading="lazy" class="animated-img img-delay-2" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                    
+                    <div class="badge-tag">
+                        <span>✨ HRX by Hrithik Roshan • ₹3299</span>
+                    </div>
+
+                    <div class="card-footer-info">
+                        <div class="prod-name-title">HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit</div>
+                        <div class="shop-overlay-btn">
+                            <span>🛍️ Shop on Myntra &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="lookbook-item" style="animation-delay: 0.0s;">
+                <a href="https://myntr.it/brFoq25" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit on Myntra">
+                    <div class="image-frame">
+                        <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/17/2PjncN6m_47d1eac5ef5a40efb0189ec6cf102544.jpg" alt="HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit Look #6" loading="lazy" class="animated-img img-delay-0" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                    
+                    <div class="badge-tag">
+                        <span>✨ HRX by Hrithik Roshan • ₹3299</span>
+                    </div>
+
+                    <div class="card-footer-info">
+                        <div class="prod-name-title">HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit</div>
+                        <div class="shop-overlay-btn">
+                            <span>🛍️ Shop on Myntra &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="lookbook-item" style="animation-delay: 0.1s;">
+                <a href="https://myntr.it/brFoq25" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit on Myntra">
+                    <div class="image-frame">
+                        <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/17/b4YLmZ5T_bd08d10199244f27814a643b4f6bc923.jpg" alt="HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit Look #7" loading="lazy" class="animated-img img-delay-1" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                    
+                    <div class="badge-tag">
+                        <span>✨ HRX by Hrithik Roshan • ₹3299</span>
+                    </div>
+
+                    <div class="card-footer-info">
+                        <div class="prod-name-title">HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit</div>
+                        <div class="shop-overlay-btn">
+                            <span>🛍️ Shop on Myntra &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="lookbook-item" style="animation-delay: 0.2s;">
+                <a href="https://myntr.it/brFoq25" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit on Myntra">
+                    <div class="image-frame">
+                        <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/17/askr0uKI_e9780765bdba45d68d92e1a4fd12bb43.jpg" alt="HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit Look #8" loading="lazy" class="animated-img img-delay-2" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                    
+                    <div class="badge-tag">
+                        <span>✨ HRX by Hrithik Roshan • ₹3299</span>
+                    </div>
+
+                    <div class="card-footer-info">
+                        <div class="prod-name-title">HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit</div>
+                        <div class="shop-overlay-btn">
+                            <span>🛍️ Shop on Myntra &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="lookbook-item" style="animation-delay: 0.3s;">
+                <a href="https://myntr.it/brFoq25" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit on Myntra">
+                    <div class="image-frame">
+                        <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/17/IlnDFk5B_252055a2f69e499686c8d786ca78bf47.jpg" alt="HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit Look #9" loading="lazy" class="animated-img img-delay-0" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                    
+                    <div class="badge-tag">
+                        <span>✨ HRX by Hrithik Roshan • ₹3299</span>
+                    </div>
+
+                    <div class="card-footer-info">
+                        <div class="prod-name-title">HRX by Hrithik Roshan Men Brand Logo Printed Rapid-Dry Running Tracksuit</div>
+                        <div class="shop-overlay-btn">
+                            <span>🛍️ Shop on Myntra &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+    </div>
+  </div>
+</body>
+</html>
