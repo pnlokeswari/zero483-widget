@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-08T09:31:12.168890+00:00",
+  "last_updated": "2026-08-08T10:33:12.508072+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "6e268172d51f",
+      "title": "Drug Shortage: Quinapril/Hydrochlorothiazide Tablet",
+      "slug": "drug-shortage-quinapril-hydrochlorothiazide-tablet",
+      "date": "2026-08-08",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Quinapril/Hydrochlorothiazide Tablet\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Quinapril/Hydrochlorothiazide Tablet",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-08-08T10:21:09.313054+00:00",
+      "is_long_form": false
+    },
     {
       "id": "016aec79d554",
       "title": "AstraZeneca Pharma India secures CDSCO approval for Enhertu in new breast cancer use - scanx.trade",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNGI1YVBjYXhCTGRNa3dwdnF0NnRBRndqX0VzU3J3UEFOZVBMOUNnMlRRMENzc1c2bThVbXBOdko2T0hGTENYa0kyZjV0dGJTY0U1SEhsOWl2ZzhuTkt5a00xXzY1TUtGLVlDX09taUx2OVRRenZEMXQ4WWZDbU5nS3Z3XzV2SmRYX3RLeHVGN2Vua09HMTF1c1RFT3dCdGtzM2tVZXJyYzVCM05rTm5lUkdFQnBKWWtKOVNFY21xaU0xWHF0?oc=5",
       "fetched_at": "2026-08-05T15:56:10.133814+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "ae8d0f0b8d40",
-      "title": "FilmArray® NGDS Warrior Panel",
-      "slug": "filmarray-ngds-warrior-panel",
-      "date": "2026-08-05",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: FilmArray® NGDS Warrior Panel\nSource: Health Canada\nDate: 2026-08-05T12:00:00</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "FilmArray® NGDS Warrior Panel",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/filmarrayr-ngds-warrior-panel",
-      "fetched_at": "2026-08-05T13:28:09.225956+00:00",
       "is_long_form": false
     }
   ]
