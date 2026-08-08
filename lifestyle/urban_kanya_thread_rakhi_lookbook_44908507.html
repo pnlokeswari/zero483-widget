@@ -3,85 +3,346 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>URBAN KANYA Thread Rakhi Lookbook | Visual Fashion Lookbook</title>
-  <meta name="description" content="Click any photo to shop directly on Myntra." />
+  <title>URBAN KANYA Thread Rakhi Lookbook | Dynamic Visual Lookbook</title>
+  <meta name="description" content="Explore this interactive fashion lookbook. Click any photo to shop directly on Myntra." />
   <meta property="og:title" content="URBAN KANYA Thread Rakhi Lookbook" />
   <meta property="og:type" content="article" />
   <meta name="pinterest-rich-pin" content="true" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
+    :root {
+      --primary-red: #e60023;
+      --pink-accent: #ec4899;
+      --bg-dark: #0b0f19;
+      --card-bg: rgba(30, 41, 59, 0.65);
+      --glass-border: rgba(255, 255, 255, 0.12);
+    }
+
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-    body { background-color: #0f172a; color: #f8fafc; padding: 35px 15px; display: flex; justify-content: center; }
-    .lookbook-container { max-width: 1000px; width: 100%; }
-    header { text-align: center; margin-bottom: 35px; }
-    h1 { font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 800; margin-bottom: 8px; color: #ffffff; line-height: 1.2; }
-    .sub-tag { color: #f472b6; font-size: 1rem; font-weight: 600; }
     
-    .lookbook-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 20px; }
-    @media (max-width: 600px) { .lookbook-grid { grid-template-columns: 1fr; } h1 { font-size: 1.7rem; } }
+    body {
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(230, 0, 35, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(236, 72, 153, 0.15) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(99, 102, 241, 0.12) 0px, transparent 50%);
+      background-attachment: fixed;
+      color: #f8fafc;
+      padding: 40px 18px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .lookbook-container { max-width: 1150px; width: 100%; }
     
-    .lookbook-item { position: relative; border-radius: 14px; overflow: hidden; background: #1e293b; border: 1px solid rgba(255,255,255,0.08); transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
-    .lookbook-item:hover { transform: translateY(-4px); border-color: rgba(230, 0, 35, 0.6); box-shadow: 0 12px 30px rgba(230, 0, 35, 0.25); }
+    header { text-align: center; margin-bottom: 45px; position: relative; }
     
-    .image-link { display: block; text-decoration: none; position: relative; width: 100%; padding-top: 133.33%; cursor: pointer; }
-    .image-link img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
-    .lookbook-item:hover img { transform: scale(1.04); }
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(236, 72, 153, 0.12);
+      border: 1px solid rgba(236, 72, 153, 0.3);
+      color: #f472b6;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 15px rgba(236, 72, 153, 0.15);
+    }
     
-    .shop-overlay { position: absolute; bottom: 12px; right: 12px; background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.2); color: #ffffff; padding: 7px 14px; border-radius: 50px; font-size: 0.82rem; font-weight: 600; transition: background 0.2s ease, transform 0.2s ease; display: flex; align-items: center; gap: 5px; }
-    .lookbook-item:hover .shop-overlay { background: #e60023; border-color: #e60023; transform: scale(1.05); }
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.6rem;
+      font-weight: 900;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.25;
+      letter-spacing: -0.5px;
+    }
+    
+    .sub-tag {
+      color: #94a3b8;
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+    .sub-tag strong { color: #f472b6; font-weight: 700; }
+
+    /* Responsive Grid */
+    .lookbook-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 26px;
+    }
+    @media (max-width: 650px) {
+      .lookbook-grid { grid-template-columns: 1fr; gap: 20px; }
+      h1 { font-size: 1.9rem; }
+    }
+
+    /* Lookbook Card */
+    .lookbook-item {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .lookbook-item:hover {
+      transform: translateY(-8px) scale(1.01);
+      border-color: rgba(236, 72, 153, 0.5);
+      box-shadow: 0 20px 40px -10px rgba(230, 0, 35, 0.35), 0 0 20px rgba(236, 72, 153, 0.2);
+    }
+
+    .image-link {
+      display: block;
+      text-decoration: none;
+      position: relative;
+      width: 100%;
+      color: inherit;
+    }
+
+    .image-frame {
+      position: relative;
+      width: 100%;
+      padding-top: 133.33%; /* 3:4 aspect ratio */
+      overflow: hidden;
+      background: #1e293b;
+    }
+
+    /* Ken Burns Floating Animation */
+    .animated-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+      animation: kenBurnsContinuous 14s ease-in-out infinite alternate;
+    }
+
+    .img-delay-1 { animation-delay: -3s; }
+    .img-delay-2 { animation-delay: -7s; }
+
+    @keyframes kenBurnsContinuous {
+      0% { transform: scale(1) translate(0%, 0%); }
+      50% { transform: scale(1.09) translate(-1.5%, -1%); }
+      100% { transform: scale(1.03) translate(1%, 1.5%); }
+    }
+
+    .lookbook-item:hover .animated-img {
+      transform: scale(1.12) !important;
+      animation-play-state: paused;
+    }
+
+    /* Shimmer Light Reflection */
+    .shimmer-overlay {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+      transition: left 0.7s ease;
+      pointer-events: none;
+    }
+    .lookbook-item:hover .shimmer-overlay {
+      left: 140%;
+    }
+
+    /* Top Badge Tag */
+    .badge-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      z-index: 2;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Card Footer Overlay */
+    .card-footer-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px 16px 16px 16px;
+      background: linear-gradient(to top, rgba(11, 15, 25, 0.95) 0%, rgba(11, 15, 25, 0.6) 65%, transparent 100%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .prod-name-title {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: #f1f5f9;
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Pulsing Shop Button */
+    .shop-overlay-btn {
+      align-self: flex-start;
+      background: linear-gradient(135deg, #e60023 0%, #ec4899 100%);
+      color: #ffffff;
+      padding: 9px 18px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 15px rgba(230, 0, 35, 0.4);
+      transition: all 0.3s ease;
+      animation: pulseBtn 2.5s infinite;
+    }
+
+    @keyframes pulseBtn {
+      0%, 100% { box-shadow: 0 4px 15px rgba(230, 0, 35, 0.4); }
+      50% { box-shadow: 0 6px 22px rgba(236, 72, 153, 0.7); }
+    }
+
+    .lookbook-item:hover .shop-overlay-btn {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #ec4899 0%, #e60023 100%);
+    }
   </style>
 </head>
 <body>
   <div class="lookbook-container">
     <header>
+      <div class="header-badge">✨ Interactive Fashion Lookbook</div>
       <h1>URBAN KANYA Thread Rakhi Lookbook</h1>
-      <div class="sub-tag">👆 Tap any photo to shop directly on Myntra</div>
+      <p class="sub-tag">👆 <strong>Tap any photo</strong> to shop the exact outfit directly on Myntra</p>
     </header>
 
     <div class="lookbook-grid">
       
-            <div class="lookbook-item">
-                <a href="https://myntr.it/cUFF0MR" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop on Myntra">
-                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/AUGUST/3/FayUhcy6_aeab54b487be431fadfb29bc887c1ebd.jpg" alt="URBAN KANYA Thread Rakhi Look #1" loading="lazy" />
-                    <div class="shop-overlay">
-                        <span>🛍️ Shop on Myntra &rarr;</span>
+            <div class="lookbook-item" style="animation-delay: 0.1s;">
+                <a href="https://myntr.it/cUFF0MR" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop URBAN KANYA Thread Rakhi on Myntra">
+                    <div class="image-frame">
+                        <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/AUGUST/3/FayUhcy6_aeab54b487be431fadfb29bc887c1ebd.jpg" alt="URBAN KANYA Thread Rakhi Look #1" loading="lazy" class="animated-img img-delay-1" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                    
+                    <div class="badge-tag">
+                        <span>✨ URBAN KANYA • ₹1640</span>
+                    </div>
+
+                    <div class="card-footer-info">
+                        <div class="prod-name-title">URBAN KANYA Thread Rakhi</div>
+                        <div class="shop-overlay-btn">
+                            <span>🛍️ Shop on Myntra &rarr;</span>
+                        </div>
                     </div>
                 </a>
             </div>
             
-            <div class="lookbook-item">
-                <a href="https://myntr.it/cUFF0MR" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop on Myntra">
-                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/AUGUST/3/ETfIUtmh_66a573f78576463193631a936d81c19c.jpg" alt="URBAN KANYA Thread Rakhi Look #2" loading="lazy" />
-                    <div class="shop-overlay">
-                        <span>🛍️ Shop on Myntra &rarr;</span>
+            <div class="lookbook-item" style="animation-delay: 0.2s;">
+                <a href="https://myntr.it/cUFF0MR" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop URBAN KANYA Thread Rakhi on Myntra">
+                    <div class="image-frame">
+                        <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/AUGUST/3/ETfIUtmh_66a573f78576463193631a936d81c19c.jpg" alt="URBAN KANYA Thread Rakhi Look #2" loading="lazy" class="animated-img img-delay-2" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                    
+                    <div class="badge-tag">
+                        <span>✨ URBAN KANYA • ₹1640</span>
+                    </div>
+
+                    <div class="card-footer-info">
+                        <div class="prod-name-title">URBAN KANYA Thread Rakhi</div>
+                        <div class="shop-overlay-btn">
+                            <span>🛍️ Shop on Myntra &rarr;</span>
+                        </div>
                     </div>
                 </a>
             </div>
             
-            <div class="lookbook-item">
-                <a href="https://myntr.it/cUFF0MR" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop on Myntra">
-                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/AUGUST/3/xlGBa94E_7dd3d1b91c08405aaa8d453b3b3f1bc8.jpg" alt="URBAN KANYA Thread Rakhi Look #3" loading="lazy" />
-                    <div class="shop-overlay">
-                        <span>🛍️ Shop on Myntra &rarr;</span>
+            <div class="lookbook-item" style="animation-delay: 0.3s;">
+                <a href="https://myntr.it/cUFF0MR" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop URBAN KANYA Thread Rakhi on Myntra">
+                    <div class="image-frame">
+                        <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/AUGUST/3/xlGBa94E_7dd3d1b91c08405aaa8d453b3b3f1bc8.jpg" alt="URBAN KANYA Thread Rakhi Look #3" loading="lazy" class="animated-img img-delay-0" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                    
+                    <div class="badge-tag">
+                        <span>✨ URBAN KANYA • ₹1640</span>
+                    </div>
+
+                    <div class="card-footer-info">
+                        <div class="prod-name-title">URBAN KANYA Thread Rakhi</div>
+                        <div class="shop-overlay-btn">
+                            <span>🛍️ Shop on Myntra &rarr;</span>
+                        </div>
                     </div>
                 </a>
             </div>
             
-            <div class="lookbook-item">
-                <a href="https://myntr.it/cUFF0MR" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop on Myntra">
-                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/AUGUST/3/H2BFXqx8_52f6485ccc1a4e7081c6de22989cab23.jpg" alt="URBAN KANYA Thread Rakhi Look #4" loading="lazy" />
-                    <div class="shop-overlay">
-                        <span>🛍️ Shop on Myntra &rarr;</span>
+            <div class="lookbook-item" style="animation-delay: 0.4s;">
+                <a href="https://myntr.it/cUFF0MR" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop URBAN KANYA Thread Rakhi on Myntra">
+                    <div class="image-frame">
+                        <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/AUGUST/3/H2BFXqx8_52f6485ccc1a4e7081c6de22989cab23.jpg" alt="URBAN KANYA Thread Rakhi Look #4" loading="lazy" class="animated-img img-delay-1" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                    
+                    <div class="badge-tag">
+                        <span>✨ URBAN KANYA • ₹1640</span>
+                    </div>
+
+                    <div class="card-footer-info">
+                        <div class="prod-name-title">URBAN KANYA Thread Rakhi</div>
+                        <div class="shop-overlay-btn">
+                            <span>🛍️ Shop on Myntra &rarr;</span>
+                        </div>
                     </div>
                 </a>
             </div>
             
-            <div class="lookbook-item">
-                <a href="https://myntr.it/cUFF0MR" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop on Myntra">
-                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/AUGUST/3/5tpHaEHa_7039c7f17a2140be8dc1c03240fcead6.jpg" alt="URBAN KANYA Thread Rakhi Look #5" loading="lazy" />
-                    <div class="shop-overlay">
-                        <span>🛍️ Shop on Myntra &rarr;</span>
+            <div class="lookbook-item" style="animation-delay: 0.5s;">
+                <a href="https://myntr.it/cUFF0MR" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop URBAN KANYA Thread Rakhi on Myntra">
+                    <div class="image-frame">
+                        <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/AUGUST/3/5tpHaEHa_7039c7f17a2140be8dc1c03240fcead6.jpg" alt="URBAN KANYA Thread Rakhi Look #5" loading="lazy" class="animated-img img-delay-2" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                    
+                    <div class="badge-tag">
+                        <span>✨ URBAN KANYA • ₹1640</span>
+                    </div>
+
+                    <div class="card-footer-info">
+                        <div class="prod-name-title">URBAN KANYA Thread Rakhi</div>
+                        <div class="shop-overlay-btn">
+                            <span>🛍️ Shop on Myntra &rarr;</span>
+                        </div>
                     </div>
                 </a>
             </div>
