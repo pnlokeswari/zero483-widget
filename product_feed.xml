@@ -300,5 +300,62 @@
       <g:google_product_category>Home &amp; Garden &gt; Religion &amp; Spirituality</g:google_product_category>
     </item>
 
+  
+    <!-- Item 27: Urban Artistic Gift Hamper -->
+    <item>
+      <g:id>urban-artistic-rakhi-gift-hamper</g:id>
+      <title>Urban Artistic Dreamcatcher &amp; Mug Gift Hamper for Sister</title>
+      <description>Bohemian dreamcatcher, handpainted mug, and keepsake gift box for sister on Raksha Bandhan.</description>
+      <link>https://alerts.zero483.com/lifestyle/raksha-bandhan-gift-guide.html</link>
+      <g:image_link>https://alerts.zero483.com/lifestyle/rakhi_items/rakhi1.jpg</g:image_link>
+      <g:price>899 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>The Urban Artistic</g:brand>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Jewelry &gt; Gifts</g:google_product_category>
+    </item>
+
+    <!-- Item 28: Tied Ribbons Jewellery Combo -->
+    <item>
+      <g:id>tied-ribbons-rakhi-jewellery-combo</g:id>
+      <title>Tied Ribbons Rakhi Jewellery &amp; Return Gift Combo for Sister</title>
+      <description>Festive return gift set for girls including artificial jewellery pieces and gift packaging.</description>
+      <link>https://alerts.zero483.com/lifestyle/raksha-bandhan-gift-guide.html</link>
+      <g:image_link>https://alerts.zero483.com/lifestyle/rakhi_items/rakhi2.jpg</g:image_link>
+      <g:price>599 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Tied Ribbons</g:brand>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Jewelry</g:google_product_category>
+    </item>
+
+    <!-- Item 29: Bella Vita Luxury Perfume Set -->
+    <item>
+      <g:id>bella-vita-perfume-set-women-4pack</g:id>
+      <title>Bella Vita Luxury Perfume Gift Set for Women (Pack of 4)</title>
+      <description>Luxury floral and oriental perfume gift set for women featuring Glam, Date, Senorita &amp; Rose scents.</description>
+      <link>https://alerts.zero483.com/lifestyle/raksha-bandhan-gift-guide.html</link>
+      <g:image_link>https://alerts.zero483.com/lifestyle/rakhi_items/rakhi4.jpg</g:image_link>
+      <g:price>849 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Bella Vita Luxury</g:brand>
+      <g:google_product_category>Health &amp; Beauty &gt; Personal Care &gt; Cosmetics &gt; Perfume</g:google_product_category>
+    </item>
+
+    <!-- Item 30: Thy Kalpavruksha Purple Gift Box -->
+    <item>
+      <g:id>thy-kalpavruksha-purple-gift-set</g:id>
+      <title>Thy Kalpavruksha Luxury Purple Gift Box (Wallet + Watch + Perfume)</title>
+      <description>Designer 3-in-1 purple leather wallet, analog watch, and fragrance set for sister.</description>
+      <link>https://alerts.zero483.com/lifestyle/raksha-bandhan-gift-guide.html</link>
+      <g:image_link>https://alerts.zero483.com/lifestyle/rakhi_items/rakhi10.jpg</g:image_link>
+      <g:price>1299 INR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Thy Kalpavruksha</g:brand>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Handbags, Wallets &amp; Cases</g:google_product_category>
+    </item>
+
   </channel>
 </rss>
