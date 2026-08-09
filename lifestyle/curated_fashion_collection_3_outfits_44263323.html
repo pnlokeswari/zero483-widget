@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curated Fashion Collection (3 Outfits) | Dynamic Visual Lookbook</title>
+  <meta name="description" content="Explore this interactive fashion lookbook. Click any photo to shop directly on Myntra." />
+  <meta property="og:title" content="Curated Fashion Collection (3 Outfits)" />
+  <meta property="og:type" content="article" />
+  <meta name="pinterest-rich-pin" content="true" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-red: #e60023;
+      --pink-accent: #ec4899;
+      --bg-dark: #0b0f19;
+      --card-bg: rgba(30, 41, 59, 0.65);
+      --glass-border: rgba(255, 255, 255, 0.12);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    
+    body {
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(230, 0, 35, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(236, 72, 153, 0.15) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(99, 102, 241, 0.12) 0px, transparent 50%);
+      background-attachment: fixed;
+      color: #f8fafc;
+      padding: 40px 18px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .lookbook-container { max-width: 1150px; width: 100%; }
+    
+    header { text-align: center; margin-bottom: 45px; position: relative; }
+    
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(236, 72, 153, 0.12);
+      border: 1px solid rgba(236, 72, 153, 0.3);
+      color: #f472b6;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 15px rgba(236, 72, 153, 0.15);
+    }
+    
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.6rem;
+      font-weight: 900;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.25;
+      letter-spacing: -0.5px;
+    }
+    
+    .sub-tag {
+      color: #94a3b8;
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+    .sub-tag strong { color: #f472b6; font-weight: 700; }
+
+    /* Responsive Grid for Consolidated Product Containers */
+    .lookbook-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 30px;
+    }
+    @media (max-width: 650px) {
+      .lookbook-grid { grid-template-columns: 1fr; gap: 24px; }
+      h1 { font-size: 1.9rem; }
+    }
+
+    /* Consolidated Product Card Container */
+    .lookbook-product-card {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .lookbook-product-card:hover {
+      transform: translateY(-8px) scale(1.01);
+      border-color: rgba(236, 72, 153, 0.5);
+      box-shadow: 0 20px 40px -10px rgba(230, 0, 35, 0.35), 0 0 20px rgba(236, 72, 153, 0.2);
+    }
+
+    .card-image-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .image-link {
+      display: block;
+      text-decoration: none;
+      position: relative;
+      width: 100%;
+      color: inherit;
+    }
+
+    .image-frame {
+      position: relative;
+      width: 100%;
+      padding-top: 125%; /* 4:5 aspect ratio */
+      overflow: hidden;
+      background: #1e293b;
+    }
+
+    /* Ken Burns Floating Animation */
+    .animated-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease, opacity 0.3s ease;
+      animation: kenBurnsContinuous 14s ease-in-out infinite alternate;
+    }
+
+    @keyframes kenBurnsContinuous {
+      0% { transform: scale(1) translate(0%, 0%); }
+      50% { transform: scale(1.09) translate(-1.5%, -1%); }
+      100% { transform: scale(1.03) translate(1%, 1.5%); }
+    }
+
+    .lookbook-product-card:hover .animated-img {
+      transform: scale(1.1) !important;
+      animation-play-state: paused;
+    }
+
+    /* Shimmer Light Reflection */
+    .shimmer-overlay {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+      transition: left 0.7s ease;
+      pointer-events: none;
+    }
+    .lookbook-product-card:hover .shimmer-overlay {
+      left: 140%;
+    }
+
+    /* Top Badge Tag */
+    .badge-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      z-index: 2;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Thumbnail Gallery Strip */
+    .gallery-thumbs-strip {
+      display: flex;
+      gap: 8px;
+      padding: 10px 14px;
+      background: rgba(15, 23, 42, 0.7);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+
+    .gallery-thumb-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      background: #1e293b;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+      padding: 0;
+    }
+
+    .gallery-thumb-btn img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-thumb-btn:hover, .gallery-thumb-btn.active-thumb {
+      border-color: #ec4899;
+      transform: scale(1.06);
+      box-shadow: 0 0 10px rgba(236, 72, 153, 0.5);
+    }
+
+    /* Card Footer Info */
+    .card-footer-info {
+      padding: 16px;
+      background: rgba(15, 23, 42, 0.85);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .prod-name-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #f1f5f9;
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Pulsing Shop Button */
+    .shop-overlay-btn {
+      text-decoration: none;
+      align-self: flex-start;
+      background: linear-gradient(135deg, #e60023 0%, #ec4899 100%);
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 15px rgba(230, 0, 35, 0.4);
+      transition: all 0.3s ease;
+      animation: pulseBtn 2.5s infinite;
+    }
+
+    @keyframes pulseBtn {
+      0%, 100% { box-shadow: 0 4px 15px rgba(230, 0, 35, 0.4); }
+      50% { box-shadow: 0 6px 22px rgba(236, 72, 153, 0.7); }
+    }
+
+    .shop-overlay-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #ec4899 0%, #e60023 100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="lookbook-container">
+    <header>
+      <div class="header-badge">✨ Interactive Fashion Lookbook</div>
+      <h1>Curated Fashion Collection (3 Outfits)</h1>
+      <p class="sub-tag">👆 <strong>Tap any photo or thumbnail</strong> to explore angles & shop directly on Myntra</p>
+    </header>
+
+    <div class="lookbook-grid">
+      
+        <div class="lookbook-product-card" style="animation-delay: 0.1s;">
+            <div class="card-image-wrapper">
+                <a href="https://myntr.it/kzR6o2u" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop YK Boys 5 Printed T-shirt on Myntra">
+                    <div class="image-frame">
+                        <img id="prod-main-img-1" src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/15/oHJZX0az_c153e6212d4047588baa9b09a4fa9728.jpg" alt="YK Boys 5 Printed T-shirt" loading="lazy" class="animated-img" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                </a>
+
+                <div class="badge-tag">
+                    <span>✨ YK</span>
+                </div>
+            </div>
+
+            
+            <div class="gallery-thumbs-strip">
+                
+                <button type="button" class="gallery-thumb-btn active-thumb" onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/15/oHJZX0az_c153e6212d4047588baa9b09a4fa9728.jpg', this)" title="View angle 1">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/15/oHJZX0az_c153e6212d4047588baa9b09a4fa9728.jpg" alt="Angle 1" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/15/jlVEVJmN_328f85b9605c421c8ac474612d32845c.jpg', this)" title="View angle 2">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/15/jlVEVJmN_328f85b9605c421c8ac474612d32845c.jpg" alt="Angle 2" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/15/ktjawZRD_e8449846ad93406c8e0393ced6615c0b.jpg', this)" title="View angle 3">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/15/ktjawZRD_e8449846ad93406c8e0393ced6615c0b.jpg" alt="Angle 3" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/15/b2hb9rnB_58ea3d5ad8bd465098d68db0fe6886af.jpg', this)" title="View angle 4">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/15/b2hb9rnB_58ea3d5ad8bd465098d68db0fe6886af.jpg" alt="Angle 4" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/15/6mX5zCX3_dd730cbfaa4b4f63b968643cfed108f5.jpg', this)" title="View angle 5">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/15/6mX5zCX3_dd730cbfaa4b4f63b968643cfed108f5.jpg" alt="Angle 5" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/15/6XkpZJ7Z_1db3acff011140eab648a778a4b10b61.jpg', this)" title="View angle 6">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/15/6XkpZJ7Z_1db3acff011140eab648a778a4b10b61.jpg" alt="Angle 6" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/15/wze65SKP_ce252420979247a5a549ecf2112cae38.jpg', this)" title="View angle 7">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JULY/15/wze65SKP_ce252420979247a5a549ecf2112cae38.jpg" alt="Angle 7" />
+                </button>
+                
+            </div>
+            
+
+            <div class="card-footer-info">
+                <div class="prod-name-title">YK Boys 5 Printed T-shirt</div>
+                <a href="https://myntr.it/kzR6o2u" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
+                    <span>🛍️ Shop on Myntra &rarr;</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="lookbook-product-card" style="animation-delay: 0.2s;">
+            <div class="card-image-wrapper">
+                <a href="https://myntr.it/oI5hG9z" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop HELLCAT Boys Pack Of 3 Printed Cotton T-shirt on Myntra">
+                    <div class="image-frame">
+                        <img id="prod-main-img-2" src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204272/2023/5/2/e4df577a-6725-43de-bac3-3c8280c24fb61683017842296-HELLCAT-Boys-Blue-Typography-3-Printed-T-shirt-5116830178418-1.jpg" alt="HELLCAT Boys Pack Of 3 Printed Cotton T-shirt" loading="lazy" class="animated-img" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                </a>
+
+                <div class="badge-tag">
+                    <span>✨ HELLCAT</span>
+                </div>
+            </div>
+
+            
+            <div class="gallery-thumbs-strip">
+                
+                <button type="button" class="gallery-thumb-btn active-thumb" onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204272/2023/5/2/e4df577a-6725-43de-bac3-3c8280c24fb61683017842296-HELLCAT-Boys-Blue-Typography-3-Printed-T-shirt-5116830178418-1.jpg', this)" title="View angle 1">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204272/2023/5/2/e4df577a-6725-43de-bac3-3c8280c24fb61683017842296-HELLCAT-Boys-Blue-Typography-3-Printed-T-shirt-5116830178418-1.jpg" alt="Angle 1" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204272/2023/5/2/8f86de3f-0f96-49ec-b842-859c4ce47f2e1683017842280-HELLCAT-Boys-Blue-Typography-3-Printed-T-shirt-5116830178418-2.jpg', this)" title="View angle 2">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204272/2023/5/2/8f86de3f-0f96-49ec-b842-859c4ce47f2e1683017842280-HELLCAT-Boys-Blue-Typography-3-Printed-T-shirt-5116830178418-2.jpg" alt="Angle 2" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204272/2023/5/2/185a7aaf-5b51-4663-93ee-64b7c6ca22031683017842263-HELLCAT-Boys-Blue-Typography-3-Printed-T-shirt-5116830178418-3.jpg', this)" title="View angle 3">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204272/2023/5/2/185a7aaf-5b51-4663-93ee-64b7c6ca22031683017842263-HELLCAT-Boys-Blue-Typography-3-Printed-T-shirt-5116830178418-3.jpg" alt="Angle 3" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204272/2023/5/2/29ec94c3-11e5-4e70-91af-5c0c6db4ddf21683017842247-HELLCAT-Boys-Blue-Typography-3-Printed-T-shirt-5116830178418-4.jpg', this)" title="View angle 4">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204272/2023/5/2/29ec94c3-11e5-4e70-91af-5c0c6db4ddf21683017842247-HELLCAT-Boys-Blue-Typography-3-Printed-T-shirt-5116830178418-4.jpg" alt="Angle 4" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204272/2023/5/2/75bdb59b-c7a9-46a6-9213-6fda7d25b0161683017842233-HELLCAT-Boys-Blue-Typography-3-Printed-T-shirt-5116830178418-5.jpg', this)" title="View angle 5">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204272/2023/5/2/75bdb59b-c7a9-46a6-9213-6fda7d25b0161683017842233-HELLCAT-Boys-Blue-Typography-3-Printed-T-shirt-5116830178418-5.jpg" alt="Angle 5" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204272/2023/5/2/cc393406-deee-4ba0-a9fb-f8b67d0c4b521683017842218-HELLCAT-Boys-Blue-Typography-3-Printed-T-shirt-5116830178418-6.jpg', this)" title="View angle 6">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204272/2023/5/2/cc393406-deee-4ba0-a9fb-f8b67d0c4b521683017842218-HELLCAT-Boys-Blue-Typography-3-Printed-T-shirt-5116830178418-6.jpg" alt="Angle 6" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204272/2023/5/2/9448fab1-9cf8-44ac-9299-4c67350240591683017842199-HELLCAT-Boys-Blue-Typography-3-Printed-T-shirt-5116830178418-7.jpg', this)" title="View angle 7">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204272/2023/5/2/9448fab1-9cf8-44ac-9299-4c67350240591683017842199-HELLCAT-Boys-Blue-Typography-3-Printed-T-shirt-5116830178418-7.jpg" alt="Angle 7" />
+                </button>
+                
+            </div>
+            
+
+            <div class="card-footer-info">
+                <div class="prod-name-title">HELLCAT Boys Pack Of 3 Printed Cotton T-shirt</div>
+                <a href="https://myntr.it/oI5hG9z" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
+                    <span>🛍️ Shop on Myntra &rarr;</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="lookbook-product-card" style="animation-delay: 0.3s;">
+            <div class="card-image-wrapper">
+                <a href="https://myntr.it/L2ykUvQ" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop HELLCAT Boys Pack Of 5 Graphic Printed Cotton T-shirt on Myntra">
+                    <div class="image-frame">
+                        <img id="prod-main-img-3" src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/5/2/611eb1bc-8a2e-4ca3-ae77-82c42aab36ed1683031088569-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-735168303108-1.jpg" alt="HELLCAT Boys Pack Of 5 Graphic Printed Cotton T-shirt" loading="lazy" class="animated-img" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                </a>
+
+                <div class="badge-tag">
+                    <span>✨ HELLCAT</span>
+                </div>
+            </div>
+
+            
+            <div class="gallery-thumbs-strip">
+                
+                <button type="button" class="gallery-thumb-btn active-thumb" onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/5/2/611eb1bc-8a2e-4ca3-ae77-82c42aab36ed1683031088569-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-735168303108-1.jpg', this)" title="View angle 1">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/5/2/611eb1bc-8a2e-4ca3-ae77-82c42aab36ed1683031088569-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-735168303108-1.jpg" alt="Angle 1" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/5/2/454f77b0-b78c-4996-ad66-cc175bfcb0961683031088552-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-735168303108-2.jpg', this)" title="View angle 2">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/5/2/454f77b0-b78c-4996-ad66-cc175bfcb0961683031088552-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-735168303108-2.jpg" alt="Angle 2" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/5/2/65dc6e97-3f50-44f5-9d29-3f075508f85b1683031088537-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-735168303108-3.jpg', this)" title="View angle 3">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/5/2/65dc6e97-3f50-44f5-9d29-3f075508f85b1683031088537-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-735168303108-3.jpg" alt="Angle 3" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/5/2/c81e9d69-0477-4609-b239-da01229eba791683031088519-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-735168303108-4.jpg', this)" title="View angle 4">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/5/2/c81e9d69-0477-4609-b239-da01229eba791683031088519-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-735168303108-4.jpg" alt="Angle 4" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/5/2/6ea38d44-dbf1-4ead-907a-e42983a7d2161683031088504-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-735168303108-5.jpg', this)" title="View angle 5">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/5/2/6ea38d44-dbf1-4ead-907a-e42983a7d2161683031088504-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-735168303108-5.jpg" alt="Angle 5" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/5/2/1feccb7a-3b72-44af-a479-c499df53a9901683031088488-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-735168303108-6.jpg', this)" title="View angle 6">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/5/2/1feccb7a-3b72-44af-a479-c499df53a9901683031088488-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-735168303108-6.jpg" alt="Angle 6" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/5/2/78c81f37-88f6-4c82-baf3-8e26ca85fe4d1683031088472-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-735168303108-7.jpg', this)" title="View angle 7">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/5/2/78c81f37-88f6-4c82-baf3-8e26ca85fe4d1683031088472-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-735168303108-7.jpg" alt="Angle 7" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/8/17/1fd877ab-ae83-41e2-90d9-1f7841053ac91692271728073-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-185169227172-11.jpg', this)" title="View angle 8">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/22204540/2023/8/17/1fd877ab-ae83-41e2-90d9-1f7841053ac91692271728073-HELLCAT-Boys-Beige-Typography-5-Printed-T-shirt-185169227172-11.jpg" alt="Angle 8" />
+                </button>
+                
+            </div>
+            
+
+            <div class="card-footer-info">
+                <div class="prod-name-title">HELLCAT Boys Pack Of 5 Graphic Printed Cotton T-shirt</div>
+                <a href="https://myntr.it/L2ykUvQ" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
+                    <span>🛍️ Shop on Myntra &rarr;</span>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+  </div>
+
+  <script>
+    function switchProductImage(prodIdx, imgUrl, btnEl) {
+      const mainImg = document.getElementById('prod-main-img-' + prodIdx);
+      if (mainImg) {
+        mainImg.style.opacity = '0.4';
+        setTimeout(() => {
+          mainImg.src = imgUrl;
+          mainImg.style.opacity = '1';
+        }, 150);
+      }
+      const container = btnEl.closest('.gallery-thumbs-strip');
+      if (container) {
+        container.querySelectorAll('.gallery-thumb-btn').forEach(b => b.classList.remove('active-thumb'));
+      }
+      btnEl.classList.add('active-thumb');
+    }
+  </script>
+</body>
+</html>
