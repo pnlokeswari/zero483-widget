@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curated Fashion Collection (8 Outfits) | Dynamic Visual Lookbook</title>
+  <meta name="description" content="Explore this interactive fashion lookbook. Click any photo to shop directly on Myntra." />
+  <meta property="og:title" content="Curated Fashion Collection (8 Outfits)" />
+  <meta property="og:type" content="article" />
+  <meta name="pinterest-rich-pin" content="true" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-red: #e60023;
+      --pink-accent: #ec4899;
+      --bg-dark: #0b0f19;
+      --card-bg: rgba(30, 41, 59, 0.65);
+      --glass-border: rgba(255, 255, 255, 0.12);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    
+    body {
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(230, 0, 35, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(236, 72, 153, 0.15) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(99, 102, 241, 0.12) 0px, transparent 50%);
+      background-attachment: fixed;
+      color: #f8fafc;
+      padding: 40px 18px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .lookbook-container { max-width: 1150px; width: 100%; }
+    
+    header { text-align: center; margin-bottom: 45px; position: relative; }
+    
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(236, 72, 153, 0.12);
+      border: 1px solid rgba(236, 72, 153, 0.3);
+      color: #f472b6;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 15px rgba(236, 72, 153, 0.15);
+    }
+    
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.6rem;
+      font-weight: 900;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.25;
+      letter-spacing: -0.5px;
+    }
+    
+    .sub-tag {
+      color: #94a3b8;
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+    .sub-tag strong { color: #f472b6; font-weight: 700; }
+
+    /* Responsive Grid for Consolidated Product Containers */
+    .lookbook-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 30px;
+    }
+    @media (max-width: 650px) {
+      .lookbook-grid { grid-template-columns: 1fr; gap: 24px; }
+      h1 { font-size: 1.9rem; }
+    }
+
+    /* Consolidated Product Card Container */
+    .lookbook-product-card {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .lookbook-product-card:hover {
+      transform: translateY(-8px) scale(1.01);
+      border-color: rgba(236, 72, 153, 0.5);
+      box-shadow: 0 20px 40px -10px rgba(230, 0, 35, 0.35), 0 0 20px rgba(236, 72, 153, 0.2);
+    }
+
+    .card-image-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .image-link {
+      display: block;
+      text-decoration: none;
+      position: relative;
+      width: 100%;
+      color: inherit;
+    }
+
+    .image-frame {
+      position: relative;
+      width: 100%;
+      padding-top: 125%; /* 4:5 aspect ratio */
+      overflow: hidden;
+      background: #1e293b;
+    }
+
+    /* Ken Burns Floating Animation */
+    .animated-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease, opacity 0.3s ease;
+      animation: kenBurnsContinuous 14s ease-in-out infinite alternate;
+    }
+
+    @keyframes kenBurnsContinuous {
+      0% { transform: scale(1) translate(0%, 0%); }
+      50% { transform: scale(1.09) translate(-1.5%, -1%); }
+      100% { transform: scale(1.03) translate(1%, 1.5%); }
+    }
+
+    .lookbook-product-card:hover .animated-img {
+      transform: scale(1.1) !important;
+      animation-play-state: paused;
+    }
+
+    /* Shimmer Light Reflection */
+    .shimmer-overlay {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+      transition: left 0.7s ease;
+      pointer-events: none;
+    }
+    .lookbook-product-card:hover .shimmer-overlay {
+      left: 140%;
+    }
+
+    /* Top Badge Tag */
+    .badge-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      z-index: 2;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Thumbnail Gallery Strip */
+    .gallery-thumbs-strip {
+      display: flex;
+      gap: 8px;
+      padding: 10px 14px;
+      background: rgba(15, 23, 42, 0.7);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+
+    .gallery-thumb-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      background: #1e293b;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+      padding: 0;
+    }
+
+    .gallery-thumb-btn img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-thumb-btn:hover, .gallery-thumb-btn.active-thumb {
+      border-color: #ec4899;
+      transform: scale(1.06);
+      box-shadow: 0 0 10px rgba(236, 72, 153, 0.5);
+    }
+
+    /* Card Footer Info */
+    .card-footer-info {
+      padding: 16px;
+      background: rgba(15, 23, 42, 0.85);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .prod-name-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #f1f5f9;
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Pulsing Shop Button */
+    .shop-overlay-btn {
+      text-decoration: none;
+      align-self: flex-start;
+      background: linear-gradient(135deg, #e60023 0%, #ec4899 100%);
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 15px rgba(230, 0, 35, 0.4);
+      transition: all 0.3s ease;
+      animation: pulseBtn 2.5s infinite;
+    }
+
+    @keyframes pulseBtn {
+      0%, 100% { box-shadow: 0 4px 15px rgba(230, 0, 35, 0.4); }
+      50% { box-shadow: 0 6px 22px rgba(236, 72, 153, 0.7); }
+    }
+
+    .shop-overlay-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #ec4899 0%, #e60023 100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="lookbook-container">
+    <header>
+      <div class="header-badge">✨ Interactive Fashion Lookbook</div>
+      <h1>Curated Fashion Collection (8 Outfits)</h1>
+      <p class="sub-tag">👆 <strong>Tap any photo or thumbnail</strong> to explore angles & shop directly on Myntra</p>
+    </header>
+
+    <div class="lookbook-grid">
+      
+        <div class="lookbook-product-card" style="animation-delay: 0.1s;">
+            <div class="card-image-wrapper">
+                <a href="https://myntr.it/07yfT0t" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop Bitiya by Bhama Girls Ready to Wear Lehenga & Choli on Myntra">
+                    <div class="image-frame">
+                        <img id="prod-main-img-1" src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/23566452/2024/11/20/3e7a8c84-a9dc-42ac-8fe0-5c39965f30901732089306122-Bitiya-by-Bhama-Girls-Ready-to-Wear-Lehenga--Choli-362173208-1.jpg" alt="Bitiya by Bhama Girls Ready to Wear Lehenga & Choli" loading="lazy" class="animated-img" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                </a>
+
+                <div class="badge-tag">
+                    <span>✨ Bitiya by Bhama</span>
+                </div>
+            </div>
+
+            
+            <div class="gallery-thumbs-strip">
+                
+                <button type="button" class="gallery-thumb-btn active-thumb" onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/23566452/2024/11/20/3e7a8c84-a9dc-42ac-8fe0-5c39965f30901732089306122-Bitiya-by-Bhama-Girls-Ready-to-Wear-Lehenga--Choli-362173208-1.jpg', this)" title="View angle 1">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/23566452/2024/11/20/3e7a8c84-a9dc-42ac-8fe0-5c39965f30901732089306122-Bitiya-by-Bhama-Girls-Ready-to-Wear-Lehenga--Choli-362173208-1.jpg" alt="Angle 1" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/23566452/2024/11/20/12b8b571-73c2-4d54-a106-7a0e254ced631732089306110-Bitiya-by-Bhama-Girls-Ready-to-Wear-Lehenga--Choli-362173208-2.jpg', this)" title="View angle 2">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/23566452/2024/11/20/12b8b571-73c2-4d54-a106-7a0e254ced631732089306110-Bitiya-by-Bhama-Girls-Ready-to-Wear-Lehenga--Choli-362173208-2.jpg" alt="Angle 2" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/23566452/2024/11/20/2c61935d-e614-4909-b726-4766aa510b931732089306098-Bitiya-by-Bhama-Girls-Ready-to-Wear-Lehenga--Choli-362173208-3.jpg', this)" title="View angle 3">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/23566452/2024/11/20/2c61935d-e614-4909-b726-4766aa510b931732089306098-Bitiya-by-Bhama-Girls-Ready-to-Wear-Lehenga--Choli-362173208-3.jpg" alt="Angle 3" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/23566452/2024/11/20/b38376e1-483c-4028-9919-4581f2d0bd261732089306086-Bitiya-by-Bhama-Girls-Ready-to-Wear-Lehenga--Choli-362173208-4.jpg', this)" title="View angle 4">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/23566452/2024/11/20/b38376e1-483c-4028-9919-4581f2d0bd261732089306086-Bitiya-by-Bhama-Girls-Ready-to-Wear-Lehenga--Choli-362173208-4.jpg" alt="Angle 4" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/23566452/2024/11/20/5633927a-731a-4d95-802d-6b7da72f5a9c1732089306074-Bitiya-by-Bhama-Girls-Ready-to-Wear-Lehenga--Choli-362173208-5.jpg', this)" title="View angle 5">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/23566452/2024/11/20/5633927a-731a-4d95-802d-6b7da72f5a9c1732089306074-Bitiya-by-Bhama-Girls-Ready-to-Wear-Lehenga--Choli-362173208-5.jpg" alt="Angle 5" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/23566452/2024/11/20/12451a18-1d54-4c26-b412-4e862115ee3c1732089306061-Bitiya-by-Bhama-Girls-Ready-to-Wear-Lehenga--Choli-362173208-6.jpg', this)" title="View angle 6">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/23566452/2024/11/20/12451a18-1d54-4c26-b412-4e862115ee3c1732089306061-Bitiya-by-Bhama-Girls-Ready-to-Wear-Lehenga--Choli-362173208-6.jpg" alt="Angle 6" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/23566452/2024/11/20/b0a2b78b-ecdf-42c3-b647-e0bdcdf0e8671732089306048-Bitiya-by-Bhama-Girls-Ready-to-Wear-Lehenga--Choli-362173208-7.jpg', this)" title="View angle 7">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/23566452/2024/11/20/b0a2b78b-ecdf-42c3-b647-e0bdcdf0e8671732089306048-Bitiya-by-Bhama-Girls-Ready-to-Wear-Lehenga--Choli-362173208-7.jpg" alt="Angle 7" />
+                </button>
+                
+            </div>
+            
+
+            <div class="card-footer-info">
+                <div class="prod-name-title">Bitiya by Bhama Girls Ready to Wear Lehenga & Choli</div>
+                <a href="https://myntr.it/07yfT0t" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
+                    <span>🛍️ Shop on Myntra &rarr;</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="lookbook-product-card" style="animation-delay: 0.2s;">
+            <div class="card-image-wrapper">
+                <a href="https://myntr.it/b7dYaU6" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop BAESD Girls Printed Ready to Wear Lehenga & Blouse With Dupatta on Myntra">
+                    <div class="image-frame">
+                        <img id="prod-main-img-2" src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/MAY/28/xW7yArkO_6fed17a0e4384a83896f645791669997.jpg" alt="BAESD Girls Printed Ready to Wear Lehenga & Blouse With Dupatta" loading="lazy" class="animated-img" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                </a>
+
+                <div class="badge-tag">
+                    <span>✨ BAESD</span>
+                </div>
+            </div>
+
+            
+            <div class="gallery-thumbs-strip">
+                
+                <button type="button" class="gallery-thumb-btn active-thumb" onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/MAY/28/xW7yArkO_6fed17a0e4384a83896f645791669997.jpg', this)" title="View angle 1">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/MAY/28/xW7yArkO_6fed17a0e4384a83896f645791669997.jpg" alt="Angle 1" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/MAY/28/9Zh3zY2j_363906078c1a4909b8f584573c13c5ab.jpg', this)" title="View angle 2">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/MAY/28/9Zh3zY2j_363906078c1a4909b8f584573c13c5ab.jpg" alt="Angle 2" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/MAY/28/f22THgrn_1c4854eea1a748ca9af6d278dedadff8.jpg', this)" title="View angle 3">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/MAY/28/f22THgrn_1c4854eea1a748ca9af6d278dedadff8.jpg" alt="Angle 3" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/MAY/28/tyHViC7R_d612911061ab47a398cd5f9b3a57a83f.jpg', this)" title="View angle 4">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/MAY/28/tyHViC7R_d612911061ab47a398cd5f9b3a57a83f.jpg" alt="Angle 4" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/MAY/28/mK5gUBj9_99e7e07ed4f144d3857a5ce5addf36a6.jpg', this)" title="View angle 5">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/MAY/28/mK5gUBj9_99e7e07ed4f144d3857a5ce5addf36a6.jpg" alt="Angle 5" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/MAY/28/mVtgs7ha_9b72f78171f6401ab304313ae43b80ec.jpg', this)" title="View angle 6">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/MAY/28/mVtgs7ha_9b72f78171f6401ab304313ae43b80ec.jpg" alt="Angle 6" />
+                </button>
+                
+            </div>
+            
+
+            <div class="card-footer-info">
+                <div class="prod-name-title">BAESD Girls Printed Ready to Wear Lehenga & Blouse With Dupatta</div>
+                <a href="https://myntr.it/b7dYaU6" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
+                    <span>🛍️ Shop on Myntra &rarr;</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="lookbook-product-card" style="animation-delay: 0.3s;">
+            <div class="card-image-wrapper">
+                <a href="https://myntr.it/vSrqgVD" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop BAESD Girls Embroidered Mukaish Ready to Wear Lehenga & on Myntra">
+                    <div class="image-frame">
+                        <img id="prod-main-img-3" src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/JANUARY/1/7WDVxcoE_0c8bcae6e4584415a7abd93c421cb4e5.jpg" alt="BAESD Girls Embroidered Mukaish Ready to Wear Lehenga &" loading="lazy" class="animated-img" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                </a>
+
+                <div class="badge-tag">
+                    <span>✨ BAESD</span>
+                </div>
+            </div>
+
+            
+            <div class="gallery-thumbs-strip">
+                
+                <button type="button" class="gallery-thumb-btn active-thumb" onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/JANUARY/1/7WDVxcoE_0c8bcae6e4584415a7abd93c421cb4e5.jpg', this)" title="View angle 1">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/JANUARY/1/7WDVxcoE_0c8bcae6e4584415a7abd93c421cb4e5.jpg" alt="Angle 1" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/JANUARY/1/Ie8BfxDt_5c480637d7524740b85448358b159189.jpg', this)" title="View angle 2">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/JANUARY/1/Ie8BfxDt_5c480637d7524740b85448358b159189.jpg" alt="Angle 2" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/JANUARY/1/KIWAy4ak_d6b6a14647bf44069443b95499b8e929.jpg', this)" title="View angle 3">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/JANUARY/1/KIWAy4ak_d6b6a14647bf44069443b95499b8e929.jpg" alt="Angle 3" />
+                </button>
+                
+            </div>
+            
+
+            <div class="card-footer-info">
+                <div class="prod-name-title">BAESD Girls Embroidered Mukaish Ready to Wear Lehenga &</div>
+                <a href="https://myntr.it/vSrqgVD" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
+                    <span>🛍️ Shop on Myntra &rarr;</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="lookbook-product-card" style="animation-delay: 0.4s;">
+            <div class="card-image-wrapper">
+                <a href="https://myntr.it/0hfFn3x" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop JOVK DESIGN Girls Maroon Embroidered Ready to Wear Lehenga & Choli on Myntra">
+                    <div class="image-frame">
+                        <img id="prod-main-img-4" src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/OCTOBER/4/zCf0n7qR_fcffb0a6ee104980b7d2808845d6e0c3.jpg" alt="JOVK DESIGN Girls Maroon Embroidered Ready to Wear Lehenga & Choli" loading="lazy" class="animated-img" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                </a>
+
+                <div class="badge-tag">
+                    <span>✨ JOVK DESIGN</span>
+                </div>
+            </div>
+
+            
+            <div class="gallery-thumbs-strip">
+                
+                <button type="button" class="gallery-thumb-btn active-thumb" onclick="switchProductImage(4, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/OCTOBER/4/zCf0n7qR_fcffb0a6ee104980b7d2808845d6e0c3.jpg', this)" title="View angle 1">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/OCTOBER/4/zCf0n7qR_fcffb0a6ee104980b7d2808845d6e0c3.jpg" alt="Angle 1" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(4, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/OCTOBER/4/sCYPWvSr_8f06204af4d347b2973a296c8f8b6295.jpg', this)" title="View angle 2">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/OCTOBER/4/sCYPWvSr_8f06204af4d347b2973a296c8f8b6295.jpg" alt="Angle 2" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(4, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/OCTOBER/4/MqgrIzbf_c85ce4bc82d44640b08d0811dcbad29c.jpg', this)" title="View angle 3">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/OCTOBER/4/MqgrIzbf_c85ce4bc82d44640b08d0811dcbad29c.jpg" alt="Angle 3" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(4, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/OCTOBER/4/OtGBfB1n_aec4addbc796472b96edec66c6e33de5.jpg', this)" title="View angle 4">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/OCTOBER/4/OtGBfB1n_aec4addbc796472b96edec66c6e33de5.jpg" alt="Angle 4" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(4, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/OCTOBER/4/PnQ88NRg_64461d043534425db7875fd286865501.jpg', this)" title="View angle 5">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/OCTOBER/4/PnQ88NRg_64461d043534425db7875fd286865501.jpg" alt="Angle 5" />
+                </button>
+                
+            </div>
+            
+
+            <div class="card-footer-info">
+                <div class="prod-name-title">JOVK DESIGN Girls Maroon Embroidered Ready to Wear Lehenga & Choli</div>
+                <a href="https://myntr.it/0hfFn3x" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
+                    <span>🛍️ Shop on Myntra &rarr;</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="lookbook-product-card" style="animation-delay: 0.5s;">
+            <div class="card-image-wrapper">
+                <a href="https://myntr.it/X1CNINR" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop BAESD Girls Embroidered Mukaish Ready to Wear Lehenga & on Myntra">
+                    <div class="image-frame">
+                        <img id="prod-main-img-5" src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/JANUARY/1/ahXbJ2bU_956d715b2cd94f28a5f51a94e4902bbd.jpg" alt="BAESD Girls Embroidered Mukaish Ready to Wear Lehenga &" loading="lazy" class="animated-img" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                </a>
+
+                <div class="badge-tag">
+                    <span>✨ BAESD</span>
+                </div>
+            </div>
+
+            
+            <div class="gallery-thumbs-strip">
+                
+                <button type="button" class="gallery-thumb-btn active-thumb" onclick="switchProductImage(5, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/JANUARY/1/ahXbJ2bU_956d715b2cd94f28a5f51a94e4902bbd.jpg', this)" title="View angle 1">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/JANUARY/1/ahXbJ2bU_956d715b2cd94f28a5f51a94e4902bbd.jpg" alt="Angle 1" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(5, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/JANUARY/1/e3gZ7RQ5_cf3f7b22c52044b98512353705c9c848.jpg', this)" title="View angle 2">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/JANUARY/1/e3gZ7RQ5_cf3f7b22c52044b98512353705c9c848.jpg" alt="Angle 2" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(5, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/JANUARY/1/VEnyUGII_e12770be566c4f2e91099de2d862ca8e.jpg', this)" title="View angle 3">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2025/JANUARY/1/VEnyUGII_e12770be566c4f2e91099de2d862ca8e.jpg" alt="Angle 3" />
+                </button>
+                
+            </div>
+            
+
+            <div class="card-footer-info">
+                <div class="prod-name-title">BAESD Girls Embroidered Mukaish Ready to Wear Lehenga &</div>
+                <a href="https://myntr.it/X1CNINR" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
+                    <span>🛍️ Shop on Myntra &rarr;</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="lookbook-product-card" style="animation-delay: 0.0s;">
+            <div class="card-image-wrapper">
+                <a href="https://myntr.it/lgpQnX4" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop BAESD Girls Embroidered Sequinned Pure Georgette Ready to Wear Lehenga & Choli on Myntra">
+                    <div class="image-frame">
+                        <img id="prod-main-img-6" src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/29969818/2024/6/14/5a53281b-cd85-4c1f-95ef-10a6189952931718383106288GirlsReadyToWearWhiteEmbroideredEthnicWeddingTopandLehengaSe1.jpg" alt="BAESD Girls Embroidered Sequinned Pure Georgette Ready to Wear Lehenga & Choli" loading="lazy" class="animated-img" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                </a>
+
+                <div class="badge-tag">
+                    <span>✨ BAESD</span>
+                </div>
+            </div>
+
+            
+            <div class="gallery-thumbs-strip">
+                
+                <button type="button" class="gallery-thumb-btn active-thumb" onclick="switchProductImage(6, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/29969818/2024/6/14/5a53281b-cd85-4c1f-95ef-10a6189952931718383106288GirlsReadyToWearWhiteEmbroideredEthnicWeddingTopandLehengaSe1.jpg', this)" title="View angle 1">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/29969818/2024/6/14/5a53281b-cd85-4c1f-95ef-10a6189952931718383106288GirlsReadyToWearWhiteEmbroideredEthnicWeddingTopandLehengaSe1.jpg" alt="Angle 1" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(6, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/29969818/2024/6/14/21a40cb1-2ea2-4936-85fb-515762f79ed51718383106278GirlsReadyToWearWhiteEmbroideredEthnicWeddingTopandLehengaSe2.jpg', this)" title="View angle 2">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/29969818/2024/6/14/21a40cb1-2ea2-4936-85fb-515762f79ed51718383106278GirlsReadyToWearWhiteEmbroideredEthnicWeddingTopandLehengaSe2.jpg" alt="Angle 2" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(6, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/29969818/2024/6/14/7b6d97cc-b0ac-4b53-9ca7-acbdc85588741718383106268GirlsReadyToWearWhiteEmbroideredEthnicWeddingTopandLehengaSe3.jpg', this)" title="View angle 3">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/29969818/2024/6/14/7b6d97cc-b0ac-4b53-9ca7-acbdc85588741718383106268GirlsReadyToWearWhiteEmbroideredEthnicWeddingTopandLehengaSe3.jpg" alt="Angle 3" />
+                </button>
+                
+            </div>
+            
+
+            <div class="card-footer-info">
+                <div class="prod-name-title">BAESD Girls Embroidered Sequinned Pure Georgette Ready to Wear Lehenga & Choli</div>
+                <a href="https://myntr.it/lgpQnX4" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
+                    <span>🛍️ Shop on Myntra &rarr;</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="lookbook-product-card" style="animation-delay: 0.1s;">
+            <div class="card-image-wrapper">
+                <a href="https://myntr.it/4IRLc03" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop JOVK DESIGN Girls Embroidered Beads and Stones Silk Ready to Wear Lehenga & Blouse on Myntra">
+                    <div class="image-frame">
+                        <img id="prod-main-img-7" src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/DECEMBER/9/ho65JDQn_f27f39c0b7c240cfadf6a91c17ad0570.jpg" alt="JOVK DESIGN Girls Embroidered Beads and Stones Silk Ready to Wear Lehenga & Blouse" loading="lazy" class="animated-img" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                </a>
+
+                <div class="badge-tag">
+                    <span>✨ JOVK DESIGN</span>
+                </div>
+            </div>
+
+            
+            <div class="gallery-thumbs-strip">
+                
+                <button type="button" class="gallery-thumb-btn active-thumb" onclick="switchProductImage(7, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/DECEMBER/9/ho65JDQn_f27f39c0b7c240cfadf6a91c17ad0570.jpg', this)" title="View angle 1">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/DECEMBER/9/ho65JDQn_f27f39c0b7c240cfadf6a91c17ad0570.jpg" alt="Angle 1" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(7, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/DECEMBER/9/QLF3WtXN_332d437678b842e4bc46580ec01ce498.jpg', this)" title="View angle 2">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/DECEMBER/9/QLF3WtXN_332d437678b842e4bc46580ec01ce498.jpg" alt="Angle 2" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(7, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/DECEMBER/9/wsYBvfcM_7c57548c5a674f2f96814d81a80bfde5.jpg', this)" title="View angle 3">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/DECEMBER/9/wsYBvfcM_7c57548c5a674f2f96814d81a80bfde5.jpg" alt="Angle 3" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(7, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/DECEMBER/9/iPt3siMS_c485afcf29a74aa88f38433fa6a923cc.jpg', this)" title="View angle 4">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/DECEMBER/9/iPt3siMS_c485afcf29a74aa88f38433fa6a923cc.jpg" alt="Angle 4" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(7, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/DECEMBER/9/xXcQpjPn_1b9e7c7d03db42b6bcc6aa6fe086101c.jpg', this)" title="View angle 5">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2024/DECEMBER/9/xXcQpjPn_1b9e7c7d03db42b6bcc6aa6fe086101c.jpg" alt="Angle 5" />
+                </button>
+                
+            </div>
+            
+
+            <div class="card-footer-info">
+                <div class="prod-name-title">JOVK DESIGN Girls Embroidered Beads and Stones Silk Ready to Wear Lehenga & Blouse</div>
+                <a href="https://myntr.it/4IRLc03" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
+                    <span>🛍️ Shop on Myntra &rarr;</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="lookbook-product-card" style="animation-delay: 0.2s;">
+            <div class="card-image-wrapper">
+                <a href="https://myntr.it/7VOlEvw" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop JOVK DESIGN Tie And Dye Krishna Dyed Silk Lehenga Choli on Myntra">
+                    <div class="image-frame">
+                        <img id="prod-main-img-8" src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/32043981/2024/12/20/0bd31ce2-13c6-4dea-8007-16d7aef1bc9b1734707226300GirlsEmbroideryLehngaCholiRedytoWear1.jpg" alt="JOVK DESIGN Tie And Dye Krishna Dyed Silk Lehenga Choli" loading="lazy" class="animated-img" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                </a>
+
+                <div class="badge-tag">
+                    <span>✨ JOVK DESIGN</span>
+                </div>
+            </div>
+
+            
+            <div class="gallery-thumbs-strip">
+                
+                <button type="button" class="gallery-thumb-btn active-thumb" onclick="switchProductImage(8, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/32043981/2024/12/20/0bd31ce2-13c6-4dea-8007-16d7aef1bc9b1734707226300GirlsEmbroideryLehngaCholiRedytoWear1.jpg', this)" title="View angle 1">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/32043981/2024/12/20/0bd31ce2-13c6-4dea-8007-16d7aef1bc9b1734707226300GirlsEmbroideryLehngaCholiRedytoWear1.jpg" alt="Angle 1" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(8, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/32043981/2024/12/20/d05b8156-aac8-48fc-b264-400a663f15521734707226325GirlsEmbroideryLehngaCholiRedytoWear2.jpg', this)" title="View angle 2">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/32043981/2024/12/20/d05b8156-aac8-48fc-b264-400a663f15521734707226325GirlsEmbroideryLehngaCholiRedytoWear2.jpg" alt="Angle 2" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(8, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/32043981/2024/12/20/4294cd76-8fb2-47b9-8d8e-8eb829ff79c21734707226356GirlsEmbroideryLehngaCholiRedytoWear3.jpg', this)" title="View angle 3">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/32043981/2024/12/20/4294cd76-8fb2-47b9-8d8e-8eb829ff79c21734707226356GirlsEmbroideryLehngaCholiRedytoWear3.jpg" alt="Angle 3" />
+                </button>
+                
+            </div>
+            
+
+            <div class="card-footer-info">
+                <div class="prod-name-title">JOVK DESIGN Tie And Dye Krishna Dyed Silk Lehenga Choli</div>
+                <a href="https://myntr.it/7VOlEvw" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
+                    <span>🛍️ Shop on Myntra &rarr;</span>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+  </div>
+
+  <script>
+    function switchProductImage(prodIdx, imgUrl, btnEl) {
+      const mainImg = document.getElementById('prod-main-img-' + prodIdx);
+      if (mainImg) {
+        mainImg.style.opacity = '0.4';
+        setTimeout(() => {
+          mainImg.src = imgUrl;
+          mainImg.style.opacity = '1';
+        }, 150);
+      }
+      const container = btnEl.closest('.gallery-thumbs-strip');
+      if (container) {
+        container.querySelectorAll('.gallery-thumb-btn').forEach(b => b.classList.remove('active-thumb'));
+      }
+      btnEl.classList.add('active-thumb');
+    }
+  </script>
+</body>
+</html>
