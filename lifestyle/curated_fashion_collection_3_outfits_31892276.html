@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curated Fashion Collection (3 Outfits) | Dynamic Visual Lookbook</title>
+  <meta name="description" content="Explore this interactive fashion lookbook. Click any photo to shop directly on Myntra." />
+  <meta property="og:title" content="Curated Fashion Collection (3 Outfits)" />
+  <meta property="og:type" content="article" />
+  <meta name="pinterest-rich-pin" content="true" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-red: #e60023;
+      --pink-accent: #ec4899;
+      --bg-dark: #0b0f19;
+      --card-bg: rgba(30, 41, 59, 0.65);
+      --glass-border: rgba(255, 255, 255, 0.12);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    
+    body {
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(230, 0, 35, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(236, 72, 153, 0.15) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(99, 102, 241, 0.12) 0px, transparent 50%);
+      background-attachment: fixed;
+      color: #f8fafc;
+      padding: 40px 18px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .lookbook-container { max-width: 1150px; width: 100%; }
+    
+    header { text-align: center; margin-bottom: 45px; position: relative; }
+    
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(236, 72, 153, 0.12);
+      border: 1px solid rgba(236, 72, 153, 0.3);
+      color: #f472b6;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 15px rgba(236, 72, 153, 0.15);
+    }
+    
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.6rem;
+      font-weight: 900;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.25;
+      letter-spacing: -0.5px;
+    }
+    
+    .sub-tag {
+      color: #94a3b8;
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+    .sub-tag strong { color: #f472b6; font-weight: 700; }
+
+    /* Responsive Grid for Consolidated Product Containers */
+    .lookbook-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 30px;
+    }
+    @media (max-width: 650px) {
+      .lookbook-grid { grid-template-columns: 1fr; gap: 24px; }
+      h1 { font-size: 1.9rem; }
+    }
+
+    /* Consolidated Product Card Container */
+    .lookbook-product-card {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .lookbook-product-card:hover {
+      transform: translateY(-8px) scale(1.01);
+      border-color: rgba(236, 72, 153, 0.5);
+      box-shadow: 0 20px 40px -10px rgba(230, 0, 35, 0.35), 0 0 20px rgba(236, 72, 153, 0.2);
+    }
+
+    .card-image-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .image-link {
+      display: block;
+      text-decoration: none;
+      position: relative;
+      width: 100%;
+      color: inherit;
+    }
+
+    .image-frame {
+      position: relative;
+      width: 100%;
+      padding-top: 125%; /* 4:5 aspect ratio */
+      overflow: hidden;
+      background: #1e293b;
+    }
+
+    /* Ken Burns Floating Animation */
+    .animated-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease, opacity 0.3s ease;
+      animation: kenBurnsContinuous 14s ease-in-out infinite alternate;
+    }
+
+    @keyframes kenBurnsContinuous {
+      0% { transform: scale(1) translate(0%, 0%); }
+      50% { transform: scale(1.09) translate(-1.5%, -1%); }
+      100% { transform: scale(1.03) translate(1%, 1.5%); }
+    }
+
+    .lookbook-product-card:hover .animated-img {
+      transform: scale(1.1) !important;
+      animation-play-state: paused;
+    }
+
+    /* Shimmer Light Reflection */
+    .shimmer-overlay {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+      transition: left 0.7s ease;
+      pointer-events: none;
+    }
+    .lookbook-product-card:hover .shimmer-overlay {
+      left: 140%;
+    }
+
+    /* Top Badge Tag */
+    .badge-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      z-index: 2;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Thumbnail Gallery Strip */
+    .gallery-thumbs-strip {
+      display: flex;
+      gap: 8px;
+      padding: 10px 14px;
+      background: rgba(15, 23, 42, 0.7);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+
+    .gallery-thumb-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      background: #1e293b;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+      padding: 0;
+    }
+
+    .gallery-thumb-btn img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-thumb-btn:hover, .gallery-thumb-btn.active-thumb {
+      border-color: #ec4899;
+      transform: scale(1.06);
+      box-shadow: 0 0 10px rgba(236, 72, 153, 0.5);
+    }
+
+    /* Card Footer Info */
+    .card-footer-info {
+      padding: 16px;
+      background: rgba(15, 23, 42, 0.85);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .prod-name-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #f1f5f9;
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Pulsing Shop Button */
+    .shop-overlay-btn {
+      text-decoration: none;
+      align-self: flex-start;
+      background: linear-gradient(135deg, #e60023 0%, #ec4899 100%);
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 15px rgba(230, 0, 35, 0.4);
+      transition: all 0.3s ease;
+      animation: pulseBtn 2.5s infinite;
+    }
+
+    @keyframes pulseBtn {
+      0%, 100% { box-shadow: 0 4px 15px rgba(230, 0, 35, 0.4); }
+      50% { box-shadow: 0 6px 22px rgba(236, 72, 153, 0.7); }
+    }
+
+    .shop-overlay-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #ec4899 0%, #e60023 100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="lookbook-container">
+    <header>
+      <div class="header-badge">✨ Interactive Fashion Lookbook</div>
+      <h1>Curated Fashion Collection (3 Outfits)</h1>
+      <p class="sub-tag">👆 <strong>Tap any photo or thumbnail</strong> to explore angles & shop directly on Myntra</p>
+    </header>
+
+    <div class="lookbook-grid">
+      
+        <div class="lookbook-product-card" style="animation-delay: 0.1s;">
+            <div class="card-image-wrapper">
+                <a href="https://myntr.it/9JDtprH" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop FAZZA Girls Pack Of 5 Printed Cotton Casual T-shirts on Myntra">
+                    <div class="image-frame">
+                        <img id="prod-main-img-1" src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/FEBRUARY/12/kTtSgzxA_d82e27f3d427449ab27b6a8d459a3a44.jpg" alt="FAZZA Girls Pack Of 5 Printed Cotton Casual T-shirts" loading="lazy" class="animated-img" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                </a>
+
+                <div class="badge-tag">
+                    <span>✨ FAZZA</span>
+                </div>
+            </div>
+
+            
+            <div class="gallery-thumbs-strip">
+                
+                <button type="button" class="gallery-thumb-btn active-thumb" onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/FEBRUARY/12/kTtSgzxA_d82e27f3d427449ab27b6a8d459a3a44.jpg', this)" title="View angle 1">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/FEBRUARY/12/kTtSgzxA_d82e27f3d427449ab27b6a8d459a3a44.jpg" alt="Angle 1" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/FEBRUARY/12/JFr5htfM_1ce96a2a83494fd1908e746fc97a74f8.jpg', this)" title="View angle 2">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/FEBRUARY/12/JFr5htfM_1ce96a2a83494fd1908e746fc97a74f8.jpg" alt="Angle 2" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/FEBRUARY/12/poqxookZ_fca80801007240c2ac4b91472d93fa4d.jpg', this)" title="View angle 3">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/FEBRUARY/12/poqxookZ_fca80801007240c2ac4b91472d93fa4d.jpg" alt="Angle 3" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/FEBRUARY/12/AR5m0R9P_878ab4f9936b4a6c91720c03f6ba4ad9.jpg', this)" title="View angle 4">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/FEBRUARY/12/AR5m0R9P_878ab4f9936b4a6c91720c03f6ba4ad9.jpg" alt="Angle 4" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/FEBRUARY/12/m0HQposu_bcbc3a8d0594400bb84eba9d9eaa2a4a.jpg', this)" title="View angle 5">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/FEBRUARY/12/m0HQposu_bcbc3a8d0594400bb84eba9d9eaa2a4a.jpg" alt="Angle 5" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/FEBRUARY/12/w303KoNk_0d427ebd931d4e5989497cd8060a77f9.jpg', this)" title="View angle 6">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/FEBRUARY/12/w303KoNk_0d427ebd931d4e5989497cd8060a77f9.jpg" alt="Angle 6" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/FEBRUARY/12/WRIBQfCp_070b43c442e541b695dddff30b74ba60.jpg', this)" title="View angle 7">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/FEBRUARY/12/WRIBQfCp_070b43c442e541b695dddff30b74ba60.jpg" alt="Angle 7" />
+                </button>
+                
+            </div>
+            
+
+            <div class="card-footer-info">
+                <div class="prod-name-title">FAZZA Girls Pack Of 5 Printed Cotton Casual T-shirts</div>
+                <a href="https://myntr.it/9JDtprH" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
+                    <span>🛍️ Shop on Myntra &rarr;</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="lookbook-product-card" style="animation-delay: 0.2s;">
+            <div class="card-image-wrapper">
+                <a href="https://myntr.it/P9wWep3" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop max Girls Pack Of 5 Multicoloured Printed Round Neck Pure Cotton T-shirts on Myntra">
+                    <div class="image-frame">
+                        <img id="prod-main-img-2" src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/productimage/2020/10/10/015df3e6-a031-4006-8679-8b869d42ce4e1602282246790-1.jpg" alt="max Girls Pack Of 5 Multicoloured Printed Round Neck Pure Cotton T-shirts" loading="lazy" class="animated-img" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                </a>
+
+                <div class="badge-tag">
+                    <span>✨ max</span>
+                </div>
+            </div>
+
+            
+            <div class="gallery-thumbs-strip">
+                
+                <button type="button" class="gallery-thumb-btn active-thumb" onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/productimage/2020/10/10/015df3e6-a031-4006-8679-8b869d42ce4e1602282246790-1.jpg', this)" title="View angle 1">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/productimage/2020/10/10/015df3e6-a031-4006-8679-8b869d42ce4e1602282246790-1.jpg" alt="Angle 1" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/productimage/2020/10/10/748d42ba-07f2-4b74-9a6f-b17482b7f9c81602282246844-2.jpg', this)" title="View angle 2">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/productimage/2020/10/10/748d42ba-07f2-4b74-9a6f-b17482b7f9c81602282246844-2.jpg" alt="Angle 2" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/productimage/2020/10/10/5b11911b-d10c-4f76-9814-409cd224df841602282246886-3.jpg', this)" title="View angle 3">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/productimage/2020/10/10/5b11911b-d10c-4f76-9814-409cd224df841602282246886-3.jpg" alt="Angle 3" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(2, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/productimage/2020/10/10/9370ccd8-71a7-4b4f-968c-f02b5018cad41602282246924-4.jpg', this)" title="View angle 4">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/productimage/2020/10/10/9370ccd8-71a7-4b4f-968c-f02b5018cad41602282246924-4.jpg" alt="Angle 4" />
+                </button>
+                
+            </div>
+            
+
+            <div class="card-footer-info">
+                <div class="prod-name-title">max Girls Pack Of 5 Multicoloured Printed Round Neck Pure Cotton T-shirts</div>
+                <a href="https://myntr.it/P9wWep3" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
+                    <span>🛍️ Shop on Myntra &rarr;</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="lookbook-product-card" style="animation-delay: 0.3s;">
+            <div class="card-image-wrapper">
+                <a href="https://myntr.it/gaPJ3at" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop YK X Trampoline Girls Pack Of 5 Graphic Printed T-shirt on Myntra">
+                    <div class="image-frame">
+                        <img id="prod-main-img-3" src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/30068059/2024/7/4/d62fffa5-701c-481a-a597-050aa6495d3d1720086841835-YK-X-Trampoline-Girls-5-Printed-T-shirt-1771720086841473-1.jpg" alt="YK X Trampoline Girls Pack Of 5 Graphic Printed T-shirt" loading="lazy" class="animated-img" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                </a>
+
+                <div class="badge-tag">
+                    <span>✨ YK X Trampoline</span>
+                </div>
+            </div>
+
+            
+            <div class="gallery-thumbs-strip">
+                
+                <button type="button" class="gallery-thumb-btn active-thumb" onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/30068059/2024/7/4/d62fffa5-701c-481a-a597-050aa6495d3d1720086841835-YK-X-Trampoline-Girls-5-Printed-T-shirt-1771720086841473-1.jpg', this)" title="View angle 1">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/30068059/2024/7/4/d62fffa5-701c-481a-a597-050aa6495d3d1720086841835-YK-X-Trampoline-Girls-5-Printed-T-shirt-1771720086841473-1.jpg" alt="Angle 1" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/30068059/2024/7/4/17fdff82-2ce6-4b30-8a03-3442b39330531720086841825-YK-X-Trampoline-Girls-5-Printed-T-shirt-1771720086841473-2.jpg', this)" title="View angle 2">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/30068059/2024/7/4/17fdff82-2ce6-4b30-8a03-3442b39330531720086841825-YK-X-Trampoline-Girls-5-Printed-T-shirt-1771720086841473-2.jpg" alt="Angle 2" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/30068059/2024/7/4/4e566d42-a830-4ae6-ae9b-ecf792bd39ed1720086841814-YK-X-Trampoline-Girls-5-Printed-T-shirt-1771720086841473-3.jpg', this)" title="View angle 3">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/30068059/2024/7/4/4e566d42-a830-4ae6-ae9b-ecf792bd39ed1720086841814-YK-X-Trampoline-Girls-5-Printed-T-shirt-1771720086841473-3.jpg" alt="Angle 3" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/30068059/2024/7/4/dcf5237c-e9de-4ed2-b2d2-2b088897969d1720086841803-YK-X-Trampoline-Girls-5-Printed-T-shirt-1771720086841473-4.jpg', this)" title="View angle 4">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/30068059/2024/7/4/dcf5237c-e9de-4ed2-b2d2-2b088897969d1720086841803-YK-X-Trampoline-Girls-5-Printed-T-shirt-1771720086841473-4.jpg" alt="Angle 4" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/30068059/2024/7/4/7c108f13-c042-42f2-bce9-cbbcc794b7171720086841793-YK-X-Trampoline-Girls-5-Printed-T-shirt-1771720086841473-5.jpg', this)" title="View angle 5">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/30068059/2024/7/4/7c108f13-c042-42f2-bce9-cbbcc794b7171720086841793-YK-X-Trampoline-Girls-5-Printed-T-shirt-1771720086841473-5.jpg" alt="Angle 5" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/30068059/2024/7/4/2e6bdeb8-e18d-43ca-95d2-17b701ba54851720086841783-YK-X-Trampoline-Girls-5-Printed-T-shirt-1771720086841473-6.jpg', this)" title="View angle 6">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/30068059/2024/7/4/2e6bdeb8-e18d-43ca-95d2-17b701ba54851720086841783-YK-X-Trampoline-Girls-5-Printed-T-shirt-1771720086841473-6.jpg" alt="Angle 6" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(3, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/30068059/2024/7/4/2f61007f-5a95-43f4-bf08-0b54003da9af1720086841771-YK-X-Trampoline-Girls-5-Printed-T-shirt-1771720086841473-7.jpg', this)" title="View angle 7">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/30068059/2024/7/4/2f61007f-5a95-43f4-bf08-0b54003da9af1720086841771-YK-X-Trampoline-Girls-5-Printed-T-shirt-1771720086841473-7.jpg" alt="Angle 7" />
+                </button>
+                
+            </div>
+            
+
+            <div class="card-footer-info">
+                <div class="prod-name-title">YK X Trampoline Girls Pack Of 5 Graphic Printed T-shirt</div>
+                <a href="https://myntr.it/gaPJ3at" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
+                    <span>🛍️ Shop on Myntra &rarr;</span>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+  </div>
+
+  <script>
+    function switchProductImage(prodIdx, imgUrl, btnEl) {
+      const mainImg = document.getElementById('prod-main-img-' + prodIdx);
+      if (mainImg) {
+        mainImg.style.opacity = '0.4';
+        setTimeout(() => {
+          mainImg.src = imgUrl;
+          mainImg.style.opacity = '1';
+        }, 150);
+      }
+      const container = btnEl.closest('.gallery-thumbs-strip');
+      if (container) {
+        container.querySelectorAll('.gallery-thumb-btn').forEach(b => b.classList.remove('active-thumb'));
+      }
+      btnEl.classList.add('active-thumb');
+    }
+  </script>
+</body>
+</html>
