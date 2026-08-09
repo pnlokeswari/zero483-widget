@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PowderXRD Analyzer — Advanced Powder XRD Analysis</title>
+  <meta name="description" content="Professional browser-based Powder X-Ray Diffraction data analysis. Load .xy & .asc files, phase identification, peak fitting, Scherrer crystallite size calculation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg-0: #07080f; --bg-1: #0c1220; --bg-2: #111828; --bg-3: #172034; --bg-4: #1d2840; --bg-5: #243050;
+  --border-1: #182038; --border-2: #223050; --border-3: #304068;
+  --text-0: #eef2ff; --text-1: #c4d0e8; --text-2: #7a90b8; --text-3: #4a6080;
+  --cyan: #00c8ff; --cyan-dim: rgba(0,200,255,.1); --cyan-glow: 0 0 14px rgba(0,200,255,.35);
+  --amber: #ffaa30; --amber-dim: rgba(255,170,48,.12); --green: #2dffb0; --red: #ff4466;
+  --toolbar-h: 52px; --sidebar-w: 310px; --status-h: 28px; --radius: 6px; --radius-sm: 4px; --tr: 140ms ease;
+  --font: 'Inter', system-ui, sans-serif; --mono: 'JetBrains Mono', 'Consolas', monospace;
+}
+html, body { height: 100%; overflow: hidden; }
+body { font-family: var(--font); background: var(--bg-0); color: var(--text-1); font-size: 13px; line-height: 1.5; display: flex; flex-direction: column; }
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-2); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--border-3); }
+#toolbar { height: var(--toolbar-h); background: linear-gradient(180deg, #0e1628 0%, #0c1220 100%); border-bottom: 1px solid var(--border-1); display: flex; align-items: center; padding: 0 10px; gap: 4px; flex-shrink: 0; box-shadow: 0 2px 18px rgba(0,0,0,.55); z-index: 100; overflow-x: auto; overflow-y: hidden; }
+#toolbar::-webkit-scrollbar { height: 0; }
+.tb-logo { display: flex; align-items: center; gap: 8px; margin-right: 2px; flex-shrink: 0; }
+.tb-logo-icon { width: 32px; height: 32px; background: linear-gradient(135deg, var(--cyan) 0%, #006fff 100%); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 17px; box-shadow: var(--cyan-glow); }
+.tb-logo-text { font-weight: 700; font-size: 14.5px; color: var(--text-0); letter-spacing: .02em; white-space: nowrap; }
+.tb-logo-text em { font-style: normal; color: var(--cyan); }
+.tb-sep { width: 1px; height: 28px; background: var(--border-2); flex-shrink: 0; margin: 0 4px; }
+.tb-group { display: flex; align-items: center; gap: 3px; flex-shrink: 0; }
+.tb-btn { display: flex; align-items: center; gap: 5px; padding: 0 10px; height: 30px; background: var(--bg-3); border: 1px solid var(--border-2); border-radius: var(--radius-sm); color: var(--text-1); font-family: var(--font); font-size: 12px; font-weight: 500; cursor: pointer; white-space: nowrap; transition: background var(--tr), border-color var(--tr), color var(--tr); }
+.tb-btn:hover { background: var(--bg-4); border-color: var(--border-3); color: var(--text-0); }
+.tb-btn.active { background: var(--cyan-dim); border-color: var(--cyan); color: var(--cyan); }
+.tb-btn.accent { background: var(--amber-dim); border-color: var(--amber); color: var(--amber); }
+.tb-btn.accent:hover { background: rgba(255,170,48,.22); }
+.tb-btn-ico { font-size: 14px; line-height: 1; }
+.tb-lbl { font-size: 11px; color: var(--text-3); font-weight: 500; white-space: nowrap; flex-shrink: 0; }
+.tb-color-wrap { display: flex; align-items: center; gap: 5px; flex-shrink: 0; position: relative; }
+.tb-color-swatch { width: 28px; height: 28px; border-radius: var(--radius-sm); border: 1px solid var(--border-2); cursor: pointer; transition: transform var(--tr), border-color var(--tr); position: relative; overflow: hidden; }
+.tb-color-swatch:hover { border-color: var(--border-3); transform: scale(1.08); }
+.tb-color-swatch input[type="color"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+.tb-range-wrap { display: flex; align-items: center; gap: 7px; flex-shrink: 0; }
+.tb-range { -webkit-appearance: none; appearance: none; width: 80px; height: 4px; background: var(--bg-5); border-radius: 2px; border: 1px solid var(--border-2); outline: none; cursor: pointer; }
+.tb-range::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; border-radius: 50%; background: var(--cyan); cursor: pointer; border: 2px solid var(--bg-1); box-shadow: 0 0 6px rgba(0,200,255,.5); transition: transform var(--tr); }
+.tb-range::-webkit-slider-thumb:hover { transform: scale(1.2); }
+.tb-range-val { font-family: var(--mono); font-size: 11px; color: var(--cyan); min-width: 30px; text-align: right; }
+.tb-select { height: 30px; padding: 0 8px; background: var(--bg-3); border: 1px solid var(--border-2); border-radius: var(--radius-sm); color: var(--text-1); font-family: var(--font); font-size: 12px; cursor: pointer; outline: none; transition: background var(--tr), border-color var(--tr); }
+.tb-select:hover { background: var(--bg-4); border-color: var(--border-3); }
+[data-tip] { position: relative; }
+[data-tip]::after { content: attr(data-tip); position: absolute; bottom: calc(100% + 7px); left: 50%; transform: translateX(-50%); background: var(--bg-4); border: 1px solid var(--border-2); color: var(--text-0); font-size: 11px; padding: 4px 8px; border-radius: var(--radius-sm); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .15s; z-index: 9000; font-family: var(--font); font-weight: 400; }
+[data-tip]:hover::after { opacity: 1; }
+#main { flex: 1; display: flex; overflow: hidden; }
+#sidebar { width: var(--sidebar-w); background: var(--bg-1); border-right: 1px solid var(--border-1); display: flex; flex-direction: column; overflow: hidden; flex-shrink: 0; }
+.acc-section { border-bottom: 1px solid var(--border-1); }
+.acc-section.grow { flex: 1; overflow: hidden; display: flex; flex-direction: column; min-height: 0; }
+.acc-header { display: flex; align-items: center; justify-content: space-between; padding: 7px 12px; background: var(--bg-2); cursor: pointer; user-select: none; transition: background var(--tr); }
+.acc-header:hover { background: var(--bg-3); }
+.acc-title { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--text-3); }
+.acc-arrow { font-size: 10px; color: var(--text-3); transition: transform var(--tr); }
+.acc-arrow.closed { transform: rotate(-90deg); }
+.acc-body { overflow-y: auto; }
+.acc-body.flex-col { display: flex; flex-direction: column; overflow: hidden; flex: 1; }
+.acc-body.gone { display: none; }
+#pattern-list { padding: 5px 6px; max-height: 180px; overflow-y: auto; }
+.plist-empty { padding: 14px 10px; text-align: center; color: var(--text-3); font-size: 12px; line-height: 1.7; }
+.plist-item { display: flex; align-items: center; gap: 5px; padding: 6px 7px; border-radius: var(--radius-sm); cursor: pointer; border: 1px solid transparent; margin-bottom: 3px; transition: background var(--tr), border-color var(--tr); animation: fadein .2s ease; }
+@keyframes fadein { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: translateX(0); } }
+.plist-item:hover { background: var(--bg-3); }
+.plist-item.sel { background: var(--cyan-dim); border-color: rgba(0,200,255,.28); }
+.plist-vis { background: none; border: none; cursor: pointer; font-size: 13px; color: var(--text-2); line-height: 1; padding: 2px; transition: color var(--tr); flex-shrink: 0; }
+.plist-vis:hover { color: var(--text-0); }
+.plist-vis.off { opacity: .35; }
+.plist-dot { width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; border: 1px solid rgba(255,255,255,.12); }
+.plist-name { flex: 1; font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-1); }
+.plist-pts { font-size: 10px; font-family: var(--mono); color: var(--text-3); flex-shrink: 0; }
+.plist-del { background: none; border: none; cursor: pointer; color: var(--text-3); font-size: 17px; line-height: 1; padding: 1px 2px; transition: color var(--tr); flex-shrink: 0; }
+.plist-del:hover { color: var(--red); }
+.btn-open-sb { display: flex; align-items: center; justify-content: center; gap: 6px; margin: 5px 7px 8px; padding: 7px; background: var(--bg-3); border: 1px dashed var(--border-2); border-radius: var(--radius-sm); color: var(--text-2); font: 500 12px/1 var(--font); cursor: pointer; transition: background var(--tr), border-color var(--tr), color var(--tr); }
+.btn-open-sb:hover { background: var(--bg-4); border-color: var(--cyan); color: var(--cyan); }
+.props-grid { display: grid; grid-template-columns: auto 1fr; gap: 7px 10px; padding: 10px 12px; align-items: center; }
+.props-lbl { font-size: 11px; color: var(--text-3); font-weight: 500; white-space: nowrap; }
+.props-row { display: flex; align-items: center; gap: 8px; }
+.props-slider { -webkit-appearance: none; appearance: none; flex: 1; height: 4px; background: var(--bg-5); border-radius: 2px; border: 1px solid var(--border-2); outline: none; cursor: pointer; }
+.props-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 13px; height: 13px; border-radius: 50%; background: var(--cyan); border: 2px solid var(--bg-1); cursor: pointer; transition: transform var(--tr); }
+.props-slider::-webkit-slider-thumb:hover { transform: scale(1.2); }
+.props-val { font-family: var(--mono); font-size: 11px; color: var(--cyan); min-width: 36px; text-align: right; }
+.props-color { width: 34px; height: 26px; padding: 2px; border: 1px solid var(--border-2); border-radius: var(--radius-sm); cursor: pointer; background: none; }
+.chk-row { display: flex; gap: 8px; padding: 2px 12px 10px; flex-wrap: wrap; }
+.chk-lbl { display: flex; align-items: center; gap: 5px; cursor: pointer; font-size: 12px; color: var(--text-1); }
+.chk-lbl input { accent-color: var(--cyan); cursor: pointer; }
+.no-sel { padding: 16px; text-align: center; color: var(--text-3); font-size: 12px; font-style: italic; }
+.phase-body { padding: 8px 10px; display: flex; flex-direction: column; gap: 6px; }
+.phase-item { display: flex; align-items: center; justify-content: space-between; padding: 5px 8px; background: var(--bg-2); border: 1px solid var(--border-1); border-radius: var(--radius-sm); transition: background var(--tr); }
+.phase-item:hover { background: var(--bg-3); }
+.phase-chk { display: flex; align-items: center; gap: 7px; cursor: pointer; flex: 1; }
+.phase-chk input { accent-color: var(--amber); cursor: pointer; }
+.phase-title { font-size: 12px; font-weight: 500; color: var(--text-0); }
+.phase-formula { font-size: 10px; font-family: var(--mono); color: var(--text-3); }
+.phase-swatch { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.scherrer-box { margin: 6px 9px; padding: 8px 10px; background: rgba(255,170,48,.07); border: 1px solid rgba(255,170,48,.25); border-radius: var(--radius-sm); font-size: 11px; }
+.scherrer-title { font-weight: 600; color: var(--amber); margin-bottom: 4px; display: flex; justify-content: space-between; }
+.scherrer-val { font-family: var(--mono); font-weight: 700; color: var(--text-0); font-size: 13px; }
+.scherrer-sub { font-size: 10px; color: var(--text-2); margin-top: 2px; }
+.wave-body { padding: 10px 12px; display: flex; flex-direction: column; gap: 7px; }
+.wave-row { display: flex; align-items: center; gap: 8px; }
+.wave-select { flex: 1; padding: 5px 8px; height: 28px; background: var(--bg-3); border: 1px solid var(--border-2); border-radius: var(--radius-sm); color: var(--text-1); font: 12px var(--font); cursor: pointer; outline: none; }
+.wave-val { font-family: var(--mono); font-size: 12px; color: var(--cyan); white-space: nowrap; }
+.wave-custom { flex: 1; padding: 4px 8px; height: 28px; background: var(--bg-3); border: 1px solid var(--border-2); border-radius: var(--radius-sm); color: var(--text-1); font: 12px var(--mono); outline: none; transition: border-color var(--tr); }
+.wave-custom:focus { border-color: var(--cyan); }
+.peak-ctrl { padding: 7px 9px; display: flex; flex-direction: column; gap: 5px; flex-shrink: 0; }
+.peak-ctrl-row { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
+.btn-sm { padding: 4px 9px; background: var(--bg-3); border: 1px solid var(--border-2); border-radius: var(--radius-sm); color: var(--text-1); font: 500 11px var(--font); cursor: pointer; transition: background var(--tr), border-color var(--tr), color var(--tr); }
+.btn-sm:hover { background: var(--bg-4); border-color: var(--border-3); color: var(--text-0); }
+.btn-sm.pri { background: var(--cyan-dim); border-color: var(--cyan); color: var(--cyan); }
+.btn-sm.pri:hover { background: rgba(0,200,255,.2); }
+.peak-thr-row { display: flex; align-items: center; gap: 7px; }
+.peak-thr-lbl { font-size: 11px; color: var(--text-3); white-space: nowrap; }
+.peak-thr-slider { -webkit-appearance: none; flex: 1; height: 4px; background: var(--bg-5); border-radius: 2px; border: 1px solid var(--border-2); outline: none; cursor: pointer; }
+.peak-thr-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; border-radius: 50%; background: var(--amber); border: 2px solid var(--bg-1); cursor: pointer; }
+.peak-thr-val { font-family: var(--mono); font-size: 11px; color: var(--amber); min-width: 28px; text-align: right; }
+.peak-tbl-wrap { flex: 1; overflow-y: auto; }
+.peak-tbl { width: 100%; border-collapse: collapse; font-size: 10.5px; font-family: var(--mono); }
+.peak-tbl thead th { padding: 5px 4px; text-align: left; font-size: 9.5px; font-weight: 700; color: var(--text-3); letter-spacing: .03em; text-transform: uppercase; background: var(--bg-2); border-bottom: 1px solid var(--border-1); position: sticky; top: 0; }
+.peak-tbl tbody tr { border-bottom: 1px solid var(--border-1); transition: background var(--tr); cursor: pointer; }
+.peak-tbl tbody tr:hover { background: var(--bg-3); }
+.peak-tbl td { padding: 4px 4px; white-space: nowrap; }
+.peak-tbl td:nth-child(1) { color: var(--cyan); }
+.peak-tbl td:nth-child(2) { color: var(--amber); }
+.peak-tbl td:nth-child(3) { color: var(--text-1); }
+.peak-tbl td:nth-child(4) { color: var(--green); }
+.peak-tbl td:nth-child(5) { color: var(--text-2); }
+.peak-empty { padding: 12px; text-align: center; color: var(--text-3); font-size: 11px; font-style: italic; font-family: var(--font); }
+#plot-container { flex: 1; display: flex; flex-direction: column; background: var(--bg-0); position: relative; overflow: hidden; }
+#plot-div { flex: 1; width: 100%; min-height: 0; }
+#empty-state { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 10; pointer-events: none; }
+#empty-state.gone { display: none; }
+.es-inner { text-align: center; pointer-events: all; }
+.es-icon { font-size: 54px; margin-bottom: 16px; animation: float 3.5s ease-in-out infinite; }
+@keyframes float { 0%,100% { transform: translateY(0); opacity: .35; } 50% { transform: translateY(-8px); opacity: .55; } }
+.es-title { font-size: 22px; font-weight: 700; color: var(--text-2); margin-bottom: 8px; }
+.es-sub { font-size: 13px; color: var(--text-3); line-height: 1.7; margin-bottom: 22px; }
+.es-btn { padding: 11px 28px; background: linear-gradient(135deg, rgba(0,200,255,.14), rgba(0,100,255,.14)); border: 1px solid var(--cyan); border-radius: var(--radius); color: var(--cyan); font: 500 13px var(--font); cursor: pointer; box-shadow: 0 0 22px rgba(0,200,255,.12); transition: background var(--tr), box-shadow var(--tr), transform var(--tr); }
+.es-btn:hover { background: rgba(0,200,255,.22); box-shadow: 0 0 32px rgba(0,200,255,.25); transform: translateY(-2px); }
+.es-tags { display: flex; justify-content: center; gap: 8px; margin-top: 14px; }
+.es-tag { padding: 3px 12px; background: var(--bg-3); border: 1px solid var(--border-2); border-radius: 20px; font: 11px var(--mono); color: var(--text-2); }
+#drop-zone { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; background: rgba(0,200,255,.04); border: 2px dashed var(--cyan); z-index: 50; pointer-events: none; }
+#drop-zone.show { display: flex; }
+.dz-text { text-align: center; color: var(--cyan); font-size: 18px; font-weight: 500; }
+.dz-icon { font-size: 44px; margin-bottom: 10px; }
+#statusbar { height: var(--status-h); background: var(--bg-1); border-top: 1px solid var(--border-1); display: flex; align-items: center; padding: 0 14px; gap: 0; flex-shrink: 0; font-size: 11px; font-family: var(--mono); }
+.sb-item { display: flex; align-items: center; gap: 5px; padding: 0 12px; white-space: nowrap; }
+.sb-item:first-child { padding-left: 0; }
+.sb-lbl { color: var(--text-3); }
+.sb-val { color: var(--text-1); }
+.sb-val.hi { color: var(--cyan); }
+.sb-sep { width: 1px; height: 14px; background: var(--border-1); }
+.sb-spacer { flex: 1; }
+.sb-hint { font-size: 10px; color: var(--text-3); font-family: var(--font); }
+#toast-wrap { position: fixed; bottom: 38px; right: 18px; display: flex; flex-direction: column; gap: 6px; z-index: 9999; pointer-events: none; }
+.toast { padding: 9px 15px; border-radius: var(--radius); font-size: 12px; font-family: var(--font); max-width: 340px; backdrop-filter: blur(12px); animation: toastIn .22s ease; }
+@keyframes toastIn { from { opacity:0; transform: translateY(6px); } to { opacity:1; transform: translateY(0); } }
+.toast.ok { background: rgba(0,200,255,.1); border: 1px solid var(--cyan); color: #cceeff; }
+.toast.err { background: rgba(255,68,102,.1); border: 1px solid var(--red); color: #ffaabb; }
+.toast.warn { background: rgba(255,170,48,.1); border: 1px solid var(--amber); color: #ffddaa; }
+#file-input { position: absolute; opacity: 0; pointer-events: none; width: 0; height: 0; }
+</style>
+</head>
+<body>
+<header id="toolbar">
+  <div class="tb-logo"><div class="tb-logo-icon">⚛</div><div class="tb-logo-text">Powder<em>XRD</em></div></div>
+  <div class="tb-sep"></div>
+  <div class="tb-group">
+    <button class="tb-btn" id="btn-open" data-tip="Open XRD files (.xy .asc)"><span class="tb-btn-ico">📂</span> Open</button>
+    <button class="tb-btn" id="btn-png" data-tip="Export chart as high-res PNG"><span class="tb-btn-ico">🖼</span> PNG</button>
+    <button class="tb-btn" id="btn-csv" data-tip="Export peak list as CSV"><span class="tb-btn-ico">📋</span> Peaks CSV</button>
+  </div>
+  <div class="tb-sep"></div>
+  <div class="tb-group">
+    <button class="tb-btn" id="btn-reset" data-tip="Reset / auto-scale view"><span class="tb-btn-ico">↺</span> Reset</button>
+    <button class="tb-btn active" id="btn-grid" data-tip="Toggle grid lines"><span class="tb-btn-ico">⊞</span> Grid</button>
+    <button class="tb-btn" id="btn-logy" data-tip="Toggle logarithmic Y scale"><span class="tb-btn-ico">📈</span> Log&nbsp;Y</button>
+    <button class="tb-btn" id="btn-stack" data-tip="Waterfall Y-stack patterns"><span class="tb-btn-ico">🥞</span> Stack</button>
+  </div>
+  <div class="tb-sep"></div>
+  <span class="tb-lbl">Selected pattern:</span>
+  <div class="tb-color-wrap" data-tip="Line color"><div class="tb-color-swatch" id="tb-swatch" style="background:#00c8ff"><input type="color" id="tb-color" value="#00c8ff" /></div><span class="tb-lbl" style="font-size:10px">Color</span></div>
+  <div class="tb-range-wrap" data-tip="Line width (px)"><span class="tb-lbl">Width</span><input type="range" class="tb-range" id="tb-width" min="0.5" max="6" step="0.5" value="1.5" /><span class="tb-range-val" id="tb-width-val">1.5</span></div>
+  <div class="tb-range-wrap" data-tip="Line opacity"><span class="tb-lbl">Opacity</span><input type="range" class="tb-range" id="tb-opacity" min="10" max="100" step="5" value="100" /><span class="tb-range-val" id="tb-opacity-val">100%</span></div>
+  <div class="tb-sep"></div>
+  <div class="tb-group">
+    <button class="tb-btn accent" id="btn-find-peaks" data-tip="Detect peaks in selected pattern"><span class="tb-btn-ico">▲</span> Find Peaks</button>
+    <button class="tb-btn" id="btn-bg-sub" data-tip="Toggle background subtraction (SNIP)"><span class="tb-btn-ico">📉</span> BG&nbsp;Sub</button>
+    <button class="tb-btn" id="btn-norm" data-tip="Normalize to max = 100%"><span class="tb-btn-ico">⊥</span> Normalize</button>
+  </div>
+  <div class="tb-sep"></div>
+  <span class="tb-lbl">λ:</span>
+  <select class="tb-select" id="tb-wave" data-tip="X-ray wavelength">
+    <option value="1.5406">Cu Kα — 1.5406 Å</option>
+    <option value="0.7107">Mo Kα — 0.7107 Å</option>
+    <option value="1.7902">Co Kα — 1.7902 Å</option>
+    <option value="2.2897">Cr Kα — 2.2897 Å</option>
+    <option value="custom">Custom…</option>
+  </select>
+</header>
+<div id="main">
+  <nav id="sidebar">
+    <div class="acc-section" id="acc-patterns">
+      <div class="acc-header" onclick="accToggle('patterns')"><span class="acc-title">📁 Loaded Patterns</span><span class="acc-arrow" id="arr-patterns">▼</span></div>
+      <div class="acc-body" id="body-patterns"><div id="pattern-list"><div class="plist-empty">No patterns loaded.<br>Open a .xy or .asc file to begin.</div></div><button class="btn-open-sb" id="btn-open-sb">＋ Open XRD Files</button></div>
+    </div>
+    <div class="acc-section" id="acc-props">
+      <div class="acc-header" onclick="accToggle('props')"><span class="acc-title">⚙ Pattern Settings</span><span class="acc-arrow" id="arr-props">▼</span></div>
+      <div class="acc-body" id="body-props"><div id="props-content"><div class="no-sel">Select a pattern to edit its appearance.</div></div></div>
+    </div>
+    <div class="acc-section" id="acc-phases">
+      <div class="acc-header" onclick="accToggle('phases')"><span class="acc-title">🔍 Phase Match / Reference Sticks</span><span class="acc-arrow" id="arr-phases">▼</span></div>
+      <div class="acc-body" id="body-phases"><div class="phase-body" id="phase-list-content"></div></div>
+    </div>
+    <div class="acc-section" id="acc-wave">
+      <div class="acc-header" onclick="accToggle('wave')"><span class="acc-title">⚡ X-ray Wavelength</span><span class="acc-arrow" id="arr-wave">▼</span></div>
+      <div class="acc-body" id="body-wave">
+        <div class="wave-body">
+          <div class="wave-row">
+            <select class="wave-select" id="sb-wave" onchange="onWaveChange(this)">
+              <option value="1.5406">Cu Kα — 1.5406 Å</option>
+              <option value="0.7107">Mo Kα — 0.7107 Å</option>
+              <option value="1.7902">Co Kα — 1.7902 Å</option>
+              <option value="2.2897">Cr Kα — 2.2897 Å</option>
+              <option value="custom">Custom…</option>
+            </select>
+          </div>
+          <div class="wave-row" id="custom-wave-row" style="display:none">
+            <span class="props-lbl">λ =</span>
+            <input type="number" class="wave-custom" id="custom-wave-inp" min="0.01" max="10" step="0.0001" value="1.5406" placeholder="Å" />
+            <span style="font-size:11px;color:var(--text-3)">Å</span>
+          </div>
+          <div class="wave-row"><span class="wave-val" id="wave-display">λ = 1.5406 Å &nbsp;(Cu Kα)</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="acc-section grow" id="acc-peaks">
+      <div class="acc-header" onclick="accToggle('peaks')"><span class="acc-title">▲ Peak List &amp; Crystallite Size</span><span class="acc-arrow" id="arr-peaks">▼</span></div>
+      <div class="acc-body flex-col" id="body-peaks">
+        <div class="peak-ctrl">
+          <div class="peak-ctrl-row">
+            <button class="btn-sm pri" id="btn-find-sb" onclick="findPeaksUI()">Find Peaks</button>
+            <button class="btn-sm" id="btn-clr-peaks" onclick="clearPeaksUI()">Clear</button>
+          </div>
+          <div class="peak-thr-row">
+            <span class="peak-thr-lbl">Min %:</span>
+            <input type="range" class="peak-thr-slider" id="peak-thr" min="1" max="50" value="5" />
+            <span class="peak-thr-val" id="peak-thr-val">5%</span>
+          </div>
+        </div>
+        <div id="scherrer-box-wrap"></div>
+        <div class="peak-tbl-wrap"><div id="peak-list-content"><div class="peak-empty">No peaks detected yet.</div></div></div>
+      </div>
+    </div>
+  </nav>
+  <div id="plot-container">
+    <div id="empty-state">
+      <div class="es-inner">
+        <div class="es-icon">📊</div>
+        <div class="es-title">Load XRD Data</div>
+        <div class="es-sub">Drop files here or click the button below.<br>Supports .xy and .asc powder diffraction formats.</div>
+        <button class="es-btn" onclick="openFileDialog()">📂 Open Files</button>
+        <div class="es-tags"><span class="es-tag">.xy</span><span class="es-tag">.asc</span><span class="es-tag">Drag &amp; Drop</span></div>
+      </div>
+    </div>
+    <div id="drop-zone"><div class="dz-text"><div class="dz-icon">⬇</div><div>Drop XRD files here</div></div></div>
+    <div id="plot-div"></div>
+  </div>
+</div>
+<footer id="statusbar">
+  <div class="sb-item"><span class="sb-lbl">2θ:</span><span class="sb-val hi" id="sb-theta">—</span></div>
+  <div class="sb-sep"></div>
+  <div class="sb-item"><span class="sb-lbl">I:</span><span class="sb-val" id="sb-int">—</span></div>
+  <div class="sb-sep"></div>
+  <div class="sb-item"><span class="sb-lbl">d-spacing:</span><span class="sb-val" id="sb-d">—</span></div>
+  <div class="sb-sep"></div>
+  <div class="sb-item"><span class="sb-lbl">File:</span><span class="sb-val" id="sb-file">—</span></div>
+  <div class="sb-sep"></div>
+  <div class="sb-item"><span class="sb-lbl">Points:</span><span class="sb-val" id="sb-pts">—</span></div>
+  <div class="sb-spacer"></div>
+  <div class="sb-hint">Scroll&nbsp;=&nbsp;Zoom &nbsp;·&nbsp; Drag&nbsp;=&nbsp;Pan &nbsp;·&nbsp; Dbl-click&nbsp;=&nbsp;Reset</div>
+</footer>
+<div id="toast-wrap"></div>
+<input type="file" id="file-input" accept=".xy,.asc,.txt" multiple />
+<script>
+'use strict';
+const REFERENCE_PHASES = [
+  { id: 'quartz', name: 'Quartz', formula: 'SiO₂ (Hexagonal)', color: '#ffaa30', active: false, peaks: [ { d: 4.257, relI: 20, hkl: '(100)' }, { d: 3.342, relI: 100, hkl: '(101)' }, { d: 2.457, relI: 14, hkl: '(110)' }, { d: 2.282, relI: 12, hkl: '(102)' }, { d: 2.237, relI: 11, hkl: '(111)' }, { d: 2.127, relI: 10, hkl: '(200)' }, { d: 1.980, relI: 8, hkl: '(201)' }, { d: 1.817, relI: 13, hkl: '(112)' }, { d: 1.541, relI: 9, hkl: '(211)' }, { d: 1.382, relI: 7, hkl: '(212)' }, { d: 1.375, relI: 8, hkl: '(203)' } ] },
+  { id: 'halite', name: 'Halite', formula: 'NaCl (Cubic)', color: '#2dffb0', active: false, peaks: [ { d: 3.258, relI: 13, hkl: '(111)' }, { d: 2.821, relI: 100, hkl: '(200)' }, { d: 1.994, relI: 55, hkl: '(220)' }, { d: 1.701, relI: 2, hkl: '(311)' }, { d: 1.628, relI: 15, hkl: '(222)' }, { d: 1.410, relI: 11, hkl: '(400)' }, { d: 1.261, relI: 8, hkl: '(420)' } ] },
+  { id: 'silicon', name: 'Silicon', formula: 'Si (Cubic)', color: '#c084fc', active: false, peaks: [ { d: 3.136, relI: 100, hkl: '(111)' }, { d: 1.920, relI: 55, hkl: '(220)' }, { d: 1.638, relI: 30, hkl: '(311)' }, { d: 1.358, relI: 8, hkl: '(400)' }, { d: 1.246, relI: 11, hkl: '(331)' } ] },
+  { id: 'anatase', name: 'Anatase', formula: 'TiO₂ (Tetragonal)', color: '#ff4466', active: false, peaks: [ { d: 3.520, relI: 100, hkl: '(101)' }, { d: 2.378, relI: 20, hkl: '(004)' }, { d: 1.892, relI: 35, hkl: '(200)' }, { d: 1.699, relI: 20, hkl: '(105)' }, { d: 1.666, relI: 22, hkl: '(211)' }, { d: 1.481, relI: 14, hkl: '(204)' } ] },
+  { id: 'rutile', name: 'Rutile', formula: 'TiO₂ (Tetragonal)', color: '#f97316', active: false, peaks: [ { d: 3.247, relI: 100, hkl: '(110)' }, { d: 2.487, relI: 50, hkl: '(101)' }, { d: 2.188, relI: 25, hkl: '(111)' }, { d: 1.687, relI: 60, hkl: '(211)' }, { d: 1.624, relI: 20, hkl: '(220)' } ] },
+  { id: 'corundum', name: 'Corundum', formula: 'α-Al₂O₃ (Rhombohedral)', color: '#34d399', active: false, peaks: [ { d: 3.479, relI: 75, hkl: '(012)' }, { d: 2.551, relI: 100, hkl: '(104)' }, { d: 2.379, relI: 40, hkl: '(110)' }, { d: 2.085, relI: 90, hkl: '(113)' }, { d: 1.740, relI: 45, hkl: '(024)' }, { d: 1.601, relI: 80, hkl: '(116)' }, { d: 1.404, relI: 35, hkl: '(214)' } ] }
+];
+const S = { patterns: [], nextId: 1, selId: null, wavelength: 1.5406, showGrid: true, logY: false, stacked: false };
+const PALETTE = ['#00c8ff','#ffaa30','#2dffb0','#ff4466','#c084fc','#f97316','#06b6d4','#84cc16','#e879f9','#fb7185','#fbbf24','#34d399'];
+let _palIdx = 0;
+function nextColor() { return PALETTE[_palIdx++ % PALETTE.length]; }
+function calcD(two_theta_deg, lam) { if (two_theta_deg <= 0 || two_theta_deg >= 180) return null; const sinT = Math.sin(two_theta_deg * Math.PI / 360); if (sinT === 0) return null; return lam / (2 * sinT); }
+function calc2Theta(d_angstrom, lam) { const sinT = lam / (2 * d_angstrom); if (sinT < -1 || sinT > 1) return null; return 2 * (Math.asin(sinT) * 180 / Math.PI); }
+function fmtD(d) { if (d === null || !isFinite(d)) return '—'; return d.toFixed(4) + ' Å'; }
+function getById(id) { return S.patterns.find(p => p.id === id); }
+function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function parseXRD(text) {
+  const lines = text.split(/\r?\n/); const x = [], y = [];
+  for (const raw of lines) {
+    const line = raw.trim(); if (!line || /^[#!;%*'"@]/.test(line)) continue;
+    if (/^[A-Za-z_]/.test(line) && !/^\d/.test(line)) continue;
+    if (/[=:]/.test(line) && !/^\d/.test(line)) continue;
+    if (/^\[/.test(line)) continue;
+    const parts = line.split(/[\s,;\t]+/).filter(Boolean);
+    if (parts.length < 2) continue;
+    const xi = parseFloat(parts[0]), yi = parseFloat(parts[1]);
+    if (isNaN(xi) || isNaN(yi) || !isFinite(xi) || !isFinite(yi)) continue;
+    if (xi < 0.1 || xi > 180 || yi < 0) continue;
+    x.push(xi); y.push(yi);
+  }
+  return { x, y };
+}
+function smooth(arr, w = 3) {
+  const out = new Float64Array(arr.length);
+  for (let i = 0; i < arr.length; i++) {
+    const s = Math.max(0, i - w), e = Math.min(arr.length, i + w + 1);
+    let sum = 0; for (let j = s; j < e; j++) sum += arr[j];
+    out[i] = sum / (e - s);
+  }
+  return Array.from(out);
+}
+function snipBackground(y, M = 30) {
+  let w = y.map(v => Math.sqrt(Math.sqrt(Math.max(0, v))));
+  for (let p = 1; p <= M; p++) {
+    const prev = w.slice();
+    for (let i = p; i < w.length - p; i++) { w[i] = Math.min(prev[i], (prev[i - p] + prev[i + p]) / 2); }
+  }
+  const bg = w.map(v => { const sq = v * v; return sq * sq; });
+  return y.map((v, i) => Math.max(0, v - bg[i]));
+}
+function normalize(y) { const mx = Math.max(...y); return mx === 0 ? y : y.map(v => (v / mx) * 100); }
+function processedY(p) { let y = p.raw_y.slice(); if (p.bgSub) y = snipBackground(y); if (p.norm) y = normalize(y); if (p.offset) y = y.map(v => v + p.offset); return y; }
+function calcFWHMAndScherrer(px, py, peakIdx, lam) {
+  const n = py.length, peakY = py[peakIdx], halfY = peakY * 0.5;
+  let iLeft = peakIdx; while (iLeft > 0 && py[iLeft] > halfY) iLeft--;
+  let xLeft = px[iLeft];
+  if (iLeft < peakIdx && py[iLeft + 1] !== py[iLeft]) { const frac = (halfY - py[iLeft]) / (py[iLeft + 1] - py[iLeft]); xLeft = px[iLeft] + frac * (px[iLeft + 1] - px[iLeft]); }
+  let iRight = peakIdx; while (iRight < n - 1 && py[iRight] > halfY) iRight++;
+  let xRight = px[iRight];
+  if (iRight > peakIdx && py[iRight - 1] !== py[iRight]) { const frac = (halfY - py[iRight - 1]) / (py[iRight] - py[iRight - 1]); xRight = px[iRight - 1] + frac * (px[iRight] - px[iRight - 1]); }
+  const fwhm_deg = Math.max(0.01, xRight - xLeft);
+  const theta_rad = (px[peakIdx] / 2) * (Math.PI / 180), beta_rad = fwhm_deg * (Math.PI / 180);
+  const K = 0.9, size_angstrom = (K * lam) / (beta_rad * Math.cos(theta_rad));
+  return { fwhm: fwhm_deg, size_nm: size_angstrom / 10 };
+}
+function detectPeaks(px, py, thrPct = 5) {
+  const n = py.length, maxY = Math.max(...py), minH = (thrPct / 100) * maxY;
+  const ys = smooth(py, 3), candidates = [];
+  const W = 4;
+  for (let i = W; i < n - W; i++) {
+    if (ys[i] < minH) continue;
+    let isMax = true;
+    for (let j = 1; j <= W; j++) { if (ys[i - j] >= ys[i] || ys[i + j] >= ys[i]) { isMax = false; break; } }
+    if (!isMax) continue;
+    const LW = Math.min(80, i), RW = Math.min(80, n - 1 - i);
+    const lMin = Math.min(...ys.slice(i - LW, i)), rMin = Math.min(...ys.slice(i + 1, i + RW + 1));
+    if (ys[i] - Math.max(lMin, rMin) < minH * 0.25) continue;
+    const d = calcD(px[i], S.wavelength), { fwhm, size_nm } = calcFWHMAndScherrer(px, py, i, S.wavelength);
+    candidates.push({ x: px[i], y: py[i], d, relInt: (py[i] / maxY) * 100, fwhm, size_nm, idx: i });
+  }
+  candidates.sort((a, b) => b.y - a.y);
+  const kept = [];
+  for (const c of candidates) { if (!kept.some(k => Math.abs(k.x - c.x) < 0.08)) kept.push(c); }
+  return kept.sort((a, b) => a.x - b.x);
+}
+const plotDiv = document.getElementById('plot-div');
+const BASE_LAYOUT = {
+  paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(5,8,18,.88)',
+  font: { family: 'Inter, sans-serif', color: '#7a90b8', size: 12 },
+  xaxis: { title: { text: '2θ  (degrees)', font: { size: 13, color: '#6080a0' }, standoff: 12 }, gridcolor: 'rgba(34,48,80,.4)', linecolor: '#223050', tickcolor: '#223050', tickfont: { color: '#8aa0c8', family: 'JetBrains Mono, monospace', size: 11 }, ticks: 'outside', showgrid: true, zeroline: false, showline: true, minor: { showgrid: true, gridcolor: 'rgba(34,48,80,.18)' } },
+  yaxis: { title: { text: 'Intensity  (counts)', font: { size: 13, color: '#6080a0' }, standoff: 10 }, gridcolor: 'rgba(34,48,80,.4)', linecolor: '#223050', tickcolor: '#223050', tickfont: { color: '#8aa0c8', family: 'JetBrains Mono, monospace', size: 11 }, ticks: 'outside', showgrid: true, zeroline: false, showline: true },
+  hovermode: 'x', hoverlabel: { bgcolor: 'rgba(10,18,34,.96)', bordercolor: '#223050', font: { color: '#eef2ff', family: 'Inter, sans-serif', size: 12 } },
+  legend: { bgcolor: 'rgba(10,18,34,.86)', bordercolor: '#223050', borderwidth: 1, font: { color: '#aabdd0', size: 11 }, xanchor: 'right', x: 0.99, yanchor: 'top', y: 0.99 },
+  margin: { l: 72, r: 18, t: 18, b: 62 }, showlegend: true, dragmode: 'pan'
+};
+const PLOT_CFG = { scrollZoom: true, responsive: true, displayModeBar: false, doubleClick: 'reset+autosize' };
+function initPlot() {
+  Plotly.newPlot(plotDiv, [], BASE_LAYOUT, PLOT_CFG);
+  plotDiv.on('plotly_hover', data => {
+    if (!data.points?.length) return;
+    const pt = data.points[0];
+    document.getElementById('sb-theta').textContent = pt.x.toFixed(4) + '°';
+    document.getElementById('sb-int').textContent = pt.y.toFixed(1);
+    document.getElementById('sb-d').textContent = fmtD(calcD(pt.x, S.wavelength));
+  });
+  plotDiv.on('plotly_unhover', () => {
+    document.getElementById('sb-theta').textContent = '—';
+    document.getElementById('sb-int').textContent = '—';
+    document.getElementById('sb-d').textContent = '—';
+  });
+}
+function buildTraces() {
+  const traces = [];
+  for (const p of S.patterns) {
+    const py = processedY(p);
+    const dArr = p.raw_x.map(t => { const d = calcD(t, S.wavelength); return d ? d.toFixed(4) : '—'; });
+    traces.push({ x: p.raw_x, y: py, customdata: dArr, type: p.raw_x.length > 8000 ? 'scattergl' : 'scatter', mode: 'lines', name: p.name, visible: p.visible, line: { color: p.color, width: p.width }, opacity: p.opacity / 100, hovertemplate: `<b>${esc(p.name)}</b><br>2θ: %{x:.4f}°<br>I: %{y:.1f}<br>d: %{customdata} Å<extra></extra>`, legendgroup: 'p' + p.id });
+    if (p.peaks?.length && p.visible) {
+      const py_off = p.peaks.map(pk => pk.y * 1.025 + (p.offset || 0));
+      traces.push({ x: p.peaks.map(pk => pk.x), y: py_off, customdata: p.peaks.map(pk => [pk.d ? pk.d.toFixed(4) : '—', pk.relInt.toFixed(1), pk.fwhm ? pk.fwhm.toFixed(3) : '—', pk.size_nm ? pk.size_nm.toFixed(1) : '—']), type: 'scatter', mode: 'markers', name: `Peaks — ${p.name}`, showlegend: false, marker: { symbol: 'triangle-down', size: 9, color: p.color, line: { color: 'rgba(0,0,0,.35)', width: 1 } }, hovertemplate: `<b>Peak</b><br>2θ: %{x:.4f}°<br>d: %{customdata[0]} Å<br>Rel.I: %{customdata[1]}%<br>FWHM: %{customdata[2]}°<br>Domain: %{customdata[3]} nm<extra></extra>`, legendgroup: 'p' + p.id });
+    }
+  }
+  let maxExpY = 100;
+  for (const p of S.patterns) { if (p.visible) { const my = Math.max(...processedY(p)); if (my > maxExpY) maxExpY = my; } }
+  for (const ref of REFERENCE_PHASES) {
+    if (!ref.active) continue;
+    const stickX = [], stickY = [], hoverText = [];
+    for (const pk of ref.peaks) {
+      const t2 = calc2Theta(pk.d, S.wavelength); if (t2 === null || t2 < 2 || t2 > 170) continue;
+      const yTop = (pk.relI / 100) * (maxExpY * 0.7);
+      stickX.push(t2, t2, null); stickY.push(0, yTop, null);
+      hoverText.push(`<b>${ref.name}</b> ${pk.hkl}<br>2θ: ${t2.toFixed(3)}°<br>d: ${pk.d.toFixed(4)} Å<br>Rel.I: ${pk.relI}%`, `<b>${ref.name}</b> ${pk.hkl}<br>2θ: ${t2.toFixed(3)}°<br>d: ${pk.d.toFixed(4)} Å<br>Rel.I: ${pk.relI}%`, '');
+    }
+    if (stickX.length) { traces.push({ x: stickX, y: stickY, type: 'scatter', mode: 'lines', name: `Ref: ${ref.name}`, line: { color: ref.color, width: 2, dash: 'dot' }, hoverinfo: 'text', text: hoverText, opacity: 0.85 }); }
+  }
+  return traces;
+}
+function replot() {
+  const layout = plotDiv.layout || BASE_LAYOUT;
+  const allNorm = S.patterns.length > 0 && S.patterns.every(p => p.norm);
+  const yTitle = allNorm ? 'Relative Intensity  (%)' : 'Intensity  (counts)';
+  Plotly.react(plotDiv, buildTraces(), layout, PLOT_CFG);
+  Plotly.relayout(plotDiv, { 'yaxis.type': S.logY ? 'log' : 'linear', 'xaxis.showgrid': S.showGrid, 'yaxis.showgrid': S.showGrid, 'xaxis.minor.showgrid': S.showGrid, 'yaxis.title.text': yTitle });
+}
+function addPattern(name, x, y) {
+  const id = S.nextId++;
+  const p = { id, name, raw_x: x, raw_y: y, color: nextColor(), width: 1.5, opacity: 100, visible: true, offset: 0, bgSub: false, norm: false, peaks: [] };
+  S.patterns.push(p); selectPattern(id); return p;
+}
+function removePattern(id) {
+  const idx = S.patterns.findIndex(p => p.id === id); if (idx < 0) return;
+  S.patterns.splice(idx, 1);
+  if (S.selId === id) { S.selId = S.patterns.length ? S.patterns[S.patterns.length - 1].id : null; }
+  renderAll();
+}
+function selectPattern(id) { S.selId = id; renderPatternList(); renderProps(); renderPeakList(); updateSbFile(); syncToolbarToSel(); }
+function toggleVis(id) { const p = getById(id); if (!p) return; p.visible = !p.visible; replot(); renderPatternList(); }
+function toggleStackPatterns() {
+  S.stacked = !S.stacked;
+  document.getElementById('btn-stack').classList.toggle('active', S.stacked);
+  if (!S.patterns.length) return;
+  if (!S.stacked) { for (const p of S.patterns) p.offset = 0; }
+  else {
+    let cumulative = 0;
+    for (let i = 0; i < S.patterns.length; i++) {
+      const p = S.patterns[i]; p.offset = cumulative; const maxY = Math.max(...processedY(p)); cumulative += maxY * 0.45;
+    }
+  }
+  renderProps(); replot();
+}
+function renderAll() { renderPatternList(); renderProps(); renderPhases(); renderPeakList(); replot(); updateSbFile(); syncToolbarToSel(); document.getElementById('empty-state').classList.toggle('gone', S.patterns.length > 0); }
+function renderPatternList() {
+  const list = document.getElementById('pattern-list');
+  if (!S.patterns.length) { list.innerHTML = '<div class="plist-empty">No patterns loaded.<br>Open a .xy or .asc file to begin.</div>'; return; }
+  list.innerHTML = S.patterns.map(p => `
+    <div class="plist-item${p.id === S.selId ? ' sel' : ''}" id="pli-${p.id}" onclick="selectPattern(${p.id})">
+      <button class="plist-vis${p.visible ? '' : ' off'}" onclick="event.stopPropagation();toggleVis(${p.id})" title="${p.visible ? 'Hide' : 'Show'}">${p.visible ? '👁' : '🚫'}</button>
+      <div class="plist-dot" style="background:${p.color};box-shadow:0 0 6px ${p.color}"></div>
+      <span class="plist-name" title="${esc(p.name)}">${esc(p.name)}</span>
+      <span class="plist-pts">${p.raw_x.length.toLocaleString()}</span>
+      <button class="plist-del" onclick="event.stopPropagation();removePattern(${p.id})" title="Remove">×</button>
+    </div>
+  `).join('');
+}
+function renderProps() {
+  const c = document.getElementById('props-content'); const p = getById(S.selId);
+  if (!p) { c.innerHTML = '<div class="no-sel">Select a pattern to edit its appearance.</div>'; return; }
+  const maxRaw = Math.max(...p.raw_y), offsetMax = Math.max(Math.round(maxRaw * 5), 5000), offsetStep = Math.max(1, Math.round(offsetMax / 100));
+  c.innerHTML = `
+    <div class="props-grid">
+      <span class="props-lbl">Color</span>
+      <div class="props-row"><input type="color" class="props-color" id="pr-color" value="${p.color}" onchange="onPropsColor(this.value)"><span style="font-size:10px;color:var(--text-3);font-family:var(--mono)">${p.color}</span></div>
+      <span class="props-lbl">Width (px)</span>
+      <div class="props-row"><input type="range" class="props-slider" id="pr-width" min="0.5" max="6" step="0.5" value="${p.width}" oninput="onPropsWidth(this.value)"><span class="props-val" id="pr-width-v">${p.width}&nbsp;px</span></div>
+      <span class="props-lbl">Opacity</span>
+      <div class="props-row"><input type="range" class="props-slider" id="pr-opacity" min="10" max="100" step="5" value="${p.opacity}" oninput="onPropsOpacity(this.value)"><span class="props-val" id="pr-opacity-v">${p.opacity}%</span></div>
+      <span class="props-lbl">Y Offset</span>
+      <div class="props-row"><input type="range" class="props-slider" id="pr-offset" min="0" max="${offsetMax}" step="${offsetStep}" value="${p.offset || 0}" oninput="onPropsOffset(this.value)"><span class="props-val" id="pr-offset-v">${p.offset || 0}</span></div>
+    </div>
+    <div class="chk-row">
+      <label class="chk-lbl"><input type="checkbox" id="pr-bgsub" ${p.bgSub ? 'checked' : ''} onchange="onPropsBg(this.checked)"> BG&nbsp;Subtract</label>
+      <label class="chk-lbl"><input type="checkbox" id="pr-norm" ${p.norm ? 'checked' : ''} onchange="onPropsNorm(this.checked)"> Normalize</label>
+    </div>`;
+}
+function renderPhases() {
+  const container = document.getElementById('phase-list-content');
+  container.innerHTML = REFERENCE_PHASES.map((ref, idx) => `
+    <div class="phase-item">
+      <label class="phase-chk"><input type="checkbox" ${ref.active ? 'checked' : ''} onchange="togglePhase(${idx}, this.checked)" /><div><div class="phase-title">${esc(ref.name)}</div><div class="phase-formula">${esc(ref.formula)}</div></div></label>
+      <div class="phase-swatch" style="background:${ref.color};box-shadow:0 0 6px ${ref.color}"></div>
+    </div>
+  `).join('');
+}
+function togglePhase(idx, active) { REFERENCE_PHASES[idx].active = active; replot(); }
+function renderPeakList() {
+  const c = document.getElementById('peak-list-content'), sBox = document.getElementById('scherrer-box-wrap');
+  const p = getById(S.selId);
+  if (!p || !p.peaks?.length) { c.innerHTML = '<div class="peak-empty">No peaks detected yet.<br>Select a pattern and click "Find Peaks".</div>'; sBox.innerHTML = ''; return; }
+  const validSizes = p.peaks.map(pk => pk.size_nm).filter(v => isFinite(v) && v > 0);
+  const avgSize = validSizes.length ? (validSizes.reduce((a,b)=>a+b, 0) / validSizes.length) : null;
+  sBox.innerHTML = `<div class="scherrer-box"><div class="scherrer-title"><span>Mean Domain Size (Scherrer)</span><span>${avgSize ? avgSize.toFixed(1) + ' nm' : '—'}</span></div><div class="scherrer-sub">Based on K=0.9, λ=${S.wavelength}Å across ${validSizes.length} peaks</div></div>`;
+  const rows = p.peaks.map((pk, i) => `<tr onclick="zoomToPeak(${pk.x})" title="Click to zoom to peak"><td>${pk.x.toFixed(3)}</td><td>${pk.d ? pk.d.toFixed(3) : '—'}</td><td>${pk.relInt.toFixed(1)}%</td><td>${pk.fwhm ? pk.fwhm.toFixed(3) : '—'}</td><td>${pk.size_nm ? pk.size_nm.toFixed(1) : '—'}</td></tr>`).join('');
+  c.innerHTML = `<table class="peak-tbl"><thead><tr><th>2θ(°)</th><th>d(Å)</th><th>Rel.I</th><th>FWHM(°)</th><th>Size(nm)</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+function updateSbFile() { const p = getById(S.selId); document.getElementById('sb-file').textContent = p ? p.name : '—'; document.getElementById('sb-pts').textContent = p ? p.raw_x.length.toLocaleString() : '—'; }
+function syncToolbarToSel() {
+  const p = getById(S.selId); if (!p) return;
+  document.getElementById('tb-swatch').style.background = p.color; document.getElementById('tb-color').value = p.color;
+  document.getElementById('tb-width').value = p.width; document.getElementById('tb-width-val').textContent = p.width;
+  document.getElementById('tb-opacity').value = p.opacity; document.getElementById('tb-opacity-val').textContent = p.opacity + '%';
+  document.getElementById('btn-bg-sub').classList.toggle('active', p.bgSub); document.getElementById('btn-norm').classList.toggle('active', p.norm);
+}
+function onPropsColor(v) { const p = getById(S.selId); if (!p) return; p.color = v; document.getElementById('tb-swatch').style.background = v; document.getElementById('tb-color').value = v; renderPatternList(); renderProps(); replot(); }
+function onPropsWidth(v) { const p = getById(S.selId); if (!p) return; p.width = parseFloat(v); const el = document.getElementById('pr-width-v'); if (el) el.textContent = v + ' px'; document.getElementById('tb-width').value = v; document.getElementById('tb-width-val').textContent = v; replot(); }
+function onPropsOpacity(v) { const p = getById(S.selId); if (!p) return; p.opacity = parseInt(v); const el = document.getElementById('pr-opacity-v'); if (el) el.textContent = v + '%'; document.getElementById('tb-opacity').value = v; document.getElementById('tb-opacity-val').textContent = v + '%'; replot(); }
+function onPropsOffset(v) { const p = getById(S.selId); if (!p) return; p.offset = parseFloat(v); const el = document.getElementById('pr-offset-v'); if (el) el.textContent = v; replot(); }
+function onPropsBg(checked) { const p = getById(S.selId); if (!p) return; p.bgSub = checked; p.peaks = []; renderPeakList(); replot(); document.getElementById('btn-bg-sub').classList.toggle('active', checked); }
+function onPropsNorm(checked) { const p = getById(S.selId); if (!p) return; p.norm = checked; p.peaks = []; renderPeakList(); replot(); document.getElementById('btn-norm').classList.toggle('active', checked); }
+document.getElementById('tb-color').addEventListener('input', e => { const p = getById(S.selId); if (!p) return; p.color = e.target.value; document.getElementById('tb-swatch').style.background = e.target.value; renderPatternList(); renderProps(); replot(); });
+document.getElementById('tb-width').addEventListener('input', e => { const p = getById(S.selId); if (!p) return; p.width = parseFloat(e.target.value); document.getElementById('tb-width-val').textContent = e.target.value; renderProps(); replot(); });
+document.getElementById('tb-opacity').addEventListener('input', e => { const p = getById(S.selId); if (!p) return; p.opacity = parseInt(e.target.value); document.getElementById('tb-opacity-val').textContent = e.target.value + '%'; renderProps(); replot(); });
+document.getElementById('btn-reset').addEventListener('click', () => { Plotly.relayout(plotDiv, { 'xaxis.autorange': true, 'yaxis.autorange': true }); });
+document.getElementById('btn-grid').addEventListener('click', e => { S.showGrid = !S.showGrid; e.currentTarget.classList.toggle('active', S.showGrid); replot(); });
+document.getElementById('btn-logy').addEventListener('click', e => { S.logY = !S.logY; e.currentTarget.classList.toggle('active', S.logY); replot(); });
+document.getElementById('btn-stack').addEventListener('click', toggleStackPatterns);
+document.getElementById('btn-png').addEventListener('click', () => { if (!S.patterns.length) { toast('No data to export.', 'warn'); return; } Plotly.downloadImage(plotDiv, { format: 'png', width: 1600, height: 900, filename: 'powder_xrd_pattern', scale: 2 }); });
+document.getElementById('btn-csv').addEventListener('click', exportPeakCSV);
+function exportPeakCSV() {
+  const p = getById(S.selId); if (!p?.peaks?.length) { toast('No peaks to export. Run "Find Peaks" first.', 'warn'); return; }
+  let csv = '2theta_deg,d_spacing_Ang,Intensity,Relative_Intensity_pct,FWHM_deg,Crystallite_Size_nm\n';
+  for (const pk of p.peaks) { csv += `${pk.x.toFixed(4)},${pk.d ? pk.d.toFixed(4) : ''},${pk.y.toFixed(1)},${pk.relInt.toFixed(1)},${pk.fwhm ? pk.fwhm.toFixed(4) : ''},${pk.size_nm ? pk.size_nm.toFixed(2) : ''}\n`; }
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' })); a.download = 'peaks_' + p.name.replace(/\.[^.]+$/, '') + '.csv'; a.click(); URL.revokeObjectURL(a.href); toast(`Exported ${p.peaks.length} peaks with Scherrer analysis`);
+}
+document.getElementById('btn-find-peaks').addEventListener('click', findPeaksUI);
+document.getElementById('btn-bg-sub').addEventListener('click', () => { const p = getById(S.selId); if (!p) return; p.bgSub = !p.bgSub; p.peaks = []; document.getElementById('btn-bg-sub').classList.toggle('active', p.bgSub); renderProps(); renderPeakList(); replot(); });
+document.getElementById('btn-norm').addEventListener('click', () => { const p = getById(S.selId); if (!p) return; p.norm = !p.norm; p.peaks = []; document.getElementById('btn-norm').classList.toggle('active', p.norm); renderProps(); renderPeakList(); replot(); });
+function findPeaksUI() {
+  const p = getById(S.selId); if (!p) { toast('Select a pattern first.', 'warn'); return; }
+  const thr = parseInt(document.getElementById('peak-thr').value), py = processedY(p);
+  p.peaks = detectPeaks(p.raw_x, py, thr);
+  toast(`Found ${p.peaks.length} peak${p.peaks.length !== 1 ? 's' : ''} in "${p.name}"`);
+  renderPeakList(); replot();
+}
+function clearPeaksUI() { const p = getById(S.selId); if (!p) return; p.peaks = []; renderPeakList(); replot(); }
+document.getElementById('peak-thr').addEventListener('input', e => { document.getElementById('peak-thr-val').textContent = e.target.value + '%'; });
+function zoomToPeak(x2t) { const pad = 2; Plotly.relayout(plotDiv, { 'xaxis.range': [x2t - pad, x2t + pad], 'yaxis.autorange': true }); }
+function onWaveChange(sel) {
+  const v = sel.value; document.getElementById('tb-wave').value = v; document.getElementById('sb-wave').value = v;
+  const customRow = document.getElementById('custom-wave-row');
+  if (v === 'custom') { customRow.style.display = 'flex'; }
+  else { customRow.style.display = 'none'; S.wavelength = parseFloat(v); updateWaveDisplay(); invalidatePeaks(); replot(); }
+}
+document.getElementById('custom-wave-inp').addEventListener('change', e => { const v = parseFloat(e.target.value); if (v > 0) { S.wavelength = v; updateWaveDisplay(); invalidatePeaks(); replot(); } });
+document.getElementById('tb-wave').addEventListener('change', e => { document.getElementById('sb-wave').value = e.target.value; onWaveChange(document.getElementById('sb-wave')); });
+function updateWaveDisplay() { const map = { '1.5406':'Cu Kα', '0.7107':'Mo Kα', '1.7902':'Co Kα', '2.2897':'Cr Kα' }; const k = S.wavelength.toFixed(4), nm = map[k] || 'Custom'; document.getElementById('wave-display').textContent = `λ = ${S.wavelength.toFixed(4)} Å  (${nm})`; }
+function invalidatePeaks() { for (const p of S.patterns) p.peaks = []; renderPeakList(); }
+function openFileDialog() { document.getElementById('file-input').click(); }
+document.getElementById('btn-open').addEventListener('click', openFileDialog);
+document.getElementById('btn-open-sb').addEventListener('click', openFileDialog);
+document.getElementById('file-input').addEventListener('change', e => { loadFiles(Array.from(e.target.files)); e.target.value = ''; });
+async function loadFiles(files) {
+  let anyLoaded = false;
+  for (const f of files) {
+    try {
+      const text = await f.text(), { x, y } = parseXRD(text);
+      if (x.length < 2) { toast(`Cannot parse "${f.name}" — no valid two-column numeric data found.`, 'err'); continue; }
+      addPattern(f.name, x, y); anyLoaded = true;
+      toast(`Loaded "${f.name}" — ${x.length.toLocaleString()} data points`);
+    } catch (err) { toast(`Error loading "${f.name}": ${err.message}`, 'err'); }
+  }
+  if (anyLoaded) renderAll();
+}
+const dropZone = document.getElementById('drop-zone');
+document.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('show'); });
+document.addEventListener('dragleave', e => { if (!document.contains(e.relatedTarget) || e.relatedTarget === null) dropZone.classList.remove('show'); });
+document.addEventListener('drop', e => {
+  e.preventDefault(); dropZone.classList.remove('show');
+  const files = Array.from(e.dataTransfer.files).filter(f => /\.(xy|asc|txt)$/i.test(f.name));
+  if (files.length) loadFiles(files); else toast('Please drop .xy or .asc files.', 'warn');
+});
+function accToggle(name) {
+  const body = document.getElementById('body-' + name), arrow = document.getElementById('arr-' + name);
+  const isOpen = !body.classList.contains('gone');
+  body.classList.toggle('gone', isOpen); arrow.classList.toggle('closed', isOpen);
+}
+function toast(msg, type = 'ok') {
+  const wrap = document.getElementById('toast-wrap'), el = document.createElement('div');
+  el.className = `toast ${type}`; el.textContent = msg; wrap.appendChild(el);
+  setTimeout(() => { el.style.transition = 'opacity .3s'; el.style.opacity = '0'; setTimeout(() => el.remove(), 320); }, 3200);
+}
+document.addEventListener('keydown', e => {
+  const tag = document.activeElement.tagName;
+  if (tag === 'INPUT' || tag === 'SELECT' || tag === 'TEXTAREA') return;
+  if ((e.ctrlKey || e.metaKey) && e.key === 'o') { e.preventDefault(); openFileDialog(); }
+  if (e.key === 'r' || e.key === 'R') { Plotly.relayout(plotDiv, { 'xaxis.autorange': true, 'yaxis.autorange': true }); }
+  if (e.key === 'Delete' || e.key === 'Backspace') { if (S.selId !== null) removePattern(S.selId); }
+});
+const ro = new ResizeObserver(() => { if (S.patterns.length) Plotly.Plots.resize(plotDiv); });
+ro.observe(document.getElementById('plot-container'));
+window.addEventListener('DOMContentLoaded', () => { initPlot(); renderPhases(); updateWaveDisplay(); });
+</script>
+</body>
+</html>
