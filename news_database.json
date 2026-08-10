@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-10T18:51:14.060601+00:00",
+  "last_updated": "2026-08-10T19:58:11.314186+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "9bd2eab79dfa",
+      "title": "TEVA-ECTOSONE 0.1% Cream; Affected lot may be missing lot number and expiry date",
+      "slug": "teva-ectosone-0-1-cream-affected-lot-may-be-missing-lot-number-and-expiry-date",
+      "date": "2026-08-10",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: TEVA-ECTOSONE 0.1% Cream; Affected lot may be missing lot number and expiry date\nSource: Health Canada\nDate: 2026-08-07T12:00:00</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "TEVA-ECTOSONE 0.1% Cream; Affected lot may be missing lot number and expiry date",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/teva-ectosone-01-cream-affected-lot-may-be-missing-lot-number-and-expiry-date",
+      "fetched_at": "2026-08-10T19:58:09.948540+00:00",
+      "is_long_form": false
+    },
     {
       "id": "e3cab1375a94",
       "title": "Drug Shortage: Epinephrine Bitartrate, Lidocaine Hydrochloride Injection",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOeWxWZEVHZjVBUTk1QW5Ha3FtaVYxNzZ1X3drN0pXZ1BrQ3M0VjhLdkpPaGtGZHBHOUtnc0RWb09uTVBzNEw5WGxlY21UX1JmTnlhdEJjTnRMN0h3RjYzX2N6SDJOOS1nNnhhWXV2QWRZSzloZnBGNG00TkNyZTdnY2dOdk1NVHVvMlNhUUZyMnpDVVJMNFZGY3hYbVhKRXRfeDI4SGpPVENreWdaWjhFWHhYOTVtMk5QYzNCM3VTY0FYV2FWc2xpLUhn?oc=5",
       "fetched_at": "2026-08-07T01:00:09.913509+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "52b2fcec4047",
-      "title": "Let the orexin market begin: Takeda snags FDA approval for narcolepsy type 1 drug - Endpoints News",
-      "slug": "let-the-orexin-market-begin-takeda-snags-fda-approval-for-narcolepsy-type-1-drug-endpoints-news",
-      "date": "2026-08-05",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Takeda Pharmaceuticals has secured groundbreaking FDA approval for its new narcolepsy type 1 treatment. This significant milestone introduces an innovative orexin-based drug, marking the official commencement of the highly anticipated orexin therapeutic market and offering new hope for patients living with this chronic sleep disorder.</p>",
-      "compliance_impact": "<ul><li>Patients now have access to a novel, targeted treatment option for narcolepsy type 1.</li><li>The pharmaceutical landscape shifts with the establishment of a new orexin-based therapeutic market.</li></ul>",
-      "key_actions": "<ul><li>Healthcare providers should evaluate this new treatment for eligible narcolepsy type 1 patients.</li><li>Industry professionals and investors should monitor this emerging therapeutic class closely.</li></ul>",
-      "industry_context": "<p>This approval is pioneering, establishing the first orexin-based therapy for narcolepsy type 1, a condition characterized by the loss of orexin-producing neurons essential for maintaining wakefulness.</p>",
-      "seo_title": "Takeda's Orexin Drug Receives Landmark FDA Approval for Narcolepsy Type 1",
-      "seo_description": "Takeda secures groundbreaking FDA approval for its new orexin-based drug, offering a novel treatment for narcolepsy type 1 and opening a new therapeutic market.",
-      "primary_company_name": "Takeda",
-      "source_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1wUkxYUFNCYWFuVWVLcTZjWE96Q1J5ZUNWMnBnNzdoQXdWWkJlQy03UEtYMy14bXA0QTdOeERBZll6dGo3UFZwN0w4VUhzcXhEM0tWQ0VqRThUQ2pGX3FKUmZGWnRkXzk0Vk5MTDNRRUJ0QW9tNU5QNDdDNA?oc=5",
-      "fetched_at": "2026-08-06T08:08:53.477576+00:00",
       "is_long_form": false
     }
   ]
