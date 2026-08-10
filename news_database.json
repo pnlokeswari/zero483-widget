@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-10T11:52:13.754070+00:00",
+  "last_updated": "2026-08-10T12:51:11.259895+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "a74685b7694a",
+      "title": "The Significance of FDA’s First Warning Letter for Inappropriate Use of AI - Pharmaceutical Executive",
+      "slug": "the-significance-of-fda-s-first-warning-letter-for-inappropriate-use-of-ai-pharmaceutical-executive",
+      "date": "2026-08-10",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "<p>Title: The Significance of FDA’s First Warning Letter for Inappropriate Use of AI - Pharmaceutical Executive\nSource: Google News\nDate: Mon, 10 Aug 2026 10:03:47 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "The Significance of FDA’s First Warning Letter for Inappropriate Use of AI - Pharmaceutical Executive",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaHFXOWNwNDZLNkl2THNub2puMnFYcG4wMFNJUG85ZnQ2Zk5jOHVxZDB2TjR4SXJfQUo1Y25sWW1xT3pYUXUySzdEdDNiNEw3dENleEVqMnJlRXhnT2lpRmtyeWJESVB2Y1FkLS1iX3piYWtLVE90VzFEUUswMTFwRkhEUUIzbnFMUThpZEtB?oc=5",
+      "fetched_at": "2026-08-10T12:51:09.464856+00:00",
+      "is_long_form": false
+    },
     {
       "id": "d41bf624094e",
       "title": "U.S. House Democrats Press Trump-Vance Administration to Address Estrogen Patch Shortages for Menopause Treatment - Sier",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-08-05T23:38:15.813174+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "bd1a17d70e49",
-      "title": "Indian Pharma Alliance Works with CDSCO to Regularize ‘Legacy’ Drug Approvals - NAVLIN DAILY",
-      "slug": "indian-pharma-alliance-works-with-cdsco-to-regularize-legacy-drug-approvals-navlin-daily",
-      "date": "2026-08-05",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "<p>Title: Indian Pharma Alliance Works with CDSCO to Regularize ‘Legacy’ Drug Approvals - NAVLIN DAILY\nSource: CDSCO India\nDate: Wed, 05 Aug 2026 12:54:50 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Indian Pharma Alliance Works with CDSCO to Regularize ‘Legacy’ Drug Approvals - NAVLIN DAILY",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZUY4b1VmRGhXcW8tZmVfd1hIUG9faURBdHB2TWN2eVE2NXVYU3drZjFTc3VRX0MtcGFTM1JNUk9nZk5yaF9jalVmT3dyajVsVjB6YkI1aUFiZ3RsanFtSTlXRUJrTVRqNWdmaFpnZ19NMW5GeldORFJiVE9YUm1LcTY0LWhmeXE3QXM2bVpiYjJ1c1drYUJXVVJYLXJSZUd3MGotMWFLd2VjRzBaRnY1eDB0NUhOWGRQ?oc=5",
-      "fetched_at": "2026-08-05T22:06:09.450011+00:00",
       "is_long_form": false
     }
   ]
