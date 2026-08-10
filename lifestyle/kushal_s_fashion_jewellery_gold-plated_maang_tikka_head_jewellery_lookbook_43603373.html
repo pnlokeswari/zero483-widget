@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kushal's Fashion Jewellery Gold-Plated Maang Tikka Head Jewellery Lookbook | Dynamic Visual Lookbook</title>
+  <meta name="description" content="Explore this interactive fashion lookbook. Click any photo to shop directly on Myntra." />
+  <meta property="og:title" content="Kushal's Fashion Jewellery Gold-Plated Maang Tikka Head Jewellery Lookbook" />
+  <meta property="og:type" content="article" />
+  <meta name="pinterest-rich-pin" content="true" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-red: #e60023;
+      --pink-accent: #ec4899;
+      --bg-dark: #0b0f19;
+      --card-bg: rgba(30, 41, 59, 0.65);
+      --glass-border: rgba(255, 255, 255, 0.12);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    
+    body {
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(230, 0, 35, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(236, 72, 153, 0.15) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(99, 102, 241, 0.12) 0px, transparent 50%);
+      background-attachment: fixed;
+      color: #f8fafc;
+      padding: 40px 18px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .lookbook-container { max-width: 1150px; width: 100%; }
+    
+    header { text-align: center; margin-bottom: 45px; position: relative; }
+    
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(236, 72, 153, 0.12);
+      border: 1px solid rgba(236, 72, 153, 0.3);
+      color: #f472b6;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 15px rgba(236, 72, 153, 0.15);
+    }
+    
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.6rem;
+      font-weight: 900;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.25;
+      letter-spacing: -0.5px;
+    }
+    
+    .sub-tag {
+      color: #94a3b8;
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+    .sub-tag strong { color: #f472b6; font-weight: 700; }
+
+    /* Responsive Grid for Consolidated Product Containers */
+    .lookbook-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 30px;
+    }
+    @media (max-width: 650px) {
+      .lookbook-grid { grid-template-columns: 1fr; gap: 24px; }
+      h1 { font-size: 1.9rem; }
+    }
+
+    /* Consolidated Product Card Container */
+    .lookbook-product-card {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .lookbook-product-card:hover {
+      transform: translateY(-8px) scale(1.01);
+      border-color: rgba(236, 72, 153, 0.5);
+      box-shadow: 0 20px 40px -10px rgba(230, 0, 35, 0.35), 0 0 20px rgba(236, 72, 153, 0.2);
+    }
+
+    .card-image-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .image-link {
+      display: block;
+      text-decoration: none;
+      position: relative;
+      width: 100%;
+      color: inherit;
+    }
+
+    .image-frame {
+      position: relative;
+      width: 100%;
+      padding-top: 125%; /* 4:5 aspect ratio */
+      overflow: hidden;
+      background: #1e293b;
+    }
+
+    /* Ken Burns Floating Animation */
+    .animated-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease, opacity 0.3s ease;
+      animation: kenBurnsContinuous 14s ease-in-out infinite alternate;
+    }
+
+    @keyframes kenBurnsContinuous {
+      0% { transform: scale(1) translate(0%, 0%); }
+      50% { transform: scale(1.09) translate(-1.5%, -1%); }
+      100% { transform: scale(1.03) translate(1%, 1.5%); }
+    }
+
+    .lookbook-product-card:hover .animated-img {
+      transform: scale(1.1) !important;
+      animation-play-state: paused;
+    }
+
+    /* Shimmer Light Reflection */
+    .shimmer-overlay {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+      transition: left 0.7s ease;
+      pointer-events: none;
+    }
+    .lookbook-product-card:hover .shimmer-overlay {
+      left: 140%;
+    }
+
+    /* Top Badge Tag */
+    .badge-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      z-index: 2;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Thumbnail Gallery Strip */
+    .gallery-thumbs-strip {
+      display: flex;
+      gap: 8px;
+      padding: 10px 14px;
+      background: rgba(15, 23, 42, 0.7);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+
+    .gallery-thumb-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      background: #1e293b;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+      padding: 0;
+    }
+
+    .gallery-thumb-btn img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-thumb-btn:hover, .gallery-thumb-btn.active-thumb {
+      border-color: #ec4899;
+      transform: scale(1.06);
+      box-shadow: 0 0 10px rgba(236, 72, 153, 0.5);
+    }
+
+    /* Card Footer Info */
+    .card-footer-info {
+      padding: 16px;
+      background: rgba(15, 23, 42, 0.85);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .prod-name-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #f1f5f9;
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Pulsing Shop Button */
+    .shop-overlay-btn {
+      text-decoration: none;
+      align-self: flex-start;
+      background: linear-gradient(135deg, #e60023 0%, #ec4899 100%);
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 15px rgba(230, 0, 35, 0.4);
+      transition: all 0.3s ease;
+      animation: pulseBtn 2.5s infinite;
+    }
+
+    @keyframes pulseBtn {
+      0%, 100% { box-shadow: 0 4px 15px rgba(230, 0, 35, 0.4); }
+      50% { box-shadow: 0 6px 22px rgba(236, 72, 153, 0.7); }
+    }
+
+    .shop-overlay-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #ec4899 0%, #e60023 100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="lookbook-container">
+    <header>
+      <div class="header-badge">✨ Interactive Fashion Lookbook</div>
+      <h1>Kushal's Fashion Jewellery Gold-Plated Maang Tikka Head Jewellery Lookbook</h1>
+      <p class="sub-tag">👆 <strong>Tap any photo or thumbnail</strong> to explore angles & shop directly on Myntra</p>
+    </header>
+
+    <div class="lookbook-grid">
+      
+        <div class="lookbook-product-card" style="animation-delay: 0.1s;">
+            <div class="card-image-wrapper">
+                <a href="https://myntr.it/HmSiZdq" target="_blank" rel="noopener sponsored" class="image-link" title="Tap to shop Kushal's Fashion Jewellery Gold-Plated Maang Tikka Head Jewellery on Myntra">
+                    <div class="image-frame">
+                        <img id="prod-main-img-1" src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JUNE/30/ReTRp1ec_536d6a6ff8154ca4abb7d75bcacab1a6.jpg" alt="Kushal's Fashion Jewellery Gold-Plated Maang Tikka Head Jewellery" loading="lazy" class="animated-img" />
+                        <div class="shimmer-overlay"></div>
+                    </div>
+                </a>
+
+                <div class="badge-tag">
+                    <span>✨ Kushal's Fashion Jewellery</span>
+                </div>
+            </div>
+
+            
+            <div class="gallery-thumbs-strip">
+                
+                <button type="button" class="gallery-thumb-btn active-thumb" onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JUNE/30/ReTRp1ec_536d6a6ff8154ca4abb7d75bcacab1a6.jpg', this)" title="View angle 1">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JUNE/30/ReTRp1ec_536d6a6ff8154ca4abb7d75bcacab1a6.jpg" alt="Angle 1" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JUNE/30/yKAwy9lk_e7b2186f661b4a6496125ac180d4e2d3.jpg', this)" title="View angle 2">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JUNE/30/yKAwy9lk_e7b2186f661b4a6496125ac180d4e2d3.jpg" alt="Angle 2" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JUNE/30/FWoptJdE_4a9b4372131945e8a5aff08ad2fdb0e6.jpg', this)" title="View angle 3">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JUNE/30/FWoptJdE_4a9b4372131945e8a5aff08ad2fdb0e6.jpg" alt="Angle 3" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JUNE/30/A1S7mhPF_0d3c2179ce5d494093ae23066694e9fc.jpg', this)" title="View angle 4">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JUNE/30/A1S7mhPF_0d3c2179ce5d494093ae23066694e9fc.jpg" alt="Angle 4" />
+                </button>
+                
+                <button type="button" class="gallery-thumb-btn " onclick="switchProductImage(1, 'https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JUNE/30/JBj3Idyu_7cd5d589ea294ee29f54a6ac55cd8822.jpg', this)" title="View angle 5">
+                    <img src="https://assets.myntassets.com/h_1440,q_95,w_1080/v1/assets/images/2026/JUNE/30/JBj3Idyu_7cd5d589ea294ee29f54a6ac55cd8822.jpg" alt="Angle 5" />
+                </button>
+                
+            </div>
+            
+
+            <div class="card-footer-info">
+                <div class="prod-name-title">Kushal's Fashion Jewellery Gold-Plated Maang Tikka Head Jewellery</div>
+                <a href="https://myntr.it/HmSiZdq" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
+                    <span>🛍️ Shop on Myntra &rarr;</span>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+  </div>
+
+  <script>
+    function switchProductImage(prodIdx, imgUrl, btnEl) {
+      const mainImg = document.getElementById('prod-main-img-' + prodIdx);
+      if (mainImg) {
+        mainImg.style.opacity = '0.4';
+        setTimeout(() => {
+          mainImg.src = imgUrl;
+          mainImg.style.opacity = '1';
+        }, 150);
+      }
+      const container = btnEl.closest('.gallery-thumbs-strip');
+      if (container) {
+        container.querySelectorAll('.gallery-thumb-btn').forEach(b => b.classList.remove('active-thumb'));
+      }
+      btnEl.classList.add('active-thumb');
+    }
+  </script>
+</body>
+</html>
