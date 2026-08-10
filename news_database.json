@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-10T21:43:12.788688+00:00",
+  "last_updated": "2026-08-10T22:39:12.608703+00:00",
   "total_items": 50,
   "items": [
     {
@@ -126,6 +126,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaHFXOWNwNDZLNkl2THNub2puMnFYcG4wMFNJUG85ZnQ2Zk5jOHVxZDB2TjR4SXJfQUo1Y25sWW1xT3pYUXUySzdEdDNiNEw3dENleEVqMnJlRXhnT2lpRmtyeWJESVB2Y1FkLS1iX3piYWtLVE90VzFEUUswMTFwRkhEUUIzbnFMUThpZEtB?oc=5",
       "fetched_at": "2026-08-10T12:51:09.464856+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "188ee32d0893",
+      "title": "A shortage of two Sanofi medicines for Pompe disease rattles patients - STAT",
+      "slug": "a-shortage-of-two-sanofi-medicines-for-pompe-disease-rattles-patients-stat",
+      "date": "2026-08-09",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Title: A shortage of two Sanofi medicines for Pompe disease rattles patients - STAT\nSource: Google News\nDate: Sun, 09 Aug 2026 23:19:41 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "A shortage of two Sanofi medicines for Pompe disease rattles patients - STAT",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObnQxZkc2UHBtcENrNEpmeDVwdGNLMDJRRFZtSTdRM2lsZ21EYkotS2tZSXV3bkxVUVkwNlFwQ3Z0c3ZGbU1qaW1kVW5vWE00UXc4RzdpV2NCUnBvc0s1Ul84UWhJWmh0cUIzdUllNWdZdjZuVElIMlBFNmZLdVM0ZUVHZ2lIZkdvOU51dkRTSzlkLWVZNHFOQlB5LUt1R2FUM1E?oc=5",
+      "fetched_at": "2026-08-10T22:27:09.598103+00:00",
       "is_long_form": false
     },
     {
@@ -882,24 +900,6 @@
       "primary_company_name": "TAKEDA PHARMS USA",
       "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220860",
       "fetched_at": "2026-08-07T19:46:17.200808+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "c05f0488bcba",
-      "title": "CDSCO to Launch First Phase of End-to-End Digital Drug Regulatory Platform Within 18 Months: DCGI - Digital Health News",
-      "slug": "cdsco-to-launch-first-phase-of-end-to-end-digital-drug-regulatory-platform-within-18-months-dcgi-digital-health-news",
-      "date": "2026-08-05",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "<p>Title: CDSCO to Launch First Phase of End-to-End Digital Drug Regulatory Platform Within 18 Months: DCGI - Digital Health News\nSource: CDSCO India\nDate: Wed, 05 Aug 2026 10:12:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "CDSCO to Launch First Phase of End-to-End Digital Drug Regulatory Platform Within 18 Months: DCGI - Digital Health News",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOeWxWZEVHZjVBUTk1QW5Ha3FtaVYxNzZ1X3drN0pXZ1BrQ3M0VjhLdkpPaGtGZHBHOUtnc0RWb09uTVBzNEw5WGxlY21UX1JmTnlhdEJjTnRMN0h3RjYzX2N6SDJOOS1nNnhhWXV2QWRZSzloZnBGNG00TkNyZTdnY2dOdk1NVHVvMlNhUUZyMnpDVVJMNFZGY3hYbVhKRXRfeDI4SGpPVENreWdaWjhFWHhYOTVtMk5QYzNCM3VTY0FYV2FWc2xpLUhn?oc=5",
-      "fetched_at": "2026-08-07T01:00:09.913509+00:00",
       "is_long_form": false
     }
   ]
