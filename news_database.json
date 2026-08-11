@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-11T17:57:13.130527+00:00",
+  "last_updated": "2026-08-11T18:54:11.564490+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "0f704c0d0976",
+      "title": "Omni-Tract Surgical Retractor System",
+      "slug": "omni-tract-surgical-retractor-system",
+      "date": "2026-08-11",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Omni-Tract Surgical Retractor System\nSource: Health Canada\nDate: 2026-08-11T12:00:00</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Omni-Tract Surgical Retractor System",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/omni-tract-surgical-retractor-system",
+      "fetched_at": "2026-08-11T18:54:10.126546+00:00",
+      "is_long_form": false
+    },
     {
       "id": "97eaa2b004d5",
       "title": "US FDA finalizes new guidance on freshly cut produce - Yahoo News Singapore",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWUp6d09pSk82ampyRnZ0MjBxNHMwNEtQNlFQaUFRcUhRTVo4VUZsbVBFYVFWSGJuRXRKWldFblVHUERCdnNxU1NUZGFxVmFQNk1YZjZoNVd2TjNBZy1nQ2ZlWi05YlN1NVE1RkdDTGd3endwdXZwb1hTOXhFa0xNeGhlNHpfLV90YnNPRzY4bHU0c3Z4WU5zeGFQeFFVdjA?oc=5",
       "fetched_at": "2026-08-06T16:10:09.879900+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "c0c4010fac6c",
-      "title": "Beckman Coulter AU Immunochemistry System - AU480 Analyzer",
-      "slug": "beckman-coulter-au-immunochemistry-system-au480-analyzer",
-      "date": "2026-08-06",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Beckman Coulter AU Immunochemistry System - AU480 Analyzer\nSource: Health Canada\nDate: 2026-08-06T12:00:00</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Beckman Coulter AU Immunochemistry System - AU480 Analyzer",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/beckman-coulter-au-immunochemistry-system-au480-analyzer",
-      "fetched_at": "2026-08-06T13:34:09.550916+00:00",
       "is_long_form": false
     }
   ]
