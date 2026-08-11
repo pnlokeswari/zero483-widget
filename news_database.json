@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-11T20:38:12.516138+00:00",
+  "last_updated": "2026-08-11T21:48:12.284475+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "8d7f2b40b845",
+      "title": "FDA Finalizes Food Safety Guidance for Ready-to-Eat Fresh-Cut Produce - Quality Assurance & Food Safety",
+      "slug": "fda-finalizes-food-safety-guidance-for-ready-to-eat-fresh-cut-produce-quality-assurance-food-safety",
+      "date": "2026-08-11",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: FDA Finalizes Food Safety Guidance for Ready-to-Eat Fresh-Cut Produce - Quality Assurance & Food Safety\nSource: Google News\nDate: Tue, 11 Aug 2026 15:28:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "FDA Finalizes Food Safety Guidance for Ready-to-Eat Fresh-Cut Produce - Quality Assurance & Food Safety",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdTZTaHp4RENScERERGJzcnpsNDBER1VrUmdkbTFyUWFGLV9LaWFfUzMwV2RiZHk2QWpSajh0RjhTZVQxZFRxQUdiWmJ4V2xIZ1lsQk82cEcxZTRrdzYzWm5CNG1VMTZFX3ZJZ2tleFJWemRDaHBZZUtrLThPdm0tMnU2U0ZEaF90WVBsNWE2RVF3dFh6a1ZXWGtvRWJoZWdRVDhzTnhpOHFKZTA?oc=5",
+      "fetched_at": "2026-08-11T21:48:10.239977+00:00",
+      "is_long_form": false
+    },
     {
       "id": "b8194ac4e7e8",
       "title": "US FDA urges sanitation, supplier checks to curb fresh-cut produce contamination - Reuters",
@@ -882,24 +900,6 @@
       "primary_company_name": "Takeda",
       "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQXFkTURoSE1uRFllV3JQNW1ubDU4Mk9zVV83VUd3TXI4LUpoYklWTzdtZHBlXzRhb2t2V2gxdUhRdkwyQl9wZVJZMXktaThSWE5MOWlacmhoa2txb3oxWl9VUVlIck1EeGZjUjk1QnVabTZnXzhWOW9qQ044enlyVDUxWnBoS0RiTzNWdTM0TW5za29MZ1ljNW5UQTY0VG1sVHVYX3gxT1BxNWZ5SVpncTIzSF85M2ZYM3Y4?oc=5",
       "fetched_at": "2026-08-06T16:14:16.452283+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "cc73b1145ef4",
-      "title": "Takeda wins U.S. FDA approval for narcolepsy drug ORZEYFUL - International Business Times",
-      "slug": "takeda-wins-u-s-fda-approval-for-narcolepsy-drug-orzeyful-international-business-times",
-      "date": "2026-08-06",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Takeda wins U.S. FDA approval for narcolepsy drug ORZEYFUL - International Business Times\nSource: Google News\nDate: Thu, 06 Aug 2026 15:36:29 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Takeda wins U.S. FDA approval for narcolepsy drug ORZEYFUL - International Business Times",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSmQyMzlYWlU1YVNQaUREYUxkYTVIZlpZZVJ1NFJOa0tYVXJSd2FYYUNzSWFKY1ZSWUlkZDVOT3Y1VU1yMmt3RHhwSHo5YzdKeU1TUnVyQWxmUlJvTE5heFZrY0RqNUYybE4yaEh4ckQ0V0RmR185b3R1MkpndDZtd3ZYXzBUbldIN2c?oc=5",
-      "fetched_at": "2026-08-06T16:12:09.409454+00:00",
       "is_long_form": false
     }
   ]
