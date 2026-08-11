@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-11T14:18:13.165579+00:00",
+  "last_updated": "2026-08-11T15:53:11.850242+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "97eaa2b004d5",
+      "title": "US FDA finalizes new guidance on freshly cut produce - Yahoo News Singapore",
+      "slug": "us-fda-finalizes-new-guidance-on-freshly-cut-produce-yahoo-news-singapore",
+      "date": "2026-08-11",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: US FDA finalizes new guidance on freshly cut produce - Yahoo News Singapore\nSource: Google News\nDate: Tue, 11 Aug 2026 15:11:53 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "US FDA finalizes new guidance on freshly cut produce - Yahoo News Singapore",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvSVJ1d1BPSDlnSlp6LVp4dl9XVzZra2Raakwxa1hid1FPUGVvN1lYSjVaQ2NVc09VYnBMVzVpZElud3NTamNYUVJfbVJuMW9DOENFRDFHVkpkeDNqS3VfTWw4ZGtYVFMzU2QyWGNWVUlUaWx2aFNJRjhiR29qVFU?oc=5",
+      "fetched_at": "2026-08-11T15:53:10.157922+00:00",
+      "is_long_form": false
+    },
     {
       "id": "acb5a90329db",
       "title": "Blood Pressure Drug Recalled Nationwide, FDA Announces - Yahoo News Singapore",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/beckman-coulter-au-immunochemistry-system-au480-analyzer",
       "fetched_at": "2026-08-06T13:34:09.550916+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "e08d97eeac31",
-      "title": "Takeda's first-in-class narcolepsy drug claims FDA approval - pharmaphorum",
-      "slug": "takeda-s-first-in-class-narcolepsy-drug-claims-fda-approval-pharmaphorum",
-      "date": "2026-08-06",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Takeda's first-in-class narcolepsy drug claims FDA approval - pharmaphorum\nSource: Google News\nDate: Thu, 06 Aug 2026 11:52:10 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Takeda's first-in-class narcolepsy drug claims FDA approval - pharmaphorum",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNm1WYm9CQ2ZSOTBEWmg5Y1htLXpKczFzWlJ4T3VuaTlyVE5OdEkyNk9sSlZYVldILS0wYU5HWV9wTjRsVzBFVzhDOHFFOW45OXhGemV0Yy1YdU00RHM1SWtlaW02V0VVUi1tRFlEVWhvWlNvUEpxakpvMDY4ZUZXUHJ2bE1ScEo4TGl1WGJ3?oc=5",
-      "fetched_at": "2026-08-06T13:26:09.486480+00:00",
       "is_long_form": false
     }
   ]
