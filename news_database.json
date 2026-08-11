@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-11T18:54:11.564490+00:00",
+  "last_updated": "2026-08-11T20:05:13.058506+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "b8194ac4e7e8",
+      "title": "US FDA urges sanitation, supplier checks to curb fresh-cut produce contamination - Reuters",
+      "slug": "us-fda-urges-sanitation-supplier-checks-to-curb-fresh-cut-produce-contamination-reuters",
+      "date": "2026-08-11",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: US FDA urges sanitation, supplier checks to curb fresh-cut produce contamination - Reuters\nSource: Google News\nDate: Tue, 11 Aug 2026 17:04:36 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "US FDA urges sanitation, supplier checks to curb fresh-cut produce contamination - Reuters",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRDltRERzeFN4UVZ0clZ6NUFLazNTZXRxNUFqeDM5WF8tT0dXMk9NdXZJYlNSdUl1N0V3cEZ3clR4Z3VQdVdpZTM3MkZiSUxfS2lkTGRQOWFRWEIyQktBZ20zNUhDeC1GZEZvODY3MHc4bEpqVXVWZUJxNXFZRnM2c0I0ajZmRkR5XzBzR2RQZDNlWU81N0dEOFhYQWw2LUdIMllfZA?oc=5",
+      "fetched_at": "2026-08-11T20:05:09.769646+00:00",
+      "is_long_form": false
+    },
     {
       "id": "0f704c0d0976",
       "title": "Omni-Tract Surgical Retractor System",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSmQyMzlYWlU1YVNQaUREYUxkYTVIZlpZZVJ1NFJOa0tYVXJSd2FYYUNzSWFKY1ZSWUlkZDVOT3Y1VU1yMmt3RHhwSHo5YzdKeU1TUnVyQWxmUlJvTE5heFZrY0RqNUYybE4yaEh4ckQ0V0RmR185b3R1MkpndDZtd3ZYXzBUbldIN2c?oc=5",
       "fetched_at": "2026-08-06T16:12:09.409454+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "d519545d6ca5",
-      "title": "Takeda gains FDA nod for first-in-class narcolepsy treatment Orzeyful - Fierce Pharma",
-      "slug": "takeda-gains-fda-nod-for-first-in-class-narcolepsy-treatment-orzeyful-fierce-pharma",
-      "date": "2026-08-06",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Takeda gains FDA nod for first-in-class narcolepsy treatment Orzeyful - Fierce Pharma\nSource: Google News\nDate: Thu, 06 Aug 2026 15:10:41 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Takeda gains FDA nod for first-in-class narcolepsy treatment Orzeyful - Fierce Pharma",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWUp6d09pSk82ampyRnZ0MjBxNHMwNEtQNlFQaUFRcUhRTVo4VUZsbVBFYVFWSGJuRXRKWldFblVHUERCdnNxU1NUZGFxVmFQNk1YZjZoNVd2TjNBZy1nQ2ZlWi05YlN1NVE1RkdDTGd3endwdXZwb1hTOXhFa0xNeGhlNHpfLV90YnNPRzY4bHU0c3Z4WU5zeGFQeFFVdjA?oc=5",
-      "fetched_at": "2026-08-06T16:10:09.879900+00:00",
       "is_long_form": false
     }
   ]
