@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-12T05:34:12.512303+00:00",
+  "last_updated": "2026-08-12T07:04:58.375631+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "cf83b4ad934d",
+      "title": "Drug Shortage: Technetium TC-99M Pyrophosphate Kit Injection",
+      "slug": "drug-shortage-technetium-tc-99m-pyrophosphate-kit-injection",
+      "date": "2026-08-12",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Technetium TC-99M Pyrophosphate Kit Injection\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Technetium TC-99M Pyrophosphate Kit Injection",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-08-12T07:01:47.336520+00:00",
+      "is_long_form": false
+    },
     {
       "id": "7170fc17c158",
       "title": "Acting US FDA chief urges confidence in lettuce as agency updates produce safety guidance - Reuters",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMnRWNF9XVk82X2tYdkhkM0NjVGNaN3N5VlMwVm9fZDI3UTNiV3ZMMWhFbC1rYkRKWHRuSUxyT3JXZlhVYWpCbUJwMDNYYUI1X3Y2MFVHNFczUnBfM2NHeDhKa3plNXFQUVI3TENlZnZIWFVNc1g1RjVUMFZqUzc2SFI1UWQwMkc5QU5CQzBQa1VEOHRSX3B4TE1faXJIaXh6d1VPTmtwWXdGRGQ1SFJZbWx0TFNwRUJwcnNmVUdB?oc=5",
       "fetched_at": "2026-08-07T00:42:09.895213+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "8f3665cf104c",
-      "title": "Replimune rebounds to win FDA approval of melanoma drug - biopharmadive.com",
-      "slug": "replimune-rebounds-to-win-fda-approval-of-melanoma-drug-biopharmadive-com",
-      "date": "2026-08-06",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Replimune rebounds to win FDA approval of melanoma drug - biopharmadive.com\nSource: Google News\nDate: Thu, 06 Aug 2026 21:16:19 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Replimune rebounds to win FDA approval of melanoma drug - biopharmadive.com",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPb1YzVGxJSGFMTzl6TGxLbjgzbS1ONHVKSjFHUjJjQVRkU3llVFE5MDduRUlCMmY3MVZTOFFJbVg0azVjWFhfdW4zYi1lNUFhRHpYUG9pXzYyeGlsR210LVlaZmF6RjZqdGZzcENVUHYxQk9ELXBTVzMxb3BIeVdUSHljMC1zYUNsZ2NwWWpuYw?oc=5",
-      "fetched_at": "2026-08-07T00:40:09.428442+00:00",
       "is_long_form": false
     }
   ]
