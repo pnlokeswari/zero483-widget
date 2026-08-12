@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-12T18:52:13.191788+00:00",
+  "last_updated": "2026-08-12T20:07:12.858694+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "96ac65e71ace",
+      "title": "FDA chief: Cyclospora ‘effectively removed from the market’ - The Hill",
+      "slug": "fda-chief-cyclospora-effectively-removed-from-the-market-the-hill",
+      "date": "2026-08-12",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: FDA chief: Cyclospora ‘effectively removed from the market’ - The Hill\nSource: Google News\nDate: Wed, 12 Aug 2026 15:24:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "FDA chief: Cyclospora ‘effectively removed from the market’ - The Hill",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObml0UG5xOUpSOU1Ib0xveTNkWVdJakJQSDNxZ2xyYklXd0ttUFEzYkg2amxCVUk5QW00NTVXUTdqUlVMOVR4dnZFcy00MnpxcExpSmdfMXRaVy1QV0VSVFVRWE5UNUtDRGJkRkgwaFowcnJrQnR2QVJmQzNWSnROMGVraU3SAYoBQVVfeXFMTXFYTl9IS1MzVVAwODAxbmtwRFFMVlV3dVRSRWw4QlNwOG1oMXkzN2hQOFROT1g5NnFNR0g5aFNaMmNVRDBnQkVCcFZPc0hiMGk2SzBXdk1ITGVvd0xvbC0za3lLcWFvYmxhWExRYjM1RXhDTXJ3QTJkTWFvbU5wOVRoM3lSZXFKeFVn?oc=5",
+      "fetched_at": "2026-08-12T19:55:09.334015+00:00",
+      "is_long_form": false
+    },
     {
       "id": "589f530328d9",
       "title": "HEALON EndoCoat PRO",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONUZRM1FQVDRPa2k0b1NVa1lJdFVQNU1pUzczX3QxWFhxcm1XbmZNakR2X1JvZHFFR1RCNWVDeDN3blZtY1RqUFNGMHVuX2FCRXZ1alZPLWZmb25JZVVHN2lwal9XUGtrR3JQQmVXSW9hNU5ubHk0ai1EM3lwVU1GRktkSWdiQmhlOVpqS0RnS3FPYWR3SUxWWWNoMkVvZVJqWHlFazJBemgwanRsVzY4em4zMFNzakU?oc=5",
       "fetched_at": "2026-08-07T14:03:10.116371+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "5a129b2c46e9",
-      "title": "CDSCO to hold quarterly stakeholder meetings to discuss regulatory framework and procedures - Express Pharma",
-      "slug": "cdsco-to-hold-quarterly-stakeholder-meetings-to-discuss-regulatory-framework-and-procedures-express-pharma",
-      "date": "2026-08-07",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "<p>Title: CDSCO to hold quarterly stakeholder meetings to discuss regulatory framework and procedures - Express Pharma\nSource: CDSCO India\nDate: Fri, 07 Aug 2026 04:35:33 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "CDSCO to hold quarterly stakeholder meetings to discuss regulatory framework and procedures - Express Pharma",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRjVNbUZpYjlGd083TkthVTB4OXAzbGlQakozclotSHlXTGxmbnFLSlpNdTlPckpBS1lGMmJmR3d0cDRmVDJjZ25DaWkwUHptUzRheTE0M0lLNHJ0MXR3c2dnc3pJZi1JenNFZjRtV1g2XzR4NmxfOVBmeUdkbTQwdDc5SW1lV1ZndkpPQTgwMHNlMHBuelVvM3ozMDk5elQ3ZFpndjhZX0RNOHFrckw4VHU5bE9hS0FVTm9nOFpB?oc=5",
-      "fetched_at": "2026-08-07T11:44:09.596045+00:00",
       "is_long_form": false
     }
   ]
