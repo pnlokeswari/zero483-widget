@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-13T21:45:12.763453+00:00",
+  "last_updated": "2026-08-13T22:40:13.158828+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "111d28967fed",
+      "title": "Prescription Arthritis Medication Recalled Nationwide, FDA Warns - Prevention",
+      "slug": "prescription-arthritis-medication-recalled-nationwide-fda-warns-prevention",
+      "date": "2026-08-13",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Prescription Arthritis Medication Recalled Nationwide, FDA Warns - Prevention\nSource: Google News\nDate: Thu, 13 Aug 2026 10:26:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Prescription Arthritis Medication Recalled Nationwide, FDA Warns - Prevention",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPQkVtamZvV2dtYnVCZkRMU2ZWQXBnTzJoWENNNGN5RDlwVldyc0hsNTMtemNKZW9MYUw0dVVJYl9KaGxNZi11QkV0aXV4cno2azRsanJhMTFXdjNwWU9rNllEVTNoemdQZ2lsY1Jkc0dMYi1zMFVVNjF0MU0wVGFNc1pkc1Z1eUpNaTFR?oc=5",
+      "fetched_at": "2026-08-13T22:28:09.928306+00:00",
+      "is_long_form": false
+    },
     {
       "id": "834ae061c4df",
       "title": "Unapproved Infertility Drug Enclomiphene Under CDSCO Scanner, States Told to Take Action - Medical Dialogues",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-08-08T10:21:09.313054+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "016aec79d554",
-      "title": "AstraZeneca Pharma India secures CDSCO approval for Enhertu in new breast cancer use - scanx.trade",
-      "slug": "astrazeneca-pharma-india-secures-cdsco-approval-for-enhertu-in-new-breast-cancer-use-scanx-trade",
-      "date": "2026-08-08",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "<p>Title: AstraZeneca Pharma India secures CDSCO approval for Enhertu in new breast cancer use - scanx.trade\nSource: CDSCO India\nDate: Sat, 08 Aug 2026 06:31:12 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "AstraZeneca Pharma India secures CDSCO approval for Enhertu in new breast cancer use - scanx.trade",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbHNScW9ncXJZaTJyLTM3c29iZlJSeWp3MUs2MmlBRlk2LTlfZmN4RUZYMXdEWHFoQ005RjNiR3FoNm1oZkQtZW5seDJVNjAwOHFWaG91cTBZVFVRMVRwaFUtVlRFTEJKaTFkakZvcURYRTVHS2VGa0tjQ3JaTlFWNDU4ek9CTXFvbFJzYl9TM1ZTNmNQTVZFb0FTRG5zWVYzcDVpUTk3Tk9kajVMbHlUSmlxOFpnSjBFa2pTZFFoNWlPdGdoMWU2NW1Vc1lQZlBLejZXS0xtTFU?oc=5",
-      "fetched_at": "2026-08-08T06:41:09.813808+00:00",
       "is_long_form": false
     }
   ]

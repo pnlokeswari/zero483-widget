@@ -5,6 +5,7 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/prescription-arthritis-medication-recalled-nationwide-fda-warns-prevention.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/unapproved-infertility-drug-enclomiphene-under-cdsco-scanner-states-told-to-take-action-medical-dialogues.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/portrait-core-services-cssxb.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/zealand-sells-its-rights-to-takeda-s-blood-cancer-drug-for-100m-ahead-of-fda-approval-decision-fierce-biotech.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -54,7 +55,6 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/astrazeneca-pharma-gets-cdsco-nod-to-market-enhertu-for-additional-indication-business-standard.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/adhd-first-new-drug-class-in-decades-gets-fda-approval-denkstrom.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-quinapril-hydrochlorothiazide-tablet.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/astrazeneca-pharma-india-secures-cdsco-approval-for-enhertu-in-new-breast-cancer-use-scanx-trade.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/companies.html</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/dyosa-beauty-wellness-lounge.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
