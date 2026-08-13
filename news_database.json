@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-13T15:52:51.080241+00:00",
+  "last_updated": "2026-08-13T16:53:10.981764+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "f73c03f4b6a1",
+      "title": "IV Tubing Set Drip Chambers ",
+      "slug": "iv-tubing-set-drip-chambers",
+      "date": "2026-08-13",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: IV Tubing Set Drip Chambers \nSource: Health Canada\nDate: 2026-08-13T12:00:00</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "IV Tubing Set Drip Chambers ",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/iv-tubing-set-drip-chambers",
+      "fetched_at": "2026-08-13T16:53:09.712118+00:00",
+      "is_long_form": false
+    },
     {
       "id": "966bfd50f812",
       "title": "Celcuity earnings loom as breast cancer drug approval fuels optimism - Investing.com",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNalU5ZE1fd0FSclk2d3NjRGptdmJTd3FEai0xNnM2aG1GWUl5Ylg4OU54TG4zT0U1QzJyQk5WV0lVOE05TmNuNnR1SDFSc21JbVdxdG9ZbXlCMWk3cVBKYjFDSTZUeURWQmV0VU1TRFV5bmVBVDdFQ0ZLZ05GdkNjTUJnNmI1c25ndmVRMWwyMkpKSTBhNTBVX1N4MzE2UnlFX0lLelhoTTd1N3Rpb0ctTmF4RHVJZTRkUzFnZVhDRHFSQ3dRMkxB0gHOAUFVX3lxTE9QYVhpbFM2dGJwSWZfNmp6alNCd1AzN0VuV1RJZDJKOEw3LVhZdmFiWnFUQkpOVVVzdlJkMkc5eWNta1JaUmZHS2ZZU1I3T3hOX2s5NGNtUm82Znk3c2k3cC01QlR5aVExMGJyZEdPVFd3RU9uTWdud1lYNTZUbHRXZG5UT1J4cjVVbmM1ZEcyOGZIRGJZNno0MENQYWk3ZnQyM1BWT3Q0QkZwVEtpZ3FhWGhFTl8zOGxWNnJsRXBHNEZTTmROQWVMaGgwTFl3?oc=5",
       "fetched_at": "2026-08-07T20:42:10.067378+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "d63c6b31d4af",
-      "title": "CBI books CDSCO official, pharma MD in bribery for clearance case - The Times of India",
-      "slug": "cbi-books-cdsco-official-pharma-md-in-bribery-for-clearance-case-the-times-of-india",
-      "date": "2026-08-07",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: CBI books CDSCO official, pharma MD in bribery for clearance case - The Times of India\nSource: CDSCO India\nDate: Fri, 07 Aug 2026 18:50:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "CBI books CDSCO official, pharma MD in bribery for clearance case - The Times of India",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZVNlQXB3YzVMcW9BY3JRcXhZWFlURUNlMGZhRjk0RUQtRElyNE13ZDhEWXhzUEoySWpJaVNqV3Z6Rl9ZSHVZcFdFWFN6NUZjZHpNWWJMRzJQd2p0eFdRTW41bHF1OUczRkhKOXFTSkFuYnJGSUtJalRHcXRTUFZuT0tFU1ktR3FNclBSUWtFQktvNnhfMHBSUkxJczdXWVY4QUV6VklFREdtZnc2SEw1SGVROHlwTC1laGo5dDFlT1liUy1TQThmWFFDcHROVXYwZGNDem9Yd3k2bGhKU0HSAd4BQVVfeXFMTWVTZUFwd2M1THFvQWNyUXF4WVhZVEVDZTBmYUY5NEVELURJcjRNd2Q4RFl4c1BKMklqSWlTald2ekZfWUh1WXBXRVhTejVGY2R6TVliTEcyUHdqdHhXUU1uNWxxdTlHM0ZISjlxU0pBbmJyRklLSWpUR3F0U1BWbk9LRVNZLUdxTXJQUlFrRUJLbzZ4XzBwUlJMSXM3V1lWOEFFelZJRURHbWZ3NkhMNUhlUTh5cEwtZWhqOXQxZU9ZYlMtU0E4ZlhRQ3B0TlV2MGRjQ3pvWHd5NmxoSlNB?oc=5",
-      "fetched_at": "2026-08-07T20:40:09.555386+00:00",
       "is_long_form": false
     }
   ]
