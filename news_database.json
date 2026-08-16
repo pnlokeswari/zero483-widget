@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-16T06:19:14.861672+00:00",
+  "last_updated": "2026-08-16T07:22:05.610008+00:00",
   "total_items": 50,
   "items": [
     {
@@ -19,6 +19,24 @@
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/two-lots-teva-pregabalin-150-mg-capsules-recalled-due-cross-contamination-drug",
       "fetched_at": "2026-08-15T16:12:30.623657+00:00",
       "is_long_form": true
+    },
+    {
+      "id": "03f50c792958",
+      "title": "Aurobindo Pharma subsidiary Eugia receives US FDA warning letter for 2% revenue unit - Sahi",
+      "slug": "aurobindo-pharma-subsidiary-eugia-receives-us-fda-warning-letter-for-2-revenue-unit-sahi",
+      "date": "2026-08-14",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "<p>Eugia Pharma Specialties Limited, a subsidiary of India's Aurobindo Pharma, has received a US FDA warning letter concerning a manufacturing unit. While this facility contributes only 2% of the company's revenue, the letter signals significant regulatory concerns regarding its adherence to good manufacturing practices (GMP).</p>",
+      "compliance_impact": "<ul><li>Potential for import restrictions on products from the affected unit.</li><li>Increased scrutiny and potential reputational impact for the company.</li></ul>",
+      "key_actions": "<ul><li>Eugia must swiftly respond to the FDA outlining comprehensive corrective actions.</li><li>Implement robust quality system improvements at the facility.</li></ul>",
+      "industry_context": "<p>A US FDA warning letter is a serious regulatory action, indicating that the agency has found violations that could impact drug quality and patient safety if not promptly addressed.</p>",
+      "seo_title": "FDA Issues Warning Letter to Aurobindo Subsidiary Eugia Pharma",
+      "seo_description": "Aurobindo Pharma's subsidiary Eugia Pharma received a US FDA warning letter. Understand the implications for drug manufacturing, patient safety, and regulatory compliance.",
+      "primary_company_name": "Eugia Pharma Specialties Limited",
+      "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaGFRaTFveUI5MmZrb3NUUGZnQ0o4SlF0MHZHY2k2Y3BlLWdKOVphOTU3ZHNKcEVfdUl3RzdfQXMwalNXTWJ3eVRRRVlrRUtYaFVZRjNlTW1sZklQekZhVmdSblA0VzdkbHhMQnB5dzBPWVo2c0c1ZDdna0xuOGN4S253ck9Jd3FTMWpMdkRydUlDMW1vWVlZaGgxcmg1VmFuT2ZSME9pM1pZV0Z1RzVhVXhIQXlwVV84NUp2ak5fVQ?oc=5",
+      "fetched_at": "2026-08-16T07:22:03.305710+00:00",
+      "is_long_form": false
     },
     {
       "id": "c5b3fa41ffc9",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/bravo-capsule-delivery-system",
       "fetched_at": "2026-08-12T22:42:09.987003+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "ad412b080794",
-      "title": "Popular blood pressure drug recalled - Cardiovascular Business",
-      "slug": "popular-blood-pressure-drug-recalled-cardiovascular-business",
-      "date": "2026-08-12",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Popular blood pressure drug recalled - Cardiovascular Business\nSource: Google News\nDate: Wed, 12 Aug 2026 14:56:29 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Popular blood pressure drug recalled - Cardiovascular Business",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNT0l5QTlfMG52c2k3emM1NG5USXVfbnZDZV9QMVI0WXhTalZJWFY5SmlnM0JqZVRtNmhPN1hfZ3RKOGFrOGNLR0dqd2g3WnM3cXNBXzlNVmN2cHhYTnlvXy1mLXl3S1dJLV9yMEdZejJsVUNsZVpHWUQ1WTVjdFA0dTE1TEY4RTVkVDhoZTVSSUk4RF9fSFhOSUlWUC1fa2ppbjZj?oc=5",
-      "fetched_at": "2026-08-12T22:28:09.224064+00:00",
       "is_long_form": false
     }
   ]
