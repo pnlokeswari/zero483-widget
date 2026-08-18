@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-18T11:20:12.870537+00:00",
+  "last_updated": "2026-08-18T12:20:13.352342+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "bbb776f67a7e",
+      "title": "Biocon arm gets supplemental USFDA approval for autoimmune disease drug - BusinessLine",
+      "slug": "biocon-arm-gets-supplemental-usfda-approval-for-autoimmune-disease-drug-businessline",
+      "date": "2026-08-18",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: Biocon arm gets supplemental USFDA approval for autoimmune disease drug - BusinessLine\nSource: Google News\nDate: Tue, 18 Aug 2026 11:33:20 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Biocon arm gets supplemental USFDA approval for autoimmune disease drug - BusinessLine",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOWkw0c1U3ZkNBMHNKWXprRl9IbEM1MWxwcnJXQ2pJdThBMjJZNVA0dnVoUFJzbUt6U0h2NGYtUEN1aVBKVWIxcTllMG5nTV9WbEY3NnJVcVpmcXNDamVBZjVhTVhFNlAzV0tIRDZ1T29fSVAzcGFUZ25ST19XR1lkN3Y3ajEzRWt3UDctbkplZlBXRFIxYTFadzhWTmQ4UnZiNE1BdWNZaU5mamprZWd3WWpDa0R0MGd3bTdQcFhxR3BMMTdGV1RiLUxqM1g5Mld3YjB4cNIB2wFBVV95cUxNMkdEakNEM2tWNV8wc2hmcDg2MTBGSE9OWVhIQnQ3bU85bnhWamd1cTljU19vY014NHVxN0FUSVRGM1hPNzlIVlVUc21lZUJxc1B1VHJWeHJsQ1FDLTJ1dndjMG80eE42UkNfd0FELUNCOTJEUTF6Y1F2dHUyT0hNQW5ZckNRSFFaM1RWQkFHT0pNV3c1Nmp2cHdVZFNsNERadEZOZ2JLMkhZZm5jMlZQN1lRWHBjU3hteFI3NVNJMk1iaV9MN0xHYVFjS2tIWkxBcjZFRTc5eWc3ZFU?oc=5",
+      "fetched_at": "2026-08-18T12:14:09.720582+00:00",
+      "is_long_form": false
+    },
     {
       "id": "027ff416275c",
       "title": "Pila Pharma Gets EMA Approval To Conduct PP-Ct04 Trial - TradingView",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-08-13T00:48:09.364040+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "44327ab7be5a",
-      "title": "Drug Approval: FOSFOMYCIN TROMETHAMINE - NOVITIUM PHARMA",
-      "slug": "drug-approval-fosfomycin-tromethamine-novitium-pharma",
-      "date": "2026-08-12",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Application: ANDA210426\nSponsor: NOVITIUM PHARMA\nProduct: FOSFOMYCIN TROMETHAMINE\nSubmission type: ORIG\nSubmission class: N/A\nStatus: AP\nStatus date: 20260812</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Drug Approval: FOSFOMYCIN TROMETHAMINE - NOVITIUM PHARMA",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210426",
-      "fetched_at": "2026-08-17T20:10:09.859770+00:00",
       "is_long_form": false
     }
   ]
