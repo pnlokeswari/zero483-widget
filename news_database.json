@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-18T02:21:14.217040+00:00",
+  "last_updated": "2026-08-18T03:44:13.659307+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "479fbd2f9a72",
+      "title": "Walmart tomato soup kits recalled over possible listeria contamination - dallasnews.com",
+      "slug": "walmart-tomato-soup-kits-recalled-over-possible-listeria-contamination-dallasnews-com",
+      "date": "2026-08-17",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Walmart tomato soup kits recalled over possible listeria contamination - dallasnews.com\nSource: Google News\nDate: Mon, 17 Aug 2026 21:50:29 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Walmart tomato soup kits recalled over possible listeria contamination - dallasnews.com",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNWJqVnhZN3UxamlZV3g1VVZNOFhnQS15XzZ6eV82cHdaQmluVk13ekRxcW8yQWowVk54RUpUUFpyUGZRM1d0bS1tOURZVEVpVU05aHoxYTJ6VDJuUHA1YXhOMFZ4X3NhS3dPemozSTQ0cmhYTzA3QnN5OVJHcEtiLVdIeTlfVkxBcFg2NTZBMUlBVjctcnVORTczc1hMSmcx?oc=5",
+      "fetched_at": "2026-08-18T03:32:09.711365+00:00",
+      "is_long_form": false
+    },
     {
       "id": "29047dac49ae",
       "title": "Cook Medical Hemospray Kit",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQaURSYmZsUmVZM19ZUzlteDF5bVU5YXBkNzJGRk5tbHg3bFVwaktJV2tXUmNhNmlkRG5WYWtReWZjTW9RTml2UFozbFF1SXhxNm9sS1BJZ0pXUE41VkhqV2hSZU5oWGxZQlR1UGEyM0dPdTdQVDA2NEUtS3V0ZEpITVl3ZHdHUGY1VzlaV2lJbVF1OWpCaFozRWVmVTRRZlVLX3hjOEQzNUJLU3Y3ZzF0UnNxMnhyUTFk?oc=5",
       "fetched_at": "2026-08-15T03:44:10.003604+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "73e19de43a32",
-      "title": "Experts Flag Potential Safety Concerns in New Prader-Willi Drug - MedPage Today",
-      "slug": "experts-flag-potential-safety-concerns-in-new-prader-willi-drug-medpage-today",
-      "date": "2026-08-12",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "<p>Title: Experts Flag Potential Safety Concerns in New Prader-Willi Drug - MedPage Today\nSource: Google News\nDate: Wed, 12 Aug 2026 21:28:33 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Experts Flag Potential Safety Concerns in New Prader-Willi Drug - MedPage Today",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9mSGJHTHExdWNUTHY2TmJ5bWdFdmJQUF9RWjByV1J5VTNvNkl4RjZMTWNHeUxuUzVEX1NPTTZmNGhOTnBtU2taQTI1eEhUSk4zVDlaOUVremVKTXF5NjZ1bS1uNTNscVZ3V05hcWxWd1hUMlk?oc=5",
-      "fetched_at": "2026-08-15T02:21:10.086321+00:00",
       "is_long_form": false
     }
   ]
