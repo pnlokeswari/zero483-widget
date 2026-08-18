@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-18T04:36:12.352048+00:00",
+  "last_updated": "2026-08-18T05:29:13.135720+00:00",
   "total_items": 50,
   "items": [
     {
@@ -687,6 +687,24 @@
       "is_long_form": false
     },
     {
+      "id": "7f8de1795b58",
+      "title": "Drug Approval: FIDAXOMICIN - SANDOZ",
+      "slug": "drug-approval-fidaxomicin-sandoz",
+      "date": "2026-08-13",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Application: ANDA220465\nSponsor: SANDOZ\nProduct: FIDAXOMICIN\nSubmission type: ORIG\nSubmission class: N/A\nStatus: AP\nStatus date: 20260813</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Drug Approval: FIDAXOMICIN - SANDOZ",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220465",
+      "fetched_at": "2026-08-18T05:19:09.802827+00:00",
+      "is_long_form": false
+    },
+    {
       "id": "b3e4374278ef",
       "title": "FDA issues nationwide recall of popular dog medicine due to glass - NBC 5 Chicago",
       "slug": "fda-issues-nationwide-recall-of-popular-dog-medicine-due-to-glass-nbc-5-chicago",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWDJIUDhKVUtnNGgzUEtvckgwaDh4QkFUWFhCSUYyTTdBQTU1eGg1c19tZDdpNThYRldwQmJyMUYzR05leHM0MVMyWTM0UXVQbmtubzFIVjlTbkxtY3JJSjJLMDhNdWNWTDB3cGlBX0RwcW03REVJenN0Y3lTQWdQUzVSanF3cXlwWHhlcHpUTmRZc1BUY0pDa0JWdEctWUVHUEFodw?oc=5",
       "fetched_at": "2026-08-15T03:46:09.546127+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "e3ad48f67a17",
-      "title": "Deaths reported after treatment with Neurocrine’s approved Prader-Willi drug - BioSpace",
-      "slug": "deaths-reported-after-treatment-with-neurocrine-s-approved-prader-willi-drug-biospace",
-      "date": "2026-08-12",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "<p>Title: Deaths reported after treatment with Neurocrine’s approved Prader-Willi drug - BioSpace\nSource: Google News\nDate: Wed, 12 Aug 2026 15:20:46 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Deaths reported after treatment with Neurocrine’s approved Prader-Willi drug - BioSpace",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQaURSYmZsUmVZM19ZUzlteDF5bVU5YXBkNzJGRk5tbHg3bFVwaktJV2tXUmNhNmlkRG5WYWtReWZjTW9RTml2UFozbFF1SXhxNm9sS1BJZ0pXUE41VkhqV2hSZU5oWGxZQlR1UGEyM0dPdTdQVDA2NEUtS3V0ZEpITVl3ZHdHUGY1VzlaV2lJbVF1OWpCaFozRWVmVTRRZlVLX3hjOEQzNUJLU3Y3ZzF0UnNxMnhyUTFk?oc=5",
-      "fetched_at": "2026-08-15T03:44:10.003604+00:00",
       "is_long_form": false
     }
   ]
