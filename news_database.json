@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-19T11:12:12.307241+00:00",
+  "last_updated": "2026-08-19T12:16:13.058166+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "18b129d08ac5",
+      "title": "FDA Alert: 2 Erectile Dysfunction Drugs Recalled Nationwide - The Healthy @Reader's Digest",
+      "slug": "fda-alert-2-erectile-dysfunction-drugs-recalled-nationwide-the-healthy-reader-s-digest",
+      "date": "2026-08-19",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: FDA Alert: 2 Erectile Dysfunction Drugs Recalled Nationwide - The Healthy @Reader's Digest\nSource: Google News\nDate: Wed, 19 Aug 2026 04:02:46 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "FDA Alert: 2 Erectile Dysfunction Drugs Recalled Nationwide - The Healthy @Reader's Digest",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNFpWQ2Jramt5R21jZEw3SGdZRXBGd0EyU3dTQzNKbHZtWVdreTVmTm14YUVkVm5XS01XUGhCX1c3OG5xdk9RSkF1MnNRTUdkX0t2SDZnMi03SHFMaXBPMloxbU4wQnBnNFdsOUJOS2R1NG5nSmFXNGRGS2dEcVJ6RXRuZw?oc=5",
+      "fetched_at": "2026-08-19T12:08:10.271918+00:00",
+      "is_long_form": false
+    },
     {
       "id": "513fb37a8a85",
       "title": "FDA intensifies crackdown on unapproved medicine adverts online - CitiNewsroom.com",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220465",
       "fetched_at": "2026-08-18T05:19:09.802827+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "b3e4374278ef",
-      "title": "FDA issues nationwide recall of popular dog medicine due to glass - NBC 5 Chicago",
-      "slug": "fda-issues-nationwide-recall-of-popular-dog-medicine-due-to-glass-nbc-5-chicago",
-      "date": "2026-08-13",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: FDA issues nationwide recall of popular dog medicine due to glass - NBC 5 Chicago\nSource: Google News\nDate: Thu, 13 Aug 2026 16:10:47 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "FDA issues nationwide recall of popular dog medicine due to glass - NBC 5 Chicago",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdmRlaUpFT181LW94S0xoaDJzTFBUX2gtMGJrb3lxa21kWkdTdzZ0WDlBYklYbFNGRFRwM0tTa3lMeFVKNEZBQm03anFManNvczFlVHZlRXg4eFl1dHlWakIyQnNfaXlxVGhZelIyc3FCOWIxNWFCSmFocGlYOEZUOEVnNXZ1WXpteWktVlJzblNCdVBGdTFmZmlsbVdlMlhBNEdNR9IBrAFBVV95cUxPUERZQTBOTEFoZzF3dllpSmE4cThvN0FWYWpsWktMR3JHVC1HaEI3T21PZks4UUtJSkJJZ2xBWnRUbDBsM3YwaDVIMWVDNW1YdTBkbDdra25CdW1zelRBaWx4YVNRRC1Pcy1PeGhXNzlxSlpXZVEtbFUtZmJ0WlRZdkdDRjJaS25JQW9Db09jU1NpYXAzTEVPV3lYX0wycFlkV09NV0VZVVNQTUwy?oc=5",
-      "fetched_at": "2026-08-15T03:28:10.117257+00:00",
       "is_long_form": false
     }
   ]
