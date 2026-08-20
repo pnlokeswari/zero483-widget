@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-20T05:38:09.412982+00:00",
+  "last_updated": "2026-08-20T06:22:12.936685+00:00",
   "total_items": 50,
   "items": [
     {
@@ -72,6 +72,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaGhRMHJOQUVIS2lnZm1UcVhaR2xiSnIydnJaSkQwM2haR0luT0lEcXhnT05mRGZvTHlfSExWaG14b2U0clVhZjIxX2pQV2dTNHR6UXFTWEtIeWRLb2Y3SlZvdTdxTGlxVDFlUU1KYnZyTm5KcTQ1Z0J1UHYwc2xrZUNWdGdIMDFBdnEza0dNTGswQlNDMzdJclhiSHVXb19WN3NsNFlaYzFhaWc4WW1QQTV1eC1FUE5BMDVobml2LXVlVGs?oc=5",
       "fetched_at": "2026-08-20T04:32:09.790816+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "79dd73075fb3",
+      "title": "Ultragenyx's gene therapy wins first FDA approval for rare metabolic disorder - Reuters",
+      "slug": "ultragenyx-s-gene-therapy-wins-first-fda-approval-for-rare-metabolic-disorder-reuters",
+      "date": "2026-08-19",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: Ultragenyx's gene therapy wins first FDA approval for rare metabolic disorder - Reuters\nSource: Google News\nDate: Wed, 19 Aug 2026 22:36:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Ultragenyx's gene therapy wins first FDA approval for rare metabolic disorder - Reuters",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRFJWek5pTm92Nm0xVUNQWWlNRDZZaVktb1JBOHhCSlEzOEJoUXZBakRwSF9TeXpualljSVR6RThqeEFOQ29yYzZ5NTYwQmdSQlVYSTFOdWNfZm1yT1VGMldWR0xzaDVsQzVGS3YxZjBUVFQyMEt1aDJlQ000WG1rZGVJTmpaNnRocmh5RFBvYjI1ek5XRkNxczM2WjZGckVTQ01henNGdWJSVHhZTGxIcXJsa0k4bGZ0UWtNbVdNRlhMQlliQ0dRWE9qU1VURWwxTlhfaFdR?oc=5",
+      "fetched_at": "2026-08-20T06:16:09.636067+00:00",
       "is_long_form": false
     },
     {
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-08-14T17:45:45.661405+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "37ae34be7d31",
-      "title": "Egg Recall Update: FDA Issues Highest Risk Warning for Millions of Eggs - Newsweek",
-      "slug": "egg-recall-update-fda-issues-highest-risk-warning-for-millions-of-eggs-newsweek",
-      "date": "2026-08-14",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Egg Recall Update: FDA Issues Highest Risk Warning for Millions of Eggs - Newsweek\nSource: Google News\nDate: Fri, 14 Aug 2026 10:37:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Egg Recall Update: FDA Issues Highest Risk Warning for Millions of Eggs - Newsweek",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNGtPTVE2SWl4V296WGVxNUtUcGgzTGRSTE5sb1ZkWHV5RUFid19IOWw1WWVBQ2lpWF9iZ2FrdWpnd2RNYnRNYkxiM25OdTRkXzlPNmF3Wm5xQno1ejFyS1hVaGtSRENKb0dvb1lTYVJrdWtuYlRGSjkxUzRUeW9GX1J1eVhfQnRhMlVJeVRabW9NZ2VQV2R4d254S2UweVZjYVFCMXJB?oc=5",
-      "fetched_at": "2026-08-14T17:45:10.157652+00:00",
       "is_long_form": false
     }
   ]
