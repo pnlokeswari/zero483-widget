@@ -4,8 +4,18 @@
     <title>Zero483 FDA Pharma Alerts</title>
     <description>Live tracker for FDA drug recalls, warning letters, and guidance.</description>
     <link>https://www.zero483.com/USFDA-news</link>
-    <lastBuildDate>Thu, 20 Aug 2026 16:20:12 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 17:23:11 GMT</lastBuildDate>
 
+    <item>
+      <title>IMRIS Table ORT 300</title>
+      <description>&lt;p&gt;Title: IMRIS Table ORT 300
+Source: Health Canada
+Date: 2026-08-20T12:00:00&lt;/p&gt;</description>
+      <link>https://www.zero483.com/USFDA-news?q=IMRIS%20Table%20ORT%20300</link>
+      <guid>https://www.zero483.com/USFDA-news?q=IMRIS%20Table%20ORT%20300</guid>
+      <category>Recall</category>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Patient Information Centre iX</title>
       <description>&lt;p&gt;Title: Patient Information Centre iX
@@ -496,14 +506,6 @@ Date: Mon, 17 Aug 2026 14:33:19 GMT&lt;/p&gt;</description>
       <guid>https://www.zero483.com/USFDA-news?q=Lupin%20Gets%20US%20FDA%20Approval%20For%20Pitolisant%20Tablets%20-%20Sahi</guid>
       <category>Drug Approval</category>
       <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Two lots of Teva-Pregabalin 150 mg capsules recalled due to cross-contamination with the drug sertraline</title>
-      <description>&lt;p&gt;&lt;b&gt;Featured Article&lt;/b&gt; on Zero483. A significant safety alert has been issued concerning two specific lots of Teva-Pregabalin 150 mg capsules, a medication widely prescribed for various neurological conditions. The regulatory body, Health Canada, recently announced a recall for these lots due to a critical manufacturing error: cross-contamination with sertraline, an antidepressant. This revelation underscores the paramount importance of stringent quality control in pharmaceutical manufacturing and raises immediate concerns for patient safety and the integrity of the drug supply.&lt;/p&gt;&lt;p&gt;Pregabalin, marketed under brand names such as Lyrica, is a crucial medication primarily used to manage neuropathic pain (nerve pain), partial-onset seizures in epilepsy, and generalized anxiety disorder. It works by calming overactive nerve cells, providing relief from chronic, often debilitating symptoms. Sertraline, on the other hand, is a selective serotonin reuptake inhibitor (SSRI) known by its brand name Zoloft, prescribed to treat depression, obsessive-compulsive disorder (OCD), panic disorder, and social anxiety disorder. While both are central nervous system medications, their pharmacological actions and indications are distinct, and their unintended co-administration can lead to unpredictable and potentially harmful effects.&lt;/p&gt;&lt;p&gt;The cross-contamination means that some capsules intended to contain only pregabalin may also contain sertraline, or vice versa, at unintended levels. For patients taking pregabalin, an unexpected dose of sertraline could trigger a range of adverse reactions, including nausea, dizziness, insomnia, agitation, or even more serious issues like serotonin syndrome, especially if they are already on other serotonergic drugs. Conversely, for individuals who might be sensitive to sertraline, or those who should avoid it due to contraindications (e.g., certain heart conditions, interactions with other medications), ingesting it unknowingly poses a substantial health risk. The recall is a proactive measure to prevent potential harm to patients, highlighting a breakdown in the manufacturing process that allowed an active pharmaceutical ingredient (API) from one drug to mix with another.&lt;/p&gt;&lt;p&gt;This incident serves as a stark reminder of the complexities involved in drug production and the absolute necessity for robust Good Manufacturing Practices (GMP). While the specific recall was announced by Health Canada, the underlying principles of quality control and patient safety are universal, aligning directly with the stringent expectations of the US FDA and global regulatory bodies. Manufacturers are expected to have sophisticated systems in place to prevent such cross-contamination, ensuring that each dose delivers only the intended therapeutic agent in its pure form. Teva, a major global pharmaceutical company, is now tasked with investigating the root cause and reinforcing its quality systems to prevent future occurrences, restoring confidence in its product line.&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Two%20lots%20of%20Teva-Pregabalin%20150%20mg%20capsules%20recalled%20due%20to%20cross-contamination%20with%20the%20drug%20sertraline</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Two%20lots%20of%20Teva-Pregabalin%20150%20mg%20capsules%20recalled%20due%20to%20cross-contamination%20with%20the%20drug%20sertraline</guid>
-      <category>Recall</category>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
