@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-20T10:22:13.731153+00:00",
+  "last_updated": "2026-08-20T11:23:11.083815+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "bea46751b5e3",
+      "title": "EMA recommends approval for biosimilar pegfilgrastim Cavoley - Generics and Biosimilars Initiative",
+      "slug": "ema-recommends-approval-for-biosimilar-pegfilgrastim-cavoley-generics-and-biosimilars-initiative",
+      "date": "2026-08-20",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: EMA recommends approval for biosimilar pegfilgrastim Cavoley - Generics and Biosimilars Initiative\nSource: European Medicines Agency\nDate: Thu, 20 Aug 2026 10:38:49 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "EMA recommends approval for biosimilar pegfilgrastim Cavoley - Generics and Biosimilars Initiative",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSTltWkN1aWZ5MmExUlVaMTRMejlUbURubmJ1M09HR2ZMeWdvTGdpQzlpZjJpU1ZDaEpOUzBxU3lTMUhMUGtsSmFMSlNqbERIMnAxTE1mOEtGS2Y5YWx3bUJVREJoWUtDdVNCRjNnMGxnUk1jNW0wbExyTHhnbkxsWVlqT28zYUJvTmU3ZDBnV0VPMHpFNUJINUNrMnF1S18yMFE?oc=5",
+      "fetched_at": "2026-08-20T11:23:10.159268+00:00",
+      "is_long_form": false
+    },
     {
       "id": "46aa8efbae52",
       "title": "Bayer (XTRA:BAYN) Stock May Be Undervalued As Canada Drug Approval Expands - Yahoo Finance",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVk0wcG9NVGxvZEdNNlJ6ZGNVRWZHbHNOSFBwTFc4eTlHZVZPeU1seEU2d1NOUndwU0V0TXVubk9NYUw1VVhQUDNCeFVMclpfaGtqTVhKMHhIVU4xeXFrTWZkUFB2ZzM2a2RSQ3NBbEktLTZQNnZpU0c0T1E4aHpubVdtMzk2b1A5eGJyVGlwbnFaYkFsTjN6V0FfVEd6eWNnZjR0ZA?oc=5",
       "fetched_at": "2026-08-14T19:55:09.286044+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "b6a90e544bab",
-      "title": "FDA gives recall of 19 million eggs its highest risk classification - Houston Chronicle",
-      "slug": "fda-gives-recall-of-19-million-eggs-its-highest-risk-classification-houston-chronicle",
-      "date": "2026-08-14",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>The U.S. FDA has issued its most serious classification, a Class I recall, for approximately 19 million eggs. This high-risk alert signals a reasonable probability of serious adverse health consequences or even death, typically linked to contamination like Salmonella, a severe foodborne illness.</p>",
-      "compliance_impact": "<ul><li>Increased scrutiny on food safety protocols and supply chain integrity.</li><li>Potential for significant financial and reputational damage to producers.</li></ul>",
-      "key_actions": "<ul><li>Consumers should check egg labels and discard recalled products immediately.</li><li>Industry must reinforce stringent HACCP and sanitation measures to prevent future incidents.</li></ul>",
-      "industry_context": "<p>This large-scale Class I recall highlights the critical importance of robust food safety practices across the agricultural supply chain to protect public health from widespread contamination risks.</p>",
-      "seo_title": "FDA Issues Urgent Class I Recall for 19 Million Eggs: Public Health Alert",
-      "seo_description": "The FDA has classified a recall of 19 million eggs as Class I, indicating serious health risks. Learn about Salmonella dangers and what this means for consumers.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMlZpN21iaTBFNUQyVnI0MzlrVl9NWTNoczExMExBbXNqWjU3YmxlRkU4QkYxaGcycXNHdmV0aVpMN095RXNUdWhfWWkteFAxbXdndHhjSy1YcmVCNTdRUmMyNzNJT2wzazFDVlZRRjdyMmxaSjZvQ1hBU2preVI1NEpGdndXWHNMT2QyZlNWYUJTR2RTRGVMbGxHUTl6X25XLThYa1hONnZVRUNLVnc?oc=5",
-      "fetched_at": "2026-08-14T19:39:22.800402+00:00",
       "is_long_form": false
     }
   ]
