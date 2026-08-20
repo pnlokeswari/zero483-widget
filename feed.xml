@@ -4,8 +4,18 @@
     <title>Zero483 FDA Pharma Alerts</title>
     <description>Live tracker for FDA drug recalls, warning letters, and guidance.</description>
     <link>https://www.zero483.com/USFDA-news</link>
-    <lastBuildDate>Thu, 20 Aug 2026 18:20:13 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 19:37:11 GMT</lastBuildDate>
 
+    <item>
+      <title>Theragun PRO</title>
+      <description>&lt;p&gt;Title: Theragun PRO
+Source: Health Canada
+Date: 2026-08-20T12:00:00&lt;/p&gt;</description>
+      <link>https://www.zero483.com/USFDA-news?q=Theragun%20PRO</link>
+      <guid>https://www.zero483.com/USFDA-news?q=Theragun%20PRO</guid>
+      <category>Recall</category>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Frozen blueberries recall categorized under FDA’s highest Class I risk level - The Hill</title>
       <description>&lt;p&gt;Title: Frozen blueberries recall categorized under FDA’s highest Class I risk level - The Hill
@@ -491,16 +501,6 @@ Date: Mon, 17 Aug 2026 04:58:36 GMT&lt;/p&gt;</description>
       <link>https://www.zero483.com/USFDA-news?q=CDSCO%20directs%20action%20against%20unapproved%20Enclomiphene%20drug%20products%20-%20Express%20Pharma</link>
       <guid>https://www.zero483.com/USFDA-news?q=CDSCO%20directs%20action%20against%20unapproved%20Enclomiphene%20drug%20products%20-%20Express%20Pharma</guid>
       <category>Drug Approval</category>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>FDA Finalizes Guidance for Assessing Human Health Risks of Antimicrobial Use in Food-Producing Animals - Food Safety Mag</title>
-      <description>&lt;p&gt;Title: FDA Finalizes Guidance for Assessing Human Health Risks of Antimicrobial Use in Food-Producing Animals - Food Safety Magazine
-Source: Google News
-Date: Mon, 17 Aug 2026 14:33:19 GMT&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=FDA%20Finalizes%20Guidance%20for%20Assessing%20Human%20Health%20Risks%20of%20Antimicrobial%20Use%20in%20Food-Producing%20Animals%20-%20Food%20Safety%20Mag</link>
-      <guid>https://www.zero483.com/USFDA-news?q=FDA%20Finalizes%20Guidance%20for%20Assessing%20Human%20Health%20Risks%20of%20Antimicrobial%20Use%20in%20Food-Producing%20Animals%20-%20Food%20Safety%20Mag</guid>
-      <category>Guidance</category>
       <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>

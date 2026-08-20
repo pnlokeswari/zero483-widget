@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-20T18:20:13.287325+00:00",
+  "last_updated": "2026-08-20T19:37:11.314007+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "04e977c7eff5",
+      "title": "Theragun PRO",
+      "slug": "theragun-pro",
+      "date": "2026-08-20",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Theragun PRO\nSource: Health Canada\nDate: 2026-08-20T12:00:00</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Theragun PRO",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/theragun-pro",
+      "fetched_at": "2026-08-20T19:37:09.823687+00:00",
+      "is_long_form": false
+    },
     {
       "id": "01d7ab3d3de6",
       "title": "Frozen blueberries recall categorized under FDA’s highest Class I risk level - The Hill",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVVVqMEVuYVo1cWdtaHJMU19CUDdTRnlES0JBNDZuSjdDVS02M0J0UTdZdHN5Qnd4SXQ1LXJVb0RNWGFfREdGR2hCX09INFJtMDdtamtEbVlXTEJLWktXRTZud1NTTFVlV1BoSkFiUFlCUVMyUDRYeUJZX0VReXdwRUYtRmVuNGFpTGo0SnJoaUZUa1V3Q1B0VzFWZWI?oc=5",
       "fetched_at": "2026-08-17T15:20:09.915250+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "30bda2a62bc5",
-      "title": "FDA Finalizes Guidance for Assessing Human Health Risks of Antimicrobial Use in Food-Producing Animals - Food Safety Mag",
-      "slug": "fda-finalizes-guidance-for-assessing-human-health-risks-of-antimicrobial-use-in-food-producing-animals-food-safety-mag",
-      "date": "2026-08-17",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: FDA Finalizes Guidance for Assessing Human Health Risks of Antimicrobial Use in Food-Producing Animals - Food Safety Magazine\nSource: Google News\nDate: Mon, 17 Aug 2026 14:33:19 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "FDA Finalizes Guidance for Assessing Human Health Risks of Antimicrobial Use in Food-Producing Animals - Food Safety Mag",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPdGk3ZnFFMW1RTDVCOGdXajdMcW1Gb3k5ZFZRQndQOFRwVzZJQ0dsQ3pwX0JrRW5MUEUxLWlMQnNpeTl1NjhzUXB0ZFVvMndZSk1rbkNfNzFNa2l5VlVzckJISkpodk5WQ0RCeWRPMVJkZVYzMnlFY1RrSm9RZGs4UXgzNjI2OUtfd3hhaGI1UV95VUdNSnBzN0ZCRlZxZzhyNGFzam5EUnM1LVNYQlJhNnNEZ2VkazlkR0lxdWpPVUloZTBDX2pydzQ2XzE3c3pRbFBEMGFhNG52UHZzdGc?oc=5",
-      "fetched_at": "2026-08-17T15:18:09.675769+00:00",
       "is_long_form": false
     }
   ]
