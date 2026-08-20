@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-20T12:19:13.483760+00:00",
+  "last_updated": "2026-08-20T13:53:11.529260+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "f9332725a0fc",
+      "title": "FDA raises risk level to highest tier for recall of frozen berries sold at Publix - voz.us",
+      "slug": "fda-raises-risk-level-to-highest-tier-for-recall-of-frozen-berries-sold-at-publix-voz-us",
+      "date": "2026-08-20",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: FDA raises risk level to highest tier for recall of frozen berries sold at Publix - voz.us\nSource: Google News\nDate: Thu, 20 Aug 2026 12:47:44 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "FDA raises risk level to highest tier for recall of frozen berries sold at Publix - voz.us",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOV21UY2k5blNleC15emlCeVBzQXNSenRxd00tWllEaDFlazFJVmdpQS02a3AyX0JGd3lZV2xFVHdza19uVG9yR2RNalY3aDA4dTd4X2pZbmZsd0RLdHlwNEM2NW5xeW40SDRlRW1mRGluekFyall5bTV0c05hVUp4Q2JxSG1sOUtGRlpRemVldjgyTHZBMThQejQtRHZfQkY2MlVsYlFIX3VtOHo4OWFqQVlqeEwtRzZPWFcyS1hTbGVZYXM?oc=5",
+      "fetched_at": "2026-08-20T13:39:09.907223+00:00",
+      "is_long_form": false
+    },
     {
       "id": "bea46751b5e3",
       "title": "EMA recommends approval for biosimilar pegfilgrastim Cavoley - Generics and Biosimilars Initiative",
@@ -597,6 +615,24 @@
       "is_long_form": false
     },
     {
+      "id": "1078cd539c37",
+      "title": "FDA Finalizes Fresh Cut Produce Safety Guidance After a Summer of Outbreaks but Stops Short of Binding Rules - Medical D",
+      "slug": "fda-finalizes-fresh-cut-produce-safety-guidance-after-a-summer-of-outbreaks-but-stops-short-of-binding-rules-medical-d",
+      "date": "2026-08-17",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: FDA Finalizes Fresh Cut Produce Safety Guidance After a Summer of Outbreaks but Stops Short of Binding Rules - Medical Daily\nSource: Google News\nDate: Mon, 17 Aug 2026 16:00:13 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "FDA Finalizes Fresh Cut Produce Safety Guidance After a Summer of Outbreaks but Stops Short of Binding Rules - Medical D",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOR0NiWGI0M2J6QUJEX1ZnZWU5MDlLWDlRRl85UDMzYWNIaHJsb2dGRmF5LW02WkxBLTB3T2UzVzhfRy05NlVveE81dnNLU0c4eHR4NXRmbmduMXlqWXFiMFR5UzdjUkN1U0ZHQ0YyN2cxNENveXl3bi0yd0FndC0tS0xiNnlxQ2lUcHFObTAyc05icUoxb2ZRU094WFdxNHVZUTZN?oc=5",
+      "fetched_at": "2026-08-20T13:53:09.244284+00:00",
+      "is_long_form": false
+    },
+    {
       "id": "469577dc8e60",
       "title": "Granola sold nationwide recalled. See affected product - USA Today",
       "slug": "granola-sold-nationwide-recalled-see-affected-product-usa-today",
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPZFpRRy1UNktEVUhpNVBDcjlFeE1KWUFlX28zZ1cyLW9FU3RRRVY5VmZ4U1NIa05sZjdEZ0s3bFpUakNZbUstbkdFUUk4dnBLZUZYc2xaanVNLXRLS2NSWFBsdXdYZU83NzM2b2xSaXg3SjVoZmM1VmdrVDlTeUVxV29tSFI5NElyZm9uU29OMXgzeHBfSW5tOGZ5QlJTSHVacURBQ3FNcmtFN25WUkV3STJSWFc3VkZpVmttU1doSERFcnd4QldCV3Y3VHltVS05bTNsVFlkQk82T1luVG8tMw?oc=5",
       "fetched_at": "2026-08-15T02:13:10.190951+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "addfd6a37351",
-      "title": "Drug Shortage: Furosemide Oral Solution",
-      "slug": "drug-shortage-furosemide-oral-solution",
-      "date": "2026-08-14",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>The FDA has confirmed a current shortage of Furosemide Oral Solution, a vital 'water pill' (diuretic) managing fluid retention from conditions like heart failure. This liquid form is crucial for patients, especially children or those with swallowing difficulties, impacting continuous care.</p>",
-      "compliance_impact": "<ul><li>Pharmacies must manage limited supplies carefully.</li><li>Providers need to explore suitable treatment alternatives.</li></ul>",
-      "key_actions": "<ul><li>Patients should consult their doctor or pharmacist.</li><li>Facilities must monitor supply updates closely.</li></ul>",
-      "industry_context": "<p>Shortages of essential medications like diuretics significantly disrupt patient treatment and challenge healthcare providers in ensuring continuous care.</p>",
-      "seo_title": "FDA Alert: Furosemide Oral Solution Shortage Impacts Patient Care",
-      "seo_description": "The FDA has reported a Furosemide Oral Solution shortage. Understand the impact on patients needing this vital diuretic for fluid retention and what steps to take.",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
-      "fetched_at": "2026-08-14T20:17:39.585500+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "7b14d96cddeb",
-      "title": "EMA Begins Review of Pfizer-Valneva Lyme Disease Vaccine - contractpharma.com",
-      "slug": "ema-begins-review-of-pfizer-valneva-lyme-disease-vaccine-contractpharma-com",
-      "date": "2026-08-14",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: EMA Begins Review of Pfizer-Valneva Lyme Disease Vaccine - contractpharma.com\nSource: European Medicines Agency\nDate: Fri, 14 Aug 2026 12:41:45 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "EMA Begins Review of Pfizer-Valneva Lyme Disease Vaccine - contractpharma.com",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVk0wcG9NVGxvZEdNNlJ6ZGNVRWZHbHNOSFBwTFc4eTlHZVZPeU1seEU2d1NOUndwU0V0TXVubk9NYUw1VVhQUDNCeFVMclpfaGtqTVhKMHhIVU4xeXFrTWZkUFB2ZzM2a2RSQ3NBbEktLTZQNnZpU0c0T1E4aHpubVdtMzk2b1A5eGJyVGlwbnFaYkFsTjN6V0FfVEd6eWNnZjR0ZA?oc=5",
-      "fetched_at": "2026-08-14T19:55:09.286044+00:00",
       "is_long_form": false
     }
   ]
