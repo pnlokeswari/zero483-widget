@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-20T20:14:13.236321+00:00",
+  "last_updated": "2026-08-20T21:23:11.235211+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "23fb36c13f69",
+      "title": "Centricity™ Enterprise Archive and PACS Workstation",
+      "slug": "centricity-enterprise-archive-and-pacs-workstation",
+      "date": "2026-08-20",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Centricity™ Enterprise Archive and PACS Workstation\nSource: Health Canada\nDate: 2026-08-20T12:00:00</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Centricity™ Enterprise Archive and PACS Workstation",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/centricitytm-enterprise-archive-and-pacs-workstation",
+      "fetched_at": "2026-08-20T21:23:09.639518+00:00",
+      "is_long_form": false
+    },
     {
       "id": "04e977c7eff5",
       "title": "Theragun PRO",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYXRTRHA3ZnhpbTZMT1psaTYtaXB1dVYwNjJGZ2M1VDNBWGx2OHk3Y0xERC1fZDUxLTI0bV9xOV9JNUZoN0wtQkRjek5IOFo4dDExRDlDN0dtVS10VklBM01IengwODRiVk9mUXJXVEpwY3l5c09wNHFuc0VIbGZiTkk1YURkblVIRUJlaFU0dEVoWkNBdnlxUURFVnhUYlg2UUww?oc=5",
       "fetched_at": "2026-08-17T16:09:09.711137+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "13b42cff6bec",
-      "title": "CDSCO directs action against unapproved Enclomiphene drug products - Express Pharma",
-      "slug": "cdsco-directs-action-against-unapproved-enclomiphene-drug-products-express-pharma",
-      "date": "2026-08-17",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: CDSCO directs action against unapproved Enclomiphene drug products - Express Pharma\nSource: CDSCO India\nDate: Mon, 17 Aug 2026 04:58:36 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "CDSCO directs action against unapproved Enclomiphene drug products - Express Pharma",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVVVqMEVuYVo1cWdtaHJMU19CUDdTRnlES0JBNDZuSjdDVS02M0J0UTdZdHN5Qnd4SXQ1LXJVb0RNWGFfREdGR2hCX09INFJtMDdtamtEbVlXTEJLWktXRTZud1NTTFVlV1BoSkFiUFlCUVMyUDRYeUJZX0VReXdwRUYtRmVuNGFpTGo0SnJoaUZUa1V3Q1B0VzFWZWI?oc=5",
-      "fetched_at": "2026-08-17T15:20:09.915250+00:00",
       "is_long_form": false
     }
   ]
