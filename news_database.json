@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-21T13:47:12.278185+00:00",
+  "last_updated": "2026-08-21T14:37:10.680908+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "cdaf52842b74",
+      "title": "ForeSight™ Oximeter Cable",
+      "slug": "foresight-oximeter-cable",
+      "date": "2026-08-21",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: ForeSight™ Oximeter Cable\nSource: Health Canada\nDate: 2026-08-21T12:00:00</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "ForeSight™ Oximeter Cable",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/foresighttm-oximeter-cable",
+      "fetched_at": "2026-08-21T14:37:09.400289+00:00",
+      "is_long_form": false
+    },
     {
       "id": "b74aed9dee52",
       "title": "Aurobindo Pharma’s Auropeptides US FDA Inspection Ends With One Finding - Sahi",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNWJqVnhZN3UxamlZV3g1VVZNOFhnQS15XzZ6eV82cHdaQmluVk13ekRxcW8yQWowVk54RUpUUFpyUGZRM1d0bS1tOURZVEVpVU05aHoxYTJ6VDJuUHA1YXhOMFZ4X3NhS3dPemozSTQ0cmhYTzA3QnN5OVJHcEtiLVdIeTlfVkxBcFg2NTZBMUlBVjctcnVORTczc1hMSmcx?oc=5",
       "fetched_at": "2026-08-18T03:32:09.711365+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "29047dac49ae",
-      "title": "Cook Medical Hemospray Kit",
-      "slug": "cook-medical-hemospray-kit",
-      "date": "2026-08-17",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Cook Medical Hemospray Kit\nSource: Health Canada\nDate: 2026-08-17T12:00:00</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Cook Medical Hemospray Kit",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/cook-medical-hemospray-kit",
-      "fetched_at": "2026-08-17T20:18:10.203819+00:00",
       "is_long_form": false
     }
   ]
