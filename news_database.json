@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-21T11:18:38.130879+00:00",
+  "last_updated": "2026-08-21T12:21:11.181512+00:00",
   "total_items": 50,
   "items": [
     {
@@ -18,6 +18,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0xYU0wVHVabzVkV0dsaU1YWkF0Zm9RTDdfTVp0dVEwWFpYb19zanlja0VITXpGWFJ6UFBsTlhkRFJlclVIZ3MyM1YzY2Vwc0E3NENMMlR2SQ?oc=5",
       "fetched_at": "2026-08-21T03:42:33.579679+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "f2aaadeb1717",
+      "title": "Rare disease drug recalled in Ireland after EMA review - RTE.ie",
+      "slug": "rare-disease-drug-recalled-in-ireland-after-ema-review-rte-ie",
+      "date": "2026-08-20",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Rare disease drug recalled in Ireland after EMA review - RTE.ie\nSource: European Medicines Agency\nDate: Thu, 20 Aug 2026 18:13:06 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Rare disease drug recalled in Ireland after EMA review - RTE.ie",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9qNWxMNVJxQ0wxcS1NQW1takFYZHlfX2xwQzhCTU1RSUZBNU80OU5IdjZ4ZWY3VzFBT1AtdWJiRGwwbEJPdXkyRWVES1RnQ2xYdTZoRGlILVVyajFYbW5wSWlSMWZoUmpBTjdwZUpR?oc=5",
+      "fetched_at": "2026-08-21T12:21:09.471007+00:00",
       "is_long_form": false
     },
     {
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/lactated-ringer-s-injection-usp-presence-particulate-matter",
       "fetched_at": "2026-08-17T19:35:09.879953+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "60b149b5eba6",
-      "title": "FDA issues draft guidance on assessing container and closure systems for drugs and biologics - raps.org",
-      "slug": "fda-issues-draft-guidance-on-assessing-container-and-closure-systems-for-drugs-and-biologics-raps-org",
-      "date": "2026-08-17",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: FDA issues draft guidance on assessing container and closure systems for drugs and biologics - raps.org\nSource: Google News\nDate: Mon, 17 Aug 2026 19:14:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "FDA issues draft guidance on assessing container and closure systems for drugs and biologics - raps.org",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOVkpzR2x4T2djOS10S255RHZGdkR4dnVCekhmU2huemlyNUpaclB0QTF5YVJOU0c3M0Y0UW1sb0tSd1RWZ1Q5cXlHazcwQXZzSDRPRzlsMmNXZGhfdTZPRDlQLXFLandXTUNWTS1KYm5LQjJFazJhVEJrYXZLRGVTQ3dSODNUOW03M1d0LU9vTkNQVy1uNnZnNzBqUFI2bU9lWGZDUWRCbGUzcTQxYktpLWwzLXhDZm1xTXFYa1pUUnVqLUlsOFE?oc=5",
-      "fetched_at": "2026-08-17T19:33:09.222028+00:00",
       "is_long_form": false
     }
   ]
