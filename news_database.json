@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-21T20:18:11.025830+00:00",
+  "last_updated": "2026-08-21T21:20:12.565984+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "51c38e7cb1c2",
+      "title": "Highest FDA recall issued for certain convenience kits by Medline - American Hospital Association",
+      "slug": "highest-fda-recall-issued-for-certain-convenience-kits-by-medline-american-hospital-association",
+      "date": "2026-08-21",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Highest FDA recall issued for certain convenience kits by Medline - American Hospital Association\nSource: Google News\nDate: Fri, 21 Aug 2026 20:30:51 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Highest FDA recall issued for certain convenience kits by Medline - American Hospital Association",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQcmU4cEJFVzhmd2lZdWVXX0ZRMVUwNkFQVlJtblVhX3NLMHM3TTZ6V3RfbGIzWF9IeEE1aXRobjBvN1pES1EtNVNDRVAxREdSQ0txTFY4a3ZEc3Q0R0FRT3BOaGlzaGNWWUduTVo5OUtiY2EzZGZIY2tzZm51OU00N3RDMzFMaWJfTXBEa2RGS1N2TEpRaXRzTnhCUVdFZVEtVHZiUGd3?oc=5",
+      "fetched_at": "2026-08-21T21:07:09.457546+00:00",
+      "is_long_form": false
+    },
     {
       "id": "b1f045fe200c",
       "title": "Aisys™ CS² and Carestation™ ",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNXdlQ3BoMUdZWjd0eEVFbFczalNmZWU1c3B5OVlJNGxaeGlGZjN6OHJDLVFhUHB4bjNqSEhmbnh5RFlsR1RlVFdObEdVV0hqNlZvTmpnR0p1TW1PcG0xYjNOdE9tTWEzeGlEamFVRmxUYW90cTBnaDdBcmxSUEpaR2xJZ00xMjhRbThnMWZUa0lqal9FZ1pLYTNuV2dRSkR3VzZNbWtBemFCRkwzT3BudUVPT0YzRVUzMldBdUY0d1E5MnQxaTFrdlh6SXdJOU5GNllqUDNJZVZDQQ?oc=5",
       "fetched_at": "2026-08-18T18:17:09.288091+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "1cd41777182d",
-      "title": "Drug Shortage: Clonazepam Tablet",
-      "slug": "drug-shortage-clonazepam-tablet",
-      "date": "2026-08-18",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Generic name: Clonazepam Tablet\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Drug Shortage: Clonazepam Tablet",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
-      "fetched_at": "2026-08-18T13:37:09.624901+00:00",
       "is_long_form": false
     }
   ]
