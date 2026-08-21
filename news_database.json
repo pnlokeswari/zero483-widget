@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-21T21:20:12.565984+00:00",
+  "last_updated": "2026-08-21T22:18:13.162995+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "8fbec6f25a36",
+      "title": "FDA upgrades egg recall classification - ABC Columbia",
+      "slug": "fda-upgrades-egg-recall-classification-abc-columbia",
+      "date": "2026-08-21",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: FDA upgrades egg recall classification - ABC Columbia\nSource: Google News\nDate: Fri, 21 Aug 2026 21:40:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "FDA upgrades egg recall classification - ABC Columbia",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQNkt5UmdYbFZxMmJVV0pkcjJ6WTgtQ1RTZmRsV0JBWHM2U2Y2MWZ2a19SX3RfUVByYTRoY3hLdGE4emRXaDRQeTBqQ2NiUHRqV2VnYXVCS0M2TmdtOGUtV1VRZXlHNlJUTldzTHJtUmktMDBRQmZ5aU1WbllwVnM0d0V5Vko?oc=5",
+      "fetched_at": "2026-08-21T22:06:10.096833+00:00",
+      "is_long_form": false
+    },
     {
       "id": "51c38e7cb1c2",
       "title": "Highest FDA recall issued for certain convenience kits by Medline - American Hospital Association",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSlg1SjZiN00tWG1Md1BXQlRXeUpuZDV3UVUzckxQZkFiVThENVV2TDlmcW9hNlQ0bWc2emR1ZWFza0RIdUpaUzFLT0hkTE1IS1dtWU50eVVsOUNiTFpMWEFZS0QyY1R1TTh3SG1QLXNZeHRUUUlha3RWb1VSMGc1LVV0cTlZa2ZUdkpDVW90Z0h1VktaQjlQSTFUMWdQcFBqbVlIYXppTU1KWTFxOXc?oc=5",
       "fetched_at": "2026-08-18T19:34:09.892783+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "a8d7d9684a59",
-      "title": "Recon: FDA releases draft guidance on gen AI-enabled devices; Industry warns Germany must reform drug pricing - RAPS",
-      "slug": "recon-fda-releases-draft-guidance-on-gen-ai-enabled-devices-industry-warns-germany-must-reform-drug-pricing-raps",
-      "date": "2026-08-18",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: Recon: FDA releases draft guidance on gen AI-enabled devices; Industry warns Germany must reform drug pricing - RAPS\nSource: Google News\nDate: Tue, 18 Aug 2026 17:18:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Recon: FDA releases draft guidance on gen AI-enabled devices; Industry warns Germany must reform drug pricing - RAPS",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNXdlQ3BoMUdZWjd0eEVFbFczalNmZWU1c3B5OVlJNGxaeGlGZjN6OHJDLVFhUHB4bjNqSEhmbnh5RFlsR1RlVFdObEdVV0hqNlZvTmpnR0p1TW1PcG0xYjNOdE9tTWEzeGlEamFVRmxUYW90cTBnaDdBcmxSUEpaR2xJZ00xMjhRbThnMWZUa0lqal9FZ1pLYTNuV2dRSkR3VzZNbWtBemFCRkwzT3BudUVPT0YzRVUzMldBdUY0d1E5MnQxaTFrdlh6SXdJOU5GNllqUDNJZVZDQQ?oc=5",
-      "fetched_at": "2026-08-18T18:17:09.288091+00:00",
       "is_long_form": false
     }
   ]
