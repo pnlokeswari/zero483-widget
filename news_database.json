@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-21T12:21:11.181512+00:00",
+  "last_updated": "2026-08-21T13:47:12.278185+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "b74aed9dee52",
+      "title": "Aurobindo Pharma’s Auropeptides US FDA Inspection Ends With One Finding - Sahi",
+      "slug": "aurobindo-pharma-s-auropeptides-us-fda-inspection-ends-with-one-finding-sahi",
+      "date": "2026-08-21",
+      "category": "Form 483",
+      "severity": "High",
+      "summary": "<p>Title: Aurobindo Pharma’s Auropeptides US FDA Inspection Ends With One Finding - Sahi\nSource: Google News\nDate: Fri, 21 Aug 2026 12:44:11 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Aurobindo Pharma’s Auropeptides US FDA Inspection Ends With One Finding - Sahi",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUWVLNlJBUHc5UDVDZUFtR2pLMzJGWW1uUnZfMDZzSzk2RTVyNGxralpzVlZlcDdwTU16U19mYklTUWE1WE5CQjZiVFJxT1h1M08wUlpJM0Mza1M4a2Q5b2FacGV3Q054Mmg3NE9UNExYX1hyUzFRcUxCeW85QnZWYmpYSFhycjNJdGVzUmVid2hjdUlBZzV6cWxJSlVkNnJjNldGTG5yVEN4QTFrYXlF?oc=5",
+      "fetched_at": "2026-08-21T13:47:09.424320+00:00",
+      "is_long_form": false
+    },
     {
       "id": "d2fbf4756360",
       "title": "Lazcluze marks two years since landmark FDA approval - 매일경제",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/cook-medical-hemospray-kit",
       "fetched_at": "2026-08-17T20:18:10.203819+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "033af0634f91",
-      "title": "Lactated Ringer's Injection USP: Presence of Particulate Matter",
-      "slug": "lactated-ringer-s-injection-usp-presence-of-particulate-matter",
-      "date": "2026-08-17",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Lactated Ringer's Injection USP: Presence of Particulate Matter\nSource: Health Canada\nDate: 2026-08-17T12:00:00</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Lactated Ringer's Injection USP: Presence of Particulate Matter",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/lactated-ringer-s-injection-usp-presence-particulate-matter",
-      "fetched_at": "2026-08-17T19:35:09.879953+00:00",
       "is_long_form": false
     }
   ]
