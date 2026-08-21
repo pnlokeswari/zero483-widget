@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-21T19:30:09.527505+00:00",
+  "last_updated": "2026-08-21T20:18:11.025830+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "b1f045fe200c",
+      "title": "Aisys™ CS² and Carestation™ ",
+      "slug": "aisys-cs-and-carestation",
+      "date": "2026-08-21",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Aisys™ CS² and Carestation™ \nSource: Health Canada\nDate: 2026-08-21T12:00:00</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Aisys™ CS² and Carestation™ ",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/aisystm-cs2-and-carestationtm",
+      "fetched_at": "2026-08-21T20:18:09.583412+00:00",
+      "is_long_form": false
+    },
     {
       "id": "edcd1cb0e6e1",
       "title": "CDSCO Flags Buprenorphine Injection Batch as Purportedly Spurious, Probe Underway - Medical Dialogues",
@@ -489,6 +507,24 @@
       "is_long_form": false
     },
     {
+      "id": "107812ebc5a1",
+      "title": "Investigations of Foodborne Illness Outbreaks - fda.gov",
+      "slug": "investigations-of-foodborne-illness-outbreaks-fda-gov",
+      "date": "2026-08-19",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Investigations of Foodborne Illness Outbreaks - fda.gov\nSource: Google News\nDate: Wed, 19 Aug 2026 00:00:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Investigations of Foodborne Illness Outbreaks - fda.gov",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZk9CZUFHZmRHM3p1V1VfczVQOGxOVU5VSjllbF9tSzFyZDZqVXpfOVdTMnNVZk9VZjRVTDlRN3pvbjZZTER0bG5CY2h0Q0F6SldIMDl0WXNmanBtSGthVjQxMU5NZHNibkNLMXBqRnVsOWk4andKSkdrWUM4eUYzaFVzdGI5OFFXRGE5NWJTTFJja2cxaEJaN3doZw?oc=5",
+      "fetched_at": "2026-08-21T20:04:09.704879+00:00",
+      "is_long_form": false
+    },
+    {
       "id": "79dd73075fb3",
       "title": "Ultragenyx's gene therapy wins first FDA approval for rare metabolic disorder - Reuters",
       "slug": "ultragenyx-s-gene-therapy-wins-first-fda-approval-for-rare-metabolic-disorder-reuters",
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-08-18T13:37:09.624901+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "64704ba1a691",
-      "title": "Drug Shortage: Sterile Water Irrigant",
-      "slug": "drug-shortage-sterile-water-irrigant",
-      "date": "2026-08-18",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Generic name: Sterile Water Irrigant\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Drug Shortage: Sterile Water Irrigant",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
-      "fetched_at": "2026-08-18T13:35:10.052129+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "bbb776f67a7e",
-      "title": "Biocon arm gets supplemental USFDA approval for autoimmune disease drug - BusinessLine",
-      "slug": "biocon-arm-gets-supplemental-usfda-approval-for-autoimmune-disease-drug-businessline",
-      "date": "2026-08-18",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Biocon arm gets supplemental USFDA approval for autoimmune disease drug - BusinessLine\nSource: Google News\nDate: Tue, 18 Aug 2026 11:33:20 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Biocon arm gets supplemental USFDA approval for autoimmune disease drug - BusinessLine",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOWkw0c1U3ZkNBMHNKWXprRl9IbEM1MWxwcnJXQ2pJdThBMjJZNVA0dnVoUFJzbUt6U0h2NGYtUEN1aVBKVWIxcTllMG5nTV9WbEY3NnJVcVpmcXNDamVBZjVhTVhFNlAzV0tIRDZ1T29fSVAzcGFUZ25ST19XR1lkN3Y3ajEzRWt3UDctbkplZlBXRFIxYTFadzhWTmQ4UnZiNE1BdWNZaU5mamprZWd3WWpDa0R0MGd3bTdQcFhxR3BMMTdGV1RiLUxqM1g5Mld3YjB4cNIB2wFBVV95cUxNMkdEakNEM2tWNV8wc2hmcDg2MTBGSE9OWVhIQnQ3bU85bnhWamd1cTljU19vY014NHVxN0FUSVRGM1hPNzlIVlVUc21lZUJxc1B1VHJWeHJsQ1FDLTJ1dndjMG80eE42UkNfd0FELUNCOTJEUTF6Y1F2dHUyT0hNQW5ZckNRSFFaM1RWQkFHT0pNV3c1Nmp2cHdVZFNsNERadEZOZ2JLMkhZZm5jMlZQN1lRWHBjU3hteFI3NVNJMk1iaV9MN0xHYVFjS2tIWkxBcjZFRTc5eWc3ZFU?oc=5",
-      "fetched_at": "2026-08-18T12:14:09.720582+00:00",
       "is_long_form": false
     }
   ]
