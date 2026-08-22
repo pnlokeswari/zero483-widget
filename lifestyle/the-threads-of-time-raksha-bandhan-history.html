@@ -41,7 +41,7 @@
       }
     },
     "datePublished": "2026-08-22T20:50:00+05:30",
-    "dateModified": "2026-08-22T20:58:00+05:30",
+    "dateModified": "2026-08-22T21:15:00+05:30",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://alerts.zero483.com/lifestyle/raksha-bandhan-history-legends.html"
@@ -74,13 +74,25 @@
     h2 { font-family: 'Playfair Display', serif; font-size: 1.9rem; color: #831843; margin: 45px 0 20px; position: relative; padding-bottom: 8px; }
     h2::after { content: ''; position: absolute; bottom: 0; left: 0; width: 60px; height: 3px; background: var(--gold); border-radius: 99px; }
 
-    /* IMAGES */
+    /* STORY IMAGES */
     .img-box { margin: 35px 0; text-align: center; }
     .img-box img { width: 100%; max-width: 100%; height: auto; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid #F3F4F6; display: block; }
     .img-caption { font-size: 0.88rem; color: #6B7280; font-weight: 700; margin-top: 10px; font-style: italic; }
 
     .story-box { background: #FFFDF5; border-left: 4px solid #F59E0B; border-radius: 12px; padding: 24px; margin: 30px 0; border: 1px solid #FDE68A; }
     .story-box h4 { color: #92400E; font-size: 1.1rem; margin-bottom: 8px; font-weight: 800; }
+
+    /* CONTEXTUAL PRODUCT SHOWCASE CARDS */
+    .curated-card { background: #FFFFFF; border: 2px solid #FDE68A; border-radius: 16px; padding: 20px; margin: 32px 0; display: flex; flex-direction: column; gap: 16px; box-shadow: 0 8px 25px rgba(217,119,6,0.12); position: relative; overflow: hidden; transition: transform 0.25s ease; }
+    .curated-card:hover { transform: translateY(-3px); }
+    .curated-badge { position: absolute; top: 12px; right: 12px; background: #BE185D; color: #fff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 99px; letter-spacing: 0.05em; }
+    .curated-content { display: flex; flex-direction: row; gap: 20px; align-items: center; }
+    @media (max-width: 600px) { .curated-content { flex-direction: column; text-align: center; } }
+    .curated-img { width: 140px; height: 140px; min-width: 140px; object-fit: contain; background: #FFFDF9; border-radius: 12px; padding: 6px; border: 1px solid #FEF3C7; }
+    .curated-info h3 { font-size: 1.15rem; color: #1F2937; margin-bottom: 6px; font-weight: 800; line-height: 1.35; }
+    .curated-info p { font-size: 0.92rem; color: #4B5563; margin-bottom: 12px; line-height: 1.5; }
+    .curated-cta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #D97706, #B45309); color: #fff; text-decoration: none; font-weight: 800; font-size: 0.9rem; padding: 10px 18px; border-radius: 10px; box-shadow: 0 4px 12px rgba(217,119,6,0.3); transition: opacity 0.2s ease; }
+    .curated-cta:hover { opacity: 0.92; color: #fff; }
 
     .pin-float { position: fixed; top: 20px; right: 16px; background: #E60023; color: #fff; text-decoration: none; font-size: 0.75rem; font-weight: 800; padding: 8px 16px; border-radius: 99px; z-index: 1000; box-shadow: 0 4px 15px rgba(230,0,35,0.4); }
   </style>
@@ -101,7 +113,7 @@
 
   <div class="wrap">
     
-    <!-- HERO BANNER IMAGE (Optimized Alt Text) -->
+    <!-- HERO BANNER IMAGE -->
     <div class="img-box">
       <img src="https://alerts.zero483.com/lifestyle/history_items/hero_banner.jpg" alt="Raksha Bandhan history and origin of the sacred Rakhi festival" />
       <div class="img-caption">Raksha Bandhan history: A timeless symbol of unconditional love, duty, and protection.</div>
@@ -116,7 +128,7 @@
     
     <p>One of the most revered ancient <strong>legends of Rakhi</strong> comes from the greatest Indian epic, the <em>Mahabharata</em>.</p>
 
-    <!-- KRISHNA & DRAUPADI IMAGE (Optimized Alt Text) -->
+    <!-- KRISHNA & DRAUPADI IMAGE -->
     <div class="img-box">
       <img src="https://alerts.zero483.com/lifestyle/history_items/krishna_draupadi.jpg" alt="Illustration showing the history of Raksha Bandhan featuring Krishna and Draupadi" />
       <div class="img-caption">Krishna Draupadi Rakhi story: Draupadi tying a strip of her silk saree on Krishna's wounded finger.</div>
@@ -129,12 +141,25 @@
       <p style="margin:0;">Deeply touched by her selfless act, Krishna vowed to protect her in her time of greatest need. He fulfilled this sacred promise during the infamous <em>cheerharan</em> (disrobing) episode in the royal court, magically extending her sari to protect her dignity. This sacred vow established the foundational spirit of Rakhi: unconditional sibling love and protection.</p>
     </div>
 
+    <!-- CONTEXTUAL PRODUCT 1: KRISHNA MORPANKH SILVER RAKHI -->
+    <div class="curated-card">
+      <span class="curated-badge">🌟 Inspired by Lord Krishna</span>
+      <div class="curated-content">
+        <img class="curated-img" src="https://alerts.zero483.com/lifestyle/rakhi_products/prod_2.jpg" alt="Pure 925 Sterling Silver Morpankh Krishna Rakhi Bracelet" />
+        <div class="curated-info">
+          <h3>Pure 925 Sterling Silver Krishna Morpankh Rakhi Bracelet</h3>
+          <p>Honor the sacred Krishna-Draupadi bond with this handcrafted 92.5% silver peacock feather Rakhi. Comes complete with Roli Chawal, greeting card, and certificate of authenticity.</p>
+          <a href="https://link.amazon/B0fghxQFD" target="_blank" rel="noopener sponsored" class="curated-cta">View on Amazon 🛒</a>
+        </div>
+      </div>
+    </div>
+
     <!-- SECTION 2: HISTORY -->
     <h2>A Historical Bond: Rani Karnavati Humayun Rakhi Legend (1535 CE)</h2>
 
     <p>The spirit of <strong>Raksha Bandhan history</strong> transcends religious and biological boundaries, as demonstrated by one of the most famous historical accounts from <strong>1535 CE</strong>.</p>
 
-    <!-- RANI KARNAVATI & HUMAYUN IMAGE (Optimized Alt Text) -->
+    <!-- RANI KARNAVATI & HUMAYUN IMAGE -->
     <div class="img-box">
       <img src="https://alerts.zero483.com/lifestyle/history_items/karnavati_humayun.jpg" alt="Rani Karnavati Humayun Rakhi historical legend of Chittor 1535 CE" />
       <div class="img-caption">Rani Karnavati of Chittor sending a sacred Rakhi to Mughal Emperor Humayun.</div>
@@ -144,10 +169,38 @@
 
     <p>Moved by the gesture, Humayun abandoned his ongoing military campaigns and marched toward Chittor. Although he tragically arrived just a little too late to save the queen, his earnest response to the thread solidified the Rakhi as a universal symbol of duty, honor, and cross-cultural respect.</p>
 
+    <!-- CONTEXTUAL PRODUCT 2: OM GANESHA STERLING SILVER RAKHI -->
+    <div class="curated-card">
+      <span class="curated-badge">🛡️ Divine Sacred Protection</span>
+      <div class="curated-content">
+        <img class="curated-img" src="https://alerts.zero483.com/lifestyle/rakhi_products/prod_1.jpg" alt="92.5 Sterling Silver Om Ganesha Rakhi Bracelet for Brother" />
+        <div class="curated-info">
+          <h3>92.5 Sterling Silver Om Ganesha Rakhi Bracelet for Brother</h3>
+          <p>A sacred symbol of lifelong protection, auspiciousness, and spiritual blessings crafted in pure silver on a traditional red thread.</p>
+          <a href="https://link.amazon/B07jIfsML" target="_blank" rel="noopener sponsored" class="curated-cta">View on Amazon 🛒</a>
+        </div>
+      </div>
+    </div>
+
     <!-- SECTION 3: LEGACY TODAY -->
     <h2>The Enduring Legacy: Why We Celebrate Raksha Bandhan Today</h2>
 
-    <p>Today, Raksha Bandhan represents far more than a biological brother-sister bond. It is a celebration of care, mutual respect, and a promise to stand by one another through life's challenges. The delicate thread is a powerful reminder that true strength lies in compassion, unity, and the promises we keep.</p>
+    <p>Today, Raksha Bandhan represents far more than a biological brother-sister bond. It is a celebration of care, mutual respect, and a promise to stand by one another through life's challenges. In modern times, brothers and sisters tie Rakhis to each other as a gesture of mutual empowerment, unity, and shared love.</p>
+
+    <!-- CONTEXTUAL PRODUCT 3: PURE SILVER LOTUS SISTER / UNISEX RAKHI -->
+    <div class="curated-card">
+      <span class="curated-badge">🌸 Modern Sister &amp; Unisex Rakhi</span>
+      <div class="curated-content">
+        <img class="curated-img" src="https://alerts.zero483.com/lifestyle/rakhi_products/prod_3.jpg" alt="Pure 925 Sterling Silver Lotus with Zircon Sister Rakhi Set" />
+        <div class="curated-info">
+          <h3>Pure 925 Sterling Silver Lotus &amp; Zircon Rakhi Set (For Sister &amp; Brother)</h3>
+          <p>An exquisite lotus motif set with sparkling zircons celebrating mutual sibling protection. Includes Roli Chawal and a festive greeting card.</p>
+          <a href="https://link.amazon/B02gR2Sbl" target="_blank" rel="noopener sponsored" class="curated-cta">View on Amazon 🛒</a>
+        </div>
+      </div>
+    </div>
+
+    <p>The delicate thread is a powerful reminder that true strength lies in compassion, unity, and the promises we keep across generations.</p>
 
   </div>
 </body>
