@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-22T00:17:12.670437+00:00",
+  "last_updated": "2026-08-22T02:26:13.501559+00:00",
   "total_items": 50,
   "items": [
     {
@@ -216,6 +216,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0xYU0wVHVabzVkV0dsaU1YWkF0Zm9RTDdfTVp0dVEwWFpYb19zanlja0VITXpGWFJ6UFBsTlhkRFJlclVIZ3MyM1YzY2Vwc0E3NENMMlR2SQ?oc=5",
       "fetched_at": "2026-08-21T03:42:33.579679+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "97c648994809",
+      "title": "Blueberry recall in 8 states upgraded to FDA's highest health risk level - 13newsnow.com",
+      "slug": "blueberry-recall-in-8-states-upgraded-to-fda-s-highest-health-risk-level-13newsnow-com",
+      "date": "2026-08-20",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Blueberry recall in 8 states upgraded to FDA's highest health risk level - 13newsnow.com\nSource: Google News\nDate: Thu, 20 Aug 2026 14:42:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Blueberry recall in 8 states upgraded to FDA's highest health risk level - 13newsnow.com",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNN1p3Y19RU0VsWlNkMmFwOE15dVBwdnZxMWU5TF9BV05SZm0yZGpKbFlpN2tiNnAzdVY2cElCMG9RV1JEczVGeTJxbU1QZG1LcXhFLTViNHJ2WkthajZPV2JrUkpxNTFzaGFxMUZRQTdySDlnbnhDZUc4ZmcwYVFwQk5xc2N1VjFzTVFNV1pBaWdqR2NydWw4MjhCVkJRU2tUWkZwY3dPME5PVGFUN0RZWlUzbFVGVm16RVhWbHVZNnNPbXEzOVVuczRBc0JOb29sc0FicmJtQ1dGZFl0YkdpVTRXSW92YnM2SXR2NHFBdw?oc=5",
+      "fetched_at": "2026-08-22T02:14:09.890980+00:00",
       "is_long_form": false
     },
     {
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNMEkzMy1BRkEyS096OFo0dFV1MndYbjlOVUhjaHVsbF9CRXp2TWJIaTBZdzNHcHRNdk1IX0NoN0h6OXI4TkV3UXNFTXZNV2hCUXhoUV82a0FrVi1WVzJMMmI1SVQ0aTJiT2diTGFHcUVYX2pRUHVmSHBfZExfbTFZWE93STB3MXd1RjBhYldEblMwQW5hV29BbXFab0MwZW10cjViY1dYQWNhaThzOHEtbERDODlKSmVSRk0wcUJ2bzMyNkRZcUFXRnlEMDZSaGh5cDloOVBzSTJKQmJOR2c?oc=5",
       "fetched_at": "2026-08-18T22:05:09.662178+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "e0318e43b131",
-      "title": "FDA issues draft guidance clarifying differences between ANDAs and 505(b)(2) applications - raps.org",
-      "slug": "fda-issues-draft-guidance-clarifying-differences-between-andas-and-505-b-2-applications-raps-org",
-      "date": "2026-08-18",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: FDA issues draft guidance clarifying differences between ANDAs and 505(b)(2) applications - raps.org\nSource: Google News\nDate: Tue, 18 Aug 2026 19:29:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "FDA issues draft guidance clarifying differences between ANDAs and 505(b)(2) applications - raps.org",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQ3VGMHZLMGtnYWpoa09qOWhxSGZBbFczbUdZd2ZtdFBYSVE0R2tWVVpIdHBkWGEydmtIaHFYZmFEOTk5d21rRDVNUHBqYlNTeVN1V3l6cndSZ3RXWDZFWVF1cm92b2syM1ZUYWVYeFM0NGI0ZHE1WmdRTU9VMG9FYmY1UFJxQjk0RHNVLVZadm9VOHBwbG43dmdoMmpvbkt3d21ZSy1mOUVXRGRzLVFiR1ZoRkZYVlFfQ1U4eU54dw?oc=5",
-      "fetched_at": "2026-08-18T20:16:10.222567+00:00",
       "is_long_form": false
     }
   ]
