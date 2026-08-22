@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-21T23:17:12.301351+00:00",
+  "last_updated": "2026-08-22T00:17:12.670437+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "436eae5e0aee",
+      "title": "Drug Shortage: Cromolyn Sodium Concentrate",
+      "slug": "drug-shortage-cromolyn-sodium-concentrate",
+      "date": "2026-08-22",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Cromolyn Sodium Concentrate\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Cromolyn Sodium Concentrate",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-08-22T00:05:10.132345+00:00",
+      "is_long_form": false
+    },
     {
       "id": "8fbec6f25a36",
       "title": "FDA upgrades egg recall classification - ABC Columbia",
@@ -543,6 +561,24 @@
       "is_long_form": false
     },
     {
+      "id": "22822c0d6349",
+      "title": "Drug Approval: Unknown product - REGENERON PHARMACEUTICALS, INC",
+      "slug": "drug-approval-unknown-product-regeneron-pharmaceuticals-inc",
+      "date": "2026-08-19",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Application: BLA761508\nSponsor: REGENERON PHARMACEUTICALS, INC\nProduct: Unknown product\nSubmission type: ORIG\nSubmission class: Type 1 - New Molecular Entity\nStatus: AP\nStatus date: 20260819</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Drug Approval: Unknown product - REGENERON PHARMACEUTICALS, INC",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761508",
+      "fetched_at": "2026-08-22T00:07:09.807903+00:00",
+      "is_long_form": false
+    },
+    {
       "id": "107812ebc5a1",
       "title": "Investigations of Foodborne Illness Outbreaks - fda.gov",
       "slug": "investigations-of-foodborne-illness-outbreaks-fda-gov",
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQ3VGMHZLMGtnYWpoa09qOWhxSGZBbFczbUdZd2ZtdFBYSVE0R2tWVVpIdHBkWGEydmtIaHFYZmFEOTk5d21rRDVNUHBqYlNTeVN1V3l6cndSZ3RXWDZFWVF1cm92b2syM1ZUYWVYeFM0NGI0ZHE1WmdRTU9VMG9FYmY1UFJxQjk0RHNVLVZadm9VOHBwbG43dmdoMmpvbkt3d21ZSy1mOUVXRGRzLVFiR1ZoRkZYVlFfQ1U4eU54dw?oc=5",
       "fetched_at": "2026-08-18T20:16:10.222567+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "b1d6a80f772b",
-      "title": "Unauthorized drugs seized from Rabais 4Saisons Inc. in Montreal, QC, may pose serious health risks",
-      "slug": "unauthorized-drugs-seized-from-rabais-4saisons-inc-in-montreal-qc-may-pose-serious-health-risks",
-      "date": "2026-08-18",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Unauthorized drugs seized from Rabais 4Saisons Inc. in Montreal, QC, may pose serious health risks\nSource: Health Canada\nDate: 2026-08-18T12:00:00</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Unauthorized drugs seized from Rabais 4Saisons Inc. in Montreal, QC, may pose serious health risks",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/unauthorized-drugs-seized-rabais-4saisons-inc-montreal-qc-may-pose-serious-health",
-      "fetched_at": "2026-08-18T19:36:09.537578+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "dd852001ab74",
-      "title": "FDA issues final PDUFA meeting guidance, expands use of written responses - drugdiscoverytrends.com",
-      "slug": "fda-issues-final-pdufa-meeting-guidance-expands-use-of-written-responses-drugdiscoverytrends-com",
-      "date": "2026-08-18",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: FDA issues final PDUFA meeting guidance, expands use of written responses - drugdiscoverytrends.com\nSource: Google News\nDate: Tue, 18 Aug 2026 19:29:45 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "FDA issues final PDUFA meeting guidance, expands use of written responses - drugdiscoverytrends.com",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSlg1SjZiN00tWG1Md1BXQlRXeUpuZDV3UVUzckxQZkFiVThENVV2TDlmcW9hNlQ0bWc2emR1ZWFza0RIdUpaUzFLT0hkTE1IS1dtWU50eVVsOUNiTFpMWEFZS0QyY1R1TTh3SG1QLXNZeHRUUUlha3RWb1VSMGc1LVV0cTlZa2ZUdkpDVW90Z0h1VktaQjlQSTFUMWdQcFBqbVlIYXppTU1KWTFxOXc?oc=5",
-      "fetched_at": "2026-08-18T19:34:09.892783+00:00",
       "is_long_form": false
     }
   ]
