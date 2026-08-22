@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-22T03:42:13.004749+00:00",
+  "last_updated": "2026-08-22T04:33:13.116741+00:00",
   "total_items": 50,
   "items": [
     {
@@ -216,6 +216,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0xYU0wVHVabzVkV0dsaU1YWkF0Zm9RTDdfTVp0dVEwWFpYb19zanlja0VITXpGWFJ6UFBsTlhkRFJlclVIZ3MyM1YzY2Vwc0E3NENMMlR2SQ?oc=5",
       "fetched_at": "2026-08-21T03:42:33.579679+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "f7e92619b67b",
+      "title": "Failure modes in soft-tissue surgical robots: an adjudicated FDA recall cohort, 2005–2026 - Springer Nature Link",
+      "slug": "failure-modes-in-soft-tissue-surgical-robots-an-adjudicated-fda-recall-cohort-2005-2026-springer-nature-link",
+      "date": "2026-08-20",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Failure modes in soft-tissue surgical robots: an adjudicated FDA recall cohort, 2005–2026 - Springer Nature Link\nSource: Google News\nDate: Thu, 20 Aug 2026 18:18:47 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Failure modes in soft-tissue surgical robots: an adjudicated FDA recall cohort, 2005–2026 - Springer Nature Link",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE03T3ZvWUR6QVpuVjcwdExPY2VqWkJVMXgtM2F5dnprMkFVZDgxaS14V3Fsd0Y2b1BBV01nTmo4akVzeW1ieElxQWl5dHpMWGxpR2haam1GUkVjZEVZcG53ZGRmZUhSMGVCQW5IUQ?oc=5",
+      "fetched_at": "2026-08-22T04:21:09.396389+00:00",
       "is_long_form": false
     },
     {
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdUNZRHNOOTNpYWZJSjRVa2RhZE05ZVBrN2loVWxYOGhuVWd3VnJocnliRE1KQVN2RTB1ZmpHblh3YjBtanhNWTZ2ZnEwZjZCM3NqU3ZlTHo3Qi1BN1g1ZlZXRWEzdHh3bkJyWVpPQnNfWFpnSGNGZ0JjSHEtLTNYekdKeEpGcm5OYzh1RUZtem9FUDBtUHJoVnd2elB0RGUtS2RN?oc=5",
       "fetched_at": "2026-08-19T03:39:09.612878+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "96f6fcc5440b",
-      "title": "Study highlights difficulty of measuring non-clinical factors that could influence FDA drug approval decisions - RAPS",
-      "slug": "study-highlights-difficulty-of-measuring-non-clinical-factors-that-could-influence-fda-drug-approval-decisions-raps",
-      "date": "2026-08-18",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Study highlights difficulty of measuring non-clinical factors that could influence FDA drug approval decisions - RAPS\nSource: Google News\nDate: Tue, 18 Aug 2026 19:22:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Study highlights difficulty of measuring non-clinical factors that could influence FDA drug approval decisions - RAPS",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNMEkzMy1BRkEyS096OFo0dFV1MndYbjlOVUhjaHVsbF9CRXp2TWJIaTBZdzNHcHRNdk1IX0NoN0h6OXI4TkV3UXNFTXZNV2hCUXhoUV82a0FrVi1WVzJMMmI1SVQ0aTJiT2diTGFHcUVYX2pRUHVmSHBfZExfbTFZWE93STB3MXd1RjBhYldEblMwQW5hV29BbXFab0MwZW10cjViY1dYQWNhaThzOHEtbERDODlKSmVSRk0wcUJ2bzMyNkRZcUFXRnlEMDZSaGh5cDloOVBzSTJKQmJOR2c?oc=5",
-      "fetched_at": "2026-08-18T22:05:09.662178+00:00",
       "is_long_form": false
     }
   ]
