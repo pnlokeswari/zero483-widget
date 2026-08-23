@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-23T16:15:09.817270+00:00",
+  "last_updated": "2026-08-23T17:15:09.301695+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "cfbd47c2d28e",
+      "title": "83 Himachal-made medicines fail quality standards, latest CDSCO alert reveals - - Himachal Scape",
+      "slug": "83-himachal-made-medicines-fail-quality-standards-latest-cdsco-alert-reveals-himachal-scape",
+      "date": "2026-08-23",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "<p>Title: 83 Himachal-made medicines fail quality standards, latest CDSCO alert reveals - - Himachal Scape\nSource: CDSCO India\nDate: Sun, 23 Aug 2026 05:37:50 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "83 Himachal-made medicines fail quality standards, latest CDSCO alert reveals - - Himachal Scape",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMmpONWVpa1FfQ2JVQmxnLXRUbDFiT2VMN0lqWkk2Wk56YkhVVkNJOXEteTRSV1RuWTg0Z0g3TzJsSTZvX1kxb2VDdHNvcjU3SGEtMUUtUFAwX0VKeE9YajE4Q0xLN3JLLWNhR3I3blltMS1ad0FHdmFuSzNibkk5WklxTlJyVFhzOXM3N1dXWVNac3Q0VS1DSnVnaWVFUzBtTE1Wb1F3?oc=5",
+      "fetched_at": "2026-08-23T17:15:09.301630+00:00",
+      "is_long_form": false
+    },
     {
       "id": "5d128fd96d84",
       "title": "CDSCO Drug Alert: 40 Batches Including Paracetamol, Telmisartan, Metformin, Ibuprofen Fail Quality Tests... - Medical Di",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-08-19T19:11:09.367495+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "ee8045d811a6",
-      "title": "SPECTRALIS® with Flex Module",
-      "slug": "spectralis-with-flex-module",
-      "date": "2026-08-19",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: SPECTRALIS® with Flex Module\nSource: Health Canada\nDate: 2026-08-19T12:00:00</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "SPECTRALIS® with Flex Module",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/spectralisr-flex-module",
-      "fetched_at": "2026-08-19T17:19:09.323401+00:00",
       "is_long_form": false
     }
   ]
