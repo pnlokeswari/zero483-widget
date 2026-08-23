@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-23T15:16:12.225152+00:00",
+  "last_updated": "2026-08-23T16:15:09.817270+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "5d128fd96d84",
+      "title": "CDSCO Drug Alert: 40 Batches Including Paracetamol, Telmisartan, Metformin, Ibuprofen Fail Quality Tests... - Medical Di",
+      "slug": "cdsco-drug-alert-40-batches-including-paracetamol-telmisartan-metformin-ibuprofen-fail-quality-tests-medical-di",
+      "date": "2026-08-23",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "<p>Title: CDSCO Drug Alert: 40 Batches Including Paracetamol, Telmisartan, Metformin, Ibuprofen Fail Quality Tests... - Medical Dialogues\nSource: CDSCO India\nDate: Sun, 23 Aug 2026 15:34:41 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "CDSCO Drug Alert: 40 Batches Including Paracetamol, Telmisartan, Metformin, Ibuprofen Fail Quality Tests... - Medical Di",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNQXprdmY2NU9WTDFjZmZuVHpfbk14OUpmeEdSNUhNSUFoTDc1Qm52LXNlQ1N3Z0I4UTUwVW5vbkpjVnByaWt4NXNBc3JCdHZLbl9nMkVBeUlua1JnT3Awd1NHNlFNZmIzbUVkX055SE9Id0trTHJOY1RBNWlQc0JMYjhUUlZKQUVHUmw5SEhzb3NyckhSeTFtX0x2YnZkWnc3WlJVaUl1dTFvOXdxSTRLb2dFZFk2am5Ld3NjcU5nRjhCM0gySjB6VU5Yams2b29pa1c2cVV2Rm8tNWZBQXM5VHFieFpvZkJvdm5Fbk5LRHAtR3dEX29JNm1oMzVsVG_SAYQCQVVfeXFMT1BBNHgtMjlXRmFibTl6MUY2SzlHU1NlVzNRbjM1Umd6cnpXXzVRci0tOGp6YkJuMm1DY0prZS1vMXg3R3lCMDlrZF9SM3c5cTRpVHo4ZU1TdVRhWTBVeXRnd01TekEtaGlJeTV3bzNDcFA4OFh1WXZPaFgybG0xaHdFM1V3WUcwLUo3N3ViTzZHR2ZLN0FIMTJSZlFEcFF5bExNd29FZmZBTjAyRHNhcGlBQkdybzVaNHdKQTBsZnZ3c2tUMjVNRkFTZlA1Wk1QSkc0bC05Ui01dUdhajg5UFNfel9tN1pIUWxWM3BMRUFmblVGdURUdzBWTGVGN2E0eGxzMjg?oc=5",
+      "fetched_at": "2026-08-23T16:15:09.817198+00:00",
+      "is_long_form": false
+    },
     {
       "id": "466c502aee33",
       "title": "Does First-in-Class FOP Drug Approval Transform the Bull Case For Regeneron Pharmaceuticals (REGN)? - simplywall.st",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/spectralisr-flex-module",
       "fetched_at": "2026-08-19T17:19:09.323401+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "f52f93a27ef9",
-      "title": "CISATRACURIUM BESYLATE INJECTION USP MULTIDOSE: The level of the degradation product Benzaldehyde may be out of specific",
-      "slug": "cisatracurium-besylate-injection-usp-multidose-the-level-of-the-degradation-product-benzaldehyde-may-be-out-of-specific",
-      "date": "2026-08-19",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: CISATRACURIUM BESYLATE INJECTION USP MULTIDOSE: The level of the degradation product Benzaldehyde may be out of specification in the affected lots.\nSource: Health Canada\nDate: 2026-08-19T12:00:00</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "CISATRACURIUM BESYLATE INJECTION USP MULTIDOSE: The level of the degradation product Benzaldehyde may be out of specific",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/cisatracurium-besylate-injection-usp-multidose-level-degradation-product-0",
-      "fetched_at": "2026-08-19T16:17:09.497343+00:00",
       "is_long_form": false
     }
   ]
