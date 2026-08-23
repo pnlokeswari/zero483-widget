@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-23T20:16:12.122684+00:00",
+  "last_updated": "2026-08-23T21:18:12.768596+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "fdb51e207a51",
+      "title": "Drug Shortage: Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccha",
+      "slug": "drug-shortage-amphetamine-aspartate-monohydrate-amphetamine-sulfate-dextroamphetamine-saccha",
+      "date": "2026-08-23",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate Tablet\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccha",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-08-23T21:06:10.131088+00:00",
+      "is_long_form": false
+    },
     {
       "id": "cfbd47c2d28e",
       "title": "83 Himachal-made medicines fail quality standards, latest CDSCO alert reveals - - Himachal Scape",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQNmpRci1mM0pSMk1vUDJzSWR5ckx6Qk93TGs3NHExaGtCeDQyYjNsZ2NxNm8zZUY5SDBFUUMwakZOaC02dGJtSTdjMVR3bzhPSWFROTZnRGE2WUtlTS1wR25hNXB3RXN0akp4MzdxZk1wVXpVek5aTnJvRHliaHR4MVVkRFNyOWpnR0E?oc=5",
       "fetched_at": "2026-08-19T21:16:09.840216+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "7c164b7c87c2",
-      "title": "Embosphere® Microspheres-Syringe",
-      "slug": "embosphere-microspheres-syringe",
-      "date": "2026-08-19",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Embosphere® Microspheres-Syringe\nSource: Health Canada\nDate: 2026-08-19T12:00:00</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Embosphere® Microspheres-Syringe",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/embospherer-microspheres-syringe",
-      "fetched_at": "2026-08-19T20:18:09.849745+00:00",
       "is_long_form": false
     }
   ]
