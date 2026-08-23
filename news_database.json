@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-23T02:23:13.647931+00:00",
+  "last_updated": "2026-08-23T03:52:11.841216+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "7e23f6a4918d",
+      "title": "NATCO Pharma Receives US FDA Form 483 With Four Observations at Visakhapatnam Plant - Core Business Growth - vinanet.vn",
+      "slug": "natco-pharma-receives-us-fda-form-483-with-four-observations-at-visakhapatnam-plant-core-business-growth-vinanet-vn",
+      "date": "2026-08-22",
+      "category": "Form 483",
+      "severity": "High",
+      "summary": "<p>Title: NATCO Pharma Receives US FDA Form 483 With Four Observations at Visakhapatnam Plant - Core Business Growth - vinanet.vn\nSource: Google News\nDate: Sat, 22 Aug 2026 19:44:09 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "NATCO Pharma Receives US FDA Form 483 With Four Observations at Visakhapatnam Plant - Core Business Growth - vinanet.vn",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNaVZMSTJrWDl1RXNjN215UVQta2t1eWJHMGJMeWtiaG1PSkxwcHVJNHNSQWxxRUpodkdCT0ZUbzFRZzUtbTdldEowVzhySmlIODFiZWVrWW1XSTYzS0taSXBlb0l3cW5pamZmTmF2WlluUzVQWm4yWXI2ZFlzMHgtNFN0V05qSGRvQU1zZGM3Z0ZwWEprMFZRbkhlejdqUmJSX3BFamcxWl9pemRhZDRqSW1WV3F4dkt2dE1JWEhqaWlyUnM?oc=5",
+      "fetched_at": "2026-08-23T03:52:09.736734+00:00",
+      "is_long_form": false
+    },
     {
       "id": "436eae5e0aee",
       "title": "Drug Shortage: Cromolyn Sodium Concentrate",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/statstripr-glucose-and-beta-ketone-hospital-meter",
       "fetched_at": "2026-08-19T14:36:09.524651+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "470140d0c3e2",
-      "title": "Aurobindo unit, China API maker dinged in latest round of FDA warning letters - Fierce Pharma",
-      "slug": "aurobindo-unit-china-api-maker-dinged-in-latest-round-of-fda-warning-letters-fierce-pharma",
-      "date": "2026-08-19",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "<p>Title: Aurobindo unit, China API maker dinged in latest round of FDA warning letters - Fierce Pharma\nSource: Google News\nDate: Wed, 19 Aug 2026 14:20:24 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Aurobindo unit, China API maker dinged in latest round of FDA warning letters - Fierce Pharma",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVmp4X1JWNWJVWF9DUUt3Qk8tZUQxU2prZG1LRzNDMUw3OHBlTWt0XzdQZHRFb3ZtbHFiS2tjZ1JINnU3aWFjdGpIaGw5aC1EbWpJMXdxZ1ZWWjBUOE5FdFdKWVZXdzBBcEY1eHNNeXl2RExUWUprWWNJclJjVlhseEN4NW1wOU41Z1Rqa3R5UFcyV3dfSVB6ZExXQ1l1X1ROM2QwOFEtR3IwUQ?oc=5",
-      "fetched_at": "2026-08-19T14:34:09.751064+00:00",
       "is_long_form": false
     }
   ]
