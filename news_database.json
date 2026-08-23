@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-23T19:19:13.830473+00:00",
+  "last_updated": "2026-08-23T20:16:12.122684+00:00",
   "total_items": 50,
   "items": [
     {
@@ -57,6 +57,24 @@
       "is_long_form": false
     },
     {
+      "id": "6b55f4c2df63",
+      "title": "Here's why the FDA hit frozen blueberries with its highest risk warning - Axios",
+      "slug": "here-s-why-the-fda-hit-frozen-blueberries-with-its-highest-risk-warning-axios",
+      "date": "2026-08-22",
+      "category": "Adverse Event",
+      "severity": "High",
+      "summary": "<p>Title: Here's why the FDA hit frozen blueberries with its highest risk warning - Axios\nSource: Google News\nDate: Sat, 22 Aug 2026 10:01:30 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Here's why the FDA hit frozen blueberries with its highest risk warning - Axios",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQMlZqYkpRXy1vYzZKZW44bGhMRnZ3aTJrM2MwNFN4YTMyQURYdnk4Z2MxUzR0VmFMODRwbTdCUU9xYnlMOURDbE5HMWRfRGl1eGJKMjJyR3FsTDExeV96RXd2VHU3eHBpSFRxbklwSmQyajFMVXFjTjRVTjVuSTVVOFhoTG9USFU?oc=5",
+      "fetched_at": "2026-08-23T20:16:09.727180+00:00",
+      "is_long_form": false
+    },
+    {
       "id": "7e23f6a4918d",
       "title": "NATCO Pharma Receives US FDA Form 483 With Four Observations at Visakhapatnam Plant - Core Business Growth - vinanet.vn",
       "slug": "natco-pharma-receives-us-fda-form-483-with-four-observations-at-visakhapatnam-plant-core-business-growth-vinanet-vn",
@@ -90,6 +108,24 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-08-22T00:05:10.132345+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "733c653c4fe0",
+      "title": "Thousands of dips recalled as FDA issues most severe risk warning - Newsweek",
+      "slug": "thousands-of-dips-recalled-as-fda-issues-most-severe-risk-warning-newsweek",
+      "date": "2026-08-21",
+      "category": "Adverse Event",
+      "severity": "High",
+      "summary": "<p>Title: Thousands of dips recalled as FDA issues most severe risk warning - Newsweek\nSource: Google News\nDate: Fri, 21 Aug 2026 09:05:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Thousands of dips recalled as FDA issues most severe risk warning - Newsweek",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPT1VqYWpZRTFvY0wzdXBJTWFfOEdWVlFFV1Y1cTdsWExpX08yQ3E5LXgxcDVwVV90LVhhMVhDMlNUWmk5Vms3b1Jud2I3STk1NlptNnlGblJEd2NkVzhsS1RiWU8zN3drT0pFUnhrdUQtWVJ5a2Y4bWthQjlVUzE2Uko5OXRveUVIQjAwYmF2QlE?oc=5",
+      "fetched_at": "2026-08-23T20:14:10.180343+00:00",
       "is_long_form": false
     },
     {
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/embospherer-microspheres-syringe",
       "fetched_at": "2026-08-19T20:18:09.849745+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "740a53baa9da",
-      "title": "Regeneron's Pasatru scores FDA approval in ultrarare bone lesions disorder - Fierce Pharma",
-      "slug": "regeneron-s-pasatru-scores-fda-approval-in-ultrarare-bone-lesions-disorder-fierce-pharma",
-      "date": "2026-08-19",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Regeneron's Pasatru scores FDA approval in ultrarare bone lesions disorder - Fierce Pharma\nSource: Google News\nDate: Wed, 19 Aug 2026 18:35:17 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Regeneron's Pasatru scores FDA approval in ultrarare bone lesions disorder - Fierce Pharma",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE15bmQ5M0s5MFdmeEJ0UHhJM09rcVFkX2hfMDM3ZTVBSmJ1akplNm8xRC1hV3BXNDJGRVAwVi1lcjFjQ0MycTBQYkZLMGRLSEVtVFNVUmxjWUtFZjJpc2NvejlKdVBqTEdYZ2c?oc=5",
-      "fetched_at": "2026-08-19T19:16:09.315322+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "fdb51e207a51",
-      "title": "Drug Shortage: Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccha",
-      "slug": "drug-shortage-amphetamine-aspartate-monohydrate-amphetamine-sulfate-dextroamphetamine-saccha",
-      "date": "2026-08-19",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Generic name: Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate Tablet\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Drug Shortage: Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccha",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
-      "fetched_at": "2026-08-19T19:11:09.367495+00:00",
       "is_long_form": false
     }
   ]
