@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-24T13:48:12.679079+00:00",
+  "last_updated": "2026-08-24T14:45:12.237111+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "3d9fa3799005",
+      "title": "Copycat GLP-1 drugs are cheaper. But here's what you need to know. - Houston Chronicle",
+      "slug": "copycat-glp-1-drugs-are-cheaper-but-here-s-what-you-need-to-know-houston-chronicle",
+      "date": "2026-08-24",
+      "category": "Adverse Event",
+      "severity": "High",
+      "summary": "<p>Title: Copycat GLP-1 drugs are cheaper. But here's what you need to know. - Houston Chronicle\nSource: Google News\nDate: Mon, 24 Aug 2026 11:23:49 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Copycat GLP-1 drugs are cheaper. But here's what you need to know. - Houston Chronicle",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcG5HUklYT1dySV9wbmRBUERKWGJNX3lZNmVCWlRmV0YyMjdGN2R1MUwzd1JZdVBLYTQ2a090dFB1a0xuOEY3NUJLQ3NaT1M0dFhNRm9mTFR0Q1M0dXFMTkE4MDZkVnlwSFk4RVFxellodEdNV0xGSWNxWE1lYUQxZFlRdEN2WUpRYXFMZlpYUjhiSWpvTWt3UnZueFNXWmpCQ2ZXd1l2YU1rTzd0TmwzOA?oc=5",
+      "fetched_at": "2026-08-24T14:45:09.486941+00:00",
+      "is_long_form": false
+    },
     {
       "id": "d5354f3b42b2",
       "title": "GC Biopharma's Hunter Syndrome Treatment 'Hunterase' Receives Drug Approval in India and Taiwan - PR Newswire",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761508",
       "fetched_at": "2026-08-22T00:07:09.807903+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "107812ebc5a1",
-      "title": "Investigations of Foodborne Illness Outbreaks - fda.gov",
-      "slug": "investigations-of-foodborne-illness-outbreaks-fda-gov",
-      "date": "2026-08-19",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Investigations of Foodborne Illness Outbreaks - fda.gov\nSource: Google News\nDate: Wed, 19 Aug 2026 00:00:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Investigations of Foodborne Illness Outbreaks - fda.gov",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZk9CZUFHZmRHM3p1V1VfczVQOGxOVU5VSjllbF9tSzFyZDZqVXpfOVdTMnNVZk9VZjRVTDlRN3pvbjZZTER0bG5CY2h0Q0F6SldIMDl0WXNmanBtSGthVjQxMU5NZHNibkNLMXBqRnVsOWk4andKSkdrWUM4eUYzaFVzdGI5OFFXRGE5NWJTTFJja2cxaEJaN3doZw?oc=5",
-      "fetched_at": "2026-08-21T20:04:09.704879+00:00",
       "is_long_form": false
     }
   ]
