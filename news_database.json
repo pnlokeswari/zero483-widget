@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-24T20:21:09.845051+00:00",
+  "last_updated": "2026-08-24T21:21:19.824020+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "b4e05f3ec11f",
+      "title": "FDA Warning Letter Flags Laboratory Data Integrity Failures - Lab Manager",
+      "slug": "fda-warning-letter-flags-laboratory-data-integrity-failures-lab-manager",
+      "date": "2026-08-24",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "<p>Title: FDA Warning Letter Flags Laboratory Data Integrity Failures - Lab Manager\nSource: Google News\nDate: Mon, 24 Aug 2026 21:10:49 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "FDA Warning Letter Flags Laboratory Data Integrity Failures - Lab Manager",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQmR6eFJ1U0NDYWY5enlyMVRpcmc3eTR1ZkQ5YWhqTURGX29vajU1MkhYakpMVlNrLXM1TzhyVjQyMWFJbm50Q1o5OC1aWkdGVzBHblBaN3NqdW1tMm9UYWF1ZkJBUGtYdGctRnFqZDRkV2t0cmFuN0NDMnJubTdrTXdRZktpV2hkSzZkRy0zWVpBWmo4ZFJoRjdlaVFiR2Q1WDBaZ0NPQWx2emxBczh4ejV2aElucTFlMGxz?oc=5",
+      "fetched_at": "2026-08-24T21:21:09.933276+00:00",
+      "is_long_form": false
+    },
     {
       "id": "13e9b113a947",
       "title": "State Drug Alert: CDSCO Flags 199 Samples Including Paracetamol, Pantoprazole, Cefixime as Not of... - Medical Dialogues",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-08-20T05:22:10.077420+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "8dd9f7e6b132",
-      "title": "Glenmark Pharma Gets US FDA Approval For Fluticasone Nasal Spray In $295 Million Market - Sahi",
-      "slug": "glenmark-pharma-gets-us-fda-approval-for-fluticasone-nasal-spray-in-295-million-market-sahi",
-      "date": "2026-08-20",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Glenmark Pharma Gets US FDA Approval For Fluticasone Nasal Spray In $295 Million Market - Sahi\nSource: Google News\nDate: Thu, 20 Aug 2026 03:52:09 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Glenmark Pharma Gets US FDA Approval For Fluticasone Nasal Spray In $295 Million Market - Sahi",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaGhRMHJOQUVIS2lnZm1UcVhaR2xiSnIydnJaSkQwM2haR0luT0lEcXhnT05mRGZvTHlfSExWaG14b2U0clVhZjIxX2pQV2dTNHR6UXFTWEtIeWRLb2Y3SlZvdTdxTGlxVDFlUU1KYnZyTm5KcTQ1Z0J1UHYwc2xrZUNWdGdIMDFBdnEza0dNTGswQlNDMzdJclhiSHVXb19WN3NsNFlaYzFhaWc4WW1QQTV1eC1FUE5BMDVobml2LXVlVGs?oc=5",
-      "fetched_at": "2026-08-20T04:32:09.790816+00:00",
       "is_long_form": false
     }
   ]
