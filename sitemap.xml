@@ -5,6 +5,7 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/nearly-40-000-eye-drop-bottles-are-recalled-over-potential-contamination-the-new-york-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-amphetamine-aspartate-monohydrate-amphetamine-sulfate-dextroamphetamine-saccha.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/83-himachal-made-medicines-fail-quality-standards-latest-cdsco-alert-reveals-himachal-scape.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-drug-alert-40-batches-including-paracetamol-telmisartan-metformin-ibuprofen-fail-quality-tests-medical-di.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -12,6 +13,7 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/here-s-why-the-fda-hit-frozen-blueberries-with-its-highest-risk-warning-axios.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/natco-pharma-receives-us-fda-form-483-with-four-observations-at-visakhapatnam-plant-core-business-growth-vinanet-vn.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-cromolyn-sodium-concentrate.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/blueberries-guacamole-granola-see-list-of-recent-food-recalls-usa-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/thousands-of-dips-recalled-as-fda-issues-most-severe-risk-warning-newsweek.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/280-drug-samples-fail-cdsco-quality-test-1-flagged-spurious-pharma-economictimes-indiatimes-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/commentary-fda-turmoil-and-political-interference-threatens-drug-safety-standards-yakima-herald-republic.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -53,8 +55,6 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/investigations-of-foodborne-illness-outbreaks-fda-gov.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/ultragenyx-s-gene-therapy-wins-first-fda-approval-for-rare-metabolic-disorder-reuters.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/allergy-eye-drop-recall-affects-more-than-39-000-bottles-fda-says-optometry-advisor.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-upgrades-recall-of-frozen-blueberries-sold-at-publix-to-highest-health-risk-level-cbs-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/regeneron-drug-for-disease-that-causes-dangerous-bone-growth-earns-fda-approval-stat.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/companies.html</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/regeneron-pharmaceuticals.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
