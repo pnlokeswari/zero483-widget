@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-24T15:41:10.647910+00:00",
+  "last_updated": "2026-08-24T16:34:12.830840+00:00",
   "total_items": 50,
   "items": [
     {
@@ -885,21 +885,21 @@
       "is_long_form": false
     },
     {
-      "id": "c5fec6020945",
-      "title": "FDA Advisory No.2026-0905 || Public Health Warning Against the Purchase and Use of the Unauthorized Cosmetic Product “MA",
-      "slug": "fda-advisory-no-2026-0905-public-health-warning-against-the-purchase-and-use-of-the-unauthorized-cosmetic-product-ma",
+      "id": "22822c0d6349",
+      "title": "Drug Approval: Unknown product - REGENERON PHARMACEUTICALS, INC",
+      "slug": "drug-approval-unknown-product-regeneron-pharmaceuticals-inc",
       "date": "2026-08-19",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "<p>Title: FDA Advisory No.2026-0905 || Public Health Warning Against the Purchase and Use of the Unauthorized Cosmetic Product “MANGO VENOM ORIENTAL WOODY FRAGRANCE EXTRAIT DE PARFUM” - fda.gov.ph\nSource: Google News\nDate: Wed, 19 Aug 2026 07:09:46 GMT</p>",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Application: BLA761508\nSponsor: REGENERON PHARMACEUTICALS, INC\nProduct: Unknown product\nSubmission type: ORIG\nSubmission class: Type 1 - New Molecular Entity\nStatus: AP\nStatus date: 20260819</p>",
       "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
       "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
       "industry_context": "",
-      "seo_title": "FDA Advisory No.2026-0905 || Public Health Warning Against the Purchase and Use of the Unauthorized Cosmetic Product “MA",
+      "seo_title": "Drug Approval: Unknown product - REGENERON PHARMACEUTICALS, INC",
       "seo_description": "",
       "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxORFlZMkxsOEZmVTNyZDdVeVVXeGwwTlN1QUhheFp5LWdzNjlwSWlOa2o5Q2ItZF92dDNvdk1GZHZoMlI0ei1NR0tOUnNxWmd3TjB3d0pSUHk1N2o0T2NjdFhMMU9KVGxSQzI0WHBCbV83cmdLODVYUmFud28tYUdieWNjNlNNQVFtTHk0RXVUcG1RY1c4Tm96WkJJTG9vOEdzNDJXbVpLZW1mOW5OamFqMmhPWjVRMTkwQ0xxb3dFR0d0Ukp2c09hb0FwRW03SHhPaXpOZHE0bW4wVHBqR3Q3ZU1NSm9jVDJnTlpfWFpZUjhobURfdFRFYjNGY3YyNWhuOFN3ek9jdzNXV0VBVkFqY2NKbnh5Zkk5QUg5cA?oc=5",
-      "fetched_at": "2026-08-22T05:24:09.451156+00:00",
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761508",
+      "fetched_at": "2026-08-24T16:24:09.544209+00:00",
       "is_long_form": false
     }
   ]
