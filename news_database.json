@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-25T17:33:13.098361+00:00",
+  "last_updated": "2026-08-25T18:22:11.562440+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "f6294a89494b",
+      "title": "Dräger VentStar® Resus Neo and VentStar® Resuscitaire",
+      "slug": "dr-ger-ventstar-resus-neo-and-ventstar-resuscitaire",
+      "date": "2026-08-25",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Dräger VentStar® Resus Neo and VentStar® Resuscitaire\nSource: Health Canada\nDate: 2026-08-25T12:00:00</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Dräger VentStar® Resus Neo and VentStar® Resuscitaire",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/drager-ventstarr-resus-neo-and-ventstarr-resuscitaire",
+      "fetched_at": "2026-08-25T18:22:10.009225+00:00",
+      "is_long_form": false
+    },
     {
       "id": "2933a692bc8d",
       "title": "Mother of Friedreich's Ataxia patients hopes drug approval will save son's voice - Newstalk",
@@ -882,24 +900,6 @@
       "primary_company_name": "Regeneron Pharmaceuticals",
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObXZRU29GZ052TE9oUDNHU3Y0SGVaR1FtSFNTaGxqM2RMcUNGRG54WFRVaGQwdHZxTnI0VnE4LWxyUmhWU0NoNXNubHBYYUZuNDNiVHl4cjRIZWZ5eHhoTnVxLXlZemItcVJxamVxTnVseHZkU3VoX3FZY1ZBN3FzSXlUWTNsQXdWMW9GTDlmYXJCdWVkY2pndUFhQlNpRlNkRmRRRg?oc=5",
       "fetched_at": "2026-08-20T14:33:16.502127+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "f9332725a0fc",
-      "title": "FDA raises risk level to highest tier for recall of frozen berries sold at Publix - voz.us",
-      "slug": "fda-raises-risk-level-to-highest-tier-for-recall-of-frozen-berries-sold-at-publix-voz-us",
-      "date": "2026-08-20",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: FDA raises risk level to highest tier for recall of frozen berries sold at Publix - voz.us\nSource: Google News\nDate: Thu, 20 Aug 2026 12:47:44 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "FDA raises risk level to highest tier for recall of frozen berries sold at Publix - voz.us",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOV21UY2k5blNleC15emlCeVBzQXNSenRxd00tWllEaDFlazFJVmdpQS02a3AyX0JGd3lZV2xFVHdza19uVG9yR2RNalY3aDA4dTd4X2pZbmZsd0RLdHlwNEM2NW5xeW40SDRlRW1mRGluekFyall5bTV0c05hVUp4Q2JxSG1sOUtGRlpRemVldjgyTHZBMThQejQtRHZfQkY2MlVsYlFIX3VtOHo4OWFqQVlqeEwtRzZPWFcyS1hTbGVZYXM?oc=5",
-      "fetched_at": "2026-08-20T13:39:09.907223+00:00",
       "is_long_form": false
     }
   ]
