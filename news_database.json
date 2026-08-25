@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-25T10:22:14.032607+00:00",
+  "last_updated": "2026-08-25T11:24:12.994162+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "0bcff804242f",
+      "title": "Drug Shortage: Lisdexamfetamine Dimesylate Capsule",
+      "slug": "drug-shortage-lisdexamfetamine-dimesylate-capsule",
+      "date": "2026-08-25",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Lisdexamfetamine Dimesylate Capsule\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Lisdexamfetamine Dimesylate Capsule",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-08-25T11:12:09.258549+00:00",
+      "is_long_form": false
+    },
     {
       "id": "8d9077219769",
       "title": "Friedreich's ataxia campaigners calling for drug approval - RTE.ie",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSTltWkN1aWZ5MmExUlVaMTRMejlUbURubmJ1M09HR2ZMeWdvTGdpQzlpZjJpU1ZDaEpOUzBxU3lTMUhMUGtsSmFMSlNqbERIMnAxTE1mOEtGS2Y5YWx3bUJVREJoWUtDdVNCRjNnMGxnUk1jNW0wbExyTHhnbkxsWVlqT28zYUJvTmU3ZDBnV0VPMHpFNUJINUNrMnF1S18yMFE?oc=5",
       "fetched_at": "2026-08-20T11:23:10.159268+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "46aa8efbae52",
-      "title": "Bayer (XTRA:BAYN) Stock May Be Undervalued As Canada Drug Approval Expands - Yahoo Finance",
-      "slug": "bayer-xtra-bayn-stock-may-be-undervalued-as-canada-drug-approval-expands-yahoo-finance",
-      "date": "2026-08-20",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Bayer (XTRA:BAYN) Stock May Be Undervalued As Canada Drug Approval Expands - Yahoo Finance\nSource: Google News\nDate: Thu, 20 Aug 2026 02:12:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Bayer (XTRA:BAYN) Stock May Be Undervalued As Canada Drug Approval Expands - Yahoo Finance",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPYWJjSzVYYkRfSnlfUmZVVUFWMVNTWEZwNUZ2NXpzbnpJYnU5bTFJN3NUN1N0N3poeTltdWlLZ2FHQTNvZGZ0Z0YtVU1wVDJWYlZvNHpROGZQMUlMcVpMaGJwdC11aGVuTDNRRnN3ejJJM3N5RHJBaGF0NXZsQ0hIQ3NfcFJjcE1FcE12SE1rSWtrSHI4?oc=5",
-      "fetched_at": "2026-08-20T08:23:09.864407+00:00",
       "is_long_form": false
     }
   ]
