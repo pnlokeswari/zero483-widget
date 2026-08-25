@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-25T21:19:14.290928+00:00",
+  "last_updated": "2026-08-25T22:19:13.405430+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "4368c69dcadd",
+      "title": "New Jazz cancer drug approval could drive blockbuster sales - BioPharma Dive",
+      "slug": "new-jazz-cancer-drug-approval-could-drive-blockbuster-sales-biopharma-dive",
+      "date": "2026-08-25",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: New Jazz cancer drug approval could drive blockbuster sales - BioPharma Dive\nSource: Google News\nDate: Tue, 25 Aug 2026 21:22:38 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "New Jazz cancer drug approval could drive blockbuster sales - BioPharma Dive",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRG5OTjljUXRJbXJ1QnVNSXVlLXpzcHFHc1dCaXBrRk9QUEdDRTlfTV81Z01jRV93emgtRnI3dGR2M2VPcGtTX0Y2bjRxaEF2eXFYR1RIVXJYUF9jMG1CeXNZbjhlLTVJckkxbE9LM3dyemVRb2pPR3Z3TVhLeHVUckdzcm9uZFJxZ3Z4ZkJpSFZYU2NCNjVXci1zUk84NkxK?oc=5",
+      "fetched_at": "2026-08-25T22:13:10.120610+00:00",
+      "is_long_form": false
+    },
     {
       "id": "e4990a85ef8f",
       "title": "Twins Herbal Products: Undeclared prescription drug (sildenafil)",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9qNWxMNVJxQ0wxcS1NQW1takFYZHlfX2xwQzhCTU1RSUZBNU80OU5IdjZ4ZWY3VzFBT1AtdWJiRGwwbEJPdXkyRWVES1RnQ2xYdTZoRGlILVVyajFYbW5wSWlSMWZoUmpBTjdwZUpR?oc=5",
       "fetched_at": "2026-08-21T12:21:09.471007+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "23fb36c13f69",
-      "title": "Centricity™ Enterprise Archive and PACS Workstation",
-      "slug": "centricity-enterprise-archive-and-pacs-workstation",
-      "date": "2026-08-20",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Centricity™ Enterprise Archive and PACS Workstation\nSource: Health Canada\nDate: 2026-08-20T12:00:00</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Centricity™ Enterprise Archive and PACS Workstation",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/centricitytm-enterprise-archive-and-pacs-workstation",
-      "fetched_at": "2026-08-20T21:23:09.639518+00:00",
       "is_long_form": false
     }
   ]
