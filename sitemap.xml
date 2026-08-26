@@ -5,6 +5,7 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/jazz-s-her2-bispecific-ziihera-gains-fda-approval-to-change-practice-in-stomach-cancer-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/thyroid-tablets-recalled-nationwide-over-potential-superpotency-fda-the-hill.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/thyroid-medication-recalled-nationwide-after-tablets-found-to-be-superpotent-fda-fox-business.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/new-jazz-cancer-drug-approval-could-drive-blockbuster-sales-biopharma-dive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -54,5 +55,6 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-approval-lisinopril-annora-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-approval-ascorbic-acid-zydus-pharms.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-recalls-and-warnings-clear-eyes-eye-drops-recalled-over-potential-contamination-medshadow-foundation.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/failure-modes-in-soft-tissue-surgical-robots-an-adjudicated-fda-recall-cohort-2005-2026-springer-nature-link.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/companies.html</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/jazz-pharmaceuticals.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
