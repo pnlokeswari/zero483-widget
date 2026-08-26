@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-26T12:23:11.220657+00:00",
+  "last_updated": "2026-08-26T13:56:11.333867+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "2b3a7a398e7c",
+      "title": "Cyanosure DermaV Laser System",
+      "slug": "cyanosure-dermav-laser-system",
+      "date": "2026-08-26",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Cyanosure DermaV Laser System\nSource: Health Canada\nDate: 2026-08-26T12:00:00</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Cyanosure DermaV Laser System",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/cyanosure-dermav-laser-system",
+      "fetched_at": "2026-08-26T13:56:09.452673+00:00",
+      "is_long_form": false
+    },
     {
       "id": "a545b24be18e",
       "title": "Maquet Percutaneous Insertion Kit and Dilator Sets",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0xYU0wVHVabzVkV0dsaU1YWkF0Zm9RTDdfTVp0dVEwWFpYb19zanlja0VITXpGWFJ6UFBsTlhkRFJlclVIZ3MyM1YzY2Vwc0E3NENMMlR2SQ?oc=5",
       "fetched_at": "2026-08-21T03:42:33.579679+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "4040b9096a35",
-      "title": "Drug Approval: LISINOPRIL - ANNORA PHARMA",
-      "slug": "drug-approval-lisinopril-annora-pharma",
-      "date": "2026-08-20",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Application: ANDA218419\nSponsor: ANNORA PHARMA\nProduct: LISINOPRIL\nSubmission type: ORIG\nSubmission class: N/A\nStatus: AP\nStatus date: 20260820</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Drug Approval: LISINOPRIL - ANNORA PHARMA",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218419",
-      "fetched_at": "2026-08-25T20:12:09.400455+00:00",
       "is_long_form": false
     }
   ]

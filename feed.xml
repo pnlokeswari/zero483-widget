@@ -4,8 +4,18 @@
     <title>Zero483 FDA Pharma Alerts</title>
     <description>Live tracker for FDA drug recalls, warning letters, and guidance.</description>
     <link>https://www.zero483.com/USFDA-news</link>
-    <lastBuildDate>Wed, 26 Aug 2026 12:23:11 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 13:56:11 GMT</lastBuildDate>
 
+    <item>
+      <title>Cyanosure DermaV Laser System</title>
+      <description>&lt;p&gt;Title: Cyanosure DermaV Laser System
+Source: Health Canada
+Date: 2026-08-26T12:00:00&lt;/p&gt;</description>
+      <link>https://www.zero483.com/USFDA-news?q=Cyanosure%20DermaV%20Laser%20System</link>
+      <guid>https://www.zero483.com/USFDA-news?q=Cyanosure%20DermaV%20Laser%20System</guid>
+      <category>Recall</category>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Maquet Percutaneous Insertion Kit and Dilator Sets</title>
       <description>&lt;p&gt;Title: Maquet Percutaneous Insertion Kit and Dilator Sets
@@ -493,20 +503,6 @@ Date: Fri, 21 Aug 2026 00:15:07 GMT&lt;/p&gt;</description>
       <guid>https://www.zero483.com/USFDA-news?q=Lazcluze%20marks%20two%20years%20since%20landmark%20FDA%20approval%20-%20%EB%A7%A4%EC%9D%BC%EA%B2%BD%EC%A0%9C</guid>
       <category>Drug Approval</category>
       <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Drug Approval: LISINOPRIL - ANNORA PHARMA</title>
-      <description>&lt;p&gt;Application: ANDA218419
-Sponsor: ANNORA PHARMA
-Product: LISINOPRIL
-Submission type: ORIG
-Submission class: N/A
-Status: AP
-Status date: 20260820&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Drug%20Approval%3A%20LISINOPRIL%20-%20ANNORA%20PHARMA</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Drug%20Approval%3A%20LISINOPRIL%20-%20ANNORA%20PHARMA</guid>
-      <category>Drug Approval</category>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
