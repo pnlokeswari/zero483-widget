@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-26T02:28:12.813792+00:00",
+  "last_updated": "2026-08-26T03:55:23.636463+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "bb00de07cb2c",
+      "title": "Thyroid tablets recalled nationwide over potential ‘superpotency’: FDA - The Hill",
+      "slug": "thyroid-tablets-recalled-nationwide-over-potential-superpotency-fda-the-hill",
+      "date": "2026-08-25",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Thyroid tablets recalled nationwide over potential ‘superpotency’: FDA - The Hill\nSource: Google News\nDate: Tue, 25 Aug 2026 16:10:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Thyroid tablets recalled nationwide over potential ‘superpotency’: FDA - The Hill",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYy15dVhiaDFlX21ycWJEMDkyYUdzOTJkZk1JYktBOFRpcmZ4NWFJblBENjFvbVJBd0NwSWpDaFVYb21Ebjhad1E4Y3d2R2d6UU9GTkNpOVFsdUdjUkdTQURMSmYxZHZGdG1fR3UzVUdnT09fYjQtSWMtVmFSYmI5ejNtU1VLQWRhTVVZd09neHpKVTY5eENHYVdUdlV0UDZvRmZmNDNSVDZtY1NiMnc?oc=5",
+      "fetched_at": "2026-08-26T03:43:09.451175+00:00",
+      "is_long_form": false
+    },
     {
       "id": "b4c533a11965",
       "title": "Thyroid medication recalled nationwide after tablets found to be 'superpotent': FDA - Fox Business",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE03T3ZvWUR6QVpuVjcwdExPY2VqWkJVMXgtM2F5dnprMkFVZDgxaS14V3Fsd0Y2b1BBV01nTmo4akVzeW1ieElxQWl5dHpMWGxpR2haam1GUkVjZEVZcG53ZGRmZUhSMGVCQW5IUQ?oc=5",
       "fetched_at": "2026-08-22T04:21:09.396389+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "97c648994809",
-      "title": "Blueberry recall in 8 states upgraded to FDA's highest health risk level - 13newsnow.com",
-      "slug": "blueberry-recall-in-8-states-upgraded-to-fda-s-highest-health-risk-level-13newsnow-com",
-      "date": "2026-08-20",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Blueberry recall in 8 states upgraded to FDA's highest health risk level - 13newsnow.com\nSource: Google News\nDate: Thu, 20 Aug 2026 14:42:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Blueberry recall in 8 states upgraded to FDA's highest health risk level - 13newsnow.com",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNN1p3Y19RU0VsWlNkMmFwOE15dVBwdnZxMWU5TF9BV05SZm0yZGpKbFlpN2tiNnAzdVY2cElCMG9RV1JEczVGeTJxbU1QZG1LcXhFLTViNHJ2WkthajZPV2JrUkpxNTFzaGFxMUZRQTdySDlnbnhDZUc4ZmcwYVFwQk5xc2N1VjFzTVFNV1pBaWdqR2NydWw4MjhCVkJRU2tUWkZwY3dPME5PVGFUN0RZWlUzbFVGVm16RVhWbHVZNnNPbXEzOVVuczRBc0JOb29sc0FicmJtQ1dGZFl0YkdpVTRXSW92YnM2SXR2NHFBdw?oc=5",
-      "fetched_at": "2026-08-22T02:14:09.890980+00:00",
       "is_long_form": false
     }
   ]
