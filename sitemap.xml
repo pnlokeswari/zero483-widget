@@ -5,12 +5,24 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/lub-asks-cdsco-to-highlight-the-fact-that-97-of-the-drugs-are-standard-quality-pharmabiz-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/the-quarter-that-took-oncozenge-into-phase-iii-biostock.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/cardinal-health-gynaecology-robotics-and-endoscopy-packs.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/automated-impella-controller-aic.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/apo-semaglutide-injection-incorrect-dose-display.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-targets-faster-generic-approvals-in-drive-to-slash-drug-prices-life-sciences-ip-review.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/the-fda-finalizes-guidance-on-formal-meetings-for-drug-and-biologic-development-jd-supra.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/roivant-s-road-to-a-potential-blockbuster-begins-with-lisraya-fda-approval-endpoints-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-drugmakers-defeat-compounders-in-fight-over-glp-1-shortage-bloomberg-law-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/nut-butter-recall-update-fda-issues-highest-risk-warning-newsweek.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/abbvie-seeks-ema-approval-for-subcutaneous-skyr-pluang.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/abbvie-seeks-ema-approval-to-let-crohn-s-patients-use-skyrizi-shots-stock-titan.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/abbvie-seeks-ema-approval-for-skyrizi-subcutaneous-induction-in-crohn-s-disease-the-clinical-trial-vanguard.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/roche-nabs-expanded-fda-approval-for-diagnostic-tied-to-jazz-s-cancer-drug-fierce-biotech.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-quinapril-hydrochlorothiazide-tablet.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/1-kashmir-tested-antibiotic-among-199-samples-flagged-in-cdsco-s-july-alert-greater-kashmir.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/asco-issues-warning-regarding-ifosfamide-shortage-for-cancer-care-onclive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/update-after-recall-vitruvias-closes-down-baxter-pulls-more-product-batches-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/a-game-changing-drug-for-pancreatic-cancer-just-got-fda-approval-gizmodo.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/groundbreaking-pancreatic-cancer-drug-approved-by-fda-roswell-park-played-key-role-in-trial-wkbw.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/new-drug-poised-to-transform-pancreatic-cancer-care-after-fda-approval-wxyz-channel-7.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -30,6 +42,7 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/cyanosure-dermav-laser-system.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/maquet-percutaneous-insertion-kit-and-dilator-sets.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/canaccord-reiterates-jazz-pharmaceuticals-stock-rating-on-drug-approval-investing-com-india.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/generic-lenacapavir-for-hiv-prevention-moves-closer-to-india-with-cdsco-waiver-of-local-phase-3-trials-theprint.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/amgen-medical-centers-diverge-on-potential-conflicts-in-fda-pilot-to-speed-early-drug-trials-endpoints-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-recalls-and-warnings-levothyroxine-and-natural-thyroid-drugs-recalled-for-potency-problems-medshadow-foundation.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/jazz-s-her2-bispecific-ziihera-gains-fda-approval-to-change-practice-in-stomach-cancer-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -42,22 +55,11 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/bristol-myers-squibb-stock-holds-above-67-as-new-myeloma-drug-gains-fda-approval-ad-hoc-news-de.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/dr-ger-ventstar-resus-neo-and-ventstar-resuscitaire.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/mother-of-friedreich-s-ataxia-patients-hopes-drug-approval-will-save-son-s-voice-newstalk.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-lisdexamfetamine-dimesylate-capsule.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/friedreich-s-ataxia-campaigners-calling-for-drug-approval-rte-ie.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/list-here-s-all-the-food-under-recall-in-the-us-wusa9.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-logs-more-than-1-700-adverse-event-reports-involving-compounded-semaglutide-and-tirzepatide-drugdiscoverytrends-co.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-bumetanide-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/therapeutic-equivalence-fda-finalizes-guidance-on-te-evaluations-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-side-effects-update-new-allergic-reaction-warnings-for-osteoporosis-and-hypoparathyroidism-drugs-medshadow-founda.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-warning-letter-flags-laboratory-data-integrity-failures-lab-manager.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/state-drug-alert-cdsco-flags-199-samples-including-paracetamol-pantoprazole-cefixime-as-not-of-medical-dialogues.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/importation-of-south-korean-authorized-bonky-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/copycat-glp-1-drugs-are-cheaper-but-here-s-what-you-need-to-know-houston-chronicle.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/gc-biopharma-s-hunter-syndrome-treatment-hunterase-receives-drug-approval-in-india-and-taiwan-pr-newswire.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/sun-pharma-recalls-over-1900-bottles-of-epilepsy-drug-in-us-pharma-economictimes-indiatimes-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/companies.html</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/revolution.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/abbvie.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/vitruvias-therapeutics.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/roche.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/jazz-pharmaceuticals.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/revolution.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/oncozenge.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
