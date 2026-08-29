@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-29T18:08:12.639719+00:00",
+  "last_updated": "2026-08-29T21:35:17.507018+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "b3c599de71e6",
+      "title": "Takeda receives US FDA approval of Mimrylo - The Pharma Letter",
+      "slug": "takeda-receives-us-fda-approval-of-mimrylo-the-pharma-letter",
+      "date": "2026-08-29",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: Takeda receives US FDA approval of Mimrylo - The Pharma Letter\nSource: Google News\nDate: Sat, 29 Aug 2026 20:37:30 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Takeda receives US FDA approval of Mimrylo - The Pharma Letter",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbWVuc25OR0VUM2VEank4XzFRUmVJdDVXZHJpcHdnMEkwemJKMHJEWHBWamR4X1NtRVpMVUJYdnBURlFvdXJwMzdpWUZDTUp3VG1uVm9mZVdNbW1UTzk4d1Nqak1KRnQ3bTlnMnp5aFhQcTZlWng5MWdGTXU2bmV5ejg2MFVmSy12VkxZejZaTQ?oc=5",
+      "fetched_at": "2026-08-29T21:27:09.792245+00:00",
+      "is_long_form": false
+    },
     {
       "id": "8fa0a74bbcf0",
       "title": "FDA orders recall of heart drug tablets over impurities - Taipei Times",
@@ -54,6 +72,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQamtWcVZqdlpmWHRQeThTUVVQUUdJTXVmOFE1OWUwc3BRME5xc2lIcGM5Y0M3a2E2SG40TS12WnZkV3ZpcVdUUG5JdjNSQzZISjlaNzRHcFYzRnVPRWtpVlV4dnI1SVE0N3NWUXpGSEZTZnh6TGY5M3VBTGRVbERBZlkzdWYyNWstOTRjQnk3cTBRNzJDdW10d1BhbFpSNWhvMEdEcmYzUkZ6aUZmc2p4NDRpQQ?oc=5",
       "fetched_at": "2026-08-29T02:36:09.746542+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "22161648460d",
+      "title": "Drug Companies, Prescribers Endanger Patients by Routinely Flouting FDA Rules, Senate Probe Finds - National Review",
+      "slug": "drug-companies-prescribers-endanger-patients-by-routinely-flouting-fda-rules-senate-probe-finds-national-review",
+      "date": "2026-08-28",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: Drug Companies, Prescribers Endanger Patients by Routinely Flouting FDA Rules, Senate Probe Finds - National Review\nSource: Google News\nDate: Fri, 28 Aug 2026 19:41:41 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Drug Companies, Prescribers Endanger Patients by Routinely Flouting FDA Rules, Senate Probe Finds - National Review",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNaUY5WmI3cDFuLUdnVlgxZjg3UWF6cXRkS0JTMzdOSW12WkFvNUdteWJoYXNQOThrVmw4WXF4bnRvak1DMEFGQ0tfNGc5OXc1dWhCZGJ0N3Jibkd3WG9WeEVnYy1EeHp0d0pVUHN6OG96WWdGeUpjOGQxcWtTRFRPUzdCNzNPWDVxZVJhZmJXT3U1R3pmM05YT24tYnVwc2RsSGd6djFDdlBuM0oxSzktaWZyNWpRWWtsQ3NEU21kZXdMTExxU2NhY29ab0jSAdIBQVVfeXFMUHB0VHJzemMzNlZwZ010eHRHWlRiVXVsYXh6QUNnbEo3bENlSnJKeWctT1RpbGt3MDAwNDl3SFRkNFRFcGpseGNvU1RvY3d0Mk1CUGtreTA4SktKNWtJS21rRmw0WDBHUi1hR2ZUM04yZ3NWTmJsQkViTTlCMjlySjI0REd0dHlyNVBTV09vczZwS2RUOUI5dmpNZE5FNVQ1dUtDdU9YTDBob1FMUmZKOEh4c0VjSjJkRWI2V0E5bDU5TlAwWFpFS1hnNTk4TVNGNTJn?oc=5",
+      "fetched_at": "2026-08-29T21:35:09.857229+00:00",
       "is_long_form": false
     },
     {
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUVBFOE1hM19UVmNicjJNNlNJcmUtQ20tMDBGTWNKVVdBeWljTDNUV3c0UjBsS3pSLUNQMG5YcGZfanc3REpZUUFCQUlTQ1lQTGh4Unk1ZEZkUk1HWjBsaFI4WjNyRm8tMVBtVkNaSWl5R0xtOW5HMVctMENSdXBBMUZnN1NNbDlEUjJIdS1HZDY4eThCaEs3QktSZXVzOHdWUmk2RDB2VWFaOWNCNlRtSjI2amYtclZ1QU56T2dOaER6NlJCU0pnQlRUWU7SAcwBQVVfeXFMTlFQRThNYTNfVFZjYnIyTTZTSXJlLUNtLTAwRk1jSlVXQXlpY0wzVFd3NFIwbEt6Ui1DUDBuWHBmX2p3N0RKWVFBQkFJU0NZUExoeFJ5NWRGZFJNR1owbGhSOFozckZvLTFQbVZDWklpeUdMbTluRzFXLTBDUnVwQTFGZzdTTWw5RFIySHUtR2Q2OHk4QmhLN0JLUmV1czh3VlJpNkQwdlVhWjljQjZUbUoyNmpmLXJWdUFOek9nTmhEejZSQlNKZ0JUVFlO?oc=5",
       "fetched_at": "2026-08-26T18:40:09.351363+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "ae66c3779fcf",
-      "title": "Revolution Medicines Receives Landmark FDA Drug Approval in Pancreatic Cancer - MedCity News",
-      "slug": "revolution-medicines-receives-landmark-fda-drug-approval-in-pancreatic-cancer-medcity-news",
-      "date": "2026-08-26",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Revolution Medicines Receives Landmark FDA Drug Approval in Pancreatic Cancer - MedCity News\nSource: Google News\nDate: Wed, 26 Aug 2026 18:05:43 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Revolution Medicines Receives Landmark FDA Drug Approval in Pancreatic Cancer - MedCity News",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxObld0V1JJRUREbU1iTUh2TGtxOHBqa0VwY09ERFhLQllPR3VoWjlSTEEyc0I4N25yTmI1ZHB4bkY1TGNjWUVuMDAyRGwtdE1sNjBWeFdmdVJtMk1mVFZ1ODRMZzA2VDJBelV3YUstSVNPMHRuV3hwd3YyYnhOdlNZdUpFV25sSk9zVmo2UGIzc2R0czlYdmVLclkxeVVGa2tkUnBaNGg3TEpFN3RXTTJXOHhyWGtEWXQ1QjkyMnRmaWY0TXFDTzI2M1JoS19MVVRGeGc0?oc=5",
-      "fetched_at": "2026-08-26T18:38:09.765232+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "ad0f1a3cb369",
-      "title": "FDA approves landmark pancreatic cancer drug that’s shown to improve survival - AP News",
-      "slug": "fda-approves-landmark-pancreatic-cancer-drug-that-s-shown-to-improve-survival-ap-news",
-      "date": "2026-08-26",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: FDA approves landmark pancreatic cancer drug that’s shown to improve survival - AP News\nSource: Google News\nDate: Wed, 26 Aug 2026 17:16:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "FDA approves landmark pancreatic cancer drug that’s shown to improve survival - AP News",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcHZjQ2VTNEZIc0ltY0R3cmxCcURlRGFEOTc2aVBURlRrVk1fVmVLeDdqeHd0UFVzLXVyZHZsWWhwNXk0ZjRqZWhDSXF6ZVFKbS12WGNieG5lWWhHWnNlLUhWTmNSOGZYX0Uydl84VUZtSUJXckhXZEg3VEpBcmRESXlzUDVEQUwzMjdFUmVxQnRfTkFpTWJWbl9JUU55LVkzREhZN0VVOA?oc=5",
-      "fetched_at": "2026-08-26T18:36:10.136319+00:00",
       "is_long_form": false
     }
   ]
