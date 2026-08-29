@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-08-29T14:53:13.857254+00:00",
+  "last_updated": "2026-08-29T18:08:12.639719+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "8fa0a74bbcf0",
+      "title": "FDA orders recall of heart drug tablets over impurities - Taipei Times",
+      "slug": "fda-orders-recall-of-heart-drug-tablets-over-impurities-taipei-times",
+      "date": "2026-08-29",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: FDA orders recall of heart drug tablets over impurities - Taipei Times\nSource: Google News\nDate: Sat, 29 Aug 2026 16:00:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "FDA orders recall of heart drug tablets over impurities - Taipei Times",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBHTzlEUlFUaFVjaE9sckhBVVM1UVpCOFc2ZHVmTGVvUFZyNEttYXhhb3RzdVVCWC04OXhnLWxSeGtSTUtpUGRoQmtoaUVIa2FPcm5pNWlOSkpjdkVLOWlPUFNRbEl4ZHdPSlBGNTJRM01lTFdJTFhqY1d3?oc=5",
+      "fetched_at": "2026-08-29T17:58:09.289317+00:00",
+      "is_long_form": false
+    },
     {
       "id": "3c812521c95e",
       "title": "Protagonist Therapeutics receives FDA approval for polycythemia vera drug - Investing.com",
@@ -270,6 +288,24 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-08-28T06:28:09.189359+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "8227c3a65832",
+      "title": "Outbreak Investigation of Infant Botulism: Powdered Infant Formula (June 2026) - fda.gov",
+      "slug": "outbreak-investigation-of-infant-botulism-powdered-infant-formula-june-2026-fda-gov",
+      "date": "2026-08-27",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Outbreak Investigation of Infant Botulism: Powdered Infant Formula (June 2026) - fda.gov\nSource: Google News\nDate: Thu, 27 Aug 2026 00:00:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Outbreak Investigation of Infant Botulism: Powdered Infant Formula (June 2026) - fda.gov",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdWIzNDUxbG1ZY1BXR2Jra3otQ0JtcmZhVHQ0aDV5elZXaVYzbTk1OWppWkJPTEQ0aTl2azFSRUJ3eXBXbVRaSHEzYmpXY2I5X3FGdzBaN0JickJHZkxLREpHdFNuNHZTUzdEdGNhSzVlbHBSUHpZQVlMdWQ4eHl5SFZtMklGcXdNcXowVjZydUxxUFRlbnJWQTY4ZXExZjQ3Ykh6R0VMeFE3S0p0enBKV2ZqZmtlNG1hbG55dXFQekhoOUU?oc=5",
+      "fetched_at": "2026-08-29T17:56:09.771620+00:00",
       "is_long_form": false
     },
     {
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcHZjQ2VTNEZIc0ltY0R3cmxCcURlRGFEOTc2aVBURlRrVk1fVmVLeDdqeHd0UFVzLXVyZHZsWWhwNXk0ZjRqZWhDSXF6ZVFKbS12WGNieG5lWWhHWnNlLUhWTmNSOGZYX0Uydl84VUZtSUJXckhXZEg3VEpBcmRESXlzUDVEQUwzMjdFUmVxQnRfTkFpTWJWbl9JUU55LVkzREhZN0VVOA?oc=5",
       "fetched_at": "2026-08-26T18:36:10.136319+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "ec57ae493e1e",
-      "title": "FDA Announces Recall of Thyroid Medicine Due to Potential “Super Potency” - Yahoo News Singapore",
-      "slug": "fda-announces-recall-of-thyroid-medicine-due-to-potential-super-potency-yahoo-news-singapore",
-      "date": "2026-08-26",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: FDA Announces Recall of Thyroid Medicine Due to Potential “Super Potency” - Yahoo News Singapore\nSource: Google News\nDate: Wed, 26 Aug 2026 16:56:20 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "FDA Announces Recall of Thyroid Medicine Due to Potential “Super Potency” - Yahoo News Singapore",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVUxOWjU4NjdtanVTY3ZRZmx6ZTViLTNWRXdxb2d2bERqMVZ5aGdMR1hJV3I5NHNVT3ZXcGdjYXdpeEpPRGVRSVFPdU11dGhPN2NUdkc0VWstbXNncUNkQ25uNXBpYnBPRDhRcHdVajJ3MjhNUGthSXR2MjFJbXZOTmlLTUM?oc=5",
-      "fetched_at": "2026-08-26T18:29:09.564456+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "d3e2188eac5c",
-      "title": "Revolution Medicines wins FDA approval for Rasonque, the first drug to target the genetic driver of pancreatic cancer - ",
-      "slug": "revolution-medicines-wins-fda-approval-for-rasonque-the-first-drug-to-target-the-genetic-driver-of-pancreatic-cancer",
-      "date": "2026-08-26",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Revolution Medicines wins FDA approval for Rasonque, the first drug to target the genetic driver of pancreatic cancer - Dealroom\nSource: Google News\nDate: Wed, 26 Aug 2026 15:15:48 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Revolution Medicines wins FDA approval for Rasonque, the first drug to target the genetic driver of pancreatic cancer - ",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWXEtNE5Jb3pvb1gzVVFkUXRuZG1vXzBnUWFsNnVXeElValhHdHgySFlTRkVwYTFRZ3JYWUxpZ2JaR2tCSlFmYi1hWGRkREg0YlpjckpNdU9VQnZrS25FTDE0UkFYTnU5d3Z2MElkNTY2UDIwemV1eVJzRldadE5DelBZVDhoNXI3R3otSHpFNnZYMnJxYWJkeW82VFFhVDBTOHF5ckVRMThsSmRTSFBUc2ZOblNvSnN4LW14TnBrVDNHamcxalVsSGUzcE1iRnd2ckNKRHAydEJDOV91dUlIM0c2TWg?oc=5",
-      "fetched_at": "2026-08-26T16:23:09.490213+00:00",
       "is_long_form": false
     }
   ]
