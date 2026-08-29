@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-29T09:30:54.696039+00:00",
+  "last_updated": "2026-08-29T14:53:13.857254+00:00",
   "total_items": 50,
   "items": [
     {
@@ -36,6 +36,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQamtWcVZqdlpmWHRQeThTUVVQUUdJTXVmOFE1OWUwc3BRME5xc2lIcGM5Y0M3a2E2SG40TS12WnZkV3ZpcVdUUG5JdjNSQzZISjlaNzRHcFYzRnVPRWtpVlV4dnI1SVE0N3NWUXpGSEZTZnh6TGY5M3VBTGRVbERBZlkzdWYyNWstOTRjQnk3cTBRNzJDdW10d1BhbFpSNWhvMEdEcmYzUkZ6aUZmc2p4NDRpQQ?oc=5",
       "fetched_at": "2026-08-29T02:36:09.746542+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "0e384a4d59b0",
+      "title": "Walmart’s nut butter could kill you as it just received the FDA’s most serious classification - New York Post",
+      "slug": "walmart-s-nut-butter-could-kill-you-as-it-just-received-the-fda-s-most-serious-classification-new-york-post",
+      "date": "2026-08-28",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>The FDA has issued its most serious Class I recall for a specific lot of Walmart's nut butter, signaling a reasonable probability of severe adverse health consequences or death. This urgent alert emphasizes critical consumer safety concerns linked to the product.</p>",
+      "compliance_impact": "<ul><li>Puts consumers at immediate risk of severe health issues.</li><li>Significantly impacts public trust and brand reputation.</li></ul>",
+      "key_actions": "<ul><li>Consumers must stop using and return/dispose of affected products.</li><li>Retailers and suppliers need stronger food safety protocols.</li></ul>",
+      "industry_context": "<p>A Class I classification is the FDA's most severe recall level, indicating that product use will likely cause serious health consequences or death, demanding immediate public awareness.</p>",
+      "seo_title": "Urgent FDA Class I Recall: Walmart's Nut Butter Poses Severe Health Risk",
+      "seo_description": "FDA issues its most serious recall classification for Walmart's nut butter, warning of potential severe health consequences or death. Consumers urged to check products immediately.",
+      "primary_company_name": "Walmart",
+      "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOcnd4Z3RPdjZESUI3YkV5YmJidUx5UDZ2RHdRcFhMTmlTQ2xRYzJrLW0wYVMzc1RhT28zNmp0cHpZWWRGd0YtWTUxbHlrVjg5QWNjYnBJcTBCNktCcjdKZ1llRTA3TkplYjI4bDlfYUVIV21lbnNza083RjJSQ2lLaks1RlhzVFNaVWtUV245Tl9QWV8tTUtDRHJZSVFOcVpZZFRLLWdzVHJUUXM1Wi1YSVlORlZYVDlLMi1LUk5raUlWNk1xd3BNN0dVWm0?oc=5",
+      "fetched_at": "2026-08-29T14:44:07.306887+00:00",
       "is_long_form": false
     },
     {
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWXEtNE5Jb3pvb1gzVVFkUXRuZG1vXzBnUWFsNnVXeElValhHdHgySFlTRkVwYTFRZ3JYWUxpZ2JaR2tCSlFmYi1hWGRkREg0YlpjckpNdU9VQnZrS25FTDE0UkFYTnU5d3Z2MElkNTY2UDIwemV1eVJzRldadE5DelBZVDhoNXI3R3otSHpFNnZYMnJxYWJkeW82VFFhVDBTOHF5ckVRMThsSmRTSFBUc2ZOblNvSnN4LW14TnBrVDNHamcxalVsSGUzcE1iRnd2ckNKRHAydEJDOV91dUlIM0c2TWg?oc=5",
       "fetched_at": "2026-08-26T16:23:09.490213+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "7d9f4dedc677",
-      "title": "RevMed receives early FDA approval for ‘groundbreaking’ pancreatic cancer drug - BioSpace",
-      "slug": "revmed-receives-early-fda-approval-for-groundbreaking-pancreatic-cancer-drug-biospace",
-      "date": "2026-08-26",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: RevMed receives early FDA approval for ‘groundbreaking’ pancreatic cancer drug - BioSpace\nSource: Google News\nDate: Wed, 26 Aug 2026 15:33:02 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "RevMed receives early FDA approval for ‘groundbreaking’ pancreatic cancer drug - BioSpace",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPb2JEZ0RoOXpxd3NhMXRILWFWcDFxT0VRbFpSVGZhMnV5OC1ndjE3aG01b2h3QTZuaG5YZnVDalpid2U5a0pEX0JPX2gyUkg3LUZBT0RLUWhFLWUxaWxzN2NsVnlYVDcyQlZiSjhSMFBjX01OeVBqelBicVYzQmpTa3FtamVUZHFzNU54X1R6bWdkMk5jUmllUGhGdXRabG9mRmdlRlNTempwYm5uU2x6VlBVcENIR1lIeGc?oc=5",
-      "fetched_at": "2026-08-26T16:21:09.942733+00:00",
       "is_long_form": false
     }
   ]
