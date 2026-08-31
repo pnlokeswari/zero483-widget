@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-31T01:50:13.582417+00:00",
+  "last_updated": "2026-08-31T07:44:08.348090+00:00",
   "total_items": 50,
   "items": [
     {
@@ -90,6 +90,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQamtWcVZqdlpmWHRQeThTUVVQUUdJTXVmOFE1OWUwc3BRME5xc2lIcGM5Y0M3a2E2SG40TS12WnZkV3ZpcVdUUG5JdjNSQzZISjlaNzRHcFYzRnVPRWtpVlV4dnI1SVE0N3NWUXpGSEZTZnh6TGY5M3VBTGRVbERBZlkzdWYyNWstOTRjQnk3cTBRNzJDdW10d1BhbFpSNWhvMEdEcmYzUkZ6aUZmc2p4NDRpQQ?oc=5",
       "fetched_at": "2026-08-29T02:36:09.746542+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "28d664fb41d0",
+      "title": "Are food recalls increasing under RFK? What the data reveals. - USA Today",
+      "slug": "are-food-recalls-increasing-under-rfk-what-the-data-reveals-usa-today",
+      "date": "2026-08-28",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>The question of whether food recalls are increasing prompts a closer look at the U.S. food safety landscape. While not a direct FDA regulatory update, this discussion underscores the agency's critical role in safeguarding consumer health through continuous monitoring and, when necessary, initiating product recalls.</p>",
+      "compliance_impact": "<ul><li>Heightened public awareness of food safety protocols.</li><li>Potential for increased regulatory vigilance and enforcement.</li></ul>",
+      "key_actions": "<ul><li>Stay informed on FDA food safety alerts.</li><li>Industry: review and enhance recall readiness plans.</li></ul>",
+      "industry_context": "<p>Food safety is paramount, with the FDA overseeing a vast and complex food supply chain to ensure products meet stringent health and quality standards before reaching consumers.</p>",
+      "seo_title": "Food Recalls Under Scrutiny: What Increased Activity Means for Consumers & FDA",
+      "seo_description": "Are US food recalls on the rise? This analysis delves into the implications of food safety trends for consumers and the FDA's vital regulatory role.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOOXB4NHhFZDI3c21pellxbzQtV0NxU1JLeHI5ZS1neXlpbmZ2WjE3aFVfMDR4ZElCNXI4Y3BXSVdLMnotZ09udjdWMjRJM2d5dmhyYmw4b1RVYjBZa1hSMHpXb1IzWXV1V0tLaGstMzhvU0I5bTlpV0c2X25EWEtTbmdMU29fZ3BnLVBKaUw2NmNtMU1HbU5RSG1TdzBGdw?oc=5",
+      "fetched_at": "2026-08-31T07:41:45.017340+00:00",
       "is_long_form": false
     },
     {
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbzRCUFdPckM5di1hNktDMlVjbTExeERyZ3VZU09qMjJmZ1FKckhJSFNaMk1oYU5DdjVGVEhsZ2VqX0hPRi10OXgydTRibVBtdFJ4Wk84TjZXZFBtZVQzYkRUdXpGeUFIc05vUGpYdkpod1BzYVVtVHg4ZF9ueG91SW9rN3haVjNKazVlNGl2LVljZkZaZDBVY2MwWlk5WW53eVdKY3hETExJcWlQSGU1VWh1bHVySDg?oc=5",
       "fetched_at": "2026-08-26T21:29:09.888813+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "05fb43efff93",
-      "title": "pancreatic-cancer-drug-fda-approval-rasonque: Latest Updates - Audacy",
-      "slug": "pancreatic-cancer-drug-fda-approval-rasonque-latest-updates-audacy",
-      "date": "2026-08-26",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: pancreatic-cancer-drug-fda-approval-rasonque: Latest Updates - Audacy\nSource: Google News\nDate: Wed, 26 Aug 2026 19:11:04 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "pancreatic-cancer-drug-fda-approval-rasonque: Latest Updates - Audacy",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNc2M2MFFtMXpuT19oS3BHc1A3RzZjcHlEQ25ua1J3OEVBWjlSYmpFSnlUWTA0TjcybE5PYzVrMDM4YUJmZDNmY2ctMEtRdml6VWtNZlpqbXBuNlp4MUFRTzJEQTRiRGhwei1Gc0NVd2FZSHlnYlljWEFtMFBJdzB3WDFvNA?oc=5",
-      "fetched_at": "2026-08-26T21:27:09.347505+00:00",
       "is_long_form": false
     }
   ]
