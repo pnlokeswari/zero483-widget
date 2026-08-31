@@ -5,6 +5,12 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-issues-alert-over-spurious-rabies-vaccine-following-potency-failure-at-cdl-kasauli-drugscontrol-org.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/jamp-temozolomide-out-of-specification-assay.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/nearly-70-of-new-drugs-now-win-fda-approval-with-just-one-study-studyfinds.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/the-compounding-loophole-has-become-a-business-model-realclearhealth.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-announces-tofu-recall-more-than-10-000-cases-may-be-contaminated-with-ink-health-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/whole-foods-guacamole-recall-is-now-fda-s-highest-risk-class-what-to-know-houston-chronicle.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/popular-milk-brand-recalled-nationwide-for-potential-spoilage-wkrc.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/takeda-receives-us-fda-approval-of-mimrylo-the-pharma-letter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-orders-recall-of-heart-drug-tablets-over-impurities-taipei-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -49,22 +55,15 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/abbvie-seeks-ema-approval-for-skyrizi-subcutaneous-induction-in-crohn-s-disease-the-clinical-trial-vanguard.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/roche-nabs-expanded-fda-approval-for-diagnostic-tied-to-jazz-s-cancer-drug-fierce-biotech.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-quinapril-hydrochlorothiazide-tablet.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/1-kashmir-tested-antibiotic-among-199-samples-flagged-in-cdsco-s-july-alert-greater-kashmir.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/asco-issues-warning-regarding-ifosfamide-shortage-for-cancer-care-onclive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/update-after-recall-vitruvias-closes-down-baxter-pulls-more-product-batches-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/a-game-changing-drug-for-pancreatic-cancer-just-got-fda-approval-gizmodo.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/groundbreaking-pancreatic-cancer-drug-approved-by-fda-roswell-park-played-key-role-in-trial-wkbw.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/new-drug-poised-to-transform-pancreatic-cancer-care-after-fda-approval-wxyz-channel-7.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/companies.html</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/takeda.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/eli-lilly-and-company.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/roche.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/oncozenge.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/abbvie.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/ge-healthcare.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/whole-foods.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/vitruvias-therapeutics.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/novo-nordisk-eli-lilly.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/protagonist-therapeutics.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/roche.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/ge-healthcare.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/novo-nordisk-eli-lilly.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/abbvie.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/oncozenge.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/whole-foods.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/eli-lilly-and-company.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/takeda.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/walmart.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
