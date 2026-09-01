@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-09-01T01:04:13.982397+00:00",
+  "last_updated": "2026-09-01T07:02:42.597656+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "1571cedd92ad",
+      "title": "B. Braun adds to a string of IV solution recalls in US - Fierce Pharma",
+      "slug": "b-braun-adds-to-a-string-of-iv-solution-recalls-in-us-fierce-pharma",
+      "date": "2026-08-31",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: B. Braun adds to a string of IV solution recalls in US - Fierce Pharma\nSource: Google News\nDate: Mon, 31 Aug 2026 14:47:34 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "B. Braun adds to a string of IV solution recalls in US - Fierce Pharma",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZGpScEd1djBpZi1ROU95aXU2Ti1meHBYdE1fMTNkeGFLOUlNUldRTUtOZzF6bzdGb0FXSkxULW4tNGx1YnozSlE0bjUxdm10U25HQnlvbktQMHFOalVmWHMxLW1iUFhfSTUxdzFubkstQzV1RlNDbXpZTlI4X1hiTlZkclI5RkRKaUN5NmtDZWp3ZlNqY244R09FWXFycTAzcTRxZUsydC1uZTRwZ0JySWgyYk9LNHlWaWc?oc=5",
+      "fetched_at": "2026-09-01T06:50:09.860902+00:00",
+      "is_long_form": false
+    },
     {
       "id": "09ea076bef82",
       "title": "(ropeginterferon alfa-2b-njft) for Adults with Essential Thrombocythemia, A Rare Blood Cancer - Business Wire",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdmpSNlhaWjNSbU4tWGlKYS1oLW9BWjM4cFN5R1c0ZDZLOFh6Z2NQNm5Xd3JHUWJfaWVxX1JlSHJJa3BSQ2pheUh0VU0xUm55RkhxbnFZdld0eHAtTmNWR2h1QzdyNjh5dDNabG1nRENUVldJR0hUYUF6aExyczFMbm1TRXp1YWM?oc=5",
       "fetched_at": "2026-08-27T22:46:09.457096+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "b3fdca1ac4a4",
-      "title": "FDA, Drugmakers Defeat Compounders in Fight Over GLP-1 Shortage - Bloomberg Law News",
-      "slug": "fda-drugmakers-defeat-compounders-in-fight-over-glp-1-shortage-bloomberg-law-news",
-      "date": "2026-08-27",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Title: FDA, Drugmakers Defeat Compounders in Fight Over GLP-1 Shortage - Bloomberg Law News\nSource: Google News\nDate: Thu, 27 Aug 2026 16:42:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "FDA, Drugmakers Defeat Compounders in Fight Over GLP-1 Shortage - Bloomberg Law News",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNRzV4Ujc4X2x4UHRLTnFROVFvbzlMTGw3ZC0tU1FDLTI3ckNjcm5CVnYxNmZidkdIWGE1N1VmRWRQYnNHZFlSZ1M3WXp6dVp1VkpiRHBzaVQ3QzJUUzNWNGZWZW10TnFxYUI3NnRDaXNUREwzSjZOdjRPUUpFdmZHYlZrRmNJQkRwcXY4UVRVUG55dkVJeVpxekNxMlNYLXZNcHhOcXMxLVFRWnFmX2lmdg?oc=5",
-      "fetched_at": "2026-08-27T22:40:10.163009+00:00",
       "is_long_form": false
     }
   ]
