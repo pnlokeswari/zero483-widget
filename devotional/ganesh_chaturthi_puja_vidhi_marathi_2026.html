@@ -111,6 +111,28 @@
     }
     .card-title .icon { font-size: 22px; flex-shrink: 0; }
 
+    /* ── NAMAVALI (108 Names) ── */
+    .namavali-grid { display: grid; grid-template-columns: 1fr; gap: 5px; }
+    .nama-item {
+      display: flex; align-items: center; gap: 10px;
+      background: #f3e5f5; border: 1px solid #ce93d8;
+      border-radius: 8px; padding: 9px 12px; min-height: 42px;
+    }
+    .nama-item:hover { background: #ede7f6; }
+    .nama-num {
+      background: var(--maroon); color: #fff;
+      min-width: 28px; height: 28px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 700; flex-shrink: 0;
+    }
+    .nama-text { font-size: 14px; font-weight: 600; color: var(--deep); flex: 1; }
+    @media (min-width: 580px) {
+      .namavali-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 820px) {
+      .namavali-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
     /* ── GANESHA BANNER ── */
     .ganesha-banner {
       border-radius: var(--radius); overflow: hidden;
@@ -300,6 +322,7 @@
     <a href="#puja" class="nav-btn">🙏 पूजाविधी</a>
     <a href="#mantra" class="nav-btn">📿 मंत्र</a>
     <a href="#arati" class="nav-btn">🪔 आरती</a>
+    <a href="#ashtottara" class="nav-btn">🌸 १०८ नामे</a>
     <a href="#visarjan" class="nav-btn">🌊 विसर्जन</a>
   </nav>
 
@@ -530,6 +553,132 @@
 
     <div class="note-box">
       <strong>📅 आरतीची वेळ:</strong> दररोज सकाळी व संध्याकाळी नियमितपणे आरती करावी. गणपती स्थापनेच्या दिवशी व विसर्जनाच्या दिवशी विशेष महापूजा करावी.
+    </div>
+  </section>
+
+  <!-- ASHTOTTARA SHATANAMAVALI -->
+  <section id="ashtottara" class="card">
+    <h2 class="card-title"><span class="icon">🌸</span> श्री गणेश अष्टोत्तर शतनामावली (१०८ नावे)</h2>
+    <p style="font-size:14px;color:var(--muted);margin-bottom:16px;">पूजेच्या वेळी प्रत्येक नावाने एक फूल किंवा दुर्वा अर्पण करत हे १०८ नाव म्हणावेत. मनोभावे नाम घेतल्यास सर्व मनोकामना पूर्ण होतात.</p>
+
+    <div style="background:linear-gradient(135deg,#ede7f6,#f3e5f5);border:2px solid #ce93d8;border-radius:12px;padding:14px 16px;margin-bottom:18px;text-align:center;">
+      <div style="font-size:16px;font-weight:700;color:var(--deep);line-height:1.8;">ॐ गं गणपतये नमः</div>
+      <div style="font-size:13px;color:var(--muted);margin-top:4px;">प्रत्येक नाम म्हणताना "ओं ... नमः" असे म्हणावे</div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr;gap:6px;" class="namavali-grid">
+      <div class="nama-item"><span class="nama-num">१</span><span class="nama-text">ओं गजाननाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">२</span><span class="nama-text">ओं गणाध्यक्षाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">३</span><span class="nama-text">ओं विघ्नराजाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">४</span><span class="nama-text">ओं विनायकाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">५</span><span class="nama-text">ओं द्वैमातुराय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">६</span><span class="nama-text">ओं द्विमुखाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">७</span><span class="nama-text">ओं प्रमुखाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">८</span><span class="nama-text">ओं सुमुखाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">९</span><span class="nama-text">ओं कृतिने नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१०</span><span class="nama-text">ओं सुप्रदीपाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">११</span><span class="nama-text">ओं सुखनिधये नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१२</span><span class="nama-text">ओं सुराध्यक्षाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१३</span><span class="nama-text">ओं सुरारिघ्नाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१४</span><span class="nama-text">ओं महागणपतये नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१५</span><span class="nama-text">ओं मान्याय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१६</span><span class="nama-text">ओं महाकालाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१७</span><span class="nama-text">ओं महाबलाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१८</span><span class="nama-text">ओं हेरंबाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१९</span><span class="nama-text">ओं लंबजठराय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">२०</span><span class="nama-text">ओं ह्रस्वग्रीवाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">२१</span><span class="nama-text">ओं महोदराय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">२२</span><span class="nama-text">ओं मदोत्कटाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">२३</span><span class="nama-text">ओं महावीराय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">२४</span><span class="nama-text">ओं मंत्रिणे नमः</span></div>
+      <div class="nama-item"><span class="nama-num">२५</span><span class="nama-text">ओं मंगलसुप्रभाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">२६</span><span class="nama-text">ओं प्रमदाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">२७</span><span class="nama-text">ओं प्रथमाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">२८</span><span class="nama-text">ओं प्राज्ञाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">२९</span><span class="nama-text">ओं विघ्नकर्त्रे नमः</span></div>
+      <div class="nama-item"><span class="nama-num">३०</span><span class="nama-text">ओं विघ्नहर्त्रे नमः</span></div>
+      <div class="nama-item"><span class="nama-num">३१</span><span class="nama-text">ओं विश्वनेत्रे नमः</span></div>
+      <div class="nama-item"><span class="nama-num">३२</span><span class="nama-text">ओं विराट्पतये नमः</span></div>
+      <div class="nama-item"><span class="nama-num">३३</span><span class="nama-text">ओं श्रीपतये नमः</span></div>
+      <div class="nama-item"><span class="nama-num">३४</span><span class="nama-text">ओं वाक्पतये नमः</span></div>
+      <div class="nama-item"><span class="nama-num">३५</span><span class="nama-text">ओं शृंगारिणे नमः</span></div>
+      <div class="nama-item"><span class="nama-num">३६</span><span class="nama-text">ओं आश्रिताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">३७</span><span class="nama-text">ओं शम्भुसुताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">३८</span><span class="nama-text">ओं शिवाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">३९</span><span class="nama-text">ओं शुभाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">४०</span><span class="nama-text">ओं मनोमयाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">४१</span><span class="nama-text">ओं ईशानपुत्राय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">४२</span><span class="nama-text">ओं अच्युताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">४३</span><span class="nama-text">ओं अमितविक्रमाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">४४</span><span class="nama-text">ओं अनंतशक्तये नमः</span></div>
+      <div class="nama-item"><span class="nama-num">४५</span><span class="nama-text">ओं अक्षोभ्याय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">४६</span><span class="nama-text">ओं शंकरप्रियाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">४७</span><span class="nama-text">ओं सर्वसिद्धिप्रदाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">४८</span><span class="nama-text">ओं सर्वतनयाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">४९</span><span class="nama-text">ओं सर्वरिपुहराय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">५०</span><span class="nama-text">ओं सर्वसिद्धान्तभूषिताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">५१</span><span class="nama-text">ओं सर्वात्मने नमः</span></div>
+      <div class="nama-item"><span class="nama-num">५२</span><span class="nama-text">ओं सृष्टिकर्त्रे नमः</span></div>
+      <div class="nama-item"><span class="nama-num">५३</span><span class="nama-text">ओं देवाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">५४</span><span class="nama-text">ओं अनेकार्चिताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">५५</span><span class="nama-text">ओं शिवाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">५६</span><span class="nama-text">ओं शुद्धाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">५७</span><span class="nama-text">ओं बुद्धिप्रियाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">५८</span><span class="nama-text">ओं शांताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">५९</span><span class="nama-text">ओं ब्रह्मचारिणे नमः</span></div>
+      <div class="nama-item"><span class="nama-num">६०</span><span class="nama-text">ओं गजानने नमः</span></div>
+      <div class="nama-item"><span class="nama-num">६१</span><span class="nama-text">ओं द्विजप्रियाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">६२</span><span class="nama-text">ओं वीतभयाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">६३</span><span class="nama-text">ओं गदिने नमः</span></div>
+      <div class="nama-item"><span class="nama-num">६४</span><span class="nama-text">ओं चक्रिणे नमः</span></div>
+      <div class="nama-item"><span class="nama-num">६५</span><span class="nama-text">ओं इक्षुचापधराय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">६६</span><span class="nama-text">ओं श्रीदाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">६७</span><span class="nama-text">ओं अजाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">६८</span><span class="nama-text">ओं उत्पलकराय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">६९</span><span class="nama-text">ओं श्रीपतये नमः</span></div>
+      <div class="nama-item"><span class="nama-num">७०</span><span class="nama-text">ओं स्तुतिहर्षिताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">७१</span><span class="nama-text">ओं कुलाद्रिभेत्त्रे नमः</span></div>
+      <div class="nama-item"><span class="nama-num">७२</span><span class="nama-text">ओं जटिलाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">७३</span><span class="nama-text">ओं कलिकल्मषनाशनाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">७४</span><span class="nama-text">ओं चंद्रचूडामणये नमः</span></div>
+      <div class="nama-item"><span class="nama-num">७५</span><span class="nama-text">ओं कांताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">७६</span><span class="nama-text">ओं पापहारिणे नमः</span></div>
+      <div class="nama-item"><span class="nama-num">७७</span><span class="nama-text">ओं समाहिताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">७८</span><span class="nama-text">ओं आश्रिताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">७९</span><span class="nama-text">ओं श्रीकराय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">८०</span><span class="nama-text">ओं सौम्याय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">८१</span><span class="nama-text">ओं भक्तवांछितदायकाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">८२</span><span class="nama-text">ओं शांताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">८३</span><span class="nama-text">ओं कैवल्यसुखदाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">८४</span><span class="nama-text">ओं सच्चिदानंदविग्रहाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">८५</span><span class="nama-text">ओं ज्ञानिने नमः</span></div>
+      <div class="nama-item"><span class="nama-num">८६</span><span class="nama-text">ओं दयायुताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">८७</span><span class="nama-text">ओं दांताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">८८</span><span class="nama-text">ओं ब्रह्मद्वेषविवर्जिताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">८९</span><span class="nama-text">ओं प्रमत्तदैत्यभयदाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">९०</span><span class="nama-text">ओं श्रीकण्ठाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">९१</span><span class="nama-text">ओं विबुधाग्रजाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">९२</span><span class="nama-text">ओं अभीष्टवरदाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">९३</span><span class="nama-text">ओं मंगलप्रदाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">९४</span><span class="nama-text">ओं अव्यक्ताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">९५</span><span class="nama-text">ओं अपराजिताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">९६</span><span class="nama-text">ओं सत्यकीर्तये नमः</span></div>
+      <div class="nama-item"><span class="nama-num">९७</span><span class="nama-text">ओं सखये नमः</span></div>
+      <div class="nama-item"><span class="nama-num">९८</span><span class="nama-text">ओं सर्वेश्वराय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">९९</span><span class="nama-text">ओं सिद्धिदाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१००</span><span class="nama-text">ओं सिद्धिसेविताय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१०१</span><span class="nama-text">ओं पराशक्तये नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१०२</span><span class="nama-text">ओं परनिष्ठाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१०३</span><span class="nama-text">ओं प्रज्ञाधराय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१०४</span><span class="nama-text">ओं सदाशिवाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१०५</span><span class="nama-text">ओं विद्याधिराजाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१०६</span><span class="nama-text">ओं वित्तेशाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१०७</span><span class="nama-text">ओं विघ्नेशाय नमः</span></div>
+      <div class="nama-item"><span class="nama-num">१०८</span><span class="nama-text">ओं विश्वभावनाय नमः</span></div>
+    </div>
+
+    <div class="note-box" style="margin-top:16px;">
+      <strong>🌸 फलश्रुती:</strong> जो भक्त श्रद्धेने व भक्तिभावाने हे १०८ नामे म्हणतो, त्याच्या सर्व विघ्नांचा नाश होतो, सुख-समृद्धी प्राप्त होते आणि सर्व मनोकामना पूर्ण होतात. <strong>गणपती बाप्पा मोरया!</strong>
     </div>
   </section>
 
