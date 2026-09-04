@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-09-04T21:14:12.281442+00:00",
+  "last_updated": "2026-09-04T23:38:14.132266+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "fdb51e207a51",
+      "title": "Drug Shortage: Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccha",
+      "slug": "drug-shortage-amphetamine-aspartate-monohydrate-amphetamine-sulfate-dextroamphetamine-saccha",
+      "date": "2026-09-04",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>The U.S. FDA has confirmed a continuing shortage of Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, and Dextroamphetamine Sulfate tablets. This critical mixed amphetamine salts medication, primarily used to treat Attention-Deficit/Hyperactivity Disorder (ADHD), faces ongoing supply chain challenges, raising concerns for patients and healthcare providers.</p>",
+      "compliance_impact": "<ul><li>Patients may experience treatment interruptions, affecting daily function and well-being.</li><li>Healthcare providers face difficulties managing patient care and finding suitable alternatives.</li></ul>",
+      "key_actions": "<ul><li>Patients should consult their prescribing physician for guidance on managing medication availability.</li><li>Industry stakeholders must prioritize enhancing supply chain resilience for critical drugs.</li></ul>",
+      "industry_context": "<p>This situation underscores the persistent vulnerability in the supply chain for essential neurological medications, impacting patient access to vital daily treatment.</p>",
+      "seo_title": "ADHD Medication Shortage: FDA Confirms Ongoing Supply Issues for Mixed Amphetamine Salts",
+      "seo_description": "The FDA confirms a persistent shortage of mixed amphetamine salts, crucial medication for ADHD. Learn what this means for patients and the broader pharmaceutical supply chain.",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-09-04T23:26:17.035689+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "0bcff804242f",
+      "title": "Drug Shortage: Lisdexamfetamine Dimesylate Capsule",
+      "slug": "drug-shortage-lisdexamfetamine-dimesylate-capsule",
+      "date": "2026-09-04",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Lisdexamfetamine Dimesylate Capsule\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Lisdexamfetamine Dimesylate Capsule",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-09-04T23:25:09.688632+00:00",
+      "is_long_form": false
+    },
     {
       "id": "282a1812a68b",
       "title": "Imager™ II Angiographic Catheter",
@@ -865,42 +901,6 @@
       "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUFFWVzNmdHZsWU9yUC1NSHoxY3kzdEthRzRWWEFIcnFFUTZHbVhERUFZaGptZDZ0MGRZUWNIcXBJWEZkR1FzWkxLSTFXNWFxdk1neW8wc2h5SXFyVjVhRlAzNkJUTUlicVBTbl9VLVJRRzh4RjR2WHljb09nWnBXMHJ4a0Q5eUdQbTV5YTVxVGp6aGdOdEt0LVVMTDZxZ0ZzN2JLX0Z3?oc=5",
       "fetched_at": "2026-09-01T12:06:50.534775+00:00",
       "is_long_form": true
-    },
-    {
-      "id": "1571cedd92ad",
-      "title": "B. Braun adds to a string of IV solution recalls in US - Fierce Pharma",
-      "slug": "b-braun-adds-to-a-string-of-iv-solution-recalls-in-us-fierce-pharma",
-      "date": "2026-08-31",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: B. Braun adds to a string of IV solution recalls in US - Fierce Pharma\nSource: Google News\nDate: Mon, 31 Aug 2026 14:47:34 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "B. Braun adds to a string of IV solution recalls in US - Fierce Pharma",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZGpScEd1djBpZi1ROU95aXU2Ti1meHBYdE1fMTNkeGFLOUlNUldRTUtOZzF6bzdGb0FXSkxULW4tNGx1YnozSlE0bjUxdm10U25HQnlvbktQMHFOalVmWHMxLW1iUFhfSTUxdzFubkstQzV1RlNDbXpZTlI4X1hiTlZkclI5RkRKaUN5NmtDZWp3ZlNqY244R09FWXFycTAzcTRxZUsydC1uZTRwZ0JySWgyYk9LNHlWaWc?oc=5",
-      "fetched_at": "2026-09-01T06:50:09.860902+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "09ea076bef82",
-      "title": "(ropeginterferon alfa-2b-njft) for Adults with Essential Thrombocythemia, A Rare Blood Cancer - Business Wire",
-      "slug": "ropeginterferon-alfa-2b-njft-for-adults-with-essential-thrombocythemia-a-rare-blood-cancer-business-wire",
-      "date": "2026-08-31",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: (ropeginterferon alfa-2b-njft) for Adults with Essential Thrombocythemia, A Rare Blood Cancer - Business Wire\nSource: Google News\nDate: Mon, 31 Aug 2026 12:00:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "(ropeginterferon alfa-2b-njft) for Adults with Essential Thrombocythemia, A Rare Blood Cancer - Business Wire",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPblc2Wkl1OXFpZm1FdDVGa2Y1NHRlNWE0clBDT3pXMGdoR3dtNWNEanotN05mMmthZ0FkUGUtRk1reS1xVmpxckxTYmNmUG1lN20zX3owNkUtOXZzLW80dGZPRFRNSFlaYU8xd2xsek4zb2RQT21pT2ZiX1NsVnpneWpUWDFsMmY4elpZYk5QZnNUUWRLR20waWs1c2J0cnBNVFRhX2ZSU2g4aUpwbmJUdmI3V0drZEw1ZngwYVhNQjlzYjhhTmktTnhyNHZRRk0yZDFYNUVaSnZCWTVyc3RCa0RTTFFpZ1pLeHJ4a3BLdkNFckdWOTBVRnZESFgwRkRveGRiTGUzNXdxNWNGQnZ3SUtB?oc=5",
-      "fetched_at": "2026-09-01T00:58:09.483872+00:00",
-      "is_long_form": false
     }
   ]
 }
