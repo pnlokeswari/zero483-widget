@@ -614,6 +614,170 @@
       .scroll-arrow-btn { width: 28px; height: 28px; font-size: 13px; }
     }
 
+  
+    /* ── ENHANCED 13-BLOG NAVIGATION STRIP WITH SCROLL CONTROLS ── */
+    .related-strip-wrap {
+      background: #ffffff;
+      border-bottom: 3px solid #ffb300;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+      position: relative;
+      z-index: 100;
+    }
+    .related-strip-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 8px 14px;
+      background: linear-gradient(90deg, #fff9c4 0%, #fffde7 100%);
+      border-bottom: 1px solid #ffe082;
+    }
+    .related-strip-title {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #795548;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+    .related-lang-pills {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .related-lang-pills::-webkit-scrollbar { display: none; }
+    .lang-pill {
+      font-size: 11px;
+      font-weight: 600;
+      color: #880e4f;
+      background: #fff;
+      border: 1px solid #f8bbd0;
+      padding: 3px 9px;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+    .lang-pill:hover, .lang-pill.active {
+      background: #880e4f;
+      color: #fff;
+      border-color: #880e4f;
+    }
+    .related-scroll-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .scroll-arrow-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      color: #880e4f;
+      font-size: 16px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.2s;
+    }
+    .scroll-arrow-btn:hover {
+      background: #880e4f;
+      color: #fff;
+    }
+    .scroll-arrow-left { left: 4px; }
+    .scroll-arrow-right { right: 4px; }
+    .related-strip {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      scrollbar-color: #ffe082 #fff;
+      padding: 6px 40px;
+      gap: 0;
+      width: 100%;
+    }
+    .related-strip::-webkit-scrollbar {
+      height: 4px;
+    }
+    .related-strip::-webkit-scrollbar-thumb {
+      background: #ffb300;
+      border-radius: 4px;
+    }
+    .related-card {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      width: 200px;
+      border-right: 1px solid #f0e6da;
+      text-decoration: none;
+      scroll-snap-align: start;
+      transition: background 0.2s;
+      -webkit-tap-highlight-color: transparent;
+      padding: 4px 6px;
+    }
+    .related-card:last-child { border-right: none; }
+    .related-card:hover, .related-card:active { background: #fff8e1; }
+    .related-card.current-article {
+      background: #fce4ec;
+      border-bottom: 3px solid #880e4f;
+    }
+    .related-card-img {
+      width: 58px;
+      height: 58px;
+      border-radius: 8px;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+    .related-card-body {
+      padding: 4px 8px;
+      flex: 1;
+      overflow: hidden;
+    }
+    .related-card-lang {
+      font-size: 9.5px;
+      font-weight: 700;
+      color: #880e4f;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-bottom: 2px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .related-card-title {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: #212121;
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    @media (max-width: 600px) {
+      .related-card { width: 168px; }
+      .related-card-img { width: 50px; height: 50px; }
+      .related-card-title { font-size: 11px; }
+      .related-strip { padding: 4px 28px; }
+      .scroll-arrow-btn { width: 28px; height: 28px; font-size: 13px; }
+    }
+
   </style>
 </head>
 <body>
@@ -654,7 +818,7 @@
         </div>
       </a>
       <a href="https://alerts.zero483.com/devotional/vinayaka_chavithi_rava_undrallu_recipe_2026.html" class="related-card" id="te_rec">
-        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_namavali.jpg" alt="రవ్వ ఉండ్రాళ్ళు, మోదకాలు & పాల తాలికలు" loading="lazy" />
+        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_naivedyam_platter.jpg" alt="రవ్వ ఉండ్రాళ్ళు, మోదకాలు & పాల తాలికలు" loading="lazy" />
         <div class="related-card-body">
           <div class="related-card-lang">🕉️ Telugu</div>
           <div class="related-card-title">రవ్వ ఉండ్రాళ్ళు, మోదకాలు & పాల తాలికలు</div>
@@ -668,7 +832,7 @@
         </div>
       </a>
       <a href="https://alerts.zero483.com/devotional/ganesh_chaturthi_naivedyam_recipes_marathi_2026.html" class="related-card" id="mr_rec">
-        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_fullframe_marathi.jpg" alt="रवा उंडे, उकडीचे मोदक व पाल पोळी रेसिपी" loading="lazy" />
+        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_naivedyam_platter.jpg" alt="रवा उंडे, उकडीचे मोदक व पाल पोळी रेसिपी" loading="lazy" />
         <div class="related-card-body">
           <div class="related-card-lang">🕉️ Marathi</div>
           <div class="related-card-title">रवा उंडे, उकडीचे मोदक व पाल पोळी रेसिपी</div>
@@ -682,7 +846,7 @@
         </div>
       </a>
       <a href="https://alerts.zero483.com/devotional/ganesha_habba_naivedya_recipes_kannada_2026.html" class="related-card" id="kn_rec">
-        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_namavali.jpg" alt="ರವಾ ಕಡುಬು, ಮೋದಕ & ಹಾಲು ಪಾಯಸ" loading="lazy" />
+        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_naivedyam_platter.jpg" alt="ರವಾ ಕಡುಬು, ಮೋದಕ & ಹಾಲು ಪಾಯಸ" loading="lazy" />
         <div class="related-card-body">
           <div class="related-card-lang">🕉️ Kannada</div>
           <div class="related-card-title">ರವಾ ಕಡುಬು, ಮೋದಕ & ಹಾಲು ಪಾಯಸ</div>
@@ -696,7 +860,7 @@
         </div>
       </a>
       <a href="https://alerts.zero483.com/devotional/ganesh_chaturthi_bhog_recipes_hindi_2026.html" class="related-card" id="hi_rec">
-        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_main.jpg" alt="सूजी उंधरालु, मोदक & मखाना खीर भोग" loading="lazy" />
+        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_naivedyam_platter.jpg" alt="सूजी उंधरालु, मोदक & मखाना खीर भोग" loading="lazy" />
         <div class="related-card-body">
           <div class="related-card-lang">🕉️ Hindi</div>
           <div class="related-card-title">सूजी उंधरालु, मोदक & मखाना खीर भोग</div>
@@ -710,7 +874,7 @@
         </div>
       </a>
       <a href="https://alerts.zero483.com/devotional/vinayagar_chaturthi_kozhukattai_recipes_tamil_2026.html" class="related-card" id="ta_rec">
-        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_namavali.jpg" alt="உப்பு, பூரணம் & பால் கொழுக்கட்டை" loading="lazy" />
+        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_naivedyam_platter.jpg" alt="உப்பு, பூரணம் & பால் கொழுக்கட்டை" loading="lazy" />
         <div class="related-card-body">
           <div class="related-card-lang">🕉️ Tamil</div>
           <div class="related-card-title">உப்பு, பூரணம் & பால் கொழுக்கட்டை</div>
@@ -724,14 +888,14 @@
         </div>
       </a>
       <a href="https://alerts.zero483.com/devotional/ganesh_chaturthi_bhog_recipes_bengali_2026.html" class="related-card" id="bn_rec">
-        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_main.jpg" alt="সুজির মোদক, উকাড়িচে মোদক & পায়েস" loading="lazy" />
+        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_naivedyam_platter.jpg" alt="সুজির মোদক, উকাড়িচে মোদক & পায়েস" loading="lazy" />
         <div class="related-card-body">
           <div class="related-card-lang">🕉️ Bengali</div>
           <div class="related-card-title">সুজির মোদক, উকাড়িচে মোদক & পায়েস</div>
         </div>
       </a>
       <a href="https://alerts.zero483.com/devotional/ganesh_chaturthi_naivedyam_recipes_english_2026.html" class="related-card" id="en_rec">
-        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_fullframe_marathi.jpg" alt="Rava Undrallu, Modak & Paal Thalikalu" loading="lazy" />
+        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_naivedyam_platter.jpg" alt="Rava Undrallu, Modak & Paal Thalikalu" loading="lazy" />
         <div class="related-card-body">
           <div class="related-card-lang">🕉️ English</div>
           <div class="related-card-title">Rava Undrallu, Modak & Paal Thalikalu</div>
@@ -756,6 +920,7 @@ function scrollToCard(id) {
 }
 </script>
 <!-- END RELATED BLOGS STRIP -->
+
 
 
     
