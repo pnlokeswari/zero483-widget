@@ -581,125 +581,7 @@
       .hero-header { background: #800000 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     }
   
-    /* ── RELATED BLOGS STRIP ── */
-    .related-strip-wrap {
-      background: #fff;
-      border-bottom: 3px solid #ffb300;
-      padding: 0;
-    }
-    .related-strip-header {
-      display: flex; align-items: center; gap: 8px;
-      padding: 8px 14px 6px;
-      font-size: 11px; font-weight: 700;
-      color: #6d4c00; letter-spacing: 0.8px;
-      text-transform: uppercase; background: #fff9c4;
-      border-bottom: 1px solid #ffe082;
-    }
-    .related-strip {
-      display: flex;
-      overflow-x: auto;
-      gap: 0;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-    }
-    .related-strip::-webkit-scrollbar { display: none; }
-    .related-card {
-      display: flex; align-items: center;
-      flex-shrink: 0;
-      width: 200px;
-      gap: 0;
-      border-right: 1px solid #f5f0e8;
-      text-decoration: none;
-      scroll-snap-align: start;
-      transition: background 0.2s;
-      -webkit-tap-highlight-color: transparent;
-    }
-    .related-card:last-child { border-right: none; }
-    .related-card:active, .related-card:hover { background: #fff8e1; }
-    .related-card-img {
-      width: 68px; height: 68px; flex-shrink: 0;
-      object-fit: cover;
-    }
-    .related-card-body {
-      padding: 6px 10px;
-      flex: 1;
-      overflow: hidden;
-    }
-    .related-card-lang {
-      font-size: 9px; font-weight: 700;
-      color: #7b1fa2; text-transform: uppercase;
-      letter-spacing: 0.5px; margin-bottom: 3px;
-    }
-    .related-card-title {
-      font-size: 12px; font-weight: 600;
-      color: #212121; line-height: 1.4;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
     
-    /* ── RELATED BLOGS STRIP ── */
-    .related-strip-wrap {
-      background: #fff;
-      border-bottom: 3px solid #ffb300;
-      padding: 0;
-    }
-    .related-strip-header {
-      display: flex; align-items: center; gap: 8px;
-      padding: 8px 14px 6px;
-      font-size: 11px; font-weight: 700;
-      color: #6d4c00; letter-spacing: 0.8px;
-      text-transform: uppercase; background: #fff9c4;
-      border-bottom: 1px solid #ffe082;
-    }
-    .related-strip {
-      display: flex;
-      overflow-x: auto;
-      gap: 0;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-    }
-    .related-strip::-webkit-scrollbar { display: none; }
-    .related-card {
-      display: flex; align-items: center;
-      flex-shrink: 0;
-      width: 200px;
-      gap: 0;
-      border-right: 1px solid #f5f0e8;
-      text-decoration: none;
-      scroll-snap-align: start;
-      transition: background 0.2s;
-      -webkit-tap-highlight-color: transparent;
-    }
-    .related-card:last-child { border-right: none; }
-    .related-card:active, .related-card:hover { background: #fff8e1; }
-    .related-card-img {
-      width: 68px; height: 68px; flex-shrink: 0;
-      object-fit: cover;
-    }
-    .related-card-body {
-      padding: 6px 10px;
-      flex: 1;
-      overflow: hidden;
-    }
-    .related-card-lang {
-      font-size: 9px; font-weight: 700;
-      color: #7b1fa2; text-transform: uppercase;
-      letter-spacing: 0.5px; margin-bottom: 3px;
-    }
-    .related-card-title {
-      font-size: 12px; font-weight: 600;
-      color: #212121; line-height: 1.4;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
     
     /* ── MOBILE VIEWER-FRIENDLY REFINEMENTS (Minor UX Enhancements) ── */
     @media (max-width: 600px) {
@@ -842,6 +724,72 @@
       }
     }
 
+  
+    /* ── ALL 12 MULTILINGUAL BLOGS STRIP ── */
+    .related-strip-wrap {
+      background: #ffffff;
+      border-bottom: 3px solid #ffb300;
+      position: relative;
+      z-index: 100;
+    }
+    .related-strip-header {
+      display: flex; align-items: center; gap: 8px;
+      padding: 8px 14px 6px;
+      font-size: 11px; font-weight: 700;
+      color: #6d4c00; letter-spacing: 0.6px;
+      text-transform: uppercase; background: #fff9c4;
+      border-bottom: 1px solid #ffe082;
+    }
+    .related-strip {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .related-strip::-webkit-scrollbar { display: none; }
+    .related-card {
+      display: flex; align-items: center;
+      flex-shrink: 0;
+      width: 195px;
+      border-right: 1px solid #f5f0e8;
+      text-decoration: none;
+      scroll-snap-align: start;
+      transition: background 0.2s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .related-card:last-child { border-right: none; }
+    .related-card:active, .related-card:hover { background: #fff8e1; }
+    .related-card-img {
+      width: 62px; height: 62px; flex-shrink: 0;
+      object-fit: cover;
+    }
+    .related-card-body {
+      padding: 6px 10px;
+      flex: 1;
+      overflow: hidden;
+    }
+    .related-card-lang {
+      font-size: 9.5px; font-weight: 700;
+      color: #b71c1c; text-transform: uppercase;
+      letter-spacing: 0.4px; margin-bottom: 3px;
+    }
+    .related-card-title {
+      font-size: 11.5px; font-weight: 600;
+      color: #212121; line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    @media (max-width: 600px) {
+      .related-card { width: 168px; }
+      .related-card-img { width: 54px; height: 54px; }
+      .related-card-body { padding: 4px 8px; }
+      .related-card-title { font-size: 11px; }
+      .related-strip-header { font-size: 9.5px; padding: 6px 10px 5px; }
+    }
+
   </style>
 </head>
 <body>
@@ -858,16 +806,97 @@
 <div class="related-strip-wrap">
   <div class="related-strip-header">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-    आमचे इतर लेख / మా ఇతర వ్యాసాలు / Our Other Articles
+    ಇತರ ಭಾಷೆಗಳ ಲೇಖನಗಳು / अन्य भाषाओं में पढ़ें / பிற மொழிகளில் / മറ്റ് ലേഖനങ്ങൾ
   </div>
   <div class="related-strip">
 
-      <a href="https://alerts.zero483.com/devotional/vinayaka_chavithi_puja_vidhanam_2026.html" class="related-card" style="background:#f3e5f5;">
-        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_main.jpg" alt="వినాయక చవితి పూజా విధానం 2026" loading="lazy" />
-        <div class="related-card-body">
-          <div class="related-card-lang">🕉️ Telugu</div>
-          <div class="related-card-title">వినాయక చవితి పూజా విధానం 2026</div>
-        </div>
+    <a href="https://alerts.zero483.com/devotional/vinayaka_chavithi_puja_vidhanam_2026.html" class="related-card" style="background:#fce4ec; border-bottom:3px solid #880e4f;">
+      <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_main.jpg" alt="వినాయక చవితి పూజా విధానం 2026" loading="lazy" />
+      <div class="related-card-body">
+        <div class="related-card-lang">🕉️ Telugu</div>
+        <div class="related-card-title">వినాయక చవితి పూజా విధానం 2026</div>
+      </div>
+    </a>
+    <a href="https://alerts.zero483.com/devotional/vinayaka_chavithi_rava_undrallu_recipe_2026.html" class="related-card">
+      <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_namavali.jpg" alt="రవ్వ ఉండ్రాళ్ళు, మోదకాలు & పాల తಾಲికలు" loading="lazy" />
+      <div class="related-card-body">
+        <div class="related-card-lang">🕉️ Telugu</div>
+        <div class="related-card-title">రవ్వ ఉండ్రాళ్ళు, మోదకాలు & పాల తಾಲికలు</div>
+      </div>
+    </a>
+    <a href="https://alerts.zero483.com/devotional/ganesh_chaturthi_puja_vidhi_marathi_2026.html" class="related-card">
+      <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_fullframe_marathi.jpg" alt="गणपती स्थापना व पूजाविधी संपूर्ण मार्गदर्शन" loading="lazy" />
+      <div class="related-card-body">
+        <div class="related-card-lang">🕉️ Marathi</div>
+        <div class="related-card-title">गणपती स्थापना व पूजाविधी संपूर्ण मार्गदर्शन</div>
+      </div>
+    </a>
+    <a href="https://alerts.zero483.com/devotional/ganesh_chaturthi_naivedyam_recipes_marathi_2026.html" class="related-card">
+      <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_fullframe_marathi.jpg" alt="रवा उंडे, उकडीचे मोदक व पाल पोळी रेसिपी" loading="lazy" />
+      <div class="related-card-body">
+        <div class="related-card-lang">🕉️ Marathi</div>
+        <div class="related-card-title">रवा उंडे, उकडीचे मोदक व पाल पोळी रेसिपी</div>
+      </div>
+    </a>
+    <a href="https://alerts.zero483.com/devotional/ganesha_habba_puja_vidhana_kannada_2026.html" class="related-card">
+      <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_fullframe_marathi.jpg" alt="ಗಣೇಶ ಹಬ್ಬ ಪೂಜಾ ವಿಧಾನ 2026" loading="lazy" />
+      <div class="related-card-body">
+        <div class="related-card-lang">🕉️ Kannada</div>
+        <div class="related-card-title">ಗಣೇಶ ಹಬ್ಬ ಪೂಜಾ ವಿಧಾನ 2026</div>
+      </div>
+    </a>
+    <a href="https://alerts.zero483.com/devotional/ganesha_habba_naivedya_recipes_kannada_2026.html" class="related-card">
+      <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_namavali.jpg" alt="ರವಾ ಕಡುಬು, ಮೋದಕ & ಹಾಲು ಪಾಯಸ" loading="lazy" />
+      <div class="related-card-body">
+        <div class="related-card-lang">🕉️ Kannada</div>
+        <div class="related-card-title">ರವಾ ಕಡುಬು, ಮೋದಕ & ಹಾಲು ಪಾಯಸ</div>
+      </div>
+    </a>
+    <a href="https://alerts.zero483.com/devotional/ganesh_chaturthi_puja_vidhi_hindi_2026.html" class="related-card">
+      <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_fullframe_marathi.jpg" alt="श्री गणेश चतुर्थी पूजा विधि 2026" loading="lazy" />
+      <div class="related-card-body">
+        <div class="related-card-lang">🕉️ Hindi</div>
+        <div class="related-card-title">श्री गणेश चतुर्थी पूजा विधि 2026</div>
+      </div>
+    </a>
+    <a href="https://alerts.zero483.com/devotional/ganesh_chaturthi_bhog_recipes_hindi_2026.html" class="related-card">
+      <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_main.jpg" alt="सूजी उंधरालु, मोदक & मखाना खीर भोग" loading="lazy" />
+      <div class="related-card-body">
+        <div class="related-card-lang">🕉️ Hindi</div>
+        <div class="related-card-title">सूजी उंधरालु, मोदक & मखाना खीर भोग</div>
+      </div>
+    </a>
+    <a href="https://alerts.zero483.com/devotional/vinayagar_chaturthi_poojai_vidhanam_tamil_2026.html" class="related-card">
+      <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_fullframe_marathi.jpg" alt="விநாயகர் சதுர்த்தி பூஜை முறை 2026" loading="lazy" />
+      <div class="related-card-body">
+        <div class="related-card-lang">🕉️ Tamil</div>
+        <div class="related-card-title">விநாயகர் சதுர்த்தி பூஜை முறை 2026</div>
+      </div>
+    </a>
+    <a href="https://alerts.zero483.com/devotional/vinayagar_chaturthi_kozhukattai_recipes_tamil_2026.html" class="related-card">
+      <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_namavali.jpg" alt="உப்பு, பூரணம் & பால் கொழுக்கட்டை" loading="lazy" />
+      <div class="related-card-body">
+        <div class="related-card-lang">🕉️ Tamil</div>
+        <div class="related-card-title">உப்பு, பூரணம் & பால் கொழுக்கட்டை</div>
+      </div>
+    </a>
+    <a href="https://alerts.zero483.com/devotional/ganesh_chaturthi_puja_bidhi_bengali_2026.html" class="related-card">
+      <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_fullframe_marathi.jpg" alt="শ্রীগণেশ চতুর্থী পূজা বিধি ২০২৬" loading="lazy" />
+      <div class="related-card-body">
+        <div class="related-card-lang">🕉️ Bengali</div>
+        <div class="related-card-title">শ্রীগণেশ চতুর্থী পূজা বিধি ২০২৬</div>
+      </div>
+    </a>
+    <a href="https://alerts.zero483.com/devotional/ganesh_chaturthi_bhog_recipes_bengali_2026.html" class="related-card">
+      <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_main.jpg" alt="সুজির মোদক, উকাড়িচে মোদক & পায়েস" loading="lazy" />
+      <div class="related-card-body">
+        <div class="related-card-lang">🕉️ Bengali</div>
+        <div class="related-card-title">সুজির মোদক, উকাড়িচে মোদক & পায়েস</div>
+      </div>
+    </a>
+  </div>
+</div>
+
       </a>
       <a href="https://alerts.zero483.com/devotional/vinayaka_chavithi_rava_undrallu_recipe_2026.html" class="related-card">
         <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_namavali.jpg" alt="రవ్వ ఉండ్రాళ్ళు, మోదకాలు & పాల తాలికలు" loading="lazy" />
