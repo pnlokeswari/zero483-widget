@@ -640,6 +640,66 @@
       overflow: hidden;
     }
 
+    
+    /* ── RELATED BLOGS STRIP ── */
+    .related-strip-wrap {
+      background: #fff;
+      border-bottom: 3px solid #ffb300;
+      padding: 0;
+    }
+    .related-strip-header {
+      display: flex; align-items: center; gap: 8px;
+      padding: 8px 14px 6px;
+      font-size: 11px; font-weight: 700;
+      color: #6d4c00; letter-spacing: 0.8px;
+      text-transform: uppercase; background: #fff9c4;
+      border-bottom: 1px solid #ffe082;
+    }
+    .related-strip {
+      display: flex;
+      overflow-x: auto;
+      gap: 0;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .related-strip::-webkit-scrollbar { display: none; }
+    .related-card {
+      display: flex; align-items: center;
+      flex-shrink: 0;
+      width: 200px;
+      gap: 0;
+      border-right: 1px solid #f5f0e8;
+      text-decoration: none;
+      scroll-snap-align: start;
+      transition: background 0.2s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .related-card:last-child { border-right: none; }
+    .related-card:active, .related-card:hover { background: #fff8e1; }
+    .related-card-img {
+      width: 68px; height: 68px; flex-shrink: 0;
+      object-fit: cover;
+    }
+    .related-card-body {
+      padding: 6px 10px;
+      flex: 1;
+      overflow: hidden;
+    }
+    .related-card-lang {
+      font-size: 9px; font-weight: 700;
+      color: #7b1fa2; text-transform: uppercase;
+      letter-spacing: 0.5px; margin-bottom: 3px;
+    }
+    .related-card-title {
+      font-size: 12px; font-weight: 600;
+      color: #212121; line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
     </style>
 </head>
 <body>
@@ -666,6 +726,31 @@
           <div class="related-card-lang">🕉️ Telugu</div>
           <div class="related-card-title">వినాయక చవితి పూజా విధానం 2026</div>
         </div>
+      </a>
+      <a href="https://alerts.zero483.com/devotional/vinayaka_chavithi_rava_undrallu_recipe_2026.html" class="related-card">
+        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_namavali.jpg" alt="రవ్వ ఉండ్రాళ్ళు, మోదకాలు & పాల తాలికలు" loading="lazy" />
+        <div class="related-card-body">
+          <div class="related-card-lang">🕉️ Telugu</div>
+          <div class="related-card-title">రవ్వ ఉండ్రాళ్ళు, మోదకాలు & పాల తాలికలు</div>
+        </div>
+      </a>
+      <a href="https://alerts.zero483.com/devotional/ganesh_chaturthi_puja_vidhi_marathi_2026.html" class="related-card">
+        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_fullframe_marathi.jpg" alt="गणपती स्थापना व पूजाविधी — संपूर्ण मार्गदर्शन" loading="lazy" />
+        <div class="related-card-body">
+          <div class="related-card-lang">🕉️ Marathi</div>
+          <div class="related-card-title">गणपती स्थापना व पूजाविधी — संपूर्ण मार्गदर्शन</div>
+        </div>
+      </a>
+      <a href="https://alerts.zero483.com/devotional/ganesh_chaturthi_naivedyam_recipes_marathi_2026.html" class="related-card">
+        <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_fullframe_marathi.jpg" alt="रवा उंडे, उकडीचे मोदक व पाल पोळी रेसिपी" loading="lazy" />
+        <div class="related-card-body">
+          <div class="related-card-lang">🕉️ Marathi</div>
+          <div class="related-card-title">रवा उंडे, उकडीचे मोदक व पाल पोळी रेसिपी</div>
+        </div>
+      </a>
+  </div>
+</div>
+
       </a>
       <a href="https://alerts.zero483.com/devotional/vinayaka_chavithi_rava_undrallu_recipe_2026.html" class="related-card">
         <img class="related-card-img" src="https://raw.githubusercontent.com/pnlokeswari/zero483-widget/main/devotional/images/ganesha_namavali.jpg" alt="రవ్వ ఉండ్రాళ్ళు, మోదకాలు & పాల తాలికలు" loading="lazy" />
