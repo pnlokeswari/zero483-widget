@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
   <title>మహారాష్ట్ర సాంప్రదాయ ఉకడిచే మోదక్ (మోల్డ్ లేకుండా చేత్తోనే సులభంగా తయారు చేసే విధానం) | Authentic Modak Telugu</title>
   <meta name="description" content="వినాయక చవితి స్పెషల్ మహారాష్ట్ర స్టైల్ ఉకడిచే మోదక్ తయారీ విధానం తెలుగులో. మోల్డ్ లేకుండా చేత్తోనే 7-11 మడతలతో పర్ఫెక్ట్‌గా చేయడం ఎలాగో చూడండి." />
   <meta name="keywords" content="ఉకడిచే మోదక్, Ukadiche Modak Telugu, మోదకాలు తయారీ విధానం, వినాయక చవితి ప్రసాదం, Modak without mould Telugu" />
@@ -139,6 +141,63 @@
       .m-tag { font-size: 11px; padding: 2px 8px; }
     }
 
+  
+    /* ── WHATSAPP SHARE BUTTONS ── */
+    .wa-share-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #25D366;
+      color: #ffffff !important;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin: 8px 4px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .wa-share-btn:hover, .wa-share-btn:active {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
+      background: #20ba5a;
+    }
+    .wa-share-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+    .wa-float-btn {
+      position: fixed;
+      bottom: 22px;
+      right: 20px;
+      z-index: 9999;
+      background: #25D366;
+      color: #fff !important;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+      text-decoration: none;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .wa-float-btn:hover, .wa-float-btn:active {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    }
+    .wa-float-btn svg {
+      width: 28px;
+      height: 28px;
+      fill: #fff;
+    }
+
   </style>
   <!-- GOOGLE RICH SNIPPET SCHEMA (INVISIBLE TO USERS) -->
   <script type="application/ld+json">
@@ -164,6 +223,13 @@
 </header>
 
 <div class="container">
+<!-- WHATSAPP SHARE INLINE -->
+    <div style="text-align:center; margin: 14px 0 18px;">
+      <a href="https://api.whatsapp.com/send?text=%F0%9F%AA%94%20%E0%B0%AE%E0%B0%B9%E0%B0%BE%E0%B0%B0%E0%B0%BE%E0%B0%B7%E0%B1%8D%E0%B0%9F%E0%B1%8D%E0%B0%B0%20%E0%B0%B8%E0%B0%BE%E0%B0%82%E0%B0%AA%E0%B1%8D%E0%B0%B0%E0%B0%A6%E0%B0%BE%E0%B0%AF%20%E0%B0%89%E0%B0%95%E0%B0%A1%E0%B0%BF%E0%B0%9A%E0%B1%87%20%E0%B0%AE%E0%B1%8B%E0%B0%A6%E0%B0%95%E0%B1%8D%20%28%E0%B0%AE%E0%B1%8B%E0%B0%B2%E0%B1%8D%E0%B0%A1%E0%B1%8D%20%E0%B0%B2%E0%B1%87%E0%B0%95%E0%B1%81%E0%B0%82%E0%B0%A1%E0%B0%BE%20%E0%B0%9A%E0%B1%87%E0%B0%A4%E0%B1%8D%E0%B0%A4%E0%B1%8B%E0%B0%A8%E0%B1%87%20%E0%B0%B8%E0%B1%81%E0%B0%B2%E0%B0%AD%E0%B0%82%E0%B0%97%E0%B0%BE%20%E0%B0%A4%E0%B0%AF%E0%B0%BE%E0%B0%B0%E0%B1%81%20%E0%B0%9A%E0%B1%87%E0%B0%B8%E0%B1%87%20%E0%B0%B5%E0%B0%BF%E0%B0%A7%E0%B0%BE%E0%B0%A8%E0%B0%82%29%0ARead%20full%20guide%20here%3A%20https%3A//alerts.zero483.com/devotional/traditional_ukadiche_modak_recipe_telugu_2026.html" target="_blank" rel="noopener noreferrer" class="wa-share-btn" title="Share with Family & Friends on WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.861.855 2.796.855 3.18 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.745 0-3.38-.45-4.814-1.238l-5.186 1.358 1.383-5.051c-.86-1.488-1.383-3.218-1.383-5.069 0-5.518 4.482-10 10-10 5.518 0 10 4.482 10 10z"/></svg>
+        <span>Share on WhatsApp</span>
+      </a>
+    </div>
   <div class="lang-switch-bar">
     <a href="https://alerts.zero483.com/devotional/traditional_ukadiche_modak_recipe_telugu_2026.html" class="lang-link active">తెలుగు (Telugu)</a>
     <a href="https://alerts.zero483.com/devotional/traditional_ukadiche_modak_recipe_english_2026.html" class="lang-link">English</a>
@@ -429,5 +495,9 @@
   <p><strong>🪔 గణపతి బప్పా మోరయా! మంగళమూర్తి మోరయా! 🪔</strong></p>
   <p>© 2026 ZERO483 Devotional Publications. సర్వ హక్కులు ప్రత్యేకించబడ్డాయి.</p>
 </footer>
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://api.whatsapp.com/send?text=%F0%9F%AA%94%20%E0%B0%AE%E0%B0%B9%E0%B0%BE%E0%B0%B0%E0%B0%BE%E0%B0%B7%E0%B1%8D%E0%B0%9F%E0%B1%8D%E0%B0%B0%20%E0%B0%B8%E0%B0%BE%E0%B0%82%E0%B0%AA%E0%B1%8D%E0%B0%B0%E0%B0%A6%E0%B0%BE%E0%B0%AF%20%E0%B0%89%E0%B0%95%E0%B0%A1%E0%B0%BF%E0%B0%9A%E0%B1%87%20%E0%B0%AE%E0%B1%8B%E0%B0%A6%E0%B0%95%E0%B1%8D%20%28%E0%B0%AE%E0%B1%8B%E0%B0%B2%E0%B1%8D%E0%B0%A1%E0%B1%8D%20%E0%B0%B2%E0%B1%87%E0%B0%95%E0%B1%81%E0%B0%82%E0%B0%A1%E0%B0%BE%20%E0%B0%9A%E0%B1%87%E0%B0%A4%E0%B1%8D%E0%B0%A4%E0%B1%8B%E0%B0%A8%E0%B1%87%20%E0%B0%B8%E0%B1%81%E0%B0%B2%E0%B0%AD%E0%B0%82%E0%B0%97%E0%B0%BE%20%E0%B0%A4%E0%B0%AF%E0%B0%BE%E0%B0%B0%E0%B1%81%20%E0%B0%9A%E0%B1%87%E0%B0%B8%E0%B1%87%20%E0%B0%B5%E0%B0%BF%E0%B0%A7%E0%B0%BE%E0%B0%A8%E0%B0%82%29%0ARead%20full%20guide%20here%3A%20https%3A//alerts.zero483.com/devotional/traditional_ukadiche_modak_recipe_telugu_2026.html" target="_blank" rel="noopener noreferrer" class="wa-float-btn" title="Share on WhatsApp" aria-label="Share on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.861.855 2.796.855 3.18 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.745 0-3.38-.45-4.814-1.238l-5.186 1.358 1.383-5.051c-.86-1.488-1.383-3.218-1.383-5.069 0-5.518 4.482-10 10-10 5.518 0 10 4.482 10 10z"/></svg>
+</a>
 </body>
 </html>
