@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
   <title>শ্রীগণেশ চতুর্থী পূজা বিধি ২০২৬ | স্থাপনা, সামগ্রী & ১০৮ নামাবলী | Ganesh Puja Bidhi Bengali</title>
   <meta name="description" content="গণেশ চতুর্থী ২০২৬ সম্পূর্ণ পূজা বিধি বাংলায় - পূজা সামগ্রী, গণপতি স্থাপনা, ১০৮ অষ্টোত্তর শতনামাবলী, আরতি ও বিসর্জন নিয়ম।" />
   <meta name="keywords" content="গণেশ পূজা বিধি, Ganesh Chaturthi 2026 Bengali, গণেশ চতুর্থী পূজা, ১০৮ গণেশ নামাবলী, গণেশ আরতি" />
@@ -447,6 +449,63 @@
       .scroll-arrow-btn { width: 28px; height: 28px; font-size: 13px; }
     }
 
+  
+    /* ── WHATSAPP SHARE BUTTONS ── */
+    .wa-share-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #25D366;
+      color: #ffffff !important;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin: 8px 4px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .wa-share-btn:hover, .wa-share-btn:active {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
+      background: #20ba5a;
+    }
+    .wa-share-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+    .wa-float-btn {
+      position: fixed;
+      bottom: 22px;
+      right: 20px;
+      z-index: 9999;
+      background: #25D366;
+      color: #fff !important;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+      text-decoration: none;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .wa-float-btn:hover, .wa-float-btn:active {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    }
+    .wa-float-btn svg {
+      width: 28px;
+      height: 28px;
+      fill: #fff;
+    }
+
   </style>
     <!-- GOOGLE RICH SNIPPET SCHEMA (INVISIBLE TO USERS) -->
   <script type="application/ld+json">
@@ -619,6 +678,13 @@ function scrollToCard(id) {
 </div>
 
 <div class="container">
+<!-- WHATSAPP SHARE INLINE -->
+    <div style="text-align:center; margin: 14px 0 18px;">
+      <a href="https://api.whatsapp.com/send?text=%F0%9F%AA%94%20%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%97%E0%A6%A3%E0%A7%87%E0%A6%B6%20%E0%A6%9A%E0%A6%A4%E0%A7%81%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%80%20%E0%A6%AA%E0%A7%82%E0%A6%9C%E0%A6%BE%20%E0%A6%AC%E0%A6%BF%E0%A6%A7%E0%A6%BF%20%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AC%0ARead%20full%20guide%20here%3A%20https%3A//alerts.zero483.com/devotional/ganesh_chaturthi_puja_bidhi_bengali_2026.html" target="_blank" rel="noopener noreferrer" class="wa-share-btn" title="Share with Family & Friends on WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.861.855 2.796.855 3.18 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.745 0-3.38-.45-4.814-1.238l-5.186 1.358 1.383-5.051c-.86-1.488-1.383-3.218-1.383-5.069 0-5.518 4.482-10 10-10 5.518 0 10 4.482 10 10z"/></svg>
+        <span>Share on WhatsApp</span>
+      </a>
+    </div>
   <nav class="quick-nav">
     <a href="#mahatva" class="nav-btn">🕉️ মাহাত্ম্য</a>
     <a href="#samagri" class="nav-btn">📋 সামগ্রী</a>
@@ -717,5 +783,9 @@ function scrollToCard(id) {
   <p><strong>🪔 শ্রীগণেশ চতুর্থী উৎসবের আন্তরিক শুভেচ্ছা ২০২৬ 🪔</strong></p>
   <p>© 2026 ZERO483 Devotional Publications. সর্বস্বত্ব সংরক্ষিত।</p>
 </footer>
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://api.whatsapp.com/send?text=%F0%9F%AA%94%20%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%97%E0%A6%A3%E0%A7%87%E0%A6%B6%20%E0%A6%9A%E0%A6%A4%E0%A7%81%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%80%20%E0%A6%AA%E0%A7%82%E0%A6%9C%E0%A6%BE%20%E0%A6%AC%E0%A6%BF%E0%A6%A7%E0%A6%BF%20%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AC%0ARead%20full%20guide%20here%3A%20https%3A//alerts.zero483.com/devotional/ganesh_chaturthi_puja_bidhi_bengali_2026.html" target="_blank" rel="noopener noreferrer" class="wa-float-btn" title="Share on WhatsApp" aria-label="Share on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.861.855 2.796.855 3.18 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.745 0-3.38-.45-4.814-1.238l-5.186 1.358 1.383-5.051c-.86-1.488-1.383-3.218-1.383-5.069 0-5.518 4.482-10 10-10 5.518 0 10 4.482 10 10z"/></svg>
+</a>
 </body>
 </html>
