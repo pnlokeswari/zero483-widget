@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-09-07T22:00:13.509856+00:00",
+  "last_updated": "2026-09-08T00:06:13.880165+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "401f439d3fed",
+      "title": "Drug Shortage: Dexmedetomidine Hydrochloride Injection",
+      "slug": "drug-shortage-dexmedetomidine-hydrochloride-injection",
+      "date": "2026-09-07",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Dexmedetomidine Hydrochloride Injection\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Dexmedetomidine Hydrochloride Injection",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-09-07T23:54:09.287350+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "64704ba1a691",
+      "title": "Drug Shortage: Sterile Water Irrigant",
+      "slug": "drug-shortage-sterile-water-irrigant",
+      "date": "2026-09-07",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Sterile Water Irrigant\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Sterile Water Irrigant",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-09-07T23:52:09.791242+00:00",
+      "is_long_form": false
+    },
     {
       "id": "27a33ea5e29a",
       "title": "Novo Nordisk nears important decision on hemophilia medication - medwatch.com",
@@ -865,42 +901,6 @@
       "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPank1NXVNVldneC1sZmVPVHhkV3M2dzQxSWhmX1dWSmwyb19OOEtBelNqbV94bTJ1aGptbXlGWUpjYlBMeDdCdkZiYm9oWHlpcXR3T2NEaUNmQW5wVGc0eEhCZENzT21XMmh4dktGU2hVd2NCRloyNVlJRUVibGNZZ0xnRHhVVDJMbW9PRXdQXzhhVFhmcGZvejNCa3lvRkxxd0ZNOTdXYWdZM25qN1FlSlowQQ?oc=5",
       "fetched_at": "2026-09-03T10:10:20.422482+00:00",
       "is_long_form": true
-    },
-    {
-      "id": "fe73d9376ca1",
-      "title": "Analysis of online pharmacy advertisements for non-FDA-approved treatments - Lexology",
-      "slug": "analysis-of-online-pharmacy-advertisements-for-non-fda-approved-treatments-lexology",
-      "date": "2026-09-02",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "<p>Title: Analysis of online pharmacy advertisements for non-FDA-approved treatments - Lexology\nSource: Google News\nDate: Wed, 02 Sep 2026 09:17:48 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Analysis of online pharmacy advertisements for non-FDA-approved treatments - Lexology",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWG5Eb05iVXZUbUZVOWQ3NlJvQXoyMXRXMXh3dlRLV3NJVTVyTU1LQXVpbXpHRk1HNVNnVWdYaktraUhsRk5MUC1Wam9oYkFuUGJ5eVM1Y0ZwWmJHbHNlejJ3NWpFb0xKU0E0dndNWktSQ1FzcF85U3c1SjJuOXo3NUZrUGVTTU4zcnFJ?oc=5",
-      "fetched_at": "2026-09-03T05:26:09.318174+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "e7ae9dc39e78",
-      "title": "UniQure, after setbacks, seeks FDA approval of Huntington’s gene therapy - BioPharma Dive",
-      "slug": "uniqure-after-setbacks-seeks-fda-approval-of-huntington-s-gene-therapy-biopharma-dive",
-      "date": "2026-09-02",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: UniQure, after setbacks, seeks FDA approval of Huntington’s gene therapy - BioPharma Dive\nSource: Google News\nDate: Wed, 02 Sep 2026 16:57:49 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "UniQure, after setbacks, seeks FDA approval of Huntington’s gene therapy - BioPharma Dive",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPM2U5T3Q1ZVk1dGpRLUwxRnhRaVFIUUp6RmxxeGJlNk1hR01WVU5Mb1hCamlFOFhsU0h3STctSl84S0hTVEk2MnVNUTBhU29fUnUzdTR2aE51RUFkQm1LeE8zb3JJUVUwMDNseDZ1Rk92bndUTTRGUXhqLWdPbDNwbTU5X3Zpc3ZWeGptQmhEQXdYUVpFQlpYeWowbw?oc=5",
-      "fetched_at": "2026-09-03T05:18:10.118898+00:00",
-      "is_long_form": false
     }
   ]
 }
