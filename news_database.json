@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-09-11T06:51:37.005317+00:00",
+  "last_updated": "2026-09-11T11:53:33.211971+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "1ec681e25aa8",
+      "title": "Thai FDA reports no national medicine shortage amid local supply gaps - Nation Thailand",
+      "slug": "thai-fda-reports-no-national-medicine-shortage-amid-local-supply-gaps-nation-thailand",
+      "date": "2026-09-11",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Title: Thai FDA reports no national medicine shortage amid local supply gaps - Nation Thailand\nSource: Google News\nDate: Fri, 11 Sep 2026 08:39:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Thai FDA reports no national medicine shortage amid local supply gaps - Nation Thailand",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1UZzlfbkIzZWdsSjN0WnBCcmVIMVZLWlc3WmtNcVNzSTZnYXpDb3EyM3NrakpOVnZhNDV1ek1iZGRtblkxMVBvcndfNlo4Mi1WQWxUa1AyU2lwME9Qa0taNEdzU05GQQ?oc=5",
+      "fetched_at": "2026-09-11T11:50:48.712049+00:00",
+      "is_long_form": false
+    },
     {
       "id": "fdb2a192d16d",
       "title": "Centricity High Acuity Anesthesia",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZUVtbDZFVVo0YkhDVW1zUWxMT2pTYnFyeHhzQXJ2cFZCXzFtZFhKWlkzdTkzNDJUNU5fLXE5NGVQSnRuMG8xaUpYTEZZZldIY3o1SXFzLXJwSmRMQ2c5RHJHMHNhX0JXcDl2MVVkSkIxa2ZjVXQ3MFd6LW1OcEZ0MGlHQllOcGJkdlYtWDVkNXFQaW1MTmJFUWhmalJsRC1BRUhDZ1dkQjNOdXFxeG5DQjRJNGNzRndKVUlrYVBmOG1iZHN4TW1nVVZJdw?oc=5",
       "fetched_at": "2026-09-05T06:32:10.226562+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "7d3a895859d1",
-      "title": "Drug Approval: ETCAMAH - ASTRAZENECA PHARMACEUTICALS, LP",
-      "slug": "drug-approval-etcamah-astrazeneca-pharmaceuticals-lp",
-      "date": "2026-09-04",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Application: NDA220359\nSponsor: ASTRAZENECA PHARMACEUTICALS, LP\nProduct: ETCAMAH\nSubmission type: ORIG\nSubmission class: Type 1 - New Molecular Entity\nStatus: AP\nStatus date: 20260904</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Drug Approval: ETCAMAH - ASTRAZENECA PHARMACEUTICALS, LP",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220359",
-      "fetched_at": "2026-09-11T06:47:09.967007+00:00",
       "is_long_form": false
     }
   ]
