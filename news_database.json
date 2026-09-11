@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-10T23:36:13.098979+00:00",
+  "last_updated": "2026-09-11T01:40:13.286053+00:00",
   "total_items": 50,
   "items": [
     {
@@ -414,6 +414,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNb3ZKNXlnVWVSM3lSYmh6eGp1OHZaa1RmbzdqTEVpcjM4UkNNblF6Rjd5Ty1HcUtTYlVhMmxpdDZHalBDWloyS21ObkZQclNTbjBDaW9VYXNCd1VSbXdOSnltUDNsc2VxdzFMelRQMjBqMzNWa0ZRYk5KU3QzTHBYYXF1blpBRnU5Y0tXamQ4QWY2V3Z3aWlCVkZ5Zw?oc=5",
       "fetched_at": "2026-09-09T06:58:09.741452+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "08241b2e3ce6",
+      "title": "Drug Approval: BRIVARACETAM - ZHEJIANG JUTAI PHARM",
+      "slug": "drug-approval-brivaracetam-zhejiang-jutai-pharm",
+      "date": "2026-09-08",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Application: ANDA220136\nSponsor: ZHEJIANG JUTAI PHARM\nProduct: BRIVARACETAM\nSubmission type: ORIG\nSubmission class: N/A\nStatus: AP\nStatus date: 20260908</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Drug Approval: BRIVARACETAM - ZHEJIANG JUTAI PHARM",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220136",
+      "fetched_at": "2026-09-11T01:32:09.541042+00:00",
       "is_long_form": false
     },
     {
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONUk1MjRSUWQ5N2xNQnI1ZFlKa0NGOFpXUVFQVEVTNHJxX0VCczJyaUJPWkYxSzlmRkhleFVuV3AxV0NuSGpTZXRhcmxnTUkwU1M5QnhBTkxXMVB0S19QM2dzT3JsZVVqTEJtbzV5azAxZnMxbVFRdlFIdVpjQmNyTEFHdHJ2ZTU0dTA4d0RETHdDVW9pUkRLSWdnR1FxQzZXajd4dlFhN1RyUk9XYnIxZTBnWWNVSjVHUTFpZFA5VQ?oc=5",
       "fetched_at": "2026-09-06T17:40:10.162388+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "2d7a82f8faa8",
-      "title": "AstraZeneca Breast Cancer Drug Etcamah Nets Accelerated FDA Approval With Guardant Health ctDNA Test - GenomeWeb",
-      "slug": "astrazeneca-breast-cancer-drug-etcamah-nets-accelerated-fda-approval-with-guardant-health-ctdna-test-genomeweb",
-      "date": "2026-09-04",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: AstraZeneca Breast Cancer Drug Etcamah Nets Accelerated FDA Approval With Guardant Health ctDNA Test - GenomeWeb\nSource: Google News\nDate: Fri, 04 Sep 2026 21:39:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "AstraZeneca Breast Cancer Drug Etcamah Nets Accelerated FDA Approval With Guardant Health ctDNA Test - GenomeWeb",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSUlCQU9hSUpjOWZ5dWJ6WlhyUER1SUxtNkdXZWF6NFdka21oaVhhVk15WGIwLVRNVEFLTGNkMEZBTVNTTkJkbVIyazIyV2MtZUdEc1Q3QXZQYUk1YzVfb011c24yOC1DX21UQkpDYkNDS0xGWVNPYl9ydXZZR0d6VGdQVXZDX1ZlNy0yaG1hRGpIRmRBUlZyRVIzazdDbkhtLW1WX0xCaXp6YmZRZE5v?oc=5",
-      "fetched_at": "2026-09-05T06:30:09.621002+00:00",
       "is_long_form": false
     }
   ]
