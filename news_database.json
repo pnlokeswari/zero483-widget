@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-09-11T22:09:10.230285+00:00",
+  "last_updated": "2026-09-12T00:54:14.614340+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "6712fed61295",
+      "title": "Scholar Rock wins FDA approval for first drug to target SMA muscle loss - STAT",
+      "slug": "scholar-rock-wins-fda-approval-for-first-drug-to-target-sma-muscle-loss-stat",
+      "date": "2026-09-11",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: Scholar Rock wins FDA approval for first drug to target SMA muscle loss - STAT\nSource: Google News\nDate: Fri, 11 Sep 2026 23:33:54 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Scholar Rock wins FDA approval for first drug to target SMA muscle loss - STAT",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNN3doYks2Q0RyZUdibGJRSDlXakMwOWNNU2xoeVdKMDRkY0NIVWctVktUM0pwRzVkLURiYUFTVTFjUFFxcVc4djQxQ1c5NXBvd2hBQk9UVGF0TGJQYXpuZ0VtLXdLWm1qQUIySl9wTDloTUd0bk1vVzN0WUg5V0lDaXVTXzBDU0VZU3BPNm5uYnFCY3lzNUtHWUFyVF93WVRyeEVXZ3FhdTdEc2Q2V1ln?oc=5",
+      "fetched_at": "2026-09-12T00:48:09.472344+00:00",
+      "is_long_form": false
+    },
     {
       "id": "d77de07e257c",
       "title": "Bayer stock reacts to FDA cancer drug approval and Roundup settlement test - ad-hoc-news.de",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0xNUNxcHRlMXVuMDhwSDQxSWxlUUphdHdtM3FJM0I3bkFtd3BVanEyY2g2SExHZl9HU1lCc1R3ZGxLbVlxOXBEeDB6TzVHbmlLU0RGbW9vOEQ1SXdkUUc2My1tSTM2Nm1xUWt0RlJSanpTQUhTYnc?oc=5",
       "fetched_at": "2026-09-07T06:47:09.447982+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "9cbfd621a18d",
-      "title": "CDSCO Flags Abhayrab Rabies Vaccine Batch as Substandard, Raises Spurious Drug Concerns - Medical Dialogues",
-      "slug": "cdsco-flags-abhayrab-rabies-vaccine-batch-as-substandard-raises-spurious-drug-concerns-medical-dialogues",
-      "date": "2026-09-05",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: CDSCO Flags Abhayrab Rabies Vaccine Batch as Substandard, Raises Spurious Drug Concerns - Medical Dialogues\nSource: CDSCO India\nDate: Sat, 05 Sep 2026 18:27:30 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "CDSCO Flags Abhayrab Rabies Vaccine Batch as Substandard, Raises Spurious Drug Concerns - Medical Dialogues",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOcWQ1TG5tQTNSVEFyTkE1VjJfa3ZqZ3FSdkJnTXpFOUY0QUg1bTNsYXNuMlZ5X2ZIdVpURFR4ZnBpLThnTC1TbUJ2bWI3WVFiMnpuOGM0V1hoVkRoVGlxRmE0clZZQTNBVUxiVy0zNkxWQ1BNdmtJMC1xcy1ST1pIalNoQTdEQ1BWTUE2RDN4MHFfbHZDeVFodDF0YkNnMFNIUUJDODVsaE1MSy05MHM1VGFTQk1MVVU3YnNDVmRjVmN5WG5RZWdBcVJMMnZwWF9RVkw2Y2ZsQmV0V2RyczVFal9R0gHnAUFVX3lxTFBjb2xDQXpnbU5zcktnQUFrNjN4NXhfUWJfVDRURUdyNVM2OEgtaVdhQ21xNmJnYmNsRmpGcEtWeTcwU1lrS0hxaGtReVRocXQ3MlFnZ3o3ZVVJSGxJek5xRnB5ZnF3cU83ZkNhUVlRZk52eDJQZUgySHhmUFAyTDgyTS0yeFJRbWNNQk10VUJYbW1rVXZMOUZFcmJoWFpRT3JkMDc5OEdmdzNlc0N6NUlrTG45aTA0RG90aEZQb1pjWkhVNHllQjluZ1VFZXJlb19Wa0hmZEJpNlVzZEVJUnNITlIzOGhGSQ?oc=5",
-      "fetched_at": "2026-09-05T19:46:10.078232+00:00",
       "is_long_form": false
     }
   ]
