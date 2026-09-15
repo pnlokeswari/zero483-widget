@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-09-15T20:44:27.758701+00:00",
+  "last_updated": "2026-09-15T23:26:28.177068+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "0fcd4fc54ab7",
+      "title": "Dxc 500i Clinical Analyzer and Dxc 500 AU Clinical Chemistry Analyzer",
+      "slug": "dxc-500i-clinical-analyzer-and-dxc-500-au-clinical-chemistry-analyzer",
+      "date": "2026-09-15",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Health Canada has issued an update concerning the DxC 500i and DxC 500 AU Clinical Chemistry Analyzers, vital diagnostic lab instruments. This alert signals potential issues affecting patient test result accuracy or reliability. Healthcare providers must review the latest guidance for proper operation and patient safety.</p>",
+      "compliance_impact": "<ul><li>Potential for inaccurate diagnostic test results.</li><li>Risk to timely and appropriate patient treatment decisions.</li></ul>",
+      "key_actions": "<ul><li>Review Health Canada's specific recommendations immediately.</li><li>Ensure all device operators are informed and trained on updated protocols.</li></ul>",
+      "industry_context": "<p>These analyzers are foundational in clinical laboratories, processing tests vital for disease diagnosis and treatment. Performance concerns have significant implications for patient care.</p>",
+      "seo_title": "Health Canada Alert: DxC 500i & DxC 500 AU Clinical Analyzers Update",
+      "seo_description": "Health Canada issues an update regarding DxC 500i and DxC 500 AU Clinical Analyzers. Understand the impact on diagnostic testing and patient care.",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/dxc-500i-clinical-analyzer-and-dxc-500-au-clinical-chemistry-analyzer",
+      "fetched_at": "2026-09-15T23:26:26.346914+00:00",
+      "is_long_form": false
+    },
     {
       "id": "00eadc4aacea",
       "title": "IMN Screws System Advanced Locking Screw",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZGg4ejkxdDczVUJ3bV94WWstTS15emk4UDByd2ZoMm9ZR254MFVSTld4bHZ5b0d0cFl0d1U3U1BqbHZSci0xU0J0UXIxMkZTVzh6NF9ScTJiQzg2X1pXYzFsLVpCWVNuT3BmZlZJUUlTMzhON2xaUHVIc3RkQ2d2ckRyWkgtRklLLWt4OEY2ekVJYno3YVUwSHdUUF9KZ2lfNC1z?oc=5",
       "fetched_at": "2026-09-10T21:23:09.306268+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "c4846169c74c",
-      "title": "European Regulators Prepare the Pharma Industry for Future Changes as Legislation is Formalized - PharmTech.com",
-      "slug": "european-regulators-prepare-the-pharma-industry-for-future-changes-as-legislation-is-formalized-pharmtech-com",
-      "date": "2026-09-10",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: European Regulators Prepare the Pharma Industry for Future Changes as Legislation is Formalized - PharmTech.com\nSource: European Medicines Agency\nDate: Thu, 10 Sep 2026 15:46:31 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "European Regulators Prepare the Pharma Industry for Future Changes as Legislation is Formalized - PharmTech.com",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNM011cXBRTDF4dWttcWZ2cS10WXJvbHJfWGhuX3dSMTVVQzJiR0l3emtCTDBualYxSE9pNkRtcFBmWlN4bXFHVVlScFdOLVFVd0FZWTRPUUlVdzNpUTJNRXNZaXNPSVpDU3JSWVhXSm45WHBDR01aUDloamR0SHRKdDl2aDFfVU85OVRPTlMxdnBxNGQ4ZDdaYmpCLWpzVGxYNHlHbnIxTDFMc3l1VlZlNEdFTGgxeERtWXh3SkNNTm8wX1lp?oc=5",
-      "fetched_at": "2026-09-10T18:11:09.184768+00:00",
       "is_long_form": false
     }
   ]
