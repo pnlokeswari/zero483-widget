@@ -51,7 +51,9 @@ Ensure `<head>` always contains:
 - Robots directive: `<meta name="robots" content="index, follow, max-image-preview:large">`.
 
 ## 5. UI, UX, Navigation & Conversion Design
-- **Top Affiliate Disclosure (Google & ASCI Compliance)**: Positioned right beneath hero before any buy links.
+- **Zero Negative Margin & Clean Section Flow**: The main `.container` MUST NEVER use negative margins (`margin: -24px`) which causes content overlap and hides hero metadata or disclosures on mobile/desktop. Always use positive spacing (`margin: 24px auto 50px;`).
+- **Hero Meta Chips**: The hero byline (`.hero-meta`) must use distinct `.hero-meta-chip` glass pills (`background: rgba(0, 0, 0, 0.28); border-radius: 20px;`) for author, read time, testing badge, and shade to guarantee 100% visibility without awkward wrapping or line cutting.
+- **Top Affiliate Disclosure Card (Google & ASCI Compliance)**: High-contrast white card (`.affiliate-disclosure-box`) with accent border (`border-left: 5px solid #be185d;`) positioned prominently at the top of the container before any buy links.
 - **Reading Progress Bar**: 3px sticky accent progress bar at the top of the viewport tracking scroll depth.
 - **Quick Verdict / At-a-Glance Box**: Executive summary highlighting "Who Should Buy", "Who Should Skip", and Rating.
 - **Interactive Table of Contents (TOC)**: Sticky or collapsable anchor jump links generating Google Sitelinks.
