@@ -285,17 +285,67 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 16px;
+      gap: 10px;
       font-size: 0.86rem;
-      color: rgba(255, 255, 255, 0.85);
+      color: #ffffff;
       flex-wrap: wrap;
+      margin-top: 18px;
+    }
+    .hero-meta-chip {
+      background: rgba(0, 0, 0, 0.28);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      padding: 6px 14px;
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+      font-weight: 500;
+    }
+    .hero-meta-chip a {
+      color: #ffd54f !important;
+      font-weight: 700;
+      text-decoration: underline;
     }
 
     /* ── CONTENT CONTAINER ── */
     .container {
       max-width: 920px;
-      margin: -24px auto 50px;
+      margin: 24px auto 50px;
       padding: 0 16px;
+      position: relative;
+      z-index: 5;
+    }
+
+    /* ── TOP AFFILIATE DISCLOSURE ── */
+    .affiliate-disclosure-box {
+      background: #ffffff;
+      border: 1px solid #fce7f3;
+      border-left: 5px solid #be185d;
+      border-radius: 12px;
+      padding: 14px 20px;
+      margin-bottom: 26px;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: #334155;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      box-shadow: 0 2px 10px rgba(190, 24, 93, 0.05);
+    }
+    .disclosure-icon {
+      font-size: 1.2rem;
+      line-height: 1.3;
+      flex-shrink: 0;
+    }
+    .disclosure-body {
+      flex: 1;
+      color: #334155;
+    }
+    .disclosure-body strong.title {
+      color: #831843;
+      font-weight: 700;
     }
 
     /* ── SPOTLIGHT PRODUCT CARD ── */
@@ -731,13 +781,10 @@
       <h1>Faces Canada All Day Hydra Matte Foundation Review: The 3-in-1 Daily Makeup Must-Have?</h1>
       <p class="hero-desc">Moisturizer, SPF 30 sun defense, and oil-free matte coverage packed into an ultra-convenient travel tube for under ₹300. Here is how it performs on Indian skin.</p>
       <div class="hero-meta">
-        <span>✍️ Reviewed by <a href="#author-bio" style="color: #ffd54f; font-weight: 700; text-decoration: underline;">PNLOKESWARI</a> (Lifestyle & Wellness Reviewer)</span>
-        <span>•</span>
-        <span>⏱️ 4 Min Read</span>
-        <span>•</span>
-        <span>Verified Swatch & Wear Test</span>
-        <span>•</span>
-        <span>Shade: Warm Natural</span>
+        <span class="hero-meta-chip">✍️ Reviewed by <a href="#author-bio">PNLOKESWARI</a>&nbsp;(Lifestyle & Wellness Reviewer)</span>
+        <span class="hero-meta-chip">⏱️ 4 Min Read</span>
+        <span class="hero-meta-chip">🔬 Verified Swatch & Wear Test</span>
+        <span class="hero-meta-chip">🎨 Shade: Warm Natural</span>
       </div>
     </div>
   </section>
@@ -748,9 +795,11 @@
     <!-- Spotlight Product Card -->
     
     <!-- Top Affiliate Transparency Disclosure (Google & ASCI Compliant) -->
-    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 10px 16px; margin-bottom: 24px; font-size: 0.82rem; color: #64748b; display: flex; align-items: center; gap: 8px;">
-      <span>ℹ️</span>
-      <span><strong>Editorial Disclosure:</strong> When you buy through our links, we may earn an affiliate commission at no extra cost to you. All products undergo rigorous, independent testing by PNLOKESWARI.</span>
+    <div class="affiliate-disclosure-box">
+      <span class="disclosure-icon">ℹ️</span>
+      <div class="disclosure-body">
+        <strong class="title">Editorial Disclosure:</strong> When you buy through our links, we may earn an affiliate commission at no extra cost to you. All products undergo rigorous, independent testing by <strong>PNLOKESWARI</strong>.
+      </div>
     </div>
 
     <!-- Quick Verdict / At-a-Glance Executive Summary (Targeting Google AI Overviews) -->
