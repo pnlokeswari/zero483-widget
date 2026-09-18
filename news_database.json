@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-18T01:47:10.580661+00:00",
+  "last_updated": "2026-09-18T06:55:22.356714+00:00",
   "total_items": 50,
   "items": [
     {
@@ -651,6 +651,24 @@
       "is_long_form": false
     },
     {
+      "id": "88f9ccdfb5e0",
+      "title": "FDA takes applications for new program to shorten drug approval times - STAT",
+      "slug": "fda-takes-applications-for-new-program-to-shorten-drug-approval-times-stat",
+      "date": "2026-09-15",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: FDA takes applications for new program to shorten drug approval times - STAT\nSource: Google News\nDate: Tue, 15 Sep 2026 14:03:51 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "FDA takes applications for new program to shorten drug approval times - STAT",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdTF1UHNaSGI2QzhrazBucXk2cGVyQV9DX1R3NzNpM2REZl9zY1FuR0ZzdkhTVmxMYjFzdmFsV19GNDVmb2k0SURhQmdQS0pLOTJ5YTlHTHQzMWpwNmttODlFT09PVXdlT0dDS1AwYVQyR05wTEtkZ2x1QklkX2RETy1RVmtFSHU4eXRjMEdpa1JDdw?oc=5",
+      "fetched_at": "2026-09-18T06:49:09.721056+00:00",
+      "is_long_form": false
+    },
+    {
       "id": "8c26c8598439",
       "title": "MaaT’s bid to overturn microbiome approval refusal suffers setback - European Biotechnology Magazine",
       "slug": "maat-s-bid-to-overturn-microbiome-approval-refusal-suffers-setback-european-biotechnology-magazine",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZU5kWGVlVzJtQUxRRnpGVkNZdGIwM053SFJTbW50M2oxREJtTGhvUExEUjdtdkJpQkFNaW5mSzdxVEV3RlNhcVpMQWJHcnE4M2I3ZmMweDZGZTR2ZEg0LThvQnBaRDV3SmhZakJQcXJhWnRpdnNsZTJsZHg3S3pNZWhIdlM3ME8ybjd2RjZhOGduOE95bzEtRjgyQ0lYTU5FSFpmSHNvLVZFYW1tMDUxMnpSeE9PUHJRTGhPQ2pXSTZUc09FRkHSAcwBQVVfeXFMTVZoVXRiaVktNGkzOV82UWVTS3Q1WFh0dl9kZzktZm9QYkZ5aEg2aGd0U1JoUHdfMkljNkltdFhQOFo2aHh4WXZuRzQyOF8yQnNnNzJ1NWJ3Mmh0ZmNSVnVwdmhIOFlrbDZaQXdrajB0M2Y5V2Z1M1Bfd0F6U3ZXMmZlV09Kdjhvc1RtSlBXeG81R0xvdTJlYndFTkF3N0FMTm1vczZsTGE2Uk1ROW5FUWh3MUZtV3hBUjVRVEktV0JiZVFvWnRMSlBRQjZU?oc=5",
       "fetched_at": "2026-09-15T17:26:10.237185+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "017c0c9429fb",
-      "title": "Telix wins FDA approval for Pixclara FET-PET imaging drug in glioma - BioSpectrum Asia",
-      "slug": "telix-wins-fda-approval-for-pixclara-fet-pet-imaging-drug-in-glioma-biospectrum-asia",
-      "date": "2026-09-15",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Telix has secured FDA approval for Pixclara, an innovative FET-PET imaging drug designed to improve the diagnosis and monitoring of glioma, an aggressive type of brain tumor. This landmark decision offers clinicians a crucial new tool to visualize tumor activity, enhancing treatment planning and patient outcomes.</p>",
-      "compliance_impact": "<ul><li>Telix can now market Pixclara in the U.S., expanding its diagnostic portfolio.</li><li>Healthcare professionals gain an FDA-approved tool for enhanced glioma imaging.</li></ul>",
-      "key_actions": "<ul><li>Clinicians should assess integrating Pixclara for precise glioma diagnostics.</li><li>Telix prepares for rapid market launch and professional education.</li></ul>",
-      "industry_context": "<p>This approval marks a significant advancement in diagnostic imaging for challenging brain cancers like glioma. It provides clinicians with a more precise tool to differentiate active tumor tissue, improving management strategies.</p>",
-      "seo_title": "FDA Approves Telix's Pixclara: Breakthrough Imaging for Glioma Brain Tumors",
-      "seo_description": "Telix wins FDA approval for Pixclara, a FET-PET imaging drug for glioma brain tumors. This offers new hope for accurate diagnosis and monitoring of aggressive brain cancers.",
-      "primary_company_name": "Telix",
-      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPZ3lqN3d6SnJZZnFZcHZGekhzSkhucVhOZ25vbFAxMVVCVVU1T3l1Qm85Q1hmWi1zbUtqbk10OENYNW41UUlTekRnbXBHLUhRUy1HQlZRVlFzSXloTWk5d1RUcDM3LWlSMVpzd2szZjVnMG5FZDhCTTBWQzVmSE8yUmpQUXRRSEpkazhoN1FpU1NNVXNYenJxaUdZLUtHRHVYMXNGbG5HMXZ5dzdBaGU3dmhJM1BpemNENlE?oc=5",
-      "fetched_at": "2026-09-15T17:24:18.706087+00:00",
       "is_long_form": false
     }
   ]
