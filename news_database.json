@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-19T09:47:43.963567+00:00",
+  "last_updated": "2026-09-19T13:34:29.879751+00:00",
   "total_items": 50,
   "items": [
     {
@@ -19,6 +19,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPY2ppSFhPanpUQXNZY0R2ZGtmQU5JUTBOTWwtd2NKTGVhU2w1eElWajVDLU9pOXkwMGFPcl9aYmdqaWI1OTlGYUt6Y19kWkY1YzNOVEp6dnlVakxpbGhaQzEwSzBMUjdlbFJNb2JCQjFKVm05VzhtS1RhZXlUNkRaVXh6SVFjUFVYUm9DUWRQenpDdFZwVnc?oc=5",
       "fetched_at": "2026-09-19T09:46:02.575138+00:00",
       "is_long_form": true
+    },
+    {
+      "id": "f145c72e8c62",
+      "title": "When Essential Cancer Drugs Run Short: Why Oncology Drug Shortages Persist - Onco'Zine",
+      "slug": "when-essential-cancer-drugs-run-short-why-oncology-drug-shortages-persist-onco-zine",
+      "date": "2026-09-18",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Persistent shortages of essential oncology drugs are a critical public health crisis, severely impacting timely cancer treatment and patient outcomes. These shortages stem from complex issues like manufacturing delays, raw material scarcity, and supply chain vulnerabilities, creating immense pressure on healthcare systems.</p>",
+      "compliance_impact": "<ul><li>Increases regulatory scrutiny on pharmaceutical supply chains.</li><li>Demands robust manufacturing quality and contingency planning.</li></ul>",
+      "key_actions": "<ul><li>Manufacturers must improve supply chain resilience and transparency.</li><li>FDA works proactively on shortage prevention strategies.</li></ul>",
+      "industry_context": "<p>The continuous availability of oncology drugs is paramount, making these shortages a high-priority public health and regulatory concern that the FDA closely monitors.</p>",
+      "seo_title": "Critical Cancer Drug Shortages: Understanding the Persistent Challenge",
+      "seo_description": "Explore the ongoing issue of essential cancer drug shortages and their impact on patients and healthcare. Learn what drives these critical supply chain challenges.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWDBLY3VZZ1Z0UWxLOE1TNXVMakVIUDM3cGRObnNMUDRLamJjR1VvSklhSVU1cnNxWFh4YzUxVTA3MjBaRTFOdnJFak02LWR4dksyZ0ZfZ2FBYk55MkJWQnQwNm9Rd2dad0NXNVlScFY5OWJzQktob3BQTlZaWWVxM1NzSkV6NzFSUUJub01IV3ZmZzR0V2FJSHI2UmdyMWRj?oc=5",
+      "fetched_at": "2026-09-19T13:30:52.090898+00:00",
+      "is_long_form": false
     },
     {
       "id": "a35d48752193",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSlZRLVVUeFFFUGVmam1BRjlGa1JCOTF5VkVNSUdqS3ByckRlcUl0TzkybXNTeW0zZ0pYMWp4WTZKUXFRNzJKaHkwTzhIdWJTOXNwRFhNSUItWmhENi12allGLTVGYm16cVlzejRNZWJUMjhSRkNPT3BZSzVuckE2WDNrcEhrTHY5ZzZUbGlhNG5CUU9HbUhXYkE1MEYtNktJeEx4SFcta2xybzhnR3NNaE9WNVp0aHB2cndfLTVKMGZyLTA0bjlDN1JiS05hQWF0SlBz?oc=5",
       "fetched_at": "2026-09-16T17:20:16.923615+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "4bed67b1c300",
-      "title": "CDSCO Issues Alert Against Pak-Made Face Creams Containing Mercury: Experts Explain Why They Are Harmful - Health and Me",
-      "slug": "cdsco-issues-alert-against-pak-made-face-creams-containing-mercury-experts-explain-why-they-are-harmful-health-and-me",
-      "date": "2026-09-16",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "<p>India's CDSCO has issued a critical alert regarding certain face creams originating from Pakistan, found to contain harmful levels of mercury. This potent neurotoxin, often illegally used for skin lightening, poses serious health risks, prompting regulatory action to protect public safety from these unregulated products.</p>",
-      "compliance_impact": "<ul><li>Significant health risks for consumers using unregulated, mercury-laden products.</li><li>Increased vigilance against the import and sale of unauthorized cosmetics.</li></ul>",
-      "key_actions": "<ul><li>Consumers should immediately discontinue using suspicious face creams.</li><li>Report any unregistered or illegally marketed cosmetic products to authorities.</li></ul>",
-      "industry_context": "<p>This alert highlights a persistent global issue: unauthorized cosmetics bypassing safety standards, often incorporating dangerous ingredients like mercury. Regulators worldwide actively combat such illicit products to safeguard consumer health.</p>",
-      "seo_title": "CDSCO Warns Against Mercury in Face Creams: Your Skin's Health at Risk",
-      "seo_description": "India's CDSCO issues a critical alert on mercury-laden face creams from Pakistan. Learn why these toxic cosmetics are harmful and what consumers should do.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQNnBoeV9CUEVMUGhJYmJJYXlvOEpjWFdrWE9IU1cxejNGQ2diZUd5V0NNYkZjMGdZWm1QLXloQnFKUUFTUElpTW44ZUxSNjJSZ1lnWFpJbE9uczZ2VVRlOWVkUnpYS2ZIUXVVUWJLSnlkTFdIT185SUZmTGdidlVoa2lkdGx6MTFBN2cwaHRjTTlERndiZDV0X0pvVHY5VFQ5eWJxTDlGMHZCTlM5cXpDbTdQRWJEZzBNQ1ZidHZseVRDTUM2dHVJTVlUd2pIWGw1WGdiMFdDQXZRRElvTGd5bzd4UVJjejl2ankyYV9vSmZSOTg?oc=5",
-      "fetched_at": "2026-09-16T12:14:22.899517+00:00",
       "is_long_form": false
     }
   ]
