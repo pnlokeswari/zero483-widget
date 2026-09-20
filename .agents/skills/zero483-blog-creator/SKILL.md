@@ -94,7 +94,32 @@ Include all 4 schemas inside a single `<script type="application/ld+json">` in t
 
 ---
 
-## 4. Technical SEO & Core Web Vitals
+## 4. Pinterest Rich Pin Standards (Mandatory for All Blogs)
+
+Every blog post created MUST be pre-configured for 100% automatic Pinterest Rich Pin activation:
+- **Head Meta Tags**:
+  ```html
+  <meta name="pinterest-rich-pin" content="true" />
+  <meta name="p:domain_verify" content="cf07b06d0e5ffe4465aa2c5c2297a030" />
+  ```
+- **Rich Open Graph Metadata**:
+  - `og:site_name` ("ZERO483 Lifestyle & Devotional")
+  - `og:type` ("article")
+  - `article:published_time` & `article:modified_time` (ISO 8601 strings)
+  - `article:author` ("PNLOKESWARI")
+  - `article:section` & relevant `article:tag` entries.
+- **Rich Pin Specific Schemas**:
+  - **For Food / Recipe Posts**: MUST include full `@type: "Recipe"` schema with structured `recipeIngredient` (array of all items) and `recipeInstructions` (array of HowToStep objects), plus `cookTime`, `prepTime`, and `recipeYield`.
+  - **For Product Reviews**: Complete `@type: "Product"` schema with brand, price, currency, availability, and rating.
+  - **For Guides & Listicles**: Complete `@type: "Article"` schema with headline, author Person schema, and datePublished.
+- **High-Resolution Pin Images (No Low-Res Thumbnails)**:
+  - Any Amazon product images placed in the blog MUST use high-res links (`_SL1000_.jpg` or `_SL1200_.jpg`), NEVER compressed thumbnails like `_SY300_SX300_` to guarantee images exceed Pinterest's 600px width requirement.
+- **Save to Pinterest Integration**:
+  - Include Pinterest's official `pinit.js` (`<script async defer src="//assets.pinterest.com/js/pinit.js"></script>`) and a 1-tap "📌 Save to Pinterest" button.
+
+---
+
+## 5. Technical SEO & Core Web Vitals
 
 Ensure `<head>` always contains:
 - **Canonical URL**: `<link rel="canonical" href="https://alerts.zero483.com/<category>/<slug>.html" />`
@@ -106,7 +131,7 @@ Ensure `<head>` always contains:
 
 ---
 
-## 5. UI, UX, Navigation & Layout Architecture
+## 6. UI, UX, Navigation & Layout Architecture
 
 ### A. Zero Negative Margins (Clean Section Separation)
 - The main `.container` MUST NEVER use negative margins (`margin: -24px`) which causes content overlap and hides hero metadata or disclosures on mobile/desktop. Always use positive spacing (`margin: 24px auto 50px;`).
@@ -229,7 +254,7 @@ Documents 3 specific testing criteria proving hands-on experience:
 
 ---
 
-## 6. Local Persistence, Sitemap & GitHub Auto-Publishing
+## 7. Local Persistence, Sitemap & GitHub Auto-Publishing
 
 1. Save the generated HTML file locally into `<category>/<slug>.html` (e.g. `lifestyle/` or `devotional/`).
 2. Add the URL entry into `sitemap.xml`:
