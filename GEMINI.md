@@ -41,7 +41,27 @@ Every blog post created MUST include rich JSON-LD Schema markup in the `<head>` 
 - **`@type: FAQPage`**: Containing all article FAQs so Google renders expandable accordion dropdowns directly in search results.
 - **`@type: BreadcrumbList`**: Clean navigation hierarchy (`Home > Category > Product Review`) for enhanced Google SERP paths.
 
-## 4. Technical SEO, Speed & Core Web Vitals
+## 4. Pinterest Rich Pin Standards (Mandatory for All Blogs)
+Every blog post created MUST be pre-configured for 100% automatic Pinterest Rich Pin activation:
+- **Head Meta Tags**:
+  - `<meta name="pinterest-rich-pin" content="true" />`
+  - `<meta name="p:domain_verify" content="cf07b06d0e5ffe4465aa2c5c2297a030" />`
+- **Rich Open Graph Metadata**:
+  - `og:site_name` ("ZERO483 Lifestyle & Devotional")
+  - `og:type` ("article")
+  - `article:published_time` & `article:modified_time` (ISO 8601 strings)
+  - `article:author` ("PNLOKESWARI")
+  - `article:section` & relevant `article:tag` entries.
+- **Rich Pin Specific Schemas**:
+  - **For Food / Recipe Posts**: MUST include full `@type: "Recipe"` schema with structured `recipeIngredient` (array of all items) and `recipeInstructions` (array of HowToStep objects), plus `cookTime`, `prepTime`, and `recipeYield`.
+  - **For Product Reviews**: Complete `@type: "Product"` schema with brand, price, currency, availability, and rating.
+  - **For Guides & Listicles**: Complete `@type: "Article"` schema with headline, author Person schema, and datePublished.
+- **High-Resolution Pin Images (No Low-Res Thumbnails)**:
+  - Any Amazon product images placed in the blog MUST use high-res links (`_SL1000_.jpg` or `_SL1200_.jpg`), NEVER compressed thumbnails like `_SY300_SX300_` to guarantee images exceed Pinterest's 600px width requirement.
+- **Save to Pinterest Integration**:
+  - Include Pinterest's official `pinit.js` (`<script async defer src="//assets.pinterest.com/js/pinit.js"></script>`) and a 1-tap "📌 Save to Pinterest" button.
+
+## 5. Technical SEO, Speed & Core Web Vitals
 Ensure `<head>` always contains:
 - `<link rel="canonical" href="https://alerts.zero483.com/<path>" />` (Mandatory self-referential canonical).
 - Core Web Vitals LCP Preload: `<link rel="preload" as="image" href="<hero_image_url>" fetchpriority="high">`.
@@ -50,7 +70,7 @@ Ensure `<head>` always contains:
 - Mobile viewport: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`.
 - Robots directive: `<meta name="robots" content="index, follow, max-image-preview:large">`.
 
-## 5. UI, UX, Navigation & Conversion Design
+## 6. UI, UX, Navigation & Conversion Design
 - **Zero Negative Margin & Clean Section Flow**: The main `.container` MUST NEVER use negative margins (`margin: -24px`) which causes content overlap and hides hero metadata or disclosures on mobile/desktop. Always use positive spacing (`margin: 24px auto 50px;`).
 - **Hero Meta Chips**: The hero byline (`.hero-meta`) must use distinct `.hero-meta-chip` glass pills (`background: rgba(0, 0, 0, 0.28); border-radius: 20px;`) for author, read time, testing badge, and shade to guarantee 100% visibility without awkward wrapping or line cutting.
 - **Top Affiliate Disclosure Card (Google & ASCI Compliance)**: High-contrast white card (`.affiliate-disclosure-box`) with accent border (`border-left: 5px solid #be185d;`) positioned prominently at the top of the container before any buy links.
@@ -63,7 +83,7 @@ Ensure `<head>` always contains:
 - **1-Tap WhatsApp Share Button**: With pre-filled message text.
 - **Internal Cross-Linking Box**: Linking to 3 related articles on the site.
 
-## 6. Local Persistence, Sitemap & GitHub Auto-Publishing
+## 7. Local Persistence, Sitemap & GitHub Auto-Publishing
 - Save the newly generated file into `c:\Users\Ram\OneDrive\Documents\ZERO483 automation\<category>\` (e.g. `lifestyle/` or `devotional/`).
 - Automatically add the new URL with `<priority>0.9</priority>` to `sitemap.xml`.
 - Automatically commit and push both the HTML file and `sitemap.xml` directly to the GitHub repository (`pnlokeswari/zero483-widget`) via the GitHub REST API.
