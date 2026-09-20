@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-09-20T12:42:45.528538+00:00",
+  "last_updated": "2026-09-20T16:45:12.597997+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "52936a7bc346",
+      "title": "FDA Warned COVID Vaccine Safety Tool Was Broken, Then Silenced Doctor Who Told Them, Report Finds - StudyFinds",
+      "slug": "fda-warned-covid-vaccine-safety-tool-was-broken-then-silenced-doctor-who-told-them-report-finds-studyfinds",
+      "date": "2026-09-20",
+      "category": "Adverse Event",
+      "severity": "High",
+      "summary": "<p>Title: FDA Warned COVID Vaccine Safety Tool Was Broken, Then Silenced Doctor Who Told Them, Report Finds - StudyFinds\nSource: Google News\nDate: Sun, 20 Sep 2026 13:20:08 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "FDA Warned COVID Vaccine Safety Tool Was Broken, Then Silenced Doctor Who Told Them, Report Finds - StudyFinds",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSGR2enNRMFJRemhaTmNmWEk2Uk5nV19WaG5MUEFnMVgxS2NOUUg3NUduNGpfUzZEb193SXRKMnRCVUVXbUdoUlphakVsT19TWmhFY2xyS29BSHJlbk5ydzNueDJwekxPOFlaR1pMVUFSWG1MNUtMVG1zT3lyNld4SlFlYVlWbFQ4eTR1dU8zSmVUbFJMQnV2RldnbmxIa3BIbEphRFloTlFvd2tsTnRqVEtRb09CQQ?oc=5",
+      "fetched_at": "2026-09-20T16:45:09.949294+00:00",
+      "is_long_form": false
+    },
     {
       "id": "9149a43c2413",
       "title": "12 Firms in Race to Build CDSCO's Digital Drug Regulatory System - Medical Dialogues",
@@ -882,24 +900,6 @@
       "primary_company_name": "Platinum Naturals",
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/platinum-naturals-easymulti-stress-men-affected-lots-incorrectly-labelled-vitamin-b6",
       "fetched_at": "2026-09-16T17:37:21.547452+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "0510e007bc09",
-      "title": "NDI Passive Spheres™",
-      "slug": "ndi-passive-spheres",
-      "date": "2026-09-16",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: NDI Passive Spheres™\nSource: Health Canada\nDate: 2026-09-16T12:00:00</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "NDI Passive Spheres™",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/ndi-passive-spherestm",
-      "fetched_at": "2026-09-16T17:36:09.994788+00:00",
       "is_long_form": false
     }
   ]
