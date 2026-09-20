@@ -959,6 +959,143 @@
       color: #be185d;
     }
 
+  
+    /* In-Article Affiliate Product Cards */
+    .product-deal-card {
+      background: linear-gradient(135deg, #fffdfa 0%, #fff7ed 100%);
+      border: 2px solid #f59e0b;
+      border-radius: var(--radius);
+      padding: 22px 20px;
+      margin: 28px 0;
+      box-shadow: 0 6px 20px rgba(180, 83, 9, 0.12);
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 20px;
+      align-items: center;
+      position: relative;
+    }
+    .product-badge-corner {
+      position: absolute;
+      top: -12px;
+      left: 20px;
+      background: #dc2626;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 3px 12px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 8px rgba(220, 38, 38, 0.3);
+    }
+    .product-img-box {
+      width: 100%;
+      height: 170px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid #fed7aa;
+      padding: 8px;
+      overflow: hidden;
+    }
+    .product-img-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      transition: transform 0.2s;
+    }
+    .product-img-box:hover img {
+      transform: scale(1.05);
+    }
+    .product-details {
+      display: flex;
+      flex-direction: column;
+    }
+    .product-title {
+      font-size: 19px;
+      font-weight: 800;
+      color: #7f1d1d;
+      margin: 6px 0 4px;
+      line-height: 1.35;
+    }
+    .product-rating {
+      color: #f59e0b;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .product-usp {
+      font-size: 14.5px;
+      color: #4b5563;
+      margin-bottom: 12px;
+      line-height: 1.55;
+    }
+    .product-price-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .current-price {
+      font-size: 22px;
+      font-weight: 900;
+      color: #15803d;
+    }
+    .mrp-tag {
+      font-size: 14px;
+      color: #9ca3af;
+      text-decoration: line-through;
+    }
+    .save-badge {
+      background: #dcfce7;
+      color: #166534;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+    .btn-amazon-deal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      color: #ffffff !important;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 10px 24px;
+      border-radius: 30px;
+      text-decoration: none !important;
+      box-shadow: 0 4px 12px rgba(217, 119, 6, 0.35);
+      transition: all 0.2s;
+      align-self: flex-start;
+    }
+    .btn-amazon-deal:hover {
+      background: #b45309;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(217, 119, 6, 0.45);
+    }
+    @media (max-width: 640px) {
+      .product-deal-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 28px;
+      }
+      .product-img-box {
+        max-width: 220px;
+        margin: 0 auto;
+      }
+      .product-price-row {
+        justify-content: center;
+      }
+      .btn-amazon-deal {
+        align-self: center;
+        width: 100%;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -1148,6 +1285,29 @@
       </div>
     </article>
 
+    <!-- Amazon Affiliate Product 1: Spiritual Living Brass Aarti Thali -->
+    <div class="product-deal-card">
+      <span class="product-badge-corner">🚩 నవరాత్రి ఆఫర్ • 46% తగ్గింపు</span>
+      <div class="product-img-box">
+        <img src="https://m.media-amazon.com/images/I/51GL5RDDxHL._SY300_SX300_QL70_FMwebp_.jpg" alt="The Spiritual Living Brass Aarti Thali for Puja 8 Inch" loading="lazy" />
+      </div>
+      <div class="product-details">
+        <span class="product-rating">★★★★☆ 4.3 (1,240+ భక్తుల రేటింగ్స్)</span>
+        <h4 class="product-title">ది స్పిరిచువల్ లివింగ్ ప్యూర్ బ్రాస్ ఆరతి తాళీ (8 ఇంచులు)</h4>
+        <p class="product-usp">
+          నవరాత్రులలో నైవేద్యం సమర్పించడానికి, నిత్య హారతి ఇవ్వడానికి అనువైన స్వచ్ఛమైన ఇత్తడి తాళీ. ఎంబోస్డ్ అంచులతో కమ్మని ప్రసాదాలను అమ్మవారి సన్నిధిలో అలంకరించడానికి పరిపూర్ణమైనది.
+        </p>
+        <div class="product-price-row">
+          <span class="current-price">₹699</span>
+          <span class="mrp-tag">MRP: ₹1,299</span>
+          <span class="save-badge">సేవ్ ₹600 (46% OFF)</span>
+        </div>
+        <a href="https://link.amazon/B0eb5otOh" target="_blank" rel="nofollow noopener sponsored" class="btn-amazon-deal">
+          🛒 అమెజాన్‌లో ఆఫర్ ధరతో ఇప్పుడే కొనండి (View Deal on Amazon) →
+        </a>
+      </div>
+    </div>
+
     <!-- 3. Kobbari Annam -->
     <article id="recipe-3" class="recipe-card">
       <div class="alankaram-link-banner">🪔 <strong>ఈ రోజు పూజా విశేషం:</strong> <a href="https://alerts.zero483.com/lifestyle/devi-navratri-2026-telugu-10-days-mantras-pooja-guide.html#day-2" target="_blank">శ్రీ గాయత్రీ దేవి అలంకారం, గాయత్రీ మంత్రం &amp; పూజా విధానం ఇక్కడ చూడండి →</a></div>
@@ -1225,6 +1385,29 @@
       </div>
     </article>
 
+    <!-- Amazon Affiliate Product 2: Borosil Tejas Brass Pooja Thali -->
+    <div class="product-deal-card">
+      <span class="product-badge-corner">⭐ టాప్ బ్రాండ్ ఛాయిస్ • బోరోసిల్</span>
+      <div class="product-img-box">
+        <img src="https://m.media-amazon.com/images/I/4150VVkAlLL._SY300_SX300_QL70_FMwebp_.jpg" alt="Borosil Tejas Brass Pooja Thali 8 Inch" loading="lazy" />
+      </div>
+      <div class="product-details">
+        <span class="product-rating">★★★★★ 4.6 (ప్రీమియం బ్రాండ్ క్వాలిటీ)</span>
+        <h4 class="product-title">బోరోసిల్ తేజస్ ప్యూర్ బ్రాస్ పూజా తాళీ సెట్ (8 ఇంచులు)</h4>
+        <p class="product-usp">
+          సుప్రసిద్ధ బోరోసిల్ సంస్థ వారి ప్రీమియం బ్రాస్ పూజా పళ్ళెం. ప్రసాద గిన్నెలు, దీపం, అగరబత్తి స్టాండ్‌తో నవరాత్రులలో అల్లం గారెలు, దద్దోజనం వంటి పవిత్ర నైవేద్యాల సమర్పణకు అద్భుతమైన ఎంపిక.
+        </p>
+        <div class="product-price-row">
+          <span class="current-price">₹999</span>
+          <span class="mrp-tag">MRP: ₹1,495</span>
+          <span class="save-badge">ప్రత్యేక పండుగ డీల్</span>
+        </div>
+        <a href="https://link.amazon/B0jjGeOVw" target="_blank" rel="nofollow noopener sponsored" class="btn-amazon-deal">
+          🛒 అమెజాన్‌లో ఆఫర్ చెక్ చేయండి (Buy on Amazon) →
+        </a>
+      </div>
+    </div>
+
     <!-- 5. Daddojanam -->
     <article id="recipe-5" class="recipe-card">
       <div class="alankaram-link-banner">🪔 <strong>ఈ రోజు పూజా విశేషం:</strong> <a href="https://alerts.zero483.com/lifestyle/devi-navratri-2026-telugu-10-days-mantras-pooja-guide.html#day-5" target="_blank">శ్రీ లలితా త్రిపురసుందరి దేవి అలంకారం, లలితా సహస్రనామం &amp; మంత్రాలు ఇక్కడ చూడండి →</a></div>
@@ -1301,6 +1484,29 @@
         💡 <strong>రహస్య సూత్రం:</strong> రవ్వ పూర్తిగా ఉడికిన తర్వాతే పంచదార వేయాలి. రవ్వ ఉడకకముందే పంచదార వేస్తే రవ్వ బిగుసుకుపోయి సరిగ్గా ఉడకదు.
       </div>
     </article>
+
+    <!-- Amazon Affiliate Product 3: Anjali Arts Designer Marble Meenakari Thali -->
+    <div class="product-deal-card">
+      <span class="product-badge-corner">🌸 అందమైన మీనాకారీ డిజైన్ • 47% తగ్గింపు</span>
+      <div class="product-img-box">
+        <img src="https://m.media-amazon.com/images/I/510zYhRDknL._SY300_SX300_QL70_FMwebp_.jpg" alt="9 Inch Designer Decorative Marble Pooja Thali" loading="lazy" />
+      </div>
+      <div class="product-details">
+        <span class="product-rating">★★★★☆ 4.0 (హ్యాండ్‌క్రాఫ్టెడ్ కళాఖండం)</span>
+        <h4 class="product-title">9-ఇంచ్ డిజైనర్ డెకరేటివ్ మీనాకారీ పూజా &amp; ప్రసాదం తాళీ</h4>
+        <p class="product-usp">
+          అమ్మవారి సన్నిధిలో రవ్వ కేసరి, తీపి పరమాన్నం నైవేద్యాలను అందంగా కొలువుతీర్చడానికి సాంప్రదాయ మీనాకారీ రంగుల హ్యాండ్‌క్రాఫ్ట్ తాళీ. పండుగ రోజుల్లో మీ పూజా మందిరానికి అదనపు శోభ తెస్తుంది.
+        </p>
+        <div class="product-price-row">
+          <span class="current-price">₹796</span>
+          <span class="mrp-tag">MRP: ₹1,499</span>
+          <span class="save-badge">సేవ్ ₹703 (47% OFF)</span>
+        </div>
+        <a href="https://link.amazon/B00pMkydo" target="_blank" rel="nofollow noopener sponsored" class="btn-amazon-deal">
+          🛒 అమెజాన్‌లో తగ్గింపు ధరతో కొనండి (View on Amazon) →
+        </a>
+      </div>
+    </div>
 
     <!-- 7. Bellam Pongali -->
     <article id="recipe-7" class="recipe-card">
@@ -1544,19 +1750,30 @@
     </section>
 
     <!-- COOKWARE SPOTLIGHT (Affiliate Recommendation) -->
-    <section class="cookware-spotlight">
-      <img src="https://alerts.zero483.com/lifestyle/puja_items/item1.jpg" alt="Traditional Brass Puja Naivedyam Bowls" class="cookware-img" />
-      <div>
-        <span class="deal-badge">నవరాత్రి స్పెషల్ రికమండేషన్</span>
-        <h3 class="cookware-title">సాంప్రదాయ ఇత్తడి పూజా నైవేద్య పళ్ళెం &amp; గిన్నెల సెట్</h3>
-        <p class="cookware-desc">
-          అమ్మవారికి పవిత్రమైన నైవేద్యాలను సమర్పించడానికి స్వచ్ఛమైన ఇత్తడి తాళీ సెట్ అత్యంత శ్రేష్ఠం. ప్రసాదాల రుచి, పవిత్రత చెక్కుచెదరకుండా ఉండేందుకు అనువైనది.
+    
+    <!-- Amazon Affiliate Product 4: BENGALEN Full Brass Puja Thali Set -->
+    <div class="product-deal-card" style="border-color: #b45309; background: linear-gradient(135deg, #fffaf0 0%, #fef3c7 100%);">
+      <span class="product-badge-corner" style="background: #b45309;">🪔 సంపూర్ణ 8-పీస్ కలశ పూజా సెట్ • 50% OFF</span>
+      <div class="product-img-box" style="border-color: #fde68a;">
+        <img src="https://m.media-amazon.com/images/I/51Z5jEbtoaL._SY300_SX300_QL70_FMwebp_.jpg" alt="BENGALEN Brass Puja Thali Set with Kalash Ghanti Diya" loading="lazy" />
+      </div>
+      <div class="product-details">
+        <span class="product-rating">★★★★☆ 4.2 (నవరాత్రుల బెస్ట్ సెల్లర్)</span>
+        <h4 class="product-title">బెంగాలెన్ 8-పీస్ ప్యూర్ బ్రాస్ పూజా తాళీ సెట్ (కలశం, గంట, దీపం, కుబేర దియాతో)</h4>
+        <p class="product-usp">
+          దసరా కలశ స్థాపన మరియు 10 రోజుల నవరాత్రి పూజలకు అవసరమైన పూర్తి ఇత్తడి పూజా సెట్. కంగురా డిజైన్ పళ్ళెం, కలశం, పూజా గంట, ధూపదాని, ప్రసాద గిన్నెలు మరియు కుబేర దీపంతో కూడిన సంపూర్ణ దేవతా సెట్.
         </p>
-        <a href="https://amzn.to/3T6l7bZ" target="_blank" rel="nofollow noopener sponsored" class="buy-btn">
-          🛒 అమెజాన్‌లో ఆఫర్ ధర చూడండి (Check Deal on Amazon) →
+        <div class="product-price-row">
+          <span class="current-price">₹999</span>
+          <span class="mrp-tag">MRP: ₹1,999</span>
+          <span class="save-badge" style="background: #fef08a; color: #854d0e;">ఫ్లాట్ 50% ఆదా (సేవ్ ₹1,000)</span>
+        </div>
+        <a href="https://www.amazon.in/BENGALEN-Kalash-Ghanti-Kangura-Wedding/dp/B0C16X4YMM?tag=10fa9c-21" target="_blank" rel="nofollow noopener sponsored" class="btn-amazon-deal">
+          🛒 అమెజాన్‌లో 50% డిస్కౌంట్ తో ఆర్డర్ చేయండి (Grab Deal on Amazon) →
         </a>
       </div>
-    </section>
+    </div>
+
 
     <!-- FAQ SECTION -->
     <section id="faqs" class="faq-section">
