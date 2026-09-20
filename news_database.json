@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-09-20T19:16:38.191603+00:00",
+  "last_updated": "2026-09-20T22:06:33.379619+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "58b08d5ef154",
+      "title": "Korea’s new dry eye drug approval fails to lift GL PharmTech shares - CHOSUNBIZ - Chosunbiz",
+      "slug": "korea-s-new-dry-eye-drug-approval-fails-to-lift-gl-pharmtech-shares-chosunbiz-chosunbiz",
+      "date": "2026-09-20",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: Korea’s new dry eye drug approval fails to lift GL PharmTech shares - CHOSUNBIZ - Chosunbiz\nSource: Google News\nDate: Sun, 20 Sep 2026 21:30:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Korea’s new dry eye drug approval fails to lift GL PharmTech shares - CHOSUNBIZ - Chosunbiz",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMzRfZmZyZTBpQTJCRWROMFJnZ1dxNVFXZ080U2NLMjFmUDRnbEpqUHI2eHV3bXpObWdCb0pRVnN2Z1UtSDBfRTFmSDEzUzVyQURwc2laeVNnakdnNGk2dElFb21EdHFYMUQxWmFkN1hoNTdiOFp4M1ZwNDVYbHU2YdIBlAFBVV95cUxNN1pWNFRmTmtsY0UtUmZXVkR4ZUJMX0JUUG5HM294RGstekFyNllaa2ZuY0s0WnRaNUNtR2RYbkgxV2ZXeGlJdC04OGN3M1EwRnYzTG5qZWJPTmlIc0VlQkNycHpYc0dBSjRnOF9yaDZvREFtNE1EZjV0UGtEazdTOFlGbW4xNXA5T0NLVWNYcTZsMGhk?oc=5",
+      "fetched_at": "2026-09-20T22:01:09.947913+00:00",
+      "is_long_form": false
+    },
     {
       "id": "52936a7bc346",
       "title": "FDA Warned COVID Vaccine Safety Tool Was Broken, Then Silenced Doctor Who Told Them, Report Finds - StudyFinds",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/centricity-high-acuity-anesthesia-1",
       "fetched_at": "2026-09-16T17:39:10.020721+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "3be0c39b57f8",
-      "title": "Platinum Naturals Easymulti Stress (men): Affected lots incorrectly labelled for Vitamin B6 quantity",
-      "slug": "platinum-naturals-easymulti-stress-men-affected-lots-incorrectly-labelled-for-vitamin-b6-quantity",
-      "date": "2026-09-16",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Health Canada has flagged specific lots of Platinum Naturals Easymulti Stress (men) for incorrect Vitamin B6 labeling. This alert highlights critical regulatory expectations for supplement accuracy, emphasizing the importance of precise ingredient information for consumer safety and confidence in advertised product levels.</p>",
-      "compliance_impact": "<ul><li>Heightened scrutiny on supplement label accuracy.</li><li>Potential erosion of consumer trust and brand reputation.</li></ul>",
-      "key_actions": "<ul><li>Consumers: Verify product lots, consult healthcare professionals for concerns.</li><li>Manufacturers: Strengthen quality control for all label claims.</li></ul>",
-      "industry_context": "<p>Vitamin B6 is crucial for energy and nerve health. Accurate supplement labeling is paramount; consumers depend on precise information for expected benefits and to avoid risks from incorrect dosages.</p>",
-      "seo_title": "Health Canada Alert: Platinum Naturals Easymulti Stress (Men) Vitamin B6 Mislabeled",
-      "seo_description": "Health Canada warns about mislabeled Vitamin B6 levels in specific lots of Platinum Naturals Easymulti Stress (Men). Understand the implications for consumer health and regulatory compliance.",
-      "primary_company_name": "Platinum Naturals",
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/platinum-naturals-easymulti-stress-men-affected-lots-incorrectly-labelled-vitamin-b6",
-      "fetched_at": "2026-09-16T17:37:21.547452+00:00",
       "is_long_form": false
     }
   ]
