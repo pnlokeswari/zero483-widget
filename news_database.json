@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-09-21T11:22:51.598930+00:00",
+  "last_updated": "2026-09-21T17:24:13.338392+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "7f7877d0ac2a",
+      "title": "FDA Recalls and Warnings: Third Glutathione Recall Issued Over Endotoxin Contamination - MedShadow Foundation",
+      "slug": "fda-recalls-and-warnings-third-glutathione-recall-issued-over-endotoxin-contamination-medshadow-foundation",
+      "date": "2026-09-21",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>The FDA has announced a third recall for specific glutathione products due to dangerous endotoxin contamination. Glutathione, a popular antioxidant, is under scrutiny. Endotoxins, bacterial byproducts, can cause severe inflammatory reactions and pose serious health risks, particularly for vulnerable patients.</p>",
+      "compliance_impact": "<ul><li>Reinforces stringent quality control demands for sterile medications.</li><li>Elevates patient safety concerns, especially for injectable compounds.</li></ul>",
+      "key_actions": "<ul><li>Patients should verify product recalls and seek medical advice.</li><li>Companies must rigorously audit and enhance sterilization processes.</li></ul>",
+      "industry_context": "<p>This recurring issue underscores persistent challenges in pharmaceutical manufacturing quality control, emphasizing the vital need for robust sterility assurance in administered products.</p>",
+      "seo_title": "FDA Issues Third Glutathione Recall Over Dangerous Endotoxin Contamination",
+      "seo_description": "The FDA has announced a third recall for glutathione products due to endotoxin contamination. Learn why this repeat issue is critical for patient safety and industry vigilance.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNRkdsa1NaZ1J0TU1yazJ2cEx4Mkg1RFJid3drN09PaWFIVFRuVDJoblZuVEpOTHY3UFhVcFNzNDFsQlFxV21IeDc2R1VoOEx4RDRoV0lFeTByd2twa19JUUdYMW9HZjFhWmU0ajdBT0ZoVVZTRXNCN1NxVWlGSENrTTJjdWxaeWNidklZSkpLc1VXNDk0ZUhkN0Qta1RZYXZzRzBLS1E5VG90OW5Hd1U2TGk5bVBMdEU5d3Zad3FVWkN2SFRzYlE?oc=5",
+      "fetched_at": "2026-09-21T17:13:28.040941+00:00",
+      "is_long_form": false
+    },
     {
       "id": "c3b53a19c460",
       "title": "India’s drug regulator forms AI expert committee: What we know, what remains unclear - MediaNama",
@@ -882,24 +900,6 @@
       "primary_company_name": "Bright Path",
       "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOU9QZUZFM0o3bGNBbmdWY1JXSUF6amtpbGpxdm94ejRocURwRXd6V1BHRlROdzZYbEk2RnpqQ0o4Q2pMWlpINnRvS3NVMWx2RGg5S1dSX0dnTmlDMEt0QzZOOFNuZTVobnNkaXJhdXdCTWsyaFdnTXROUjY4ak1CZldUVVRLbnpJdEpFemJkRTc?oc=5",
       "fetched_at": "2026-09-16T23:21:25.223207+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "8f337a49ff3b",
-      "title": "Hand soap recall over bacteria now a Class II risk in Texas, 14 other states - Houston Chronicle",
-      "slug": "hand-soap-recall-over-bacteria-now-a-class-ii-risk-in-texas-14-other-states-houston-chronicle",
-      "date": "2026-09-16",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Hand soap recall over bacteria now a Class II risk in Texas, 14 other states - Houston Chronicle\nSource: Google News\nDate: Wed, 16 Sep 2026 15:27:32 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Hand soap recall over bacteria now a Class II risk in Texas, 14 other states - Houston Chronicle",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZVBnOEVqakgyTGFlMFRJMC1WeVAxUjFRZVJpMzc2NmhLM0RmelJCWFhOR2tlWExmTk5EVlZKT2hWenFSamZEVFd5cDdIbFh3YUdINVRPM1BqOXU2NkRUeEFoZ1JvRnRjX3BxRzl2OV96Wi00YVVFWnNWM2hjOHBYV3JVNWJaanloTEdHcVAxREJNYU1QTVJBcHkzeXM5cmc2Z0x4MQ?oc=5",
-      "fetched_at": "2026-09-16T23:21:09.752057+00:00",
       "is_long_form": false
     }
   ]
