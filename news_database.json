@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-09-21T00:38:30.710549+00:00",
+  "last_updated": "2026-09-21T05:45:10.159553+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "6ecc5d3f94a7",
+      "title": "India to roll out digital drug regulatory system soon: DCGI - Indian Pharma Post",
+      "slug": "india-to-roll-out-digital-drug-regulatory-system-soon-dcgi-indian-pharma-post",
+      "date": "2026-09-20",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "<p>Title: India to roll out digital drug regulatory system soon: DCGI - Indian Pharma Post\nSource: CDSCO India\nDate: Sun, 20 Sep 2026 13:00:00 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "India to roll out digital drug regulatory system soon: DCGI - Indian Pharma Post",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQN2ZmMVh4cG1zV2F1LTMtWEd0ZlZqM1duN1cyUXhwdjVxa2JsSno1ODhQMHVxbzVfM0FyZE85b1ZDekhVWFJ0dFpuTjZpZUdRbmpNcVF3dF9LYVlpcUtodEo2cGFESkotbEU5Q25YUnJyd2FPM2pacUl5S3hVc3JicFFwUFpWcXBJTEVlWjJlcjB1X2swUDYtTGdndVFpMjZWNUFqRmFqaGlnemt4NEHSAa4BQVVfeXFMUDdmZjFYeHBtc1dhdS0zLVhHdGZWajNXbjdXMlF4cHY1cWtibEp6NTg4UDB1cW81XzNBcmRPOW9WQ3pIVVhSdHRabk42aWVHUW5qTXFRd3RfS2FZaXFLaHRKNnBhREpKLWxFOUNuWFJycndhTzNqWnFJeUt4VXNyYnBRcFBaVnFwSUxFZVoyZXIwdV9rMFA2LUxnZ3VRaTI2VjVBakZhamhpZ3preDRB?oc=5",
+      "fetched_at": "2026-09-21T05:45:10.159479+00:00",
+      "is_long_form": false
+    },
     {
       "id": "58b08d5ef154",
       "title": "Korea’s new dry eye drug approval fails to lift GL PharmTech shares - CHOSUNBIZ - Chosunbiz",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-09-16T20:30:09.792244+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "fdb2a192d16d",
-      "title": "Centricity High Acuity Anesthesia",
-      "slug": "centricity-high-acuity-anesthesia",
-      "date": "2026-09-16",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Centricity High Acuity Anesthesia\nSource: Health Canada\nDate: 2026-09-10T12:00:00</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Centricity High Acuity Anesthesia",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/centricity-high-acuity-anesthesia-1",
-      "fetched_at": "2026-09-16T17:39:10.020721+00:00",
       "is_long_form": false
     }
   ]
