@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-22T05:39:10.085493+00:00",
+  "last_updated": "2026-09-22T10:24:31.541875+00:00",
   "total_items": 50,
   "items": [
     {
@@ -18,6 +18,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSTNVSWhjQVJfenhob1FWRFpFUVdlczZqX1k4VW5fdDRYWThVUXVQeURsYVdaeUtVSDRYMGhFd0ZFdHIyRE9HSkpDanB3amMtNmgtbUw1cmQxdENzQ3NUbzJ4M2pJT3NtckNYTVpJaFpfMUlVS1pWWHpzMEVXbWJ0NTBHanpFM3ZxZG1zaU1YZ09VQVR2VDI1dXZLcFp4QVVncXVF?oc=5",
       "fetched_at": "2026-09-22T05:39:10.085422+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "a1c978b2b24d",
+      "title": "Pharmosa Biopharm's Inhaled Drug L608 Wins FDA Approval for Phase 2 Trial; Shares Hit Daily Limit Up Intraday - finance.",
+      "slug": "pharmosa-biopharm-s-inhaled-drug-l608-wins-fda-approval-for-phase-2-trial-shares-hit-daily-limit-up-intraday-finance",
+      "date": "2026-09-21",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Pharmosa Biopharm has secured U.S. FDA approval to initiate a Phase 2 clinical trial for its innovative inhaled drug, L608. This crucial advancement allows testing of L608's efficacy and further safety in a larger patient group, bringing it closer to potential use in respiratory care. The news significantly boosted company shares.</p>",
+      "compliance_impact": "<ul><li>The FDA's green light confirms L608 met initial safety standards.</li><li>Indicates successful navigation of crucial early regulatory hurdles.</li></ul>",
+      "key_actions": "<ul><li>Pharmosa Biopharm will now recruit patients for the Phase 2 study.</li><li>Investors and patients will closely monitor trial progress and results.</li></ul>",
+      "industry_context": "<p>Advancing to Phase 2 is a critical milestone in drug development, signaling the FDA's confidence in early safety data and paving the way for further testing of a drug's effectiveness.</p>",
+      "seo_title": "FDA Greenlights Pharmosa Biopharm's Inhaled Drug L608 for Phase 2 Trial",
+      "seo_description": "Pharmosa Biopharm's inhaled drug L608 receives FDA approval to advance to a Phase 2 clinical trial, marking a significant step in its development and boosting investor confidence.",
+      "primary_company_name": "Pharmosa Biopharm",
+      "source_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA3czRBOHF0MXFuNXBScnc5bWc0cHMyUTBreHhLSEh6LTRUdEgtMHVvNTZ0ZVFMOUkyQmJKaFJsV19zTWNwRDFzY2lRTHd0MktZWExNMGZVOVpwS1dBRFA3dnozNUpST3M2VE1jVXh2N1hNclNEblE?oc=5",
+      "fetched_at": "2026-09-22T10:23:09.699606+00:00",
       "is_long_form": false
     },
     {
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUkZmNzdMWEdQdXdCaGdxdjdwUXRtemh3MnpnVUJMc0YtSmFnRmFnYkJZakd5ZkRIblc3QjA4M2dWdGJ1OHV1eXVCbldjVFlSdXVicmtPMXBFOUZUemRFVWV2MGp1V2ZlY2tfdTlPQUJvUU9XN2lha2diajhtalpONF9raWNISVQ3ZU42d1VUQm9UMnBfWGdod0tMcVl4RE50VzNEbENuRW9UcHdzTHFaUG11OG1OTzA4ZHRVWm1ZTWVvRlpQaW1zUmNFUUFpOGRta2FLWTVHY1EwWFZ6QVFn0gHmAUFVX3lxTE82ZldweERDVVNySmQ4TF9ZbVR2LXNaZlphLS04ZGNrM3piU01McHluSjZQS25ZdVI2akJQNWxmR0l4ZlkwQndJVVo4TlN4VU9ISlBUbU4wQXRzWWRBRWFZSm41OXQ1R2dHZnE1UkR3bnRaeG80Znh5ejg3M0s5VzRfdjhXa3IzMHN5aTdheXNFc041OWxIcjJaU1g1b2F1VzhoZWtsejRxUGRHMXdYS3phLWVzVTFsbzJBcWdEazluT2dzOXNpOUh6eHhsQTFhdnNRX0FCeFo3NGU1Z2o0RUhOdzEzQ1d3?oc=5",
       "fetched_at": "2026-09-18T17:13:09.824349+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "c0caf5a8007e",
-      "title": "FDA recalls hand soap sold in 15 states due to risk of bacteria - fox5atlanta.com",
-      "slug": "fda-recalls-hand-soap-sold-in-15-states-due-to-risk-of-bacteria-fox5atlanta-com",
-      "date": "2026-09-16",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>The FDA has announced an urgent recall of hand soap products distributed across 15 U.S. states. This critical action is due to a detected risk of bacterial contamination, which could pose serious health hazards, particularly for individuals with weakened immune systems or those with open wounds.</p>",
-      "compliance_impact": "<ul><li>Protecting consumer health from microbial contamination is a top priority.</li><li>Manufacturers must uphold stringent quality and safety standards.</li></ul>",
-      "key_actions": "<ul><li>Consumers should check their products and discontinue use if affected.</li><li>Companies must bolster their quality control and recall protocols.</li></ul>",
-      "industry_context": "<p>Personal care products like hand soap are subject to strict regulatory oversight to ensure they are safe and free from harmful contaminants. Maintaining product sterility is paramount to public health, preventing potential infections from daily hygiene routines.</p>",
-      "seo_title": "FDA Issues Hand Soap Recall in 15 States Due to Bacterial Contamination Risk",
-      "seo_description": "The FDA has recalled hand soap in 15 states over bacterial contamination concerns. Learn why this matters for public health and what actions consumers should take.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSUdpMnlaTjcwWFZjMTZwanVJUTBJbWk2OE1nSERpRlNTcFJDRW9nbzBWNklLZmxDaEZjdFM1MWdudUVXblV2RXFJZFZSeVdLQUl3eVF6LXR0SF96NERlWE80QURvbjZBOGdnMi0xVnJib3U2S3VzVW1IRVlpNWxTNmVlUWxlaXBzU3ZOVUQyM3Q?oc=5",
-      "fetched_at": "2026-09-17T06:41:38.583712+00:00",
       "is_long_form": false
     }
   ]
