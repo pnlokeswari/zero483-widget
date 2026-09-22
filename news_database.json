@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-09-22T19:30:09.735090+00:00",
+  "last_updated": "2026-09-22T22:39:49.418641+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "95750008c8c7",
+      "title": "Altruist Biologics' Suzhou Site Receives EMA GMP Certification, Enabling Product Commercialization for the European Mark",
+      "slug": "altruist-biologics-suzhou-site-receives-ema-gmp-certification-enabling-product-commercialization-for-the-european-mark",
+      "date": "2026-09-22",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Altruist Biologics' manufacturing site in Suzhou, China, has achieved Good Manufacturing Practice (GMP) certification from the European Medicines Agency (EMA). This significant regulatory approval confirms the facility meets stringent EU quality standards, allowing Altruist Biologics to commercialize its critical biologic products across the entire European market.</p>",
+      "compliance_impact": "<ul><li>Opens the door for Altruist Biologics to access the lucrative European pharmaceutical market.</li><li>Bolsters trust in the consistent quality and safety of Altruist's manufacturing processes.</li></ul>",
+      "key_actions": "<ul><li>Altruist can now pursue market authorization for its biologics in Europe.</li><li>Ongoing adherence to strict GMP standards will be continuously monitored.</li></ul>",
+      "industry_context": "<p>EMA GMP certification is a fundamental requirement for all pharmaceutical manufacturers, particularly for complex biologics, to ensure the safety, quality, and efficacy of medicines available in the European Union.</p>",
+      "seo_title": "Altruist Biologics' Suzhou Site Secures EMA GMP Certification for European Market Entry",
+      "seo_description": "Altruist Biologics' Suzhou facility receives EMA GMP certification, paving the way for crucial biologic medicines in the European market. Learn why this matters.",
+      "primary_company_name": "Altruist Biologics",
+      "source_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNXzUtMEFkZ1BiT3FZaThVVDZVcDVyWkJXSWxlRFhTWk9TaXloX3J6YmpncDVoYkNqcmQyNlFpd2dzamxUT0x6RUpULUFpdmlGc2ZPUkxrT2lla1o1SmVSRW54WURKaERVeFVtQlBrRHBFVEV6amdoN29ROFV6NzRnLTk2UUlYcHNNcjdjWjdkZFk4NHh2LVBpNFdGNENkQ20tY2lQY3U5MlpOc0J2RnFtZjFCb1VfYmt1b1RfWlJvbTJVX0dLajB3LXRKOHV5Tkx2UTVhOEJ2YjRGNzBJamtTT3VYSlBCdWZGTmh3SHVNNl9JSHYyeE5JY0tMVjNwRU9lbUE?oc=5",
+      "fetched_at": "2026-09-22T22:39:48.415186+00:00",
+      "is_long_form": false
+    },
     {
       "id": "3259d8f3056d",
       "title": "CDSCO flags one spurious Telma sample; another 220 found substandard - pharma.economictimes.indiatimes.com",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVHlObVRIS2J6TVRfblNxQmlpc3I5Y2NSNm03YTk1UjJyek1ZbXg4QjRZdC1GbVRRZTY1b3VUWGFGb2lQVWN0OFhKbFBvS0xqSjRUY2x5MWJsc0doeFo5QzFFSWRLWFpxTklNWVlNY1RjSlMwelJ3akJYWmlyUHN1SXhhQXBlWGVSSEpITWlsUFVVVUdJWkdpZFlLbmM4VEd0TGxDSA?oc=5",
       "fetched_at": "2026-09-17T17:32:09.418602+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "1a8c09a430be",
-      "title": "Drug Shortage: Methylphenidate Hydrochloride Tablet, Extended Release",
-      "slug": "drug-shortage-methylphenidate-hydrochloride-tablet-extended-release",
-      "date": "2026-09-17",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>The FDA has confirmed a current shortage of Methylphenidate Hydrochloride Extended-Release tablets, a crucial medication for individuals managing Attention-Deficit/Hyperactivity Disorder (ADHD). This update highlights ongoing challenges in ensuring consistent patient access to essential treatments.</p>",
-      "compliance_impact": "<ul><li>Healthcare providers must navigate treatment adjustments and sourcing alternatives.</li><li>Patients may face treatment interruptions, impacting condition management.</li></ul>",
-      "key_actions": "<ul><li>Healthcare professionals should discuss alternative treatment strategies with patients.</li><li>Industry must enhance supply chain resilience to mitigate future shortages.</li></ul>",
-      "industry_context": "<p>This shortage highlights persistent vulnerabilities in pharmaceutical supply chains, emphasizing the critical need for stable manufacturing and distribution to prevent patient care disruptions.</p>",
-      "seo_title": "FDA Alert: Methylphenidate ER Shortage Impacts ADHD Patients",
-      "seo_description": "The FDA confirms a shortage of extended-release methylphenidate, a vital ADHD medication. Understand the impact on patients and what this means for healthcare providers.",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
-      "fetched_at": "2026-09-17T17:18:13.429858+00:00",
       "is_long_form": false
     }
   ]
