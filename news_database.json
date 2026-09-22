@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-09-22T00:28:13.403763+00:00",
+  "last_updated": "2026-09-22T05:39:10.085493+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "4ab2b82837d9",
+      "title": "CDSCO flags 220 drug samples as NSQ in August; spurious drug in Delhi - The News Mill",
+      "slug": "cdsco-flags-220-drug-samples-as-nsq-in-august-spurious-drug-in-delhi-the-news-mill",
+      "date": "2026-09-22",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: CDSCO flags 220 drug samples as NSQ in August; spurious drug in Delhi - The News Mill\nSource: CDSCO India\nDate: Tue, 22 Sep 2026 04:12:32 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "CDSCO flags 220 drug samples as NSQ in August; spurious drug in Delhi - The News Mill",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSTNVSWhjQVJfenhob1FWRFpFUVdlczZqX1k4VW5fdDRYWThVUXVQeURsYVdaeUtVSDRYMGhFd0ZFdHIyRE9HSkpDanB3amMtNmgtbUw1cmQxdENzQ3NUbzJ4M2pJT3NtckNYTVpJaFpfMUlVS1pWWHpzMEVXbWJ0NTBHanpFM3ZxZG1zaU1YZ09VQVR2VDI1dXZLcFp4QVVncXVF?oc=5",
+      "fetched_at": "2026-09-22T05:39:10.085422+00:00",
+      "is_long_form": false
+    },
     {
       "id": "1af5c82c2f1e",
       "title": "What Lilly Stock's Breast Cancer Drug Approval Means For Shareholders - simplywall.st",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSUdpMnlaTjcwWFZjMTZwanVJUTBJbWk2OE1nSERpRlNTcFJDRW9nbzBWNklLZmxDaEZjdFM1MWdudUVXblV2RXFJZFZSeVdLQUl3eVF6LXR0SF96NERlWE80QURvbjZBOGdnMi0xVnJib3U2S3VzVW1IRVlpNWxTNmVlUWxlaXBzU3ZOVUQyM3Q?oc=5",
       "fetched_at": "2026-09-17T06:41:38.583712+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "86c5fd122ba3",
-      "title": "FDA acknowledges estrogen patch shortage, says it’s working to increase supply - Stateline",
-      "slug": "fda-acknowledges-estrogen-patch-shortage-says-it-s-working-to-increase-supply-stateline",
-      "date": "2026-09-16",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>The U.S. FDA has confirmed a significant shortage of crucial estrogen patches, vital for hormone replacement therapy and managing menopause symptoms. Recognizing the impact on patients, the agency announced active measures to collaborate with manufacturers and expedite efforts to boost the nationwide supply, aiming to restore access quickly.</p>",
-      "compliance_impact": "<ul><li>Increased pressure on manufacturers to stabilize and scale production.</li><li>Potential for temporary treatment adjustments or alternative therapies for patients.</li></ul>",
-      "key_actions": "<ul><li>FDA is actively collaborating with manufacturers to resolve supply issues.</li><li>Patients should consult their healthcare providers for guidance on alternative treatments.</li></ul>",
-      "industry_context": "<p>Estrogen patches are a cornerstone of hormone therapy, providing essential relief for conditions like menopausal symptoms, and a shortage significantly impacts patient care and well-being.</p>",
-      "seo_title": "FDA Addresses Estrogen Patch Shortage: What Patients Need to Know",
-      "seo_description": "The FDA acknowledges a critical estrogen patch shortage impacting hormone therapy patients. Learn about the efforts underway to boost supply and what this means for accessible treatment.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNM0hxNThWWEdFMXV6Sm0yTk52WkNPSWtEalk0dU9MR0hZeElvOEFVbFZQbGV2Y0lkaFJBR2UwcmtxdGlpUWJOYnc0ZHAybjRCZDAyWmhaU3BwczBadHZIa3AxZDR6bHVVN2xpUjA4SXNSS3V3c25TU2JTczVtY3BHU1BaTXZEa1NMWkI5Smo0V1JEb3Y2bWFTZ3NNbHpkZWRvVzNqV2gxR3R1XzAtd0xR?oc=5",
-      "fetched_at": "2026-09-17T01:46:16.405445+00:00",
       "is_long_form": false
     }
   ]
