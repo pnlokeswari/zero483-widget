@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-09-23T21:00:12.193724+00:00",
+  "last_updated": "2026-09-23T23:25:12.720005+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "4c3b90aa2e4e",
+      "title": "Recall alert: 13K bottles of blood pressure medication recalled - WSB-TV",
+      "slug": "recall-alert-13k-bottles-of-blood-pressure-medication-recalled-wsb-tv",
+      "date": "2026-09-23",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>The FDA has issued a recall for approximately 13,000 bottles of an unspecified blood pressure medication, often used to manage hypertension. This action underscores the agency's vigilance in ensuring drug quality and patient safety, prompting concerns over potential manufacturing issues.</p>",
+      "compliance_impact": "<ul><li>Patient safety remains paramount for regulators.</li><li>Reinforces demand for rigorous manufacturing quality.</li></ul>",
+      "key_actions": "<ul><li>Patients should consult pharmacists regarding affected batches.</li><li>Manufacturers must reinforce quality assurance practices.</li></ul>",
+      "industry_context": "<p>This event highlights the pharmaceutical industry's continuous need for stringent manufacturing oversight to maintain public trust in vital medications.</p>",
+      "seo_title": "FDA Recall Alert: 13,000 Bottles of Blood Pressure Medication Pulled",
+      "seo_description": "The FDA announced a recall of 13,000 bottles of blood pressure medication due to undisclosed issues. Learn what this means for patient safety and the industry.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZTduaW04TW02SVR5WEVhVEo3X2s5TUZvQnJucEZBOU96UzNCb2RhUmJKazB1dFRVSkVrdWF5X0FWOFRCQU5PTURra0E2a29mTXlmVGgtTkw4TjFRSDB2Nm5tS1VObWZBTEs3Y2dxZE1STExjM3VzdVJhcGQwVER3dVl1TXc0dFN4TEZKdC0yVTd6UUJMMHVSOWx6YzBfdHhvcDFKemZHRUtTclRSRzV3dHdKUEZMeTM0WmY4WW9HZlfSAdQBQVVfeXFMTUVhcFNpaXUxUXR5RmpZa1NoblJlUFJvajVpMmdKR1U0T1UwNzJCX3lFM3JEVTNVZURVSnNfaUlVSHBOcGZtcS01d09Tb3dhM1VhRzFRbFMzUDROVm91a1cwS0xmVmVMWW94MEU5TkItM3UwSWt4ZFc3OXlyS1VBdnJjTmxkdmZCeWJ0ZWVzUENOVV95bGdLcUpNSzFiZFg0aENNY3Q3UDdPbHNYX0VEeS1pdXVBc19VSGpZdnJOYkNTdXpGUFZNN0hBNVYtYnFzcVpGWEY?oc=5",
+      "fetched_at": "2026-09-23T23:14:17.137309+00:00",
+      "is_long_form": false
+    },
     {
       "id": "8c98cbc33172",
       "title": "Statement on FDA’s Warning Letter to Empower Pharmacy for producing drug products in violation of federal law. - Partner",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/signatm-artist-and-signatm-artist-evo",
       "fetched_at": "2026-09-18T17:03:09.892192+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "e455edfd4f17",
-      "title": "MaaT Pharma: Negative EMA Opinion on Xervyteg, Focus on Phoenix Trial - Idéal Investisseur",
-      "slug": "maat-pharma-negative-ema-opinion-on-xervyteg-focus-on-phoenix-trial-id-al-investisseur",
-      "date": "2026-09-18",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>MaaT Pharma received a negative opinion from the European Medicines Agency (EMA) for Xervyteg (MaaT013), its innovative microbiome therapy for acute Graft-versus-Host Disease (aGvHD). This decision means the treatment won't be approved for market access in Europe based on the current submission, leading the company to re-strategize and prioritize its ongoing Phoenix Phase 3 trial.</p>",
-      "compliance_impact": "<ul><li>European market entry for Xervyteg is delayed or halted.</li><li>Requires re-evaluation of clinical data strategies for future submissions.</li></ul>",
-      "key_actions": "<ul><li>MaaT Pharma re-focuses on strengthening Phoenix trial data.</li><li>Investors will closely watch new trial results and future regulatory plans.</li></ul>",
-      "industry_context": "<p>This setback highlights rigorous regulatory scrutiny for novel biotherapeutics in complex conditions like aGvHD, stressing robust clinical data's importance for market authorization.</p>",
-      "seo_title": "MaaT Pharma Faces EMA Setback for Xervyteg, Shifts Focus to Phoenix Trial",
-      "seo_description": "MaaT Pharma receives a negative EMA opinion for Xervyteg (MaaT013) in acute GvHD, prompting a pivot towards their ongoing Phoenix Phase 3 trial. What this means for patients and investors.",
-      "primary_company_name": "MaaT Pharma",
-      "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPd0JiU3lwd1hPVWxoZnUyal96RS1sb3hLQUY1TEpDWHMxa2ptQ0ZfUXVuRzV3VENXOVRJbVBRY3FsOGR6U19yby1JVmdrUXJiMU9aSEkzNkV4bU83WldyYzZiTC1FNHhocDhheGFVd29rMFFrVlY3dnFUVHJTRUp3dW5tTUo3NGRyTkRGd1JSNl9WdW50eDdEMmtnOEhaUXRNS21RUDUyOVAzc1hSVU92dG0yY3FxY3JSQjQweFNCalhpT1kt?oc=5",
-      "fetched_at": "2026-09-18T12:10:20.395304+00:00",
       "is_long_form": false
     }
   ]
