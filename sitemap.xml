@@ -5,6 +5,9 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/71-drug-samples-from-punjab-himachal-fail-quality-tests-children-s-syrups-heart-kidney-and-eye-medicine-bhaskar.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-regulator-seeks-strict-adherence-to-drug-rules-to-end-indiscriminate-use-of-antibiotics-painkillers-fortune-indi.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/ani-pharmaceuticals-receives-fda-approval-for-generic-everolimus-tablets-for-oral-suspension-quiver-quantitative.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/altruist-biologics-suzhou-site-receives-ema-gmp-certification-enabling-product-commercialization-for-the-european-mark.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-flags-one-spurious-telma-sample-another-220-found-substandard-pharma-economictimes-indiatimes-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/29-drug-batches-including-haloperidol-amikacin-rabeprazole-fail-cdsco-quality-tests-medical-dialogues.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -52,14 +55,12 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/popular-walmart-and-target-frozen-dessert-recalled-nationwide-due-to-contamination-new-york-post.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/jalape-o-recall-fda-issues-strongest-warning-across-27-states-newsweek.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/rapicide-pa-high-level-disinfectant.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/bayer-s-kerendia-secures-fda-nod-as-first-drug-in-30-years-for-type-1-diabetes-associated-kidney-disease-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/philips-ingenia-achieva-and-intera-mr-systems.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/trinity-biotech-oxalate-reagent-kit.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/companies.html</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/biocon.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/altruist-biologics.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/aurobindo-pharma.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/ingles.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/company/maat-pharma.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/company/pharmosa-biopharm.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/biocon.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/ingles.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/ani-pharmaceuticals.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/aurobindo-pharma.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/maat-pharma.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/company/altruist-biologics.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
