@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-09-24T02:04:12.559005+00:00",
+  "last_updated": "2026-09-24T07:02:23.610934+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "64704ba1a691",
+      "title": "Drug Shortage: Sterile Water Irrigant",
+      "slug": "drug-shortage-sterile-water-irrigant",
+      "date": "2026-09-24",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Sterile Water Irrigant\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Sterile Water Irrigant",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-09-24T06:50:09.714100+00:00",
+      "is_long_form": false
+    },
     {
       "id": "cd0394972f58",
       "title": "HLB's Cholangiocarcinoma Drug \"Lificty\" Receives FDA Approval... U.S. Launch in Q4 - 아시아경제",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMklSOXdkMnVXZURkWDltdG1qMDd3MnBqMEhrN2drUGV1MUowdXVRQ25jVnI0cUtKTHNEMGRkX1FIT3JTZDJsaHVMekFTMndldzE3UzRheWVyVmVBLTdmR0o4dk1jdDhodHFYNV9abkM4TDRqbHRlQ2xWTXNDSDJiWmo1V1ZZazJycGEtaQ?oc=5",
       "fetched_at": "2026-09-18T19:27:09.681141+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "0bcff804242f",
-      "title": "Drug Shortage: Lisdexamfetamine Dimesylate Capsule",
-      "slug": "drug-shortage-lisdexamfetamine-dimesylate-capsule",
-      "date": "2026-09-18",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Generic name: Lisdexamfetamine Dimesylate Capsule\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Drug Shortage: Lisdexamfetamine Dimesylate Capsule",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
-      "fetched_at": "2026-09-18T19:17:10.228792+00:00",
       "is_long_form": false
     }
   ]
