@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-26T17:42:13.347527+00:00",
+  "last_updated": "2026-09-26T20:27:13.123873+00:00",
   "total_items": 50,
   "items": [
     {
@@ -417,6 +417,24 @@
       "is_long_form": true
     },
     {
+      "id": "1ec590d5c0a3",
+      "title": "Thyroid medication recall classified as FDA’s most urgent - FOX 8 News",
+      "slug": "thyroid-medication-recall-classified-as-fda-s-most-urgent-fox-8-news",
+      "date": "2026-09-24",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Thyroid medication recall classified as FDA’s most urgent - FOX 8 News\nSource: Google News\nDate: Thu, 24 Sep 2026 10:34:47 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "Thyroid medication recall classified as FDA’s most urgent - FOX 8 News",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNNURFR3JTZHoyOXdpVEZWbkJ3YkdZUEFmWlFiZlJYQVlNQk9IaEFPWkVKT1c3R1lpcDZ0SHVHcXpzUnozaFd2OGpIM3ZDVzl4MENtYjdrWFBiUUt6Qnd1NXNsWUlHTktCTlJEQkJmY0E4am1TOEx5d2RzaU1iT05vTEdVcDJTUdIBiwFBVV95cUxNbkphSGRyWVhXRG9FV0Q5a0pkejc0ZVFhbGU2TDNUMzhZLTVTRWs5Y0hPVkJ4aHFfUTY5UFpIWm9ERmxZYzEwbE12RHlWUTU5S1pGRDJuSDJoTlU3OGhIYmV3VkdOQUFGQVdaVGxxNlRPRENlWGxmd3FOLVVlM0dyRjBpNWMyY1A2UnhR?oc=5",
+      "fetched_at": "2026-09-26T20:13:09.442017+00:00",
+      "is_long_form": false
+    },
+    {
       "id": "3c44472b398f",
       "title": "FDA Announces Recall on Blood Pressure Medication—More Than 13,000 Bottles Affected Nationwide - Health.com",
       "slug": "fda-announces-recall-on-blood-pressure-medication-more-than-13-000-bottles-affected-nationwide-health-com",
@@ -795,6 +813,24 @@
       "is_long_form": false
     },
     {
+      "id": "1710c6e86297",
+      "title": "HLB's Lyrfigtu wins FDA approval for FGFR2-altered bile duct cancer - Korea Biomedical Review",
+      "slug": "hlb-s-lyrfigtu-wins-fda-approval-for-fgfr2-altered-bile-duct-cancer-korea-biomedical-review",
+      "date": "2026-09-23",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: HLB's Lyrfigtu wins FDA approval for FGFR2-altered bile duct cancer - Korea Biomedical Review\nSource: Google News\nDate: Wed, 23 Sep 2026 23:59:10 GMT</p>",
+      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
+      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
+      "industry_context": "",
+      "seo_title": "HLB's Lyrfigtu wins FDA approval for FGFR2-altered bile duct cancer - Korea Biomedical Review",
+      "seo_description": "",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9IeUx1WVZhWUtPTl9LQnFMTlRlV2h4c2hDZ1doUWszdWJ6dHZNOERPOWo2TVRpQkNCOVhwUW9RTHg4MWxBV0pyV2pKaGRfZTY0dXpEVGxWS3F3c0FaUkVZOFViaEs1ckJVWXVXTXdn0gFyQVVfeXFMUDZhR3llOHlCMS1lVVQwTFdKbHA5LUhRSW1jWlFqaEhQT09tb2RCT2toTGJ0dG85YW4zcmFHdHFUeERZRnBRMzJjS0RhMUtYVkQtczByTjZOb1lLUDFjZUhXZEtwRHppal83RXJkY3RzRDhR?oc=5",
+      "fetched_at": "2026-09-26T20:21:09.650227+00:00",
+      "is_long_form": false
+    },
+    {
       "id": "0cbe1a69cf64",
       "title": "Statement on FDA’s Warning Letter to Empower Pharmacy for producing drug products in violation of federal law - safemedi",
       "slug": "statement-on-fda-s-warning-letter-to-empower-pharmacy-for-producing-drug-products-in-violation-of-federal-law-safemedi",
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWVI4SDlnRlptb0k1dkVvN2Y5RDNQNUs1ZUxTWEFiTnQ3V18xX1ptWHktcHBJN1g0TS1DbExTWUI0UndoVE5tTktLWjRCSVR1dEZKNTJCQTBfNmRuMG5IOVlvVnFsSkdRMUNyMFY3RWJVMkpOdTZreUg1ZlJ1UDQ4M01tZ0V1bXZ6bzhRTFMyUXdsaS1HYUVN?oc=5",
       "fetched_at": "2026-09-25T19:22:09.358745+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "107812ebc5a1",
-      "title": "Investigations of Foodborne Illness Outbreaks - fda.gov",
-      "slug": "investigations-of-foodborne-illness-outbreaks-fda-gov",
-      "date": "2026-09-23",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Investigations of Foodborne Illness Outbreaks - fda.gov\nSource: Google News\nDate: Wed, 23 Sep 2026 14:00:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Investigations of Foodborne Illness Outbreaks - fda.gov",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZk9CZUFHZmRHM3p1V1VfczVQOGxOVU5VSjllbF9tSzFyZDZqVXpfOVdTMnNVZk9VZjRVTDlRN3pvbjZZTER0bG5CY2h0Q0F6SldIMDl0WXNmanBtSGthVjQxMU5NZHNibkNLMXBqRnVsOWk4andKSkdrWUM4eUYzaFVzdGI5OFFXRGE5NWJTTFJja2cxaEJaN3doZw?oc=5",
-      "fetched_at": "2026-09-25T18:57:09.476721+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "1710c6e86297",
-      "title": "HLB's Lyrfigtu wins FDA approval for FGFR2-altered bile duct cancer - Korea Biomedical Review",
-      "slug": "hlb-s-lyrfigtu-wins-fda-approval-for-fgfr2-altered-bile-duct-cancer-korea-biomedical-review",
-      "date": "2026-09-23",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>The U.S. FDA has approved HLB's Lyrfigtu for treating advanced FGFR2-altered cholangiocarcinoma, a form of bile duct cancer. This landmark decision introduces a crucial new targeted therapy, offering renewed hope for patients battling this aggressive disease with specific genetic mutations.</p>",
-      "compliance_impact": "<ul><li>Opens the market for a new targeted therapy in a high-need area.</li><li>Validates targeted oncology development for rare genetic mutations.</li></ul>",
-      "key_actions": "<ul><li>Providers: Evaluate Lyrfigtu for eligible FGFR2-altered patients.</li><li>Patients: Discuss this new targeted treatment with your oncologist.</li></ul>",
-      "industry_context": "<p>This approval marks a significant advance in oncology, highlighting precision medicine's success in addressing rare cancers with specific genetic drivers, like FGFR2 fusions in cholangiocarcinoma.</p>",
-      "seo_title": "HLB's Lyrfigtu Receives FDA Approval for FGFR2-Altered Bile Duct Cancer",
-      "seo_description": "HLB's Lyrfigtu receives FDA approval for FGFR2-altered bile duct cancer, offering a new targeted treatment option. Learn what this means for patients and the industry.",
-      "primary_company_name": "HLB",
-      "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9IeUx1WVZhWUtPTl9LQnFMTlRlV2h4c2hDZ1doUWszdWJ6dHZNOERPOWo2TVRpQkNCOVhwUW9RTHg4MWxBV0pyV2pKaGRfZTY0dXpEVGxWS3F3c0FaUkVZOFViaEs1ckJVWXVXTXdn0gFyQVVfeXFMUDZhR3llOHlCMS1lVVQwTFdKbHA5LUhRSW1jWlFqaEhQT09tb2RCT2toTGJ0dG85YW4zcmFHdHFUeERZRnBRMzJjS0RhMUtYVkQtczByTjZOb1lLUDFjZUhXZEtwRHppal83RXJkY3RzRDhR?oc=5",
-      "fetched_at": "2026-09-25T14:17:53.361303+00:00",
       "is_long_form": false
     }
   ]
