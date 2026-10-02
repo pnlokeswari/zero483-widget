@@ -1,4 +1,7 @@
+flask
+gunicorn
+curl_cffi
+beautifulsoup4
 requests
-feedparser
-google-genai
 python-dotenv
+feedparser
