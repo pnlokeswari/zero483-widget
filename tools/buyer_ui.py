@@ -170,23 +170,8 @@ footer{background:#060a18;border-top:1px solid var(--border);padding:28px 20px;t
 <header>
   <div class="brand-title">
     <span>🛍️ WAVEPICKS</span>
-    <span class="pill">Deal Auditor</span>
+    <span class="pill">Deal &amp; Price Fluctuation Auditor</span>
   </div>
-
-  <nav class="app-switcher">
-    <a href="/deals" class="switch-link active">
-      🛍️ <span>Deal Auditor</span>
-      <span class="sub-badge">Shoppers</span>
-    </a>
-    <a href="/creator" class="switch-link">
-      ✍️ <span>Creator Studio</span>
-      <span class="sub-badge">Bloggers</span>
-    </a>
-    <a href="/" class="switch-link">
-      📊 <span>Brand Intelligence</span>
-      <span class="sub-badge">Sellers & D2C</span>
-    </a>
-  </nav>
 </header>
 
 <div class="container">
