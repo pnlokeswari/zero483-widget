@@ -85,41 +85,59 @@ BUYER_HTML = r"""<!DOCTYPE html>
 body{font-family:'Segoe UI',system-ui,Arial,sans-serif;background:var(--dark);color:var(--text);min-height:100vh;display:flex;flex-direction:column}
 
 /* Header */
-header{background:linear-gradient(135deg,#0369a1,#0b132b);padding:14px 24px;display:flex;align-items:center;gap:16px;border-bottom:1px solid #1e3a8a;box-shadow:0 4px 20px rgba(0,0,0,.6);flex-wrap:wrap}
-.brand-title{font-size:1.25rem;font-weight:800;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+header{background:linear-gradient(135deg,#0369a1,#0b132b);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #1e3a8a;box-shadow:0 4px 20px rgba(0,0,0,.6);flex-wrap:wrap;gap:12px}
+.brand-title{font-size:1.2rem;font-weight:800;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
 .pill{background:rgba(56,189,248,.15);border:1px solid rgba(56,189,248,.3);border-radius:20px;padding:3px 10px;font-size:.72rem;color:#7dd3fc;font-weight:700}
 
-/* Switcher Nav */
-.app-switcher{display:flex;align-items:center;gap:6px;background:rgba(15,23,42,.7);padding:4px;border-radius:10px;border:1px solid rgba(56,189,248,.2);margin-left:auto}
-.switch-link{text-decoration:none;color:#94a3b8;font-size:.76rem;font-weight:700;padding:6px 14px;border-radius:7px;transition:all .2s;display:flex;align-items:center;gap:6px}
-.switch-link:hover{color:#f1f5f9;background:rgba(255,255,255,.05)}
-.switch-link.active{color:#fff;background:linear-gradient(135deg,#0284c7,#0369a1);box-shadow:0 2px 8px rgba(2,132,199,.4)}
-.sub-badge{font-size:.65rem;opacity:.8;background:rgba(0,0,0,.25);padding:1px 5px;border-radius:4px}
-
 /* Container */
-.container{max-width:1100px;width:100%;margin:0 auto;padding:32px 20px;flex:1;display:flex;flex-direction:column;gap:24px}
+.container{max-width:1080px;width:100%;margin:0 auto;padding:24px 16px 40px;flex:1;display:flex;flex-direction:column;gap:20px}
 
-/* Trust Banner */
-.trust-banner{background:linear-gradient(135deg,rgba(2,132,199,.18),rgba(14,23,56,.85));border:1px solid rgba(56,189,248,.3);border-radius:14px;padding:18px 24px;display:flex;align-items:center;gap:18px}
-.trust-icon{font-size:2.2rem}
-.trust-text h2{font-size:1.1rem;font-weight:800;color:#fff;margin-bottom:4px}
-.trust-text p{font-size:.85rem;color:var(--muted);line-height:1.5}
+/* Mission Hero Banner */
+.mission-hero{background:linear-gradient(135deg,rgba(2,132,199,.15),rgba(11,19,46,.85));border:1px solid rgba(56,189,248,.3);border-radius:18px;padding:26px 24px;box-shadow:0 12px 36px rgba(0,0,0,.4)}
+.mission-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(56,189,248,.14);border:1px solid rgba(56,189,248,.35);border-radius:20px;padding:4px 12px;font-size:.74rem;color:#7dd3fc;font-weight:700;margin-bottom:12px}
+.mission-title{font-size:clamp(1.25rem,3.2vw,1.85rem);font-weight:900;line-height:1.25;color:#fff;margin-bottom:10px}
+.mission-desc{font-size:clamp(0.84rem,1.8vw,0.92rem);color:#cbd5e1;line-height:1.6}
+
+/* 3 Core Pillars */
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+@media(max-width:768px){.pillar-grid{grid-template-columns:1fr}}
+.pillar-card{background:rgba(7,13,30,.75);border:1px solid rgba(56,189,248,.18);border-radius:12px;padding:14px 16px;display:flex;align-items:flex-start;gap:12px}
+.pillar-icon{font-size:1.5rem;flex-shrink:0;line-height:1}
+.pillar-content h4{font-size:.86rem;font-weight:800;color:#fff;margin-bottom:4px}
+.pillar-content p{font-size:.75rem;color:#94a3b8;line-height:1.45;margin:0}
 
 /* Auditor Box */
-.auditor-box{background:linear-gradient(135deg,#0d183f,#070d22);border:1px solid #1e3a8a;border-radius:16px;padding:28px 28px;box-shadow:0 10px 35px rgba(0,0,0,.5)}
-.auditor-header h3{font-size:1.25rem;font-weight:800;display:flex;align-items:center;gap:10px}
-.auditor-header p{font-size:.88rem;color:var(--muted);margin-top:6px;line-height:1.5}
+.auditor-box{background:linear-gradient(135deg,#0d183f,#070d22);border:1px solid #1e3a8a;border-radius:18px;padding:24px 22px;box-shadow:0 10px 35px rgba(0,0,0,.5)}
+.auditor-header h3{font-size:1.2rem;font-weight:800;display:flex;align-items:center;gap:10px}
+.auditor-header p{font-size:.86rem;color:var(--muted);margin-top:6px;line-height:1.5}
 
-.auditor-input-wrap{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
-.auditor-input{flex:1;min-width:300px;background:#050918;border:1px solid var(--border);border-radius:10px;padding:14px 18px;color:#fff;font-size:.95rem;outline:none;transition:border-color .2s}
-.auditor-input:focus{border-color:var(--brand-glow)}
-.btn-audit{background:linear-gradient(135deg,#0284c7,#0369a1);color:#fff;border:none;border-radius:10px;padding:14px 28px;font-weight:700;font-size:.95rem;cursor:pointer;box-shadow:0 2px 12px rgba(2,132,199,.35);transition:all .2s;white-space:nowrap}
+.auditor-input-wrap{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.input-icon-wrap{flex:1;min-width:260px;position:relative;display:flex;align-items:center}
+.input-icon{position:absolute;left:14px;font-size:1rem;pointer-events:none;opacity:.7}
+.auditor-input{width:100%;background:#050918;border:1px solid var(--border);border-radius:12px;padding:14px 16px 14px 42px;color:#fff;font-size:.95rem;outline:none;transition:border-color .2s}
+.auditor-input:focus{border-color:var(--brand-glow);box-shadow:0 0 0 3px rgba(56,189,248,.2)}
+.btn-audit{background:linear-gradient(135deg,#0284c7,#0369a1);color:#fff;border:none;border-radius:12px;padding:14px 24px;font-weight:800;font-size:.92rem;cursor:pointer;box-shadow:0 4px 14px rgba(2,132,199,.4);transition:all .2s;min-height:48px;display:flex;align-items:center;justify-content:center;white-space:nowrap}
 .btn-audit:hover{background:#0369a1;transform:translateY(-1px)}
+.btn-audit:active{transform:scale(0.98)}
 .btn-audit:disabled{opacity:.6;cursor:not-allowed}
+@media(max-width:600px){.btn-audit{width:100%}.input-icon-wrap{width:100%}}
 
-.sample-row{display:flex;align-items:center;gap:8px;margin-top:12px;flex-wrap:wrap;font-size:.78rem;color:var(--muted)}
-.sample-chip{background:rgba(15,23,42,.7);border:1px solid var(--border);border-radius:20px;padding:4px 12px;color:#7dd3fc;cursor:pointer;transition:all .2s}
-.sample-chip:hover{background:rgba(2,132,199,.25);border-color:var(--brand-glow);color:#fff}
+/* Sample Chips with Horizontal Touch Scroll */
+.sample-wrapper{margin-top:14px;display:flex;flex-direction:column;gap:8px}
+.sample-label{font-size:.76rem;color:var(--muted);font-weight:600}
+.sample-chips-scroll{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.sample-chips-scroll::-webkit-scrollbar{display:none}
+.sample-chip{flex:0 0 auto;background:rgba(15,23,42,.7);border:1px solid var(--border);border-radius:20px;padding:6px 14px;color:#7dd3fc;font-size:.76rem;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap}
+.sample-chip:hover,.sample-chip:active{background:rgba(2,132,199,.3);border-color:var(--brand-glow);color:#fff}
+
+/* Author Bio Card */
+.author-card{background:linear-gradient(135deg,rgba(14,23,56,.75),rgba(7,13,30,.95));border:1px solid rgba(56,189,248,.25);border-radius:16px;padding:20px 22px;display:flex;align-items:center;gap:18px;margin-top:4px}
+.author-avatar{width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,#0284c7,#be185d);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.15rem;color:#fff;flex-shrink:0;box-shadow:0 4px 12px rgba(2,132,199,.4)}
+.author-info h4{font-size:.96rem;font-weight:800;color:#fff;display:inline-block;margin-right:8px}
+.author-badge{background:rgba(56,189,248,.15);border:1px solid rgba(56,189,248,.3);color:#7dd3fc;font-size:.68rem;padding:2px 8px;border-radius:12px;font-weight:700}
+.integrity-seal{background:rgba(16,185,129,.15);border:1px solid rgba(16,185,129,.35);color:#34d399;font-size:.68rem;padding:2px 8px;border-radius:12px;font-weight:700;margin-left:6px}
+.author-info p{font-size:.78rem;color:#94a3b8;line-height:1.45;margin-top:6px}
+@media(max-width:640px){.author-card{flex-direction:column;align-items:flex-start}.author-meta-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}}
 
 /* Audit Result Dossier Card */
 .audit-card{background:#09122c;border:1px solid rgba(56,189,248,.35);border-radius:16px;padding:24px;margin-top:24px;box-shadow:0 14px 40px rgba(0,0,0,.6);animation:fadeIn .3s ease-in-out}
@@ -175,44 +193,99 @@ footer{background:#060a18;border-top:1px solid var(--border);padding:28px 20px;t
 </header>
 
 <div class="container">
-  <!-- Trust Banner -->
-  <div class="trust-banner">
-    <div class="trust-icon">🛡️</div>
-    <div class="trust-text">
-      <h2>100% Algorithmic Verification (Zero Manipulated Discounts)</h2>
-      <p>Wavepicks audits real Amazon India packaging MRPs under Legal Metrology Rules and renders 90-day price history curves. We verify whether a deal is a genuine bargain or an everyday promo fluke.</p>
+  <!-- Mission Hero Section: Avoid Sales Traps & Holistic Review -->
+  <div class="mission-hero">
+    <div class="mission-badge">
+      <span>🛡️ Unbiased Pre-Purchase Consumer Intelligence</span>
+      <span class="pill" style="font-size:.65rem;background:rgba(16,185,129,.15);color:#34d399;border-color:rgba(16,185,129,.3)">Empirical Data Only</span>
+    </div>
+    <h1 class="mission-title">
+      Outsmart Fake Discounts &amp; E-Commerce Sales Traps
+    </h1>
+    <p class="mission-desc">
+      We built <strong>WAVEPICKS</strong> to protect everyday shoppers from manipulative online sales tricks — such as artificial price hikes right before festival sales, inflated MRP stickers, and deceptive countdown urgency. Before you spend your hard-earned money, paste any Amazon link below to get a 100% holistic, transparent pre-purchase audit: authentic printed box MRP verified under Indian Legal Metrology Rules, true savings percentage, and 90-day real price history curves.
+    </p>
+
+    <!-- 3 Core Consumer Protection Pillars -->
+    <div class="pillar-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">🚫</div>
+        <div class="pillar-content">
+          <h4>Expose Inflated MRPs</h4>
+          <p>We cross-reference certified manufacturer packaging to uncover the true retail ceiling, not inflated 3rd-party seller markups.</p>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">📉</div>
+        <div class="pillar-content">
+          <h4>Inspect 90-Day Dips</h4>
+          <p>Analyze interactive Keepa price history curves to discover if this item drops even deeper during regular weekend sales.</p>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">⚖️</div>
+        <div class="pillar-content">
+          <h4>Holistic Buying Verdict</h4>
+          <p>Get a clear, algorithmic recommendation before spending: <strong>Record Low</strong>, <strong>Solid Everyday Deal</strong>, or <strong>Wait for Sale</strong>.</p>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Live Deal Auditor Box -->
   <div class="auditor-box">
     <div class="auditor-header">
-      <h3>
-        <span>🔍 Live Deal &amp; Price Fluctuation Auditor</span>
-        <span class="pill" style="background:rgba(16,185,129,.15);color:#34d399;border-color:rgba(16,185,129,.3)">Audit Any Product</span>
-      </h3>
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px">
+        <h3>
+          <span>🔍 Live Deal &amp; Price Fluctuation Auditor</span>
+        </h3>
+        <span class="pill" style="background:rgba(16,185,129,.15);color:#34d399;border-color:rgba(16,185,129,.3)">100% Free &amp; Instant</span>
+      </div>
       <p>
-        Paste any Amazon India product link, shortlink (amzn.in/d/...), or ASIN. We'll verify the authentic discount against official printed box MRP, and render the interactive 90-day price curve to inspect actual market fluctuations.
+        Paste any Amazon India product link, shortlink (amzn.in/d/...), or 10-character ASIN. Our 24/7 cloud auditor checks live prices against official packaging in seconds.
       </p>
     </div>
     
     <div class="auditor-input-wrap">
-      <input type="text" id="audit-input" class="auditor-input" placeholder="e.g. https://www.amazon.in/dp/B0BDVG99J5 or paste shortlink / ASIN" onkeydown="if(event.key==='Enter') runAudit()">
+      <div class="input-icon-wrap">
+        <span class="input-icon">🔗</span>
+        <input type="text" id="audit-input" class="auditor-input" placeholder="Paste Amazon link or ASIN (e.g. B0BDVG99J5)..." onkeydown="if(event.key==='Enter') runAudit()">
+      </div>
       <button class="btn-audit" id="btn-audit" onclick="runAudit()">Audit Deal ⚡</button>
     </div>
 
-    <!-- Quick Sample Chips -->
-    <div class="sample-row">
-      <span>💡 Try these sample products:</span>
-      <span class="sample-chip" onclick="quickAudit('B0BDVG99J5')">Dot &amp; Key Moisturizer</span>
-      <span class="sample-chip" onclick="quickAudit('B01CCGW4OE')">Cetaphil Cleanser</span>
-      <span class="sample-chip" onclick="quickAudit('B0HDYLT6XY')">Alps Goodness Rosemary</span>
-      <span class="sample-chip" onclick="quickAudit('B0HCZCP1BR')">Foxtale Moisturiser</span>
-      <span class="sample-chip" onclick="quickAudit('B0HBW2CJ62')">Ghar Soaps Kojic</span>
+    <!-- Quick Sample Chips with Horizontal Touch Scroll -->
+    <div class="sample-wrapper">
+      <span class="sample-label">💡 Try verified tested deals:</span>
+      <div class="sample-chips-scroll">
+        <span class="sample-chip" onclick="quickAudit('B0BN7WWTNT')">🔥 KareIn Wipes (91% Off)</span>
+        <span class="sample-chip" onclick="quickAudit('B0DQY3P9ZH')">✨ PALMONAS 18k Necklace (61% Off)</span>
+        <span class="sample-chip" onclick="quickAudit('B0BDVG99J5')">Dot &amp; Key Moisturizer</span>
+        <span class="sample-chip" onclick="quickAudit('B01CCGW4OE')">Cetaphil Cleanser</span>
+        <span class="sample-chip" onclick="quickAudit('B0HDYLT6XY')">Alps Goodness Rosemary</span>
+        <span class="sample-chip" onclick="quickAudit('B0HCZCP1BR')">Foxtale Moisturiser</span>
+      </div>
     </div>
 
     <!-- Live Audit Results Card (Initially Hidden) -->
     <div id="audit-results" style="display:none"></div>
+  </div>
+
+  <!-- Verified Reviewer & Consumer Protection Card -->
+  <div class="author-card" id="author-bio">
+    <div class="author-avatar">PL</div>
+    <div class="author-info">
+      <div class="author-meta-row">
+        <h4>PNLOKESWARI</h4>
+        <span class="author-badge">Lifestyle &amp; Consumer Reviewer</span>
+        <span class="integrity-seal">🛡️ 100% Unbiased &amp; Hands-On Tested</span>
+      </div>
+      <p>
+        Lead researcher at ZERO483 evaluating marketplace price fluctuations, packaging compliance under Indian Legal Metrology Rules, and ingredient integrity. Dedicated to arming consumers with factual data against artificial retail markup.
+      </p>
+    </div>
   </div>
 </div>
 
