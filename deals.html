@@ -253,9 +253,9 @@ footer{background:#060a18;border-top:1px solid var(--border);padding:28px 20px;t
 </footer>
 
 <script>
-const API_BASE = window.location.origin.includes('localhost') 
-  ? window.location.origin 
-  : (window.location.origin.includes('trycloudflare.com') ? window.location.origin : 'https://prostores-individually-cho-tyler.trycloudflare.com');
+const API_BASE = (window.location.origin.includes('localhost') || window.location.origin.includes('127.0.0.1'))
+  ? window.location.origin
+  : 'https://zero483-deals-api.onrender.com';
 
 let lastAuditedItem = null;
 
