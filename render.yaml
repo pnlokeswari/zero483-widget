@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: zero483-deals-api
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: python tools/server.py
+    envVars:
+      - key: PYTHONIOENCODING
+        value: utf-8
