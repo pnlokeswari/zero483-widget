@@ -163,6 +163,46 @@ footer{background:#060a18;border-top:1px solid var(--border);padding:28px 20px;t
 .modal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
 .modal-title{font-size:1.1rem;font-weight:800;color:#fff}
 .modal-close{background:none;border:none;color:var(--muted);font-size:1.4rem;cursor:pointer}
+/* Community Share & Bookmark Card */
+.share-card{background:linear-gradient(135deg,rgba(14,23,56,.85),rgba(7,13,30,.98));border:1px solid rgba(56,189,248,.28);border-radius:18px;padding:24px 22px;margin-top:14px;box-shadow:0 10px 32px rgba(0,0,0,.45);text-align:center}
+.share-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.3);color:#7dd3fc;border-radius:20px;padding:4px 12px;font-size:.74rem;font-weight:700;margin-bottom:10px}
+.share-title{font-size:clamp(1.1rem,2.5vw,1.4rem);font-weight:800;color:#fff;margin-bottom:8px}
+.share-desc{font-size:clamp(0.82rem,1.7vw,0.88rem);color:#cbd5e1;line-height:1.55;max-width:760px;margin:0 auto 18px}
+
+.share-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;justify-content:center}
+@media(max-width:480px){.share-grid{grid-template-columns:1fr 1fr}}
+
+.btn-share{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 14px;border-radius:12px;font-size:.82rem;font-weight:700;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:all .2s;white-space:nowrap;min-height:46px}
+.btn-share:hover{transform:translateY(-2px);box-shadow:0 4px 14px rgba(0,0,0,.4)}
+.btn-share:active{transform:scale(0.97)}
+
+.btn-share-bookmark{background:rgba(245,158,11,.15);border-color:rgba(245,158,11,.4);color:#fbbf24}
+.btn-share-bookmark:hover{background:#f59e0b;color:#000}
+
+.btn-share-whatsapp{background:rgba(37,211,102,.15);border-color:rgba(37,211,102,.4);color:#4ade80}
+.btn-share-whatsapp:hover{background:#25d366;color:#000}
+
+.btn-share-twitter{background:rgba(56,189,248,.12);border-color:rgba(56,189,248,.35);color:#7dd3fc}
+.btn-share-twitter:hover{background:#0284c7;color:#fff}
+
+.btn-share-facebook{background:rgba(24,119,242,.15);border-color:rgba(24,119,242,.4);color:#60a5fa}
+.btn-share-facebook:hover{background:#1877f2;color:#fff}
+
+.btn-share-instagram{background:rgba(225,48,108,.15);border-color:rgba(225,48,108,.4);color:#f472b6}
+.btn-share-instagram:hover{background:linear-gradient(135deg,#e1306c,#833ab4);color:#fff}
+
+.btn-share-native{background:rgba(147,51,234,.15);border-color:rgba(147,51,234,.4);color:#c084fc}
+.btn-share-native:hover{background:#9333ea;color:#fff}
+
+.btn-header-bookmark{background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.4);color:#fbbf24;border-radius:20px;padding:5px 14px;font-size:.75rem;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:5px;transition:all .2s}
+.btn-header-bookmark:hover{background:#f59e0b;color:#000}
+
+.btn-deal-whatsapp{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:rgba(37,211,102,.15);border:1px solid rgba(37,211,102,.4);color:#4ade80;font-weight:700;font-size:.84rem;padding:12px 18px;border-radius:8px;text-decoration:none;transition:all .2s}
+.btn-deal-whatsapp:hover{background:#25d366;color:#000;transform:translateY(-1px)}
+
+/* Toast */
+.share-toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(100px);background:#0f172a;border:1px solid #38bdf8;color:#fff;padding:12px 22px;border-radius:30px;font-size:.84rem;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.8);z-index:9999;opacity:0;transition:all .3s cubic-bezier(0.16,1,0.3,1);pointer-events:none;text-align:center;max-width:90%}
+.share-toast.show{transform:translateX(-50%) translateY(0);opacity:1}
 </style>
 </head>
 <body>
@@ -172,6 +212,9 @@ footer{background:#060a18;border-top:1px solid var(--border);padding:28px 20px;t
     <span>🛍️ WAVEPICKS</span>
     <span class="pill">Deal &amp; Price Fluctuation Auditor</span>
   </div>
+  <button type="button" class="btn-header-bookmark" onclick="handleBookmark()" title="Bookmark this tool">
+    ⭐ Bookmark Tool
+  </button>
 </header>
 
 <div class="container">
@@ -255,7 +298,53 @@ footer{background:#060a18;border-top:1px solid var(--border);padding:28px 20px;t
     <div id="audit-results" style="display:none"></div>
   </div>
 
+  <!-- Community Action & Social Share Card -->
+  <div class="share-card">
+    <div class="share-badge">📢 Protect Your Friends &amp; Family</div>
+    <h3 class="share-title">Save Friends From Overpaying &amp; Fake Discounts</h3>
+    <p class="share-desc">
+      Shopping during festival sales or checking daily deals? Bookmark <strong>WAVEPICKS</strong> on your phone or browser, and share it with friends, family, and deal groups on WhatsApp, Twitter, Instagram, and Facebook so nobody gets tricked by artificial discounts!
+    </p>
 
+    <!-- Social Share Buttons Grid -->
+    <div class="share-grid">
+      <!-- Bookmark Button -->
+      <button type="button" class="btn-share btn-share-bookmark" onclick="handleBookmark()">
+        <span>⭐</span>
+        <span>Bookmark Tool</span>
+      </button>
+
+      <!-- WhatsApp 1-Tap Share -->
+      <a href="https://api.whatsapp.com/send?text=Stop%20falling%20for%20fake%20discounts!%20Check%20real%20printed%20box%20MRP%20and%2090-day%20price%20history%20before%20buying%20on%20Amazon:%20https://alerts.zero483.com/deals.html" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-whatsapp">
+        <span>💬</span>
+        <span>Share on WhatsApp</span>
+      </a>
+
+      <!-- Twitter / X -->
+      <a href="https://twitter.com/intent/tweet?text=Stop%20falling%20for%20fake%20discounts%20and%20inflated%20MRPs.%20Check%2090-day%20price%20history%20and%20true%20box%20MRP%20before%20buying%20on%20Amazon:%20https://alerts.zero483.com/deals.html&hashtags=AmazonDeals,SmartShopping,ConsumerAwareness" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-twitter">
+        <span>𝕏</span>
+        <span>Post on Twitter (X)</span>
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://alerts.zero483.com/deals.html" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-facebook">
+        <span>📘</span>
+        <span>Share on Facebook</span>
+      </a>
+
+      <!-- Instagram / Copy Link -->
+      <button type="button" class="btn-share btn-share-instagram" onclick="copyInstagramLink()">
+        <span>📸</span>
+        <span id="copy-btn-text">Share on Instagram / Copy</span>
+      </button>
+
+      <!-- Native Mobile Share (Shown when supported) -->
+      <button type="button" class="btn-share btn-share-native" id="btn-native-share" onclick="handleNativeShare()" style="display:none">
+        <span>📲</span>
+        <span>Share via App</span>
+      </button>
+    </div>
+  </div>
 </div>
 
 <!-- Modal: Keepa Price Chart -->
@@ -423,6 +512,9 @@ async function runAudit() {
               <a href="${d.affiliate_url || d.amazon_url}" target="_blank" rel="nofollow noopener sponsored" class="btn-buy">
                 Check Deal &amp; Buy on Amazon at ₹${d.current_price} ↗
               </a>
+              <a href="https://api.whatsapp.com/send?text=${encodeURIComponent('🔎 Verified Amazon Deal Audit on WAVEPICKS:\n' + d.title + '\n\n💰 Live Deal: ₹' + d.current_price + ' (Real Box MRP ₹' + d.mrp + ', ' + d.discount_pct + '% Off)\n⚖️ Verdict: ' + d.verdict_title + '\n\nAudit any Amazon link before buying: https://alerts.zero483.com/deals.html')}" target="_blank" rel="noopener noreferrer" class="btn-deal-whatsapp" title="Share this audit on WhatsApp">
+                💬 Share Deal on WhatsApp
+              </a>
             </div>
 
             <!-- Ethical Referral Notice -->
@@ -503,6 +595,83 @@ window.onclick = function(e) {
     closeModal();
   }
 }
+
+// Share & Bookmark Helpers
+function showToast(msg) {
+  let toast = document.getElementById('share-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'share-toast';
+    toast.className = 'share-toast';
+    document.body.appendChild(toast);
+  }
+  toast.textContent = msg;
+  toast.classList.add('show');
+  clearTimeout(window._toastTimeout);
+  window._toastTimeout = setTimeout(() => {
+    toast.classList.remove('show');
+  }, 3500);
+}
+
+function handleBookmark() {
+  const isMac = navigator.userAgent.toLowerCase().includes('mac');
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  if (isMobile) {
+    showToast("📱 Tap browser menu (⋮ or Share icon) → select 'Add to Home screen' or 'Bookmark'!");
+  } else {
+    showToast(`⭐ Press ${isMac ? 'Cmd + D' : 'Ctrl + D'} to bookmark WAVEPICKS for instant deal audits!`);
+  }
+}
+
+function copyInstagramLink() {
+  const url = "https://alerts.zero483.com/deals.html";
+  const copyText = document.getElementById('copy-btn-text');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(() => {
+      if (copyText) copyText.textContent = "✓ Link Copied!";
+      showToast("📋 Link copied! Paste into Instagram Bio, Stories, or DM to friends.");
+      setTimeout(() => {
+        if (copyText) copyText.textContent = "Share on Instagram / Copy";
+      }, 3000);
+    }).catch(() => fallbackCopy(url, copyText));
+  } else {
+    fallbackCopy(url, copyText);
+  }
+}
+
+function fallbackCopy(url, copyText) {
+  const input = document.createElement('input');
+  input.value = url;
+  document.body.appendChild(input);
+  input.select();
+  document.execCommand('copy');
+  document.body.removeChild(input);
+  if (copyText) copyText.textContent = "✓ Link Copied!";
+  showToast("📋 Link copied! Paste into Instagram Bio, Stories, or DM to friends.");
+  setTimeout(() => {
+    if (copyText) copyText.textContent = "Share on Instagram / Copy";
+  }, 3000);
+}
+
+function handleNativeShare() {
+  if (navigator.share) {
+    navigator.share({
+      title: 'WAVEPICKS — Amazon Deal & Price Fluctuation Auditor',
+      text: 'Stop falling for fake discounts! Check real box MRP and 90-day price history before buying on Amazon.',
+      url: 'https://alerts.zero483.com/deals.html'
+    }).catch(() => {});
+  } else {
+    copyInstagramLink();
+  }
+}
+
+// Show native share button if supported on mobile
+document.addEventListener('DOMContentLoaded', () => {
+  if (navigator.share) {
+    const btn = document.getElementById('btn-native-share');
+    if (btn) btn.style.display = 'inline-flex';
+  }
+});
 </script>
 </body>
 </html>
