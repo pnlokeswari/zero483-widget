@@ -244,9 +244,10 @@ def api_creator_brief(asin: str):
     return jsonify(brief)
 
 
-@app.route("/api/buyer/deals")
-def api_buyer_deals():
-    return jsonify(get_buyer_deals())
+@app.route("/healthz")
+@app.route("/ping")
+def healthz():
+    return jsonify({"status": "ok", "service": "zero483-deals-api", "time": time.time()}), 200
 
 
 # ═════════════════════════════════════════════════════════
