@@ -377,7 +377,7 @@ footer{background:#060a18;border-top:1px solid var(--border);padding:28px 20px;t
       <div style="color:#cbd5e1;line-height:1.5">
         • <strong style="color:#60a5fa">📉 Price Curve:</strong> Shows exact day-by-day selling price on Amazon. Look for deep valleys to buy when the item is at a real drop.<br>
         • <strong style="color:#e2e8f0">📦 Printed Box MRP:</strong> Maximum retail price certified on product packaging. Real discounts are measured from this legal ceiling, not seller markups.<br>
-        • <strong style="color:#f59e0b">⚠️ Spot Artificial Hikes:</strong> If the price line was hiked right before a festival sale, wait for it to return to normal.
+        • <strong style="color:#f59e0b">🔍 Compare with Everyday Price:</strong> Check what this product actually sells for on normal days. If today's "festival deal" is the same price it sold for last month, it is not a real special discount!
       </div>
     </div>
 
@@ -566,7 +566,7 @@ async function runAudit() {
               <div style="color:#cbd5e1;line-height:1.5">
                 • <strong style="color:#60a5fa">📉 Price Curve:</strong> Tracks the actual selling price day-by-day. Look for deep valleys to buy when the item is at a real drop.<br>
                 • <strong style="color:#e2e8f0">📦 Printed Box MRP (₹${d.mrp.toLocaleString('en-IN')}):</strong> The certified packaging price under Indian Legal Metrology Rules. Genuine discounts are measured from this real ceiling, not seller markups.<br>
-                • <strong style="color:#f59e0b">⚠️ Watch for Pre-Sale Hikes:</strong> If the curve spiked upwards right before a festival sale, the discount is artificial!
+                • <strong style="color:#f59e0b">🔍 Compare with Everyday Price:</strong> Check what this product actually sells for on normal days. If today's "festival deal" is the same price it sold for last month, it is not a real special discount!
               </div>
             </div>
           </div>
