@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-03T16:45:22.654381+00:00",
+  "last_updated": "2026-10-03T19:29:22.562365+00:00",
   "total_items": 50,
   "items": [
     {
@@ -324,6 +324,24 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-10-02T13:11:56.181079+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "1523ea48172d",
+      "title": "5 FDA decisions to watch in the fourth quarter of 2026 - BioPharma Dive",
+      "slug": "5-fda-decisions-to-watch-in-the-fourth-quarter-of-2026-biopharma-dive",
+      "date": "2026-10-01",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: 5 FDA decisions to watch in the fourth quarter of 2026 - BioPharma Dive\nSource: Google News\nDate: Thu, 01 Oct 2026 07:00:00 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "5 FDA decisions to watch in the fourth quarter of 2026 - BioPharma Dive",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeS1xNDBkWi1BUlhmbnd1WTJpMV81VXBkRS1fOUlmNk9pcnVMZ3RIOG5vUGdxN0JQaE9GVUlIWkt0WTN6N1I0dGJlcmp6QnVzR1BxOVFqcTlpY0RscjBtajYxWjBxdlNFeWpoQV9tODBJU25VR2E4UkFIdThsaGphLU1R?oc=5",
+      "fetched_at": "2026-10-03T19:29:03.540600+00:00",
       "is_long_form": false
     },
     {
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPa0otcUpCUlQyTDBRcmtpNXQ4aExLZ2dHQW9mWWFuSVF5eVhwRzUtWGxUY2x1QkhjWjNXa1RpNFJTRnNDOUlWR2RqT2F4MmJZUGlxRnozeXZuV1UzVGw1cGpJYjB4RXpKTEFxT18zbzgzbW1WMV9nZHlQNExWYjRvU0lQejRuS0FzWm0wazh5SEVxVk5xaWNWRVFQLXNRTGZ3d0NCQmtGeV9seFlrRDgyUFQ1N1dybURBM0NJa1dBVlVKVFVQa2JleGZSZlZOSWZUc2l5Rk1aWjZjcExTa2ZJd29HV3ZsMmdvMi1iWTRTLURaaV8yT0JDcA?oc=5",
       "fetched_at": "2026-09-29T19:48:09.715356+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "6e837502c26c",
-      "title": "FDA recalls more than 13k bottles of blood pressure medication after quality issue - NBC 5 Dallas-Fort Worth",
-      "slug": "fda-recalls-more-than-13k-bottles-of-blood-pressure-medication-after-quality-issue-nbc-5-dallas-fort-worth",
-      "date": "2026-09-29",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: FDA recalls more than 13k bottles of blood pressure medication after quality issue - NBC 5 Dallas-Fort Worth\nSource: Google News\nDate: Tue, 29 Sep 2026 10:22:24 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "FDA recalls more than 13k bottles of blood pressure medication after quality issue - NBC 5 Dallas-Fort Worth",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPSjE0YTN1YVdkRmViTDdVMGJSeE1HYWd2WFJBSzdBYlg1VW9OcHl0WHRvOVFKcWo3Y3BIc2E0dkdoTjZ1bmVHTXpHaVh1QnNCdUpEbVVQaWU2SS1QNXdRR0Rpc2J0dFlwOUtyYkJHUG4wVkJRUTFRNG1ZNTFSbDd1MWVZMlVBWHhTeGF3cEhiUlRBSHRZZUlaUFN1aURyd0VxZ1pLcVJDSFU0MEljMkQ1a01KSkNWam5NVDVJUmFhU0w1STM0cWxBUTU4WHJqUTUzekhaZ1phVHduQmEyOTYw0gHnAUFVX3lxTE5KUkdRdjFIVGpvdWoyQTBsRkRrS3E3UUtrQktKWEljTWZ5NnE0RzJVd3Zhd3RWSF9jSDh1UG5SbzlBLVM4cV9wb21iU2RwZUVabVZLQnJoX3QxamhfWC1TY1cyQTllSHdEcUExdml1U2ZkR01Xdm42a0tZY2J4YTdNLXFWcm1RRmc2cTRqQjBMb3VaVExILVFvalFVRkkzUnFPaVJ0ZF9xanlQbzJwUGhxb1FvdS15dGpzMGRrOV9OQXJVejJYV3MtMzlldmpzUTJrMTV5Q2NqUGMzY1ZrSERFd3NPMXduTQ?oc=5",
-      "fetched_at": "2026-09-29T19:44:09.684965+00:00",
       "is_long_form": false
     }
   ]
