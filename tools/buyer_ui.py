@@ -373,11 +373,11 @@ footer{background:#060a18;border-top:1px solid var(--border);padding:28px 20px;t
 
     <!-- Educational Guide on Price Fluctuations -->
     <div style="background:#070d22;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:.76rem">
-      <div style="font-weight:700;color:#38bdf8;margin-bottom:4px">📊 How to Interpret Price Fluctuations:</div>
-      <div style="color:#cbd5e1;line-height:1.45">
-        • <strong style="color:#60a5fa">🔵 Blue Price Curve:</strong> Shows exact day-by-day selling price on Amazon. Check if today is sitting at the bottom of a drop.<br>
-        • <strong style="color:#34d399">🟢 Green Rank Line:</strong> Amazon BSR velocity. When green plunges downward towards #1, buyer orders are surging.<br>
-        • <strong style="color:#e2e8f0">Official Box MRP:</strong> Indian law caps retail at printed MRP. Real discounts are measured by how far below MRP the blue line drops.
+      <div style="font-weight:700;color:#38bdf8;margin-bottom:4px">📊 How to Read 90-Day Price Fluctuations:</div>
+      <div style="color:#cbd5e1;line-height:1.5">
+        • <strong style="color:#60a5fa">📉 Price Curve:</strong> Shows exact day-by-day selling price on Amazon. Look for deep valleys to buy when the item is at a real drop.<br>
+        • <strong style="color:#e2e8f0">📦 Printed Box MRP:</strong> Maximum retail price certified on product packaging. Real discounts are measured from this legal ceiling, not seller markups.<br>
+        • <strong style="color:#f59e0b">⚠️ Spot Artificial Hikes:</strong> If the price line was hiked right before a festival sale, wait for it to return to normal.
       </div>
     </div>
 
@@ -561,12 +561,12 @@ async function runAudit() {
             <!-- Guide to Reading Fluctuations -->
             <div class="chart-guide-box">
               <div style="font-weight:700;color:#f1f5f9;margin-bottom:5px;display:flex;align-items:center;gap:6px">
-                <span>💡 How to Read Price Fluctuations on this Graph:</span>
+                <span>💡 How to Read This 90-Day Price Graph:</span>
               </div>
-              <div style="color:#cbd5e1;line-height:1.45">
-                • <strong style="color:#60a5fa">🔵 Blue Price Curve:</strong> Shows exact day-by-day selling price on Amazon. Check if today is sitting at the bottom of a drop.<br>
-                • <strong style="color:#34d399">🟢 Green Demand Line:</strong> Amazon BSR velocity. When green plunges downward towards #1, buyer orders are surging.<br>
-                • <strong style="color:#e2e8f0">Official Box MRP (₹${d.mrp.toLocaleString('en-IN')}):</strong> Constant legal ceiling under Indian law. Real discounts are measured by how far below MRP the blue line drops.
+              <div style="color:#cbd5e1;line-height:1.5">
+                • <strong style="color:#60a5fa">📉 Price Curve:</strong> Tracks the actual selling price day-by-day. Look for deep valleys to buy when the item is at a real drop.<br>
+                • <strong style="color:#e2e8f0">📦 Printed Box MRP (₹${d.mrp.toLocaleString('en-IN')}):</strong> The certified packaging price under Indian Legal Metrology Rules. Genuine discounts are measured from this real ceiling, not seller markups.<br>
+                • <strong style="color:#f59e0b">⚠️ Watch for Pre-Sale Hikes:</strong> If the curve spiked upwards right before a festival sale, the discount is artificial!
               </div>
             </div>
           </div>
