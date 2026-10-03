@@ -77,12 +77,14 @@ BUYER_HTML = r"""<!DOCTYPE html>
 <!-- Official Pinterest Script -->
 <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
-<!-- Instant Theme Loader (Zero Flash) -->
+<!-- Instant Theme & Language Loader (Zero Flash) -->
 <script>
 (function(){
   try {
     var t = localStorage.getItem('wavepicks_theme') || 'midnight';
     document.documentElement.setAttribute('data-theme', t);
+    var l = localStorage.getItem('wavepicks_lang') || 'en';
+    document.documentElement.lang = l;
   } catch(e){}
 })();
 </script>
@@ -250,6 +252,42 @@ header{background:var(--header-bg);padding:14px 20px;display:flex;align-items:ce
   background:rgba(255,255,255,0.18);
   border-color:rgba(255,255,255,0.4);
 }
+.lang-selector-wrap{position:relative}
+.btn-lang-toggle{
+  background:rgba(255,255,255,0.1);
+  border:1px solid rgba(255,255,255,0.22);
+  color:#fff;
+  border-radius:20px;
+  padding:5px 12px;
+  font-size:.76rem;
+  font-weight:700;
+  cursor:pointer;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  transition:all .2s;
+  white-space:nowrap;
+}
+.btn-lang-toggle:hover{
+  background:rgba(255,255,255,0.18);
+  border-color:rgba(255,255,255,0.4);
+}
+.lang-menu{
+  position:absolute;
+  top:calc(100% + 8px);
+  right:0;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:8px;
+  min-width:190px;
+  box-shadow:0 12px 36px rgba(0,0,0,0.6);
+  z-index:1000;
+  display:none;
+  flex-direction:column;
+  gap:4px;
+}
+.lang-menu.show{display:flex}
 .theme-dot{
   width:10px;
   height:10px;
@@ -464,13 +502,15 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
   .btn-buy,.btn-deal-whatsapp{width:100%;flex:none;text-align:center}
 }
 
-@media(max-width:540px){
+@media(max-width:560px){
   header{padding:10px 12px;gap:8px}
   .brand-title{font-size:1.05rem;gap:6px;width:100%;justify-content:space-between}
   .pill.header-subpill{display:none}
-  .header-actions{width:100%;justify-content:space-between;gap:8px}
-  .btn-theme-toggle,.btn-header-bookmark{flex:1;justify-content:center;padding:7px 10px;font-size:.74rem}
+  .header-actions{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .btn-header-bookmark{grid-column:span 2}
+  .btn-theme-toggle,.btn-lang-toggle,.btn-header-bookmark{justify-content:center;padding:7px 8px;font-size:.72rem;width:100%}
   .theme-menu{left:0;right:auto;width:220px;max-width:calc(100vw - 24px)}
+  .lang-menu{right:0;left:auto;width:200px;max-width:calc(100vw - 24px)}
   
   /* Metric Triplet: 2 columns for deal/mrp, full width for savings */
   .metric-triplet{grid-template-columns:1fr 1fr;gap:8px}
@@ -489,7 +529,7 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
 <header>
   <div class="brand-title">
     <span>🛍️ WAVEPICKS</span>
-    <span class="pill header-subpill">Deal &amp; Price Fluctuation Auditor</span>
+    <span class="pill header-subpill" data-i18n="header_subpill">Deal &amp; Price Fluctuation Auditor</span>
   </div>
   <div class="header-actions">
     <!-- Interactive Background Theme Selector -->
@@ -539,8 +579,44 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
       </div>
     </div>
 
+    <!-- Multi-Language Selector -->
+    <div class="lang-selector-wrap">
+      <button type="button" class="btn-lang-toggle" id="lang-btn" onclick="toggleLangDropdown(event)" title="Select Language / भाषा चुनें">
+        <span>🌐</span>
+        <span id="current-lang-label">English</span>
+        <span style="font-size:0.65rem;opacity:0.8">▼</span>
+      </button>
+      <div class="lang-menu" id="lang-menu">
+        <div class="theme-menu-title" data-i18n="select_language_title">Select Language</div>
+        <button type="button" class="theme-opt" id="lang-opt-en" onclick="setLanguage('en')">
+          <div class="theme-opt-left"><span>🇬🇧</span><span>English</span></div>
+          <span class="theme-check" id="check-lang-en">✓</span>
+        </button>
+        <button type="button" class="theme-opt" id="lang-opt-hi" onclick="setLanguage('hi')">
+          <div class="theme-opt-left"><span>🇮🇳</span><span>हिन्दी (Hindi)</span></div>
+          <span class="theme-check" id="check-lang-hi"></span>
+        </button>
+        <button type="button" class="theme-opt" id="lang-opt-te" onclick="setLanguage('te')">
+          <div class="theme-opt-left"><span>🇮🇳</span><span>తెలుగు (Telugu)</span></div>
+          <span class="theme-check" id="check-lang-te"></span>
+        </button>
+        <button type="button" class="theme-opt" id="lang-opt-kn" onclick="setLanguage('kn')">
+          <div class="theme-opt-left"><span>🇮🇳</span><span>ಕನ್ನಡ (Kannada)</span></div>
+          <span class="theme-check" id="check-lang-kn"></span>
+        </button>
+        <button type="button" class="theme-opt" id="lang-opt-ta" onclick="setLanguage('ta')">
+          <div class="theme-opt-left"><span>🇮🇳</span><span>தமிழ் (Tamil)</span></div>
+          <span class="theme-check" id="check-lang-ta"></span>
+        </button>
+        <button type="button" class="theme-opt" id="lang-opt-bn" onclick="setLanguage('bn')">
+          <div class="theme-opt-left"><span>🇮🇳</span><span>বাংলা (Bengali)</span></div>
+          <span class="theme-check" id="check-lang-bn"></span>
+        </button>
+      </div>
+    </div>
+
     <button type="button" class="btn-header-bookmark" onclick="handleBookmark()" title="Bookmark this tool">
-      ⭐ Bookmark Tool
+      <span data-i18n="btn_bookmark_tool">⭐ Bookmark Tool</span>
     </button>
   </div>
 </header>
@@ -549,39 +625,35 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
   <!-- Mission Hero Section: Avoid Sales Traps & Holistic Review -->
   <div class="mission-hero">
     <div class="mission-badge">
-      <span>🛡️ Unbiased Pre-Purchase Consumer Intelligence</span>
-      <span class="pill" style="font-size:.65rem;background:rgba(16,185,129,.15);color:#34d399;border-color:rgba(16,185,129,.3)">Empirical Data Only</span>
+      <span data-i18n="mission_badge_1">🛡️ Unbiased Pre-Purchase Consumer Intelligence</span>
+      <span class="pill" style="font-size:.65rem;background:rgba(16,185,129,.15);color:#34d399;border-color:rgba(16,185,129,.3)" data-i18n="mission_badge_2">Empirical Data Only</span>
     </div>
-    <h1 class="mission-title">
-      Outsmart Fake Discounts &amp; E-Commerce Sales Traps
-    </h1>
-    <p class="mission-desc">
-      We built <strong>WAVEPICKS</strong> to protect everyday shoppers from manipulative online sales tricks — such as artificial price hikes right before festival sales, inflated MRP stickers, and deceptive countdown urgency. Before you spend your hard-earned money, paste any Amazon link below to get a 100% holistic, transparent pre-purchase audit: authentic printed box MRP verified under Indian Legal Metrology Rules, true savings percentage, and 90-day real price history curves.
-    </p>
+    <h1 class="mission-title" data-i18n="mission_title">Outsmart Fake Discounts &amp; E-Commerce Sales Traps</h1>
+    <p class="mission-desc" data-i18n="mission_desc">We built <strong>WAVEPICKS</strong> to protect everyday shoppers from manipulative online sales tricks — such as artificial price hikes right before festival sales, inflated MRP stickers, and deceptive countdown urgency. Before you spend your hard-earned money, paste any Amazon link below to get a 100% holistic, transparent pre-purchase audit: authentic printed box MRP verified under Indian Legal Metrology Rules, true savings percentage, and 90-day real price history curves.</p>
 
     <!-- 3 Core Consumer Protection Pillars -->
     <div class="pillar-grid">
       <div class="pillar-card">
         <div class="pillar-icon">🚫</div>
         <div class="pillar-content">
-          <h4>Expose Inflated MRPs</h4>
-          <p>We cross-reference certified manufacturer packaging to uncover the true retail ceiling, not inflated 3rd-party seller markups.</p>
+          <h4 data-i18n="pillar_1_title">Expose Inflated MRPs</h4>
+          <p data-i18n="pillar_1_desc">We cross-reference certified manufacturer packaging to uncover the true retail ceiling, not inflated 3rd-party seller markups.</p>
         </div>
       </div>
 
       <div class="pillar-card">
         <div class="pillar-icon">📉</div>
         <div class="pillar-content">
-          <h4>Inspect 90-Day Dips</h4>
-          <p>Analyze interactive Keepa price history curves to discover if this item drops even deeper during regular weekend sales.</p>
+          <h4 data-i18n="pillar_2_title">Inspect 90-Day Dips</h4>
+          <p data-i18n="pillar_2_desc">Analyze interactive Keepa price history curves to discover if this item drops even deeper during regular weekend sales.</p>
         </div>
       </div>
 
       <div class="pillar-card">
         <div class="pillar-icon">⚖️</div>
         <div class="pillar-content">
-          <h4>Holistic Buying Verdict</h4>
-          <p>Get a clear, algorithmic recommendation before spending: <strong>Record Low</strong>, <strong>Solid Everyday Deal</strong>, or <strong>Wait for Sale</strong>.</p>
+          <h4 data-i18n="pillar_3_title">Holistic Buying Verdict</h4>
+          <p data-i18n="pillar_3_desc">Get a clear, algorithmic recommendation before spending: <strong>Record Low</strong>, <strong>Solid Everyday Deal</strong>, or <strong>Wait for Sale</strong>.</p>
         </div>
       </div>
     </div>
@@ -592,13 +664,11 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
     <div class="auditor-header">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px">
         <h3>
-          <span>🔍 Live Deal &amp; Price Fluctuation Auditor</span>
+          <span data-i18n="auditor_title">🔍 Live Deal &amp; Price Fluctuation Auditor</span>
         </h3>
-        <span class="pill" style="background:rgba(16,185,129,.15);color:#34d399;border-color:rgba(16,185,129,.3)">100% Free &amp; Instant</span>
+        <span class="pill" style="background:rgba(16,185,129,.15);color:#34d399;border-color:rgba(16,185,129,.3)" data-i18n="auditor_badge">100% Free &amp; Instant</span>
       </div>
-      <p>
-        Paste any Amazon India product link, shortlink (amzn.in/d/...), or 10-character ASIN. Our 24/7 cloud auditor checks live prices against official packaging in seconds.
-      </p>
+      <p data-i18n="auditor_desc">Paste any Amazon India product link, shortlink (amzn.in/d/...), or 10-character ASIN. Our 24/7 cloud auditor checks live prices against official packaging in seconds.</p>
     </div>
     
     <div class="auditor-input-wrap">
@@ -606,12 +676,12 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
         <span class="input-icon">🔗</span>
         <input type="text" id="audit-input" class="auditor-input" placeholder="Paste Amazon link or ASIN (e.g. B0BDVG99J5)..." onkeydown="if(event.key==='Enter') runAudit()">
       </div>
-      <button class="btn-audit" id="btn-audit" onclick="runAudit()">Audit Deal ⚡</button>
+      <button class="btn-audit" id="btn-audit" onclick="runAudit()"><span data-i18n="btn_audit">Audit Deal ⚡</span></button>
     </div>
 
     <!-- Quick Sample Chips with Horizontal Touch Scroll -->
     <div class="sample-wrapper">
-      <span class="sample-label">💡 Try verified tested deals:</span>
+      <span class="sample-label" data-i18n="sample_label">💡 Try verified tested deals:</span>
       <div class="sample-chips-scroll">
         <span class="sample-chip" onclick="quickAudit('B0BN7WWTNT')">🔥 KareIn Wipes (91% Off)</span>
         <span class="sample-chip" onclick="quickAudit('B0DQY3P9ZH')">✨ PALMONAS 18k Necklace (61% Off)</span>
@@ -628,48 +698,46 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
 
   <!-- Community Action & Social Share Card -->
   <div class="share-card">
-    <div class="share-badge">📢 Protect Your Friends &amp; Family</div>
-    <h3 class="share-title">Save Friends From Overpaying &amp; Fake Discounts</h3>
-    <p class="share-desc">
-      Shopping during festival sales or checking daily deals? Bookmark <strong>WAVEPICKS</strong> on your phone or browser, and share it with friends, family, and deal groups on WhatsApp, Twitter, Instagram, and Facebook so nobody gets tricked by artificial discounts!
-    </p>
+    <div class="share-badge" data-i18n="share_badge">📢 Protect Your Friends &amp; Family</div>
+    <h3 class="share-title" data-i18n="share_title">Save Friends From Overpaying &amp; Fake Discounts</h3>
+    <p class="share-desc" data-i18n="share_desc">Shopping during festival sales or checking daily deals? Bookmark <strong>WAVEPICKS</strong> on your phone or browser, and share it with friends, family, and deal groups on WhatsApp, Twitter, Instagram, and Facebook so nobody gets tricked by artificial discounts!</p>
 
     <!-- Social Share Buttons Grid -->
     <div class="share-grid">
       <!-- Bookmark Button -->
       <button type="button" class="btn-share btn-share-bookmark" onclick="handleBookmark()">
         <span>⭐</span>
-        <span>Bookmark Tool</span>
+        <span data-i18n="btn_share_bookmark">Bookmark Tool</span>
       </button>
 
       <!-- WhatsApp 1-Tap Share -->
       <a href="https://api.whatsapp.com/send?text=Stop%20falling%20for%20fake%20discounts!%20Check%20real%20printed%20box%20MRP%20and%2090-day%20price%20history%20before%20buying%20on%20Amazon:%20https://alerts.zero483.com/deals.html" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-whatsapp">
         <span>💬</span>
-        <span>Share on WhatsApp</span>
+        <span data-i18n="btn_share_whatsapp">Share on WhatsApp</span>
       </a>
 
       <!-- Twitter / X -->
       <a href="https://twitter.com/intent/tweet?text=Stop%20falling%20for%20fake%20discounts%20and%20inflated%20MRPs.%20Check%2090-day%20price%20history%20and%20true%20box%20MRP%20before%20buying%20on%20Amazon:%20https://alerts.zero483.com/deals.html&hashtags=AmazonDeals,SmartShopping,ConsumerAwareness" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-twitter">
         <span>𝕏</span>
-        <span>Post on Twitter (X)</span>
+        <span data-i18n="btn_share_twitter">Post on Twitter (X)</span>
       </a>
 
       <!-- Facebook -->
       <a href="https://www.facebook.com/sharer/sharer.php?u=https://alerts.zero483.com/deals.html" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-facebook">
         <span>📘</span>
-        <span>Share on Facebook</span>
+        <span data-i18n="btn_share_facebook">Share on Facebook</span>
       </a>
 
       <!-- Instagram / Copy Link -->
       <button type="button" class="btn-share btn-share-instagram" onclick="copyInstagramLink()">
         <span>📸</span>
-        <span id="copy-btn-text">Share on Instagram / Copy</span>
+        <span id="copy-btn-text" data-i18n="btn_share_instagram">Share on Instagram / Copy</span>
       </button>
 
       <!-- Native Mobile Share (Shown when supported) -->
       <button type="button" class="btn-share btn-share-native" id="btn-native-share" onclick="handleNativeShare()" style="display:none">
         <span>📲</span>
-        <span>Share via App</span>
+        <span data-i18n="btn_share_native">Share via App</span>
       </button>
     </div>
   </div>
@@ -679,7 +747,7 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
 <div class="modal-overlay" id="keepa-modal">
   <div class="modal-content" style="max-width:720px">
     <div class="modal-header">
-      <div class="modal-title" id="km-title">Verified 90-Day Price History</div>
+      <div class="modal-title" id="km-title" data-i18n="modal_title">Verified 90-Day Price History</div>
       <button class="modal-close" onclick="closeModal()">&times;</button>
     </div>
     <div style="margin:16px 0;background:var(--card-inner);border-radius:8px;padding:12px;border:1px solid var(--border);text-align:center;min-height:220px;display:flex;align-items:center;justify-content:center;position:relative">
@@ -689,7 +757,7 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
 
     <!-- Educational Guide on Price Fluctuations -->
     <div style="background:var(--card-inner);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:.76rem">
-      <div style="font-weight:700;color:var(--brand-glow);margin-bottom:4px">📊 How to Read 90-Day Price Fluctuations:</div>
+      <div style="font-weight:700;color:var(--brand-glow);margin-bottom:4px" data-i18n="modal_guide_title">📊 How to Read 90-Day Price Fluctuations:</div>
       <div style="color:var(--text);line-height:1.5">
         • <strong style="color:var(--brand-glow)">📉 Price Curve:</strong> Shows exact day-by-day selling price on Amazon. Look for deep valleys to buy when the item is at a real drop.<br>
         • <strong style="color:var(--text-heading)">📦 Printed Box MRP:</strong> Maximum retail price certified on product packaging. Real discounts are measured from this legal ceiling, not seller markups.<br>
@@ -699,17 +767,17 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
 
     <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;flex-wrap:wrap">
       <p style="font-size:.78rem;color:var(--muted);line-height:1.5;margin:0">
-        💡 <em>Look for deep valleys to time your purchase at peak savings.</em>
+        <span data-i18n="modal_valley_tip">💡 <em>Look for deep valleys to time your purchase at peak savings.</em></span>
       </p>
       <a id="km-link" href="#" target="_blank" class="btn-buy" style="padding:8px 16px;font-size:.8rem;text-decoration:none;flex:none">
-        Open Interactive Chart on Keepa ↗
+        <span data-i18n="modal_open_keepa">Open Interactive Chart on Keepa ↗</span>
       </a>
     </div>
   </div>
 </div>
 
 <footer>
-  <p><strong>Amazon Associates Disclosure:</strong> As an Amazon Associate, Wavepicks earns from qualifying purchases made through links on this page. Product prices and availability are verified daily through automated audits and may change over time.</p>
+  <p data-i18n="footer_disclosure"><strong>Amazon Associates Disclosure:</strong> As an Amazon Associate, Wavepicks earns from qualifying purchases made through links on this page. Product prices and availability are verified daily through automated audits and may change over time.</p>
 </footer>
 
 <script>
@@ -785,15 +853,15 @@ async function runAudit() {
             <div class="metric-triplet">
               <div class="metric-box">
                 <div class="m-val" style="color:var(--text-heading)">₹${d.current_price.toLocaleString('en-IN')}</div>
-                <div class="m-lbl">Current Deal Price</div>
+                <div class="m-lbl" id="dyn-lbl-deal-price">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_deal_price}</div>
               </div>
               <div class="metric-box">
                 <div class="m-val" style="color:var(--muted)">₹${d.mrp.toLocaleString('en-IN')}</div>
-                <div class="m-lbl">Printed Box MRP</div>
+                <div class="m-lbl" id="dyn-lbl-box-mrp">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_box_mrp}</div>
               </div>
               <div class="metric-box highlight">
                 <div class="m-val" style="color:var(--green)">-${d.discount_mrp_pct}%</div>
-                <div class="m-lbl">Save ₹${d.savings_mrp_inr.toLocaleString('en-IN')} off MRP</div>
+                <div class="m-lbl" id="dyn-lbl-save-mrp">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_save_mrp.replace('{amt}', d.savings_mrp_inr.toLocaleString('en-IN'))}</div>
               </div>
             </div>
 
@@ -801,14 +869,14 @@ async function runAudit() {
             <div class="graph-invite-banner">
               <div class="gib-icon">📊</div>
               <div class="gib-text">
-                <strong>Examine the 90-Day Price Curve on the Right ➔</strong>
-                <p>In India, retail price cannot legally exceed printed box MRP (₹${d.mrp.toLocaleString('en-IN')}). To verify if today's ₹${d.current_price.toLocaleString('en-IN')} deal is an authentic festival-grade bargain or standard pricing, <strong>inspect the 90-day curve</strong> to see historical price drops and seller changes.</p>
+                <strong id="dyn-lbl-examine-graph">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_examine_graph}</strong>
+                <p id="dyn-lbl-examine-desc">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_examine_desc.replace('{mrp}', d.mrp.toLocaleString('en-IN')).replace('{price}', d.current_price.toLocaleString('en-IN'))}</p>
               </div>
             </div>
 
             <!-- Fluctuation Range Bar -->
             <div class="fluctuation-spread-bar">
-              <span style="color:var(--muted)">📉 <strong>Historical Fluctuation Spread:</strong></span>
+              <span style="color:var(--muted)">📉 <strong id="dyn-lbl-spread">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_spread}</strong></span>
               <span style="color:var(--brand-glow);font-weight:700">${d.price_range_str}</span>
             </div>
 
@@ -837,18 +905,18 @@ async function runAudit() {
 
             <!-- Actions -->
             <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
-              <a href="${d.affiliate_url || d.amazon_url}" target="_blank" rel="nofollow noopener sponsored" class="btn-buy">
-                Check Deal &amp; Buy on Amazon at ₹${d.current_price} ↗
+              <a href="${d.affiliate_url || d.amazon_url}" target="_blank" rel="nofollow noopener sponsored" class="btn-buy" id="dyn-btn-buy">
+                ${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_buy_amazon.replace('{price}', d.current_price)}
               </a>
-              <a href="https://api.whatsapp.com/send?text=${encodeURIComponent('🔎 Verified Amazon Deal Audit on WAVEPICKS:\n' + d.title + '\n\n💰 Live Deal: ₹' + d.current_price + ' (Real Box MRP ₹' + d.mrp + ', ' + d.discount_pct + '% Off)\n⚖️ Verdict: ' + d.verdict_title + '\n\nAudit any Amazon link before buying: https://alerts.zero483.com/deals.html')}" target="_blank" rel="noopener noreferrer" class="btn-deal-whatsapp" title="Share this audit on WhatsApp">
-                💬 Share Deal on WhatsApp
+              <a href="https://api.whatsapp.com/send?text=${encodeURIComponent('🔎 Verified Amazon Deal Audit on WAVEPICKS:\n' + d.title + '\n\n💰 Live Deal: ₹' + d.current_price + ' (Real Box MRP ₹' + d.mrp + ', ' + d.discount_pct + '% Off)\n⚖️ Verdict: ' + d.verdict_title + '\n\nAudit any Amazon link before buying: https://alerts.zero483.com/deals.html')}" target="_blank" rel="noopener noreferrer" class="btn-deal-whatsapp" id="dyn-btn-whatsapp" title="Share this audit on WhatsApp">
+                ${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).btn_deal_whatsapp}
               </a>
             </div>
 
             <!-- Ethical Referral Notice -->
             <div style="margin-top:10px;padding:8px 12px;background:var(--card-inner);border:1px solid var(--border);border-radius:8px;font-size:.74rem;color:var(--muted);display:flex;align-items:center;gap:8px">
               <span style="font-size:1.1rem">🛍️</span>
-              <span><strong>Support Wavepicks:</strong> Buying through our verified link credits a small referral fee to our research team at zero extra cost to you. Keeps our deal auditor 100% free!</span>
+              <span id="dyn-support-note">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_support_note}</span>
             </div>
           </div>
 
@@ -856,9 +924,9 @@ async function runAudit() {
           <div class="audit-right">
             <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
               <span style="font-size:.78rem;font-weight:800;color:var(--brand-glow);text-transform:uppercase;letter-spacing:1px;display:flex;align-items:center;gap:6px">
-                📈 90-Day Price &amp; Demand Fluctuations
+                <span id="dyn-curve-header">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_curve_header}</span>
               </span>
-              <span class="pill" style="font-size:.65rem">Verified Keepa Curve</span>
+              <span class="pill" style="font-size:.65rem" id="dyn-curve-badge">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_curve_badge}</span>
             </div>
             
             <div class="chart-container" onclick="openKeepa('${d.asin}')" title="Click to view full-screen interactive chart">
@@ -867,8 +935,8 @@ async function runAudit() {
             </div>
 
             <div style="display:flex;align-items:center;justify-content:space-between;margin-top:8px;flex-wrap:wrap;gap:8px">
-              <span style="font-size:.72rem;color:var(--muted)">
-                🔍 <em>Click chart to enlarge • Box MRP is the legal ceiling</em>
+              <span style="font-size:.72rem;color:var(--muted)" id="dyn-click-enlarge">
+                ${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_click_enlarge}
               </span>
               <a href="${d.keepa_direct_url}" target="_blank" style="font-size:.75rem;color:var(--brand-glow);text-decoration:none;font-weight:700">
                 Open Full Interactive Chart on Keepa ↗
@@ -878,12 +946,12 @@ async function runAudit() {
             <!-- Guide to Reading Fluctuations -->
             <div class="chart-guide-box">
               <div style="font-weight:700;color:var(--text-heading);margin-bottom:5px;display:flex;align-items:center;gap:6px">
-                <span>💡 How to Read This 90-Day Price Graph:</span>
+                <span id="dyn-how-to-read">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_how_to_read}</span>
               </div>
               <div style="color:var(--text);line-height:1.5">
-                • <strong style="color:var(--brand-glow)">📉 Price Curve:</strong> Tracks the actual selling price day-by-day. Look for deep valleys to buy when the item is at a real drop.<br>
-                • <strong style="color:var(--text-heading)">📦 Printed Box MRP (₹${d.mrp.toLocaleString('en-IN')}):</strong> The certified packaging price under Indian Legal Metrology Rules. Genuine discounts are measured from this real ceiling, not seller markups.<br>
-                • <strong style="color:var(--yellow)">🔍 Compare with Everyday Price:</strong> Check what this product actually sells for on normal days. If today's "festival deal" is the same price it sold for last month, it is not a real special discount!
+                <div id="dyn-curve-point1">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_curve_point1}</div>
+                <div id="dyn-curve-point2">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_curve_point2.replace('{mrp}', d.mrp.toLocaleString('en-IN'))}</div>
+                <div id="dyn-curve-point3">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_curve_point3}</div>
               </div>
             </div>
           </div>
@@ -924,6 +992,416 @@ window.onclick = function(e) {
   }
 }
 
+
+// Multi-Language System (English, Hindi, Telugu, Kannada, Tamil, Bengali)
+const TRANSLATIONS = {
+  "en": {
+    "header_subpill": "Deal &amp; Price Fluctuation Auditor",
+    "btn_bookmark_tool": "⭐ Bookmark Tool",
+    "select_language_title": "Select Language",
+    "mission_badge_1": "🛡️ Unbiased Pre-Purchase Consumer Intelligence",
+    "mission_badge_2": "Empirical Data Only",
+    "mission_title": "Outsmart Fake Discounts &amp; E-Commerce Sales Traps",
+    "mission_desc": "We built <strong>WAVEPICKS</strong> to protect everyday shoppers from manipulative online sales tricks — such as artificial price hikes right before festival sales, inflated MRP stickers, and deceptive countdown urgency. Before you spend your hard-earned money, paste any Amazon link below to get a 100% holistic, transparent pre-purchase audit: authentic printed box MRP verified under Indian Legal Metrology Rules, true savings percentage, and 90-day real price history curves.",
+    "pillar_1_title": "Expose Inflated MRPs",
+    "pillar_1_desc": "We cross-reference certified manufacturer packaging to uncover the true retail ceiling, not inflated 3rd-party seller markups.",
+    "pillar_2_title": "Inspect 90-Day Dips",
+    "pillar_2_desc": "Analyze interactive Keepa price history curves to discover if this item drops even deeper during regular weekend sales.",
+    "pillar_3_title": "Holistic Buying Verdict",
+    "pillar_3_desc": "Get a clear, algorithmic recommendation before spending: <strong>Record Low</strong>, <strong>Solid Everyday Deal</strong>, or <strong>Wait for Sale</strong>.",
+    "auditor_title": "🔍 Live Deal &amp; Price Fluctuation Auditor",
+    "auditor_badge": "100% Free &amp; Instant",
+    "auditor_desc": "Paste any Amazon India product link, shortlink (amzn.in/d/...), or 10-character ASIN. Our 24/7 cloud auditor checks live prices against official packaging in seconds.",
+    "auditor_placeholder": "Paste Amazon link or ASIN (e.g. B0BDVG99J5)...",
+    "btn_audit": "Audit Deal ⚡",
+    "sample_label": "💡 Try verified tested deals:",
+    "share_badge": "📢 Protect Your Friends &amp; Family",
+    "share_title": "Save Friends From Overpaying &amp; Fake Discounts",
+    "share_desc": "Shopping during festival sales or checking daily deals? Bookmark <strong>WAVEPICKS</strong> on your phone or browser, and share it with friends, family, and deal groups on WhatsApp, Twitter, Instagram, and Facebook so nobody gets tricked by artificial discounts!",
+    "btn_share_bookmark": "Bookmark Tool",
+    "btn_share_whatsapp": "Share on WhatsApp",
+    "btn_share_twitter": "Post on Twitter (X)",
+    "btn_share_facebook": "Share on Facebook",
+    "btn_share_instagram": "Share on Instagram / Copy",
+    "btn_share_native": "Share via App",
+    "modal_title": "Verified 90-Day Price History",
+    "modal_guide_title": "📊 How to Read 90-Day Price Fluctuations:",
+    "modal_valley_tip": "💡 <em>Look for deep valleys to time your purchase at peak savings.</em>",
+    "modal_open_keepa": "Open Interactive Chart on Keepa ↗",
+    "footer_disclosure": "<strong>Amazon Associates Disclosure:</strong> As an Amazon Associate, Wavepicks earns from qualifying purchases made through links on this page. Product prices and availability are verified daily through automated audits and may change over time.",
+    "lbl_deal_price": "Current Deal Price",
+    "lbl_box_mrp": "Printed Box MRP",
+    "lbl_save_mrp": "Save ₹{amt} off MRP",
+    "lbl_examine_graph": "Examine the 90-Day Price Curve on the Right ➔",
+    "lbl_examine_desc": "In India, retail price cannot legally exceed printed box MRP (₹{mrp}). To verify if today's ₹{price} deal is an authentic festival-grade bargain or standard pricing, <strong>inspect the 90-day curve</strong> to see historical price drops and seller changes.",
+    "lbl_spread": "Historical Fluctuation Spread:",
+    "lbl_buy_amazon": "Check Deal &amp; Buy on Amazon at ₹{price} ↗",
+    "btn_deal_whatsapp": "💬 Share Deal on WhatsApp",
+    "lbl_support_note": "<strong>Support Wavepicks:</strong> Buying through our verified link credits a small referral fee to our research team at zero extra cost to you. Keeps our deal auditor 100% free!",
+    "lbl_curve_header": "📈 90-Day Price &amp; Demand Fluctuations",
+    "lbl_curve_badge": "Verified Keepa Curve",
+    "lbl_click_enlarge": "🔍 <em>Click chart to enlarge • Box MRP is the legal ceiling</em>",
+    "lbl_how_to_read": "💡 How to Read This 90-Day Price Graph:",
+    "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 Price Curve:</strong> Tracks the actual selling price day-by-day. Look for deep valleys to buy when the item is at a real drop.",
+    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 Printed Box MRP (₹{mrp}):</strong> The certified packaging price under Indian Legal Metrology Rules. Genuine discounts are measured from this real ceiling, not seller markups.",
+    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 Compare with Everyday Price:</strong> Check what this product actually sells for on normal days. If today's \"festival deal\" is the same price it sold for last month, it is not a real special discount!"
+  },
+  "hi": {
+    "header_subpill": "डील एवं मूल्य उतार-चढ़ाव परीक्षक",
+    "btn_bookmark_tool": "⭐ टूल बुकमार्क करें",
+    "select_language_title": "भाषा चुनें",
+    "mission_badge_1": "🛡️ निष्पक्ष खरीद-पूर्व उपभोक्ता जानकारी",
+    "mission_badge_2": "केवल प्रमाणित डेटा",
+    "mission_title": "नकली छूट और ई-कॉमर्स बिक्री के धोखों से बचें",
+    "mission_desc": "हमने रोजमर्रा के खरीदारों को ऑनलाइन सेल के जोड़-तोड़ वाले हथकंडों — जैसे त्योहारों से ठीक पहले कृत्रिम मूल्य वृद्धि, बढ़ा-चढ़ाकर लिखे गए एमआरपी स्टिकर और भ्रामक काउंटडाउन — से बचाने के लिए <strong>WAVEPICKS</strong> बनाया है। अपनी मेहनत की कमाई खर्च करने से पहले, नीचे किसी भी अमेज़न लिंक को पेस्ट करें और 100% पारदर्शी ऑडिट पाएं: भारतीय लीगल मेट्रोलॉजी नियमों के तहत प्रमाणित वास्तविक प्रिंटेड बॉक्स MRP, वास्तविक छूट प्रतिशत और 90 दिनों का वास्तविक मूल्य इतिहास ग्राफ।",
+    "pillar_1_title": "बढ़े हुए MRP की पोल खोलें",
+    "pillar_1_desc": "हम प्रमाणित निर्माता पैकेजिंग की जांच करते हैं ताकि वास्तविक अधिकतम खुदरा मूल्य का पता चल सके, न कि विक्रेताओं के बढ़े हुए दाम।",
+    "pillar_2_title": "90 दिनों के मूल्य उतार-चढ़ाव जांचें",
+    "pillar_2_desc": "इंटरैक्टिव Keepa मूल्य इतिहास देखकर जानें कि क्या यह उत्पाद नियमित सप्ताहांत सेल में और भी सस्ता मिलता है।",
+    "pillar_3_title": "सटीक खरीद निर्णय",
+    "pillar_3_desc": "पैसे खर्च करने से पहले सटीक सलाह पाएं: <strong>ऐतिहासिक न्यूनतम मूल्य</strong>, <strong>अच्छी सामान्य डील</strong>, या <strong>सेल का इंतजार करें</strong>।",
+    "auditor_title": "🔍 लाइव डील एवं मूल्य उतार-चढ़ाव परीक्षक",
+    "auditor_badge": "100% मुफ़्त और तुरंत",
+    "auditor_desc": "कोई भी अमेज़न इंडिया लिंक, शॉर्टलिंक (amzn.in/d/...) या 10-अक्षरों का ASIN पेस्ट करें। हमारा क्लाउड परीक्षक सेकंडों में आधिकारिक पैकेजिंग से कीमतों की पुष्टि करता है।",
+    "auditor_placeholder": "अमेज़न लिंक या ASIN पेस्ट करें (उदा. B0BDVG99J5)...",
+    "btn_audit": "डील जांचें ⚡",
+    "sample_label": "💡 जांची-परखी डील्स आज़माएं:",
+    "share_badge": "📢 अपने दोस्तों और परिवार को सुरक्षित रखें",
+    "share_title": "दोस्तों को अधिक भुगतान और नकली छूट से बचाएं",
+    "share_desc": "त्योहारी सेल में खरीदारी कर रहे हैं या दैनिक डील्स देख रहे हैं? अपने फोन या ब्राउज़र पर <strong>WAVEPICKS</strong> को बुकमार्क करें, और इसे व्हाट्सएप, ट्विटर, इंस्टाग्राम और फेसबुक पर दोस्तों और परिवारों के साथ साझा करें ताकि कोई भी नकली छूट का शिकार न बने!",
+    "btn_share_bookmark": "टूल बुकमार्क करें",
+    "btn_share_whatsapp": "व्हाट्सएप पर शेयर करें",
+    "btn_share_twitter": "ट्विटर (X) पर पोस्ट करें",
+    "btn_share_facebook": "फेसबुक पर शेयर करें",
+    "btn_share_instagram": "इंस्टाग्राम पर शेयर / लिंक कॉपी",
+    "btn_share_native": "ऐप द्वारा शेयर करें",
+    "modal_title": "सत्यापित 90-दिन का मूल्य इतिहास",
+    "modal_guide_title": "📊 90 दिनों के मूल्य उतार-चढ़ाव को कैसे समझें:",
+    "modal_valley_tip": "💡 <em>अधिकतम बचत के लिए ग्राफ़ में सबसे निचली घाटियों (गिरावट) को देखें।</em>",
+    "modal_open_keepa": "Keepa पर इंटरैक्टिव चार्ट खोलें ↗",
+    "footer_disclosure": "<strong>अमेज़न एसोसिएट प्रकटीकरण:</strong> एक अमेज़न एसोसिएट के रूप में, Wavepicks इस पृष्ठ पर दिए गए लिंक से की गई योग्य खरीदारियों से कमीशन अर्जित करता है। उत्पाद की कीमतें और उपलब्धता दैनिक स्वचालित ऑडिट के माध्यम से जांची जाती हैं और समय के साथ बदल सकती हैं।",
+    "lbl_deal_price": "वर्तमान डील मूल्य",
+    "lbl_box_mrp": "प्रिंटेड बॉक्स MRP",
+    "lbl_save_mrp": "MRP पर ₹{amt} की बचत",
+    "lbl_examine_graph": "दाईं ओर 90-दिन का मूल्य ग्राफ देखें ➔",
+    "lbl_examine_desc": "भारत में खुदरा मूल्य कानूनी रूप से बॉक्स MRP (₹{mrp}) से अधिक नहीं हो सकता। यह जांचने के लिए कि क्या आज की ₹{price} की डील वास्तविक है, <strong>90 दिनों का ग्राफ जांचें</strong>।",
+    "lbl_spread": "ऐतिहासिक मूल्य उतार-चढ़ाव:",
+    "lbl_buy_amazon": "अमेज़न पर डील देखें और ₹{price} में खरीदें ↗",
+    "btn_deal_whatsapp": "💬 व्हाट्सएप पर डील शेयर करें",
+    "lbl_support_note": "<strong>Wavepicks का समर्थन करें:</strong> हमारे लिंक से खरीदारी करने पर हमारे शोध दल को एक छोटा रेफरल शुल्क मिलता है, वह भी आपके लिए बिना किसी अतिरिक्त लागत के!",
+    "lbl_curve_header": "📈 90-दिन मूल्य और मांग में उतार-चढ़ाव",
+    "lbl_curve_badge": "सत्यापित Keepa ग्राफ",
+    "lbl_click_enlarge": "🔍 <em>बड़ा करने के लिए चार्ट पर क्लिक करें • बॉक्स MRP कानूनी सीमा है</em>",
+    "lbl_how_to_read": "💡 90 दिनों का यह मूल्य ग्राफ कैसे समझें:",
+    "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 मूल्य रेखा:</strong> दिन-प्रतिदिन के वास्तविक बिक्री मूल्य को दर्शाती है। भारी छूट पर खरीदने के लिए सबसे निचले बिंदु (गहरी घाटी) देखें।",
+    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 प्रिंटेड बॉक्स MRP (₹{mrp}):</strong> भारतीय विधिक मापविज्ञान नियमों के तहत प्रमाणित पैकेजिंग मूल्य। वास्तविक छूट इसी अधिकतम मूल्य से मापी जाती है।",
+    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 सामान्य दिनों के मूल्य से तुलना करें:</strong> जांचें कि यह उत्पाद सामान्य दिनों में वास्तव में कितने में बिकता है। यदि आज की 'फेस्टिवल डील' पिछले महीने के दाम के समान ही है, तो यह कोई विशेष छूट नहीं है!"
+  },
+  "te": {
+    "header_subpill": "డీల్ మరియు ధరల మార్పుల ఆడిటర్",
+    "btn_bookmark_tool": "⭐ టూల్‌ని బుక్‌మార్క్ చేయండి",
+    "select_language_title": "భాషను ఎంచుకోండి",
+    "mission_badge_1": "🛡️ నిష్పాక్షికమైన కొనుగోలు-పూర్వ సమాచారం",
+    "mission_badge_2": "నిరూపితమైన డేటా మాత్రమే",
+    "mission_title": "నకిలీ తగ్గింపులు &amp; ఆన్‌లైన్ సేల్స్ మోసాల నుండి రక్షించుకోండి",
+    "mission_desc": "పండుగ సేల్స్‌కు ముందు కృత్రిమంగా ధరలు పెంచడం, ఎక్కువ MRP స్టిక్కర్లు అంటించడం వంటి ఆన్‌లైన్ మోసాల నుండి సామాన్య వినియోగదారులను రక్షించడానికి మేము <strong>WAVEPICKS</strong>ను రూపొందించాము. మీ కష్టార్జితాన్ని ఖర్చు చేసే ముందు, ఏదైనా అమెజాన్ లింక్‌ను ఇక్కడ పేస్ట్ చేసి పూర్తి పారదర్శకమైన ఆడిట్ పొందండి: లీగల్ మెట్రాలజీ నిబంధనల ప్రకారం ధృవీకరించబడిన ప్రింటెడ్ బాక్స్ MRP, నిజమైన పొదుపు శాతం మరియు 90 రోజుల వాస్తవ ధరల చరిత్ర గ్రాఫ్.",
+    "pillar_1_title": "పెంచిన MRPని బహిర్గతం చేయండి",
+    "pillar_1_desc": "మేము తయారీదారు సర్టిఫైడ్ ప్యాకేజింగ్‌ను తనిఖీ చేసి నిజమైన గరిష్ట రిటైల్ ధరను గుర్తిస్తాము, అమ్మకందారుల మార్కప్‌లను కాదు.",
+    "pillar_2_title": "90 రోజుల ధరల తగ్గుదలలను పరిశీలించండి",
+    "pillar_2_desc": "ఈ వస్తువు సాధారణ వారాంతపు సేల్స్‌లో మరింత తగ్గుతుందో లేదో తెలుసుకోవడానికి కీపా ధరల చరిత్రను విశ్లేషించండి.",
+    "pillar_3_title": "ఖచ్చితమైన కొనుగోలు తీర్పు",
+    "pillar_3_desc": "డబ్బు ఖర్చు చేయడానికి ముందు స్పష్టమైన సూచన పొందండి: <strong>రికార్డ్ తక్కువ ధర</strong>, <strong>మంచి సాధారణ డీల్</strong>, లేదా <strong>సేల్ కోసం వేచి ఉండండి</strong>.",
+    "auditor_title": "🔍 లైవ్ డీల్ &amp; ధరల మార్పుల ఆడిటర్",
+    "auditor_badge": "100% ఉచితం &amp; తక్షణం",
+    "auditor_desc": "ఏదైనా అమెజాన్ ఇండియా లింక్, షార్ట్‌లింక్ (amzn.in/d/...) లేదా 10 అక్షరాల ASINని పేస్ట్ చేయండి. మా క్లౌడ్ ఆడిటర్ సెకన్లలో ప్రత్యక్ష ధరలను సరిపోల్చుతుంది.",
+    "auditor_placeholder": "అమెజాన్ లింక్ లేదా ASIN పేస్ట్ చేయండి (ఉదా: B0BDVG99J5)...",
+    "btn_audit": "డీల్ పరిశీలించండి ⚡",
+    "sample_label": "💡 ధృవీకరించిన డీల్స్ ప్రయత్నించండి:",
+    "share_badge": "📢 మీ స్నేహితులు మరియు కుటుంబాన్ని రక్షించండి",
+    "share_title": "అధిక ధరలు &amp; నకిలీ తగ్గింపుల నుండి స్నేహితులను కాపాడండి",
+    "share_desc": "పండుగ సేల్స్‌లో షాపింగ్ చేస్తున్నారా? మీ ఫోన్ లేదా బ్రౌజర్‌లో <strong>WAVEPICKS</strong>ను బుక్‌మార్క్ చేసుకోండి మరియు వాట్సాప్, ట్విట్టర్, ఇన్‌స్టాగ్రామ్, ఫేస్‌బుక్‌లలో స్నేహితులతో పంచుకోండి!",
+    "btn_share_bookmark": "టూల్ బుక్‌మార్క్ చేయండి",
+    "btn_share_whatsapp": "వాట్సాప్‌లో షేర్ చేయండి",
+    "btn_share_twitter": "ట్విట్టర్ (X) లో పోస్ట్ చేయండి",
+    "btn_share_facebook": "ఫేస్‌బుక్‌లో షేర్ చేయండి",
+    "btn_share_instagram": "ఇన్‌స్టాగ్రామ్‌లో షేర్ / లింక్ కాపీ",
+    "btn_share_native": "యాప్ ద్వారా షేర్ చేయండి",
+    "modal_title": "ధృవీకరించబడిన 90-రోజుల ధరల చరిత్ర",
+    "modal_guide_title": "📊 90 రోజుల ధరల మార్పులను ఎలా చదవాలి:",
+    "modal_valley_tip": "💡 <em>గరిష్ట ఆదా పొందడానికి గ్రాఫ్‌లో దిగువ లోయలను (తగ్గుదలలను) గమనించండి.</em>",
+    "modal_open_keepa": "Keepa లో ఇంటరాక్టివ్ చార్ట్ తెరవండి ↗",
+    "footer_disclosure": "<strong>అమెజాన్ అసోసియేట్ ప్రకటన:</strong> అమెజాన్ అసోసియేట్‌గా, ఈ పేజీలోని లింక్‌ల ద్వారా అర్హతగల కొనుగోళ్లపై వేవ్‌పిక్స్ చిన్న కమీషన్ పొందుతుంది. ఉత్పత్తుల ధరలు మరియు లభ్యత ప్రతిరోజూ ఆడిట్ చేయబడతాయి మరియు మారవచ్చు.",
+    "lbl_deal_price": "ప్రస్తుత డీల్ ధర",
+    "lbl_box_mrp": "ప్రింటెడ్ బాక్స్ MRP",
+    "lbl_save_mrp": "MRP పై ₹{amt} ఆదా",
+    "lbl_examine_graph": "కుడివైపున 90 రోజుల ధరల గ్రాఫ్ చూడండి ➔",
+    "lbl_examine_desc": "భారతదేశంలో చట్టబద్ధంగా రిటైల్ ధర బాక్స్ MRP (₹{mrp}) మించకూడదు. నేటి ₹{price} డీల్ నిజమైనదో కాదో తెలుసుకోవడానికి <strong>90 రోజుల కర్వ్‌ను పరిశీలించండి</strong>.",
+    "lbl_spread": "చారిత్రక ధరల మార్పుల పరిధి:",
+    "lbl_buy_amazon": "అమెజాన్‌లో డీల్ చూసి ₹{price} కి కొనండి ↗",
+    "btn_deal_whatsapp": "💬 వాట్సాప్‌లో డీల్ షేర్ చేయండి",
+    "lbl_support_note": "<strong>Wavepicks కు మద్దతు ఇవ్వండి:</strong> మా లింక్ ద్వారా కొనుగోలు చేయడం వలన మీకు ఎటువంటి అదనపు ఖర్చు లేకుండా మా పరిశోధనా బృందానికి చిన్న రిఫరల్ ఫీజు లభిస్తుంది!",
+    "lbl_curve_header": "📈 90-రోజుల ధర మరియు డిమాండ్ హెచ్చుతగ్గులు",
+    "lbl_curve_badge": "ధృవీకరించిన కీపా గ్రాఫ్",
+    "lbl_click_enlarge": "🔍 <em>పెద్దదిగా చూడటానికి చార్ట్‌పై క్లిక్ చేయండి • బాక్స్ MRP చట్టపరమైన పరిమితి</em>",
+    "lbl_how_to_read": "💡 ఈ 90 రోజుల ధరల గ్రాఫ్‌ను ఎలా అర్థం చేసుకోవాలి:",
+    "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 ధర రేఖ:</strong> రోజువారీ అసలు అమ్మకపు ధరను ట్రాక్ చేస్తుంది. నిజమైన తగ్గింపు ఉన్నప్పుడు కొనడానికి దిగువ లోయలను చూడండి.",
+    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 ప్రింటెడ్ బాక్స్ MRP (₹{mrp}):</strong> భారతీయ లీగల్ మెట్రాలజీ నిబంధనల ప్రకారం ప్యాకేజింగ్ ధర. నిజమైన తగ్గింపులు దీని ఆధారంగానే లెక్కించబడతాయి.",
+    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 సాధారణ రోజుల ధరతో సరిపోల్చండి:</strong> ఈ ఉత్పత్తి సాధారణ రోజులలో ఎంత ధరకు అమ్ముడవుతుందో తనిఖీ చేయండి. నేటి 'పండుగ డీల్' గత నెల ధరకు సమానంగా ఉంటే, అది నిజమైన ప్రత్యేక తగ్గింపు కాదు!"
+  },
+  "kn": {
+    "header_subpill": "ಡೀಲ್ ಮತ್ತು ಬೆಲೆ ಏರಿಳಿತ ಪರೀಕ್ಷಕ",
+    "btn_bookmark_tool": "⭐ ಟೂಲ್ ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಿ",
+    "select_language_title": "ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+    "mission_badge_1": "🛡️ ನಿಷ್ಪಕ್ಷಪಾತ ಖರೀದಿ-ಪೂರ್ವ ಗ್ರಾಹಕ ಮಾಹಿತಿ",
+    "mission_badge_2": "ಪ್ರಾಮಾಣಿಕ ಡೇಟಾ ಮಾತ್ರ",
+    "mission_title": "ನಕಲಿ ರಿಯಾಯಿತಿಗಳು &amp; ಆನ್‌ಲೈನ್ ಮಾರಾಟದ ಮೋಸಗಳಿಂದ ತಪ್ಪಿಸಿಕೊಳ್ಳಿ",
+    "mission_desc": "ಹಬ್ಬದ ಸೇಲ್‌ಗಳಿಗೆ ಮುನ್ನ ಕೃತಕವಾಗಿ ಬೆಲೆ ಏರಿಸುವುದು ಮತ್ತು ಹೆಚ್ಚುವರಿ MRP ಸ್ಟಿಕ್ಕರ್‌ಗಳಂತಹ ಆನ್‌ಲೈನ್ ಮಾರಾಟ ತಂತ್ರಗಳಿಂದ ಗ್ರಾಹಕರನ್ನು ರಕ್ಷಿಸಲು ನಾವು <strong>WAVEPICKS</strong> ಅನ್ನು ರಚಿಸಿದ್ದೇವೆ. ನಿಮ್ಮ ಕಷ್ಟದ ಹಣವನ್ನು ಖರ್ಚು ಮಾಡುವ ಮೊದಲು, ಯಾವುದೇ ಅಮೆಜಾನ್ ಲಿಂಕ್ ಅನ್ನು ಇಲ್ಲಿ ಪೇಸ್ಟ್ ಮಾಡಿ ಪಾರದರ್ಶಕ ಆಡಿಟ್ ಪಡೆಯಿರಿ: ಲೀಗಲ್ ಮೆಟ್ರಾಲಜಿ ನಿಯಮಗಳ ಅಡಿಯಲ್ಲಿ ಪ್ರಮಾಣೀಕೃತ ಬಾಕ್ಸ್ MRP, ನಿಜವಾದ ಉಳಿತಾಯ ಶೇಕಡಾವಾರು ಮತ್ತು 90 ದಿನಗಳ ನೈಜ ಬೆಲೆ ಇತಿಹಾಸ ಗ್ರಾಫ್.",
+    "pillar_1_title": "ಹೆಚ್ಚಿಸಿದ MRPಯನ್ನು ಪತ್ತೆಹಚ್ಚಿ",
+    "pillar_1_desc": "ನಾವು ತಯಾರಕರ ಅಧಿಕೃತ ಪ್ಯಾಕೇಜಿಂಗ್ ಅನ್ನು ಪರಿಶೀಲಿಸಿ ನಿಜವಾದ ಗರಿಷ್ಠ ಚಿಲ್ಲರೆ ಬೆಲೆಯನ್ನು ತಿಳಿಸುತ್ತೇವೆ, ಮಾರಾಟಗಾರರ ಕೃತಕ ದರಗಳನ್ನಲ್ಲ.",
+    "pillar_2_title": "90 ದಿನಗಳ ಬೆಲೆ ಕುಸಿತವನ್ನು ವೀಕ್ಷಿಸಿ",
+    "pillar_2_desc": "ಸಾಮಾನ್ಯ ವಾರಾಂತ್ಯದ ಸೇಲ್‌ಗಳಲ್ಲಿ ಈ ವಸ್ತು ಇನ್ನಷ್ಟು ಕಡಿಮೆ ಬೆಲೆಗೆ ಸಿಗುತ್ತದೆಯೇ ಎಂದು ತಿಳಿಯಲು ಕೀಪಾ ಗ್ರಾಫ್ ಪರಿಶೀಲಿಸಿ.",
+    "pillar_3_title": "ಸಮಗ್ರ ಖರೀದಿ ತೀರ್ಪು",
+    "pillar_3_desc": "ಹಣ ಖರ್ಚು ಮಾಡುವ ಮೊದಲು ಸ್ಪಷ್ಟ ಶಿಫಾರಸು ಪಡೆಯಿರಿ: <strong>ಸಾರ್ವಕಾಲಿಕ ಕಡಿಮೆ ದರ</strong>, <strong>ಸಾಮಾನ್ಯ ಡೀಲ್</strong>, ಅಥವಾ <strong>ಮುಂದಿನ ಸೇಲ್‌ಗಾಗಿ ಕಾಯಿರಿ</strong>.",
+    "auditor_title": "🔍 ಲೈವ್ ಡೀಲ್ &amp; ಬೆಲೆ ಏರಿಳಿತ ಪರೀಕ್ಷಕ",
+    "auditor_badge": "100% ಉಚಿತ &amp; ತಕ್ಷಣ",
+    "auditor_desc": "ಯಾವುದೇ ಅಮೆಜಾನ್ ಇಂಡಿಯಾ ಲಿಂಕ್, ಶಾರ್ಟ್‌ಲಿಂಕ್ (amzn.in/d/...) ಅಥವಾ 10 ಅಕ್ಷರಗಳ ASIN ಪೇಸ್ಟ್ ಮಾಡಿ. ನಮ್ಮ ಕ್ಲೌಡ್ ಆಡಿಟರ್ ಕೆಲವೇ ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಬೆಲೆಗಳನ್ನು ಪರಿಶೀಲಿಸುತ್ತದೆ.",
+    "auditor_placeholder": "ಅಮೆಜಾನ್ ಲಿಂಕ್ ಅಥವಾ ASIN ಪೇಸ್ಟ್ ಮಾಡಿ (ಉದಾ: B0BDVG99J5)...",
+    "btn_audit": "ಡೀಲ್ ಪರಿಶೀಲಿಸಿ ⚡",
+    "sample_label": "💡 ಪರೀಕ್ಷಿತ ಡೀಲ್ ಪ್ರಯತ್ನಿಸಿ:",
+    "share_badge": "📢 ನಿಮ್ಮ ಸ್ನೇಹಿತರು ಮತ್ತು ಕುಟುಂಬವನ್ನು ರಕ್ಷಿಸಿ",
+    "share_title": "ಹೆಚ್ಚು ಹಣ ಪಾವತಿಸುವುದು ಮತ್ತು ನಕಲಿ ರಿಯಾಯಿತಿಗಳಿಂದ ಸ್ನೇಹಿತರನ್ನು ಉಳಿಸಿ",
+    "share_desc": "ಹಬ್ಬದ ಸೇಲ್‌ಗಳಲ್ಲಿ ಶಾಪಿಂಗ್ ಮಾಡುತ್ತಿದ್ದೀರಾ? ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ <strong>WAVEPICKS</strong> ಅನ್ನು ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಿ ಮತ್ತು ವಾಟ್ಸಾಪ್, ಟ್ವಿಟರ್, ಇನ್‌ಸ್ಟಾಗ್ರಾಮ್, ಫೇಸ್‌ಬುಕ್‌ನಲ್ಲಿ ಸ್ನೇಹಿತರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ!",
+    "btn_share_bookmark": "ಟೂಲ್ ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಿ",
+    "btn_share_whatsapp": "ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ",
+    "btn_share_twitter": "ಟ್ವಿಟರ್ (X) ನಲ್ಲಿ ಪೋಸ್ಟ್ ಮಾಡಿ",
+    "btn_share_facebook": "ಫೇಸ್‌ಬುಕ್‌ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ",
+    "btn_share_instagram": "ಇನ್‌ಸ್ಟಾಗ್ರಾಮ್‌ನಲ್ಲಿ ಶೇರ್ / ಲಿಂಕ್ ಕಾಪಿ",
+    "btn_share_native": "ಆ್ಯಪ್ ಮೂಲಕ ಹಂಚಿಕೊಳ್ಳಿ",
+    "modal_title": "ದೃಢೀಕರಿಸಿದ 90-ದಿನಗಳ ಬೆಲೆ ಇತಿಹಾಸ",
+    "modal_guide_title": "📊 90 ದಿನಗಳ ಬೆಲೆ ಏರಿಳಿತವನ್ನು ಹೇಗೆ ಓದುವುದು:",
+    "modal_valley_tip": "💡 <em>ಹೆಚ್ಚಿನ ಉಳಿತಾಯಕ್ಕಾಗಿ ಗ್ರಾಫ್‌ನಲ್ಲಿ ಆಳವಾದ ಕುಸಿತಗಳನ್ನು ಗಮನಿಸಿ.</em>",
+    "modal_open_keepa": "Keepa ನಲ್ಲಿ ಸಂವಾದಾತ್ಮಕ ಚಾರ್ಟ್ ತೆರೆಯಿರಿ ↗",
+    "footer_disclosure": "<strong>ಅಮೆಜಾನ್ ಅಸೋಸಿಯೇಟ್ ಪ್ರಕಟಣೆ:</strong> ಅಮೆಜಾನ್ ಅಸೋಸಿಯೇಟ್ ಆಗಿ, ಈ ಪುಟದಲ್ಲಿನ ಲಿಂಕ್‌ಗಳ ಮೂಲಕ ಅರ್ಹ ಖರೀದಿಗಳಿಂದ Wavepicks ಕಮಿಷನ್ ಪಡೆಯುತ್ತದೆ. ಉತ್ಪನ್ನದ ಬೆಲೆಗಳು ಪ್ರತಿದಿನ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಪರಿಶೀಲಿಸಲ್ಪಡುತ್ತವೆ ಮತ್ತು ಬದಲಾಗಬಹುದು.",
+    "lbl_deal_price": "ಪ್ರಸ್ತುತ ಡೀಲ್ ಬೆಲೆ",
+    "lbl_box_mrp": "ಪ್ರಿಂಟೆಡ್ ಬಾಕ್ಸ್ MRP",
+    "lbl_save_mrp": "MRP ಮೇಲೆ ₹{amt} ಉಳಿತಾಯ",
+    "lbl_examine_graph": "ಬಲಭಾಗದಲ್ಲಿ 90 ದಿನಗಳ ಬೆಲೆ ಗ್ರಾಫ್ ನೋಡಿ ➔",
+    "lbl_examine_desc": "ಭಾರತದಲ್ಲಿ ಚಿಲ್ಲರೆ ಬೆಲೆ ಬಾಕ್ಸ್ MRP (₹{mrp}) ಗಿಂತ ಹೆಚ್ಚಾಗಿರಬಾರದು. ಇಂದಿನ ₹{price} ಡೀಲ್ ನೈಜವೇ ಎಂದು ತಿಳಿಯಲು <strong>90 ದಿನಗಳ ಗ್ರಾಫ್ ಪರಿಶೀಲಿಸಿ</strong>.",
+    "lbl_spread": "ಐತಿಹಾಸಿಕ ಬೆಲೆ ಏರಿಳಿತದ ಶ್ರೇಣಿ:",
+    "lbl_buy_amazon": "ಅಮೆಜಾನ್‌ನಲ್ಲಿ ಪರಿಶೀಲಿಸಿ ₹{price} ಗೆ ಖರೀದಿಸಿ ↗",
+    "btn_deal_whatsapp": "💬 ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಡೀಲ್ ಹಂಚಿಕೊಳ್ಳಿ",
+    "lbl_support_note": "<strong>Wavepicks ಅನ್ನು ಬೆಂಬಲಿಸಿ:</strong> ನಮ್ಮ ಲಿಂಕ್ ಮೂಲಕ ಖರೀದಿಸುವುದರಿಂದ ನಿಮಗೆ ಯಾವುದೇ ಹೆಚ್ಚುವರಿ ವೆಚ್ಚವಿಲ್ಲದೆ ನಮ್ಮ ಸಂಶೋಧನಾ ತಂಡಕ್ಕೆ ಸಣ್ಣ ರೆಫರಲ್ ಶುಲ್ಕ ಸಿಗುತ್ತದೆ!",
+    "lbl_curve_header": "📈 90-ದಿನ ಬೆಲೆ ಮತ್ತು ಬೇಡಿಕೆಯ ಏರಿಳಿತ",
+    "lbl_curve_badge": "ದೃಢೀಕರಿಸಿದ Keepa ಗ್ರಾಫ್",
+    "lbl_click_enlarge": "🔍 <em>ದೊಡ್ಡದಾಗಿ ನೋಡಲು ಚಾರ್ಟ್ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ • ಬಾಕ್ಸ್ MRP ಕಾನೂನು ಮಿತಿ</em>",
+    "lbl_how_to_read": "💡 ಈ 90 ದಿನಗಳ ಬೆಲೆ ಗ್ರಾಫ್ ಅನ್ನು ಹೇಗೆ ಓದುವುದು:",
+    "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 ಬೆಲೆ ರೇಖೆ:</strong> ದಿನನಿತ್ಯದ ನೈಜ ಮಾರಾಟ ಬೆಲೆಯನ್ನು ತೋರಿಸುತ್ತದೆ. ಹೆಚ್ಚು ರಿಯಾಯಿತಿಯಲ್ಲಿ ಖರೀದಿಸಲು ಕಡಿಮೆ ಬಿಂದುವನ್ನು ನೋಡಿ.",
+    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 ಮುದ್ರಿತ ಬಾಕ್ಸ್ MRP (₹{mrp}):</strong> ಭಾರತೀಯ ಲೀಗಲ್ ಮೆಟ್ರಾಲಜಿ ನಿಯಮಗಳ ಅಡಿಯಲ್ಲಿ ಪ್ರಮಾಣೀಕೃತ ಪ್ಯಾಕಿಂಗ್ ಬೆಲೆ. ನಿಜವಾದ ರಿಯಾಯಿತಿಗಳು ಈ ಮಿತಿಯಿಂದ ಅಳೆಯಲ್ಪಡುತ್ತವೆ.",
+    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 ದೈನಂದಿನ ಬೆಲೆಯೊಂದಿಗೆ ಹೋಲಿಸಿ:</strong> ಸಾಮಾನ್ಯ ದಿನಗಳಲ್ಲಿ ಈ ಉತ್ಪನ್ನ ಎಷ್ಟು ಬೆಲೆಗೆ ಮಾರಾಟವಾಗುತ್ತದೆ ಎಂಬುದನ್ನು ಪರಿಶೀಲಿಸಿ. ಇಂದಿನ 'ಹಬ್ಬದ ಡೀಲ್' ಕಳೆದ ತಿಂಗಳ ಬೆಲೆಯಷ್ಟೇ ಇದ್ದರೆ, ಅದು ನಿಜವಾದ ವಿಶೇಷ ರಿಯಾಯಿತಿಯಲ್ಲ!"
+  },
+  "ta": {
+    "header_subpill": "சலுகை &amp; விலை ஏற்ற இறக்க சரிபார்ப்பாளர்",
+    "btn_bookmark_tool": "⭐ டூலை புக்மார்க் செய்க",
+    "select_language_title": "மொழியைத் தேர்ந்தெடுக்கவும்",
+    "mission_badge_1": "🛡️ பக்கச்சார்பற்ற வாங்குவதற்கு முந்தைய நுகர்வோர் தகவல்",
+    "mission_badge_2": "உண்மையான தரவு மட்டுமே",
+    "mission_title": "போலி தள்ளுபடிகள் மற்றும் இணையதள விற்பனை பொறிகளில் இருந்து தப்பிக்கவும்",
+    "mission_desc": "பண்டிகை விற்பனைக்கு முன் செயற்கையாக விலையை ஏற்றுவது மற்றும் மிகைப்படுத்தப்பட்ட MRP ஸ்டிக்கர்கள் போன்ற இணையதள விற்பனை தந்திரங்களில் இருந்து நுகர்வோரைப் பாதுகாக்க <strong>WAVEPICKS</strong> உருவாக்கப்பட்டது. உங்கள் பணத்தைச் செலவழிக்கும் முன், எந்தவொரு அமேசான் இணைப்பையும் இங்கே பேஸ்ட் செய்து முழுமையான தணிக்கையைப் பெறுங்கள்: சட்ட அளவியல் விதிகளின்படி சரிபார்க்கப்பட்ட அசல் அச்சிடப்பட்ட பாக்ஸ் MRP, உண்மையான சேமிப்பு சதவீதம் மற்றும் 90 நாள் விலை வரலாற்று வரைபடம்.",
+    "pillar_1_title": "மிகைப்படுத்தப்பட்ட MRP-யை வெளிப்படுத்துங்கள்",
+    "pillar_1_desc": "நாங்கள் தயாரிப்பாளரின் அதிகாரப்பூர்வ பேக்கேஜிங்கை சரிபார்த்து உண்மையான அதிகபட்ச சில்லறை விலையைக் கண்டறிகிறோம், விற்பனையாளர்களின் கூடுதல் விலையை அல்ல.",
+    "pillar_2_title": "90 நாள் விலை வீழ்ச்சியை ஆராயுங்கள்",
+    "pillar_2_desc": "வழக்கமான வார இறுதி விற்பனைகளில் இந்த பொருள் மேலும் குறைகிறதா என்பதை அறிய Keepa விலை வரலாற்றை ஆராயுங்கள்.",
+    "pillar_3_title": "முழுமையான வாங்குதல் முடிவு",
+    "pillar_3_desc": "பணத்தைச் செலவழிக்கும் முன் தெளிவான பரிந்துரையைப் பெறுங்கள்: <strong>மிகக் குறைந்த விலை</strong>, <strong>சிறந்த அன்றாட சலுகை</strong>, அல்லது <strong>விற்பனைக்காகக் காத்திருங்கள்</strong>.",
+    "auditor_title": "🔍 நேரடி சலுகை &amp; விலை ஏற்ற இறக்க சரிபார்ப்பாளர்",
+    "auditor_badge": "100% இலவசம் &amp; உடனடி",
+    "auditor_desc": "எந்தவொரு அமேசான் இந்தியா இணைப்பு, குறுகிய இணைப்பு (amzn.in/d/...) அல்லது 10 இலக்க ASIN ஐ ஒட்டவும். எங்கள் கிளவுட் ஆடிட்டர் சில வினாடிகளில் விலையைச் சரிபார்க்கிறது.",
+    "auditor_placeholder": "அமேசான் இணைப்பு அல்லது ASIN ஒட்டவும் (எ.கா: B0BDVG99J5)...",
+    "btn_audit": "சலுகையைச் சரிபார்க்கவும் ⚡",
+    "sample_label": "💡 சரிபார்க்கப்பட்ட சலுகைகளை முயற்சிக்கவும்:",
+    "share_badge": "📢 உங்கள் நண்பர்கள் &amp; குடும்பத்தினரைப் பாதுகாக்கவும்",
+    "share_title": "கூடுதல் கட்டணம் மற்றும் போலி தள்ளுபடிகளிலிருந்து நண்பர்களைக் காப்பாற்றுங்கள்",
+    "share_desc": "பண்டிகை விற்பனையில் ஷாப்பிங் செய்கிறீர்களா? உங்கள் தொலைபேசியில் <strong>WAVEPICKS</strong> ஐ புக்மார்க் செய்து, வாட்ஸ்அப், ட்விட்டர், இன்ஸ்டாகிராம் மற்றும் பேஸ்புக்கில் நண்பர்களுடன் பகிர்ந்து கொள்ளுங்கள்!",
+    "btn_share_bookmark": "டூலை புக்மார்க் செய்க",
+    "btn_share_whatsapp": "வாட்ஸ்அப்பில் பகிரவும்",
+    "btn_share_twitter": "ட்விட்டரில் (X) பகிரவும்",
+    "btn_share_facebook": "பேஸ்புக்கில் பகிரவும்",
+    "btn_share_instagram": "இன்ஸ்டாகிராமில் பகிரவும் / நகலெடுக்கவும்",
+    "btn_share_native": "செயலி வழியாக பகிரவும்",
+    "modal_title": "சரிபார்க்கப்பட்ட 90-நாள் விலை வரலாறு",
+    "modal_guide_title": "📊 90 நாள் விலை வரைபடத்தை எவ்வாறு படிப்பது:",
+    "modal_valley_tip": "💡 <em>அதிக சேமிப்பைப் பெற வரைபடத்தில் ஆழமான பள்ளத்தாக்குகளை (விலை வீழ்ச்சிகளை) கவனியுங்கள்.</em>",
+    "modal_open_keepa": "Keepa இல் வரைபடத்தைத் திறக்கவும் ↗",
+    "footer_disclosure": "<strong>அமேசான் அசோசியேட் வெளிப்பாடு:</strong> அமேசான் அசோசியேட்டாக, இந்தப் பக்கத்தில் உள்ள இணைப்புகள் மூலம் செய்யப்படும் தகுதியான வாங்குதல்களிலிருந்து Wavepicks கமிஷன் பெறுகிறது. தயாரிப்பு விலைகள் தினமும் சரிபார்க்கப்படுகின்றன மற்றும் மாறக்கூடும்.",
+    "lbl_deal_price": "தற்போதைய சலுகை விலை",
+    "lbl_box_mrp": "அச்சிடப்பட்ட பாக்ஸ் MRP",
+    "lbl_save_mrp": "MRP-ல் ₹{amt} சேமிப்பு",
+    "lbl_examine_graph": "வலதுபுறம் உள்ள 90 நாள் விலை வரைபடத்தை ஆராயுங்கள் ➔",
+    "lbl_examine_desc": "சட்டப்படி சில்லறை விலை அச்சிடப்பட்ட பாக்ஸ் MRP (₹{mrp}) ஐ விட அதிகமாக இருக்க முடியாது. இன்றைய ₹{price} சலுகை உண்மையானதா என அறிய <strong>90 நாள் வரைபடத்தை ஆராயுங்கள்</strong>.",
+    "lbl_spread": "வரலாற்று விலை ஏற்ற இறக்க வரம்பு:",
+    "lbl_buy_amazon": "அமேசானில் சலுகையைச் சரிபார்த்து ₹{price} க்கு வாங்கவும் ↗",
+    "btn_deal_whatsapp": "💬 வாட்ஸ்அப்பில் சலுகையைப் பகிரவும்",
+    "lbl_support_note": "<strong>Wavepicks-க்கு ஆதரவளியுங்கள்:</strong> எங்கள் இணைப்பு மூலம் வாங்குவது உங்களுக்கு கூடுதல் செலவின்றி எங்கள் ஆராய்ச்சி குழுவிற்கு சிறிய கட்டணத்தை வழங்குகிறது!",
+    "lbl_curve_header": "📈 90-நாள் விலை &amp; தேவை ஏற்ற இறக்கங்கள்",
+    "lbl_curve_badge": "சரிபார்க்கப்பட்ட Keepa வரைபடம்",
+    "lbl_click_enlarge": "🔍 <em>பெரிதாக்க வரைபடத்தைக் கிளிக் செய்யவும் • பாக்ஸ் MRP சட்டப்பூர்வ வரம்பு</em>",
+    "lbl_how_to_read": "💡 இந்த 90 நாள் விலை வரைபடத்தை எவ்வாறு படிப்பது:",
+    "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 விலை வரைபடம்:</strong> தினசரி உண்மையான விற்பனை விலையைக் காட்டுகிறது. அதிக தள்ளுபடியில் வாங்க ஆழமான பள்ளத்தாக்குகளைப் பாருங்கள்.",
+    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 அச்சிடப்பட்ட பாக்ஸ் MRP (₹{mrp}):</strong> இந்திய சட்ட அளவியல் விதிகளின்படி சான்றளிக்கப்பட்ட விலை. உண்மையான தள்ளுபடிகள் இந்த உச்சவரம்பிலிருந்து அளவிடப்படுகின்றன.",
+    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 அன்றாட விலையுடன் ஒப்பிடுங்கள்:</strong> சாதாரண நாட்களில் இந்த தயாரிப்பு உண்மையில் என்ன விலைக்கு விற்கப்படுகிறது என்பதைச் சரிபார்க்கவும். இன்றைய 'பண்டிகை சலுகை' கடந்த மாத விலையாகவே இருந்தால், அது உண்மையான தள்ளுபடி அல்ல!"
+  },
+  "bn": {
+    "header_subpill": "ডিল ও মূল্য ওঠানামা নিরীক্ষক",
+    "btn_bookmark_tool": "⭐ টুল বুকমার্ক করুন",
+    "select_language_title": "ভাষা নির্বাচন করুন",
+    "mission_badge_1": "🛡️ নিরপেক্ষ কেনাকাটা-পূর্ব গ্রাহক তথ্য",
+    "mission_badge_2": "শুধুমাত্র প্রমাণিত তথ্য",
+    "mission_title": "নকল ডিসকাউন্ট ও ই-কমার্স বিক্রির ফাঁদ এড়িয়ে চলুন",
+    "mission_desc": "উৎসবের সেলের ঠিক আগে কৃত্রিমভাবে দাম বাড়ানো এবং বাড়ানো MRP স্টিকারের মতো অনলাইন বিক্রির প্রতারণা থেকে সাধারণ ক্রেতাদের রক্ষা করতে আমরা <strong>WAVEPICKS</strong> তৈরি করেছি। আপনার কষ্টের টাকা খরচ করার আগে, নিচে যেকোনো অ্যামাজন লিঙ্ক পেস্ট করুন এবং ১০০% স্বচ্ছ অডিট পান: ভারতীয় লিগ্যাল মেট্রোলজি বিধি অনুযায়ী প্যাকেজিংয়ে মুদ্রিত আসল বক্স MRP, সঠিক ছাড়ের শতকরা হার এবং ৯০ দিনের আসল দামের হিস্ট্রি গ্রাফ।",
+    "pillar_1_title": "বাড়ানো MRP প্রকাশ করুন",
+    "pillar_1_desc": "আমরা প্রস্তুতকারকের আসল প্যাকেজিং যাচাই করে সর্বোচ্চ খুচরা মূল্য শনাক্ত করি, বিক্রেতার বাড়ানো মার্কআপ নয়।",
+    "pillar_2_title": "৯০ দিনের দামের পতন পরীক্ষা করুন",
+    "pillar_2_desc": "নিয়মিত উইকএন্ড সেলে এই পণ্যের দাম আরও কমে কি না তা জানতে ইন্টারেক্টিভ কিপা প্রাইস হিস্ট্রি দেখুন।",
+    "pillar_3_title": "সঠিক ক্রয়ের রায়",
+    "pillar_3_desc": "টাকা খরচ করার আগে স্পষ্ট পরামর্শ পান: <strong>সর্বকালের সর্বনিম্ন দাম</strong>, <strong>ভালো সাধারণ ডিল</strong>, নাকি <strong>সেলের জন্য অপেক্ষা করবেন</strong>।",
+    "auditor_title": "🔍 লাইভ ডিল ও মূল্য ওঠানামা নিরীক্ষক",
+    "auditor_badge": "১০০% বিনামূল্যে এবং তাৎক্ষণিক",
+    "auditor_desc": "যেকোনো অ্যামাজন ইন্ডিয়া লিঙ্ক, শর্টলিঙ্ক (amzn.in/d/...) বা ১০ অক্ষরের ASIN পেস্ট করুন। আমাদের ক্লাউড অডিটর কয়েক সেকেন্ডেই প্যাকেজিংয়ের সাথে দাম মিলিয়ে দেখে।",
+    "auditor_placeholder": "অ্যামাজন লিঙ্ক বা ASIN পেস্ট করুন (যেমন: B0BDVG99J5)...",
+    "btn_audit": "ডিল যাচাই করুন ⚡",
+    "sample_label": "💡 পরীক্ষিত যাচাইকৃত ডিলগুলো দেখুন:",
+    "share_badge": "📢 আপনার পরিবার ও বন্ধুদের সতর্ক করুন",
+    "share_title": "বন্ধুদের বেশি টাকা দেওয়া এবং নকল ডিসকাউন্ট থেকে বাঁচান",
+    "share_desc": "উৎসবের সেলে কেনাকাটা করছেন? আপনার ফোনে <strong>WAVEPICKS</strong> বুকমার্ক করে রাখুন এবং হোয়াটসঅ্যাপ, টুইটার, ইনস্টাগ্রাম ও ফেসবুকে বন্ধুদের সাথে শেয়ার করুন যাতে কেউ নকল ছাড়ের ফাঁদে না পড়ে!",
+    "btn_share_bookmark": "টুল বুকমার্ক করুন",
+    "btn_share_whatsapp": "হোয়াটসঅ্যাপে শেয়ার করুন",
+    "btn_share_twitter": "টুইটারে (X) পোস্ট করুন",
+    "btn_share_facebook": "ফেসবুকে শেয়ার করুন",
+    "btn_share_instagram": "ইনস্টাগ্রামে শেয়ার / লিঙ্ক কপি",
+    "btn_share_native": "অ্যাপের মাধ্যমে শেয়ার করুন",
+    "modal_title": "যাচাইকৃত ৯০ দিনের মূল্যের ইতিহাস",
+    "modal_guide_title": "📊 ৯০ দিনের মূল্যের ওঠানামা কীভাবে পড়বেন:",
+    "modal_valley_tip": "💡 <em>সর্বোচ্চ সাশ্রয়ের জন্য গ্রাফের গভীরতম খাদগুলো (দামের পতন) লক্ষ্য করুন।</em>",
+    "modal_open_keepa": "Keepa-তে ইন্টারেক্টিভ চার্ট খুলুন ↗",
+    "footer_disclosure": "<strong>অ্যামাজন অ্যাসোসিয়েট ঘোষণা:</strong> একজন অ্যামাজন অ্যাসোসিয়েট হিসেবে, এই পেজের লিঙ্কের মাধ্যমে যোগ্য কেনাকাটা থেকে Wavepicks কমিশন পেতে পারে। পণ্যের দাম এবং প্রাপ্যতা প্রতিদিন স্বয়ংক্রিয় অডিটের মাধ্যমে যাচাই করা হয় এবং পরিবর্তিত হতে পারে।",
+    "lbl_deal_price": "বর্তমান ডিলের দাম",
+    "lbl_box_mrp": "মুদ্রিত বক্স MRP",
+    "lbl_save_mrp": "MRP-তে ₹{amt} সাশ্রয়",
+    "lbl_examine_graph": "ডানদিকের ৯০ দিনের দামের গ্রাফটি দেখুন ➔",
+    "lbl_examine_desc": "ভারতে খুচরা মূল্য কখনোই বক্স MRP (₹{mrp})-র বেশি হতে পারে না। আজকের ₹{price} ডিলটি আসল কিনা তা যাচাই করতে <strong>৯০ দিনের গ্রাফটি দেখুন</strong>।",
+    "lbl_spread": "ঐতিহাসিক মূল্য ওঠানামার বিস্তার:",
+    "lbl_buy_amazon": "অ্যামাজনে ডিল দেখে ₹{price} এ কিনুন ↗",
+    "btn_deal_whatsapp": "💬 হোয়াটসঅ্যাপে ডিল শেয়ার করুন",
+    "lbl_support_note": "<strong>Wavepicks-কে সমর্থন করুন:</strong> আমাদের লিঙ্কের মাধ্যমে কিনলে আমাদের রিসার্চ টিম কোনো বাড়তি খরচ ছাড়াই একটি ছোট রেফারেল ফি পায়!",
+    "lbl_curve_header": "📈 ৯০ দিনের মূল্য ও চাহিদার ওঠানামা",
+    "lbl_curve_badge": "যাচাইকৃত Keepa গ্রাফ",
+    "lbl_click_enlarge": "🔍 <em>বড় করতে চার্টে ক্লিক করুন • বক্স MRP আইনত সর্বোচ্চ সীমা</em>",
+    "lbl_how_to_read": "💡 এই ৯০ দিনের দামের গ্রাফ কীভাবে বুঝবেন:",
+    "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 প্রাইস কার্ভ:</strong> দিনভিত্তিক আসল বিক্রয় মূল্য ট্র্যাক করে। সবচেয়ে কম দামে কেনার জন্য গ্রাফের গভীরতম খাদগুলো লক্ষ্য করুন।",
+    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 মুদ্রিত বক্স MRP (₹{mrp}):</strong> ভারতীয় লিগ্যাল মেট্রোলজি আইনের আওতায় প্রত্যয়িত প্যাকেজিং মূল্য। আসল ছাড় এই বাস্তব সীমা থেকেই পরিমাপ করা হয়।",
+    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 সাধারণ দিনের দামের সাথে তুলনা করুন:</strong> সাধারণ দিনে এই পণ্যটি আসলে কত দামে বিক্রি হয় তা যাচাই করুন। যদি আজকের 'ফেস্টিভ্যাল ডিল' গত মাসের দামের মতোই হয়, তবে এটি কোনো আসল বিশেষ ছাড় নয়!"
+  }
+};
+
+const LANGS = {
+  en: { name: 'English', flag: '🇬🇧' },
+  hi: { name: 'हिन्दी', flag: '🇮🇳' },
+  te: { name: 'తెలుగు', flag: '🇮🇳' },
+  kn: { name: 'ಕನ್ನಡ', flag: '🇮🇳' },
+  ta: { name: 'தமிழ்', flag: '🇮🇳' },
+  bn: { name: 'বাংলা', flag: '🇮🇳' }
+};
+
+let currentLang = 'en';
+
+function toggleLangDropdown(e) {
+  if (e) e.stopPropagation();
+  const menu = document.getElementById('lang-menu');
+  const tmenu = document.getElementById('theme-menu');
+  if (tmenu) tmenu.classList.remove('show');
+  if (menu) menu.classList.toggle('show');
+}
+
+function setLanguage(langKey) {
+  if (!TRANSLATIONS[langKey]) langKey = 'en';
+  currentLang = langKey;
+  document.documentElement.lang = langKey;
+  try {
+    localStorage.setItem('wavepicks_lang', langKey);
+  } catch(e) {}
+
+  const label = document.getElementById('current-lang-label');
+  if (label) label.textContent = LANGS[langKey].name;
+
+  Object.keys(LANGS).forEach(k => {
+    const checkEl = document.getElementById('check-lang-' + k);
+    const optEl = document.getElementById('lang-opt-' + k);
+    if (checkEl) checkEl.textContent = (k === langKey) ? '✓' : '';
+    if (optEl) {
+      if (k === langKey) optEl.classList.add('active');
+      else optEl.classList.remove('active');
+    }
+  });
+
+  const dict = TRANSLATIONS[langKey];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key]) {
+      el.innerHTML = dict[key];
+    }
+  });
+
+  const auditInput = document.getElementById('audit-input');
+  if (auditInput && dict.auditor_placeholder) {
+    auditInput.placeholder = dict.auditor_placeholder;
+  }
+
+  const menu = document.getElementById('lang-menu');
+  if (menu) menu.classList.remove('show');
+
+  if (lastAuditedItem) {
+    updateDynamicAuditLabels(lastAuditedItem, langKey);
+  }
+
+  showToast(`🌐 Language: ${LANGS[langKey].name}`);
+}
+
+function updateDynamicAuditLabels(d, lang) {
+  const dict = TRANSLATIONS[lang] || TRANSLATIONS.en;
+  const dl = document.getElementById('dyn-lbl-deal-price');
+  if (dl) dl.textContent = dict.lbl_deal_price;
+  const ml = document.getElementById('dyn-lbl-box-mrp');
+  if (ml) ml.textContent = dict.lbl_box_mrp;
+  const sl = document.getElementById('dyn-lbl-save-mrp');
+  if (sl) sl.textContent = dict.lbl_save_mrp.replace('{amt}', d.savings_mrp_inr.toLocaleString('en-IN'));
+  const eg = document.getElementById('dyn-lbl-examine-graph');
+  if (eg) eg.textContent = dict.lbl_examine_graph;
+  const ed = document.getElementById('dyn-lbl-examine-desc');
+  if (ed) ed.innerHTML = dict.lbl_examine_desc.replace('{mrp}', d.mrp.toLocaleString('en-IN')).replace('{price}', d.current_price.toLocaleString('en-IN'));
+  const sp = document.getElementById('dyn-lbl-spread');
+  if (sp) sp.textContent = dict.lbl_spread;
+  const ba = document.getElementById('dyn-btn-buy');
+  if (ba) ba.textContent = dict.lbl_buy_amazon.replace('{price}', d.current_price);
+  const bw = document.getElementById('dyn-btn-whatsapp');
+  if (bw) bw.textContent = dict.btn_deal_whatsapp;
+  const sn = document.getElementById('dyn-support-note');
+  if (sn) sn.innerHTML = dict.lbl_support_note;
+  const ch = document.getElementById('dyn-curve-header');
+  if (ch) ch.textContent = dict.lbl_curve_header;
+  const cb = document.getElementById('dyn-curve-badge');
+  if (cb) cb.textContent = dict.lbl_curve_badge;
+  const ce = document.getElementById('dyn-click-enlarge');
+  if (ce) ce.innerHTML = dict.lbl_click_enlarge;
+  const hr = document.getElementById('dyn-how-to-read');
+  if (hr) hr.textContent = dict.lbl_how_to_read;
+  const cp1 = document.getElementById('dyn-curve-point1');
+  if (cp1) cp1.innerHTML = dict.lbl_curve_point1;
+  const cp2 = document.getElementById('dyn-curve-point2');
+  if (cp2) cp2.innerHTML = dict.lbl_curve_point2.replace('{mrp}', d.mrp.toLocaleString('en-IN'));
+  const cp3 = document.getElementById('dyn-curve-point3');
+  if (cp3) cp3.innerHTML = dict.lbl_curve_point3;
+}
+
 // Multi-Theme Background Selector
 const THEMES = {
   midnight: { name: 'Obsidian Black', color: '#10b981' },
@@ -936,6 +1414,8 @@ const THEMES = {
 function toggleThemeDropdown(e) {
   if (e) e.stopPropagation();
   const menu = document.getElementById('theme-menu');
+  const lmenu = document.getElementById('lang-menu');
+  if (lmenu) lmenu.classList.remove('show');
   if (menu) menu.classList.toggle('show');
 }
 
@@ -971,7 +1451,13 @@ window.addEventListener('click', (e) => {
     const menu = document.getElementById('theme-menu');
     if (menu) menu.classList.remove('show');
   }
+  const lwrap = document.querySelector('.lang-selector-wrap');
+  if (lwrap && !lwrap.contains(e.target)) {
+    const lmenu = document.getElementById('lang-menu');
+    if (lmenu) lmenu.classList.remove('show');
+  }
 });
+
 
 // Share & Bookmark Helpers
 function showToast(msg) {
@@ -1046,6 +1532,8 @@ function handleNativeShare() {
 document.addEventListener('DOMContentLoaded', () => {
   const curTheme = localStorage.getItem('wavepicks_theme') || 'midnight';
   setTheme(curTheme);
+  const curLang = localStorage.getItem('wavepicks_lang') || 'en';
+  setLanguage(curLang);
   if (navigator.share) {
     const btn = document.getElementById('btn-native-share');
     if (btn) btn.style.display = 'inline-flex';
