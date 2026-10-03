@@ -1046,13 +1046,7 @@ const TRANSLATIONS = {
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 Printed Box MRP (₹{mrp}):</strong> The certified packaging price under Indian Legal Metrology Rules. Genuine discounts are measured from this real ceiling, not seller markups.",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 Compare with Everyday Price:</strong> Check what this product actually sells for on normal days. If today's \"festival deal\" is the same price it sold for last month, it is not a real special discount!",
     "community_share_text": "Find the best genuine Amazon deals! Check verified packaging box MRP and 90-day price history before buying on Amazon: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ Smart Amazon Deal Check on WAVEPICKS:
-{title}
-
-💰 Deal Price: ₹{price} (Box MRP ₹{mrp}, {pct}% Off)
-✅ Recommendation: {verdict}
-
-Check 90-day price trends before buying: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🛍️ Smart Amazon Deal Check on WAVEPICKS:\n{title}\n\n💰 Deal Price: ₹{price} (Box MRP ₹{mrp}, {pct}% Off)\n✅ Recommendation: {verdict}\n\nCheck 90-day price trends before buying: https://alerts.zero483.com/deals.html",
     "toast_copied_btn": "✓ Link Copied!",
     "toast_link_copied": "📋 Link copied! Paste into WhatsApp, Instagram Bio, or DM to friends.",
     "toast_bookmark_pc": "⭐ Press Ctrl + D to bookmark WAVEPICKS for instant deal audits!",
@@ -1110,13 +1104,7 @@ Check 90-day price trends before buying: https://alerts.zero483.com/deals.html",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 प्रिंटेड बॉक्स MRP (₹{mrp}):</strong> भारतीय विधिक मापविज्ञान नियमों के तहत प्रमाणित पैकेजिंग मूल्य। वास्तविक छूट इसी अधिकतम मूल्य से मापी जाती है।",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 सामान्य दिनों के मूल्य से तुलना करें:</strong> जांचें कि यह उत्पाद सामान्य दिनों में वास्तव में कितने में बिकता है। यदि आज की 'फेस्टिवल डील' पिछले महीने के दाम के समान ही है, तो यह कोई विशेष छूट नहीं है!",
     "community_share_text": "अमेज़न पर बेहतरीन और वास्तविक डील्स खोजें! असली बॉक्स MRP और 90 दिनों का प्राइस हिस्ट्री ग्राफ देखकर स्मार्ट खरीदारी करें: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ WAVEPICKS पर अमेज़न स्मार्ट डील चेक:
-{title}
-
-💰 डील मूल्य: ₹{price} (बॉक्स MRP ₹{mrp}, {pct}% छूट)
-✅ सिफारिश: {verdict}
-
-खरीदने से पहले 90 दिनों का मूल्य रुझान देखें: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🛍️ WAVEPICKS पर अमेज़न स्मार्ट डील चेक:\n{title}\n\n💰 डील मूल्य: ₹{price} (बॉक्स MRP ₹{mrp}, {pct}% छूट)\n✅ सिफारिश: {verdict}\n\nखरीदने से पहले 90 दिनों का मूल्य रुझान देखें: https://alerts.zero483.com/deals.html",
     "toast_copied_btn": "✓ लिंक कॉपी हो गया!",
     "toast_link_copied": "📋 लिंक कॉपी हो गया! इसे व्हाट्सएप, इंस्टाग्राम या दोस्तों को भेजें।",
     "toast_bookmark_pc": "⭐ त्वरित डील जांच के लिए WAVEPICKS को बुकमार्क करने हेतु Ctrl + D दबाएं!",
@@ -1174,13 +1162,7 @@ Check 90-day price trends before buying: https://alerts.zero483.com/deals.html",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 ప్రింటెడ్ బాక్స్ MRP (₹{mrp}):</strong> భారతీయ లీగల్ మెట్రాలజీ నిబంధనల ప్రకారం ప్యాకేజింగ్ ధర. నిజమైన తగ్గింపులు దీని ఆధారంగానే లెక్కించబడతాయి.",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 సాధారణ రోజుల ధరతో సరిపోల్చండి:</strong> ఈ ఉత్పత్తి సాధారణ రోజులలో ఎంత ధరకు అమ్ముడవుతుందో తనిఖీ చేయండి. నేటి 'పండుగ డీల్' గత నెల ధరకు సమానంగా ఉంటే, అది నిజమైన ప్రత్యేక తగ్గింపు కాదు!",
     "community_share_text": "అమెజాన్‌లో నిజమైన డీల్స్ మరియు గరిష్ట పొదుపులను పొందండి! అసలైన బాక్స్ MRP మరియు 90 రోజుల ధరల గ్రాఫ్ చూసి స్మార్ట్‌గా షాపింగ్ చేయండి: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ WAVEPICKS లో అమెజాన్ స్మార్ట్ డీల్ చెక్:
-{title}
-
-💰 డీల్ ధర: ₹{price} (బాక్స్ MRP ₹{mrp}, {pct}% తగ్గింపు)
-✅ సిఫార్సు: {verdict}
-
-కొనేముందు 90 రోజుల ధరల ట్రెండ్ చూడండి: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🛍️ WAVEPICKS లో అమెజాన్ స్మార్ట్ డీల్ చెక్:\n{title}\n\n💰 డీల్ ధర: ₹{price} (బాక్స్ MRP ₹{mrp}, {pct}% తగ్గింపు)\n✅ సిఫార్సు: {verdict}\n\nకొనేముందు 90 రోజుల ధరల ట్రెండ్ చూడండి: https://alerts.zero483.com/deals.html",
     "toast_copied_btn": "✓ లింక్ కాపీ చేయబడింది!",
     "toast_link_copied": "📋 లింక్ కాపీ చేయబడింది! వాట్సాప్, ఇన్‌స్టాగ్రామ్ లేదా స్నేహితులకు పంపండి.",
     "toast_bookmark_pc": "⭐ తక్షణ డీల్ ఆడిట్ కోసం WAVEPICKS ను బుక్‌మార్క్ చేయడానికి Ctrl + D నొక్కండి!",
@@ -1238,13 +1220,7 @@ Check 90-day price trends before buying: https://alerts.zero483.com/deals.html",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 ಮುದ್ರಿತ ಬಾಕ್ಸ್ MRP (₹{mrp}):</strong> ಭಾರತೀಯ ಲೀಗಲ್ ಮೆಟ್ರಾಲಜಿ ನಿಯಮಗಳ ಅಡಿಯಲ್ಲಿ ಪ್ರಮಾಣೀಕೃತ ಪ್ಯಾಕಿಂಗ್ ಬೆಲೆ. ನಿಜವಾದ ರಿಯಾಯಿತಿಗಳು ಈ ಮಿತಿಯಿಂದ ಅಳೆಯಲ್ಪಡುತ್ತವೆ.",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 ದೈನಂದಿನ ಬೆಲೆಯೊಂದಿಗೆ ಹೋಲಿಸಿ:</strong> ಸಾಮಾನ್ಯ ದಿನಗಳಲ್ಲಿ ಈ ಉತ್ಪನ್ನ ಎಷ್ಟು ಬೆಲೆಗೆ ಮಾರಾಟವಾಗುತ್ತದೆ ಎಂಬುದನ್ನು ಪರಿಶೀಲಿಸಿ. ಇಂದಿನ 'ಹಬ್ಬದ ಡೀಲ್' ಕಳೆದ ತಿಂಗಳ ಬೆಲೆಯಷ್ಟೇ ಇದ್ದರೆ, ಅದು ನಿಜವಾದ ವಿಶೇಷ ರಿಯಾಯಿತಿಯಲ್ಲ!",
     "community_share_text": "ಅಮೆಜಾನ್‌ನಲ್ಲಿ ಅತ್ಯುತ್ತಮ ಮತ್ತು ನಿಜವಾದ ಡೀಲ್‌ಗಳನ್ನು ಕಂಡುಕೊಳ್ಳಿ! ಅಧಿಕೃತ ಬಾಕ್ಸ್ MRP ಮತ್ತು 90 ದಿನಗಳ ಬೆಲೆ ಇತಿಹಾಸ ನೋಡಿ ಸ್ಮಾರ್ಟ್ ಶಾಪಿಂಗ್ ಮಾಡಿ: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ WAVEPICKS ನಲ್ಲಿ ಅಮೆಜಾನ್ ಸ್ಮಾರ್ಟ್ ಡೀಲ್ ಪರಿಶೀಲನೆ:
-{title}
-
-💰 ಡೀಲ್ ಬೆಲೆ: ₹{price} (ಬಾಕ್ಸ್ MRP ₹{mrp}, {pct}% ರಿಯಾಯಿತಿ)
-✅ ಶಿಫಾರಸು: {verdict}
-
-ಖರೀದಿಸುವ ಮುನ್ನ 90 ದಿನಗಳ ಬೆಲೆ ಟ್ರೆಂಡ್ ನೋಡಿ: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🛍️ WAVEPICKS ನಲ್ಲಿ ಅಮೆಜಾನ್ ಸ್ಮಾರ್ಟ್ ಡೀಲ್ ಪರಿಶೀಲನೆ:\n{title}\n\n💰 ಡೀಲ್ ಬೆಲೆ: ₹{price} (ಬಾಕ್ಸ್ MRP ₹{mrp}, {pct}% ರಿಯಾಯಿತಿ)\n✅ ಶಿಫಾರಸು: {verdict}\n\nಖರೀದಿಸುವ ಮುನ್ನ 90 ದಿನಗಳ ಬೆಲೆ ಟ್ರೆಂಡ್ ನೋಡಿ: https://alerts.zero483.com/deals.html",
     "toast_copied_btn": "✓ ಲಿಂಕ್ ಕಾಪಿ ಮಾಡಲಾಗಿದೆ!",
     "toast_link_copied": "📋 ಲಿಂಕ್ ಕಾಪಿ ಮಾಡಲಾಗಿದೆ! ವಾಟ್ಸಾಪ್, ಇನ್‌ಸ್ಟಾಗ್ರಾಮ್ ಅಥವಾ ಸ್ನೇಹಿತರಿಗೆ ಕಳುಹಿಸಿ.",
     "toast_bookmark_pc": "⭐ ತಕ್ಷಣದ ಡೀಲ್ ಪರಿಶೀಲನೆಗಾಗಿ WAVEPICKS ಅನ್ನು ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಲು Ctrl + D ಒತ್ತಿರಿ!",
@@ -1302,13 +1278,7 @@ Check 90-day price trends before buying: https://alerts.zero483.com/deals.html",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 அச்சிடப்பட்ட பாக்ஸ் MRP (₹{mrp}):</strong> இந்திய சட்ட அளவியல் விதிகளின்படி சான்றளிக்கப்பட்ட விலை. உண்மையான தள்ளுபடிகள் இந்த உச்சவரம்பிலிருந்து அளவிடப்படுகின்றன.",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 அன்றாட விலையுடன் ஒப்பிடுங்கள்:</strong> சாதாரண நாட்களில் இந்த தயாரிப்பு உண்மையில் என்ன விலைக்கு விற்கப்படுகிறது என்பதைச் சரிபார்க்கவும். இன்றைய 'பண்டிகை சலுகை' கடந்த மாத விலையாகவே இருந்தால், அது உண்மையான தள்ளுபடி அல்ல!",
     "community_share_text": "அமேசானில் சிறந்த மற்றும் உண்மையான டீல்களைக் கண்டறியுங்கள்! உண்மையான பாக்ஸ் MRP மற்றும் 90 நாள் விலை வரைபடத்தை சரிபார்த்து புத்திசாலித்தனமாக ஷாப்பிங் செய்யுங்கள்: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ WAVEPICKS இல் அமேசான் ஸ்மார்ட் டீல் சரிபார்ப்பு:
-{title}
-
-💰 டீல் விலை: ₹{price} (பாக்ஸ் MRP ₹{mrp}, {pct}% தள்ளுபடி)
-✅ பரிந்துரை: {verdict}
-
-வாங்குவதற்கு முன் 90 நாள் விலை போக்கைப் பார்க்கவும்: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🛍️ WAVEPICKS இல் அமேசான் ஸ்மார்ட் டீல் சரிபார்ப்பு:\n{title}\n\n💰 டீல் விலை: ₹{price} (பாக்ஸ் MRP ₹{mrp}, {pct}% தள்ளுபடி)\n✅ பரிந்துரை: {verdict}\n\nவாங்குவதற்கு முன் 90 நாள் விலை போக்கைப் பார்க்கவும்: https://alerts.zero483.com/deals.html",
     "toast_copied_btn": "✓ இணைப்பு நகலெடுக்கப்பட்டது!",
     "toast_link_copied": "📋 இணைப்பு நகலெடுக்கப்பட்டது! வாட்ஸ்அப், இன்ஸ்டாகிராம் அல்லது நண்பர்களுக்கு அனுப்பவும்.",
     "toast_bookmark_pc": "⭐ உடனடி சலுகை தணிக்கைக்கு WAVEPICKS ஐ புக்மார்க் செய்ய Ctrl + D அழுத்தவும்!",
@@ -1366,13 +1336,7 @@ Check 90-day price trends before buying: https://alerts.zero483.com/deals.html",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 মুদ্রিত বক্স MRP (₹{mrp}):</strong> ভারতীয় লিগ্যাল মেট্রোলজি আইনের আওতায় প্রত্যয়িত প্যাকেজিং মূল্য। আসল ছাড় এই বাস্তব সীমা থেকেই পরিমাপ করা হয়।",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 সাধারণ দিনের দামের সাথে তুলনা করুন:</strong> সাধারণ দিনে এই পণ্যটি আসলে কত দামে বিক্রি হয় তা যাচাই করুন। যদি আজকের 'ফেস্টিভ্যাল ডিল' গত মাসের দামের মতোই হয়, তবে এটি কোনো আসল বিশেষ ছাড় নয়!",
     "community_share_text": "অ্যামাজনে সেরা ও প্রকৃত ডিলগুলি খুঁজুন! আসল মুদ্রিত বাক্স MRP এবং ৯০ দিনের দামের গ্রাফ দেখে স্মার্ট কেনাকাটা করুন: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ WAVEPICKS-এ অ্যামাজন স্মার্ট ডিল চেক:
-{title}
-
-💰 ডিল মূল্য: ₹{price} (বাক্স MRP ₹{mrp}, {pct}% ছাড়)
-✅ সুপারিশ: {verdict}
-
-কেনার আগে ৯০ দিনের দামের ট্রেন্ড দেখুন: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🛍️ WAVEPICKS-এ অ্যামাজন স্মার্ট ডিল চেক:\n{title}\n\n💰 ডিল মূল্য: ₹{price} (বাক্স MRP ₹{mrp}, {pct}% ছাড়)\n✅ সুপারিশ: {verdict}\n\nকেনার আগে ৯০ দিনের দামের ট্রেন্ড দেখুন: https://alerts.zero483.com/deals.html",
     "toast_copied_btn": "✓ লিঙ্ক কপি হয়েছে!",
     "toast_link_copied": "📋 লিঙ্ক কপি হয়েছে! এটি হোয়াটসঅ্যাপ, ইনস্টাগ্রাম বা বন্ধুদের পাঠান।",
     "toast_bookmark_pc": "⭐ তাত্ক্ষণিক ডিল অডিটের জন্য WAVEPICKS বুকমার্ক করতে Ctrl + D চাপুন!",
