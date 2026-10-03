@@ -226,6 +226,7 @@ def creator_studio():
 
 
 @app.route("/deals")
+@app.route("/deals.html")
 @app.route("/buyer")
 def buyer_deals():
     return render_template_string(BUYER_HTML)
@@ -603,6 +604,53 @@ def api_report_latest():
         from pdf_report_generator import generate_validation_pdf
         pdf_path = generate_validation_pdf(get_validation_summary(), get_all_tracked())
     return send_file(pdf_path, mimetype="application/pdf", as_attachment=False)
+
+
+@app.route("/api/report/download")
+def api_report_download():
+    cat = request.args.get("category", "All Categories").strip()
+    all_tracked = get_all_tracked()
+    from pdf_report_generator import generate_validation_pdf
+    pdf_path = generate_validation_pdf(get_validation_summary(), all_tracked, category_filter=cat)
+    return send_file(pdf_path, mimetype="application/pdf", as_attachment=True, download_name=pdf_path.name)
+
+
+@app.route("/api/creator/track-asin", methods=["POST"])
+def api_creator_track_asin():
+    data = request.get_json(force=True, silent=True) or {}
+    url_or_asin = data.get("url_or_asin", "").strip()
+    category = data.get("category", "Home & Kitchen").strip()
+    rationale = data.get("rationale", "").strip()
+    if not url_or_asin:
+        return jsonify({"error": "ASIN or Amazon URL is required"}), 400
+
+    m = re.search(r"/(?:dp|gp/product|d)/([A-Z0-9]{10})", url_or_asin) or re.search(r"\b([B0-9][A-Z0-9]{9})\b", url_or_asin)
+    asin = m.group(1) if m else url_or_asin[:10]
+
+    from product_research_tool import AmazonIndiaScraper, Product, _recalc
+    scraper = AmazonIndiaScraper()
+    p = Product(asin=asin, amazon_url=f"https://www.amazon.in/dp/{asin}", category=category)
+    try:
+        scraper.enrich_product(p)
+        _recalc(p)
+    except Exception as e:
+        log.warning(f"Error enriching {asin}: {e}")
+
+    track_payload = {
+        "asin": asin,
+        "title": p.title or f"Amazon Product {asin}",
+        "category": category,
+        "amazon_url": f"https://www.amazon.in/dp/{asin}",
+        "rank": p.bsr or p.rank or 100,
+        "price": p.price or 0.0,
+        "review_count": p.review_count or 0,
+        "wave_score": p.wave_score or 50,
+        "wave_stage": "🌊 Day 0 Baseline",
+        "rationale": rationale or f"Day 0 empirical baseline for {category}. Tracking 14-day velocity and fluke detection.",
+        "max_observed_price": p.mrp or p.price or 0.0
+    }
+    add_tracked_product(track_payload)
+    return jsonify({"ok": True, "asin": asin, "product": track_payload})
 
 
 
