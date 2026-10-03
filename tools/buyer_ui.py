@@ -711,19 +711,19 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
       </button>
 
       <!-- WhatsApp 1-Tap Share -->
-      <a href="https://api.whatsapp.com/send?text=Stop%20falling%20for%20fake%20discounts!%20Check%20real%20printed%20box%20MRP%20and%2090-day%20price%20history%20before%20buying%20on%20Amazon:%20https://alerts.zero483.com/deals.html" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-whatsapp">
+      <a href="https://api.whatsapp.com/send?text=Stop%20falling%20for%20fake%20discounts!%20Check%20real%20printed%20box%20MRP%20and%2090-day%20price%20history%20before%20buying%20on%20Amazon:%20https://alerts.zero483.com/deals.html" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-whatsapp" id="share-whatsapp-link">
         <span>💬</span>
         <span data-i18n="btn_share_whatsapp">Share on WhatsApp</span>
       </a>
 
       <!-- Twitter / X -->
-      <a href="https://twitter.com/intent/tweet?text=Stop%20falling%20for%20fake%20discounts%20and%20inflated%20MRPs.%20Check%2090-day%20price%20history%20and%20true%20box%20MRP%20before%20buying%20on%20Amazon:%20https://alerts.zero483.com/deals.html&hashtags=AmazonDeals,SmartShopping,ConsumerAwareness" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-twitter">
+      <a href="https://twitter.com/intent/tweet?text=Stop%20falling%20for%20fake%20discounts%20and%20inflated%20MRPs.%20Check%2090-day%20price%20history%20and%20true%20box%20MRP%20before%20buying%20on%20Amazon:%20https://alerts.zero483.com/deals.html&hashtags=AmazonDeals,SmartShopping,WAVEPICKS" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-twitter" id="share-twitter-link">
         <span>𝕏</span>
         <span data-i18n="btn_share_twitter">Post on Twitter (X)</span>
       </a>
 
       <!-- Facebook -->
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://alerts.zero483.com/deals.html" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://alerts.zero483.com/deals.html" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-facebook" id="share-facebook-link">
         <span>📘</span>
         <span data-i18n="btn_share_facebook">Share on Facebook</span>
       </a>
@@ -908,7 +908,7 @@ async function runAudit() {
               <a href="${d.affiliate_url || d.amazon_url}" target="_blank" rel="nofollow noopener sponsored" class="btn-buy" id="dyn-btn-buy">
                 ${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_buy_amazon.replace('{price}', d.current_price)}
               </a>
-              <a href="https://api.whatsapp.com/send?text=${encodeURIComponent('🔎 Verified Amazon Deal Audit on WAVEPICKS:\n' + d.title + '\n\n💰 Live Deal: ₹' + d.current_price + ' (Real Box MRP ₹' + d.mrp + ', ' + d.discount_pct + '% Off)\n⚖️ Verdict: ' + d.verdict_title + '\n\nAudit any Amazon link before buying: https://alerts.zero483.com/deals.html')}" target="_blank" rel="noopener noreferrer" class="btn-deal-whatsapp" id="dyn-btn-whatsapp" title="Share this audit on WhatsApp">
+              <a href="${getDealShareUrl(d, currentLang)}" target="_blank" rel="noopener noreferrer" class="btn-deal-whatsapp" id="dyn-btn-whatsapp" title="Share this audit on WhatsApp">
                 ${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).btn_deal_whatsapp}
               </a>
             </div>
@@ -1044,7 +1044,14 @@ const TRANSLATIONS = {
     "lbl_how_to_read": "💡 How to Read This 90-Day Price Graph:",
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 Price Curve:</strong> Tracks the actual selling price day-by-day. Look for deep valleys to buy when the item is at a real drop.",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 Printed Box MRP (₹{mrp}):</strong> The certified packaging price under Indian Legal Metrology Rules. Genuine discounts are measured from this real ceiling, not seller markups.",
-    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 Compare with Everyday Price:</strong> Check what this product actually sells for on normal days. If today's \"festival deal\" is the same price it sold for last month, it is not a real special discount!"
+    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 Compare with Everyday Price:</strong> Check what this product actually sells for on normal days. If today's \"festival deal\" is the same price it sold for last month, it is not a real special discount!",
+    "community_share_text": "Stop falling for fake discounts! Check real printed box MRP and 90-day price history before buying on Amazon: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🔎 Verified Amazon Deal Audit on WAVEPICKS:\n{title}\n\n💰 Live Deal: ₹{price} (Real Box MRP ₹{mrp}, {pct}% Off)\n⚖️ Verdict: {verdict}\n\nAudit any Amazon link before buying: https://alerts.zero483.com/deals.html",
+    "toast_copied_btn": "✓ Link Copied!",
+    "toast_link_copied": "📋 Link copied! Paste into WhatsApp, Instagram Bio, or DM to friends.",
+    "toast_bookmark_pc": "⭐ Press Ctrl + D to bookmark WAVEPICKS for instant deal audits!",
+    "toast_bookmark_mac": "⭐ Press Cmd + D to bookmark WAVEPICKS for instant deal audits!",
+    "toast_bookmark_mobile": "📱 Tap browser menu (⋮ or Share icon) → select 'Add to Home screen' or 'Bookmark'!"
   },
   "hi": {
     "header_subpill": "डील एवं मूल्य उतार-चढ़ाव परीक्षक",
@@ -1095,7 +1102,14 @@ const TRANSLATIONS = {
     "lbl_how_to_read": "💡 90 दिनों का यह मूल्य ग्राफ कैसे समझें:",
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 मूल्य रेखा:</strong> दिन-प्रतिदिन के वास्तविक बिक्री मूल्य को दर्शाती है। भारी छूट पर खरीदने के लिए सबसे निचले बिंदु (गहरी घाटी) देखें।",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 प्रिंटेड बॉक्स MRP (₹{mrp}):</strong> भारतीय विधिक मापविज्ञान नियमों के तहत प्रमाणित पैकेजिंग मूल्य। वास्तविक छूट इसी अधिकतम मूल्य से मापी जाती है।",
-    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 सामान्य दिनों के मूल्य से तुलना करें:</strong> जांचें कि यह उत्पाद सामान्य दिनों में वास्तव में कितने में बिकता है। यदि आज की 'फेस्टिवल डील' पिछले महीने के दाम के समान ही है, तो यह कोई विशेष छूट नहीं है!"
+    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 सामान्य दिनों के मूल्य से तुलना करें:</strong> जांचें कि यह उत्पाद सामान्य दिनों में वास्तव में कितने में बिकता है। यदि आज की 'फेस्टिवल डील' पिछले महीने के दाम के समान ही है, तो यह कोई विशेष छूट नहीं है!",
+    "community_share_text": "नकली छूट और भ्रामक सेल से बचें! अमेज़न पर कुछ भी खरीदने से पहले असली प्रिंटेड बॉक्स MRP और 90 दिनों का मूल्य इतिहास जांचें: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🔎 WAVEPICKS पर जांची गई अमेज़न डील:\n{title}\n\n💰 लाइव डील मूल्य: ₹{price} (असली बॉक्स MRP ₹{mrp}, {pct}% छूट)\n⚖️ निष्कर्ष: {verdict}\n\nखरीदने से पहले किसी भी अमेज़न लिंक की जांच करें: https://alerts.zero483.com/deals.html",
+    "toast_copied_btn": "✓ लिंक कॉपी हो गया!",
+    "toast_link_copied": "📋 लिंक कॉपी हो गया! इसे व्हाट्सएप, इंस्टाग्राम या दोस्तों को भेजें।",
+    "toast_bookmark_pc": "⭐ त्वरित डील जांच के लिए WAVEPICKS को बुकमार्क करने हेतु Ctrl + D दबाएं!",
+    "toast_bookmark_mac": "⭐ त्वरित डील जांच के लिए WAVEPICKS को बुकमार्क करने हेतु Cmd + D दबाएं!",
+    "toast_bookmark_mobile": "📱 ब्राउज़र मेनू (⋮ या शेयर) पर टैप करें → 'Add to Home screen' या 'Bookmark' चुनें!"
   },
   "te": {
     "header_subpill": "డీల్ మరియు ధరల మార్పుల ఆడిటర్",
@@ -1146,7 +1160,14 @@ const TRANSLATIONS = {
     "lbl_how_to_read": "💡 ఈ 90 రోజుల ధరల గ్రాఫ్‌ను ఎలా అర్థం చేసుకోవాలి:",
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 ధర రేఖ:</strong> రోజువారీ అసలు అమ్మకపు ధరను ట్రాక్ చేస్తుంది. నిజమైన తగ్గింపు ఉన్నప్పుడు కొనడానికి దిగువ లోయలను చూడండి.",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 ప్రింటెడ్ బాక్స్ MRP (₹{mrp}):</strong> భారతీయ లీగల్ మెట్రాలజీ నిబంధనల ప్రకారం ప్యాకేజింగ్ ధర. నిజమైన తగ్గింపులు దీని ఆధారంగానే లెక్కించబడతాయి.",
-    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 సాధారణ రోజుల ధరతో సరిపోల్చండి:</strong> ఈ ఉత్పత్తి సాధారణ రోజులలో ఎంత ధరకు అమ్ముడవుతుందో తనిఖీ చేయండి. నేటి 'పండుగ డీల్' గత నెల ధరకు సమానంగా ఉంటే, అది నిజమైన ప్రత్యేక తగ్గింపు కాదు!"
+    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 సాధారణ రోజుల ధరతో సరిపోల్చండి:</strong> ఈ ఉత్పత్తి సాధారణ రోజులలో ఎంత ధరకు అమ్ముడవుతుందో తనిఖీ చేయండి. నేటి 'పండుగ డీల్' గత నెల ధరకు సమానంగా ఉంటే, అది నిజమైన ప్రత్యేక తగ్గింపు కాదు!",
+    "community_share_text": "నకిలీ ఆఫర్లు మరియు కృత్రిమ తగ్గింపుల బారిన పడకండి! అమెజాన్‌లో ఏదైనా కొనుగోలు చేసే ముందు అసలు ప్రింటెడ్ బాక్స్ MRP మరియు 90 రోజుల ధరల చరిత్రను తనిఖీ చేయండి: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🔎 WAVEPICKS లో ధృవీకరించిన అమెజాన్ డీల్:\n{title}\n\n💰 లైవ్ డీల్ ధర: ₹{price} (అసలు బాక్స్ MRP ₹{mrp}, {pct}% తగ్గింపు)\n⚖️ కొనుగోలు తీర్పు: {verdict}\n\nకొనే ముందు ఏదైనా అమెజాన్ లింక్‌ను ఇక్కడ తనిఖీ చేయండి: https://alerts.zero483.com/deals.html",
+    "toast_copied_btn": "✓ లింక్ కాపీ చేయబడింది!",
+    "toast_link_copied": "📋 లింక్ కాపీ చేయబడింది! వాట్సాప్, ఇన్‌స్టాగ్రామ్ లేదా స్నేహితులకు పంపండి.",
+    "toast_bookmark_pc": "⭐ తక్షణ డీల్ ఆడిట్ కోసం WAVEPICKS ను బుక్‌మార్క్ చేయడానికి Ctrl + D నొక్కండి!",
+    "toast_bookmark_mac": "⭐ తక్షణ డీల్ ఆడిట్ కోసం WAVEPICKS ను బుక్‌మార్క్ చేయడానికి Cmd + D నొక్కండి!",
+    "toast_bookmark_mobile": "📱 బ్రౌజర్ మెనూ (⋮ లేదా షేర్) నొక్కండి → 'Add to Home screen' లేదా 'Bookmark' ఎంచుకోండి!"
   },
   "kn": {
     "header_subpill": "ಡೀಲ್ ಮತ್ತು ಬೆಲೆ ಏರಿಳಿತ ಪರೀಕ್ಷಕ",
@@ -1197,7 +1218,14 @@ const TRANSLATIONS = {
     "lbl_how_to_read": "💡 ಈ 90 ದಿನಗಳ ಬೆಲೆ ಗ್ರಾಫ್ ಅನ್ನು ಹೇಗೆ ಓದುವುದು:",
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 ಬೆಲೆ ರೇಖೆ:</strong> ದಿನನಿತ್ಯದ ನೈಜ ಮಾರಾಟ ಬೆಲೆಯನ್ನು ತೋರಿಸುತ್ತದೆ. ಹೆಚ್ಚು ರಿಯಾಯಿತಿಯಲ್ಲಿ ಖರೀದಿಸಲು ಕಡಿಮೆ ಬಿಂದುವನ್ನು ನೋಡಿ.",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 ಮುದ್ರಿತ ಬಾಕ್ಸ್ MRP (₹{mrp}):</strong> ಭಾರತೀಯ ಲೀಗಲ್ ಮೆಟ್ರಾಲಜಿ ನಿಯಮಗಳ ಅಡಿಯಲ್ಲಿ ಪ್ರಮಾಣೀಕೃತ ಪ್ಯಾಕಿಂಗ್ ಬೆಲೆ. ನಿಜವಾದ ರಿಯಾಯಿತಿಗಳು ಈ ಮಿತಿಯಿಂದ ಅಳೆಯಲ್ಪಡುತ್ತವೆ.",
-    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 ದೈನಂದಿನ ಬೆಲೆಯೊಂದಿಗೆ ಹೋಲಿಸಿ:</strong> ಸಾಮಾನ್ಯ ದಿನಗಳಲ್ಲಿ ಈ ಉತ್ಪನ್ನ ಎಷ್ಟು ಬೆಲೆಗೆ ಮಾರಾಟವಾಗುತ್ತದೆ ಎಂಬುದನ್ನು ಪರಿಶೀಲಿಸಿ. ಇಂದಿನ 'ಹಬ್ಬದ ಡೀಲ್' ಕಳೆದ ತಿಂಗಳ ಬೆಲೆಯಷ್ಟೇ ಇದ್ದರೆ, ಅದು ನಿಜವಾದ ವಿಶೇಷ ರಿಯಾಯಿತಿಯಲ್ಲ!"
+    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 ದೈನಂದಿನ ಬೆಲೆಯೊಂದಿಗೆ ಹೋಲಿಸಿ:</strong> ಸಾಮಾನ್ಯ ದಿನಗಳಲ್ಲಿ ಈ ಉತ್ಪನ್ನ ಎಷ್ಟು ಬೆಲೆಗೆ ಮಾರಾಟವಾಗುತ್ತದೆ ಎಂಬುದನ್ನು ಪರಿಶೀಲಿಸಿ. ಇಂದಿನ 'ಹಬ್ಬದ ಡೀಲ್' ಕಳೆದ ತಿಂಗಳ ಬೆಲೆಯಷ್ಟೇ ಇದ್ದರೆ, ಅದು ನಿಜವಾದ ವಿಶೇಷ ರಿಯಾಯಿತಿಯಲ್ಲ!",
+    "community_share_text": "ನಕಲಿ ರಿಯಾಯಿತಿಗಳು ಮತ್ತು ಮಾರಾಟದ ತಂತ್ರಗಳಿಗೆ ಮೋಸಹೋಗಬೇಡಿ! ಅಮೆಜಾನ್‌ನಲ್ಲಿ ಖರೀದಿಸುವ ಮೊದಲು ನೈಜ ಪ್ರಿಂಟೆಡ್ ಬಾಕ್ಸ್ MRP ಮತ್ತು 90 ದಿನಗಳ ಬೆಲೆ ಇತಿಹಾಸವನ್ನು ಪರಿಶೀಲಿಸಿ: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🔎 WAVEPICKS ನಲ್ಲಿ ಪರಿಶೀಲಿಸಿದ ಅಮೆಜಾನ್ ಡೀಲ್:\n{title}\n\n💰 ಪ್ರಸ್ತುತ ಡೀಲ್ ಬೆಲೆ: ₹{price} (ನೈಜ ಬಾಕ್ಸ್ MRP ₹{mrp}, {pct}% ರಿಯಾಯಿತಿ)\n⚖️ ಖರೀದಿ ತೀರ್ಪು: {verdict}\n\nಖರೀದಿಸುವ ಮೊದಲು ಯಾವುದೇ ಅಮೆಜಾನ್ ಲಿಂಕ್ ಪರಿಶೀಲಿಸಿ: https://alerts.zero483.com/deals.html",
+    "toast_copied_btn": "✓ ಲಿಂಕ್ ಕಾಪಿ ಮಾಡಲಾಗಿದೆ!",
+    "toast_link_copied": "📋 ಲಿಂಕ್ ಕಾಪಿ ಮಾಡಲಾಗಿದೆ! ವಾಟ್ಸಾಪ್, ಇನ್‌ಸ್ಟಾಗ್ರಾಮ್ ಅಥವಾ ಸ್ನೇಹಿತರಿಗೆ ಕಳುಹಿಸಿ.",
+    "toast_bookmark_pc": "⭐ ತಕ್ಷಣದ ಡೀಲ್ ಪರಿಶೀಲನೆಗಾಗಿ WAVEPICKS ಅನ್ನು ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಲು Ctrl + D ಒತ್ತಿರಿ!",
+    "toast_bookmark_mac": "⭐ ತಕ್ಷಣದ ಡೀಲ್ ಪರಿಶೀಲನೆಗಾಗಿ WAVEPICKS ಅನ್ನು ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಲು Cmd + D ಒತ್ತಿರಿ!",
+    "toast_bookmark_mobile": "📱 ಬ್ರೌಸರ್ ಮೆನು (⋮ ಅಥವಾ ಶೇರ್) ಒತ್ತಿರಿ → 'Add to Home screen' ಅಥವಾ 'Bookmark' ಆಯ್ಕೆಮಾಡಿ!"
   },
   "ta": {
     "header_subpill": "சலுகை &amp; விலை ஏற்ற இறக்க சரிபார்ப்பாளர்",
@@ -1248,7 +1276,14 @@ const TRANSLATIONS = {
     "lbl_how_to_read": "💡 இந்த 90 நாள் விலை வரைபடத்தை எவ்வாறு படிப்பது:",
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 விலை வரைபடம்:</strong> தினசரி உண்மையான விற்பனை விலையைக் காட்டுகிறது. அதிக தள்ளுபடியில் வாங்க ஆழமான பள்ளத்தாக்குகளைப் பாருங்கள்.",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 அச்சிடப்பட்ட பாக்ஸ் MRP (₹{mrp}):</strong> இந்திய சட்ட அளவியல் விதிகளின்படி சான்றளிக்கப்பட்ட விலை. உண்மையான தள்ளுபடிகள் இந்த உச்சவரம்பிலிருந்து அளவிடப்படுகின்றன.",
-    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 அன்றாட விலையுடன் ஒப்பிடுங்கள்:</strong> சாதாரண நாட்களில் இந்த தயாரிப்பு உண்மையில் என்ன விலைக்கு விற்கப்படுகிறது என்பதைச் சரிபார்க்கவும். இன்றைய 'பண்டிகை சலுகை' கடந்த மாத விலையாகவே இருந்தால், அது உண்மையான தள்ளுபடி அல்ல!"
+    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 அன்றாட விலையுடன் ஒப்பிடுங்கள்:</strong> சாதாரண நாட்களில் இந்த தயாரிப்பு உண்மையில் என்ன விலைக்கு விற்கப்படுகிறது என்பதைச் சரிபார்க்கவும். இன்றைய 'பண்டிகை சலுகை' கடந்த மாத விலையாகவே இருந்தால், அது உண்மையான தள்ளுபடி அல்ல!",
+    "community_share_text": "போலி தள்ளுபடிகள் மற்றும் போலியான விலைகளுக்கு ஏமாறாதீர்கள்! அமேசானில் வாங்குவதற்கு முன் அசல் அச்சிடப்பட்ட பாக்ஸ் MRP மற்றும் 90 நாள் விலை வரலாற்றைச் சரிபார்க்கவும்: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🔎 WAVEPICKS இல் சரிபார்க்கப்பட்ட அமேசான் சலுகை:\n{title}\n\n💰 நேரடி சலுகை விலை: ₹{price} (அசல் பாக்ஸ் MRP ₹{mrp}, {pct}% தள்ளுபடி)\n⚖️ முடிவு: {verdict}\n\nவாங்குவதற்கு முன் எந்த அமேசான் இணைப்பையும் இங்கே சரிபார்க்கவும்: https://alerts.zero483.com/deals.html",
+    "toast_copied_btn": "✓ இணைப்பு நகலெடுக்கப்பட்டது!",
+    "toast_link_copied": "📋 இணைப்பு நகலெடுக்கப்பட்டது! வாட்ஸ்அப், இன்ஸ்டாகிராம் அல்லது நண்பர்களுக்கு அனுப்பவும்.",
+    "toast_bookmark_pc": "⭐ உடனடி சலுகை தணிக்கைக்கு WAVEPICKS ஐ புக்மார்க் செய்ய Ctrl + D அழுத்தவும்!",
+    "toast_bookmark_mac": "⭐ உடனடி சலுகை தணிக்கைக்கு WAVEPICKS ஐ புக்மார்க் செய்ய Cmd + D அழுத்தவும்!",
+    "toast_bookmark_mobile": "📱 உலாவி மெனுவை (⋮ அல்லது பகிர்) தட்டவும் → 'Add to Home screen' அல்லது 'Bookmark' தேர்ந்தெடுக்கவும்!"
   },
   "bn": {
     "header_subpill": "ডিল ও মূল্য ওঠানামা নিরীক্ষক",
@@ -1299,7 +1334,14 @@ const TRANSLATIONS = {
     "lbl_how_to_read": "💡 এই ৯০ দিনের দামের গ্রাফ কীভাবে বুঝবেন:",
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 প্রাইস কার্ভ:</strong> দিনভিত্তিক আসল বিক্রয় মূল্য ট্র্যাক করে। সবচেয়ে কম দামে কেনার জন্য গ্রাফের গভীরতম খাদগুলো লক্ষ্য করুন।",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 মুদ্রিত বক্স MRP (₹{mrp}):</strong> ভারতীয় লিগ্যাল মেট্রোলজি আইনের আওতায় প্রত্যয়িত প্যাকেজিং মূল্য। আসল ছাড় এই বাস্তব সীমা থেকেই পরিমাপ করা হয়।",
-    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 সাধারণ দিনের দামের সাথে তুলনা করুন:</strong> সাধারণ দিনে এই পণ্যটি আসলে কত দামে বিক্রি হয় তা যাচাই করুন। যদি আজকের 'ফেস্টিভ্যাল ডিল' গত মাসের দামের মতোই হয়, তবে এটি কোনো আসল বিশেষ ছাড় নয়!"
+    "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 সাধারণ দিনের দামের সাথে তুলনা করুন:</strong> সাধারণ দিনে এই পণ্যটি আসলে কত দামে বিক্রি হয় তা যাচাই করুন। যদি আজকের 'ফেস্টিভ্যাল ডিল' গত মাসের দামের মতোই হয়, তবে এটি কোনো আসল বিশেষ ছাড় নয়!",
+    "community_share_text": "নকল ডিসকাউন্ট এবং চড়া দামের ফাঁদে পা দেবেন না! অ্যামাজনে কেনার আগে প্যাকেটের আসল বক্স MRP এবং ৯০ দিনের মূল্যের ইতিহাস যাচাই করুন: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🔎 WAVEPICKS-এ যাচাইকৃত অ্যামাজন ডিল অডিট:\n{title}\n\n💰 লাইভ ডিলের দাম: ₹{price} (আসল বক্স MRP ₹{mrp}, {pct}% ছাড়)\n⚖️ রায়: {verdict}\n\nকেনার আগে যেকোনো অ্যামাজন লিঙ্ক যাচাই করুন: https://alerts.zero483.com/deals.html",
+    "toast_copied_btn": "✓ লিঙ্ক কপি হয়েছে!",
+    "toast_link_copied": "📋 লিঙ্ক কপি হয়েছে! এটি হোয়াটসঅ্যাপ, ইনস্টাগ্রাম বা বন্ধুদের পাঠান।",
+    "toast_bookmark_pc": "⭐ তাত্ক্ষণিক ডিল অডিটের জন্য WAVEPICKS বুকমার্ক করতে Ctrl + D চাপুন!",
+    "toast_bookmark_mac": "⭐ তাত্ক্ষণিক ডিল অডিটের জন্য WAVEPICKS বুকমার্ক করতে Cmd + D চাপুন!",
+    "toast_bookmark_mobile": "📱 ব্রাউজার মেনু (⋮ বা শেয়ার) ট্যাপ করুন → 'Add to Home screen' বা 'Bookmark' নির্বাচন করুন!"
   }
 };
 
@@ -1320,6 +1362,36 @@ function toggleLangDropdown(e) {
   const tmenu = document.getElementById('theme-menu');
   if (tmenu) tmenu.classList.remove('show');
   if (menu) menu.classList.toggle('show');
+}
+
+function getDealShareText(d, lang) {
+  const dict = TRANSLATIONS[lang] || TRANSLATIONS.en;
+  return (dict.deal_share_text || TRANSLATIONS.en.deal_share_text)
+    .replace('{title}', d.title)
+    .replace('{price}', d.current_price.toLocaleString('en-IN'))
+    .replace('{mrp}', d.mrp.toLocaleString('en-IN'))
+    .replace('{pct}', d.discount_pct || d.discount_mrp_pct)
+    .replace('{verdict}', d.verdict_title || d.verdict);
+}
+
+function getDealShareUrl(d, lang) {
+  return "https://api.whatsapp.com/send?text=" + encodeURIComponent(getDealShareText(d, lang));
+}
+
+function updateCommunityShareLinks(lang) {
+  const dict = TRANSLATIONS[lang] || TRANSLATIONS.en;
+  const wa = document.getElementById('share-whatsapp-link');
+  if (wa) {
+    wa.href = "https://api.whatsapp.com/send?text=" + encodeURIComponent(dict.community_share_text);
+  }
+  const tw = document.getElementById('share-twitter-link');
+  if (tw) {
+    tw.href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(dict.community_share_text) + "&hashtags=AmazonDeals,SmartShopping,WAVEPICKS";
+  }
+  const fb = document.getElementById('share-facebook-link');
+  if (fb) {
+    fb.href = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent("https://alerts.zero483.com/deals.html");
+  }
 }
 
 function setLanguage(langKey) {
@@ -1356,6 +1428,9 @@ function setLanguage(langKey) {
     auditInput.placeholder = dict.auditor_placeholder;
   }
 
+  // Update community share URLs with translated text
+  updateCommunityShareLinks(langKey);
+
   const menu = document.getElementById('lang-menu');
   if (menu) menu.classList.remove('show');
 
@@ -1382,8 +1457,14 @@ function updateDynamicAuditLabels(d, lang) {
   if (sp) sp.textContent = dict.lbl_spread;
   const ba = document.getElementById('dyn-btn-buy');
   if (ba) ba.textContent = dict.lbl_buy_amazon.replace('{price}', d.current_price);
+  
+  // WhatsApp Share button for current deal in active language
   const bw = document.getElementById('dyn-btn-whatsapp');
-  if (bw) bw.textContent = dict.btn_deal_whatsapp;
+  if (bw) {
+    bw.textContent = dict.btn_deal_whatsapp;
+    bw.href = getDealShareUrl(d, lang);
+  }
+
   const sn = document.getElementById('dyn-support-note');
   if (sn) sn.innerHTML = dict.lbl_support_note;
   const ch = document.getElementById('dyn-curve-header');
@@ -1477,24 +1558,26 @@ function showToast(msg) {
 }
 
 function handleBookmark() {
+  const dict = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
   const isMac = navigator.userAgent.toLowerCase().includes('mac');
   const isMobile = /Android|webOS|iPhone|iPad|IEMobile|Opera Mini/i.test(navigator.userAgent);
   if (isMobile) {
-    showToast("📱 Tap browser menu (⋮ or Share icon) → select 'Add to Home screen' or 'Bookmark'!");
+    showToast(dict.toast_bookmark_mobile);
   } else {
-    showToast(`⭐ Press ${isMac ? 'Cmd + D' : 'Ctrl + D'} to bookmark WAVEPICKS for instant deal audits!`);
+    showToast(isMac ? dict.toast_bookmark_mac : dict.toast_bookmark_pc);
   }
 }
 
 function copyInstagramLink() {
+  const dict = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
   const url = "https://alerts.zero483.com/deals.html";
   const copyText = document.getElementById('copy-btn-text');
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(url).then(() => {
-      if (copyText) copyText.textContent = "✓ Link Copied!";
-      showToast("📋 Link copied! Paste into Instagram Bio, Stories, or DM to friends.");
+      if (copyText) copyText.textContent = dict.toast_copied_btn;
+      showToast(dict.toast_link_copied);
       setTimeout(() => {
-        if (copyText) copyText.textContent = "Share on Instagram / Copy";
+        if (copyText) copyText.textContent = dict.btn_share_instagram;
       }, 3000);
     }).catch(() => fallbackCopy(url, copyText));
   } else {
@@ -1503,24 +1586,26 @@ function copyInstagramLink() {
 }
 
 function fallbackCopy(url, copyText) {
+  const dict = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
   const input = document.createElement('input');
   input.value = url;
   document.body.appendChild(input);
   input.select();
   document.execCommand('copy');
   document.body.removeChild(input);
-  if (copyText) copyText.textContent = "✓ Link Copied!";
-  showToast("📋 Link copied! Paste into Instagram Bio, Stories, or DM to friends.");
+  if (copyText) copyText.textContent = dict.toast_copied_btn;
+  showToast(dict.toast_link_copied);
   setTimeout(() => {
-    if (copyText) copyText.textContent = "Share on Instagram / Copy";
+    if (copyText) copyText.textContent = dict.btn_share_instagram;
   }, 3000);
 }
 
 function handleNativeShare() {
+  const dict = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
   if (navigator.share) {
     navigator.share({
       title: 'WAVEPICKS — Amazon Deal & Price Fluctuation Auditor',
-      text: 'Stop falling for fake discounts! Check real box MRP and 90-day price history before buying on Amazon.',
+      text: dict.community_share_text,
       url: 'https://alerts.zero483.com/deals.html'
     }).catch(() => {});
   } else {
