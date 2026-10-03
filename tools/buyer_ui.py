@@ -880,26 +880,16 @@ async function runAudit() {
               <span style="color:var(--brand-glow);font-weight:700">${d.price_range_str}</span>
             </div>
 
-            <!-- Verdict Banner -->
-            <div class="verdict-banner" style="border-left-color:${d.verdict_color}">
-              <div style="font-weight:800;font-size:1.02rem;color:${d.verdict_color};margin-bottom:4px">
-                ${d.verdict}
+            <!-- Single Localized Buying Verdict Banner -->
+            <div class="verdict-banner" id="dyn-verdict-banner" style="border-left-color:${v.color}">
+              <div style="font-weight:800;font-size:1.02rem;color:${v.color};margin-bottom:4px" id="dyn-verdict-title">
+                ${v.title}
               </div>
-              <div style="font-size:.82rem;color:var(--text);line-height:1.5">
-                ${d.verdict_reason}
+              <div style="font-size:.82rem;color:var(--text);line-height:1.5" id="dyn-verdict-reason">
+                ${v.reason}
               </div>
-            </div>
-
-            <!-- Price Fluctuation & Volatility Note -->
-            <div class="fluctuation-note">
-              <div style="font-weight:700;font-size:.82rem;color:var(--brand-glow);margin-bottom:3px">
-                ${d.volatility_level}
-              </div>
-              <div style="font-size:.8rem;color:var(--text);line-height:1.4">
-                ${d.volatility_desc}
-              </div>
-              <div style="font-size:.76rem;color:var(--muted);margin-top:6px">
-                📊 Amazon India BSR: #${d.bsr ? d.bsr.toLocaleString('en-IN') : 'N/A'} • ⭐ ${d.rating} / 5 (${d.review_count ? d.review_count.toLocaleString('en-IN') : 0} reviews)
+              <div style="font-size:.76rem;color:var(--muted);margin-top:8px;padding-top:6px;border-top:1px solid var(--border)" id="dyn-verdict-meta">
+                📊 ${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_bsr}: #${d.bsr ? d.bsr.toLocaleString('en-IN') : 'N/A'} • ⭐ ${d.rating || '4.0'} / 5 (${d.review_count ? d.review_count.toLocaleString('en-IN') : 0} ${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_reviews})
               </div>
             </div>
 
@@ -996,6 +986,9 @@ window.onclick = function(e) {
 // Multi-Language System (English, Hindi, Telugu, Kannada, Tamil, Bengali)
 const TRANSLATIONS = {
   "en": {
+    "lbl_bsr": "Amazon India BSR",
+    "lbl_reviews": "reviews",
+    "verdicts": {"massive_deal": {"title": "🔥 MASSIVE DEAL ({pct}% OFF)", "reason": "Sensational discount! Current deal price of ₹{price} saves you ₹{savings} ({pct}% off official packaging MRP of ₹{mrp})."}, "best_price": {"title": "🔥 BEST PRICE / RECORD LOW", "reason": "Excellent entry point! Current price of ₹{price} is within ₹{diff} of its lowest festival dip (₹{lowest}). Verified against official box MRP of ₹{mrp}."}, "solid_deal": {"title": "🟢 SOLID EVERYDAY DEAL", "reason": "Good everyday value! You save ₹{savings} ({pct}% off printed box MRP of ₹{mrp}). Check the price graph if you want to time a deeper drop."}, "wait_sale": {"title": "💡 NEAR FULL MRP / WAIT FOR SALE", "reason": "Selling near full packaging MRP of ₹{mrp}. The 90-day graph shows this product frequently drops to ~₹{lowest} during sales."}},
     "header_subpill": "Deal &amp; Price Fluctuation Auditor",
     "btn_bookmark_tool": "⭐ Bookmark Tool",
     "select_language_title": "Select Language",
@@ -1054,6 +1047,9 @@ const TRANSLATIONS = {
     "toast_bookmark_mobile": "📱 Tap browser menu (⋮ or Share icon) → select 'Add to Home screen' or 'Bookmark'!"
   },
   "hi": {
+    "lbl_bsr": "अमेज़न इंडिया BSR",
+    "lbl_reviews": "समीक्षाएं",
+    "verdicts": {"massive_deal": {"title": "🔥 बंपर डील ({pct}% छूट)", "reason": "शानदार छूट! वर्तमान डील मूल्य ₹{price} पर आपकी ₹{savings} की बचत हो रही है (प्रिंटेड बॉक्स MRP ₹{mrp} पर {pct}% की वास्तविक छूट)।"}, "best_price": {"title": "🔥 सबसे कम दाम / रिकॉर्ड लो", "reason": "खरीदने का सबसे सही समय! वर्तमान मूल्य ₹{price} अपने सबसे कम त्योहारी स्तर (₹{lowest}) के बिल्कुल करीब है। आधिकारिक बॉक्स MRP ₹{mrp} से सत्यापित।"}, "solid_deal": {"title": "🟢 बेहतरीन दैनिक डील", "reason": "शानदार दैनिक मूल्य! आप ₹{savings} बचा रहे हैं (प्रिंटेड बॉक्स MRP ₹{mrp} पर {pct}% की छूट)। यदि आप और कम दाम का इंतज़ार करना चाहते हैं तो मूल्य ग्राफ देखें।"}, "wait_sale": {"title": "💡 पूरे MRP के करीब / सेल का इंतज़ार करें", "reason": "यह उत्पाद लगभग पूरे पैकेजिंग MRP ₹{mrp} पर बिक रहा है। 90 दिनों का ग्राफ दिखाता है कि सेल के दौरान इसका दाम घटकर लगभग ₹{lowest} तक आ जाता है।"}},
     "header_subpill": "डील एवं मूल्य उतार-चढ़ाव परीक्षक",
     "btn_bookmark_tool": "⭐ टूल बुकमार्क करें",
     "select_language_title": "भाषा चुनें",
@@ -1112,6 +1108,9 @@ const TRANSLATIONS = {
     "toast_bookmark_mobile": "📱 ब्राउज़र मेनू (⋮ या शेयर) पर टैप करें → 'Add to Home screen' या 'Bookmark' चुनें!"
   },
   "te": {
+    "lbl_bsr": "అమెజాన్ ఇండియా BSR",
+    "lbl_reviews": "సమీక్షలు",
+    "verdicts": {"massive_deal": {"title": "🔥 బంపర్ డీల్ ({pct}% తగ్గింపు)", "reason": "అద్భుతమైన తగ్గింపు! ప్రస్తుత డీల్ ధర ₹{price} వద్ద మీకు ₹{savings} ఆదా అవుతుంది (అధికారిక బాక్స్ MRP ₹{mrp} పై {pct}% నిజమైన తగ్గింపు)."}, "best_price": {"title": "🔥 రికార్డ్ తక్కువ ధర / బెస్ట్ ప్రైస్", "reason": "కొనుగోలు చేయడానికి సరైన సమయం! ప్రస్తుత ధర ₹{price} దాని అత్యల్ప పండుగ ధర (₹{lowest}) కి చాలా దగ్గరగా ఉంది. అధికారిక బాక్స్ MRP ₹{mrp} తో ధృవీకరించబడింది."}, "solid_deal": {"title": "🟢 మంచి రోజువారీ డీల్", "reason": "మంచి రోజువారీ విలువ! మీరు ₹{savings} ఆదా చేస్తున్నారు (ప్రింటెడ్ బాక్స్ MRP ₹{mrp} పై {pct}% తగ్గింపు). మరింత ధర తగ్గే సమయం కోసం ప్రైస్ గ్రాఫ్ చూడండి."}, "wait_sale": {"title": "💡 పూర్తి MRP వద్ద ఉంది / సేల్ కోసం వేచి ఉండండి", "reason": "ఇది పూర్తి ప్యాకేజింగ్ MRP ₹{mrp} వద్ద అమ్ముడవుతోంది. 90 రోజుల గ్రాఫ్ ప్రకారం సేల్స్ సమయంలో దీని ధర దాదాపు ₹{lowest} వరకు తగ్గుతుంది."}},
     "header_subpill": "డీల్ మరియు ధరల మార్పుల ఆడిటర్",
     "btn_bookmark_tool": "⭐ టూల్‌ని బుక్‌మార్క్ చేయండి",
     "select_language_title": "భాషను ఎంచుకోండి",
@@ -1170,6 +1169,9 @@ const TRANSLATIONS = {
     "toast_bookmark_mobile": "📱 బ్రౌజర్ మెనూ (⋮ లేదా షేర్) నొక్కండి → 'Add to Home screen' లేదా 'Bookmark' ఎంచుకోండి!"
   },
   "kn": {
+    "lbl_bsr": "ಅಮೆಜಾನ್ ಇಂಡಿಯಾ BSR",
+    "lbl_reviews": "ವಿಮರ್ಶೆಗಳು",
+    "verdicts": {"massive_deal": {"title": "🔥 ಬಂಪರ್ ಡೀಲ್ ({pct}% ರಿಯಾಯಿತಿ)", "reason": "ಅದ್ಭುತ ರಿಯಾಯಿತಿ! ಪ್ರಸ್ತುತ ಡೀಲ್ ಬೆಲೆ ₹{price} ನಲ್ಲಿ ನಿಮಗೆ ₹{savings} ಉಳಿತಾಯವಾಗುತ್ತದೆ (ಅಧಿಕೃತ ಬಾಕ್ಸ್ MRP ₹{mrp} ಮೇಲೆ {pct}% ನೈಜ ರಿಯಾಯಿತಿ)."}, "best_price": {"title": "🔥 ದಾಖಲೆಯ ಕಡಿಮೆ ಬೆಲೆ / ಅತ್ಯುತ್ತಮ ಬೆಲೆ", "reason": "ಖರೀದಿಸಲು ಅತ್ಯುತ್ತಮ ಸಮಯ! ಪ್ರಸ್ತುತ ಬೆಲೆ ₹{price} ತನ್ನ ಅತ್ಯಂತ ಕಡಿಮೆ ಹಬ್ಬದ ಬೆಲೆಗೆ (₹{lowest}) ತೀರಾ ಹತ್ತಿರದಲ್ಲಿದೆ. ಅಧಿಕೃತ ಬಾಕ್ಸ್ MRP ₹{mrp} ಯೊಂದಿಗೆ ದೃಢೀಕರಿಸಲಾಗಿದೆ."}, "solid_deal": {"title": "🟢 ಉತ್ತಮ ದೈನಂದಿನ ಡೀಲ್", "reason": "ಉತ್ತಮ ದೈನಂದಿನ ಮೌಲ್ಯ! ನೀವು ₹{savings} ಉಳಿಸುತ್ತಿದ್ದೀರಿ (ಮುದ್ರಿತ ಬಾಕ್ಸ್ MRP ₹{mrp} ಮೇಲೆ {pct}% ರಿಯಾಯಿತಿ). ಇನ್ನೂ ಕಡಿಮೆ ಬೆಲೆಗೆ ಕಾಯಲು ಬೆಲೆ ಗ್ರಾಫ್ ನೋಡಿ."}, "wait_sale": {"title": "💡 ಪೂರ್ಣ MRP ಹತ್ತಿರದಲ್ಲಿದೆ / ಮಾರಾಟಕ್ಕಾಗಿ ಕಾಯಿರಿ", "reason": "ಇದು ಪೂರ್ಣ ಪ್ಯಾಕೇಜಿಂಗ್ MRP ₹{mrp} ಹತ್ತಿರದಲ್ಲಿ ಮಾರಾಟವಾಗುತ್ತಿದೆ. 90 ದಿನಗಳ ಗ್ರಾಫ್ ಪ್ರಕಾರ ಮಾರಾಟದ ಸಮಯದಲ್ಲಿ ಇದರ ಬೆಲೆ ಸುಮಾರು ₹{lowest} ಗೆ ಇಳಿಯುತ್ತದೆ."}},
     "header_subpill": "ಡೀಲ್ ಮತ್ತು ಬೆಲೆ ಏರಿಳಿತ ಪರೀಕ್ಷಕ",
     "btn_bookmark_tool": "⭐ ಟೂಲ್ ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಿ",
     "select_language_title": "ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
@@ -1228,6 +1230,9 @@ const TRANSLATIONS = {
     "toast_bookmark_mobile": "📱 ಬ್ರೌಸರ್ ಮೆನು (⋮ ಅಥವಾ ಶೇರ್) ಒತ್ತಿರಿ → 'Add to Home screen' ಅಥವಾ 'Bookmark' ಆಯ್ಕೆಮಾಡಿ!"
   },
   "ta": {
+    "lbl_bsr": "அமேசான் இந்தியா BSR",
+    "lbl_reviews": "மதிப்புரைகள்",
+    "verdicts": {"massive_deal": {"title": "🔥 மெகா டீல் ({pct}% தள்ளுபடி)", "reason": "அற்புதமான தள்ளுபடி! தற்போதைய டீல் விலை ₹{price}-ல் உங்களுக்கு ₹{savings} சேமிப்பு கிடைக்கிறது (அதிகாரப்பூர்வ பாக்ஸ் MRP ₹{mrp}-ல் {pct}% உண்மையான தள்ளுபடி)."}, "best_price": {"title": "🔥 மிகக் குறைந்த விலை / சாதனை விலை", "reason": "வாங்குவதற்கு மிகச் சிறந்த நேரம்! தற்போதைய விலை ₹{price} அதன் மிகக் குறைந்த பண்டிகை விலைக்கு (₹{lowest}) மிக அருகில் உள்ளது. அதிகாரப்பூர்வ பாக்ஸ் MRP ₹{mrp} உடன் சரிபார்க்கப்பட்டது."}, "solid_deal": {"title": "🟢 சிறந்த அன்றாட டீல்", "reason": "சிறந்த அன்றாட மதிப்பு! நீங்கள் ₹{savings} சேமிக்கிறீர்கள் (அச்சிடப்பட்ட பாக்ஸ் MRP ₹{mrp}-ல் {pct}% தள்ளுபடி). இன்னும் விலை குறையும் நேரத்தைக் கணிக்க விலை வரைபடத்தைப் பாருங்கள்."}, "wait_sale": {"title": "💡 முழு MRP-க்கு அருகில் / விற்பனைக்காக காத்திருங்கள்", "reason": "இது முழு பேக்கேஜிங் MRP ₹{mrp}-க்கு அருகில் விற்கப்படுகிறது. 90 நாள் வரைபடம் விற்பனையின் போது இதன் விலை சுமார் ₹{lowest} வரை குறைவதைக் காட்டுகிறது."}},
     "header_subpill": "சலுகை &amp; விலை ஏற்ற இறக்க சரிபார்ப்பாளர்",
     "btn_bookmark_tool": "⭐ டூலை புக்மார்க் செய்க",
     "select_language_title": "மொழியைத் தேர்ந்தெடுக்கவும்",
@@ -1286,6 +1291,9 @@ const TRANSLATIONS = {
     "toast_bookmark_mobile": "📱 உலாவி மெனுவை (⋮ அல்லது பகிர்) தட்டவும் → 'Add to Home screen' அல்லது 'Bookmark' தேர்ந்தெடுக்கவும்!"
   },
   "bn": {
+    "lbl_bsr": "অ্যামাজন ইন্ডিয়া BSR",
+    "lbl_reviews": "পর্যালোচনা",
+    "verdicts": {"massive_deal": {"title": "🔥 বাম্পার ডিল ({pct}% ছাড়)", "reason": "অসাধারণ ছাড়! বর্তমান ডিল মূল্য ₹{price}-এ আপনার ₹{savings} সাশ্রয় হচ্ছে (অফিসিয়াল বাক্স MRP ₹{mrp}-এর ওপর {pct}% প্রকৃত ছাড়)।"}, "best_price": {"title": "🔥 সর্বকালের কম দাম / সেরা মূল্য", "reason": "কেনাকাটা করার উপযুক্ত সময়! বর্তমান মূল্য ₹{price} তার সর্বনিম্ন উৎসবের দামের (₹{lowest}) অত্যন্ত কাছাকাছি। অফিসিয়াল বাক্স MRP ₹{mrp}-এর সাথে যাচাইকৃত।"}, "solid_deal": {"title": "🟢 চমৎকার দৈনিক ডিল", "reason": "চমৎকার দৈনন্দিন মূল্য! আপনি ₹{savings} সাশ্রয় করছেন (মুদ্রিত বাক্স MRP ₹{mrp}-এর ওপর {pct}% ছাড়)। আরও দাম কমার অপেক্ষা করতে চাইলে প্রাইস গ্রাফটি দেখুন।"}, "wait_sale": {"title": "💡 সম্পূর্ণ MRP-র কাছাকাছি / সেলের অপেক্ষা করুন", "reason": "পণ্যটি প্রায় সম্পূর্ণ প্যাকেজিং MRP ₹{mrp}-তে বিক্রি হচ্ছে। ৯০ দিনের গ্রাফ দেখাচ্ছে যে সেলের সময় এর দাম কমে প্রায় ₹{lowest} পর্যন্ত নেমে যায়।"}},
     "header_subpill": "ডিল ও মূল্য ওঠানামা নিরীক্ষক",
     "btn_bookmark_tool": "⭐ টুল বুকমার্ক করুন",
     "select_language_title": "ভাষা নির্বাচন করুন",
@@ -1364,6 +1372,46 @@ function toggleLangDropdown(e) {
   if (menu) menu.classList.toggle('show');
 }
 
+
+function getLocalizedVerdict(d, lang) {
+  const dict = TRANSLATIONS[lang] || TRANSLATIONS.en;
+  const pct = Math.round(d.discount_mrp_pct || 0);
+  const savings = (d.savings_mrp_inr || (d.mrp - d.current_price) || 0).toLocaleString('en-IN');
+  const mrp = (d.mrp || 0).toLocaleString('en-IN');
+  const price = (d.current_price || 0).toLocaleString('en-IN');
+  const lowest = (d.lowest_90d || d.current_price || 0).toLocaleString('en-IN');
+  const diff = (d.diff_from_low || 0).toLocaleString('en-IN');
+
+  let type = 'wait_sale';
+  let color = '#f59e0b';
+
+  if (pct >= 50) {
+    type = 'massive_deal';
+    color = '#10b981';
+  } else if (d.lowest_90d && d.current_price <= d.lowest_90d + (d.mrp * 0.05)) {
+    type = 'best_price';
+    color = '#10b981';
+  } else if (pct >= 15) {
+    type = 'solid_deal';
+    color = '#38bdf8';
+  } else {
+    type = 'wait_sale';
+    color = '#f59e0b';
+  }
+
+  const vInfo = (dict.verdicts && dict.verdicts[type]) ? dict.verdicts[type] : TRANSLATIONS.en.verdicts[type];
+  const title = vInfo.title.replace('{pct}', pct);
+  const reason = vInfo.reason
+    .replace('{pct}', pct)
+    .replace('{savings}', savings)
+    .replace('{mrp}', mrp)
+    .replace('{price}', price)
+    .replace('{lowest}', lowest)
+    .replace('{diff}', diff);
+
+  return { title, reason, color, type };
+}
+
 function getDealShareText(d, lang) {
   const dict = TRANSLATIONS[lang] || TRANSLATIONS.en;
   return (dict.deal_share_text || TRANSLATIONS.en.deal_share_text)
@@ -1371,7 +1419,8 @@ function getDealShareText(d, lang) {
     .replace('{price}', d.current_price.toLocaleString('en-IN'))
     .replace('{mrp}', d.mrp.toLocaleString('en-IN'))
     .replace('{pct}', d.discount_pct || d.discount_mrp_pct)
-    .replace('{verdict}', d.verdict_title || d.verdict);
+    const v = getLocalizedVerdict(d, lang);
+  return dict.deal_share_text.replace('{title}', d.title).replace('{price}', d.current_price).replace('{mrp}', d.mrp).replace('{pct}', d.discount_pct || d.discount_mrp_pct).replace('{verdict}', v.title);
 }
 
 function getDealShareUrl(d, lang) {
@@ -1463,6 +1512,22 @@ function updateDynamicAuditLabels(d, lang) {
   if (bw) {
     bw.textContent = dict.btn_deal_whatsapp;
     bw.href = getDealShareUrl(d, lang);
+  }
+
+  // Update localized verdict banner
+  const v = getLocalizedVerdict(d, lang);
+  const vb = document.getElementById('dyn-verdict-banner');
+  if (vb) vb.style.borderLeftColor = v.color;
+  const vt = document.getElementById('dyn-verdict-title');
+  if (vt) {
+    vt.textContent = v.title;
+    vt.style.color = v.color;
+  }
+  const vr = document.getElementById('dyn-verdict-reason');
+  if (vr) vr.textContent = v.reason;
+  const vm = document.getElementById('dyn-verdict-meta');
+  if (vm) {
+    vm.textContent = `📊 ${dict.lbl_bsr}: #${d.bsr ? d.bsr.toLocaleString('en-IN') : 'N/A'} • ⭐ ${d.rating || '4.0'} / 5 (${d.review_count ? d.review_count.toLocaleString('en-IN') : 0} ${dict.lbl_reviews})`;
   }
 
   const sn = document.getElementById('dyn-support-note');
