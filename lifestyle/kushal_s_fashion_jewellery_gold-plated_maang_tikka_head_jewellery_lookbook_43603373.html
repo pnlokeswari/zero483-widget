@@ -488,36 +488,6 @@
                 </button>
                 
             </div>
-            
-
-            <div class="card-footer-info">
-                <div class="prod-name-title">Kushal's Fashion Jewellery Gold-Plated Maang Tikka Head Jewellery</div>
-                <a href="https://myntr.it/HmSiZdq" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
-                    <span>🛍️ Shop on Myntra &rarr;</span>
-                </a>
-            </div>
-        </div>
-        
-    </div>
-  </div>
-
-  <script>
-    function switchProductImage(prodIdx, imgUrl, btnEl) {
-      const mainImg = document.getElementById('prod-main-img-' + prodIdx);
-      if (mainImg) {
-        mainImg.style.opacity = '0.4';
-        setTimeout(() => {
-          mainImg.src = imgUrl;
-          mainImg.style.opacity = '1';
-        }, 150);
-      }
-      const container = btnEl.closest('.gallery-thumbs-strip');
-      if (container) {
-        container.querySelectorAll('.gallery-thumb-btn').forEach(b => b.classList.remove('active-thumb'));
-      }
-      btnEl.classList.add('active-thumb');
-    }
-  </script>
 
     <!-- WAVEPICKS Deals Auditor Advertisement Card -->
     <section class="wavepicks-deals-ad-card" id="deals-auditor-promo">
@@ -565,6 +535,37 @@
         </div>
       </div>
     </section>
+
+            
+
+            <div class="card-footer-info">
+                <div class="prod-name-title">Kushal's Fashion Jewellery Gold-Plated Maang Tikka Head Jewellery</div>
+                <a href="https://myntr.it/HmSiZdq" target="_blank" rel="noopener sponsored" class="shop-overlay-btn">
+                    <span>🛍️ Shop on Myntra &rarr;</span>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+  </div>
+
+  <script>
+    function switchProductImage(prodIdx, imgUrl, btnEl) {
+      const mainImg = document.getElementById('prod-main-img-' + prodIdx);
+      if (mainImg) {
+        mainImg.style.opacity = '0.4';
+        setTimeout(() => {
+          mainImg.src = imgUrl;
+          mainImg.style.opacity = '1';
+        }, 150);
+      }
+      const container = btnEl.closest('.gallery-thumbs-strip');
+      if (container) {
+        container.querySelectorAll('.gallery-thumb-btn').forEach(b => b.classList.remove('active-thumb'));
+      }
+      btnEl.classList.add('active-thumb');
+    }
+  </script>
 
 </body>
 </html>
