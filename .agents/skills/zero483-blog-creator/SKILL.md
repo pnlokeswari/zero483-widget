@@ -255,7 +255,7 @@ Documents 3 specific testing criteria proving hands-on experience:
 ### H. WAVEPICKS Deals & Price Fluctuation Auditor Card (`deals.html`)
 Every blog post MUST feature an ultra-attractive, responsive promotional card (`.wavepicks-deals-ad-card`) for the live WAVEPICKS Deal & Price Fluctuation Auditor tool (`https://alerts.zero483.com/deals.html`).
 - **Features**: Live pulsing badge, 4 feature pills (90-Day History, Box MRP, Fake Sale Detector, Instant Link Auditor), glowing gradient CTA (`🔍 Open Free Deal Auditor →`), and mobile/laptop responsive layout.
-- **Position**: Prominently placed inside the main content container before the Author Bio Card.
+- **Position**: Prominently placed in the **MIDDLE** of the blog post (e.g. between the key overview/comparison table and the detailed product/review cards), NOT at the end.
 - **Mobile Sticky Bar & Footer**: Include a 1-tap `🛍️ Deal Auditor` button in the floating bottom action bar and footer links.
 
 HTML Component:
@@ -289,6 +289,48 @@ HTML Component:
     </div>
   </div>
 </section>
+```
+
+### I. Mandatory E-Commerce Price Fluctuation Caution Notice
+Every blog post where prices are mentioned (price tables, deal prices, MRPs, or spotlight product cards) MUST include the exact standardized viewer caution box placed prominently right before the price section or comparison table:
+
+```html
+<div class="price-fluctuation-caution-box">
+  <span class="caution-icon">⚠️</span>
+  <div class="caution-text">
+    <strong>Caution to Viewers:</strong> E-commerce pricing fluctuates dynamically based on demand, stock levels, and flash promotions. The "Current Price" listed below reflects the exact figure recorded at the time of publication, but it may change at any time. <strong>Always click the attached links to verify the real-time price and active bank discounts before placing an order.</strong>
+  </div>
+</div>
+```
+
+CSS Styling:
+```css
+.price-fluctuation-caution-box {
+  background: #fffbeb;
+  border: 1px solid #fef3c7;
+  border-left: 5px solid #d97706;
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin: 20px 0 24px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #92400e;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.05);
+}
+.price-fluctuation-caution-box .caution-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.price-fluctuation-caution-box .caution-text {
+  flex: 1;
+}
+.price-fluctuation-caution-box strong {
+  color: #78350f;
+}
 ```
 
 ---
