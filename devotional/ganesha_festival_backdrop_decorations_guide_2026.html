@@ -823,6 +823,35 @@
   }
 }
 
+
+/* Mandatory E-Commerce Price Fluctuation Caution Box */
+.price-fluctuation-caution-box {
+  background: #fffbeb;
+  border: 1px solid #fef3c7;
+  border-left: 5px solid #d97706;
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin: 20px 0 24px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #92400e;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.05);
+}
+.price-fluctuation-caution-box .caution-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.price-fluctuation-caution-box .caution-text {
+  flex: 1;
+}
+.price-fluctuation-caution-box strong {
+  color: #78350f;
+}
+
 </style>
 
   <!-- GOOGLE & PINTEREST STRUCTURED DATA SCHEMA -->
@@ -900,7 +929,15 @@
   </div>
 
   <!-- PRODUCT SHOWCASE CARDS -->
-  <main>
+      <!-- E-Commerce Price Fluctuation Caution Notice -->
+    <div class="price-fluctuation-caution-box">
+      <span class="caution-icon">⚠️</span>
+      <div class="caution-text">
+        <strong>Caution to Viewers:</strong> E-commerce pricing fluctuates dynamically based on demand, stock levels, and flash promotions. The "Current Price" listed below reflects the exact figure recorded at the time of publication, but it may change at any time. <strong>Always click the attached links to verify the real-time price and active bank discounts before placing an order.</strong>
+      </div>
+    </div>
+
+    <main>
     
     <article id="product-1" class="decor-product-card">
       <div class="decor-card-header">
