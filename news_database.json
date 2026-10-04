@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-10-04T14:59:34.568938+00:00",
+  "last_updated": "2026-10-04T18:48:32.246981+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "620bbf55441b",
+      "title": "Drug Shortage: Azacitidine Injection",
+      "slug": "drug-shortage-azacitidine-injection",
+      "date": "2026-10-04",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Azacitidine Injection\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Azacitidine Injection",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-10-04T18:47:56.073993+00:00",
+      "is_long_form": false
+    },
     {
       "id": "3a415eab0724",
       "title": "Teneligliptin alert: CDSCO adds bullous pemphigoid to drug safety warning - telanganatoday.com",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQVE94OHZVLUllaFFwUmJBZ1lFSkZncFpMWjZPdEFrVDcyeHhCa1JXQXBTN1QzdTJ4VVRiVmZDcEtMOFZHS3hOeUdVTmdONm54RHEzdlA2eHFnVk54eHJGYm9qWXoyLUVZOEVLZGF0bUtfNHFwbnFPcEN0Q3NlckVkNTlybDNOTjhYSUF3a0R0T0pLVFFRWmt4ZUhDQ0VGSmxSN2dQZmVIcTl1Qi1kNzZhZWlSY1JhN2J4TUVZMFJVUWwwX2R4Zm53bzZBbjZybDJTU0ZFM056elhlQU01OWM0TU9tUGRNczTSAewBQVVfeXFMTUV4MDlUOEZrblFqckY5d2I0TktEeDFTNkpwb3VIV19DWkUyNVJlem1aaDBZUlV0WUFHbTZxVWx0RHBYVVZ3bWZzNXoza2xKaHUyY0lpU1lxXzVVVWk4R21ybHFVYUl0dzF1bWNJM05IR1RsZ1BSeDdPbW1KcVJiWDlzUk5WbjhxdVRIbTk3ZUV1QlBldXRfcjBHaW9vTm1pcXNrMlZzdGJIdWVFUjBiUy1FU3hpbnAwYm9CdE5RRF95QzJYV0FXMlRCN3V2bWFlN0h4cEZwUnA3cVQzNk1XVThyNXc1cXU2UDVFQ3A?oc=5",
       "fetched_at": "2026-09-29T20:00:09.718728+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "7c03c1bdd988",
-      "title": "DWC Members Demand HHS & FDA Take Immediate Action to Address Shortage of Critical Estradiol Patches - Democratic Women'",
-      "slug": "dwc-members-demand-hhs-fda-take-immediate-action-to-address-shortage-of-critical-estradiol-patches-democratic-women",
-      "date": "2026-09-29",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Title: DWC Members Demand HHS & FDA Take Immediate Action to Address Shortage of Critical Estradiol Patches - Democratic Women's Caucus (.gov)\nSource: Google News\nDate: Tue, 29 Sep 2026 15:48:42 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "DWC Members Demand HHS & FDA Take Immediate Action to Address Shortage of Critical Estradiol Patches - Democratic Women'",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNYVdjc1JIMGNSUzZrT25KQUsyS1ZxLTNhRVZYX3pEQ2x1MzRVLU5WeTROSEFTRGxHZFp5NkVBTUw0TXZmdmtoTjQxb0xrd1REYzVNdmctMnRSaVdBdXZueHg1T0lvUlBiZXUtYm9CXzVwUlVuN2JLSHF0My1FdlIwZzdXRGw2S0k?oc=5",
-      "fetched_at": "2026-09-29T19:52:09.631296+00:00",
       "is_long_form": false
     }
   ]
