@@ -252,6 +252,45 @@ Documents 3 specific testing criteria proving hands-on experience:
 - Internal Cross-Linking Box recommending 3 related articles.
 - Persistent Sticky Bottom Mobile Bar for 1-tap conversion.
 
+### H. WAVEPICKS Deals & Price Fluctuation Auditor Card (`deals.html`)
+Every blog post MUST feature an ultra-attractive, responsive promotional card (`.wavepicks-deals-ad-card`) for the live WAVEPICKS Deal & Price Fluctuation Auditor tool (`https://alerts.zero483.com/deals.html`).
+- **Features**: Live pulsing badge, 4 feature pills (90-Day History, Box MRP, Fake Sale Detector, Instant Link Auditor), glowing gradient CTA (`🔍 Open Free Deal Auditor →`), and mobile/laptop responsive layout.
+- **Position**: Prominently placed inside the main content container before the Author Bio Card.
+- **Mobile Sticky Bar & Footer**: Include a 1-tap `🛍️ Deal Auditor` button in the floating bottom action bar and footer links.
+
+HTML Component:
+```html
+<section class="wavepicks-deals-ad-card" id="deals-auditor-promo">
+  <div class="deals-ad-badge-row">
+    <span class="deals-ad-live-pill"><span class="deals-ad-pulse-dot"></span> LIVE DEAL AUDITOR TOOL</span>
+    <span class="deals-ad-free-tag">100% FREE • NO LOGIN NEEDED</span>
+  </div>
+  <div class="deals-ad-content-grid">
+    <div class="deals-ad-copy">
+      <h3 class="deals-ad-title">Don’t Fall for Fake Festive Discounts on Amazon!</h3>
+      <p class="deals-ad-desc">Before hitting <em>"Buy Now"</em> on any product, paste its Amazon link into our free <strong>WAVEPICKS Deal Auditor</strong>. Verify true printed box MRP, uncover artificially pumped prices, and inspect genuine <strong>90-day price history curves</strong> in seconds.</p>
+      <div class="deals-ad-pills">
+        <span class="deals-ad-feature-pill">📉 90-Day Price History</span>
+        <span class="deals-ad-feature-pill">🏷️ True Printed Box MRP</span>
+        <span class="deals-ad-feature-pill">🛡️ Fake "Sale" Detector</span>
+        <span class="deals-ad-feature-pill">⚡ Instant Link Auditor</span>
+      </div>
+    </div>
+    <div class="deals-ad-action-box">
+      <div class="deals-ad-preview-chip">
+        <span class="preview-chip-icon">📊</span>
+        <div class="preview-chip-text">
+          <strong>Inspect Any Amazon Link</strong>
+          <small>Uncover historical high vs lowest price drops</small>
+        </div>
+      </div>
+      <a href="https://alerts.zero483.com/deals.html" target="_blank" rel="noopener" class="btn-deals-ad-cta">🔍 Open Free Deal Auditor →</a>
+      <div class="deals-ad-device-support">📱 Works Instantly on Mobile, Tablet & Laptop</div>
+    </div>
+  </div>
+</section>
+```
+
 ---
 
 ## 7. Local Persistence, Sitemap & GitHub Auto-Publishing
