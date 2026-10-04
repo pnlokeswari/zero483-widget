@@ -82,6 +82,15 @@ Ensure `<head>` always contains:
 - **Sticky Top Navigation & Floating Bottom Bar**: Persistent mobile buy CTA.
 - **1-Tap WhatsApp Share Button**: With pre-filled message text.
 - **Internal Cross-Linking Box**: Linking to 3 related articles on the site.
+- **Mandatory E-Commerce Price Fluctuation Caution Notice**: Every blog post where prices are mentioned (tables, product cards, or deal breakdowns) MUST include the exact standardized viewer caution box before the price section:
+  ```html
+  <div class="price-fluctuation-caution-box">
+    <span class="caution-icon">⚠️</span>
+    <div class="caution-text">
+      <strong>Caution to Viewers:</strong> E-commerce pricing fluctuates dynamically based on demand, stock levels, and flash promotions. The "Current Price" listed below reflects the exact figure recorded at the time of publication, but it may change at any time. <strong>Always click the attached links to verify the real-time price and active bank discounts before placing an order.</strong>
+    </div>
+  </div>
+  ```
 - **Interactive Deal Auditor Advertisement Card (`https://alerts.zero483.com/deals.html`)**: Every blog post MUST feature an ultra-attractive, responsive promotional card (`.wavepicks-deals-ad-card`) for the WAVEPICKS Deal & Price Fluctuation Auditor tool (`deals.html`), placed in the **MIDDLE** of the blog post (between the key overview/comparison table and the deep-dive product/review cards), NOT at the end. Highlighting real printed box MRP verification, 90-day price drop history curves, and fake discount detection across mobile, tablet, and laptop. Also include a 1-tap `🛍️ Deal Auditor` link in the floating bottom bar and footer.
 
 ## 7. Local Persistence, Sitemap & GitHub Auto-Publishing
