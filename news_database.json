@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-10-03T22:26:49.165050+00:00",
+  "last_updated": "2026-10-04T02:00:18.236620+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "061316444d66",
+      "title": "Over 112,000 Bottles of Popular Pain Reliever Recalled Nationwide After Consumer Complaints - The Healthy",
+      "slug": "over-112-000-bottles-of-popular-pain-reliever-recalled-nationwide-after-consumer-complaints-the-healthy",
+      "date": "2026-10-03",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Over 112,000 Bottles of Popular Pain Reliever Recalled Nationwide After Consumer Complaints - The Healthy\nSource: Google News\nDate: Sat, 03 Oct 2026 16:17:31 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Over 112,000 Bottles of Popular Pain Reliever Recalled Nationwide After Consumer Complaints - The Healthy",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPUlAtWEh6NmR4dnhzQk9PMW8wenBYeEZFaUV0eWUyZ3Nmc1NZWDVzeUgtM09oXzJxVDc4eUpCcWxWeERGMnNuNjBUcjE3VGRqM2toMEs3SE16Snh6NUpheXo3aVRSTWk3b2JIV2V0Y2RaZ2JiNnRqT1ZDQmVYNGJxeEFlWXBvLW8?oc=5",
+      "fetched_at": "2026-10-04T01:59:41.254674+00:00",
+      "is_long_form": false
+    },
     {
       "id": "86282724cdae",
       "title": "Ultragenyx says EMA validates MPS IIIA application - Mugglehead Investment Magazine",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-09-29T19:50:16.565818+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "6d3e0927eab5",
-      "title": "UPDATE: FDA expands recall of blood pressure medication to include 13K+ bottles - Local 3 News",
-      "slug": "update-fda-expands-recall-of-blood-pressure-medication-to-include-13k-bottles-local-3-news",
-      "date": "2026-09-29",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: UPDATE: FDA expands recall of blood pressure medication to include 13K+ bottles - Local 3 News\nSource: Google News\nDate: Tue, 29 Sep 2026 14:50:00 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "UPDATE: FDA expands recall of blood pressure medication to include 13K+ bottles - Local 3 News",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPa0otcUpCUlQyTDBRcmtpNXQ4aExLZ2dHQW9mWWFuSVF5eVhwRzUtWGxUY2x1QkhjWjNXa1RpNFJTRnNDOUlWR2RqT2F4MmJZUGlxRnozeXZuV1UzVGw1cGpJYjB4RXpKTEFxT18zbzgzbW1WMV9nZHlQNExWYjRvU0lQejRuS0FzWm0wazh5SEVxVk5xaWNWRVFQLXNRTGZ3d0NCQmtGeV9seFlrRDgyUFQ1N1dybURBM0NJa1dBVlVKVFVQa2JleGZSZlZOSWZUc2l5Rk1aWjZjcExTa2ZJd29HV3ZsMmdvMi1iWTRTLURaaV8yT0JDcA?oc=5",
-      "fetched_at": "2026-09-29T19:48:09.715356+00:00",
       "is_long_form": false
     }
   ]
