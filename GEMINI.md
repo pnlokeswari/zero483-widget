@@ -82,6 +82,7 @@ Ensure `<head>` always contains:
 - **Sticky Top Navigation & Floating Bottom Bar**: Persistent mobile buy CTA.
 - **1-Tap WhatsApp Share Button**: With pre-filled message text.
 - **Internal Cross-Linking Box**: Linking to 3 related articles on the site.
+- **Interactive Deal Auditor Advertisement Card (`https://alerts.zero483.com/deals.html`)**: Every blog post MUST feature an ultra-attractive, responsive promotional card (`.wavepicks-deals-ad-card`) for the WAVEPICKS Deal & Price Fluctuation Auditor tool (`deals.html`), highlighting real printed box MRP verification, 90-day price drop history curves, and fake discount detection across mobile, tablet, and laptop. Also include a 1-tap `🛍️ Deal Auditor` link in the floating bottom bar and footer.
 
 ## 7. Local Persistence, Sitemap & GitHub Auto-Publishing
 - Save the newly generated file into `c:\Users\Ram\OneDrive\Documents\ZERO483 automation\<category>\` (e.g. `lifestyle/` or `devotional/`).
