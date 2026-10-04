@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-10-04T08:48:57.629664+00:00",
+  "last_updated": "2026-10-04T14:59:34.568938+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "3a415eab0724",
+      "title": "Teneligliptin alert: CDSCO adds bullous pemphigoid to drug safety warning - telanganatoday.com",
+      "slug": "teneligliptin-alert-cdsco-adds-bullous-pemphigoid-to-drug-safety-warning-telanganatoday-com",
+      "date": "2026-10-04",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "<p>Title: Teneligliptin alert: CDSCO adds bullous pemphigoid to drug safety warning - telanganatoday.com\nSource: CDSCO India\nDate: Sun, 04 Oct 2026 09:48:28 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Teneligliptin alert: CDSCO adds bullous pemphigoid to drug safety warning - telanganatoday.com",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZ200X0RVcUNEQ0dpN3JmV1RKUnlWZzFGT2dJbENBTGRTTmtfX1R2bFJCMXptSzcxbnpwOS1YZzE4NGR1V29lQTM0UElsZXY5YTd4eWR3enY0ZGFHRmVyT2pZR3V4aVdSQ3pmQXlNVmoyUnZva2NlRlItWVR1aFR1WFN0d0N6Q19aTjVsWnJLVE5xTGpQd2NSOTlfS3dlaHhr?oc=5",
+      "fetched_at": "2026-10-04T14:59:34.568871+00:00",
+      "is_long_form": false
+    },
     {
       "id": "061316444d66",
       "title": "Over 112,000 Bottles of Popular Pain Reliever Recalled Nationwide After Consumer Complaints - The Healthy",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNYVdjc1JIMGNSUzZrT25KQUsyS1ZxLTNhRVZYX3pEQ2x1MzRVLU5WeTROSEFTRGxHZFp5NkVBTUw0TXZmdmtoTjQxb0xrd1REYzVNdmctMnRSaVdBdXZueHg1T0lvUlBiZXUtYm9CXzVwUlVuN2JLSHF0My1FdlIwZzdXRGw2S0k?oc=5",
       "fetched_at": "2026-09-29T19:52:09.631296+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "51f1a882697b",
-      "title": "Drug Shortage: Rocuronium Bromide Injection",
-      "slug": "drug-shortage-rocuronium-bromide-injection",
-      "date": "2026-09-29",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>The FDA has reported a current shortage of Rocuronium Bromide Injection, a vital medication for anesthesia and critical care. This non-depolarizing neuromuscular blocker is essential for muscle relaxation during procedures like endotracheal intubation, making its continuous availability critical for patient safety.</p>",
-      "compliance_impact": "<ul><li>Adjust clinical protocols for patient safety.</li><li>Highlights supply chain vulnerabilities.</li></ul>",
-      "key_actions": "<ul><li>Conserve existing stock and explore alternative medications.</li><li>Monitor FDA updates and communicate with suppliers for continuity.</li></ul>",
-      "industry_context": "<p>This scarcity poses significant challenges for hospitals, surgical centers, and emergency services globally, impacting critical medical interventions and patient management.</p>",
-      "seo_title": "FDA Alerts: Rocuronium Bromide Injection Shortage Impacts Anesthesia & Critical Care",
-      "seo_description": "The FDA reports a critical shortage of Rocuronium Bromide Injection, vital for anesthesia and emergency care. Learn about impacts and key actions.",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
-      "fetched_at": "2026-09-29T19:50:16.565818+00:00",
       "is_long_form": false
     }
   ]
