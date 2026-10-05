@@ -382,7 +382,7 @@ def api_admin_audit_analytics():
 
 @app.route("/admin/deal-stats")
 def admin_deal_stats():
-    """Private Owner-Only Dashboard for Deal Search Analytics."""
+    """Private Owner-Only Dashboard for Deal Search Analytics with Live Real-Time Polling."""
     key = request.args.get("key", "").strip()
     client_ip = _get_client_ip()
     is_local = client_ip in ["127.0.0.1", "::1", "localhost"]
@@ -394,56 +394,35 @@ def admin_deal_stats():
         </body></html>
         """, status=403, mimetype="text/html")
 
-    from audit_tracker import get_search_stats
-    stats = get_search_stats()
-
-    top_rows_html = "".join([f"""
-      <tr>
-        <td style="font-weight:700;color:#38bdf8"><a href="https://www.amazon.in/dp/{r.get('asin')}?tag=10fa9c-21" target="_blank" style="color:#38bdf8;text-decoration:none">{r.get('asin')} ↗</a></td>
-        <td style="max-width:340px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="{r.get('title')}">{r.get('title')}</td>
-        <td style="font-weight:800;color:#10b981">{r.get('search_count')} searches</td>
-        <td>₹{r.get('price', 0):,.0f}</td>
-      </tr>
-    """ for r in stats.get("top_searched_products", [])]) or '<tr><td colspan="4" style="text-align:center;color:#94a3b8">No searches recorded yet</td></tr>'
-
-    recent_rows_html = "".join([f"""
-      <tr>
-        <td style="color:#94a3b8;font-size:.78rem;white-space:nowrap">{r.get('timestamp')}</td>
-        <td style="font-weight:700"><a href="https://www.amazon.in/dp/{r.get('asin')}?tag=10fa9c-21" target="_blank" style="color:#38bdf8;text-decoration:none">{r.get('asin')} ↗</a></td>
-        <td style="max-width:320px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="{r.get('title')}">{r.get('title')}</td>
-        <td style="font-weight:700">₹{r.get('current_price', 0):,.0f}</td>
-        <td style="color:#94a3b8">₹{r.get('mrp', 0):,.0f}</td>
-        <td style="color:#10b981;font-weight:700">{r.get('discount_pct', 0):.0f}%</td>
-        <td style="font-size:.78rem;color:#f1f5f9">{r.get('verdict') or 'Verified'}</td>
-        <td><span style="background:{'rgba(16,185,129,.2)' if r.get('status')=='success' else 'rgba(239,68,68,.2)'};color:{'#34d399' if r.get('status')=='success' else '#f87171'};padding:2px 8px;border-radius:12px;font-size:.72rem;font-weight:700">{r.get('status')}</span></td>
-      </tr>
-    """ for r in stats.get("recent_searches", [])]) or '<tr><td colspan="8" style="text-align:center;color:#94a3b8">No activity recorded yet</td></tr>'
-
-    html = f"""<!DOCTYPE html>
+    html = r"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>🔒 Private Search Analytics — WAVEPICKS Deal Auditor</title>
 <style>
-  :root {{ --bg:#070d1e; --card:#0e1738; --border:#182859; --text:#f1f5f9; --muted:#94a3b8; --brand:#38bdf8; --green:#10b981; }}
-  * {{ box-sizing:border-box; margin:0; padding:0; }}
-  body {{ font-family:'Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--text); padding:24px; min-height:100vh; }}
-  .header {{ display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; flex-wrap:wrap; gap:12px; border-bottom:1px solid var(--border); padding-bottom:16px; }}
-  .title {{ font-size:1.35rem; font-weight:800; display:flex; align-items:center; gap:10px; color:#fff; }}
-  .badge-private {{ background:rgba(245,158,11,.15); color:#fbbf24; border:1px solid rgba(245,158,11,.3); font-size:.72rem; padding:4px 10px; border-radius:20px; font-weight:700; }}
-  .grid {{ display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:16px; margin-bottom:28px; }}
-  .card {{ background:var(--card); border:1px solid var(--border); border-radius:12px; padding:18px 20px; }}
-  .val {{ font-size:1.9rem; font-weight:800; color:#fff; margin-bottom:4px; }}
-  .lbl {{ font-size:.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:1px; font-weight:700; }}
-  .section-title {{ font-size:1.05rem; font-weight:700; margin-bottom:12px; color:#fff; display:flex; align-items:center; gap:8px; }}
-  table {{ width:100%; border-collapse:collapse; font-size:.84rem; text-align:left; }}
-  th {{ background:#09122c; padding:12px 14px; font-size:.72rem; text-transform:uppercase; letter-spacing:1px; color:var(--muted); border-bottom:1px solid var(--border); }}
-  td {{ padding:12px 14px; border-bottom:1px solid rgba(24,40,89,.6); }}
-  tr:hover td {{ background:rgba(56,189,248,.04); }}
-  .table-box {{ background:var(--card); border:1px solid var(--border); border-radius:12px; overflow-x:auto; margin-bottom:28px; }}
-  .btn-refresh {{ background:#0284c7; color:#fff; border:none; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:.82rem; }}
-  .btn-refresh:hover {{ background:#0369a1; }}
+  :root { --bg:#070d1e; --card:#0e1738; --border:#182859; --text:#f1f5f9; --muted:#94a3b8; --brand:#38bdf8; --green:#10b981; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:'Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--text); padding:24px; min-height:100vh; }
+  .header { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; flex-wrap:wrap; gap:12px; border-bottom:1px solid var(--border); padding-bottom:16px; }
+  .title { font-size:1.35rem; font-weight:800; display:flex; align-items:center; gap:10px; color:#fff; }
+  .badge-private { background:rgba(245,158,11,.15); color:#fbbf24; border:1px solid rgba(245,158,11,.3); font-size:.72rem; padding:4px 10px; border-radius:20px; font-weight:700; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:16px; margin-bottom:28px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:18px 20px; transition:transform .2s, box-shadow .2s; }
+  .card.pulse { box-shadow:0 0 16px rgba(16,185,129,.5); transform:scale(1.02); }
+  .val { font-size:1.9rem; font-weight:800; color:#fff; margin-bottom:4px; }
+  .lbl { font-size:.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:1px; font-weight:700; }
+  .section-title { font-size:1.05rem; font-weight:700; margin-bottom:12px; color:#fff; display:flex; align-items:center; justify-content:space-between; }
+  table { width:100%; border-collapse:collapse; font-size:.84rem; text-align:left; }
+  th { background:#09122c; padding:12px 14px; font-size:.72rem; text-transform:uppercase; letter-spacing:1px; color:var(--muted); border-bottom:1px solid var(--border); }
+  td { padding:12px 14px; border-bottom:1px solid rgba(24,40,89,.6); }
+  tr:hover td { background:rgba(56,189,248,.04); }
+  .table-box { background:var(--card); border:1px solid var(--border); border-radius:12px; overflow-x:auto; margin-bottom:28px; }
+  .btn-refresh { background:#0284c7; color:#fff; border:none; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:.82rem; display:inline-flex; align-items:center; gap:6px; transition:background .2s; }
+  .btn-refresh:hover { background:#0369a1; }
+  .btn-test { background:rgba(16,185,129,.15); color:#34d399; border:1px solid rgba(16,185,129,.3); padding:7px 14px; border-radius:8px; font-weight:700; cursor:pointer; font-size:.78rem; transition:background .2s; }
+  .btn-test:hover { background:rgba(16,185,129,.25); }
+  .status-toast { font-size:.78rem; color:#10b981; font-weight:700; display:inline-flex; align-items:center; gap:4px; }
 </style>
 </head>
 <body>
@@ -452,32 +431,38 @@ def admin_deal_stats():
       <span>📊 WAVEPICKS Deal Search Analytics</span>
       <span class="badge-private">🔒 Private / Owner-Only</span>
     </div>
-    <div style="display:flex;gap:10px;align-items:center">
-      <button class="btn-refresh" onclick="location.reload()">🔄 Refresh Stats</button>
+    <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+      <span id="update-status" class="status-toast">🟢 Real-Time Sync Active</span>
+      <button class="btn-test" onclick="simulateTestSearch()">➕ Simulate Test Search</button>
+      <button class="btn-refresh" id="btn-refresh" onclick="triggerManualRefresh()">
+        <span id="refresh-icon">🔄</span> <span id="refresh-text">Refresh Stats</span>
+      </button>
       <a href="/deals" target="_blank" style="color:var(--brand);font-size:.82rem;text-decoration:none;font-weight:700">Open Deals Portal ↗</a>
     </div>
   </div>
 
   <div class="grid">
-    <div class="card" style="border-left:4px solid #38bdf8">
-      <div class="val">{stats.get('total_searches', 0)}</div>
+    <div class="card" id="card-total" style="border-left:4px solid #38bdf8">
+      <div class="val" id="val-total">0</div>
       <div class="lbl">Total Searches Logged</div>
     </div>
-    <div class="card" style="border-left:4px solid #10b981">
-      <div class="val">{stats.get('searches_today', 0)}</div>
+    <div class="card" id="card-today" style="border-left:4px solid #10b981">
+      <div class="val" id="val-today">0</div>
       <div class="lbl">Searches Today</div>
     </div>
-    <div class="card" style="border-left:4px solid #a855f7">
-      <div class="val">{stats.get('unique_products', 0)}</div>
+    <div class="card" id="card-unique" style="border-left:4px solid #a855f7">
+      <div class="val" id="val-unique">0</div>
       <div class="lbl">Unique Products Audited</div>
     </div>
-    <div class="card" style="border-left:4px solid #f59e0b">
-      <div class="val">{stats.get('unique_users_approx', 0)}</div>
+    <div class="card" id="card-users" style="border-left:4px solid #f59e0b">
+      <div class="val" id="val-users">0</div>
       <div class="lbl">Unique Shoppers (Approx)</div>
     </div>
   </div>
 
-  <div class="section-title">🏆 Top 10 Most Audited Products</div>
+  <div class="section-title">
+    <span>🏆 Top 10 Most Audited Products</span>
+  </div>
   <div class="table-box">
     <table>
       <thead>
@@ -488,13 +473,16 @@ def admin_deal_stats():
           <th>Latest Price</th>
         </tr>
       </thead>
-      <tbody>
-        {top_rows_html}
+      <tbody id="tbody-top">
+        <tr><td colspan="4" style="text-align:center;color:#94a3b8">Loading top products...</td></tr>
       </tbody>
     </table>
   </div>
 
-  <div class="section-title">📜 Recent 50 Search Queries</div>
+  <div class="section-title">
+    <span>📜 Recent 50 Search Queries</span>
+    <span style="font-size:.76rem;color:var(--muted);font-weight:normal" id="sync-timestamp">Connecting...</span>
+  </div>
   <div class="table-box">
     <table>
       <thead>
@@ -509,15 +497,146 @@ def admin_deal_stats():
           <th>Status</th>
         </tr>
       </thead>
-      <tbody>
-        {recent_rows_html}
+      <tbody id="tbody-recent">
+        <tr><td colspan="8" style="text-align:center;color:#94a3b8">Loading search activity...</td></tr>
       </tbody>
     </table>
   </div>
+
+<script>
+let isRefreshing = false;
+
+async function fetchLiveStats() {
+  if (isRefreshing) return;
+  isRefreshing = true;
+  const btn = document.getElementById('btn-refresh');
+  const txt = document.getElementById('refresh-text');
+  const ico = document.getElementById('refresh-icon');
+  if (btn) { btn.disabled = true; }
+  if (txt) txt.textContent = "Updating...";
+
+  try {
+    const url = "/api/admin/audit-analytics?t=" + Date.now();
+    const resp = await fetch(url, { cache: "no-store", headers: { "Cache-Control": "no-cache" } });
+    if (!resp.ok) throw new Error("HTTP " + resp.status);
+    const data = await resp.json();
+
+    // Update Metric Cards
+    updateCounter('val-total', data.total_searches || 0, 'card-total');
+    updateCounter('val-today', data.searches_today || 0, 'card-today');
+    updateCounter('val-unique', data.unique_products || 0, 'card-unique');
+    updateCounter('val-users', data.unique_users_approx || 0, 'card-users');
+
+    // Update Top Products Table
+    const topTbody = document.getElementById('tbody-top');
+    if (topTbody) {
+      if (!data.top_searched_products || data.top_searched_products.length === 0) {
+        topTbody.innerHTML = '<tr><td colspan="4" style="text-align:center;color:#94a3b8">No products audited yet</td></tr>';
+      } else {
+        topTbody.innerHTML = data.top_searched_products.map(r => `
+          <tr>
+            <td style="font-weight:700"><a href="https://www.amazon.in/dp/${r.asin}?tag=10fa9c-21" target="_blank" style="color:#38bdf8;text-decoration:none">${r.asin} ↗</a></td>
+            <td style="max-width:340px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="${r.title || ''}">${r.title || 'Amazon Product'}</td>
+            <td style="font-weight:800;color:#10b981">${r.search_count} audits</td>
+            <td>₹${Number(r.price || 0).toLocaleString('en-IN')}</td>
+          </tr>
+        `).join('');
+      }
+    }
+
+    // Update Recent Searches Table
+    const recTbody = document.getElementById('tbody-recent');
+    if (recTbody) {
+      if (!data.recent_searches || data.recent_searches.length === 0) {
+        recTbody.innerHTML = '<tr><td colspan="8" style="text-align:center;color:#94a3b8">No activity recorded yet</td></tr>';
+      } else {
+        recTbody.innerHTML = data.recent_searches.map(r => `
+          <tr>
+            <td style="color:#94a3b8;font-size:.78rem;white-space:nowrap">${r.timestamp || ''}</td>
+            <td style="font-weight:700"><a href="https://www.amazon.in/dp/${r.asin}?tag=10fa9c-21" target="_blank" style="color:#38bdf8;text-decoration:none">${r.asin} ↗</a></td>
+            <td style="max-width:320px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="${r.title || ''}">${r.title || 'Amazon Product'}</td>
+            <td style="font-weight:700">₹${Number(r.current_price || 0).toLocaleString('en-IN')}</td>
+            <td style="color:#94a3b8">₹${Number(r.mrp || 0).toLocaleString('en-IN')}</td>
+            <td style="color:#10b981;font-weight:700">${Number(r.discount_pct || 0).toFixed(0)}%</td>
+            <td style="font-size:.78rem;color:#f1f5f9">${r.verdict || 'Verified'}</td>
+            <td><span style="background:${r.status === 'success' ? 'rgba(16,185,129,.2)' : 'rgba(239,68,68,.2)'};color:${r.status === 'success' ? '#34d399' : '#f87171'};padding:2px 8px;border-radius:12px;font-size:.72rem;font-weight:700">${r.status}</span></td>
+          </tr>
+        `).join('');
+      }
+    }
+
+    const nowStr = new Date().toLocaleTimeString();
+    const stEl = document.getElementById('update-status');
+    if (stEl) stEl.textContent = `✅ Live Updated at ${nowStr}`;
+    const tsEl = document.getElementById('sync-timestamp');
+    if (tsEl) tsEl.textContent = `Auto-polling every 5s • Last: ${nowStr}`;
+  } catch (err) {
+    console.error("Stats refresh error:", err);
+    const stEl = document.getElementById('update-status');
+    if (stEl) stEl.textContent = `⚠️ Update Error: ${err.message}`;
+  } finally {
+    isRefreshing = false;
+    if (btn) btn.disabled = false;
+    if (txt) txt.textContent = "Refresh Stats";
+  }
+}
+
+function updateCounter(id, newVal, cardId) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const oldVal = parseInt(el.textContent) || 0;
+  if (oldVal !== newVal) {
+    el.textContent = newVal;
+    const card = document.getElementById(cardId);
+    if (card) {
+      card.classList.add('pulse');
+      setTimeout(() => card.classList.remove('pulse'), 800);
+    }
+  }
+}
+
+function triggerManualRefresh() {
+  fetchLiveStats();
+}
+
+async function simulateTestSearch() {
+  const stEl = document.getElementById('update-status');
+  if (stEl) stEl.textContent = "⏳ Simulating test audit...";
+  try {
+    const testAsins = ['B0CYQ6TJN8', 'B0BN7WWTNT', 'B0BDVG99J5', 'B01CCGW4OE'];
+    const randomAsin = testAsins[Math.floor(Math.random() * testAsins.length)];
+    const resp = await fetch('/api/buyer/audit-deal', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url: randomAsin })
+    });
+    if (resp.ok) {
+      await fetchLiveStats();
+    } else {
+      stEl.textContent = "⚠️ Test audit failed";
+    }
+  } catch(e) {
+    stEl.textContent = "⚠️ Simulation error: " + e.message;
+  }
+}
+
+// Initial fetch on page load
+document.addEventListener('DOMContentLoaded', () => {
+  fetchLiveStats();
+  // Auto-refresh every 5 seconds
+  setInterval(fetchLiveStats, 5000);
+});
+</script>
 </body>
 </html>
 """
-    return Response(html, mimetype="text/html")
+    resp = Response(html, mimetype="text/html")
+    resp.headers["Cache-Control"] = "no-cache, no-store, must-revalidate, max-age=0"
+    resp.headers["Pragma"] = "no-cache"
+    resp.headers["Expires"] = "0"
+    return resp
+
+
 
 
 
