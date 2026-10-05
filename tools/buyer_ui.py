@@ -835,6 +835,7 @@ async function runAudit() {
     }
 
     lastAuditedItem = d;
+    const v = getLocalizedVerdict(d, currentLang);
 
     resEl.innerHTML = `
       <div class="audit-card">
