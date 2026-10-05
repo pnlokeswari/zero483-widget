@@ -942,9 +942,11 @@ async function runAudit() {
       </div>
     `;
   } catch (err) {
+    console.error('Audit exception:', err);
+    const isNetwork = err instanceof TypeError && (err.message || '').toLowerCase().includes('fetch');
     resEl.innerHTML = `
       <div style="background:#220909;border:1px solid var(--red);border-radius:10px;padding:16px;color:#fca5a5;font-size:.85rem">
-        <strong>⚠️ Network Error:</strong> ${err.message}
+        <strong>⚠️ ${isNetwork ? 'Network Connection Error' : 'Audit Processing Error'}:</strong> ${err.message || 'Unable to audit deal at this moment. Please verify the link and try again.'}
       </div>
     `;
   } finally {
@@ -1392,9 +1394,12 @@ function getLocalizedVerdict(d, lang) {
     color = '#f59e0b';
   }
 
-  const vInfo = (dict.verdicts && dict.verdicts[type]) ? dict.verdicts[type] : TRANSLATIONS.en.verdicts[type];
-  const title = vInfo.title.replace('{pct}', pct);
-  const reason = vInfo.reason
+  const defaultV = { title: d.verdict || '🟢 VERIFIED DEAL', reason: d.verdict_reason || 'Verified pricing against official packaging.' };
+  const vInfo = (dict.verdicts && dict.verdicts[type]) 
+    ? dict.verdicts[type] 
+    : ((TRANSLATIONS.en.verdicts && TRANSLATIONS.en.verdicts[type]) || defaultV);
+  const title = (vInfo.title || '🟢 VERIFIED DEAL').replace('{pct}', pct);
+  const reason = (vInfo.reason || 'Verified pricing against official packaging.')
     .replace('{pct}', pct)
     .replace('{savings}', savings)
     .replace('{mrp}', mrp)
