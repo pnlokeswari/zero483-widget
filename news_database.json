@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-10-07T01:49:46.684098+00:00",
+  "last_updated": "2026-10-07T09:17:23.807956+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "e3cab1375a94",
+      "title": "Drug Shortage: Epinephrine Bitartrate, Lidocaine Hydrochloride Injection",
+      "slug": "drug-shortage-epinephrine-bitartrate-lidocaine-hydrochloride-injection",
+      "date": "2026-10-07",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Epinephrine Bitartrate, Lidocaine Hydrochloride Injection\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Epinephrine Bitartrate, Lidocaine Hydrochloride Injection",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-10-07T09:17:02.138910+00:00",
+      "is_long_form": false
+    },
     {
       "id": "92aab485f038",
       "title": "HLB wins US approval as bile duct cancer drug enters Europe review - CHOSUNBIZ - Chosunbiz",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-10-01T20:37:09.912803+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "58da61a8b589",
-      "title": "Massive recall on eyedrops that may not be sterile - FOX 8 News",
-      "slug": "massive-recall-on-eyedrops-that-may-not-be-sterile-fox-8-news",
-      "date": "2026-10-01",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Massive recall on eyedrops that may not be sterile - FOX 8 News\nSource: Google News\nDate: Thu, 01 Oct 2026 14:09:58 GMT</p>",
-      "compliance_impact": "<ul><li>Review the details of this regulatory action to assess potential public or market implications.</li></ul>",
-      "key_actions": "<ul><li>Discuss this update with relevant team members or advisors to evaluate next steps.</li></ul>",
-      "industry_context": "",
-      "seo_title": "Massive recall on eyedrops that may not be sterile - FOX 8 News",
-      "seo_description": "",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1RanVNa0RtZk5ZeWxwZE5FU0NsWkFBbU4yNG1GcFlhRXF1ODRXT182cy1FOXpUMHFpeTh4bGt1X1lJWDZaNHdVeWc4TU44X3lJeHhHN2tQNkNKWnNJcEQxOWh6TnRnQnZJUWQ4ZzEySm9uU2N6ajRqYW5iMEZlQdIBgwFBVV95cUxPZTRfWjdlSklFZkV0Qzk5SzVnamhJWFJGS0NDUVM3STR0ZTNjUXFVbVc0dmFpazFyS2steWQtR2p1Ul8wNFlFWTZ3bzU0VEMwMG1MVFIxQzFlMWRYMjZmSHR1ZEw1cFAzS0FNTW5ucXpFQ1p1S1gyMjAxTFR4Vk40Y0xpWQ?oc=5",
-      "fetched_at": "2026-10-01T20:35:10.136812+00:00",
       "is_long_form": false
     }
   ]
