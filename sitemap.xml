@@ -5,6 +5,7 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/avantage-inserter-handles-and-grippers.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/pfizer-s-tukysa-regimen-wins-another-fda-approval-the-pharma-letter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-lisdexamfetamine-dimesylate-capsule.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/hanmi-pharmaceutical-sinks-as-priced-in-obesity-drug-approval-triggers-selloff-chosunbiz-chosunbiz.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -54,5 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/urgent-recall-of-a-widely-consumed-dairy-product-after-13-poisoning-cases-fda-alleges-contamination-with-a-harmful-toxi.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/natco-pharma-gains-12-after-receiving-cdsco-approval-for-semaglutide-in-india-alice-blue.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/ema-raises-77m-ai-employees-keep-human-approval-quasa-io.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/health-news-today-fda-approval-weight-loss-drug-polskieradio-pl.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>

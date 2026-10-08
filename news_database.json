@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-10-08T09:29:01.640992+00:00",
+  "last_updated": "2026-10-08T16:58:07.853975+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "14378fade995",
+      "title": "Avantage Inserter Handles and Grippers",
+      "slug": "avantage-inserter-handles-and-grippers",
+      "date": "2026-10-08",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Avantage Inserter Handles and Grippers\nSource: Health Canada\nDate: 2026-10-08T12:00:00</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Avantage Inserter Handles and Grippers",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/avantage-inserter-handles-and-grippers",
+      "fetched_at": "2026-10-08T16:58:06.262896+00:00",
+      "is_long_form": false
+    },
     {
       "id": "eca54b3f11ae",
       "title": "Pfizer’s Tukysa regimen wins another FDA approval - The Pharma Letter",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQWVZYVDQ2TkgwalhyTlJ5bDNHelFwZjhIbzVpOUVZUVlMWDJld09QaXFESVc3RzREOXQwaU01dkZYZXNEa0tlVGxNSWtKMU4zOERwVm1QQ21FanpndHFvNGNiOWY2M25jVVJfNFZRVklJS0VFZF80UDQ5R0JBWW15RFNKVzFtMmpsYWE1c3BaZks?oc=5",
       "fetched_at": "2026-10-02T13:13:02.490442+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "e5ef75a28c24",
-      "title": "health news today fda approval weight loss drug - polskieradio.pl",
-      "slug": "health-news-today-fda-approval-weight-loss-drug-polskieradio-pl",
-      "date": "2026-10-02",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: health news today fda approval weight loss drug - polskieradio.pl\nSource: Google News\nDate: Fri, 02 Oct 2026 00:32:03 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "health news today fda approval weight loss drug - polskieradio.pl",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSk9uX1EwdUtXZ0l3RWF3X0ZZNmk5Q2dQRXg3SDBTZ1dVLWpzaFlJSldMRFNuRGw4WHp3ZEJOYUdKLUp5SUR5RUY4Vk1kREdsdXV0YU1aekpPSXJ3a1FjbUtDN3JsTEtFbS1YVDhYVWNDOTU2eUJBc1h2cTB3RjdNQlJIUk9VclV3ZS1VREFBTEIwOW9CaGk0SUVmLWo?oc=5",
-      "fetched_at": "2026-10-02T13:12:32.936182+00:00",
       "is_long_form": false
     }
   ]
