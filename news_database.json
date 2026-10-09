@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-10-09T02:35:06.107333+00:00",
+  "last_updated": "2026-10-09T09:39:17.784283+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "29b6e8e0ad2e",
+      "title": "New FDA approval for Roche’s Tecentriq - The Pharma Letter",
+      "slug": "new-fda-approval-for-roche-s-tecentriq-the-pharma-letter",
+      "date": "2026-10-09",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: New FDA approval for Roche’s Tecentriq - The Pharma Letter\nSource: Google News\nDate: Fri, 09 Oct 2026 07:53:21 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "New FDA approval for Roche’s Tecentriq - The Pharma Letter",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWXJQWTc0M1RMZXlualR3V0VLLXExTHZzM0RaV3NXWXdibnB3MHlZVE9IYlI3R0ltb3NfcldzOWZCZENRZFY1Y3lucVpxaUlNWDRtV2wtOEJUektqWWZNQkFLMnF4NnJqRGdSMWlNQkdwZWM5ckNpSzZveXlvYUh0NmpsVDRPX2o3MVJJ?oc=5",
+      "fetched_at": "2026-10-09T09:38:57.846483+00:00",
+      "is_long_form": false
+    },
     {
       "id": "440d6beba8a7",
       "title": "Pre-workout powder recalled over illegal drug linked to heart attacks - New York Post",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/hcg-one-step-pregnancy-tests",
       "fetched_at": "2026-10-02T18:42:35.735165+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "058babc4a03b",
-      "title": "hCG Cassettes",
-      "slug": "hcg-cassettes",
-      "date": "2026-10-02",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: hCG Cassettes\nSource: Health Canada\nDate: 2026-10-02T12:00:00</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "hCG Cassettes",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/hcg-cassettes",
-      "fetched_at": "2026-10-02T18:42:30.722549+00:00",
       "is_long_form": false
     }
   ]
