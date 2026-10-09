@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-10-08T22:29:18.863741+00:00",
+  "last_updated": "2026-10-09T02:35:06.107333+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "440d6beba8a7",
+      "title": "Pre-workout powder recalled over illegal drug linked to heart attacks - New York Post",
+      "slug": "pre-workout-powder-recalled-over-illegal-drug-linked-to-heart-attacks-new-york-post",
+      "date": "2026-10-08",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Pre-workout powder recalled over illegal drug linked to heart attacks - New York Post\nSource: Google News\nDate: Thu, 08 Oct 2026 14:56:00 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Pre-workout powder recalled over illegal drug linked to heart attacks - New York Post",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNajdYMDc2ZTdZRFdWTFNtMS1objUtSTdrcE1fWlMxRDdJTzFrNkxZbjFad2QtVFdLUkNrWElsaHZjR0hCOURUX3d0cG9LMDc3NmxsM09vUkVGYTZpellGNmJwRk5sMEF6aU5aVlBrTldqX3N4ZDJGaV9sSWsxc3dBN3dVMm8wcDJhbUYyZU56TnltQTJndVNQY3BMQ2h5UlZfejZaQTZ6cG9KelE?oc=5",
+      "fetched_at": "2026-10-09T02:34:28.738460+00:00",
+      "is_long_form": false
+    },
     {
       "id": "a9f33d38f763",
       "title": "TruSystem 7000 and TruSystem 7500 Surgical Tables",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/hcg-cassettes",
       "fetched_at": "2026-10-02T18:42:30.722549+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "886a2285d86e",
-      "title": "Automated Impella® Controllers (AIC)",
-      "slug": "automated-impella-controllers-aic",
-      "date": "2026-10-02",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Automated Impella® Controllers (AIC)\nSource: Health Canada\nDate: 2026-10-02T12:00:00</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Automated Impella® Controllers (AIC)",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/automated-impellar-controllers-aic",
-      "fetched_at": "2026-10-02T18:42:25.713118+00:00",
       "is_long_form": false
     }
   ]
