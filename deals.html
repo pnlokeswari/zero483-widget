@@ -1262,7 +1262,7 @@ async function runAudit(competitorUrl = '') {
           <div class="compare-col ${isAmzWinner ? 'is-winner' : ''}">
             <div class="compare-col-header">
               <span class="store-tag amazon">📦 AMAZON INDIA</span>
-              ${isAmzWinner ? '<span class="pill" style="font-size:.65rem;background:#10b981;color:#000;font-weight:800">BEST PRICE</span>' : (amzMatched ? '<span class="pill" style="font-size:.62rem;background:rgba(16,185,129,.15);color:#34d399">LIVE VERIFIED</span>' : '')}
+              ${isAmzWinner ? '<span class="pill" style="font-size:.65rem;background:#10b981;color:#000;font-weight:800">BEST PRICE</span>' : (amzMatched ? '<span class="pill" style="font-size:.62rem;background:rgba(16,185,129,.15);color:#34d399">LIVE VERIFIED</span>' : '<span class="pill" style="font-size:.62rem;background:rgba(245,158,11,.15);color:#fbbf24">EXACT MATCH NOT FOUND</span>')}
             </div>
             ${amzMatched ? `
               <div class="comp-price-row">
@@ -1281,14 +1281,14 @@ async function runAudit(competitorUrl = '') {
               </a>
             ` : `
               <div style="padding:10px 0;font-size:.82rem;color:var(--muted);line-height:1.5">
-                <div style="color:#fbbf24;font-weight:700;margin-bottom:6px">🔎 Direct exact variant match not confirmed automatically</div>
-                <div>To avoid showing a wrong variant price, click below to check Amazon search results or paste the exact Amazon link below:</div>
+                <div style="color:#fbbf24;font-weight:800;font-size:.9rem;margin-bottom:6px">⚠️ Exact Match Was Not Found on Amazon</div>
+                <div>We could not confirm the exact same model & Box MRP automatically. To avoid showing a wrong item, tap below to check live Amazon search results or paste the exact Amazon link if you have one:</div>
               </div>
               <a href="${d.amazon_search_url || amz.url || 'https://www.amazon.in'}" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy amazon" style="margin-bottom:10px">
                 🔍 Tap to View Live Amazon Search Results ↗
               </a>
               <div style="display:flex;gap:6px;margin-top:4px">
-                <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem" placeholder="Have the Amazon link? Paste here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
+                <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem" placeholder="Have the exact Amazon link? Paste here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
                 <button type="button" onclick="applyInlineCompetitorCompare()" class="btn-compare-action" style="padding:8px 12px;font-size:.75rem;white-space:nowrap">Compare ⚔️</button>
               </div>
             `}
@@ -1298,7 +1298,7 @@ async function runAudit(competitorUrl = '') {
           <div class="compare-col ${isFkWinner ? 'is-winner' : ''}">
             <div class="compare-col-header">
               <span class="store-tag flipkart">⚡ FLIPKART INDIA</span>
-              ${isFkWinner ? '<span class="pill" style="font-size:.65rem;background:#10b981;color:#000;font-weight:800">BEST PRICE</span>' : (fkMatched ? '<span class="pill" style="font-size:.62rem;background:rgba(16,185,129,.15);color:#34d399">LIVE VERIFIED</span>' : '')}
+              ${isFkWinner ? '<span class="pill" style="font-size:.65rem;background:#10b981;color:#000;font-weight:800">BEST PRICE</span>' : (fkMatched ? '<span class="pill" style="font-size:.62rem;background:rgba(16,185,129,.15);color:#34d399">LIVE VERIFIED</span>' : '<span class="pill" style="font-size:.62rem;background:rgba(245,158,11,.15);color:#fbbf24">EXACT MATCH NOT FOUND</span>')}
             </div>
             ${fkMatched ? `
               <div class="comp-price-row">
@@ -1317,14 +1317,14 @@ async function runAudit(competitorUrl = '') {
               </a>
             ` : `
               <div style="padding:10px 0;font-size:.82rem;color:var(--muted);line-height:1.5">
-                <div style="color:#60a5fa;font-weight:700;margin-bottom:6px">🔎 Direct exact variant match not confirmed automatically</div>
-                <div>To avoid showing a wrong variant price, click below to check Flipkart search results or paste the exact Flipkart link below:</div>
+                <div style="color:#fbbf24;font-weight:800;font-size:.9rem;margin-bottom:6px">⚠️ Exact Match Was Not Found on Flipkart</div>
+                <div>We could not confirm the exact same model & Box MRP automatically. To avoid showing a wrong item, tap below to check live Flipkart search results or paste the exact Flipkart link if you have one:</div>
               </div>
               <a href="${d.flipkart_search_url || fk.url || 'https://www.flipkart.com'}" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy flipkart" style="margin-bottom:10px">
                 🔍 Tap to View Live Flipkart Search Results ↗
               </a>
               <div style="display:flex;gap:6px;margin-top:4px">
-                <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem" placeholder="Have the Flipkart link? Paste here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
+                <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem" placeholder="Have the exact Flipkart link? Paste here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
                 <button type="button" onclick="applyInlineCompetitorCompare()" class="btn-compare-action" style="padding:8px 12px;font-size:.75rem;white-space:nowrap">Compare ⚔️</button>
               </div>
             `}
