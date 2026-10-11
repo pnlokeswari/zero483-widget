@@ -1,6 +1,6 @@
 """
 ============================================================
- WAVEPICKS -- Buyer Deals and Price Fluctuation Auditor UI
+ VERIFYFIRST -- Buyer Deals and Price Fluctuation Auditor UI
  Dedicated consumer portal for Amazon India Shoppers
  Pure, clean, focused deal auditing experience
 ============================================================
@@ -11,49 +11,78 @@ BUYER_HTML = r"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>🛍️ WAVEPICKS Deals — Amazon India Price Fluctuation &amp; Deal Auditor</title>
-<meta name="description" content="Paste any Amazon India product link to verify true printed box MRP, authentic deal discount %, and inspect 90-day price history curves before buying.">
+<title>VerifyFirst — Amazon vs Flipkart Price Comparison &amp; 90-Day Real Trajectory</title>
+<meta name="description" content="Verify before you buy! Compare live prices across Amazon India &amp; Flipkart, verify authentic printed packaging box MRPs, and inspect 90-day price trends to never overpay.">
 
 <!-- Pinterest Rich Pin Standards & Domain Verification -->
 <meta name="pinterest-rich-pin" content="true" />
 <meta name="p:domain_verify" content="cf07b06d0e5ffe4465aa2c5c2297a030" />
 
 <!-- Open Graph (Rich Pins / Social Sharing) -->
-<meta property="og:site_name" content="ZERO483 Deals &amp; Price Auditor" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Amazon India Deal &amp; Price Fluctuation Auditor — 100% Real Box MRP" />
-<meta property="og:description" content="Discover authentic deals, verify true box MRP savings, and inspect 90-day price history before buying on Amazon India." />
+<meta property="og:site_name" content="VerifyFirst — Smart Price Verification &amp; Comparison" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="VerifyFirst: Amazon vs Flipkart Live Price Comparison &amp; 90-Day Real Drops" />
+<meta property="og:description" content="Never pay full price! Check side-by-side store prices, official printed box MRPs, and authentic 90-day price trajectories before checkout." />
 <meta property="og:url" content="https://alerts.zero483.com/deals.html" />
 <meta property="og:image" content="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&amp;auto=format&amp;fit=crop&amp;q=80" />
 <meta property="article:author" content="PNLOKESWARI" />
-<meta property="article:section" content="Shopping &amp; Consumer Protection" />
+<meta property="article:section" content="Consumer Protection &amp; Smart Shopping" />
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Amazon India Deal &amp; Price Fluctuation Auditor — 100% Real Box MRP" />
-<meta name="twitter:description" content="Discover authentic deals, verify true box MRP savings, and inspect 90-day price history before buying on Amazon India." />
+<meta name="twitter:title" content="VerifyFirst: Amazon vs Flipkart Live Price Comparison &amp; 90-Day Real Drops" />
+<meta name="twitter:description" content="Never pay full price! Check side-by-side store prices, official printed box MRPs, and authentic 90-day price trajectories before checkout." />
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&amp;auto=format&amp;fit=crop&amp;q=80" />
 
 <!-- Canonical -->
 <link rel="canonical" href="https://alerts.zero483.com/deals.html" />
 
-<!-- Structured Data Schema (JSON-LD) for Google &amp; Pinterest Rich Pins -->
+<!-- Structured Data Schema (JSON-LD) with FAQPage & AggregateOffer Rich Snippets -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "WebApplication",
-      "name": "WAVEPICKS Amazon India Deal Auditor",
+      "name": "VerifyFirst — Smart Price & Deal Comparison",
       "url": "https://alerts.zero483.com/deals.html",
       "applicationCategory": "ShoppingApplication",
       "operatingSystem": "All",
-      "description": "Verifies authentic Amazon India printed box MRPs and renders 90-day Keepa price fluctuation curves."
+      "description": "Compares Amazon and Flipkart product prices, verifies official printed box MRP, and graphs 90-day real price trajectories."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I know if an Amazon or Flipkart discount is genuine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check the printed packaging box MRP rather than the seller's strikethrough price, and inspect the product's 90-day price trajectory to see what it actually sold for outside of festival sales."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do Amazon and Flipkart have different MRPs for some products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In India, identical products carry identical printed box MRPs. If the MRP differs between stores by more than ₹1, they are usually different model series, hardware variations, or different pack sizes rather than identical items."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I get the absolute lowest checkout price when shopping online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Always compare live prices across both Amazon and Flipkart side-by-side, check the 90-day trend to ensure you are buying during a genuine price dip, and check active bank and credit card instant discounts before making payment."
+          }
+        }
+      ]
     },
     {
       "@type": "Article",
-      "headline": "Amazon India Deal & Price Fluctuation Auditor — 100% Real Box MRP",
-      "description": "Verify authentic packaging box MRPs and inspect 90-day price drops before buying on Amazon India.",
+      "headline": "VerifyFirst: Amazon vs Flipkart Live Price Comparison & 90-Day Real Drops",
+      "description": "Empowering smart shoppers to verify official packaging box MRPs and compare live store prices before buying.",
       "image": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&auto=format&fit=crop&q=80",
       "author": {
         "@type": "Person",
@@ -63,7 +92,7 @@ BUYER_HTML = r"""<!DOCTYPE html>
       },
       "publisher": {
         "@type": "Organization",
-        "name": "ZERO483",
+        "name": "VerifyFirst",
         "logo": {
           "@type": "ImageObject",
           "url": "https://alerts.zero483.com/favicon.ico"
@@ -81,9 +110,9 @@ BUYER_HTML = r"""<!DOCTYPE html>
 <script>
 (function(){
   try {
-    var t = localStorage.getItem('wavepicks_theme') || 'midnight';
+    var t = localStorage.getItem('verifyfirst_theme') || 'midnight';
     document.documentElement.setAttribute('data-theme', t);
-    var l = localStorage.getItem('wavepicks_lang') || 'en';
+    var l = localStorage.getItem('verifyfirst_lang') || 'en';
     document.documentElement.lang = l;
   } catch(e){}
 })();
@@ -448,6 +477,324 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
 .modal-title{font-size:1.1rem;font-weight:800;color:var(--text-heading)}
 .modal-close{background:none;border:none;color:var(--muted);font-size:1.4rem;cursor:pointer}
 
+/* ==============================================================
+   AMAZON 🆚 FLIPKART COMPARISON TABLE & CARDS
+   ============================================================== */
+.winner-banner{
+  background:linear-gradient(135deg, rgba(16,185,129,0.2), rgba(16,185,129,0.06));
+  border:1.5px solid var(--green);
+  border-radius:12px;
+  padding:12px 16px;
+  margin-bottom:14px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.winner-text{font-size:1rem;font-weight:800;color:#34d399;display:flex;align-items:center;gap:6px}
+.winner-pill{background:#10b981;color:#000;font-weight:800;font-size:.7rem;padding:3px 10px;border-radius:14px;text-transform:uppercase}
+
+.compare-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-bottom:16px;
+}
+.compare-col{
+  background:var(--card-inner);
+  border:1.5px solid var(--border);
+  border-radius:12px;
+  padding:14px 12px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  transition:all .2s;
+  position:relative;
+}
+.compare-col.is-winner{
+  border-color:var(--green);
+  box-shadow:0 0 16px rgba(16,185,129,0.18);
+  background:linear-gradient(180deg, rgba(16,185,129,0.08), var(--card-inner));
+}
+.compare-col-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding-bottom:8px;
+  border-bottom:1px solid var(--border);
+}
+.store-tag{font-weight:800;font-size:.82rem;display:flex;align-items:center;gap:6px}
+.store-tag.amazon{color:#f59e0b}
+.store-tag.flipkart{color:#60a5fa}
+
+.comp-price-row{display:flex;align-items:baseline;justify-content:space-between;gap:6px}
+.comp-price{font-size:1.35rem;font-weight:800;color:var(--text-heading)}
+.comp-mrp{font-size:.82rem;color:var(--muted);text-decoration:line-through}
+.comp-discount{font-size:.82rem;font-weight:800;color:var(--green)}
+.comp-low90{font-size:.74rem;color:var(--muted);margin-top:2px}
+
+.btn-store-buy{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  padding:10px 12px;
+  border-radius:8px;
+  font-weight:800;
+  font-size:.82rem;
+  text-decoration:none;
+  color:#fff;
+  transition:all .2s;
+  margin-top:auto;
+}
+.btn-store-buy.amazon{background:linear-gradient(135deg,#f59e0b,#d97706);color:#000}
+.btn-store-buy.amazon:hover{background:#d97706}
+.btn-store-buy.flipkart{background:linear-gradient(135deg,#2874f0,#1e5cc0);color:#fff}
+.btn-store-buy.flipkart:hover{background:#1e5cc0}
+
+/* MRP Mismatch Warning Banner */
+.mrp-mismatch-banner{
+  background:linear-gradient(135deg,rgba(245,158,11,0.18),rgba(239,68,68,0.12));
+  border:1px solid #f59e0b;
+  border-left:5px solid #ef4444;
+  border-radius:12px;
+  padding:14px 16px;
+  margin-bottom:14px;
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+}
+.mrp-mismatch-icon{
+  font-size:1.35rem;
+  line-height:1;
+  flex-shrink:0;
+  margin-top:2px;
+}
+.mrp-mismatch-content{
+  flex:1;
+}
+.mrp-mismatch-title{
+  font-size:.88rem;
+  font-weight:800;
+  color:#fef08a;
+  margin-bottom:4px;
+}
+.mrp-mismatch-desc{
+  font-size:.78rem;
+  color:#f1f5f9;
+  line-height:1.5;
+}
+.mrp-mismatch-action{
+  margin-top:8px;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:.75rem;
+  font-weight:700;
+  color:#38bdf8;
+  text-decoration:none;
+}
+.mrp-mismatch-action:hover{
+  text-decoration:underline;
+}
+
+/* Bank & Card Offers Pro-Tip Box */
+.bank-offers-hint-box{
+  background:linear-gradient(135deg, rgba(16,185,129,0.12), rgba(6,78,59,0.22));
+  border:1px solid rgba(16,185,129,0.35);
+  border-radius:12px;
+  padding:12px 16px;
+  margin-top:12px;
+  margin-bottom:6px;
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+}
+.bank-offers-icon{
+  font-size:1.35rem;
+  line-height:1;
+  flex-shrink:0;
+  margin-top:2px;
+}
+.bank-offers-content{
+  flex:1;
+}
+.bank-offers-title{
+  font-size:.85rem;
+  font-weight:800;
+  color:#6ee7b7;
+  margin-bottom:3px;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.bank-offers-desc{
+  font-size:.78rem;
+  color:#e2e8f0;
+  line-height:1.5;
+}
+.bank-offers-desc strong{
+  color:#fef08a;
+}
+
+/* Competitor Manual Input Drawer & Alternative Search Bar */
+.compare-drawer-wrap{
+  background:var(--card-inner);
+  border:1px dashed var(--border-glow);
+  border-radius:12px;
+  padding:14px 16px;
+  margin-top:14px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.compare-drawer-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.compare-drawer-title{
+  font-size:.82rem;
+  font-weight:700;
+  color:var(--text-heading);
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.compare-drawer-input-row{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.compare-input{
+  flex:1;
+  min-width:220px;
+  background:#090d19;
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:10px 14px;
+  font-size:.84rem;
+  color:var(--text);
+  outline:none;
+}
+.compare-input:focus{border-color:var(--brand-glow)}
+.btn-compare-action{
+  background:linear-gradient(135deg,#2874f0,#1e5cc0);
+  color:#fff;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  font-size:.82rem;
+  font-weight:700;
+  cursor:pointer;
+  white-space:nowrap;
+  transition:all .2s;
+}
+.btn-compare-action:hover{filter:brightness(1.15)}
+.btn-browse-store{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid var(--border);
+  color:var(--brand-glow);
+  padding:8px 14px;
+  border-radius:8px;
+  font-size:.76rem;
+  font-weight:700;
+  text-decoration:none;
+  transition:all .2s;
+}
+.btn-browse-store:hover{background:rgba(255,255,255,0.15);color:#fff}
+
+@media(max-width:580px){
+  .compare-grid{grid-template-columns:1fr;gap:10px}
+  .comp-price{font-size:1.25rem}
+  .compare-drawer-input-row{flex-direction:column}
+  .btn-compare-action{width:100%}
+  .specs-comp-grid{grid-template-columns:1fr !important}
+}
+
+/* Side-by-Side Specifications & Highlights Comparison Matrix */
+.specs-comp-card{
+  background:var(--card-inner);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:16px 18px;
+  margin-top:14px;
+}
+.specs-comp-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:12px;
+  flex-wrap:wrap;
+  gap:8px;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  padding-bottom:10px;
+}
+.specs-comp-title{
+  font-size:.92rem;
+  font-weight:800;
+  color:var(--text-heading);
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.specs-comp-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+.specs-col{
+  background:rgba(0,0,0,0.22);
+  border:1px solid rgba(255,255,255,0.05);
+  border-radius:10px;
+  padding:12px 14px;
+}
+.specs-col-header{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  font-size:.8rem;
+  font-weight:800;
+  margin-bottom:10px;
+  padding-bottom:6px;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+.specs-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.specs-item{
+  font-size:.78rem;
+  line-height:1.45;
+  color:var(--text);
+  display:flex;
+  align-items:flex-start;
+  gap:8px;
+}
+.specs-item-icon{
+  flex-shrink:0;
+  margin-top:2px;
+  font-size:.82rem;
+}
+.specs-item-text{
+  flex:1;
+  word-break:break-word;
+}
+.specs-item-text strong{
+  color:var(--text-heading);
+}
+
 /* Community Share & Bookmark Card */
 .share-card{background:var(--share-bg);border:1px solid var(--border);border-radius:18px;padding:24px 22px;margin-top:14px;box-shadow:0 10px 32px rgba(0,0,0,.4);text-align:center}
 .share-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.08);border:1px solid var(--border-glow);color:var(--brand-glow);border-radius:20px;padding:4px 12px;font-size:.74rem;font-weight:700;margin-bottom:10px}
@@ -483,6 +830,9 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
 
 .btn-deal-whatsapp{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:rgba(37,211,102,.15);border:1px solid rgba(37,211,102,.4);color:#4ade80;font-weight:700;font-size:.84rem;padding:12px 18px;border-radius:8px;text-decoration:none;transition:all .2s;box-sizing:border-box}
 .btn-deal-whatsapp:hover{background:#25d366;color:#000;transform:translateY(-1px)}
+
+.btn-deal-copy{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.35);color:#7dd3fc;font-weight:700;font-size:.84rem;padding:12px 18px;border-radius:8px;cursor:pointer;transition:all .2s;box-sizing:border-box}
+.btn-deal-copy:hover{background:#0284c7;color:#fff;transform:translateY(-1px)}
 
 /* Toast */
 .share-toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(100px);background:var(--card);border:1px solid var(--border-glow);color:var(--text);padding:12px 22px;border-radius:30px;font-size:.84rem;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.8);z-index:9999;opacity:0;transition:all .3s cubic-bezier(0.16,1,0.3,1);pointer-events:none;text-align:center;max-width:90%}
@@ -528,8 +878,8 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
 
 <header>
   <div class="brand-title">
-    <span>🛍️ WAVEPICKS</span>
-    <span class="pill header-subpill" data-i18n="header_subpill">Deal &amp; Price Fluctuation Auditor</span>
+    <span>🛡️ VerifyFirst</span>
+    <span class="pill header-subpill" data-i18n="header_subpill">Smart Price &amp; Deal Comparison</span>
   </div>
   <div class="header-actions">
     <!-- Interactive Background Theme Selector -->
@@ -625,35 +975,35 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
   <!-- Mission Hero Section: Smart Shopping & Deal Insights -->
   <div class="mission-hero">
     <div class="mission-badge">
-      <span data-i18n="mission_badge_1">🎯 Smart Shopping Companion for Amazon India</span>
-      <span class="pill" style="font-size:.65rem;background:rgba(16,185,129,.15);color:#34d399;border-color:rgba(16,185,129,.3)" data-i18n="mission_badge_2">100% Verified Price Insights</span>
+      <span data-i18n="mission_badge_1">🎯 Amazon vs Flipkart Price Comparison — Verify Before You Buy</span>
+      <span class="pill" style="font-size:.65rem;background:rgba(16,185,129,.15);color:#34d399;border-color:rgba(16,185,129,.3)" data-i18n="mission_badge_2">100% Verified Packaging MRP</span>
     </div>
-    <h1 class="mission-title" data-i18n="mission_title">Shop Smarter on Amazon: Find Genuine Deals &amp; Maximum Savings</h1>
-    <p class="mission-desc" data-i18n="mission_desc">We built <strong>WAVEPICKS</strong> to help everyday shoppers make confident, informed buying decisions on Amazon India. Millions of amazing deals happen every day — our intelligent auditor lets you verify genuine price drops, compare current prices against verified packaging box MRPs under Indian Legal Metrology Rules, and inspect 90-day price history curves so you always buy at the absolute best time.</p>
+    <h1 class="mission-title" data-i18n="mission_title">Compare Amazon &amp; Flipkart Prices — Find the Genuine Best Deal Every Time</h1>
+    <p class="mission-desc" data-i18n="mission_desc">We built <strong>VerifyFirst</strong> to help everyday Indian shoppers make confident, informed buying decisions — whether you shop on Amazon or Flipkart. Before spending your money, use our free tool to compare live prices across both stores, verify the genuine printed box MRP, and check 90-day price trends so you always buy at the real lowest price — never at an inflated 'sale' price.</p>
 
     <!-- 3 Core Smart Shopping Pillars -->
     <div class="pillar-grid">
       <div class="pillar-card">
-        <div class="pillar-icon">📦</div>
+        <div class="pillar-icon">⚖️</div>
         <div class="pillar-content">
-          <h4 data-i18n="pillar_1_title">Verify Official Box MRP</h4>
-          <p data-i18n="pillar_1_desc">We cross-reference verified manufacturer packaging to confirm the official printed retail price, ensuring your calculated savings are 100% accurate.</p>
+          <h4 data-i18n="pillar_1_title">Amazon 🆚 Flipkart Comparison</h4>
+          <p data-i18n="pillar_1_desc">Instantly compare live prices and genuine discounts across both giant platforms so you never pay extra on the wrong store.</p>
         </div>
       </div>
 
       <div class="pillar-card">
         <div class="pillar-icon">📉</div>
         <div class="pillar-content">
-          <h4 data-i18n="pillar_2_title">Track 90-Day Price Drops</h4>
-          <p data-i18n="pillar_2_desc">Inspect 90-day price history curves to catch peak price drops and buy your favorite products at their best historical value.</p>
+          <h4 data-i18n="pillar_2_title">Dual 90-Day Price Trajectory</h4>
+          <p data-i18n="pillar_2_desc">Inspect 90-day price drops side-by-side to see who offered the better festival discount during Great Indian Festival &amp; Big Billion Days.</p>
         </div>
       </div>
 
       <div class="pillar-card">
-        <div class="pillar-icon">💡</div>
+        <div class="pillar-icon">📦</div>
         <div class="pillar-content">
-          <h4 data-i18n="pillar_3_title">Smart Buying Recommendation</h4>
-          <p data-i18n="pillar_3_desc">Get clear, data-driven buying guidance before checkout: <strong>Record Low Deal</strong>, <strong>Great Everyday Value</strong>, or <strong>Upcoming Sale Alert</strong>.</p>
+          <h4 data-i18n="pillar_3_title">Official Packaging MRP Check</h4>
+          <p data-i18n="pillar_3_desc">Verify the authentic printed price on the product box to detect artificial strikethrough markups before checkout.</p>
         </div>
       </div>
     </div>
@@ -664,31 +1014,31 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
     <div class="auditor-header">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px">
         <h3>
-          <span data-i18n="auditor_title">🔍 Live Deal &amp; Price Fluctuation Auditor</span>
+          <span data-i18n="auditor_title">🔍 Live Deal &amp; Price Comparison</span>
         </h3>
         <span class="pill" style="background:rgba(16,185,129,.15);color:#34d399;border-color:rgba(16,185,129,.3)" data-i18n="auditor_badge">100% Free &amp; Instant</span>
       </div>
-      <p data-i18n="auditor_desc">Paste any Amazon India product link, shortlink (amzn.in/d/...), or 10-character ASIN. Our 24/7 cloud auditor checks live prices against official packaging in seconds.</p>
+      <p data-i18n="auditor_desc">Paste any Amazon or Flipkart product link, shortlink (amzn.in, dl.flipkart.com), or product ID/ASIN. Verify live store prices against official packaging &amp; 90-day price trends in seconds.</p>
     </div>
     
     <div class="auditor-input-wrap">
       <div class="input-icon-wrap">
         <span class="input-icon">🔗</span>
-        <input type="text" id="audit-input" class="auditor-input" placeholder="Paste Amazon link or ASIN (e.g. B0BDVG99J5)..." onkeydown="if(event.key==='Enter') runAudit()">
+        <input type="text" id="audit-input" class="auditor-input" placeholder="Paste Amazon or Flipkart link / ID (e.g. B0BDVG99J5 or MOBGTAGPTB3VS24W)..." onkeydown="if(event.key==='Enter') runAudit()">
       </div>
-      <button class="btn-audit" id="btn-audit" onclick="runAudit()"><span data-i18n="btn_audit">Audit Deal ⚡</span></button>
+      <button class="btn-audit" id="btn-audit" onclick="runAudit()"><span data-i18n="btn_audit">Verify Best Price ⚡</span></button>
     </div>
 
     <!-- Quick Sample Chips with Horizontal Touch Scroll -->
     <div class="sample-wrapper">
       <span class="sample-label" data-i18n="sample_label">💡 Try verified tested deals:</span>
       <div class="sample-chips-scroll">
+        <span class="sample-chip" onclick="quickAudit('MOBGTAGPTB3VS24W')" style="border-color:#2874f0">⚡ [Flipkart] iPhone 15</span>
+        <span class="sample-chip" onclick="quickAudit('ACCHQDMZTBXGZSUR')" style="border-color:#2874f0">⚡ [Flipkart] 33W Charger (67% Off)</span>
         <span class="sample-chip" onclick="quickAudit('B0BN7WWTNT')">🔥 KareIn Wipes (91% Off)</span>
         <span class="sample-chip" onclick="quickAudit('B0DQY3P9ZH')">✨ PALMONAS 18k Necklace (61% Off)</span>
         <span class="sample-chip" onclick="quickAudit('B0BDVG99J5')">Dot &amp; Key Moisturizer</span>
         <span class="sample-chip" onclick="quickAudit('B01CCGW4OE')">Cetaphil Cleanser</span>
-        <span class="sample-chip" onclick="quickAudit('B0HDYLT6XY')">Alps Goodness Rosemary</span>
-        <span class="sample-chip" onclick="quickAudit('B0HCZCP1BR')">Foxtale Moisturiser</span>
       </div>
     </div>
 
@@ -699,8 +1049,8 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
   <!-- Community Action & Social Share Card -->
   <div class="share-card">
     <div class="share-badge" data-i18n="share_badge">📢 Share Smart Savings with Friends &amp; Family</div>
-    <h3 class="share-title" data-i18n="share_title">Help Friends &amp; Family Find the Best Amazon Deals</h3>
-    <p class="share-desc" data-i18n="share_desc">Shopping during festival sales or checking daily deals? Bookmark <strong>WAVEPICKS</strong> on your phone or browser, and share it with friends, family, and deal groups on WhatsApp, Twitter, Instagram, and Facebook so everyone can easily discover genuine price drops and maximize their savings!</p>
+    <h3 class="share-title" data-i18n="share_title">Help Friends &amp; Family Compare Prices &amp; Save Across Amazon &amp; Flipkart</h3>
+    <p class="share-desc" data-i18n="share_desc">Shopping during festival sales or checking daily deals? Bookmark <strong>VerifyFirst</strong> on your phone or browser, and share it with friends, family, and deal groups on WhatsApp, Twitter, Instagram, and Facebook so everyone can compare live prices across Amazon and Flipkart and maximize their savings!</p>
 
     <!-- Social Share Buttons Grid -->
     <div class="share-grid">
@@ -711,13 +1061,13 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
       </button>
 
       <!-- WhatsApp 1-Tap Share -->
-      <a href="https://api.whatsapp.com/send?text=Find%20the%20best%20genuine%20Amazon%20deals!%20Check%20verified%20packaging%20box%20MRP%20and%2090-day%20price%20history%20before%20buying%20on%20Amazon:%20https://alerts.zero483.com/deals.html" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-whatsapp" id="share-whatsapp-link">
+      <a href="https://api.whatsapp.com/send?text=Compare%20Amazon%20%26%20Flipkart%20prices%20and%20check%20verified%20packaging%20box%20MRP%20before%20buying%20online:%20https://alerts.zero483.com/deals.html" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-whatsapp" id="share-whatsapp-link">
         <span>💬</span>
         <span data-i18n="btn_share_whatsapp">Share on WhatsApp</span>
       </a>
 
       <!-- Twitter / X -->
-      <a href="https://twitter.com/intent/tweet?text=Shop%20smarter%20on%20Amazon!%20Check%20verified%2090-day%20price%20history%20and%20true%20box%20MRP%20to%20catch%20genuine%20price%20drops:%20https://alerts.zero483.com/deals.html&hashtags=AmazonDeals,SmartShopping,WAVEPICKS" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-twitter" id="share-twitter-link">
+      <a href="https://twitter.com/intent/tweet?text=Compare%20Amazon%20%26%20Flipkart%20prices%20instantly!%20Check%20verified%2090-day%20price%20history%20and%20true%20box%20MRP%20to%20find%20the%20genuine%20best%20deal:%20https://alerts.zero483.com/deals.html&hashtags=AmazonVsFlipkart,SmartShopping,VerifyFirst" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-twitter" id="share-twitter-link">
         <span>𝕏</span>
         <span data-i18n="btn_share_twitter">Post on Twitter (X)</span>
       </a>
@@ -777,7 +1127,7 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
 </div>
 
 <footer>
-  <p data-i18n="footer_disclosure"><strong>Amazon Associates Disclosure:</strong> As an Amazon Associate, Wavepicks earns from qualifying purchases made through links on this page. Product prices and availability are verified daily through automated audits and may change over time.</p>
+  <p data-i18n="footer_disclosure"><strong>Amazon Associates Disclosure:</strong> As an Amazon Associate, VerifyFirst earns from qualifying purchases made through links on this page. Product prices and availability are verified daily through automated audits and may change over time.</p>
 </footer>
 
 <script>
@@ -792,14 +1142,14 @@ function quickAudit(asin) {
   runAudit();
 }
 
-async function runAudit() {
+async function runAudit(competitorUrl = '') {
   const inputEl = document.getElementById('audit-input');
   const btnEl = document.getElementById('btn-audit');
   const resEl = document.getElementById('audit-results');
   const val = inputEl.value.trim();
 
   if (!val) {
-    alert("Please paste an Amazon product link, shortlink, or ASIN.");
+    alert("Please paste an Amazon or Flipkart product link, shortlink, or ASIN.");
     inputEl.focus();
     return;
   }
@@ -810,16 +1160,21 @@ async function runAudit() {
   resEl.innerHTML = `
     <div style="background:var(--card-inner);border:1px solid var(--border);border-radius:12px;padding:26px;text-align:center;color:var(--brand-glow);font-size:.9rem">
       <div style="font-size:1.8rem;margin-bottom:8px">⚙️</div>
-      <strong style="color:var(--text-heading)">Auditing Amazon India Pricing &amp; BSR Velocity...</strong>
-      <div style="font-size:.78rem;color:var(--muted);margin-top:4px">Resolving ASIN, comparing box MRP, and querying Keepa 90-day price curve...</div>
+      <strong style="color:var(--text-heading)">Auditing Product Pricing &amp; 90-Day Trend...</strong>
+      <div style="font-size:.78rem;color:var(--muted);margin-top:4px">Checking live checkout price, authentic Box MRP, and 90-day price history...</div>
     </div>
   `;
 
   try {
+    const payload = { url: val };
+    if (competitorUrl && competitorUrl.trim()) {
+      payload.competitor_url = competitorUrl.trim();
+    }
+
     const resp = await fetch(`${API_BASE}/api/buyer/audit-deal`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ url: val })
+      body: JSON.stringify(payload)
     });
     const d = await resp.json();
 
@@ -830,58 +1185,239 @@ async function runAudit() {
         </div>
       `;
       btnEl.disabled = false;
-      btnEl.innerHTML = "Audit Deal ⚡";
+      btnEl.innerHTML = "Verify Best Price ⚡";
       return;
     }
 
     lastAuditedItem = d;
     const v = getLocalizedVerdict(d, currentLang);
 
+    const amz = d.amazon_counterpart || {};
+    const fk = d.flipkart_counterpart || {};
+    const hasComparison = Boolean(d.has_competitor && amz.price && fk.price);
+    const isAmzWinner = d.winner_platform === 'amazon';
+    const isFkWinner = d.winner_platform === 'flipkart';
+    const isPrimaryAmazon = d.platform === 'amazon';
+
+    const amzBullets = (amz.about_this_item && amz.about_this_item.length > 0) ? amz.about_this_item : (d.about_this_item || []);
+    const fkHighlights = (fk.highlights && fk.highlights.length > 0) ? fk.highlights : (d.highlights || []);
+    const hasAnySpecs = Boolean(amzBullets.length > 0 || fkHighlights.length > 0);
+
     resEl.innerHTML = `
       <div class="audit-card">
-        <div class="audit-grid">
-          <!-- Left Column -->
+        <!-- Live Deal Comparison Winner Banner (if competitor compared) -->
+        ${(hasComparison && d.winner_text) ? `
+          <div class="winner-banner">
+            <div class="winner-text">
+              <span>${d.winner_text}</span>
+            </div>
+            <span class="winner-pill">
+              ${d.winner_badge || 'Best Verified Deal'}
+            </span>
+          </div>
+        ` : ''}
+
+        <!-- Product Header & Category -->
+        <div style="font-size:.74rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-weight:700;margin-bottom:6px">
+          🏷️ ${d.category} • Official Box MRP: <strong style="color:var(--text-heading)">₹${d.mrp.toLocaleString('en-IN')}</strong>
+        </div>
+        <h3 style="font-size:1.2rem;font-weight:800;color:var(--text-heading);margin-bottom:14px;line-height:1.4">
+          ${d.title}
+        </h3>
+
+        <!-- Caution: MRP Mismatch Banner (Alerts users if linked competitor product is a different size/variant) -->
+        ${(hasComparison && d.mrp_mismatch) ? `
+          <div class="mrp-mismatch-banner">
+            <span class="mrp-mismatch-icon">⚠️</span>
+            <div class="mrp-mismatch-content">
+              <div class="mrp-mismatch-title">
+                Potential Variant or Pack Size Mismatch (${d.mrp_diff_pct}% MRP Difference)
+              </div>
+              <div class="mrp-mismatch-desc">
+                ${d.mrp_mismatch_msg || `Caution: The compared store's packaging MRP differs substantially from this item. This usually indicates a different storage variant, weight size (e.g. 50g vs 100g), or combo pack rather than an exact match.`}
+              </div>
+              ${(d.flipkart_search_url || d.amazon_search_url) ? `
+                <a href="${d.flipkart_search_url || d.amazon_search_url}" target="_blank" rel="nofollow noopener sponsored" class="mrp-mismatch-action">
+                  🔍 Search exact matching variant on ${isPrimaryAmazon ? 'Flipkart' : 'Amazon'} ↗
+                </a>
+              ` : ''}
+            </div>
+          </div>
+        ` : ''}
+
+        <!-- Side-by-Side Comparison Cards (If Competitor Active) -->
+        ${hasComparison ? `
+          <div class="compare-grid">
+            <!-- Amazon Column -->
+            <div class="compare-col ${isAmzWinner ? 'is-winner' : ''}">
+              <div class="compare-col-header">
+                <span class="store-tag amazon">📦 AMAZON INDIA</span>
+                ${isAmzWinner ? '<span class="pill" style="font-size:.65rem;background:#10b981;color:#000;font-weight:800">BEST PRICE</span>' : ''}
+              </div>
+              <div class="comp-price-row">
+                <span class="comp-price">₹${amz.price.toLocaleString('en-IN')}</span>
+                <span class="comp-mrp">₹${d.mrp.toLocaleString('en-IN')}</span>
+                <span class="comp-discount">-${amz.discount_pct}%</span>
+              </div>
+              <div class="comp-low90">
+                📉 90-Day Real Low: <strong>₹${amz.lowest_90d.toLocaleString('en-IN')}</strong>
+              </div>
+              <div style="font-size:.74rem;color:var(--muted)">
+                💵 You Save: <strong style="color:var(--green)">₹${amz.savings.toLocaleString('en-IN')}</strong> vs Packaging MRP
+              </div>
+              <a href="${amz.url}" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy amazon">
+                Buy on Amazon at ₹${amz.price.toLocaleString('en-IN')} ↗
+              </a>
+            </div>
+
+            <!-- Flipkart Column -->
+            <div class="compare-col ${isFkWinner ? 'is-winner' : ''}">
+              <div class="compare-col-header">
+                <span class="store-tag flipkart">⚡ FLIPKART INDIA</span>
+                ${isFkWinner ? '<span class="pill" style="font-size:.65rem;background:#10b981;color:#000;font-weight:800">BEST PRICE</span>' : ''}
+              </div>
+              <div class="comp-price-row">
+                <span class="comp-price">₹${fk.price.toLocaleString('en-IN')}</span>
+                <span class="comp-mrp">₹${(fk.scraped_mrp || fk.mrp || d.mrp).toLocaleString('en-IN')}</span>
+                <span class="comp-discount">-${fk.discount_pct}%</span>
+              </div>
+              <div class="comp-low90">
+                📉 90-Day Low Benchmark: <strong>₹${fk.lowest_90d.toLocaleString('en-IN')}</strong>
+              </div>
+              <div style="font-size:.74rem;color:var(--muted)">
+                💵 You Save: <strong style="color:var(--green)">₹${fk.savings.toLocaleString('en-IN')}</strong> vs Packaging MRP
+              </div>
+              <a href="${fk.url}" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy flipkart">
+                Buy on Flipkart at ₹${fk.price.toLocaleString('en-IN')} ↗
+              </a>
+            </div>
+          </div>
+        ` : `
+          <!-- Single Product Metric Triplet (When No Competitor Paired Yet) -->
+          <div class="metric-triplet">
+            <div class="metric-box highlight">
+              <div class="m-val" style="color:var(--brand-glow)">₹${d.current_price.toLocaleString('en-IN')}</div>
+              <div class="m-lbl">Live Deal Price</div>
+            </div>
+            <div class="metric-box">
+              <div class="m-val" style="text-decoration:line-through;color:var(--muted)">₹${d.mrp.toLocaleString('en-IN')}</div>
+              <div class="m-lbl">Printed Box MRP</div>
+            </div>
+            <div class="metric-box">
+              <div class="m-val" style="color:var(--green)">₹${d.savings_mrp_inr.toLocaleString('en-IN')}</div>
+              <div class="m-lbl">You Save (${d.discount_mrp_pct}%)</div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap">
+            <a href="${d.affiliate_url}" target="_blank" rel="nofollow noopener sponsored" class="btn-buy" style="background:${isPrimaryAmazon ? 'linear-gradient(135deg,#f59e0b,#d97706);color:#000' : 'linear-gradient(135deg,#2874f0,#1e5cc0);color:#fff'}">
+              🛒 View Live Deal on ${isPrimaryAmazon ? 'Amazon India' : 'Flipkart'} at ₹${d.current_price.toLocaleString('en-IN')} ↗
+            </a>
+          </div>
+        `}
+
+        <!-- Pro-Tip: Bank & Card Offers Advice Banner -->
+        <div class="bank-offers-hint-box">
+          <span class="bank-offers-icon">💳</span>
+          <div class="bank-offers-content">
+            <div class="bank-offers-title">
+              Smart Buyer Pro-Tip: Check Active Bank &amp; Card Offers for Maximum Savings
+            </div>
+            <div class="bank-offers-desc">
+              The prices shown above reflect the live listed store prices. <strong>Always check the &ldquo;Bank Offers&rdquo; or &ldquo;Partner Offers&rdquo; section on the product page before payment</strong> — credit/debit card instant discounts (e.g., HDFC, ICICI, SBI, Axis) and no-cost EMI cashback often shave off an additional <strong>₹1,000 to ₹5,000+</strong>, delivering the true lowest out-of-pocket price!
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Specifications & Highlights Comparison Matrix -->
+        ${hasAnySpecs ? `
+          <div class="specs-comp-card">
+            <div class="specs-comp-header">
+              <span class="specs-comp-title">
+                📋 Key Specifications & Highlights Comparison
+              </span>
+              <span style="font-size:.72rem;color:var(--muted)">
+                Verified Marketplace Metadata
+              </span>
+            </div>
+            <div class="specs-comp-grid">
+              <!-- Amazon Bullets Column -->
+              <div class="specs-col">
+                <div class="specs-col-header" style="color:#fbbf24">
+                  <span>📦 Amazon India</span>
+                  <span style="color:var(--muted);font-weight:400;font-size:.72rem">(About This Item)</span>
+                </div>
+                ${amzBullets.length > 0 ? `
+                  <ul class="specs-list">
+                    ${amzBullets.map(b => `
+                      <li class="specs-item">
+                        <span class="specs-item-icon" style="color:#f59e0b">✓</span>
+                        <span class="specs-item-text">${b}</span>
+                      </li>
+                    `).join('')}
+                  </ul>
+                ` : `
+                  <div style="font-size:.76rem;color:var(--muted);padding:8px 0;font-style:italic">
+                    No bullet specifications reported for this counterpart.
+                  </div>
+                `}
+              </div>
+
+              <!-- Flipkart Highlights Column -->
+              <div class="specs-col">
+                <div class="specs-col-header" style="color:#60a5fa">
+                  <span>⚡ Flipkart India</span>
+                  <span style="color:var(--muted);font-weight:400;font-size:.72rem">(Product Highlights)</span>
+                </div>
+                ${fkHighlights.length > 0 ? `
+                  <ul class="specs-list">
+                    ${fkHighlights.map(h => `
+                      <li class="specs-item">
+                        <span class="specs-item-icon" style="color:#3b82f6">✦</span>
+                        <span class="specs-item-text">${h}</span>
+                      </li>
+                    `).join('')}
+                  </ul>
+                ` : `
+                  <div style="font-size:.76rem;color:var(--muted);padding:8px 0;font-style:italic">
+                    No highlight specifications reported for this counterpart.
+                  </div>
+                `}
+              </div>
+            </div>
+          </div>
+        ` : ''}
+
+        <!-- Optional Manual Competitor Link Input Drawer -->
+        <div class="compare-drawer-wrap">
+          <div class="compare-drawer-header">
+            <span class="compare-drawer-title">
+              ⚖️ ${hasComparison ? 'Re-Compare with Different Competitor' : `Compare with ${isPrimaryAmazon ? 'Flipkart' : 'Amazon'}`}
+            </span>
+            ${(d.flipkart_search_url || d.amazon_search_url) ? `
+              <a href="${d.flipkart_search_url || d.amazon_search_url}" target="_blank" rel="nofollow noopener sponsored" class="btn-browse-store">
+                🔍 Search "${d.search_term || 'this item'}" on ${isPrimaryAmazon ? 'Flipkart' : 'Amazon'} ↗
+              </a>
+            ` : ''}
+          </div>
+          <div class="compare-drawer-input-row">
+            <input type="text" id="manual-comp-input" class="compare-input" placeholder="Paste ${isPrimaryAmazon ? 'Flipkart' : 'Amazon'} product link to compare side-by-side..." onkeydown="if(event.key==='Enter') applyCompetitorCompare()">
+            <button class="btn-compare-action" onclick="applyCompetitorCompare()">
+              Compare Stores ⚔️
+            </button>
+          </div>
+        </div>
+
+        <div class="audit-grid" style="margin-top:14px">
+          <!-- Left Column: Buying Insights -->
           <div class="audit-left">
-            <div style="font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-weight:700">
-              🏷️ ${d.category} • <span style="color:var(--brand-glow)">ASIN: ${d.asin}</span>
-            </div>
-            
-            <h3 style="font-size:1.15rem;font-weight:800;color:var(--text-heading);margin:8px 0 14px;line-height:1.4">
-              ${d.title}
-            </h3>
-
-            <!-- Metric Triplet: 100% Authentic Packaging MRP & Real Savings -->
-            <div class="metric-triplet">
-              <div class="metric-box">
-                <div class="m-val" style="color:var(--text-heading)">₹${d.current_price.toLocaleString('en-IN')}</div>
-                <div class="m-lbl" id="dyn-lbl-deal-price">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_deal_price}</div>
-              </div>
-              <div class="metric-box">
-                <div class="m-val" style="color:var(--muted)">₹${d.mrp.toLocaleString('en-IN')}</div>
-                <div class="m-lbl" id="dyn-lbl-box-mrp">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_box_mrp}</div>
-              </div>
-              <div class="metric-box highlight">
-                <div class="m-val" style="color:var(--green)">-${d.discount_mrp_pct}%</div>
-                <div class="m-lbl" id="dyn-lbl-save-mrp">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_save_mrp.replace('{amt}', d.savings_mrp_inr.toLocaleString('en-IN'))}</div>
-              </div>
-            </div>
-
-            <!-- Graph Invitation Callout -->
-            <div class="graph-invite-banner">
-              <div class="gib-icon">📊</div>
-              <div class="gib-text">
-                <strong id="dyn-lbl-examine-graph">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_examine_graph}</strong>
-                <p id="dyn-lbl-examine-desc">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_examine_desc.replace('{mrp}', d.mrp.toLocaleString('en-IN')).replace('{price}', d.current_price.toLocaleString('en-IN'))}</p>
-              </div>
-            </div>
-
             <!-- Fluctuation Range Bar -->
             <div class="fluctuation-spread-bar">
               <span style="color:var(--muted)">📉 <strong id="dyn-lbl-spread">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_spread}</strong></span>
               <span style="color:var(--brand-glow);font-weight:700">${d.price_range_str}</span>
             </div>
 
-            <!-- Single Localized Buying Verdict Banner -->
+            <!-- Buying Verdict Banner -->
             <div class="verdict-banner" id="dyn-verdict-banner" style="border-left-color:${v.color}">
               <div style="font-weight:800;font-size:1.02rem;color:${v.color};margin-bottom:4px" id="dyn-verdict-title">
                 ${v.title}
@@ -890,18 +1426,18 @@ async function runAudit() {
                 ${v.reason}
               </div>
               <div style="font-size:.76rem;color:var(--muted);margin-top:8px;padding-top:6px;border-top:1px solid var(--border)" id="dyn-verdict-meta">
-                📊 ${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_bsr}: #${d.bsr ? d.bsr.toLocaleString('en-IN') : 'N/A'} • ⭐ ${d.rating || '4.0'} / 5 (${d.review_count ? d.review_count.toLocaleString('en-IN') : 0} ${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_reviews})
+                📊 ${hasComparison ? 'Comparison Verified' : 'Single-Store Deep Audit'} • 🛡️ 100% Authentic Packaging MRP Check
               </div>
             </div>
 
             <!-- Actions -->
             <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
-              <a href="${d.affiliate_url || d.amazon_url}" target="_blank" rel="nofollow noopener sponsored" class="btn-buy" id="dyn-btn-buy">
-                ${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_buy_amazon.replace('{price}', d.current_price)}
+              <a href="${getDealShareUrl(d, currentLang)}" target="_blank" rel="noopener noreferrer" class="btn-deal-whatsapp" id="dyn-btn-whatsapp" title="Share full comparison breakdown on WhatsApp">
+                💬 ${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).btn_deal_whatsapp}
               </a>
-              <a href="${getDealShareUrl(d, currentLang)}" target="_blank" rel="noopener noreferrer" class="btn-deal-whatsapp" id="dyn-btn-whatsapp" title="Share this audit on WhatsApp">
-                ${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).btn_deal_whatsapp}
-              </a>
+              <button onclick="copyDealSummary()" class="btn-deal-copy" id="dyn-btn-copy-summary" title="Copy full comparison summary to clipboard">
+                📋 Copy Comparison Summary
+              </button>
             </div>
 
             <!-- Ethical Referral Notice -->
@@ -911,38 +1447,38 @@ async function runAudit() {
             </div>
           </div>
 
-          <!-- Right Column: Keepa Curve -->
+          <!-- Right Column: 90-Day Price Curve -->
           <div class="audit-right">
             <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
               <span style="font-size:.78rem;font-weight:800;color:var(--brand-glow);text-transform:uppercase;letter-spacing:1px;display:flex;align-items:center;gap:6px">
-                <span id="dyn-curve-header">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_curve_header}</span>
+                <span id="dyn-curve-header">📊 Amazon 90-Day Real Price Trajectory</span>
               </span>
-              <span class="pill" style="font-size:.65rem" id="dyn-curve-badge">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_curve_badge}</span>
+              <span class="pill" style="font-size:.65rem" id="dyn-curve-badge">90-Day Real History</span>
             </div>
             
-            <div class="chart-container" onclick="openKeepa('${d.asin}')" title="Click to view full-screen interactive chart">
-              <div id="res-chart-loading" style="color:var(--muted);font-size:.85rem">⏳ Loading 90-day price curve...</div>
-              <img id="res-chart-img" referrerpolicy="no-referrer" src="${API_BASE}${d.keepa_chart_url}" alt="Keepa Price History" onload="document.getElementById('res-chart-loading').style.display='none';this.style.display='block';" onerror="document.getElementById('res-chart-loading').textContent='⚠️ Chart preview temporarily restricted. Click below to view on Keepa.';">
+            <div class="chart-container" style="background:#090d16;border:1px solid #1e263d;border-radius:10px;padding:4px;overflow:hidden">
+              <div style="width:100%;overflow:hidden;border-radius:8px">
+                ${d.svg_chart}
+              </div>
             </div>
 
             <div style="display:flex;align-items:center;justify-content:space-between;margin-top:8px;flex-wrap:wrap;gap:8px">
-              <span style="font-size:.72rem;color:var(--muted)" id="dyn-click-enlarge">
-                ${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_click_enlarge}
+              <span style="font-size:.72rem;color:var(--muted)">
+                📍 Solid Amber: Amazon (Verified 90D Trajectory) • Red Dashed: Official Box MRP Ceiling
               </span>
-              <a href="${d.keepa_direct_url}" target="_blank" style="font-size:.75rem;color:var(--brand-glow);text-decoration:none;font-weight:700">
-                Open Full Interactive Chart on Keepa ↗
-              </a>
+              <span style="font-size:.73rem;color:#38bdf8;font-weight:600">
+                100% Real History ✓
+              </span>
             </div>
 
-            <!-- Guide to Reading Fluctuations -->
+            <!-- Guide & Chart Legend -->
             <div class="chart-guide-box">
               <div style="font-weight:700;color:var(--text-heading);margin-bottom:5px;display:flex;align-items:center;gap:6px">
-                <span id="dyn-how-to-read">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_how_to_read}</span>
+                <span id="dyn-how-to-read">📊 How to Read This Price Graph:</span>
               </div>
-              <div style="color:var(--text);line-height:1.5">
-                <div id="dyn-curve-point1">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_curve_point1}</div>
-                <div id="dyn-curve-point2">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_curve_point2.replace('{mrp}', d.mrp.toLocaleString('en-IN'))}</div>
-                <div id="dyn-curve-point3">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_curve_point3}</div>
+              <div style="color:var(--text);line-height:1.5;font-size:.77rem">
+                <div>1. <strong>Price Curve (Solid Amber):</strong> Real selling prices tracked over the last 90 days. Deep valleys indicate the best festival sale dips.</div>
+                <div>2. <strong>Printed Box MRP (Red Dashed Line):</strong> Official retail price on the product packaging (₹${d.mrp.toLocaleString('en-IN')}). Genuine discounts start from this maximum price.</div>
               </div>
             </div>
           </div>
@@ -959,8 +1495,18 @@ async function runAudit() {
     `;
   } finally {
     btnEl.disabled = false;
-    btnEl.innerHTML = "Audit Deal ⚡";
+    btnEl.innerHTML = "Verify Best Price ⚡";
   }
+}
+
+function applyCompetitorCompare() {
+  const compInput = document.getElementById('manual-comp-input');
+  if (!compInput || !compInput.value.trim()) {
+    alert("Please paste a product link to compare.");
+    if (compInput) compInput.focus();
+    return;
+  }
+  runAudit(compInput.value.trim());
 }
 
 function openKeepa(asin) {
@@ -992,28 +1538,28 @@ const TRANSLATIONS = {
     "lbl_bsr": "Amazon India BSR",
     "lbl_reviews": "reviews",
     "verdicts": {"massive_deal": {"title": "🔥 MASSIVE DEAL ({pct}% OFF)", "reason": "Sensational discount! Current deal price of ₹{price} saves you ₹{savings} ({pct}% off official packaging MRP of ₹{mrp})."}, "best_price": {"title": "🔥 BEST PRICE / RECORD LOW", "reason": "Excellent entry point! Current price of ₹{price} is within ₹{diff} of its lowest festival dip (₹{lowest}). Verified against official box MRP of ₹{mrp}."}, "solid_deal": {"title": "🟢 SOLID EVERYDAY DEAL", "reason": "Good everyday value! You save ₹{savings} ({pct}% off printed box MRP of ₹{mrp}). Check the price graph if you want to time a deeper drop."}, "wait_sale": {"title": "💡 NEAR FULL MRP / WAIT FOR SALE", "reason": "Selling near full packaging MRP of ₹{mrp}. The 90-day graph shows this product frequently drops to ~₹{lowest} during sales."}},
-    "header_subpill": "Deal &amp; Price Fluctuation Auditor",
+    "header_subpill": "Smart Price &amp; Deal Comparison",
     "btn_bookmark_tool": "⭐ Bookmark Tool",
     "select_language_title": "Select Language",
-    "mission_badge_1": "🎯 Smart Shopping Companion for Amazon India",
+    "mission_badge_1": "🎯 Amazon vs Flipkart Price Comparison — Verify Before You Buy",
     "mission_badge_2": "100% Verified Price Insights",
-    "mission_title": "Shop Smarter on Amazon: Find Genuine Deals &amp; Maximum Savings",
-    "mission_desc": "We built <strong>WAVEPICKS</strong> to help everyday shoppers make confident, informed buying decisions on Amazon India. Millions of amazing deals happen every day — our intelligent auditor lets you verify genuine price drops, compare current prices against verified packaging box MRPs under Indian Legal Metrology Rules, and inspect 90-day price history curves so you always buy at the absolute best time.",
-    "pillar_1_title": "Verify Official Box MRP",
-    "pillar_1_desc": "We cross-reference verified manufacturer packaging to confirm the official printed retail price, ensuring your calculated savings are 100% accurate.",
+    "mission_title": "Compare Amazon &amp; Flipkart Prices — Find the Genuine Best Deal Every Time",
+    "mission_desc": "We built <strong>VerifyFirst</strong> to help everyday Indian shoppers make confident, informed buying decisions — whether you shop on Amazon or Flipkart. Before spending your money, use our free tool to compare live prices across both stores, verify the genuine printed box MRP, and check 90-day price trends so you always buy at the real lowest price — never at an inflated 'sale' price.",
+    "pillar_1_title": "Amazon 🆚 Flipkart Comparison",
+    "pillar_1_desc": "Instantly compare live prices and genuine discounts across both platforms so you never pay extra on the wrong store.",
     "pillar_2_title": "Track 90-Day Price Drops",
     "pillar_2_desc": "Inspect 90-day price history curves to catch peak price drops and buy your favorite products at their best historical value.",
-    "pillar_3_title": "Smart Buying Recommendation",
-    "pillar_3_desc": "Get clear, data-driven buying guidance before checkout: <strong>Record Low Deal</strong>, <strong>Great Everyday Value</strong>, or <strong>Upcoming Sale Alert</strong>.",
-    "auditor_title": "🔍 Live Deal &amp; Price Fluctuation Auditor",
+    "pillar_3_title": "Verify Official Box MRP",
+    "pillar_3_desc": "We cross-reference verified manufacturer packaging to confirm the official printed retail price, ensuring your calculated savings are 100% accurate.",
+    "auditor_title": "🔍 Live Smart Price &amp; Deal Comparison",
     "auditor_badge": "100% Free &amp; Instant",
-    "auditor_desc": "Paste any Amazon India product link, shortlink (amzn.in/d/...), or 10-character ASIN. Our 24/7 cloud auditor checks live prices against official packaging in seconds.",
-    "auditor_placeholder": "Paste Amazon link or ASIN (e.g. B0BDVG99J5)...",
-    "btn_audit": "Audit Deal ⚡",
+    "auditor_desc": "Paste any Amazon or Flipkart product link, shortlink (amzn.in, dl.flipkart.com), or product ID/ASIN. Verify live store prices against official packaging &amp; 90-day price trends in seconds.",
+    "auditor_placeholder": "Paste Amazon or Flipkart link / ID (e.g. B0BDVG99J5 or MOBGTAGPTB3VS24W)...",
+    "btn_audit": "Verify Best Price ⚡",
     "sample_label": "💡 Try verified tested deals:",
     "share_badge": "📢 Share Smart Savings with Friends &amp; Family",
-    "share_title": "Help Friends &amp; Family Find the Best Amazon Deals",
-    "share_desc": "Shopping during festival sales or checking daily deals? Bookmark <strong>WAVEPICKS</strong> on your phone or browser, and share it with friends, family, and deal groups on WhatsApp, Twitter, Instagram, and Facebook so everyone can easily discover genuine price drops and maximize their savings!",
+    "share_title": "Help Friends &amp; Family Compare Prices &amp; Save Across Amazon &amp; Flipkart",
+    "share_desc": "Shopping during festival sales or checking daily deals? Bookmark <strong>VerifyFirst</strong> on your phone or browser, and share it with friends, family, and deal groups on WhatsApp, Twitter, Instagram, and Facebook so everyone can compare live prices across Amazon and Flipkart and maximize their savings!",
     "btn_share_bookmark": "Bookmark Tool",
     "btn_share_whatsapp": "Share on WhatsApp",
     "btn_share_twitter": "Post on Twitter (X)",
@@ -1024,57 +1570,57 @@ const TRANSLATIONS = {
     "modal_guide_title": "📊 How to Read 90-Day Price Fluctuations:",
     "modal_valley_tip": "💡 <em>Look for deep valleys to time your purchase at peak savings.</em>",
     "modal_open_keepa": "Open Interactive Chart on Keepa ↗",
-    "footer_disclosure": "<strong>Amazon Associates Disclosure:</strong> As an Amazon Associate, Wavepicks earns from qualifying purchases made through links on this page. Product prices and availability are verified daily through automated audits and may change over time.",
+    "footer_disclosure": "<strong>Affiliate Disclosure:</strong> VerifyFirst participates in affiliate programs including Amazon Associates. Buying through links on this page may earn a small referral fee at zero extra cost to you. Product prices and availability are verified in real time and may change.",
     "lbl_deal_price": "Current Deal Price",
     "lbl_box_mrp": "Printed Box MRP",
     "lbl_save_mrp": "Save ₹{amt} off MRP",
     "lbl_examine_graph": "Examine the 90-Day Price Curve on the Right ➔",
-    "lbl_examine_desc": "In India, retail price cannot legally exceed printed box MRP (₹{mrp}). To verify if today's ₹{price} deal is an authentic festival-grade bargain or standard pricing, <strong>inspect the 90-day curve</strong> to see historical price drops and seller changes.",
+    "lbl_examine_desc": "In India, retail price cannot exceed printed box MRP (₹{mrp}). To verify if today's ₹{price} deal is an authentic festival-grade bargain or standard pricing, <strong>inspect the 90-day curve</strong> to see historical price drops and seller changes.",
     "lbl_spread": "Historical Fluctuation Spread:",
     "lbl_buy_amazon": "Check Deal &amp; Buy on Amazon at ₹{price} ↗",
     "btn_deal_whatsapp": "💬 Share Deal on WhatsApp",
-    "lbl_support_note": "<strong>Support Wavepicks:</strong> Buying through our verified link credits a small referral fee to our research team at zero extra cost to you. Keeps our deal auditor 100% free!",
+    "lbl_support_note": "<strong>Support VerifyFirst:</strong> Buying through our verified link credits a small referral fee to our research team at zero extra cost to you. Keeps our comparison tool 100% free!",
     "lbl_curve_header": "📈 90-Day Price &amp; Demand Fluctuations",
     "lbl_curve_badge": "Verified Keepa Curve",
-    "lbl_click_enlarge": "🔍 <em>Click chart to enlarge • Box MRP is the legal ceiling</em>",
+    "lbl_click_enlarge": "🔍 <em>Click chart to enlarge • Box MRP is the maximum retail price</em>",
     "lbl_how_to_read": "💡 How to Read This 90-Day Price Graph:",
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 Price Curve:</strong> Tracks the actual selling price day-by-day. Look for deep valleys to buy when the item is at a real drop.",
-    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 Printed Box MRP (₹{mrp}):</strong> The certified packaging price under Indian Legal Metrology Rules. Genuine discounts are measured from this real ceiling, not seller markups.",
+    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 Printed Box MRP (₹{mrp}):</strong> The official packaging price on the product box. Genuine discounts are measured from this real ceiling, not seller markups.",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 Compare with Everyday Price:</strong> Check what this product actually sells for on normal days. If today's \"festival deal\" is the same price it sold for last month, it is not a real special discount!",
-    "community_share_text": "Find the best genuine Amazon deals! Check verified packaging box MRP and 90-day price history before buying on Amazon: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ Smart Amazon Deal Check on WAVEPICKS:\n{title}\n\n💰 Deal Price: ₹{price} (Box MRP ₹{mrp}, {pct}% Off)\n✅ Recommendation: {verdict}\n\nCheck 90-day price trends before buying: https://alerts.zero483.com/deals.html",
+    "community_share_text": "Compare Amazon & Flipkart prices! Check verified packaging box MRP and 90-day price history before buying online: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🛍️ Smart Price Comparison on VerifyFirst:\n{title}\n\n💰 Deal Price: ₹{price} (Box MRP ₹{mrp}, {pct}% Off)\n✅ Recommendation: {verdict}\n\nCompare prices & check 90-day price trends before buying: https://alerts.zero483.com/deals.html",
     "toast_copied_btn": "✓ Link Copied!",
     "toast_link_copied": "📋 Link copied! Paste into WhatsApp, Instagram Bio, or DM to friends.",
-    "toast_bookmark_pc": "⭐ Press Ctrl + D to bookmark WAVEPICKS for instant deal audits!",
-    "toast_bookmark_mac": "⭐ Press Cmd + D to bookmark WAVEPICKS for instant deal audits!",
+    "toast_bookmark_pc": "⭐ Press Ctrl + D to bookmark VerifyFirst for instant price comparisons!",
+    "toast_bookmark_mac": "⭐ Press Cmd + D to bookmark VerifyFirst for instant price comparisons!",
     "toast_bookmark_mobile": "📱 Tap browser menu (⋮ or Share icon) → select 'Add to Home screen' or 'Bookmark'!"
   },
   "hi": {
     "lbl_bsr": "अमेज़न इंडिया BSR",
     "lbl_reviews": "समीक्षाएं",
     "verdicts": {"massive_deal": {"title": "🔥 बंपर डील ({pct}% छूट)", "reason": "शानदार छूट! वर्तमान डील मूल्य ₹{price} पर आपकी ₹{savings} की बचत हो रही है (प्रिंटेड बॉक्स MRP ₹{mrp} पर {pct}% की वास्तविक छूट)।"}, "best_price": {"title": "🔥 सबसे कम दाम / रिकॉर्ड लो", "reason": "खरीदने का सबसे सही समय! वर्तमान मूल्य ₹{price} अपने सबसे कम त्योहारी स्तर (₹{lowest}) के बिल्कुल करीब है। आधिकारिक बॉक्स MRP ₹{mrp} से सत्यापित।"}, "solid_deal": {"title": "🟢 बेहतरीन दैनिक डील", "reason": "शानदार दैनिक मूल्य! आप ₹{savings} बचा रहे हैं (प्रिंटेड बॉक्स MRP ₹{mrp} पर {pct}% की छूट)। यदि आप और कम दाम का इंतज़ार करना चाहते हैं तो मूल्य ग्राफ देखें।"}, "wait_sale": {"title": "💡 पूरे MRP के करीब / सेल का इंतज़ार करें", "reason": "यह उत्पाद लगभग पूरे पैकेजिंग MRP ₹{mrp} पर बिक रहा है। 90 दिनों का ग्राफ दिखाता है कि सेल के दौरान इसका दाम घटकर लगभग ₹{lowest} तक आ जाता है।"}},
-    "header_subpill": "डील एवं मूल्य उतार-चढ़ाव परीक्षक",
+    "header_subpill": "स्मार्ट मूल्य एवं डील तुलना",
     "btn_bookmark_tool": "⭐ टूल बुकमार्क करें",
     "select_language_title": "भाषा चुनें",
-    "mission_badge_1": "🎯 अमेज़न इंडिया के लिए स्मार्ट शॉपिंग गाइड",
+    "mission_badge_1": "🎯 अमेज़न बनाम फ्लिपकार्ट मूल्य तुलना — खरीदने से पहले जांचें",
     "mission_badge_2": "100% सत्यापित मूल्य इनसाइट्स",
-    "mission_title": "अमेज़न पर स्मार्ट खरीदारी करें: बेहतरीन और वास्तविक डील्स खोजें",
-    "mission_desc": "हमने <strong>WAVEPICKS</strong> इसलिए बनाया है ताकि आप अमेज़न इंडिया पर पूरे आत्मविश्वास और सही जानकारी के साथ खरीदारी कर सकें। हर रोज़ हज़ारों शानदार डील्स आती हैं — हमारा टूल आपको असली प्राइस ड्रॉप्स की पुष्टि करने, कानूनी रूप से प्रिंटेड बॉक्स MRP से तुलना करने और 90 दिनों का प्राइस हिस्ट्री ग्राफ देखकर सही समय पर अधिकतम बचत करने में मदद करता है।",
-    "pillar_1_title": "असली बॉक्स MRP सत्यापित करें",
-    "pillar_1_desc": "हम निर्माता की पैकेजिंग से आधिकारिक प्रिंटेड रिटेल मूल्य की पुष्टि करते हैं ताकि आपकी छूट की गणना 100% सटीक रहे।",
+    "mission_title": "अमेज़न और फ्लिपकार्ट की कीमतों की तुलना करें — हर बार पाएं सबसे असली और बेहतरीन डील",
+    "mission_desc": "हमने <strong>VerifyFirst</strong> इसलिए बनाया है ताकि हर भारतीय ग्राहक पूरे आत्मविश्वास और सही जानकारी के साथ खरीदारी कर सके — चाहे आप अमेज़न पर खरीदें या फ्लिपकार्ट पर। पैसे खर्च करने से पहले, दोनों स्टोर्स पर लाइव कीमतों की तुलना करने, असली प्रिंटेड बॉक्स MRP की जांच करने और 90 दिनों के मूल्य रुझान देखने के लिए हमारे मुफ़्त टूल का उपयोग करें ताकि आप हमेशा वास्तविक सबसे कम कीमत पर खरीदें।",
+    "pillar_1_title": "अमेज़न 🆚 फ्लिपकार्ट तुलना",
+    "pillar_1_desc": "दोनों बड़े प्लेटफॉर्म्स पर लाइव कीमतों और वास्तविक छूट की तुरंत तुलना करें ताकि आप कभी भी अधिक पैसे न दें।",
     "pillar_2_title": "90 दिनों के प्राइस ड्रॉप्स ट्रैक करें",
     "pillar_2_desc": "90 दिनों का प्राइस ग्राफ देखकर पता लगाएं कि आपका पसंदीदा उत्पाद अपने सबसे कम दाम पर कब आया था और बेहतरीन समय पर खरीदें।",
-    "pillar_3_title": "स्मार्ट खरीदारी सिफारिश",
-    "pillar_3_desc": "खरीदने से पहले स्पष्ट डेटा-संचालित मार्गदर्शन पाएं: <strong>रिकॉर्ड लो डील</strong>, <strong>बेहतरीन दैनिक मूल्य</strong>, या <strong>आगामी सेल का इंतज़ार</strong>।",
-    "auditor_title": "🔍 लाइव डील एवं मूल्य उतार-चढ़ाव परीक्षक",
+    "pillar_3_title": "असली बॉक्स MRP सत्यापित करें",
+    "pillar_3_desc": "हम निर्माता की पैकेजिंग से आधिकारिक प्रिंटेड रिटेल मूल्य की पुष्टि करते हैं ताकि आपकी छूट की गणना 100% सटीक रहे।",
+    "auditor_title": "🔍 लाइव डील एवं मूल्य तुलना",
     "auditor_badge": "100% मुफ़्त और तुरंत",
-    "auditor_desc": "कोई भी अमेज़न इंडिया लिंक, शॉर्टलिंक (amzn.in/d/...) या 10-अक्षरों का ASIN पेस्ट करें। हमारा क्लाउड परीक्षक सेकंडों में आधिकारिक पैकेजिंग से कीमतों की पुष्टि करता है।",
-    "auditor_placeholder": "अमेज़न लिंक या ASIN पेस्ट करें (उदा. B0BDVG99J5)...",
-    "btn_audit": "डील जांचें ⚡",
+    "auditor_desc": "कोई भी अमेज़न या फ्लिपकार्ट लिंक, शॉर्टलिंक (amzn.in, dl.flipkart.com) या प्रोडक्ट ID/ASIN पेस्ट करें। सेकंडों में आधिकारिक पैकेजिंग और 90 दिनों के रुझान से कीमतों की पुष्टि करें।",
+    "auditor_placeholder": "अमेज़न या फ्लिपकार्ट लिंक / ID पेस्ट करें (उदा. B0BDVG99J5)...",
+    "btn_audit": "सर्वोत्तम मूल्य जांचें ⚡",
     "sample_label": "💡 जांची-परखी डील्स आज़माएं:",
     "share_badge": "📢 दोस्तों और परिवार के साथ स्मार्ट बचत शेयर करें",
-    "share_title": "दोस्तों और परिवार को अमेज़न की बेहतरीन डील्स पाने में मदद करें",
-    "share_desc": "त्योहारी सेल या दैनिक डील्स के दौरान खरीदारी कर रहे हैं? <strong>WAVEPICKS</strong> को बुकमार्क करें और व्हाट्सएप, ट्विटर, इंस्टाग्राम और फेसबुक पर शेयर करें ताकि सभी आसानी से वास्तविक प्राइस ड्रॉप्स पा सकें और अधिकतम बचत कर सकें!",
+    "share_title": "दोस्तों और परिवार को अमेज़न और फ्लिपकार्ट पर कीमतों की तुलना कर बचत करने में मदद करें",
+    "share_desc": "त्योहारी सेल या दैनिक डील्स के दौरान खरीदारी कर रहे हैं? <strong>VerifyFirst</strong> को बुकमार्क करें और व्हाट्सएप, ट्विटर, इंस्टाग्राम और फेसबुक पर शेयर करें ताकि सभी आसानी से अमेज़न और फ्लिपकार्ट पर कीमतों की तुलना कर अधिकतम बचत कर सकें!",
     "btn_share_bookmark": "टूल बुकमार्क करें",
     "btn_share_whatsapp": "व्हाट्सएप पर शेयर करें",
     "btn_share_twitter": "ट्विटर (X) पर पोस्ट करें",
@@ -1085,57 +1631,57 @@ const TRANSLATIONS = {
     "modal_guide_title": "📊 90 दिनों के मूल्य उतार-चढ़ाव को कैसे समझें:",
     "modal_valley_tip": "💡 <em>अधिकतम बचत के लिए ग्राफ़ में सबसे निचली घाटियों (गिरावट) को देखें।</em>",
     "modal_open_keepa": "Keepa पर इंटरैक्टिव चार्ट खोलें ↗",
-    "footer_disclosure": "<strong>अमेज़न एसोसिएट प्रकटीकरण:</strong> एक अमेज़न एसोसिएट के रूप में, Wavepicks इस पृष्ठ पर दिए गए लिंक से की गई योग्य खरीदारियों से कमीशन अर्जित करता है। उत्पाद की कीमतें और उपलब्धता दैनिक स्वचालित ऑडिट के माध्यम से जांची जाती हैं और समय के साथ बदल सकती हैं।",
+    "footer_disclosure": "<strong>सहबद्ध प्रकटीकरण:</strong> एक अमेज़न एसोसिएट के रूप में, VerifyFirst इस पृष्ठ पर दिए गए लिंक से की गई योग्य खरीदारियों से कमीशन अर्जित करता है। उत्पाद की कीमतें और उपलब्धता वास्तविक समय में जांची जाती हैं और समय के साथ बदल सकती हैं।",
     "lbl_deal_price": "वर्तमान डील मूल्य",
     "lbl_box_mrp": "प्रिंटेड बॉक्स MRP",
     "lbl_save_mrp": "MRP पर ₹{amt} की बचत",
     "lbl_examine_graph": "दाईं ओर 90-दिन का मूल्य ग्राफ देखें ➔",
-    "lbl_examine_desc": "भारत में खुदरा मूल्य कानूनी रूप से बॉक्स MRP (₹{mrp}) से अधिक नहीं हो सकता। यह जांचने के लिए कि क्या आज की ₹{price} की डील वास्तविक है, <strong>90 दिनों का ग्राफ जांचें</strong>।",
+    "lbl_examine_desc": "भारत में खुदरा मूल्य बॉक्स MRP (₹{mrp}) से अधिक नहीं हो सकता। यह जांचने के लिए कि क्या आज की ₹{price} की डील वास्तविक है, <strong>90 दिनों का ग्राफ जांचें</strong>।",
     "lbl_spread": "ऐतिहासिक मूल्य उतार-चढ़ाव:",
     "lbl_buy_amazon": "अमेज़न पर डील देखें और ₹{price} में खरीदें ↗",
     "btn_deal_whatsapp": "💬 व्हाट्सएप पर डील शेयर करें",
-    "lbl_support_note": "<strong>Wavepicks का समर्थन करें:</strong> हमारे लिंक से खरीदारी करने पर हमारे शोध दल को एक छोटा रेफरल शुल्क मिलता है, वह भी आपके लिए बिना किसी अतिरिक्त लागत के!",
+    "lbl_support_note": "<strong>VerifyFirst का समर्थन करें:</strong> हमारे लिंक से खरीदारी करने पर हमारे शोध दल को एक छोटा रेफरल शुल्क मिलता है, वह भी आपके लिए बिना किसी अतिरिक्त लागत के!",
     "lbl_curve_header": "📈 90-दिन मूल्य और मांग में उतार-चढ़ाव",
     "lbl_curve_badge": "सत्यापित Keepa ग्राफ",
-    "lbl_click_enlarge": "🔍 <em>बड़ा करने के लिए चार्ट पर क्लिक करें • बॉक्स MRP कानूनी सीमा है</em>",
+    "lbl_click_enlarge": "🔍 <em>बड़ा करने के लिए चार्ट पर क्लिक करें • बॉक्स MRP अधिकतम खुदरा मूल्य है</em>",
     "lbl_how_to_read": "💡 90 दिनों का यह मूल्य ग्राफ कैसे समझें:",
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 मूल्य रेखा:</strong> दिन-प्रतिदिन के वास्तविक बिक्री मूल्य को दर्शाती है। भारी छूट पर खरीदने के लिए सबसे निचले बिंदु (गहरी घाटी) देखें।",
-    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 प्रिंटेड बॉक्स MRP (₹{mrp}):</strong> भारतीय विधिक मापविज्ञान नियमों के तहत प्रमाणित पैकेजिंग मूल्य। वास्तविक छूट इसी अधिकतम मूल्य से मापी जाती है।",
+    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 प्रिंटेड बॉक्स MRP (₹{mrp}):</strong> उत्पाद बॉक्स पर आधिकारिक पैकेजिंग मूल्य। वास्तविक छूट इसी अधिकतम मूल्य से मापी जाती है।",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 सामान्य दिनों के मूल्य से तुलना करें:</strong> जांचें कि यह उत्पाद सामान्य दिनों में वास्तव में कितने में बिकता है। यदि आज की 'फेस्टिवल डील' पिछले महीने के दाम के समान ही है, तो यह कोई विशेष छूट नहीं है!",
-    "community_share_text": "अमेज़न पर बेहतरीन और वास्तविक डील्स खोजें! असली बॉक्स MRP और 90 दिनों का प्राइस हिस्ट्री ग्राफ देखकर स्मार्ट खरीदारी करें: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ WAVEPICKS पर अमेज़न स्मार्ट डील चेक:\n{title}\n\n💰 डील मूल्य: ₹{price} (बॉक्स MRP ₹{mrp}, {pct}% छूट)\n✅ सिफारिश: {verdict}\n\nखरीदने से पहले 90 दिनों का मूल्य रुझान देखें: https://alerts.zero483.com/deals.html",
+    "community_share_text": "अमेज़न और फ्लिपकार्ट पर बेहतरीन और वास्तविक डील्स खोजें! असली बॉक्स MRP और 90 दिनों का प्राइस हिस्ट्री ग्राफ देखकर स्मार्ट खरीदारी करें: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🛍️ VerifyFirst पर स्मार्ट डील और मूल्य तुलना:\n{title}\n\n💰 डील मूल्य: ₹{price} (बॉक्स MRP ₹{mrp}, {pct}% छूट)\n✅ सिफारिश: {verdict}\n\nखरीदने से पहले 90 दिनों का मूल्य रुझान देखें: https://alerts.zero483.com/deals.html",
     "toast_copied_btn": "✓ लिंक कॉपी हो गया!",
     "toast_link_copied": "📋 लिंक कॉपी हो गया! इसे व्हाट्सएप, इंस्टाग्राम या दोस्तों को भेजें।",
-    "toast_bookmark_pc": "⭐ त्वरित डील जांच के लिए WAVEPICKS को बुकमार्क करने हेतु Ctrl + D दबाएं!",
-    "toast_bookmark_mac": "⭐ त्वरित डील जांच के लिए WAVEPICKS को बुकमार्क करने हेतु Cmd + D दबाएं!",
+    "toast_bookmark_pc": "⭐ त्वरित मूल्य तुलना के लिए VerifyFirst को बुकमार्क करने हेतु Ctrl + D दबाएं!",
+    "toast_bookmark_mac": "⭐ त्वरित मूल्य तुलना के लिए VerifyFirst को बुकमार्क करने हेतु Cmd + D दबाएं!",
     "toast_bookmark_mobile": "📱 ब्राउज़र मेनू (⋮ या शेयर) पर टैप करें → 'Add to Home screen' या 'Bookmark' चुनें!"
   },
   "te": {
     "lbl_bsr": "అమెజాన్ ఇండియా BSR",
     "lbl_reviews": "సమీక్షలు",
     "verdicts": {"massive_deal": {"title": "🔥 బంపర్ డీల్ ({pct}% తగ్గింపు)", "reason": "అద్భుతమైన తగ్గింపు! ప్రస్తుత డీల్ ధర ₹{price} వద్ద మీకు ₹{savings} ఆదా అవుతుంది (అధికారిక బాక్స్ MRP ₹{mrp} పై {pct}% నిజమైన తగ్గింపు)."}, "best_price": {"title": "🔥 రికార్డ్ తక్కువ ధర / బెస్ట్ ప్రైస్", "reason": "కొనుగోలు చేయడానికి సరైన సమయం! ప్రస్తుత ధర ₹{price} దాని అత్యల్ప పండుగ ధర (₹{lowest}) కి చాలా దగ్గరగా ఉంది. అధికారిక బాక్స్ MRP ₹{mrp} తో ధృవీకరించబడింది."}, "solid_deal": {"title": "🟢 మంచి రోజువారీ డీల్", "reason": "మంచి రోజువారీ విలువ! మీరు ₹{savings} ఆదా చేస్తున్నారు (ప్రింటెడ్ బాక్స్ MRP ₹{mrp} పై {pct}% తగ్గింపు). మరింత ధర తగ్గే సమయం కోసం ప్రైస్ గ్రాఫ్ చూడండి."}, "wait_sale": {"title": "💡 పూర్తి MRP వద్ద ఉంది / సేల్ కోసం వేచి ఉండండి", "reason": "ఇది పూర్తి ప్యాకేజింగ్ MRP ₹{mrp} వద్ద అమ్ముడవుతోంది. 90 రోజుల గ్రాఫ్ ప్రకారం సేల్స్ సమయంలో దీని ధర దాదాపు ₹{lowest} వరకు తగ్గుతుంది."}},
-    "header_subpill": "డీల్ మరియు ధరల మార్పుల ఆడిటర్",
+    "header_subpill": "స్మార్ట్ ధర &amp; డీల్ పోలిక",
     "btn_bookmark_tool": "⭐ టూల్‌ని బుక్‌మార్క్ చేయండి",
     "select_language_title": "భాషను ఎంచుకోండి",
-    "mission_badge_1": "🎯 అమెజాన్ ఇండియా కోసం స్మార్ట్ షాపింగ్ గైడ్",
+    "mission_badge_1": "🎯 అమెజాన్ vs ఫ్లిప్‌కార్ట్ ధరల పోలిక — కొనేముందు సరిచూసుకోండి",
     "mission_badge_2": "100% ధృవీకరించిన ధరల సమాచారం",
-    "mission_title": "అమెజాన్‌లో స్మార్ట్‌గా షాపింగ్ చేయండి: నిజమైన డీల్స్ &amp; గరిష్ట పొదుపు పొందండి",
-    "mission_desc": "ప్రతి వినియోగదారుడు అమెజాన్ ఇండియాలో పూర్తి విశ్వాసంతో మరియు స్పష్టమైన సమాచారంతో కొనుగోలు చేయడానికి మేము <strong>WAVEPICKS</strong> రూపొందించాము. రోజూ వేలకొద్దీ అద్భుతమైన డీల్స్ వస్తాయి — అసలైన ధరల తగ్గుదలను ధృవీకరించడానికి, లీగల్ మెట్రాలజీ నిబంధనల ప్రకారం అసలైన బాక్స్ MRPతో సరిపోల్చడానికి మరియు 90 రోజుల ధరల చరిత్రను తనిఖీ చేసి సరైన సమయంలో గరిష్ట పొదుపు పొందడానికి మా టూల్ మీకు సహాయపడుతుంది.",
-    "pillar_1_title": "అధికారిక బాక్స్ MRP ధృవీకరించండి",
-    "pillar_1_desc": "తయారీదారు ప్యాకేజింగ్ ఆధారంగా అధికారిక ప్రింటెడ్ రిటైల్ ధరను మేము నిర్ధారిస్తాము, మీ తగ్గింపు లెక్కింపు 100% ఖచ్చితమైనదని నిరూపిస్తుంది.",
+    "mission_title": "అమెజాన్ &amp; ఫ్లిప్‌కార్ట్ ధరలను సరిపోల్చండి — ప్రతిసారీ నిజమైన బెస్ట్ డీల్ పొందండి",
+    "mission_desc": "మీరు అమెజాన్‌లో కొన్నా లేదా ఫ్లిప్‌కార్ట్‌లో కొన్నా, ప్రతి భారతీయ వినియోగదారుడు పూర్తి విశ్వాసంతో మరియు సరైన సమాచారంతో కొనుగోలు చేయడానికి మేము <strong>VerifyFirst</strong> రూపొందించాము. మీ డబ్బు ఖర్చు చేసే ముందు, రెండు స్టోర్లలో లైవ్ ధరలను సరిపోల్చడానికి, అసలైన ప్రింటెడ్ బాక్స్ MRPని ధృవీకరించడానికి మరియు 90 రోజుల ధరల ట్రెండ్‌లను తనిఖీ చేయడానికి మా ఉచిత టూల్‌ని ఉపయోగించండి.",
+    "pillar_1_title": "అమెజాన్ 🆚 ఫ్లిప్‌కార్ట్ పోలిక",
+    "pillar_1_desc": "రెండు ప్లాట్‌ఫారమ్‌లలో ప్రత్యక్ష ధరలు మరియు నిజమైన తగ్గింపులను తక్షణమే సరిపోల్చండి.",
     "pillar_2_title": "90 రోజుల ధరల తగ్గుదల ట్రాక్ చేయండి",
-    "pillar_2_desc": "90 రోజుల ధరల గ్రాఫ్ ద్వారా మీ ఇష్టమైన వస్తువులు అత్యల్ప ధరకు ఎప్పుడు వచ్చాయో తెలుసుకుని అత్యుತ್ತమ సమయంలో కొనండి.",
-    "pillar_3_title": "స్మార్ట్ కొనుగోలు సిఫార్సు",
-    "pillar_3_desc": "ఆర్డర్ చేసే ముందు స్పష్టమైన డేటా ఆధారిత మార్గదర్శకత్వం పొందండి: <strong>రికార్డ్ తక్కువ ధర</strong>, <strong>ఉత్తమ రోజువారీ విలువ</strong>, లేదా <strong>రాబోయే సేల్ కోసం వేచి ఉండండి</strong>.",
-    "auditor_title": "🔍 లైవ్ డీల్ &amp; ధరల మార్పుల ఆడిటర్",
+    "pillar_2_desc": "90 రోజుల ధరల గ్రాఫ్ ద్వారా మీ ఇష్టమైన వస్తువులు అత్యల్ప ధరకు ఎప్పుడు వచ్చాయో తెలుసుకుని అత్యుత్తమ సమయంలో కొనండి.",
+    "pillar_3_title": "అధికారిక బాక్స్ MRP ధృవీకరించండి",
+    "pillar_3_desc": "తయారీదారు ప్యాకేజింగ్ ఆధారంగా అధికారిక ప్రింటెడ్ రిటైల్ ధరను మేము నిర్ధారిస్తాము, మీ తగ్గింపు లెక్కింపు 100% ఖచ్చితమైనదని నిరూపిస్తుంది.",
+    "auditor_title": "🔍 లైవ్ డీల్ &amp; ధరల పోలిక",
     "auditor_badge": "100% ఉచితం &amp; తక్షణం",
-    "auditor_desc": "ఏదైనా అమెజాన్ ఇండియా లింక్, షార్ట్‌లింక్ (amzn.in/d/...) లేదా 10 అక్షరాల ASINని పేస్ట్ చేయండి. మా క్లౌడ్ ఆడిటర్ సెకన్లలో ప్రత్యక్ష ధరలను సరిపోల్చుతుంది.",
-    "auditor_placeholder": "అమెజాన్ లింక్ లేదా ASIN పేస్ట్ చేయండి (ఉదా: B0BDVG99J5)...",
-    "btn_audit": "డీల్ పరిశీలించండి ⚡",
+    "auditor_desc": "ఏదైనా అమెజాన్ లేదా ఫ్లిప్‌కార్ట్ లింక్, షార్ట్‌లింక్ లేదా ID/ASINని పేస్ట్ చేయండి. సెకన్లలో అధికారిక ప్యాకేజింగ్ MRP మరియు 90 రోజుల ధరల ట్రెండ్‌తో సరిపోల్చండి.",
+    "auditor_placeholder": "అమెజాన్ లేదా ఫ్లిప్‌కార్ట్ లింక్ / ID పేస్ట్ చేయండి (ఉదా: B0BDVG99J5)...",
+    "btn_audit": "ఉత్తమ ధరను సరిపోల్చండి ⚡",
     "sample_label": "💡 ధృవీకరించిన డీల్స్ ప్రయత్నించండి:",
     "share_badge": "📢 స్నేహితులు &amp; కుటుంబంతో స్మార్ట్ పొదుపును పంచుకోండి",
-    "share_title": "స్నేహితులు &amp; కుటుంబ సభ్యులకు అమెజాన్‌లో బెస్ట్ డీల్స్ పొందడంలో సహాయపడండి",
-    "share_desc": "పండుగల సేల్స్ లేదా రోజువారీ డీల్స్ సమయంలో షాపింగ్ చేస్తున్నారా? <strong>WAVEPICKS</strong> ని బుక్‌మార్క్ చేసుకోండి మరియు వాట్సాప్, ట్విట్టర్, ఇన్‌స్టాగ్రామ్, ఫేస్‌బుక్‌లలో షేర్ చేయండి, తద్వారా ప్రతి ఒక్కరూ నిజమైన ధరల తగ్గుదలను గమనించి గరిష్టంగా పొదుపు చేయవచ్చు!",
+    "share_title": "అమెజాన్ &amp; ఫ్లిప్‌కార్ట్‌లో ధరలను సరిపోల్చి ఆదా చేయడంలో స్నేహితులు &amp; కుటుంబానికి సహాయపడండి",
+    "share_desc": "పండుగల సేల్స్ లేదా రోజువారీ డీల్స్ సమయంలో షాపింగ్ చేస్తున్నారా? <strong>VerifyFirst</strong> ని బుక్‌మార్క్ చేసుకోండి మరియు వాట్సాప్, ట్విట్టర్, ఇన్‌స్టాగ్రామ్, ఫేస్‌బుక్‌లలో షేర్ చేయండి, తద్వారా ప్రతి ఒక్కరూ అమెజాన్ మరియు ఫ్లిప్‌కార్ట్ ధరలను పోల్చి గరిష్టంగా పొదుపు చేయవచ్చు!",
     "btn_share_bookmark": "టూల్ బుక్‌మార్క్ చేయండి",
     "btn_share_whatsapp": "వాట్సాప్‌లో షేర్ చేయండి",
     "btn_share_twitter": "ట్విట్టర్ (X) లో పోస్ట్ చేయండి",
@@ -1146,57 +1692,57 @@ const TRANSLATIONS = {
     "modal_guide_title": "📊 90 రోజుల ధరల మార్పులను ఎలా చదవాలి:",
     "modal_valley_tip": "💡 <em>గరిష్ట ఆదా పొందడానికి గ్రాఫ్‌లో దిగువ లోయలను (తగ్గుదలలను) గమనించండి.</em>",
     "modal_open_keepa": "Keepa లో ఇంటరాక్టివ్ చార్ట్ తెరవండి ↗",
-    "footer_disclosure": "<strong>అమెజాన్ అసోసియేట్ ప్రకటన:</strong> అమెజాన్ అసోసియేట్‌గా, ఈ పేజీలోని లింక్‌ల ద్వారా అర్హతగల కొనుగోళ్లపై వేవ్‌పిక్స్ చిన్న కమీషన్ పొందుతుంది. ఉత్పత్తుల ధరలు మరియు లభ్యత ప్రతిరోజూ ఆడిట్ చేయబడతాయి మరియు మారవచ్చు.",
+    "footer_disclosure": "<strong>అనుబంధ ప్రకటన:</strong> అమెజాన్ అసోసియేట్‌గా, ఈ పేజీలోని లింక్‌ల ద్వారా అర్హతగల కొనుగోళ్లపై VerifyFirst చిన్న కమీషన్ పొందుతుంది. ఉత్పత్తుల ధరలు మరియు లభ్యత నిజ సమయంలో తనిఖీ చేయబడతాయి మరియు మారవచ్చు.",
     "lbl_deal_price": "ప్రస్తుత డీల్ ధర",
     "lbl_box_mrp": "ప్రింటెడ్ బాక్స్ MRP",
     "lbl_save_mrp": "MRP పై ₹{amt} ఆదా",
     "lbl_examine_graph": "కుడివైపున 90 రోజుల ధరల గ్రాఫ్ చూడండి ➔",
-    "lbl_examine_desc": "భారతదేశంలో చట్టబద్ధంగా రిటైల్ ధర బాక్స్ MRP (₹{mrp}) మించకూడదు. నేటి ₹{price} డీల్ నిజమైనదో కాదో తెలుసుకోవడానికి <strong>90 రోజుల కర్వ్‌ను పరిశీలించండి</strong>.",
+    "lbl_examine_desc": "భారతదేశంలో రిటైల్ ధర బాక్స్ MRP (₹{mrp}) మించకూడదు. నేటి ₹{price} డీల్ నిజమైనదో కాదో తెలుసుకోవడానికి <strong>90 రోజుల కర్వ్‌ను పరిశీలించండి</strong>.",
     "lbl_spread": "చారిత్రక ధరల మార్పుల పరిధి:",
     "lbl_buy_amazon": "అమెజాన్‌లో డీల్ చూసి ₹{price} కి కొనండి ↗",
     "btn_deal_whatsapp": "💬 వాట్సాప్‌లో డీల్ షేర్ చేయండి",
-    "lbl_support_note": "<strong>Wavepicks కు మద్దతు ఇవ్వండి:</strong> మా లింక్ ద్వారా కొనుగోలు చేయడం వలన మీకు ఎటువంటి అదనపు ఖర్చు లేకుండా మా పరిశోధనా బృందానికి చిన్న రిఫరల్ ఫీజు లభిస్తుంది!",
+    "lbl_support_note": "<strong>VerifyFirst కు మద్దతు ఇవ్వండి:</strong> మా లింక్ ద్వారా కొనుగోలు చేయడం వలన మీకు ఎటువంటి అదనపు ఖర్చు లేకుండా మా పరిశోధనా బృందానికి చిన్న రిఫరల్ ఫీజు లభిస్తుంది!",
     "lbl_curve_header": "📈 90-రోజుల ధర మరియు డిమాండ్ హెచ్చుతగ్గులు",
     "lbl_curve_badge": "ధృవీకరించిన కీపా గ్రాఫ్",
-    "lbl_click_enlarge": "🔍 <em>పెద్దదిగా చూడటానికి చార్ట్‌పై క్లిక్ చేయండి • బాక్స్ MRP చట్టపరమైన పరిమితి</em>",
+    "lbl_click_enlarge": "🔍 <em>పెద్దదిగా చూడటానికి చార్ట్‌పై క్లిక్ చేయండి • బాక్స్ MRP గరిష్ట చిల్లర ధర</em>",
     "lbl_how_to_read": "💡 ఈ 90 రోజుల ధరల గ్రాఫ్‌ను ఎలా అర్థం చేసుకోవాలి:",
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 ధర రేఖ:</strong> రోజువారీ అసలు అమ్మకపు ధరను ట్రాక్ చేస్తుంది. నిజమైన తగ్గింపు ఉన్నప్పుడు కొనడానికి దిగువ లోయలను చూడండి.",
-    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 ప్రింటెడ్ బాక్స్ MRP (₹{mrp}):</strong> భారతీయ లీగల్ మెట్రాలజీ నిబంధనల ప్రకారం ప్యాకేజింగ్ ధర. నిజమైన తగ్గింపులు దీని ఆధారంగానే లెక్కించబడతాయి.",
+    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 ప్రింటెడ్ బాక్స్ MRP (₹{mrp}):</strong> అధికారిక ప్యాకేజింగ్ ధర. నిజమైన తగ్గింపులు దీని ఆధారంగానే లెక్కించబడతాయి.",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 సాధారణ రోజుల ధరతో సరిపోల్చండి:</strong> ఈ ఉత్పత్తి సాధారణ రోజులలో ఎంత ధరకు అమ్ముడవుతుందో తనిఖీ చేయండి. నేటి 'పండుగ డీల్' గత నెల ధరకు సమానంగా ఉంటే, అది నిజమైన ప్రత్యేక తగ్గింపు కాదు!",
-    "community_share_text": "అమెజాన్‌లో నిజమైన డీల్స్ మరియు గరిష్ట పొదుపులను పొందండి! అసలైన బాక్స్ MRP మరియు 90 రోజుల ధరల గ్రాఫ్ చూసి స్మార్ట్‌గా షాపింగ్ చేయండి: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ WAVEPICKS లో అమెజాన్ స్మార్ట్ డీల్ చెక్:\n{title}\n\n💰 డీల్ ధర: ₹{price} (బాక్స్ MRP ₹{mrp}, {pct}% తగ్గింపు)\n✅ సిఫార్సు: {verdict}\n\nకొనేముందు 90 రోజుల ధరల ట్రెండ్ చూడండి: https://alerts.zero483.com/deals.html",
+    "community_share_text": "అమెజాన్ & ఫ్లిప్‌కార్ట్ ధరలను సరిపోల్చండి! అసలైన బాక్స్ MRP మరియు 90 రోజుల ధరల గ్రాఫ్ చూసి స్మార్ట్‌గా షాపింగ్ చేయండి: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🛍️ VerifyFirst లో స్మార్ట్ ధరల పోలిక:\n{title}\n\n💰 డీల్ ధర: ₹{price} (బాక్స్ MRP ₹{mrp}, {pct}% తగ్గింపు)\n✅ సిఫార్సు: {verdict}\n\nకొనేముందు 90 రోజుల ధరల ట్రెండ్ చూడండి: https://alerts.zero483.com/deals.html",
     "toast_copied_btn": "✓ లింక్ కాపీ చేయబడింది!",
     "toast_link_copied": "📋 లింక్ కాపీ చేయబడింది! వాట్సాప్, ఇన్‌స్టాగ్రామ్ లేదా స్నేహితులకు పంపండి.",
-    "toast_bookmark_pc": "⭐ తక్షణ డీల్ ఆడిట్ కోసం WAVEPICKS ను బుక్‌మార్క్ చేయడానికి Ctrl + D నొక్కండి!",
-    "toast_bookmark_mac": "⭐ తక్షణ డీల్ ఆడిట్ కోసం WAVEPICKS ను బుక్‌మార్క్ చేయడానికి Cmd + D నొక్కండి!",
+    "toast_bookmark_pc": "⭐ తక్షణ ధరల పోలిక కోసం VerifyFirst ను బుక్‌మార్క్ చేయడానికి Ctrl + D నొక్కండి!",
+    "toast_bookmark_mac": "⭐ తక్షణ ధరల పోలిక కోసం VerifyFirst ను బుక్‌మార్క్ చేయడానికి Cmd + D నొక్కండి!",
     "toast_bookmark_mobile": "📱 బ్రౌజర్ మెనూ (⋮ లేదా షేర్) నొక్కండి → 'Add to Home screen' లేదా 'Bookmark' ఎంచుకోండి!"
   },
   "kn": {
     "lbl_bsr": "ಅಮೆಜಾನ್ ಇಂಡಿಯಾ BSR",
     "lbl_reviews": "ವಿಮರ್ಶೆಗಳು",
     "verdicts": {"massive_deal": {"title": "🔥 ಬಂಪರ್ ಡೀಲ್ ({pct}% ರಿಯಾಯಿತಿ)", "reason": "ಅದ್ಭುತ ರಿಯಾಯಿತಿ! ಪ್ರಸ್ತುತ ಡೀಲ್ ಬೆಲೆ ₹{price} ನಲ್ಲಿ ನಿಮಗೆ ₹{savings} ಉಳಿತಾಯವಾಗುತ್ತದೆ (ಅಧಿಕೃತ ಬಾಕ್ಸ್ MRP ₹{mrp} ಮೇಲೆ {pct}% ನೈಜ ರಿಯಾಯಿತಿ)."}, "best_price": {"title": "🔥 ದಾಖಲೆಯ ಕಡಿಮೆ ಬೆಲೆ / ಅತ್ಯುತ್ತಮ ಬೆಲೆ", "reason": "ಖರೀದಿಸಲು ಅತ್ಯುತ್ತಮ ಸಮಯ! ಪ್ರಸ್ತುತ ಬೆಲೆ ₹{price} ತನ್ನ ಅತ್ಯಂತ ಕಡಿಮೆ ಹಬ್ಬದ ಬೆಲೆಗೆ (₹{lowest}) ತೀರಾ ಹತ್ತಿರದಲ್ಲಿದೆ. ಅಧಿಕೃತ ಬಾಕ್ಸ್ MRP ₹{mrp} ಯೊಂದಿಗೆ ದೃಢೀಕರಿಸಲಾಗಿದೆ."}, "solid_deal": {"title": "🟢 ಉತ್ತಮ ದೈನಂದಿನ ಡೀಲ್", "reason": "ಉತ್ತಮ ದೈನಂದಿನ ಮೌಲ್ಯ! ನೀವು ₹{savings} ಉಳಿಸುತ್ತಿದ್ದೀರಿ (ಮುದ್ರಿತ ಬಾಕ್ಸ್ MRP ₹{mrp} ಮೇಲೆ {pct}% ರಿಯಾಯಿತಿ). ಇನ್ನೂ ಕಡಿಮೆ ಬೆಲೆಗೆ ಕಾಯಲು ಬೆಲೆ ಗ್ರಾಫ್ ನೋಡಿ."}, "wait_sale": {"title": "💡 ಪೂರ್ಣ MRP ಹತ್ತಿರದಲ್ಲಿದೆ / ಮಾರಾಟಕ್ಕಾಗಿ ಕಾಯಿರಿ", "reason": "ಇದು ಪೂರ್ಣ ಪ್ಯಾಕೇಜಿಂಗ್ MRP ₹{mrp} ಹತ್ತಿರದಲ್ಲಿ ಮಾರಾಟವಾಗುತ್ತಿದೆ. 90 ದಿನಗಳ ಗ್ರಾಫ್ ಪ್ರಕಾರ ಮಾರಾಟದ ಸಮಯದಲ್ಲಿ ಇದರ ಬೆಲೆ ಸುಮಾರು ₹{lowest} ಗೆ ಇಳಿಯುತ್ತದೆ."}},
-    "header_subpill": "ಡೀಲ್ ಮತ್ತು ಬೆಲೆ ಏರಿಳಿತ ಪರೀಕ್ಷಕ",
+    "header_subpill": "ಸ್ಮಾರ್ಟ್ ಬೆಲೆ ಮತ್ತು ಡೀಲ್ ಹೋಲಿಕೆ",
     "btn_bookmark_tool": "⭐ ಟೂಲ್ ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಿ",
     "select_language_title": "ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
-    "mission_badge_1": "🎯 ಅಮೆಜಾನ್ ಇಂಡಿಯಾಕ್ಕಾಗಿ ಸ್ಮಾರ್ಟ್ ಶಾಪಿಂಗ್ ಗೈಡ್",
+    "mission_badge_1": "🎯 ಅಮೆಜಾನ್ vs ಫ್ಲಿಪ್‌ಕಾರ್ಟ್ ಬೆಲೆ ಹೋಲಿಕೆ — ಖರೀದಿಸುವ ಮುನ್ನ ಪರಿಶೀಲಿಸಿ",
     "mission_badge_2": "100% ದೃಢೀಕೃತ ಬೆಲೆ ಮಾಹಿತಿ",
-    "mission_title": "ಅಮೆಜಾನ್‌ನಲ್ಲಿ ಸ್ಮಾರ್ಟ್ ಶಾಪಿಂಗ್ ಮಾಡಿ: ನಿಜವಾದ ಡೀಲ್‌ಗಳು &amp; ಗರಿಷ್ಠ ಉಳಿತಾಯ ಪಡೆಯಿರಿ",
-    "mission_desc": "ಪ್ರತಿಯೊಬ್ಬ ಗ್ರಾಹಕರು ಅಮೆಜಾನ್ ಇಂಡಿಯಾದಲ್ಲಿ ಪೂರ್ಣ ವಿಶ್ವಾಸ ಮತ್ತು ಸ್ಪಷ್ಟ ಮಾಹಿತಿಯೊಂದಿಗೆ ಖರೀದಿಸಲು ನಾವು <strong>WAVEPICKS</strong> ಅನ್ನು ನಿರ್ಮಿಸಿದ್ದೇವೆ. ಪ್ರತಿದಿನ ಸಾವಿರಾರು ಅದ್ಭುತ ಡೀಲ್‌ಗಳು ಲಭ್ಯವಿರುತ್ತವೆ — ನಿಜವಾದ ಬೆಲೆ ಇಳಿಕೆಯನ್ನು ಖಚಿತಪಡಿಸಲು, ಕಾನೂನುಬದ್ಧ ಬಾಕ್ಸ್ MRP ಜೊತೆ ಹೋಲಿಸಲು ಮತ್ತು 90 ದಿನಗಳ ಬೆಲೆ ಇತಿಹಾಸವನ್ನು ಪರಿಶೀಲಿಸಿ ಸೂಕ್ತ ಸಮಯದಲ್ಲಿ ಗರಿಷ್ಠ ಉಳಿತಾಯ ಪಡೆಯಲು ನಮ್ಮ ಟೂಲ್ ನಿಮಗೆ ನೆರವಾಗುತ್ತದೆ.",
-    "pillar_1_title": "ಅಧಿಕೃತ ಬಾಕ್ಸ್ MRP ದೃಢೀಕರಿಸಿ",
-    "pillar_1_desc": "ತಯಾರಕರ ಪ್ಯಾಕೇಜಿಂಗ್ ಆಧರಿಸಿ ಅಧಿಕೃತ ಮುದ್ರಿತ ಚಿಲ್ಲರೆ ಬೆಲೆಯನ್ನು ನಾವು ಖಚಿತಪಡಿಸುತ್ತೇವೆ, ನಿಮ್ಮ ರಿಯಾಯಿತಿ ಲೆಕ್ಕಾಚಾರ 100% ನಿಖರವಾಗಿರುತ್ತದೆ.",
+    "mission_title": "ಅಮೆಜಾನ್ ಮತ್ತು ಫ್ಲಿಪ್‌ಕಾರ್ಟ್ ಬೆಲೆಗಳನ್ನು ಹೋಲಿಸಿ — ಪ್ರತಿ ಬಾರಿಯೂ ನಿಜವಾದ ಬೆಸ್ಟ್ ಡೀಲ್ ಪಡೆಯಿರಿ",
+    "mission_desc": "ನೀವು ಅಮೆಜಾನ್ ಅಥವಾ ಫ್ಲಿಪ್‌ಕಾರ್ಟ್‌ನಲ್ಲಿ ಶಾಪಿಂಗ್ ಮಾಡುತ್ತಿರಲಿ, ಪ್ರತಿಯೊಬ್ಬ ಭಾರತೀಯ ಗ್ರಾಹಕರು ಪೂರ್ಣ ವಿಶ್ವಾಸ ಮತ್ತು ಸ್ಪಷ್ಟ ಮಾಹಿತಿಯೊಂದಿಗೆ ಖರೀದಿಸಲು ನಾವು <strong>VerifyFirst</strong> ಅನ್ನು ನಿರ್ಮಿಸಿದ್ದೇವೆ. ಹಣ ಖರ್ಚು ಮಾಡುವ ಮೊದಲು, ಎರಡೂ ಸ್ಟೋರ್‌ಗಳಲ್ಲಿ ಲೈವ್ ಬೆಲೆಗಳನ್ನು ಹೋಲಿಸಲು, ನಿಜವಾದ ಬಾಕ್ಸ್ MRP ದೃಢೀಕರಿಸಲು ಮತ್ತು 90 ದಿನಗಳ ಬೆಲೆ ಇತಿಹಾಸವನ್ನು ಪರಿಶೀಲಿಸಲು ನಮ್ಮ ಉಚಿತ ಟೂಲ್ ಬಳಸಿ.",
+    "pillar_1_title": "ಅಮೆಜಾನ್ 🆚 ಫ್ಲಿಪ್‌ಕಾರ್ಟ್ ಹೋಲಿಕೆ",
+    "pillar_1_desc": "ಎರಡೂ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ಗಳಲ್ಲಿ ಲೈವ್ ಬೆಲೆಗಳು ಮತ್ತು ನಿಜವಾದ ರಿಯಾಯಿತಿಗಳನ್ನು ತಕ್ಷಣವೇ ಹೋಲಿಸಿ.",
     "pillar_2_title": "90 ದಿನಗಳ ಬೆಲೆ ಇಳಿಕೆ ಟ್ರ್ಯಾಕ್ ಮಾಡಿ",
     "pillar_2_desc": "90 ದಿನಗಳ ಬೆಲೆ ಗ್ರಾಫ್ ಮೂಲಕ ನಿಮ್ಮ ಮೆಚ್ಚಿನ ಉತ್ಪನ್ನಗಳು ಯಾವಾಗ ಅತ್ಯಂತ ಕಡಿಮೆ ಬೆಲೆಗೆ ಬಂದಿದ್ದವು ಎಂದು ತಿಳಿದುಕೊಂಡು ಉತ್ತಮ ಸಮಯದಲ್ಲಿ ಖರೀದಿಸಿ.",
-    "pillar_3_title": "ಸ್ಮಾರ್ಟ್ ಖರೀದಿ ಶಿಫಾರಸು",
-    "pillar_3_desc": "ಆರ್ಡರ್ ಮಾಡುವ ಮೊದಲು ಸ್ಪಷ್ಟ ಡೇಟಾ ಆಧಾರಿತ ಮಾರ್ಗದರ್ಶನ ಪಡೆಯಿರಿ: <strong>ದಾಖಲೆಯ ಕಡಿಮೆ ಬೆಲೆ</strong>, <strong>ಉತ್ತಮ ದೈನಂದಿನ ಮೌಲ್ಯ</strong>, ಅಥವಾ <strong>ಮುಂಬರುವ ಮಾರಾಟಕ್ಕಾಗಿ ಕಾಯಿರಿ</strong>.",
-    "auditor_title": "🔍 ಲೈವ್ ಡೀಲ್ &amp; ಬೆಲೆ ಏರಿಳಿತ ಪರೀಕ್ಷಕ",
+    "pillar_3_title": "ಅಧಿಕೃತ ಬಾಕ್ಸ್ MRP ದೃಢೀಕರಿಸಿ",
+    "pillar_3_desc": "ತಯಾರಕರ ಪ್ಯಾಕೇಜಿಂಗ್ ಆಧರಿಸಿ ಅಧಿಕೃತ ಮುದ್ರಿತ ಚಿಲ್ಲರೆ ಬೆಲೆಯನ್ನು ನಾವು ಖಚಿತಪಡಿಸುತ್ತೇವೆ, ನಿಮ್ಮ ರಿಯಾಯಿತಿ ಲೆಕ್ಕಾಚಾರ 100% ನಿಖರವಾಗಿರುತ್ತದೆ.",
+    "auditor_title": "🔍 ಲೈವ್ ಡೀಲ್ &amp; ಬೆಲೆ ಹೋಲಿಕೆ",
     "auditor_badge": "100% ಉಚಿತ &amp; ತಕ್ಷಣ",
-    "auditor_desc": "ಯಾವುದೇ ಅಮೆಜಾನ್ ಇಂಡಿಯಾ ಲಿಂಕ್, ಶಾರ್ಟ್‌ಲಿಂಕ್ (amzn.in/d/...) ಅಥವಾ 10 ಅಕ್ಷರಗಳ ASIN ಪೇಸ್ಟ್ ಮಾಡಿ. ನಮ್ಮ ಕ್ಲೌಡ್ ಆಡಿಟರ್ ಕೆಲವೇ ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಬೆಲೆಗಳನ್ನು ಪರಿಶೀಲಿಸುತ್ತದೆ.",
-    "auditor_placeholder": "ಅಮೆಜಾನ್ ಲಿಂಕ್ ಅಥವಾ ASIN ಪೇಸ್ಟ್ ಮಾಡಿ (ಉದಾ: B0BDVG99J5)...",
-    "btn_audit": "ಡೀಲ್ ಪರಿಶೀಲಿಸಿ ⚡",
+    "auditor_desc": "ಯಾವುದೇ ಅಮೆಜಾನ್ ಅಥವಾ ಫ್ಲಿಪ್‌ಕಾರ್ಟ್ ಲಿಂಕ್, ಶಾರ್ಟ್‌ಲಿಂಕ್ ಅಥವಾ ID/ASIN ಪೇಸ್ಟ್ ಮಾಡಿ. ಕೆಲವೇ ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಅಧಿಕೃತ ಪ್ಯಾಕೇಜಿಂಗ್ ಬೆಲೆ ಮತ್ತು 90 ದಿನಗಳ ಟ್ರೆಂಡ್ ಪರಿಶೀಲಿಸಿ.",
+    "auditor_placeholder": "ಅಮೆಜಾನ್ ಅಥವಾ ಫ್ಲಿಪ್‌ಕಾರ್ಟ್ ಲಿಂಕ್ / ID ಪೇಸ್ಟ್ ಮಾಡಿ (ಉದಾ: B0BDVG99J5)...",
+    "btn_audit": "ಉತ್ತಮ ಬೆಲೆ ಪರಿಶೀಲಿಸಿ ⚡",
     "sample_label": "💡 ಪರೀಕ್ಷಿತ ಡೀಲ್ ಪ್ರಯತ್ನಿಸಿ:",
     "share_badge": "📢 ಸ್ನೇಹಿತರು ಮತ್ತು ಕುಟುಂಬದೊಂದಿಗೆ ಸ್ಮಾರ್ಟ್ ಉಳಿತಾಯ ಹಂಚಿಕೊಳ್ಳಿ",
-    "share_title": "ಸ್ನೇಹಿತರು ಮತ್ತು ಕುಟುಂಬಕ್ಕೆ ಅಮೆಜಾನ್‌ನಲ್ಲಿ ಉತ್ತಮ ಡೀಲ್‌ಗಳನ್ನು ಪಡೆಯಲು ಸಹಾಯ ಮಾಡಿ",
-    "share_desc": "ಹಬ್ಬದ ಮಾರಾಟ ಅಥವಾ ದೈನಂದಿನ ಡೀಲ್‌ಗಳಲ್ಲಿ ಶಾಪಿಂಗ್ ಮಾಡುತ್ತಿದ್ದೀರಾ? <strong>WAVEPICKS</strong> ಅನ್ನು ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಿ ಮತ್ತು ವಾಟ್ಸಾಪ್, ಟ್ವಿಟ್ಟರ್, ಇನ್‌ಸ್ಟಾಗ್ರಾಮ್, ಫೇಸ್‌ಬುಕ್‌ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ, ಇದರಿಂದ ಪ್ರತಿಯೊಬ್ಬರೂ ನೈಜ ಬೆಲೆ ಇಳಿಕೆಯನ್ನು ತಿಳಿದುಕೊಂಡು ಗರಿಷ್ಠ ಉಳಿತಾಯ ಮಾಡಬಹುದು!",
+    "share_title": "ಅಮೆಜಾನ್ ಮತ್ತು ಫ್ಲಿಪ್‌ಕಾರ್ಟ್‌ನಲ್ಲಿ ಬೆಲೆಗಳನ್ನು ಹೋಲಿಸಿ ಉಳಿಸಲು ಸ್ನೇಹಿತರು ಮತ್ತು ಕುಟುಂಬಕ್ಕೆ ಸಹಾಯ ಮಾಡಿ",
+    "share_desc": "ಹಬ್ಬದ ಮಾರಾಟ ಅಥವಾ ದೈನಂದಿನ ಡೀಲ್‌ಗಳಲ್ಲಿ ಶಾಪಿಂಗ್ ಮಾಡುತ್ತಿದ್ದೀರಾ? <strong>VerifyFirst</strong> ಅನ್ನು ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಿ ಮತ್ತು ವಾಟ್ಸಾಪ್, ಟ್ವಿಟ್ಟರ್, ಇನ್‌ಸ್ಟಾಗ್ರಾಮ್, ಫೇಸ್‌ಬುಕ್‌ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ, ಇದರಿಂದ ಪ್ರತಿಯೊಬ್ಬರೂ ಅಮೆಜಾನ್ ಮತ್ತು ಫ್ಲಿಪ್‌ಕಾರ್ಟ್ ಬೆಲೆಗಳನ್ನು ಹೋಲಿಸಿ ಗರಿಷ್ಠ ಉಳಿತಾಯ ಮಾಡಬಹುದು!",
     "btn_share_bookmark": "ಟೂಲ್ ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಿ",
     "btn_share_whatsapp": "ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ",
     "btn_share_twitter": "ಟ್ವಿಟರ್ (X) ನಲ್ಲಿ ಪೋಸ್ಟ್ ಮಾಡಿ",
@@ -1207,7 +1753,7 @@ const TRANSLATIONS = {
     "modal_guide_title": "📊 90 ದಿನಗಳ ಬೆಲೆ ಏರಿಳಿತವನ್ನು ಹೇಗೆ ಓದುವುದು:",
     "modal_valley_tip": "💡 <em>ಹೆಚ್ಚಿನ ಉಳಿತಾಯಕ್ಕಾಗಿ ಗ್ರಾಫ್‌ನಲ್ಲಿ ಆಳವಾದ ಕುಸಿತಗಳನ್ನು ಗಮನಿಸಿ.</em>",
     "modal_open_keepa": "Keepa ನಲ್ಲಿ ಸಂವಾದಾತ್ಮಕ ಚಾರ್ಟ್ ತೆರೆಯಿರಿ ↗",
-    "footer_disclosure": "<strong>ಅಮೆಜಾನ್ ಅಸೋಸಿಯೇಟ್ ಪ್ರಕಟಣೆ:</strong> ಅಮೆಜಾನ್ ಅಸೋಸಿಯೇಟ್ ಆಗಿ, ಈ ಪುಟದಲ್ಲಿನ ಲಿಂಕ್‌ಗಳ ಮೂಲಕ ಅರ್ಹ ಖರೀದಿಗಳಿಂದ Wavepicks ಕಮಿಷನ್ ಪಡೆಯುತ್ತದೆ. ಉತ್ಪನ್ನದ ಬೆಲೆಗಳು ಪ್ರತಿದಿನ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಪರಿಶೀಲಿಸಲ್ಪಡುತ್ತವೆ ಮತ್ತು ಬದಲಾಗಬಹುದು.",
+    "footer_disclosure": "<strong>ಅನುಬಂಧ ಪ್ರಕಟಣೆ:</strong> ಅಮೆಜಾನ್ ಅಸೋಸಿಯೇಟ್ ಆಗಿ, ಈ ಪುಟದಲ್ಲಿನ ಲಿಂಕ್‌ಗಳ ಮೂಲಕ ಅರ್ಹ ಖರೀದಿಗಳಿಂದ VerifyFirst ಕಮಿಷನ್ ಪಡೆಯುತ್ತದೆ. ಉತ್ಪನ್ನದ ಬೆಲೆಗಳು ನೈಜ ಸಮಯದಲ್ಲಿ ಪರಿಶೀಲಿಸಲ್ಪಡುತ್ತವೆ ಮತ್ತು ಬದಲಾಗಬಹುದು.",
     "lbl_deal_price": "ಪ್ರಸ್ತುತ ಡೀಲ್ ಬೆಲೆ",
     "lbl_box_mrp": "ಪ್ರಿಂಟೆಡ್ ಬಾಕ್ಸ್ MRP",
     "lbl_save_mrp": "MRP ಮೇಲೆ ₹{amt} ಉಳಿತಾಯ",
@@ -1216,48 +1762,48 @@ const TRANSLATIONS = {
     "lbl_spread": "ಐತಿಹಾಸಿಕ ಬೆಲೆ ಏರಿಳಿತದ ಶ್ರೇಣಿ:",
     "lbl_buy_amazon": "ಅಮೆಜಾನ್‌ನಲ್ಲಿ ಪರಿಶೀಲಿಸಿ ₹{price} ಗೆ ಖರೀದಿಸಿ ↗",
     "btn_deal_whatsapp": "💬 ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಡೀಲ್ ಹಂಚಿಕೊಳ್ಳಿ",
-    "lbl_support_note": "<strong>Wavepicks ಅನ್ನು ಬೆಂಬಲಿಸಿ:</strong> ನಮ್ಮ ಲಿಂಕ್ ಮೂಲಕ ಖರೀದಿಸುವುದರಿಂದ ನಿಮಗೆ ಯಾವುದೇ ಹೆಚ್ಚುವರಿ ವೆಚ್ಚವಿಲ್ಲದೆ ನಮ್ಮ ಸಂಶೋಧನಾ ತಂಡಕ್ಕೆ ಸಣ್ಣ ರೆಫರಲ್ ಶುಲ್ಕ ಸಿಗುತ್ತದೆ!",
+    "lbl_support_note": "<strong>VerifyFirst ಅನ್ನು ಬೆಂಬಲಿಸಿ:</strong> ನಮ್ಮ ಲಿಂಕ್ ಮೂಲಕ ಖರೀದಿಸುವುದರಿಂದ ನಿಮಗೆ ಯಾವುದೇ ಹೆಚ್ಚುವರಿ ವೆಚ್ಚವಿಲ್ಲದೆ ನಮ್ಮ ಸಂಶೋಧನಾ ತಂಡಕ್ಕೆ ಸಣ್ಣ ರೆಫರಲ್ ಶುಲ್ಕ ಸಿಗುತ್ತದೆ!",
     "lbl_curve_header": "📈 90-ದಿನ ಬೆಲೆ ಮತ್ತು ಬೇಡಿಕೆಯ ಏರಿಳಿತ",
     "lbl_curve_badge": "ದೃಢೀಕರಿಸಿದ Keepa ಗ್ರಾಫ್",
-    "lbl_click_enlarge": "🔍 <em>ದೊಡ್ಡದಾಗಿ ನೋಡಲು ಚಾರ್ಟ್ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ • ಬಾಕ್ಸ್ MRP ಕಾನೂನು ಮಿತಿ</em>",
+    "lbl_click_enlarge": "🔍 <em>ದೊಡ್ಡದಾಗಿ ನೋಡಲು ಚಾರ್ಟ್ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ • ಬಾಕ್ಸ್ MRP ಗರಿಷ್ಠ ಚಿಲ್ಲರೆ ಬೆಲೆ</em>",
     "lbl_how_to_read": "💡 ಈ 90 ದಿನಗಳ ಬೆಲೆ ಗ್ರಾಫ್ ಅನ್ನು ಹೇಗೆ ಓದುವುದು:",
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 ಬೆಲೆ ರೇಖೆ:</strong> ದಿನನಿತ್ಯದ ನೈಜ ಮಾರಾಟ ಬೆಲೆಯನ್ನು ತೋರಿಸುತ್ತದೆ. ಹೆಚ್ಚು ರಿಯಾಯಿತಿಯಲ್ಲಿ ಖರೀದಿಸಲು ಕಡಿಮೆ ಬಿಂದುವನ್ನು ನೋಡಿ.",
-    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 ಮುದ್ರಿತ ಬಾಕ್ಸ್ MRP (₹{mrp}):</strong> ಭಾರತೀಯ ಲೀಗಲ್ ಮೆಟ್ರಾಲಜಿ ನಿಯಮಗಳ ಅಡಿಯಲ್ಲಿ ಪ್ರಮಾಣೀಕೃತ ಪ್ಯಾಕಿಂಗ್ ಬೆಲೆ. ನಿಜವಾದ ರಿಯಾಯಿತಿಗಳು ಈ ಮಿತಿಯಿಂದ ಅಳೆಯಲ್ಪಡುತ್ತವೆ.",
+    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 ಮುದ್ರಿತ ಬಾಕ್ಸ್ MRP (₹{mrp}):</strong> ಅಧಿಕೃತ ಪ್ಯಾಕಿಂಗ್ ಬೆಲೆ. ನಿಜವಾದ ರಿಯಾಯಿತಿಗಳು ಈ ಮಿತಿಯಿಂದ ಅಳೆಯಲ್ಪಡುತ್ತವೆ.",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 ದೈನಂದಿನ ಬೆಲೆಯೊಂದಿಗೆ ಹೋಲಿಸಿ:</strong> ಸಾಮಾನ್ಯ ದಿನಗಳಲ್ಲಿ ಈ ಉತ್ಪನ್ನ ಎಷ್ಟು ಬೆಲೆಗೆ ಮಾರಾಟವಾಗುತ್ತದೆ ಎಂಬುದನ್ನು ಪರಿಶೀಲಿಸಿ. ಇಂದಿನ 'ಹಬ್ಬದ ಡೀಲ್' ಕಳೆದ ತಿಂಗಳ ಬೆಲೆಯಷ್ಟೇ ಇದ್ದರೆ, ಅದು ನಿಜವಾದ ವಿಶೇಷ ರಿಯಾಯಿತಿಯಲ್ಲ!",
-    "community_share_text": "ಅಮೆಜಾನ್‌ನಲ್ಲಿ ಅತ್ಯುತ್ತಮ ಮತ್ತು ನಿಜವಾದ ಡೀಲ್‌ಗಳನ್ನು ಕಂಡುಕೊಳ್ಳಿ! ಅಧಿಕೃತ ಬಾಕ್ಸ್ MRP ಮತ್ತು 90 ದಿನಗಳ ಬೆಲೆ ಇತಿಹಾಸ ನೋಡಿ ಸ್ಮಾರ್ಟ್ ಶಾಪಿಂಗ್ ಮಾಡಿ: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ WAVEPICKS ನಲ್ಲಿ ಅಮೆಜಾನ್ ಸ್ಮಾರ್ಟ್ ಡೀಲ್ ಪರಿಶೀಲನೆ:\n{title}\n\n💰 ಡೀಲ್ ಬೆಲೆ: ₹{price} (ಬಾಕ್ಸ್ MRP ₹{mrp}, {pct}% ರಿಯಾಯಿತಿ)\n✅ ಶಿಫಾರಸು: {verdict}\n\nಖರೀದಿಸುವ ಮುನ್ನ 90 ದಿನಗಳ ಬೆಲೆ ಟ್ರೆಂಡ್ ನೋಡಿ: https://alerts.zero483.com/deals.html",
+    "community_share_text": "ಅಮೆಜಾನ್ ಮತ್ತು ಫ್ಲಿಪ್‌ಕಾರ್ಟ್‌ನಲ್ಲಿ ಅತ್ಯುತ್ತಮ ಡೀಲ್‌ಗಳನ್ನು ಹೋಲಿಸಿ! ಅಧಿಕೃತ ಬಾಕ್ಸ್ MRP ಮತ್ತು 90 ದಿನಗಳ ಬೆಲೆ ಇತಿಹಾಸ ನೋಡಿ ಸ್ಮಾರ್ಟ್ ಶಾಪಿಂಗ್ ಮಾಡಿ: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🛍️ VerifyFirst ನಲ್ಲಿ ಸ್ಮಾರ್ಟ್ ಡೀಲ್ ಹೋಲಿಕೆ:\n{title}\n\n💰 ಡೀಲ್ ಬೆಲೆ: ₹{price} (ಬಾಕ್ಸ್ MRP ₹{mrp}, {pct}% ರಿಯಾಯಿತಿ)\n✅ ಶಿಫಾರಸು: {verdict}\n\nಖರೀದಿಸುವ ಮುನ್ನ 90 ದಿನಗಳ ಬೆಲೆ ಟ್ರೆಂಡ್ ನೋಡಿ: https://alerts.zero483.com/deals.html",
     "toast_copied_btn": "✓ ಲಿಂಕ್ ಕಾಪಿ ಮಾಡಲಾಗಿದೆ!",
     "toast_link_copied": "📋 ಲಿಂಕ್ ಕಾಪಿ ಮಾಡಲಾಗಿದೆ! ವಾಟ್ಸಾಪ್, ಇನ್‌ಸ್ಟಾಗ್ರಾಮ್ ಅಥವಾ ಸ್ನೇಹಿತರಿಗೆ ಕಳುಹಿಸಿ.",
-    "toast_bookmark_pc": "⭐ ತಕ್ಷಣದ ಡೀಲ್ ಪರಿಶೀಲನೆಗಾಗಿ WAVEPICKS ಅನ್ನು ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಲು Ctrl + D ಒತ್ತಿರಿ!",
-    "toast_bookmark_mac": "⭐ ತಕ್ಷಣದ ಡೀಲ್ ಪರಿಶೀಲನೆಗಾಗಿ WAVEPICKS ಅನ್ನು ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಲು Cmd + D ಒತ್ತಿರಿ!",
+    "toast_bookmark_pc": "⭐ ತಕ್ಷಣದ ಬೆಲೆ ಹೋಲಿಕೆಗಾಗಿ VerifyFirst ಅನ್ನು ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಲು Ctrl + D ಒತ್ತಿರಿ!",
+    "toast_bookmark_mac": "⭐ ತಕ್ಷಣದ ಬೆಲೆ ಹೋಲಿಕೆಗಾಗಿ VerifyFirst ಅನ್ನು ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಲು Cmd + D ಒತ್ತಿರಿ!",
     "toast_bookmark_mobile": "📱 ಬ್ರೌಸರ್ ಮೆನು (⋮ ಅಥವಾ ಶೇರ್) ಒತ್ತಿರಿ → 'Add to Home screen' ಅಥವಾ 'Bookmark' ಆಯ್ಕೆಮಾಡಿ!"
   },
   "ta": {
     "lbl_bsr": "அமேசான் இந்தியா BSR",
     "lbl_reviews": "மதிப்புரைகள்",
     "verdicts": {"massive_deal": {"title": "🔥 மெகா டீல் ({pct}% தள்ளுபடி)", "reason": "அற்புதமான தள்ளுபடி! தற்போதைய டீல் விலை ₹{price}-ல் உங்களுக்கு ₹{savings} சேமிப்பு கிடைக்கிறது (அதிகாரப்பூர்வ பாக்ஸ் MRP ₹{mrp}-ல் {pct}% உண்மையான தள்ளுபடி)."}, "best_price": {"title": "🔥 மிகக் குறைந்த விலை / சாதனை விலை", "reason": "வாங்குவதற்கு மிகச் சிறந்த நேரம்! தற்போதைய விலை ₹{price} அதன் மிகக் குறைந்த பண்டிகை விலைக்கு (₹{lowest}) மிக அருகில் உள்ளது. அதிகாரப்பூர்வ பாக்ஸ் MRP ₹{mrp} உடன் சரிபார்க்கப்பட்டது."}, "solid_deal": {"title": "🟢 சிறந்த அன்றாட டீல்", "reason": "சிறந்த அன்றாட மதிப்பு! நீங்கள் ₹{savings} சேமிக்கிறீர்கள் (அச்சிடப்பட்ட பாக்ஸ் MRP ₹{mrp}-ல் {pct}% தள்ளுபடி). இன்னும் விலை குறையும் நேரத்தைக் கணிக்க விலை வரைபடத்தைப் பாருங்கள்."}, "wait_sale": {"title": "💡 முழு MRP-க்கு அருகில் / விற்பனைக்காக காத்திருங்கள்", "reason": "இது முழு பேக்கேஜிங் MRP ₹{mrp}-க்கு அருகில் விற்கப்படுகிறது. 90 நாள் வரைபடம் விற்பனையின் போது இதன் விலை சுமார் ₹{lowest} வரை குறைவதைக் காட்டுகிறது."}},
-    "header_subpill": "சலுகை &amp; விலை ஏற்ற இறக்க சரிபார்ப்பாளர்",
+    "header_subpill": "ஸ்மார்ட் விலை &amp; சலுகை ஒப்பீடு",
     "btn_bookmark_tool": "⭐ டூலை புக்மார்க் செய்க",
     "select_language_title": "மொழியைத் தேர்ந்தெடுக்கவும்",
-    "mission_badge_1": "🎯 அமேசான் இந்தியாவுக்கான ஸ்மார்ட் ஷாப்பிங் வழிகாட்டி",
+    "mission_badge_1": "🎯 அமேசான் vs பிளிப்கார்ட் விலை ஒப்பீடு — வாங்குவதற்கு முன் சரிபார்க்கவும்",
     "mission_badge_2": "100% சரிபார்க்கப்பட்ட விலை விவரங்கள்",
-    "mission_title": "அமேசானில் புத்திசாலித்தனமாக ஷாப்பிங் செய்யுங்கள்: உண்மையான டீல்கள் &amp; அதிக சேமிப்பு",
-    "mission_desc": "அமேசான் இந்தியாவில் ஒவ்வொரு வாடிக்கையாளரும் முழு நம்பிக்கையுடனும் சரியான தகவலுடனும் வாங்க உதவும் வகையில் <strong>WAVEPICKS</strong>-ஐ உருவாக்கியுள்ளோம். தினமும் ஆயிரக்கணக்கான சிறந்த டீல்கள் கிடைக்கின்றன — உண்மையான விலை குறைப்பை உறுதிப்படுத்தவும், சட்டப்பூர்வ அச்சிடப்பட்ட பாக்ஸ் MRP உடன் ஒப்பிடவும், 90 நாள் விலை வரலாற்றை ஆய்வு செய்து சரியான நேரத்தில் அதிக சேமிப்பைப் பெறவும் எங்கள் கருவி உதவுகிறது.",
-    "pillar_1_title": "உத்தியோகபூர்வ பாக்ஸ் MRP சரிபார்க்கவும்",
-    "pillar_1_desc": "உற்பத்தியாளர் பேக்கேஜிங்கை அடிப்படையாகக் கொண்டு அதிகாரப்பூர்வ அச்சிடப்பட்ட சில்லறை விலையை உறுதிசெய்கிறோம், இதனால் உங்கள் தள்ளுபடி கணக்கீடு 100% துல்லியமாக இருக்கும்.",
+    "mission_title": "அமேசான் &amp; பிளிப்கார்ட் விலைகளை ஒப்பிடுங்கள் — ஒவ்வொரு முறையும் உண்மையான சிறந்த டீலைப் பெறுங்கள்",
+    "mission_desc": "நீங்கள் அமேசானில் வாங்கினாலும் சரி அல்லது பிளிப்கார்ட்டில் வாங்கினாலும் சரி, ஒவ்வொரு இந்திய வாடிக்கையாளரும் முழு நம்பிக்கையுடனும் சரியான தகவலுடனும் வாங்க உதவும் வகையில் <strong>VerifyFirst</strong>-ஐ உருவாக்கியுள்ளோம். உங்கள் பணத்தைச் செலவழிக்கும் முன், இரு தளங்களிலும் நேரடி விலைகளை ஒப்பிடவும், உண்மையான அச்சிடப்பட்ட பாக்ஸ் MRP-ஐ சரிபார்க்கவும், 90 நாள் விலை போக்கைப் பார்த்து மிகக் குறைந்த விலையில் வாங்கவும் எங்கள் இலவச கருவியைப் பயன்படுத்துங்கள்.",
+    "pillar_1_title": "அமேசான் 🆚 பிளிப்கார்ட் ஒப்பீடு",
+    "pillar_1_desc": "இரண்டு தளங்களிலும் நேரடி விலைகள் மற்றும் உண்மையான தள்ளுபடிகளை உடனடியாக ஒப்பிடுங்கள்.",
     "pillar_2_title": "90 நாள் விலை குறைப்பை கண்காணிக்கவும்",
     "pillar_2_desc": "90 நாள் விலை வரைபடத்தை ஆய்வு செய்து உங்களுக்குப் பிடித்த தயாரிப்புகள் எப்போது மிகக் குறைந்த விலைக்கு வந்தன என்பதை அறிந்து சரியான நேரத்தில் வாங்குங்கள்.",
-    "pillar_3_title": "ஸ்மார்ட் கொள்முதல் பரிந்துரை",
-    "pillar_3_desc": "வாங்குவதற்கு முன் தெளிவான தரவு சார்ந்த வழிகாட்டுதலைப் பெறுங்கள்: <strong>மிகக் குறைந்த விலை டீல்</strong>, <strong>சிறந்த அன்றாட மதிப்பு</strong>, அல்லது <strong>அடுத்த விற்பனைக்காக காத்திருங்கள்</strong>.",
-    "auditor_title": "🔍 நேரடி சலுகை &amp; விலை ஏற்ற இறக்க சரிபார்ப்பாளர்",
+    "pillar_3_title": "உத்தியோகபூர்வ பாக்ஸ் MRP சரிபார்க்கவும்",
+    "pillar_3_desc": "உற்பத்தியாளர் பேக்கேஜிங்கை அடிப்படையாகக் கொண்டு அதிகாரப்பூர்வ அச்சிடப்பட்ட சில்லறை விலையை உறுதிசெய்கிறோம், இதனால் உங்கள் தள்ளுபடி கணக்கீடு 100% துல்லியமாக இருக்கும்.",
+    "auditor_title": "🔍 நேரடி சலுகை &amp; விலை ஒப்பீடு",
     "auditor_badge": "100% இலவசம் &amp; உடனடி",
-    "auditor_desc": "எந்தவொரு அமேசான் இந்தியா இணைப்பு, குறுகிய இணைப்பு (amzn.in/d/...) அல்லது 10 இலக்க ASIN ஐ ஒட்டவும். எங்கள் கிளவுட் ஆடிட்டர் சில வினாடிகளில் விலையைச் சரிபார்க்கிறது.",
-    "auditor_placeholder": "அமேசான் இணைப்பு அல்லது ASIN ஒட்டவும் (எ.கா: B0BDVG99J5)...",
-    "btn_audit": "சலுகையைச் சரிபார்க்கவும் ⚡",
+    "auditor_desc": "எந்தவொரு அமேசான் அல்லது பிளிப்கார்ட் இணைப்பு, குறுகிய இணைப்பு அல்லது ID/ASIN ஐ ஒட்டவும். சில வினாடிகளில் அதிகாரப்பூர்வ பேக்கேஜிங் மற்றும் 90 நாள் விலை போக்குடன் சரிபார்க்கவும்.",
+    "auditor_placeholder": "அமேசான் அல்லது பிளிப்கார்ட் இணைப்பு / ID ஒட்டவும் (எ.கா: B0BDVG99J5)...",
+    "btn_audit": "சிறந்த விலையை சரிபார்க்கவும் ⚡",
     "sample_label": "💡 சரிபார்க்கப்பட்ட சலுகைகளை முயற்சிக்கவும்:",
     "share_badge": "📢 நண்பர்கள் மற்றும் குடும்பத்தினருடன் ஸ்மார்ட் சேமிப்பைப் பகிருங்கள்",
-    "share_title": "நண்பர்கள் மற்றும் குடும்பத்தினர் அமேசானில் சிறந்த டீல்களைப் பெற உதவுங்கள்",
-    "share_desc": "பண்டிகை விற்பனை அல்லது தினசரி டீல்களில் ஷாப்பிங் செய்கிறீர்களா? <strong>WAVEPICKS</strong>-ஐ புக்மார்க் செய்து வாட்ஸ்அப், ட்விட்டர், இன்ஸ்டாகிராம் மற்றும் ஃபேஸ்புக்கில் பகிருங்கள், இதன் மூலம் அனைவரும் உண்மையான விலை குறைப்பைக் கண்டறிந்து அதிகபட்சமாக சேமிக்க முடியும்!",
+    "share_title": "அமேசான் &amp; பிளிப்கார்ட்டில் விலைகளை ஒப்பிட்டு சேமிக்க நண்பர்கள் மற்றும் குடும்பத்தினருக்கு உதவுங்கள்",
+    "share_desc": "பண்டிகை விற்பனை அல்லது தினசரி டீல்களில் ஷாப்பிங் செய்கிறீர்களா? <strong>VerifyFirst</strong>-ஐ புக்மார்க் செய்து வாட்ஸ்அப், ட்விட்டர், இன்ஸ்டாகிராம் மற்றும் ஃபேஸ்புக்கில் பகிருங்கள், இதன் மூலம் அனைவரும் அமேசான் மற்றும் பிளிப்கார்ட் விலைகளை ஒப்பிட்டு அதிகபட்சமாக சேமிக்க முடியும்!",
     "btn_share_bookmark": "டூலை புக்மார்க் செய்க",
     "btn_share_whatsapp": "வாட்ஸ்அப்பில் பகிரவும்",
     "btn_share_twitter": "ட்விட்டரில் (X) பகிரவும்",
@@ -1268,57 +1814,57 @@ const TRANSLATIONS = {
     "modal_guide_title": "📊 90 நாள் விலை வரைபடத்தை எவ்வாறு படிப்பது:",
     "modal_valley_tip": "💡 <em>அதிக சேமிப்பைப் பெற வரைபடத்தில் ஆழமான பள்ளத்தாக்குகளை (விலை வீழ்ச்சிகளை) கவனியுங்கள்.</em>",
     "modal_open_keepa": "Keepa இல் வரைபடத்தைத் திறக்கவும் ↗",
-    "footer_disclosure": "<strong>அமேசான் அசோசியேட் வெளிப்பாடு:</strong> அமேசான் அசோசியேட்டாக, இந்தப் பக்கத்தில் உள்ள இணைப்புகள் மூலம் செய்யப்படும் தகுதியான வாங்குதல்களிலிருந்து Wavepicks கமிஷன் பெறுகிறது. தயாரிப்பு விலைகள் தினமும் சரிபார்க்கப்படுகின்றன மற்றும் மாறக்கூடும்.",
+    "footer_disclosure": "<strong>அசோசியேட் வெளிப்பாடு:</strong> அமேசான் அசோசியேட்டாக, இந்தப் பக்கத்தில் உள்ள இணைப்புகள் மூலம் செய்யப்படும் தகுதியான வாங்குதல்களிலிருந்து VerifyFirst கமிஷன் பெறுகிறது. தயாரிப்பு விலைகள் நிகழ்நேரத்தில் சரிபார்க்கப்படுகின்றன மற்றும் மாறக்கூடும்.",
     "lbl_deal_price": "தற்போதைய சலுகை விலை",
     "lbl_box_mrp": "அச்சிடப்பட்ட பாக்ஸ் MRP",
     "lbl_save_mrp": "MRP-ல் ₹{amt} சேமிப்பு",
     "lbl_examine_graph": "வலதுபுறம் உள்ள 90 நாள் விலை வரைபடத்தை ஆராயுங்கள் ➔",
-    "lbl_examine_desc": "சட்டப்படி சில்லறை விலை அச்சிடப்பட்ட பாக்ஸ் MRP (₹{mrp}) ஐ விட அதிகமாக இருக்க முடியாது. இன்றைய ₹{price} சலுகை உண்மையானதா என அறிய <strong>90 நாள் வரைபடத்தை ஆராயுங்கள்</strong>.",
+    "lbl_examine_desc": "சில்லறை விலை அச்சிடப்பட்ட பாக்ஸ் MRP (₹{mrp}) ஐ விட அதிகமாக இருக்க முடியாது. இன்றைய ₹{price} சலுகை உண்மையானதா என அறிய <strong>90 நாள் வரைபடத்தை ஆராயுங்கள்</strong>.",
     "lbl_spread": "வரலாற்று விலை ஏற்ற இறக்க வரம்பு:",
     "lbl_buy_amazon": "அமேசானில் சலுகையைச் சரிபார்த்து ₹{price} க்கு வாங்கவும் ↗",
     "btn_deal_whatsapp": "💬 வாட்ஸ்அப்பில் சலுகையைப் பகிரவும்",
-    "lbl_support_note": "<strong>Wavepicks-க்கு ஆதரவளியுங்கள்:</strong> எங்கள் இணைப்பு மூலம் வாங்குவது உங்களுக்கு கூடுதல் செலவின்றி எங்கள் ஆராய்ச்சி குழுவிற்கு சிறிய கட்டணத்தை வழங்குகிறது!",
+    "lbl_support_note": "<strong>VerifyFirst-க்கு ஆதரவளியுங்கள்:</strong> எங்கள் இணைப்பு மூலம் வாங்குவது உங்களுக்கு கூடுதல் செலவின்றி எங்கள் ஆராய்ச்சி குழுவிற்கு சிறிய கட்டணத்தை வழங்குகிறது!",
     "lbl_curve_header": "📈 90-நாள் விலை &amp; தேவை ஏற்ற இறக்கங்கள்",
     "lbl_curve_badge": "சரிபார்க்கப்பட்ட Keepa வரைபடம்",
-    "lbl_click_enlarge": "🔍 <em>பெரிதாக்க வரைபடத்தைக் கிளிக் செய்யவும் • பாக்ஸ் MRP சட்டப்பூர்வ வரம்பு</em>",
+    "lbl_click_enlarge": "🔍 <em>பெரிதாக்க வரைபடத்தைக் கிளிக் செய்யவும் • பாக்ஸ் MRP அதிகபட்ச சில்லறை விலை</em>",
     "lbl_how_to_read": "💡 இந்த 90 நாள் விலை வரைபடத்தை எவ்வாறு படிப்பது:",
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 விலை வரைபடம்:</strong> தினசரி உண்மையான விற்பனை விலையைக் காட்டுகிறது. அதிக தள்ளுபடியில் வாங்க ஆழமான பள்ளத்தாக்குகளைப் பாருங்கள்.",
-    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 அச்சிடப்பட்ட பாக்ஸ் MRP (₹{mrp}):</strong> இந்திய சட்ட அளவியல் விதிகளின்படி சான்றளிக்கப்பட்ட விலை. உண்மையான தள்ளுபடிகள் இந்த உச்சவரம்பிலிருந்து அளவிடப்படுகின்றன.",
+    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 அச்சிடப்பட்ட பாக்ஸ் MRP (₹{mrp}):</strong> தயாரிப்பு பெட்டியில் உள்ள அதிகாரப்பூர்வ பேக்கேஜிங் விலை. உண்மையான தள்ளுபடிகள் இந்த உச்சவரம்பிலிருந்து அளவிடப்படுகின்றன.",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 அன்றாட விலையுடன் ஒப்பிடுங்கள்:</strong> சாதாரண நாட்களில் இந்த தயாரிப்பு உண்மையில் என்ன விலைக்கு விற்கப்படுகிறது என்பதைச் சரிபார்க்கவும். இன்றைய 'பண்டிகை சலுகை' கடந்த மாத விலையாகவே இருந்தால், அது உண்மையான தள்ளுபடி அல்ல!",
-    "community_share_text": "அமேசானில் சிறந்த மற்றும் உண்மையான டீல்களைக் கண்டறியுங்கள்! உண்மையான பாக்ஸ் MRP மற்றும் 90 நாள் விலை வரைபடத்தை சரிபார்த்து புத்திசாலித்தனமாக ஷாப்பிங் செய்யுங்கள்: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ WAVEPICKS இல் அமேசான் ஸ்மார்ட் டீல் சரிபார்ப்பு:\n{title}\n\n💰 டீல் விலை: ₹{price} (பாக்ஸ் MRP ₹{mrp}, {pct}% தள்ளுபடி)\n✅ பரிந்துரை: {verdict}\n\nவாங்குவதற்கு முன் 90 நாள் விலை போக்கைப் பார்க்கவும்: https://alerts.zero483.com/deals.html",
+    "community_share_text": "அமேசான் & பிளிப்கார்ட் விலைகளை ஒப்பிட்டு சிறந்த டீல்களைக் கண்டறியுங்கள்! உண்மையான பாக்ஸ் MRP மற்றும் 90 நாள் விலை வரைபடத்தை சரிபார்த்து புத்திசாலித்தனமாக ஷாப்பிங் செய்யுங்கள்: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🛍️ VerifyFirst இல் ஸ்மார்ட் விலை ஒப்பீடு:\n{title}\n\n💰 டீல் விலை: ₹{price} (பாக்ஸ் MRP ₹{mrp}, {pct}% தள்ளுபடி)\n✅ பரிந்துரை: {verdict}\n\nவாங்குவதற்கு முன் 90 நாள் விலை போக்கைப் பார்க்கவும்: https://alerts.zero483.com/deals.html",
     "toast_copied_btn": "✓ இணைப்பு நகலெடுக்கப்பட்டது!",
     "toast_link_copied": "📋 இணைப்பு நகலெடுக்கப்பட்டது! வாட்ஸ்அப், இன்ஸ்டாகிராம் அல்லது நண்பர்களுக்கு அனுப்பவும்.",
-    "toast_bookmark_pc": "⭐ உடனடி சலுகை தணிக்கைக்கு WAVEPICKS ஐ புக்மார்க் செய்ய Ctrl + D அழுத்தவும்!",
-    "toast_bookmark_mac": "⭐ உடனடி சலுகை தணிக்கைக்கு WAVEPICKS ஐ புக்மார்க் செய்ய Cmd + D அழுத்தவும்!",
+    "toast_bookmark_pc": "⭐ உடனடி விலை ஒப்பீட்டிற்கு VerifyFirst ஐ புக்மார்க் செய்ய Ctrl + D அழுத்தவும்!",
+    "toast_bookmark_mac": "⭐ உடனடி விலை ஒப்பீட்டிற்கு VerifyFirst ஐ புக்மார்க் செய்ய Cmd + D அழுத்தவும்!",
     "toast_bookmark_mobile": "📱 உலாவி மெனுவை (⋮ அல்லது பகிர்) தட்டவும் → 'Add to Home screen' அல்லது 'Bookmark' தேர்ந்தெடுக்கவும்!"
   },
   "bn": {
     "lbl_bsr": "অ্যামাজন ইন্ডিয়া BSR",
     "lbl_reviews": "পর্যালোচনা",
     "verdicts": {"massive_deal": {"title": "🔥 বাম্পার ডিল ({pct}% ছাড়)", "reason": "অসাধারণ ছাড়! বর্তমান ডিল মূল্য ₹{price}-এ আপনার ₹{savings} সাশ্রয় হচ্ছে (অফিসিয়াল বাক্স MRP ₹{mrp}-এর ওপর {pct}% প্রকৃত ছাড়)।"}, "best_price": {"title": "🔥 সর্বকালের কম দাম / সেরা মূল্য", "reason": "কেনাকাটা করার উপযুক্ত সময়! বর্তমান মূল্য ₹{price} তার সর্বনিম্ন উৎসবের দামের (₹{lowest}) অত্যন্ত কাছাকাছি। অফিসিয়াল বাক্স MRP ₹{mrp}-এর সাথে যাচাইকৃত।"}, "solid_deal": {"title": "🟢 চমৎকার দৈনিক ডিল", "reason": "চমৎকার দৈনন্দিন মূল্য! আপনি ₹{savings} সাশ্রয় করছেন (মুদ্রিত বাক্স MRP ₹{mrp}-এর ওপর {pct}% ছাড়)। আরও দাম কমার অপেক্ষা করতে চাইলে প্রাইস গ্রাফটি দেখুন।"}, "wait_sale": {"title": "💡 সম্পূর্ণ MRP-র কাছাকাছি / সেলের অপেক্ষা করুন", "reason": "পণ্যটি প্রায় সম্পূর্ণ প্যাকেজিং MRP ₹{mrp}-তে বিক্রি হচ্ছে। ৯০ দিনের গ্রাফ দেখাচ্ছে যে সেলের সময় এর দাম কমে প্রায় ₹{lowest} পর্যন্ত নেমে যায়।"}},
-    "header_subpill": "ডিল ও মূল্য ওঠানামা নিরীক্ষক",
+    "header_subpill": "স্মার্ট মূল্য ও ডিল তুলনা",
     "btn_bookmark_tool": "⭐ টুল বুকমার্ক করুন",
     "select_language_title": "ভাষা নির্বাচন করুন",
-    "mission_badge_1": "🎯 অ্যামাজন ইন্ডিয়ার জন্য স্মার্ট শপিং গাইড",
+    "mission_badge_1": "🎯 অ্যামাজন বনাম ফ্লিপকার্ট মূল্য তুলনা — কেনার আগে যাচাই করুন",
     "mission_badge_2": "১০০% যাচাইকৃত মূল্যের অন্তর্দৃষ্টি",
-    "mission_title": "অ্যামাজনে স্মার্ট কেনাকাটা করুন: সেরা ও আসল ডিল খুঁজুন",
-    "mission_desc": "আমরা <strong>WAVEPICKS</strong> তৈরি করেছি যাতে অ্যামাজন ইন্ডিয়ায় প্রতিটি ক্রেতা পূর্ণ আস্থা ও সঠিক তথ্যের সাথে কেনাকাটা করতে পারেন। প্রতিদিন হাজার হাজার চমৎকার ডিল আসে — আমাদের টুল আপনাকে আসল প্রাইস ড্রপ যাচাই করতে, প্যাকেজিং বাক্সের অফিসিয়াল মুদ্রিত MRP-এর সাথে তুলনা করতে এবং ৯০ দিনের মূল্যের ইতিহাস দেখে সঠিক সময়ে সর্বোচ্চ সাশ্রয় করতে সাহায্য করে।",
-    "pillar_1_title": "অফিসিয়াল বক্স MRP যাচাই করুন",
-    "pillar_1_desc": "আমরা প্রস্তুতকারকের প্যাকেজিং থেকে অফিসিয়াল মুদ্রিত খুচরা মূল্য যাচাই করি, যাতে আপনার ছাড়ের হিসাব ১০০% নির্ভুল থাকে।",
+    "mission_title": "অ্যামাজন ও ফ্লিপকার্টের দামের তুলনা করুন — প্রতিবার সেরা ও আসল ডিল খুঁজুন",
+    "mission_desc": "আপনি অ্যামাজনে কেনাকাটা করুন বা ফ্লিপকার্টে, প্রতিটি ভারতীয় ক্রেতা যাতে পূর্ণ আস্থা ও সঠিক তথ্যের সাথে কেনাকাটা করতে পারেন সেজন্য আমরা <strong>VerifyFirst</strong> তৈরি করেছি। আপনার টাকা খরচ করার আগে, উভয় স্টোরে লাইভ দামের তুলনা করতে, প্রকৃত মুদ্রিত বক্স MRP যাচাই করতে এবং ৯০ দিনের মূল্যের ইতিহাস দেখে সর্বনিম্ন দামে কিনতে আমাদের বিনামূল্যের টুলটি ব্যবহার করুন।",
+    "pillar_1_title": "অ্যামাজন 🆚 ফ্লিপকার্ট তুলনা",
+    "pillar_1_desc": "উভয় প্ল্যাটফর্মে লাইভ দাম এবং আসল ছাড়ের তাৎক্ষণিক তুলনা করুন।",
     "pillar_2_title": "৯০ দিনের দামের হ্রাস ট্র্যাক করুন",
     "pillar_2_desc": "৯০ দিনের প্রাইস গ্রাফ বিশ্লেষণ করে আপনার পছন্দের পণ্যটি কখন সর্বনিম্নে ছিল তা জানুন এবং সেরা সময়ে কিনুন।",
-    "pillar_3_title": "স্মার্ট কেনাকাটার সুপারিশ",
-    "pillar_3_desc": "অর্ডার করার আগে স্পষ্ট ডেটা-ভিত্তিক পরামর্শ পান: <strong>সর্বকালের কম দাম</strong>, <strong>চমৎকার দৈনিক মূল্য</strong>, বা <strong>আসন্ন সেলের অপেক্ষা করুন</strong>।",
-    "auditor_title": "🔍 লাইভ ডিল ও মূল্য ওঠানামা নিরীক্ষক",
+    "pillar_3_title": "অফিসিয়াল বক্স MRP যাচাই করুন",
+    "pillar_3_desc": "আমরা প্রস্তুতকারকের প্যাকেজিং থেকে অফিসিয়াল মুদ্রিত খুচরা মূল্য যাচাই করি, যাতে আপনার ছাড়ের হিসাব ১০০% নির্ভুল থাকে।",
+    "auditor_title": "🔍 লাইভ ডিল ও মূল্য তুলনা",
     "auditor_badge": "১০০% বিনামূল্যে এবং তাৎক্ষণিক",
-    "auditor_desc": "যেকোনো অ্যামাজন ইন্ডিয়া লিঙ্ক, শর্টলিঙ্ক (amzn.in/d/...) বা ১০ অক্ষরের ASIN পেস্ট করুন। আমাদের ক্লাউড অডিটর কয়েক সেকেন্ডেই প্যাকেজিংয়ের সাথে দাম মিলিয়ে দেখে।",
-    "auditor_placeholder": "অ্যামাজন লিঙ্ক বা ASIN পেস্ট করুন (যেমন: B0BDVG99J5)...",
-    "btn_audit": "ডিল যাচাই করুন ⚡",
+    "auditor_desc": "যেকোনো অ্যামাজন বা ফ্লিপকার্ট লিঙ্ক, শর্টলিঙ্ক বা ID/ASIN পেস্ট করুন। কয়েক সেকেন্ডেই অফিসিয়াল প্যাকেজিং এবং ৯০ দিনের ট্রেন্ডের সাথে দাম মিলিয়ে দেখুন।",
+    "auditor_placeholder": "অ্যামাজন বা ফ্লিপকার্ট লিঙ্ক / ID পেস্ট করুন (যেমন: B0BDVG99J5)...",
+    "btn_audit": "সেরা মূল্য যাচাই করুন ⚡",
     "sample_label": "💡 পরীক্ষিত যাচাইকৃত ডিলগুলো দেখুন:",
     "share_badge": "📢 বন্ধুবান্ধব ও পরিবারের সাথে স্মার্ট সাশ্রয় শেয়ার করুন",
-    "share_title": "বন্ধুবান্ধব ও পরিবারকে অ্যামাজনে সেরা ডিল পেতে সাহায্য করুন",
-    "share_desc": "উৎসবের সেল বা দৈনিক ডিল থেকে কেনাকাটা করছেন? <strong>WAVEPICKS</strong> বুকমার্ক করুন এবং হোয়াটসঅ্যাপ, টুইটার, ইনস্টাগ্রাম ও ফেসবুকে শেয়ার করুন যাতে সবাই আসল প্রাইস ড্রপ দেখে সর্বোচ্চ সাশ্রয় করতে পারে!",
+    "share_title": "বন্ধুবান্ধব ও পরিবারকে অ্যামাজন ও ফ্লিপকার্টে দামের তুলনা করে সাশ্রয় করতে সাহায্য করুন",
+    "share_desc": "উৎসবের সেল বা দৈনিক ডিল থেকে কেনাকাটা করছেন? <strong>VerifyFirst</strong> বুকমার্ক করুন এবং হোয়াটসঅ্যাপ, টুইটার, ইনস্টাগ্রাম ও ফেসবুকে শেয়ার করুন যাতে সবাই অ্যামাজন ও ফ্লিপকার্টের দাম তুলনা করে সর্বোচ্চ সাশ্রয় করতে পারে!",
     "btn_share_bookmark": "টুল বুকমার্ক করুন",
     "btn_share_whatsapp": "হোয়াটসঅ্যাপে শেয়ার করুন",
     "btn_share_twitter": "টুইটারে (X) পোস্ট করুন",
@@ -1329,7 +1875,7 @@ const TRANSLATIONS = {
     "modal_guide_title": "📊 ৯০ দিনের মূল্যের ওঠানামা কীভাবে পড়বেন:",
     "modal_valley_tip": "💡 <em>সর্বোচ্চ সাশ্রয়ের জন্য গ্রাফের গভীরতম খাদগুলো (দামের পতন) লক্ষ্য করুন।</em>",
     "modal_open_keepa": "Keepa-তে ইন্টারেক্টিভ চার্ট খুলুন ↗",
-    "footer_disclosure": "<strong>অ্যামাজন অ্যাসোসিয়েট ঘোষণা:</strong> একজন অ্যামাজন অ্যাসোসিয়েট হিসেবে, এই পেজের লিঙ্কের মাধ্যমে যোগ্য কেনাকাটা থেকে Wavepicks কমিশন পেতে পারে। পণ্যের দাম এবং প্রাপ্যতা প্রতিদিন স্বয়ংক্রিয় অডিটের মাধ্যমে যাচাই করা হয় এবং পরিবর্তিত হতে পারে।",
+    "footer_disclosure": "<strong>অ্যাফিলিয়েট ঘোষণা:</strong> একজন অ্যামাজন অ্যাসোসিয়েট হিসেবে, এই পেজের লিঙ্কের মাধ্যমে যোগ্য কেনাকাটা থেকে VerifyFirst কমিশন পেতে পারে। পণ্যের দাম এবং প্রাপ্যতা রিয়েল-টাইমে যাচাই করা হয় এবং পরিবর্তিত হতে পারে।",
     "lbl_deal_price": "বর্তমান ডিলের দাম",
     "lbl_box_mrp": "মুদ্রিত বক্স MRP",
     "lbl_save_mrp": "MRP-তে ₹{amt} সাশ্রয়",
@@ -1338,20 +1884,20 @@ const TRANSLATIONS = {
     "lbl_spread": "ঐতিহাসিক মূল্য ওঠানামার বিস্তার:",
     "lbl_buy_amazon": "অ্যামাজনে ডিল দেখে ₹{price} এ কিনুন ↗",
     "btn_deal_whatsapp": "💬 হোয়াটসঅ্যাপে ডিল শেয়ার করুন",
-    "lbl_support_note": "<strong>Wavepicks-কে সমর্থন করুন:</strong> আমাদের লিঙ্কের মাধ্যমে কিনলে আমাদের রিসার্চ টিম কোনো বাড়তি খরচ ছাড়াই একটি ছোট রেফারেল ফি পায়!",
+    "lbl_support_note": "<strong>VerifyFirst-কে সমর্থন করুন:</strong> আমাদের লিঙ্কের মাধ্যমে কিনলে আমাদের রিসার্চ টিম কোনো বাড়তি খরচ ছাড়াই একটি ছোট রেফারেল ফি পায়!",
     "lbl_curve_header": "📈 ৯০ দিনের মূল্য ও চাহিদার ওঠানামা",
     "lbl_curve_badge": "যাচাইকৃত Keepa গ্রাফ",
-    "lbl_click_enlarge": "🔍 <em>বড় করতে চার্টে ক্লিক করুন • বক্স MRP আইনত সর্বোচ্চ সীমা</em>",
+    "lbl_click_enlarge": "🔍 <em>বড় করতে চার্টে ক্লিক করুন • বক্স MRP সর্বোচ্চ খুচরা মূল্য</em>",
     "lbl_how_to_read": "💡 এই ৯০ দিনের দামের গ্রাফ কীভাবে বুঝবেন:",
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 প্রাইস কার্ভ:</strong> দিনভিত্তিক আসল বিক্রয় মূল্য ট্র্যাক করে। সবচেয়ে কম দামে কেনার জন্য গ্রাফের গভীরতম খাদগুলো লক্ষ্য করুন।",
-    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 মুদ্রিত বক্স MRP (₹{mrp}):</strong> ভারতীয় লিগ্যাল মেট্রোলজি আইনের আওতায় প্রত্যয়িত প্যাকেজিং মূল্য। আসল ছাড় এই বাস্তব সীমা থেকেই পরিমাপ করা হয়।",
+    "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 মুদ্রিত বক্স MRP (₹{mrp}):</strong> পণ্যের বাক্সে অফিসিয়াল প্যাকেজিং মূল্য। আসল ছাড় এই বাস্তব সীমা থেকেই পরিমাপ করা হয়।",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 সাধারণ দিনের দামের সাথে তুলনা করুন:</strong> সাধারণ দিনে এই পণ্যটি আসলে কত দামে বিক্রি হয় তা যাচাই করুন। যদি আজকের 'ফেস্টিভ্যাল ডিল' গত মাসের দামের মতোই হয়, তবে এটি কোনো আসল বিশেষ ছাড় নয়!",
-    "community_share_text": "অ্যামাজনে সেরা ও প্রকৃত ডিলগুলি খুঁজুন! আসল মুদ্রিত বাক্স MRP এবং ৯০ দিনের দামের গ্রাফ দেখে স্মার্ট কেনাকাটা করুন: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ WAVEPICKS-এ অ্যামাজন স্মার্ট ডিল চেক:\n{title}\n\n💰 ডিল মূল্য: ₹{price} (বাক্স MRP ₹{mrp}, {pct}% ছাড়)\n✅ সুপারিশ: {verdict}\n\nকেনার আগে ৯০ দিনের দামের ট্রেন্ড দেখুন: https://alerts.zero483.com/deals.html",
+    "community_share_text": "অ্যামাজন ও ফ্লিপকার্টে সেরা ও প্রকৃত ডিলগুলি তুলনা করুন! আসল মুদ্রিত বাক্স MRP এবং ৯০ দিনের দামের গ্রাফ দেখে স্মার্ট কেনাকাটা করুন: https://alerts.zero483.com/deals.html",
+    "deal_share_text": "🛍️ VerifyFirst-এ স্মার্ট মূল্য তুলনা:\n{title}\n\n💰 ডিল মূল্য: ₹{price} (বাক্স MRP ₹{mrp}, {pct}% ছাড়)\n✅ সুপারিশ: {verdict}\n\nকেনার আগে ৯০ দিনের দামের ট্রেন্ড দেখুন: https://alerts.zero483.com/deals.html",
     "toast_copied_btn": "✓ লিঙ্ক কপি হয়েছে!",
     "toast_link_copied": "📋 লিঙ্ক কপি হয়েছে! এটি হোয়াটসঅ্যাপ, ইনস্টাগ্রাম বা বন্ধুদের পাঠান।",
-    "toast_bookmark_pc": "⭐ তাত্ক্ষণিক ডিল অডিটের জন্য WAVEPICKS বুকমার্ক করতে Ctrl + D চাপুন!",
-    "toast_bookmark_mac": "⭐ তাত্ক্ষণিক ডিল অডিটের জন্য WAVEPICKS বুকমার্ক করতে Cmd + D চাপুন!",
+    "toast_bookmark_pc": "⭐ তাত্ক্ষণিক মূল্য তুলনার জন্য VerifyFirst বুকমার্ক করতে Ctrl + D চাপুন!",
+    "toast_bookmark_mac": "⭐ তাত্ক্ষণিক মূল্য তুলনার জন্য VerifyFirst বুকমার্ক করতে Cmd + D চাপুন!",
     "toast_bookmark_mobile": "📱 ব্রাউজার মেনু (⋮ বা শেয়ার) ট্যাপ করুন → 'Add to Home screen' বা 'Bookmark' নির্বাচন করুন!"
   }
 };
@@ -1419,18 +1965,97 @@ function getLocalizedVerdict(d, lang) {
 }
 
 function getDealShareText(d, lang) {
-  const dict = TRANSLATIONS[lang] || TRANSLATIONS.en;
-  return (dict.deal_share_text || TRANSLATIONS.en.deal_share_text)
-    .replace('{title}', d.title)
-    .replace('{price}', d.current_price.toLocaleString('en-IN'))
-    .replace('{mrp}', d.mrp.toLocaleString('en-IN'))
-    .replace('{pct}', d.discount_pct || d.discount_mrp_pct)
-    const v = getLocalizedVerdict(d, lang);
-  return dict.deal_share_text.replace('{title}', d.title).replace('{price}', d.current_price).replace('{mrp}', d.mrp).replace('{pct}', d.discount_pct || d.discount_mrp_pct).replace('{verdict}', v.title);
+  if (!d) return "Check out verified deals on VERIFYFIRST: https://alerts.zero483.com/deals.html";
+
+  const hasComparison = Boolean(d.amazon_counterpart && d.flipkart_counterpart);
+  const amz = d.amazon_counterpart;
+  const fk = d.flipkart_counterpart;
+  const title = (d.title || "Product Deal").trim();
+  const mrp = d.mrp ? Number(d.mrp).toLocaleString('en-IN') : "N/A";
+  const webUrl = "https://alerts.zero483.com/deals.html";
+
+  if (hasComparison && amz && fk) {
+    const amzPrice = amz.price ? Number(amz.price).toLocaleString('en-IN') : "N/A";
+    const amzDisc = amz.discount_pct || 0;
+    const fkPrice = fk.price ? Number(fk.price).toLocaleString('en-IN') : "N/A";
+    const fkDisc = fk.discount_pct || 0;
+    const winnerText = d.winner_text ? d.winner_text.replace(/[🏆🤝]/g, '').trim() : "";
+
+    let text = `⚖️ STORE PRICE COMPARISON | VERIFYFIRST COMPARISON\n`;
+    text += `━━━━━━━━━━━━━━━━━━━━━━━\n`;
+    text += `📺 ${title}\n`;
+    text += `🏷️ Official Box MRP: ₹${mrp}\n\n`;
+    text += `🛒 LIVE STORE PRICES:\n`;
+    text += `• 📦 Amazon: ₹${amzPrice} (-${amzDisc}% off)\n`;
+    text += `• ⚡ Flipkart: ₹${fkPrice} (-${fkDisc}% off)\n\n`;
+
+    if (winnerText) {
+      text += `🏆 RESULT: ${winnerText}\n\n`;
+    }
+
+    if (d.mrp_mismatch) {
+      text += `⚠️ Note: Printed Box MRP mismatch detected (${d.mrp_diff_pct}% gap). Please verify exact model specs.\n\n`;
+    }
+
+    text += `💳 PRO-TIP: Check active Bank/Card offers on either store before checkout to save an extra ₹1,000–₹5,000!\n\n`;
+    text += `🔍 Full Deal Audit & 90-Day Trajectory Graph:\n`;
+    text += `👉 ${webUrl}`;
+    return text;
+  }
+
+  // Single Product Share Text Fallback
+  const currentPrice = d.current_price ? Number(d.current_price).toLocaleString('en-IN') : "N/A";
+  const discPct = Math.round(d.discount_mrp_pct || d.discount_pct || 0);
+  const savings = d.savings_mrp_inr ? Number(d.savings_mrp_inr).toLocaleString('en-IN') : "0";
+  const v = getLocalizedVerdict(d, lang);
+
+  let text = `🛍️ VERIFIED DEAL COMPARISON | VERIFYFIRST\n`;
+  text += `━━━━━━━━━━━━━━━━━━━━━━━\n`;
+  text += `📦 ${title}\n\n`;
+  text += `💰 Deal Price: ₹${currentPrice} (Save ₹${savings})\n`;
+  text += `🏷️ Official Box MRP: ₹${mrp} (-${discPct}% off)\n`;
+  text += `✅ Buying Verdict: ${v.title.replace(/[🔥🟢💡]/g, '').trim()}\n\n`;
+  text += `💳 PRO-TIP: Check active Bank & Card offers on the product page for extra instant savings!\n\n`;
+  text += `📊 View 90-Day Real Price Trajectory Curve:\n`;
+  text += `👉 ${webUrl}`;
+  return text;
 }
 
 function getDealShareUrl(d, lang) {
   return "https://api.whatsapp.com/send?text=" + encodeURIComponent(getDealShareText(d, lang));
+}
+
+function copyDealSummary() {
+  if (!lastAuditedItem) {
+    showToast("⚠️ No deal audited yet to copy.");
+    return;
+  }
+  const text = getDealShareText(lastAuditedItem, currentLang);
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => {
+      showToast("📋 Comparison summary copied to clipboard! Paste into WhatsApp or Notes.");
+    }).catch(() => {
+      fallbackCopyText(text);
+    });
+  } else {
+    fallbackCopyText(text);
+  }
+}
+
+function fallbackCopyText(text) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.select();
+  try {
+    document.execCommand('copy');
+    showToast("📋 Comparison summary copied to clipboard!");
+  } catch(e) {
+    showToast("⚠️ Could not copy text automatically.");
+  }
+  document.body.removeChild(ta);
 }
 
 function updateCommunityShareLinks(lang) {
@@ -1441,7 +2066,7 @@ function updateCommunityShareLinks(lang) {
   }
   const tw = document.getElementById('share-twitter-link');
   if (tw) {
-    tw.href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(dict.community_share_text) + "&hashtags=AmazonDeals,SmartShopping,WAVEPICKS";
+    tw.href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(dict.community_share_text) + "&hashtags=AmazonDeals,SmartShopping,VERIFYFIRST";
   }
   const fb = document.getElementById('share-facebook-link');
   if (fb) {
@@ -1454,7 +2079,7 @@ function setLanguage(langKey) {
   currentLang = langKey;
   document.documentElement.lang = langKey;
   try {
-    localStorage.setItem('wavepicks_lang', langKey);
+    localStorage.setItem('verifyfirst_lang', langKey);
   } catch(e) {}
 
   const label = document.getElementById('current-lang-label');
@@ -1511,7 +2136,13 @@ function updateDynamicAuditLabels(d, lang) {
   const sp = document.getElementById('dyn-lbl-spread');
   if (sp) sp.textContent = dict.lbl_spread;
   const ba = document.getElementById('dyn-btn-buy');
-  if (ba) ba.textContent = dict.lbl_buy_amazon.replace('{price}', d.current_price);
+  if (ba) {
+    if (d.platform === 'flipkart') {
+      ba.textContent = `Check Deal & Buy on Flipkart at ₹${d.current_price.toLocaleString('en-IN')} ↗`;
+    } else {
+      ba.textContent = dict.lbl_buy_amazon.replace('{price}', d.current_price.toLocaleString('en-IN'));
+    }
+  }
   
   // WhatsApp Share button for current deal in active language
   const bw = document.getElementById('dyn-btn-whatsapp');
@@ -1575,7 +2206,7 @@ function setTheme(themeKey) {
   if (!THEMES[themeKey]) themeKey = 'midnight';
   document.documentElement.setAttribute('data-theme', themeKey);
   try {
-    localStorage.setItem('wavepicks_theme', themeKey);
+    localStorage.setItem('verifyfirst_theme', themeKey);
   } catch(e) {}
   
   const label = document.getElementById('current-theme-label');
@@ -1675,7 +2306,7 @@ function handleNativeShare() {
   const dict = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
   if (navigator.share) {
     navigator.share({
-      title: 'WAVEPICKS — Amazon Deal & Price Fluctuation Auditor',
+      title: 'VERIFYFIRST — Amazon Deal & Price Fluctuation Auditor',
       text: dict.community_share_text,
       url: 'https://alerts.zero483.com/deals.html'
     }).catch(() => {});
@@ -1686,9 +2317,9 @@ function handleNativeShare() {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
-  const curTheme = localStorage.getItem('wavepicks_theme') || 'midnight';
+  const curTheme = localStorage.getItem('verifyfirst_theme') || 'midnight';
   setTheme(curTheme);
-  const curLang = localStorage.getItem('wavepicks_lang') || 'en';
+  const curLang = localStorage.getItem('verifyfirst_lang') || 'en';
   setLanguage(curLang);
   if (navigator.share) {
     const btn = document.getElementById('btn-native-share');
