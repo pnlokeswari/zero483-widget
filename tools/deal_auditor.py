@@ -532,8 +532,8 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
                             for p_id, t, p_val, c_mrp, base_u, k_specs in candidates:
                                 full_cand_text = f"{t} {' '.join(str(x) for x in k_specs)}"
                                 t_low = full_cand_text.lower()
-                                words_ok = all(mw in t_low for mw in model_words) if model_words else True
-                                # Allow match if Box MRP matches within ₹1 OR if primary Box MRP was missing/unverified (<= amz_price) and exact model code matched
+                                words_ok = (model_words[0] in t_low and sum(1 for mw in model_words if mw in t_low) >= min(2, len(model_words))) if model_words else True
+                                # Allow match if Box MRP matches within ₹1
                                 mrp_ok = (box_mrp > 0 and c_mrp > 0 and abs(c_mrp - box_mrp) <= 1.0)
                                 price_ok = (amz_price <= 0 or (0.60 * amz_price <= p_val <= 1.50 * amz_price))
                                 if words_ok and mrp_ok and price_ok and matches_variant_specs(full_cand_text, required_specs):
@@ -723,9 +723,10 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
                 ][:3]
                 for a_id, t_str, parsed, c_mrp in candidates:
                     t_low = t_str.lower()
-                    words_ok = all(mw in t_low for mw in model_words) if model_words else True
+                    words_ok = (model_words[0] in t_low and sum(1 for mw in model_words if mw in t_low) >= min(2, len(model_words))) if model_words else True
+                    mrp_ok = (box_mrp <= 0 or c_mrp <= 0 or abs(c_mrp - box_mrp) <= 1.0)
                     price_ok = (fk_price <= 0 or (0.60 * fk_price <= parsed <= 1.50 * fk_price))
-                    if words_ok and price_ok and matches_variant_specs(t_str, required_specs):
+                    if words_ok and mrp_ok and price_ok and matches_variant_specs(t_str, required_specs):
                         cur_p = parsed
                         asin = a_id
                         amz_title = t_str
