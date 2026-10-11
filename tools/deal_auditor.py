@@ -410,12 +410,19 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
                                     if p_val > 0:
                                         candidates.append((p_id, t, p_val, c_mrp, val.get("baseUrl", ""), k_specs))
 
-                        # Filter candidates for exact brand + variant spec match
-                        brand_words = [w.lower() for w in re.findall(r"[a-zA-Z]{3,}", title_or_url[:30]) if w.lower() not in {"the", "for", "and", "with", "pack", "new"}][:2]
+                        # Filter candidates for exact brand + model words + variant spec + Box MRP parity!
+                        stop_words = {"the", "for", "and", "with", "pack", "new", "from", "all", "dual", "sim", "phone", "mobile"}
+                        model_words = [w.lower() for w in re.findall(r"[a-zA-Z0-9]{3,}", title_or_url[:35]) if w.lower() not in stop_words][:3]
                         for p_id, t, p_val, c_mrp, base_u, k_specs in candidates:
                             t_low = t.lower()
-                            brand_ok = all(bw in t_low for bw in brand_words[:1]) if brand_words else True
-                            if brand_ok and matches_variant_specs(t, required_specs):
+                            # 1. Must match at least the first 2 model words (e.g. 'lava' AND 'hero', never just 'lava')
+                            req_words = model_words[:2] if len(model_words) >= 2 else model_words[:1]
+                            words_ok = all(mw in t_low for mw in req_words) if req_words else True
+                            # 2. Automatic search MUST also match Box MRP (or within ₹1) so we NEVER auto-pick a ₹699 charger/accessory for a ₹1,249 phone!
+                            mrp_ok = (box_mrp <= 0 or c_mrp <= 0 or abs(c_mrp - box_mrp) <= 1.0)
+                            # 3. Price sanity check: auto-match cannot be <55% or >160% of primary store price
+                            price_ok = (amz_price <= 0 or (0.55 * amz_price <= p_val <= 1.60 * amz_price))
+                            if words_ok and mrp_ok and price_ok and matches_variant_specs(t, required_specs):
                                 cur_p = p_val
                                 fk_scraped_mrp = c_mrp
                                 fk_title = t
@@ -423,7 +430,7 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
                                 fk_highlights = [str(x) for x in k_specs[:6]]
                                 break
 
-                        # Do NOT blindly pick an unrelated sponsored brand if brand_ok failed!
+                        # Do NOT blindly pick an unrelated item if strict checks failed — return unmatched (Case B)!
                         break
         except Exception as e:
             log.debug(f"Cross search Flipkart exception: {e}")
@@ -437,21 +444,20 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
     savings = round(max(0.0, effective_fk_mrp - cur_p), 0) if matched else 0.0
     disc_pct = round((savings / effective_fk_mrp * 100), 1) if (matched and effective_fk_mrp > 0) else 0.0
 
-    # MRP Mismatch Detection (Detects wrong pack sizes, model variations, combo variants, or different products)
+    # MRP Mismatch Detection (Only triggers when user manually pasted a direct Flipkart URL with a different MRP)
     mrp_mismatch = False
     mrp_diff_pct = 0.0
     mrp_mismatch_msg = ""
     if matched and box_mrp > 0 and fk_scraped_mrp > 0:
         mrp_diff = abs(fk_scraped_mrp - box_mrp)
         mrp_diff_pct = round((mrp_diff / max(box_mrp, 1.0)) * 100, 2)
-        # Strict MRP rule: Exactly identical products must have identical printed box MRP (tolerance max ₹1.0)
         if mrp_diff > 1.0:
             mrp_mismatch = True
             mrp_mismatch_msg = (
                 f"Notice: Box MRP Difference! Amazon MRP is ₹{box_mrp:,.0f}, while Flipkart shows "
                 f"₹{fk_scraped_mrp:,.0f} (₹{mrp_diff:,.0f} difference). "
                 f"Because identical items share the exact same packaging MRP, these two links likely represent "
-                f"different model editions (e.g. T6C vs 55T6D), different specs, or different pack sizes. "
+                f"different model editions, different specs, or different pack sizes. "
                 f"You can still compare both stores below to choose what fits your budget."
             )
 
@@ -482,6 +488,7 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
     cur_p = 0.0
     asin = ""
     amz_title = title
+    is_direct_amz = bool(extract_asin(title))
 
     try:
         r = session.get(amz_url, timeout=10)
@@ -513,12 +520,14 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
                     if parsed > 0:
                         candidates.append((a_id, t_str, parsed))
 
-            # Filter candidates for exact brand + variant specs (e.g. Apple iPhone 15 128GB, never Transcend SSD!)
-            brand_words = [w.lower() for w in re.findall(r"[a-zA-Z]{3,}", title[:30]) if w.lower() not in {"the", "for", "and", "with", "pack", "new"}][:2]
+            stop_words = {"the", "for", "and", "with", "pack", "new", "from", "all", "dual", "sim", "phone", "mobile"}
+            model_words = [w.lower() for w in re.findall(r"[a-zA-Z0-9]{3,}", title[:35]) if w.lower() not in stop_words][:3]
             for a_id, t_str, parsed in candidates:
                 t_low = t_str.lower()
-                brand_ok = all(bw in t_low for bw in brand_words[:1]) if brand_words else True
-                if brand_ok and matches_variant_specs(t_str, required_specs):
+                req_words = model_words[:2] if len(model_words) >= 2 else model_words[:1]
+                words_ok = all(mw in t_low for mw in req_words) if req_words else True
+                price_ok = (fk_price <= 0 or (0.55 * fk_price <= parsed <= 1.60 * fk_price))
+                if words_ok and price_ok and matches_variant_specs(t_str, required_specs):
                     cur_p = parsed
                     asin = a_id
                     amz_title = t_str
@@ -549,6 +558,13 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
                         if mv > 0: amz_scraped_mrp = mv; break
         except Exception as be:
             log.debug(f"Amazon bullets fetch error: {be}")
+
+    # If automatic Amazon search found an item whose Box MRP does NOT match Flipkart's Box MRP, reject it as an unconfirmed match (Case B)!
+    if matched and not is_direct_amz and box_mrp > 0 and amz_scraped_mrp > 0 and abs(amz_scraped_mrp - box_mrp) > 1.0:
+        matched = False
+        cur_p = 0.0
+        lowest_90d = 0.0
+        affiliate_url = amz_url
 
     effective_amz_mrp = amz_scraped_mrp if amz_scraped_mrp > 0 else box_mrp
     savings = round(max(0.0, effective_amz_mrp - cur_p), 0) if matched else 0.0
