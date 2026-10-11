@@ -232,6 +232,17 @@ def buyer_deals():
     return render_template_string(BUYER_HTML)
 
 
+@app.route("/compare/<path:filename>")
+def serve_compare_files(filename: str):
+    """Serve auto-generated static SEO comparison pages and index.json."""
+    comp_dir = Path(__file__).resolve().parent.parent / "compare"
+    target = comp_dir / filename
+    if not target.exists():
+        return jsonify({"error": "Comparison page not found"}), 404
+    mime = "application/json" if filename.endswith(".json") else "text/html"
+    return send_file(str(target), mimetype=mime)
+
+
 @app.route("/api/creator/products")
 def api_creator_products():
     return jsonify(get_creator_products())
@@ -258,6 +269,7 @@ def healthz():
 ALLOWED_ORIGIN_PATTERNS = [
     re.compile(r"^https?://(localhost|127\.0\.0\.1)(:\d+)?$"),
     re.compile(r"^https://([a-zA-Z0-9-]+\.)?zero483\.com$"),
+    re.compile(r"^https://([a-zA-Z0-9-]+\.)?verifyfirst\.co\.in$"),
     re.compile(r"^https://([a-zA-Z0-9-]+\.)?trycloudflare\.com$"),
 ]
 
@@ -332,15 +344,17 @@ def api_buyer_audit_deal():
     # 2. Input Sanitization & Payload Length Check
     data = request.get_json(force=True, silent=True) or {}
     url = str(data.get("url", "")).strip()
+    competitor_url = str(data.get("competitor_url", "")).strip()
     if not url:
-        return jsonify({"error": "Please provide an Amazon product link or ASIN"}), 400
-    if len(url) > 1024:
+        return jsonify({"error": "Please provide an Amazon or Flipkart product link or ID"}), 400
+    if len(url) > 1024 or len(competitor_url) > 1024:
         return jsonify({"error": "Input link exceeds maximum allowed length."}), 400
 
     # 3. Secure Server-Side Execution
     from deal_auditor import audit_product_deal
     from audit_tracker import log_search
-    res = audit_product_deal(url)
+    from seo_page_generator import auto_index_verified_product
+    res = audit_product_deal(url, competitor_url=competitor_url)
     if "error" in res:
         log_search(
             asin=url[:15],
@@ -350,6 +364,11 @@ def api_buyer_audit_deal():
             status="error"
         )
         return jsonify(res), 400
+
+    # 4. Auto-generate SEO static comparison page & update index/sitemap in background
+    seo_url = auto_index_verified_product(res, push_remote=True)
+    if seo_url:
+        res["seo_page_url"] = seo_url
 
     log_search(
         asin=res.get("asin", ""),
