@@ -1381,7 +1381,7 @@ async function runAudit(competitorUrl = '') {
                   </ul>
                 ` : `
                   <div style="font-size:.76rem;color:var(--muted);padding:8px 0;font-style:italic">
-                    No bullet specifications reported for this counterpart.
+                    ${amzMatched ? 'Standard manufacturer specifications apply (see product page).' : 'Counterpart not linked yet — paste an Amazon link above to load specs.'}
                   </div>
                 `}
               </div>
@@ -1403,7 +1403,7 @@ async function runAudit(competitorUrl = '') {
                   </ul>
                 ` : `
                   <div style="font-size:.76rem;color:var(--muted);padding:8px 0;font-style:italic">
-                    No highlight specifications reported for this counterpart.
+                    ${fkMatched ? 'Standard manufacturer specifications apply (see product page).' : 'Counterpart not linked yet — paste a Flipkart link above to load specs.'}
                   </div>
                 `}
               </div>
