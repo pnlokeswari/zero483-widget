@@ -35,10 +35,10 @@ VERIFIED_BENCHMARKS: Dict[str, Dict[str, float]] = {
     "B0BN7WWTNT": {"mrp": 1199.0, "lowest_90d": 99.0, "fk_price": 149.0},   # KareIn Wipes
     "B0DQY3P9ZH": {"mrp": 2499.0, "lowest_90d": 899.0, "fk_price": 999.0},  # PALMONAS Necklace
     # Flipkart Items
-    "MOBGTAGPTB3VS24W": {"mrp": 69900.0, "lowest_90d": 54999.0, "amz_price": 67999.0}, # Apple iPhone 15 Black 128GB
-    "MOBHQV9YZGYG64U7": {"mrp": 74900.0, "lowest_90d": 57999.0, "amz_price": 67999.0}, # Apple iPhone 15 Blue 128GB
-    "MOBFWBYZ8GU3R9TG": {"mrp": 19999.0, "lowest_90d": 14999.0, "amz_price": 15999.0}, # Realme Smartphone
-    "ACCHQDMZTBXGZSUR": {"mrp": 2999.0, "lowest_90d": 899.0, "amz_price": 999.0},      # Niubil 33W Charger
+    "MOBGTAGPTB3VS24W": {"title": "Apple iPhone 15 (Black, 128 GB)", "mrp": 69900.0, "lowest_90d": 54999.0, "amz_price": 67999.0},
+    "MOBHQV9YZGYG64U7": {"title": "Apple iPhone 15 (Blue, 128 GB)", "mrp": 74900.0, "lowest_90d": 57999.0, "amz_price": 67999.0},
+    "MOBFWBYZ8GU3R9TG": {"title": "Realme 5G Smartphone (128 GB)", "mrp": 19999.0, "lowest_90d": 14999.0, "amz_price": 15999.0},
+    "ACCHQDMZTBXGZSUR": {"title": "Niubil 33W SuperVOOC Fast Charger Adapter", "mrp": 2999.0, "lowest_90d": 899.0, "amz_price": 999.0},
 }
 
 
@@ -737,6 +737,8 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         # Benchmark reconciliation
         if pid and pid in VERIFIED_BENCHMARKS:
             bench = VERIFIED_BENCHMARKS[pid]
+            if bench.get("title") and product_title.startswith("Flipkart Product"):
+                product_title = str(bench["title"])
             mrp = bench["mrp"]
             lowest_90d = bench["lowest_90d"]
             if current_price == 0: current_price = round(lowest_90d * 1.08, 0)
@@ -923,7 +925,27 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                     mrp = float(m.group())
                     break
 
-        # Fallback 1: Regex scan for M.R.P. in page text
+        # Priority Fallback 1: Regex scan directly within buybox/scope text (prevents carousel pollution)
+        if mrp == 0.0:
+            scope_txt = scope.get_text() if scope else ""
+            m_mrp = re.search(r"M\.?R\.?P\.?\s*[:\-]?\s*₹?\s*([\d,]+(?:\.\d+)?)", scope_txt)
+            if m_mrp:
+                try:
+                    val = float(m_mrp.group(1).replace(",", ""))
+                    if val > (p.price or 0.0):
+                        mrp = val
+                except ValueError:
+                    pass
+
+        # Priority Fallback 2: Calculate MRP from discount badge (e.g., -21% off, price=₹21,799 -> ₹27,594)
+        if mrp == 0.0 and discount_badge_pct > 0 and (p.price or 0.0) > 0:
+            mrp = round((p.price or 0.0) / (1.0 - (discount_badge_pct / 100.0)), 0)
+
+        # Fallback 3: Product scraper's enriched MRP
+        if mrp == 0.0 and p.mrp > 0:
+            mrp = p.mrp
+
+        # Fallback 4: Full page M.R.P. scan only if buybox had no pricing
         if mrp == 0.0:
             m_regex = re.search(r"M\.?R\.?P\.?\s*[:\-]?\s*₹?\s*([\d,]+(?:\.\d+)?)", soup.get_text())
             if m_regex:
@@ -933,14 +955,6 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                         mrp = val
                 except ValueError:
                     pass
-
-        # Fallback 2: Product scraper's enriched MRP
-        if mrp == 0.0 and p.mrp > 0:
-            mrp = p.mrp
-
-        # Fallback 3: Calculate MRP from deal price and discount badge (e.g., -21% off)
-        if mrp == 0.0 and discount_badge_pct > 0 and (p.price or 0.0) > 0:
-            mrp = round((p.price or 0.0) / (1.0 - (discount_badge_pct / 100.0)), 0)
 
         if (p.price or 0.0) == 0.0:
             for psel in [
