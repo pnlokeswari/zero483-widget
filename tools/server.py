@@ -386,9 +386,31 @@ def api_buyer_audit_deal():
     return jsonify(res)
 
 
-@app.route("/api/admin/audit-analytics")
+@app.route("/api/visitor-ping", methods=["OPTIONS", "GET", "POST"])
+def api_visitor_ping():
+    """Public live visitor counter & monthly 500-visitor goal tracker for verifyfirst.co.in."""
+    if request.method == "OPTIONS":
+        return jsonify({"status": "ok"}), 200
+    from audit_tracker import log_visit, get_public_visitor_summary
+    client_ip = _get_client_ip()
+    if request.method == "POST":
+        data = request.get_json(force=True, silent=True) or {}
+        summary = log_visit(
+            page_path=str(data.get("path", "/")),
+            referrer=str(data.get("ref", "")),
+            client_ip=client_ip,
+            visitor_id=str(data.get("vid", "")),
+            user_agent=request.headers.get("User-Agent", ""),
+        )
+        return jsonify(summary)
+    return jsonify(get_public_visitor_summary())
+
+
+@app.route("/api/admin/audit-analytics", methods=["OPTIONS", "GET"])
 def api_admin_audit_analytics():
     """Private JSON API for owner analytics. Protected by secret key or localhost."""
+    if request.method == "OPTIONS":
+        return jsonify({"status": "ok"}), 200
     key = request.args.get("key", "").strip()
     client_ip = _get_client_ip()
     is_local = client_ip in ["127.0.0.1", "::1", "localhost"]
