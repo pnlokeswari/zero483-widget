@@ -428,20 +428,20 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
         except Exception as e:
             log.debug(f"Cross search Flipkart exception: {e}")
 
-    if cur_p == 0.0:
-        cur_p = round(amz_price * 1.04, 0)
+    matched = cur_p > 0.0
+    if not matched:
         fk_link = f"https://www.flipkart.com/search?q={urllib.parse.quote(extract_key_specs(title_or_url)[1])}"
 
     effective_fk_mrp = fk_scraped_mrp if fk_scraped_mrp > 0 else box_mrp
-    lowest_90d = min(cur_p, round(cur_p * 0.90, 0))
-    savings = round(max(0.0, effective_fk_mrp - cur_p), 0)
-    disc_pct = round((savings / effective_fk_mrp * 100), 1) if effective_fk_mrp > 0 else 0.0
+    lowest_90d = min(cur_p, round(cur_p * 0.90, 0)) if matched else 0.0
+    savings = round(max(0.0, effective_fk_mrp - cur_p), 0) if matched else 0.0
+    disc_pct = round((savings / effective_fk_mrp * 100), 1) if (matched and effective_fk_mrp > 0) else 0.0
 
     # MRP Mismatch Detection (Detects wrong pack sizes, model variations, combo variants, or different products)
     mrp_mismatch = False
     mrp_diff_pct = 0.0
     mrp_mismatch_msg = ""
-    if box_mrp > 0 and fk_scraped_mrp > 0:
+    if matched and box_mrp > 0 and fk_scraped_mrp > 0:
         mrp_diff = abs(fk_scraped_mrp - box_mrp)
         mrp_diff_pct = round((mrp_diff / max(box_mrp, 1.0)) * 100, 2)
         # Strict MRP rule: Exactly identical products must have identical printed box MRP (tolerance max ₹1.0)
@@ -457,6 +457,7 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
 
     return {
         "platform": "flipkart",
+        "matched": matched,
         "title": fk_title,
         "price": cur_p,
         "mrp": effective_fk_mrp,
@@ -476,7 +477,7 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
     """Queries Amazon to find the exact matching variant counterpart for a Flipkart product."""
     required_specs, search_term = extract_key_specs(title)
     session = make_session()
-    amz_url = f"https://www.amazon.in/s?k={urllib.parse.quote(search_term)}"
+    amz_url = f"https://www.amazon.in/s?k={urllib.parse.quote(search_term)}&tag={AFFILIATE_TAG}"
 
     cur_p = 0.0
     asin = ""
@@ -525,17 +526,12 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
     except Exception as e:
         log.debug(f"Cross search Amazon exception: {e}")
 
-    if cur_p == 0.0:
-        cur_p = round(fk_price * 0.97, 0)
-        asin = "AMAZON"
-
-    lowest_90d = round(cur_p * 0.91, 0)
-    savings = round(max(0.0, box_mrp - cur_p), 0)
-    disc_pct = round((savings / box_mrp * 100), 1) if box_mrp > 0 else 0.0
-    affiliate_url = f"https://www.amazon.in/dp/{asin}?tag={AFFILIATE_TAG}&linkCode=ll1" if asin and asin != "AMAZON" else amz_url
+    matched = cur_p > 0.0
+    lowest_90d = min(cur_p, round(cur_p * 0.91, 0)) if matched else 0.0
+    affiliate_url = f"https://www.amazon.in/dp/{asin}?tag={AFFILIATE_TAG}&linkCode=ll1" if (matched and asin) else amz_url
     about_this_item: list[str] = []
     amz_scraped_mrp = 0.0
-    if asin and asin != "AMAZON":
+    if matched and asin:
         try:
             r_dp = session.get(f"https://www.amazon.in/dp/{asin}", timeout=10)
             if r_dp.status_code == 200:
@@ -555,14 +551,14 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
             log.debug(f"Amazon bullets fetch error: {be}")
 
     effective_amz_mrp = amz_scraped_mrp if amz_scraped_mrp > 0 else box_mrp
-    savings = round(max(0.0, effective_amz_mrp - cur_p), 0)
-    disc_pct = round((savings / effective_amz_mrp * 100), 1) if effective_amz_mrp > 0 else 0.0
+    savings = round(max(0.0, effective_amz_mrp - cur_p), 0) if matched else 0.0
+    disc_pct = round((savings / effective_amz_mrp * 100), 1) if (matched and effective_amz_mrp > 0) else 0.0
 
     # MRP Mismatch Detection (Detects wrong pack sizes, model variations, combo variants, or different products)
     mrp_mismatch = False
     mrp_diff_pct = 0.0
     mrp_mismatch_msg = ""
-    if box_mrp > 0 and amz_scraped_mrp > 0:
+    if matched and box_mrp > 0 and amz_scraped_mrp > 0:
         mrp_diff = abs(amz_scraped_mrp - box_mrp)
         mrp_diff_pct = round((mrp_diff / max(box_mrp, 1.0)) * 100, 2)
         # Strict MRP rule: Exactly identical products must have identical printed box MRP (tolerance max ₹1.0)
@@ -578,6 +574,7 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
 
     return {
         "platform": "amazon",
+        "matched": matched,
         "title": amz_title,
         "price": cur_p,
         "mrp": effective_amz_mrp,
@@ -779,7 +776,9 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             # Verified benchmark match
             bench = VERIFIED_BENCHMARKS[pid]
             amz_comp = cross_search_amazon(product_title, current_price, mrp)
+            amz_comp["matched"] = True
             amz_comp["price"] = bench["amz_price"]
+            amz_comp["lowest_90d"] = min(amz_comp["price"], round(amz_comp["price"] * 0.91, 0))
             amz_comp["savings"] = max(0.0, mrp - amz_comp["price"])
             amz_comp["discount_pct"] = round((amz_comp["savings"] / mrp * 100), 1)
             if bench.get("amz_asin"):
@@ -792,13 +791,13 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             amz_comp = cross_search_amazon(product_title, current_price, mrp)
             has_competitor = True
 
-        # Determine Winner
+        # Determine Winner (Only when counterpart has a confirmed >0 price)
         price_diff = 0.0
         winner_platform = "flipkart"
         winner_text = ""
         winner_badge = "Verified Deal"
 
-        if has_competitor and amz_comp:
+        if has_competitor and amz_comp and amz_comp.get("price", 0) > 0:
             price_diff = abs(current_price - amz_comp["price"])
             if current_price < amz_comp["price"]:
                 winner_platform = "flipkart"
@@ -1030,18 +1029,27 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     elif asin in VERIFIED_BENCHMARKS and fk_known_price:
         # Verified exact benchmark match
         fk_comp = cross_search_flipkart(prod_title, current_price, mrp)
+        fk_comp["matched"] = True
         fk_comp["price"] = fk_known_price
+        fk_comp["lowest_90d"] = min(fk_known_price, round(fk_known_price * 0.90, 0))
         fk_comp["savings"] = max(0.0, mrp - fk_known_price)
         fk_comp["discount_pct"] = round((fk_comp["savings"] / mrp * 100), 1)
         has_competitor = True
+    else:
+        # Automatic Flipkart cross-search for EVERY Amazon product!
+        try:
+            fk_comp = cross_search_flipkart(prod_title, current_price, mrp)
+            has_competitor = True
+        except Exception as e:
+            log.warning(f"Auto Flipkart cross-search error: {e}")
 
-    # Winner & Comparison determinations
+    # Winner & Comparison determinations (Only when Flipkart counterpart has a confirmed >0 price)
     winner_platform = "amazon"
     winner_text = ""
     winner_badge = "Verified Amazon Deal"
     price_diff = 0.0
 
-    if has_competitor and fk_comp:
+    if has_competitor and fk_comp and fk_comp.get("price", 0) > 0:
         price_diff = abs(current_price - fk_comp["price"])
         if current_price < fk_comp["price"]:
             winner_platform = "amazon"
