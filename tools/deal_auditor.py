@@ -1112,7 +1112,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             "svg_chart": chart_svg,
             "verdict": f"🔥 BEST VALUE ON {winner_platform.upper()}" if winner_platform != "tie" else "🟢 PRICE MATCHED DEAL",
             "verdict_color": "#10b981",
-            "verdict_reason": f"{winner_text or 'Audited Deal'} Verified against official printed box MRP of ₹{mrp:,.0f}.",
+            "verdict_reason": f"{winner_text or 'Audited Deal'} Current price of ₹{current_price:,.0f} saves ₹{savings_inr:,.0f} ({discount_mrp_pct:.0f}% off official Box MRP of ₹{mrp:,.0f}). 💡 90-Day Low Reminder: Lowest 90-day festival dip was ₹{lowest_90d:,.0f}.",
         }
 
     # ══════════════════════════════════════════════════════════
