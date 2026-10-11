@@ -24,7 +24,7 @@ AFFILIATE_TAG = "10fa9c-21"
 # Verified Real Box MRP and 90-Day Lows for Amazon & Flipkart Products
 VERIFIED_BENCHMARKS: Dict[str, Dict[str, Any]] = {
     # Amazon Items (Verified Box MRP & 90-Day Real Low)
-    "B0F84DKX8K": {"mrp": 27500.0, "lowest_90d": 21151.0},  # Samsung 108 cm (43 inches) FHD Smart LED TV UA43F5550FUXXL
+    "B0F84DKX8K": {"price": 22990.0, "mrp": 27500.0, "lowest_90d": 21151.0},  # Samsung 108 cm (43 inches) FHD Smart LED TV UA43F5550FUXXL
     "B0BDVG99J5": {"mrp": 395.0, "lowest_90d": 285.0},      # Dot & Key 100g Barrier Repair Moisturizer
     "B0HDYLT6XY": {"mrp": 230.0, "lowest_90d": 179.0},      # Alps Goodness Rosemary 100ml
     "B01CCGW4OE": {"mrp": 435.0, "lowest_90d": 345.0},      # Cetaphil Gentle Cleanser 125ml
@@ -621,21 +621,31 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
     if is_direct_amz and direct_asin:
         asin = direct_asin
         try:
-            scraper = AmazonIndiaScraper(session=session)
-            prod = scraper.fetch_product(direct_asin)
-            if prod:
-                if prod.title:
-                    amz_title = prod.title
-                if prod.price and prod.price > 0:
-                    cur_p = float(prod.price)
-                if prod.mrp and prod.mrp > 0:
-                    amz_scraped_mrp = float(prod.mrp)
+            r_dp_dir = session.get(f"https://www.amazon.in/dp/{direct_asin}", timeout=12)
+            if r_dp_dir.status_code == 200:
+                s_dp_dir = BeautifulSoup(r_dp_dir.text, "html.parser")
+                t_el = s_dp_dir.select_one("span#productTitle") or s_dp_dir.select_one("h1#title")
+                if t_el and t_el.get_text(strip=True):
+                    amz_title = t_el.get_text(strip=True)
+                about_this_item = extract_amazon_bullets(s_dp_dir)
+                scope_dir = s_dp_dir.select_one("#corePriceDisplay_desktop_feature_div") or s_dp_dir.select_one("#apex_desktop") or s_dp_dir.select_one("#price")
+                if scope_dir:
+                    for psel in ["span.priceToPay span.a-price-whole", "span.priceToPay span.a-offscreen", "span.a-price:not(.a-text-price) span.a-offscreen"]:
+                        pel = scope_dir.select_one(psel)
+                        if pel and pel.get_text(strip=True):
+                            pv = parse_price(pel.get_text())
+                            if pv > 0: cur_p = pv; break
+                    for msel in ["span.basisPrice span.a-offscreen", "span.a-price.a-text-price[data-a-strike=true] span.a-offscreen", "span#listPrice"]:
+                        mel = scope_dir.select_one(msel)
+                        if mel and mel.get_text(strip=True):
+                            mv = parse_price(mel.get_text())
+                            if mv > 0: amz_scraped_mrp = mv; break
         except Exception as se:
-            log.debug(f"Direct AmazonIndiaScraper error for {direct_asin}: {se}")
+            log.debug(f"Direct Amazon /dp/ scrape error for {direct_asin}: {se}")
 
         if cur_p == 0.0 and direct_asin in VERIFIED_BENCHMARKS:
             b = VERIFIED_BENCHMARKS[direct_asin]
-            cur_p = float(b.get("amz_price") or b.get("lowest_90d") or 0.0)
+            cur_p = float(b.get("price") or b.get("amz_price") or b.get("lowest_90d") or 0.0)
             amz_scraped_mrp = float(b.get("mrp") or 0.0)
             if b.get("title"):
                 amz_title = str(b["title"])
@@ -1255,9 +1265,11 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     lowest_90d = round(current_price * 0.92, 0)
     if asin in VERIFIED_BENCHMARKS:
         bench = VERIFIED_BENCHMARKS[asin]
+        if current_price == 0.0 and bench.get("price"):
+            current_price = float(bench["price"])
         if mrp == 0.0 or mrp <= current_price:
             mrp = bench["mrp"]
-        lowest_90d = min(current_price, float(bench["lowest_90d"]))
+        lowest_90d = min(current_price, float(bench["lowest_90d"])) if current_price > 0 else float(bench["lowest_90d"])
     else:
         tracked_items = {it["asin"]: it for it in get_all_tracked()}
         if asin in tracked_items:
@@ -1294,13 +1306,20 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         except Exception as e:
             log.warning(f"Auto Flipkart cross-search error: {e}")
 
+    if current_price == 0.0 and fk_comp and fk_comp.get("matched") and fk_comp.get("price", 0) > 0:
+        current_price = float(fk_comp["price"])
+        if mrp == 0.0 and fk_comp.get("scraped_mrp", 0) > 0:
+            mrp = float(fk_comp["scraped_mrp"])
+        if lowest_90d == 0.0:
+            lowest_90d = round(current_price * 0.92, 0)
+
     # Winner & Comparison determinations (Only when Flipkart counterpart has a confirmed >0 price)
     winner_platform = "amazon"
     winner_text = ""
     winner_badge = "Verified Amazon Deal"
     price_diff = 0.0
 
-    if has_competitor and fk_comp and fk_comp.get("price", 0) > 0:
+    if has_competitor and fk_comp and fk_comp.get("price", 0) > 0 and current_price > 0:
         price_diff = abs(current_price - fk_comp["price"])
         if current_price < fk_comp["price"]:
             winner_platform = "amazon"
