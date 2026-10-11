@@ -384,6 +384,22 @@ def auto_index_verified_product(res: Dict[str, Any], push_remote: bool = True) -
         if not prod_id or not title or "error" in res:
             return ""
 
+        # Strict Option 1 Rule: Only index products available IN STOCK on BOTH Amazon & Flipkart
+        amz_comp = res.get("amazon_counterpart") or {}
+        fk_comp = res.get("flipkart_counterpart") or {}
+        amz_price = float(amz_comp.get("price") or 0.0)
+        fk_price = float(fk_comp.get("price") or 0.0)
+        amz_url = str(amz_comp.get("url") or "")
+        fk_url = str(fk_comp.get("url") or "")
+        img_url = str(res.get("image_url") or "")
+
+        if not (res.get("has_competitor") and amz_price > 0 and fk_price > 0):
+            return ""
+        if "/search?" in fk_url or "/s?k=" in amz_url:
+            return ""
+        if not img_url or "unsplash.com" in img_url:
+            return ""
+
         slug = make_seo_slug(title, prod_id)
         html_path = COMPARE_DIR / f"{slug}.html"
         html_content = render_static_comparison_html(res, slug)
