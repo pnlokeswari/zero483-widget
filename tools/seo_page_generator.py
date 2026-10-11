@@ -74,8 +74,13 @@ def render_static_comparison_html(res: Dict[str, Any], slug: str) -> str:
 
     amz_price = float(amz_comp["price"]) if (amz_comp and amz_comp.get("price")) else (cur_price if platform == "amazon" else 0.0)
     fk_price = float(fk_comp["price"]) if (fk_comp and fk_comp.get("price")) else (cur_price if platform == "flipkart" else 0.0)
-    amz_buy_url = amz_comp.get("url") if amz_comp else (primary_url if platform == "amazon" else amz_search_url)
-    fk_buy_url = fk_comp.get("url") if fk_comp else (primary_url if platform == "flipkart" else fk_search_url)
+    raw_amz_url = (amz_comp.get("url") if amz_comp else None) or (primary_url if platform == "amazon" else amz_search_url)
+    raw_fk_url = (fk_comp.get("url") if fk_comp else None) or (primary_url if platform == "flipkart" else fk_search_url)
+    amz_buy_url = raw_amz_url if str(raw_amz_url).lower().startswith("http") else amz_search_url
+    fk_buy_url = raw_fk_url if str(raw_fk_url).lower().startswith("http") else fk_search_url
+    if "amazon.in" in amz_buy_url and "tag=" not in amz_buy_url:
+        sep = "&" if "?" in amz_buy_url else "?"
+        amz_buy_url = f"{amz_buy_url}{sep}tag=10fa9c-21"
 
     low_price = min([p for p in [amz_price, fk_price, cur_price] if p > 0] or [cur_price])
     high_price = max([p for p in [amz_price, fk_price, mrp] if p > 0] or [mrp])
