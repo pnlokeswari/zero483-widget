@@ -90,14 +90,21 @@ def render_static_comparison_html(res: Dict[str, Any], slug: str) -> str:
     now_iso = datetime.now().strftime("%Y-%m-%dT%H:%M:%S+05:30")
     date_display = datetime.now().strftime("%d %b %Y")
 
-    bullets = res.get("about_this_item") or res.get("highlights") or []
+    amz_bullets = res.get("about_this_item") or (amz_comp.get("about_this_item") if amz_comp else []) or []
+    fk_highlights = res.get("highlights") or (fk_comp.get("highlights") if fk_comp else []) or []
     bullets_html = ""
-    if bullets:
-        li_items = "".join(f"<li style='margin-bottom:6px'>{b}</li>" for b in bullets[:5])
+    if amz_bullets or fk_highlights:
+        cols_html = ""
+        if amz_bullets:
+            li_amz = "".join(f"<li style='margin-bottom:6px'>{b}</li>" for b in amz_bullets[:5])
+            cols_html += f"<div><h4 style='font-size:.85rem;color:#fbbf24;margin-bottom:8px'>📦 Amazon India (About This Item)</h4><ul style='padding-left:18px;font-size:.83rem;color:#cbd5e1;line-height:1.6'>{li_amz}</ul></div>"
+        if fk_highlights:
+            li_fk = "".join(f"<li style='margin-bottom:6px'>{h}</li>" for h in fk_highlights[:5])
+            cols_html += f"<div><h4 style='font-size:.85rem;color:#60a5fa;margin-bottom:8px'>⚡ Flipkart India (Product Highlights)</h4><ul style='padding-left:18px;font-size:.83rem;color:#cbd5e1;line-height:1.6'>{li_fk}</ul></div>"
         bullets_html = f"""
         <div style="background:#0f172a;border:1px solid #1e293b;border-radius:12px;padding:18px;margin-top:20px">
-          <h3 style="font-size:.95rem;color:#38bdf8;margin-bottom:10px">📋 Key Product Highlights &amp; Specifications</h3>
-          <ul style="padding-left:18px;font-size:.85rem;color:#cbd5e1;line-height:1.6">{li_items}</ul>
+          <h3 style="font-size:.95rem;color:#38bdf8;margin-bottom:12px">📋 Key Product Specifications &amp; Highlights</h3>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px">{cols_html}</div>
         </div>
         """
 
