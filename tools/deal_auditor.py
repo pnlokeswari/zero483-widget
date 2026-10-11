@@ -250,10 +250,15 @@ def generate_price_trend_svg(
         amz_coords.append((x, y, dt, p))
     amz_path = "M " + " L ".join(f"{x:.1f},{y:.1f}" for x, y, _, _ in amz_coords)
 
-    # Reference Lines
+    # Reference Lines & Valley Coordinates
     mrp_y = pad_top + plot_h - ((mrp - p_min) / p_range) * plot_h
     base_y = pad_top + plot_h
     amz_curr_x, amz_curr_y, _, _ = amz_coords[-1]
+
+    # Locate the exact 90-Day Lowest Valley coordinate on the curve
+    low_x, low_y, low_dt, low_p = min(amz_coords, key=lambda c: c[3])
+    low_label_x = max(pad_left + 72, min(w - pad_right - 85, low_x))
+    low_label_y = low_y + 19 if (low_y + 24 < base_y) else (low_y - 10)
 
     # Generate Y-axis grid lines and currency values
     y_axis_svg = []
@@ -274,9 +279,11 @@ def generate_price_trend_svg(
   <!-- Legend Header -->
   <g transform="translate({pad_left}, 18)">
     <rect x="0" y="0" width="10" height="10" rx="2" fill="#f59e0b"/>
-    <text x="15" y="9" fill="#fef3c7" font-size="10.5" font-weight="700">Amazon 90-Day Real Price Trajectory (Live: ₹{amz_price:,.0f})</text>
-    <line x1="330" y1="5" x2="355" y2="5" stroke="#ef4444" stroke-dasharray="4,4" stroke-width="1.6"/>
-    <text x="362" y="9" fill="#fca5a5" font-size="10" font-weight="600">Printed Box MRP Ceiling</text>
+    <text x="14" y="9" fill="#fef3c7" font-size="10" font-weight="700">90D Trajectory (Live: ₹{amz_price:,.0f})</text>
+    <circle cx="205" cy="5" r="4" fill="#10b981"/>
+    <text x="213" y="9" fill="#6ee7b7" font-size="10" font-weight="700">90D Low: ₹{lowest:,.0f}</text>
+    <line x1="340" y1="5" x2="362" y2="5" stroke="#ef4444" stroke-dasharray="4,4" stroke-width="1.6"/>
+    <text x="367" y="9" fill="#fca5a5" font-size="10" font-weight="600">Box MRP: ₹{mrp:,.0f}</text>
   </g>
 
   <!-- Y-Axis Spine & Base Grid Lines -->
@@ -290,11 +297,20 @@ def generate_price_trend_svg(
   <line x1="{pad_left}" y1="{mrp_y:.1f}" x2="{w - pad_right}" y2="{mrp_y:.1f}" stroke="#ef4444" stroke-dasharray="4,4" stroke-width="1.4"/>
   <text x="{w - pad_right - 4}" y="{mrp_y - 5:.1f}" fill="#ef4444" font-size="10.5" font-weight="bold" text-anchor="end">Official Box MRP: ₹{mrp:,.0f}</text>
 
+  <!-- 90-Day Lowest Price Floor Line -->
+  <line x1="{pad_left}" y1="{low_y:.1f}" x2="{w - pad_right}" y2="{low_y:.1f}" stroke="#10b981" stroke-dasharray="3,3" stroke-width="1.1" opacity="0.65"/>
+
   <!-- Amazon Price Curve (Solid line to denote real historical tracking) -->
   <path d="{amz_path}" fill="none" stroke="url(#gradAmzLine)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- Amazon Live Deal End Marker -->
+  <!-- 90-Day Lowest Valley Marker & Callout Label -->
+  <circle cx="{low_x:.1f}" cy="{low_y:.1f}" r="5" fill="#10b981" stroke="#ffffff" stroke-width="2"/>
+  <rect x="{low_label_x - 68:.1f}" y="{low_label_y - 11:.1f}" width="136" height="16" rx="4" fill="#064e3b" stroke="#10b981" stroke-width="0.9" opacity="0.95"/>
+  <text x="{low_label_x:.1f}" y="{low_label_y + 0.5:.1f}" fill="#6ee7b7" font-size="9.5" font-weight="700" text-anchor="middle">📉 90D Low: ₹{lowest:,.0f} ({low_dt})</text>
+
+  <!-- Amazon Live Deal End Marker & Callout -->
   <circle cx="{amz_curr_x:.1f}" cy="{amz_curr_y:.1f}" r="5" fill="#f59e0b" stroke="#fff" stroke-width="2"/>
+  <text x="{amz_curr_x - 8:.1f}" y="{max(pad_top + 14, amz_curr_y - 8):.1f}" fill="#fbbf24" font-size="10" font-weight="700" text-anchor="end">Today: ₹{amz_price:,.0f}</text>
 
   <!-- X Axis Timeline -->
   <text x="{pad_left}" y="{h - 10}" fill="#94a3b8" font-size="10.5" font-weight="600">90 Days Ago</text>
@@ -1347,28 +1363,33 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     discount_mrp_pct = round((savings_inr / mrp * 100), 1) if mrp > 0 else 0.0
     affiliate_url = f"https://www.amazon.in/dp/{asin}?tag={AFFILIATE_TAG}&linkCode=ll1"
 
-    # Verdict evaluation
-    diff_from_lowest = max(0.0, current_price - lowest_90d)
+    # Verdict evaluation (Always reminds buyer of 90-Day Lowest Price alongside Box MRP savings)
+    diff_from_lowest = round(max(0.0, current_price - lowest_90d), 0)
+    low_reminder = (
+        f" — and it is currently at its 90-day record low (₹{lowest_90d:,.0f})!"
+        if diff_from_lowest == 0
+        else f" 💡 90-Day Low Reminder: Its lowest 90-day festival dip was ₹{lowest_90d:,.0f} (₹{diff_from_lowest:,.0f} lower than today)."
+    )
     if discount_mrp_pct >= 50:
         verdict = f"🔥 MASSIVE DEAL ({discount_mrp_pct:.0f}% OFF)"
         verdict_color = "#10b981"
-        verdict_reason = f"Sensational discount! Current deal price of ₹{current_price:,.0f} saves you ₹{savings_inr:,.0f} ({discount_mrp_pct:.0f}% off official packaging MRP of ₹{mrp:,.0f})."
+        verdict_reason = f"Sensational discount! Current deal price of ₹{current_price:,.0f} saves you ₹{savings_inr:,.0f} ({discount_mrp_pct:.0f}% off official packaging MRP of ₹{mrp:,.0f}).{low_reminder}"
     elif diff_from_lowest == 0:
         verdict = "🔥 BEST PRICE / 90-DAY RECORD LOW"
         verdict_color = "#10b981"
-        verdict_reason = f"Record 90-day low! Current deal price of ₹{current_price:,.0f} is at its lowest 90-day level (saving ₹{savings_inr:,.0f} off official packaging MRP of ₹{mrp:,.0f})."
+        verdict_reason = f"Record 90-day low! Current deal price of ₹{current_price:,.0f} is at its lowest 90-day level (₹{lowest_90d:,.0f}), saving ₹{savings_inr:,.0f} ({discount_mrp_pct:.0f}% off official packaging MRP of ₹{mrp:,.0f})."
     elif diff_from_lowest <= (current_price * 0.05):
         verdict = "🔥 BEST PRICE / NEAR RECORD LOW"
         verdict_color = "#10b981"
-        verdict_reason = f"Excellent entry point! Current price of ₹{current_price:,.0f} is within ₹{diff_from_lowest:,.0f} of its 90-day lowest dip (₹{lowest_90d:,.0f}). Verified against official packaging MRP of ₹{mrp:,.0f}."
+        verdict_reason = f"Excellent entry point! Current price of ₹{current_price:,.0f} is within ₹{diff_from_lowest:,.0f} of its 90-day lowest dip (₹{lowest_90d:,.0f}), saving ₹{savings_inr:,.0f} off official packaging MRP of ₹{mrp:,.0f}."
     elif discount_mrp_pct >= 20:
         verdict = "🟢 SOLID EVERYDAY DEAL"
         verdict_color = "#0284c7"
-        verdict_reason = f"Good everyday value! You save ₹{savings_inr:,.0f} ({discount_mrp_pct:.0f}% off printed box MRP of ₹{mrp:,.0f})."
+        verdict_reason = f"Good everyday value! You save ₹{savings_inr:,.0f} ({discount_mrp_pct:.0f}% off printed box MRP of ₹{mrp:,.0f}).{low_reminder}"
     else:
         verdict = "💡 NEAR FULL MRP / WAIT FOR SALE"
         verdict_color = "#f59e0b"
-        verdict_reason = f"Selling near full packaging MRP of ₹{mrp:,.0f}. The 90-day chart shows this product frequently drops to ~₹{lowest_90d:,.0f} during festival sales."
+        verdict_reason = f"Selling near full packaging MRP of ₹{mrp:,.0f}. 💡 90-Day Low Reminder: This product frequently drops to ~₹{lowest_90d:,.0f} during festival sales (₹{diff_from_lowest:,.0f} lower than today)."
 
     return {
         "platform": "amazon",
@@ -1379,6 +1400,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         "current_price": current_price,
         "mrp": mrp,
         "lowest_90d": lowest_90d,
+        "diff_from_low": diff_from_lowest,
         "savings_mrp_inr": savings_inr,
         "discount_mrp_pct": discount_mrp_pct,
         "bsr": p.bsr,
