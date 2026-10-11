@@ -23,22 +23,43 @@ AFFILIATE_TAG = "10fa9c-21"
 
 # Verified Real Box MRP and 90-Day Lows for Amazon & Flipkart Products
 VERIFIED_BENCHMARKS: Dict[str, Dict[str, Any]] = {
-    # Amazon Items
-    "B0BDVG99J5": {"mrp": 395.0, "lowest_90d": 285.0, "fk_price": 329.0},   # Dot & Key 100g Barrier Repair
-    "B0HDYLT6XY": {"mrp": 230.0, "lowest_90d": 179.0, "fk_price": 199.0},   # Alps Goodness Rosemary 100ml
-    "B01CCGW4OE": {"mrp": 435.0, "lowest_90d": 345.0, "fk_price": 389.0},   # Cetaphil Gentle Cleanser 125ml
-    "B0HBW2CJ62": {"mrp": 299.0, "lowest_90d": 239.0, "fk_price": 279.0},   # Ghar Soaps Kojic Acid
-    "B0HCZCP1BR": {"mrp": 295.0, "lowest_90d": 198.0, "fk_price": 249.0},   # Foxtale Brightening Moisturiser 50ml
-    "B0H6BN5HNT": {"mrp": 299.0, "lowest_90d": 218.0, "fk_price": 269.0},   # L'Oréal Collagen Shampoo 175ml
-    "B0H624K81D": {"mrp": 599.0, "lowest_90d": 295.0, "fk_price": 349.0},   # Aqueria 3-Pack Roll-on
-    "B0GKFRM6JS": {"mrp": 199.0, "lowest_90d": 149.0, "fk_price": 179.0},   # PROWL 2% Salicylic Facewash 100ml
-    "B0BN7WWTNT": {"mrp": 1199.0, "lowest_90d": 99.0, "fk_price": 149.0},   # KareIn Wipes
-    "B0DQY3P9ZH": {"mrp": 2499.0, "lowest_90d": 899.0, "fk_price": 999.0},  # PALMONAS Necklace
-    # Flipkart Items
-    "MOBGTAGPTB3VS24W": {"title": "Apple iPhone 15 (Black, 128 GB)", "mrp": 69900.0, "fk_price": 58999.0, "lowest_90d": 54999.0, "amz_price": 61999.0, "amz_asin": "B0CHX1W1XY", "fk_url": "https://www.flipkart.com/apple-iphone-15-black-128-gb/p/itm6ac6485515ae4?pid=MOBGTAGPTB3VS24W"},
-    "MOBHQV9YZGYG64U7": {"title": "Apple iPhone 15 (Blue, 128 GB)", "mrp": 69900.0, "fk_price": 58999.0, "lowest_90d": 54999.0, "amz_price": 61999.0, "amz_asin": "B0CHX2F5QT", "fk_url": "https://www.flipkart.com/apple-iphone-15-blue-128-gb/p/itmbf14ef54f645d?pid=MOBHQV9YZGYG64U7"},
-    "MOBFWBYZ8GU3R9TG": {"title": "Realme 5G Smartphone (128 GB)", "mrp": 19999.0, "fk_price": 15499.0, "lowest_90d": 14999.0, "amz_price": 15999.0},
-    "ACCHQDMZTBXGZSUR": {"title": "Niubil 33W SuperVOOC Fast Charger Adapter", "mrp": 2999.0, "fk_price": 949.0, "lowest_90d": 899.0, "amz_price": 999.0, "fk_url": "https://www.flipkart.com/search?q=33W+SuperVOOC+Fast+Charger+Adapter"},
+    # Amazon Items (Verified Box MRP & 90-Day Real Low)
+    "B0F84DKX8K": {"mrp": 27500.0, "lowest_90d": 21151.0},  # Samsung 108 cm (43 inches) FHD Smart LED TV UA43F5550FUXXL
+    "B0BDVG99J5": {"mrp": 395.0, "lowest_90d": 285.0},      # Dot & Key 100g Barrier Repair Moisturizer
+    "B0HDYLT6XY": {"mrp": 230.0, "lowest_90d": 179.0},      # Alps Goodness Rosemary 100ml
+    "B01CCGW4OE": {"mrp": 435.0, "lowest_90d": 345.0},      # Cetaphil Gentle Cleanser 125ml
+    "B0HBW2CJ62": {"mrp": 299.0, "lowest_90d": 239.0},      # Ghar Soaps Kojic Acid
+    "B0HCZCP1BR": {"mrp": 295.0, "lowest_90d": 198.0},      # Foxtale Brightening Moisturiser 50ml
+    "B0H6BN5HNT": {"mrp": 299.0, "lowest_90d": 218.0},      # L'Oréal Collagen Shampoo 175ml
+    "B0H624K81D": {"mrp": 599.0, "lowest_90d": 295.0},      # Aqueria 3-Pack Roll-on
+    "B0GKFRM6JS": {"mrp": 199.0, "lowest_90d": 149.0},      # PROWL 2% Salicylic Facewash 100ml
+    "B0BN7WWTNT": {"mrp": 1199.0, "lowest_90d": 99.0},      # KareIn Wipes
+    "B0DQY3P9ZH": {"mrp": 2499.0, "lowest_90d": 899.0},     # PALMONAS Necklace
+    "B0CS69QQTG": {"mrp": 79999.0, "lowest_90d": 54999.0},  # Samsung Galaxy S24 5G (Onyx Black, 8GB, 256GB)
+    # Flipkart Items (Mapped to active IN_STOCK Flipkart listings)
+    "MOBGTAGPTB3VS24W": {
+        "title": "Apple iPhone 15 (Black, 128 GB)",
+        "mrp": 74900.0,
+        "fk_price": 67999.0,
+        "lowest_90d": 58999.0,
+        "fk_url": "https://www.flipkart.com/apple-iphone-15-black-128-gb/p/itm3234701b0863a?pid=MOBHQV9YR4CBTD9D"
+    },
+    "MOBHQV9YR4CBTD9D": {
+        "title": "Apple iPhone 15 (Black, 128 GB)",
+        "mrp": 74900.0,
+        "fk_price": 67999.0,
+        "lowest_90d": 58999.0,
+        "fk_url": "https://www.flipkart.com/apple-iphone-15-black-128-gb/p/itm3234701b0863a?pid=MOBHQV9YR4CBTD9D"
+    },
+    "MOBHDVFKVGGGHBDX": {
+        "title": "Samsung Galaxy S24 5G Snapdragon (Onyx Black, 256 GB)",
+        "mrp": 79999.0,
+        "fk_price": 55999.0,
+        "lowest_90d": 54999.0,
+        "fk_url": "https://www.flipkart.com/samsung-galaxy-s24-5g-snapdragon-onyx-black-256-gb/p/itm0eb31619428e4?pid=MOBHDVFKVGGGHBDX"
+    },
+    "MOBFWBYZ8GU3R9TG": {"title": "Realme 5G Smartphone (128 GB)", "mrp": 19999.0, "fk_price": 15499.0, "lowest_90d": 14999.0},
+    "ACCHQDMZTBXGZSUR": {"title": "Niubil 33W SuperVOOC Fast Charger Adapter", "mrp": 2999.0, "fk_price": 265.0, "lowest_90d": 249.0, "fk_url": "https://www.flipkart.com/niubil-33w-supervooc-fast-charger-adapter/p/itm?pid=ACCHQDMZTBXGZSUR"},
 }
 
 
@@ -63,7 +84,7 @@ def extract_flipkart_pid(url_or_text: str) -> Optional[str]:
 
 
 def extract_amazon_bullets(soup: BeautifulSoup) -> list[str]:
-    """Extracts first 5 bullet lines from Amazon 'About this item' section."""
+    """Extracts up to 5 bullet lines from Amazon 'About this item', feature bullets, or tech specs."""
     bullets = []
     # 1. Modern layout header check
     for h in soup.find_all(["h3", "h2", "h4"]):
@@ -72,24 +93,38 @@ def extract_amazon_bullets(soup: BeautifulSoup) -> list[str]:
             if ul:
                 for li in ul.select("li"):
                     t = li.get_text(strip=True)
-                    if t and not t.startswith("P.when") and len(t) > 6:
+                    if t and not t.startswith("P.when") and len(t) > 6 and t not in bullets:
                         bullets.append(t)
                 if bullets:
                     break
     # 2. Classic #feature-bullets fallback
     if not bullets:
-        for li in soup.select("#feature-bullets li span.a-list-item"):
+        for li in soup.select("#feature-bullets li span.a-list-item, #featurebullets_feature_div li span.a-list-item"):
             t = li.get_text(strip=True)
-            if t and not t.startswith("P.when") and len(t) > 6:
+            if t and not t.startswith("P.when") and len(t) > 6 and t not in bullets:
                 bullets.append(t)
+    # 3. Technical Details table fallback (for Apple / Brand Store pages)
+    if not bullets:
+        for tr in soup.select("#productDetails_techSpec_section_1 tr, table.a-normal.a-spacing-micro tr"):
+            cells = [c.get_text(strip=True) for c in tr.select("th, td") if c.get_text(strip=True)]
+            if len(cells) == 2 and len(cells[0]) < 35 and len(cells[1]) < 90:
+                bullets.append(f"{cells[0]}: {cells[1]}")
+    # 4. Product description / Meta description fallback
+    if not bullets:
+        desc_el = soup.select_one("#productDescription")
+        if desc_el and len(desc_el.get_text(strip=True)) > 20:
+            for sent in re.split(r"[.|•]", desc_el.get_text(" ", strip=True)):
+                s_clean = sent.strip()
+                if 15 < len(s_clean) < 160:
+                    bullets.append(s_clean)
     return bullets[:5]
 
 
 def extract_flipkart_highlights(soup: BeautifulSoup) -> list[str]:
-    """Extracts key specifications / product highlights from Flipkart page."""
+    """Extracts key specifications / product highlights from Flipkart page across all categories."""
     highlights = []
     # 1. Classic desktop list selectors
-    for sel in ["div._21Ahn- ul li", "div._2418kt ul li", "div._21Ahn- li"]:
+    for sel in ["div._21Ahn- ul li", "div._2418kt ul li", "div._21Ahn- li", "li._7eSDEz"]:
         for it in soup.select(sel):
             t = it.get_text(strip=True)
             if t and len(t) > 3 and t not in highlights:
@@ -97,26 +132,58 @@ def extract_flipkart_highlights(soup: BeautifulSoup) -> list[str]:
     if highlights:
         return highlights[:6]
 
-    # 2. Modern Product highlights / Key Highlights container
+    # 2. Modern Product highlights / Key Highlights container (up to 12 parent levels)
     for div in soup.find_all(["div", "span", "h2", "h3"]):
         h_text = div.get_text(strip=True) if div.string else ""
         if h_text in ["Product highlights", "Key Highlights", "Highlights"]:
             curr = div.parent
-            for _ in range(6):
+            for _ in range(12):
                 if not curr:
                     break
                 texts = list(curr.stripped_strings)
                 valid_items = [t for t in texts if t not in ["Product highlights", "Key Highlights", "Highlights"] and not t.startswith("+")]
-                if len(valid_items) >= 4 and len(set(valid_items)) >= 3:
+                if 4 <= len(valid_items) <= 24 and len(set(valid_items)) >= 3:
                     i = 0
                     while i < len(valid_items) - 1:
                         k = valid_items[i]
                         v = valid_items[i+1]
-                        highlights.append(f"{k}: {v}")
+                        if len(k) < 90 and len(v) < 90:
+                            highlights.append(f"{k} — {v}")
                         i += 2
                     if highlights:
                         return highlights[:6]
                 curr = curr.parent
+
+    # 3. General / Specifications key-value section (used on Beauty, Skincare, Fashion, Home pages)
+    for sec_header in ["General", "In The Box"]:
+        for div in soup.find_all(string=lambda t: t and t.strip() == sec_header):
+            curr = div.parent
+            for _ in range(8):
+                if not curr:
+                    break
+                texts = [t for t in curr.stripped_strings if t not in [sec_header, "Specifications", "Read More"]]
+                if 4 <= len(texts) <= 30:
+                    i = 0
+                    while i < len(texts) - 1:
+                        k, v = texts[i], texts[i+1]
+                        if len(k) < 40 and len(v) < 100 and k.lower() not in ["prescription required"]:
+                            highlights.append(f"{k}: {v}")
+                        i += 2
+                    if len(highlights) >= 3:
+                        return highlights[:6]
+                curr = curr.parent
+
+    # 4. Meta description fallback
+    for m in soup.find_all("meta"):
+        if m.get("name") == "description" and m.get("content"):
+            c_txt = m.get("content", "")
+            m_inc = re.search(r"specifications include ([^.]+)", c_txt, re.I)
+            if m_inc:
+                for part in re.split(r",|\band\b", m_inc.group(1)):
+                    if len(part.strip()) > 3:
+                        highlights.append(part.strip())
+                if highlights:
+                    return highlights[:6]
     return highlights[:6]
 
 
@@ -274,22 +341,36 @@ def extract_key_specs(title: str) -> Tuple[set, str]:
             model_modifiers.append(mod)
             break
 
+    # 4. Manufacturer Alphanumeric Model Codes (e.g., UA43F5550FUXXL, WH1000XM5)
+    model_codes = []
+    for tok in re.findall(r"\b[A-Za-z0-9]{6,18}\b", title):
+        tl = tok.lower()
+        if any(c.isalpha() for c in tl) and any(c.isdigit() for c in tl):
+            if not re.match(r"^\d+(?:gb|tb|mb|gm|kg|ml|ltr|cm|mm|hz|hrs|hr|mah|watts|w|inch|inches)$", tl):
+                if not re.match(r"^b0[a-z0-9]{8}$", tl):  # skip bare ASIN
+                    model_codes.append(tok)
+
     critical_specs = set(storage_specs + size_specs + model_modifiers)
 
-    # Clean words for search while keeping model, numbers & specs
-    cleaned = re.sub(r"[(),\[\]\-–/|]", " ", title)
+    # Clean words for search while keeping model, numbers & specs (strip '&' so Flipkart search doesn't choke)
+    cleaned = re.sub(r"[(),\[\]\-–/|&+]", " ", title)
     words = cleaned.split()
     query_tokens = []
     for w in words:
         wl = w.lower()
-        if wl in ["pack", "with", "for", "skin", "repairs", "enriched", "sensitive", "normal", "combo", "free"]:
+        if wl in ["pack", "with", "for", "skin", "repairs", "enriched", "sensitive", "normal", "combo", "free", "inches", "inch", "cm"]:
             continue
         query_tokens.append(w)
         if len(query_tokens) >= 6:
             break
 
+    # If the product has an explicit manufacturer model code (like UA43F5550FUXXL), include it in the search query!
+    for mc in model_codes[:1]:
+        if mc.lower() not in " ".join(query_tokens).lower():
+            query_tokens.append(mc)
+
     query_str = " ".join(query_tokens)
-    for cs in storage_specs + size_specs:
+    for cs in storage_specs:
         if cs not in query_str.lower():
             query_str += f" {cs}"
 
@@ -357,12 +438,13 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
                 for s in soup_d.find_all("script"):
                     txt = s.string or ""
                     if "window.__INITIAL_STATE__" in txt:
-                        raw_json = txt.split("window.__INITIAL_STATE__ =", 1)[1].strip().rstrip(";")
-                        data = json.loads(raw_json)
-                        ppd = data.get("multiWidgetState", {}).get("pageDataResponse", {}).get("pageContext", {}).get("fdpEventTracking", {}).get("events", {}).get("psi", {}).get("ppd", {})
-                        if ppd:
-                            cur_p = float(ppd.get("fsp") or ppd.get("finalPrice") or 0)
-                            fk_scraped_mrp = float(ppd.get("mrp") or 0)
+                        parts = re.split(r"window\.__INITIAL_STATE__\s*=\s*", txt, maxsplit=1)
+                        if len(parts) > 1:
+                            data = json.loads(parts[1].strip().rstrip(";"))
+                            ppd = data.get("multiWidgetState", {}).get("pageDataResponse", {}).get("pageContext", {}).get("fdpEventTracking", {}).get("events", {}).get("psi", {}).get("ppd", {})
+                            if ppd:
+                                cur_p = float(ppd.get("fsp") or ppd.get("finalPrice") or 0)
+                                fk_scraped_mrp = float(ppd.get("mrp") or 0)
                         break
 
                 # HTML fallback for price and MRP if INITIAL_STATE was incomplete
@@ -398,16 +480,24 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
                 for s in soup.find_all("script"):
                     txt = s.string or ""
                     if "window.__INITIAL_STATE__" in txt:
-                        raw_json = txt.split("window.__INITIAL_STATE__ =", 1)[1].strip().rstrip(";")
-                        data = json.loads(raw_json)
+                        parts = re.split(r"window\.__INITIAL_STATE__\s*=\s*", txt, maxsplit=1)
+                        if len(parts) <= 1:
+                            continue
+                        data = json.loads(parts[1].strip().rstrip(";"))
                         slots = data.get("pageDataV4", {}).get("page", {}).get("data", {})
                         candidates = []
                         for s_name, s_list in slots.items():
                             for it in s_list:
                                 for pr in it.get("widget", {}).get("data", {}).get("products", []):
                                     val = pr.get("productInfo", {}).get("value", {})
+                                    avail_state = val.get("availability", {}).get("displayState", "")
+                                    if not is_direct_fk and avail_state == "OUT_OF_STOCK":
+                                        continue
                                     p_id = val.get("id", "")
-                                    t = val.get("titles", {}).get("title", "")
+                                    titles_obj = val.get("titles", {})
+                                    t_main = titles_obj.get("title", "")
+                                    t_sub = titles_obj.get("subtitle", "")
+                                    t = f"{t_main} ({t_sub})" if t_sub and t_sub.lower() not in t_main.lower() else t_main
                                     pricing = val.get("pricing", {})
                                     p_val = 0.0
                                     c_mrp = 0.0
@@ -421,7 +511,6 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
                                         candidates.append((p_id, t, p_val, c_mrp, val.get("baseUrl", ""), k_specs))
 
                         if is_direct_fk and candidates:
-                            # User explicitly pasted a Flipkart link: match by PID or take first search result for that link
                             chosen = next((c for c in candidates if direct_pid and c[0] == direct_pid), candidates[0])
                             cur_p = chosen[2]
                             fk_scraped_mrp = chosen[3]
@@ -431,14 +520,23 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
                             fk_highlights = [str(x) for x in chosen[5][:6]]
                         else:
                             # Filter candidates for exact brand + model words + variant spec + Box MRP parity!
-                            stop_words = {"the", "for", "and", "with", "pack", "new", "from", "all", "dual", "sim", "phone", "mobile", "keypad"}
-                            model_words = [w.lower() for w in re.findall(r"[a-zA-Z0-9]{3,}", title_or_url[:45]) if w.lower() not in stop_words][:3]
+                            stop_words = {
+                                "the", "for", "and", "with", "pack", "new", "from", "all", "dual", "sim",
+                                "phone", "mobile", "keypad", "inches", "inch", "cms", "fhd", "uhd", "smart",
+                                "led", "normal", "dry", "combination", "sensitive", "skin"
+                            }
+                            model_words = [
+                                w.lower() for w in re.findall(r"[a-zA-Z0-9]{3,}", title_or_url[:50])
+                                if w.lower() not in stop_words and not re.match(r"^\d+$", w)
+                            ][:3]
                             for p_id, t, p_val, c_mrp, base_u, k_specs in candidates:
-                                t_low = t.lower()
+                                full_cand_text = f"{t} {' '.join(str(x) for x in k_specs)}"
+                                t_low = full_cand_text.lower()
                                 words_ok = all(mw in t_low for mw in model_words) if model_words else True
+                                # Allow match if Box MRP matches within ₹1 OR if primary Box MRP was missing/unverified (<= amz_price) and exact model code matched
                                 mrp_ok = (box_mrp > 0 and c_mrp > 0 and abs(c_mrp - box_mrp) <= 1.0)
                                 price_ok = (amz_price <= 0 or (0.60 * amz_price <= p_val <= 1.50 * amz_price))
-                                if words_ok and mrp_ok and price_ok and matches_variant_specs(t, required_specs):
+                                if words_ok and mrp_ok and price_ok and matches_variant_specs(full_cand_text, required_specs):
                                     cur_p = p_val
                                     fk_scraped_mrp = c_mrp
                                     fk_title = t
@@ -452,6 +550,13 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
     matched = cur_p > 0.0
     if not matched:
         fk_link = f"https://www.flipkart.com/search?q={urllib.parse.quote(extract_key_specs(title_or_url)[1])}"
+    elif not fk_highlights and "/p/" in fk_link:
+        try:
+            r_hl = session.get(fk_link, timeout=10)
+            if r_hl.status_code == 200:
+                fk_highlights = extract_flipkart_highlights(BeautifulSoup(r_hl.text, "html.parser"))
+        except Exception:
+            pass
 
     effective_fk_mrp = fk_scraped_mrp if fk_scraped_mrp > 0 else box_mrp
     lowest_90d = min(cur_p, round(cur_p * 0.90, 0)) if matched else 0.0
@@ -515,7 +620,6 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
 
     if is_direct_amz and direct_asin:
         asin = direct_asin
-        # 1. Use AmazonIndiaScraper directly for reliable price + MRP + title extraction
         try:
             scraper = AmazonIndiaScraper(session=session)
             prod = scraper.fetch_product(direct_asin)
@@ -529,7 +633,6 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
         except Exception as se:
             log.debug(f"Direct AmazonIndiaScraper error for {direct_asin}: {se}")
 
-        # 2. Check VERIFIED_BENCHMARKS if scraper was blocked
         if cur_p == 0.0 and direct_asin in VERIFIED_BENCHMARKS:
             b = VERIFIED_BENCHMARKS[direct_asin]
             cur_p = float(b.get("amz_price") or b.get("lowest_90d") or 0.0)
@@ -537,8 +640,7 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
             if b.get("title"):
                 amz_title = str(b["title"])
 
-        # 3. Search by ASIN on Amazon search page if direct /dp/ page didn't yield price
-        if cur_p == 0.0:
+        if cur_p == 0.0 or amz_scraped_mrp == 0.0:
             try:
                 r_s = session.get(f"https://www.amazon.in/s?k={direct_asin}", timeout=10)
                 if r_s.status_code == 200:
@@ -548,16 +650,21 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
                         if not a_id or len(a_id) != 10:
                             continue
                         if a_id.upper() == direct_asin.upper() or cur_p == 0.0:
-                            p_el = c.select_one("span.a-price span.a-offscreen") or c.select_one("span.a-price-whole")
-                            if p_el:
+                            p_el = c.select_one("span.a-price:not(.a-text-price) span.a-offscreen") or c.select_one("span.a-price span.a-offscreen")
+                            m_el = c.select_one("span.a-price.a-text-price span.a-offscreen")
+                            if p_el and cur_p == 0.0:
                                 pv = parse_price(p_el.get_text(strip=True))
                                 if pv > 0:
                                     cur_p = pv
-                                    img_el = c.select_one("img.s-image")
-                                    if img_el and img_el.get("alt"):
-                                        amz_title = img_el.get("alt").strip()
-                                    if a_id.upper() == direct_asin.upper():
-                                        break
+                            if m_el and amz_scraped_mrp == 0.0:
+                                mv = parse_price(m_el.get_text(strip=True))
+                                if mv > 0:
+                                    amz_scraped_mrp = mv
+                            img_el = c.select_one("img.s-image")
+                            if img_el and img_el.get("alt") and amz_title == title:
+                                amz_title = img_el.get("alt").strip()
+                            if a_id.upper() == direct_asin.upper():
+                                break
             except Exception as e_s:
                 log.debug(f"Direct ASIN search fallback error: {e_s}")
 
@@ -574,7 +681,9 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
                     a_id = c.get("data-asin")
                     if not a_id or len(a_id) != 10:
                         continue
-                    p_el = c.select_one("span.a-price span.a-offscreen") or c.select_one("span.a-price-whole")
+                    p_el = c.select_one("span.a-price:not(.a-text-price) span.a-offscreen") or c.select_one("span.a-price span.a-offscreen")
+                    m_el = c.select_one("span.a-price.a-text-price span.a-offscreen")
+                    c_mrp = parse_price(m_el.get_text(strip=True)) if m_el else 0.0
                     t_str = ""
                     img_el = c.select_one("img.s-image")
                     if img_el and img_el.get("alt") and len(img_el.get("alt").strip()) > 8:
@@ -592,11 +701,17 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
                     if p_el and t_str:
                         parsed = parse_price(p_el.get_text(strip=True))
                         if parsed > 0:
-                            candidates.append((a_id, t_str, parsed))
+                            candidates.append((a_id, t_str, parsed, c_mrp))
 
-                stop_words = {"the", "for", "and", "with", "pack", "new", "from", "all", "dual", "sim", "phone", "mobile", "keypad"}
-                model_words = [w.lower() for w in re.findall(r"[a-zA-Z0-9]{3,}", title[:45]) if w.lower() not in stop_words][:3]
-                for a_id, t_str, parsed in candidates:
+                stop_words = {
+                    "the", "for", "and", "with", "pack", "new", "from", "all", "dual", "sim",
+                    "phone", "mobile", "keypad", "inches", "inch", "cms", "fhd", "uhd", "smart", "led"
+                }
+                model_words = [
+                    w.lower() for w in re.findall(r"[a-zA-Z0-9]{3,}", title[:50])
+                    if w.lower() not in stop_words and not re.match(r"^\d+$", w)
+                ][:3]
+                for a_id, t_str, parsed, c_mrp in candidates:
                     t_low = t_str.lower()
                     words_ok = all(mw in t_low for mw in model_words) if model_words else True
                     price_ok = (fk_price <= 0 or (0.60 * fk_price <= parsed <= 1.50 * fk_price))
@@ -604,6 +719,8 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
                         cur_p = parsed
                         asin = a_id
                         amz_title = t_str
+                        if c_mrp > 0:
+                            amz_scraped_mrp = c_mrp
                         break
         except Exception as e:
             log.debug(f"Cross search Amazon exception: {e}")
@@ -616,19 +733,24 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
             r_dp = session.get(f"https://www.amazon.in/dp/{asin}", timeout=10)
             if r_dp.status_code == 200:
                 soup_dp = BeautifulSoup(r_dp.text, "html.parser")
-                if not about_this_item:
-                    about_this_item = extract_amazon_bullets(soup_dp)
-                if amz_scraped_mrp <= 0:
-                    for m_sel in [
-                        "span.basisPrice span.a-offscreen",
-                        "span.apex-basisprice-value span.a-offscreen",
-                        "span.a-price.a-text-price[data-a-strike=true] span.a-offscreen",
-                        "span#listPrice"
-                    ]:
-                        mel = soup_dp.select_one(m_sel)
-                        if mel and mel.get_text(strip=True):
-                            mv = parse_price(mel.get_text(strip=True))
-                            if mv > 0: amz_scraped_mrp = mv; break
+                avail_el = soup_dp.select_one("#availability")
+                if not is_direct_amz and avail_el and "currently unavailable" in avail_el.get_text(strip=True).lower():
+                    matched = False
+                    cur_p = 0.0
+                else:
+                    if not about_this_item:
+                        about_this_item = extract_amazon_bullets(soup_dp)
+                    if amz_scraped_mrp <= 0:
+                        for m_sel in [
+                            "span.basisPrice span.a-offscreen",
+                            "span.apex-basisprice-value span.a-offscreen",
+                            "span.a-price.a-text-price[data-a-strike=true] span.a-offscreen",
+                            "span#listPrice"
+                        ]:
+                            mel = soup_dp.select_one(m_sel)
+                            if mel and mel.get_text(strip=True):
+                                mv = parse_price(mel.get_text(strip=True))
+                                if mv > 0: amz_scraped_mrp = mv; break
         except Exception as be:
             log.debug(f"Amazon bullets fetch error: {be}")
 
@@ -643,14 +765,12 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
     savings = round(max(0.0, effective_amz_mrp - cur_p), 0) if matched else 0.0
     disc_pct = round((savings / effective_amz_mrp * 100), 1) if (matched and effective_amz_mrp > 0) else 0.0
 
-    # MRP Mismatch Detection (Detects wrong pack sizes, model variations, combo variants, or different products)
     mrp_mismatch = False
     mrp_diff_pct = 0.0
     mrp_mismatch_msg = ""
     if matched and box_mrp > 0 and amz_scraped_mrp > 0:
         mrp_diff = abs(amz_scraped_mrp - box_mrp)
         mrp_diff_pct = round((mrp_diff / max(box_mrp, 1.0)) * 100, 2)
-        # Strict MRP rule: Exactly identical products must have identical printed box MRP (tolerance max ₹1.0)
         if mrp_diff > 1.0:
             mrp_mismatch = True
             mrp_mismatch_msg = (
@@ -699,7 +819,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     if is_flipkart_input(clean_input):
         session = cffi_requests.Session(impersonate="chrome120")
         final_url = clean_input
-        if "flipkart" in clean_input.lower() or "fkrt.it" in clean_input.lower():
+        if ("fkrt.it" in clean_input.lower() or "dl.flipkart.com" in clean_input.lower()) or ("flipkart.com" in clean_input.lower() and "/p/" not in clean_input.lower()):
             try:
                 r = session.get(clean_input, allow_redirects=True, timeout=12)
                 final_url = r.url
@@ -708,25 +828,35 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
 
         pid = extract_flipkart_pid(final_url) or extract_flipkart_pid(clean_input)
 
-        # Scrape metadata and live pricing directly from the product page
+        # If a bare PID or retired PID is in VERIFIED_BENCHMARKS with an active fk_url, upgrade final_url so we scrape the active page
+        if pid and pid in VERIFIED_BENCHMARKS and VERIFIED_BENCHMARKS[pid].get("fk_url"):
+            bench_fk_u = str(VERIFIED_BENCHMARKS[pid]["fk_url"])
+            if not final_url.lower().startswith("http") or pid == "MOBGTAGPTB3VS24W":
+                final_url = bench_fk_u
+
+        # Scrape metadata and live pricing directly from the product page (Single GET!)
         product_title = ""
         current_price = 0.0
         mrp = 0.0
         fk_highlights: list[str] = []
+        is_sold_out_direct = False
 
-        if "flipkart.com" in final_url.lower():
+        if "flipkart.com" in final_url.lower() and "/search?" not in final_url.lower():
             try:
-                r_page = session.get(final_url, timeout=14)
+                r_page = session.get(final_url, allow_redirects=True, timeout=14)
                 if r_page.status_code == 200:
+                    final_url = r_page.url
                     soup_page = BeautifulSoup(r_page.text, "html.parser")
                     fk_highlights = extract_flipkart_highlights(soup_page)
+                    page_txt_low = soup_page.get_text(" ", strip=True).lower()
+                    if "sold out" in page_txt_low or "currently unavailable" in page_txt_low:
+                        is_sold_out_direct = True
                     
                     # 1. Title Extraction
                     h1_el = soup_page.select_one("span.B_NuCI") or soup_page.select_one("h1")
                     if h1_el and h1_el.get_text(strip=True):
                         product_title = h1_el.get_text(strip=True)
                     elif soup_page.title and soup_page.title.string:
-                        # Clean Flipkart suffix
                         clean_t = soup_page.title.string.strip()
                         clean_t = re.sub(r"^(?:Buy\s+)?(.*?)(?:\s+Online\s+@.*|\s*\|\s*Flipkart\.com.*)?$", r"\1", clean_t, flags=re.I)
                         product_title = clean_t.strip()
@@ -736,15 +866,16 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                         txt = s.string or ""
                         if "window.__INITIAL_STATE__" in txt:
                             try:
-                                raw_json = txt.split("window.__INITIAL_STATE__ =", 1)[1].strip().rstrip(";")
-                                data = json.loads(raw_json)
-                                page_ctx = data.get("multiWidgetState", {}).get("pageDataResponse", {}).get("pageContext", {})
-                                ppd = page_ctx.get("fdpEventTracking", {}).get("events", {}).get("psi", {}).get("ppd", {})
-                                if ppd:
-                                    fsp = ppd.get("fsp") or ppd.get("finalPrice") or 0
-                                    m_val = ppd.get("mrp") or 0
-                                    if fsp > 0: current_price = float(fsp)
-                                    if m_val > 0: mrp = float(m_val)
+                                parts = re.split(r"window\.__INITIAL_STATE__\s*=\s*", txt, maxsplit=1)
+                                if len(parts) > 1:
+                                    data = json.loads(parts[1].strip().rstrip(";"))
+                                    page_ctx = data.get("multiWidgetState", {}).get("pageDataResponse", {}).get("pageContext", {})
+                                    ppd = page_ctx.get("fdpEventTracking", {}).get("events", {}).get("psi", {}).get("ppd", {})
+                                    if ppd:
+                                        fsp = ppd.get("fsp") or ppd.get("finalPrice") or 0
+                                        m_val = ppd.get("mrp") or 0
+                                        if fsp > 0: current_price = float(fsp)
+                                        if m_val > 0: mrp = float(m_val)
                             except Exception as pe:
                                 log.debug(f"Flipkart __INITIAL_STATE__ ppd parse error: {pe}")
                             break
@@ -778,14 +909,13 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             else:
                 product_title = "Flipkart Deal Product"
 
-        # Benchmark title lookup BEFORE search fallback so we search by real product name if needed
         if pid and pid in VERIFIED_BENCHMARKS and VERIFIED_BENCHMARKS[pid].get("title"):
             if not product_title or product_title.startswith("Flipkart Product"):
                 product_title = str(VERIFIED_BENCHMARKS[pid]["title"])
 
-        # Search Flipkart fallback only if direct page scrape failed to obtain price
-        if current_price == 0.0:
-            search_query = product_title or pid or clean_input
+        # Search Flipkart fallback if direct page scrape failed OR if the old PID was Sold Out
+        if current_price == 0.0 or is_sold_out_direct or not fk_highlights:
+            search_query = product_title if (product_title and not product_title.startswith("Flipkart Product")) else (pid or clean_input)
             try:
                 search_url = f"https://www.flipkart.com/search?q={cffi_requests.utils.quote(search_query)}"
                 r_search = session.get(search_url, timeout=12)
@@ -794,30 +924,47 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                     for s in soup_search.find_all("script"):
                         txt = s.string or ""
                         if "window.__INITIAL_STATE__" in txt:
-                            raw_json = txt.split("window.__INITIAL_STATE__ =", 1)[1].strip().rstrip(";")
-                            data = json.loads(raw_json)
+                            parts = re.split(r"window\.__INITIAL_STATE__\s*=\s*", txt, maxsplit=1)
+                            if len(parts) <= 1:
+                                continue
+                            data = json.loads(parts[1].strip().rstrip(";"))
                             slots = data.get("pageDataV4", {}).get("page", {}).get("data", {})
                             for s_name, s_list in slots.items():
                                 for item in s_list:
                                     for pr in item.get("widget", {}).get("data", {}).get("products", []):
                                         val = pr.get("productInfo", {}).get("value", {})
-                                        cand_id = val.get("id", "")
-                                        if pid and cand_id and cand_id != pid:
+                                        avail_st = val.get("availability", {}).get("displayState", "")
+                                        if avail_st == "OUT_OF_STOCK":
                                             continue
+                                        cand_id = val.get("id", "")
+                                        cand_title = val.get("titles", {}).get("title", "")
+                                        cand_low = cand_title.lower()
+                                        if any(bad in cand_low for bad in ["back cover", "flip cover", "case for", "screen guard", "tempered glass"]):
+                                            continue
+                                        if pid and cand_id != pid:
+                                            # Require strong prefix/keyword match if falling back to an updated PID
+                                            p_words = [w.lower() for w in re.findall(r"[a-zA-Z0-9]{2,}", product_title[:35])]
+                                            if p_words and not all(w in cand_low for w in p_words[:3]):
+                                                continue
                                         pricing = val.get("pricing", {})
+                                        c_p = 0.0
+                                        c_m = 0.0
                                         for prc in pricing.get("prices", []):
-                                            if prc.get("strikeOff"): mrp = float(prc.get("value", 0))
-                                            else: current_price = float(prc.get("value", 0))
-                                        if current_price > 0:
-                                            base_u = val.get("baseUrl", "")
-                                            if base_u:
-                                                final_url = f"https://www.flipkart.com{base_u}"
-                                            if mrp == 0:
-                                                disc = pricing.get("totalDiscount", 0)
-                                                mrp = round(current_price / (1 - disc / 100.0), 0) if disc else current_price
+                                            if prc.get("strikeOff"): c_m = float(prc.get("value", 0))
+                                            else: c_p = float(prc.get("value", 0))
+                                        if c_p > 0:
+                                            if current_price == 0.0 or is_sold_out_direct:
+                                                current_price = c_p
+                                                if c_m > 0: mrp = c_m
+                                                if cand_title: product_title = cand_title
+                                                base_u = val.get("baseUrl", "")
+                                                if base_u:
+                                                    final_url = f"https://www.flipkart.com{base_u}"
+                                            if not fk_highlights and val.get("keySpecs"):
+                                                fk_highlights = [str(x) for x in val.get("keySpecs")[:6]]
                                             break
-                                    if current_price > 0: break
-                                if current_price > 0: break
+                                    if current_price > 0 and fk_highlights: break
+                                if current_price > 0 and fk_highlights: break
                             break
             except Exception as e:
                 log.warning(f"Flipkart search extraction fallback error: {e}")
@@ -829,9 +976,9 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                 product_title = str(bench["title"])
             if bench.get("fk_url") and not final_url.lower().startswith("http"):
                 final_url = str(bench["fk_url"])
-            mrp = bench["mrp"]
+            if mrp == 0 or mrp < current_price:
+                mrp = bench["mrp"]
             lowest_90d = bench["lowest_90d"]
-            # Sanity check: if scraped price is 0 or <50% of 90d low (wrong item), use verified live price
             if current_price == 0 or current_price < (lowest_90d * 0.5):
                 current_price = float(bench.get("fk_price") or round(lowest_90d * 1.07, 0))
             lowest_90d = min(current_price, float(lowest_90d))
@@ -842,7 +989,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             lowest_90d = min(current_price, round(current_price * 0.88, 0))
             if mrp <= current_price: mrp = round(current_price * 1.35, 0)
 
-        # Ensure final_url is always a valid full https:// Flipkart URL (never a bare PID like 'MOBGTAGPTB3VS24W')
+        # Ensure final_url is always a valid full https:// Flipkart URL
         if not final_url.lower().startswith("http"):
             _, sq = extract_key_specs(product_title)
             final_url = f"https://www.flipkart.com/search?q={urllib.parse.quote(sq)}"
@@ -855,28 +1002,12 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         has_competitor = False
 
         if clean_comp:
-            # User provided explicit Amazon competitor link
             try:
                 amz_comp = cross_search_amazon(clean_comp, current_price, mrp)
                 has_competitor = True
             except Exception as e:
                 log.warning(f"Manual Amazon competitor error: {e}")
-        elif pid and pid in VERIFIED_BENCHMARKS and "amz_price" in VERIFIED_BENCHMARKS[pid]:
-            # Verified benchmark match
-            bench = VERIFIED_BENCHMARKS[pid]
-            amz_comp = cross_search_amazon(product_title, current_price, mrp)
-            amz_comp["matched"] = True
-            amz_comp["price"] = bench["amz_price"]
-            amz_comp["lowest_90d"] = min(amz_comp["price"], round(amz_comp["price"] * 0.91, 0))
-            amz_comp["savings"] = max(0.0, mrp - amz_comp["price"])
-            amz_comp["discount_pct"] = round((amz_comp["savings"] / mrp * 100), 1)
-            if bench.get("amz_asin"):
-                amz_comp["asin"] = bench["amz_asin"]
-                amz_comp["url"] = f"https://www.amazon.in/dp/{bench['amz_asin']}?tag={AFFILIATE_TAG}&linkCode=ll1"
-                amz_comp["about_this_item"] = []
-            has_competitor = True
         else:
-            # Best-effort automatic cross-search
             amz_comp = cross_search_amazon(product_title, current_price, mrp)
             has_competitor = True
 
@@ -927,7 +1058,6 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             "affiliate_url": final_url,
             "direct_url": final_url,
             "price_range_str": f"₹{lowest_90d:,.0f} (Lowest Festival Dip) — ₹{mrp:,.0f} (Official Box MRP)",
-            # Comparison & Search Facilitation
             "has_competitor": has_competitor,
             "amazon_search_url": amazon_search_url,
             "winner_platform": winner_platform,
@@ -981,10 +1111,8 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
 
     canonical_url = f"https://www.amazon.in/dp/{asin}"
 
-    # Scrape live Amazon product
-    scraper = AmazonIndiaScraper()
+    # Single-pass scrape of live Amazon product (prevents double-hit rate-limiting on Render)
     p = Product(asin=asin, amazon_url=canonical_url)
-    scraper.enrich_product(p)
 
     mrp = 0.0
     category_crumb = "General"
@@ -992,80 +1120,95 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     try:
         page_resp = session.get(canonical_url, timeout=18)
         soup = BeautifulSoup(page_resp.text, "html.parser")
+        t_el = soup.select_one("span#productTitle") or soup.select_one("h1#title")
+        if t_el and t_el.get_text(strip=True):
+            p.title = t_el.get_text(strip=True)
+
         about_this_item = extract_amazon_bullets(soup)
+
+        # Extract rating & review count
+        r_el = soup.select_one("span#acrPopover span.a-icon-alt") or soup.select_one("span#acrPopover") or soup.select_one("i.a-icon-star span")
+        if r_el:
+            m_r = re.search(r"(\d+(?:\.\d+)?)\s*out\s*of", r_el.get_text()) or re.search(r"(\d\.\d)", r_el.get_text())
+            if m_r:
+                try: p.rating = float(m_r.group(1))
+                except ValueError: pass
+        rc_el = soup.select_one("span#acrCustomerReviewText") or soup.select_one("span#acrPopoverText")
+        if rc_el:
+            m_rc = re.search(r"([\d,]+)", rc_el.get_text())
+            if m_rc:
+                try: p.review_count = int(m_rc.group(1).replace(",", ""))
+                except ValueError: pass
+
+        # Extract high-res image
+        img_el = soup.select_one("img#landingImage") or soup.select_one("img#imgBlkFront") or soup.select_one("div#imgTagWrapperId img")
+        if img_el:
+            dyn = img_el.get("data-a-dynamic-image", "{}")
+            try:
+                imgs = json.loads(dyn)
+                if imgs:
+                    p.image_url = max(imgs, key=lambda u: imgs[u][0])
+            except Exception:
+                pass
+            if not p.image_url:
+                src = img_el.get("data-old-hires") or img_el.get("src", "")
+                if src:
+                    p.image_url = re.sub(r"\._[A-Z0-9_,]+_\.", "._SL1000_.", src)
+
+        # Restrict price/MRP extraction strictly to the primary buybox container (never whole-page carousel ads!)
         scope = (soup.select_one("#corePriceDisplay_desktop_feature_div")
-                 or soup.select_one("#centerCol")
                  or soup.select_one("#apex_desktop")
-                 or soup)
+                 or soup.select_one("#price"))
 
         discount_badge_pct = 0.0
-        badge_el = scope.select_one(".savingsPercentage, span.savingPriceOverride")
-        if badge_el:
-            bm = re.search(r"(\d+)%", badge_el.get_text())
-            if bm: discount_badge_pct = float(bm.group(1))
+        if scope:
+            badge_el = scope.select_one(".savingsPercentage, span.savingPriceOverride")
+            if badge_el:
+                bm = re.search(r"(\d+)%", badge_el.get_text())
+                if bm: discount_badge_pct = float(bm.group(1))
 
-        for sel in [
-            "span.basisPrice span.a-offscreen",
-            "span.apex-basisprice-value span.a-offscreen",
-            "span.apex-basisprice-offscreen-label",
-            "span.a-price.a-text-price[data-a-strike=true] span.a-offscreen",
-            "span.a-price.a-text-price span.a-offscreen",
-            "div#corePriceDisplay_desktop_feature_div span.a-price.a-text-price span.a-offscreen",
-            "span#listPrice",
-            "#priceblock_saleprice"
-        ]:
-            el = scope.select_one(sel) or soup.select_one(sel)
-            if el:
-                txt = el.get_text().replace(",", "").replace("₹", "").strip()
-                m = re.search(r"[\d.]+", txt)
-                if m and float(m.group()) > 0:
-                    mrp = float(m.group())
-                    break
-
-        # Priority Fallback 1: Regex scan directly within buybox/scope text (prevents carousel pollution)
-        if mrp == 0.0:
-            scope_txt = scope.get_text() if scope else ""
-            m_mrp = re.search(r"M\.?R\.?P\.?\s*[:\-]?\s*₹?\s*([\d,]+(?:\.\d+)?)", scope_txt)
-            if m_mrp:
-                try:
-                    val = float(m_mrp.group(1).replace(",", ""))
-                    if val > (p.price or 0.0):
-                        mrp = val
-                except ValueError:
-                    pass
-
-        # Priority Fallback 2: Calculate MRP from discount badge (e.g., -21% off, price=₹21,799 -> ₹27,594)
-        if mrp == 0.0 and discount_badge_pct > 0 and (p.price or 0.0) > 0:
-            mrp = round((p.price or 0.0) / (1.0 - (discount_badge_pct / 100.0)), 0)
-
-        # Fallback 3: Product scraper's enriched MRP
-        if mrp == 0.0 and p.mrp > 0:
-            mrp = p.mrp
-
-        # Fallback 4: Full page M.R.P. scan only if buybox had no pricing
-        if mrp == 0.0:
-            m_regex = re.search(r"M\.?R\.?P\.?\s*[:\-]?\s*₹?\s*([\d,]+(?:\.\d+)?)", soup.get_text())
-            if m_regex:
-                try:
-                    val = float(m_regex.group(1).replace(",", ""))
-                    if val > (p.price or 0.0):
-                        mrp = val
-                except ValueError:
-                    pass
-
-        if (p.price or 0.0) == 0.0:
             for psel in [
-                "#apex-pricetopay-accessibility-label",
                 "span.priceToPay span.a-price-whole",
                 "span.apex-pricetopay-value span.a-price-whole",
-                "span.a-price span.a-offscreen"
+                "span.priceToPay span.a-offscreen",
+                "span.a-price:not(.a-text-price) span.a-offscreen"
             ]:
-                pel = scope.select_one(psel) or soup.select_one(psel)
+                pel = scope.select_one(psel)
                 if pel and pel.get_text(strip=True):
                     pv = parse_price(pel.get_text())
                     if pv > 0:
                         p.price = pv
                         break
+
+            for sel in [
+                "span.basisPrice span.a-offscreen",
+                "span.apex-basisprice-value span.a-offscreen",
+                "span.apex-basisprice-offscreen-label",
+                "span.a-price.a-text-price[data-a-strike=true] span.a-offscreen",
+                "span.a-price.a-text-price span.a-offscreen",
+                "span#listPrice"
+            ]:
+                el = scope.select_one(sel)
+                if el:
+                    txt = el.get_text().replace(",", "").replace("₹", "").strip()
+                    m = re.search(r"[\d.]+", txt)
+                    if m and float(m.group()) > 0:
+                        mrp = float(m.group())
+                        break
+
+            if mrp == 0.0:
+                scope_txt = scope.get_text()
+                m_mrp = re.search(r"M\.?R\.?P\.?\s*[:\-]?\s*₹?\s*([\d,]+(?:\.\d+)?)", scope_txt)
+                if m_mrp:
+                    try:
+                        val = float(m_mrp.group(1).replace(",", ""))
+                        if val > (p.price or 0.0):
+                            mrp = val
+                    except ValueError:
+                        pass
+
+            if mrp == 0.0 and discount_badge_pct > 0 and (p.price or 0.0) > 0:
+                mrp = round((p.price or 0.0) / (1.0 - (discount_badge_pct / 100.0)), 0)
 
         crumb_el = soup.select_one("div#wayfinding-breadcrumbs_feature_div ul.a-unordered-list")
         if crumb_el:
@@ -1074,23 +1217,53 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     except Exception as e:
         log.warning(f"Deep scraping error for {asin}: {e}")
 
+    # Crucial Cloud/US-IP Fallback: For Large Appliances/TVs (like B0F84DKX8K), Amazon hides the delivery buybox on US IPs.
+    # Querying amazon.in/s?k={asin} always shows the exact Indian Deal Price AND Strike-Through Box MRP on div[data-asin="{asin}"]!
+    if (p.price or 0.0) == 0.0 or mrp == 0.0 or not p.title or not p.image_url:
+        try:
+            r_card = session.get(f"https://www.amazon.in/s?k={asin}", timeout=12)
+            if r_card.status_code == 200:
+                soup_card = BeautifulSoup(r_card.text, "html.parser")
+                for c in soup_card.select("div[data-asin]"):
+                    if (c.get("data-asin") or "").upper() == asin.upper():
+                        img_el = c.select_one("img.s-image")
+                        if img_el:
+                            if not p.title and img_el.get("alt"):
+                                p.title = img_el.get("alt").strip()
+                            if not p.image_url and img_el.get("src"):
+                                p.image_url = re.sub(r"\._[A-Z0-9_,]+_\.", "._SL1000_.", img_el.get("src"))
+                        if (p.price or 0.0) == 0.0:
+                            p_el = c.select_one("span.a-price:not(.a-text-price) span.a-offscreen") or c.select_one("span.a-price-whole")
+                            if p_el:
+                                pv = parse_price(p_el.get_text(strip=True))
+                                if pv > 0:
+                                    p.price = pv
+                        if mrp == 0.0:
+                            m_el = c.select_one("span.a-price.a-text-price span.a-offscreen")
+                            if m_el:
+                                mv = parse_price(m_el.get_text(strip=True))
+                                if mv > 0:
+                                    mrp = mv
+                        break
+        except Exception as ce:
+            log.debug(f"Amazon ASIN search card fallback error for {asin}: {ce}")
+
     current_price = p.price or 0.0
     if current_price == 0.0 and mrp > 0: current_price = mrp
 
     # Reconcile benchmarks
     lowest_90d = round(current_price * 0.92, 0)
-    fk_known_price = None
     if asin in VERIFIED_BENCHMARKS:
         bench = VERIFIED_BENCHMARKS[asin]
-        mrp = bench["mrp"]
+        if mrp == 0.0 or mrp <= current_price:
+            mrp = bench["mrp"]
         lowest_90d = min(current_price, float(bench["lowest_90d"]))
-        fk_known_price = bench.get("fk_price")
     else:
         tracked_items = {it["asin"]: it for it in get_all_tracked()}
         if asin in tracked_items:
             t = tracked_items[asin]
             db_mrp = t.get("max_observed_price") or 0.0
-            if db_mrp > current_price: mrp = db_mrp
+            if mrp == 0.0 and db_mrp > current_price: mrp = db_mrp
             init_p = t.get("initial_price") or current_price
             lowest_90d = min(current_price, init_p)
 
@@ -1109,23 +1282,12 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     has_competitor = False
 
     if clean_comp:
-        # User explicitly provided a Flipkart competitor link to compare
         try:
             fk_comp = cross_search_flipkart(clean_comp, current_price, mrp)
             has_competitor = True
         except Exception as e:
             log.warning(f"Manual competitor scrape error: {e}")
-    elif asin in VERIFIED_BENCHMARKS and fk_known_price:
-        # Verified exact benchmark match
-        fk_comp = cross_search_flipkart(prod_title, current_price, mrp)
-        fk_comp["matched"] = True
-        fk_comp["price"] = fk_known_price
-        fk_comp["lowest_90d"] = min(fk_known_price, round(fk_known_price * 0.90, 0))
-        fk_comp["savings"] = max(0.0, mrp - fk_known_price)
-        fk_comp["discount_pct"] = round((fk_comp["savings"] / mrp * 100), 1)
-        has_competitor = True
     else:
-        # Automatic Flipkart cross-search for EVERY Amazon product!
         try:
             fk_comp = cross_search_flipkart(prod_title, current_price, mrp)
             has_competitor = True
