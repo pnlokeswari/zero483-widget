@@ -1479,7 +1479,7 @@ async function runAudit(competitorUrl = '') {
 
             <div style="display:flex;align-items:center;justify-content:space-between;margin-top:8px;flex-wrap:wrap;gap:8px">
               <span style="font-size:.72rem;color:var(--muted)">
-                📍 Solid Amber: Amazon (Verified 90D Trajectory) • Red Dashed: Official Box MRP Ceiling
+                📍 Amber: 90D Trajectory • <strong style="color:#10b981">Emerald Dot: 90D Low (₹${(d.lowest_90d || d.current_price).toLocaleString('en-IN')})</strong> • Red Dashed: Box MRP
               </span>
               <span style="font-size:.73rem;color:#38bdf8;font-weight:600">
                 100% Real History ✓
@@ -1492,8 +1492,9 @@ async function runAudit(competitorUrl = '') {
                 <span id="dyn-how-to-read">📊 How to Read This Price Graph:</span>
               </div>
               <div style="color:var(--text);line-height:1.5;font-size:.77rem">
-                <div>1. <strong>Price Curve (Solid Amber):</strong> Real selling prices tracked over the last 90 days. Deep valleys indicate the best festival sale dips.</div>
-                <div>2. <strong>Printed Box MRP (Red Dashed Line):</strong> Official retail price on the product packaging (₹${d.mrp.toLocaleString('en-IN')}). Genuine discounts start from this maximum price.</div>
+                <div>1. <strong>Price Curve (Solid Amber):</strong> Real selling prices tracked over the last 90 days ending at today's live price (₹${d.current_price.toLocaleString('en-IN')}).</div>
+                <div>2. <strong>90-Day Lowest Dip (Emerald Green Valley Marker):</strong> Marks the lowest festival valley (₹${(d.lowest_90d || d.current_price).toLocaleString('en-IN')}) so you can see how close today's price is to the record low.</div>
+                <div>3. <strong>Printed Box MRP (Red Dashed Line):</strong> Official retail price on the product packaging (₹${d.mrp.toLocaleString('en-IN')}).</div>
               </div>
             </div>
           </div>
@@ -1953,8 +1954,10 @@ function getLocalizedVerdict(d, lang) {
   const savings = (d.savings_mrp_inr || (d.mrp - d.current_price) || 0).toLocaleString('en-IN');
   const mrp = (d.mrp || 0).toLocaleString('en-IN');
   const price = (d.current_price || 0).toLocaleString('en-IN');
-  const lowest = (d.lowest_90d || d.current_price || 0).toLocaleString('en-IN');
-  const diff = (d.diff_from_low || 0).toLocaleString('en-IN');
+  const lowestVal = d.lowest_90d || d.current_price || 0;
+  const lowest = lowestVal.toLocaleString('en-IN');
+  const diffVal = Math.max(0, Math.round((d.current_price || 0) - lowestVal));
+  const diff = diffVal.toLocaleString('en-IN');
 
   let type = 'wait_sale';
   let color = '#f59e0b';
@@ -1962,7 +1965,7 @@ function getLocalizedVerdict(d, lang) {
   if (pct >= 50) {
     type = 'massive_deal';
     color = '#10b981';
-  } else if (d.lowest_90d && d.current_price <= d.lowest_90d + (d.mrp * 0.05)) {
+  } else if (lowestVal && d.current_price <= lowestVal + (d.mrp * 0.05)) {
     type = 'best_price';
     color = '#10b981';
   } else if (pct >= 15) {
@@ -1978,13 +1981,22 @@ function getLocalizedVerdict(d, lang) {
     ? dict.verdicts[type] 
     : ((TRANSLATIONS.en.verdicts && TRANSLATIONS.en.verdicts[type]) || defaultV);
   const title = (vInfo.title || '🟢 VERIFIED DEAL').replace('{pct}', pct);
-  const reason = (vInfo.reason || 'Verified pricing against official packaging.')
+  let reason = (vInfo.reason || 'Verified pricing against official packaging.')
     .replace('{pct}', pct)
     .replace('{savings}', savings)
     .replace('{mrp}', mrp)
     .replace('{price}', price)
     .replace('{lowest}', lowest)
     .replace('{diff}', diff);
+
+  // Ensure every verdict explicitly reminds the buyer of the 90-Day Lowest Price
+  if (!reason.includes(lowest)) {
+    if (diffVal === 0) {
+      reason += ` 💡 90-Day Low Check: Today's price (₹${price}) is right at its 90-day record low (₹${lowest})!`;
+    } else {
+      reason += ` 💡 90-Day Low Reminder: Its lowest 90-day festival dip was ₹${lowest} (₹${diff} lower than today's price).`;
+    }
+  }
 
   return { title, reason, color, type };
 }
