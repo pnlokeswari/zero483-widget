@@ -35,8 +35,8 @@ COMPARE_DIR.mkdir(parents=True, exist_ok=True)
 INDEX_JSON_PATH = COMPARE_DIR / "index.json"
 SITEMAP_PATH = ROOT_DIR / "sitemap.xml"
 
-GITHUB_REPO = "pnlokeswari/zero483-widget"
-SITE_ORIGIN = "https://alerts.zero483.com"
+GITHUB_REPOS = ["pnlokeswari/verifyfirst", "pnlokeswari/zero483-widget"]
+SITE_ORIGIN = "https://verifyfirst.co.in"
 
 
 def make_seo_slug(title: str, prod_id: str) -> str:
@@ -355,20 +355,21 @@ def _push_to_github_async(files_to_push: List[tuple[str, Path]], commit_msg: str
         "Accept": "application/vnd.github.v3+json",
         "User-Agent": "VerifyFirst-SEO-Indexer"
     }
-    for repo_path, local_path in files_to_push:
-        try:
-            if not local_path.exists():
-                continue
-            url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{repo_path}"
-            r_get = requests.get(url, headers=headers, timeout=12)
-            sha = r_get.json().get("sha") if r_get.status_code == 200 else None
-            b64 = base64.b64encode(local_path.read_bytes()).decode("utf-8")
-            payload = {"message": commit_msg, "content": b64, "branch": "main"}
-            if sha:
-                payload["sha"] = sha
-            requests.put(url, headers=headers, json=payload, timeout=15)
-        except Exception as e:
-            log.warning(f"GitHub auto-index push warning for {repo_path}: {e}")
+    for repo in GITHUB_REPOS:
+        for repo_path, local_path in files_to_push:
+            try:
+                if not local_path.exists():
+                    continue
+                url = f"https://api.github.com/repos/{repo}/contents/{repo_path}"
+                r_get = requests.get(url, headers=headers, timeout=12)
+                sha = r_get.json().get("sha") if r_get.status_code == 200 else None
+                b64 = base64.b64encode(local_path.read_bytes()).decode("utf-8")
+                payload = {"message": commit_msg, "content": b64, "branch": "main"}
+                if sha:
+                    payload["sha"] = sha
+                requests.put(url, headers=headers, json=payload, timeout=15)
+            except Exception as e:
+                log.warning(f"GitHub auto-index push warning for {repo}/{repo_path}: {e}")
 
 
 def auto_index_verified_product(res: Dict[str, Any], push_remote: bool = True) -> str:
