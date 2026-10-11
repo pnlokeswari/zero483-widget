@@ -1203,9 +1203,11 @@ async function runAudit(competitorUrl = '') {
 
     const amz = d.amazon_counterpart || {};
     const fk = d.flipkart_counterpart || {};
-    const hasComparison = Boolean(d.has_competitor && amz.price && fk.price);
-    const isAmzWinner = d.winner_platform === 'amazon';
-    const isFkWinner = d.winner_platform === 'flipkart';
+    const amzMatched = Boolean(amz.price && amz.price > 0);
+    const fkMatched = Boolean(fk.price && fk.price > 0);
+    const hasComparison = Boolean(amzMatched && fkMatched);
+    const isAmzWinner = hasComparison && d.winner_platform === 'amazon';
+    const isFkWinner = hasComparison && d.winner_platform === 'flipkart';
     const isPrimaryAmazon = d.platform === 'amazon';
 
     const amzBullets = (amz.about_this_item && amz.about_this_item.length > 0) ? amz.about_this_item : (d.about_this_item || []);
@@ -1214,7 +1216,7 @@ async function runAudit(competitorUrl = '') {
 
     resEl.innerHTML = `
       <div class="audit-card">
-        <!-- Live Deal Comparison Winner Banner (if competitor compared) -->
+        <!-- Live Deal Comparison Winner Banner (if both stores matched) -->
         ${(hasComparison && d.winner_text) ? `
           <div class="winner-banner">
             <div class="winner-text">
@@ -1254,18 +1256,18 @@ async function runAudit(competitorUrl = '') {
           </div>
         ` : ''}
 
-        <!-- Side-by-Side Comparison Cards (If Competitor Active) -->
-        ${hasComparison ? `
-          <div class="compare-grid">
-            <!-- Amazon Column -->
-            <div class="compare-col ${isAmzWinner ? 'is-winner' : ''}">
-              <div class="compare-col-header">
-                <span class="store-tag amazon">📦 AMAZON INDIA</span>
-                ${isAmzWinner ? '<span class="pill" style="font-size:.65rem;background:#10b981;color:#000;font-weight:800">BEST PRICE</span>' : ''}
-              </div>
+        <!-- Side-by-Side Comparison Cards (Always Shown: Case A Exact Match OR Case B Manual Override) -->
+        <div class="compare-grid">
+          <!-- Amazon Column -->
+          <div class="compare-col ${isAmzWinner ? 'is-winner' : ''}">
+            <div class="compare-col-header">
+              <span class="store-tag amazon">📦 AMAZON INDIA</span>
+              ${isAmzWinner ? '<span class="pill" style="font-size:.65rem;background:#10b981;color:#000;font-weight:800">BEST PRICE</span>' : (amzMatched ? '<span class="pill" style="font-size:.62rem;background:rgba(16,185,129,.15);color:#34d399">LIVE VERIFIED</span>' : '')}
+            </div>
+            ${amzMatched ? `
               <div class="comp-price-row">
                 <span class="comp-price">₹${amz.price.toLocaleString('en-IN')}</span>
-                <span class="comp-mrp">₹${d.mrp.toLocaleString('en-IN')}</span>
+                <span class="comp-mrp">₹${(amz.scraped_mrp || amz.mrp || d.mrp).toLocaleString('en-IN')}</span>
                 <span class="comp-discount">-${amz.discount_pct}%</span>
               </div>
               <div class="comp-low90">
@@ -1274,17 +1276,31 @@ async function runAudit(competitorUrl = '') {
               <div style="font-size:.74rem;color:var(--muted)">
                 💵 You Save: <strong style="color:var(--green)">₹${amz.savings.toLocaleString('en-IN')}</strong> vs Packaging MRP
               </div>
-              <a href="${amz.url}" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy amazon">
+              <a href="${amz.url || d.affiliate_url}" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy amazon">
                 Buy on Amazon at ₹${amz.price.toLocaleString('en-IN')} ↗
               </a>
-            </div>
-
-            <!-- Flipkart Column -->
-            <div class="compare-col ${isFkWinner ? 'is-winner' : ''}">
-              <div class="compare-col-header">
-                <span class="store-tag flipkart">⚡ FLIPKART INDIA</span>
-                ${isFkWinner ? '<span class="pill" style="font-size:.65rem;background:#10b981;color:#000;font-weight:800">BEST PRICE</span>' : ''}
+            ` : `
+              <div style="padding:10px 0;font-size:.82rem;color:var(--muted);line-height:1.5">
+                <div style="color:#fbbf24;font-weight:700;margin-bottom:6px">🔎 Direct exact variant match not confirmed automatically</div>
+                <div>To avoid showing a wrong variant price, click below to check Amazon search results or paste the exact Amazon link below:</div>
               </div>
+              <a href="${d.amazon_search_url || amz.url || 'https://www.amazon.in'}" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy amazon" style="margin-bottom:10px">
+                🔍 Tap to View Live Amazon Search Results ↗
+              </a>
+              <div style="display:flex;gap:6px;margin-top:4px">
+                <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem" placeholder="Have the Amazon link? Paste here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
+                <button type="button" onclick="applyInlineCompetitorCompare()" class="btn-compare-action" style="padding:8px 12px;font-size:.75rem;white-space:nowrap">Compare ⚔️</button>
+              </div>
+            `}
+          </div>
+
+          <!-- Flipkart Column -->
+          <div class="compare-col ${isFkWinner ? 'is-winner' : ''}">
+            <div class="compare-col-header">
+              <span class="store-tag flipkart">⚡ FLIPKART INDIA</span>
+              ${isFkWinner ? '<span class="pill" style="font-size:.65rem;background:#10b981;color:#000;font-weight:800">BEST PRICE</span>' : (fkMatched ? '<span class="pill" style="font-size:.62rem;background:rgba(16,185,129,.15);color:#34d399">LIVE VERIFIED</span>' : '')}
+            </div>
+            ${fkMatched ? `
               <div class="comp-price-row">
                 <span class="comp-price">₹${fk.price.toLocaleString('en-IN')}</span>
                 <span class="comp-mrp">₹${(fk.scraped_mrp || fk.mrp || d.mrp).toLocaleString('en-IN')}</span>
@@ -1296,34 +1312,24 @@ async function runAudit(competitorUrl = '') {
               <div style="font-size:.74rem;color:var(--muted)">
                 💵 You Save: <strong style="color:var(--green)">₹${fk.savings.toLocaleString('en-IN')}</strong> vs Packaging MRP
               </div>
-              <a href="${fk.url}" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy flipkart">
+              <a href="${fk.url || d.flipkart_search_url}" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy flipkart">
                 Buy on Flipkart at ₹${fk.price.toLocaleString('en-IN')} ↗
               </a>
-            </div>
+            ` : `
+              <div style="padding:10px 0;font-size:.82rem;color:var(--muted);line-height:1.5">
+                <div style="color:#60a5fa;font-weight:700;margin-bottom:6px">🔎 Direct exact variant match not confirmed automatically</div>
+                <div>To avoid showing a wrong variant price, click below to check Flipkart search results or paste the exact Flipkart link below:</div>
+              </div>
+              <a href="${d.flipkart_search_url || fk.url || 'https://www.flipkart.com'}" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy flipkart" style="margin-bottom:10px">
+                🔍 Tap to View Live Flipkart Search Results ↗
+              </a>
+              <div style="display:flex;gap:6px;margin-top:4px">
+                <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem" placeholder="Have the Flipkart link? Paste here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
+                <button type="button" onclick="applyInlineCompetitorCompare()" class="btn-compare-action" style="padding:8px 12px;font-size:.75rem;white-space:nowrap">Compare ⚔️</button>
+              </div>
+            `}
           </div>
-        ` : `
-          <!-- Single Product Metric Triplet (When No Competitor Paired Yet) -->
-          <div class="metric-triplet">
-            <div class="metric-box highlight">
-              <div class="m-val" style="color:var(--brand-glow)">₹${d.current_price.toLocaleString('en-IN')}</div>
-              <div class="m-lbl">Live Deal Price</div>
-            </div>
-            <div class="metric-box">
-              <div class="m-val" style="text-decoration:line-through;color:var(--muted)">₹${d.mrp.toLocaleString('en-IN')}</div>
-              <div class="m-lbl">Printed Box MRP</div>
-            </div>
-            <div class="metric-box">
-              <div class="m-val" style="color:var(--green)">₹${d.savings_mrp_inr.toLocaleString('en-IN')}</div>
-              <div class="m-lbl">You Save (${d.discount_mrp_pct}%)</div>
-            </div>
-          </div>
-
-          <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap">
-            <a href="${d.affiliate_url}" target="_blank" rel="nofollow noopener sponsored" class="btn-buy" style="background:${isPrimaryAmazon ? 'linear-gradient(135deg,#f59e0b,#d97706);color:#000' : 'linear-gradient(135deg,#2874f0,#1e5cc0);color:#fff'}">
-              🛒 View Live Deal on ${isPrimaryAmazon ? 'Amazon India' : 'Flipkart'} at ₹${d.current_price.toLocaleString('en-IN')} ↗
-            </a>
-          </div>
-        `}
+        </div>
 
         <!-- Pro-Tip: Bank & Card Offers Advice Banner -->
         <div class="bank-offers-hint-box">
@@ -1516,6 +1522,16 @@ function applyCompetitorCompare() {
     return;
   }
   runAudit(compInput.value.trim());
+}
+
+function applyInlineCompetitorCompare() {
+  const inlineInput = document.getElementById('inline-comp-input');
+  if (!inlineInput || !inlineInput.value.trim()) {
+    alert("Please paste the product link to compare side-by-side.");
+    if (inlineInput) inlineInput.focus();
+    return;
+  }
+  runAudit(inlineInput.value.trim());
 }
 
 function openKeepa(asin) {
