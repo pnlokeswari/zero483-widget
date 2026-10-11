@@ -35,8 +35,8 @@ VERIFIED_BENCHMARKS: Dict[str, Dict[str, Any]] = {
     "B0BN7WWTNT": {"mrp": 1199.0, "lowest_90d": 99.0, "fk_price": 149.0},   # KareIn Wipes
     "B0DQY3P9ZH": {"mrp": 2499.0, "lowest_90d": 899.0, "fk_price": 999.0},  # PALMONAS Necklace
     # Flipkart Items
-    "MOBGTAGPTB3VS24W": {"title": "Apple iPhone 15 (Black, 128 GB)", "mrp": 69900.0, "fk_price": 58999.0, "lowest_90d": 54999.0, "amz_price": 61999.0, "fk_url": "https://www.flipkart.com/apple-iphone-15-black-128-gb/p/itm6ac6485515ae4?pid=MOBGTAGPTB3VS24W"},
-    "MOBHQV9YZGYG64U7": {"title": "Apple iPhone 15 (Blue, 128 GB)", "mrp": 69900.0, "fk_price": 58999.0, "lowest_90d": 54999.0, "amz_price": 61999.0, "fk_url": "https://www.flipkart.com/apple-iphone-15-blue-128-gb/p/itmbf14ef54f645d?pid=MOBHQV9YZGYG64U7"},
+    "MOBGTAGPTB3VS24W": {"title": "Apple iPhone 15 (Black, 128 GB)", "mrp": 69900.0, "fk_price": 58999.0, "lowest_90d": 54999.0, "amz_price": 61999.0, "amz_asin": "B0CHX1W1XY", "fk_url": "https://www.flipkart.com/apple-iphone-15-black-128-gb/p/itm6ac6485515ae4?pid=MOBGTAGPTB3VS24W"},
+    "MOBHQV9YZGYG64U7": {"title": "Apple iPhone 15 (Blue, 128 GB)", "mrp": 69900.0, "fk_price": 58999.0, "lowest_90d": 54999.0, "amz_price": 61999.0, "amz_asin": "B0CHX2F5QT", "fk_url": "https://www.flipkart.com/apple-iphone-15-blue-128-gb/p/itmbf14ef54f645d?pid=MOBHQV9YZGYG64U7"},
     "MOBFWBYZ8GU3R9TG": {"title": "Realme 5G Smartphone (128 GB)", "mrp": 19999.0, "fk_price": 15499.0, "lowest_90d": 14999.0, "amz_price": 15999.0},
     "ACCHQDMZTBXGZSUR": {"title": "Niubil 33W SuperVOOC Fast Charger Adapter", "mrp": 2999.0, "fk_price": 949.0, "lowest_90d": 899.0, "amz_price": 999.0, "fk_url": "https://www.flipkart.com/search?q=33W+SuperVOOC+Fast+Charger+Adapter"},
 }
@@ -512,17 +512,12 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
                     if parsed > 0:
                         candidates.append((a_id, t_str, parsed))
 
-            # Filter candidates for exact variant specs (e.g. 256GB vs 512GB)
+            # Filter candidates for exact brand + variant specs (e.g. Apple iPhone 15 128GB, never Transcend SSD!)
+            brand_words = [w.lower() for w in re.findall(r"[a-zA-Z]{3,}", title[:30]) if w.lower() not in {"the", "for", "and", "with", "pack", "new"}][:2]
             for a_id, t_str, parsed in candidates:
-                if matches_variant_specs(t_str, required_specs):
-                    cur_p = parsed
-                    asin = a_id
-                    amz_title = t_str
-                    break
-
-            # Fallback to first valid product if no candidate passed variant filter
-            if cur_p == 0.0 and candidates:
-                for a_id, t_str, parsed in candidates:
+                t_low = t_str.lower()
+                brand_ok = all(bw in t_low for bw in brand_words[:1]) if brand_words else True
+                if brand_ok and matches_variant_specs(t_str, required_specs):
                     cur_p = parsed
                     asin = a_id
                     amz_title = t_str
@@ -782,10 +777,15 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                 log.warning(f"Manual Amazon competitor error: {e}")
         elif pid and pid in VERIFIED_BENCHMARKS and "amz_price" in VERIFIED_BENCHMARKS[pid]:
             # Verified benchmark match
+            bench = VERIFIED_BENCHMARKS[pid]
             amz_comp = cross_search_amazon(product_title, current_price, mrp)
-            amz_comp["price"] = VERIFIED_BENCHMARKS[pid]["amz_price"]
+            amz_comp["price"] = bench["amz_price"]
             amz_comp["savings"] = max(0.0, mrp - amz_comp["price"])
             amz_comp["discount_pct"] = round((amz_comp["savings"] / mrp * 100), 1)
+            if bench.get("amz_asin"):
+                amz_comp["asin"] = bench["amz_asin"]
+                amz_comp["url"] = f"https://www.amazon.in/dp/{bench['amz_asin']}?tag={AFFILIATE_TAG}&linkCode=ll1"
+                amz_comp["about_this_item"] = []
             has_competitor = True
         else:
             # Best-effort automatic cross-search
