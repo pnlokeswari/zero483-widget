@@ -22,11 +22,11 @@ log = logging.getLogger("WAVEPICKS.auditor")
 AFFILIATE_TAG = "10fa9c-21"
 
 # Verified Real Box MRP and 90-Day Lows for Amazon & Flipkart Products
-VERIFIED_BENCHMARKS: Dict[str, Dict[str, float]] = {
+VERIFIED_BENCHMARKS: Dict[str, Dict[str, Any]] = {
     # Amazon Items
-    "B0BDVG99J5": {"mrp": 395.0, "lowest_90d": 318.0, "fk_price": 329.0},   # Dot & Key 100g Barrier Repair
+    "B0BDVG99J5": {"mrp": 395.0, "lowest_90d": 285.0, "fk_price": 329.0},   # Dot & Key 100g Barrier Repair
     "B0HDYLT6XY": {"mrp": 230.0, "lowest_90d": 179.0, "fk_price": 199.0},   # Alps Goodness Rosemary 100ml
-    "B01CCGW4OE": {"mrp": 435.0, "lowest_90d": 353.0, "fk_price": 389.0},   # Cetaphil Gentle Cleanser 125ml
+    "B01CCGW4OE": {"mrp": 435.0, "lowest_90d": 345.0, "fk_price": 389.0},   # Cetaphil Gentle Cleanser 125ml
     "B0HBW2CJ62": {"mrp": 299.0, "lowest_90d": 239.0, "fk_price": 279.0},   # Ghar Soaps Kojic Acid
     "B0HCZCP1BR": {"mrp": 295.0, "lowest_90d": 198.0, "fk_price": 249.0},   # Foxtale Brightening Moisturiser 50ml
     "B0H6BN5HNT": {"mrp": 299.0, "lowest_90d": 218.0, "fk_price": 269.0},   # L'Oréal Collagen Shampoo 175ml
@@ -35,10 +35,10 @@ VERIFIED_BENCHMARKS: Dict[str, Dict[str, float]] = {
     "B0BN7WWTNT": {"mrp": 1199.0, "lowest_90d": 99.0, "fk_price": 149.0},   # KareIn Wipes
     "B0DQY3P9ZH": {"mrp": 2499.0, "lowest_90d": 899.0, "fk_price": 999.0},  # PALMONAS Necklace
     # Flipkart Items
-    "MOBGTAGPTB3VS24W": {"title": "Apple iPhone 15 (Black, 128 GB)", "mrp": 69900.0, "lowest_90d": 54999.0, "amz_price": 67999.0},
-    "MOBHQV9YZGYG64U7": {"title": "Apple iPhone 15 (Blue, 128 GB)", "mrp": 74900.0, "lowest_90d": 57999.0, "amz_price": 67999.0},
-    "MOBFWBYZ8GU3R9TG": {"title": "Realme 5G Smartphone (128 GB)", "mrp": 19999.0, "lowest_90d": 14999.0, "amz_price": 15999.0},
-    "ACCHQDMZTBXGZSUR": {"title": "Niubil 33W SuperVOOC Fast Charger Adapter", "mrp": 2999.0, "lowest_90d": 899.0, "amz_price": 999.0},
+    "MOBGTAGPTB3VS24W": {"title": "Apple iPhone 15 (Black, 128 GB)", "mrp": 69900.0, "fk_price": 58999.0, "lowest_90d": 54999.0, "amz_price": 61999.0, "fk_url": "https://www.flipkart.com/apple-iphone-15-black-128-gb/p/itm6ac6485515ae4?pid=MOBGTAGPTB3VS24W"},
+    "MOBHQV9YZGYG64U7": {"title": "Apple iPhone 15 (Blue, 128 GB)", "mrp": 69900.0, "fk_price": 58999.0, "lowest_90d": 54999.0, "amz_price": 61999.0, "fk_url": "https://www.flipkart.com/apple-iphone-15-blue-128-gb/p/itmbf14ef54f645d?pid=MOBHQV9YZGYG64U7"},
+    "MOBFWBYZ8GU3R9TG": {"title": "Realme 5G Smartphone (128 GB)", "mrp": 19999.0, "fk_price": 15499.0, "lowest_90d": 14999.0, "amz_price": 15999.0},
+    "ACCHQDMZTBXGZSUR": {"title": "Niubil 33W SuperVOOC Fast Charger Adapter", "mrp": 2999.0, "fk_price": 949.0, "lowest_90d": 899.0, "amz_price": 999.0, "fk_url": "https://www.flipkart.com/search?q=33W+SuperVOOC+Fast+Charger+Adapter"},
 }
 
 
@@ -410,34 +410,30 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
                                     if p_val > 0:
                                         candidates.append((p_id, t, p_val, c_mrp, val.get("baseUrl", ""), k_specs))
 
-                        # Filter candidates for exact variant spec match
+                        # Filter candidates for exact brand + variant spec match
+                        brand_words = [w.lower() for w in re.findall(r"[a-zA-Z]{3,}", title_or_url[:30]) if w.lower() not in {"the", "for", "and", "with", "pack", "new"}][:2]
                         for p_id, t, p_val, c_mrp, base_u, k_specs in candidates:
-                            if matches_variant_specs(t, required_specs):
+                            t_low = t.lower()
+                            brand_ok = all(bw in t_low for bw in brand_words[:1]) if brand_words else True
+                            if brand_ok and matches_variant_specs(t, required_specs):
                                 cur_p = p_val
                                 fk_scraped_mrp = c_mrp
                                 fk_title = t
-                                fk_link = f"https://www.flipkart.com{base_u}" if base_u else f"https://www.flipkart.com/p/p?pid={p_id}"
+                                fk_link = f"https://www.flipkart.com{base_u}" if base_u else f"https://www.flipkart.com/search?q={urllib.parse.quote(search_term)}"
                                 fk_highlights = [str(x) for x in k_specs[:6]]
                                 break
 
-                        # Fallback to first candidate only if no exact match filtered
-                        if cur_p == 0.0 and candidates:
-                            for p_id, t, p_val, c_mrp, base_u, k_specs in candidates:
-                                cur_p = p_val
-                                fk_scraped_mrp = c_mrp
-                                fk_title = t
-                                fk_link = f"https://www.flipkart.com{base_u}" if base_u else f"https://www.flipkart.com/p/p?pid={p_id}"
-                                fk_highlights = [str(x) for x in k_specs[:6]]
-                                break
+                        # Do NOT blindly pick an unrelated sponsored brand if brand_ok failed!
                         break
         except Exception as e:
             log.debug(f"Cross search Flipkart exception: {e}")
 
     if cur_p == 0.0:
         cur_p = round(amz_price * 1.04, 0)
+        fk_link = f"https://www.flipkart.com/search?q={urllib.parse.quote(extract_key_specs(title_or_url)[1])}"
 
     effective_fk_mrp = fk_scraped_mrp if fk_scraped_mrp > 0 else box_mrp
-    lowest_90d = round(cur_p * 0.90, 0)
+    lowest_90d = min(cur_p, round(cur_p * 0.90, 0))
     savings = round(max(0.0, effective_fk_mrp - cur_p), 0)
     disc_pct = round((savings / effective_fk_mrp * 100), 1) if effective_fk_mrp > 0 else 0.0
 
@@ -701,6 +697,11 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             else:
                 product_title = "Flipkart Deal Product"
 
+        # Benchmark title lookup BEFORE search fallback so we search by real product name if needed
+        if pid and pid in VERIFIED_BENCHMARKS and VERIFIED_BENCHMARKS[pid].get("title"):
+            if not product_title or product_title.startswith("Flipkart Product"):
+                product_title = str(VERIFIED_BENCHMARKS[pid]["title"])
+
         # Search Flipkart fallback only if direct page scrape failed to obtain price
         if current_price == 0.0:
             search_query = product_title or pid or clean_input
@@ -719,11 +720,17 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                                 for item in s_list:
                                     for pr in item.get("widget", {}).get("data", {}).get("products", []):
                                         val = pr.get("productInfo", {}).get("value", {})
+                                        cand_id = val.get("id", "")
+                                        if pid and cand_id and cand_id != pid:
+                                            continue
                                         pricing = val.get("pricing", {})
                                         for prc in pricing.get("prices", []):
                                             if prc.get("strikeOff"): mrp = float(prc.get("value", 0))
                                             else: current_price = float(prc.get("value", 0))
                                         if current_price > 0:
+                                            base_u = val.get("baseUrl", "")
+                                            if base_u:
+                                                final_url = f"https://www.flipkart.com{base_u}"
                                             if mrp == 0:
                                                 disc = pricing.get("totalDiscount", 0)
                                                 mrp = round(current_price / (1 - disc / 100.0), 0) if disc else current_price
@@ -739,15 +746,25 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             bench = VERIFIED_BENCHMARKS[pid]
             if bench.get("title") and product_title.startswith("Flipkart Product"):
                 product_title = str(bench["title"])
+            if bench.get("fk_url") and not final_url.lower().startswith("http"):
+                final_url = str(bench["fk_url"])
             mrp = bench["mrp"]
             lowest_90d = bench["lowest_90d"]
-            if current_price == 0: current_price = round(lowest_90d * 1.08, 0)
+            # Sanity check: if scraped price is 0 or <50% of 90d low (wrong item), use verified live price
+            if current_price == 0 or current_price < (lowest_90d * 0.5):
+                current_price = float(bench.get("fk_price") or round(lowest_90d * 1.07, 0))
+            lowest_90d = min(current_price, float(lowest_90d))
         else:
             if current_price == 0:
                 current_price = 1499.0
                 mrp = 2999.0
-            lowest_90d = round(current_price * 0.88, 0)
+            lowest_90d = min(current_price, round(current_price * 0.88, 0))
             if mrp <= current_price: mrp = round(current_price * 1.35, 0)
+
+        # Ensure final_url is always a valid full https:// Flipkart URL (never a bare PID like 'MOBGTAGPTB3VS24W')
+        if not final_url.lower().startswith("http"):
+            _, sq = extract_key_specs(product_title)
+            final_url = f"https://www.flipkart.com/search?q={urllib.parse.quote(sq)}"
 
         # Competitor handling (Amazon lookup)
         _, search_query = extract_key_specs(product_title)
@@ -796,20 +813,12 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                 winner_text = "🤝 Both Stores Match at Exact Same Price!"
                 winner_badge = "Exact Price Match"
 
-        if has_competitor and amz_comp and amz_comp.get("price", 0) > 0:
-            chart_svg = generate_price_trend_svg(
-                amz_price=amz_comp["price"],
-                amz_mrp=mrp,
-                amz_lowest=amz_comp.get("lowest_90d", round(amz_comp["price"] * 0.88, 0)),
-                product_title=product_title
-            )
-        else:
-            chart_svg = generate_price_trend_svg(
-                amz_price=current_price,
-                amz_mrp=mrp,
-                amz_lowest=lowest_90d,
-                product_title=product_title
-            )
+        chart_svg = generate_price_trend_svg(
+            amz_price=current_price,
+            amz_mrp=mrp,
+            amz_lowest=lowest_90d,
+            product_title=product_title
+        )
 
         savings_inr = round(max(0.0, mrp - current_price), 0)
         discount_mrp_pct = round((savings_inr / mrp * 100), 1) if mrp > 0 else 0.0
@@ -986,7 +995,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     if asin in VERIFIED_BENCHMARKS:
         bench = VERIFIED_BENCHMARKS[asin]
         mrp = bench["mrp"]
-        lowest_90d = bench["lowest_90d"]
+        lowest_90d = min(current_price, float(bench["lowest_90d"]))
         fk_known_price = bench.get("fk_price")
     else:
         tracked_items = {it["asin"]: it for it in get_all_tracked()}
@@ -996,6 +1005,10 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             if db_mrp > current_price: mrp = db_mrp
             init_p = t.get("initial_price") or current_price
             lowest_90d = min(current_price, init_p)
+
+    # Guarantee 90-day lowest price never exceeds today's live price
+    if current_price > 0 and lowest_90d > current_price:
+        lowest_90d = current_price
 
     if mrp < current_price: mrp = max(current_price, p.mrp if p.mrp >= current_price else current_price)
 
@@ -1056,15 +1069,19 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     affiliate_url = f"https://www.amazon.in/dp/{asin}?tag={AFFILIATE_TAG}&linkCode=ll1"
 
     # Verdict evaluation
-    diff_from_lowest = current_price - lowest_90d
+    diff_from_lowest = max(0.0, current_price - lowest_90d)
     if discount_mrp_pct >= 50:
         verdict = f"🔥 MASSIVE DEAL ({discount_mrp_pct:.0f}% OFF)"
         verdict_color = "#10b981"
         verdict_reason = f"Sensational discount! Current deal price of ₹{current_price:,.0f} saves you ₹{savings_inr:,.0f} ({discount_mrp_pct:.0f}% off official packaging MRP of ₹{mrp:,.0f})."
-    elif diff_from_lowest <= (current_price * 0.05):
-        verdict = "🔥 BEST PRICE / RECORD LOW"
+    elif diff_from_lowest == 0:
+        verdict = "🔥 BEST PRICE / 90-DAY RECORD LOW"
         verdict_color = "#10b981"
-        verdict_reason = f"Excellent entry point! Current price of ₹{current_price:,.0f} is within ₹{diff_from_lowest:,.0f} of its lowest festival dip (₹{lowest_90d:,.0f}). Verified against official packaging MRP of ₹{mrp:,.0f}."
+        verdict_reason = f"Record 90-day low! Current deal price of ₹{current_price:,.0f} is at its lowest 90-day level (saving ₹{savings_inr:,.0f} off official packaging MRP of ₹{mrp:,.0f})."
+    elif diff_from_lowest <= (current_price * 0.05):
+        verdict = "🔥 BEST PRICE / NEAR RECORD LOW"
+        verdict_color = "#10b981"
+        verdict_reason = f"Excellent entry point! Current price of ₹{current_price:,.0f} is within ₹{diff_from_lowest:,.0f} of its 90-day lowest dip (₹{lowest_90d:,.0f}). Verified against official packaging MRP of ₹{mrp:,.0f}."
     elif discount_mrp_pct >= 20:
         verdict = "🟢 SOLID EVERYDAY DEAL"
         verdict_color = "#0284c7"
