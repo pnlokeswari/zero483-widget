@@ -63,9 +63,20 @@ VERIFIED_BENCHMARKS: Dict[str, Dict[str, Any]] = {
 }
 
 
+def extract_clean_url_or_id(text: str) -> str:
+    """Extracts the clean http(s):// URL if a user pastes an entire Flipkart/Amazon app 'Share' text block."""
+    if not text:
+        return ""
+    t = text.strip()
+    m = re.search(r"https?://[^\s\"'<>]+", t, re.I)
+    if m:
+        return m.group(0).rstrip(".,;!?)]")
+    return t
+
+
 def is_flipkart_input(text: str) -> bool:
     """Checks if input string is a Flipkart URL, shortlink, or PID."""
-    t = text.strip()
+    t = extract_clean_url_or_id(text)
     if any(k in t.lower() for k in ["flipkart.com", "dl.flipkart.com", "fkrt.it"]):
         return True
     if re.match(r"^[A-Z0-9]{16}$", t, re.I):
@@ -441,10 +452,11 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
 
     # Check if a direct Flipkart URL was provided
     if is_direct_fk:
+        clean_fk_u = extract_clean_url_or_id(title_or_url)
         try:
-            r_direct = session.get(title_or_url, allow_redirects=True, timeout=12)
-            fk_link = r_direct.url or title_or_url
-            direct_pid = extract_flipkart_pid(fk_link) or extract_flipkart_pid(title_or_url) or ""
+            r_direct = session.get(clean_fk_u, allow_redirects=True, timeout=12)
+            fk_link = r_direct.url or clean_fk_u
+            direct_pid = extract_flipkart_pid(fk_link) or extract_flipkart_pid(clean_fk_u) or ""
             if r_direct.status_code == 200:
                 soup_d = BeautifulSoup(r_direct.text, "html.parser")
                 fk_highlights = extract_flipkart_highlights(soup_d)
@@ -628,8 +640,9 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
     is_direct_amz = bool(direct_asin) or ("amazon." in title.lower()) or ("amzn." in title.lower())
 
     if is_direct_amz and not direct_asin:
+        clean_amz_u = extract_clean_url_or_id(title)
         try:
-            r_red = session.get(title, allow_redirects=True, timeout=10)
+            r_red = session.get(clean_amz_u, allow_redirects=True, timeout=10)
             direct_asin = extract_asin(r_red.url) or ""
         except Exception as re_err:
             log.debug(f"Amazon shortlink redirect error: {re_err}")
@@ -834,11 +847,11 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     against verified legal packaging Box MRP.
     Optional competitor: If user provides competitor_url or asks to compare, generates exact side-by-side battle.
     """
-    clean_input = url_or_input.strip()
+    clean_input = extract_clean_url_or_id(url_or_input)
     if not clean_input:
         return {"error": "Please provide an Amazon or Flipkart product link."}
 
-    clean_comp = competitor_url.strip() if competitor_url else ""
+    clean_comp = extract_clean_url_or_id(competitor_url) if competitor_url else ""
 
     # ══════════════════════════════════════════════════════════
     # CASE 1: FLIPKART INPUT
