@@ -63,6 +63,38 @@ VERIFIED_BENCHMARKS: Dict[str, Dict[str, Any]] = {
 }
 
 
+# EarnKaro Flipkart Affiliate ID (Strictly for Flipkart ONLY — never applied to Amazon)
+EARNKARO_FLIPKART_ID = "5518844"
+
+
+def make_flipkart_affiliate_url(url: str) -> str:
+    """Wraps any flipkart.com URL in the owner's EarnKaro Flipkart profit link (id=5518844).
+    Strictly ignores Amazon or non-Flipkart URLs."""
+    if not url:
+        return ""
+    u = url.strip()
+    u_low = u.lower()
+    if "amazon." in u_low or "amzn." in u_low:
+        return u
+    if "trackingv3.linkredirect.in" in u_low or "fktr.in" in u_low:
+        return u
+    if "flipkart.com" in u_low:
+        return f"https://trackingv3.linkredirect.in/visitretailer/2276?id={EARNKARO_FLIPKART_ID}&dl={urllib.parse.quote(u, safe='')}"
+    return u
+
+
+def unwrap_flipkart_redirect_url(url: str) -> str:
+    """If a URL is an EarnKaro linkredirect.in URL with ?dl=..., unwraps the inner Flipkart URL for scraping."""
+    if not url:
+        return ""
+    m_dl = re.search(r"[?&]dl=([^&]+)", url)
+    if m_dl:
+        decoded = urllib.parse.unquote(m_dl.group(1))
+        if "flipkart.com" in decoded.lower():
+            return decoded
+    return url
+
+
 def extract_clean_url_or_id(text: str) -> str:
     """Extracts the clean http(s):// URL if a user pastes an entire Flipkart/Amazon app 'Share' text block."""
     if not text:
@@ -77,7 +109,7 @@ def extract_clean_url_or_id(text: str) -> str:
 def is_flipkart_input(text: str) -> bool:
     """Checks if input string is a Flipkart URL, shortlink, or PID."""
     t = extract_clean_url_or_id(text)
-    if any(k in t.lower() for k in ["flipkart.com", "dl.flipkart.com", "fkrt.it"]):
+    if any(k in t.lower() for k in ["flipkart.com", "dl.flipkart.com", "fkrt.it", "fktr.in", "visitretailer/2276"]):
         return True
     if re.match(r"^[A-Z0-9]{16}$", t, re.I):
         return True
@@ -452,10 +484,12 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
 
     # Check if a direct Flipkart URL was provided
     if is_direct_fk:
-        clean_fk_u = extract_clean_url_or_id(title_or_url)
+        clean_fk_u = unwrap_flipkart_redirect_url(extract_clean_url_or_id(title_or_url))
         try:
             r_direct = session.get(clean_fk_u, allow_redirects=True, timeout=12)
-            fk_link = r_direct.url or clean_fk_u
+            fk_link = unwrap_flipkart_redirect_url(r_direct.url or clean_fk_u)
+            if fk_link != r_direct.url and "flipkart.com" in fk_link.lower():
+                r_direct = session.get(fk_link, allow_redirects=True, timeout=12)
             direct_pid = extract_flipkart_pid(fk_link) or extract_flipkart_pid(clean_fk_u) or ""
             if r_direct.status_code == 200:
                 soup_d = BeautifulSoup(r_direct.text, "html.parser")
@@ -618,7 +652,7 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
         "lowest_90d": lowest_90d,
         "savings": savings,
         "discount_pct": disc_pct,
-        "url": fk_link,
+        "url": make_flipkart_affiliate_url(fk_link),
         "highlights": fk_highlights,
         "mrp_mismatch": mrp_mismatch,
         "mrp_diff_pct": mrp_diff_pct,
@@ -858,11 +892,11 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     # ══════════════════════════════════════════════════════════
     if is_flipkart_input(clean_input):
         session = cffi_requests.Session(impersonate="chrome120")
-        final_url = clean_input
-        if ("fkrt.it" in clean_input.lower() or "dl.flipkart.com" in clean_input.lower()) or ("flipkart.com" in clean_input.lower() and "/p/" not in clean_input.lower()):
+        final_url = unwrap_flipkart_redirect_url(clean_input)
+        if any(k in final_url.lower() for k in ["fkrt.it", "fktr.in", "dl.flipkart.com", "visitretailer/2276"]) or ("flipkart.com" in final_url.lower() and "/p/" not in final_url.lower()):
             try:
-                r = session.get(clean_input, allow_redirects=True, timeout=12)
-                final_url = r.url
+                r = session.get(final_url, allow_redirects=True, timeout=12)
+                final_url = unwrap_flipkart_redirect_url(r.url)
             except Exception as e:
                 log.warning(f"Flipkart redirect error for {clean_input}: {e}")
 
@@ -1082,6 +1116,8 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         savings_inr = round(max(0.0, mrp - current_price), 0)
         discount_mrp_pct = round((savings_inr / mrp * 100), 1) if mrp > 0 else 0.0
 
+        fk_aff_url = make_flipkart_affiliate_url(final_url)
+
         return {
             "platform": "flipkart",
             "asin": pid or "FLIPKART",
@@ -1095,7 +1131,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             "discount_mrp_pct": discount_mrp_pct,
             "rating": 4.4,
             "image_url": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800&auto=format&fit=crop&q=80",
-            "affiliate_url": final_url,
+            "affiliate_url": fk_aff_url,
             "direct_url": final_url,
             "price_range_str": f"₹{lowest_90d:,.0f} (Lowest Festival Dip) — ₹{mrp:,.0f} (Official Box MRP)",
             "has_competitor": has_competitor,
@@ -1113,7 +1149,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                 "lowest_90d": lowest_90d,
                 "savings": savings_inr,
                 "discount_pct": discount_mrp_pct,
-                "url": final_url,
+                "url": fk_aff_url,
                 "highlights": fk_highlights
             },
             "highlights": fk_highlights,
@@ -1425,7 +1461,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         "price_range_str": f"₹{lowest_90d:,.0f} (Lowest Festival Dip) — ₹{mrp:,.0f} (Official Box MRP)",
         # Comparison & Search Facilitation
         "has_competitor": has_competitor,
-        "flipkart_search_url": flipkart_search_url,
+        "flipkart_search_url": make_flipkart_affiliate_url(flipkart_search_url),
         "winner_platform": winner_platform,
         "winner_text": winner_text,
         "winner_badge": winner_badge,
