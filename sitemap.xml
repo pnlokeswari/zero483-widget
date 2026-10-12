@@ -5,6 +5,7 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/pharma-stocks-draw-interest-after-homegrown-obesity-drug-approval-what-is-the-4x-buying-strategy-ahead-of-launch.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/hlb-s-liver-cancer-drug-push-gains-momentum-after-first-fda-approval-the-korea-herald.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/a-drug-for-15-000-patients-just-got-fda-approval-and-here-is-why-that-is-not-small-news-moomoo.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/pharmacies-are-limiting-quantities-on-common-medications-savingadvice-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -54,5 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/aurobindo-pharma-shares-in-focus-on-final-usfda-approval-for-perampanel-tablets-tradingview.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/aurobindo-wins-fda-approval-for-generic-epilepsy-drug-perampanel-dealroom.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-tainted-weight-loss-products-hidden-drug-ingredients-list-polskieradio-pl.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/incyte-wins-fda-approval-for-rare-bone-disease-drug-mychesco.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
