@@ -1195,13 +1195,19 @@ function extractCleanUrlOrInput(rawText) {
 
 function toFlipkartAffiliateUrl(url) {
   const fallbackFk = 'https://www.flipkart.com';
-  const u = String(url || fallbackFk).trim();
+  let u = String(url || fallbackFk).trim();
   const low = u.toLowerCase();
   // Strictly never touch Amazon links
   if (low.includes('amazon.') || low.includes('amzn.')) return u;
-  if (low.includes('trackingv3.linkredirect.in') || low.includes('fktr.in')) return u;
-  if (low.includes('flipkart.com')) {
-    return 'https://trackingv3.linkredirect.in/visitretailer/2276?id=5518844&dl=' + encodeURIComponent(u);
+  // Unwrap if wrapped in linkredirect.in so mobile OS opens native Flipkart App directly
+  const dlMatch = u.match(/[?&]dl=([^&]+)/i);
+  if (dlMatch) {
+    try { u = decodeURIComponent(dlMatch[1]); } catch (e) {}
+  }
+  if (u.toLowerCase().includes('flipkart.com')) {
+    if (u.toLowerCase().includes('affextparam2=5518844')) return u;
+    const sep = u.includes('?') ? '&' : '?';
+    return u + sep + 'ov_redirect=true&affid=rohanpouri&affExtParam2=5518844';
   }
   return u;
 }
