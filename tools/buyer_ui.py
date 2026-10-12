@@ -712,11 +712,13 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
 .btn-browse-store:hover{background:rgba(255,255,255,0.15);color:#fff}
 
 @media(max-width:580px){
-  .compare-grid{grid-template-columns:1fr;gap:10px}
-  .comp-price{font-size:1.25rem}
-  .compare-drawer-input-row{flex-direction:column}
-  .btn-compare-action{width:100%}
-  .specs-comp-grid{grid-template-columns:1fr !important}
+  .compare-grid{grid-template-columns:minmax(0,1fr);gap:10px}
+  .comp-price{font-size:1.2rem}
+  .compare-drawer-input-row{flex-direction:column;width:100%}
+  .compare-input{min-width:0 !important;width:100% !important;max-width:100% !important}
+  .btn-compare-action{width:100% !important}
+  .btn-browse-store{width:100%;max-width:100%;white-space:normal;text-align:center;word-break:break-word}
+  .specs-comp-grid{grid-template-columns:minmax(0,1fr) !important}
 }
 
 /* Side-by-Side Specifications & Highlights Comparison Matrix */
@@ -726,6 +728,8 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
   border-radius:14px;
   padding:16px 18px;
   margin-top:14px;
+  max-width:100%;
+  overflow:hidden;
 }
 .specs-comp-header{
   display:flex;
@@ -747,18 +751,23 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
 }
 .specs-comp-grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
   gap:14px;
+  max-width:100%;
 }
 .specs-col{
   background:rgba(0,0,0,0.22);
   border:1px solid rgba(255,255,255,0.05);
   border-radius:10px;
   padding:12px 14px;
+  min-width:0;
+  max-width:100%;
+  overflow:hidden;
 }
 .specs-col-header{
   display:flex;
   align-items:center;
+  flex-wrap:wrap;
   gap:6px;
   font-size:.8rem;
   font-weight:800;
@@ -789,6 +798,7 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
 }
 .specs-item-text{
   flex:1;
+  min-width:0;
   word-break:break-word;
 }
 .specs-item-text strong{
@@ -834,6 +844,11 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
 .btn-deal-copy{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.35);color:#7dd3fc;font-weight:700;font-size:.84rem;padding:12px 18px;border-radius:8px;cursor:pointer;transition:all .2s;box-sizing:border-box}
 .btn-deal-copy:hover{background:#0284c7;color:#fff;transform:translateY(-1px)}
 
+/* Strict Mobile Containment for Audit Results */
+.auditor-box,#audit-results,.audit-card,.audit-grid,.audit-left,.audit-right,.compare-grid,.compare-col,.compare-drawer-wrap,.winner-banner,.mrp-mismatch-banner,.bank-offers-hint-box{max-width:100%;min-width:0;box-sizing:border-box}
+.audit-card,.auditor-box,#audit-results{overflow:hidden}
+.compare-col-header,.comp-price-row{flex-wrap:wrap;gap:6px}
+
 /* Toast */
 .share-toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(100px);background:var(--card);border:1px solid var(--border-glow);color:var(--text);padding:12px 22px;border-radius:30px;font-size:.84rem;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.8);z-index:9999;opacity:0;transition:all .3s cubic-bezier(0.16,1,0.3,1);pointer-events:none;text-align:center;max-width:90%}
 .share-toast.show{transform:translateX(-50%) translateY(0);opacity:1}
@@ -842,14 +857,20 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
    MOBILE RESPONSIVE OVERFLOW PROTECTION (320px - 640px)
    ============================================================== */
 @media(max-width:600px){
-  .container{padding:14px 10px 32px;gap:14px}
-  .auditor-box{padding:16px 14px;border-radius:14px}
-  .mission-hero{padding:18px 14px;border-radius:14px}
-  .share-card{padding:18px 14px;border-radius:14px}
-  .audit-card{padding:16px 12px;border-radius:14px}
+  .container{padding:12px 8px 32px;gap:14px}
+  .auditor-box{padding:14px 10px;border-radius:14px}
+  .mission-hero{padding:16px 12px;border-radius:14px}
+  .share-card{padding:16px 12px;border-radius:14px}
+  .audit-card{padding:14px 10px;border-radius:14px;margin-top:16px}
+  .audit-grid{grid-template-columns:minmax(0,1fr);gap:16px}
+  .compare-col{padding:12px 10px}
+  .specs-comp-card{padding:12px 10px}
+  .specs-col{padding:10px}
+  .compare-drawer-wrap{padding:12px 10px}
+  .chart-container{min-height:auto;padding:4px}
   .input-icon-wrap{min-width:100%;width:100%}
   .btn-audit{width:100%}
-  .btn-buy,.btn-deal-whatsapp{width:100%;flex:none;text-align:center}
+  .btn-buy,.btn-deal-whatsapp,.btn-deal-copy,.btn-store-buy{width:100%;flex:none;text-align:center;white-space:normal}
 }
 
 @media(max-width:560px){
@@ -1295,8 +1316,8 @@ async function runAudit(competitorUrl = '') {
               <a href="${d.amazon_search_url || amz.url || 'https://www.amazon.in'}" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy amazon" style="margin-bottom:10px">
                 🔍 Tap to View Live Amazon Search Results ↗
               </a>
-              <div style="display:flex;gap:6px;margin-top:4px">
-                <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem" placeholder="Have the exact Amazon link? Paste here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
+              <div style="display:flex;gap:6px;margin-top:4px;flex-wrap:wrap;width:100%">
+                <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem;min-width:0;flex:1 1 180px" placeholder="Have the exact Amazon link? Paste here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
                 <button type="button" onclick="applyInlineCompetitorCompare()" class="btn-compare-action" style="padding:8px 12px;font-size:.75rem;white-space:nowrap">Compare ⚔️</button>
               </div>
             `}
@@ -1331,8 +1352,8 @@ async function runAudit(competitorUrl = '') {
               <a href="${d.flipkart_search_url || fk.url || 'https://www.flipkart.com'}" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy flipkart" style="margin-bottom:10px">
                 🔍 Tap to View Live Flipkart Search Results ↗
               </a>
-              <div style="display:flex;gap:6px;margin-top:4px">
-                <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem" placeholder="Have the exact Flipkart link? Paste here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
+              <div style="display:flex;gap:6px;margin-top:4px;flex-wrap:wrap;width:100%">
+                <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem;min-width:0;flex:1 1 180px" placeholder="Have the exact Flipkart link? Paste here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
                 <button type="button" onclick="applyInlineCompetitorCompare()" class="btn-compare-action" style="padding:8px 12px;font-size:.75rem;white-space:nowrap">Compare ⚔️</button>
               </div>
             `}
@@ -1472,7 +1493,7 @@ async function runAudit(competitorUrl = '') {
 
           <!-- Right Column: 90-Day Price Curve -->
           <div class="audit-right">
-            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:6px">
               <span style="font-size:.78rem;font-weight:800;color:var(--brand-glow);text-transform:uppercase;letter-spacing:1px;display:flex;align-items:center;gap:6px">
                 <span id="dyn-curve-header">📊 Amazon 90-Day Real Price Trajectory</span>
               </span>
