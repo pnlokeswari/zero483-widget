@@ -1191,6 +1191,16 @@ const API_BASE = (window.location.origin.includes('localhost') || window.locatio
 
 let lastAuditedItem = null;
 
+function extractCleanUrlOrInput(rawText) {
+  if (!rawText) return '';
+  const trimmed = rawText.trim();
+  const urlMatch = trimmed.match(/https?:\/\/[^\s"'<>]+/i);
+  if (urlMatch) {
+    return urlMatch[0].replace(/[.,;!?)]+$/, '');
+  }
+  return trimmed;
+}
+
 function quickAudit(asin) {
   document.getElementById('audit-input').value = asin;
   runAudit();
@@ -1200,12 +1210,15 @@ async function runAudit(competitorUrl = '') {
   const inputEl = document.getElementById('audit-input');
   const btnEl = document.getElementById('btn-audit');
   const resEl = document.getElementById('audit-results');
-  const val = inputEl.value.trim();
+  const val = extractCleanUrlOrInput(inputEl.value);
 
   if (!val) {
     alert("Please paste an Amazon or Flipkart product link, shortlink, or ASIN.");
     inputEl.focus();
     return;
+  }
+  if (inputEl.value.trim() !== val) {
+    inputEl.value = val;
   }
 
   btnEl.disabled = true;
@@ -1221,8 +1234,9 @@ async function runAudit(competitorUrl = '') {
 
   try {
     const payload = { url: val };
-    if (competitorUrl && competitorUrl.trim()) {
-      payload.competitor_url = competitorUrl.trim();
+    const cleanComp = extractCleanUrlOrInput(competitorUrl);
+    if (cleanComp) {
+      payload.competitor_url = cleanComp;
     }
 
     const resp = await fetch(`${API_BASE}/api/buyer/audit-deal`, {
@@ -1562,22 +1576,26 @@ async function runAudit(competitorUrl = '') {
 
 function applyCompetitorCompare() {
   const compInput = document.getElementById('manual-comp-input');
-  if (!compInput || !compInput.value.trim()) {
+  const cleaned = compInput ? extractCleanUrlOrInput(compInput.value) : '';
+  if (!compInput || !cleaned) {
     alert("Please paste a product link to compare.");
     if (compInput) compInput.focus();
     return;
   }
-  runAudit(compInput.value.trim());
+  compInput.value = cleaned;
+  runAudit(cleaned);
 }
 
 function applyInlineCompetitorCompare() {
   const inlineInput = document.getElementById('inline-comp-input');
-  if (!inlineInput || !inlineInput.value.trim()) {
+  const cleaned = inlineInput ? extractCleanUrlOrInput(inlineInput.value) : '';
+  if (!inlineInput || !cleaned) {
     alert("Please paste the product link to compare side-by-side.");
     if (inlineInput) inlineInput.focus();
     return;
   }
-  runAudit(inlineInput.value.trim());
+  inlineInput.value = cleaned;
+  runAudit(cleaned);
 }
 
 function openKeepa(asin) {
