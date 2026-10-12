@@ -68,7 +68,8 @@ EARNKARO_FLIPKART_ID = "5518844"
 
 
 def make_flipkart_affiliate_url(url: str) -> str:
-    """Wraps any flipkart.com URL in the owner's EarnKaro Flipkart profit link (id=5518844).
+    """Resolves any flipkart.com URL through EarnKaro (id=5518844) and returns the direct
+    https://www.flipkart.com/... URL with affid & affExtParam2=5518844 so mobile taps open the Flipkart App directly!
     Strictly ignores Amazon or non-Flipkart URLs."""
     if not url:
         return ""
@@ -76,10 +77,21 @@ def make_flipkart_affiliate_url(url: str) -> str:
     u_low = u.lower()
     if "amazon." in u_low or "amzn." in u_low:
         return u
-    if "trackingv3.linkredirect.in" in u_low or "fktr.in" in u_low:
+    if "affextparam2=5518844" in u_low:
         return u
     if "flipkart.com" in u_low:
-        return f"https://trackingv3.linkredirect.in/visitretailer/2276?id={EARNKARO_FLIPKART_ID}&dl={urllib.parse.quote(u, safe='')}"
+        sep = "&" if "?" in u else "?"
+        fk_target = u if "ov_redirect=true" in u_low else f"{u}{sep}ov_redirect=true"
+        ek_endpoint = f"https://trackingv3.linkredirect.in/visitretailer/2276?id={EARNKARO_FLIPKART_ID}&dl={urllib.parse.quote(fk_target, safe='')}"
+        try:
+            r_ek = cffi_requests.get(ek_endpoint, impersonate="chrome120", timeout=4)
+            m_cb = re.search(r'cashbackUrl\s*=\s*["\'](https://[^"\']+)["\']', r_ek.text)
+            if m_cb:
+                return m_cb.group(1)
+        except Exception:
+            pass
+        sep2 = "&" if "?" in fk_target else "?"
+        return f"{fk_target}{sep2}affid=rohanpouri&affExtParam2={EARNKARO_FLIPKART_ID}"
     return u
 
 
