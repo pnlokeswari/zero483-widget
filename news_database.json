@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-10-12T16:09:12.237070+00:00",
+  "last_updated": "2026-10-12T23:14:39.603686+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "fa617e54dc0f",
+      "title": "This Amazon brand of medication is being recalled. See the affected drug - USA Today",
+      "slug": "this-amazon-brand-of-medication-is-being-recalled-see-the-affected-drug-usa-today",
+      "date": "2026-10-12",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: This Amazon brand of medication is being recalled. See the affected drug - USA Today\nSource: Google News\nDate: Mon, 12 Oct 2026 23:02:00 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "This Amazon brand of medication is being recalled. See the affected drug - USA Today",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNd1RPelhRalplZTlhbWVqbEx6MmdKUWo2Q1JEU1NuLVUwOUp4MkVON2N6QUl2N2xLYjRmT2hmZ3RndWdlVDAwSWM0b25BUlRzLXBheERxWHZ2YWRYV0RybGcwRGlWbWo4YWJrOUFSb0toemREMTJSLUJDN1dUdFZEUTl1QU5ZOGNnUDNuUmdVTjdtQ2VCVV8tR1BRU0xNT0U1QnlYTWU2ZkpMUk9xVmRVbDFXVXozenlpaE9CVmp4NVo0aUU?oc=5",
+      "fetched_at": "2026-10-12T23:14:02.107209+00:00",
+      "is_long_form": false
+    },
     {
       "id": "4889408deee0",
       "title": "Hansoh Pharma's Aumolertinib Application Validated by EMA for EU Review - www.marketscreener.com",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/carvedilol-25-mg-tablets-out-specification-impurity",
       "fetched_at": "2026-10-05T16:24:29.944104+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "11eaebec90b6",
-      "title": "Lumify Ultrasound System",
-      "slug": "lumify-ultrasound-system",
-      "date": "2026-10-05",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Lumify Ultrasound System\nSource: Health Canada\nDate: 2026-10-05T12:00:00</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Lumify Ultrasound System",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/lumify-ultrasound-system",
-      "fetched_at": "2026-10-05T16:24:24.932598+00:00",
       "is_long_form": false
     }
   ]
