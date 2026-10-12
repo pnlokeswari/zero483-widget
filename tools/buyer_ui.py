@@ -23,7 +23,7 @@ BUYER_HTML = r"""<!DOCTYPE html>
 <meta property="og:type" content="website" />
 <meta property="og:title" content="VerifyFirst: Amazon vs Flipkart Live Price Comparison &amp; 90-Day Real Drops" />
 <meta property="og:description" content="Never pay full price! Check side-by-side store prices, official printed box MRPs, and authentic 90-day price trajectories before checkout." />
-<meta property="og:url" content="https://alerts.zero483.com/deals.html" />
+<meta property="og:url" content="https://verifyfirst.co.in/" />
 <meta property="og:image" content="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&amp;auto=format&amp;fit=crop&amp;q=80" />
 <meta property="article:author" content="PNLOKESWARI" />
 <meta property="article:section" content="Consumer Protection &amp; Smart Shopping" />
@@ -35,7 +35,7 @@ BUYER_HTML = r"""<!DOCTYPE html>
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&amp;auto=format&amp;fit=crop&amp;q=80" />
 
 <!-- Canonical -->
-<link rel="canonical" href="https://alerts.zero483.com/deals.html" />
+<link rel="canonical" href="https://verifyfirst.co.in/" />
 
 <!-- Structured Data Schema (JSON-LD) with FAQPage & AggregateOffer Rich Snippets -->
 <script type="application/ld+json">
@@ -45,7 +45,7 @@ BUYER_HTML = r"""<!DOCTYPE html>
     {
       "@type": "WebApplication",
       "name": "VerifyFirst — Smart Price & Deal Comparison",
-      "url": "https://alerts.zero483.com/deals.html",
+      "url": "https://verifyfirst.co.in/",
       "applicationCategory": "ShoppingApplication",
       "operatingSystem": "All",
       "description": "Compares Amazon and Flipkart product prices, verifies official printed box MRP, and graphs 90-day real price trajectories."
@@ -1115,19 +1115,19 @@ input,button,select,textarea{-webkit-appearance:none;appearance:none}
       </button>
 
       <!-- WhatsApp 1-Tap Share -->
-      <a href="https://api.whatsapp.com/send?text=Compare%20Amazon%20%26%20Flipkart%20prices%20and%20check%20verified%20packaging%20box%20MRP%20before%20buying%20online:%20https://alerts.zero483.com/deals.html" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-whatsapp" id="share-whatsapp-link">
+      <a href="https://api.whatsapp.com/send?text=Compare%20Amazon%20%26%20Flipkart%20prices%20and%20check%20verified%20packaging%20box%20MRP%20before%20buying%20online:%20https://verifyfirst.co.in/" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-whatsapp" id="share-whatsapp-link">
         <span>💬</span>
         <span data-i18n="btn_share_whatsapp">Share on WhatsApp</span>
       </a>
 
       <!-- Twitter / X -->
-      <a href="https://twitter.com/intent/tweet?text=Compare%20Amazon%20%26%20Flipkart%20prices%20instantly!%20Check%20verified%2090-day%20price%20history%20and%20true%20box%20MRP%20to%20find%20the%20genuine%20best%20deal:%20https://alerts.zero483.com/deals.html&hashtags=AmazonVsFlipkart,SmartShopping,VerifyFirst" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-twitter" id="share-twitter-link">
+      <a href="https://twitter.com/intent/tweet?text=Compare%20Amazon%20%26%20Flipkart%20prices%20instantly!%20Check%20verified%2090-day%20price%20history%20and%20true%20box%20MRP%20to%20find%20the%20genuine%20best%20deal:%20https://verifyfirst.co.in/&hashtags=AmazonVsFlipkart,SmartShopping,VerifyFirst" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-twitter" id="share-twitter-link">
         <span>𝕏</span>
         <span data-i18n="btn_share_twitter">Post on Twitter (X)</span>
       </a>
 
       <!-- Facebook -->
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://alerts.zero483.com/deals.html" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-facebook" id="share-facebook-link">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://verifyfirst.co.in/" target="_blank" rel="noopener noreferrer" class="btn-share btn-share-facebook" id="share-facebook-link">
         <span>📘</span>
         <span data-i18n="btn_share_facebook">Share on Facebook</span>
       </a>
@@ -1277,6 +1277,7 @@ async function runAudit(competitorUrl = '') {
     }
 
     lastAuditedItem = d;
+    updateCommunityShareLinks(currentLang);
     const v = getLocalizedVerdict(d, currentLang);
 
     const amz = d.amazon_counterpart || {};
@@ -1531,6 +1532,9 @@ async function runAudit(competitorUrl = '') {
               <button onclick="copyDealSummary()" class="btn-deal-copy" id="dyn-btn-copy-summary" title="Copy full comparison summary to clipboard">
                 📋 Copy Comparison Summary
               </button>
+              <button onclick="handleNativeShare()" class="btn-deal-copy" title="Share comparison via Telegram, Instagram, Twitter, SMS, or any app">
+                📲 Share via Any App
+              </button>
             </div>
 
             <!-- Ethical Referral Notice -->
@@ -1695,8 +1699,8 @@ const TRANSLATIONS = {
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 Price Curve:</strong> Tracks the actual selling price day-by-day. Look for deep valleys to buy when the item is at a real drop.",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 Printed Box MRP (₹{mrp}):</strong> The official packaging price on the product box. Genuine discounts are measured from this real ceiling, not seller markups.",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 Compare with Everyday Price:</strong> Check what this product actually sells for on normal days. If today's \"festival deal\" is the same price it sold for last month, it is not a real special discount!",
-    "community_share_text": "Compare Amazon & Flipkart prices! Check verified packaging box MRP and 90-day price history before buying online: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ Smart Price Comparison on VerifyFirst:\n{title}\n\n💰 Deal Price: ₹{price} (Box MRP ₹{mrp}, {pct}% Off)\n✅ Recommendation: {verdict}\n\nCompare prices & check 90-day price trends before buying: https://alerts.zero483.com/deals.html",
+    "community_share_text": "Compare Amazon & Flipkart prices! Check verified packaging box MRP and 90-day price history before buying online: https://verifyfirst.co.in/",
+    "deal_share_text": "🛍️ Smart Price Comparison on VerifyFirst:\n{title}\n\n💰 Deal Price: ₹{price} (Box MRP ₹{mrp}, {pct}% Off)\n✅ Recommendation: {verdict}\n\nCompare prices & check 90-day price trends before buying: https://verifyfirst.co.in/",
     "toast_copied_btn": "✓ Link Copied!",
     "toast_link_copied": "📋 Link copied! Paste into WhatsApp, Instagram Bio, or DM to friends.",
     "toast_bookmark_pc": "⭐ Press Ctrl + D to bookmark VerifyFirst for instant price comparisons!",
@@ -1756,8 +1760,8 @@ const TRANSLATIONS = {
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 मूल्य रेखा:</strong> दिन-प्रतिदिन के वास्तविक बिक्री मूल्य को दर्शाती है। भारी छूट पर खरीदने के लिए सबसे निचले बिंदु (गहरी घाटी) देखें।",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 प्रिंटेड बॉक्स MRP (₹{mrp}):</strong> उत्पाद बॉक्स पर आधिकारिक पैकेजिंग मूल्य। वास्तविक छूट इसी अधिकतम मूल्य से मापी जाती है।",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 सामान्य दिनों के मूल्य से तुलना करें:</strong> जांचें कि यह उत्पाद सामान्य दिनों में वास्तव में कितने में बिकता है। यदि आज की 'फेस्टिवल डील' पिछले महीने के दाम के समान ही है, तो यह कोई विशेष छूट नहीं है!",
-    "community_share_text": "अमेज़न और फ्लिपकार्ट पर बेहतरीन और वास्तविक डील्स खोजें! असली बॉक्स MRP और 90 दिनों का प्राइस हिस्ट्री ग्राफ देखकर स्मार्ट खरीदारी करें: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ VerifyFirst पर स्मार्ट डील और मूल्य तुलना:\n{title}\n\n💰 डील मूल्य: ₹{price} (बॉक्स MRP ₹{mrp}, {pct}% छूट)\n✅ सिफारिश: {verdict}\n\nखरीदने से पहले 90 दिनों का मूल्य रुझान देखें: https://alerts.zero483.com/deals.html",
+    "community_share_text": "अमेज़न और फ्लिपकार्ट पर बेहतरीन और वास्तविक डील्स खोजें! असली बॉक्स MRP और 90 दिनों का प्राइस हिस्ट्री ग्राफ देखकर स्मार्ट खरीदारी करें: https://verifyfirst.co.in/",
+    "deal_share_text": "🛍️ VerifyFirst पर स्मार्ट डील और मूल्य तुलना:\n{title}\n\n💰 डील मूल्य: ₹{price} (बॉक्स MRP ₹{mrp}, {pct}% छूट)\n✅ सिफारिश: {verdict}\n\nखरीदने से पहले 90 दिनों का मूल्य रुझान देखें: https://verifyfirst.co.in/",
     "toast_copied_btn": "✓ लिंक कॉपी हो गया!",
     "toast_link_copied": "📋 लिंक कॉपी हो गया! इसे व्हाट्सएप, इंस्टाग्राम या दोस्तों को भेजें।",
     "toast_bookmark_pc": "⭐ त्वरित मूल्य तुलना के लिए VerifyFirst को बुकमार्क करने हेतु Ctrl + D दबाएं!",
@@ -1817,8 +1821,8 @@ const TRANSLATIONS = {
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 ధర రేఖ:</strong> రోజువారీ అసలు అమ్మకపు ధరను ట్రాక్ చేస్తుంది. నిజమైన తగ్గింపు ఉన్నప్పుడు కొనడానికి దిగువ లోయలను చూడండి.",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 ప్రింటెడ్ బాక్స్ MRP (₹{mrp}):</strong> అధికారిక ప్యాకేజింగ్ ధర. నిజమైన తగ్గింపులు దీని ఆధారంగానే లెక్కించబడతాయి.",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 సాధారణ రోజుల ధరతో సరిపోల్చండి:</strong> ఈ ఉత్పత్తి సాధారణ రోజులలో ఎంత ధరకు అమ్ముడవుతుందో తనిఖీ చేయండి. నేటి 'పండుగ డీల్' గత నెల ధరకు సమానంగా ఉంటే, అది నిజమైన ప్రత్యేక తగ్గింపు కాదు!",
-    "community_share_text": "అమెజాన్ & ఫ్లిప్‌కార్ట్ ధరలను సరిపోల్చండి! అసలైన బాక్స్ MRP మరియు 90 రోజుల ధరల గ్రాఫ్ చూసి స్మార్ట్‌గా షాపింగ్ చేయండి: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ VerifyFirst లో స్మార్ట్ ధరల పోలిక:\n{title}\n\n💰 డీల్ ధర: ₹{price} (బాక్స్ MRP ₹{mrp}, {pct}% తగ్గింపు)\n✅ సిఫార్సు: {verdict}\n\nకొనేముందు 90 రోజుల ధరల ట్రెండ్ చూడండి: https://alerts.zero483.com/deals.html",
+    "community_share_text": "అమెజాన్ & ఫ్లిప్‌కార్ట్ ధరలను సరిపోల్చండి! అసలైన బాక్స్ MRP మరియు 90 రోజుల ధరల గ్రాఫ్ చూసి స్మార్ట్‌గా షాపింగ్ చేయండి: https://verifyfirst.co.in/",
+    "deal_share_text": "🛍️ VerifyFirst లో స్మార్ట్ ధరల పోలిక:\n{title}\n\n💰 డీల్ ధర: ₹{price} (బాక్స్ MRP ₹{mrp}, {pct}% తగ్గింపు)\n✅ సిఫార్సు: {verdict}\n\nకొనేముందు 90 రోజుల ధరల ట్రెండ్ చూడండి: https://verifyfirst.co.in/",
     "toast_copied_btn": "✓ లింక్ కాపీ చేయబడింది!",
     "toast_link_copied": "📋 లింక్ కాపీ చేయబడింది! వాట్సాప్, ఇన్‌స్టాగ్రామ్ లేదా స్నేహితులకు పంపండి.",
     "toast_bookmark_pc": "⭐ తక్షణ ధరల పోలిక కోసం VerifyFirst ను బుక్‌మార్క్ చేయడానికి Ctrl + D నొక్కండి!",
@@ -1878,8 +1882,8 @@ const TRANSLATIONS = {
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 ಬೆಲೆ ರೇಖೆ:</strong> ದಿನನಿತ್ಯದ ನೈಜ ಮಾರಾಟ ಬೆಲೆಯನ್ನು ತೋರಿಸುತ್ತದೆ. ಹೆಚ್ಚು ರಿಯಾಯಿತಿಯಲ್ಲಿ ಖರೀದಿಸಲು ಕಡಿಮೆ ಬಿಂದುವನ್ನು ನೋಡಿ.",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 ಮುದ್ರಿತ ಬಾಕ್ಸ್ MRP (₹{mrp}):</strong> ಅಧಿಕೃತ ಪ್ಯಾಕಿಂಗ್ ಬೆಲೆ. ನಿಜವಾದ ರಿಯಾಯಿತಿಗಳು ಈ ಮಿತಿಯಿಂದ ಅಳೆಯಲ್ಪಡುತ್ತವೆ.",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 ದೈನಂದಿನ ಬೆಲೆಯೊಂದಿಗೆ ಹೋಲಿಸಿ:</strong> ಸಾಮಾನ್ಯ ದಿನಗಳಲ್ಲಿ ಈ ಉತ್ಪನ್ನ ಎಷ್ಟು ಬೆಲೆಗೆ ಮಾರಾಟವಾಗುತ್ತದೆ ಎಂಬುದನ್ನು ಪರಿಶೀಲಿಸಿ. ಇಂದಿನ 'ಹಬ್ಬದ ಡೀಲ್' ಕಳೆದ ತಿಂಗಳ ಬೆಲೆಯಷ್ಟೇ ಇದ್ದರೆ, ಅದು ನಿಜವಾದ ವಿಶೇಷ ರಿಯಾಯಿತಿಯಲ್ಲ!",
-    "community_share_text": "ಅಮೆಜಾನ್ ಮತ್ತು ಫ್ಲಿಪ್‌ಕಾರ್ಟ್‌ನಲ್ಲಿ ಅತ್ಯುತ್ತಮ ಡೀಲ್‌ಗಳನ್ನು ಹೋಲಿಸಿ! ಅಧಿಕೃತ ಬಾಕ್ಸ್ MRP ಮತ್ತು 90 ದಿನಗಳ ಬೆಲೆ ಇತಿಹಾಸ ನೋಡಿ ಸ್ಮಾರ್ಟ್ ಶಾಪಿಂಗ್ ಮಾಡಿ: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ VerifyFirst ನಲ್ಲಿ ಸ್ಮಾರ್ಟ್ ಡೀಲ್ ಹೋಲಿಕೆ:\n{title}\n\n💰 ಡೀಲ್ ಬೆಲೆ: ₹{price} (ಬಾಕ್ಸ್ MRP ₹{mrp}, {pct}% ರಿಯಾಯಿತಿ)\n✅ ಶಿಫಾರಸು: {verdict}\n\nಖರೀದಿಸುವ ಮುನ್ನ 90 ದಿನಗಳ ಬೆಲೆ ಟ್ರೆಂಡ್ ನೋಡಿ: https://alerts.zero483.com/deals.html",
+    "community_share_text": "ಅಮೆಜಾನ್ ಮತ್ತು ಫ್ಲಿಪ್‌ಕಾರ್ಟ್‌ನಲ್ಲಿ ಅತ್ಯುತ್ತಮ ಡೀಲ್‌ಗಳನ್ನು ಹೋಲಿಸಿ! ಅಧಿಕೃತ ಬಾಕ್ಸ್ MRP ಮತ್ತು 90 ದಿನಗಳ ಬೆಲೆ ಇತಿಹಾಸ ನೋಡಿ ಸ್ಮಾರ್ಟ್ ಶಾಪಿಂಗ್ ಮಾಡಿ: https://verifyfirst.co.in/",
+    "deal_share_text": "🛍️ VerifyFirst ನಲ್ಲಿ ಸ್ಮಾರ್ಟ್ ಡೀಲ್ ಹೋಲಿಕೆ:\n{title}\n\n💰 ಡೀಲ್ ಬೆಲೆ: ₹{price} (ಬಾಕ್ಸ್ MRP ₹{mrp}, {pct}% ರಿಯಾಯಿತಿ)\n✅ ಶಿಫಾರಸು: {verdict}\n\nಖರೀದಿಸುವ ಮುನ್ನ 90 ದಿನಗಳ ಬೆಲೆ ಟ್ರೆಂಡ್ ನೋಡಿ: https://verifyfirst.co.in/",
     "toast_copied_btn": "✓ ಲಿಂಕ್ ಕಾಪಿ ಮಾಡಲಾಗಿದೆ!",
     "toast_link_copied": "📋 ಲಿಂಕ್ ಕಾಪಿ ಮಾಡಲಾಗಿದೆ! ವಾಟ್ಸಾಪ್, ಇನ್‌ಸ್ಟಾಗ್ರಾಮ್ ಅಥವಾ ಸ್ನೇಹಿತರಿಗೆ ಕಳುಹಿಸಿ.",
     "toast_bookmark_pc": "⭐ ತಕ್ಷಣದ ಬೆಲೆ ಹೋಲಿಕೆಗಾಗಿ VerifyFirst ಅನ್ನು ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಲು Ctrl + D ಒತ್ತಿರಿ!",
@@ -1939,8 +1943,8 @@ const TRANSLATIONS = {
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 விலை வரைபடம்:</strong> தினசரி உண்மையான விற்பனை விலையைக் காட்டுகிறது. அதிக தள்ளுபடியில் வாங்க ஆழமான பள்ளத்தாக்குகளைப் பாருங்கள்.",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 அச்சிடப்பட்ட பாக்ஸ் MRP (₹{mrp}):</strong> தயாரிப்பு பெட்டியில் உள்ள அதிகாரப்பூர்வ பேக்கேஜிங் விலை. உண்மையான தள்ளுபடிகள் இந்த உச்சவரம்பிலிருந்து அளவிடப்படுகின்றன.",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 அன்றாட விலையுடன் ஒப்பிடுங்கள்:</strong> சாதாரண நாட்களில் இந்த தயாரிப்பு உண்மையில் என்ன விலைக்கு விற்கப்படுகிறது என்பதைச் சரிபார்க்கவும். இன்றைய 'பண்டிகை சலுகை' கடந்த மாத விலையாகவே இருந்தால், அது உண்மையான தள்ளுபடி அல்ல!",
-    "community_share_text": "அமேசான் & பிளிப்கார்ட் விலைகளை ஒப்பிட்டு சிறந்த டீல்களைக் கண்டறியுங்கள்! உண்மையான பாக்ஸ் MRP மற்றும் 90 நாள் விலை வரைபடத்தை சரிபார்த்து புத்திசாலித்தனமாக ஷாப்பிங் செய்யுங்கள்: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ VerifyFirst இல் ஸ்மார்ட் விலை ஒப்பீடு:\n{title}\n\n💰 டீல் விலை: ₹{price} (பாக்ஸ் MRP ₹{mrp}, {pct}% தள்ளுபடி)\n✅ பரிந்துரை: {verdict}\n\nவாங்குவதற்கு முன் 90 நாள் விலை போக்கைப் பார்க்கவும்: https://alerts.zero483.com/deals.html",
+    "community_share_text": "அமேசான் & பிளிப்கார்ட் விலைகளை ஒப்பிட்டு சிறந்த டீல்களைக் கண்டறியுங்கள்! உண்மையான பாக்ஸ் MRP மற்றும் 90 நாள் விலை வரைபடத்தை சரிபார்த்து புத்திசாலித்தனமாக ஷாப்பிங் செய்யுங்கள்: https://verifyfirst.co.in/",
+    "deal_share_text": "🛍️ VerifyFirst இல் ஸ்மார்ட் விலை ஒப்பீடு:\n{title}\n\n💰 டீல் விலை: ₹{price} (பாக்ஸ் MRP ₹{mrp}, {pct}% தள்ளுபடி)\n✅ பரிந்துரை: {verdict}\n\nவாங்குவதற்கு முன் 90 நாள் விலை போக்கைப் பார்க்கவும்: https://verifyfirst.co.in/",
     "toast_copied_btn": "✓ இணைப்பு நகலெடுக்கப்பட்டது!",
     "toast_link_copied": "📋 இணைப்பு நகலெடுக்கப்பட்டது! வாட்ஸ்அப், இன்ஸ்டாகிராம் அல்லது நண்பர்களுக்கு அனுப்பவும்.",
     "toast_bookmark_pc": "⭐ உடனடி விலை ஒப்பீட்டிற்கு VerifyFirst ஐ புக்மார்க் செய்ய Ctrl + D அழுத்தவும்!",
@@ -2000,8 +2004,8 @@ const TRANSLATIONS = {
     "lbl_curve_point1": "• <strong style=\"color:var(--brand-glow)\">📉 প্রাইস কার্ভ:</strong> দিনভিত্তিক আসল বিক্রয় মূল্য ট্র্যাক করে। সবচেয়ে কম দামে কেনার জন্য গ্রাফের গভীরতম খাদগুলো লক্ষ্য করুন।",
     "lbl_curve_point2": "• <strong style=\"color:var(--text-heading)\">📦 মুদ্রিত বক্স MRP (₹{mrp}):</strong> পণ্যের বাক্সে অফিসিয়াল প্যাকেজিং মূল্য। আসল ছাড় এই বাস্তব সীমা থেকেই পরিমাপ করা হয়।",
     "lbl_curve_point3": "• <strong style=\"color:var(--yellow)\">🔍 সাধারণ দিনের দামের সাথে তুলনা করুন:</strong> সাধারণ দিনে এই পণ্যটি আসলে কত দামে বিক্রি হয় তা যাচাই করুন। যদি আজকের 'ফেস্টিভ্যাল ডিল' গত মাসের দামের মতোই হয়, তবে এটি কোনো আসল বিশেষ ছাড় নয়!",
-    "community_share_text": "অ্যামাজন ও ফ্লিপকার্টে সেরা ও প্রকৃত ডিলগুলি তুলনা করুন! আসল মুদ্রিত বাক্স MRP এবং ৯০ দিনের দামের গ্রাফ দেখে স্মার্ট কেনাকাটা করুন: https://alerts.zero483.com/deals.html",
-    "deal_share_text": "🛍️ VerifyFirst-এ স্মার্ট মূল্য তুলনা:\n{title}\n\n💰 ডিল মূল্য: ₹{price} (বাক্স MRP ₹{mrp}, {pct}% ছাড়)\n✅ সুপারিশ: {verdict}\n\nকেনার আগে ৯০ দিনের দামের ট্রেন্ড দেখুন: https://alerts.zero483.com/deals.html",
+    "community_share_text": "অ্যামাজন ও ফ্লিপকার্টে সেরা ও প্রকৃত ডিলগুলি তুলনা করুন! আসল মুদ্রিত বাক্স MRP এবং ৯০ দিনের দামের গ্রাফ দেখে স্মার্ট কেনাকাটা করুন: https://verifyfirst.co.in/",
+    "deal_share_text": "🛍️ VerifyFirst-এ স্মার্ট মূল্য তুলনা:\n{title}\n\n💰 ডিল মূল্য: ₹{price} (বাক্স MRP ₹{mrp}, {pct}% ছাড়)\n✅ সুপারিশ: {verdict}\n\nকেনার আগে ৯০ দিনের দামের ট্রেন্ড দেখুন: https://verifyfirst.co.in/",
     "toast_copied_btn": "✓ লিঙ্ক কপি হয়েছে!",
     "toast_link_copied": "📋 লিঙ্ক কপি হয়েছে! এটি হোয়াটসঅ্যাপ, ইনস্টাগ্রাম বা বন্ধুদের পাঠান।",
     "toast_bookmark_pc": "⭐ তাত্ক্ষণিক মূল্য তুলনার জন্য VerifyFirst বুকমার্ক করতে Ctrl + D চাপুন!",
@@ -2191,17 +2195,18 @@ function fallbackCopyText(text) {
 
 function updateCommunityShareLinks(lang) {
   const dict = TRANSLATIONS[lang] || TRANSLATIONS.en;
+  const shareText = lastAuditedItem ? getDealShareText(lastAuditedItem, lang) : dict.community_share_text;
   const wa = document.getElementById('share-whatsapp-link');
   if (wa) {
-    wa.href = "https://api.whatsapp.com/send?text=" + encodeURIComponent(dict.community_share_text);
+    wa.href = "https://api.whatsapp.com/send?text=" + encodeURIComponent(shareText);
   }
   const tw = document.getElementById('share-twitter-link');
   if (tw) {
-    tw.href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(dict.community_share_text) + "&hashtags=AmazonDeals,SmartShopping,VERIFYFIRST";
+    tw.href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(shareText) + "&hashtags=AmazonVsFlipkart,SmartShopping,VerifyFirst";
   }
   const fb = document.getElementById('share-facebook-link');
   if (fb) {
-    fb.href = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent("https://alerts.zero483.com/deals.html");
+    fb.href = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent("https://verifyfirst.co.in/") + "&quote=" + encodeURIComponent(shareText);
   }
 }
 
@@ -2403,25 +2408,25 @@ function handleBookmark() {
 
 function copyInstagramLink() {
   const dict = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
-  const url = "https://alerts.zero483.com/deals.html";
+  const textToCopy = lastAuditedItem ? getDealShareText(lastAuditedItem, currentLang) : dict.community_share_text;
   const copyText = document.getElementById('copy-btn-text');
   if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(url).then(() => {
+    navigator.clipboard.writeText(textToCopy).then(() => {
       if (copyText) copyText.textContent = dict.toast_copied_btn;
       showToast(dict.toast_link_copied);
       setTimeout(() => {
         if (copyText) copyText.textContent = dict.btn_share_instagram;
       }, 3000);
-    }).catch(() => fallbackCopy(url, copyText));
+    }).catch(() => fallbackCopy(textToCopy, copyText));
   } else {
-    fallbackCopy(url, copyText);
+    fallbackCopy(textToCopy, copyText);
   }
 }
 
-function fallbackCopy(url, copyText) {
+function fallbackCopy(textToCopy, copyText) {
   const dict = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
-  const input = document.createElement('input');
-  input.value = url;
+  const input = document.createElement('textarea');
+  input.value = textToCopy;
   document.body.appendChild(input);
   input.select();
   document.execCommand('copy');
@@ -2435,11 +2440,11 @@ function fallbackCopy(url, copyText) {
 
 function handleNativeShare() {
   const dict = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
+  const shareText = lastAuditedItem ? getDealShareText(lastAuditedItem, currentLang) : dict.community_share_text;
   if (navigator.share) {
     navigator.share({
-      title: 'VERIFYFIRST — Amazon Deal & Price Fluctuation Auditor',
-      text: dict.community_share_text,
-      url: 'https://alerts.zero483.com/deals.html'
+      title: 'VerifyFirst Price Comparison — Amazon vs Flipkart',
+      text: shareText
     }).catch(() => {});
   } else {
     copyInstagramLink();
