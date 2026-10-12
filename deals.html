@@ -2098,10 +2098,10 @@ function getDealShareText(d, lang) {
     const fkDisc = fk.discount_pct || 0;
     const winnerText = d.winner_text ? d.winner_text.replace(/[🏆🤝]/g, '').trim() : "";
 
-    let text = `⚖️ *STORE PRICE COMPARISON | VERIFYFIRST*\n`;
+    let text = `🛍️ *VerifyFirst Price Comparison — Amazon vs Flipkart*\n`;
     text += `━━━━━━━━━━━━━━━━━━━━━━━\n`;
-    text += `🛍️ *${title}*\n`;
-    text += `🏷️ Official Box MRP: ₹${mrp}\n\n`;
+    text += `✨ *${title}*\n`;
+    text += `🏷️ Printed Box MRP: ₹${mrp}\n\n`;
     text += `🛒 *LIVE STORE PRICES & BUY LINKS:*\n`;
     text += `📦 *Amazon:* ₹${amzPrice} (-${amzDisc}% off)\n`;
     text += `👉 ${amzBuyUrl}\n\n`;
@@ -2109,37 +2109,37 @@ function getDealShareText(d, lang) {
     text += `👉 ${fkBuyUrl}\n\n`;
 
     if (winnerText) {
-      text += `🏆 *RESULT:* ${winnerText}\n\n`;
+      text += `🏆 *Best Price Winner:* ${winnerText}\n\n`;
     }
 
     if (d.mrp_mismatch) {
-      text += `⚠️ Note: Printed Box MRP mismatch detected (${d.mrp_diff_pct}% gap). Please verify exact model specs.\n\n`;
+      text += `⚠️ Note: Pack size or variant may differ between stores. Please check exact specs before ordering.\n\n`;
     }
 
-    text += `💳 *PRO-TIP:* Check active Bank/Card offers before checkout to save an extra ₹1,000–₹5,000!\n\n`;
-    text += `🔍 *Compare Live Prices & 90-Day Price Graph:*\n`;
+    text += `💳 *Smart Saving Tip:* Check Bank/Card offers at checkout for an extra ₹1,000–₹5,000 instant discount!\n\n`;
+    text += `🔍 *Compare Live Prices & Check 90-Day Lowest Price:*\n`;
     text += `🌐 ${webUrl}`;
     return text;
   }
 
-  // Single-store verified audit (still includes both Amazon & Flipkart affiliate links!)
+  // Single-store price check (still includes both Amazon & Flipkart affiliate links!)
   const currentPrice = d.current_price ? Number(d.current_price).toLocaleString('en-IN') : "N/A";
   const discPct = Math.round(d.discount_mrp_pct || d.discount_pct || 0);
   const savings = d.savings_mrp_inr ? Number(d.savings_mrp_inr).toLocaleString('en-IN') : "0";
   const v = getLocalizedVerdict(d, lang);
   const isPrimaryAmazon = d.platform !== 'flipkart';
 
-  let text = `🛍️ *VERIFIED DEAL AUDIT | VERIFYFIRST*\n`;
+  let text = `🛍️ *VerifyFirst Price Comparison — Amazon vs Flipkart*\n`;
   text += `━━━━━━━━━━━━━━━━━━━━━━━\n`;
-  text += `📦 *${title}*\n`;
-  text += `🏷️ Official Box MRP: ₹${mrp}\n`;
+  text += `✨ *${title}*\n`;
+  text += `🏷️ Printed Box MRP: ₹${mrp}\n`;
   text += `💰 *${isPrimaryAmazon ? 'Amazon' : 'Flipkart'} Deal Price:* ₹${currentPrice} (-${discPct}% off • Save ₹${savings})\n`;
-  text += `✅ *Verdict:* ${v.title.replace(/[🔥🟢💡]/g, '').trim()}\n\n`;
+  text += `✅ *Buying Advice:* ${v.title.replace(/[🔥🟢💡]/g, '').trim()}\n\n`;
   text += `🛒 *DIRECT STORE LINKS:*\n`;
   text += `📦 *Buy on Amazon:*\n👉 ${amzBuyUrl}\n\n`;
   text += `⚡ *Check on Flipkart:*\n👉 ${fkBuyUrl}\n\n`;
-  text += `💳 *PRO-TIP:* Check active Bank & Card offers on the product page for extra instant savings!\n\n`;
-  text += `🔍 *Compare Live Prices & 90-Day Price Graph:*\n`;
+  text += `💳 *Smart Saving Tip:* Check Bank & Card offers on the product page for extra instant discount!\n\n`;
+  text += `🔍 *Compare Live Prices & Check 90-Day Lowest Price:*\n`;
   text += `🌐 ${webUrl}`;
   return text;
 }
