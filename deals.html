@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
 <title>VerifyFirst — Amazon vs Flipkart Price Comparison &amp; 90-Day Real Trajectory</title>
 <meta name="description" content="Verify before you buy! Compare live prices across Amazon India &amp; Flipkart, verify authentic printed packaging box MRPs, and inspect 90-day price trends to never overpay.">
 
@@ -884,6 +884,22 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
 
   /* Single Column Share Buttons on Mobile for 100% Fit */
   .share-grid{grid-template-columns:1fr;gap:8px}
+}
+
+/* ==============================================================
+   iOS SAFARI / WEBKIT OPTIMIZATION (Prevent Auto-Zoom & Overflow)
+   ============================================================== */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+input,button,select,textarea{-webkit-appearance:none;appearance:none}
+.chart-container svg{max-width:100% !important;width:100% !important;height:auto !important;display:block}
+@supports(padding:max(0px)){
+  header{padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right))}
+  .container{padding-left:max(8px,env(safe-area-inset-left));padding-right:max(8px,env(safe-area-inset-right))}
+  footer{padding-bottom:max(28px,env(safe-area-inset-bottom))}
+}
+@media(max-width:768px){
+  /* Prevent iOS Safari from auto-zooming viewport on input focus (requires >=16px) */
+  .auditor-input,.compare-input,#inline-comp-input,#manual-comp-input{font-size:16px !important}
 }
 </style>
 </head>
