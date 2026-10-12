@@ -1201,6 +1201,19 @@ function extractCleanUrlOrInput(rawText) {
   return trimmed;
 }
 
+function toFlipkartAffiliateUrl(url) {
+  const fallbackFk = 'https://www.flipkart.com';
+  const u = String(url || fallbackFk).trim();
+  const low = u.toLowerCase();
+  // Strictly never touch Amazon links
+  if (low.includes('amazon.') || low.includes('amzn.')) return u;
+  if (low.includes('trackingv3.linkredirect.in') || low.includes('fktr.in')) return u;
+  if (low.includes('flipkart.com')) {
+    return 'https://trackingv3.linkredirect.in/visitretailer/2276?id=5518844&dl=' + encodeURIComponent(u);
+  }
+  return u;
+}
+
 function quickAudit(asin) {
   document.getElementById('audit-input').value = asin;
   runAudit();
@@ -1371,7 +1384,7 @@ async function runAudit(competitorUrl = '') {
               <div style="font-size:.74rem;color:var(--muted)">
                 💵 You Save: <strong style="color:var(--green)">₹${fk.savings.toLocaleString('en-IN')}</strong> vs Packaging MRP
               </div>
-              <a href="${fk.url || d.flipkart_search_url}" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy flipkart">
+              <a href="${toFlipkartAffiliateUrl(fk.url || d.flipkart_search_url)}" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy flipkart">
                 Buy on Flipkart at ₹${fk.price.toLocaleString('en-IN')} ↗
               </a>
             ` : `
@@ -1379,7 +1392,7 @@ async function runAudit(competitorUrl = '') {
                 <div style="color:#fbbf24;font-weight:800;font-size:.9rem;margin-bottom:6px">⚠️ Exact Match Was Not Found on Flipkart</div>
                 <div>We could not confirm the exact same model & Box MRP automatically. To avoid showing a wrong item, tap below to check live Flipkart search results or paste the exact Flipkart link if you have one:</div>
               </div>
-              <a href="${d.flipkart_search_url || fk.url || 'https://www.flipkart.com'}" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy flipkart" style="margin-bottom:10px">
+              <a href="${toFlipkartAffiliateUrl(d.flipkart_search_url || fk.url || 'https://www.flipkart.com')}" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy flipkart" style="margin-bottom:10px">
                 🔍 Tap to View Live Flipkart Search Results ↗
               </a>
               <div style="display:flex;gap:6px;margin-top:4px;flex-wrap:wrap;width:100%">
@@ -1469,7 +1482,7 @@ async function runAudit(competitorUrl = '') {
               ⚖️ ${hasComparison ? 'Re-Compare with Different Competitor' : `Compare with ${isPrimaryAmazon ? 'Flipkart' : 'Amazon'}`}
             </span>
             ${(d.flipkart_search_url || d.amazon_search_url) ? `
-              <a href="${d.flipkart_search_url || d.amazon_search_url}" target="_blank" rel="nofollow noopener sponsored" class="btn-browse-store">
+              <a href="${isPrimaryAmazon ? toFlipkartAffiliateUrl(d.flipkart_search_url) : d.amazon_search_url}" target="_blank" rel="nofollow noopener sponsored" class="btn-browse-store">
                 🔍 Search "${d.search_term || 'this item'}" on ${isPrimaryAmazon ? 'Flipkart' : 'Amazon'} ↗
               </a>
             ` : ''}
