@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-10-12T23:14:39.603686+00:00",
+  "last_updated": "2026-10-13T03:54:03.971427+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "7a52c6142886",
+      "title": "Drug Shortage: Bupivacaine Hydrochloride, Epinephrine Bitartrate Injection",
+      "slug": "drug-shortage-bupivacaine-hydrochloride-epinephrine-bitartrate-injection",
+      "date": "2026-10-13",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Bupivacaine Hydrochloride, Epinephrine Bitartrate Injection\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Bupivacaine Hydrochloride, Epinephrine Bitartrate Injection",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-10-13T03:53:27.853206+00:00",
+      "is_long_form": false
+    },
     {
       "id": "fa617e54dc0f",
       "title": "This Amazon brand of medication is being recalled. See the affected drug - USA Today",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRWxRUGFuLW1hS09YNTM3WTVFQUVwRGtTS0N4QTlUYWlMNE93T0o2RkJaeTR0TWhReFVPaTZ1bFZMc1VvUXRzQnFxNUhhNWZkU19LWFB0bDlhaVg2UGxiUVJoSDRhVWFfaERkU3ZyNTNlM01oNGlqZExmRmFFTGJVc1p5WWZXQ1l3?oc=5",
       "fetched_at": "2026-10-06T10:47:38.087839+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "c81ab60853cc",
-      "title": "Carvedilol 25 mg Tablets: Out-of-specification (Impurity)",
-      "slug": "carvedilol-25-mg-tablets-out-of-specification-impurity",
-      "date": "2026-10-05",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Carvedilol 25 mg Tablets: Out-of-specification (Impurity)\nSource: Health Canada\nDate: 2026-10-05T12:00:00</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Carvedilol 25 mg Tablets: Out-of-specification (Impurity)",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/carvedilol-25-mg-tablets-out-specification-impurity",
-      "fetched_at": "2026-10-05T16:24:29.944104+00:00",
       "is_long_form": false
     }
   ]
