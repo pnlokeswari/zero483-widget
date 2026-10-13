@@ -129,12 +129,32 @@ def get_genuine_price_history(platform: str, product_id: str) -> Dict[str, Any]:
             avg1mon = float(data.get("avg1mon") or 0)
 
             real_low = min6 if min6 > 0 else (min_all if min_all > 0 else 0)
-            if real_low > 0 or mrp > 0:
+            
+            # Extract all-time record low and the quarter/month period when it occurred
+            all_time_low = min_all if min_all > 0 else real_low
+            all_time_date = ""
+            quarter_map = {'1': 'Jan – Mar', '2': 'Apr – Jun', '3': 'Jul – Sep', '4': 'Oct – Dec'}
+            for k, v in sorted(data.items()):
+                if 'm_' in k:
+                    try:
+                        if abs(float(v) - all_time_low) < 1.0:
+                            parts = k.split('m_')
+                            yr = parts[0]
+                            q = parts[1]
+                            q_name = quarter_map.get(q, f"Q{q}")
+                            all_time_date = f"{q_name} {yr}"
+                            break
+                    except Exception:
+                        pass
+
+            if real_low > 0 or mrp > 0 or all_time_low > 0:
                 result = {
                     "lowest_price": real_low,
                     "avg_price": avg1mon,
                     "cur_price": cur,
                     "mrp": mrp,
+                    "all_time_low": all_time_low,
+                    "all_time_date": all_time_date,
                     "timestamp": now,
                     "source": "live"
                 }
@@ -398,8 +418,11 @@ def generate_price_trend_svg(
         amz_points.append((date_str, round(ap, 0)))
 
     all_prices = [p[1] for p in amz_points]
-    p_min = min(lowest, min(all_prices)) * 0.92
-    p_max = max(mrp, max(all_prices)) * 1.06
+    raw_min = min(lowest, min(all_prices))
+    raw_max = max(mrp, max(all_prices))
+    margin = max(10.0, (raw_max - raw_min) * 0.08)
+    p_min = max(0.0, raw_min - margin)
+    p_max = raw_max + margin
     p_range = max(1.0, p_max - p_min)
 
     # Canvas dimensions with dedicated left margin (pad_left = 85px) for clear Y-axis price scale
@@ -762,7 +785,7 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
     elif fk_pid and fk_pid in VERIFIED_BENCHMARKS:
         lowest_90d = min(cur_p, float(VERIFIED_BENCHMARKS[fk_pid]["lowest_90d"])) if matched else 0.0
     else:
-        lowest_90d = min(cur_p, round(cur_p * 0.90, 0)) if matched else 0.0
+        lowest_90d = cur_p if matched else 0.0
 
     if effective_fk_mrp <= cur_p and float(hist_fk.get("mrp") or 0) > cur_p:
         effective_fk_mrp = float(hist_fk["mrp"])
@@ -795,6 +818,8 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
         "mrp": effective_fk_mrp,
         "scraped_mrp": fk_scraped_mrp,
         "lowest_90d": lowest_90d,
+        "all_time_low": float(hist_fk.get("all_time_low") or lowest_90d),
+        "all_time_date": str(hist_fk.get("all_time_date") or ""),
         "savings": savings,
         "discount_pct": disc_pct,
         "url": make_flipkart_affiliate_url(fk_link),
@@ -952,7 +977,7 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
     elif matched and asin in VERIFIED_BENCHMARKS:
         lowest_90d = min(cur_p, float(VERIFIED_BENCHMARKS[asin]["lowest_90d"]))
     else:
-        lowest_90d = min(cur_p, round(cur_p * 0.91, 0)) if matched else 0.0
+        lowest_90d = cur_p if matched else 0.0
 
     if amz_scraped_mrp <= cur_p and float(hist_amz.get("mrp") or 0) > cur_p:
         amz_scraped_mrp = float(hist_amz["mrp"])
@@ -1019,6 +1044,8 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
         "mrp": effective_amz_mrp,
         "scraped_mrp": amz_scraped_mrp,
         "lowest_90d": lowest_90d,
+        "all_time_low": float(hist_amz.get("all_time_low") or lowest_90d),
+        "all_time_date": str(hist_amz.get("all_time_date") or ""),
         "savings": savings,
         "discount_pct": disc_pct,
         "asin": asin,
@@ -1219,14 +1246,14 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             if current_price == 0:
                 current_price = 1499.0
                 mrp = 2999.0
-            lowest_90d = min(current_price, round(current_price * 0.88, 0))
+            lowest_90d = current_price
 
         if (mrp == 0 or mrp <= current_price) and float(hist_fk.get("mrp") or 0) > current_price:
             mrp = float(hist_fk["mrp"])
         elif pid and pid in VERIFIED_BENCHMARKS and (mrp == 0 or mrp <= current_price):
             mrp = float(VERIFIED_BENCHMARKS[pid]["mrp"])
         elif mrp <= current_price:
-            mrp = round(current_price * 1.35, 0)
+            mrp = current_price
 
         # Ensure final_url is always a valid full https:// Flipkart URL
         if not final_url.lower().startswith("http"):
@@ -1292,6 +1319,8 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             "current_price": current_price,
             "mrp": mrp,
             "lowest_90d": lowest_90d,
+            "all_time_low": float(hist_fk.get("all_time_low") or lowest_90d),
+            "all_time_date": str(hist_fk.get("all_time_date") or ""),
             "savings_mrp_inr": savings_inr,
             "discount_mrp_pct": discount_mrp_pct,
             "rating": 4.4,
@@ -1514,7 +1543,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             init_p = t.get("initial_price") or current_price
             lowest_90d = min(current_price, init_p)
         else:
-            lowest_90d = round(current_price * 0.92, 0)
+            lowest_90d = current_price
 
     # Box MRP enhancement from genuine price history if missing
     if (mrp == 0.0 or mrp <= current_price) and float(hist_amz.get("mrp") or 0) > current_price:
@@ -1552,7 +1581,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         if mrp == 0.0 and fk_comp.get("scraped_mrp", 0) > 0:
             mrp = float(fk_comp["scraped_mrp"])
         if lowest_90d == 0.0:
-            lowest_90d = round(current_price * 0.92, 0)
+            lowest_90d = current_price
 
     # Winner & Comparison determinations (Only when Flipkart counterpart has a confirmed >0 price)
     winner_platform = "amazon"
@@ -1656,9 +1685,10 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         "about_this_item": about_this_item,
         "highlights": fk_comp.get("highlights", []) if fk_comp else [],
         "mrp_mismatch": fk_comp.get("mrp_mismatch", False) if fk_comp else False,
-        "mrp_diff_pct": fk_comp.get("mrp_diff_pct", 0.0) if fk_comp else 0.0,
-        "mrp_mismatch_msg": fk_comp.get("mrp_mismatch_msg", "") if fk_comp else "",
-        "chart_type": "svg",
+        "all_time_low": float(hist_amz.get("all_time_low") or lowest_90d),
+        "all_time_date": str(hist_amz.get("all_time_date") or ""),
+        "keepa_graph_url": f"https://graph.keepa.com/pricehistory.png?domain=10&asin={asin}&range=90&amazon=1&new=1&bb=0" if asin else "",
+        "chart_type": "keepa" if asin else "svg",
         "svg_chart": chart_svg,
         "verdict": verdict,
         "verdict_color": verdict_color,
