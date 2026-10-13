@@ -176,18 +176,52 @@ def extract_amazon_bullets(soup: BeautifulSoup) -> list[str]:
 
 
 def extract_flipkart_highlights(soup: BeautifulSoup) -> list[str]:
-    """Extracts key specifications / product highlights from Flipkart page across all categories."""
-    highlights = []
-    # 1. Classic desktop list selectors
+    """
+    Extracts comprehensive specifications and package contents from Flipkart page across all categories.
+    Includes:
+    - In The Box / Sales Package
+    - Key hardware & performance specs (Display, Battery, Processor, Camera, Water Resistance, Fast Charging)
+    - Product highlights
+    """
+    in_the_box = ""
+    specs_dict: dict[str, str] = {}
+
+    # 1. Modern Flipkart dynamic grid specifications (div.grid-formation-dynamic)
+    for g in soup.find_all("div", class_="grid-formation-dynamic"):
+        txt = g.get_text(" : ", strip=True)
+        if " : " in txt:
+            parts = [p.strip() for p in txt.split(" : ") if p.strip()]
+            if len(parts) >= 2:
+                k, v = parts[0], parts[1]
+                if 2 < len(k) < 45 and 2 < len(v) < 220:
+                    k_low = k.lower()
+                    if k_low in ["in the box", "sales package", "package contents"]:
+                        if not in_the_box:
+                            in_the_box = v
+                    elif k not in specs_dict:
+                        specs_dict[k] = v
+
+    # 2. Classic specifications table rows
+    for tr in soup.select("table tr, tr._1s_Smc, div._3k-BhJ tr"):
+        cells = [c.get_text(strip=True) for c in tr.select("td, th") if c.get_text(strip=True)]
+        if len(cells) == 2 and 2 < len(cells[0]) < 45 and 2 < len(cells[1]) < 220:
+            k, v = cells[0], cells[1]
+            k_low = k.lower()
+            if k_low in ["in the box", "sales package", "package contents"]:
+                if not in_the_box:
+                    in_the_box = v
+            elif k not in specs_dict:
+                specs_dict[k] = v
+
+    # 3. Classic desktop list selectors
+    classic_bullets = []
     for sel in ["div._21Ahn- ul li", "div._2418kt ul li", "div._21Ahn- li", "li._7eSDEz"]:
         for it in soup.select(sel):
             t = it.get_text(strip=True)
-            if t and len(t) > 3 and t not in highlights:
-                highlights.append(t)
-    if highlights:
-        return highlights[:6]
+            if t and len(t) > 3 and t not in classic_bullets:
+                classic_bullets.append(t)
 
-    # 2. Modern Product highlights / Key Highlights container (up to 12 parent levels)
+    # 4. Modern Product highlights container
     for div in soup.find_all(["div", "span", "h2", "h3"]):
         h_text = div.get_text(strip=True) if div.string else ""
         if h_text in ["Product highlights", "Key Highlights", "Highlights"]:
@@ -198,48 +232,53 @@ def extract_flipkart_highlights(soup: BeautifulSoup) -> list[str]:
                 texts = list(curr.stripped_strings)
                 valid_items = [t for t in texts if t not in ["Product highlights", "Key Highlights", "Highlights"] and not t.startswith("+")]
                 if 4 <= len(valid_items) <= 24 and len(set(valid_items)) >= 3:
-                    i = 0
-                    while i < len(valid_items) - 1:
-                        k = valid_items[i]
-                        v = valid_items[i+1]
-                        if len(k) < 90 and len(v) < 90:
-                            highlights.append(f"{k} — {v}")
-                        i += 2
-                    if highlights:
-                        return highlights[:6]
-                curr = curr.parent
-
-    # 3. General / Specifications key-value section (used on Beauty, Skincare, Fashion, Home pages)
-    for sec_header in ["General", "In The Box"]:
-        for div in soup.find_all(string=lambda t: t and t.strip() == sec_header):
-            curr = div.parent
-            for _ in range(8):
-                if not curr:
+                    for it in valid_items:
+                        if 5 < len(it) < 120 and it not in classic_bullets:
+                            classic_bullets.append(it)
                     break
-                texts = [t for t in curr.stripped_strings if t not in [sec_header, "Specifications", "Read More"]]
-                if 4 <= len(texts) <= 30:
-                    i = 0
-                    while i < len(texts) - 1:
-                        k, v = texts[i], texts[i+1]
-                        if len(k) < 40 and len(v) < 100 and k.lower() not in ["prescription required"]:
-                            highlights.append(f"{k}: {v}")
-                        i += 2
-                    if len(highlights) >= 3:
-                        return highlights[:6]
                 curr = curr.parent
 
-    # 4. Meta description fallback
-    for m in soup.find_all("meta"):
-        if m.get("name") == "description" and m.get("content"):
-            c_txt = m.get("content", "")
-            m_inc = re.search(r"specifications include ([^.]+)", c_txt, re.I)
-            if m_inc:
-                for part in re.split(r",|\band\b", m_inc.group(1)):
-                    if len(part.strip()) > 3:
-                        highlights.append(part.strip())
-                if highlights:
-                    return highlights[:6]
-    return highlights[:6]
+    highlights: list[str] = []
+
+    # Priority 1: In The Box / Sales Package
+    if in_the_box:
+        highlights.append(f"📦 In The Box: {in_the_box}")
+
+    # Priority 2: Key hardware & feature specs
+    priority_keys = [
+        "Key Features", "Play Time", "Battery Life", "Battery Capacity",
+        "Fast Charging", "Display Size", "Processor Type", "Processor Brand",
+        "Primary Camera", "Secondary Camera", "Internal Storage", "RAM",
+        "Water Resistant", "Bluetooth Version", "Model Name", "Model ID", "Warranty Summary"
+    ]
+    for pk in priority_keys:
+        if pk in specs_dict:
+            val = specs_dict[pk]
+            if val.lower() != "no" and not any(val.lower() in h.lower() for h in highlights):
+                if pk in ["Key Features"]:
+                    highlights.append(f"✨ {val}")
+                elif pk in ["Water Resistant", "Fast Charging"]:
+                    if val.lower() == "yes":
+                        highlights.append(f"⚡ {pk}: Yes")
+                else:
+                    highlights.append(f"🔹 {pk}: {val}")
+
+    # Priority 3: Add classic bullets that aren't already mentioned
+    for b in classic_bullets:
+        if not any(b[:25].lower() in h.lower() for h in highlights):
+            highlights.append(b)
+
+    # Fallback to general specs if highlights is still short
+    if len(highlights) < 5:
+        for k, v in specs_dict.items():
+            if len(highlights) >= 7:
+                break
+            if k not in priority_keys and v.lower() not in ["no", "na", "n/a"]:
+                candidate = f"🔹 {k}: {v}"
+                if not any(v.lower() in h.lower() for h in highlights):
+                    highlights.append(candidate)
+
+    return highlights[:7]
 
 
 def generate_price_trend_svg(
@@ -624,11 +663,13 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
     matched = cur_p > 0.0
     if not matched:
         fk_link = f"https://www.flipkart.com/search?q={urllib.parse.quote(extract_key_specs(title_or_url)[1])}"
-    elif not fk_highlights and "/p/" in fk_link:
+    elif "/p/" in fk_link:
         try:
-            r_hl = session.get(fk_link, timeout=10)
+            r_hl = session.get(fk_link, timeout=12)
             if r_hl.status_code == 200:
-                fk_highlights = extract_flipkart_highlights(BeautifulSoup(r_hl.text, "html.parser"))
+                p_specs = extract_flipkart_highlights(BeautifulSoup(r_hl.text, "html.parser"))
+                if p_specs:
+                    fk_highlights = p_specs
         except Exception:
             pass
 
