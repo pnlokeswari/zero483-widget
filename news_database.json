@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-10-13T03:54:03.971427+00:00",
+  "last_updated": "2026-10-13T12:11:51.129999+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "c317c9dd9e71",
+      "title": "John Oliver reveals massive differences in FDA inspection outcomes for overseas drug plants - The Mary Sue",
+      "slug": "john-oliver-reveals-massive-differences-in-fda-inspection-outcomes-for-overseas-drug-plants-the-mary-sue",
+      "date": "2026-10-13",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Title: John Oliver reveals massive differences in FDA inspection outcomes for overseas drug plants - The Mary Sue\nSource: Google News\nDate: Tue, 13 Oct 2026 08:02:00 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "John Oliver reveals massive differences in FDA inspection outcomes for overseas drug plants - The Mary Sue",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMG1QNEZVZGpVdkF6ampHXzFYSW10bFNMSVdfcXlHZDJpVHg5eDYwRlNpTVVobk9fYlh1SkZmTnZuVlIwdUR4U1RZMFZSZF9wbzA2X3d6NDJNR2RmOVlfU2NZSjU4cUZQVUl0Vk5ITHJnVVlUVUlYSng2N2lmbURJYjZudmtmSHZZM0JQNUhDck80eGU1LXc4bFlEZkR3c2xXcUhkUklPM1BiQUdaWU9FcEdiYXlFS0Y1dmU0?oc=5",
+      "fetched_at": "2026-10-13T12:11:35.553567+00:00",
+      "is_long_form": false
+    },
     {
       "id": "7a52c6142886",
       "title": "Drug Shortage: Bupivacaine Hydrochloride, Epinephrine Bitartrate Injection",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1HTnZyYUhHZFNiek1fN3FLR0JUZnZTRXRwYzlac2ZvUnQ5N3lNb2xkNVV1UEd0RFhVSHMwcXppMEJKSXZsOFpJSXBTSWdsTGczeHJxNzJuZGpPZlA4TGdoWHNlcy14OEtPVnBwSw?oc=5",
       "fetched_at": "2026-10-06T10:48:31.951329+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "b6412b6c9e41",
-      "title": "Sterility concerns lead FDA to recall thousands of eye drop products - KCRA",
-      "slug": "sterility-concerns-lead-fda-to-recall-thousands-of-eye-drop-products-kcra",
-      "date": "2026-10-05",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Sterility concerns lead FDA to recall thousands of eye drop products - KCRA\nSource: Google News\nDate: Mon, 05 Oct 2026 16:41:00 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Sterility concerns lead FDA to recall thousands of eye drop products - KCRA",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRWxRUGFuLW1hS09YNTM3WTVFQUVwRGtTS0N4QTlUYWlMNE93T0o2RkJaeTR0TWhReFVPaTZ1bFZMc1VvUXRzQnFxNUhhNWZkU19LWFB0bDlhaVg2UGxiUVJoSDRhVWFfaERkU3ZyNTNlM01oNGlqZExmRmFFTGJVc1p5WWZXQ1l3?oc=5",
-      "fetched_at": "2026-10-06T10:47:38.087839+00:00",
       "is_long_form": false
     }
   ]
