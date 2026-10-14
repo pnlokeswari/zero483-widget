@@ -4,8 +4,19 @@
     <title>Zero483 FDA Pharma Alerts</title>
     <description>Live tracker for FDA drug recalls, warning letters, and guidance.</description>
     <link>https://www.zero483.com/USFDA-news</link>
-    <lastBuildDate>Tue, 13 Oct 2026 23:26:56 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 02:10:40 GMT</lastBuildDate>
 
+    <item>
+      <title>Drug Shortage: Carboplatin Injection</title>
+      <description>&lt;p&gt;Generic name: Carboplatin Injection
+Brand name: N/A
+Status: Current
+Presentations: []&lt;/p&gt;</description>
+      <link>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Carboplatin%20Injection</link>
+      <guid>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Carboplatin%20Injection</guid>
+      <category>Drug Shortage</category>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>How Drug Approval Will Impact SSY Group (SEHK:2005) Investors - Simply Wall Street</title>
       <description>&lt;p&gt;Title: How Drug Approval Will Impact SSY Group (SEHK:2005) Investors - Simply Wall Street
@@ -497,17 +508,6 @@ Date: Tue, 06 Oct 2026 13:10:37 GMT&lt;/p&gt;</description>
       <link>https://www.zero483.com/USFDA-news?q=FDA%20issues%20recall%20for%20over%20122k%20cases%20of%20Gatorade%20over%20undeclared%20food%20dyes%20-%20WCPO%209%20News</link>
       <guid>https://www.zero483.com/USFDA-news?q=FDA%20issues%20recall%20for%20over%20122k%20cases%20of%20Gatorade%20over%20undeclared%20food%20dyes%20-%20WCPO%209%20News</guid>
       <category>Recall</category>
-      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Drug Shortage: Quinapril/Hydrochlorothiazide Tablet</title>
-      <description>&lt;p&gt;Generic name: Quinapril/Hydrochlorothiazide Tablet
-Brand name: N/A
-Status: Current
-Presentations: []&lt;/p&gt;</description>
-      <link>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Quinapril/Hydrochlorothiazide%20Tablet</link>
-      <guid>https://www.zero483.com/USFDA-news?q=Drug%20Shortage%3A%20Quinapril/Hydrochlorothiazide%20Tablet</guid>
-      <category>Drug Shortage</category>
       <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>

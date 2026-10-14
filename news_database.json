@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-10-13T23:26:56.667061+00:00",
+  "last_updated": "2026-10-14T02:10:40.288755+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "b456eb0a8e4f",
+      "title": "Drug Shortage: Carboplatin Injection",
+      "slug": "drug-shortage-carboplatin-injection",
+      "date": "2026-10-14",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Carboplatin Injection\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Carboplatin Injection",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-10-14T02:10:03.761558+00:00",
+      "is_long_form": false
+    },
     {
       "id": "4bcdc6d644a0",
       "title": "How Drug Approval Will Impact SSY Group (SEHK:2005) Investors - Simply Wall Street",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPRXBwU0p5V1VZbEI5aGFZM2JYa0FNOWVpa01LdE5QdzAxa05YckQxeG4tRmQyeXNibnJoMXFyRlpWd0c0Q3V6N0hRb0x1aE83TTVoakJzSVJneWRiRkVCS05DSE43eXhmZDZnR1o4WHNaTm82dGhXc0h2Ykg3TklJRmhranpBckNJdjlFalRQWEFROHcyYXE4OUhYekppbUdDcVdZWGpiNThLYUluaGNJZnAxWTNwZw?oc=5",
       "fetched_at": "2026-10-06T17:25:09.127208+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "6e268172d51f",
-      "title": "Drug Shortage: Quinapril/Hydrochlorothiazide Tablet",
-      "slug": "drug-shortage-quinapril-hydrochlorothiazide-tablet",
-      "date": "2026-10-06",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Generic name: Quinapril/Hydrochlorothiazide Tablet\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Drug Shortage: Quinapril/Hydrochlorothiazide Tablet",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
-      "fetched_at": "2026-10-06T10:47:53.860233+00:00",
       "is_long_form": false
     }
   ]
