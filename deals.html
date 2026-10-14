@@ -1224,23 +1224,6 @@ input,button,select,textarea{-webkit-appearance:none;appearance:none}
     <div id="audit-results" style="display:none"></div>
   </div>
 
-  <!-- Programmatic SEO Directory: Trending & Recently Verified Comparisons -->
-  <div id="trending-comparisons" style="margin:28px 0;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:0 12px 32px rgba(0,0,0,.22)">
-    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:14px">
-      <div>
-        <span class="pill" style="background:rgba(56,189,248,.12);color:var(--brand-glow);border-color:rgba(56,189,248,.3);margin-bottom:6px;display:inline-block">🔥 Auto-Indexed Price Directory</span>
-        <h2 style="font-size:1.15rem;font-weight:800;color:var(--text-heading);margin:0">📈 Recently Verified Amazon &amp; Flipkart Price Comparisons</h2>
-      </div>
-      <span style="font-size:.76rem;color:var(--muted)">Updated automatically as shoppers verify deals</span>
-    </div>
-    <p style="font-size:.82rem;color:var(--muted);margin-bottom:18px;line-height:1.5">
-      Every product verified by shoppers is automatically archived with its official <strong>Printed Box MRP</strong> and <strong>90-Day Price Trajectory</strong>. Click any product below to view its permanent comparison report or run a fresh live check:
-    </p>
-    <div id="trending-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px">
-      <div style="color:var(--muted);font-size:.84rem;padding:12px">⏳ Loading verified product comparisons...</div>
-    </div>
-  </div>
-
   <!-- Community Action & Social Share Card -->
   <div class="share-card">
     <div class="share-badge" data-i18n="share_badge">📢 Share Smart Savings with Friends &amp; Family</div>
@@ -1322,6 +1305,13 @@ input,button,select,textarea{-webkit-appearance:none;appearance:none}
 </div>
 
 <footer>
+  <div style="display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:12px;font-size:.82rem;font-weight:700">
+    <a href="/" style="color:var(--brand-glow);text-decoration:none">⚡ Live Deal Auditor</a>
+    <span style="color:var(--border)">•</span>
+    <a href="/directory.html" style="color:#38bdf8;text-decoration:none">📂 Verified Product Comparisons Directory ↗</a>
+    <span style="color:var(--border)">•</span>
+    <a href="/analytics.html" style="color:var(--muted);text-decoration:none">📊 Live Analytics</a>
+  </div>
   <p data-i18n="footer_disclosure"><strong>Amazon Associates Disclosure:</strong> As an Amazon Associate, VerifyFirst earns from qualifying purchases made through links on this page. Product prices and availability are verified daily through automated audits and may change over time.</p>
 </footer>
 
@@ -2700,43 +2690,6 @@ function handleNativeShare() {
   }
 }
 
-async function loadTrendingComparisons() {
-  const grid = document.getElementById('trending-grid');
-  if (!grid) return;
-  try {
-    const resp = await fetch('/compare/index.json?t=' + Date.now());
-    if (!resp.ok) throw new Error('No index yet');
-    const items = await resp.json();
-    if (!items || items.length === 0) throw new Error('Empty');
-    grid.innerHTML = items.slice(0, 12).map(item => `
-      <div style="background:var(--card-inner);border:1px solid var(--border);border-radius:12px;padding:14px;display:flex;flex-direction:column;justify-content:space-between;gap:10px;transition:transform .15s">
-        <div style="display:flex;gap:12px;align-items:center">
-          ${item.image_url ? `<img src="${item.image_url}" alt="${item.title}" style="width:52px;height:52px;object-fit:contain;background:#fff;border-radius:8px;padding:4px;flex-shrink:0" loading="lazy">` : ''}
-          <div style="min-width:0">
-            <div style="font-size:.68rem;color:var(--brand-glow);font-weight:700;margin-bottom:2px">${item.category || 'Verified Deal'}</div>
-            <a href="${item.url}" style="font-size:.83rem;font-weight:700;color:var(--text-heading);text-decoration:none;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.35" title="${item.title}">${item.title}</a>
-          </div>
-        </div>
-        <div>
-          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,.06)">
-            <div>
-              <span style="font-size:1.05rem;font-weight:800;color:var(--brand-glow)">₹${Number(item.price || 0).toLocaleString('en-IN')}</span>
-              <span style="font-size:.75rem;color:var(--muted);text-decoration:line-through;margin-left:5px">₹${Number(item.mrp || 0).toLocaleString('en-IN')}</span>
-            </div>
-            <span style="font-size:.72rem;font-weight:800;color:#10b981;background:rgba(16,185,129,.12);padding:2px 8px;border-radius:99px">${item.discount_pct}% OFF MRP</span>
-          </div>
-          <div style="display:flex;gap:8px">
-            <a href="${item.url}" style="flex:1;text-align:center;font-size:.74rem;font-weight:700;padding:7px 10px;border-radius:8px;background:rgba(56,189,248,.12);color:var(--brand-glow);border:1px solid rgba(56,189,248,.28);text-decoration:none">📄 SEO Report</a>
-            <button type="button" onclick="quickAudit('${item.id}')" style="flex:1;font-size:.74rem;font-weight:700;padding:7px 10px;border-radius:8px;background:rgba(16,185,129,.14);color:#34d399;border:1px solid rgba(16,185,129,.3);cursor:pointer">⚡ Live Check</button>
-          </div>
-        </div>
-      </div>
-    `).join('');
-  } catch (e) {
-    grid.innerHTML = `<div style="color:var(--muted);font-size:.82rem">Verify any product above to add it to the live comparison directory!</div>`;
-  }
-}
-
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
   checkInAppBrowser();
@@ -2748,7 +2701,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const btn = document.getElementById('btn-native-share');
     if (btn) btn.style.display = 'inline-flex';
   }
-  loadTrendingComparisons();
 
   // Support ?q=<ASIN/PID> deep links from static SEO pages
   const params = new URLSearchParams(window.location.search);
