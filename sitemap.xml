@@ -5,7 +5,9 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/olympus-shares-plunge-after-fda-warning-letter-on-six-facilities-bloomberg-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-carboplatin-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/olympus-receives-fda-warning-letter-after-international-inspections-massdevice.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/how-drug-approval-will-impact-ssy-group-sehk-2005-investors-simply-wall-street.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/takeda-remains-a-buy-boosted-by-recent-narcolepsy-drug-approval-and-robust-pipeline-seeking-alpha.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/more-than-100-000-bottles-of-acetaminophen-sold-on-amazon-recalled-nbc-5-chicago.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -53,6 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/fluoroplastic-vent-tube.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/medline-bariatric-rollator.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/freeo2-automated-oxygen-therapy-device-adult-pediatric.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/embletta-mpr-pg.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-issues-recall-for-over-122k-cases-of-gatorade-over-undeclared-food-dyes-wcpo-9-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>

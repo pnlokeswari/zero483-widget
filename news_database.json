@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-10-14T02:10:40.288755+00:00",
+  "last_updated": "2026-10-14T08:02:29.513015+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "0224c94f3677",
+      "title": "Olympus Shares Plunge After FDA Warning Letter on Six Facilities - Bloomberg.com",
+      "slug": "olympus-shares-plunge-after-fda-warning-letter-on-six-facilities-bloomberg-com",
+      "date": "2026-10-14",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "<p>Title: Olympus Shares Plunge After FDA Warning Letter on Six Facilities - Bloomberg.com\nSource: Google News\nDate: Wed, 14 Oct 2026 02:11:22 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Olympus Shares Plunge After FDA Warning Letter on Six Facilities - Bloomberg.com",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNelVmQll0ZzRzaC1wRlBVSTFLZkJpZXlOMElnbWdfd0kxMEZ5UVB1UzRYS1pBVkJiQXc3UHU5eHBSc3ZfUlNlM0txT2g0TllIVEkwNnMyaDNuZzVaWHBWdzAwYndCcXFiYmtRLU1XQXFSR3lVd0k3QkpTVUNNLWY0ZFVyVUYxR3ZvS0hBT3R4VjdDaXprQUkxNzZjOGg1T05SWkhmMzI3d0QxZEFNOU5jUGxpdzM1UQ?oc=5",
+      "fetched_at": "2026-10-14T08:02:21.762092+00:00",
+      "is_long_form": false
+    },
     {
       "id": "b456eb0a8e4f",
       "title": "Drug Shortage: Carboplatin Injection",
@@ -18,6 +36,24 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-10-14T02:10:03.761558+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "71f360d48f0d",
+      "title": "Olympus receives FDA warning letter after international inspections - MassDevice",
+      "slug": "olympus-receives-fda-warning-letter-after-international-inspections-massdevice",
+      "date": "2026-10-13",
+      "category": "Warning Letter",
+      "severity": "High",
+      "summary": "<p>Title: Olympus receives FDA warning letter after international inspections - MassDevice\nSource: Google News\nDate: Tue, 13 Oct 2026 20:10:36 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Olympus receives FDA warning letter after international inspections - MassDevice",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOc1lNZ2ZOb1c3aVdDcGc5eE93b2ttYWhkZHc2cG5UeWdVVkN6LWxQVTNvV2xTTDYtTTNLUUNnTVVFM1FJbzY1Vk9xYWtDb2J5T2FSWXNFYk0yRzJWcy0tc1NqOXpaSWowYk0xS3JrS3ZDdVNST0ZFdy1udDVRcEtNTEFGaXBOT2VRM0xjeE41czBOV1VjbkJoUXo3QQ?oc=5",
+      "fetched_at": "2026-10-14T08:02:26.773737+00:00",
       "is_long_form": false
     },
     {
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/freeo2-automated-oxygen-therapy-device-adult-pediatric",
       "fetched_at": "2026-10-06T17:25:54.183079+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "278dd6294037",
-      "title": "Embletta MPR PG",
-      "slug": "embletta-mpr-pg",
-      "date": "2026-10-06",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Embletta MPR PG\nSource: Health Canada\nDate: 2026-10-06T12:00:00</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Embletta MPR PG",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/embletta-mpr-pg",
-      "fetched_at": "2026-10-06T17:25:49.169885+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "6de140a500cc",
-      "title": "FDA issues recall for over 122k cases of Gatorade over undeclared food dyes - WCPO 9 News",
-      "slug": "fda-issues-recall-for-over-122k-cases-of-gatorade-over-undeclared-food-dyes-wcpo-9-news",
-      "date": "2026-10-06",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: FDA issues recall for over 122k cases of Gatorade over undeclared food dyes - WCPO 9 News\nSource: Google News\nDate: Tue, 06 Oct 2026 13:10:37 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "FDA issues recall for over 122k cases of Gatorade over undeclared food dyes - WCPO 9 News",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPRXBwU0p5V1VZbEI5aGFZM2JYa0FNOWVpa01LdE5QdzAxa05YckQxeG4tRmQyeXNibnJoMXFyRlpWd0c0Q3V6N0hRb0x1aE83TTVoakJzSVJneWRiRkVCS05DSE43eXhmZDZnR1o4WHNaTm82dGhXc0h2Ykg3TklJRmhranpBckNJdjlFalRQWEFROHcyYXE4OUhYekppbUdDcVdZWGpiNThLYUluaGNJZnAxWTNwZw?oc=5",
-      "fetched_at": "2026-10-06T17:25:09.127208+00:00",
       "is_long_form": false
     }
   ]
