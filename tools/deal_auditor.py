@@ -1310,6 +1310,9 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
 
         fk_aff_url = make_flipkart_affiliate_url(final_url)
 
+        fk_asin = amz_comp.get("asin", "") if amz_comp else ""
+        keepa_url = f"https://graph.keepa.com/pricehistory.png?domain=10&asin={fk_asin}&range=90&amazon=1&new=1&bb=0" if fk_asin else ""
+
         return {
             "platform": "flipkart",
             "asin": pid or "FLIPKART",
@@ -1321,6 +1324,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             "lowest_90d": lowest_90d,
             "all_time_low": float(hist_fk.get("all_time_low") or lowest_90d),
             "all_time_date": str(hist_fk.get("all_time_date") or ""),
+            "keepa_graph_url": keepa_url,
             "savings_mrp_inr": savings_inr,
             "discount_mrp_pct": discount_mrp_pct,
             "rating": 4.4,
@@ -1351,7 +1355,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             "mrp_mismatch": amz_comp.get("mrp_mismatch", False) if amz_comp else False,
             "mrp_diff_pct": amz_comp.get("mrp_diff_pct", 0.0) if amz_comp else 0.0,
             "mrp_mismatch_msg": amz_comp.get("mrp_mismatch_msg", "") if amz_comp else "",
-            "chart_type": "svg",
+            "chart_type": "keepa" if keepa_url else "svg",
             "svg_chart": chart_svg,
             "verdict": f"🔥 BEST VALUE ON {winner_platform.upper()}" if winner_platform != "tie" else "🟢 PRICE MATCHED DEAL",
             "verdict_color": "#10b981",
