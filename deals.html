@@ -591,17 +591,30 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
   text-decoration:underline;
 }
 
-/* Bank & Card Offers Pro-Tip Box */
+/* Bank & Card Offers Pro-Tip Box (Interactive Click-to-Expand) */
 .bank-offers-hint-box{
   background:linear-gradient(135deg, rgba(16,185,129,0.12), rgba(6,78,59,0.22));
   border:1px solid rgba(16,185,129,0.35);
   border-radius:12px;
-  padding:12px 16px;
+  padding:14px 16px;
   margin-top:12px;
   margin-bottom:6px;
   display:flex;
+  flex-direction:column;
+  gap:10px;
+  cursor:pointer;
+  transition:all .2s ease;
+  user-select:none;
+}
+.bank-offers-hint-box:hover{
+  border-color:rgba(16,185,129,0.6);
+  box-shadow:0 4px 14px rgba(16,185,129,0.15);
+}
+.bank-offers-header{
+  display:flex;
   align-items:flex-start;
   gap:12px;
+  width:100%;
 }
 .bank-offers-icon{
   font-size:1.35rem;
@@ -612,14 +625,33 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
 .bank-offers-content{
   flex:1;
 }
+.bank-offers-title-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:4px;
+}
 .bank-offers-title{
   font-size:.85rem;
   font-weight:800;
   color:#6ee7b7;
-  margin-bottom:3px;
   display:flex;
   align-items:center;
   gap:6px;
+}
+.bank-offers-toggle-pill{
+  font-size:.72rem;
+  font-weight:700;
+  color:#0f172a;
+  background:#6ee7b7;
+  padding:3px 9px;
+  border-radius:12px;
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+  transition:transform .2s ease;
 }
 .bank-offers-desc{
   font-size:.78rem;
@@ -629,6 +661,95 @@ footer{background:var(--card-inner);border-top:1px solid var(--border);padding:2
 .bank-offers-desc strong{
   color:#fef08a;
 }
+.bank-offers-drawer{
+  margin-top:6px;
+  padding-top:12px;
+  border-top:1px dashed rgba(16,185,129,0.3);
+  display:none;
+  cursor:default;
+}
+.bank-offers-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+@media (max-width: 640px){
+  .bank-offers-grid{
+    grid-template-columns:1fr;
+  }
+}
+.bank-offers-col{
+  background:rgba(15,23,42,0.6);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:10px;
+  padding:12px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.bank-offers-col-title{
+  font-size:.8rem;
+  font-weight:800;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.bank-offers-col-title.amazon{
+  color:#fbbf24;
+}
+.bank-offers-col-title.flipkart{
+  color:#38bdf8;
+}
+.bank-offers-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+.bank-offers-list li{
+  font-size:.75rem;
+  color:#cbd5e1;
+  line-height:1.45;
+  display:flex;
+  align-items:flex-start;
+  gap:6px;
+}
+.bank-offers-list li strong{
+  color:#fff;
+}
+.btn-bank-store{
+  margin-top:auto;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  padding:8px 12px;
+  border-radius:7px;
+  font-size:.75rem;
+  font-weight:700;
+  text-decoration:none;
+  text-align:center;
+  transition:all .18s ease;
+}
+.btn-bank-store.amazon{
+  background:linear-gradient(135deg, #f59e0b, #d97706);
+  color:#0f172a;
+}
+.btn-bank-store.amazon:hover{
+  background:linear-gradient(135deg, #fbbf24, #f59e0b);
+  box-shadow:0 3px 10px rgba(245,158,11,0.3);
+}
+.btn-bank-store.flipkart{
+  background:linear-gradient(135deg, #0284c7, #0369a1);
+  color:#fff;
+}
+.btn-bank-store.flipkart:hover{
+  background:linear-gradient(135deg, #38bdf8, #0284c7);
+  box-shadow:0 3px 10px rgba(2,132,199,0.3);
+}
+
 
 /* Competitor Manual Input Drawer & Alternative Search Bar */
 .compare-drawer-wrap{
@@ -1519,15 +1640,75 @@ async function runAudit(competitorUrl = '') {
           </div>
         </div>
 
-        <!-- Pro-Tip: Bank & Card Offers Advice Banner -->
-        <div class="bank-offers-hint-box">
-          <span class="bank-offers-icon">💳</span>
-          <div class="bank-offers-content">
-            <div class="bank-offers-title">
-              Smart Buyer Pro-Tip: Check Active Bank &amp; Card Offers for Maximum Savings
+        <!-- Pro-Tip: Bank & Card Offers Advice Banner (Interactive Expandable) -->
+        <div class="bank-offers-hint-box" onclick="toggleBankOffersDrawer(event)" id="bank-offers-box" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleBankOffersDrawer(event);}" aria-expanded="false" title="Click to view or hide active credit/debit card offers">
+          <div class="bank-offers-header">
+            <span class="bank-offers-icon">💳</span>
+            <div class="bank-offers-content">
+              <div class="bank-offers-title-row">
+                <span class="bank-offers-title">
+                  Smart Buyer Pro-Tip: Check Active Bank &amp; Card Offers for Maximum Savings
+                </span>
+                <span class="bank-offers-toggle-pill" id="bank-offers-toggle-pill">
+                  🔍 View Card Deals ▾
+                </span>
+              </div>
+              <div class="bank-offers-desc">
+                The prices shown above reflect the live listed store prices. <strong>Always check the &ldquo;Bank Offers&rdquo; or &ldquo;Partner Offers&rdquo; section on the product page before payment</strong> — credit/debit card instant discounts (e.g., HDFC, ICICI, SBI, Axis) and no-cost EMI cashback often shave off an additional <strong>₹1,000 to ₹5,000+</strong>, delivering the true lowest out-of-pocket price!
+              </div>
             </div>
-            <div class="bank-offers-desc">
-              The prices shown above reflect the live listed store prices. <strong>Always check the &ldquo;Bank Offers&rdquo; or &ldquo;Partner Offers&rdquo; section on the product page before payment</strong> — credit/debit card instant discounts (e.g., HDFC, ICICI, SBI, Axis) and no-cost EMI cashback often shave off an additional <strong>₹1,000 to ₹5,000+</strong>, delivering the true lowest out-of-pocket price!
+          </div>
+
+          <!-- Expanded Dual-Store Bank & Card Deals Breakdown -->
+          <div class="bank-offers-drawer" id="bank-offers-drawer" onclick="event.stopPropagation()">
+            <div class="bank-offers-grid">
+              <!-- Amazon Card Deals Column -->
+              <div class="bank-offers-col">
+                <div class="bank-offers-col-title amazon">
+                  <span>🟠</span> Amazon India Bank &amp; Card Savings
+                </div>
+                <ul class="bank-offers-list">
+                  <li>
+                    <span>💳</span>
+                    <div><strong>Amazon Pay ICICI Card:</strong> Flat 5% unlimited cashback for Prime, 3% for Non-Prime (zero maximum cap).</div>
+                  </li>
+                  <li>
+                    <span>🏦</span>
+                    <div><strong>Instant Bank Discounts:</strong> 7.5% – 10% instant discount on leading partner cards (SBI / HDFC / ICICI / Axis) on eligible order totals.</div>
+                  </li>
+                  <li>
+                    <span>⏱️</span>
+                    <div><strong>No-Cost EMI:</strong> 3 &amp; 6-month zero-interest installments available on all major credit cards.</div>
+                  </li>
+                </ul>
+                <a href="${amz.url || d.affiliate_url || 'https://www.amazon.in'}" onclick="handleSmartStoreClick(event, this.href, 'amazon')" target="_blank" rel="nofollow noopener sponsored" class="btn-bank-store amazon">
+                  🏷️ Check Live Bank Offers on Amazon ↗
+                </a>
+              </div>
+
+              <!-- Flipkart Card Deals Column -->
+              <div class="bank-offers-col">
+                <div class="bank-offers-col-title flipkart">
+                  <span>🔵</span> Flipkart Bank &amp; Card Savings
+                </div>
+                <ul class="bank-offers-list">
+                  <li>
+                    <span>💳</span>
+                    <div><strong>Flipkart Axis Bank Card:</strong> Flat 5% unlimited cashback directly credited to your card statement.</div>
+                  </li>
+                  <li>
+                    <span>🏦</span>
+                    <div><strong>Instant Bank Discounts:</strong> 7.5% – 10% instant discount on partner cards (Axis / SBI / Kotak / HDFC) on eligible cart amounts.</div>
+                  </li>
+                  <li>
+                    <span>⚡</span>
+                    <div><strong>Flipkart Pay Later &amp; EMI:</strong> Up to ₹250 instant discount on 1st transaction + easy monthly installments.</div>
+                  </li>
+                </ul>
+                <a href="${toFlipkartAffiliateUrl(fk.url || d.flipkart_search_url || 'https://www.flipkart.com')}" onclick="handleSmartStoreClick(event, this.href, 'flipkart')" target="_blank" rel="nofollow noopener sponsored" class="btn-bank-store flipkart">
+                  🏷️ Check Live Bank Offers on Flipkart ↗
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -2391,6 +2572,22 @@ function updateDynamicAuditLabels(d, lang) {
   if (cp2) cp2.innerHTML = dict.lbl_curve_point2.replace('{mrp}', d.mrp.toLocaleString('en-IN'));
   const cp3 = document.getElementById('dyn-curve-point3');
   if (cp3) cp3.innerHTML = dict.lbl_curve_point3;
+}
+
+function toggleBankOffersDrawer(event) {
+  if (event && event.target && event.target.closest('a')) return;
+  const drawer = document.getElementById('bank-offers-drawer');
+  const pill = document.getElementById('bank-offers-toggle-pill');
+  const box = document.getElementById('bank-offers-box');
+  if (!drawer) return;
+  const isHidden = drawer.style.display === 'none' || !drawer.style.display;
+  drawer.style.display = isHidden ? 'block' : 'none';
+  if (pill) {
+    pill.innerHTML = isHidden ? 'Hide Card Deals ▴' : '🔍 View Card Deals ▾';
+  }
+  if (box) {
+    box.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+  }
 }
 
 // Multi-Theme Background Selector
