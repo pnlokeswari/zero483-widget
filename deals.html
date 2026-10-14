@@ -1793,29 +1793,9 @@ async function runAudit(competitorUrl = '') {
         </div>
 
         <div class="audit-grid" style="margin-top:14px">
-          <!-- Buying Insights & Verdict Banner -->
           <div class="audit-left" style="width:100%">
-            <!-- Fluctuation Range Bar -->
-            <div class="fluctuation-spread-bar">
-              <span style="color:var(--muted)">📉 <strong id="dyn-lbl-spread">${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).lbl_spread}</strong></span>
-              <span style="color:var(--brand-glow);font-weight:700">${d.price_range_str}</span>
-            </div>
-
-            <!-- Buying Verdict Banner -->
-            <div class="verdict-banner" id="dyn-verdict-banner" style="border-left-color:${v.color}">
-              <div style="font-weight:800;font-size:1.02rem;color:${v.color};margin-bottom:4px" id="dyn-verdict-title">
-                ${v.title}
-              </div>
-              <div style="font-size:.82rem;color:var(--text);line-height:1.5" id="dyn-verdict-reason">
-                ${v.reason}
-              </div>
-              <div style="font-size:.76rem;color:var(--muted);margin-top:8px;padding-top:6px;border-top:1px solid var(--border)" id="dyn-verdict-meta">
-                📊 ${hasComparison ? 'Comparison Verified' : 'Single-Store Deep Audit'} • 🛡️ 100% Authentic Packaging MRP Check
-              </div>
-            </div>
-
-            <!-- Actions -->
-            <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+            <!-- Share & Action Bar -->
+            <div style="display:flex;gap:10px;margin-top:6px;flex-wrap:wrap">
               <a href="${getDealShareUrl(d, currentLang)}" target="_blank" rel="noopener noreferrer" class="btn-deal-whatsapp" id="dyn-btn-whatsapp" title="Share full comparison breakdown on WhatsApp">
                 💬 ${(TRANSLATIONS[currentLang] || TRANSLATIONS.en).btn_deal_whatsapp}
               </a>
