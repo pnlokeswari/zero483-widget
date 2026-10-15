@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-10-14T22:39:29.276868+00:00",
+  "last_updated": "2026-10-15T00:54:31.976558+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "f1ce33ef9020",
+      "title": "Reports of discolored tablets lead FDA to recall Amazon-branded acetaminophen bottles - KCRA",
+      "slug": "reports-of-discolored-tablets-lead-fda-to-recall-amazon-branded-acetaminophen-bottles-kcra",
+      "date": "2026-10-14",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: Reports of discolored tablets lead FDA to recall Amazon-branded acetaminophen bottles - KCRA\nSource: Google News\nDate: Wed, 14 Oct 2026 14:40:00 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Reports of discolored tablets lead FDA to recall Amazon-branded acetaminophen bottles - KCRA",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdFcya0ZRZmROTGxMaUstd25kY2h4TkNSQzYxS1pIcGt5VWx2d3dPWVliem1IczdpQTlKZUdaZlJRaXAxWUFyei1BWWR0dmVCTDRGVEFuRHd2azlsQzVDcFZ3cUdDa2RTdVBiVW9fZHA1WHEwZVZTZHRsNzBOUVBaQU53ZndrODEyZGZqLXZFdmg3OVNBZmVaOWVn?oc=5",
+      "fetched_at": "2026-10-15T00:53:43.923330+00:00",
+      "is_long_form": false
+    },
     {
       "id": "95a07dbb69a4",
       "title": "CareLink™ SmartSync™ Device Manager",
@@ -507,6 +525,24 @@
       "is_long_form": false
     },
     {
+      "id": "5283062fd5d3",
+      "title": "Asahi Kasei wins FDA approval for Hovilpri - The Pharma Letter",
+      "slug": "asahi-kasei-wins-fda-approval-for-hovilpri-the-pharma-letter",
+      "date": "2026-10-12",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: Asahi Kasei wins FDA approval for Hovilpri - The Pharma Letter\nSource: Google News\nDate: Mon, 12 Oct 2026 08:10:13 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Asahi Kasei wins FDA approval for Hovilpri - The Pharma Letter",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQLW9wOFBDRVVxUkZhT3pLVjBqdkltSHNBcGVQdGVqX0R5LVhlcl9zR0VSSjVfbWlpU213cEdzTEVfRWFPZmpEdmtfMnlRaUdOVllNNzhqWDdPbUJJT2J6enZmRDdRVk9QYzRnX3FuNXBkbDVoR2JGNUpIYVM2aFFUNE9GdWItRTQxRDdDejRSWQ?oc=5",
+      "fetched_at": "2026-10-15T00:54:08.380354+00:00",
+      "is_long_form": false
+    },
+    {
       "id": "b55e17b267b7",
       "title": "Biosimilars: FDA finalizes guidance on postapproval manufacturing changes - RAPS",
       "slug": "biosimilars-fda-finalizes-guidance-on-postapproval-manufacturing-changes-raps",
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiywNBVV95cUxQV1NMcTdkbFZwcVpKRWphcWw0WW5yZVlqRU51emd1RmFNdGZURkZ2dW5hZldTanJRVW1lVzVlM2xncEFJRFlPd2RVQVBTWVlWVGhyUDVScXlmT3lUTVc0a2ptN0tFcS1iZFViSUt4VV91R0J4RWp0bkNFMzhWUDVsaWdYUzZ6M3h6ajlGYkhRRjBIQm5DVkJzcGZQODJ3eTEyOTI1ajhNXzVnSzh0WWhJRmZnNkZ4eTNEamhRZndGMHlFOTdTQkt6Y3FKLU9VSExfX25LN0h5VTZpYjlIRDJnaFkxX3VNc1JISXVOWWFER3Z0b2szXzV5ekpCcm5vb2R2THBUMjdLNDFmVFBtYWVNVDVzRUtNenI2bFU5MThMRWhVSl9SWTJqdkQ3SFhuMGpnQkQxODlWRGdRdmdQVkhJU2dGaFI0Q1hEQ2lQRkViQVd2el9JaGluTWp0ZE4xajFuTUxYTHNOYllfQjJHR0h0UXJ3ZE1vby1YWTYxSk9HU1dScC1reGZvYUYzZnRZaDJXRjZUNmxEMURER0tZbjloekFEdUo0U3NTQ3VodXJzOE01T3JyblNqWjNRdHM2WjM4LV9NcDVkZXdxQm8?oc=5",
       "fetched_at": "2026-10-09T16:36:16.872531+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "b4c8c67c23d4",
-      "title": "Teva wins FDA approval for monthly schizophrenia injection Weltruza - Reuters",
-      "slug": "teva-wins-fda-approval-for-monthly-schizophrenia-injection-weltruza-reuters",
-      "date": "2026-10-09",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Teva wins FDA approval for monthly schizophrenia injection Weltruza - Reuters\nSource: Google News\nDate: Fri, 09 Oct 2026 11:47:05 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Teva wins FDA approval for monthly schizophrenia injection Weltruza - Reuters",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOXNGN3pjSGNMdGluU1gwMzRlYkdqNW14dVFIRkhBLUFudWxKdk85SUxnaWk4SGVQUDFTbFZlS2FhQTVJeXJvMjFTR25XcmpKVEM1SHlUZlY0czJsMDJGS1N1aFdzTk5wZldTWFkyVVhqdE5KZjdjQkpBd0RScmRiajlDRGtZSmNVUEQwbFNXbGFqaXplNjRjMjhqTnFSOGtWeWsxVE42T3J0ZVkwaFZKX2QwVFI3MEk?oc=5",
-      "fetched_at": "2026-10-09T16:36:11.854169+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "29b6e8e0ad2e",
-      "title": "New FDA approval for Roche’s Tecentriq - The Pharma Letter",
-      "slug": "new-fda-approval-for-roche-s-tecentriq-the-pharma-letter",
-      "date": "2026-10-09",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: New FDA approval for Roche’s Tecentriq - The Pharma Letter\nSource: Google News\nDate: Fri, 09 Oct 2026 07:53:21 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "New FDA approval for Roche’s Tecentriq - The Pharma Letter",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWXJQWTc0M1RMZXlualR3V0VLLXExTHZzM0RaV3NXWXdibnB3MHlZVE9IYlI3R0ltb3NfcldzOWZCZENRZFY1Y3lucVpxaUlNWDRtV2wtOEJUektqWWZNQkFLMnF4NnJqRGdSMWlNQkdwZWM5ckNpSzZveXlvYUh0NmpsVDRPX2o3MVJJ?oc=5",
-      "fetched_at": "2026-10-09T09:38:57.846483+00:00",
       "is_long_form": false
     }
   ]
