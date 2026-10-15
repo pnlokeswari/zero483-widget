@@ -5,6 +5,8 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-warning-letter-puts-walmart-nyse-wmt-marketplace-compliance-under-investor-scrutiny-foreign-policy-journal.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/new-weight-loss-drug-fda-philstar-life.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/reports-of-discolored-tablets-lead-fda-to-recall-amazon-branded-acetaminophen-bottles-kcra.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/carelink-smartsync-device-manager.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/the-role-that-503b-outsourcing-and-compounding-pharmacies-actually-play-in-filling-supply-gaps-pharmaceutical-executiv.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -53,6 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/supplement-powder-recall-fda-warns-of-potential-cardiovascular-problems-the-healthy.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/ema-clinical-trial-applications-advice-pilot-becomes-permanent-the-pharma-letter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/hcw-biologics-receives-fda-guidance-for-cancer-drug-trial-by-investing-com-investing-com-india.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/olanzapine-lai-weltruza-receives-fda-approval-for-schizophrenia-psychiatric-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/teva-announces-u-s-food-and-drug-administration-fda-approval-of-weltruza-olanzapine-for-extended-release-injectabl.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
