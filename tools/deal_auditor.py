@@ -147,8 +147,9 @@ def get_genuine_price_history(platform: str, product_id: str) -> Dict[str, Any]:
                     except Exception:
                         pass
 
-            if real_low > 0 or mrp > 0 or all_time_low > 0:
+            if real_low > 0 or mrp > 0 or all_time_low > 0 or cur > 0:
                 result = {
+                    "name": str(data.get("name") or ""),
                     "lowest_price": real_low,
                     "avg_price": avg1mon,
                     "cur_price": cur,
@@ -1257,11 +1258,8 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                                         cand_low = cand_title.lower()
                                         if any(bad in cand_low for bad in ["back cover", "flip cover", "case for", "screen guard", "tempered glass"]):
                                             continue
-                                        if pid and cand_id != pid:
-                                            # Enforce exact variant / storage match so we NEVER replace a 64GB variant with 128GB!
-                                            orig_specs, _ = extract_key_specs(product_title)
-                                            if not matches_variant_specs(cand_title, orig_specs, product_title):
-                                                continue
+                                        if pid and cand_id.strip().upper() != pid.strip().upper():
+                                            continue
                                         pricing = val.get("pricing", {})
                                         c_p = 0.0
                                         c_m = 0.0
@@ -1292,9 +1290,18 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                 product_title = str(bench["title"])
             if bench.get("fk_url") and not final_url.lower().startswith("http"):
                 final_url = str(bench["fk_url"])
+
         # Genuine price history for primary Flipkart audit
         hist_fk = get_genuine_price_history("flipkart", pid) if pid else {}
         real_fk_low = float(hist_fk.get("lowest_price") or 0)
+        hist_cur = float(hist_fk.get("cur_price") or 0)
+
+        # If current_price could not be scraped directly, use the verified live price for this exact PID
+        if current_price == 0.0 and hist_cur > 0:
+            current_price = hist_cur
+
+        if (not product_title or product_title.startswith("Flipkart Product")) and hist_fk.get("name"):
+            product_title = str(hist_fk["name"])
 
         if real_fk_low > 0:
             lowest_90d = min(current_price, real_fk_low) if current_price > 0 else real_fk_low
