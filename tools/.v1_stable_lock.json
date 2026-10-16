@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0-stable",
+  "name": "VerifyFirst.in Frozen Release",
+  "status": "LOCKED",
+  "description": "Production release for verifyfirst.co.in. This file is frozen and must never be edited during daily zero483-deals development.",
+  "locked_files": {
+    "tools/deal_auditor_v1.py": "b92f31975fafd8b56fe5b1c2d1045ab39aa49e01578bfbc2036d776dd2f02531"
+  },
+  "created_at": "2026-10-16T19:35:00+05:30"
+}
