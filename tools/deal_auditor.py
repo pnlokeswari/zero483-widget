@@ -649,19 +649,49 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
                 soup_d = BeautifulSoup(r_direct.text, "html.parser")
                 fk_highlights = extract_flipkart_highlights(soup_d)
                 h1_el = soup_d.select_one("span.B_NuCI") or soup_d.select_one("h1")
-                if h1_el and h1_el.get_text(strip=True):
-                    fk_title = h1_el.get_text(strip=True)
+                raw_h1 = h1_el.get_text(strip=True) if h1_el else ""
+                m_desc = soup_d.select_one("meta[name='description']") or soup_d.select_one("meta[property='og:description']")
+                desc_content = m_desc.get("content", "") if m_desc else ""
+                m_desc_title = re.search(r"Buy\s+(.*?)\s+(?:for\s+Rs\.|\s*Online|\s*from\s+Flipkart)", desc_content, re.I)
+                if m_desc_title and len(m_desc_title.group(1).strip()) > 10:
+                    fk_title = m_desc_title.group(1).strip()
+                elif soup_d.title and soup_d.title.string:
+                    clean_t = soup_d.title.string.strip()
+                    clean_t = re.sub(r"^(?:Buy\s+)?(.*?)(?:\s+-\s+Price\s+in\s+India.*|\s+Online\s+@.*|\s*\|\s*Flipkart\.com.*)?$", r"\1", clean_t, flags=re.I)
+                    if clean_t and not any(clean_t.endswith(x) for x in ["...", "…"]):
+                        fk_title = clean_t.strip()
+                if not fk_title and raw_h1:
+                    fk_title = re.sub(r"(\.\.\.|\u2026).*$", "", raw_h1).strip()
+
+                fk_swa_qty = ""
                 for s in soup_d.find_all("script"):
                     txt = s.string or ""
                     if "window.__INITIAL_STATE__" in txt:
                         parts = re.split(r"window\.__INITIAL_STATE__\s*=\s*", txt, maxsplit=1)
                         if len(parts) > 1:
-                            data = json.loads(parts[1].strip().rstrip(";"))
-                            ppd = data.get("multiWidgetState", {}).get("pageDataResponse", {}).get("pageContext", {}).get("fdpEventTracking", {}).get("events", {}).get("psi", {}).get("ppd", {})
-                            if ppd:
-                                cur_p = float(ppd.get("fsp") or ppd.get("finalPrice") or 0)
-                                fk_scraped_mrp = float(ppd.get("mrp") or 0)
+                            try:
+                                data = json.loads(parts[1].strip().rstrip(";"))
+                                page_ctx = data.get("multiWidgetState", {}).get("pageDataResponse", {}).get("pageContext", {})
+                                psi = page_ctx.get("fdpEventTracking", {}).get("events", {}).get("psi", {})
+                                ppd = psi.get("ppd", {})
+                                if ppd:
+                                    cur_p = float(ppd.get("fsp") or ppd.get("finalPrice") or 0)
+                                    fk_scraped_mrp = float(ppd.get("mrp") or 0)
+                                swa_list = psi.get("swa", [])
+                                if isinstance(swa_list, list):
+                                    for swa_item in swa_list:
+                                        if isinstance(swa_item, dict):
+                                            a_name = str(swa_item.get("attributeName", "")).lower()
+                                            a_val = str(swa_item.get("attributeValue", "")).strip()
+                                            if a_name in ["quantity", "size", "capacity", "ram", "storage", "weight"] and a_val:
+                                                fk_swa_qty = a_val
+                                                break
+                            except Exception:
+                                pass
                         break
+
+                if fk_swa_qty and fk_swa_qty.lower() not in fk_title.lower():
+                    fk_title = f"{fk_title} ({fk_swa_qty})".strip()
 
                 # HTML fallback for price and MRP if INITIAL_STATE was incomplete
                 if cur_p == 0.0:
@@ -1097,6 +1127,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         mrp = 0.0
         fk_highlights: list[str] = []
         is_sold_out_direct = False
+        fk_product_image = ""
 
         if "flipkart.com" in final_url.lower() and "/search?" not in final_url.lower():
             try:
@@ -1109,16 +1140,26 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                     if "sold out" in page_txt_low or "currently unavailable" in page_txt_low:
                         is_sold_out_direct = True
                     
-                    # 1. Title Extraction
+                    # 1. Title Extraction: Check meta description / og:title first if H1 is truncated with ellipsis
                     h1_el = soup_page.select_one("span.B_NuCI") or soup_page.select_one("h1")
-                    if h1_el and h1_el.get_text(strip=True):
-                        product_title = h1_el.get_text(strip=True)
+                    raw_h1 = h1_el.get_text(strip=True) if h1_el else ""
+                    m_desc = soup_page.select_one("meta[name='description']") or soup_page.select_one("meta[property='og:description']")
+                    desc_content = m_desc.get("content", "") if m_desc else ""
+                    m_desc_title = re.search(r"Buy\s+(.*?)\s+(?:for\s+Rs\.|\s*Online|\s*from\s+Flipkart)", desc_content, re.I)
+                    
+                    if m_desc_title and len(m_desc_title.group(1).strip()) > 10:
+                        product_title = m_desc_title.group(1).strip()
                     elif soup_page.title and soup_page.title.string:
                         clean_t = soup_page.title.string.strip()
-                        clean_t = re.sub(r"^(?:Buy\s+)?(.*?)(?:\s+Online\s+@.*|\s*\|\s*Flipkart\.com.*)?$", r"\1", clean_t, flags=re.I)
-                        product_title = clean_t.strip()
+                        clean_t = re.sub(r"^(?:Buy\s+)?(.*?)(?:\s+-\s+Price\s+in\s+India.*|\s+Online\s+@.*|\s*\|\s*Flipkart\.com.*)?$", r"\1", clean_t, flags=re.I)
+                        if clean_t and not any(clean_t.endswith(x) for x in ["...", "…"]):
+                            product_title = clean_t.strip()
+                    
+                    if not product_title and raw_h1:
+                        product_title = re.sub(r"(\.\.\.|\u2026).*$", "", raw_h1).strip()
 
-                    # 2. Extract Price & MRP directly from __INITIAL_STATE__
+                    # 2. Extract Price, MRP, Variant Quantity (swa), and Images directly from __INITIAL_STATE__
+                    fk_swa_qty = ""
                     for s in soup_page.find_all("script"):
                         txt = s.string or ""
                         if "window.__INITIAL_STATE__" in txt:
@@ -1127,17 +1168,38 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                                 if len(parts) > 1:
                                     data = json.loads(parts[1].strip().rstrip(";"))
                                     page_ctx = data.get("multiWidgetState", {}).get("pageDataResponse", {}).get("pageContext", {})
-                                    ppd = page_ctx.get("fdpEventTracking", {}).get("events", {}).get("psi", {}).get("ppd", {})
+                                    psi = page_ctx.get("fdpEventTracking", {}).get("events", {}).get("psi", {})
+                                    ppd = psi.get("ppd", {})
                                     if ppd:
                                         fsp = ppd.get("fsp") or ppd.get("finalPrice") or 0
                                         m_val = ppd.get("mrp") or 0
                                         if fsp > 0: current_price = float(fsp)
                                         if m_val > 0: mrp = float(m_val)
+                                    swa_list = psi.get("swa", [])
+                                    if isinstance(swa_list, list):
+                                        for swa_item in swa_list:
+                                            if isinstance(swa_item, dict):
+                                                a_name = str(swa_item.get("attributeName", "")).lower()
+                                                a_val = str(swa_item.get("attributeValue", "")).strip()
+                                                if a_name in ["quantity", "size", "capacity", "ram", "storage", "weight"] and a_val:
+                                                    fk_swa_qty = a_val
+                                                    break
                             except Exception as pe:
                                 log.debug(f"Flipkart __INITIAL_STATE__ ppd parse error: {pe}")
                             break
 
-                    # 3. HTML fallback for Price & MRP if state didn't have it
+                    # Append verified quantity/variant size if missing from title
+                    if fk_swa_qty and fk_swa_qty.lower() not in product_title.lower():
+                        product_title = f"{product_title} ({fk_swa_qty})".strip()
+
+                    # 3. Authentic Flipkart Product Image Extraction
+                    for img_el in soup_page.select("img"):
+                        src = img_el.get("src") or ""
+                        if "rukminim" in src and "/image/" in src and "icons" not in src and "manifest.jpg" not in src:
+                            fk_product_image = re.sub(r"/image/\d+/\d+/", "/image/800/800/", src)
+                            break
+
+                    # 4. HTML fallback for Price & MRP if state didn't have it
                     if current_price == 0.0:
                         for p_sel in ["div.Nx9bqj.CxhGGd", "div._30jeq3._16Jk6d", "div.Nx9bqj", "div._30jeq3"]:
                             pel = soup_page.select_one(p_sel)
@@ -1328,7 +1390,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             "savings_mrp_inr": savings_inr,
             "discount_mrp_pct": discount_mrp_pct,
             "rating": 4.4,
-            "image_url": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800&auto=format&fit=crop&q=80",
+            "image_url": fk_product_image or "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800&auto=format&fit=crop&q=80",
             "affiliate_url": fk_aff_url,
             "direct_url": final_url,
             "price_range_str": f"₹{lowest_90d:,.0f} (Lowest Festival Dip) — ₹{mrp:,.0f} (Official Box MRP)",
