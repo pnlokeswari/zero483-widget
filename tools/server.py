@@ -259,7 +259,12 @@ def api_creator_brief(asin: str):
 @app.route("/healthz")
 @app.route("/ping")
 def healthz():
-    return jsonify({"status": "ok", "service": "zero483-deals-api", "time": time.time()}), 200
+    return jsonify({
+        "status": "ok",
+        "service": "zero483-deals-api",
+        "build": "2026-10-16-v2-efd8abb-swa",
+        "time": time.time()
+    }), 200
 
 
 # ═════════════════════════════════════════════════════════
