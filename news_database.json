@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-10-16T01:40:36.078041+00:00",
+  "last_updated": "2026-10-16T06:24:16.284864+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "db3ad6b1eff9",
+      "title": "Drug Shortage: Lisdexamfetamine Dimesylate Tablet, Chewable",
+      "slug": "drug-shortage-lisdexamfetamine-dimesylate-tablet-chewable",
+      "date": "2026-10-16",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Lisdexamfetamine Dimesylate Tablet, Chewable\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Lisdexamfetamine Dimesylate Tablet, Chewable",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-10-16T06:23:40.410740+00:00",
+      "is_long_form": false
+    },
     {
       "id": "051febabb9da",
       "title": "CDSCO waives export NOC for approved r-DNA drugs sold under new brand names - Business Standard",
@@ -216,6 +234,24 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-10-15T12:08:22.380391+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "61a0ad064d8e",
+      "title": "FDA Announces Nationwide Recall of Popular Pain Reliever Sold on Amazon - AOL.com",
+      "slug": "fda-announces-nationwide-recall-of-popular-pain-reliever-sold-on-amazon-aol-com",
+      "date": "2026-10-14",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: FDA Announces Nationwide Recall of Popular Pain Reliever Sold on Amazon - AOL.com\nSource: Google News\nDate: Wed, 14 Oct 2026 19:24:00 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "FDA Announces Nationwide Recall of Popular Pain Reliever Sold on Amazon - AOL.com",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONU1aTnI5a3JBclVIc2RsMnVJVXRhdW1YT0NpWTJwRDlIb1BHTjVtTW5xUUpVRWxxcHpJQzRXSjlSRmo1NHpCZjd2enNxZkhtbEtQYVhzTG50cWFOQ0JmU1lBUFRuUk9sV0JTaC1fMmtuTkI4WDBvdHBsdHZldXNVV09TMnh1eDM4cEh3?oc=5",
+      "fetched_at": "2026-10-16T06:23:35.032301+00:00",
       "is_long_form": false
     },
     {
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNd1RPelhRalplZTlhbWVqbEx6MmdKUWo2Q1JEU1NuLVUwOUp4MkVON2N6QUl2N2xLYjRmT2hmZ3RndWdlVDAwSWM0b25BUlRzLXBheERxWHZ2YWRYV0RybGcwRGlWbWo4YWJrOUFSb0toemREMTJSLUJDN1dUdFZEUTl1QU5ZOGNnUDNuUmdVTjdtQ2VCVV8tR1BRU0xNT0U1QnlYTWU2ZkpMUk9xVmRVbDFXVXozenlpaE9CVmp4NVo0aUU?oc=5",
       "fetched_at": "2026-10-12T23:14:02.107209+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "4889408deee0",
-      "title": "Hansoh Pharma's Aumolertinib Application Validated by EMA for EU Review - www.marketscreener.com",
-      "slug": "hansoh-pharma-s-aumolertinib-application-validated-by-ema-for-eu-review-www-marketscreener-com",
-      "date": "2026-10-12",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: Hansoh Pharma's Aumolertinib Application Validated by EMA for EU Review - www.marketscreener.com\nSource: European Medicines Agency\nDate: Mon, 12 Oct 2026 01:05:20 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Hansoh Pharma's Aumolertinib Application Validated by EMA for EU Review - www.marketscreener.com",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQUZoMXM3Z1lWSDZZem40eTZIT3FIeEJnYlZvUDdkcVJwVmYxRTQwMUp3NmZEM2RTQ1ZLUUpnMTFYeUpabjViTE9HNDFkZmU3TDhoVEVkNGZPTDlmanQ3d1dWY09RYWZDSi1ySzNFM2VwdGdXRHJVVWhYdGttMjFJMVp4b3BCYXJTMk14dWhsSUthSnZZR1hEOTNPb2lxWnBPT0VhcTNzU0pqWTdUTmlvQ2l6amxxeWhleHZuZmwwQnlTZw?oc=5",
-      "fetched_at": "2026-10-12T16:09:11.234571+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "051b79338032",
-      "title": "glp-1 weight loss drug fda approval august 2025 - Olhar Digital",
-      "slug": "glp-1-weight-loss-drug-fda-approval-august-2025-olhar-digital",
-      "date": "2026-10-12",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: glp-1 weight loss drug fda approval august 2025 - Olhar Digital\nSource: Google News\nDate: Mon, 12 Oct 2026 07:14:01 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "glp-1 weight loss drug fda approval august 2025 - Olhar Digital",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSFNRemtFcHoxVHJQNkFXamp6ZzB1ZTYzNWxyUDZHcnloTGttbVYzYnVhTzI3eDlMdDZfSVNVZVM4WDI1ZWVwMThhQkVzeGp0UzNaN3JDU25SYkp3REdPY3RyYklSYUo5Tkwyb3hoNEJsdzZwQ1B0UDFpOC1uOXJBeFJQRjN0Q2RCaTUyb2VGYkhfWUh0S0E?oc=5",
-      "fetched_at": "2026-10-12T16:08:48.373090+00:00",
       "is_long_form": false
     }
   ]
