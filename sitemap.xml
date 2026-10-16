@@ -5,6 +5,9 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-backs-revolution-s-pancreatic-cancer-drug-after-rapid-review-lifesciencesweden-se.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-panel-recommends-approval-for-eli-lilly-s-foundayo-ticker-l-gurufocus.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/domestic-manufacturing-is-a-meaningful-but-incomplete-answer-pharmaceutical-executive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-lisdexamfetamine-dimesylate-tablet-chewable.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-waives-export-noc-for-approved-r-dna-drugs-sold-under-new-brand-names-business-standard.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cochlear-implant-model-ci1012.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -52,7 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/john-oliver-reveals-massive-differences-in-fda-inspection-outcomes-for-overseas-drug-plants-the-mary-sue.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-bupivacaine-hydrochloride-epinephrine-bitartrate-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/asahi-kasei-wins-fda-approval-for-hovilpri-the-pharma-letter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/biosimilars-fda-finalizes-guidance-on-postapproval-manufacturing-changes-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-adds-new-warning-to-weight-loss-drugs-including-wegovy-www2-polskieradio-pl.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/this-amazon-brand-of-medication-is-being-recalled-see-the-affected-drug-usa-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
