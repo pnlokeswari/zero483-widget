@@ -9,8 +9,7 @@ from __future__ import annotations
 
 import re, math, logging, json, urllib.parse, time, pathlib
 from datetime import datetime, timedelta
-from typing import Dict, Any, Optional, Tuple, Iterable
-from dataclasses import dataclass, asdict
+from typing import Dict, Any, Optional, Tuple
 from bs4 import BeautifulSoup
 from curl_cffi import requests as cffi_requests
 
@@ -148,9 +147,8 @@ def get_genuine_price_history(platform: str, product_id: str) -> Dict[str, Any]:
                     except Exception:
                         pass
 
-            if real_low > 0 or mrp > 0 or all_time_low > 0 or cur > 0:
+            if real_low > 0 or mrp > 0 or all_time_low > 0:
                 result = {
-                    "name": str(data.get("name") or ""),
                     "lowest_price": real_low,
                     "avg_price": avg1mon,
                     "cur_price": cur,
@@ -532,396 +530,6 @@ def generate_dual_comparison_svg(
     )
 
 
-# ---------------------------------------------------------------------
-# Verification Engine & Match Models (Bidirectional Matcher)
-# ---------------------------------------------------------------------
-
-DEFAULT_MRP_TOLERANCE = 0.01  # 1%
-
-KNOWN_BRANDS = {
-    "acer", "apple", "asus", "bajaj", "boat", "bosch", "canon", "dell",
-    "fujifilm", "godrej", "haier", "hp", "huawei", "ifb", "jbl", "lg",
-    "lenovo", "mi", "microsoft", "motorola", "nikon", "nothing", "oneplus",
-    "oppo", "panasonic", "philips", "realme", "redmi", "samsung", "sony",
-    "tcl", "vivo", "voltas", "whirlpool", "xiaomi", "google"
-}
-
-# Critical variant patterns
-VARIANT_PATTERNS = [
-    # RAM / storage combinations: 8GB/128GB, 12 GB + 256 GB
-    r"\b\d+\s*gb\s*[/+x]\s*\d+\s*gb\b",
-    # Storage/RAM alone: 128GB, 8GB, 1TB
-    r"\b\d+\s*(?:gb|tb)\b",
-    # Display size: 43 inch, 6.7", 55-inch
-    r"\b\d+(?:\.\d+)?\s*(?:inch|inches|in|\"|″)\b",
-    # Capacity: 1.5L, 750 ml, 7 kg
-    r"\b\d+(?:\.\d+)?\s*(?:ml|l|litre|liter|litres|liters|kg|g)\b",
-    # Pack count
-    r"\b(?:pack\s*of|set\s*of)\s*\d+\b",
-    r"\b\d+\s*(?:pack|pcs|pieces|count)\b",
-    # Resolution / refresh rate
-    r"\b(?:hd|fhd|qhd|uhd|4k|8k)\b",
-    r"\b\d+\s*hz\b",
-    # Wattage / power
-    r"\b\d+\s*w\b",
-]
-
-
-@dataclass
-class MatchResult:
-    matched: bool
-    confidence: str
-    reason: str
-
-    source_title: str
-    candidate_title: str
-
-    source_mrp: float = 0.0
-    candidate_mrp: float = 0.0
-    mrp_difference_pct: Optional[float] = None
-    strict_mrp_match: bool = False
-    mrp_override_used: bool = False
-
-    brand_match: bool = False
-    exact_model_match: bool = False
-    variant_match: bool = False
-    title_similarity: float = 0.0
-
-    shared_model_tokens: list[str] = None
-    source_brand: str = ""
-    candidate_brand: str = ""
-
-    def to_dict(self) -> dict[str, Any]:
-        result = asdict(self)
-        result["shared_model_tokens"] = result["shared_model_tokens"] or []
-        return result
-
-
-def normalize_text(value: Any) -> str:
-    """Lowercase, normalize separators, and collapse whitespace."""
-    if value is None:
-        return ""
-    text = str(value).lower()
-    text = text.replace("&", " and ")
-    text = text.replace("_", " ")
-    text = re.sub(r"[\u2010-\u2015]", "-", text)
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
-
-
-def normalize_identifier(value: Any) -> str:
-    """Used for model/SKU comparisons."""
-    return re.sub(r"[^a-z0-9]", "", normalize_text(value))
-
-
-def extract_brand(title: str, known_brands: Iterable[str] = KNOWN_BRANDS) -> str:
-    """Finds a known brand as a standalone word."""
-    normalized = normalize_text(title)
-    words = set(re.findall(r"\b[a-z0-9]+\b", normalized))
-    for brand in known_brands:
-        if brand.lower() in words:
-            return brand.lower()
-    return ""
-
-
-def brands_match(source_title: str, candidate_title: str) -> tuple[bool, str, str]:
-    source_brand = extract_brand(source_title)
-    candidate_brand = extract_brand(candidate_title)
-    return (
-        bool(source_brand and candidate_brand and source_brand == candidate_brand),
-        source_brand,
-        candidate_brand,
-    )
-
-
-def extract_model_tokens(title: str) -> set[str]:
-    """Extracts likely product model/SKU alphanumeric tokens, ignoring spec units."""
-    if not title:
-        return set()
-    spec_units = {'gb', 'tb', 'mb', 'kb', 'gm', 'g', 'kg', 'ml', 'l', 'hz', 'khz', 'mhz', 'ghz', 'wh', 'ah', 'mah', 'mp', 'cm', 'mm', 'in', 'inch', 'w', 'v', 'rom', 'ram', 'x', 'fps', 'k', 'd'}
-    t = title.lower()
-    tokens: set[str] = set()
-    # 1. Connected tokens like reno16, sm-a556e, s24, 10a
-    raw_tokens = re.findall(r"\b[a-zA-Z0-9][a-zA-Z0-9._/-]{1,}[a-zA-Z0-9]\b", t)
-    for raw_token in raw_tokens:
-        norm = normalize_identifier(raw_token)
-        if len(norm) < 2:
-            continue
-        if any(re.fullmatch(r"\d+" + u, norm) for u in spec_units):
-            continue
-        if re.fullmatch(r"ip\d+[a-z]?", norm):
-            continue
-        has_l = any(c.isalpha() for c in norm)
-        has_d = any(c.isdigit() for c in norm)
-        if has_l and has_d:
-            tokens.add(norm)
-    # 2. Key series phrases e.g. 'reno 16' -> 'reno16', 'pixel 8' -> 'pixel8'
-    for m in re.finditer(r"\b(reno|pixel|galaxy|iphone|nord|redmi|narzo|iqoo|realme|edge)\s*(\d{1,3}[a-z]?)\b", t):
-        tokens.add(m.group(1) + m.group(2))
-    return tokens
-
-
-def get_shared_model_tokens(source_title: str, candidate_title: str) -> set[str]:
-    return extract_model_tokens(source_title) & extract_model_tokens(candidate_title)
-
-
-def has_exact_model_match(source_title: str, candidate_title: str) -> tuple[bool, set[str]]:
-    shared = get_shared_model_tokens(source_title, candidate_title)
-    return bool(shared), shared
-
-
-def normalize_variant(value: str) -> str:
-    value = normalize_text(value)
-    value = value.replace("inches", "inch")
-    value = value.replace("litres", "l").replace("liters", "l")
-    value = value.replace("litre", "l").replace("liter", "l")
-    value = re.sub(r"\s+", "", value)
-    return value
-
-
-def extract_variants(title: str) -> set[str]:
-    """Extracts meaningful product variants: storage, RAM, capacity, size, pack count."""
-    title = normalize_text(title)
-    found: set[str] = set()
-    for pattern in VARIANT_PATTERNS:
-        for match in re.findall(pattern, title, flags=re.IGNORECASE):
-            norm = normalize_variant(match)
-            if norm in ["2g", "3g", "4g", "5g"]:
-                continue
-            found.add(norm)
-    return found
-
-
-def _contains_conflicting_memory_specs(source_variants: set[str], candidate_variants: set[str]) -> bool:
-    source_combos = {item for item in source_variants if re.fullmatch(r"\d+gb[/+x]\d+gb", item)}
-    candidate_combos = {item for item in candidate_variants if re.fullmatch(r"\d+gb[/+x]\d+gb", item)}
-    if source_combos and candidate_combos and source_combos.isdisjoint(candidate_combos):
-        return True
-
-    storages = ["32gb", "64gb", "128gb", "256gb", "512gb", "1tb", "2tb"]
-    s_st = {v for v in source_variants if v in storages}
-    c_st = {v for v in candidate_variants if v in storages}
-    if s_st and c_st and s_st.isdisjoint(c_st):
-        return True
-
-    return False
-
-
-def variants_match(source_title: str, candidate_title: str) -> tuple[bool, set[str], set[str]]:
-    source_variants = extract_variants(source_title)
-    candidate_variants = extract_variants(candidate_title)
-    if _contains_conflicting_memory_specs(source_variants, candidate_variants):
-        return False, source_variants, candidate_variants
-    if not source_variants:
-        return True, source_variants, candidate_variants
-    return source_variants.issubset(candidate_variants), source_variants, candidate_variants
-
-
-STOP_WORDS = {
-    "a", "an", "and", "with", "for", "of", "the", "new", "latest",
-    "online", "buy", "india", "edition", "series", "model",
-    "product", "original", "official",
-}
-
-
-def title_tokens(title: str) -> set[str]:
-    tokens = set(re.findall(r"\b[a-z0-9]+\b", normalize_text(title)))
-    return {token for token in tokens if len(token) >= 2 and token not in STOP_WORDS}
-
-
-def jaccard_similarity(source_title: str, candidate_title: str) -> float:
-    source_tokens = title_tokens(source_title)
-    candidate_tokens = title_tokens(candidate_title)
-    if not source_tokens or not candidate_tokens:
-        return 0.0
-    intersection = source_tokens & candidate_tokens
-    union = source_tokens | candidate_tokens
-    return len(intersection) / len(union) if union else 0.0
-
-
-def parse_price(value: Any) -> float:
-    if value is None:
-        return 0.0
-    if isinstance(value, (int, float)):
-        return float(value)
-    text = str(value).strip()
-    if not text:
-        return 0.0
-    cleaned = re.sub(r"[^0-9.,]", "", text).replace(",", "")
-    try:
-        return float(cleaned)
-    except ValueError:
-        return 0.0
-
-
-def mrp_difference_pct(source_mrp: float, candidate_mrp: float) -> Optional[float]:
-    source_mrp = parse_price(source_mrp)
-    candidate_mrp = parse_price(candidate_mrp)
-    if source_mrp <= 0 or candidate_mrp <= 0:
-        return None
-    return abs(source_mrp - candidate_mrp) / source_mrp * 100
-
-
-def is_strict_mrp_match(
-    source_mrp: float,
-    candidate_mrp: float,
-    tolerance: float = DEFAULT_MRP_TOLERANCE,
-) -> bool:
-    """Missing MRP does not block match if model/variant matches."""
-    diff = mrp_difference_pct(source_mrp, candidate_mrp)
-    if diff is None:
-        return True
-    return diff <= (tolerance * 100)
-
-
-def match_products(
-    source_title: str,
-    candidate_title: str,
-    source_mrp: float = 0.0,
-    candidate_mrp: float = 0.0,
-    mrp_tolerance: float = DEFAULT_MRP_TOLERANCE,
-    allow_mrp_override: bool = True,
-) -> MatchResult:
-    """Comprehensive product matching engine with brand, exact model, variant & tolerance checks."""
-    s_low = source_title.lower()
-    c_low = candidate_title.lower()
-
-    # 1. Filter out accessories if original is not an accessory
-    accessories = [
-        "case for", "cover for", "back cover", "flip cover", "tempered glass",
-        "screen guard", "screen protector", "back panel", "pouch", "holster",
-        "camera lens protector", "camera guard", "cable", "charger", "adapter"
-    ]
-    if not any(acc in s_low for acc in accessories):
-        if any(acc in c_low for acc in accessories):
-            return MatchResult(
-                matched=False, confidence="NONE", reason="Candidate is an accessory",
-                source_title=source_title, candidate_title=candidate_title
-            )
-
-    # 2. Brand match
-    b_match, s_brand, c_brand = brands_match(source_title, candidate_title)
-    if s_brand and c_brand and s_brand != c_brand:
-        return MatchResult(
-            matched=False, confidence="NONE", reason=f"Brand mismatch ({s_brand} vs {c_brand})",
-            source_title=source_title, candidate_title=candidate_title,
-            brand_match=False, source_brand=s_brand, candidate_brand=c_brand
-        )
-
-    # 3. Model tokens match & conflict check
-    s_models = extract_model_tokens(source_title)
-    c_models = extract_model_tokens(candidate_title)
-    shared_tokens = s_models & c_models
-    exact_model = bool(shared_tokens)
-    if s_models and c_models and s_models.isdisjoint(c_models):
-        return MatchResult(
-            matched=False, confidence="NONE", reason=f"Model conflict ({', '.join(s_models)} vs {', '.join(c_models)})",
-            source_title=source_title, candidate_title=candidate_title,
-            brand_match=b_match, exact_model_match=False, variant_match=False,
-            shared_model_tokens=[], source_brand=s_brand, candidate_brand=c_brand
-        )
-
-    # 4. Storage & Variant match
-    v_match, s_vars, c_vars = variants_match(source_title, candidate_title)
-    if not v_match:
-        return MatchResult(
-            matched=False, confidence="NONE", reason="Variant mismatch",
-            source_title=source_title, candidate_title=candidate_title,
-            brand_match=b_match, exact_model_match=exact_model, variant_match=False,
-            shared_model_tokens=list(shared_tokens), source_brand=s_brand, candidate_brand=c_brand
-        )
-
-
-    # 6. Model sub-variant letters (e.g. 8a, 10a, reno16c)
-    def extract_subvar_tokens(models: set[str]) -> set[str]:
-        suffixes = set()
-        for tok in models:
-            m = re.search(r"\d+([a-z]{1,2})$", tok)
-            if m:
-                suffixes.add(m.group(1))
-        return suffixes
-
-    sub_s = extract_subvar_tokens(s_models)
-    sub_c = extract_subvar_tokens(c_models)
-    if sub_s != sub_c:
-        diff_token = list(sub_s ^ sub_c)[0]
-        return MatchResult(
-            matched=False, confidence="NONE", reason=f"Sub-variant modifier mismatch ({diff_token})",
-            source_title=source_title, candidate_title=candidate_title
-        )
-
-    # 7. Model family modifiers (Pro, Plus, Ultra, Max, FE, Lite)
-    model_family_modifiers = [
-        ("fe", r"\bfe\b"),
-        ("pro max", r"\bpro\s*max\b"),
-        ("pro", r"\bpro\b"),
-        ("plus", r"(?:\bplus\b|\d+\+)"),
-        ("ultra", r"\bultra\b"),
-        ("max", r"\bmax\b"),
-        ("neo", r"\bneo\b"),
-        ("lite", r"\blite\b")
-    ]
-    for mod_name, mod_pat in model_family_modifiers:
-        in_orig = bool(re.search(mod_pat, s_low))
-        in_cand = bool(re.search(mod_pat, c_low))
-        if in_cand != in_orig:
-            return MatchResult(
-                matched=False, confidence="NONE", reason=f"Modifier mismatch ({mod_name})",
-                source_title=source_title, candidate_title=candidate_title
-            )
-
-    similarity = jaccard_similarity(source_title, candidate_title)
-    diff_pct = mrp_difference_pct(source_mrp, candidate_mrp)
-    strict_mrp = is_strict_mrp_match(source_mrp, candidate_mrp, tolerance=mrp_tolerance)
-    mrp_override_used = False
-
-    matched = False
-    confidence = "LOW"
-    reason = ""
-
-    if exact_model:
-        matched = True
-        confidence = "HIGH"
-        reason = f"Exact model code match: {', '.join(shared_tokens)}"
-    elif (b_match or not s_brand) and v_match and similarity >= 0.20:
-        matched = True
-        confidence = "HIGH"
-        reason = f"Verified brand and specs with title similarity {similarity:.2f}"
-    else:
-        matched = False
-        confidence = "NONE"
-        reason = "Insufficient similarity"
-
-    if matched and diff_pct is not None and not strict_mrp:
-        if allow_mrp_override:
-            mrp_override_used = True
-            reason += f" (Note: MRP difference {diff_pct:.1f}%)"
-        else:
-            matched = False
-            confidence = "NONE"
-            reason = f"Rejected due to MRP difference ({diff_pct:.1f}%)"
-
-    return MatchResult(
-        matched=matched,
-        confidence=confidence,
-        reason=reason,
-        source_title=source_title,
-        candidate_title=candidate_title,
-        source_mrp=parse_price(source_mrp),
-        candidate_mrp=parse_price(candidate_mrp),
-        mrp_difference_pct=diff_pct,
-        strict_mrp_match=strict_mrp,
-        mrp_override_used=mrp_override_used,
-        brand_match=b_match,
-        exact_model_match=exact_model,
-        variant_match=v_match,
-        title_similarity=round(similarity, 3),
-        shared_model_tokens=list(shared_tokens),
-        source_brand=s_brand,
-        candidate_brand=c_brand,
-    )
-
-
 def extract_key_specs(title: str) -> Tuple[set, str]:
     """
     Extracts brand, model, storage/size/weight specs from a product title.
@@ -931,90 +539,90 @@ def extract_key_specs(title: str) -> Tuple[set, str]:
     """
     t_lower = title.lower()
 
-    # 1. RAM detection
-    ram_matches = re.findall(r"\b(\d+)\s*(?:gb|mb)\s*ram\b", t_lower)
+    # 1. Storage / Memory (e.g., 256GB, 128 GB, 512 GB, 1TB)
+    storage_matches = re.findall(r"\b(\d+)\s*(gb|tb|mb)\b", t_lower)
+    storage_specs = [f"{m[0]}{m[1]}" for m in storage_matches]
 
-    # 2. Storage / Memory
-    storage_matches = []
-    for m in re.findall(r"\b(\d+)\s*(gb|tb|mb)\b", t_lower):
-        val = m[0]
-        unit = m[1]
-        if re.search(r"\b" + re.escape(val) + r"\s*" + re.escape(unit) + r"\s*ram\b", t_lower):
-            continue
-        storage_matches.append(f"{val}{unit}")
+    # 2. Weight / Volume (e.g., 100g, 50ml, 1kg)
+    size_matches = re.findall(r"\b(\d+(?:\.\d+)?)\s*(g|gm|kg|ml|l|ltr)\b", t_lower)
+    size_specs = [f"{m[0]}{m[1]}" for m in size_matches]
 
-    # 3. Weight / Volume (exclude cellular 2g, 3g, 4g, 5g)
-    size_matches = []
-    for m in re.findall(r"\b(\d+(?:\.\d+)?)\s*(g|gm|kg|ml|l|ltr)\b", t_lower):
-        val, unit = m[0], m[1]
-        if unit == "g" and val in ["2", "3", "4", "5"]:
-            continue
-        size_matches.append(f"{val}{unit}")
-
-    # 4. Model modifiers
+    # 3. Model modifiers (e.g. pro max, pro, plus, ultra, mini)
     model_modifiers = []
-    for mod in ["pro max", "pro", "plus", "ultra", "mini", "fe", "neo", "lite"]:
+    for mod in ["pro max", "pro", "plus", "ultra", "mini", "neo", "lite"]:
         if re.search(r"\b" + re.escape(mod) + r"\b", t_lower):
             model_modifiers.append(mod)
+            break
 
-    # 5. Manufacturer Alphanumeric Model Codes
+    # 4. Manufacturer Alphanumeric Model Codes (e.g., UA43F5550FUXXL, WH1000XM5)
     model_codes = []
     for tok in re.findall(r"\b[A-Za-z0-9]{6,18}\b", title):
         tl = tok.lower()
         if any(c.isalpha() for c in tl) and any(c.isdigit() for c in tl):
             if not re.match(r"^\d+(?:gb|tb|mb|gm|kg|ml|ltr|cm|mm|hz|hrs|hr|mah|watts|w|inch|inches)$", tl):
-                if not re.match(r"^b0[a-z0-9]{8}$", tl):
+                if not re.match(r"^b0[a-z0-9]{8}$", tl):  # skip bare ASIN
                     model_codes.append(tok)
 
-    critical_specs = set(storage_matches + size_matches + model_modifiers)
+    critical_specs = set(storage_specs + size_specs + model_modifiers)
 
-    noise_words = {
-        "pack", "with", "for", "skin", "repairs", "enriched", "sensitive", "normal", "combo",
-        "free", "inches", "inch", "cm", "snapdragon", "dual", "sim", "phone", "mobile",
-        "onyx", "black", "blue", "gray", "grey", "white", "green", "yellow", "titanium",
-        "chrome", "silver", "gold", "stardust", "starfrost", "starshine", "lake", "midnight",
-        "olive", "clover", "amber", "graphite", "violet", "natural", "dark", "space", "deep",
-        "4g", "5g", "ai", "smartphone", "storage", "ram", "rom", "internal",
-        "hazel", "obsidian", "porcelain", "rose", "mint", "fog", "bay", "aloe", "coral",
-        "sage", "snow", "lemongrass", "charcoal", "twilight", "starry", "cream", "lavender",
-        "phantom", "sunset", "aurora", "emerald", "pearl", "ice", "lunar", "glacier"
-    }
-    storage_nums = {re.match(r"(\d+)", s).group(1) for s in storage_matches if re.match(r"(\d+)", s)}
-    ram_nums = set(ram_matches)
-
+    # Clean words for search while keeping model, numbers & specs (strip '&' so Flipkart search doesn't choke)
     cleaned = re.sub(r"[(),\[\]\-–/|&+]", " ", title)
     words = cleaned.split()
     query_tokens = []
     for w in words:
         wl = w.lower()
-        if wl in noise_words or wl.endswith("gb") or wl.endswith("tb") or wl.endswith("ram"):
-            continue
-        if wl in storage_nums or wl in ram_nums:
+        if wl in ["pack", "with", "for", "skin", "repairs", "enriched", "sensitive", "normal", "combo", "free", "inches", "inch", "cm"]:
             continue
         query_tokens.append(w)
-        if len(query_tokens) >= 4:
+        if len(query_tokens) >= 6:
             break
 
+    # If the product has an explicit manufacturer model code (like UA43F5550FUXXL), include it in the search query!
     for mc in model_codes[:1]:
         if mc.lower() not in " ".join(query_tokens).lower():
             query_tokens.append(mc)
 
-    for mod in model_modifiers:
-        if mod.lower() not in " ".join(query_tokens).lower():
-            query_tokens.append(mod.title())
-
-    if storage_matches:
-        query_tokens.append(storage_matches[-1].upper())
-
     query_str = " ".join(query_tokens)
+    for cs in storage_specs:
+        if cs not in query_str.lower():
+            query_str += f" {cs}"
+
     return critical_specs, query_str.strip()
 
 
-def matches_variant_specs(candidate_title: str, required_specs: set, original_title: str = "") -> bool:
-    """Verifies candidate title matches exact model & storage specs using the match_products engine."""
-    res = match_products(original_title or "", candidate_title)
-    return res.matched
+def matches_variant_specs(candidate_title: str, required_specs: set) -> bool:
+    """
+    Verifies candidate title matches exact storage/size and doesn't belong to a conflicting variant.
+    E.g. if original is 256GB, candidate MUST have 256GB and CANNOT be 512GB or 128GB.
+    """
+    if not required_specs:
+        return True
 
+    c_lower = candidate_title.lower()
+
+    for spec in required_specs:
+        # Storage check
+        m = re.match(r"^(\d+)(gb|tb|mb)$", spec)
+        if m:
+            val, unit = m.group(1), m.group(2)
+            pattern = r"\b" + re.escape(val) + r"\s*" + re.escape(unit) + r"\b"
+            if not re.search(pattern, c_lower):
+                return False
+
+        # Weight/Volume check
+        m_s = re.match(r"^(\d+)(g|gm|ml|kg)$", spec)
+        if m_s:
+            val, unit = m_s.group(1), m_s.group(2)
+            pattern = r"\b" + re.escape(val) + r"\s*" + re.escape(unit) + r"\b"
+            if not re.search(pattern, c_lower):
+                return False
+
+        # Model modifier check
+        if spec in ["pro max", "pro", "plus", "ultra", "mini"]:
+            if not re.search(r"\b" + re.escape(spec) + r"\b", c_lower):
+                return False
+
+    return True
 
 
 def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -> Dict[str, Any]:
@@ -1139,64 +747,18 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
                             ][:3]
                             for p_id, t, p_val, c_mrp, base_u, k_specs in candidates:
                                 full_cand_text = f"{t} {' '.join(str(x) for x in k_specs)}"
-                                price_ok = (amz_price <= 0 or (0.45 * amz_price <= p_val <= 1.85 * amz_price))
-                                match_res = match_products(title_or_url, full_cand_text, source_mrp=box_mrp, candidate_mrp=c_mrp)
-                                if price_ok and match_res.matched:
+                                t_low = full_cand_text.lower()
+                                words_ok = (model_words[0] in t_low and sum(1 for mw in model_words if mw in t_low) >= min(2, len(model_words))) if model_words else True
+                                # Allow match if Box MRP matches within ₹1
+                                mrp_ok = (box_mrp > 0 and c_mrp > 0 and abs(c_mrp - box_mrp) <= 1.0)
+                                price_ok = (amz_price <= 0 or (0.60 * amz_price <= p_val <= 1.50 * amz_price))
+                                if words_ok and mrp_ok and price_ok and matches_variant_specs(full_cand_text, required_specs):
                                     cur_p = p_val
                                     fk_scraped_mrp = c_mrp
                                     fk_title = t
                                     fk_link = f"https://www.flipkart.com{base_u}" if base_u else f"https://www.flipkart.com/search?q={urllib.parse.quote(search_term)}"
                                     fk_highlights = [str(x) for x in k_specs[:6]]
                                     break
-                        if cur_p == 0.0:
-                            query_base = " ".join([w for w in search_term.split() if not w.lower().endswith("gb") and not w.lower().endswith("tb")]).strip()
-                            if query_base and query_base != search_term:
-                                fk_url_b = f"https://www.flipkart.com/search?q={urllib.parse.quote(query_base)}"
-                                r_b = session.get(fk_url_b, timeout=10)
-                                if r_b.status_code == 200:
-                                    soup_b = BeautifulSoup(r_b.text, "html.parser")
-                                    for s_b in soup_b.find_all("script"):
-                                        txt_b = s_b.string or ""
-                                        if "window.__INITIAL_STATE__" in txt_b:
-                                            parts_b = re.split(r"window\.__INITIAL_STATE__\s*=\s*", txt_b, maxsplit=1)
-                                            if len(parts_b) <= 1:
-                                                continue
-                                            data_b = json.loads(parts_b[1].strip().rstrip(";"))
-                                            slots_b = data_b.get("pageDataV4", {}).get("page", {}).get("data", {})
-                                            for s_name_b, s_list_b in slots_b.items():
-                                                for it_b in s_list_b:
-                                                    for pr_b in it_b.get("widget", {}).get("data", {}).get("products", []):
-                                                        val_b = pr_b.get("productInfo", {}).get("value", {})
-                                                        if val_b.get("availability", {}).get("displayState", "") == "OUT_OF_STOCK":
-                                                            continue
-                                                        titles_obj_b = val_b.get("titles", {})
-                                                        t_main_b = titles_obj_b.get("title", "")
-                                                        t_sub_b = titles_obj_b.get("subtitle", "")
-                                                        t_cand_b = f"{t_main_b} ({t_sub_b})" if t_sub_b and t_sub_b.lower() not in t_main_b.lower() else t_main_b
-                                                        pricing_b = val_b.get("pricing", {})
-                                                        p_val_b = 0.0
-                                                        c_mrp_b = 0.0
-                                                        for prc_b in pricing_b.get("prices", []):
-                                                            if prc_b.get("strikeOff"):
-                                                                c_mrp_b = float(prc_b.get("value", 0))
-                                                            elif not prc_b.get("strikeOff") and prc_b.get("value"):
-                                                                p_val_b = float(prc_b.get("value"))
-                                                        k_specs_b = val_b.get("keySpecs") or []
-                                                        base_u_b = val_b.get("baseUrl", "")
-                                                        if p_val_b > 0:
-                                                            full_cand_text_b = f"{t_cand_b} {' '.join(str(x) for x in k_specs_b)}"
-                                                            price_ok_b = (amz_price <= 0 or (0.45 * amz_price <= p_val_b <= 1.85 * amz_price))
-                                                            match_res_b = match_products(title_or_url, full_cand_text_b, source_mrp=box_mrp, candidate_mrp=c_mrp_b)
-                                                            if price_ok_b and match_res_b.matched:
-                                                                cur_p = p_val_b
-                                                                fk_scraped_mrp = c_mrp_b
-                                                                fk_title = t_cand_b
-                                                                fk_link = f"https://www.flipkart.com{base_u_b}" if base_u_b else fk_url_b
-                                                                fk_highlights = [str(x) for x in k_specs_b[:6]]
-                                                                break
-                                                    if cur_p > 0: break
-                                                if cur_p > 0: break
-                                            break
                         break
         except Exception as e:
             log.debug(f"Cross search Flipkart exception: {e}")
@@ -1271,7 +833,7 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
 def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str, Any]:
     """Queries Amazon to find the exact matching variant counterpart for a Flipkart product.
     If the user pasted a direct Amazon URL, shortlink, or ASIN, scrapes that exact Amazon product directly."""
-    session = cffi_requests.Session(impersonate="chrome120")
+    session = make_session()
     cur_p = 0.0
     asin = ""
     amz_title = title
@@ -1366,82 +928,44 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
                     m_el = c.select_one("span.a-price.a-text-price span.a-offscreen")
                     c_mrp = parse_price(m_el.get_text(strip=True)) if m_el else 0.0
                     t_str = ""
-
-                    # 1. Primary: Brand span + H2 (handles modern Amazon multi-h2 card layout)
-                    h2_texts = [h.get_text(separator=" ", strip=True) for h in c.select("h2") if h.get_text(strip=True)]
-                    h2_texts.sort(key=len, reverse=True)
-                    main_title = h2_texts[0] if h2_texts else ""
-                    brand_el = c.select_one("span.a-size-base-plus.a-color-base") or c.select_one("h5 span")
-                    brand_prefix = brand_el.get_text(strip=True) if brand_el else ""
-                    if not brand_prefix and len(h2_texts) > 1 and len(h2_texts[-1]) < 25:
-                        brand_prefix = h2_texts[-1]
-                    t_str = f"{brand_prefix} {main_title}".strip() if (brand_prefix and brand_prefix.lower() not in main_title.lower()) else main_title
-
-                    # 2. Secondary fallback: Link texts
+                    img_el = c.select_one("img.s-image")
+                    if img_el and img_el.get("alt") and len(img_el.get("alt").strip()) > 8:
+                        t_str = img_el.get("alt").strip()
                     if not t_str:
                         for a_el in c.select("a"):
                             txt = a_el.get_text(separator=" ", strip=True)
-                            if len(txt) > 15 and "sponsored" not in txt.lower() and "out of 5" not in txt and "ratings" not in txt:
+                            if len(txt) > 15 and "sponsored" not in txt.lower() and "out of 5" not in txt:
                                 t_str = txt
                                 break
-
-                    # 3. Tertiary fallback: Image alt
                     if not t_str:
-                        img_el = c.select_one("img.s-image")
-                        if img_el and img_el.get("alt") and len(img_el.get("alt").strip()) > 8:
-                            t_str = img_el.get("alt").strip()
+                        t_el = c.select_one("h2 a span") or c.select_one("h2 span")
+                        if t_el: t_str = t_el.get_text(strip=True)
 
                     if p_el and t_str:
                         parsed = parse_price(p_el.get_text(strip=True))
                         if parsed > 0:
                             candidates.append((a_id, t_str, parsed, c_mrp))
 
+                stop_words = {
+                    "the", "for", "and", "with", "pack", "new", "from", "all", "dual", "sim",
+                    "phone", "mobile", "keypad", "inches", "inch", "cms", "fhd", "uhd", "smart", "led"
+                }
+                model_words = [
+                    w.lower() for w in re.findall(r"[a-zA-Z0-9]{3,}", title[:50])
+                    if w.lower() not in stop_words and not re.match(r"^\d+$", w)
+                ][:3]
                 for a_id, t_str, parsed, c_mrp in candidates:
-                    price_ok = (fk_price <= 0 or (0.45 * fk_price <= parsed <= 1.85 * fk_price))
-                    match_res = match_products(title, t_str, source_mrp=box_mrp, candidate_mrp=c_mrp)
-                    if price_ok and match_res.matched:
+                    t_low = t_str.lower()
+                    words_ok = (model_words[0] in t_low and sum(1 for mw in model_words if mw in t_low) >= min(2, len(model_words))) if model_words else True
+                    mrp_ok = (box_mrp <= 0 or c_mrp <= 0 or abs(c_mrp - box_mrp) <= 1.0)
+                    price_ok = (fk_price <= 0 or (0.60 * fk_price <= parsed <= 1.50 * fk_price))
+                    if words_ok and mrp_ok and price_ok and matches_variant_specs(t_str, required_specs):
                         cur_p = parsed
                         asin = a_id
                         amz_title = t_str
                         if c_mrp > 0:
                             amz_scraped_mrp = c_mrp
                         break
-
-                if cur_p == 0.0:
-                    query_base = " ".join([w for w in search_term.split() if not w.lower().endswith("gb") and not w.lower().endswith("tb")]).strip()
-                    if query_base and query_base != search_term:
-                        r_base = session.get(f"https://www.amazon.in/s?k={urllib.parse.quote(query_base)}&tag={AFFILIATE_TAG}", timeout=10)
-                        if r_base.status_code == 200:
-                            soup_b = BeautifulSoup(r_base.text, "html.parser")
-                            for c in soup_b.select("div[data-asin]"):
-                                a_id = c.get("data-asin")
-                                if not a_id or len(a_id) != 10:
-                                    continue
-                                p_el = c.select_one("span.a-price:not(.a-text-price) span.a-offscreen") or c.select_one("span.a-price span.a-offscreen")
-                                if not p_el:
-                                    continue
-                                parsed = parse_price(p_el.get_text(strip=True))
-                                if parsed <= 0:
-                                    continue
-                                m_el = c.select_one("span.a-price.a-text-price span.a-offscreen")
-                                c_mrp = parse_price(m_el.get_text(strip=True)) if m_el else 0.0
-                                h2_texts = [h.get_text(separator=" ", strip=True) for h in c.select("h2") if h.get_text(strip=True)]
-                                h2_texts.sort(key=len, reverse=True)
-                                main_title = h2_texts[0] if h2_texts else ""
-                                brand_el = c.select_one("span.a-size-base-plus.a-color-base") or c.select_one("h5 span")
-                                brand_prefix = brand_el.get_text(strip=True) if brand_el else ""
-                                if not brand_prefix and len(h2_texts) > 1 and len(h2_texts[-1]) < 25:
-                                    brand_prefix = h2_texts[-1]
-                                t_str = f"{brand_prefix} {main_title}".strip() if (brand_prefix and brand_prefix.lower() not in main_title.lower()) else main_title
-                                price_ok = (fk_price <= 0 or (0.45 * fk_price <= parsed <= 1.85 * fk_price))
-                                match_res = match_products(title, t_str, source_mrp=box_mrp, candidate_mrp=c_mrp)
-                                if price_ok and match_res.matched:
-                                    cur_p = parsed
-                                    asin = a_id
-                                    amz_title = t_str
-                                    if c_mrp > 0:
-                                        amz_scraped_mrp = c_mrp
-                                    break
         except Exception as e:
             log.debug(f"Cross search Amazon exception: {e}")
 
@@ -1485,8 +1009,12 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
         except Exception as be:
             log.debug(f"Amazon bullets fetch error: {be}")
 
-    if amz_scraped_mrp <= 0 and box_mrp > 0:
-        amz_scraped_mrp = box_mrp
+    # Automatic Amazon search MUST also confirm exact Box MRP parity (within ₹1), otherwise trigger Case B!
+    if matched and not is_direct_amz and box_mrp > 0 and (amz_scraped_mrp <= 0 or abs(amz_scraped_mrp - box_mrp) > 1.0):
+        matched = False
+        cur_p = 0.0
+        lowest_90d = 0.0
+        affiliate_url = amz_url
 
     effective_amz_mrp = amz_scraped_mrp if amz_scraped_mrp > 0 else box_mrp
     savings = round(max(0.0, effective_amz_mrp - cur_p), 0) if matched else 0.0
@@ -1611,10 +1139,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
 
                     # 3. HTML fallback for Price & MRP if state didn't have it
                     if current_price == 0.0:
-                        for p_sel in [
-                            "div.Nx9bqj.CxhGGd", "div._30jeq3._16Jk6d", "div.Nx9bqj", "div._30jeq3",
-                            "div.css-g5y9jx", "div.v1zwn21n.v1zwn20", "div.hl05eU div._4b5DiR"
-                        ]:
+                        for p_sel in ["div.Nx9bqj.CxhGGd", "div._30jeq3._16Jk6d", "div.Nx9bqj", "div._30jeq3"]:
                             pel = soup_page.select_one(p_sel)
                             if pel and pel.get_text(strip=True):
                                 pv = parse_price(pel.get_text(strip=True))
@@ -1622,10 +1147,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                                     current_price = pv
                                     break
                     if mrp == 0.0:
-                        for m_sel in [
-                            "div.yRaY8j.A68aAq", "div._3I9_wc._2p6lqe", "div.yRaY8j",
-                            "div.yPqjYn", "div._27Ah43", "div.v1zwn21n.v1zwn21"
-                        ]:
+                        for m_sel in ["div.yRaY8j.A68aAq", "div._3I9_wc._2p6lqe", "div.yRaY8j"]:
                             mel = soup_page.select_one(m_sel)
                             if mel and mel.get_text(strip=True):
                                 mv = parse_price(mel.get_text(strip=True))
@@ -1648,9 +1170,8 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             if not product_title or product_title.startswith("Flipkart Product"):
                 product_title = str(VERIFIED_BENCHMARKS[pid]["title"])
 
-        # Search Flipkart fallback ONLY if direct page scrape completely failed or product is marked Sold Out
-        # NEVER trigger fallback if current_price was successfully extracted!
-        if current_price == 0.0 or is_sold_out_direct:
+        # Search Flipkart fallback if direct page scrape failed OR if the old PID was Sold Out
+        if current_price == 0.0 or is_sold_out_direct or not fk_highlights:
             search_query = product_title if (product_title and not product_title.startswith("Flipkart Product")) else (pid or clean_input)
             try:
                 search_url = f"https://www.flipkart.com/search?q={cffi_requests.utils.quote(search_query)}"
@@ -1671,14 +1192,17 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                                         val = pr.get("productInfo", {}).get("value", {})
                                         avail_st = val.get("availability", {}).get("displayState", "")
                                         if avail_st == "OUT_OF_STOCK":
-                                             continue
+                                            continue
                                         cand_id = val.get("id", "")
                                         cand_title = val.get("titles", {}).get("title", "")
                                         cand_low = cand_title.lower()
                                         if any(bad in cand_low for bad in ["back cover", "flip cover", "case for", "screen guard", "tempered glass"]):
                                             continue
-                                        if pid and cand_id.strip().upper() != pid.strip().upper():
-                                            continue
+                                        if pid and cand_id != pid:
+                                            # Require strong prefix/keyword match if falling back to an updated PID
+                                            p_words = [w.lower() for w in re.findall(r"[a-zA-Z0-9]{2,}", product_title[:35])]
+                                            if p_words and not all(w in cand_low for w in p_words[:3]):
+                                                continue
                                         pricing = val.get("pricing", {})
                                         c_p = 0.0
                                         c_m = 0.0
@@ -1709,18 +1233,9 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                 product_title = str(bench["title"])
             if bench.get("fk_url") and not final_url.lower().startswith("http"):
                 final_url = str(bench["fk_url"])
-
         # Genuine price history for primary Flipkart audit
         hist_fk = get_genuine_price_history("flipkart", pid) if pid else {}
         real_fk_low = float(hist_fk.get("lowest_price") or 0)
-        hist_cur = float(hist_fk.get("cur_price") or 0)
-
-        # If current_price could not be scraped directly, use the verified live price for this exact PID
-        if current_price == 0.0 and hist_cur > 0:
-            current_price = hist_cur
-
-        if (not product_title or product_title.startswith("Flipkart Product")) and hist_fk.get("name"):
-            product_title = str(hist_fk["name"])
 
         if real_fk_low > 0:
             lowest_90d = min(current_price, real_fk_low) if current_price > 0 else real_fk_low
@@ -1804,7 +1319,6 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             "title": product_title,
             "search_term": search_query,
             "category": "Flipkart Deals",
-            "price": current_price,
             "current_price": current_price,
             "mrp": mrp,
             "lowest_90d": lowest_90d,
@@ -2140,7 +1654,6 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         "title": prod_title,
         "search_term": search_query,
         "category": category_crumb if category_crumb != "General" else (p.category or "General"),
-        "price": current_price,
         "current_price": current_price,
         "mrp": mrp,
         "lowest_90d": lowest_90d,
