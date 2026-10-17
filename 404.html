@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting... | ZERO483</title>
+  <meta name="robots" content="noindex, follow" />
+
+  <!-- Smart Auto-Recovery Redirect Script (Executes before page renders) -->
+  <script>
+    (function() {
+      try {
+        var path = window.location.pathname || '';
+        var search = window.location.search || '';
+        var hash = window.location.hash || '';
+
+        // Clean trailing dots, commas, quotes, or accidental punctuation from social shares (Pinterest, WhatsApp, Twitter)
+        // Example: /devotional/page.html. -> /devotional/page.html
+        var cleanedPath = path;
+
+        // 1. Remove trailing dots or accidental punctuation at the end of .html
+        if (/\.html[\.\,\)\>\'\"\]]+$/i.test(cleanedPath)) {
+          cleanedPath = cleanedPath.replace(/\.html[\.\,\)\>\'\"\]]+$/i, '.html');
+        }
+
+        // 2. Remove any other trailing dot(s)
+        if (/\.+$/.test(cleanedPath)) {
+          cleanedPath = cleanedPath.replace(/\.+$/, '');
+        }
+
+        // 3. Fix internal .html. occurrences (e.g. /page.html./)
+        if (cleanedPath.indexOf('.html.') !== -1) {
+          cleanedPath = cleanedPath.replace(/\.html\.+/gi, '.html');
+        }
+
+        // If path was modified and cleaned up, execute instant seamless redirect
+        if (cleanedPath !== path) {
+          var targetUrl = window.location.origin + cleanedPath + search + hash;
+          window.location.replace(targetUrl);
+          return;
+        }
+      } catch (e) {
+        console.error("Auto-redirect error:", e);
+      }
+    })();
+  </script>
+
+  <style>
+    :root {
+      --primary: #991b1b;
+      --accent: #ea580c;
+      --bg: #fffbeb;
+      --text: #1e293b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 2px solid #fed7aa;
+      border-radius: 18px;
+      padding: 40px 24px;
+      max-width: 540px;
+      width: 100%;
+      box-shadow: 0 10px 25px rgba(153, 27, 27, 0.08);
+    }
+
+    .icon {
+      font-size: 54px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #64748b;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @media (min-width: 480px) {
+      .btn-group {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 25px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(234, 88, 12, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: #f1f5f9;
+      color: #334155;
+    }
+
+    .btn-secondary:hover {
+      background: #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="icon">🪔</div>
+    <h1>Page Not Found / పుట కనుగొనబడలేదు</h1>
+    <p>
+      The link you clicked may have contained a typo or expired. If you were searching for our Vijayadashami stories, devotional guides, or deal auditor, please choose an option below:
+    </p>
+
+    <div class="btn-group">
+      <a href="https://alerts.zero483.com/devotional/the-triumph-of-good-over-evil-vijayadashami-stories-significance-telugu.html" class="btn btn-primary">
+        🏹 తెలుగు విజయదశమి కథలు
+      </a>
+      <a href="https://alerts.zero483.com/deals.html" class="btn btn-secondary">
+        🛍️ Deal Auditor
+      </a>
+      <a href="https://alerts.zero483.com/" class="btn btn-secondary">
+        🏠 Home
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
