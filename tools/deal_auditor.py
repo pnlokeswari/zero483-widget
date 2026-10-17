@@ -145,6 +145,25 @@ VERIFIED_BENCHMARKS: Dict[str, Dict[str, Any]] = {
         "fk_price": 493.0,
         "fk_url": "https://www.flipkart.com/tresemme-hairfall-defense-keratin-fillers-shampoo/p/itmb63717f7a296b?pid=SMPDDHGCQ28SKPZH"
     },
+    "SMPFC62BNCVZHZER": {
+        "title": "TRESemme Hairfall Defense Keratin Fillers Shampoo (1000 ml)",
+        "mrp": 1278.0,
+        "fk_price": 525.0,
+        "lowest_90d": 525.0,
+        "amz_asin": "B07L3YNL2V",
+        "amz_price": 506.0,
+        "image_url": "https://rukminim2.flixcart.com/image/800/800/xif0q/shampoo/m/b/p/-original-imahyq3vfz6dfg5z.jpeg",
+        "fk_url": "https://www.flipkart.com/tresemme-hairfall-defense-keratin-fillers-shampoo/p/itmd911108a31f32?pid=SMPFC62BNCVZHZER"
+    },
+    "B07L3YNL2V": {
+        "title": "TRESemme Hairfall Defense+ Shampoo 1000ml With Keratin Fillers",
+        "mrp": 1278.0,
+        "price": 506.0,
+        "lowest_90d": 499.0,
+        "fk_pid": "SMPFC62BNCVZHZER",
+        "fk_price": 525.0,
+        "fk_url": "https://www.flipkart.com/tresemme-hairfall-defense-keratin-fillers-shampoo/p/itmd911108a31f32?pid=SMPFC62BNCVZHZER"
+    },
 }
 
 
@@ -1446,7 +1465,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
 
                     # 4. HTML fallback for Price & MRP if state didn't have it
                     if current_price == 0.0:
-                        for p_sel in ["div.Nx9bqj.CxhGGd", "div._30jeq3._16Jk6d", "div.Nx9bqj", "div._30jeq3", "div.v1zwn21n"]:
+                        for p_sel in ["div.Nx9bqj.CxhGGd", "div._30jeq3._16Jk6d", "div.Nx9bqj", "div._30jeq3"]:
                             pel = soup_page.select_one(p_sel)
                             if pel and pel.get_text(strip=True):
                                 pv = parse_price(pel.get_text(strip=True))
@@ -1454,7 +1473,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                                     current_price = pv
                                     break
                     if mrp == 0.0:
-                        for m_sel in ["div.yRaY8j.A68aAq", "div._3I9_wc._2p6lqe", "div.yRaY8j", "div.v1zwn21o"]:
+                        for m_sel in ["div.yRaY8j.A68aAq", "div._3I9_wc._2p6lqe", "div.yRaY8j"]:
                             mel = soup_page.select_one(m_sel)
                             if mel and mel.get_text(strip=True):
                                 mv = parse_price(mel.get_text(strip=True))
