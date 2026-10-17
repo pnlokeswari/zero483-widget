@@ -16,6 +16,13 @@ from curl_cffi import requests as cffi_requests
 from product_research_tool import make_session, extract_asin, parse_price, AmazonIndiaScraper, Product
 from wave_tracker_db import get_all_tracked
 
+try:
+    from ai_deal_validator import ai_refine_product_metadata, ai_validate_cross_store_match, is_ai_layer_available
+except ImportError:
+    def is_ai_layer_available(): return False
+    def ai_refine_product_metadata(platform, text, ld_json, current_data): return current_data
+    def ai_validate_cross_store_match(s_t, s_p, s_m, c_t, c_p, c_m, s_pf="flipkart", c_pf="amazon"): return {"is_match": True, "reason": ""}
+
 log = logging.getLogger("WAVEPICKS.auditor")
 
 ROOT_DIR = pathlib.Path(__file__).resolve().parent.parent
@@ -887,6 +894,18 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
                                 mrp_ok = (box_mrp > 0 and c_mrp > 0 and abs(c_mrp - box_mrp) <= 1.0)
                                 price_ok = (amz_price <= 0 or (0.60 * amz_price <= p_val <= 1.50 * amz_price))
                                 if words_ok and mrp_ok and price_ok and matches_variant_specs(full_cand_text, required_specs):
+                                    if is_ai_layer_available():
+                                        try:
+                                            ai_val = ai_validate_cross_store_match(
+                                                source_title=title_or_url, source_price=amz_price, source_mrp=box_mrp,
+                                                candidate_title=t, candidate_price=p_val, candidate_mrp=c_mrp,
+                                                source_platform="amazon", candidate_platform="flipkart"
+                                            )
+                                            if not ai_val.get("is_match", True):
+                                                log.info(f"AI Validator rejected Flipkart candidate {p_id}: {ai_val.get('reason')}")
+                                                continue
+                                        except Exception as aie:
+                                            log.debug(f"AI validation error: {aie}")
                                     cur_p = p_val
                                     fk_scraped_mrp = c_mrp
                                     fk_title = t
@@ -1096,6 +1115,19 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
                     mrp_ok = (box_mrp <= 0 or c_mrp <= 0 or abs(c_mrp - box_mrp) <= 1.0)
                     price_ok = (fk_price <= 0 or (0.60 * fk_price <= parsed <= 1.50 * fk_price))
                     if words_ok and mrp_ok and price_ok and matches_variant_specs(t_str, required_specs):
+                        # AI Cross-Store Parity Verification (protects against mismatched quantities)
+                        if is_ai_layer_available():
+                            try:
+                                ai_val = ai_validate_cross_store_match(
+                                    source_title=title, source_price=fk_price, source_mrp=box_mrp,
+                                    candidate_title=t_str, candidate_price=parsed, candidate_mrp=c_mrp,
+                                    source_platform="flipkart", candidate_platform="amazon"
+                                )
+                                if not ai_val.get("is_match", True):
+                                    log.info(f"AI Validator rejected Amazon candidate {a_id}: {ai_val.get('reason')}")
+                                    continue
+                            except Exception as aie:
+                                log.debug(f"AI validation error: {aie}")
                         cur_p = parsed
                         asin = a_id
                         amz_title = t_str
@@ -1429,6 +1461,24 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                                 if mv > 0:
                                     mrp = mv
                                     break
+
+                    # AI Semantic Extraction Fallback (when CSS fails or price remains 0)
+                    if (current_price == 0.0 or mrp == 0.0) and is_ai_layer_available():
+                        try:
+                            ai_data = ai_refine_product_metadata(
+                                platform="flipkart",
+                                page_text_snippet=soup_page.get_text(" ", strip=True)[:2500],
+                                ld_json_data=[json.loads(s.string) for s in soup_page.find_all("script", type="application/ld+json") if s.string],
+                                current_data={"title": product_title, "price": current_price, "mrp": mrp}
+                            )
+                            if ai_data.get("price", 0) > 0:
+                                current_price = float(ai_data["price"])
+                            if ai_data.get("mrp", 0) > current_price:
+                                mrp = float(ai_data["mrp"])
+                            if ai_data.get("title") and len(str(ai_data["title"])) > 10:
+                                product_title = str(ai_data["title"])
+                        except Exception as aie:
+                            log.debug(f"AI refinement fallback notice: {aie}")
             except Exception as e:
                 log.warning(f"Direct Flipkart product page scrape failed: {e}")
 
