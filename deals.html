@@ -1041,6 +1041,233 @@ input,button,select,textarea{-webkit-appearance:none;appearance:none}
 .in-app-browser-banner .in-app-text{flex:1}
 .in-app-browser-banner .in-app-close{background:none;border:none;color:#94a3b8;font-size:1.3rem;cursor:pointer;padding:0 6px;line-height:1}
 .in-app-browser-banner .in-app-close:hover{color:#fff}
+
+/* ==============================================================
+   INTERACTIVE AUDIT COUNTDOWN TIMER & MULTI-STAGE RADAR (10s -> 1s)
+   ============================================================== */
+.audit-loading-card {
+  background: var(--card-inner);
+  border: 1px solid var(--border-glow);
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  position: relative;
+  overflow: hidden;
+}
+.audit-loading-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(16,185,129,0.08) 0%, transparent 70%);
+  animation: radarSweep 6s linear infinite;
+  pointer-events: none;
+}
+@keyframes radarSweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.audit-timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.audit-timer-circle-wrap {
+  position: relative;
+  width: 104px;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.audit-timer-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.audit-timer-bg-circle {
+  fill: none;
+  stroke: rgba(255,255,255,0.08);
+  stroke-width: 6;
+}
+
+.audit-timer-progress-circle {
+  fill: none;
+  stroke: var(--brand-glow);
+  stroke-width: 6;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s linear, stroke 0.3s ease;
+  filter: drop-shadow(0 0 6px var(--brand-glow));
+}
+
+.audit-timer-number-wrap {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.audit-timer-number {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--text-heading);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -1px;
+}
+
+.audit-timer-unit {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--brand-glow);
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.audit-stage-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: var(--brand-glow);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  animation: pulsePill 2s ease-in-out infinite;
+}
+@keyframes pulsePill {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(0.98); }
+}
+
+.audit-headline {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-heading);
+  margin-bottom: 6px;
+  letter-spacing: -0.2px;
+}
+
+.audit-subheadline {
+  font-size: 0.82rem;
+  color: var(--muted);
+  max-width: 480px;
+  margin: 0 auto 16px;
+  line-height: 1.45;
+  min-height: 2.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.audit-progressbar-track {
+  width: 100%;
+  max-width: 420px;
+  height: 6px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 6px;
+  margin: 0 auto 18px;
+  overflow: hidden;
+  position: relative;
+}
+
+.audit-progressbar-fill {
+  height: 100%;
+  width: 10%;
+  background: linear-gradient(90deg, #10b981, #38bdf8, #6366f1);
+  border-radius: 6px;
+  transition: width 1s linear;
+  box-shadow: 0 0 10px var(--brand-glow);
+}
+
+.audit-radar-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  max-width: 460px;
+  margin: 0 auto;
+  text-align: left;
+}
+@media (max-width: 480px) {
+  .audit-radar-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.audit-radar-item {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.72rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.audit-radar-item.active {
+  background: rgba(16,185,129,0.08);
+  border-color: rgba(16,185,129,0.3);
+  color: var(--text-heading);
+}
+
+.audit-radar-item.completed {
+  background: rgba(16, 185, 129, 0.05);
+  border-color: rgba(16, 185, 129, 0.25);
+  color: var(--muted);
+}
+
+.audit-radar-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #64748b;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.audit-radar-item.active .audit-radar-dot {
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: radarDotPulse 1.2s infinite;
+}
+
+.audit-radar-item.completed .audit-radar-dot {
+  background: #10b981;
+  box-shadow: none;
+}
+
+@keyframes radarDotPulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 1; }
+}
 </style>
 </head>
 <body>
@@ -1380,7 +1607,14 @@ function quickAudit(asin) {
   runAudit();
 }
 
+let auditTimerInterval = null;
+
 async function runAudit(competitorUrl = '') {
+  if (auditTimerInterval) {
+    clearInterval(auditTimerInterval);
+    auditTimerInterval = null;
+  }
+
   const inputEl = document.getElementById('audit-input');
   const btnEl = document.getElementById('btn-audit');
   const resEl = document.getElementById('audit-results');
@@ -1396,15 +1630,159 @@ async function runAudit(competitorUrl = '') {
   }
 
   btnEl.disabled = true;
-  btnEl.innerHTML = "Auditing Deal ⏳...";
+  btnEl.innerHTML = "Auditing Deal (10s) ⏳...";
   resEl.style.display = "block";
+
+  const totalSeconds = 10;
+  let remainingSeconds = totalSeconds;
+  const circumference = 251.32; // 2 * Math.PI * 40
+
+  const stages = [
+    {
+      atSec: 10,
+      pill: "🛰️ STAGE 1 OF 4 • CONNECTING",
+      title: "Auditing Product Pricing &amp; 90-Day Trend...",
+      desc: "Connecting to live Amazon &amp; Flipkart storefronts to verify current buybox prices...",
+      activeStep: 1,
+      progress: 15
+    },
+    {
+      atSec: 8,
+      pill: "📦 STAGE 2 OF 4 • BOX MRP AUDIT",
+      title: "Auditing Authentic Packaging MRP...",
+      desc: "Inspecting official manufacturer packaging MRP &amp; pack size anti-inflation benchmarks...",
+      activeStep: 2,
+      progress: 40
+    },
+    {
+      atSec: 5,
+      pill: "📊 STAGE 3 OF 4 • 90-DAY TRAJECTORY",
+      title: "Analyzing 90-Day Price Curve...",
+      desc: "Evaluating historical 90-day price drops, seasonal spikes &amp; fake discount markups...",
+      activeStep: 3,
+      progress: 70
+    },
+    {
+      atSec: 2,
+      pill: "⚡ STAGE 4 OF 4 • VERDICT ENGINE",
+      title: "Calculating Best Verified Deal &amp; Savings...",
+      desc: "Comparing cross-store savings, verified buyer ratings, and deal winner...",
+      activeStep: 4,
+      progress: 92
+    }
+  ];
+
   resEl.innerHTML = `
-    <div style="background:var(--card-inner);border:1px solid var(--border);border-radius:12px;padding:26px;text-align:center;color:var(--brand-glow);font-size:.9rem">
-      <div style="font-size:1.8rem;margin-bottom:8px">⚙️</div>
-      <strong style="color:var(--text-heading)">Auditing Product Pricing &amp; 90-Day Trend...</strong>
-      <div style="font-size:.78rem;color:var(--muted);margin-top:4px">Checking live checkout price, authentic Box MRP, and 90-day price history...</div>
+    <div class="audit-loading-card">
+      <div class="audit-timer-container">
+        <div class="audit-timer-circle-wrap">
+          <svg class="audit-timer-svg" viewBox="0 0 96 96">
+            <circle class="audit-timer-bg-circle" cx="48" cy="48" r="40" />
+            <circle id="audit-circle-progress" class="audit-timer-progress-circle" cx="48" cy="48" r="40" style="stroke-dasharray:${circumference};stroke-dashoffset:0" />
+          </svg>
+          <div class="audit-timer-number-wrap">
+            <div class="audit-timer-number" id="audit-timer-num">10</div>
+            <div class="audit-timer-unit">SEC</div>
+          </div>
+        </div>
+
+        <div class="audit-stage-pill" id="audit-stage-pill">🛰️ STAGE 1 OF 4 • CONNECTING</div>
+        <div class="audit-headline" id="audit-stage-title">Auditing Product Pricing &amp; 90-Day Trend...</div>
+        <div class="audit-subheadline" id="audit-stage-desc">Connecting to live Amazon &amp; Flipkart storefronts to verify current buybox prices...</div>
+
+        <div class="audit-progressbar-track">
+          <div class="audit-progressbar-fill" id="audit-progress-fill" style="width: 15%;"></div>
+        </div>
+      </div>
+
+      <div class="audit-radar-grid">
+        <div class="audit-radar-item active" id="radar-step-1">
+          <div class="audit-radar-dot"></div>
+          <div><strong id="radar-label-1">1. Live Storefronts:</strong> Querying Amazon &amp; Flipkart Buybox</div>
+        </div>
+        <div class="audit-radar-item" id="radar-step-2">
+          <div class="audit-radar-dot"></div>
+          <div><strong id="radar-label-2">2. Box MRP Audit:</strong> Packaging MRP &amp; Size Check</div>
+        </div>
+        <div class="audit-radar-item" id="radar-step-3">
+          <div class="audit-radar-dot"></div>
+          <div><strong id="radar-label-3">3. 90-Day Trend:</strong> Historical Price Drop Curve</div>
+        </div>
+        <div class="audit-radar-item" id="radar-step-4">
+          <div class="audit-radar-dot"></div>
+          <div><strong id="radar-label-4">4. Deal Verdict:</strong> Winner Store &amp; Savings</div>
+        </div>
+      </div>
     </div>
   `;
+
+  function updateLoadingUI(sec) {
+    const numEl = document.getElementById('audit-timer-num');
+    const circleEl = document.getElementById('audit-circle-progress');
+    const fillEl = document.getElementById('audit-progress-fill');
+    const pillEl = document.getElementById('audit-stage-pill');
+    const titleEl = document.getElementById('audit-stage-title');
+    const descEl = document.getElementById('audit-stage-desc');
+
+    if (numEl) numEl.textContent = sec;
+    btnEl.innerHTML = `Auditing Deal (${sec}s) ⏳...`;
+
+    if (circleEl) {
+      const offset = circumference * (1 - (sec / totalSeconds));
+      circleEl.style.strokeDashoffset = offset;
+    }
+
+    let curStage = stages[0];
+    for (let s of stages) {
+      if (sec <= s.atSec) {
+        curStage = s;
+      }
+    }
+
+    if (pillEl) pillEl.textContent = curStage.pill;
+    if (titleEl) titleEl.textContent = curStage.title;
+    if (descEl) descEl.textContent = curStage.desc;
+    if (fillEl) {
+      const pct = Math.min(98, Math.max(15, Math.round(100 - (sec * 8.5))));
+      fillEl.style.width = `${pct}%`;
+    }
+
+    for (let i = 1; i <= 4; i++) {
+      const itemEl = document.getElementById(`radar-step-${i}`);
+      const labelEl = document.getElementById(`radar-label-${i}`);
+      if (!itemEl) continue;
+      if (i < curStage.activeStep) {
+        itemEl.classList.remove('active');
+        itemEl.classList.add('completed');
+        if (labelEl && !labelEl.textContent.startsWith('✓')) {
+          labelEl.textContent = '✓ ' + labelEl.textContent.replace(/^✓\s*/, '');
+        }
+      } else if (i === curStage.activeStep) {
+        itemEl.classList.add('active');
+        itemEl.classList.remove('completed');
+      } else {
+        itemEl.classList.remove('active');
+        itemEl.classList.remove('completed');
+      }
+    }
+  }
+
+  auditTimerInterval = setInterval(() => {
+    remainingSeconds--;
+    if (remainingSeconds >= 1) {
+      updateLoadingUI(remainingSeconds);
+    } else {
+      const numEl = document.getElementById('audit-timer-num');
+      const descEl = document.getElementById('audit-stage-desc');
+      const fillEl = document.getElementById('audit-progress-fill');
+      if (numEl) numEl.textContent = "1";
+      if (descEl) descEl.textContent = "Almost ready! Finalizing verified deal comparison...";
+      if (fillEl) fillEl.style.width = "99%";
+      btnEl.innerHTML = "Finalizing Deal ⚡...";
+      clearInterval(auditTimerInterval);
+      auditTimerInterval = null;
+    }
+  }, 1000);
 
   try {
     const payload = { url: val };
@@ -1419,6 +1797,11 @@ async function runAudit(competitorUrl = '') {
       body: JSON.stringify(payload)
     });
     const d = await resp.json();
+
+    if (auditTimerInterval) {
+      clearInterval(auditTimerInterval);
+      auditTimerInterval = null;
+    }
 
     if (d.error) {
       resEl.innerHTML = `
@@ -1768,6 +2151,10 @@ async function runAudit(competitorUrl = '') {
       </div>
     `;
   } catch (err) {
+    if (auditTimerInterval) {
+      clearInterval(auditTimerInterval);
+      auditTimerInterval = null;
+    }
     console.error('Audit exception:', err);
     const isNetwork = err instanceof TypeError && (err.message || '').toLowerCase().includes('fetch');
     resEl.innerHTML = `
@@ -1776,6 +2163,10 @@ async function runAudit(competitorUrl = '') {
       </div>
     `;
   } finally {
+    if (auditTimerInterval) {
+      clearInterval(auditTimerInterval);
+      auditTimerInterval = null;
+    }
     btnEl.disabled = false;
     btnEl.innerHTML = "Verify Best Price ⚡";
   }
