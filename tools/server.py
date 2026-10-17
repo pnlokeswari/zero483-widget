@@ -439,7 +439,7 @@ ALLOWED_ORIGIN_PATTERNS = [
 # In-memory thread-safe rate limiter (sliding window)
 _RATE_LIMITS: dict[str, list[float]] = {}
 _RATE_LIMIT_LOCK = threading.Lock()
-MAX_AUDITS_PER_MINUTE = 10
+MAX_AUDITS_PER_MINUTE = 60
 RATE_WINDOW_SECONDS = 60.0
 
 
