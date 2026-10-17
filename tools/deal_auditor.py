@@ -145,6 +145,16 @@ VERIFIED_BENCHMARKS: Dict[str, Dict[str, Any]] = {
         "fk_price": 493.0,
         "fk_url": "https://www.flipkart.com/tresemme-hairfall-defense-keratin-fillers-shampoo/p/itmb63717f7a296b?pid=SMPDDHGCQ28SKPZH"
     },
+    "SMPHE29JNCGCTJWP": {
+        "title": "TRESemme Hair Fall Defence Shampoo (1200 ml)",
+        "mrp": 1595.0,
+        "fk_price": 542.0,
+        "lowest_90d": 473.0,
+        "amz_asin": "B07L3YNL2V",
+        "amz_price": 506.0,
+        "image_url": "https://rukminim2.flixcart.com/image/800/800/xif0q/shampoo/f/c/k/-original-imaghbyhygbhyuhh.jpeg",
+        "fk_url": "https://www.flipkart.com/tresemme-hair-fall-defence-shampoo/p/itma395bdcb015e5?pid=SMPHE29JNCGCTJWP"
+    },
     "SMPFC62BNCVZHZER": {
         "title": "TRESemme Hairfall Defense Keratin Fillers Shampoo (1000 ml)",
         "mrp": 1278.0,
