@@ -262,7 +262,7 @@ def healthz():
     return jsonify({
         "status": "ok",
         "service": "zero483-deals-api",
-        "build": "2026-10-17-v5-matrix-diag",
+        "build": "2026-10-17-v6-smart-variants",
         "time": time.time()
     }), 200
 
