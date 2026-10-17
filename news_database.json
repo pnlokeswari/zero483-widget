@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-17T06:13:43.853836+00:00",
+  "last_updated": "2026-10-17T11:11:42.522114+00:00",
   "total_items": 50,
   "items": [
     {
@@ -525,6 +525,24 @@
       "is_long_form": false
     },
     {
+      "id": "82b42d5dcf05",
+      "title": "FDA Announces Nationwide Recall of More Than 100,000 Bottles of Acetaminophen - Health.com",
+      "slug": "fda-announces-nationwide-recall-of-more-than-100-000-bottles-of-acetaminophen-health-com",
+      "date": "2026-10-14",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: FDA Announces Nationwide Recall of More Than 100,000 Bottles of Acetaminophen - Health.com\nSource: Google News\nDate: Wed, 14 Oct 2026 15:14:23 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "FDA Announces Nationwide Recall of More Than 100,000 Bottles of Acetaminophen - Health.com",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1wUVhSY01TYWNzMm5OMXV1WllXOUZQQjRIbkVzSVJZMFRSaGdZOVVpcUd2VEl4VVhKZkJGQU9aOXFZZncwc3Y2NkRQOFg4Z3FJWE9EYVkxZjhieDJFVFJjUzJ6dDR6WGwzMHJyVFVMbnB1Sjg?oc=5",
+      "fetched_at": "2026-10-17T11:11:06.703581+00:00",
+      "is_long_form": false
+    },
+    {
       "id": "52973ede6f43",
       "title": "Alvotech and Advanz Pharma Submit AVT29 to EMA as Potential Biosimilar to Eylea HD® - Quiver Quantitative",
       "slug": "alvotech-and-advanz-pharma-submit-avt29-to-ema-as-potential-biosimilar-to-eylea-hd-quiver-quantitative",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-10-14T18:55:04.363525+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "9e3153a45697",
-      "title": "Amazon Acetaminophen Recalled Nationwide Over Discolored Tablets: FDA - Patch",
-      "slug": "amazon-acetaminophen-recalled-nationwide-over-discolored-tablets-fda-patch",
-      "date": "2026-10-14",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Amazon Acetaminophen Recalled Nationwide Over Discolored Tablets: FDA - Patch\nSource: Google News\nDate: Wed, 14 Oct 2026 15:26:57 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Amazon Acetaminophen Recalled Nationwide Over Discolored Tablets: FDA - Patch",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcTdxYWw3a05UVjBLcElnS2hBdkJ3cXo4Z05vZTB5SnRFUWNVR3hDZ0g2N3NoUEx4WWxQYk9TQXRNYkhqbFc1MGMzb1BMMWdDWk5jWElPUG1yV1F1MFZrRFVleU1mSkg4ZkhIZVBIUEJQTG1PRVRYT3ZEc0s3aWpKR2RoZU9Hb0hyNWlPVDJ2MXhhRWh2RlhRUVZGUkQwalZmTlBYZFZHcEdPUm9K0gG-AUFVX3lxTE01WXRtSjVUUTIxaUxEd1EzdGk2X3dQOUwxZUhydm9zWFgzMTk3M3NCSEFFNUpuekY0NXA1SmlkMkZXN1NhTnppa0dDLTE5dTJtdnI4aEZRNWVRb3JfTS1QOVZaSGFESERKdFd5cmJHMGVsaEZyRWpBdkZBTDJSUThSNWJROGgtMlVUem8tdktzZmUwcEN2UDMyVGNUVDB5YUNIQ2g5V1Y0RlNsX2JpbTcxNFVwdUZFd1Z3NkVnYVE?oc=5",
-      "fetched_at": "2026-10-14T18:54:58.966429+00:00",
       "is_long_form": false
     }
   ]
