@@ -262,7 +262,7 @@ def healthz():
     return jsonify({
         "status": "ok",
         "service": "zero483-deals-api",
-        "build": "2026-10-17-v7-query-param-fix",
+        "build": "2026-10-17-v8-twister-pack-multiplier",
         "time": time.time()
     }), 200
 
