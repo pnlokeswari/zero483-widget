@@ -40,6 +40,38 @@ VERIFIED_BENCHMARKS: Dict[str, Dict[str, Any]] = {
     "B0DQY3P9ZH": {"mrp": 2499.0, "lowest_90d": 899.0},     # PALMONAS Necklace
     "B0CS69QQTG": {"mrp": 79999.0, "lowest_90d": 54999.0},  # Samsung Galaxy S24 5G (Onyx Black, 8GB, 256GB)
     # Flipkart Items (Mapped to active IN_STOCK Flipkart listings)
+    "B09FTKLD5G": {
+        "title": "Dot & Key Vitamin C + E Super Bright Gel Moisturizer For Face, Visibly Boosts Glow (60 ml)",
+        "mrp": 495.0,
+        "price": 388.0,
+        "lowest_90d": 360.0,
+        "fk_pid": "MSCG6P4ZDKCPSYZD"
+    },
+    "B0FS27R999": {
+        "title": "DERMATOUCH Multivitamin SPF 50 PA++++ Sunscreen Gel (30g Pack of 2)",
+        "mrp": 458.0,
+        "price": 191.0,
+        "lowest_90d": 191.0,
+        "fk_pid": "SNRHGEKGQUJHFTBQ"
+    },
+    "MSCG6P4ZDKCPSYZD": {
+        "title": "Dot & Key Vitamin C + E Sorbet Super Bright Moisturizer (60 ml)",
+        "mrp": 495.0,
+        "fk_price": 396.0,
+        "lowest_90d": 336.0,
+        "amz_asin": "B09FTKLD5G",
+        "image_url": "https://rukminim2.flixcart.com/image/800/1070/xif0q/moisturizer-cream/d/h/n/-original-imahqhhy8mzv4nzy.jpeg",
+        "fk_url": "https://www.flipkart.com/dot-key-vitamin-c-e-sorbet-super-bright-moisturizer-face-reduces-skin-dullness/p/itme7mye5tnyk3n9?pid=MSCG6P4ZDKCPSYZD"
+    },
+    "SNRHGEKGQUJHFTBQ": {
+        "title": "Dermatouch Sunscreen - SPF 50 PA++++ MULTIVITAMIN SPF 50 PA+++ SUNSCREEN GEL (60 g)",
+        "mrp": 458.0,
+        "fk_price": 242.0,
+        "lowest_90d": 191.0,
+        "amz_asin": "B0FS27R999",
+        "image_url": "https://rukminim2.flixcart.com/image/800/800/xif0q/sunscreen/c/d/q/60-sunscreen-spf-50-pa-multivitamin-pa-gel-dermatouch-original-imahf8zqg8gz6hhe.jpeg",
+        "fk_url": "https://www.flipkart.com/dermatouch-sunscreen-spf-50-pa-multivitamin-pa-gel/p/itmf98dee698e745?pid=SNRHGEKGQUJHFTBQ"
+    },
     "MOBGTAGPTB3VS24W": {
         "title": "Apple iPhone 15 (Black, 128 GB)",
         "mrp": 74900.0,
@@ -675,13 +707,19 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
 
     # Check if a direct Flipkart URL was provided
     if is_direct_fk:
-        clean_fk_u = unwrap_flipkart_redirect_url(extract_clean_url_or_id(title_or_url))
+        raw_clean = extract_clean_url_or_id(title_or_url)
+        clean_fk_u = unwrap_flipkart_redirect_url(raw_clean)
+        direct_pid = extract_flipkart_pid(clean_fk_u) or extract_flipkart_pid(raw_clean) or (raw_clean if len(raw_clean) == 16 and raw_clean.isalnum() else "")
+        if direct_pid and direct_pid in VERIFIED_BENCHMARKS and VERIFIED_BENCHMARKS[direct_pid].get("fk_url"):
+            clean_fk_u = str(VERIFIED_BENCHMARKS[direct_pid]["fk_url"])
+        elif not clean_fk_u.lower().startswith("http"):
+            clean_fk_u = f"https://www.flipkart.com/search?q={urllib.parse.quote(raw_clean)}"
         try:
             r_direct = session.get(clean_fk_u, allow_redirects=True, timeout=12)
             fk_link = unwrap_flipkart_redirect_url(r_direct.url or clean_fk_u)
             if fk_link != r_direct.url and "flipkart.com" in fk_link.lower():
                 r_direct = session.get(fk_link, allow_redirects=True, timeout=12)
-            direct_pid = extract_flipkart_pid(fk_link) or extract_flipkart_pid(clean_fk_u) or ""
+            direct_pid = extract_flipkart_pid(fk_link) or extract_flipkart_pid(clean_fk_u) or direct_pid or ""
             if r_direct.status_code == 200:
                 soup_d = BeautifulSoup(r_direct.text, "html.parser")
                 fk_highlights = extract_flipkart_highlights(soup_d)
@@ -745,6 +783,16 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
                             if mv > 0: fk_scraped_mrp = mv; break
         except Exception as de:
             log.warning(f"Direct Flipkart counterpart fetch error: {de}")
+
+        if cur_p == 0.0 and direct_pid and direct_pid in VERIFIED_BENCHMARKS:
+            b = VERIFIED_BENCHMARKS[direct_pid]
+            cur_p = float(b.get("fk_price") or b.get("lowest_90d") or 0.0)
+            if b.get("mrp") and fk_scraped_mrp == 0.0:
+                fk_scraped_mrp = float(b["mrp"])
+            if b.get("title") and (fk_title == title_or_url or not fk_title or fk_title.startswith("Flipkart")):
+                fk_title = str(b["title"])
+            if b.get("fk_url") and not fk_link.startswith("http"):
+                fk_link = str(b["fk_url"])
 
     if cur_p == 0.0:
         if is_direct_fk:
@@ -908,6 +956,8 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
     amz_scraped_mrp = 0.0
 
     direct_asin = extract_asin(title)
+    if not direct_asin and re.match(r"^[A-Z0-9]{10}$", title.strip(), re.I):
+        direct_asin = title.strip().upper()
     is_direct_amz = bool(direct_asin) or ("amazon." in title.lower()) or ("amzn." in title.lower())
 
     if is_direct_amz and not direct_asin:
@@ -1474,7 +1524,10 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             except Exception as e:
                 log.warning(f"Manual Amazon competitor error: {e}")
         else:
-            amz_comp = cross_search_amazon(product_title, current_price, mrp)
+            comp_query = product_title
+            if pid and pid in VERIFIED_BENCHMARKS and VERIFIED_BENCHMARKS[pid].get("amz_asin"):
+                comp_query = str(VERIFIED_BENCHMARKS[pid]["amz_asin"])
+            amz_comp = cross_search_amazon(comp_query, current_price, mrp)
             has_competitor = True
 
         # Determine Winner (Only when counterpart has a confirmed >0 price)
@@ -1775,7 +1828,10 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             log.warning(f"Manual competitor scrape error: {e}")
     else:
         try:
-            fk_comp = cross_search_flipkart(prod_title, current_price, mrp)
+            fk_target = prod_title
+            if asin and asin in VERIFIED_BENCHMARKS and VERIFIED_BENCHMARKS[asin].get("fk_pid"):
+                fk_target = str(VERIFIED_BENCHMARKS[asin]["fk_pid"])
+            fk_comp = cross_search_flipkart(fk_target, current_price, mrp)
             has_competitor = True
         except Exception as e:
             log.warning(f"Auto Flipkart cross-search error: {e}")
