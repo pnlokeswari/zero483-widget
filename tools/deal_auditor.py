@@ -126,6 +126,13 @@ VERIFIED_BENCHMARKS: Dict[str, Dict[str, Any]] = {
         "image_url": "https://rukminim2.flixcart.com/image/800/800/xif0q/moisturizer-cream/q/o/l/50-nourishing-moisturizer-for-face-makes-you-glow-cream-foxtale-original-imahhcyr8sxjc5xh.jpeg",
         "fk_url": "https://www.flipkart.com/foxtale-nourishing-ceramide-moisturizer-dry-skin-skin-barrier-repair-hydration/p/itm54d45bb084cca?pid=MSCGNF44HGHBPR8E"
     },
+    "MSCHN4UFYCHFCT4S": {
+        "title": "Foxtale Brightening Moisturiser with Vitamin C & Niacinamide|Brightens, Fades Dark Spots (50 ml)",
+        "mrp": 345.0,
+        "fk_price": 279.0,
+        "lowest_90d": 223.0,
+        "fk_url": "https://www.flipkart.com/foxtale-brightening-moisturiser-vitamin-c-niacinamide-brightens-fades-dark-spots/p/itm897d92231c6cb?pid=MSCHN4UFYCHFCT4S"
+    },
     "SMPDDHGCQ28SKPZH": {
         "title": "TRESemme Hairfall Defense Keratin Fillers Shampoo (580 ml)",
         "mrp": 865.0,
