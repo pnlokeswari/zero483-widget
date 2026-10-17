@@ -1269,6 +1269,12 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             m_slug = re.search(r"flipkart\.com/([^/]+)/p/", final_url, re.I)
             if m_slug:
                 product_title = m_slug.group(1).replace("-", " ").title()
+            elif "flipkart.com/search" in final_url.lower() or "flipkart.com/search" in clean_input.lower():
+                parsed_u = urllib.parse.urlparse(final_url if "flipkart.com/search" in final_url.lower() else clean_input)
+                qs = urllib.parse.parse_qs(parsed_u.query)
+                q_val = qs.get("q", [""])[0].strip()
+                if q_val:
+                    product_title = q_val
             elif pid:
                 product_title = f"Flipkart Product ({pid})"
             else:
@@ -1280,7 +1286,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
 
         # Search Flipkart fallback ONLY if direct page scrape failed OR if the direct PID was confirmed Sold Out
         if current_price == 0.0 or is_sold_out_direct:
-            search_query = product_title if (product_title and not product_title.startswith("Flipkart Product")) else (pid or clean_input)
+            search_query = product_title if (product_title and not product_title.startswith("Flipkart Product") and product_title != "Flipkart Deal Product") else (pid or clean_input)
             # Try base query first, and if target PID is provided, also try size/storage variant queries
             search_queries_to_try = [search_query]
             if pid and not is_sold_out_direct:
