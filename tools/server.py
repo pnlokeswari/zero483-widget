@@ -262,9 +262,78 @@ def healthz():
     return jsonify({
         "status": "ok",
         "service": "zero483-deals-api",
-        "build": "2026-10-16-v2-efd8abb-swa",
+        "build": "2026-10-17-v3-diag-variant",
         "time": time.time()
     }), 200
+
+
+@app.route("/api/debug-flipkart", methods=["GET", "POST"])
+def api_debug_flipkart():
+    url = request.args.get("url") or (request.get_json(silent=True) or {}).get("url") or ""
+    if not url:
+        return jsonify({"error": "url parameter required"}), 400
+    
+    from curl_cffi import requests as cffi_requests
+    from bs4 import BeautifulSoup
+    from deal_auditor import unwrap_flipkart_redirect_url, extract_flipkart_pid, audit_product_deal
+    
+    session = cffi_requests.Session(impersonate="chrome120")
+    step1_unwrapped = unwrap_flipkart_redirect_url(url)
+    pid = extract_flipkart_pid(step1_unwrapped)
+    
+    fetch_url = step1_unwrapped
+    if "dl.flipkart.com/dl/" in fetch_url.lower():
+        fetch_url = re.sub(r"https?://dl\.flipkart\.com/dl/", "https://www.flipkart.com/", fetch_url, flags=re.I)
+        
+    res = {
+        "input_url": url,
+        "step1_unwrapped": step1_unwrapped,
+        "fetch_url": fetch_url,
+        "pid": pid,
+    }
+    
+    try:
+        r = session.get(fetch_url, allow_redirects=True, timeout=15)
+        res["status_code"] = r.status_code
+        res["final_url"] = r.url
+        res["content_length"] = len(r.text)
+        soup = BeautifulSoup(r.text, "html.parser")
+        res["page_title"] = soup.title.string if soup.title else ""
+        
+        has_init_state = "window.__INITIAL_STATE__" in r.text
+        res["has_init_state"] = has_init_state
+        if has_init_state:
+            parts = re.split(r"window\.__INITIAL_STATE__\s*=\s*", r.text, maxsplit=1)
+            if len(parts) > 1:
+                raw = parts[1].strip().rstrip(";").split("</script>")[0].strip().rstrip(";")
+                data = json.loads(raw)
+                page_ctx = data.get("multiWidgetState", {}).get("pageDataResponse", {}).get("pageContext", {})
+                psi = page_ctx.get("fdpEventTracking", {}).get("events", {}).get("psi", {})
+                ppd = psi.get("ppd", {})
+                res["ppd"] = ppd
+                res["swa"] = psi.get("swa", [])
+                
+                schemas = data.get("multiWidgetState", {}).get("pageDataResponse", {}).get("seoData", {}).get("schema", [])
+                res["seo_schemas_count"] = len(schemas)
+                if schemas and isinstance(schemas[0], dict):
+                    res["schema_price"] = schemas[0].get("offers", {}).get("price")
+    except Exception as e:
+        res["error"] = str(e)
+        
+    try:
+        audit_res = audit_product_deal(url)
+        res["audit_result"] = {
+            "title": audit_res.get("title"),
+            "current_price": audit_res.get("current_price"),
+            "mrp": audit_res.get("mrp"),
+            "direct_url": audit_res.get("direct_url"),
+            "highlights": audit_res.get("highlights", [])[:3]
+        }
+    except Exception as e:
+        res["audit_error"] = str(e)
+        
+    return jsonify(res)
+
 
 
 # ═════════════════════════════════════════════════════════
