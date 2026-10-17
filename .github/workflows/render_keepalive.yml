@@ -1,0 +1,20 @@
+name: Render Free Tier Keep-Alive
+
+on:
+  schedule:
+    # Runs every 10 minutes (Render free tier containers spin down after 15 min of zero traffic)
+    - cron: '*/10 * * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  keepalive:
+    name: Ping Render API
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Send Heartbeat Ping to zero483-deals-api
+        run: |
+          echo "Sending keepalive heartbeat to Render container..."
+          curl -s -S -f --max-time 15 "https://zero483-deals-api.onrender.com/ping" || echo "Warning: /ping returned non-200 or timed out"
+          curl -s -S -f --max-time 15 "https://zero483-deals-api.onrender.com/healthz" || echo "Warning: /healthz returned non-200 or timed out"
+          echo "Keep-alive heartbeat finished successfully."
