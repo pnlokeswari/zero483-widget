@@ -1354,52 +1354,13 @@ function toFlipkartAffiliateUrl(url) {
 function openStoreLink(rawUrl, platform) {
   if (!rawUrl) return;
   const url = (platform === 'flipkart') ? toFlipkartAffiliateUrl(rawUrl) : rawUrl;
-  const ua = navigator.userAgent || '';
-  const isAndroid = /Android/i.test(ua);
-  const isIOS = /iPhone|iPad|iPod/i.test(ua) && !window.MSStream;
-
-  if (isAndroid) {
-    const pkg = (platform === 'flipkart') ? 'com.flipkart.android' : 'in.amazon.mShop.android.shopping';
-    const clean = url.replace(/^https?:\/\//i, '');
-    const fallbackEncoded = encodeURIComponent(url);
-    const intentUrl = `intent://${clean}#Intent;scheme=https;package=${pkg};S.browser_fallback_url=${fallbackEncoded};end`;
-    window.location.href = intentUrl;
-    return;
-  }
-
-  if (isIOS) {
-    // For iOS: attempt native app scheme with graceful fallback to browser URL
-    let appUrl = '';
-    if (platform === 'flipkart') {
-      appUrl = url.replace(/^https?:\/\/([^\/]+)/i, 'flipkart://dl');
-    } else {
-      appUrl = 'com.amazon.mobile.shopping.web://' + url.replace(/^https?:\/\//i, '');
-    }
-
-    const startTime = Date.now();
-    window.location.href = appUrl;
-
-    setTimeout(function() {
-      // If user remained in current window after 1.2s (app did not open or not installed), navigate to web URL
-      if (Date.now() - startTime < 1800) {
-        window.location.href = url;
-      }
-    }, 1200);
-    return;
-  }
-
-  // Desktop or standard fallback: Open in new browser tab
   window.open(url, '_blank', 'noopener,noreferrer');
 }
 
 function handleSmartStoreClick(e, rawUrl, platform) {
-  if (e && (e.ctrlKey || e.metaKey || e.shiftKey || e.which === 2)) return;
-  const ua = navigator.userAgent || '';
-  const isMobile = /Android|iPhone|iPad|iPod/i.test(ua);
-  if (!isMobile) return; // Keep default browser behavior on desktop
-
-  if (e && e.preventDefault) e.preventDefault();
-  openStoreLink(rawUrl, platform);
+  // Let the browser handle standard anchor navigation natively so Android App Links &
+  // iOS Universal Links seamlessly open the Flipkart / Amazon app or store website.
+  return true;
 }
 
 function checkInAppBrowser() {
