@@ -180,6 +180,24 @@ VERIFIED_BENCHMARKS: Dict[str, Dict[str, Any]] = {
         "mrp": 555.0,
         "lowest_90d": 118.0
     },
+    "MBPHNENNPMYNP5EU": {
+        "title": "imbi Samsung Galaxy M34 5G Replacement Body With Volume Button Camera Glass Full Panel",
+        "mrp": 1400.0,
+        "fk_price": 763.0,
+        "lowest_90d": 709.0,
+        "amz_asin": "B0H1MTBKD2",
+        "amz_price": 599.0,
+        "fk_url": "https://www.flipkart.com/imbi-samsung-galaxy-m34-5g-replacement-body-volume-button-camera-glass-full-panel/p/itm6535ab466ef45?pid=MBPHNENNPMYNP5EU"
+    },
+    "B0H1MTBKD2": {
+        "title": "imbi) Compatible with Samsung Galaxy M34 5G Replacement Full Body, Back Panel with Side Frame, Camera Glass, Power Volume Button",
+        "mrp": 1400.0,
+        "price": 599.0,
+        "lowest_90d": 599.0,
+        "fk_pid": "MBPHNENNPMYNP5EU",
+        "fk_price": 763.0,
+        "fk_url": "https://www.flipkart.com/imbi-samsung-galaxy-m34-5g-replacement-body-volume-button-camera-glass-full-panel/p/itm6535ab466ef45?pid=MBPHNENNPMYNP5EU"
+    },
 }
 
 
@@ -227,16 +245,28 @@ def get_genuine_price_history(platform: str, product_id: str) -> Dict[str, Any]:
     api_url = f"https://buyhatke.com/api/productData?pos={pos}&pid={clean_id}"
 
     try:
-        r = cffi_requests.get(
-            api_url,
-            impersonate="chrome120",
-            headers={
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Accept": "application/json"
-            },
-            timeout=5
-        )
-        if r.status_code == 200:
+        r = None
+        try:
+            r = cffi_requests.get(
+                api_url,
+                impersonate="chrome120",
+                headers={
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                    "Accept": "application/json"
+                },
+                timeout=10
+            )
+        except Exception:
+            import requests as std_requests
+            r = std_requests.get(
+                api_url,
+                headers={
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                    "Accept": "application/json"
+                },
+                timeout=10
+            )
+        if r and r.status_code == 200:
             res = r.json()
             data = res.get("data") if isinstance(res.get("data"), dict) else res
             min6 = float(data.get("min6") or 0)
@@ -1630,6 +1660,14 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         # Genuine price history for primary Flipkart audit
         hist_fk = get_genuine_price_history("flipkart", pid) if pid else {}
         real_fk_low = float(hist_fk.get("lowest_price") or 0)
+        real_fk_cur = float(hist_fk.get("cur_price") or 0)
+        real_fk_mrp = float(hist_fk.get("mrp") or 0)
+
+        # Cloud Fallback: If scraper missed live price (cloud bot-block / timeout), recover from genuine price history!
+        if current_price == 0.0 and real_fk_cur > 0:
+            current_price = real_fk_cur
+        if (mrp == 0.0 or mrp <= current_price) and real_fk_mrp > current_price:
+            mrp = real_fk_mrp
 
         if real_fk_low > 0:
             lowest_90d = min(current_price, real_fk_low) if current_price > 0 else real_fk_low
@@ -1639,8 +1677,8 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         else:
             lowest_90d = current_price
 
-        if (mrp == 0 or mrp <= current_price) and float(hist_fk.get("mrp") or 0) > current_price:
-            mrp = float(hist_fk["mrp"])
+        if (mrp == 0 or mrp <= current_price) and real_fk_mrp > current_price:
+            mrp = real_fk_mrp
         elif pid and pid in VERIFIED_BENCHMARKS and (mrp == 0 or mrp <= current_price):
             mrp = float(VERIFIED_BENCHMARKS[pid]["mrp"])
         elif mrp <= current_price:
