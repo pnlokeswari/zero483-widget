@@ -1106,12 +1106,15 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     if is_flipkart_input(clean_input):
         session = cffi_requests.Session(impersonate="chrome120")
         final_url = unwrap_flipkart_redirect_url(clean_input)
-        if any(k in final_url.lower() for k in ["fkrt.it", "fktr.in", "dl.flipkart.com", "visitretailer/2276"]) or ("flipkart.com" in final_url.lower() and "/p/" not in final_url.lower()):
+        if "dl.flipkart.com/dl/" in final_url.lower():
+            final_url = re.sub(r"^https?://dl\.flipkart\.com/dl/", "https://www.flipkart.com/", final_url, flags=re.I)
+        if any(k in final_url.lower() for k in ["fkrt.it", "fktr.in", "visitretailer/2276"]) or ("flipkart.com" in final_url.lower() and "/p/" not in final_url.lower()):
             try:
                 r = session.get(final_url, allow_redirects=True, timeout=12)
                 final_url = unwrap_flipkart_redirect_url(r.url)
             except Exception as e:
                 log.warning(f"Flipkart redirect error for {clean_input}: {e}")
+
 
         pid = extract_flipkart_pid(final_url) or extract_flipkart_pid(clean_input)
 
@@ -1175,6 +1178,18 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                                         m_val = ppd.get("mrp") or 0
                                         if fsp > 0: current_price = float(fsp)
                                         if m_val > 0: mrp = float(m_val)
+                                    if current_price == 0.0:
+                                        schemas = data.get("multiWidgetState", {}).get("pageDataResponse", {}).get("seoData", {}).get("schema", [])
+                                        for sc in schemas:
+                                            if isinstance(sc, dict) and "offers" in sc:
+                                                op = sc["offers"].get("price")
+                                                if op:
+                                                    try:
+                                                        current_price = float(op)
+                                                        break
+                                                    except (ValueError, TypeError):
+                                                        pass
+
                                     swa_list = psi.get("swa", [])
                                     if isinstance(swa_list, list):
                                         for swa_item in swa_list:
@@ -1232,8 +1247,8 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             if not product_title or product_title.startswith("Flipkart Product"):
                 product_title = str(VERIFIED_BENCHMARKS[pid]["title"])
 
-        # Search Flipkart fallback if direct page scrape failed OR if the old PID was Sold Out
-        if current_price == 0.0 or is_sold_out_direct or not fk_highlights:
+        # Search Flipkart fallback ONLY if direct page scrape failed OR if the direct PID was confirmed Sold Out
+        if current_price == 0.0 or is_sold_out_direct:
             search_query = product_title if (product_title and not product_title.startswith("Flipkart Product")) else (pid or clean_input)
             try:
                 search_url = f"https://www.flipkart.com/search?q={cffi_requests.utils.quote(search_query)}"
@@ -1259,6 +1274,9 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                                         cand_title = val.get("titles", {}).get("title", "")
                                         cand_low = cand_title.lower()
                                         if any(bad in cand_low for bad in ["back cover", "flip cover", "case for", "screen guard", "tempered glass"]):
+                                            continue
+                                        # Never substitute another variant PID if user requested a specific PID unless original was confirmed sold out
+                                        if pid and not is_sold_out_direct and cand_id != pid:
                                             continue
                                         if pid and cand_id != pid:
                                             # Require strong prefix/keyword match if falling back to an updated PID
@@ -1287,6 +1305,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                             break
             except Exception as e:
                 log.warning(f"Flipkart search extraction fallback error: {e}")
+
 
         # Benchmark reconciliation
         if pid and pid in VERIFIED_BENCHMARKS:
