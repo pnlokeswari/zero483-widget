@@ -1105,6 +1105,12 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     # ══════════════════════════════════════════════════════════
     if is_flipkart_input(clean_input):
         session = cffi_requests.Session(impersonate="chrome120")
+        # Prime session with Flipkart home cookies (Akamai ak_bmsc / token) to avoid 429 cold-bot challenge
+        try:
+            session.get("https://www.flipkart.com/", timeout=8)
+        except Exception as e:
+            log.debug(f"Flipkart cookie prime error: {e}")
+
         final_url = unwrap_flipkart_redirect_url(clean_input)
         if "dl.flipkart.com/dl/" in final_url.lower():
             final_url = re.sub(r"^https?://dl\.flipkart\.com/dl/", "https://www.flipkart.com/", final_url, flags=re.I)
@@ -1114,6 +1120,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                 final_url = unwrap_flipkart_redirect_url(r.url)
             except Exception as e:
                 log.warning(f"Flipkart redirect error for {clean_input}: {e}")
+
 
 
         pid = extract_flipkart_pid(final_url) or extract_flipkart_pid(clean_input)
