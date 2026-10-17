@@ -262,7 +262,7 @@ def healthz():
     return jsonify({
         "status": "ok",
         "service": "zero483-deals-api",
-        "build": "2026-10-17-v4-session-prime",
+        "build": "2026-10-17-v5-matrix-diag",
         "time": time.time()
     }), 200
 
@@ -299,10 +299,90 @@ def api_debug_flipkart():
         res["cookies"] = list(session.cookies.keys())
     except Exception as he:
         res["home_err"] = str(he)
+
+    variations = {}
+
+    # Var 1: Flipkart Referer & browser navigation headers
+    headers_v1 = {
+        "Referer": "https://www.flipkart.com/",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9,hi;q=0.8",
+        "Sec-Fetch-Site": "same-origin",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Dest": "document",
+    }
+    try:
+        r1 = session.get(fetch_url, headers=headers_v1, timeout=12)
+        variations["v1_referer_browser_headers"] = {
+            "status": r1.status_code,
+            "has_init": "window.__INITIAL_STATE__" in r1.text,
+            "len": len(r1.text)
+        }
+    except Exception as e:
+        variations["v1_referer_browser_headers"] = {"error": str(e)}
+
+    # Var 2: Google Referrer
+    headers_v2 = {
+        "Referer": "https://www.google.com/",
+        "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+        "Sec-Fetch-Site": "cross-site",
+    }
+    try:
+        s2 = cffi_requests.Session(impersonate="chrome120")
+        r2 = s2.get(fetch_url, headers=headers_v2, timeout=12)
+        variations["v2_google_referer"] = {
+            "status": r2.status_code,
+            "has_init": "window.__INITIAL_STATE__" in r2.text,
+            "len": len(r2.text)
+        }
+    except Exception as e:
+        variations["v2_google_referer"] = {"error": str(e)}
+
+    # Var 3: safari15_5
+    try:
+        s3 = cffi_requests.Session(impersonate="safari15_5")
+        r3 = s3.get(fetch_url, timeout=12)
+        variations["v3_safari15_5"] = {
+            "status": r3.status_code,
+            "has_init": "window.__INITIAL_STATE__" in r3.text,
+            "len": len(r3.text)
+        }
+    except Exception as e:
+        variations["v3_safari15_5"] = {"error": str(e)}
+
+    # Var 4: Clean URL only
+    clean_url_only = f"https://www.flipkart.com/p/p/p?pid={pid}" if pid else fetch_url
+    try:
+        r4 = session.get(clean_url_only, timeout=12)
+        variations["v4_clean_p_url"] = {
+            "status": r4.status_code,
+            "has_init": "window.__INITIAL_STATE__" in r4.text,
+            "len": len(r4.text)
+        }
+    except Exception as e:
+        variations["v4_clean_p_url"] = {"error": str(e)}
+
+    # Var 5: Search with slug query
+    slug_match = re.search(r"flipkart\.com/([^/]+)/p/", fetch_url)
+    slug_q = slug_match.group(1).replace("-", " ") if slug_match else (pid or "")
+    if slug_q:
+        try:
+            r5 = session.get(f"https://www.flipkart.com/search?q={cffi_requests.utils.quote(slug_q)}", timeout=12)
+            variations["v5_search_slug"] = {
+                "status": r5.status_code,
+                "has_init": "window.__INITIAL_STATE__" in r5.text,
+                "len": len(r5.text),
+                "query": slug_q
+            }
+        except Exception as e:
+            variations["v5_search_slug"] = {"error": str(e)}
+
+    res["variations"] = variations
     
     try:
         r = session.get(fetch_url, allow_redirects=True, timeout=15)
         res["status_code"] = r.status_code
+
 
         res["final_url"] = r.url
         res["content_length"] = len(r.text)
