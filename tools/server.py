@@ -262,7 +262,7 @@ def healthz():
     return jsonify({
         "status": "ok",
         "service": "zero483-deals-api",
-        "build": "2026-10-17-v3-diag-variant",
+        "build": "2026-10-17-v4-session-prime",
         "time": time.time()
     }), 200
 
@@ -278,6 +278,7 @@ def api_debug_flipkart():
     from deal_auditor import unwrap_flipkart_redirect_url, extract_flipkart_pid, audit_product_deal
     
     session = cffi_requests.Session(impersonate="chrome120")
+    
     step1_unwrapped = unwrap_flipkart_redirect_url(url)
     pid = extract_flipkart_pid(step1_unwrapped)
     
@@ -291,10 +292,18 @@ def api_debug_flipkart():
         "fetch_url": fetch_url,
         "pid": pid,
     }
+
+    try:
+        r_home = session.get("https://www.flipkart.com/", timeout=10)
+        res["home_status"] = r_home.status_code
+        res["cookies"] = list(session.cookies.keys())
+    except Exception as he:
+        res["home_err"] = str(he)
     
     try:
         r = session.get(fetch_url, allow_redirects=True, timeout=15)
         res["status_code"] = r.status_code
+
         res["final_url"] = r.url
         res["content_length"] = len(r.text)
         soup = BeautifulSoup(r.text, "html.parser")
