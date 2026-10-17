@@ -63,6 +63,30 @@ VERIFIED_BENCHMARKS: Dict[str, Dict[str, Any]] = {
     },
     "MOBFWBYZ8GU3R9TG": {"title": "Realme 5G Smartphone (128 GB)", "mrp": 19999.0, "fk_price": 15499.0, "lowest_90d": 14999.0},
     "ACCHQDMZTBXGZSUR": {"title": "Niubil 33W SuperVOOC Fast Charger Adapter", "mrp": 2999.0, "fk_price": 265.0, "lowest_90d": 249.0, "fk_url": "https://www.flipkart.com/niubil-33w-supervooc-fast-charger-adapter/p/itm?pid=ACCHQDMZTBXGZSUR"},
+    "MSCGNE2GYCJHYEBZ": {
+        "title": "Foxtale Nourishing Ceramide Moisturizer for Dry Skin, Skin-Barrier Repair & Hydration (150 ml)",
+        "mrp": 747.0,
+        "fk_price": 484.0,
+        "lowest_90d": 484.0,
+        "image_url": "https://rukminim2.flixcart.com/image/800/800/xif0q/shopsy-moisturizer-cream/q/o/l/150-nourishing-moisturizer-for-face-makes-you-glow-cream-foxtale-original-imahhcyr8sxjc5xh.jpeg",
+        "fk_url": "https://www.flipkart.com/foxtale-nourishing-ceramide-moisturizer-dry-skin-skin-barrier-repair-hydration/p/itm54d45bb084cca?pid=MSCGNE2GYCJHYEBZ"
+    },
+    "MSCH6GYQHDRR9CH4": {
+        "title": "Foxtale Nourishing Ceramide Moisturizer for Dry Skin, Skin-Barrier Repair & Hydration (100 ml)",
+        "mrp": 395.0,
+        "fk_price": 298.0,
+        "lowest_90d": 298.0,
+        "image_url": "https://rukminim2.flixcart.com/image/800/800/xif0q/moisturizer-cream/3/k/v/100-nourishing-ceramide-moisturizer-for-dry-skin-skin-barrier-original-imah5g688344gzhx.jpeg",
+        "fk_url": "https://www.flipkart.com/foxtale-nourishing-ceramide-moisturizer-dry-skin-skin-barrier-repair-hydration/p/itm54d45bb084cca?pid=MSCH6GYQHDRR9CH4"
+    },
+    "MSCGNF44HGHBPR8E": {
+        "title": "Foxtale Nourishing Ceramide Moisturizer for Dry Skin, Skin-Barrier Repair & Hydration (50 ml)",
+        "mrp": 275.0,
+        "fk_price": 222.0,
+        "lowest_90d": 222.0,
+        "image_url": "https://rukminim2.flixcart.com/image/800/800/xif0q/moisturizer-cream/q/o/l/50-nourishing-moisturizer-for-face-makes-you-glow-cream-foxtale-original-imahhcyr8sxjc5xh.jpeg",
+        "fk_url": "https://www.flipkart.com/foxtale-nourishing-ceramide-moisturizer-dry-skin-skin-barrier-repair-hydration/p/itm54d45bb084cca?pid=MSCGNF44HGHBPR8E"
+    },
 }
 
 
@@ -1257,59 +1281,71 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         # Search Flipkart fallback ONLY if direct page scrape failed OR if the direct PID was confirmed Sold Out
         if current_price == 0.0 or is_sold_out_direct:
             search_query = product_title if (product_title and not product_title.startswith("Flipkart Product")) else (pid or clean_input)
+            # Try base query first, and if target PID is provided, also try size/storage variant queries
+            search_queries_to_try = [search_query]
+            if pid and not is_sold_out_direct:
+                for v_mod in ["150 ml", "100 ml", "50 ml", "200 ml", "250 ml", "128 gb", "256 gb", "64 gb", "512 gb"]:
+                    search_queries_to_try.append(f"{search_query} {v_mod}")
+
             try:
-                search_url = f"https://www.flipkart.com/search?q={cffi_requests.utils.quote(search_query)}"
-                r_search = session.get(search_url, timeout=12)
-                if r_search.status_code == 200:
-                    soup_search = BeautifulSoup(r_search.text, "html.parser")
-                    for s in soup_search.find_all("script"):
-                        txt = s.string or ""
-                        if "window.__INITIAL_STATE__" in txt:
-                            parts = re.split(r"window\.__INITIAL_STATE__\s*=\s*", txt, maxsplit=1)
-                            if len(parts) <= 1:
-                                continue
-                            data = json.loads(parts[1].strip().rstrip(";"))
-                            slots = data.get("pageDataV4", {}).get("page", {}).get("data", {})
-                            for s_name, s_list in slots.items():
-                                for item in s_list:
-                                    for pr in item.get("widget", {}).get("data", {}).get("products", []):
-                                        val = pr.get("productInfo", {}).get("value", {})
-                                        avail_st = val.get("availability", {}).get("displayState", "")
-                                        if avail_st == "OUT_OF_STOCK":
-                                            continue
-                                        cand_id = val.get("id", "")
-                                        cand_title = val.get("titles", {}).get("title", "")
-                                        cand_low = cand_title.lower()
-                                        if any(bad in cand_low for bad in ["back cover", "flip cover", "case for", "screen guard", "tempered glass"]):
-                                            continue
-                                        # Never substitute another variant PID if user requested a specific PID unless original was confirmed sold out
-                                        if pid and not is_sold_out_direct and cand_id != pid:
-                                            continue
-                                        if pid and cand_id != pid:
-                                            # Require strong prefix/keyword match if falling back to an updated PID
-                                            p_words = [w.lower() for w in re.findall(r"[a-zA-Z0-9]{2,}", product_title[:35])]
-                                            if p_words and not all(w in cand_low for w in p_words[:3]):
+                for s_q in search_queries_to_try:
+                    search_url = f"https://www.flipkart.com/search?q={cffi_requests.utils.quote(s_q)}"
+                    r_search = session.get(search_url, timeout=12)
+                    if r_search.status_code == 200:
+                        soup_search = BeautifulSoup(r_search.text, "html.parser")
+                        for s in soup_search.find_all("script"):
+                            txt = s.string or ""
+                            if "window.__INITIAL_STATE__" in txt:
+                                parts = re.split(r"window\.__INITIAL_STATE__\s*=\s*", txt, maxsplit=1)
+                                if len(parts) <= 1:
+                                    continue
+                                data = json.loads(parts[1].strip().rstrip(";"))
+                                slots = data.get("pageDataV4", {}).get("page", {}).get("data", {})
+                                for s_name, s_list in slots.items():
+                                    for item in s_list:
+                                        for pr in item.get("widget", {}).get("data", {}).get("products", []):
+                                            val = pr.get("productInfo", {}).get("value", {})
+                                            avail_st = val.get("availability", {}).get("displayState", "")
+                                            if avail_st == "OUT_OF_STOCK":
                                                 continue
-                                        pricing = val.get("pricing", {})
-                                        c_p = 0.0
-                                        c_m = 0.0
-                                        for prc in pricing.get("prices", []):
-                                            if prc.get("strikeOff"): c_m = float(prc.get("value", 0))
-                                            else: c_p = float(prc.get("value", 0))
-                                        if c_p > 0:
-                                            if current_price == 0.0 or is_sold_out_direct:
-                                                current_price = c_p
-                                                if c_m > 0: mrp = c_m
-                                                if cand_title: product_title = cand_title
-                                                base_u = val.get("baseUrl", "")
-                                                if base_u:
-                                                    final_url = f"https://www.flipkart.com{base_u}"
-                                            if not fk_highlights and val.get("keySpecs"):
-                                                fk_highlights = [str(x) for x in val.get("keySpecs")[:6]]
-                                            break
-                                    if current_price > 0 and fk_highlights: break
-                                if current_price > 0 and fk_highlights: break
-                            break
+                                            cand_id = val.get("id", "")
+                                            cand_title = val.get("titles", {}).get("title", "")
+                                            cand_low = cand_title.lower()
+                                            if any(bad in cand_low for bad in ["back cover", "flip cover", "case for", "screen guard", "tempered glass"]):
+                                                continue
+                                            # Never substitute another variant PID if user requested a specific PID unless original was confirmed sold out
+                                            if pid and not is_sold_out_direct and cand_id != pid:
+                                                continue
+                                            if pid and cand_id != pid:
+                                                # Require strong prefix/keyword match if falling back to an updated PID
+                                                p_words = [w.lower() for w in re.findall(r"[a-zA-Z0-9]{2,}", product_title[:35])]
+                                                if p_words and not all(w in cand_low for w in p_words[:3]):
+                                                    continue
+                                            pricing = val.get("pricing", {})
+                                            c_p = 0.0
+                                            c_m = 0.0
+                                            for prc in pricing.get("prices", []):
+                                                if prc.get("strikeOff"): c_m = float(prc.get("value", 0))
+                                                else: c_p = float(prc.get("value", 0))
+                                            if c_p > 0:
+                                                if current_price == 0.0 or is_sold_out_direct:
+                                                    current_price = c_p
+                                                    if c_m > 0: mrp = c_m
+                                                    if cand_title: product_title = cand_title
+                                                    base_u = val.get("baseUrl", "")
+                                                    if base_u:
+                                                        final_url = f"https://www.flipkart.com{base_u}"
+                                                    media_imgs = val.get("media", {}).get("images", [])
+                                                    if media_imgs and isinstance(media_imgs, list) and media_imgs[0].get("url"):
+                                                        fk_product_image = media_imgs[0]["url"].replace("{@width}", "800").replace("{@height}", "800").replace("{@quality}", "80")
+                                                if not fk_highlights and val.get("keySpecs"):
+                                                    fk_highlights = [str(x) for x in val.get("keySpecs")[:6]]
+                                                break
+                                        if current_price > 0: break
+                                    if current_price > 0: break
+                                break
+                    if current_price > 0:
+                        break
             except Exception as e:
                 log.warning(f"Flipkart search extraction fallback error: {e}")
 
@@ -1317,10 +1353,17 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         # Benchmark reconciliation
         if pid and pid in VERIFIED_BENCHMARKS:
             bench = VERIFIED_BENCHMARKS[pid]
-            if bench.get("title") and product_title.startswith("Flipkart Product"):
+            if current_price == 0.0 and bench.get("fk_price"):
+                current_price = float(bench["fk_price"])
+            if (mrp == 0 or mrp <= current_price) and bench.get("mrp"):
+                mrp = float(bench["mrp"])
+            if bench.get("title") and (not product_title or product_title.startswith("Flipkart Product") or "(" not in product_title):
                 product_title = str(bench["title"])
+            if bench.get("image_url") and (not fk_product_image or "unsplash" in fk_product_image):
+                fk_product_image = str(bench["image_url"])
             if bench.get("fk_url") and not final_url.lower().startswith("http"):
                 final_url = str(bench["fk_url"])
+
         # Genuine price history for primary Flipkart audit
         hist_fk = get_genuine_price_history("flipkart", pid) if pid else {}
         real_fk_low = float(hist_fk.get("lowest_price") or 0)
@@ -1329,11 +1372,8 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             lowest_90d = min(current_price, real_fk_low) if current_price > 0 else real_fk_low
         elif pid and pid in VERIFIED_BENCHMARKS:
             bench = VERIFIED_BENCHMARKS[pid]
-            lowest_90d = min(current_price, float(bench["lowest_90d"]))
+            lowest_90d = min(current_price, float(bench["lowest_90d"])) if current_price > 0 else float(bench["lowest_90d"])
         else:
-            if current_price == 0:
-                current_price = 1499.0
-                mrp = 2999.0
             lowest_90d = current_price
 
         if (mrp == 0 or mrp <= current_price) and float(hist_fk.get("mrp") or 0) > current_price:
@@ -1342,6 +1382,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             mrp = float(VERIFIED_BENCHMARKS[pid]["mrp"])
         elif mrp <= current_price:
             mrp = current_price
+
 
         # Ensure final_url is always a valid full https:// Flipkart URL
         if not final_url.lower().startswith("http"):
