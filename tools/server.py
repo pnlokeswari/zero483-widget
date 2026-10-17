@@ -262,7 +262,7 @@ def healthz():
     return jsonify({
         "status": "ok",
         "service": "zero483-deals-api",
-        "build": "2026-10-17-v9-benchmark-pairings-native-links",
+        "build": "2026-10-17-v10-unified-engine-zero483-verifyfirst",
         "time": time.time()
     }), 200
 
@@ -515,16 +515,8 @@ def api_buyer_audit_deal():
     if len(url) > 1024 or len(competitor_url) > 1024:
         return jsonify({"error": "Input link exceeds maximum allowed length."}), 400
 
-    # 3. Version Routing (VerifyFirst.in = Frozen Version 1 | Zero483 = Active Version 2 Dev)
-    origin = (request.headers.get("Origin", "") or request.headers.get("Referer", "")).lower()
-    is_v1 = "verifyfirst" in origin or request.path.startswith("/api/v1")
-    if is_v1:
-        try:
-            from deal_auditor_v1 import audit_product_deal
-        except ImportError:
-            from deal_auditor import audit_product_deal
-    else:
-        from deal_auditor import audit_product_deal
+    # 3. Exact Unified Production Engine for both Zero483 and VerifyFirst
+    from deal_auditor import audit_product_deal
 
     from audit_tracker import log_search
     from seo_page_generator import auto_index_verified_product
