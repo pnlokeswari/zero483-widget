@@ -639,7 +639,20 @@ def matches_variant_specs(candidate_title: str, required_specs: set) -> bool:
             val, unit = m_s.group(1), m_s.group(2)
             pattern = r"\b" + re.escape(val) + r"\s*" + re.escape(unit) + r"\b"
             if not re.search(pattern, c_lower):
-                return False
+                # Check for pack multiplier equivalent: e.g. 30g (Pack of 2) == 60g, 100g (Pack of 2) == 200g
+                is_pack_match = False
+                pack_matches = re.findall(r"\b(\d+)\s*(?:g|gm|ml)\b[^(]{0,20}\(pack of\s*(\d+)\)", c_lower)
+                if not pack_matches:
+                    pack_matches = re.findall(r"\b(\d+)\s*(?:g|gm|ml)\b.*?\bpack of\s*(\d+)\b", c_lower)
+                for item_size, pack_count in pack_matches:
+                    try:
+                        if int(item_size) * int(pack_count) == int(val):
+                            is_pack_match = True
+                            break
+                    except ValueError:
+                        pass
+                if not is_pack_match:
+                    return False
 
         # Model modifier check
         if spec in ["pro max", "pro", "plus", "ultra", "mini"]:
@@ -1020,6 +1033,53 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
                         if c_mrp > 0:
                             amz_scraped_mrp = c_mrp
                         break
+
+                # If exact variant was not in search top results, check if a brand-matching candidate has Amazon Twister child variants
+                if cur_p == 0.0 and candidates and required_specs:
+                    for cand_asin, cand_t, _, _ in candidates[:4]:
+                        cand_tl = cand_t.lower()
+                        if model_words and model_words[0] in cand_tl:
+                            try:
+                                r_tw = session.get(f"https://www.amazon.in/dp/{cand_asin}", timeout=10)
+                                if r_tw.status_code == 200:
+                                    m_tw = re.search(r'"dimensionValuesDisplayData"\s*:\s*(\{[^}]+\})', r_tw.text)
+                                    if m_tw:
+                                        tw_map = json.loads(m_tw.group(1))
+                                        for ch_asin, dims in tw_map.items():
+                                            dim_str = " ".join(str(d) for d in dims)
+                                            if matches_variant_specs(dim_str, required_specs):
+                                                # Exact child ASIN found via Twister family!
+                                                r_ch = session.get(f"https://www.amazon.in/dp/{ch_asin}?th=1", timeout=10)
+                                                if r_ch.status_code == 200:
+                                                    s_ch = BeautifulSoup(r_ch.text, "html.parser")
+                                                    ch_title_el = s_ch.select_one("span#productTitle") or s_ch.select_one("h1#title")
+                                                    if ch_title_el:
+                                                        ch_t = ch_title_el.get_text(strip=True)
+                                                        ch_scope = s_ch.select_one("#corePriceDisplay_desktop_feature_div") or s_ch.select_one("#apex_desktop") or s_ch.select_one("#price")
+                                                        ch_p = 0.0
+                                                        ch_m = 0.0
+                                                        if ch_scope:
+                                                            for psel in ["span.priceToPay span.a-price-whole", "span.priceToPay span.a-offscreen", "span.a-price:not(.a-text-price) span.a-offscreen"]:
+                                                                pel = ch_scope.select_one(psel)
+                                                                if pel and pel.get_text(strip=True):
+                                                                    pv = parse_price(pel.get_text())
+                                                                    if pv > 0: ch_p = pv; break
+                                                            for msel in ["span.basisPrice span.a-offscreen", "span.a-price.a-text-price[data-a-strike=true] span.a-offscreen", "span#listPrice"]:
+                                                                mel = ch_scope.select_one(msel)
+                                                                if mel and mel.get_text(strip=True):
+                                                                    mv = parse_price(mel.get_text())
+                                                                    if mv > 0: ch_m = mv; break
+                                                        if ch_p > 0:
+                                                            cur_p = ch_p
+                                                            asin = ch_asin
+                                                            amz_title = f"{ch_t} ({dim_str})" if dim_str not in ch_t else ch_t
+                                                            if ch_m > 0:
+                                                                amz_scraped_mrp = ch_m
+                                                            break
+                                        if cur_p > 0:
+                                            break
+                            except Exception as tw_err:
+                                log.debug(f"Twister resolution error for {cand_asin}: {tw_err}")
         except Exception as e:
             log.debug(f"Cross search Amazon exception: {e}")
 
@@ -1326,6 +1386,11 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                                                 # Require strong prefix/keyword match if falling back to an updated PID
                                                 p_words = [w.lower() for w in re.findall(r"[a-zA-Z0-9]{2,}", product_title[:35])]
                                                 if p_words and not all(w in cand_low for w in p_words[:3]):
+                                                    continue
+                                            elif not pid and search_query:
+                                                # If querying without a fixed PID (e.g. search query input), protect against sponsored ads of competing brands
+                                                sq_words = [w.lower() for w in re.findall(r"[a-zA-Z]{3,}", search_query[:30]) if w.lower() not in ["the", "for", "and", "with", "face", "skin", "cream", "pack", "best"]]
+                                                if sq_words and sq_words[0] not in cand_low:
                                                     continue
                                             pricing = val.get("pricing", {})
                                             c_p = 0.0
