@@ -1429,30 +1429,6 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                                 if mv > 0:
                                     mrp = mv
                                     break
-
-                    # Check if stripping third-party seller listing IDs (lid/hl_lid) reveals a lower primary buybox price
-                    if pid and ("lid=" in final_url or "hl_lid=" in final_url):
-                        clean_buybox_u = re.sub(r"[?&](?:hl_)?lid=[^&]+", "", final_url)
-                        if clean_buybox_u != final_url:
-                            try:
-                                r_bb = session.get(clean_buybox_u, timeout=10)
-                                if r_bb.status_code == 200:
-                                    s_bb = BeautifulSoup(r_bb.text, "html.parser")
-                                    for s_ld in s_bb.find_all("script", type="application/ld+json"):
-                                        if not s_ld.string: continue
-                                        ld_bb = json.loads(s_ld.string)
-                                        items_bb = ld_bb if isinstance(ld_bb, list) else [ld_bb]
-                                        for it_bb in items_bb:
-                                            if isinstance(it_bb, dict) and it_bb.get("@type") == "Product":
-                                                bb_p = it_bb.get("offers", {}).get("price")
-                                                if bb_p and float(bb_p) > 0 and (current_price == 0 or float(bb_p) < current_price):
-                                                    current_price = float(bb_p)
-                                                    m_desc_bb = it_bb.get("description", "")
-                                                    m_mrp_bb = re.search(r"for\s+Rs\.?\s*([0-9,]+(?:\.[0-9]+)?)", m_desc_bb, re.I)
-                                                    if m_mrp_bb:
-                                                        mrp = float(m_mrp_bb.group(1).replace(",", ""))
-                            except Exception as bbe:
-                                log.debug(f"Buybox clean check error: {bbe}")
             except Exception as e:
                 log.warning(f"Direct Flipkart product page scrape failed: {e}")
 
