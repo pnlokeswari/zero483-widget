@@ -262,7 +262,7 @@ def healthz():
     return jsonify({
         "status": "ok",
         "service": "zero483-deals-api",
-        "build": "2026-10-17-v10-unified-engine-zero483-verifyfirst",
+        "build": "2026-10-17-v11-unified-production-clean",
         "time": time.time()
     }), 200
 
@@ -532,7 +532,7 @@ def api_buyer_audit_deal():
         return jsonify(res), 400
 
     # 4. Auto-generate SEO static comparison page & update index/sitemap in background
-    seo_url = auto_index_verified_product(res, push_remote=False if is_v1 else True)
+    seo_url = auto_index_verified_product(res, push_remote=False)
     if seo_url:
         res["seo_page_url"] = seo_url
 
