@@ -119,6 +119,25 @@ VERIFIED_BENCHMARKS: Dict[str, Dict[str, Any]] = {
         "image_url": "https://rukminim2.flixcart.com/image/800/800/xif0q/moisturizer-cream/q/o/l/50-nourishing-moisturizer-for-face-makes-you-glow-cream-foxtale-original-imahhcyr8sxjc5xh.jpeg",
         "fk_url": "https://www.flipkart.com/foxtale-nourishing-ceramide-moisturizer-dry-skin-skin-barrier-repair-hydration/p/itm54d45bb084cca?pid=MSCGNF44HGHBPR8E"
     },
+    "SMPDDHGCQ28SKPZH": {
+        "title": "TRESemme Hairfall Defense Keratin Fillers Shampoo (580 ml)",
+        "mrp": 865.0,
+        "fk_price": 493.0,
+        "lowest_90d": 493.0,
+        "amz_asin": "B07F2QCLP2",
+        "amz_price": 598.0,
+        "image_url": "https://rukmini1.flixcart.com/image/800/800/xif0q/shampoo/m/b/p/-original-imahyq3vfz6dfg5z.jpeg",
+        "fk_url": "https://www.flipkart.com/tresemme-hairfall-defense-keratin-fillers-shampoo/p/itmb63717f7a296b?pid=SMPDDHGCQ28SKPZH"
+    },
+    "B07F2QCLP2": {
+        "title": "TRESemme Hairfall Defense+ Shampoo 580ml With Keratin Fillers",
+        "mrp": 865.0,
+        "price": 598.0,
+        "lowest_90d": 549.0,
+        "fk_pid": "SMPDDHGCQ28SKPZH",
+        "fk_price": 493.0,
+        "fk_url": "https://www.flipkart.com/tresemme-hairfall-defense-keratin-fillers-shampoo/p/itmb63717f7a296b?pid=SMPDDHGCQ28SKPZH"
+    },
 }
 
 
@@ -1278,6 +1297,8 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                 r_page = session.get(final_url, allow_redirects=True, timeout=14)
                 if r_page.status_code == 200:
                     final_url = r_page.url
+                    if not pid:
+                        pid = extract_flipkart_pid(final_url)
                     soup_page = BeautifulSoup(r_page.text, "html.parser")
                     fk_highlights = extract_flipkart_highlights(soup_page)
                     page_txt_low = soup_page.get_text(" ", strip=True).lower()
@@ -1285,7 +1306,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                         is_sold_out_direct = True
                     
                     # 1. Title Extraction: Check meta description / og:title first if H1 is truncated with ellipsis
-                    h1_el = soup_page.select_one("span.B_NuCI") or soup_page.select_one("h1")
+                    h1_el = soup_page.select_one("span.B_NuCI") or soup_page.select_one("h1.VU-ZEz") or soup_page.select_one("h1 span") or soup_page.select_one("h1")
                     raw_h1 = h1_el.get_text(strip=True) if h1_el else ""
                     m_desc = soup_page.select_one("meta[name='description']") or soup_page.select_one("meta[property='og:description']")
                     desc_content = m_desc.get("content", "") if m_desc else ""
@@ -1301,6 +1322,12 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                     
                     if not product_title and raw_h1:
                         product_title = re.sub(r"(\.\.\.|\u2026).*$", "", raw_h1).strip()
+
+                    # Preserve volume / size spec from H1 if meta description omitted it (e.g., 580 ml, 250g, 1000ml)
+                    if raw_h1:
+                        h1_spec = re.search(r"\(?\b(\d+(?:\.\d+)?\s*(?:ml|l|ltr|g|gm|kg|pcs|pack))\b\)?", raw_h1, re.I)
+                        if h1_spec and h1_spec.group(1).lower() not in product_title.lower():
+                            product_title = f"{product_title} ({h1_spec.group(1)})".strip()
 
                     # 2. Extract Price, MRP, Variant Quantity (swa), and Images directly from __INITIAL_STATE__
                     fk_swa_qty = ""
@@ -1344,6 +1371,36 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                                 log.debug(f"Flipkart __INITIAL_STATE__ ppd parse error: {pe}")
                             break
 
+                    # 2b. Direct Schema.org ld+json fallback for Price, MRP, Title, and Product Image
+                    for s_ld in soup_page.find_all("script", type="application/ld+json"):
+                        if not s_ld.string:
+                            continue
+                        try:
+                            ld_raw = json.loads(s_ld.string)
+                            ld_items = ld_raw if isinstance(ld_raw, list) else [ld_raw]
+                            for it in ld_items:
+                                if isinstance(it, dict) and it.get("@type") == "Product":
+                                    offers = it.get("offers")
+                                    if isinstance(offers, dict) and offers.get("price") and current_price == 0.0:
+                                        try:
+                                            current_price = float(offers["price"])
+                                        except (ValueError, TypeError):
+                                            pass
+                                    if mrp == 0.0:
+                                        desc = it.get("description", "")
+                                        m_mrp = re.search(r"for\s+Rs\.?\s*([0-9,]+(?:\.[0-9]+)?)", desc, re.I)
+                                        if m_mrp:
+                                            try:
+                                                mrp = float(m_mrp.group(1).replace(",", ""))
+                                            except (ValueError, TypeError):
+                                                pass
+                                    if it.get("image") and not fk_product_image:
+                                        imgs = it["image"] if isinstance(it["image"], list) else [it["image"]]
+                                        if imgs and str(imgs[0]).startswith("http"):
+                                            fk_product_image = str(imgs[0])
+                        except Exception as lde:
+                            log.debug(f"Flipkart direct ld+json parse error: {lde}")
+
                     # Append verified quantity/variant size if missing from title
                     if fk_swa_qty and fk_swa_qty.lower() not in product_title.lower():
                         product_title = f"{product_title} ({fk_swa_qty})".strip()
@@ -1357,7 +1414,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
 
                     # 4. HTML fallback for Price & MRP if state didn't have it
                     if current_price == 0.0:
-                        for p_sel in ["div.Nx9bqj.CxhGGd", "div._30jeq3._16Jk6d", "div.Nx9bqj", "div._30jeq3"]:
+                        for p_sel in ["div.Nx9bqj.CxhGGd", "div._30jeq3._16Jk6d", "div.Nx9bqj", "div._30jeq3", "div.v1zwn21n"]:
                             pel = soup_page.select_one(p_sel)
                             if pel and pel.get_text(strip=True):
                                 pv = parse_price(pel.get_text(strip=True))
@@ -1365,13 +1422,37 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                                     current_price = pv
                                     break
                     if mrp == 0.0:
-                        for m_sel in ["div.yRaY8j.A68aAq", "div._3I9_wc._2p6lqe", "div.yRaY8j"]:
+                        for m_sel in ["div.yRaY8j.A68aAq", "div._3I9_wc._2p6lqe", "div.yRaY8j", "div.v1zwn21o"]:
                             mel = soup_page.select_one(m_sel)
                             if mel and mel.get_text(strip=True):
                                 mv = parse_price(mel.get_text(strip=True))
                                 if mv > 0:
                                     mrp = mv
                                     break
+
+                    # Check if stripping third-party seller listing IDs (lid/hl_lid) reveals a lower primary buybox price
+                    if pid and ("lid=" in final_url or "hl_lid=" in final_url):
+                        clean_buybox_u = re.sub(r"[?&](?:hl_)?lid=[^&]+", "", final_url)
+                        if clean_buybox_u != final_url:
+                            try:
+                                r_bb = session.get(clean_buybox_u, timeout=10)
+                                if r_bb.status_code == 200:
+                                    s_bb = BeautifulSoup(r_bb.text, "html.parser")
+                                    for s_ld in s_bb.find_all("script", type="application/ld+json"):
+                                        if not s_ld.string: continue
+                                        ld_bb = json.loads(s_ld.string)
+                                        items_bb = ld_bb if isinstance(ld_bb, list) else [ld_bb]
+                                        for it_bb in items_bb:
+                                            if isinstance(it_bb, dict) and it_bb.get("@type") == "Product":
+                                                bb_p = it_bb.get("offers", {}).get("price")
+                                                if bb_p and float(bb_p) > 0 and (current_price == 0 or float(bb_p) < current_price):
+                                                    current_price = float(bb_p)
+                                                    m_desc_bb = it_bb.get("description", "")
+                                                    m_mrp_bb = re.search(r"for\s+Rs\.?\s*([0-9,]+(?:\.[0-9]+)?)", m_desc_bb, re.I)
+                                                    if m_mrp_bb:
+                                                        mrp = float(m_mrp_bb.group(1).replace(",", ""))
+                            except Exception as bbe:
+                                log.debug(f"Buybox clean check error: {bbe}")
             except Exception as e:
                 log.warning(f"Direct Flipkart product page scrape failed: {e}")
 
@@ -1536,7 +1617,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         winner_text = ""
         winner_badge = "Verified Deal"
 
-        if has_competitor and amz_comp and amz_comp.get("price", 0) > 0:
+        if has_competitor and amz_comp and amz_comp.get("price", 0) > 0 and current_price > 0:
             price_diff = abs(current_price - amz_comp["price"])
             if current_price < amz_comp["price"]:
                 winner_platform = "flipkart"
