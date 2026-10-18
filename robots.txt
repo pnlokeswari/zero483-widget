@@ -1,0 +1,44 @@
+# robots.txt for ZERO483 (https://alerts.zero483.com)
+# Configured for Generative Engine Optimization (GEO) & Search Engine Visibility
+
+User-agent: *
+Allow: /
+
+# Google Search & Gemini AI
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Bing & Microsoft Copilot
+User-agent: Bingbot
+Allow: /
+
+# OpenAI / ChatGPT Search
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap
+Sitemap: https://alerts.zero483.com/sitemap.xml
