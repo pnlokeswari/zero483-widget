@@ -252,11 +252,11 @@ Documents 3 specific testing criteria proving hands-on experience:
 - Internal Cross-Linking Box recommending 3 related articles.
 - Persistent Sticky Bottom Mobile Bar for 1-tap conversion.
 
-### H. WAVEPICKS Deals & Price Fluctuation Auditor Card (`deals.html`)
-Every blog post MUST feature an ultra-attractive, responsive promotional card (`.wavepicks-deals-ad-card`) for the live WAVEPICKS Deal & Price Fluctuation Auditor tool (`https://alerts.zero483.com/deals.html`).
+### H. VerifyFirst Deals & Price Fluctuation Auditor Card (`www.verifyfirst.co.in`)
+Every blog post MUST feature an ultra-attractive, responsive promotional card (`.wavepicks-deals-ad-card`) for the live VerifyFirst Deal & Price Fluctuation Auditor tool (`https://www.verifyfirst.co.in`).
 - **Features**: Live pulsing badge, 4 feature pills (90-Day History, Box MRP, Fake Sale Detector, Instant Link Auditor), glowing gradient CTA (`🔍 Open Free Deal Auditor →`), and mobile/laptop responsive layout.
 - **Position**: Prominently placed in the **MIDDLE** of the blog post (e.g. between the key overview/comparison table and the detailed product/review cards), NOT at the end.
-- **Mobile Sticky Bar & Footer**: Include a 1-tap `🛍️ Deal Auditor` button in the floating bottom action bar and footer links.
+- **Mobile Sticky Bar & Footer**: Include a 1-tap `🛍️ Deal Auditor` button in the floating bottom action bar and footer links pointing to `https://www.verifyfirst.co.in`.
 
 HTML Component:
 ```html
@@ -268,7 +268,7 @@ HTML Component:
   <div class="deals-ad-content-grid">
     <div class="deals-ad-copy">
       <h3 class="deals-ad-title">Don’t Fall for Fake Festive Discounts on Amazon!</h3>
-      <p class="deals-ad-desc">Before hitting <em>"Buy Now"</em> on any product, paste its Amazon link into our free <strong>WAVEPICKS Deal Auditor</strong>. Verify true printed box MRP, uncover artificially pumped prices, and inspect genuine <strong>90-day price history curves</strong> in seconds.</p>
+      <p class="deals-ad-desc">Before hitting <em>"Buy Now"</em> on any product, paste its Amazon link into our free <strong>VerifyFirst Deal Auditor</strong>. Verify true printed box MRP, uncover artificially pumped prices, and inspect genuine <strong>90-day price history curves</strong> in seconds.</p>
       <div class="deals-ad-pills">
         <span class="deals-ad-feature-pill">📉 90-Day Price History</span>
         <span class="deals-ad-feature-pill">🏷️ True Printed Box MRP</span>
@@ -284,7 +284,7 @@ HTML Component:
           <small>Uncover historical high vs lowest price drops</small>
         </div>
       </div>
-      <a href="https://alerts.zero483.com/deals.html" target="_blank" rel="noopener" class="btn-deals-ad-cta">🔍 Open Free Deal Auditor →</a>
+      <a href="https://www.verifyfirst.co.in" target="_blank" rel="noopener" class="btn-deals-ad-cta">🔍 Open Free Deal Auditor →</a>
       <div class="deals-ad-device-support">📱 Works Instantly on Mobile, Tablet & Laptop</div>
     </div>
   </div>
@@ -348,3 +348,32 @@ CSS Styling:
 ```
 3. Commit and push both files to GitHub repo `pnlokeswari/zero483-widget` via GitHub REST API (`PUT /repos/{owner}/{repo}/contents/{path}`).
 4. Verify HTTP 200 response on `https://alerts.zero483.com/<category>/<slug>.html`.
+
+---
+
+## 8. AI-Native & Generative Engine Optimization (GEO) Standards
+
+Every blog post MUST be engineered specifically so AI search engines (ChatGPT Search, Google Gemini & AI Overviews, Perplexity AI, Microsoft Copilot) can parse, extract direct answers, and cite ZERO483 as the primary authority source:
+
+1. **Direct Answer Block (BLUF - Bottom Line Up Front)**:
+   - In the very first 100-150 words directly under the hero section, provide a bold, concise, definitive answer to the user's primary query (e.g. "The ideal time for Diwali Lakshmi Puja in 2026 is...", "The best spin mop for Indian tile flooring is...").
+   - AI search engines extract this summary block verbatim for search overviews.
+
+2. **Natural Language Question Headings**:
+   - Use conversational question phrasing for H2/H3 tags (matching real prompts users type into ChatGPT, Gemini, and Google) instead of passive titles.
+
+3. **Immediate Answer First, Detail Second**:
+   - Follow each question heading immediately with a crisp 1-3 sentence direct answer before expanding into paragraphs, ingredient lists, or tables.
+
+4. **Entity Density & Factual Anchors**:
+   - Include precise, verifiable data points (exact Sanskrit slokas with word-for-word Telugu/English meanings, exact timings, technical specifications, model numbers, price history) so AI RAG pipelines recognize the article as an authoritative primary source.
+
+5. **Structured Data for LLM Extraction**:
+   - Every post MUST include a detailed JSON-LD `@type: "FAQPage"` containing 4-6 high-frequency conversational queries and answers, plus `@type: "HowTo"` for step-by-step guides (recipes, rituals, setup instructions).
+
+6. **Tabular Data (`<table>`)**:
+   - Always present product comparisons, pricing analysis, or ritual timings in clean HTML tables with clear `<th>` and `<td>` headers. LLMs parse tables easily and reproduce them directly in chat responses with citations.
+
+7. **Generative Robots Directives**:
+   - Every page MUST contain `<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />`.
+
