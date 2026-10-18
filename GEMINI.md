@@ -68,7 +68,7 @@ Ensure `<head>` always contains:
 - `og:title`, `og:description`, `og:image` (High resolution image), `og:url`, `og:type` (`article`).
 - `twitter:card` (`summary_large_image`), `twitter:title`, `twitter:description`, `twitter:image`.
 - Mobile viewport: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`.
-- Robots directive: `<meta name="robots" content="index, follow, max-image-preview:large">`.
+- Robots directive: `<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />`.
 
 ## 6. UI, UX, Navigation & Conversion Design
 - **Zero Negative Margin & Clean Section Flow**: The main `.container` MUST NEVER use negative margins (`margin: -24px`) which causes content overlap and hides hero metadata or disclosures on mobile/desktop. Always use positive spacing (`margin: 24px auto 50px;`).
@@ -98,3 +98,13 @@ Ensure `<head>` always contains:
 - Automatically add the new URL with `<priority>0.9</priority>` to `sitemap.xml`.
 - Automatically commit and push both the HTML file and `sitemap.xml` directly to the GitHub repository (`pnlokeswari/zero483-widget`) via the GitHub REST API.
 - Verify that the live URL (e.g., `https://alerts.zero483.com/...`) returns `HTTP 200 OK`.
+
+## 8. AI-Native & Generative Engine Optimization (GEO) Standards
+Every blog post MUST be engineered specifically so AI search engines (ChatGPT Search, Google Gemini & AI Overviews, Perplexity AI, Microsoft Copilot) can parse, extract direct answers, and cite ZERO483 as the primary authority source:
+- **Direct Answer Block (BLUF - Bottom Line Up Front)**: In the very first 100-150 words directly under the hero section, provide a bold, concise, definitive answer to the user's primary query (e.g., "The ideal time for Diwali Lakshmi Puja in 2026 is...", "The best spin mop for Indian tile flooring is..."). AI search engines pull this summary block verbatim for search overviews.
+- **Natural Language Question Headings**: Use conversational question phrasing for H2/H3 tags (matching real prompts users type into ChatGPT, Gemini, and Google) instead of passive titles.
+- **Immediate Answer First, Detail Second**: Follow each question heading immediately with a crisp 1-3 sentence direct answer before expanding into paragraphs, ingredient lists, or tables.
+- **Entity Density & Factual Anchors**: Include precise, verifiable data points (exact Sanskrit slokas with word-for-word Telugu/English meanings, exact timings, technical specifications, model numbers, price history) so AI RAG pipelines recognize the article as an authoritative primary source.
+- **Structured Data for LLM Extraction**: Every post MUST include a detailed JSON-LD `@type: "FAQPage"` containing 4-6 high-frequency conversational queries and answers, plus `@type: "HowTo"` for step-by-step guides (recipes, rituals, setup instructions).
+- **Tabular Data (`<table>`)**: Always present product comparisons, pricing analysis, or ritual timings in clean HTML tables with clear `<th>` and `<td>` headers. LLMs parse tables easily and reproduce them directly in chat responses with citations.
+
