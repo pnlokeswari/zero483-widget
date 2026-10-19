@@ -1,0 +1,1125 @@
+{
+  "amazon:B0DD45WVCM": {
+    "lowest_price": 29652.54,
+    "avg_price": 37356.67,
+    "cur_price": 36490.0,
+    "mrp": 50490.0,
+    "all_time_low": 29652.54,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1791911735.6931102,
+    "source": "live"
+  },
+  "amazon:B0BJ32VKB2": {
+    "lowest_price": 377.0,
+    "avg_price": 445.03,
+    "cur_price": 439.0,
+    "mrp": 484.0,
+    "all_time_low": 319.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1791946999.540663,
+    "source": "live"
+  },
+  "flipkart:SMPGJ8AYXBEEEQEP": {
+    "lowest_price": 356.0,
+    "avg_price": 433.74,
+    "cur_price": 439.0,
+    "mrp": 484.0,
+    "all_time_low": 283.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1791947001.1692424,
+    "source": "live"
+  },
+  "amazon:B0B4BW9BRF": {
+    "lowest_price": 702.54,
+    "avg_price": 858.03,
+    "cur_price": 849.0,
+    "mrp": 1190.0,
+    "all_time_low": 220.5,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1791948357.5999703,
+    "source": "live"
+  },
+  "flipkart:MOBHQV9YR4CBTD9D": {
+    "lowest_price": 67999.0,
+    "avg_price": 70299.33,
+    "cur_price": 67999.0,
+    "mrp": 74900.0,
+    "all_time_low": 67999.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792074285.4039528,
+    "source": "live"
+  },
+  "flipkart:MOBHQV9YZGYG64U7": {
+    "lowest_price": 67999.0,
+    "avg_price": 70299.33,
+    "cur_price": 67999.0,
+    "mrp": 74900.0,
+    "all_time_low": 67999.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792074478.840492,
+    "source": "live"
+  },
+  "flipkart:MOBHDVFKSSHPUYHB": {
+    "lowest_price": 40999.0,
+    "avg_price": 49999.0,
+    "cur_price": 49999.0,
+    "mrp": 74999.0,
+    "all_time_low": 39999.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792074481.4396884,
+    "source": "live"
+  },
+  "amazon:B0DHL7YT5S": {
+    "lowest_price": 37999.0,
+    "avg_price": 41489.1,
+    "cur_price": 39999.0,
+    "mrp": 39999.0,
+    "all_time_low": 28812.71,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792074482.995986,
+    "source": "live"
+  },
+  "flipkart:MOBHDVFKAWDVHJTU": {
+    "lowest_price": 45999.0,
+    "avg_price": 55999.0,
+    "cur_price": 55999.0,
+    "mrp": 79999.0,
+    "all_time_low": 44999.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792074486.7695801,
+    "source": "live"
+  },
+  "flipkart:MOBGZNH6QUUVZGZN": {
+    "lowest_price": 19199.0,
+    "avg_price": 32499.0,
+    "cur_price": 32499.0,
+    "mrp": 12995.0,
+    "all_time_low": 18998.0,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792074489.397457,
+    "source": "live"
+  },
+  "amazon:B0CQYGPGPP": {
+    "lowest_price": 47152.54,
+    "avg_price": 64167.28,
+    "cur_price": 62999.0,
+    "mrp": 79999.0,
+    "all_time_low": 40525.42,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792074647.1482866,
+    "source": "live"
+  },
+  "flipkart:MOBGW5RFWY4HDPHD": {
+    "lowest_price": 6999.0,
+    "avg_price": 9999.0,
+    "cur_price": 9999.0,
+    "mrp": 1249.0,
+    "all_time_low": 6999.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792074852.7438197,
+    "source": "live"
+  },
+  "flipkart:MOBGZF9P2JXGWQGR": {
+    "lowest_price": 10499.0,
+    "avg_price": 14680.52,
+    "cur_price": 14954.0,
+    "mrp": 15999.0,
+    "all_time_low": 9999.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792074855.507911,
+    "source": "live"
+  },
+  "flipkart:MOBGZF9P2MQJVZV5": {
+    "lowest_price": 7500.0,
+    "avg_price": 7828.33,
+    "cur_price": 7894.0,
+    "mrp": 9999.0,
+    "all_time_low": 6690.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792075853.3048484,
+    "source": "live"
+  },
+  "flipkart:MOBGZF9PUR4WPTVM": {
+    "lowest_price": 7679.0,
+    "avg_price": 7987.97,
+    "cur_price": 7999.0,
+    "mrp": 10999.0,
+    "all_time_low": 7100.0,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792075855.0256865,
+    "source": "live"
+  },
+  "flipkart:MOBHZMBRQ63HUMVQ": {
+    "lowest_price": 66999.0,
+    "avg_price": 72999.0,
+    "cur_price": 72999.0,
+    "mrp": 99999.0,
+    "all_time_low": 66999.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792078814.8969364,
+    "source": "live"
+  },
+  "amazon:B0HLWZXZ31": {
+    "name": "iPhone 16 128 GB: 5G Mobile Phone WhiteWith Apple Care",
+    "lowest_price": 83374.0,
+    "avg_price": 86378.0,
+    "cur_price": 83374.0,
+    "mrp": 98399.0,
+    "all_time_low": 83374.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792080863.483363,
+    "source": "live"
+  },
+  "flipkart:MOBHP6CE4EYBUEW9": {
+    "name": "Google Pixel 10a (lavender, 256 Gb, 5100 Mah)",
+    "lowest_price": 47999.0,
+    "avg_price": 50265.67,
+    "cur_price": 47999.0,
+    "mrp": 55999.0,
+    "all_time_low": 47999.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792081093.5993838,
+    "source": "live"
+  },
+  "flipkart:MOBGZN8YJ4KZ2KNH": {
+    "name": "OnePlus Nord CE4 (Celadon Marble, 128 GB) (8 GB RAM)",
+    "lowest_price": 19181.0,
+    "avg_price": 23411.45,
+    "cur_price": 31990.0,
+    "mrp": 32499.0,
+    "all_time_low": 18880.0,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792081098.5569897,
+    "source": "live"
+  },
+  "flipkart:MOBGT5F2WD8HPTPZ": {
+    "name": "Google Pixel 8 (Hazel, 128 GB) 8 GB RAM",
+    "lowest_price": 52999.0,
+    "avg_price": 52999.0,
+    "cur_price": 52999.0,
+    "mrp": 75999.0,
+    "all_time_low": 44999.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792081376.453037,
+    "source": "live"
+  },
+  "flipkart:MOBHZMBRUYMZCNR9": {
+    "name": "OPPO Reno16c 5G (Starry White, 256 GB) 8 GB RAM",
+    "lowest_price": 48999.0,
+    "avg_price": 57132.33,
+    "cur_price": 57999.0,
+    "mrp": 79999.0,
+    "all_time_low": 48999.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792082713.4316287,
+    "source": "live"
+  },
+  "amazon:B0GP8SY9MB": {
+    "name": "Google Pixel 10a 5G (Fog, 8GB RAM, 256GB Storage)",
+    "lowest_price": 45592.37,
+    "avg_price": 51511.16,
+    "cur_price": 50475.0,
+    "mrp": 55999.0,
+    "all_time_low": 40754.24,
+    "all_time_date": "Apr \u2013 Jun 2026",
+    "timestamp": 1792116233.7075424,
+    "source": "live"
+  },
+  "amazon:B0CCJZ9CWX": {
+    "name": "OPPO Reno10 5G (Ice Blue, 256 GB) (8 GB RAM)",
+    "lowest_price": 31016.95,
+    "avg_price": 34652.76,
+    "cur_price": 34490.0,
+    "mrp": 38999.0,
+    "all_time_low": 31016.95,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792116239.496505,
+    "source": "live"
+  },
+  "flipkart:MOBHP6CEG7VDZHSW": {
+    "name": "Google Pixel 10a (Fog, 256 GB) 8 GB RAM",
+    "lowest_price": 47999.0,
+    "avg_price": 49832.33,
+    "cur_price": 47999.0,
+    "mrp": 55999.0,
+    "all_time_low": 47999.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792116585.1818502,
+    "source": "live"
+  },
+  "flipkart:MOBHZMBRFYYSGE2Y": {
+    "name": "OPPO Reno16 5G (Starry White, 256 GB) 8 GB RAM",
+    "lowest_price": 60999.0,
+    "avg_price": 66999.0,
+    "cur_price": 66999.0,
+    "mrp": 89999.0,
+    "all_time_low": 60999.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792116591.9396894,
+    "source": "live"
+  },
+  "amazon:B0H5C6QSJB": {
+    "name": "OPPO Reno16 5G (Starry White, 8GB, 256GB) | 3D Design | 50MP 3.5X Telephoto Camera | 4K 60fps HDR Video | AI Remix Collage | Snapdragon 7 Gen 4 | 6700",
+    "lowest_price": 52541.53,
+    "avg_price": 66658.33,
+    "cur_price": 66999.0,
+    "mrp": 89999.0,
+    "all_time_low": 52541.53,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792116817.9343638,
+    "source": "live"
+  },
+  "amazon:B0H5BWYPPK": {
+    "name": "Oppo Reno16 5G (Twilight Violet, 12GB, 256GB) | 50MP 3.5X Telephoto Camera | 4K 60fps HDR Video | AI Remix Collage | Snapdragon 7 Gen 4 | 6700mAh 80W ",
+    "lowest_price": 61863.56,
+    "avg_price": 72256.64,
+    "cur_price": 72999.0,
+    "mrp": 99999.0,
+    "all_time_low": 61863.56,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792117314.5184584,
+    "source": "live"
+  },
+  "amazon:B0BDVG99J5": {
+    "lowest_price": 293.0,
+    "avg_price": 316.77,
+    "cur_price": 299.0,
+    "mrp": 395.0,
+    "all_time_low": 281.36,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792159557.4712965,
+    "source": "live"
+  },
+  "flipkart:MSCGHZURHXJGTZ4Y": {
+    "lowest_price": 236.0,
+    "avg_price": 295.1,
+    "cur_price": 252.0,
+    "mrp": 395.0,
+    "all_time_low": 207.0,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792159559.5010478,
+    "source": "live"
+  },
+  "flipkart:MSCGNE2GYCJHYEBZ": {
+    "lowest_price": 323.0,
+    "avg_price": 491.79,
+    "cur_price": 560.0,
+    "mrp": 747.0,
+    "all_time_low": 323.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792163308.9132404,
+    "source": "live"
+  },
+  "flipkart:MSCGNF44HGHBPR8E": {
+    "lowest_price": 138.0,
+    "avg_price": 220.45,
+    "cur_price": 192.0,
+    "mrp": 275.0,
+    "all_time_low": 138.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792163698.7814488,
+    "source": "live"
+  },
+  "flipkart:MSCGGYJAGHJGRSEU": {
+    "lowest_price": 294.0,
+    "avg_price": 372.52,
+    "cur_price": 296.0,
+    "mrp": 495.0,
+    "all_time_low": 221.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792163698.9417465,
+    "source": "live"
+  },
+  "flipkart:MSCH6GYQHDRR9CH4": {
+    "lowest_price": 180.0,
+    "avg_price": 307.65,
+    "cur_price": 238.0,
+    "mrp": 395.0,
+    "all_time_low": 180.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792200613.472554,
+    "source": "live"
+  },
+  "amazon:B0FLPB5569": {
+    "lowest_price": 206.0,
+    "avg_price": 235.53,
+    "cur_price": 220.0,
+    "mrp": 275.0,
+    "all_time_low": 186.44,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "timestamp": 1792201655.5211596,
+    "source": "live"
+  },
+  "flipkart:MSCHESW3SWCSC46F": {
+    "lowest_price": 175.0,
+    "avg_price": 220.89,
+    "cur_price": 187.0,
+    "mrp": 275.0,
+    "all_time_low": 164.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792201657.0020914,
+    "source": "live"
+  },
+  "amazon:B0D4YSFKLC": {
+    "lowest_price": 404.0,
+    "avg_price": 461.67,
+    "cur_price": 455.0,
+    "mrp": 599.0,
+    "all_time_low": 389.0,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "timestamp": 1792201660.0644317,
+    "source": "live"
+  },
+  "flipkart:MSCHF5XMFRMTCYGU": {
+    "lowest_price": 359.0,
+    "avg_price": 422.8,
+    "cur_price": 407.0,
+    "mrp": 599.0,
+    "all_time_low": 344.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792201661.4072227,
+    "source": "live"
+  },
+  "amazon:B0CTMWM58D": {
+    "lowest_price": 528.0,
+    "avg_price": 612.29,
+    "cur_price": 592.0,
+    "mrp": 790.0,
+    "all_time_low": 528.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792201664.241151,
+    "source": "live"
+  },
+  "flipkart:MSCGWYAHFY7QFHZZ": {
+    "lowest_price": 422.0,
+    "avg_price": 462.13,
+    "cur_price": 491.0,
+    "mrp": 790.0,
+    "all_time_low": 422.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792201665.5874803,
+    "source": "live"
+  },
+  "amazon:B0DQD8G7YZ": {
+    "lowest_price": 498.0,
+    "avg_price": 945.87,
+    "cur_price": 957.0,
+    "mrp": 1198.0,
+    "all_time_low": 335.25,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "timestamp": 1792201668.2046087,
+    "source": "live"
+  },
+  "flipkart:MSCH7GHAVRXJVRPU": {
+    "lowest_price": 712.0,
+    "avg_price": 796.35,
+    "cur_price": 814.0,
+    "mrp": 1198.0,
+    "all_time_low": 638.0,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "timestamp": 1792201669.3686476,
+    "source": "live"
+  },
+  "amazon:B0CHX1W1XY": {
+    "lowest_price": 46999.0,
+    "avg_price": 69568.14,
+    "cur_price": 63474.6,
+    "mrp": 74900.0,
+    "all_time_low": 44059.32,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792201704.297554,
+    "source": "live"
+  },
+  "amazon:B0CHX2F5QT": {
+    "lowest_price": 50762.71,
+    "avg_price": 70921.31,
+    "cur_price": 74900.0,
+    "mrp": 74900.0,
+    "all_time_low": 44906.78,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792201709.2909904,
+    "source": "live"
+  },
+  "amazon:B0CS69QQTG": {
+    "lowest_price": 51609.32,
+    "avg_price": 60406.64,
+    "cur_price": 60899.0,
+    "mrp": 79999.0,
+    "all_time_low": 42718.64,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792201721.3501494,
+    "source": "live"
+  },
+  "flipkart:MOBGX2F3TYAVSQJC": {
+    "lowest_price": 44999.0,
+    "avg_price": 56298.7,
+    "cur_price": 55999.0,
+    "mrp": 79999.0,
+    "all_time_low": 35999.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792201723.5585554,
+    "source": "live"
+  },
+  "flipkart:MOBHDVFKVGGGHBDX": {
+    "lowest_price": 45999.0,
+    "avg_price": 55999.0,
+    "cur_price": 55999.0,
+    "mrp": 79999.0,
+    "all_time_low": 44999.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792201728.9493532,
+    "source": "live"
+  },
+  "amazon:B0CBWXJJLS": {
+    "lowest_price": 144.92,
+    "avg_price": 185.22,
+    "cur_price": 149.0,
+    "mrp": 349.0,
+    "all_time_low": 144.92,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792201949.5952535,
+    "source": "live"
+  },
+  "flipkart:SNRHGWJAZGFZZPGY": {
+    "lowest_price": 148.0,
+    "avg_price": 159.87,
+    "cur_price": 148.0,
+    "mrp": 349.0,
+    "all_time_low": 148.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792201951.2446952,
+    "source": "live"
+  },
+  "amazon:B0CT8XJ56P": {
+    "lowest_price": 117.8,
+    "avg_price": 132.17,
+    "cur_price": 120.0,
+    "mrp": 199.0,
+    "all_time_low": 114.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792201955.3032756,
+    "source": "live"
+  },
+  "amazon:B0FS27R999": {
+    "lowest_price": 191.0,
+    "avg_price": 223.84,
+    "cur_price": 191.0,
+    "mrp": 458.0,
+    "all_time_low": 191.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792201959.790265,
+    "source": "live"
+  },
+  "amazon:B0FS2987S8": {
+    "lowest_price": 276.0,
+    "avg_price": 370.67,
+    "cur_price": 276.0,
+    "mrp": 276.0,
+    "all_time_low": 276.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792201964.081672,
+    "source": "live"
+  },
+  "amazon:B0CW1KVNL8": {
+    "lowest_price": 189.83,
+    "avg_price": 227.26,
+    "cur_price": 224.0,
+    "mrp": 249.0,
+    "all_time_low": 179.0,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "timestamp": 1792201968.6461802,
+    "source": "live"
+  },
+  "amazon:B08GGDRRQ8": {
+    "lowest_price": 439.0,
+    "avg_price": 497.83,
+    "cur_price": 494.0,
+    "mrp": 549.0,
+    "all_time_low": 439.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792201974.0365832,
+    "source": "live"
+  },
+  "amazon:B0DR27KR2F": {
+    "lowest_price": 350.0,
+    "avg_price": 455.28,
+    "cur_price": 406.0,
+    "mrp": 700.0,
+    "all_time_low": 350.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792201978.4826524,
+    "source": "live"
+  },
+  "amazon:B0GFNY1Q17": {
+    "lowest_price": 422.88,
+    "avg_price": 507.65,
+    "cur_price": 494.0,
+    "mrp": 700.0,
+    "all_time_low": 422.88,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792201984.3583572,
+    "source": "live"
+  },
+  "flipkart:CNRHHPQFCGQAJMKC": {
+    "lowest_price": 601.0,
+    "avg_price": 653.4,
+    "cur_price": 665.0,
+    "mrp": 700.0,
+    "all_time_low": 601.0,
+    "all_time_date": "Apr \u2013 Jun 2026",
+    "timestamp": 1792201985.9272037,
+    "source": "live"
+  },
+  "flipkart:MSCHN4UFYCHFCT4S": {
+    "lowest_price": 223.0,
+    "avg_price": 272.97,
+    "cur_price": 279.0,
+    "mrp": 345.0,
+    "all_time_low": 223.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792201988.6344156,
+    "source": "live"
+  },
+  "flipkart:MSCH3BBU8GAY9W7F": {
+    "lowest_price": 139.0,
+    "avg_price": 169.63,
+    "cur_price": 182.0,
+    "mrp": 199.0,
+    "all_time_low": 132.0,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "timestamp": 1792201992.9605548,
+    "source": "live"
+  },
+  "flipkart:MOBGTAGPTB3VS24W": {
+    "lowest_price": 53900.0,
+    "avg_price": 59763.64,
+    "cur_price": 59900.0,
+    "mrp": 59900.0,
+    "all_time_low": 51999.0,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792202013.4376407,
+    "source": "live"
+  },
+  "amazon:B07J6TCPK6": {
+    "lowest_price": 850.0,
+    "avg_price": 1215.73,
+    "cur_price": 1189.0,
+    "mrp": 1299.0,
+    "all_time_low": 850.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792203133.97657,
+    "source": "live"
+  },
+  "amazon:B01CCGW4OE": {
+    "lowest_price": 275.0,
+    "avg_price": 343.93,
+    "cur_price": 319.0,
+    "mrp": 459.0,
+    "all_time_low": 257.63,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792203140.5845063,
+    "source": "live"
+  },
+  "flipkart:CNRFPNR7MFKQ43KV": {
+    "lowest_price": 309.0,
+    "avg_price": 378.77,
+    "cur_price": 367.0,
+    "mrp": 459.0,
+    "all_time_low": 270.0,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792203143.0082567,
+    "source": "live"
+  },
+  "amazon:B0GSBCDNRB": {
+    "lowest_price": 153.0,
+    "avg_price": 182.66,
+    "cur_price": 159.0,
+    "mrp": 219.0,
+    "all_time_low": 153.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792203146.9964545,
+    "source": "live"
+  },
+  "amazon:B01CCGW4LC": {
+    "lowest_price": 595.76,
+    "avg_price": 688.51,
+    "cur_price": 631.0,
+    "mrp": 769.0,
+    "all_time_low": 582.2,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "timestamp": 1792203151.9530356,
+    "source": "live"
+  },
+  "amazon:B0H6BXSDHT": {
+    "lowest_price": 796.0,
+    "avg_price": 944.93,
+    "cur_price": 930.0,
+    "mrp": 1169.0,
+    "all_time_low": 796.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792203156.5863495,
+    "source": "live"
+  },
+  "amazon:B0H6BV9FPY": {
+    "lowest_price": 340.0,
+    "avg_price": 395.61,
+    "cur_price": 368.0,
+    "mrp": 519.0,
+    "all_time_low": 340.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792203161.297295,
+    "source": "live"
+  },
+  "amazon:B0H6BN5HNT": {
+    "lowest_price": 188.0,
+    "avg_price": 212.67,
+    "cur_price": 192.0,
+    "mrp": 219.0,
+    "all_time_low": 188.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792203165.8723626,
+    "source": "live"
+  },
+  "amazon:B0H6BPHWB6": {
+    "lowest_price": 600.0,
+    "avg_price": 679.0,
+    "cur_price": 688.0,
+    "mrp": 969.0,
+    "all_time_low": 600.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792203170.3714657,
+    "source": "live"
+  },
+  "amazon:B0HHFMHZR4": {
+    "lowest_price": 449.0,
+    "avg_price": 589.0,
+    "cur_price": 449.0,
+    "mrp": 2550.0,
+    "all_time_low": 449.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792203174.952345,
+    "source": "live"
+  },
+  "amazon:B0HM3HGZ92": {
+    "lowest_price": 0,
+    "avg_price": 0.0,
+    "cur_price": 499.0,
+    "mrp": 1497.0,
+    "all_time_low": 0,
+    "all_time_date": "",
+    "timestamp": 1792203179.7392175,
+    "source": "live"
+  },
+  "amazon:B0HLVXWM17": {
+    "lowest_price": 399.0,
+    "avg_price": 486.5,
+    "cur_price": 499.0,
+    "mrp": 998.0,
+    "all_time_low": 399.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792203184.8040588,
+    "source": "live"
+  },
+  "amazon:B0H624K81D": {
+    "lowest_price": 149.0,
+    "avg_price": 258.97,
+    "cur_price": 224.0,
+    "mrp": 1275.0,
+    "all_time_low": 149.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792203190.8494887,
+    "source": "live"
+  },
+  "amazon:B0BJZXKH12": {
+    "lowest_price": 249.0,
+    "avg_price": 442.37,
+    "cur_price": 419.0,
+    "mrp": 484.0,
+    "all_time_low": 236.0,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "timestamp": 1792203205.9735525,
+    "source": "live"
+  },
+  "amazon:B0DMF4LP99": {
+    "lowest_price": 1100.85,
+    "avg_price": 1479.0,
+    "cur_price": 1299.0,
+    "mrp": 7499.0,
+    "all_time_low": 949.0,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792204253.6556623,
+    "source": "live"
+  },
+  "amazon:B0FL2T3QXL": {
+    "lowest_price": 780.0,
+    "avg_price": 893.35,
+    "cur_price": 879.0,
+    "mrp": 3990.0,
+    "all_time_low": 761.86,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "timestamp": 1792204272.935778,
+    "source": "live"
+  },
+  "amazon:B0H1MTBKD2": {
+    "lowest_price": 0,
+    "avg_price": 0.0,
+    "cur_price": 599.0,
+    "mrp": 1400.0,
+    "all_time_low": 0,
+    "all_time_date": "",
+    "timestamp": 1792204404.6131814,
+    "source": "live"
+  },
+  "amazon:B0FFTFL9H1": {
+    "lowest_price": 21499.15,
+    "avg_price": 26840.63,
+    "cur_price": 25468.0,
+    "mrp": 37999.0,
+    "all_time_low": 21185.59,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792204422.842727,
+    "source": "live"
+  },
+  "amazon:B0CQRQK8L8": {
+    "lowest_price": 1100.85,
+    "avg_price": 1409.12,
+    "cur_price": 1299.0,
+    "mrp": 6999.0,
+    "all_time_low": 950.0,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "timestamp": 1792204447.1720145,
+    "source": "live"
+  },
+  "amazon:B0F4RCVJLN": {
+    "lowest_price": 999.0,
+    "avg_price": 1343.67,
+    "cur_price": 1199.0,
+    "mrp": 5999.0,
+    "all_time_low": 999.0,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "timestamp": 1792204453.5996392,
+    "source": "live"
+  },
+  "amazon:B0F8BVSK21": {
+    "lowest_price": 677.12,
+    "avg_price": 845.68,
+    "cur_price": 766.0,
+    "mrp": 3990.0,
+    "all_time_low": 677.12,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "timestamp": 1792204460.5851254,
+    "source": "live"
+  },
+  "amazon:B0DBGP48NW": {
+    "lowest_price": 869.0,
+    "avg_price": 2059.49,
+    "cur_price": 1899.0,
+    "mrp": 3999.0,
+    "all_time_low": 869.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792204471.3221195,
+    "source": "live"
+  },
+  "amazon:B085HD8HF6": {
+    "lowest_price": 413.0,
+    "avg_price": 447.44,
+    "cur_price": 431.0,
+    "mrp": 431.0,
+    "all_time_low": 330.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792204503.2414262,
+    "source": "live"
+  },
+  "amazon:B0CDDQVLXF": {
+    "lowest_price": 0,
+    "avg_price": 0.0,
+    "cur_price": 445.0,
+    "mrp": 445.0,
+    "all_time_low": 0,
+    "all_time_date": "",
+    "timestamp": 1792204532.5781002,
+    "source": "live"
+  },
+  "amazon:B08RS1JVLV": {
+    "lowest_price": 0,
+    "avg_price": 0.0,
+    "cur_price": 430.0,
+    "mrp": 440.0,
+    "all_time_low": 0,
+    "all_time_date": "",
+    "timestamp": 1792204544.1386747,
+    "source": "live"
+  },
+  "amazon:B0FZV1M9PM": {
+    "lowest_price": 749.0,
+    "avg_price": 771.97,
+    "cur_price": 769.0,
+    "mrp": 999.0,
+    "all_time_low": 732.38,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792204555.8290865,
+    "source": "live"
+  },
+  "amazon:B0HGR4X4V2": {
+    "lowest_price": 285.0,
+    "avg_price": 285.0,
+    "cur_price": 285.0,
+    "mrp": 380.0,
+    "all_time_low": 285.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792204576.805675,
+    "source": "live"
+  },
+  "amazon:B00NRT7ZUO": {
+    "lowest_price": 869.0,
+    "avg_price": 1564.42,
+    "cur_price": 1589.0,
+    "mrp": 1675.0,
+    "all_time_low": 869.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792204620.3376682,
+    "source": "live"
+  },
+  "amazon:B084KR66J1": {
+    "lowest_price": 2238.0,
+    "avg_price": 2399.93,
+    "cur_price": 2410.0,
+    "mrp": 2410.0,
+    "all_time_low": 1843.02,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792204628.1035557,
+    "source": "live"
+  },
+  "amazon:B08RW8VRGX": {
+    "lowest_price": 579.0,
+    "avg_price": 779.87,
+    "cur_price": 749.0,
+    "mrp": 1395.0,
+    "all_time_low": 539.0,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "timestamp": 1792204635.2704525,
+    "source": "live"
+  },
+  "amazon:B008YW8M0G": {
+    "lowest_price": 670.0,
+    "avg_price": 827.03,
+    "cur_price": 749.0,
+    "mrp": 1620.0,
+    "all_time_low": 592.37,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792204645.853391,
+    "source": "live"
+  },
+  "amazon:B097PDHWY8": {
+    "lowest_price": 1355.08,
+    "avg_price": 1511.26,
+    "cur_price": 1399.0,
+    "mrp": 7500.0,
+    "all_time_low": 1199.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792204656.9820921,
+    "source": "live"
+  },
+  "flipkart:MSCG6P4ZDKCPSYZD": {
+    "lowest_price": 296.0,
+    "avg_price": 377.39,
+    "cur_price": 396.0,
+    "mrp": 495.0,
+    "all_time_low": 296.0,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792212386.886358,
+    "source": "live"
+  },
+  "flipkart:SNRHGEKGQUJHFTBQ": {
+    "lowest_price": 169.0,
+    "avg_price": 195.37,
+    "cur_price": 242.0,
+    "mrp": 458.0,
+    "all_time_low": 169.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792213568.4918725,
+    "source": "live"
+  },
+  "amazon:B09FTKLD5G": {
+    "lowest_price": 360.0,
+    "avg_price": 386.97,
+    "cur_price": 388.0,
+    "mrp": 495.0,
+    "all_time_low": 339.0,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "timestamp": 1792219941.5574713,
+    "source": "live"
+  },
+  "flipkart:MSCG6P4Z3AACKHGS": {
+    "lowest_price": 209.0,
+    "avg_price": 260.94,
+    "cur_price": 280.0,
+    "mrp": 350.0,
+    "all_time_low": 183.0,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792223123.814656,
+    "source": "live"
+  },
+  "flipkart:SMPDDHGCQ28SKPZH": {
+    "lowest_price": 407.0,
+    "avg_price": 615.87,
+    "cur_price": 631.0,
+    "mrp": 865.0,
+    "all_time_low": 297.0,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792228862.8867805,
+    "source": "live"
+  },
+  "amazon:B07F2QCLP2": {
+    "lowest_price": 322.0,
+    "avg_price": 469.58,
+    "cur_price": 526.0,
+    "mrp": 865.0,
+    "all_time_low": 322.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792228870.7418902,
+    "source": "live"
+  },
+  "amazon:B0FXSRTTFB": {
+    "lowest_price": 460.0,
+    "avg_price": 499.03,
+    "cur_price": 460.0,
+    "mrp": 940.0,
+    "all_time_low": 423.0,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "timestamp": 1792228895.9244213,
+    "source": "live"
+  },
+  "flipkart:SMPFC62BNCVZHZER": {
+    "lowest_price": 258.0,
+    "avg_price": 573.48,
+    "cur_price": 525.0,
+    "mrp": 1370.0,
+    "all_time_low": 258.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792231785.0828228,
+    "source": "live"
+  },
+  "amazon:B07L3YNL2V": {
+    "lowest_price": 449.0,
+    "avg_price": 602.84,
+    "cur_price": 506.0,
+    "mrp": 1370.0,
+    "all_time_low": 160.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "timestamp": 1792231788.806064,
+    "source": "live"
+  },
+  "flipkart:SMPHE29JNCGCTJWP": {
+    "lowest_price": 473.0,
+    "avg_price": 666.16,
+    "cur_price": 542.0,
+    "mrp": 1595.0,
+    "all_time_low": 408.0,
+    "all_time_date": "Oct \u2013 Dec 2025",
+    "timestamp": 1792232733.2631893,
+    "source": "live"
+  },
+  "amazon:B0CGV91R64": {
+    "lowest_price": 118.0,
+    "avg_price": 148.2,
+    "cur_price": 399.0,
+    "mrp": 399.0,
+    "all_time_low": 118.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792252858.5838256,
+    "source": "live"
+  },
+  "flipkart:MBPHNENNPMYNP5EU": {
+    "lowest_price": 709.0,
+    "avg_price": 757.0,
+    "cur_price": 763.0,
+    "mrp": 1400.0,
+    "all_time_low": 709.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792254640.0280755,
+    "source": "live"
+  },
+  "amazon:B0BWTTRXM1": {
+    "lowest_price": 404.0,
+    "avg_price": 535.41,
+    "cur_price": 521.0,
+    "mrp": 747.0,
+    "all_time_low": 404.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1792256974.8780415,
+    "source": "live"
+  },
+  "amazon:B0BWTQHQKC": {
+    "lowest_price": 323.0,
+    "avg_price": 416.05,
+    "cur_price": 384.0,
+    "mrp": 498.0,
+    "all_time_low": 312.94,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "timestamp": 1792256987.576046,
+    "source": "live"
+  },
+  "amazon:B0GZK6LCJX": {
+    "lowest_price": 222.03,
+    "avg_price": 284.48,
+    "cur_price": 258.0,
+    "mrp": 345.0,
+    "all_time_low": 222.03,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792257002.9242668,
+    "source": "live"
+  },
+  "flipkart:DCEH5GAVEKUUUHV9": {
+    "lowest_price": 120.0,
+    "avg_price": 138.73,
+    "cur_price": 133.0,
+    "mrp": 150.0,
+    "all_time_low": 120.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792416279.4321065,
+    "source": "live"
+  },
+  "flipkart:DCEHA9JSHFNYSC5G": {
+    "title": "Cycle Pure Bansuri Special Cup Sambrani - 12N Guggul Dhoop (Pack of 1)",
+    "lowest_price": 44.0,
+    "avg_price": 54.0,
+    "cur_price": 64.0,
+    "mrp": 72.0,
+    "all_time_low": 44.0,
+    "all_time_date": "Jul \u2013 Sep 2025",
+    "image_url": "https://rukminim2.flixcart.com/image/800/800/xif0q/dhoop-cone/j/c/g/bansuri-havan-cup-sambrani-96-nos-natural-fragrance-8-cycle-original-imah32jj9hghrcpk.jpeg?q=80",
+    "url": "https://www.flipkart.com/cycle-pure-bansuri-special-cup-sambrani-12n-guggul-dhoop/p/itm458ee906cc602?pid=DCEHA9JSHFNYSC5G&lid=LSTDCEHA9JSHFNYSC5GT3ITIN&hl_lid=&fm=eyJ3dHAiOiJyZWNvIiwicHJwdCI6InBwIiwibWlkIjoicHJvZHVjdFJlY29tbWVuZGF0aW9uL3NpbWlsYXIifQ%3D%3D&pageUID=1792417309978",
+    "highlights": [
+      "\ud83d\udce6 In The Box: Havan Cup Sambrani Pack of 1 |12 N",
+      "\ud83d\udd39 Model Name: Pure Bansuri Special Cup Sambrani - 12N",
+      "Sales Package",
+      "Material",
+      "Guggul",
+      "With Fragrance",
+      "Fragrance Type"
+    ],
+    "category": "Flipkart Deals",
+    "twin_id": "",
+    "timestamp": 1792419661.898827,
+    "history_points": [
+      {
+        "ts": 1792419591.803327,
+        "price": 64.0,
+        "date": "2026-10-19 19:49"
+      }
+    ],
+    "source": "learned_audit",
+    "learned": true
+  },
+  "amazon:B0CNCQ4SHW": {
+    "lowest_price": 51.0,
+    "avg_price": 71.78,
+    "cur_price": 72.0,
+    "mrp": 72.0,
+    "all_time_low": 51.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792417407.8732276,
+    "source": "live"
+  }
+}
