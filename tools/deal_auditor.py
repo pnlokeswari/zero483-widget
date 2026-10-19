@@ -937,9 +937,9 @@ def extract_key_specs(title: str) -> Tuple[set, str]:
     storage_matches = re.findall(r"\b(\d+)\s*(gb|tb|mb)\b", t_lower)
     storage_specs = [f"{m[0]}{m[1]}" for m in storage_matches]
 
-    # 2. Weight / Volume (e.g., 100g, 50ml, 1kg)
-    size_matches = re.findall(r"\b(\d+(?:\.\d+)?)\s*(g|gm|kg|ml|l|ltr)\b", t_lower)
-    size_specs = [f"{m[0]}{m[1]}" for m in size_matches]
+    # 2. Dimensions, Weight, Volume & Capacity (e.g., 36cm, 9.8L, 100g, 50ml, 1kg)
+    size_matches = re.findall(r"\b(\d+(?:\.\d+)?)\s*(cm|mm|inch|inches|g|gm|kg|ml|l|ltr)\b", t_lower)
+    size_specs = list(dict.fromkeys([f"{m[0]}{m[1]}" for m in size_matches]))
 
     # 3. Model modifiers (e.g. pro max, pro, plus, ultra, mini)
     model_modifiers = []
@@ -957,9 +957,9 @@ def extract_key_specs(title: str) -> Tuple[set, str]:
                 if not re.match(r"^b0[a-z0-9]{8}$", tl):  # skip bare ASIN
                     model_codes.append(tok)
 
-    # 5. Form factor / Product type (e.g. cones, cups, sticks, agarbatti, dhoop, wipes)
+    # 5. Form factor / Product type (e.g. cones, cups, sticks, agarbatti, dhoop, wipes, kadhai, pan, cooktop)
     form_factors = []
-    for ff in ["cones", "cone", "cups", "cup", "sticks", "stick", "agarbatti", "dhoop", "wipes", "tablets", "capsules"]:
+    for ff in ["cones", "cone", "cups", "cup", "sticks", "stick", "agarbatti", "dhoop", "wipes", "tablets", "capsules", "kadhai", "kadai", "pan", "tawa", "cooker", "pot", "saucepan", "casserole", "cooktop", "kettle"]:
         if re.search(r"\b" + re.escape(ff) + r"\b", t_lower):
             norm_ff = ff.rstrip("s")
             form_factors.append(f"form:{norm_ff}")
@@ -976,10 +976,10 @@ def extract_key_specs(title: str) -> Tuple[set, str]:
     query_tokens = []
     for w in words:
         wl = w.lower()
-        if wl in ["pack", "with", "for", "skin", "repairs", "enriched", "sensitive", "normal", "combo", "free", "inches", "inch", "cm"]:
+        if wl in ["pack", "with", "for", "skin", "repairs", "enriched", "sensitive", "normal", "combo", "free", "thick", "base", "lid", "layer", "capacity", "diameter", "cm", "l", "ltr"]:
             continue
         query_tokens.append(w)
-        if len(query_tokens) >= 6:
+        if len(query_tokens) >= 7:
             break
 
     # If the product has an explicit manufacturer model code (like UA43F5550FUXXL), include it in the search query!
@@ -987,19 +987,28 @@ def extract_key_specs(title: str) -> Tuple[set, str]:
         if mc.lower() not in " ".join(query_tokens).lower():
             query_tokens.append(mc)
 
-    query_str = " ".join(query_tokens)
-    for cs in storage_specs:
-        if cs not in query_str.lower():
-            query_str += f" {cs}"
+    seen_nums = set(re.findall(r"\b\d+\b", " ".join(query_tokens)))
+    clean_specs_to_add = []
+    for cs in storage_specs + size_specs[:1]:
+        m_num = re.search(r"^\d+", cs)
+        if m_num and m_num.group(0) in seen_nums:
+            for idx_t, tok in enumerate(query_tokens):
+                if tok == m_num.group(0):
+                    query_tokens[idx_t] = cs
+                    break
+        elif cs not in " ".join(query_tokens).lower():
+            clean_specs_to_add.append(cs)
 
+    query_str = " ".join(query_tokens + clean_specs_to_add)
     return critical_specs, query_str.strip()
 
 
 def matches_variant_specs(candidate_title: str, required_specs: set) -> bool:
     """
-    Verifies candidate title matches exact storage/size and doesn't belong to a conflicting variant.
+    Verifies candidate title matches exact storage/size/dimension and doesn't belong to a conflicting variant.
     E.g. if original is 256GB, candidate MUST have 256GB and CANNOT be 512GB or 128GB.
-    Guards against conflicting form factors (e.g. Cones vs Cups) and counts (e.g. 40 vs 15 vs 12N).
+    Guards against conflicting form factors (e.g. Cones vs Cups) and counts (e.g. 40 vs 15 vs 12N),
+    and conflicting cookware dimensions (e.g. 36cm vs 26cm vs 28cm).
     """
     if not required_specs:
         return True
@@ -1044,12 +1053,16 @@ def matches_variant_specs(candidate_title: str, required_specs: set) -> bool:
             if not re.search(pattern, c_lower):
                 return False
 
-        # Weight/Volume check
-        m_s = re.match(r"^(\d+)(g|gm|ml|kg)$", spec)
+        # Dimensions, Weight, Volume & Capacity check (e.g. 36cm, 9.8L, 1000ml, 500g)
+        m_s = re.match(r"^(\d+(?:\.\d+)?)(cm|mm|inch|inches|g|gm|kg|ml|l|ltr)$", spec)
         if m_s:
-            val, unit = m_s.group(1), m_s.group(2)
-            pattern = r"\b" + re.escape(val) + r"\s*" + re.escape(unit) + r"\b"
-            if not re.search(pattern, c_lower):
+            val, unit = float(m_s.group(1)), m_s.group(2)
+            cand_dims = re.findall(r"\b(\d+(?:\.\d+)?)\s*" + re.escape(unit) + r"\b", c_lower)
+            if cand_dims:
+                cand_floats = [float(cd) for cd in cand_dims]
+                if not any(abs(cf - val) < 0.1 for cf in cand_floats):
+                    return False
+            elif unit in ["g", "gm", "ml"]:
                 # Check for pack multiplier equivalent: e.g. 30g (Pack of 2) == 60g, 100g (Pack of 2) == 200g
                 is_pack_match = False
                 pack_matches = re.findall(r"\b(\d+)\s*(?:g|gm|ml)\b[^(]{0,20}\(pack of\s*(\d+)\)", c_lower)
@@ -1465,7 +1478,7 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
                 for a_id, t_str, parsed, c_mrp in candidates:
                     t_low = t_str.lower()
                     words_ok = (model_words[0] in t_low and sum(1 for mw in model_words if mw in t_low) >= min(2, len(model_words))) if model_words else True
-                    mrp_ok = (box_mrp <= 0 or c_mrp <= 0 or abs(c_mrp - box_mrp) <= 1.0)
+                    mrp_ok = (box_mrp <= 0 or c_mrp <= 0 or (abs(c_mrp - box_mrp) / max(box_mrp, c_mrp) <= 0.25))
                     price_ok = (fk_price <= 0 or (0.60 * fk_price <= parsed <= 1.50 * fk_price))
                     if words_ok and mrp_ok and price_ok and matches_variant_specs(t_str, required_specs):
                         # AI Cross-Store Parity Verification (protects against mismatched quantities)
@@ -1488,52 +1501,79 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
                             amz_scraped_mrp = c_mrp
                         break
 
-                # If exact variant was not in search top results, check if a brand-matching candidate has Amazon Twister child variants
+                # If exact variant was not in search top results, check brand-matching candidates for direct title match or Amazon Twister child variants
                 if cur_p == 0.0 and candidates and required_specs:
-                    for cand_asin, cand_t, _, _ in candidates[:4]:
-                        cand_tl = cand_t.lower()
-                        if model_words and model_words[0] in cand_tl:
-                            try:
-                                r_tw = session.get(f"https://www.amazon.in/dp/{cand_asin}", timeout=10)
-                                if r_tw.status_code == 200:
-                                    m_tw = re.search(r'"dimensionValuesDisplayData"\s*:\s*(\{[^}]+\})', r_tw.text)
-                                    if m_tw:
-                                        tw_map = json.loads(m_tw.group(1))
-                                        for ch_asin, dims in tw_map.items():
-                                            dim_str = " ".join(str(d) for d in dims)
-                                            if matches_variant_specs(dim_str, required_specs):
-                                                # Exact child ASIN found via Twister family!
-                                                r_ch = session.get(f"https://www.amazon.in/dp/{ch_asin}?th=1", timeout=10)
-                                                if r_ch.status_code == 200:
-                                                    s_ch = BeautifulSoup(r_ch.text, "html.parser")
-                                                    ch_title_el = s_ch.select_one("span#productTitle") or s_ch.select_one("h1#title")
-                                                    if ch_title_el:
-                                                        ch_t = ch_title_el.get_text(strip=True)
-                                                        ch_scope = s_ch.select_one("#corePriceDisplay_desktop_feature_div") or s_ch.select_one("#apex_desktop") or s_ch.select_one("#price")
-                                                        ch_p = 0.0
-                                                        ch_m = 0.0
-                                                        if ch_scope:
-                                                            for psel in ["span.priceToPay span.a-price-whole", "span.priceToPay span.a-offscreen", "span.a-price:not(.a-text-price) span.a-offscreen"]:
-                                                                pel = ch_scope.select_one(psel)
-                                                                if pel and pel.get_text(strip=True):
-                                                                    pv = parse_price(pel.get_text())
-                                                                    if pv > 0: ch_p = pv; break
-                                                            for msel in ["span.basisPrice span.a-offscreen", "span.a-price.a-text-price[data-a-strike=true] span.a-offscreen", "span#listPrice"]:
-                                                                mel = ch_scope.select_one(msel)
-                                                                if mel and mel.get_text(strip=True):
-                                                                    mv = parse_price(mel.get_text())
-                                                                    if mv > 0: ch_m = mv; break
-                                                        if ch_p > 0:
-                                                            cur_p = ch_p
-                                                            asin = ch_asin
-                                                            amz_title = f"{ch_t} ({dim_str})" if dim_str not in ch_t else ch_t
-                                                            if ch_m > 0:
-                                                                amz_scraped_mrp = ch_m
-                                                            break
-                                        if cur_p > 0:
-                                            break
-                            except Exception as tw_err:
-                                log.debug(f"Twister resolution error for {cand_asin}: {tw_err}")
+                    brand_cands = [c for c in candidates if model_words and model_words[0] in c[1].lower()] if model_words else []
+                    pool = brand_cands[:8] if brand_cands else candidates[:6]
+                    for cand_asin, cand_t, c_price, c_mrp in pool:
+                        try:
+                            r_tw = session.get(f"https://www.amazon.in/dp/{cand_asin}", timeout=10)
+                            if r_tw.status_code == 200:
+                                s_tw = BeautifulSoup(r_tw.text, "html.parser")
+                                full_t_el = s_tw.select_one("span#productTitle") or s_tw.select_one("h1#title")
+                                full_t = full_t_el.get_text(strip=True) if full_t_el else cand_t
+                                
+                                # 1. Direct candidate product page match
+                                if matches_variant_specs(full_t, required_specs):
+                                    scope = s_tw.select_one("#corePriceDisplay_desktop_feature_div") or s_tw.select_one("#apex_desktop") or s_tw.select_one("#price")
+                                    dp_p, dp_m = 0.0, 0.0
+                                    if scope:
+                                        for psel in ["span.priceToPay span.a-price-whole", "span.priceToPay span.a-offscreen", "span.a-price:not(.a-text-price) span.a-offscreen"]:
+                                            pel = scope.select_one(psel)
+                                            if pel and pel.get_text(strip=True):
+                                                pv = parse_price(pel.get_text())
+                                                if pv > 0: dp_p = pv; break
+                                        for msel in ["span.basisPrice span.a-offscreen", "span.a-price.a-text-price[data-a-strike=true] span.a-offscreen", "span#listPrice"]:
+                                            mel = scope.select_one(msel)
+                                            if mel and mel.get_text(strip=True):
+                                                mv = parse_price(mel.get_text())
+                                                if mv > 0: dp_m = mv; break
+                                    if dp_p > 0 or c_price > 0:
+                                        cur_p = dp_p if dp_p > 0 else c_price
+                                        asin = cand_asin
+                                        amz_title = full_t
+                                        if dp_m > 0: amz_scraped_mrp = dp_m
+                                        elif c_mrp > 0: amz_scraped_mrp = c_mrp
+                                        break
+
+                                # 2. Twister dropdown child variants match
+                                m_tw = re.search(r'"dimensionValuesDisplayData"\s*:\s*(\{[^}]+\})', r_tw.text)
+                                if m_tw:
+                                    tw_map = json.loads(m_tw.group(1))
+                                    for ch_asin, dims in tw_map.items():
+                                        dim_str = " ".join(str(d) for d in dims)
+                                        if matches_variant_specs(f"{full_t} {dim_str}", required_specs) or matches_variant_specs(dim_str, required_specs):
+                                            # Exact child ASIN found via Twister family!
+                                            r_ch = session.get(f"https://www.amazon.in/dp/{ch_asin}?th=1", timeout=10)
+                                            if r_ch.status_code == 200:
+                                                s_ch = BeautifulSoup(r_ch.text, "html.parser")
+                                                ch_title_el = s_ch.select_one("span#productTitle") or s_ch.select_one("h1#title")
+                                                if ch_title_el:
+                                                    ch_t = ch_title_el.get_text(strip=True)
+                                                    ch_scope = s_ch.select_one("#corePriceDisplay_desktop_feature_div") or s_ch.select_one("#apex_desktop") or s_ch.select_one("#price")
+                                                    ch_p, ch_m = 0.0, 0.0
+                                                    if ch_scope:
+                                                        for psel in ["span.priceToPay span.a-price-whole", "span.priceToPay span.a-offscreen", "span.a-price:not(.a-text-price) span.a-offscreen"]:
+                                                            pel = ch_scope.select_one(psel)
+                                                            if pel and pel.get_text(strip=True):
+                                                                pv = parse_price(pel.get_text())
+                                                                if pv > 0: ch_p = pv; break
+                                                        for msel in ["span.basisPrice span.a-offscreen", "span.a-price.a-text-price[data-a-strike=true] span.a-offscreen", "span#listPrice"]:
+                                                            mel = ch_scope.select_one(msel)
+                                                            if mel and mel.get_text(strip=True):
+                                                                mv = parse_price(mel.get_text())
+                                                                if mv > 0: ch_m = mv; break
+                                                    if ch_p > 0:
+                                                        cur_p = ch_p
+                                                        asin = ch_asin
+                                                        amz_title = f"{ch_t} ({dim_str})" if dim_str not in ch_t else ch_t
+                                                        if ch_m > 0:
+                                                            amz_scraped_mrp = ch_m
+                                                        break
+                                    if cur_p > 0:
+                                        break
+                        except Exception as tw_err:
+                            log.debug(f"Twister resolution error for {cand_asin}: {tw_err}")
         except Exception as e:
             log.debug(f"Cross search Amazon exception: {e}")
 
@@ -1577,9 +1617,10 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
         except Exception as be:
             log.debug(f"Amazon bullets fetch error: {be}")
 
-    # Automatic Amazon search MUST also confirm exact Box MRP parity (within ₹1), otherwise trigger Case B!
-    if matched and not is_direct_amz and box_mrp > 0 and (amz_scraped_mrp <= 0 or abs(amz_scraped_mrp - box_mrp) > 1.0):
-        matched = False
+    # Automatic Amazon search confirms reasonable Box MRP parity (within 25% for batch revisions), otherwise trigger Case B
+    if matched and not is_direct_amz and box_mrp > 0 and amz_scraped_mrp > 0:
+        if (abs(amz_scraped_mrp - box_mrp) / max(box_mrp, amz_scraped_mrp)) > 0.25:
+            matched = False
 
     if not matched:
         cur_p = 0.0
