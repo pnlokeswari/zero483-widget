@@ -2243,6 +2243,83 @@ async function runAudit(competitorUrl = '') {
     const fkHighlights = (fk.highlights && fk.highlights.length > 0) ? fk.highlights : (d.highlights || []);
     const hasAnySpecs = Boolean(amzBullets.length > 0 || fkHighlights.length > 0);
 
+    const primaryStoreName = isPrimaryAmazon ? 'Amazon India' : 'Flipkart India';
+    const primaryStoreTag = isPrimaryAmazon ? '📦 Your Submitted Item: Amazon India' : '⚡ Your Submitted Item: Flipkart India';
+    const primaryBuyUrl = isPrimaryAmazon ? (amz.url || d.affiliate_url) : toFlipkartAffiliateUrl(fk.url || d.affiliate_url);
+    const primaryPrice = d.current_price;
+    const primaryMrp = d.mrp;
+    const primaryImg = d.image_url || (isPrimaryAmazon ? (amz.image_url || '') : (fk.image_url || ''));
+    const primarySavings = d.savings_mrp_inr || (d.mrp > d.current_price ? (d.mrp - d.current_price) : 0);
+    const primaryDiscountPct = d.discount_mrp_pct || 0;
+
+    const renderAmzCol = () => `
+      <div class="compare-col ${isAmzWinner ? 'is-winner' : ''}">
+        <div class="compare-col-header">
+          <span class="store-tag amazon">📦 AMAZON INDIA</span>
+          ${isAmzWinner ? '<span class="pill" style="font-size:.65rem;background:#10b981;color:#000;font-weight:800">BEST PRICE</span>' : (amzMatched ? '<span class="pill" style="font-size:.62rem;background:rgba(16,185,129,.15);color:#34d399">LIVE VERIFIED</span>' : '<span class="pill" style="font-size:.62rem;background:rgba(56,189,248,.15);color:#38bdf8">NO TWIN VARIANT</span>')}
+        </div>
+        ${amzMatched ? `
+          <div class="comp-price-row">
+            <span class="comp-price">₹${amz.price.toLocaleString('en-IN')}</span>
+            <span class="comp-mrp">₹${(amz.scraped_mrp || amz.mrp || d.mrp).toLocaleString('en-IN')}</span>
+            <span class="comp-discount">-${amz.discount_pct}%</span>
+          </div>
+          <div style="font-size:.74rem;color:var(--muted)">
+            💵 You Save: <strong style="color:var(--green)">₹${amz.savings.toLocaleString('en-IN')}</strong> vs Packaging MRP
+          </div>
+          <a href="${amz.url || d.affiliate_url}" onclick="handleSmartStoreClick(event, this.href, 'amazon')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy amazon">
+            Buy on Amazon at ₹${amz.price.toLocaleString('en-IN')} ↗
+          </a>
+        ` : `
+          <div style="padding:10px 0;font-size:.82rem;color:var(--muted);line-height:1.5">
+            <div style="color:#38bdf8;font-weight:800;font-size:.88rem;margin-bottom:6px">📦 Amazon India: No Exact Twin Variant Found</div>
+            <div>This exact model/pack is currently exclusive to Flipkart. To search for similar alternatives on Amazon, tap below:</div>
+          </div>
+          <a href="${d.amazon_search_url || amz.url || 'https://www.amazon.in'}" onclick="handleSmartStoreClick(event, this.href, 'amazon')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy amazon" style="margin-bottom:10px">
+            🔍 Explore Alternatives on Amazon ↗
+          </a>
+          <div style="display:flex;gap:6px;margin-top:4px;flex-wrap:wrap;width:100%">
+            <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem;min-width:0;flex:1 1 180px" placeholder="Have an Amazon alternative link? Paste here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
+            <button type="button" onclick="applyInlineCompetitorCompare()" class="btn-compare-action" style="padding:8px 12px;font-size:.75rem;white-space:nowrap">Compare ⚔️</button>
+          </div>
+        `}
+      </div>
+    `;
+
+    const renderFkCol = () => `
+      <div class="compare-col ${isFkWinner ? 'is-winner' : ''}">
+        <div class="compare-col-header">
+          <span class="store-tag flipkart">⚡ FLIPKART INDIA</span>
+          ${isFkWinner ? '<span class="pill" style="font-size:.65rem;background:#10b981;color:#000;font-weight:800">BEST PRICE</span>' : (fkMatched ? '<span class="pill" style="font-size:.62rem;background:rgba(16,185,129,.15);color:#34d399">LIVE VERIFIED</span>' : '<span class="pill" style="font-size:.62rem;background:rgba(56,189,248,.15);color:#38bdf8">NO TWIN VARIANT</span>')}
+        </div>
+        ${fkMatched ? `
+          <div class="comp-price-row">
+            <span class="comp-price">₹${fk.price.toLocaleString('en-IN')}</span>
+            <span class="comp-mrp">₹${(fk.scraped_mrp || fk.mrp || d.mrp).toLocaleString('en-IN')}</span>
+            <span class="comp-discount">-${fk.discount_pct}%</span>
+          </div>
+          <div style="font-size:.74rem;color:var(--muted)">
+            💵 You Save: <strong style="color:var(--green)">₹${fk.savings.toLocaleString('en-IN')}</strong> vs Packaging MRP
+          </div>
+          <a href="${toFlipkartAffiliateUrl(fk.url || d.flipkart_search_url)}" onclick="handleSmartStoreClick(event, this.href, 'flipkart')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy flipkart">
+            Buy on Flipkart at ₹${fk.price.toLocaleString('en-IN')} ↗
+          </a>
+        ` : `
+          <div style="padding:10px 0;font-size:.82rem;color:var(--muted);line-height:1.5">
+            <div style="color:#38bdf8;font-weight:800;font-size:.88rem;margin-bottom:6px">⚡ Flipkart India: No Exact Twin Variant Found</div>
+            <div>This exact model/pack is currently exclusive to Amazon. To search for similar alternatives on Flipkart, tap below:</div>
+          </div>
+          <a href="${toFlipkartAffiliateUrl(d.flipkart_search_url || fk.url || 'https://www.flipkart.com')}" onclick="handleSmartStoreClick(event, this.href, 'flipkart')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy flipkart" style="margin-bottom:10px">
+            🔍 Explore Alternatives on Flipkart ↗
+          </a>
+          <div style="display:flex;gap:6px;margin-top:4px;flex-wrap:wrap;width:100%">
+            <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem;min-width:0;flex:1 1 180px" placeholder="Have a Flipkart alternative link? Paste here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
+            <button type="button" onclick="applyInlineCompetitorCompare()" class="btn-compare-action" style="padding:8px 12px;font-size:.75rem;white-space:nowrap">Compare ⚔️</button>
+          </div>
+        `}
+      </div>
+    `;
+
     resEl.innerHTML = `
       <div class="audit-card">
         <!-- Live Deal Comparison Winner Banner (if both stores matched) -->
@@ -2257,13 +2334,34 @@ async function runAudit(competitorUrl = '') {
           </div>
         ` : ''}
 
-        <!-- Product Header & Category -->
-        <div style="font-size:.74rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-weight:700;margin-bottom:6px">
-          🏷️ ${d.category} • Official Box MRP: <strong style="color:var(--text-heading)">₹${d.mrp.toLocaleString('en-IN')}</strong>
+        <!-- Primary Submitted Product Spotlight Card -->
+        <div class="primary-spotlight-card" style="display:flex;gap:18px;background:linear-gradient(135deg,rgba(15,23,42,0.85),rgba(30,41,59,0.7));border:1.5px solid ${isPrimaryAmazon ? '#f59e0b' : '#38bdf8'};border-radius:16px;padding:18px;margin-bottom:20px;align-items:center;flex-wrap:wrap;box-shadow:0 8px 32px rgba(0,0,0,0.4)">
+          <div style="flex:0 0 120px;max-width:130px;height:120px;background:#ffffff;border-radius:12px;padding:8px;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0 0 1px rgba(0,0,0,0.06);overflow:hidden">
+            <img src="${primaryImg || 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800'}" alt="${d.title}" style="max-width:100%;max-height:100%;object-fit:contain;border-radius:6px" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800';" />
+          </div>
+          <div style="flex:1 1 260px;min-width:0">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap">
+              <span class="store-tag ${isPrimaryAmazon ? 'amazon' : 'flipkart'}" style="font-size:.74rem;padding:3px 10px;font-weight:800;border-radius:20px">
+                ${primaryStoreTag}
+              </span>
+              <span class="pill" style="font-size:.65rem;background:rgba(16,185,129,.15);color:#34d399;font-weight:700">LIVE VERIFIED IN-STOCK</span>
+            </div>
+            <h3 style="font-size:1.18rem;font-weight:800;color:var(--text-heading);margin-bottom:8px;line-height:1.4">
+              ${d.title}
+            </h3>
+            <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:10px;flex-wrap:wrap">
+              <span style="font-size:1.6rem;font-weight:900;color:#10b981">₹${primaryPrice.toLocaleString('en-IN')}</span>
+              <span style="font-size:.92rem;color:var(--muted);text-decoration:line-through">Official Box MRP: ₹${primaryMrp.toLocaleString('en-IN')}</span>
+              ${primaryDiscountPct > 0 ? `<span style="font-size:.82rem;font-weight:800;color:#f59e0b;background:rgba(245,158,11,.15);padding:2px 8px;border-radius:6px">-${primaryDiscountPct}% OFF</span>` : ''}
+            </div>
+            <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+              <a href="${primaryBuyUrl}" onclick="handleSmartStoreClick(event, this.href, '${isPrimaryAmazon ? 'amazon' : 'flipkart'}')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy ${isPrimaryAmazon ? 'amazon' : 'flipkart'}" style="padding:10px 20px;font-size:.88rem;width:auto;display:inline-flex;margin:0">
+                Buy on ${primaryStoreName} at ₹${primaryPrice.toLocaleString('en-IN')} ↗
+              </a>
+              <span style="font-size:.8rem;color:var(--muted)">💵 Saves <strong style="color:var(--green)">₹${primarySavings.toLocaleString('en-IN')}</strong> vs Packaging MRP</span>
+            </div>
+          </div>
         </div>
-        <h3 style="font-size:1.2rem;font-weight:800;color:var(--text-heading);margin-bottom:14px;line-height:1.4">
-          ${d.title}
-        </h3>
 
         <!-- Caution: MRP Mismatch Banner (Alerts users if linked competitor product is a different size/variant) -->
         ${(hasComparison && d.mrp_mismatch) ? `
@@ -2285,73 +2383,12 @@ async function runAudit(competitorUrl = '') {
           </div>
         ` : ''}
 
-        <!-- Side-by-Side Comparison Cards (Always Shown: Case A Exact Match OR Case B Manual Override) -->
+        <!-- Dual Store Comparison (Primary Submitted Store Always Positioned First) -->
+        <div style="font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-weight:700;margin:18px 0 8px">
+          ⚔️ Live Store Battle &amp; Competitor Comparison
+        </div>
         <div class="compare-grid">
-          <!-- Amazon Column -->
-          <div class="compare-col ${isAmzWinner ? 'is-winner' : ''}">
-            <div class="compare-col-header">
-              <span class="store-tag amazon">📦 AMAZON INDIA</span>
-              ${isAmzWinner ? '<span class="pill" style="font-size:.65rem;background:#10b981;color:#000;font-weight:800">BEST PRICE</span>' : (amzMatched ? '<span class="pill" style="font-size:.62rem;background:rgba(16,185,129,.15);color:#34d399">LIVE VERIFIED</span>' : '<span class="pill" style="font-size:.62rem;background:rgba(245,158,11,.15);color:#fbbf24">EXACT MATCH NOT FOUND</span>')}
-            </div>
-            ${amzMatched ? `
-              <div class="comp-price-row">
-                <span class="comp-price">₹${amz.price.toLocaleString('en-IN')}</span>
-                <span class="comp-mrp">₹${(amz.scraped_mrp || amz.mrp || d.mrp).toLocaleString('en-IN')}</span>
-                <span class="comp-discount">-${amz.discount_pct}%</span>
-              </div>
-              <div style="font-size:.74rem;color:var(--muted)">
-                💵 You Save: <strong style="color:var(--green)">₹${amz.savings.toLocaleString('en-IN')}</strong> vs Packaging MRP
-              </div>
-              <a href="${amz.url || d.affiliate_url}" onclick="handleSmartStoreClick(event, this.href, 'amazon')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy amazon">
-                Buy on Amazon at ₹${amz.price.toLocaleString('en-IN')} ↗
-              </a>
-            ` : `
-              <div style="padding:10px 0;font-size:.82rem;color:var(--muted);line-height:1.5">
-                <div style="color:#fbbf24;font-weight:800;font-size:.9rem;margin-bottom:6px">⚠️ Exact Match Was Not Found on Amazon</div>
-                <div>We could not confirm the exact same model & Box MRP automatically. To avoid showing a wrong item, tap below to check live Amazon search results or paste the exact Amazon link if you have one:</div>
-              </div>
-              <a href="${d.amazon_search_url || amz.url || 'https://www.amazon.in'}" onclick="handleSmartStoreClick(event, this.href, 'amazon')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy amazon" style="margin-bottom:10px">
-                🔍 Tap to View Live Amazon Search Results ↗
-              </a>
-              <div style="display:flex;gap:6px;margin-top:4px;flex-wrap:wrap;width:100%">
-                <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem;min-width:0;flex:1 1 180px" placeholder="Have the exact Amazon link? Paste here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
-                <button type="button" onclick="applyInlineCompetitorCompare()" class="btn-compare-action" style="padding:8px 12px;font-size:.75rem;white-space:nowrap">Compare ⚔️</button>
-              </div>
-            `}
-          </div>
-
-          <!-- Flipkart Column -->
-          <div class="compare-col ${isFkWinner ? 'is-winner' : ''}">
-            <div class="compare-col-header">
-              <span class="store-tag flipkart">⚡ FLIPKART INDIA</span>
-              ${isFkWinner ? '<span class="pill" style="font-size:.65rem;background:#10b981;color:#000;font-weight:800">BEST PRICE</span>' : (fkMatched ? '<span class="pill" style="font-size:.62rem;background:rgba(16,185,129,.15);color:#34d399">LIVE VERIFIED</span>' : '<span class="pill" style="font-size:.62rem;background:rgba(245,158,11,.15);color:#fbbf24">EXACT MATCH NOT FOUND</span>')}
-            </div>
-            ${fkMatched ? `
-              <div class="comp-price-row">
-                <span class="comp-price">₹${fk.price.toLocaleString('en-IN')}</span>
-                <span class="comp-mrp">₹${(fk.scraped_mrp || fk.mrp || d.mrp).toLocaleString('en-IN')}</span>
-                <span class="comp-discount">-${fk.discount_pct}%</span>
-              </div>
-              <div style="font-size:.74rem;color:var(--muted)">
-                💵 You Save: <strong style="color:var(--green)">₹${fk.savings.toLocaleString('en-IN')}</strong> vs Packaging MRP
-              </div>
-              <a href="${toFlipkartAffiliateUrl(fk.url || d.flipkart_search_url)}" onclick="handleSmartStoreClick(event, this.href, 'flipkart')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy flipkart">
-                Buy on Flipkart at ₹${fk.price.toLocaleString('en-IN')} ↗
-              </a>
-            ` : `
-              <div style="padding:10px 0;font-size:.82rem;color:var(--muted);line-height:1.5">
-                <div style="color:#fbbf24;font-weight:800;font-size:.9rem;margin-bottom:6px">⚠️ Exact Match Was Not Found on Flipkart</div>
-                <div>We could not confirm the exact same model & Box MRP automatically. To avoid showing a wrong item, tap below to check live Flipkart search results or paste the exact Flipkart link if you have one:</div>
-              </div>
-              <a href="${toFlipkartAffiliateUrl(d.flipkart_search_url || fk.url || 'https://www.flipkart.com')}" onclick="handleSmartStoreClick(event, this.href, 'flipkart')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy flipkart" style="margin-bottom:10px">
-                🔍 Tap to View Live Flipkart Search Results ↗
-              </a>
-              <div style="display:flex;gap:6px;margin-top:4px;flex-wrap:wrap;width:100%">
-                <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem;min-width:0;flex:1 1 180px" placeholder="Have the exact Flipkart link? Paste here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
-                <button type="button" onclick="applyInlineCompetitorCompare()" class="btn-compare-action" style="padding:8px 12px;font-size:.75rem;white-space:nowrap">Compare ⚔️</button>
-              </div>
-            `}
-          </div>
+          ${isPrimaryAmazon ? (renderAmzCol() + renderFkCol()) : (renderFkCol() + renderAmzCol())}
         </div>
 
         <!-- 90-Day Keepa Price Curve (Immediately Following Comparison Table) -->
