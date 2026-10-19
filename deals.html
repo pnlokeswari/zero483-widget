@@ -2239,8 +2239,9 @@ async function runAudit(competitorUrl = '') {
     const isFkWinner = hasComparison && d.winner_platform === 'flipkart';
     const isPrimaryAmazon = d.platform === 'amazon';
 
-    const amzBullets = (amz.about_this_item && amz.about_this_item.length > 0) ? amz.about_this_item : (d.about_this_item || []);
-    const fkHighlights = (fk.highlights && fk.highlights.length > 0) ? fk.highlights : (d.highlights || []);
+    // Strictly isolate specs: Never leak Amazon bullets to Flipkart products or vice versa unless counterpart is genuinely matched!
+    const amzBullets = (isPrimaryAmazon ? (d.about_this_item || []) : (amzMatched && amz.about_this_item ? amz.about_this_item : []));
+    const fkHighlights = (!isPrimaryAmazon ? (d.highlights || []) : (fkMatched && fk.highlights ? fk.highlights : []));
     const hasAnySpecs = Boolean(amzBullets.length > 0 || fkHighlights.length > 0);
 
     const primaryStoreName = isPrimaryAmazon ? 'Amazon India' : 'Flipkart India';
@@ -2395,7 +2396,7 @@ async function runAudit(competitorUrl = '') {
         <div class="chart-section" style="margin:20px 0">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:6px">
             <span style="font-size:.84rem;font-weight:800;color:var(--brand-glow);text-transform:uppercase;letter-spacing:1px;display:flex;align-items:center;gap:6px">
-              <span id="dyn-curve-header">📊 ${d.keepa_graph_url ? 'Amazon 90-Day Keepa Price Curve' : '90-Day Real Price Trajectory'}</span>
+              <span id="dyn-curve-header">📊 ${d.keepa_graph_url ? 'Amazon 90-Day Keepa Price Curve' : (isPrimaryAmazon ? 'Amazon 90-Day Price Trajectory' : 'Flipkart 90-Day Price Trajectory')}</span>
             </span>
             <span class="pill" style="font-size:.65rem" id="dyn-curve-badge">${d.keepa_graph_url ? 'Verified Keepa Graph' : '90-Day Real History'}</span>
           </div>
@@ -2415,8 +2416,8 @@ async function runAudit(competitorUrl = '') {
             <span style="font-size:.86rem;color:var(--text);font-weight:600">
               📉 <span style="color:#10b981;font-weight:700">90-Day Price Trend:</span> For lowest price information &amp; festival discount dates, refer to the verified curve above.
             </span>
-            ${d.asin ? `
-              <a href="https://keepa.com/#!product/10-${d.asin}" target="_blank" rel="noopener noreferrer" style="font-size:.75rem;color:#38bdf8;font-weight:600;text-decoration:none">
+            ${(d.keepa_graph_url && (isPrimaryAmazon ? d.asin : amz.asin)) ? `
+              <a href="https://keepa.com/#!product/10-${isPrimaryAmazon ? d.asin : amz.asin}" target="_blank" rel="noopener noreferrer" style="font-size:.75rem;color:#38bdf8;font-weight:600;text-decoration:none">
                 Open on Keepa ↗
               </a>
             ` : ''}
