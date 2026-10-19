@@ -24,7 +24,7 @@ load_dotenv(ROOT_DIR / ".env")
 
 log = logging.getLogger("ai_deal_validator")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY") or ""
-GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+GEMINI_MODELS = ["gemini-2.5-flash", "gemini-1.5-flash-latest"]
 
 _session = requests.Session(impersonate="chrome120")
 
@@ -34,12 +34,11 @@ def is_ai_layer_available() -> bool:
     return bool(GEMINI_API_KEY and len(GEMINI_API_KEY) > 10)
 
 
-def _call_gemini_json(prompt: str, timeout: float = 6.0) -> Optional[dict]:
-    """Helper to query Gemini Flash with strict JSON response configuration."""
+def _call_gemini_json(prompt: str, timeout: float = 12.0) -> Optional[dict]:
+    """Helper to query Gemini Flash with strict JSON response configuration and fallback models."""
     if not is_ai_layer_available():
         return None
 
-    url = f"{GEMINI_ENDPOINT}?key={GEMINI_API_KEY}"
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
@@ -48,19 +47,21 @@ def _call_gemini_json(prompt: str, timeout: float = 6.0) -> Optional[dict]:
         }
     }
 
-    try:
-        r = _session.post(url, json=payload, timeout=timeout)
-        if r.status_code == 200:
-            data = r.json()
-            candidates = data.get("candidates", [])
-            if candidates:
-                raw_text = candidates[0].get("content", {}).get("parts", [{}])[0].get("text", "")
-                if raw_text:
-                    return json.loads(raw_text)
-        else:
-            log.warning(f"AI Layer HTTP {r.status_code}: {r.text[:200]}")
-    except Exception as e:
-        log.warning(f"AI Layer execution notice: {e}")
+    for model in GEMINI_MODELS:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={GEMINI_API_KEY}"
+        try:
+            r = _session.post(url, json=payload, timeout=timeout)
+            if r.status_code == 200:
+                data = r.json()
+                candidates = data.get("candidates", [])
+                if candidates:
+                    raw_text = candidates[0].get("content", {}).get("parts", [{}])[0].get("text", "")
+                    if raw_text:
+                        return json.loads(raw_text)
+            else:
+                log.warning(f"AI Layer ({model}) HTTP {r.status_code}: {r.text[:200]}")
+        except Exception as e:
+            log.warning(f"AI Layer ({model}) execution notice: {e}")
     return None
 
 
