@@ -109,6 +109,14 @@ VERIFIED_BENCHMARKS: Dict[str, Dict[str, Any]] = {
         "image_url": "https://rukminim2.flixcart.com/image/800/1070/xif0q/dhoop-cone/r/n/6/-original-imahs7fjjxg244sk.jpeg",
         "fk_url": "https://www.flipkart.com/mangaldeep-temple-dhoop-cones-sandalwood-patchouli-40-cone-floral/p/itmf4aee6f6af29e?pid=DCEH5GAVEKUUUHV9"
     },
+    "DCEHA9JSHFNYSC5G": {
+        "title": "Cycle Pure Bansuri Special Cup Sambrani - 12N Guggul Dhoop",
+        "mrp": 72.0,
+        "fk_price": 64.0,
+        "lowest_90d": 59.0,
+        "image_url": "https://rukminim2.flixcart.com/image/800/1070/xif0q/dhoop-cone/j/c/g/bansuri-havan-cup-sambrani-96-nos-natural-fragrance-8-cycle-original-imah32jj9hghrcpk.jpeg",
+        "fk_url": "https://www.flipkart.com/cycle-pure-bansuri-special-cup-sambrani-12n-guggul-dhoop/p/itm458ee906cc602?pid=DCEHA9JSHFNYSC5G"
+    },
     "ACCHQDMZTBXGZSUR": {"title": "Niubil 33W SuperVOOC Fast Charger Adapter", "mrp": 2999.0, "fk_price": 265.0, "lowest_90d": 249.0, "fk_url": "https://www.flipkart.com/niubil-33w-supervooc-fast-charger-adapter/p/itm?pid=ACCHQDMZTBXGZSUR"},
     "MSCGNE2GYCJHYEBZ": {
         "title": "Foxtale Nourishing Ceramide Moisturizer for Dry Skin, Skin-Barrier Repair & Hydration (150 ml)",
@@ -384,6 +392,8 @@ def unwrap_flipkart_redirect_url(url: str) -> str:
                 if m_ctx:
                     orig_url += ("&" if "?" in orig_url else "?") + m_ctx.group(1)
             return orig_url
+        elif "marketplace=hyperlocal" in url.lower():
+            return re.sub(r"([?&])marketplace=HYPERLOCAL&?", r"\1", url, flags=re.I).rstrip("?&")
     return url
 
 
@@ -754,8 +764,8 @@ def extract_key_specs(title: str) -> Tuple[set, str]:
             norm_ff = ff.rstrip("s")
             form_factors.append(f"form:{norm_ff}")
 
-    # 6. Count / Units (e.g. 40 cones, 15 cups, 100 sticks, 50 wipes)
-    count_matches = re.findall(r"\b(\d+)\s*(?:cones?|cups?|sticks?|tablets?|capsules?|pieces?|pcs?|units?|count|wipes?)\b", t_lower)
+    # 6. Count / Units (e.g. 12N, 40 cones, 15 cups, 100 sticks, 50 wipes, 12 nos)
+    count_matches = re.findall(r"\b(\d+)\s*(?:n|nos?|cones?|cups?|sticks?|tablets?|capsules?|pieces?|pcs?|units?|count|wipes?)\b", t_lower)
     count_specs = [f"count:{c}" for c in count_matches]
 
     critical_specs = set(storage_specs + size_specs + model_modifiers + form_factors + count_specs)
@@ -789,7 +799,7 @@ def matches_variant_specs(candidate_title: str, required_specs: set) -> bool:
     """
     Verifies candidate title matches exact storage/size and doesn't belong to a conflicting variant.
     E.g. if original is 256GB, candidate MUST have 256GB and CANNOT be 512GB or 128GB.
-    Guards against conflicting form factors (e.g. Cones vs Cups) and counts (e.g. 40 vs 15).
+    Guards against conflicting form factors (e.g. Cones vs Cups) and counts (e.g. 40 vs 15 vs 12N).
     """
     if not required_specs:
         return True
@@ -811,13 +821,17 @@ def matches_variant_specs(candidate_title: str, required_specs: set) -> bool:
                 if has_conflict and not has_req:
                     return False
 
-        # Count check (e.g. 40 cones vs 15 cups)
+        # Count check (e.g. 12N cups vs 45 pcs)
         if spec.startswith("count:"):
             try:
                 req_count = int(spec.split(":", 1)[1])
-                cand_counts = re.findall(r"\b(\d+)\s*(?:cones?|cups?|sticks?|tablets?|capsules?|pieces?|pcs?|units?|count|wipes?)\b", c_lower)
+                cand_counts = re.findall(r"\b(\d+)\s*(?:n|nos?|cones?|cups?|sticks?|tablets?|capsules?|pieces?|pcs?|units?|count|wipes?)\b", c_lower)
                 if cand_counts:
                     if not any(int(cc) == req_count for cc in cand_counts):
+                        return False
+                cand_parens = re.findall(r"\((\d+)\s*(?:pcs|cups|cones|count|nos|n)?\)", c_lower)
+                if cand_parens:
+                    if not any(int(cp) == req_count for cp in cand_parens):
                         return False
             except (ValueError, TypeError):
                 pass
