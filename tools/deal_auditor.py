@@ -350,14 +350,32 @@ def make_flipkart_affiliate_url(url: str) -> str:
 
 
 def unwrap_flipkart_redirect_url(url: str) -> str:
-    """If a URL is an EarnKaro linkredirect.in URL with ?dl=..., unwraps the inner Flipkart URL for scraping."""
+    """If a URL is an EarnKaro linkredirect.in URL with ?dl=..., unwraps the inner Flipkart URL for scraping.
+       Also handles Flipkart Minutes / Hyperlocal URLs (hyperlocal-preview-page, marketplace=HYPERLOCAL, originalUrl)."""
     if not url:
         return ""
+    # 1. EarnKaro linkredirect unwrapping
     m_dl = re.search(r"[?&]dl=([^&]+)", url)
     if m_dl:
         decoded = urllib.parse.unquote(m_dl.group(1))
         if "flipkart.com" in decoded.lower():
-            return decoded
+            url = decoded
+
+    # 2. Flipkart Minutes / Hyperlocal URL unwrapping
+    if "originalUrl=" in url or "hyperlocal-preview-page" in url.lower() or "marketplace=hyperlocal" in url.lower():
+        m_orig = re.search(r"[?&]originalUrl=([^&]+)", url)
+        if m_orig:
+            orig_path = urllib.parse.unquote(m_orig.group(1))
+            if not orig_path.startswith("http"):
+                orig_url = f"https://www.flipkart.com{orig_path}"
+            else:
+                orig_url = orig_path
+            # Preserve ctx parameter from outer URL if present and missing in orig_url
+            if "ctx=" in url and "ctx=" not in orig_url:
+                m_ctx = re.search(r"[?&](ctx=[^&]+)", url)
+                if m_ctx:
+                    orig_url += ("&" if "?" in orig_url else "?") + m_ctx.group(1)
+            return orig_url
     return url
 
 
@@ -384,9 +402,13 @@ def is_flipkart_input(text: str) -> bool:
 
 def extract_flipkart_pid(url_or_text: str) -> Optional[str]:
     """Extracts 16-char Flipkart PID / FSN if present."""
-    m = re.search(r"[?&]pid=([A-Z0-9]{16})", url_or_text, re.I)
+    unquoted = urllib.parse.unquote(url_or_text)
+    m = re.search(r"[?&]pid=([A-Z0-9]{16})", unquoted, re.I)
     if m:
         return m.group(1).upper()
+    m2 = re.search(r"[?&]pid=([A-Z0-9]{16})", url_or_text, re.I)
+    if m2:
+        return m2.group(1).upper()
     if re.match(r"^[A-Z0-9]{16}$", url_or_text.strip(), re.I):
         return url_or_text.strip().upper()
     return None
@@ -717,7 +739,18 @@ def extract_key_specs(title: str) -> Tuple[set, str]:
                 if not re.match(r"^b0[a-z0-9]{8}$", tl):  # skip bare ASIN
                     model_codes.append(tok)
 
-    critical_specs = set(storage_specs + size_specs + model_modifiers)
+    # 5. Form factor / Product type (e.g. cones, cups, sticks, agarbatti, dhoop, wipes)
+    form_factors = []
+    for ff in ["cones", "cone", "cups", "cup", "sticks", "stick", "agarbatti", "dhoop", "wipes", "tablets", "capsules"]:
+        if re.search(r"\b" + re.escape(ff) + r"\b", t_lower):
+            norm_ff = ff.rstrip("s")
+            form_factors.append(f"form:{norm_ff}")
+
+    # 6. Count / Units (e.g. 40 cones, 15 cups, 100 sticks, 50 wipes)
+    count_matches = re.findall(r"\b(\d+)\s*(?:cones?|cups?|sticks?|tablets?|capsules?|pieces?|pcs?|units?|count|wipes?)\b", t_lower)
+    count_specs = [f"count:{c}" for c in count_matches]
+
+    critical_specs = set(storage_specs + size_specs + model_modifiers + form_factors + count_specs)
 
     # Clean words for search while keeping model, numbers & specs (strip '&' so Flipkart search doesn't choke)
     cleaned = re.sub(r"[(),\[\]\-–/|&+]", " ", title)
@@ -748,6 +781,7 @@ def matches_variant_specs(candidate_title: str, required_specs: set) -> bool:
     """
     Verifies candidate title matches exact storage/size and doesn't belong to a conflicting variant.
     E.g. if original is 256GB, candidate MUST have 256GB and CANNOT be 512GB or 128GB.
+    Guards against conflicting form factors (e.g. Cones vs Cups) and counts (e.g. 40 vs 15).
     """
     if not required_specs:
         return True
@@ -755,6 +789,31 @@ def matches_variant_specs(candidate_title: str, required_specs: set) -> bool:
     c_lower = candidate_title.lower()
 
     for spec in required_specs:
+        # Form factor check (e.g. cones vs cups vs sticks)
+        if spec.startswith("form:"):
+            req_form = spec.split(":", 1)[1]
+            conflicts = {
+                "cone": ["cup", "stick"],
+                "cup": ["cone", "stick"],
+                "stick": ["cone", "cup"],
+            }
+            if req_form in conflicts:
+                has_req = bool(re.search(r"\b" + re.escape(req_form) + r"s?\b", c_lower))
+                has_conflict = any(re.search(r"\b" + re.escape(cf) + r"s?\b", c_lower) for cf in conflicts[req_form])
+                if has_conflict and not has_req:
+                    return False
+
+        # Count check (e.g. 40 cones vs 15 cups)
+        if spec.startswith("count:"):
+            try:
+                req_count = int(spec.split(":", 1)[1])
+                cand_counts = re.findall(r"\b(\d+)\s*(?:cones?|cups?|sticks?|tablets?|capsules?|pieces?|pcs?|units?|count|wipes?)\b", c_lower)
+                if cand_counts:
+                    if not any(int(cc) == req_count for cc in cand_counts):
+                        return False
+            except (ValueError, TypeError):
+                pass
+
         # Storage check
         m = re.match(r"^(\d+)(gb|tb|mb)$", spec)
         if m:
@@ -1396,9 +1455,35 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         is_sold_out_direct = False
         fk_product_image = ""
 
-        if "flipkart.com" in final_url.lower() and "/search?" not in final_url.lower():
+        # Extract Flipkart Minutes / Hyperlocal live price from ctx if present
+        minutes_price = 0.0
+        for u_chk in [clean_input, final_url]:
+            if not u_chk: continue
+            unquoted_chk = urllib.parse.unquote(u_chk)
+            for cand_u in [unquoted_chk, u_chk]:
+                m_ctx = re.search(r"[?&]ctx=([^&]+)", cand_u)
+                if m_ctx:
+                    try:
+                        raw_ctx = urllib.parse.unquote(m_ctx.group(1))
+                        padded_ctx = raw_ctx + "=" * ((4 - len(raw_ctx) % 4) % 4)
+                        decoded_ctx = base64.b64decode(padded_ctx).decode("utf-8", errors="ignore")
+                        ctx_json = json.loads(decoded_ctx)
+                        dp = ctx_json.get("displayPrice") or ctx_json.get("price")
+                        if dp:
+                            minutes_price = float(str(dp).replace(",", ""))
+                            break
+                    except Exception as e:
+                        log.debug(f"Flipkart Minutes ctx decode notice: {e}")
+            if minutes_price > 0:
+                break
+
+        scrape_url = final_url
+        if "marketplace=hyperlocal" in scrape_url.lower():
+            scrape_url = re.sub(r"([?&])marketplace=HYPERLOCAL&?", r"\1", scrape_url, flags=re.I).rstrip("?&")
+
+        if "flipkart.com" in scrape_url.lower() and "/search?" not in scrape_url.lower():
             try:
-                r_page = session.get(final_url, allow_redirects=True, timeout=14)
+                r_page = session.get(scrape_url, allow_redirects=True, timeout=14)
                 if r_page.status_code == 200:
                     final_url = r_page.url
                     if not pid:
@@ -1420,12 +1505,14 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                         product_title = m_desc_title.group(1).strip()
                     elif soup_page.title and soup_page.title.string:
                         clean_t = soup_page.title.string.strip()
-                        clean_t = re.sub(r"^(?:Buy\s+)?(.*?)(?:\s+-\s+Price\s+in\s+India.*|\s+Online\s+@.*|\s*\|\s*Flipkart\.com.*)?$", r"\1", clean_t, flags=re.I)
+                        clean_t = re.sub(r"^(?:Buy\s+)?(.*?)(?:\s+-\s+Price\s+in\s+India.*|\s+Price\s+in\s+India.*|\s+Online\s+@.*|\s*\|\s*Flipkart\.com.*)?$", r"\1", clean_t, flags=re.I)
                         if clean_t and not any(clean_t.endswith(x) for x in ["...", "…"]):
                             product_title = clean_t.strip()
                     
                     if not product_title and raw_h1:
-                        product_title = re.sub(r"(\.\.\.|\u2026).*$", "", raw_h1).strip()
+                        clean_h1 = re.sub(r"(\.\.\.|\u2026).*$", "", raw_h1).strip()
+                        clean_h1 = re.sub(r"\s+more$", "", clean_h1, flags=re.I).strip()
+                        product_title = clean_h1
 
                     # Preserve volume / size spec from H1 if meta description omitted it (e.g., 580 ml, 250g, 1000ml)
                     if raw_h1:
@@ -1554,6 +1641,14 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             except Exception as e:
                 log.warning(f"Direct Flipkart product page scrape failed: {e}")
 
+        # Clean any trailing "...more" or ellipsis from product_title
+        if product_title:
+            product_title = re.sub(r"\s*(\.\.\.|\u2026)\s*more$", "", product_title, flags=re.I).strip()
+            # If slug contains count or pack (e.g. 40 cone) not in title, enrich title
+            m_slug_cnt = re.search(r"-(\d+)-(cone|cup|stick|piece|wipe)s?", final_url, re.I)
+            if m_slug_cnt and f"{m_slug_cnt.group(1)} {m_slug_cnt.group(2)}" not in product_title.lower():
+                product_title = f"{product_title} ({m_slug_cnt.group(1)} {m_slug_cnt.group(2).title()}s)"
+
         if not product_title:
             m_slug = re.search(r"flipkart\.com/([^/]+)/p/", final_url, re.I)
             if m_slug:
@@ -1572,6 +1667,13 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         if pid and pid in VERIFIED_BENCHMARKS and VERIFIED_BENCHMARKS[pid].get("title"):
             if not product_title or product_title.startswith("Flipkart Product"):
                 product_title = str(VERIFIED_BENCHMARKS[pid]["title"])
+
+        # If live local price was extracted from Flipkart Minutes, apply it directly!
+        if minutes_price > 0:
+            current_price = minutes_price
+            is_sold_out_direct = False
+            if mrp == 0.0 or mrp < current_price:
+                mrp = current_price
 
         # Search Flipkart fallback ONLY if direct page scrape failed OR if the direct PID was confirmed Sold Out
         if current_price == 0.0 or is_sold_out_direct:
@@ -1737,6 +1839,10 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                 winner_platform = "tie"
                 winner_text = "🤝 Both Stores Match at Exact Same Price!"
                 winner_badge = "Exact Price Match"
+        elif current_price > 0 and (not amz_comp or not amz_comp.get("price") or amz_comp.get("price") == 0):
+            winner_platform = "flipkart"
+            winner_text = "⚡ In-Stock on Flipkart (Currently Unavailable on Amazon)"
+            winner_badge = "Flipkart In-Stock"
 
         chart_svg = generate_price_trend_svg(
             amz_price=current_price,
@@ -2079,6 +2185,10 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             winner_platform = "tie"
             winner_text = "🤝 Both Stores Match at Exact Same Price!"
             winner_badge = "Exact Price Match"
+    elif current_price > 0 and (not fk_comp or not fk_comp.get("price") or fk_comp.get("price") == 0):
+        winner_platform = "amazon"
+        winner_text = "⚡ In-Stock on Amazon (Currently Unavailable on Flipkart)"
+        winner_badge = "Amazon In-Stock"
 
     # SVG generation: Single Amazon Verified Curve or Dual Comparison
     chart_svg = generate_price_trend_svg(
