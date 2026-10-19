@@ -1222,17 +1222,17 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
     return {
         "platform": "flipkart",
         "matched": matched,
-        "title": fk_title,
-        "price": cur_p,
-        "mrp": effective_fk_mrp,
-        "scraped_mrp": fk_scraped_mrp,
-        "lowest_90d": lowest_90d,
-        "all_time_low": float(hist_fk.get("all_time_low") or lowest_90d),
-        "all_time_date": str(hist_fk.get("all_time_date") or ""),
-        "savings": savings,
-        "discount_pct": disc_pct,
+        "title": fk_title if matched else f"Search on Flipkart: {title_or_url}",
+        "price": cur_p if matched else 0.0,
+        "mrp": effective_fk_mrp if matched else 0.0,
+        "scraped_mrp": fk_scraped_mrp if matched else 0.0,
+        "lowest_90d": lowest_90d if matched else 0.0,
+        "all_time_low": float(hist_fk.get("all_time_low") or lowest_90d) if matched else 0.0,
+        "all_time_date": str(hist_fk.get("all_time_date") or "") if matched else "",
+        "savings": savings if matched else 0.0,
+        "discount_pct": disc_pct if matched else 0.0,
         "url": make_flipkart_affiliate_url(fk_link),
-        "highlights": fk_highlights,
+        "highlights": fk_highlights if matched else [],
         "mrp_mismatch": mrp_mismatch,
         "mrp_diff_pct": mrp_diff_pct,
         "mrp_mismatch_msg": mrp_mismatch_msg
@@ -1483,8 +1483,13 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
     # Automatic Amazon search MUST also confirm exact Box MRP parity (within ₹1), otherwise trigger Case B!
     if matched and not is_direct_amz and box_mrp > 0 and (amz_scraped_mrp <= 0 or abs(amz_scraped_mrp - box_mrp) > 1.0):
         matched = False
+
+    if not matched:
         cur_p = 0.0
         lowest_90d = 0.0
+        asin = ""
+        about_this_item = []
+        amz_scraped_mrp = 0.0
         affiliate_url = amz_url
 
     effective_amz_mrp = amz_scraped_mrp if amz_scraped_mrp > 0 else box_mrp
@@ -1510,18 +1515,18 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
     return {
         "platform": "amazon",
         "matched": matched,
-        "title": amz_title,
+        "title": amz_title if matched else f"Search on Amazon: {title}",
         "price": cur_p,
-        "mrp": effective_amz_mrp,
-        "scraped_mrp": amz_scraped_mrp,
-        "lowest_90d": lowest_90d,
-        "all_time_low": float(hist_amz.get("all_time_low") or lowest_90d),
-        "all_time_date": str(hist_amz.get("all_time_date") or ""),
+        "mrp": effective_amz_mrp if matched else 0.0,
+        "scraped_mrp": amz_scraped_mrp if matched else 0.0,
+        "lowest_90d": lowest_90d if matched else 0.0,
+        "all_time_low": float(hist_amz.get("all_time_low") or lowest_90d) if matched else 0.0,
+        "all_time_date": str(hist_amz.get("all_time_date") or "") if matched else "",
         "savings": savings,
         "discount_pct": disc_pct,
-        "asin": asin,
+        "asin": asin if matched else "",
         "url": affiliate_url,
-        "about_this_item": about_this_item,
+        "about_this_item": about_this_item if matched else [],
         "mrp_mismatch": mrp_mismatch,
         "mrp_diff_pct": mrp_diff_pct,
         "mrp_mismatch_msg": mrp_mismatch_msg
@@ -1996,7 +2001,8 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         discount_mrp_pct = round((savings_inr / mrp * 100), 1) if mrp > 0 else 0.0
 
         fk_aff_url = make_flipkart_affiliate_url(final_url)
-        fk_asin = amz_comp.get("asin", "") if amz_comp else ""
+        # Keepa graph ONLY exists for Amazon ASINs. For a Flipkart product, Keepa is ONLY available if there is an exact matched Amazon counterpart!
+        fk_asin = amz_comp.get("asin", "") if (amz_comp and amz_comp.get("matched")) else ""
         keepa_url = f"https://graph.keepa.com/pricehistory.png?domain=10&asin={fk_asin}&range=90&amazon=1&new=1&bb=0" if fk_asin else ""
 
         # Autonomous Learning: Permanently store verified Flipkart product & twin in knowledge base
@@ -2056,7 +2062,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                 "highlights": fk_highlights
             },
             "highlights": fk_highlights,
-            "about_this_item": amz_comp.get("about_this_item", []) if amz_comp else [],
+            "about_this_item": amz_comp.get("about_this_item", []) if (amz_comp and amz_comp.get("matched")) else [],
             "mrp_mismatch": amz_comp.get("mrp_mismatch", False) if amz_comp else False,
             "mrp_diff_pct": amz_comp.get("mrp_diff_pct", 0.0) if amz_comp else 0.0,
             "mrp_mismatch_msg": amz_comp.get("mrp_mismatch_msg", "") if amz_comp else "",
