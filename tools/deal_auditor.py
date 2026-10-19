@@ -101,6 +101,14 @@ VERIFIED_BENCHMARKS: Dict[str, Dict[str, Any]] = {
         "fk_url": "https://www.flipkart.com/samsung-galaxy-s24-5g-snapdragon-onyx-black-256-gb/p/itm0eb31619428e4?pid=MOBHDVFKVGGGHBDX"
     },
     "MOBFWBYZ8GU3R9TG": {"title": "Realme 5G Smartphone (128 GB)", "mrp": 19999.0, "fk_price": 15499.0, "lowest_90d": 14999.0},
+    "DCEH5GAVEKUUUHV9": {
+        "title": "Mangaldeep Temple Dhoop Cones Sandalwood & Patchouli (40 Cones)",
+        "mrp": 165.0,
+        "fk_price": 146.0,
+        "lowest_90d": 120.0,
+        "image_url": "https://rukminim2.flixcart.com/image/800/1070/xif0q/dhoop-cone/r/n/6/-original-imahs7fjjxg244sk.jpeg",
+        "fk_url": "https://www.flipkart.com/mangaldeep-temple-dhoop-cones-sandalwood-patchouli-40-cone-floral/p/itmf4aee6f6af29e?pid=DCEH5GAVEKUUUHV9"
+    },
     "ACCHQDMZTBXGZSUR": {"title": "Niubil 33W SuperVOOC Fast Charger Adapter", "mrp": 2999.0, "fk_price": 265.0, "lowest_90d": 249.0, "fk_url": "https://www.flipkart.com/niubil-33w-supervooc-fast-charger-adapter/p/itm?pid=ACCHQDMZTBXGZSUR"},
     "MSCGNE2GYCJHYEBZ": {
         "title": "Foxtale Nourishing Ceramide Moisturizer for Dry Skin, Skin-Barrier Repair & Hydration (150 ml)",
@@ -1430,14 +1438,14 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         final_url = unwrap_flipkart_redirect_url(clean_input)
         if "dl.flipkart.com/dl/" in final_url.lower():
             final_url = re.sub(r"^https?://dl\.flipkart\.com/dl/", "https://www.flipkart.com/", final_url, flags=re.I)
+        redirect_url = ""
         if any(k in final_url.lower() for k in ["fkrt.it", "fktr.in", "visitretailer/2276"]) or ("flipkart.com" in final_url.lower() and "/p/" not in final_url.lower()):
             try:
                 r = session.get(final_url, allow_redirects=True, timeout=12)
-                final_url = unwrap_flipkart_redirect_url(r.url)
+                redirect_url = r.url or ""
+                final_url = unwrap_flipkart_redirect_url(redirect_url)
             except Exception as e:
                 log.warning(f"Flipkart redirect error for {clean_input}: {e}")
-
-
 
         pid = extract_flipkart_pid(final_url) or extract_flipkart_pid(clean_input)
 
@@ -1457,11 +1465,11 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
 
         # Extract Flipkart Minutes / Hyperlocal live price from ctx if present
         minutes_price = 0.0
-        for u_chk in [clean_input, final_url]:
+        for u_chk in [clean_input, final_url, redirect_url]:
             if not u_chk: continue
-            unquoted_chk = urllib.parse.unquote(u_chk)
-            for cand_u in [unquoted_chk, u_chk]:
-                m_ctx = re.search(r"[?&]ctx=([^&]+)", cand_u)
+            curr = u_chk
+            for _ in range(3):
+                m_ctx = re.search(r"[?&]ctx=([^&]+)", curr)
                 if m_ctx:
                     try:
                         raw_ctx = urllib.parse.unquote(m_ctx.group(1))
@@ -1474,6 +1482,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                             break
                     except Exception as e:
                         log.debug(f"Flipkart Minutes ctx decode notice: {e}")
+                curr = urllib.parse.unquote(curr)
             if minutes_price > 0:
                 break
 
