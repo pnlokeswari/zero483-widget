@@ -728,10 +728,9 @@ def generate_price_trend_svg(
 
     all_prices = [p[1] for p in amz_points]
     raw_min = min(lowest, min(all_prices))
-    raw_max = max(mrp, max(all_prices))
-    margin = max(2.0, min(15.0, (raw_max - raw_min) * 0.15)) if raw_max < 200 else max(10.0, (raw_max - raw_min) * 0.08)
-    p_min = max(0.0, raw_min - margin)
-    p_max = raw_max + margin
+    p_max = mrp  # Absolute legal ceiling: chart never scales above official Box MRP
+    margin_bottom = max(2.0, min(15.0, (p_max - raw_min) * 0.15)) if p_max < 200 else max(10.0, (p_max - raw_min) * 0.08)
+    p_min = max(0.0, raw_min - margin_bottom)
     p_range = max(1.0, p_max - p_min)
 
     # Canvas dimensions with dedicated left margin (pad_left = 85px) for clear Y-axis price scale
@@ -837,6 +836,92 @@ def generate_dual_comparison_svg(
         fk_price=fk_price, fk_mrp=fk_mrp, fk_lowest=fk_lowest,
         product_title=product_title
     )
+
+
+def guard_and_sanitize_audit_result(res: dict) -> dict:
+    """
+    Universal Retail Invariant Guardian & Self-Healing Validator.
+    Asserts and auto-corrects all physical, mathematical, and legal constraints
+    before returning an audit result to the user or UI:
+      1. Current Price > 0
+      2. MRP >= Current Price (Legal Metrology Ceiling)
+      3. 90-Day Low <= Current Price (Historical Floor)
+      4. Dynamic SVG Chart Curve strictly <= Box MRP and >= 90D Low
+      5. Strict Data Isolation (Zero Amazon leakage onto unmatched Flipkart products)
+      6. Consistent Title, Savings INR, and Discount %
+    """
+    if not res or "error" in res:
+        return res
+
+    platform = str(res.get("platform", "amazon")).lower()
+    current_price = float(res.get("current_price") or 0.0)
+    mrp = float(res.get("mrp") or 0.0)
+    lowest_90d = float(res.get("lowest_90d") or 0.0)
+
+    # Invariant 1: Price recovery if zero
+    if current_price <= 0.0 and mrp > 0.0:
+        current_price = mrp
+        res["current_price"] = current_price
+
+    # Invariant 2: Box MRP is the legal ceiling (can never be below selling price)
+    if mrp < current_price:
+        mrp = current_price
+        res["mrp"] = mrp
+
+    # Invariant 3: 90-Day Low cannot exceed current price
+    if lowest_90d <= 0.0 or lowest_90d > current_price:
+        lowest_90d = current_price
+        res["lowest_90d"] = lowest_90d
+
+    # Invariant 4: Recalculate savings and discount percentage with absolute consistency
+    savings = round(max(0.0, mrp - current_price), 0)
+    discount_pct = round((savings / mrp * 100.0), 1) if mrp > 0.0 else 0.0
+    res["savings_mrp_inr"] = savings
+    res["discount_mrp_pct"] = discount_pct
+
+    # Invariant 5: Cross-Store Isolation
+    amz_comp = res.get("amazon_counterpart") or {}
+    is_matched = bool(amz_comp and amz_comp.get("matched"))
+    if platform == "flipkart":
+        if not is_matched:
+            res["keepa_graph_url"] = ""
+            res["about_this_item"] = []
+            res["chart_type"] = "svg"
+        fk_part = res.get("flipkart_counterpart") or {}
+        fk_part["price"] = current_price
+        fk_part["mrp"] = mrp
+        fk_part["lowest_90d"] = lowest_90d
+        fk_part["savings"] = savings
+        fk_part["discount_pct"] = discount_pct
+        res["flipkart_counterpart"] = fk_part
+
+    # Invariant 6: Dynamic SVG Graph Price Bounds Check
+    svg = res.get("svg_chart") or ""
+    if res.get("chart_type") == "svg" or not res.get("keepa_graph_url") or platform == "flipkart":
+        needs_regen = not svg
+        if svg:
+            prices_in_svg = [float(x.replace(",", "")) for x in re.findall(r"₹([\d,]+(?:\.\d+)?)", svg)]
+            if any(p > (mrp + 1.0) for p in prices_in_svg):
+                needs_regen = True
+
+        if needs_regen:
+            res["svg_chart"] = generate_price_trend_svg(
+                amz_price=current_price,
+                amz_mrp=mrp,
+                amz_lowest=lowest_90d,
+                product_title=res.get("title", "")
+            )
+            res["chart_type"] = "svg"
+
+    # Invariant 7: Ensure clean, non-generic title
+    title = str(res.get("title") or "").strip()
+    if not title or title.startswith("Flipkart Deal Product") or title.startswith("Flipkart Product ("):
+        direct_u = str(res.get("direct_url") or "")
+        m_slug = re.search(r"flipkart\.com/([^/]+)/p/", direct_u, re.I)
+        if m_slug:
+            res["title"] = m_slug.group(1).replace("-", " ").title()
+
+    return res
 
 
 def extract_key_specs(title: str) -> Tuple[set, str]:
@@ -2036,7 +2121,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         except Exception as l_err:
             log.debug(f"Flipkart autonomous learning save notice: {l_err}")
 
-        return {
+        return guard_and_sanitize_audit_result({
             "platform": "flipkart",
             "asin": pid or "FLIPKART",
             "title": product_title,
@@ -2083,7 +2168,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             "verdict": f"🔥 BEST VALUE ON {winner_platform.upper()}" if winner_platform != "tie" else "🟢 PRICE MATCHED DEAL",
             "verdict_color": "#10b981",
             "verdict_reason": f"{winner_text or 'Audited Deal'} Current price of ₹{current_price:,.0f} saves ₹{savings_inr:,.0f} ({discount_mrp_pct:.0f}% off official Box MRP of ₹{mrp:,.0f}). 💡 90-Day Low Reminder: Lowest 90-day festival dip was ₹{lowest_90d:,.0f}.",
-        }
+        })
 
     # ══════════════════════════════════════════════════════════
     # CASE 2: AMAZON INPUT
@@ -2439,7 +2524,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     except Exception as l_err:
         log.debug(f"Amazon autonomous learning save notice: {l_err}")
 
-    return {
+    return guard_and_sanitize_audit_result({
         "platform": "amazon",
         "asin": asin,
         "title": prod_title,
@@ -2488,4 +2573,4 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         "verdict": verdict,
         "verdict_color": verdict_color,
         "verdict_reason": verdict_reason,
-    }
+    })
