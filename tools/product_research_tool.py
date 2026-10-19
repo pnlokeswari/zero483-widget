@@ -339,16 +339,16 @@ def make_session():
         _SESSION = _req.Session(impersonate="chrome120")
     else:
         _SESSION = _req.Session()
-    _SESSION.headers.update({
-        "User-Agent"     : ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                            "AppleWebKit/537.36 (KHTML, like Gecko) "
-                            "Chrome/120.0.6099.130 Safari/537.36"),
-        "Accept-Language": "en-IN,en;q=0.9,hi;q=0.8",
-        "Accept"         : "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Referer"        : "https://www.amazon.in/",
-        "DNT"            : "1",
-    })
+        _SESSION.headers.update({
+            "User-Agent"     : ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                                "Chrome/120.0.6099.130 Safari/537.36"),
+            "Accept-Language": "en-IN,en;q=0.9,hi;q=0.8",
+            "Accept"         : "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Referer"        : "https://www.amazon.in/",
+            "DNT"            : "1",
+        })
     return _SESSION
 
 
