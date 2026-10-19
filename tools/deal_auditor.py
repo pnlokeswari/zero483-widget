@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 from curl_cffi import requests as cffi_requests
 
 from product_research_tool import make_session, extract_asin, parse_price, AmazonIndiaScraper, Product
-from wave_tracker_db import get_all_tracked
+from wave_tracker_db import get_all_tracked, add_tracked_product
 
 try:
     from ai_deal_validator import ai_refine_product_metadata, ai_validate_cross_store_match, is_ai_layer_available
@@ -242,6 +242,109 @@ def _save_price_history_cache(cache: dict) -> None:
         PRICE_CACHE_FILE.write_text(json.dumps(cache, indent=2), encoding="utf-8")
     except Exception:
         pass
+
+
+def get_learned_product(platform: str, product_id: str) -> Optional[dict]:
+    """
+    Retrieves verified learned intelligence for any product ever audited.
+    Enables instant sub-millisecond memory recall and self-healing.
+    """
+    if not product_id:
+        return None
+    cache = _load_price_history_cache()
+    key = f"{platform.lower()}:{product_id.strip().upper()}"
+    return cache.get(key)
+
+
+def learn_audited_product(
+    platform: str,
+    product_id: str,
+    title: str,
+    current_price: float,
+    mrp: float,
+    image_url: str = "",
+    url: str = "",
+    highlights: list = None,
+    category: str = "General",
+    twin_id: str = "",
+    lowest_90d: float = 0.0,
+    learned_by: str = "audit"
+) -> None:
+    """
+    Autonomous Self-Learning Engine:
+    Permanently persists verified product intelligence into price_history_cache.json
+    and wave_tracker.db. Tracks chronological price changes, cross-store twins, and guarantees
+    immediate recovery if marketplace scrapers hit rate limits or bot-challenges.
+    """
+    if not product_id or current_price <= 0:
+        return
+    clean_id = product_id.strip().upper()
+    cache_key = f"{platform.lower()}:{clean_id}"
+    cache = _load_price_history_cache()
+    now = time.time()
+
+    existing = cache.get(cache_key, {})
+    lowest_recorded = float(existing.get("lowest_price") or existing.get("all_time_low") or current_price)
+    if lowest_90d > 0 and lowest_90d < lowest_recorded:
+        lowest_recorded = lowest_90d
+    if current_price < lowest_recorded:
+        lowest_recorded = current_price
+
+    hist_points = existing.get("history_points", [])
+    if not isinstance(hist_points, list):
+        hist_points = []
+    # Avoid recording duplicate timestamps within 1 hour
+    if not hist_points or (now - hist_points[-1].get("ts", 0) > 3600):
+        hist_points.append({"ts": now, "price": current_price, "date": datetime.now().strftime("%Y-%m-%d %H:%M")})
+        if len(hist_points) > 90:
+            hist_points = hist_points[-90:]
+
+    final_mrp = mrp if mrp > current_price else float(existing.get("mrp") or current_price)
+    final_title = title if (title and not title.startswith("Flipkart Product") and not title.startswith("Amazon Product")) else existing.get("title", title)
+    final_img = image_url if (image_url and "unsplash" not in image_url) else existing.get("image_url", image_url)
+
+    cache[cache_key] = {
+        "title": final_title,
+        "lowest_price": lowest_recorded,
+        "avg_price": round((lowest_recorded + current_price) / 2.0, 2),
+        "cur_price": current_price,
+        "mrp": final_mrp,
+        "all_time_low": float(existing.get("all_time_low") or lowest_recorded),
+        "all_time_date": existing.get("all_time_date", ""),
+        "image_url": final_img,
+        "url": url or existing.get("url", ""),
+        "highlights": highlights or existing.get("highlights", []),
+        "category": category or existing.get("category", "General"),
+        "twin_id": twin_id or existing.get("twin_id", ""),
+        "timestamp": now,
+        "history_points": hist_points,
+        "source": "learned_audit",
+        "learned": True
+    }
+    _save_price_history_cache(cache)
+
+    # Cross-link twin in reverse direction if twin_id exists
+    if twin_id:
+        twin_platform = "amazon" if platform.lower() == "flipkart" else "flipkart"
+        twin_key = f"{twin_platform}:{twin_id.strip().upper()}"
+        if twin_key in cache:
+            cache[twin_key]["twin_id"] = clean_id
+            _save_price_history_cache(cache)
+
+    # Persist to SQLite wave_tracker_db
+    try:
+        add_tracked_product({
+            "asin": clean_id,
+            "title": final_title,
+            "category": category,
+            "amazon_url": url,
+            "price": current_price,
+            "rationale": f"Autonomous AI Learned ({platform})",
+            "image_url": final_img
+        })
+    except Exception as dbe:
+        log.debug(f"SQLite learning persist notice: {dbe}")
+
 
 
 def get_genuine_price_history(platform: str, product_id: str) -> Dict[str, Any]:
@@ -1477,6 +1580,21 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         is_sold_out_direct = False
         fk_product_image = ""
 
+        # Step 0: Recall persistent learned intelligence if product was previously audited
+        learned_fk = get_learned_product("flipkart", pid) if pid else None
+        if learned_fk:
+            if learned_fk.get("title") and not learned_fk["title"].startswith("Flipkart Product"):
+                product_title = learned_fk["title"]
+            if float(learned_fk.get("cur_price") or 0) > 0:
+                current_price = float(learned_fk["cur_price"])
+            if float(learned_fk.get("mrp") or 0) > 0:
+                mrp = float(learned_fk["mrp"])
+            if learned_fk.get("image_url") and "unsplash" not in learned_fk["image_url"]:
+                fk_product_image = learned_fk["image_url"]
+            if learned_fk.get("highlights"):
+                fk_highlights = learned_fk["highlights"]
+            log.info(f"Recalled learned knowledge for Flipkart PID {pid}: {product_title} (Price: ₹{current_price}, Box MRP: ₹{mrp})")
+
         # Extract Flipkart Minutes / Hyperlocal live price from ctx if present
         minutes_price = 0.0
         for u_chk in [clean_input, final_url, redirect_url]:
@@ -1878,9 +1996,27 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         discount_mrp_pct = round((savings_inr / mrp * 100), 1) if mrp > 0 else 0.0
 
         fk_aff_url = make_flipkart_affiliate_url(final_url)
-
         fk_asin = amz_comp.get("asin", "") if amz_comp else ""
         keepa_url = f"https://graph.keepa.com/pricehistory.png?domain=10&asin={fk_asin}&range=90&amazon=1&new=1&bb=0" if fk_asin else ""
+
+        # Autonomous Learning: Permanently store verified Flipkart product & twin in knowledge base
+        try:
+            learn_audited_product(
+                platform="flipkart",
+                product_id=pid or clean_input,
+                title=product_title,
+                current_price=current_price,
+                mrp=mrp,
+                image_url=fk_product_image,
+                url=final_url,
+                highlights=fk_highlights,
+                category="Flipkart Deals",
+                twin_id=amz_comp.get("asin", "") if (amz_comp and amz_comp.get("matched")) else "",
+                lowest_90d=lowest_90d,
+                learned_by="audit"
+            )
+        except Exception as l_err:
+            log.debug(f"Flipkart autonomous learning save notice: {l_err}")
 
         return {
             "platform": "flipkart",
@@ -1960,6 +2096,21 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     mrp = 0.0
     category_crumb = "General"
     about_this_item: list[str] = []
+
+    # Step 0: Recall persistent learned intelligence if product was previously audited
+    learned_amz = get_learned_product("amazon", asin)
+    if learned_amz:
+        if learned_amz.get("title") and not learned_amz["title"].startswith("Amazon Product"):
+            p.title = learned_amz["title"]
+        if float(learned_amz.get("cur_price") or 0) > 0:
+            p.price = float(learned_amz["cur_price"])
+        if float(learned_amz.get("mrp") or 0) > 0:
+            mrp = float(learned_amz["mrp"])
+        if learned_amz.get("image_url") and "unsplash" not in learned_amz["image_url"]:
+            p.image_url = learned_amz["image_url"]
+        if learned_amz.get("highlights"):
+            about_this_item = learned_amz["highlights"]
+        log.info(f"Recalled learned knowledge for Amazon ASIN {asin}: {p.title} (Price: ₹{p.price}, Box MRP: ₹{mrp})")
     try:
         page_resp = session.get(canonical_url, timeout=18)
         soup = BeautifulSoup(page_resp.text, "html.parser")
@@ -2251,7 +2402,24 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     else:
         verdict = "💡 NEAR FULL MRP / WAIT FOR SALE"
         verdict_color = "#f59e0b"
-        verdict_reason = f"Selling near full packaging MRP of ₹{mrp:,.0f}. 💡 90-Day Low Reminder: This product frequently drops to ~₹{lowest_90d:,.0f} during festival sales (₹{diff_from_lowest:,.0f} lower than today)."
+    # Autonomous Learning: Permanently store verified Amazon product & twin in knowledge base
+    try:
+        learn_audited_product(
+            platform="amazon",
+            product_id=asin,
+            title=prod_title,
+            current_price=current_price,
+            mrp=mrp,
+            image_url=p.image_url or "",
+            url=affiliate_url,
+            highlights=about_this_item,
+            category=category_crumb if category_crumb != "General" else (p.category or "General"),
+            twin_id=extract_flipkart_pid(fk_comp.get("url", "")) if (fk_comp and fk_comp.get("matched")) else "",
+            lowest_90d=lowest_90d,
+            learned_by="audit"
+        )
+    except Exception as l_err:
+        log.debug(f"Amazon autonomous learning save notice: {l_err}")
 
     return {
         "platform": "amazon",
