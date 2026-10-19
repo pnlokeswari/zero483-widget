@@ -24,7 +24,7 @@ load_dotenv(ROOT_DIR / ".env")
 
 log = logging.getLogger("ai_deal_validator")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY") or ""
-GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-flash-latest"]
+GEMINI_MODELS = ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-flash-latest"]
 
 _session = requests.Session(impersonate="chrome120")
 
