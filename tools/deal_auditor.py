@@ -1115,20 +1115,23 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
             if r_direct.status_code == 200:
                 soup_d = BeautifulSoup(r_direct.text, "html.parser")
                 fk_highlights = extract_flipkart_highlights(soup_d)
-                h1_el = soup_d.select_one("span.B_NuCI") or soup_d.select_one("h1")
+                h1_el = soup_d.select_one("span.B_NuCI") or soup_d.select_one("h1.VU-ZEz") or soup_d.select_one("h1 span") or soup_d.select_one("h1")
                 raw_h1 = h1_el.get_text(strip=True) if h1_el else ""
-                m_desc = soup_d.select_one("meta[name='description']") or soup_d.select_one("meta[property='og:description']")
-                desc_content = m_desc.get("content", "") if m_desc else ""
-                m_desc_title = re.search(r"Buy\s+(.*?)\s+(?:for\s+Rs\.|\s*Online|\s*from\s+Flipkart)", desc_content, re.I)
-                if m_desc_title and len(m_desc_title.group(1).strip()) > 10:
-                    fk_title = m_desc_title.group(1).strip()
-                elif soup_d.title and soup_d.title.string:
-                    clean_t = soup_d.title.string.strip()
-                    clean_t = re.sub(r"^(?:Buy\s+)?(.*?)(?:\s+-\s+Price\s+in\s+India.*|\s+Online\s+@.*|\s*\|\s*Flipkart\.com.*)?$", r"\1", clean_t, flags=re.I)
-                    if clean_t and not any(clean_t.endswith(x) for x in ["...", "…"]):
-                        fk_title = clean_t.strip()
-                if not fk_title and raw_h1:
-                    fk_title = re.sub(r"(\.\.\.|\u2026).*$", "", raw_h1).strip()
+                if raw_h1 and len(raw_h1) > 8 and not any(raw_h1.endswith(x) for x in ["...", "…"]):
+                    fk_title = re.sub(r"\s+more$", "", raw_h1, flags=re.I).strip()
+                else:
+                    m_desc = soup_d.select_one("meta[name='description']") or soup_d.select_one("meta[property='og:description']")
+                    desc_content = m_desc.get("content", "") if m_desc else ""
+                    m_desc_title = re.search(r"Buy\s+(.*?)\s+(?:for\s+Rs\.|\s*Online|\s*from\s+Flipkart)", desc_content, re.I)
+                    if m_desc_title and len(m_desc_title.group(1).strip()) > 10:
+                        fk_title = m_desc_title.group(1).strip()
+                    elif soup_d.title and soup_d.title.string:
+                        clean_t = soup_d.title.string.strip()
+                        clean_t = re.sub(r"^(?:Buy\s+)?(.*?)(?:\s+-\s+Price\s+in\s+India.*|\s+Online\s+@.*|\s*\|\s*Flipkart\.com.*)?$", r"\1", clean_t, flags=re.I)
+                        if clean_t and not any(clean_t.endswith(x) for x in ["...", "…"]):
+                            fk_title = clean_t.strip()
+                    if not fk_title and raw_h1:
+                        fk_title = re.sub(r"(\.\.\.|\u2026).*$", "", raw_h1).strip()
 
                 fk_swa_qty = ""
                 for s in soup_d.find_all("script"):
@@ -1781,22 +1784,23 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                     # 1. Title Extraction: Check meta description / og:title first if H1 is truncated with ellipsis
                     h1_el = soup_page.select_one("span.B_NuCI") or soup_page.select_one("h1.VU-ZEz") or soup_page.select_one("h1 span") or soup_page.select_one("h1")
                     raw_h1 = h1_el.get_text(strip=True) if h1_el else ""
-                    m_desc = soup_page.select_one("meta[name='description']") or soup_page.select_one("meta[property='og:description']")
-                    desc_content = m_desc.get("content", "") if m_desc else ""
-                    m_desc_title = re.search(r"Buy\s+(.*?)\s+(?:for\s+Rs\.|\s*Online|\s*from\s+Flipkart)", desc_content, re.I)
-                    
-                    if m_desc_title and len(m_desc_title.group(1).strip()) > 10:
-                        product_title = m_desc_title.group(1).strip()
-                    elif soup_page.title and soup_page.title.string:
-                        clean_t = soup_page.title.string.strip()
-                        clean_t = re.sub(r"^(?:Buy\s+)?(.*?)(?:\s+-\s+Price\s+in\s+India.*|\s+Price\s+in\s+India.*|\s+Online\s+@.*|\s*\|\s*Flipkart\.com.*)?$", r"\1", clean_t, flags=re.I)
-                        if clean_t and not any(clean_t.endswith(x) for x in ["...", "…"]):
-                            product_title = clean_t.strip()
-                    
-                    if not product_title and raw_h1:
-                        clean_h1 = re.sub(r"(\.\.\.|\u2026).*$", "", raw_h1).strip()
-                        clean_h1 = re.sub(r"\s+more$", "", clean_h1, flags=re.I).strip()
-                        product_title = clean_h1
+                    if raw_h1 and len(raw_h1) > 8 and not any(raw_h1.endswith(x) for x in ["...", "…"]):
+                        product_title = re.sub(r"\s+more$", "", raw_h1, flags=re.I).strip()
+                    else:
+                        m_desc = soup_page.select_one("meta[name='description']") or soup_page.select_one("meta[property='og:description']")
+                        desc_content = m_desc.get("content", "") if m_desc else ""
+                        m_desc_title = re.search(r"Buy\s+(.*?)\s+(?:for\s+Rs\.|\s*Online|\s*from\s+Flipkart)", desc_content, re.I)
+                        if m_desc_title and len(m_desc_title.group(1).strip()) > 10:
+                            product_title = m_desc_title.group(1).strip()
+                        elif soup_page.title and soup_page.title.string:
+                            clean_t = soup_page.title.string.strip()
+                            clean_t = re.sub(r"^(?:Buy\s+)?(.*?)(?:\s+-\s+Price\s+in\s+India.*|\s+Price\s+in\s+India.*|\s+Online\s+@.*|\s*\|\s*Flipkart\.com.*)?$", r"\1", clean_t, flags=re.I)
+                            if clean_t and not any(clean_t.endswith(x) for x in ["...", "…"]):
+                                product_title = clean_t.strip()
+                        if not product_title and raw_h1:
+                            clean_h1 = re.sub(r"(\.\.\.|\u2026).*$", "", raw_h1).strip()
+                            clean_h1 = re.sub(r"\s+more$", "", clean_h1, flags=re.I).strip()
+                            product_title = clean_h1
 
                     # Preserve volume / size spec from H1 if meta description omitted it (e.g., 580 ml, 250g, 1000ml)
                     if raw_h1:
