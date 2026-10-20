@@ -4333,5 +4333,86 @@
     ],
     "source": "learned_audit",
     "learned": true
+  },
+  "amazon:B0GWQHJBPH": {
+    "title": "realme P4 Lite 5G (Mosaic Blue, 4GB RAM, 128GB) | 13MP Camera | 6.8\" 144Hz Display | Dimensity 6300 5G | 7000mAh Battery | 15W Charging",
+    "lowest_price": 13516.1,
+    "avg_price": 15757.55,
+    "cur_price": 17999.0,
+    "mrp": 32999.0,
+    "all_time_low": 13516.1,
+    "all_time_date": "Apr \u2013 Jun 2026",
+    "image_url": "https://m.media-amazon.com/images/I/61EeW0FBzIL._SX679_.jpg",
+    "url": "https://www.amazon.in/dp/B0GWQHJBPH?tag=10fa9c-21&linkCode=ll1",
+    "highlights": [
+      "Display : 17.3 cm (6.8 inches), with resolution 720 x 1570 pixels, 19.5:9 ratio (~254 ppi density), IPS LCD, 144Hz, 900 nits, Panda Glass.",
+      "Processor : MediaTek Dimensity 6300, CPU : 8-core (Octa-core (2x2.4 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)), GPU ARM Mali-G57 MC2@1072MHz.",
+      "Operating System : Android v16, Location Technology : Beidou, GPS, GLONASS, Galileo, QZSS, Supported: A-GPS assisted positioning, WLAN positioning, Cellular network positioning",
+      "Camera : Rear : Wide angle: 13MP; f/2.2; FOV 77\u00b0; 4P lens; AF Supported LED Flash, Photo, Video, Portrait, Night, Panorama, Cinematic, SLO-MO, Dual-view video, TIME-LAPSE, HI-RES, Google Lens, PRO, Hypertext, TILT-SHIFT, Front : 5MP; f/2.2; FOV 78\u00b0; 3P lens. Video, Portrait, Night, Panorama, Dual-view video, TIME-LAPSE. Video : Rear : 1080P video: 30 fps720P video: 30 fps 720P SLO-MO video: 120 fps 1080P TIME-LAPSE: 30 fps Supports Dual-view video shooting Supports video zoom shooting: 10\u00d7 digital zoom. Front : 1080P video: 30 fps(with Retouch on) 720P video: 30 fps Supports Dual-view video shooting.",
+      "Battery : 7000 mAh Battery, Fast Charge - 15W PD\uff0c15W DCP, Sensors : Proximity sensor, Ambient light sensor, E-compass, Accelerometer."
+    ],
+    "category": "Electronics \u203a \u203a \u203a Mobiles & Accessories",
+    "twin_id": "MOBHN7A8PBUWNHG5",
+    "timestamp": 1792483947.6320426,
+    "history_points": [
+      {
+        "ts": 1792482886.0804954,
+        "price": 17999.0,
+        "date": "2026-10-20 13:24"
+      }
+    ],
+    "source": "learned_audit",
+    "learned": true
+  },
+  "amazon:B0GWF2HM26": {
+    "lowest_price": 11855.93,
+    "avg_price": 16537.53,
+    "cur_price": 16290.0,
+    "mrp": 19999.0,
+    "all_time_low": 11855.93,
+    "all_time_date": "Apr \u2013 Jun 2026",
+    "timestamp": 1792483544.9397702,
+    "source": "live"
+  },
+  "flipkart:MOBHN7A8PBUWNHG5": {
+    "title": "realme P4 Lite 5G (Mosaic Green, 128 GB) (4 GB RAM)",
+    "lowest_price": 13749.0,
+    "avg_price": 15749.0,
+    "cur_price": 17749.0,
+    "mrp": 32999.0,
+    "all_time_low": 13749.0,
+    "all_time_date": "Apr \u2013 Jun 2026",
+    "image_url": "https://rukminim2.flixcart.com/image/800/800/xif0q/mobile/a/j/x/-resized-original-imahhngsymvs8bfs.jpeg?q=80",
+    "url": "https://www.flipkart.com/realme-p4-lite-5g-mosaic-green-128-gb/p/itm90c243961f214?pid=MOBHN7A8PBUWNHG5&marketplace=FLIPKART&lid=LSTMOBHN7A8PBUWNHG5DKREGW&q=realme+P4+Lite+5G+Mosaic+Green+4GB+128gb&fm=organic&pageUID=1792482454223",
+    "highlights": [
+      "4 GB RAM | 128 GB ROM",
+      "Dimensity 6300 | Octa Core Processor | 2.4 GHz Clock Speed",
+      "13MP Rear Camera",
+      "5MP Front Camera",
+      "6.8 inches",
+      "7000 mAh Battery"
+    ],
+    "category": "Flipkart Deals",
+    "twin_id": "B0GWQHJBPH",
+    "timestamp": 1792483923.4802494,
+    "history_points": [
+      {
+        "ts": 1792483923.4802494,
+        "price": 17749.0,
+        "date": "2026-10-20 13:42"
+      }
+    ],
+    "source": "learned_audit",
+    "learned": true
+  },
+  "amazon:B0GWQZJQX6": {
+    "lowest_price": 14785.0,
+    "avg_price": 18345.33,
+    "cur_price": 17999.0,
+    "mrp": 20999.0,
+    "all_time_low": 14785.0,
+    "all_time_date": "Apr \u2013 Jun 2026",
+    "timestamp": 1792483922.7616363,
+    "source": "live"
   }
 }
