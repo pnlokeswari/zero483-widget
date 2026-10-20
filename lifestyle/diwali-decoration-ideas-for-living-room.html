@@ -1035,6 +1035,55 @@
   }
 }
 
+
+    /* Language Switcher Bar */
+    .language-switcher-bar {
+      background: #fef3c7;
+      border: 1px solid #fde68a;
+      border-radius: 12px;
+      padding: 10px 16px;
+      margin: 20px auto 10px;
+      max-width: 900px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 2px 8px rgba(217, 119, 6, 0.08);
+    }
+    .lang-label {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #92400e;
+    }
+    .lang-pills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .lang-pill {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 16px;
+      background: #ffffff;
+      color: #78350f;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid #fcd34d;
+      transition: all 0.2s ease;
+    }
+    .lang-pill:hover {
+      background: #fde68a;
+      border-color: #f59e0b;
+      transform: translateY(-1px);
+    }
+    .lang-pill.active {
+      background: #b45309;
+      color: #ffffff;
+      border-color: #78350f;
+      font-weight: 700;
+    }
+
 </style>
 </head>
 <body>
@@ -1055,6 +1104,14 @@
       </a>
     </div>
   </header>
+
+  
+    <div class="language-switcher-bar">
+      <span class="lang-label">🌐 ಭಾಷೆ / भाषा / மொழி / Language:</span>
+      <div class="lang-pills-container">
+        <a href="diwali-decoration-ideas-for-living-room.html" class="lang-pill active">English</a> <a href="diwali-decoration-ideas-for-living-room-telugu.html" class="lang-pill">తెలుగు</a> <a href="diwali-decoration-ideas-for-living-room-hindi.html" class="lang-pill">हिन्दी</a> <a href="diwali-decoration-ideas-for-living-room-kannada.html" class="lang-pill">ಕನ್ನಡ</a> <a href="diwali-decoration-ideas-for-living-room-tamil.html" class="lang-pill">தமிழ்</a> <a href="diwali-decoration-ideas-for-living-room-marathi.html" class="lang-pill">मराठी</a> <a href="diwali-decoration-ideas-for-living-room-bengali.html" class="lang-pill">বাংলা</a>
+      </div>
+    </div>
 
   <main class="container">
 
