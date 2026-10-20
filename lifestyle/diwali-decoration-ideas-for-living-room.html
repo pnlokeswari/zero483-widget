@@ -945,7 +945,97 @@
       .hero-image-wrap { height: 240px; }
       .content-card { padding: 20px; }
     }
-  </style>
+  
+/* Visual Showcase Cards */
+.decor-visual-showcase {
+  margin: 28px 0 32px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #fde68a;
+  background: #ffffff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.decor-visual-showcase:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(217, 119, 6, 0.16);
+}
+.decor-visual-showcase .img-wrapper {
+  position: relative;
+  overflow: hidden;
+  background: #1e293b;
+  max-height: 480px;
+}
+.decor-visual-showcase img {
+  width: 100%;
+  height: 440px;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.decor-visual-showcase:hover img {
+  transform: scale(1.02);
+}
+.decor-pin-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #e60023;
+  color: #ffffff !important;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 5;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.decor-pin-badge:hover {
+  background: #ad081b;
+  transform: scale(1.05);
+}
+.decor-visual-caption {
+  padding: 20px 24px;
+}
+.decor-visual-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #78350f;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.decor-visual-desc {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.decor-styling-pro-tip {
+  background: #fffbeb;
+  border-left: 4px solid #f59e0b;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #92400e;
+  font-weight: 600;
+  line-height: 1.5;
+}
+@media (max-width: 640px) {
+  .decor-visual-showcase img {
+    height: 280px;
+  }
+  .decor-visual-caption {
+    padding: 16px;
+  }
+}
+
+</style>
 </head>
 <body>
 
@@ -1042,6 +1132,20 @@
 
     <!-- Section 1: BLUF Direct Answer Block -->
     <section id="section-bluf" class="content-card">
+
+      <!-- Visual Showcase: Entrance Toran & Threshold Diyas -->
+      <figure class="decor-visual-showcase">
+        <div class="img-wrapper">
+          <img src="decor_entrance_toran_diyas.jpg" alt="Living Room Entrance Decorated with Marigold Toran and Traditional Clay Diyas for Diwali" loading="lazy" />
+          <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Falerts.zero483.com%2Flifestyle%2Fdiwali-decoration-ideas-for-living-room.html&media=https%3A%2F%2Falerts.zero483.com%2Flifestyle%2Fdecor_entrance_toran_diyas.jpg&description=Diwali+Living+Room+Entrance+Doorway+Decor+Ideas" target="_blank" rel="noopener" class="decor-pin-badge">📌 Save Look</a>
+        </div>
+        <figcaption class="decor-visual-caption">
+          <div class="decor-visual-title">🚪 Inspiration Showcase: Grand Floral Toran &amp; Threshold Diya Pathway</div>
+          <div class="decor-visual-desc">Welcome prosperity and divine positivity right from your foyer. Pairing aromatic fresh marigold blooms with sacred mango leaves alongside warm, oil-filled earthen terracotta diyas sets an unmistakable festive aura before guests even step onto your living room rug.</div>
+          <div class="decor-styling-pro-tip">💡 <strong>Pro-Styling Tip:</strong> Use double-sided heavy-duty mounting hooks for the garland so it drapes gently in a parabolic curve without harming the door frame woodwork. Place heavy terracotta brass-finish diyas at least 6 inches away from moving doors.</div>
+        </figcaption>
+      </figure>
+
       <div class="content-card-header">
         <div class="card-badge">💡</div>
         <div class="card-title-group">
@@ -1126,6 +1230,20 @@
 
     <!-- Theme 1: Royal Heritage -->
     <section id="section-theme1" class="content-card">
+
+      <!-- Visual Showcase: Brass Lanterns Corner -->
+      <figure class="decor-visual-showcase">
+        <div class="img-wrapper">
+          <img src="decor_brass_lanterns_corner.jpg" alt="Antique Brass Moroccan Lanterns and Standing Oil Lamps Casting Warm Shadows in Diwali Living Room" loading="lazy" />
+          <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Falerts.zero483.com%2Flifestyle%2Fdiwali-decoration-ideas-for-living-room.html&media=https%3A%2F%2Falerts.zero483.com%2Flifestyle%2Fdecor_brass_lanterns_corner.jpg&description=Antique+Brass+Lanterns+and+Diyas+Living+Room+Corner+Decor" target="_blank" rel="noopener" class="decor-pin-badge">📌 Save Look</a>
+        </div>
+        <figcaption class="decor-visual-caption">
+          <div class="decor-visual-title">🪔 Inspiration Showcase: Layered Brass Lanterns &amp; Shadow Play</div>
+          <div class="decor-visual-desc">Transform dead living room corners into captivating focal points. Grouping multi-tiered brass pillar diyas with Moroccan filigree cutout lanterns casts hypnotic starburst shadows across textured accent walls as evening sets in.</div>
+          <div class="decor-styling-pro-tip">💡 <strong>Pro-Styling Tip:</strong> Stagger heights using a wooden accent stool or marble riser block. For safe all-night illumination, place flickering LED amber votives inside enclosed filigree lanterns.</div>
+        </figcaption>
+      </figure>
+
       <div class="content-card-header">
         <div class="card-badge">👑</div>
         <div class="card-title-group">
@@ -1177,6 +1295,20 @@
 
     <!-- Theme 2: Ambient Luminescence -->
     <section id="section-theme2" class="content-card">
+
+      <!-- Visual Showcase: Fairy Light Curtain Behind Sheers -->
+      <figure class="decor-visual-showcase">
+        <div class="img-wrapper">
+          <img src="decor_fairy_light_curtain.jpg" alt="Warm Fairy Light Curtains Behind Ivory Sheer Drapes in Living Room with Floor Diyas" loading="lazy" />
+          <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Falerts.zero483.com%2Flifestyle%2Fdiwali-decoration-ideas-for-living-room.html&media=https%3A%2F%2Falerts.zero483.com%2Flifestyle%2Fdecor_fairy_light_curtain.jpg&description=Diwali+Living+Room+Fairy+Light+Curtain+Backdrop+Styling" target="_blank" rel="noopener" class="decor-pin-badge">📌 Save Look</a>
+        </div>
+        <figcaption class="decor-visual-caption">
+          <div class="decor-visual-title">✨ Inspiration Showcase: Ethereal Micro-Fairy Light Curtain Backdrop</div>
+          <div class="decor-visual-desc">Nothing commands cinematic coziness quite like hanging warm white fairy lights behind translucent sheer curtains. The fabric acts as a natural diffuser, turning piercing LED pinpoints into a soft, dreamlike golden blur across the entire room.</div>
+          <div class="decor-styling-pro-tip">💡 <strong>Pro-Styling Tip:</strong> Always choose 2700K (Warm White) copper wire lights rather than cool white (5000K). Run the light strand on a secondary curtain rod directly against the wall so your sheer drapes glide freely in front.</div>
+        </figcaption>
+      </figure>
+
       <div class="content-card-header">
         <div class="card-badge">✨</div>
         <div class="card-title-group">
@@ -1263,6 +1395,20 @@
 
     <!-- Theme 3: Fragrant Florals -->
     <section id="section-theme3" class="content-card">
+
+      <!-- Visual Showcase: Floating Brass Urli with Marigold and Floating Candles -->
+      <figure class="decor-visual-showcase">
+        <div class="img-wrapper">
+          <img src="decor_floating_brass_urli.jpg" alt="Polished Antique Brass Urli Filled with Fresh Water Marigolds Jasmine and Floating Tea Light Candles" loading="lazy" />
+          <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Falerts.zero483.com%2Flifestyle%2Fdiwali-decoration-ideas-for-living-room.html&media=https%3A%2F%2Falerts.zero483.com%2Flifestyle%2Fdecor_floating_brass_urli.jpg&description=Handcrafted+Brass+Urli+Floating+Candles+and+Flowers+Diwali+Centerpiece" target="_blank" rel="noopener" class="decor-pin-badge">📌 Save Look</a>
+        </div>
+        <figcaption class="decor-visual-caption">
+          <div class="decor-visual-title">🌸 Inspiration Showcase: Majestic Brass Urli &amp; Water Floating Candles</div>
+          <div class="decor-visual-desc">The absolute showstopper of traditional Indian home styling. A handcrafted hammered brass urli filled with fresh water, golden marigold petals, white fragrant jasmine, and dancing floating tea-lights creates calming water reflections and natural festive aromatics.</div>
+          <div class="decor-styling-pro-tip">💡 <strong>Pro-Styling Tip:</strong> Add 4 to 5 drops of pure sandalwood or mogra essential oil directly into the water before floating the petals. The gentle heat from the floating tea-light wicks will naturally diffuse a divine fragrance throughout your living room.</div>
+        </figcaption>
+      </figure>
+
       <div class="content-card-header">
         <div class="card-badge">🌸</div>
         <div class="card-title-group">
@@ -1312,6 +1458,20 @@
 
     <!-- Theme 4: Modern Minimalist -->
     <section id="section-theme4" class="content-card">
+
+      <!-- Visual Showcase: Silk & Velvet Jewel-Tone Cushions on Sofa -->
+      <figure class="decor-visual-showcase">
+        <div class="img-wrapper">
+          <img src="decor_festive_sofa_cushions.jpg" alt="Beige Living Room Sofa Styled with Emerald Green Ruby Maroon and Mustard Silk Cushions with Gold Zari" loading="lazy" />
+          <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Falerts.zero483.com%2Flifestyle%2Fdiwali-decoration-ideas-for-living-room.html&media=https%3A%2F%2Falerts.zero483.com%2Flifestyle%2Fdecor_festive_sofa_cushions.jpg&description=Diwali+Sofa+Cushion+Styling+Jewel+Toned+Velvet+and+Silk" target="_blank" rel="noopener" class="decor-pin-badge">📌 Save Look</a>
+        </div>
+        <figcaption class="decor-visual-caption">
+          <div class="decor-visual-title">🛋️ Inspiration Showcase: Royal Jewel-Toned Silk &amp; Velvet Sofa Styling</div>
+          <div class="decor-visual-desc">You don't need new furniture to transform your living room for the festival. Simply swapping everyday pillow covers for deep emerald green, ruby crimson, and mustard gold raw silk cushions embroidered with heritage zari immediately infuses palace-like grandeur.</div>
+          <div class="decor-styling-pro-tip">💡 <strong>Pro-Styling Tip:</strong> Use the 2:2:1 arrangement rule: two large solid velvet 20x20 pillows at the outer corners, two medium 18x18 embroidered zari pillows layered inside, and one long metallic lumbar cushion anchored at the center.</div>
+        </figcaption>
+      </figure>
+
       <div class="content-card-header">
         <div class="card-badge">🤍</div>
         <div class="card-title-group">
@@ -1361,6 +1521,20 @@
 
     <!-- Theme 5: Bohemian Craft -->
     <section id="section-theme5" class="content-card">
+
+      <!-- Visual Showcase: Organic Flower Petal Rangoli with Diyas -->
+      <figure class="decor-visual-showcase">
+        <div class="img-wrapper">
+          <img src="decor_flower_petal_rangoli.jpg" alt="Symmetrical Fresh Marigold Rose Petal and Jasmine Rangoli with Glowing Terracotta Diyas" loading="lazy" />
+          <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Falerts.zero483.com%2Flifestyle%2Fdiwali-decoration-ideas-for-living-room.html&media=https%3A%2F%2Falerts.zero483.com%2Flifestyle%2Fdecor_flower_petal_rangoli.jpg&description=Flower+Petal+Rangoli+Design+with+Clay+Diyas+Diwali+Living+Room" target="_blank" rel="noopener" class="decor-pin-badge">📌 Save Look</a>
+        </div>
+        <figcaption class="decor-visual-caption">
+          <div class="decor-visual-title">🌼 Inspiration Showcase: Geometric Petal Rangoli &amp; Earthen Clay Diyas</div>
+          <div class="decor-visual-desc">Skip artificial chemical powders in favor of biodegradable, kid- and pet-friendly fresh flower rangolis. The contrasting shades of marigold orange, velvet rose red, and delicate white mogra buds form a striking geometric carpet that grounds your festive layout.</div>
+          <div class="decor-styling-pro-tip">💡 <strong>Pro-Styling Tip:</strong> Lightly mist the completed rangoli with a fine water spray bottle every 3 to 4 hours to keep the petals crisp and prevent curling under ceiling fan air drafts.</div>
+        </figcaption>
+      </figure>
+
       <div class="content-card-header">
         <div class="card-badge">🎨</div>
         <div class="card-title-group">
