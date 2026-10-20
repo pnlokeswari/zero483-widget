@@ -1288,6 +1288,68 @@
     footer a:hover {
       text-decoration: underline;
     }
+  
+    /* Language Selector Bar */
+    .lang-bar-wrap {
+      background: linear-gradient(90deg, #fffbeb 0%, #fef3c7 100%);
+      border-bottom: 2px solid #fcd34d;
+      padding: 9px 16px;
+      box-shadow: 0 2px 8px rgba(217, 119, 6, 0.08);
+      position: sticky;
+      top: 48px;
+      z-index: 990;
+    }
+    .lang-bar-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .lang-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: #92400e;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .lang-pills {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      padding: 2px 0;
+    }
+    .lang-pills::-webkit-scrollbar { display: none; }
+    .lang-pill {
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 4px 11px;
+      border-radius: 20px;
+      background: #ffffff;
+      color: #78350f;
+      border: 1px solid #fde68a;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+    .lang-pill:hover {
+      background: #ea580c;
+      color: #ffffff;
+      border-color: #ea580c;
+    }
+    .lang-pill.active {
+      background: #800020;
+      color: #ffffff;
+      border-color: #5c0017;
+      box-shadow: 0 2px 6px rgba(128, 0, 32, 0.3);
+    }
+
   </style>
 </head>
 <body>
@@ -1320,6 +1382,21 @@
       <span class="hero-meta-chip">✨ లక్ష్మీ కటాక్ష సిద్ధి</span>
     </div>
   </header>
+
+  <!-- Language Selector Bar -->
+  <div class="lang-bar-wrap">
+    <div class="lang-bar-inner">
+      <span class="lang-label">🌐 <strong>Select Language / భాషను ఎంచుకోండి:</strong></span>
+      <div class="lang-pills">
+        <a href="diwali-lakshmi-puja-vidhanam-telugu-ashtothram-stories.html" class="lang-pill active">🇮🇳 తెలుగు (Telugu)</a>
+        <a href="diwali-lakshmi-puja-vidhanam-kannada-ashtothram-stories.html" class="lang-pill">🇮🇳 ಕನ್ನಡ (Kannada)</a>
+        <a href="diwali-lakshmi-puja-vidhanam-hindi-ashtothram-stories.html" class="lang-pill">🇮🇳 हिन्दी (Hindi)</a>
+        <a href="diwali-lakshmi-puja-vidhanam-tamil-ashtothram-stories.html" class="lang-pill">🇮🇳 தமிழ் (Tamil)</a>
+        <a href="diwali-lakshmi-puja-vidhanam-marathi-ashtothram-stories.html" class="lang-pill">🇮🇳 मराठी (Marathi)</a>
+      </div>
+    </div>
+  </div>
+
 
   <main class="container">
 
