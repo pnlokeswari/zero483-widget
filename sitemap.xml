@@ -5,6 +5,13 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-device-combination-apps-the-fda-s-3-questions-for-sponsors-pharmtech-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-finalizes-guidance-on-prescription-drug-companion-apps-pharmaceutical-commerce.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/us-fda-issues-guidance-on-apps-used-with-prescription-drugs-reuters.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/alvotech-shares-surge-following-second-fda-approval-iceland-monitor.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/cosette-pharmaceuticals-announces-fda-approval-of-evoxac-cevimeline-hcl-oral-solution-marking-cosette-s-first-new-dr.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-wins-fda-approval-for-rectal-cancer-drug-medwatch.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/compounded-tirzepatide-recall-covers-22-lots-through-november-2026-101-5-wpdh.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/alvotech-receives-fda-approval-for-new-simlandi-manufacturing-process-that-more-than-doubles-output-per-batch-the-man.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/blood-pressure-drug-recall-more-than-21-000-bottles-involved-nationwide-yahoo-news-singapore.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-in-flux-october-2026-newsletter-mintz-health-care-viewpoints-jd-supra.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -48,11 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/analysis-revolution-medicines-europe-efforts-signal-solo-launch-ambitions-for-cancer-drug-whbl-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/emit-2000-quinidine-assay.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/ema-panel-backs-approval-of-revolution-s-pancreatic-cancer-drug-ksl-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/revolution-medicines-wins-eu-committee-backing-for-pancreatic-cancer-treatment-reuters.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/cobas-c-303-analytical-unit.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/flintstones-complete-multivitamins-and-minerals-recalled-from-wholesalers-distribution-error.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/hemosil-acustar-hit-igg-pf4-h.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/bulk-adverse-event-reporting-may-delay-medical-device-safety-warnings-news-medical.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-quinapril-hydrochloride-tablet.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-rifampin-capsule.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
