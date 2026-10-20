@@ -1286,8 +1286,18 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
             log.debug(f"Cross search Flipkart exception: {e}")
 
     matched = cur_p > 0.0
+    # Automatic Flipkart search strictly requires Box MRP parity (within 8% and <= 1000 Rs for batch revisions); otherwise disqualify auto-match
+    if matched and not is_direct_fk and box_mrp > 0 and fk_scraped_mrp > 0:
+        mrp_diff = abs(fk_scraped_mrp - box_mrp)
+        if (mrp_diff / max(box_mrp, fk_scraped_mrp) > 0.08) or (box_mrp >= 5000 and mrp_diff > 1000):
+            matched = False
+
     if not matched:
         fk_link = f"https://www.flipkart.com/search?q={urllib.parse.quote(extract_key_specs(title_or_url)[1])}"
+        cur_p = 0.0
+        lowest_90d = 0.0
+        fk_scraped_mrp = 0.0
+        fk_highlights = []
     elif "/p/" in fk_link:
         try:
             r_hl = session.get(fk_link, timeout=12)
@@ -1298,7 +1308,7 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
         except Exception:
             pass
 
-    effective_fk_mrp = fk_scraped_mrp if fk_scraped_mrp > 0 else box_mrp
+    effective_fk_mrp = (fk_scraped_mrp if fk_scraped_mrp > 0 else box_mrp) if matched else 0.0
     fk_pid = extract_flipkart_pid(fk_link) if fk_link else ""
     hist_fk = get_genuine_price_history("flipkart", fk_pid) if fk_pid else {}
     real_fk_low = float(hist_fk.get("lowest_price") or 0)
@@ -1309,27 +1319,25 @@ def cross_search_flipkart(title_or_url: str, amz_price: float, box_mrp: float) -
     else:
         lowest_90d = cur_p if matched else 0.0
 
-    if effective_fk_mrp <= cur_p and float(hist_fk.get("mrp") or 0) > cur_p:
+    if matched and effective_fk_mrp <= cur_p and float(hist_fk.get("mrp") or 0) > cur_p:
         effective_fk_mrp = float(hist_fk["mrp"])
 
     savings = round(max(0.0, effective_fk_mrp - cur_p), 0) if matched else 0.0
     disc_pct = round((savings / effective_fk_mrp * 100), 1) if (matched and effective_fk_mrp > 0) else 0.0
 
-    # MRP Mismatch Detection (Only triggers when user manually pasted a direct Flipkart URL with a different MRP)
+    # MRP Mismatch Detection (STRICTLY for manual user-pasted links, NEVER for auto-searches)
     mrp_mismatch = False
     mrp_diff_pct = 0.0
     mrp_mismatch_msg = ""
-    if matched and box_mrp > 0 and fk_scraped_mrp > 0:
+    if matched and is_direct_fk and box_mrp > 0 and fk_scraped_mrp > 0:
         mrp_diff = abs(fk_scraped_mrp - box_mrp)
         mrp_diff_pct = round((mrp_diff / max(box_mrp, 1.0)) * 100, 2)
         if mrp_diff > 1.0:
             mrp_mismatch = True
             mrp_mismatch_msg = (
-                f"Notice: Box MRP Difference! Amazon MRP is ₹{box_mrp:,.0f}, while Flipkart shows "
-                f"₹{fk_scraped_mrp:,.0f} (₹{mrp_diff:,.0f} difference). "
-                f"Because identical items share the exact same packaging MRP, these two links likely represent "
-                f"different model editions, different specs, or different pack sizes. "
-                f"You can still compare both stores below to choose what fits your budget."
+                f"Notice: You linked two items with different Box MRPs (₹{box_mrp:,.0f} vs ₹{fk_scraped_mrp:,.0f}). "
+                f"These two links likely represent different model editions, storage tiers, or pack sizes. "
+                f"We have compared their prices side-by-side above."
             )
 
     return {
@@ -1620,9 +1628,10 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
         except Exception as be:
             log.debug(f"Amazon bullets fetch error: {be}")
 
-    # Automatic Amazon search confirms reasonable Box MRP parity (within 25% for batch revisions), otherwise trigger Case B
+    # Automatic Amazon search strictly requires Box MRP parity (within 8% and <= 1000 Rs for batch revisions); otherwise disqualify auto-match
     if matched and not is_direct_amz and box_mrp > 0 and amz_scraped_mrp > 0:
-        if (abs(amz_scraped_mrp - box_mrp) / max(box_mrp, amz_scraped_mrp)) > 0.25:
+        mrp_diff = abs(amz_scraped_mrp - box_mrp)
+        if (mrp_diff / max(box_mrp, amz_scraped_mrp) > 0.08) or (box_mrp >= 5000 and mrp_diff > 1000):
             matched = False
 
     if not matched:
@@ -1633,24 +1642,23 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
         amz_scraped_mrp = 0.0
         affiliate_url = amz_url
 
-    effective_amz_mrp = amz_scraped_mrp if amz_scraped_mrp > 0 else box_mrp
+    effective_amz_mrp = (amz_scraped_mrp if amz_scraped_mrp > 0 else box_mrp) if matched else 0.0
     savings = round(max(0.0, effective_amz_mrp - cur_p), 0) if matched else 0.0
     disc_pct = round((savings / effective_amz_mrp * 100), 1) if (matched and effective_amz_mrp > 0) else 0.0
 
+    # MRP Mismatch Advisory (STRICTLY for manual user-pasted links, NEVER for auto-searches)
     mrp_mismatch = False
     mrp_diff_pct = 0.0
     mrp_mismatch_msg = ""
-    if matched and box_mrp > 0 and amz_scraped_mrp > 0:
+    if matched and is_direct_amz and box_mrp > 0 and amz_scraped_mrp > 0:
         mrp_diff = abs(amz_scraped_mrp - box_mrp)
         mrp_diff_pct = round((mrp_diff / max(box_mrp, 1.0)) * 100, 2)
         if mrp_diff > 1.0:
             mrp_mismatch = True
             mrp_mismatch_msg = (
-                f"Notice: Box MRP Difference! Flipkart MRP is ₹{box_mrp:,.0f}, while Amazon shows "
-                f"₹{amz_scraped_mrp:,.0f} (₹{mrp_diff:,.0f} difference). "
-                f"Because identical items share the exact same packaging MRP, these two links likely represent "
-                f"different model editions, different specs, or different pack sizes. "
-                f"You can still compare both stores below to choose what fits your budget."
+                f"Notice: You linked two items with different Box MRPs (₹{box_mrp:,.0f} vs ₹{amz_scraped_mrp:,.0f}). "
+                f"These two links likely represent different model editions, storage tiers, or pack sizes. "
+                f"We have compared their prices side-by-side above."
             )
 
     return {
@@ -2610,6 +2618,8 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         "about_this_item": about_this_item,
         "highlights": fk_comp.get("highlights", []) if fk_comp else [],
         "mrp_mismatch": fk_comp.get("mrp_mismatch", False) if fk_comp else False,
+        "mrp_diff_pct": fk_comp.get("mrp_diff_pct", 0.0) if fk_comp else 0.0,
+        "mrp_mismatch_msg": fk_comp.get("mrp_mismatch_msg", "") if fk_comp else "",
         "all_time_low": float(hist_amz.get("all_time_low") or lowest_90d),
         "all_time_date": str(hist_amz.get("all_time_date") or ""),
         "keepa_graph_url": f"https://graph.keepa.com/pricehistory.png?domain=10&asin={asin}&range=90&amazon=1&new=1&bb=0" if asin else "",
