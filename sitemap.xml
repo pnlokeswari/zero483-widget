@@ -5,6 +5,16 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-upholds-rejection-of-posttransplant-complication-drug-medscape.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-declines-pediatric-extension-for-aml-drug-medscape.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/femyso-affected-lot-may-contain-two-green-mifepristone-cartons-or-two-pink-misoprostol-cartons-instead-of-one-of-each.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/i-stat-hs-tni-cartridge.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/companion-apps-for-prescription-drugs-face-new-fda-labeling-guidance-meant-to-keep-patient-medication-information-accura.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-hepatitis-b-drug-approval-supports-2-2bn-sales-forecast-jefferies-says-proactive-financial-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-brings-promise-of-functional-cure-to-hepatitis-b-finish-line-with-fda-nod-for-hibsago-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-picks-up-hep-b-drug-approval-stat.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-announces-nationwide-recall-of-glp-1-medications-here-s-the-full-list-of-products-yahoo-news-canada.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/what-to-know-about-glp-1s-and-cannabis-use-livenow-from-fox.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/dr-reddy-s-gets-cdsco-approval-for-zytorvi-in-advanced-esophageal-cancer-express-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/sanofi-gets-cdsco-nod-for-drug-to-prevent-bleeding-in-haemophilia-patients-businessline.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fp3d-resins.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -45,14 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-in-flux-october-2026-newsletter-mintz-health-care-viewpoints-jd-supra.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/glp-1-injections-recalled-nationwide-see-affected-products-usa-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/iqecg-digital-ecg.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/dantrium-intravenous-dantrolene-sodium-for-injection-presence-of-particulate-matter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-s-jemperli-scores-fda-approval-in-rectal-cancer-backed-by-high-complete-response-rate-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/disc-medicine-stock-has-its-best-day-since-2022-as-drug-trial-revives-fda-approval-hopes-barron-s.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/alembic-pharma-receives-usfda-approval-for-generic-ear-infection-drug-business-standard.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-inovio-and-agios-drug-approval-updates-intellectia-ai.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/alembic-pharma-secures-usfda-approval-for-110m-market-otic-suspension-sahi.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/health-news-today-fda-approval-weight-loss-drug-www-polskieradio-pl.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/many-women-are-still-struggling-to-fill-estrogen-patch-prescriptions-what-to-do-if-you-can-t-get-yours-today-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-amphetamine-aspartate-monohydrate-amphetamine-sulfate-dextroamphetamine-saccha.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-approval-glp-1-meteo-gr.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
