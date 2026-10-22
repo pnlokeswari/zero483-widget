@@ -5,6 +5,12 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-methylphenidate-hydrochloride-tablet-extended-release.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/sanofi-healthcare-receives-cdsco-approval-for-qftilia-therapy-for-haemophilia-patients-in-india-the-economic-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-accuses-baxter-leaders-of-inadequate-oversight-after-finding-gmp-failings-biospace.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-wins-fda-approval-for-chronic-hepatitis-b-drug-benzinga.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/popcorn-stuck-in-man-s-teeth-leads-to-life-threatening-infection-fox-5-new-york.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/apothecary-pharma-recalls-compounded-tirzepatide-and-nad-vials-over-sterility-concerns-managed-healthcare-executive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-approves-sanofi-s-qfitlia-for-haemophilia-a-and-b-in-india-express-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/sanofi-gets-cdsco-nod-to-market-hemophilia-drug-qfitlia-pharma-economictimes-indiatimes-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/dr-falk-pharma-and-renexxion-reach-alignment-with-fda-and-ema-on-phase-3-program-for-naronapride-in-gastroparesis-yah.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -33,6 +39,9 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-sterile-water-irrigant.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/signa-architect.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-advisory-no-2026-1546-public-health-warning-against-the-purchase-and-use-of-the-unregistered-household-urban-pest.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-finalizes-guidance-on-prescription-drug-apps-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/apothecary-pharma-recalls-tirzepatide-injections-over-sterility-qz-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/blood-pressure-drug-recall-more-than-21-000-bottles-involved-nationwide-the-healthy.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/viatris-drug-receives-fda-approval-pennsylvania-business-report.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/a-single-vet-administered-shot-can-treat-some-bacterial-skin-infections-in-dogs-for-up-to-14-days-stock-titan.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-solidifies-stance-on-mobile-apps-software-used-with-prescription-drugs-in-final-guidance-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -46,13 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/glp-1-injections-recalled-nationwide-over-concerning-reason-new-york-post.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/compounded-tirzepatide-recalled-after-fda-warning-pharmaphorum.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/pinarayi-vijayan-questions-sma-drug-distribution-sat-hospital-says-only-cdsco-approved-drugs-used-the-hindu.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/recordati-says-generic-abbreviated-new-drug-filer-asks-us-fda-approval-to-market-generic-version-of-own-drug-isturisa.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/cevimeline-hcl-oral-solution-marking-cosette-s-first-new-drug-application-nda-approval-business-wire.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/cosette-lands-fda-approval-for-evoxac-liquid-in-sj-gren-s-disease-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/the-glp-1-market-has-largely-moved-from-shortage-to-stability-florida-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-dexmedetomidine-hydrochloride-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/glp-1-recall-raises-safety-concerns-what-to-check-daily-voice.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/apothecary-pharma-recalls-tirzepatide-injections-over-sterility-qz-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-device-combination-apps-the-fda-s-3-questions-for-sponsors-pharmtech-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-finalizes-guidance-on-prescription-drug-companion-apps-pharmaceutical-commerce.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
