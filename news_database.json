@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-10-22T22:47:34.450434+00:00",
+  "last_updated": "2026-10-23T01:00:54.568515+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "a9011f8b9d4b",
+      "title": "GLP-1 compounder issues recall for copycat Zepbound - BioPharma Dive",
+      "slug": "glp-1-compounder-issues-recall-for-copycat-zepbound-biopharma-dive",
+      "date": "2026-10-22",
+      "category": "Recall",
+      "severity": "High",
+      "summary": "<p>Title: GLP-1 compounder issues recall for copycat Zepbound - BioPharma Dive\nSource: Google News\nDate: Thu, 22 Oct 2026 15:56:47 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "GLP-1 compounder issues recall for copycat Zepbound - BioPharma Dive",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMWtyNDBobVJtblN0ejdHbVFzejhSZllfNDNwUjZuSVBfSE1NeHczLVZTVzM1b2d0ME1FeGJTQk1ZV2ZOSFBtbmg0d3pReXBHRWtTTlFkc1M0YXlQeFFFdkNfbWVWM2NjbWt6MnVLNXVqb1Qyb3ZfaXhpcGo4STlVUDNYVlZYS0tXbkktNDlJNUhka1FhcUQ3UDgtdWtKOVkt?oc=5",
+      "fetched_at": "2026-10-23T00:59:23.000496+00:00",
+      "is_long_form": false
+    },
     {
       "id": "8cffaaf264e7",
       "title": "Zoetis Gets FDA Approval for New Convenia Injection That Makes Treating Large Dogs Easier - Vet Candy",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNaUZNLV9zMnhXQmpHNzlNdmFQNHBRTGppRmpSY1N5UTdIMllNZjBLdWZKNlZpbm1jSjFkVWNyNmszSXVIazZxa1ByYWtKUExBcm0wd2lCM0hKdGwxZlJfTUw2eG9rbnNKMGE5Mjg2YmtQNkFxWW54QkFTbW9BU3UySk5FSjVvQmt4SmY0WWR6RW9LUTVibFVvMkh3?oc=5",
       "fetched_at": "2026-10-21T12:26:47.959849+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "64704ba1a691",
-      "title": "Drug Shortage: Sterile Water Irrigant",
-      "slug": "drug-shortage-sterile-water-irrigant",
-      "date": "2026-10-21",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Generic name: Sterile Water Irrigant\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Drug Shortage: Sterile Water Irrigant",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
-      "fetched_at": "2026-10-21T12:26:26.483574+00:00",
       "is_long_form": false
     }
   ]
