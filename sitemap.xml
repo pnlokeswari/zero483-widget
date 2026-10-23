@@ -5,7 +5,10 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-along-with-state-drug-testing-gencies-identifies-330-drug-samples-as-nsq-one-as-spurious-in-september-business.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-epinephrine-bitartrate-lidocaine-hydrochloride-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-flags-330-substandard-drug-samples-one-spurious-medicine-in-september-surveillance-ani-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/natco-s-generic-sma-drug-approved-clinical-trial-labels-trigger-kerala-row-the-times-of-india.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/glp-1-compounder-issues-recall-for-copycat-zepbound-biopharma-dive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/zoetis-gets-fda-approval-for-new-convenia-injection-that-makes-treating-large-dogs-easier-vet-candy.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/more-than-4m-tubes-of-toothpaste-recalled-nationwide-fda-newsnation.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -52,7 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-announces-nationwide-recall-of-glp-1-medications-here-s-the-full-list-of-products-yahoo-news-canada.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/what-to-know-about-glp-1s-and-cannabis-use-livenow-from-fox.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/dr-reddy-s-gets-cdsco-approval-for-zytorvi-in-advanced-esophageal-cancer-express-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/sanofi-gets-cdsco-nod-for-drug-to-prevent-bleeding-in-haemophilia-patients-businessline.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fp3d-resins.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/what-the-new-pdufa-guidance-means-for-drug-development-clinical-leader.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
