@@ -5,6 +5,10 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/azurion-7-systems.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/eyeworld-weekly-october-23-2026-eyeworld.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortages-causes-consequences-and-mitigation-efforts-american-medical-association-ama.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/weekly-vet-report-thousands-of-veterinary-drugs-recalled-fda-drug-approval-more-dvm360.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/nsq-alert-42-drug-surgical-product-samples-fail-cdsco-quality-tests-in-september-medical-dialogues.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/i-stat-hs-tni-cartridge.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/exclusive-mdma-assisted-therapy-could-get-fda-approval-as-soon-as-january-advocate-new-york-post.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -17,6 +21,7 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-along-with-state-drug-testing-gencies-identifies-330-drug-samples-as-nsq-one-as-spurious-in-september-business.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-epinephrine-bitartrate-lidocaine-hydrochloride-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-flags-330-substandard-drug-samples-one-spurious-medicine-in-september-surveillance-ani-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/health-ministry-questions-reliability-of-vasculitis-drug-approval-data-the-japan-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/natco-s-generic-sma-drug-approved-clinical-trial-labels-trigger-kerala-row-the-times-of-india.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/glp-1-compounder-issues-recall-for-copycat-zepbound-biopharma-dive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/zoetis-gets-fda-approval-for-new-convenia-injection-that-makes-treating-large-dogs-easier-vet-candy.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -34,6 +39,11 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/over-4-million-tubes-of-toothpaste-recalled-see-affected-products-usa-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-azacitidine-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-methylphenidate-hydrochloride-tablet-extended-release.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-approves-sanofi-s-qfitlia-for-haemophilia-a-and-b-in-india-express-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/sanofi-gets-cdsco-nod-to-market-hemophilia-drug-qfitlia-pharma-economictimes-indiatimes-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/dr-falk-pharma-and-renexxion-reach-alignment-with-fda-and-ema-on-phase-3-program-for-naronapride-in-gastroparesis-yah.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-announces-nationwide-recall-of-glp-1-medications-here-s-the-full-list-of-products-good-housekeeping.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/compounded-glp-1-injections-recalled-nationwide-is-yours-safe-usa-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/ema-declines-pediatric-extension-for-aml-drug-medscape.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-picks-up-hep-b-drug-approval-stat.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/what-to-know-about-glp-1s-and-cannabis-use-fox-5-new-york.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -45,14 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/some-glp-1-injections-recalled-due-to-lack-of-assurance-of-sterility-los-angeles-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drugmakers-urge-fda-take-more-flexible-approach-to-container-closure-testing-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/sanofi-healthcare-receives-cdsco-approval-for-qftilia-therapy-for-haemophilia-patients-in-india-the-economic-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-accuses-baxter-leaders-of-inadequate-oversight-after-finding-gmp-failings-biospace.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-wins-fda-approval-for-chronic-hepatitis-b-drug-benzinga.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/popcorn-stuck-in-man-s-teeth-leads-to-life-threatening-infection-fox-5-new-york.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/apothecary-pharma-recalls-compounded-tirzepatide-and-nad-vials-over-sterility-concerns-managed-healthcare-executive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-approves-sanofi-s-qfitlia-for-haemophilia-a-and-b-in-india-express-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/sanofi-gets-cdsco-nod-to-market-hemophilia-drug-qfitlia-pharma-economictimes-indiatimes-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/dr-falk-pharma-and-renexxion-reach-alignment-with-fda-and-ema-on-phase-3-program-for-naronapride-in-gastroparesis-yah.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/azurion-7-systems.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/japan-questions-reliability-of-vasculitis-drug-approval-data-jiji-press.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/experimental-als-drug-moves-closer-to-potential-fda-approval-nr-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
