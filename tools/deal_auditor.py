@@ -224,8 +224,12 @@ VERIFIED_BENCHMARKS: Dict[str, Dict[str, Any]] = {
 }
 
 
-# EarnKaro Flipkart Affiliate ID (Strictly for Flipkart ONLY — never applied to Amazon)
+# EarnKaro Dual-Store Affiliate Configuration (User ID: 5518844)
+# Retailer 2276 = Flipkart India, Retailer 1100 = Amazon India
+EARNKARO_USER_ID = "5518844"
 EARNKARO_FLIPKART_ID = "5518844"
+EARNKARO_AMAZON_RETAILER_ID = "1100"
+EARNKARO_FLIPKART_RETAILER_ID = "2276"
 
 
 def _load_price_history_cache() -> dict:
@@ -438,6 +442,23 @@ def get_genuine_price_history(platform: str, product_id: str) -> Dict[str, Any]:
         log.debug(f"Price history fetch exception for {cache_key}: {e}")
 
     return {}
+
+
+def make_amazon_affiliate_url(url: str) -> str:
+    """Wraps any Amazon India URL through EarnKaro (retailer 1100, user id 5518844) so
+    referrals, friends & family orders, and purchases track reliably into EarnKaro profit dashboard."""
+    if not url:
+        return ""
+    u = url.strip()
+    u_low = u.lower()
+    if "visitretailer/1100" in u_low or "tag=earnkaro" in u_low:
+        return u
+    clean = re.sub(r"([?&])tag=[^&]+", "", u)
+    clean = re.sub(r"([?&])linkCode=[^&]+", "", clean)
+    clean = clean.replace("?&", "?").rstrip("?&")
+    if any(k in clean.lower() for k in ["amazon.", "amzn."]):
+        return f"https://trackingv3.linkredirect.in/visitretailer/{EARNKARO_AMAZON_RETAILER_ID}?id={EARNKARO_USER_ID}&dl={urllib.parse.quote(clean, safe='')}"
+    return u
 
 
 def make_flipkart_affiliate_url(url: str) -> str:
@@ -1443,10 +1464,10 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
             except Exception as e_s:
                 log.debug(f"Direct ASIN search fallback error: {e_s}")
 
-        amz_url = f"https://www.amazon.in/dp/{direct_asin}?tag={AFFILIATE_TAG}&linkCode=ll1"
+        amz_url = make_amazon_affiliate_url(f"https://www.amazon.in/dp/{direct_asin}")
     else:
         required_specs, search_term = extract_key_specs(title)
-        amz_url = f"https://www.amazon.in/s?k={urllib.parse.quote(search_term)}&tag={AFFILIATE_TAG}"
+        amz_url = make_amazon_affiliate_url(f"https://www.amazon.in/s?k={urllib.parse.quote(search_term)}")
         try:
             r = session.get(amz_url, timeout=10)
             if r.status_code == 200:
@@ -1601,7 +1622,7 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
     if amz_scraped_mrp <= cur_p and float(hist_amz.get("mrp") or 0) > cur_p:
         amz_scraped_mrp = float(hist_amz["mrp"])
 
-    affiliate_url = f"https://www.amazon.in/dp/{asin}?tag={AFFILIATE_TAG}&linkCode=ll1" if (matched and asin) else amz_url
+    affiliate_url = make_amazon_affiliate_url(f"https://www.amazon.in/dp/{asin}") if (matched and asin) else amz_url
     if matched and asin and (not about_this_item or amz_scraped_mrp <= 0):
         try:
             r_dp = session.get(f"https://www.amazon.in/dp/{asin}", timeout=10)
@@ -1692,6 +1713,16 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     clean_input = extract_clean_url_or_id(url_or_input)
     if not clean_input:
         return {"error": "Please provide an Amazon or Flipkart product link."}
+
+    # Unwrap EarnKaro redirect URLs for direct store PID / ASIN extraction
+    m_ek_dl = re.search(r"[?&]dl=([^&]+)", clean_input)
+    if m_ek_dl:
+        try:
+            dec_dl = urllib.parse.unquote(m_ek_dl.group(1))
+            if any(k in dec_dl.lower() for k in ["flipkart.com", "amazon.in", "amzn."]):
+                clean_input = dec_dl
+        except Exception:
+            pass
 
     clean_comp = extract_clean_url_or_id(competitor_url) if competitor_url else ""
 
@@ -2097,7 +2128,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
 
         # Competitor handling (Amazon lookup)
         _, search_query = extract_key_specs(product_title)
-        amazon_search_url = f"https://www.amazon.in/s?k={urllib.parse.quote(search_query)}&tag={AFFILIATE_TAG}"
+        amazon_search_url = make_amazon_affiliate_url(f"https://www.amazon.in/s?k={urllib.parse.quote(search_query)}")
 
         amz_comp = None
         has_competitor = False
@@ -2530,7 +2561,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
 
     savings_inr = round(max(0.0, mrp - current_price), 0)
     discount_mrp_pct = round((savings_inr / mrp * 100), 1) if mrp > 0 else 0.0
-    affiliate_url = f"https://www.amazon.in/dp/{asin}?tag={AFFILIATE_TAG}&linkCode=ll1"
+    affiliate_url = make_amazon_affiliate_url(f"https://www.amazon.in/dp/{asin}")
 
     # Verdict evaluation (Always reminds buyer of 90-Day Lowest Price alongside Box MRP savings)
     diff_from_lowest = round(max(0.0, current_price - lowest_90d), 0)
