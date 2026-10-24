@@ -1927,15 +1927,10 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         if learned_fk:
             if learned_fk.get("title") and not learned_fk["title"].startswith("Flipkart Product"):
                 product_title = learned_fk["title"]
-            if float(learned_fk.get("cur_price") or 0) > 0:
-                current_price = float(learned_fk["cur_price"])
-            if float(learned_fk.get("mrp") or 0) > 0:
-                mrp = float(learned_fk["mrp"])
             if learned_fk.get("image_url") and "unsplash" not in learned_fk["image_url"]:
                 fk_product_image = learned_fk["image_url"]
             if learned_fk.get("highlights"):
                 fk_highlights = learned_fk["highlights"]
-            log.info(f"Recalled learned knowledge for Flipkart PID {pid}: {product_title} (Price: ₹{current_price}, Box MRP: ₹{mrp})")
 
         # Extract Flipkart Minutes / Hyperlocal live price from ctx if present
         minutes_price = 0.0
@@ -2194,14 +2189,9 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                                             cand_low = cand_title.lower()
                                             if any(bad in cand_low for bad in ["back cover", "flip cover", "case for", "screen guard", "tempered glass"]):
                                                 continue
-                                            # Never substitute another variant PID if user requested a specific PID unless original was confirmed sold out
-                                            if pid and not is_sold_out_direct and cand_id != pid:
-                                                continue
+                                            # Strict Variant Integrity: Never substitute a different variant PID when user requested a specific PID
                                             if pid and cand_id != pid:
-                                                # Require strong prefix/keyword match if falling back to an updated PID
-                                                p_words = [w.lower() for w in re.findall(r"[a-zA-Z0-9]{2,}", product_title[:35])]
-                                                if p_words and not all(w in cand_low for w in p_words[:3]):
-                                                    continue
+                                                continue
                                             elif not pid and search_query:
                                                 # If querying without a fixed PID (e.g. search query input), protect against sponsored ads of competing brands
                                                 sq_words = [w.lower() for w in re.findall(r"[a-zA-Z]{3,}", search_query[:30]) if w.lower() not in ["the", "for", "and", "with", "face", "skin", "cream", "pack", "best"]]
@@ -2269,6 +2259,13 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             lowest_90d = min(current_price, float(bench["lowest_90d"])) if current_price > 0 else float(bench["lowest_90d"])
         else:
             lowest_90d = current_price
+
+        # Fall back to learned cache ONLY if live scraping returned 0
+        if current_price == 0.0 and learned_fk and float(learned_fk.get("cur_price") or 0) > 0:
+            current_price = float(learned_fk["cur_price"])
+            if mrp == 0.0 and float(learned_fk.get("mrp") or 0) > 0:
+                mrp = float(learned_fk["mrp"])
+            log.info(f"Used learned cache fallback for Flipkart PID {pid}: Price ₹{current_price}")
 
         if (mrp == 0 or mrp <= current_price) and real_fk_mrp > current_price:
             mrp = real_fk_mrp
