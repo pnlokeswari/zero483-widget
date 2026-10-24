@@ -4487,5 +4487,29 @@
     ],
     "source": "learned_audit",
     "learned": true
+  },
+  "flipkart:TSHGY7FTFHKFFFXT": {
+    "title": "Leotude Men Solid Round Neck Cotton Blend Maroon T-Shirt",
+    "lowest_price": 262.0,
+    "avg_price": 264.0,
+    "cur_price": 266.0,
+    "mrp": 1099.0,
+    "all_time_low": 262.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "image_url": "https://rukminim2.flixcart.com/image/800/800/xif0q/t-shirt/v/7/k/l-po2-fs49-plain-mrn-blk-leotude-resized-original-imahf5uvcmsapxgk.jpeg?q=80",
+    "url": "https://www.flipkart.com/leotude-solid-men-round-neck-maroon-t-shirt/p/itm953969ddec450?pid=TSHGY7FTFHKFFFXT",
+    "highlights": [],
+    "category": "Flipkart Deals",
+    "twin_id": "",
+    "timestamp": 1792822400.2236488,
+    "history_points": [
+      {
+        "ts": 1792822048.0776567,
+        "price": 266.0,
+        "date": "2026-10-24 11:37"
+      }
+    ],
+    "source": "learned_audit",
+    "learned": true
   }
 }
