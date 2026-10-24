@@ -950,27 +950,76 @@ def extract_smart_search_keywords(title: str) -> str:
     if not title:
         return "this item"
 
-    t_clean = re.sub(r"[(),\[\]\-–/|&+]", " ", title)
-    t_clean = re.sub(r"\s+", " ", t_clean).strip()
-    t_lower = t_clean.lower()
+    raw_lower = title.lower()
 
-    # 1. Storage specs
-    st_m = re.search(r"\b(\d+)\s*(gb|tb)\b", t_lower)
-    storage_spec = f"{st_m.group(1)}{st_m.group(2).upper()}" if st_m else ""
+    # 1. Product Categories / Core Nouns (Detected BEFORE stripping hyphens or punctuation)
+    core_noun = ""
+    if re.search(r"\b(?:t-shirt|t\s*shirt|tshirt|tee|tees)\b", raw_lower):
+        core_noun = "T-Shirt"
+    elif re.search(r"\b(?:anarkali\s*gown|anarkali\s*dress|anarkali\s*suit|anarkali)\b", raw_lower):
+        core_noun = "Anarkali Gown"
+    elif re.search(r"\b(?:kurti|kurta|kurta\s*set)\b", raw_lower):
+        core_noun = "Kurti"
+    elif re.search(r"\b(?:saree|sari)\b", raw_lower):
+        core_noun = "Saree"
+    elif re.search(r"\b(?:gown|maxi\s*dress)\b", raw_lower):
+        core_noun = "Gown"
+    elif re.search(r"\b(?:lehenga|choli)\b", raw_lower):
+        core_noun = "Lehenga"
+    elif re.search(r"\b(?:track\s*pant|track\s*pants|trackpant|trackpants|jogger|joggers)\b", raw_lower):
+        core_noun = "Track Pants"
+    elif re.search(r"\b(?:night\s*suit|night\s*dress|nighty|nightdress)\b", raw_lower):
+        core_noun = "Night Suit"
+    elif re.search(r"\b(?:jeans|denim\s*jeans)\b", raw_lower):
+        core_noun = "Jeans"
+    elif re.search(r"\b(?:shirt|shirts)\b", raw_lower) and not re.search(r"\b(?:t-shirt|t\s*shirt|tshirt)\b", raw_lower):
+        core_noun = "Shirt"
+    elif re.search(r"\b(?:earbuds|earbud|air-dopes|airdopes|earphones|true\s*wireless|tws)\b", raw_lower):
+        core_noun = "Earbuds"
+    elif re.search(r"\b(?:smart\s*watch|smartwatch)\b", raw_lower):
+        core_noun = "Smartwatch"
+    elif re.search(r"\b(?:power\s*bank|powerbank)\b", raw_lower):
+        core_noun = "Power Bank"
+    elif re.search(r"\b(?:air\s*conditioner|inverter\s*ac|split\s*ac)\b", raw_lower):
+        core_noun = "AC"
+    elif re.search(r"\b(?:washing\s*machine)\b", raw_lower):
+        core_noun = "Washing Machine"
+    elif re.search(r"\b(?:water\s*purifier|ro\s*purifier)\b", raw_lower):
+        core_noun = "Water Purifier"
+    elif re.search(r"\b(?:pressure\s*cooker|cooker)\b", raw_lower):
+        core_noun = "Pressure Cooker"
+    elif re.search(r"\b(?:face\s*wash|facewash)\b", raw_lower):
+        core_noun = "Face Wash"
+    elif re.search(r"\b(?:sun\s*screen|sunscreen)\b", raw_lower):
+        core_noun = "Sunscreen"
+    elif re.search(r"\b(?:moisturizer|moisturiser|face\s*cream)\b", raw_lower):
+        core_noun = "Moisturizer"
+    elif re.search(r"\b(?:shampoo)\b", raw_lower):
+        core_noun = "Shampoo"
+    elif re.search(r"\b(?:tv|television|led\s*tv|smart\s*tv)\b", raw_lower):
+        core_noun = "TV"
 
-    # 2. Screen size specs
-    sc_m = re.search(r"\b(\d{2,3}(?:\.\d+)?)\s*(?:inch|inches)\b", t_lower)
-    screen_spec = f"{sc_m.group(1)} Inch" if sc_m else ""
+    # 2. Specs extraction
+    storage_spec = ""
+    st_m = re.search(r"\b(\d+)\s*(gb|tb)\b", raw_lower)
+    if st_m:
+        storage_spec = f"{st_m.group(1)}{st_m.group(2).upper()}"
 
-    # 3. Volume / Weight specs
-    vol_m = re.search(r"\b(\d+(?:\.\d+)?)\s*(litre|litres|ltr|l|kg|gm|g|ml)\b", t_lower)
+    screen_spec = ""
+    sc_m = re.search(r"\b(\d{2,3}(?:\.\d+)?)\s*(?:inch|inches)\b", raw_lower)
+    if sc_m:
+        screen_spec = f"{sc_m.group(1)} Inch"
+
     vol_spec = ""
+    vol_m = re.search(r"\b(\d+(?:\.\d+)?)\s*(litre|litres|ltr|l|kg|gm|g|ml)\b", raw_lower)
     if vol_m:
         unit = vol_m.group(2).lower()
         if unit in ["litre", "litres", "ltr"]: unit = "L"
         vol_spec = f"{vol_m.group(1)}{unit}"
 
-    # 4. Model code
+    # 3. Model code
+    t_clean = re.sub(r"[(),\[\]\-–/|&+]", " ", title)
+    t_clean = re.sub(r"\s+", " ", t_clean).strip()
     model_code = ""
     for tok in re.findall(r"\b[A-Za-z0-9]{4,18}\b", t_clean):
         tl = tok.lower()
@@ -980,23 +1029,33 @@ def extract_smart_search_keywords(title: str) -> str:
                     model_code = tok
                     break
 
-    # 5. Clean dimension / measurement tokens from title
-    t_clean_fluff = re.sub(r"\b\d+\s*(?:cm|cms|mm|m)\b", " ", t_clean, flags=re.I)
+    # 4. Strip secondary parenthetical info & dimensions
+    t_no_paren = re.sub(r"\([^)]*\)", " ", title)
+    t_clean_fluff = re.sub(r"\b\d+\s*(?:cm|cms|mm|m)\b", " ", t_no_paren, flags=re.I)
     t_clean_fluff = re.sub(r"\b\d+\s*(?:inch|inches)\b", " ", t_clean_fluff, flags=re.I)
+    t_clean_fluff = re.sub(r"[(),\[\]\-–/|&+]", " ", t_clean_fluff)
+    t_clean_fluff = re.sub(r"\s+", " ", t_clean_fluff).strip()
 
     fluff = {
+        # Apparel fluff
+        "men", "women", "mens", "womens", "boys", "girls", "unisex", "solid", "plain", "printed", "print", "floral",
         "half", "full", "sleeve", "sleeves", "round", "neck", "collar", "cottonblend", "cotton", "blend",
-        "drop", "shoulder", "printed", "print", "floral", "plain", "solid", "casual", "regular", "fit", "slim", "relaxed",
-        "stitched", "unstitched", "semi", "semistitched", "georgette", "silk", "chiffon", "crepe", "rayon", "polyester",
-        "embroidered", "embroidery", "woven", "designer", "ethnic", "western", "stylish", "fancy", "pure", "soft",
+        "drop", "shoulder", "casual", "regular", "fit", "slim", "relaxed", "stitched", "unstitched", "semi",
+        "georgette", "silk", "chiffon", "crepe", "rayon", "polyester", "embroidered", "embroidery", "woven",
+        "designer", "ethnic", "western", "stylish", "fancy", "pure", "soft", "party", "festive", "wedding",
+        # Sub-words of compound nouns (never include separately if part of noun)
+        "t", "shirt" if core_noun == "T-Shirt" else "", "suit" if core_noun == "Night Suit" else "",
+        "dress" if core_noun in ["Anarkali Gown", "Gown"] else "", "pants" if core_noun == "Track Pants" else "",
+        "pant" if core_noun == "Track Pants" else "", "wash" if core_noun == "Face Wash" else "",
+        "screen" if core_noun == "Sunscreen" else "", "bank" if core_noun == "Power Bank" else "",
+        # Electronics fluff
         "truly", "wireless", "earbuds", "earbud", "earphones", "earphone", "headphones", "headphone", "bluetooth",
         "in", "ear", "with", "for", "playtime", "battery", "fast", "charging", "case", "backup", "beast", "mode",
         "display", "smart", "led", "fhd", "uhd", "hd", "4k", "series", "edition", "crystal", "vivid", "ultra",
         "pack", "combo", "free", "latest", "2024", "2025", "2026", "new", "original", "genuine",
-        "unisex", "men", "women", "boys", "girls", "mens", "womens", "color", "colour",
-        "face", "skin", "cream", "lotion", "enriched", "repairs", "barrier", "sensitive", "normal", "dry",
-        "inches", "inch", "cm", "cms", "bar", "head", "body", "pouch", "bottle", "piece", "pieces", "pockets",
-        "sea", "blue", "black", "white", "green", "red", "gold", "silver", "pro"
+        "pro", "plus", "max", "pouch", "bottle", "piece", "pieces", "bar",
+        # Personal care fluff
+        "face", "skin", "cream", "lotion", "repairs", "barrier", "sensitive", "normal", "dry"
     }
 
     words = t_clean_fluff.split()
@@ -1021,26 +1080,8 @@ def extract_smart_search_keywords(title: str) -> str:
         if re.match(r"^\d+(?:h|g|gm|kg|ml|l|cm|mm)$", wl):
             continue
         meaningful.append(w)
-        if len(meaningful) >= 3:
+        if len(meaningful) >= 2:
             break
-
-    core_noun = ""
-    if any(k in t_lower for k in ["anarkali gown", "anarkali dress", "anarkali"]):
-        core_noun = "Anarkali Gown"
-    elif any(k in t_lower for k in ["kurti", "kurta"]):
-        core_noun = "Kurti"
-    elif any(k in t_lower for k in ["saree", "sari"]):
-        core_noun = "Saree"
-    elif any(k in t_lower for k in ["gown", "maxi dress"]):
-        core_noun = "Gown"
-    elif any(k in t_lower for k in ["lehenga", "choli"]):
-        core_noun = "Lehenga"
-    elif any(k in t_lower for k in ["t-shirt", "tshirt", "tee"]):
-        core_noun = "T-Shirt"
-    elif any(k in t_lower for k in ["cooker", "pressure cooker"]):
-        core_noun = "Pressure Cooker"
-    elif any(k in t_lower for k in ["tv", "television"]):
-        core_noun = "TV"
 
     query = list(brand_tokens)
     for m in meaningful:
@@ -1581,7 +1622,8 @@ def cross_search_amazon(title: str, fk_price: float, box_mrp: float) -> Dict[str
 
         amz_url = make_amazon_affiliate_url(f"https://www.amazon.in/dp/{direct_asin}")
     else:
-        required_specs, search_term = extract_key_specs(title)
+        required_specs, _ = extract_key_specs(title)
+        search_term = extract_smart_search_keywords(title)
         amz_url = make_amazon_affiliate_url(f"https://www.amazon.in/s?k={urllib.parse.quote(search_term)}")
         try:
             r = session.get(amz_url, timeout=10)
