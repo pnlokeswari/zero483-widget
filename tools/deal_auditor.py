@@ -970,7 +970,7 @@ def extract_smart_search_keywords(title: str) -> str:
         if unit in ["litre", "litres", "ltr"]: unit = "L"
         vol_spec = f"{vol_m.group(1)}{unit}"
 
-    # 4. Model code (e.g. MG7715, UA43DFE1000)
+    # 4. Model code
     model_code = ""
     for tok in re.findall(r"\b[A-Za-z0-9]{4,18}\b", t_clean):
         tl = tok.lower()
@@ -986,7 +986,9 @@ def extract_smart_search_keywords(title: str) -> str:
 
     fluff = {
         "half", "full", "sleeve", "sleeves", "round", "neck", "collar", "cottonblend", "cotton", "blend",
-        "drop", "shoulder", "printed", "plain", "solid", "casual", "regular", "fit", "slim", "relaxed",
+        "drop", "shoulder", "printed", "print", "floral", "plain", "solid", "casual", "regular", "fit", "slim", "relaxed",
+        "stitched", "unstitched", "semi", "semistitched", "georgette", "silk", "chiffon", "crepe", "rayon", "polyester",
+        "embroidered", "embroidery", "woven", "designer", "ethnic", "western", "stylish", "fancy", "pure", "soft",
         "truly", "wireless", "earbuds", "earbud", "earphones", "earphone", "headphones", "headphone", "bluetooth",
         "in", "ear", "with", "for", "playtime", "battery", "fast", "charging", "case", "backup", "beast", "mode",
         "display", "smart", "led", "fhd", "uhd", "hd", "4k", "series", "edition", "crystal", "vivid", "ultra",
@@ -1002,7 +1004,7 @@ def extract_smart_search_keywords(title: str) -> str:
     if len(words) >= 3 and f"{words[0].lower()} {words[1].lower()} {words[2].lower()}" in ["dot and key", "dot & key"]:
         brand_tokens = ["Dot & Key"]
         rem_words = words[3:]
-    elif len(words) >= 2 and f"{words[0].lower()} {words[1].lower()}" in ["real me", "one plus", "boat lifestyle", "surf excel"]:
+    elif len(words) >= 2 and f"{words[0].lower()} {words[1].lower()}" in ["real me", "one plus", "boat lifestyle", "surf excel", "elites clothing"]:
         brand_tokens = [f"{words[0]} {words[1]}"]
         rem_words = words[2:]
     elif words:
@@ -1023,8 +1025,20 @@ def extract_smart_search_keywords(title: str) -> str:
             break
 
     core_noun = ""
-    if any(k in t_lower for k in ["t-shirt", "tshirt", "tee"]):
+    if any(k in t_lower for k in ["anarkali gown", "anarkali dress", "anarkali"]):
+        core_noun = "Anarkali Gown"
+    elif any(k in t_lower for k in ["kurti", "kurta"]):
+        core_noun = "Kurti"
+    elif any(k in t_lower for k in ["saree", "sari"]):
+        core_noun = "Saree"
+    elif any(k in t_lower for k in ["gown", "maxi dress"]):
+        core_noun = "Gown"
+    elif any(k in t_lower for k in ["lehenga", "choli"]):
+        core_noun = "Lehenga"
+    elif any(k in t_lower for k in ["t-shirt", "tshirt", "tee"]):
         core_noun = "T-Shirt"
+    elif any(k in t_lower for k in ["cooker", "pressure cooker"]):
+        core_noun = "Pressure Cooker"
     elif any(k in t_lower for k in ["tv", "television"]):
         core_noun = "TV"
 
@@ -1033,8 +1047,13 @@ def extract_smart_search_keywords(title: str) -> str:
         if m.lower() not in " ".join(query).lower():
             query.append(m)
 
-    if core_noun and not any(core_noun.lower() in p.lower() for p in query):
+    q_str = " ".join(query).lower()
+    if core_noun and not any(w.lower() in q_str for w in core_noun.split()):
         query.append(core_noun)
+    elif core_noun:
+        for w in core_noun.split():
+            if w.lower() not in q_str:
+                query.append(w)
 
     best_spec = model_code or storage_spec or screen_spec or vol_spec
     if best_spec and not any(best_spec.lower() in " ".join(query).lower() for _ in [1]):
