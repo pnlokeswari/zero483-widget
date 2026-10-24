@@ -4455,5 +4455,37 @@
     "timestamp": 1792819735.0572853,
     "source": "live",
     "twin_id": "B0DYTTX1V1"
+  },
+  "flipkart:GWNHQ8295MQVCYZ5": {
+    "title": "ELITES CLOTHING Floral Print, Printed Georgette Stitched Anarkali",
+    "lowest_price": 489.0,
+    "avg_price": 489.0,
+    "cur_price": 489.0,
+    "mrp": 1899.0,
+    "all_time_low": 489.0,
+    "all_time_date": "",
+    "image_url": "https://rukminim2.flixcart.com/image/800/800/xif0q/gown/g/f/f/18-s-full-sleeve-stitched-119-riya-21-elitesclothing-60-original-imahq8fmpfzftxww.jpeg?q=80",
+    "url": "https://www.flipkart.com/elites-clothing-anarkali-gown/p/itma57247bc7dbd5?pid=GWNHQ8295MQVCYZ5",
+    "highlights": [
+      "\ud83d\udce6 In The Box: 1 gown , 1 dupatta",
+      "Occasion",
+      "Wedding & Festive",
+      "Sleeve",
+      "Full Sleeve",
+      "Fabric",
+      "Georgette"
+    ],
+    "category": "Flipkart Deals",
+    "twin_id": "",
+    "timestamp": 1792820888.8815024,
+    "history_points": [
+      {
+        "ts": 1792820602.098894,
+        "price": 489.0,
+        "date": "2026-10-24 11:13"
+      }
+    ],
+    "source": "learned_audit",
+    "learned": true
   }
 }
