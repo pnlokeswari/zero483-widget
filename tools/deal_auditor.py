@@ -945,6 +945,102 @@ def guard_and_sanitize_audit_result(res: dict) -> dict:
     return res
 
 
+def extract_smart_search_keywords(title: str) -> str:
+    """Extracts a concise, high-precision 2-4 word search query tailored for marketplace search engines."""
+    if not title:
+        return "this item"
+
+    t_clean = re.sub(r"[(),\[\]\-–/|&+]", " ", title)
+    t_clean = re.sub(r"\s+", " ", t_clean).strip()
+    t_lower = t_clean.lower()
+
+    # 1. Storage specs
+    st_m = re.search(r"\b(\d+)\s*(gb|tb)\b", t_lower)
+    storage_spec = f"{st_m.group(1)}{st_m.group(2).upper()}" if st_m else ""
+
+    # 2. Screen size specs
+    sc_m = re.search(r"\b(\d{2,3}(?:\.\d+)?)\s*(?:inch|inches)\b", t_lower)
+    screen_spec = f"{sc_m.group(1)} Inch" if sc_m else ""
+
+    # 3. Volume / Weight specs
+    vol_m = re.search(r"\b(\d+(?:\.\d+)?)\s*(litre|litres|ltr|l|kg|gm|g|ml)\b", t_lower)
+    vol_spec = ""
+    if vol_m:
+        unit = vol_m.group(2).lower()
+        if unit in ["litre", "litres", "ltr"]: unit = "L"
+        vol_spec = f"{vol_m.group(1)}{unit}"
+
+    # 4. Model code (e.g. MG7715, UA43DFE1000)
+    model_code = ""
+    for tok in re.findall(r"\b[A-Za-z0-9]{4,18}\b", t_clean):
+        tl = tok.lower()
+        if any(c.isalpha() for c in tl) and any(c.isdigit() for c in tl):
+            if not re.match(r"^\d+(?:gb|tb|mb|gm|kg|ml|ltr|l|cm|mm|hz|hrs|hr|mah|watts|w|inch|inches|g|h)$", tl):
+                if not re.match(r"^b0[a-z0-9]{8}$", tl):
+                    model_code = tok
+                    break
+
+    # 5. Clean dimension / measurement tokens from title
+    t_clean_fluff = re.sub(r"\b\d+\s*(?:cm|cms|mm|m)\b", " ", t_clean, flags=re.I)
+    t_clean_fluff = re.sub(r"\b\d+\s*(?:inch|inches)\b", " ", t_clean_fluff, flags=re.I)
+
+    fluff = {
+        "half", "full", "sleeve", "sleeves", "round", "neck", "collar", "cottonblend", "cotton", "blend",
+        "drop", "shoulder", "printed", "plain", "solid", "casual", "regular", "fit", "slim", "relaxed",
+        "truly", "wireless", "earbuds", "earbud", "earphones", "earphone", "headphones", "headphone", "bluetooth",
+        "in", "ear", "with", "for", "playtime", "battery", "fast", "charging", "case", "backup", "beast", "mode",
+        "display", "smart", "led", "fhd", "uhd", "hd", "4k", "series", "edition", "crystal", "vivid", "ultra",
+        "pack", "combo", "free", "latest", "2024", "2025", "2026", "new", "original", "genuine",
+        "unisex", "men", "women", "boys", "girls", "mens", "womens", "color", "colour",
+        "face", "skin", "cream", "lotion", "enriched", "repairs", "barrier", "sensitive", "normal", "dry",
+        "inches", "inch", "cm", "cms", "bar", "head", "body", "pouch", "bottle", "piece", "pieces", "pockets",
+        "sea", "blue", "black", "white", "green", "red", "gold", "silver", "pro"
+    }
+
+    words = t_clean_fluff.split()
+    brand_tokens = []
+    if len(words) >= 3 and f"{words[0].lower()} {words[1].lower()} {words[2].lower()}" in ["dot and key", "dot & key"]:
+        brand_tokens = ["Dot & Key"]
+        rem_words = words[3:]
+    elif len(words) >= 2 and f"{words[0].lower()} {words[1].lower()}" in ["real me", "one plus", "boat lifestyle", "surf excel"]:
+        brand_tokens = [f"{words[0]} {words[1]}"]
+        rem_words = words[2:]
+    elif words:
+        brand_tokens = [words[0]]
+        rem_words = words[1:]
+    else:
+        rem_words = []
+
+    meaningful = []
+    for w in rem_words:
+        wl = w.lower()
+        if wl in fluff:
+            continue
+        if re.match(r"^\d+(?:h|g|gm|kg|ml|l|cm|mm)$", wl):
+            continue
+        meaningful.append(w)
+        if len(meaningful) >= 3:
+            break
+
+    core_noun = ""
+    if any(k in t_lower for k in ["t-shirt", "tshirt", "tee"]):
+        core_noun = "T-Shirt"
+    elif any(k in t_lower for k in ["tv", "television"]):
+        core_noun = "TV"
+
+    query = list(brand_tokens)
+    for m in meaningful:
+        if m.lower() not in " ".join(query).lower():
+            query.append(m)
+
+    if core_noun and not any(core_noun.lower() in p.lower() for p in query):
+        query.append(core_noun)
+
+    best_spec = model_code or storage_spec or screen_spec or vol_spec
+    if best_spec and not any(best_spec.lower() in " ".join(query).lower() for _ in [1]):
+        query.append(best_spec)
+
+    return " ".join(query[:4])
 def extract_key_specs(title: str) -> Tuple[set, str]:
     """
     Extracts brand, model, storage/size/weight specs from a product title.
@@ -2127,7 +2223,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             final_url = f"https://www.flipkart.com/search?q={urllib.parse.quote(sq)}"
 
         # Competitor handling (Amazon lookup)
-        _, search_query = extract_key_specs(product_title)
+        search_query = extract_smart_search_keywords(product_title)
         amazon_search_url = make_amazon_affiliate_url(f"https://www.amazon.in/s?k={urllib.parse.quote(search_query)}")
 
         amz_comp = None
@@ -2497,7 +2593,7 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
 
     # Competitor handling (Flipkart or other)
     prod_title = p.title or f"Amazon Product ({asin})"
-    _, search_query = extract_key_specs(prod_title)
+    search_query = extract_smart_search_keywords(prod_title)
     flipkart_search_url = f"https://www.flipkart.com/search?q={urllib.parse.quote(search_query)}"
 
     fk_comp = None
