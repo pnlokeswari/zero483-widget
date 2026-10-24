@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-24T07:37:19.958418+00:00",
+  "last_updated": "2026-10-24T12:14:36.616987+00:00",
   "total_items": 50,
   "items": [
     {
@@ -651,6 +651,42 @@
       "is_long_form": false
     },
     {
+      "id": "59c1326d170d",
+      "title": "Seven Things to Know About the FDA’s One-Trial Approach to Drug Approval - Penn LDI",
+      "slug": "seven-things-to-know-about-the-fda-s-one-trial-approach-to-drug-approval-penn-ldi",
+      "date": "2026-10-21",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: Seven Things to Know About the FDA’s One-Trial Approach to Drug Approval - Penn LDI\nSource: Google News\nDate: Wed, 21 Oct 2026 16:35:37 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Seven Things to Know About the FDA’s One-Trial Approach to Drug Approval - Penn LDI",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMXFjaDdGSnFXM0NXeHFidHRjY29nQ0VTcnVQcTV1N19FcHpZaVFqaU9tRDdaUF9CQ3ZsYzc4V1RBRGQ5V1Bfa1R5bXNlTVlkcmFiWUsxSTNqc09OaFZleG5lV0k3WnZVQ1R1cmRPUDNGcjBHazlwZ05wRXVhbEczM3NxcTBwcnFaMi1vUWJpS3NMd1BDbDRKTkFUeGpHcmI3Ym1FbmpQWWtMcTlHRmFlX2RnbnduWkNLaGZ2Yw?oc=5",
+      "fetched_at": "2026-10-24T12:14:17.887409+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "0de553988e8d",
+      "title": "Women can't find this medication. The problem isn't going away - USA Today",
+      "slug": "women-can-t-find-this-medication-the-problem-isn-t-going-away-usa-today",
+      "date": "2026-10-21",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Title: Women can't find this medication. The problem isn't going away - USA Today\nSource: Google News\nDate: Wed, 21 Oct 2026 20:01:00 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Women can't find this medication. The problem isn't going away - USA Today",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWEstQmFHQnpPSDZtdFNRTDdNbDVzR05uT2pURElvQjlZS0ZpMW1WWXRYcDNoZDBveUs3Y0tIcmlBWVRlTTVXTmp3anhoNmhKTE9ZbFMyU1AxUEduM2xwcmUzTU84Um9XZ0QtX01Cd3NDZU8xVW1KRWstWTE0WHAyWGV4NXBYWDFhWm5LUXRRaEZXUlItSU9nZEtsa2JHcjVyclN4cFd2aVc5S2E2bmlXcjBHZw?oc=5",
+      "fetched_at": "2026-10-24T12:13:56.763023+00:00",
+      "is_long_form": false
+    },
+    {
       "id": "a5357330a8c5",
       "title": "FDA Releases Final Guidance for Prescription Drug-Related Apps - The Well News",
       "slug": "fda-releases-final-guidance-for-prescription-drug-related-apps-the-well-news",
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOWUNYLVF2bEJfd1pWUnFIc0xxbHVvQXNDNS1Wa1F0NnVESnk1aFVEOThHaVJjaENZQ2tmNW8wc215dk4wMmx4OFVMV01mZDliOTllX2hNVGI3dWtOZHZtSVFOWGk0Zjlad2ZYd1NMd2pDQ1FKTVdmeXRFSGNsRGJGblNqenpxQXJvb2c?oc=5",
       "fetched_at": "2026-10-23T20:40:26.406139+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "05ce2fb03f95",
-      "title": "What to know about GLP-1s and cannabis use - FOX 5 New York",
-      "slug": "what-to-know-about-glp-1s-and-cannabis-use-fox-5-new-york",
-      "date": "2026-10-21",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: What to know about GLP-1s and cannabis use - FOX 5 New York\nSource: Google News\nDate: Wed, 21 Oct 2026 15:58:50 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "What to know about GLP-1s and cannabis use - FOX 5 New York",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9sX053anR2Vmxmd1ZZOWY5bUNsRDRDZDZzUFFIay1USlktcS1CMzFjbDZtN1NESmZEc0RLSVJtbU1yX3d6SnNDQzAwVWhsRTJ5RnZESjkzQ3lEbUgyUG1XbnFSQVo4UkxxTm15YzlLZThhWHA2X0c3adIBfkFVX3lxTE9wTjRrNE9XblUtQWRQTkc0dWV5NElnY1R4ZnNKaWVNcW5Xd2dVa2oxRmJDWmlTR1NlV19PN2todjRKVzZtVGE1QTdiNHNTV2c4WHFNTW9CUjVpWkZzLUNDRzRkdEk1MnBIU1EzX3lQT24zVjRveVcwaUFlN0piUQ?oc=5",
-      "fetched_at": "2026-10-23T20:39:54.006509+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "6c937d3f96c8",
-      "title": "Sanofi Gets CDSCO Nod for Qfitlia: Haemophilia Bleeding Drug - Rediff MoneyWiz",
-      "slug": "sanofi-gets-cdsco-nod-for-qfitlia-haemophilia-bleeding-drug-rediff-moneywiz",
-      "date": "2026-10-21",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "<p>Title: Sanofi Gets CDSCO Nod for Qfitlia: Haemophilia Bleeding Drug - Rediff MoneyWiz\nSource: CDSCO India\nDate: Wed, 21 Oct 2026 09:46:05 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Sanofi Gets CDSCO Nod for Qfitlia: Haemophilia Bleeding Drug - Rediff MoneyWiz",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQNUQxRFRkekY0eEh6NmtuTWszM205TXhuZTN5Q0FZUzdnR3JwcDEyQ2dockIyVzZFellidEJxWkNLWHB6REI2U3Z5VjhQWDl4U3Mta2VnWVY4X3ZScWlRcGttZEd5Yk9Kcmp5N0ZoQjJVMW1jWTAyWVcwRlhRdW9rS194QVJ1WnJPU1d6cHRPVjBaSUU0MkRnWVNTQUVpNHVVaDUtV09rdDhQTTkwTTUzcNIBtgFBVV95cUxNbHVwQktQdlhObjV2VHpVcnFjRjc1X0JQMnpUeFJSTFNUZ21nQzVsQnJXZDdYZVp3MDNRcDFWSlFabzZjcVVIbWk4V1NmcmYzQlNtWkdKQUNGN19feVpjM0ZCYjBHaHh1b1ZaZlhjV3Izemxmb1FrTk11Vi1ORVFjRjJ3Vkc4UE0xaVlfX2lNU0M5N3V6N09DQW9QcXpSNW1BWFJ0Z3hsNVQ3MTlKNHdOQnhscUxUUQ?oc=5",
-      "fetched_at": "2026-10-23T17:29:06.323920+00:00",
       "is_long_form": false
     }
   ]
