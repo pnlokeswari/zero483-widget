@@ -1971,6 +1971,23 @@ function extractCleanUrlOrInput(rawText) {
   return trimmed;
 }
 
+function toAmazonAffiliateUrl(url) {
+  const fallbackAmz = 'https://www.amazon.in';
+  let u = String(url || fallbackAmz).trim();
+  const low = u.toLowerCase();
+  if (low.includes('visitretailer/1100') || low.includes('tag=earnkaro')) return u;
+  const dlMatch = u.match(/[?&]dl=([^&]+)/i);
+  if (dlMatch) {
+    try { u = decodeURIComponent(dlMatch[1]); } catch (e) {}
+  }
+  if (u.toLowerCase().includes('amazon.') || u.toLowerCase().includes('amzn.')) {
+    let clean = u.replace(/([?&])tag=[^&]+/ig, '').replace(/([?&])linkCode=[^&]+/ig, '');
+    clean = clean.replace(/\?&/, '?').replace(/[?&]$/, '');
+    return 'https://trackingv3.linkredirect.in/visitretailer/1100?id=5518844&dl=' + encodeURIComponent(clean);
+  }
+  return u;
+}
+
 function toFlipkartAffiliateUrl(url) {
   const fallbackFk = 'https://www.flipkart.com';
   let u = String(url || fallbackFk).trim();
@@ -2246,7 +2263,7 @@ async function runAudit(competitorUrl = '') {
 
     const primaryStoreName = isPrimaryAmazon ? 'Amazon India' : 'Flipkart India';
     const primaryStoreTag = isPrimaryAmazon ? '📦 Your Submitted Item: Amazon India' : '⚡ Your Submitted Item: Flipkart India';
-    const primaryBuyUrl = isPrimaryAmazon ? (amz.url || d.affiliate_url) : toFlipkartAffiliateUrl(fk.url || d.affiliate_url);
+    const primaryBuyUrl = isPrimaryAmazon ? toAmazonAffiliateUrl(amz.url || d.affiliate_url) : toFlipkartAffiliateUrl(fk.url || d.affiliate_url);
     const primaryPrice = d.current_price;
     const primaryMrp = d.mrp;
     const primaryImg = d.image_url || (isPrimaryAmazon ? (amz.image_url || '') : (fk.image_url || ''));
@@ -2268,7 +2285,7 @@ async function runAudit(competitorUrl = '') {
           <div style="font-size:.74rem;color:var(--muted)">
             💵 You Save: <strong style="color:var(--green)">₹${amz.savings.toLocaleString('en-IN')}</strong> vs Packaging MRP
           </div>
-          <a href="${amz.url || d.affiliate_url}" onclick="handleSmartStoreClick(event, this.href, 'amazon')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy amazon">
+          <a href="${toAmazonAffiliateUrl(amz.url || d.affiliate_url)}" onclick="handleSmartStoreClick(event, this.href, 'amazon')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy amazon">
             Buy on Amazon at ₹${amz.price.toLocaleString('en-IN')} ↗
           </a>
         ` : `
@@ -2276,7 +2293,7 @@ async function runAudit(competitorUrl = '') {
             <div style="color:#38bdf8;font-weight:800;font-size:.88rem;margin-bottom:6px">📦 Amazon India: No Exact Twin Variant Found</div>
             <div>This exact model/pack is currently exclusive to Flipkart. To search for similar alternatives on Amazon, tap below:</div>
           </div>
-          <a href="${d.amazon_search_url || amz.url || 'https://www.amazon.in'}" onclick="handleSmartStoreClick(event, this.href, 'amazon')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy amazon" style="margin-bottom:10px">
+          <a href="${toAmazonAffiliateUrl(d.amazon_search_url || amz.url || 'https://www.amazon.in')}" onclick="handleSmartStoreClick(event, this.href, 'amazon')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy amazon" style="margin-bottom:10px">
             🔍 Explore Alternatives on Amazon ↗
           </a>
           <div style="display:flex;gap:6px;margin-top:4px;flex-wrap:wrap;width:100%">
@@ -2376,7 +2393,7 @@ async function runAudit(competitorUrl = '') {
                 ${d.mrp_mismatch_msg || `Caution: The compared store's packaging MRP differs substantially from this item. This usually indicates a different storage variant, weight size (e.g. 50g vs 100g), or combo pack rather than an exact match.`}
               </div>
               ${(d.flipkart_search_url || d.amazon_search_url) ? `
-                <a href="${d.flipkart_search_url || d.amazon_search_url}" onclick="handleSmartStoreClick(event, this.href, '${isPrimaryAmazon ? 'flipkart' : 'amazon'}')" target="_blank" rel="nofollow noopener sponsored" class="mrp-mismatch-action">
+                <a href="${isPrimaryAmazon ? toFlipkartAffiliateUrl(d.flipkart_search_url) : toAmazonAffiliateUrl(d.amazon_search_url)}" onclick="handleSmartStoreClick(event, this.href, '${isPrimaryAmazon ? 'flipkart' : 'amazon'}')" target="_blank" rel="nofollow noopener sponsored" class="mrp-mismatch-action">
                   🔍 Search exact matching variant on ${isPrimaryAmazon ? 'Flipkart' : 'Amazon'} ↗
                 </a>
               ` : ''}
@@ -2465,7 +2482,7 @@ async function runAudit(competitorUrl = '') {
                     <div><strong>No-Cost EMI:</strong> 3 &amp; 6-month zero-interest installments available on all major credit cards.</div>
                   </li>
                 </ul>
-                <a href="${amz.url || d.affiliate_url || 'https://www.amazon.in'}" onclick="handleSmartStoreClick(event, this.href, 'amazon')" target="_blank" rel="nofollow noopener sponsored" class="btn-bank-store amazon">
+                <a href="${toAmazonAffiliateUrl(amz.url || d.affiliate_url || 'https://www.amazon.in')}" onclick="handleSmartStoreClick(event, this.href, 'amazon')" target="_blank" rel="nofollow noopener sponsored" class="btn-bank-store amazon">
                   🏷️ Check Live Bank Offers on Amazon ↗
                 </a>
               </div>
@@ -2563,7 +2580,7 @@ async function runAudit(competitorUrl = '') {
               ⚖️ ${hasComparison ? 'Re-Compare with Different Competitor' : `Compare with ${isPrimaryAmazon ? 'Flipkart' : 'Amazon'}`}
             </span>
             ${(d.flipkart_search_url || d.amazon_search_url) ? `
-              <a href="${isPrimaryAmazon ? toFlipkartAffiliateUrl(d.flipkart_search_url) : d.amazon_search_url}" onclick="handleSmartStoreClick(event, this.href, '${isPrimaryAmazon ? 'flipkart' : 'amazon'}')" target="_blank" rel="nofollow noopener sponsored" class="btn-browse-store">
+              <a href="${isPrimaryAmazon ? toFlipkartAffiliateUrl(d.flipkart_search_url) : toAmazonAffiliateUrl(d.amazon_search_url)}" onclick="handleSmartStoreClick(event, this.href, '${isPrimaryAmazon ? 'flipkart' : 'amazon'}')" target="_blank" rel="nofollow noopener sponsored" class="btn-browse-store">
                 🔍 Search "${d.search_term || 'this item'}" on ${isPrimaryAmazon ? 'Flipkart' : 'Amazon'} ↗
               </a>
             ` : ''}
@@ -3125,7 +3142,7 @@ function getDealShareText(d, lang) {
   const title = (d.title || "Product Deal").trim();
   const mrp = d.mrp ? Number(d.mrp).toLocaleString('en-IN') : "N/A";
 
-  const amzBuyUrl = amz.url || (d.platform === 'amazon' ? d.affiliate_url : '') || d.amazon_search_url || 'https://www.amazon.in/?tag=10fa9c-21';
+  const amzBuyUrl = toAmazonAffiliateUrl(amz.url || (d.platform === 'amazon' ? d.affiliate_url : '') || d.amazon_search_url || 'https://www.amazon.in');
   const fkBuyUrl = toFlipkartAffiliateUrl(fk.url || (d.platform === 'flipkart' ? d.affiliate_url : '') || d.flipkart_search_url || 'https://www.flipkart.com');
 
   if (hasComparison) {
