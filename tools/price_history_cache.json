@@ -4414,5 +4414,46 @@
     "all_time_date": "Apr \u2013 Jun 2026",
     "timestamp": 1792483922.7616363,
     "source": "live"
+  },
+  "amazon:B0DYTTX1V1": {
+    "title": "LEOTUDE Half Sleeve Oversized Cottonblend Round Neck Drop Shoulder Printed",
+    "lowest_price": 265.0,
+    "avg_price": 265.0,
+    "cur_price": 265.0,
+    "mrp": 1099.0,
+    "all_time_low": 249.0,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "image_url": "https://m.media-amazon.com/images/I/51SvquU9CCL.jpg",
+    "url": "https://trackingv3.linkredirect.in/visitretailer/1100?id=5518844&dl=https%3A%2F%2Fwww.amazon.in%2Fdp%2FB0DYTTX1V1",
+    "highlights": [
+      "Sleeve: Half Sleeve",
+      "Pattern: Printed",
+      "Fabric Type: Cottonblend",
+      "Made of soft and breathable cotton blend fabric for comfort and durability",
+      "Oversized T-shirt, loose fit, so very comfortable to wear, also looks very trendy & classy"
+    ],
+    "category": "Clothing & Accessories \u203a \u203a \u203a Men",
+    "twin_id": "TSHHDFX4MDUWZZS7",
+    "timestamp": 1792819735.374021,
+    "history_points": [
+      {
+        "ts": 1792818535.8020911,
+        "price": 265.0,
+        "date": "2026-10-24 10:38"
+      }
+    ],
+    "source": "learned_audit",
+    "learned": true
+  },
+  "flipkart:TSHHDFX4MDUWZZS7": {
+    "lowest_price": 0,
+    "avg_price": 0.0,
+    "cur_price": 288.0,
+    "mrp": 1099.0,
+    "all_time_low": 0,
+    "all_time_date": "",
+    "timestamp": 1792819735.0572853,
+    "source": "live",
+    "twin_id": "B0DYTTX1V1"
   }
 }
