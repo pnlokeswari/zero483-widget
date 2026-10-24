@@ -2291,18 +2291,22 @@ async function runAudit(competitorUrl = '') {
         ` : `
           <div style="padding:10px 0;font-size:.82rem;color:var(--muted);line-height:1.5">
             <div style="color:#38bdf8;font-weight:800;font-size:.88rem;margin-bottom:6px">📦 Amazon India: No Exact Twin Variant Found</div>
-            <div style="margin-bottom:6px;color:#e2e8f0;font-size:.8rem;line-height:1.4;background:rgba(255,255,255,0.04);padding:6px 10px;border-radius:6px;border-left:3px solid #38bdf8">
+            <div style="margin-bottom:8px;color:#e2e8f0;font-size:.8rem;line-height:1.4;background:rgba(255,255,255,0.04);padding:6px 10px;border-radius:6px;border-left:3px solid #38bdf8">
               <span style="color:#94a3b8;font-size:.72rem;display:block;text-transform:uppercase;letter-spacing:0.5px">Your Submitted Flipkart Item:</span>
               <strong style="color:#ffd54f">${(d.title || '').slice(0, 55)}${(d.title && d.title.length > 55) ? '...' : ''}</strong>
             </div>
-            <div>Couldn't automatically find this exact variant on Amazon. Tap below to search matching alternatives:</div>
+            <div style="font-size:.78rem;color:#cbd5e1;margin-bottom:8px">1️⃣ Tap below to search matching items on Amazon:</div>
           </div>
-          <a href="${toAmazonAffiliateUrl(d.amazon_search_url || amz.url || 'https://www.amazon.in')}" onclick="handleSmartStoreClick(event, this.href, 'amazon')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy amazon" style="margin-bottom:10px;justify-content:center;text-align:center">
+          <a href="${toAmazonAffiliateUrl(d.amazon_search_url || amz.url || 'https://www.amazon.in')}" onclick="handleSmartStoreClick(event, this.href, 'amazon')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy amazon" style="margin-bottom:12px;justify-content:center;text-align:center">
             🔍 Search "${d.search_term || 'similar items'}" on Amazon ↗
           </a>
-          <div style="display:flex;gap:6px;margin-top:4px;flex-wrap:wrap;width:100%">
-            <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem;min-width:0;flex:1 1 180px" placeholder="Have an Amazon alternative link? Paste here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
-            <button type="button" onclick="applyInlineCompetitorCompare()" class="btn-compare-action" style="padding:8px 12px;font-size:.75rem;white-space:nowrap">Compare ⚔️</button>
+          <div style="padding:10px;background:rgba(56,189,248,0.05);border:1px dashed rgba(56,189,248,0.3);border-radius:8px">
+            <div style="font-size:.75rem;color:#38bdf8;font-weight:700;margin-bottom:6px">2️⃣ Found a matching Amazon link? Paste to compare:</div>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;width:100%">
+              <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem;min-width:0;flex:1 1 170px" placeholder="Paste Amazon product link here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
+              <button type="button" onclick="applyInlineCompetitorCompare()" class="btn-compare-action" style="padding:8px 12px;font-size:.75rem;font-weight:700;white-space:nowrap">Verify &amp; Compare ⚔️</button>
+            </div>
+            <div style="font-size:.68rem;color:#94a3b8;margin-top:5px">💡 Directly scrapes your pasted Amazon item &amp; compares prices side-by-side.</div>
           </div>
         `}
       </div>
@@ -2329,18 +2333,22 @@ async function runAudit(competitorUrl = '') {
         ` : `
           <div style="padding:10px 0;font-size:.82rem;color:var(--muted);line-height:1.5">
             <div style="color:#38bdf8;font-weight:800;font-size:.88rem;margin-bottom:6px">⚡ Flipkart India: No Exact Twin Variant Found</div>
-            <div style="margin-bottom:6px;color:#e2e8f0;font-size:.8rem;line-height:1.4;background:rgba(255,255,255,0.04);padding:6px 10px;border-radius:6px;border-left:3px solid #38bdf8">
+            <div style="margin-bottom:8px;color:#e2e8f0;font-size:.8rem;line-height:1.4;background:rgba(255,255,255,0.04);padding:6px 10px;border-radius:6px;border-left:3px solid #38bdf8">
               <span style="color:#94a3b8;font-size:.72rem;display:block;text-transform:uppercase;letter-spacing:0.5px">Your Submitted Amazon Item:</span>
               <strong style="color:#ffd54f">${(d.title || '').slice(0, 55)}${(d.title && d.title.length > 55) ? '...' : ''}</strong>
             </div>
-            <div>Couldn't automatically find this exact variant on Flipkart. Tap below to search matching alternatives:</div>
+            <div style="font-size:.78rem;color:#cbd5e1;margin-bottom:8px">1️⃣ Tap below to search matching items on Flipkart:</div>
           </div>
-          <a href="${toFlipkartAffiliateUrl(d.flipkart_search_url || fk.url || 'https://www.flipkart.com')}" onclick="handleSmartStoreClick(event, this.href, 'flipkart')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy flipkart" style="margin-bottom:10px;justify-content:center;text-align:center">
+          <a href="${toFlipkartAffiliateUrl(d.flipkart_search_url || fk.url || 'https://www.flipkart.com')}" onclick="handleSmartStoreClick(event, this.href, 'flipkart')" target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy flipkart" style="margin-bottom:12px;justify-content:center;text-align:center">
             🔍 Search "${d.search_term || 'similar items'}" on Flipkart ↗
           </a>
-          <div style="display:flex;gap:6px;margin-top:4px;flex-wrap:wrap;width:100%">
-            <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem;min-width:0;flex:1 1 180px" placeholder="Have a Flipkart alternative link? Paste here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
-            <button type="button" onclick="applyInlineCompetitorCompare()" class="btn-compare-action" style="padding:8px 12px;font-size:.75rem;white-space:nowrap">Compare ⚔️</button>
+          <div style="padding:10px;background:rgba(56,189,248,0.05);border:1px dashed rgba(56,189,248,0.3);border-radius:8px">
+            <div style="font-size:.75rem;color:#38bdf8;font-weight:700;margin-bottom:6px">2️⃣ Found a matching Flipkart link? Paste to compare:</div>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;width:100%">
+              <input type="text" id="inline-comp-input" class="compare-input" style="padding:8px 10px;font-size:.76rem;min-width:0;flex:1 1 170px" placeholder="Paste Flipkart product link here..." onkeydown="if(event.key==='Enter') applyInlineCompetitorCompare()">
+              <button type="button" onclick="applyInlineCompetitorCompare()" class="btn-compare-action" style="padding:8px 12px;font-size:.75rem;font-weight:700;white-space:nowrap">Verify &amp; Compare ⚔️</button>
+            </div>
+            <div style="font-size:.68rem;color:#94a3b8;margin-top:5px">💡 Directly scrapes your pasted Flipkart item &amp; compares prices side-by-side.</div>
           </div>
         `}
       </div>
