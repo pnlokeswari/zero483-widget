@@ -2667,16 +2667,114 @@ function applyCompetitorCompare() {
   runAudit(cleaned);
 }
 
-function applyInlineCompetitorCompare() {
+async function applyInlineCompetitorCompare() {
+  // Step 1 — grab & clean the pasted competitor URL
   const inlineInput = document.getElementById('inline-comp-input');
-  const cleaned = inlineInput ? extractCleanUrlOrInput(inlineInput.value) : '';
-  if (!inlineInput || !cleaned) {
-    alert("Please paste the product link to compare side-by-side.");
+  const compUrl = inlineInput ? extractCleanUrlOrInput(inlineInput.value.trim()) : '';
+  if (!compUrl) {
+    alert('Please paste the competitor product link to compare side-by-side.');
     if (inlineInput) inlineInput.focus();
     return;
   }
-  inlineInput.value = cleaned;
-  runAudit(cleaned);
+  // Step 2 — must have a primary product already scanned
+  if (!lastAuditedItem || !lastAuditedItem.current_price) {
+    alert('Please scan a product first before comparing.');
+    return;
+  }
+  const primary = lastAuditedItem;
+  // Step 3 — detect stores
+  const compIsFlipkart = /flipkart\.com|dl\.flipkart\.com/i.test(compUrl);
+  const compIsAmazon   = /amazon\.in|amzn\.in/i.test(compUrl);
+  const primaryIsAmazon = primary.platform === 'amazon';
+  // Step 4 — same-store guard
+  if ((primaryIsAmazon && compIsAmazon) || (!primaryIsAmazon && compIsFlipkart)) {
+    const storeName = primaryIsAmazon ? 'Amazon' : 'Flipkart';
+    alert(`You pasted another ${storeName} link. Please paste a link from the OTHER store to compare prices side-by-side.`);
+    if (inlineInput) inlineInput.focus();
+    return;
+  }
+  // Step 5 — disable button, show loading state
+  const btnEl = document.getElementById('btn-audit');
+  const origBtnText = btnEl ? btnEl.innerHTML : '';
+  if (btnEl) { btnEl.disabled = true; btnEl.innerHTML = '⏳ Fetching competitor price...'; }
+  try {
+    // Step 6 — single API call for competitor only
+    const resp = await fetch(`${API_BASE}/api/buyer/audit-deal`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url: compUrl })
+    });
+    const comp = await resp.json();
+    if (btnEl) { btnEl.disabled = false; btnEl.innerHTML = origBtnText; }
+    if (comp.error) { alert('Could not fetch competitor price: ' + comp.error); return; }
+    // Step 7 — compute winner
+    const p1 = primary.current_price || 0;
+    const p2 = comp.current_price || 0;
+    const diff = Math.abs(p1 - p2);
+    const p1StoreName = primaryIsAmazon ? 'Amazon' : 'Flipkart';
+    const p2StoreName = compIsAmazon    ? 'Amazon' : 'Flipkart';
+    let winnerText = '', winnerBadge = '', p1IsWinner = false, p2IsWinner = false;
+    if (p1 > 0 && p2 > 0) {
+      if (p1 < p2)      { winnerText = `🏆 ${p1StoreName} is ₹${diff.toLocaleString('en-IN')} Cheaper than ${p2StoreName}!`; winnerBadge = `${p1StoreName} Deal Winner`; p1IsWinner = true; }
+      else if (p2 < p1) { winnerText = `🏆 ${p2StoreName} is ₹${diff.toLocaleString('en-IN')} Cheaper than ${p1StoreName}!`; winnerBadge = `${p2StoreName} Deal Winner`; p2IsWinner = true; }
+      else              { winnerText = `🤝 Both Stores Match at Exact Same Price!`; winnerBadge = 'Exact Price Match'; }
+    } else if (p1 > 0) { winnerText = `⚡ ${p1StoreName} In-Stock — ${p2StoreName} Currently Unavailable`; winnerBadge = `${p1StoreName} In-Stock`; p1IsWinner = true; }
+    else if (p2 > 0)   { winnerText = `⚡ ${p2StoreName} In-Stock — ${p1StoreName} Currently Unavailable`; winnerBadge = `${p2StoreName} In-Stock`; p2IsWinner = true; }
+    // Step 8 — safe MRP fallback for competitor (avoids 0-discount display)
+    const compMrp = (comp.mrp && comp.mrp > 0) ? comp.mrp : primary.mrp;
+    const compSavings     = Math.max(0, compMrp - p2);
+    const compDiscountPct = compMrp > 0 ? Math.round((compSavings / compMrp) * 1000) / 10 : 0;
+    const p1Savings = primary.savings_mrp_inr || Math.max(0, primary.mrp - p1);
+    // Step 9 — build Column 1 HTML (PRIMARY product)
+    const col1Html = `<div class="compare-col ${p1IsWinner ? 'is-winner' : ''}">`
+      + `<div class="compare-col-header">`
+      + `<span class="store-tag ${primaryIsAmazon ? 'amazon' : 'flipkart'}">${primaryIsAmazon ? '📦 AMAZON INDIA' : '⚡ FLIPKART INDIA'}</span>`
+      + (p1IsWinner ? `<span class="pill" style="font-size:.65rem;background:#10b981;color:#000;font-weight:800">BEST PRICE</span>` : p1 > 0 ? `<span class="pill" style="font-size:.62rem;background:rgba(16,185,129,.15);color:#34d399">LIVE VERIFIED</span>` : `<span class="pill" style="font-size:.62rem;background:rgba(239,68,68,.15);color:#f87171">UNAVAILABLE</span>`)
+      + `</div>`
+      + (p1 > 0
+          ? `<div class="comp-price-row"><span class="comp-price">₹${p1.toLocaleString('en-IN')}</span><span class="comp-mrp">₹${(primary.mrp||0).toLocaleString('en-IN')}</span><span class="comp-discount">-${primary.discount_mrp_pct||0}%</span></div>`
+            + `<div style="font-size:.74rem;color:var(--muted)">💵 You Save: <strong style="color:var(--green)">₹${p1Savings.toLocaleString('en-IN')}</strong> vs Packaging MRP</div>`
+            + `<a href="${primaryIsAmazon ? toAmazonAffiliateUrl(primary.affiliate_url) : toFlipkartAffiliateUrl(primary.affiliate_url)}" onclick="handleSmartStoreClick(event,this.href,'${primaryIsAmazon?'amazon':'flipkart'}')"
+               target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy ${primaryIsAmazon?'amazon':'flipkart'}">Buy on ${p1StoreName} at ₹${p1.toLocaleString('en-IN')} ↗</a>`
+          : `<div style="padding:12px 0;font-size:.84rem;color:#f87171">Currently Unavailable</div>`)
+      + `</div>`;
+    // Step 10 — build Column 2 HTML (COMPETITOR product)
+    const compAffUrl = compIsAmazon ? toAmazonAffiliateUrl(comp.affiliate_url || compUrl) : toFlipkartAffiliateUrl(comp.affiliate_url || compUrl);
+    const col2Html = `<div class="compare-col ${p2IsWinner ? 'is-winner' : ''}">`
+      + `<div class="compare-col-header">`
+      + `<span class="store-tag ${compIsAmazon ? 'amazon' : 'flipkart'}">${compIsAmazon ? '📦 AMAZON INDIA' : '⚡ FLIPKART INDIA'}</span>`
+      + (p2IsWinner ? `<span class="pill" style="font-size:.65rem;background:#10b981;color:#000;font-weight:800">BEST PRICE</span>` : p2 > 0 ? `<span class="pill" style="font-size:.62rem;background:rgba(16,185,129,.15);color:#34d399">LIVE VERIFIED</span>` : `<span class="pill" style="font-size:.62rem;background:rgba(239,68,68,.15);color:#f87171">UNAVAILABLE</span>`)
+      + `</div>`
+      + (p2 > 0
+          ? `<div class="comp-price-row"><span class="comp-price">₹${p2.toLocaleString('en-IN')}</span><span class="comp-mrp">₹${compMrp.toLocaleString('en-IN')}</span><span class="comp-discount">-${compDiscountPct}%</span></div>`
+            + `<div style="font-size:.74rem;color:var(--muted)">💵 You Save: <strong style="color:var(--green)">₹${compSavings.toLocaleString('en-IN')}</strong> vs Packaging MRP</div>`
+            + `<a href="${compAffUrl}" onclick="handleSmartStoreClick(event,this.href,'${compIsAmazon?'amazon':'flipkart'}')"
+               target="_blank" rel="nofollow noopener sponsored" class="btn-store-buy ${compIsAmazon?'amazon':'flipkart'}">Buy on ${p2StoreName} at ₹${p2.toLocaleString('en-IN')} ↗</a>`
+          : `<div style="padding:12px 0;font-size:.84rem;color:#f87171">Currently Unavailable</div>`)
+      + `</div>`;
+    // Step 11 — update the compare-grid (replace inner HTML only, keep wrapper)
+    const existingGrid = document.querySelector('#audit-results .compare-grid');
+    if (existingGrid) { existingGrid.innerHTML = col1Html + col2Html; }
+    // Step 12 — upsert the winner-banner (insert if missing, update if present, remove if no winner)
+    const winnerBannerHtml = winnerText
+      ? `<div class="winner-banner"><div class="winner-text"><span>${winnerText}</span></div><span class="winner-pill">${winnerBadge}</span></div>`
+      : '';
+    const existingWinner = document.querySelector('#audit-results .winner-banner');
+    if (existingWinner) {
+      if (winnerText) {
+        const wtSpan = existingWinner.querySelector('.winner-text span');
+        if (wtSpan) wtSpan.textContent = winnerText;
+        const pill = existingWinner.querySelector('.winner-pill');
+        if (pill) pill.textContent = winnerBadge;
+      } else { existingWinner.remove(); }
+    } else if (winnerText && existingGrid) {
+      existingGrid.insertAdjacentHTML('beforebegin', winnerBannerHtml);
+    }
+  } catch (err) {
+    // Step 13 — always re-enable button on error
+    if (btnEl) { btnEl.disabled = false; btnEl.innerHTML = origBtnText; }
+    alert('Could not fetch the competitor price. Please check the link and try again.\n\nError: ' + err.message);
+  }
 }
 
 function openKeepa(asin) {
