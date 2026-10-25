@@ -281,24 +281,45 @@
     "source": "live"
   },
   "amazon:B0BDVG99J5": {
-    "lowest_price": 293.0,
-    "avg_price": 316.77,
-    "cur_price": 299.0,
+    "title": "Dot & Key Barrier Repair Moisturizer For Normal, Dry, Combination & Sensitive Skin | 120 Hrs Moisturization, With 5 Ceramides & Hyaluronic | Repairs Damaged Skin Barrier, Non-Comedogenic | 100g",
+    "lowest_price": 285.0,
+    "avg_price": 310.0,
+    "cur_price": 335.0,
     "mrp": 395.0,
     "all_time_low": 281.36,
     "all_time_date": "Oct \u2013 Dec 2025",
-    "timestamp": 1792159557.4712965,
-    "source": "live"
+    "image_url": "https://m.media-amazon.com/images/I/51nL4p1PNlL._SX679_.jpg",
+    "url": "https://trackingv3.linkredirect.in/visitretailer/1100?id=5518844&dl=https%3A%2F%2Fwww.amazon.in%2Fdp%2FB0BDVG99J5",
+    "highlights": [
+      "Ceramides & Hyaluronic Hydrating Face Cream - Daily intense face moisturising cream for nourished, soft & healthy skin.",
+      "STRENGTHENS SKIN'S BARRIER FUNCTION: With 5 essential ceramides helps to protect skin & accelerate skin barrier repair",
+      "BALANCES SKIN'S MICROBIOME LEVEL: Improves skin resilience with probiotics.",
+      "SMOOTHENS ROUGH, UNEVEN SKIN TEXTURE: Smooth, creamy & non-comedogenic formula for dry to very dry skin.",
+      "PROVIDES DEEP HYDRATION FOR LONG HOURS: Deeply hydrates skin with hyaluronic acid to heal dry skin, distressed skin."
+    ],
+    "category": "Beauty \u203a \u203a \u203a Skin Care",
+    "twin_id": "MSCGHZURHXJGTZ4Y",
+    "timestamp": 1792835794.4752858,
+    "history_points": [
+      {
+        "ts": 1792835598.6522596,
+        "price": 335.0,
+        "date": "2026-10-24 15:23"
+      }
+    ],
+    "source": "learned_audit",
+    "learned": true
   },
   "flipkart:MSCGHZURHXJGTZ4Y": {
     "lowest_price": 236.0,
-    "avg_price": 295.1,
-    "cur_price": 252.0,
+    "avg_price": 291.5,
+    "cur_price": 284.0,
     "mrp": 395.0,
     "all_time_low": 207.0,
     "all_time_date": "Oct \u2013 Dec 2025",
-    "timestamp": 1792159559.5010478,
-    "source": "live"
+    "timestamp": 1792835598.395419,
+    "source": "live",
+    "twin_id": "B0BDVG99J5"
   },
   "flipkart:MSCGNE2GYCJHYEBZ": {
     "lowest_price": 323.0,
@@ -422,12 +443,12 @@
   },
   "amazon:B0CHX1W1XY": {
     "lowest_price": 46999.0,
-    "avg_price": 69568.14,
-    "cur_price": 63474.6,
+    "avg_price": 69435.67,
+    "cur_price": 74900.0,
     "mrp": 74900.0,
     "all_time_low": 44059.32,
     "all_time_date": "Oct \u2013 Dec 2025",
-    "timestamp": 1792201704.297554,
+    "timestamp": 1792835082.4411612,
     "source": "live"
   },
   "amazon:B0CHX2F5QT": {
@@ -591,14 +612,36 @@
     "source": "live"
   },
   "flipkart:MOBGTAGPTB3VS24W": {
+    "title": "Apple iPhone 15 (Black, 128 GB)",
     "lowest_price": 53900.0,
-    "avg_price": 59763.64,
-    "cur_price": 59900.0,
-    "mrp": 59900.0,
+    "avg_price": 60949.5,
+    "cur_price": 67999.0,
+    "mrp": 74900.0,
     "all_time_low": 51999.0,
     "all_time_date": "Oct \u2013 Dec 2025",
-    "timestamp": 1792202013.4376407,
-    "source": "live"
+    "image_url": "https://rukminim2.flixcart.com/image/800/800/xif0q/mobile/s/p/z/-original-imahqvadjn9nthhu.jpeg?q=80",
+    "url": "https://www.flipkart.com/apple-iphone-15-black-128-gb/p/itm3234701b0863a?pid=MOBHQV9YR4CBTD9D",
+    "highlights": [
+      "\ud83d\udce6 In The Box: Handset, USB C Charge Cable (1m), Documentation",
+      "\ud83d\udd39 Battery Capacity: 3349 mAh",
+      "\ud83d\udd39 Display Size: 15.49 cm (6.1 inch)",
+      "\ud83d\udd39 Processor Type: A16 Bionic Chip, 6 Core Processor",
+      "\ud83d\udd39 Processor Brand: Apple",
+      "\ud83d\udd39 Primary Camera: 48MP + 12MP",
+      "\ud83d\udd39 Secondary Camera: 12MP Front Camera"
+    ],
+    "category": "Flipkart Deals",
+    "twin_id": "",
+    "timestamp": 1792835836.4810758,
+    "history_points": [
+      {
+        "ts": 1792835417.3888495,
+        "price": 67999.0,
+        "date": "2026-10-24 15:20"
+      }
+    ],
+    "source": "learned_audit",
+    "learned": true
   },
   "amazon:B07J6TCPK6": {
     "lowest_price": 850.0,
@@ -4555,6 +4598,71 @@
         "ts": 1792824372.1272156,
         "price": 476.0,
         "date": "2026-10-24 12:16"
+      }
+    ],
+    "source": "learned_audit",
+    "learned": true
+  },
+  "flipkart:ACNHJZN5F8GKZ59X": {
+    "lowest_price": 44802.0,
+    "avg_price": 47623.9,
+    "cur_price": 47849.0,
+    "mrp": 63500.0,
+    "all_time_low": 44802.0,
+    "all_time_date": "Jul \u2013 Sep 2026",
+    "timestamp": 1792835058.247541,
+    "source": "live"
+  },
+  "amazon:B08TV2P1N8": {
+    "title": "Amazon Product (B08TV2P1N8)",
+    "lowest_price": 729.66,
+    "avg_price": 795.33,
+    "cur_price": 861.0,
+    "mrp": 3990.0,
+    "all_time_low": 729.66,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "image_url": "",
+    "url": "https://trackingv3.linkredirect.in/visitretailer/1100?id=5518844&dl=https%3A%2F%2Fwww.amazon.in%2Fdp%2FB08TV2P1N8",
+    "highlights": [],
+    "category": "General",
+    "twin_id": "",
+    "timestamp": 1792835833.2771459,
+    "history_points": [
+      {
+        "ts": 1792835414.0960176,
+        "price": 861.0,
+        "date": "2026-10-24 15:20"
+      }
+    ],
+    "source": "learned_audit",
+    "learned": true
+  },
+  "flipkart:ACCHQDMZTBXGZSUR": {
+    "title": "Niubil 33W SuperVOOC Fast Charger Adapter",
+    "lowest_price": 249.0,
+    "avg_price": 583.5,
+    "cur_price": 918.0,
+    "mrp": 2999.0,
+    "all_time_low": 249.0,
+    "all_time_date": "",
+    "image_url": "https://rukminim2.flixcart.com/image/800/800/xif0q/battery-charger/n/s/2/fsnum33sf1-niubil-original-imahqdnyvfdeacgr.jpeg?q=80",
+    "url": "https://www.flipkart.com/xiaomi-33w-soniccharge-2-0-charger-combo-type-c-cable/p/itmd11a37c44e99f?pid=ACCHQDMZTBXGZSUR",
+    "highlights": [
+      "\ud83d\udce6 In The Box: 1X ADAPTER & CABLE",
+      "\ud83d\udd39 Model Name: 33w Turbocharge 3.0",
+      "Wall Charger",
+      "3 A Output Current",
+      "Charging Technology: TurboPower 3.0",
+      "USB Type A Port, USB Type C Cable Connector"
+    ],
+    "category": "Flipkart Deals",
+    "twin_id": "",
+    "timestamp": 1792835573.0784886,
+    "history_points": [
+      {
+        "ts": 1792835573.0784886,
+        "price": 918.0,
+        "date": "2026-10-24 15:22"
       }
     ],
     "source": "learned_audit",
