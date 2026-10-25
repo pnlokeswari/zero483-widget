@@ -187,6 +187,7 @@
 
 <!-- Official Pinterest Script -->
 <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
 <!-- Instant Theme & Language Loader (Zero Flash) -->
 <script>
@@ -2356,6 +2357,16 @@ async function runAudit(competitorUrl = '') {
 
     resEl.innerHTML = `
       <div class="audit-card">
+        <!-- Top Action Bar with 1-Tap Image Export -->
+        <div style="display:flex;justify-content:flex-end;margin-bottom:14px;gap:8px">
+          <button type="button" onclick="downloadDealCardImage()" id="btn-export-image" class="btn-share-card-action" style="display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,#10b981,#059669);color:#ffffff;font-size:.82rem;font-weight:700;padding:8px 16px;border:none;border-radius:24px;cursor:pointer;box-shadow:0 4px 14px rgba(16,185,129,0.3);transition:all .2s">
+            <span>📸</span>
+            <span>Share / Save Deal Card</span>
+          </button>
+        </div>
+
+        <!-- Capture Container for Image Export (Instagram, Pinterest, WhatsApp, FB) -->
+        <div id="deal-share-capture" style="border-radius:14px;padding:6px;position:relative">
         <!-- Live Deal Comparison Winner Banner (if both stores matched) -->
         ${(hasComparison && d.winner_text) ? `
           <div class="winner-banner">
@@ -2456,6 +2467,21 @@ async function runAudit(competitorUrl = '') {
             ` : ''}
           </div>
         </div>
+
+        <!-- Verified Deal Audit Footer Watermark for Shared Image -->
+        <div class="deal-card-watermark" style="margin-top:12px;padding:10px 14px;background:rgba(15,23,42,0.9);border:1px dashed rgba(56,189,248,0.4);border-radius:10px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="font-size:1.1rem">🛡️</span>
+            <div>
+              <div style="font-size:.8rem;font-weight:800;color:#38bdf8;letter-spacing:0.5px">VERIFIED ON VERIFYFIRST.CO.IN</div>
+              <div style="font-size:.68rem;color:#94a3b8">Real-Time Amazon vs Flipkart Deal Auditor • Zero Fake Discounts</div>
+            </div>
+          </div>
+          <div style="font-size:.72rem;color:#ffd54f;font-weight:700">
+            Check Real Price ➔ verifyfirst.co.in
+          </div>
+        </div>
+        </div><!-- End of #deal-share-capture -->
 
         <!-- Pro-Tip: Bank & Card Offers Advice Banner (Interactive Expandable) -->
         <div class="bank-offers-hint-box" onclick="toggleBankOffersDrawer(event)" id="bank-offers-box" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleBankOffersDrawer(event);}" aria-expanded="false" title="Click to view or hide active credit/debit card offers">
@@ -3709,6 +3735,84 @@ document.addEventListener('DOMContentLoaded', () => {
     quickAudit(qParam.trim());
   }
 });
+
+async function downloadDealCardImage() {
+  const captureEl = document.getElementById('deal-share-capture');
+  const btn = document.getElementById('btn-export-image');
+  if (!captureEl) {
+    alert('Please audit a deal first before exporting.');
+    return;
+  }
+  const origText = btn ? btn.innerHTML : '';
+  if (btn) {
+    btn.disabled = true;
+    btn.innerHTML = '<span>⏳</span><span>Generating Card Image...</span>';
+  }
+
+  try {
+    if (typeof html2canvas === 'undefined') {
+      alert('Image export library is loading. Please try again in 2 seconds.');
+      if (btn) { btn.disabled = false; btn.innerHTML = origText; }
+      return;
+    }
+
+    const canvas = await html2canvas(captureEl, {
+      scale: 2, // 2x retina clarity for crisp social media posts
+      useCORS: true,
+      allowTaint: true,
+      backgroundColor: '#0b0f19',
+      logging: false,
+      scrollX: 0,
+      scrollY: -window.scrollY
+    });
+
+    canvas.toBlob(async (blob) => {
+      if (btn) {
+        btn.disabled = false;
+        btn.innerHTML = origText;
+      }
+      if (!blob) {
+        alert('Could not render image. Please try again.');
+        return;
+      }
+
+      const fileName = `verifyfirst-deal-battle-${Date.now()}.png`;
+      const file = new File([blob], fileName, { type: 'image/png' });
+
+      // If mobile browser supports Web Share API with files (WhatsApp / Instagram / FB share)
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        try {
+          await navigator.share({
+            title: 'VerifyFirst Price Comparison',
+            text: 'Check out this verified live price comparison on VerifyFirst! No fake discounts.',
+            files: [file]
+          });
+          return;
+        } catch (shareErr) {
+          if (shareErr.name === 'AbortError') return;
+          console.log('Native share failed, falling back to download:', shareErr);
+        }
+      }
+
+      // Desktop or fallback: direct download
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = fileName;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }, 'image/png');
+  } catch (err) {
+    if (btn) {
+      btn.disabled = false;
+      btn.innerHTML = origText;
+    }
+    alert('Could not generate deal card image: ' + err.message);
+  }
+}
+
 </script>
 </body>
 </html>
