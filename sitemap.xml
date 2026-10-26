@@ -5,6 +5,11 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/mounjaro-kwikpen-batches-fail-quality-tests-in-cdsco-s-september-drug-quality-alert-the-south-first.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-grants-conditional-approval-for-sembcorp-s-1-3-gw-electricity-imports-to-singapore-solarquarter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/freestyle-libre-3-app.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/there-s-an-app-for-that-and-now-fda-has-a-framework-for-it-fda-s-final-guidance-on-prescription-drug-use-related-softwa.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/osf-team-gains-swift-fda-approval-for-new-drug-osf-healthcare.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/is-ema-drug-rejection-altering-the-investment-case-for-omeros-omer-simply-wall-street.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/health-news-today-fda-approval-weight-loss-drug.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/weight-loss-drug-fda-2022-businessworld-online.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -50,9 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/over-4-million-tubes-of-toothpaste-recalled-see-affected-products-usa-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-azacitidine-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-methylphenidate-hydrochloride-tablet-extended-release.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/seven-things-to-know-about-the-fda-s-one-trial-approach-to-drug-approval-penn-ldi.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/women-can-t-find-this-medication-the-problem-isn-t-going-away-usa-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-releases-final-guidance-for-prescription-drug-related-apps-the-well-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/illegal-drug-compounding-may-increase-under-tightening-customs-policy-the-american-action-forum.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drugmakers-urge-fda-take-more-flexible-approach-to-container-closure-testing-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
