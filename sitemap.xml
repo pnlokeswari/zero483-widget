@@ -5,7 +5,12 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/us-fda-issues-final-guidance-on-mandatory-cosmetics-recalls-under-mocra-global-cosmetics-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/sudeep-pharma-receives-gujarat-fda-approval-for-new-nandesari-manufacturing-facility-machine-maker.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-bacitracin-ophthalmic-ointment.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-amphetamine-aspartate-monohydrate-amphetamine-sulfate-dextroamphetamine-saccha.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-approval-september-2025-weight-loss-drug-what-is-known-and-what-needs-verification-emy.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/duckworth-gillibrand-schiff-press-the-fda-on-plan-to-mitigate-estrogen-patch-shortage-riverbender-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-advisory-no-2026-1560-public-health-warning-against-the-purchase-and-use-of-the-unregistered-drug-product-sumifu.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/hanmi-pharmaceutical-launches-weight-supplements-after-obesity-drug-approval-seoul-economic-daily.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-shortage-data-offers-uneven-ai-warning-and-policy-lessons-bioengineer-org.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -50,9 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/glp-1-compounder-issues-recall-for-copycat-zepbound-biopharma-dive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/zoetis-gets-fda-approval-for-new-convenia-injection-that-makes-treating-large-dogs-easier-vet-candy.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/more-than-4m-tubes-of-toothpaste-recalled-nationwide-fda-newsnation.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-recommends-approval-for-biosimilar-omalizumab-adcomfo-and-pertuzumab-pebrilzo-generics-and-biosimilars-initiative.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-recognizes-standalone-software-s-role-in-improving-drug-therapy-healthcare-it-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-has-finalized-its-guidance-on-apps-related-to-drugs-stat.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/could-a-daily-pill-help-prevent-breast-cancer-recurrence-roche-s-promising-experimental-drug-awaits-fda-approval-heal.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-unveils-rare-disease-framework-to-modernise-orphan-drug-approval-gxp.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
