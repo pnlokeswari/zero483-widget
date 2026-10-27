@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-27T00:05:56.115025+00:00",
+  "last_updated": "2026-10-27T05:38:04.795018+00:00",
   "total_items": 50,
   "items": [
     {
@@ -18,6 +18,42 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-10-27T00:05:15.745233+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "90ea440a9e95",
+      "title": "FDA Advisory No.2026-1560 || Public Health Warning Against the Purchase and Use of the Unregistered Drug Product “Sumifu",
+      "slug": "fda-advisory-no-2026-1560-public-health-warning-against-the-purchase-and-use-of-the-unregistered-drug-product-sumifu",
+      "date": "2026-10-26",
+      "category": "Adverse Event",
+      "severity": "High",
+      "summary": "<p>Title: FDA Advisory No.2026-1560 || Public Health Warning Against the Purchase and Use of the Unregistered Drug Product “Sumifun® Ice Feeling Body Pain Relief Cream 20g/ 0.71 oz” - https://www.fda.gov.ph/\nSource: Google News\nDate: Mon, 26 Oct 2026 08:40:29 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "FDA Advisory No.2026-1560 || Public Health Warning Against the Purchase and Use of the Unregistered Drug Product “Sumifu",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQc1V1M3F2TWtNTVBxandQVkRWN3NnZER3UExzb3dQRWVQdEZ5djhSU3k3cmtKSFlPUnJQY2I3VWpVb1NHT2xwSFpHS25OOEgxbnFhNjg0ZUo2UkJldTZrSGRkSGpWQTJJY1Q2Zm1yX09WeTZoS0g3WERFQVp4T3dvWkdLaHozaFhGbV9TVFNIZHlqc0ZtRUY1OFVpSzFPUTk2NDhGQUMwRUFLMkRTOTVsTVZDb0xkazJCV3c5NFhndno4ejVsRTZueFdmVjFsQ2EyRDZvdmJpMnhVdkotb1ROdFZOODJwZ01SM3pha29aREQ2c1lKRDVXdmhhSHFERUxSb1R4bDlzSW14RW0tZ0xZVi1PcFVPOHM?oc=5",
+      "fetched_at": "2026-10-27T05:38:02.782026+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "5f214f3037b1",
+      "title": "Hanmi Pharmaceutical Launches Weight Supplements After Obesity Drug Approval - Seoul Economic Daily",
+      "slug": "hanmi-pharmaceutical-launches-weight-supplements-after-obesity-drug-approval-seoul-economic-daily",
+      "date": "2026-10-26",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Title: Hanmi Pharmaceutical Launches Weight Supplements After Obesity Drug Approval - Seoul Economic Daily\nSource: Google News\nDate: Mon, 26 Oct 2026 23:47:30 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Hanmi Pharmaceutical Launches Weight Supplements After Obesity Drug Approval - Seoul Economic Daily",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUWM2U0tMejFTSFB1TWFZZDJSQTEzZXljUGltT2ptem5WeE1zdVItdmhvUENKRU9kVmJmTl8tbThxdzE4OXNZVmJSZG1nSS10cHdaWDhTS3ZXTTRXbUljeEFQNHR6RVJXQVB6NlNWQmhqdlBJYkxnX2phT2M3YjYycWxSYjBnUVI3OGtHeTBDR2xsQ3hVS010aGowZEx5ZU5v?oc=5",
+      "fetched_at": "2026-10-27T05:37:41.653732+00:00",
       "is_long_form": false
     },
     {
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdFp3X3NMeVpSZ2pTZVhFcU4zUnY1ZjZKdGFPLVFmNEx5VmpHZXNCdVFhN29KbVhaVmY3Z0phSXUzc0taMFcwN3RfN2VsVmdiSHhjb29HdlppZ1FSeEJFOEVIVkNGU2NPQ05pS0tGMkJlVFdMZEpqd0NxQXJ3M1lobkx2a2hQbFRBOE9qVjBXT25vNTFZVV9UMmU3MDl2X241YWfSAaIBQVVfeXFMTXRad19zTHlaUmdqU2VYRXFOM1J2NWY2SnRhTy1RZjRMeVZqR2VzQnVRYTdvSm1YWlZmN2dKYUl1M3NLWjBXMDd0XzdlbFZnYkh4Y29vR3ZaaWdRUnhCRThFSFZDRlNjT0NOaUtLRjJCZVRXTGRKandDcUFydzNZaG5MdmtoUGxUQThPalYwV09ubzUxWVVfVDJlNzA5dl9uNWFn?oc=5",
       "fetched_at": "2026-10-22T15:40:52.460667+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "c5b0b7d6048c",
-      "title": "U.S. Senators Kirsten Gillibrand, Adam Schiff Press Trump’s FDA On Plan To Mitigate Estrogen Patch Shortage - Sierra Sun",
-      "slug": "u-s-senators-kirsten-gillibrand-adam-schiff-press-trump-s-fda-on-plan-to-mitigate-estrogen-patch-shortage-sierra-sun",
-      "date": "2026-10-22",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Title: U.S. Senators Kirsten Gillibrand, Adam Schiff Press Trump’s FDA On Plan To Mitigate Estrogen Patch Shortage - Sierra Sun Times\nSource: Google News\nDate: Thu, 22 Oct 2026 12:04:09 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "U.S. Senators Kirsten Gillibrand, Adam Schiff Press Trump’s FDA On Plan To Mitigate Estrogen Patch Shortage - Sierra Sun",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQZk5peXozQnI2U3gycFYtYkNQVl9qcVRCV2Zxc05vd1RFbjdRZUFKNXFhUjZJWnZrRW5QajlEb2JwcHlQdnU2M21pSHRZYUFPTnltLTIzVlBNcjN0aWpra2hjMzFISFVxdl8yNEkxclhMTDJMZnM5SUtNRVNFT2ZXcjZWMkFndkhuYktic09TZGdZSExPdC1Vc25SZG9oZDEtZ1BuOThYRnp0Rm5TeHg0UWlJbjBvWnBfX2RacjJXYkVhMG0zUkM5UWpfcjkxR0dRNDI1Y1hhRmVPT3NNRWU1cUVhYXo1WFJyc0duMVNWM0VjN0RoMHBpWnNkSFdPb1Y1ckdGSHUwSQ?oc=5",
-      "fetched_at": "2026-10-22T15:40:21.632046+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "ce8200e67355",
-      "title": "FDA rebukes Baxter over 'repeated' production stumbles in new warning letter - Fierce Pharma",
-      "slug": "fda-rebukes-baxter-over-repeated-production-stumbles-in-new-warning-letter-fierce-pharma",
-      "date": "2026-10-22",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: FDA rebukes Baxter over 'repeated' production stumbles in new warning letter - Fierce Pharma\nSource: Google News\nDate: Thu, 22 Oct 2026 13:03:00 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "FDA rebukes Baxter over 'repeated' production stumbles in new warning letter - Fierce Pharma",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQRnVuNE1uaTJPX3ZxaFdIaHljQjd2TGV6MmZYY0xqY0tQVVdzSDBJY21IdTdVV3VGYnlkNk13OHBuaDlxVTJ4RlNRYXJOOXU1OEdBNXpSNjJhS3NyVExBWklfVHpvM2RNYnlLN19LMjdNNXdYa1Vnb0dyb012ZUF6cDF5eGZTa1RKb0NYUzZ6YVVzZmhpSlNvZHZZN2xKMWl5bVk4bVg0NA?oc=5",
-      "fetched_at": "2026-10-22T15:40:05.859888+00:00",
       "is_long_form": false
     }
   ]

@@ -6,6 +6,8 @@
     <priority>1.0</priority>
   </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-amphetamine-aspartate-monohydrate-amphetamine-sulfate-dextroamphetamine-saccha.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-advisory-no-2026-1560-public-health-warning-against-the-purchase-and-use-of-the-unregistered-drug-product-sumifu.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/hanmi-pharmaceutical-launches-weight-supplements-after-obesity-drug-approval-seoul-economic-daily.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-shortage-data-offers-uneven-ai-warning-and-policy-lessons-bioengineer-org.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-issues-alert-over-suspected-falsified-defitelio-medical-dialogues.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/dxc-500i-clinical-analyzer-and-dxc-500-au-clinical-chemistry-analyzer.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -53,6 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-has-finalized-its-guidance-on-apps-related-to-drugs-stat.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/could-a-daily-pill-help-prevent-breast-cancer-recurrence-roche-s-promising-experimental-drug-awaits-fda-approval-heal.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-unveils-rare-disease-framework-to-modernise-orphan-drug-approval-gxp.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/u-s-senators-kirsten-gillibrand-adam-schiff-press-trump-s-fda-on-plan-to-mitigate-estrogen-patch-shortage-sierra-sun.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-rebukes-baxter-over-repeated-production-stumbles-in-new-warning-letter-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
