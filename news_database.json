@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-10-28T00:45:14.998637+00:00",
+  "last_updated": "2026-10-28T06:20:08.057053+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "2c3cd6f2726a",
+      "title": "Drug Shortage: Rifampin Capsule",
+      "slug": "drug-shortage-rifampin-capsule",
+      "date": "2026-10-28",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Generic name: Rifampin Capsule\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Drug Shortage: Rifampin Capsule",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "fetched_at": "2026-10-28T06:19:32.656389+00:00",
+      "is_long_form": false
+    },
     {
       "id": "56c7c421be73",
       "title": "Law firm investigates Omeros after stock drops on negative EMA drug approval opinions - Pluang",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOenlQYTdQS2pueklXNUc1VFBuNm1oak1MZ2paRUZUakhZaFlCdFd0a2JUY0pjVXowTy1PX3JfdjlVZnZid28xa29mNHZUTzdOdVBhVGlvTmF5dzN6cHhlSExvZmQ3N3ZDVzNsNjdtd0l0WG92NEtlQy1sMklrWFE5WG5mbThOQTFEUE5zeU84MFQwZ1FaRDVJdUxIYVE0TWZ1VDgxMkMta2RmRlZwZ1BB?oc=5",
       "fetched_at": "2026-10-23T20:40:31.427205+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "aeca197ae376",
-      "title": "The FDA says there’s no estrogen patch shortage. Women are struggling to fill prescriptions. - NBC News",
-      "slug": "the-fda-says-there-s-no-estrogen-patch-shortage-women-are-struggling-to-fill-prescriptions-nbc-news",
-      "date": "2026-10-23",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Title: The FDA says there’s no estrogen patch shortage. Women are struggling to fill prescriptions. - NBC News\nSource: Google News\nDate: Fri, 23 Oct 2026 19:24:02 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "The FDA says there’s no estrogen patch shortage. Women are struggling to fill prescriptions. - NBC News",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQcTNhNFBJZjBpeDN2WTVJX0UtYmRZWk84dFJpNnU4cjZYbWxlQnNaVnpaNm9TU2NkdVVXV2ducXhkN0E3NGhJeTU2LVFNd3VEa1ZEa2pQVFkydGpRNDBIdUEtR2szTkdkeEJzOXUzMDFCc2NhY0tZTFI1VnhFYjJIb09UM0x1UkhhYUE3UHVLVUgwVGprQTJjZ2tPakEtd09CakpCMFlfbktmZ2ZaUlkzRE1XMmIwVVFSdG1USjY5eDV5b1VY?oc=5",
-      "fetched_at": "2026-10-23T20:40:04.715627+00:00",
       "is_long_form": false
     }
   ]
