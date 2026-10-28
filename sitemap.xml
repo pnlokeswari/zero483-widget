@@ -5,6 +5,8 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/law-firm-investigates-omeros-after-stock-drops-on-negative-ema-drug-approval-opinions-pluang.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/over-20-000-bottles-of-blood-pressure-medication-recalled-nationwide-eatingwell.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/instant-aid-ovulation-and-pregnancy-tests.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/magnetom-free-max.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-2025-draft-guidance-obesity-drugs-minimum-weight-loss-percentage-uses-safety-and-what-to-know-emy.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -53,6 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/i-stat-hs-tni-cartridge.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/exclusive-mdma-assisted-therapy-could-get-fda-approval-as-soon-as-january-advocate-new-york-post.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/the-fda-says-there-s-no-estrogen-patch-shortage-women-are-struggling-to-fill-prescriptions-nbc-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-clonazepam-tablet.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/nationwide-recall-on-these-compound-glp-1-drugs-the-hill.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
