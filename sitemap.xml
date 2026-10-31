@@ -5,6 +5,11 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/sun-pharma-wins-cdsco-nod-for-semaglutide-pill-pharma-economictimes-indiatimes-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/alembic-pharmaceuticals-receives-usfda-approval-for-venetoclax-tablets-machine-maker.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/glp-1-compounding-after-drug-shortages-the-regulatory-review.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/medline-beds-linked-to-2-deaths-16-serious-injuries-fda-says-usa-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/medline-electric-beds-pose-fire-hazard-after-2-deaths-fda-warns-cbs-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/pgen-stock-craters-27-after-hours-after-rival-inovio-s-rare-disease-drug-receives-fda-approval-yahoo-finance.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/ema-to-review-lundbeck-s-depression-anxiety-drug-deanxit-after-serious-side-effects-reported-www-marketscreener-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/pace-life-sciences-completes-ema-gmp-inspection-at-lebanon-nj-facility-contract-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -17,6 +22,8 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/sun-pharma-shares-extend-four-day-rally-after-usfda-approval-for-ilumya-in-arthritis-patients-cnbc-tv18.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/sun-pharma-s-ilumya-wins-us-fda-approval-for-psoriatic-arthritis-extending-il-23-biologic-beyond-plaque-psoriasis-ehe.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/sun-pharma-wins-us-fda-approval-for-ilumya-in-psoriatic-arthritis-dealroom.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-proposes-cadmium-limits-in-processed-baby-and-toddler-foods-legis1.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/kennedy-s-hhs-relaxes-enforcement-on-6-popular-wellness-peptides-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/vertex-kidney-disease-drug-scrutinized-for-infection-risk-stat.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/opticross-intravascular-ultrasond-imagine-catheters.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/rotaflow-console.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -26,6 +33,7 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/philips-azurion-system.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-clarifies-regulatory-standards-for-prescription-drug-apps-including-device-linked-and-standalone-software.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-advisory-no-2026-1674-public-health-warning-against-the-purchase-and-use-of-the-unauthorized-toy-and-childcare-ar.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/new-fda-draft-guidance-doubles-down-on-expediting-approvals-of-personalized-gene-therapies-biospace.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/hhs-and-fda-publish-draft-guidance-to-streamline-approvals-of-certain-gene-therapies-announce-plans-to-expand-cgt-model.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-and-ema-discuss-collaboration-on-herbal-botanical-drug-products-u-s-food-and-drug-administration-gov.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-scientists-opposed-the-trump-administration-s-effort-to-ease-peptides-access-orlando-sentinel.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -47,12 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/cary-firm-recalls-glp-1-injections-following-fda-scrutiny-the-business-journals.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-asks-states-uts-to-mandate-raw-material-tests-for-drugmakers-business-standard.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/vietnam-malaysia-singapore-renewable-electricity-initiative-receives-conditional-approval-from-singapore-s-ema-energy.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/pd-l1-ihc-22c3-pharmdx.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/algae-to-blindness-treatment-nobel-winning-science-nears-its-first-drug-approval-geneonline.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-furosemide-oral-solution.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-bupivacaine-hydrochloride-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-rifampin-capsule.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/more-than-4-3-million-toothpaste-tubes-recalled-including-children-s-brands-news4jax.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/cumberland-to-apply-for-drug-fda-approval-after-releasing-trial-results-nashville-post.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-drug-approval-decisions-expected-in-november-2026-neurology-advisor.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
