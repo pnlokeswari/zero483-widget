@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-31T18:46:28.551611+00:00",
+  "last_updated": "2026-10-31T21:54:21.065091+00:00",
   "total_items": 50,
   "items": [
     {
@@ -90,6 +90,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTnlPVy1ieWNSczJSSTltd1l2aUI2dWlYZzNYeWVPcW5jckhseWxzejRTQnpTbWtQQXNXZk5NWkNhMGVzMkgxanJjSUhGNjI5TE1aYjZSeHRqRmtDcnZSUkpwZk5qRzNyeUx2eG1QZ2RmX1ZrQWpSNmxxc2hieURHaGZpUjViZ2V1VTIta1lMWEQ?oc=5",
       "fetched_at": "2026-10-31T13:53:57.172775+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "37de4686ada0",
+      "title": "This Week at FDA: New ConOps for drug inspections, AI policy proposal, and more - RAPS",
+      "slug": "this-week-at-fda-new-conops-for-drug-inspections-ai-policy-proposal-and-more-raps",
+      "date": "2026-10-30",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: This Week at FDA: New ConOps for drug inspections, AI policy proposal, and more - RAPS\nSource: Google News\nDate: Fri, 30 Oct 2026 21:37:00 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "This Week at FDA: New ConOps for drug inspections, AI policy proposal, and more - RAPS",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQTdVZnRTZ0RSS25VSVdhVW5iZTNxVTlWZEdGb1gzeXlFV3czYmNXQkhia0pRUEZWOEFkV2d3VlZ6SDJWclJPaGRNUk43WmExU2ZGYmVmY3FaTkpyU3VfaUViSHVCdkRDbzY3SzZ5Wk15TWxiU0ZLbWhoZlNnSER4d3JKeklZcHhaU290aWlxTUdXNWFvM3ZnVmxJek5jZzlITGpPZDYzN1pRNFpRVFI5Wg?oc=5",
+      "fetched_at": "2026-10-31T21:54:13.874148+00:00",
       "is_long_form": false
     },
     {
@@ -342,6 +360,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdG5vdVRQSkZmTTFlaVlLM0dMVFJaWXBLZGRLMTVmVVVnNlhyZ3hZVlhnZ0w4dEtFdUNlN2pWTDV0X0RCS3Z2bHNuYWI3dGViaHFHc1NGMVJCTXFMS3BueW9KTkV1dzdzU1djemZ1ZGN3alRtVUQ1RGIxV1dLWkxWNDJnaXV2SzZJaVhtazJrRWxPTk5qTmZEdDBpd1hObGRW?oc=5",
       "fetched_at": "2026-10-30T09:00:33.631243+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "b4b418773b67",
+      "title": "HHS Issues Enforcement Discretion Policy Regarding 503A Compounding Using Certain Peptide Bulk Drug Substances - JD Supr",
+      "slug": "hhs-issues-enforcement-discretion-policy-regarding-503a-compounding-using-certain-peptide-bulk-drug-substances-jd-supr",
+      "date": "2026-10-29",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: HHS Issues Enforcement Discretion Policy Regarding 503A Compounding Using Certain Peptide Bulk Drug Substances - JD Supra\nSource: Google News\nDate: Thu, 29 Oct 2026 18:09:23 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "HHS Issues Enforcement Discretion Policy Regarding 503A Compounding Using Certain Peptide Bulk Drug Substances - JD Supr",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZUhoN0ZRMmJQdkU5c1JpN0pZU09DSVhvSnRNVFFKMkwyNmw1ajRPR25mdVRneVNRblFEV1NTclhnSnh3bGVQWUE0cjZmTk5Jc0hqQUR0VkhzOWVVU1F4V2FvM2l3Q3Bwa3dfcmt0VVZGdFFqd0hCZGtHVlFRMGFyLW93?oc=5",
+      "fetched_at": "2026-10-31T21:54:18.889925+00:00",
       "is_long_form": false
     },
     {
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPcDVWTE41Mmh3emJfb0pqZmVmNHIyN0tETlA2UG95ejFRS2dUdUZfVEQ3YWJEbVJyWFM2Z25JdTFzcnF1c1BqVzNjSm5Uc2d0MTZoTVVCM292ZUJyNE51TDZyZnJYNzRPY0tuTDdTUVg0SFVpSllHaGtvenh4S0cyUzJHUHpuMkpHX0JEd1lhX2Nzd29FSEhnZENfay13UlgzOEVyS3pSSHBDN2FwWXpqR2pQdlBnVmdZdmlqY0Qtc2xxSXdjdmViM0tSTVk4Um5WeWY1ZVpNcXV2WFk?oc=5",
       "fetched_at": "2026-10-28T19:07:48.397378+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "437e884e01f2",
-      "title": "Marshall purchased stock in obscure pharma company just before it secured key FDA approval - Popular Information",
-      "slug": "marshall-purchased-stock-in-obscure-pharma-company-just-before-it-secured-key-fda-approval-popular-information",
-      "date": "2026-10-28",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: Marshall purchased stock in obscure pharma company just before it secured key FDA approval - Popular Information\nSource: Google News\nDate: Wed, 28 Oct 2026 10:31:00 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Marshall purchased stock in obscure pharma company just before it secured key FDA approval - Popular Information",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9hanZvc2o1cVNCSGV0eEFUZnBzV01RUGJKOExTcXVqYUZQX2I4N3o3b0dVeG9HRkJ1cVh6NDhKVkFDOHg3YllLTURrNG5Rbnk3NGgtbXFBb3NGdnNnRF9lSDVnR3ppRGJNakE?oc=5",
-      "fetched_at": "2026-10-28T19:07:43.378962+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "3a592202a6d2",
-      "title": "AbbVie seeks FDA approval for multiple myeloma drug candidate - MedWatch",
-      "slug": "abbvie-seeks-fda-approval-for-multiple-myeloma-drug-candidate-medwatch",
-      "date": "2026-10-28",
-      "category": "Drug Approval",
-      "severity": "Low",
-      "summary": "<p>Title: AbbVie seeks FDA approval for multiple myeloma drug candidate - MedWatch\nSource: Google News\nDate: Wed, 28 Oct 2026 14:13:07 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "AbbVie seeks FDA approval for multiple myeloma drug candidate - MedWatch",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1HSFV5TFR1X2psSnViRWZMeDUzMzdiVkhZUDd1REdwSzY4SS1jWjBtblVSdERzNVY1NmdfN1N5a3B0QUR1UXZIa19XNUlmcnJrdDFsWVJMWXhvYl9ZOE44V3BrTmdhR0xKbjF3MWdGSQ?oc=5",
-      "fetched_at": "2026-10-28T19:07:38.359109+00:00",
       "is_long_form": false
     }
   ]
