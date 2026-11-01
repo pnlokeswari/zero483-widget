@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-11-01T15:28:54.039544+00:00",
+  "last_updated": "2026-11-01T19:54:52.615206+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "ce9cc61d74ad",
+      "title": "FDA approves new preservative-free ketamine, but hospitals still face a shortage first recorded in 2018 - Medical Daily",
+      "slug": "fda-approves-new-preservative-free-ketamine-but-hospitals-still-face-a-shortage-first-recorded-in-2018-medical-daily",
+      "date": "2026-11-01",
+      "category": "Drug Shortage",
+      "severity": "Medium",
+      "summary": "<p>Title: FDA approves new preservative-free ketamine, but hospitals still face a shortage first recorded in 2018 - Medical Daily\nSource: Google News\nDate: Sun, 01 Nov 2026 17:05:15 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "FDA approves new preservative-free ketamine, but hospitals still face a shortage first recorded in 2018 - Medical Daily",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQY2hPTG4yUkFQQ3pzUmQyaDJSVm1oeDhnbUEwNG9UY3RUUjhIUEt1MzhsV1gwdzMyRkR6N2FLVUhBdzNBc3R3UWh3UVRZdjI1ZVdYNTdNOFp3SlNGd0NXSHEyV3hrdUdrWFZlVEdKQTMxSXZFNUtQMXBjeVg3YUVETE80WFREUndXWnlITQ?oc=5",
+      "fetched_at": "2026-11-01T19:54:17.847027+00:00",
+      "is_long_form": false
+    },
     {
       "id": "40a02adfa166",
       "title": "Fat-dissolving claims land FatX Solution in regulatory trouble; CDSCO cancels registration - The Times of India",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMDBfcUFEc3BmLTc3RmNmX1hYbF9PalNVR05SdGw4cnduUWpFWWFJdEVCLXBJX1EySm12cndIN3h2LWRMeDlHdWpmRUlmWG43QTY1Q2ljOUlNYzZOZmJSZEJUd3hvN28yZzVHRm1DeFVod0x3cWJyNTItSUNibDVEWktNMkVzM0pnRXpib1g4LV9Vb1BOMUpSR3lPdVpjUQ?oc=5",
       "fetched_at": "2026-10-28T19:08:24.758509+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "48af7b42a35e",
-      "title": "Overwhelmed by recalls? How to tell what's worth worrying about - USA Today",
-      "slug": "overwhelmed-by-recalls-how-to-tell-what-s-worth-worrying-about-usa-today",
-      "date": "2026-10-28",
-      "category": "Adverse Event",
-      "severity": "High",
-      "summary": "<p>Title: Overwhelmed by recalls? How to tell what's worth worrying about - USA Today\nSource: Google News\nDate: Wed, 28 Oct 2026 15:39:00 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Overwhelmed by recalls? How to tell what's worth worrying about - USA Today",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMUZwazY5Q05hVWRuNy0zLUFXVnlwcnBJOXZSeElHclV1UU5Md2tCbFVMM2I0aURiOVZkVGF6XzN0Qml5d2RuZXhJMi1xellXelNtN0lNNXVSdFZwNkVfczRPM3hXVy1KNTlXUFJnN1FSV3pud2tHRERyamRpYmlxSU1Ybk9lR0k1UGVXbUZzMUdLZ3ZFNUdId1VQWkFZQW13elB2VV9MNzlpMmMtOGJkdHFfZ2JIb0k4X0FF?oc=5",
-      "fetched_at": "2026-10-28T19:08:19.274351+00:00",
       "is_long_form": false
     }
   ]
