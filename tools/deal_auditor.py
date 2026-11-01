@@ -1746,10 +1746,11 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
         if "dl.flipkart.com/dl/" in final_url.lower():
             final_url = re.sub(r"^https?://dl\.flipkart\.com/dl/", "https://www.flipkart.com/", final_url, flags=re.I)
         redirect_url = ""
+        r_redirect = None
         if any(k in final_url.lower() for k in ["fkrt.it", "fktr.in", "visitretailer/2276"]) or ("flipkart.com" in final_url.lower() and "/p/" not in final_url.lower()):
             try:
-                r = session.get(final_url, allow_redirects=True, timeout=12)
-                redirect_url = r.url or ""
+                r_redirect = session.get(final_url, allow_redirects=True, timeout=12)
+                redirect_url = r_redirect.url or ""
                 final_url = unwrap_flipkart_redirect_url(redirect_url)
             except Exception as e:
                 log.warning(f"Flipkart redirect error for {clean_input}: {e}")
@@ -1802,7 +1803,10 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
             scrape_url = re.sub(r"([?&])marketplace=HYPERLOCAL&?", r"\1", scrape_url, flags=re.I).rstrip("?&")
         if "flipkart.com" in scrape_url.lower() and "/search?" not in scrape_url.lower():
             try:
-                r_page = session.get(scrape_url, allow_redirects=True, timeout=14)
+                if r_redirect and r_redirect.status_code == 200 and ("window.__INITIAL_STATE__" in r_redirect.text or "Nx9bqj" in r_redirect.text or "<h1" in r_redirect.text):
+                    r_page = r_redirect
+                else:
+                    r_page = session.get(scrape_url, allow_redirects=True, timeout=14)
                 if r_page.status_code == 200:
                     final_url = r_page.url
                     if not pid:
@@ -1996,6 +2000,12 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                     r_search = session.get(search_url, timeout=12)
                     if r_search.status_code == 200:
                         soup_search = BeautifulSoup(r_search.text, "html.parser")
+                        exact_cand = None
+                        brand_candidates = []
+                        q_words = [w.lower() for w in re.findall(r"[a-zA-Z0-9]+", s_q) if len(w) > 1 and w.lower() not in ["the", "for", "and", "with"]]
+                        primary_brand = q_words[0] if q_words else ""
+                        type_words = [w for w in q_words if w in ["sandal", "sandals", "flats", "flat", "heel", "heels", "casual", "slipper", "slippers", "shoe", "shoes", "clogs", "phone", "5g"]]
+
                         for s in soup_search.find_all("script"):
                             txt = s.string or ""
                             if "window.__INITIAL_STATE__" in txt:
@@ -2016,37 +2026,67 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                                             cand_low = cand_title.lower()
                                             if any(bad in cand_low for bad in ["back cover", "flip cover", "case for", "screen guard", "tempered glass"]):
                                                 continue
-                                            # Strict Variant Integrity: Never substitute a different variant PID when user requested a specific PID
-                                            if pid and cand_id != pid:
-                                                continue
-                                            elif not pid and search_query:
-                                                # If querying without a fixed PID (e.g. search query input), protect against sponsored ads of competing brands
-                                                sq_words = [w.lower() for w in re.findall(r"[a-zA-Z]{3,}", search_query[:30]) if w.lower() not in ["the", "for", "and", "with", "face", "skin", "cream", "pack", "best"]]
-                                                if sq_words and sq_words[0] not in cand_low:
-                                                    continue
                                             pricing = val.get("pricing", {})
                                             c_p = 0.0
                                             c_m = 0.0
                                             for prc in pricing.get("prices", []):
                                                 if prc.get("strikeOff"): c_m = float(prc.get("value", 0))
                                                 else: c_p = float(prc.get("value", 0))
-                                            if c_p > 0:
-                                                if current_price == 0.0 or is_sold_out_direct:
-                                                    current_price = c_p
-                                                    if c_m > 0: mrp = c_m
-                                                    if cand_title: product_title = cand_title
-                                                    base_u = val.get("baseUrl", "")
-                                                    if base_u:
-                                                        final_url = f"https://www.flipkart.com{base_u}"
-                                                    media_imgs = val.get("media", {}).get("images", [])
-                                                    if media_imgs and isinstance(media_imgs, list) and media_imgs[0].get("url"):
-                                                        fk_product_image = media_imgs[0]["url"].replace("{@width}", "800").replace("{@height}", "800").replace("{@quality}", "80")
-                                                if not fk_highlights and val.get("keySpecs"):
-                                                    fk_highlights = [str(x) for x in val.get("keySpecs")[:6]]
+                                            if c_p <= 0:
+                                                continue
+
+                                            c_data = {
+                                                "id": cand_id,
+                                                "title": cand_title,
+                                                "price": c_p,
+                                                "mrp": c_m,
+                                                "baseUrl": val.get("baseUrl", ""),
+                                                "media": val.get("media", {}).get("images", []),
+                                                "keySpecs": val.get("keySpecs", [])
+                                            }
+
+                                            # Priority 1: Exact PID match
+                                            if pid and cand_id == pid:
+                                                exact_cand = c_data
                                                 break
-                                        if current_price > 0: break
-                                    if current_price > 0: break
+
+                                            # Priority 2: Same Brand & Category Fallback
+                                            if primary_brand and primary_brand in cand_low:
+                                                score = sum(1 for w in q_words if w in cand_low)
+                                                for tw in type_words:
+                                                    if tw in cand_low:
+                                                        score += 4
+                                                if ("sandal" in type_words or "casual" in type_words) and "flip flop" in cand_low:
+                                                    score -= 3
+                                                c_data["score"] = score
+                                                brand_candidates.append(c_data)
+                                        if exact_cand: break
+                                    if exact_cand: break
                                 break
+
+                        chosen = None
+                        if exact_cand:
+                            chosen = exact_cand
+                        elif brand_candidates:
+                            brand_candidates.sort(key=lambda x: x.get("score", 0), reverse=True)
+                            chosen = brand_candidates[0]
+
+                        if chosen:
+                            if current_price == 0.0 or is_sold_out_direct:
+                                current_price = chosen["price"]
+                                if chosen["mrp"] > 0:
+                                    mrp = chosen["mrp"]
+                                if chosen.get("title") and (not product_title or product_title.startswith("Flipkart Product") or product_title == "Flipkart Deal Product"):
+                                    product_title = chosen["title"]
+                                base_u = chosen.get("baseUrl", "")
+                                if base_u and not final_url:
+                                    final_url = f"https://www.flipkart.com{base_u}"
+                                media_imgs = chosen.get("media", [])
+                                if media_imgs and isinstance(media_imgs, list) and media_imgs[0].get("url") and not fk_product_image:
+                                    fk_product_image = media_imgs[0]["url"].replace("{@width}", "800").replace("{@height}", "800").replace("{@quality}", "80")
+                            if not fk_highlights and chosen.get("keySpecs"):
+                                fk_highlights = [str(x) for x in chosen.get("keySpecs")[:6]]
+                            break
                     if current_price > 0:
                         break
             except Exception as e:
