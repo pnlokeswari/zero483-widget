@@ -4614,24 +4614,30 @@
     "source": "live"
   },
   "amazon:B08TV2P1N8": {
-    "title": "Amazon Product (B08TV2P1N8)",
+    "title": "boAt Rockerz 255 Pro+, 60H Battery, Fast Charge, IPX7, Dual Pair,Low Latency,Magnetic Buds, App Support, in Ear Wireless Bluetooth Neckband with Mic Earphones (Active Black)",
     "lowest_price": 729.66,
-    "avg_price": 795.33,
-    "cur_price": 861.0,
+    "avg_price": 863.83,
+    "cur_price": 998.0,
     "mrp": 3990.0,
     "all_time_low": 729.66,
     "all_time_date": "Oct \u2013 Dec 2026",
-    "image_url": "",
+    "image_url": "https://m.media-amazon.com/images/I/61+SW9nDTEL._SX679_.jpg",
     "url": "https://trackingv3.linkredirect.in/visitretailer/1100?id=5518844&dl=https%3A%2F%2Fwww.amazon.in%2Fdp%2FB08TV2P1N8",
-    "highlights": [],
-    "category": "General",
-    "twin_id": "",
-    "timestamp": 1792835833.2771459,
+    "highlights": [
+      "Playback- Leave all charging worries at bay as the Rockerz 255 Pro+ comes with a humongous battery back up of 60 Hours",
+      "ASAP Charge- With a few minutes of ASAP Charge you can get upto 20 hours of audio time by charging them for only 10 mins",
+      "Drivers- The unbeatable boAt signature sound shines through no matter what are you playing courtesy its 10mm drivers",
+      "IP Rating- Rockerz 255 Pro+ are perfect for the outdoors and daily workout as they are IPX7 rated",
+      "Controls- Its multi-function Integrated controls lends an intuitive listening experience with volume increase and Decrease and Stop and Play buttons"
+    ],
+    "category": "Electronics \u203a \u203a \u203a Headphones, Earbuds & Accessories",
+    "twin_id": "ACCFZ95M5JTZQH3F",
+    "timestamp": 1793548333.529168,
     "history_points": [
       {
-        "ts": 1792835414.0960176,
-        "price": 861.0,
-        "date": "2026-10-24 15:20"
+        "ts": 1793548333.529168,
+        "price": 998.0,
+        "date": "2026-11-01 21:22"
       }
     ],
     "source": "learned_audit",
@@ -4667,5 +4673,68 @@
     ],
     "source": "learned_audit",
     "learned": true
+  },
+  "flipkart:SNDHE68ZHEHHHWYN": {
+    "title": "DOCTOR EXTRA SOFT Women Casual Sandal (Tan , 6)",
+    "lowest_price": 1323.0,
+    "avg_price": 1323.0,
+    "cur_price": 1323.0,
+    "mrp": 3999.0,
+    "all_time_low": 1044.0,
+    "all_time_date": "Jan \u2013 Mar 2026",
+    "image_url": "https://rukminim2.flixcart.com/image/800/800/xif0q/sandal/i/r/i/5-d-623-ten-5-doctor-extra-soft-tan-original-imahqhwgvjxjhchu.jpeg?q=80",
+    "url": "https://www.flipkart.com/doctor-extra-soft-women-casual/p/itm8bedb00df032f?pid=SNDHE68ZHEHHHWYN&lid=LSTSNDHE68ZHEHHHWYNF2XZFE&hl_lid=&marketplace=FLIPKART&fm=eyJ3dHAiOiJyZWNvIiwicHJwdCI6InBwIiwibWlkIjoicHJvZHVjdFJlY29tbWVuZGF0aW9uL3NpbWlsYXIifQ==&_refId=&_appId=CL",
+    "highlights": [],
+    "category": "Flipkart Deals",
+    "twin_id": "",
+    "timestamp": 1793548321.1177669,
+    "history_points": [
+      {
+        "ts": 1793546096.0306466,
+        "price": 1323.0,
+        "date": "2026-11-01 20:44"
+      }
+    ],
+    "source": "learned_audit",
+    "learned": true
+  },
+  "flipkart:SNDHHF7PBEGXGBQS": {
+    "title": "SCHOOZI Women Flats Sandal (Brown , 6)",
+    "lowest_price": 295.0,
+    "avg_price": 295.0,
+    "cur_price": 295.0,
+    "mrp": 1999.0,
+    "all_time_low": 306.0,
+    "all_time_date": "",
+    "image_url": "https://rukminim2.flixcart.com/image/800/800/xif0q/sandal/a/h/y/7-sp-801-7-0-schoozi-brown-original-imahhf7zgvvqavud.jpeg?q=80",
+    "url": "https://www.flipkart.com/schoozi-women-flats/p/itmeef306486b798?pid=SNDHHF7PBEGXGBQS&marketplace=FLIPKART&lid=LSTSNDHHF7PBEGXGBQSI3UAAR&fm=eyJ3dHAiOiJyZWNvIiwicHJwdCI6ImNscCIsIm1pZCI6InBlcnNvbmFsaXNlZFJlY29tbWVuZGF0aW9uL3AycC1zYW1lIn0=&swatchAttr=size&_refId=&_appId=WA",
+    "highlights": [
+      "Closure",
+      "Buckle",
+      "Sole Material"
+    ],
+    "category": "Flipkart Deals",
+    "twin_id": "",
+    "timestamp": 1793548326.6705883,
+    "history_points": [
+      {
+        "ts": 1793546125.4962974,
+        "price": 306.0,
+        "date": "2026-11-01 20:45"
+      }
+    ],
+    "source": "learned_audit",
+    "learned": true
+  },
+  "flipkart:ACCFZ95M5JTZQH3F": {
+    "lowest_price": 861.0,
+    "avg_price": 944.7,
+    "cur_price": 998.0,
+    "mrp": 3990.0,
+    "all_time_low": 861.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "timestamp": 1793548333.20428,
+    "source": "live",
+    "twin_id": "B08TV2P1N8"
   }
 }
