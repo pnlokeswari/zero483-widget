@@ -2270,6 +2270,16 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
     # ══════════════════════════════════════════════════════════
     asin = extract_asin(clean_input)
     session = make_session()
+    session.headers.update({
+        "Referer": "https://www.amazon.in/",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-IN,en;q=0.9,hi;q=0.8",
+        "Sec-Fetch-Site": "same-origin",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Dest": "document",
+    })
+    session.cookies.set("i18n-prefs", "INR", domain=".amazon.in")
+    session.cookies.set("lc-acbin", "en_IN", domain=".amazon.in")
     if not asin and re.match(r"^[A-Z0-9]{10}$", clean_input, re.I):
         asin = clean_input.upper()
     if not asin:
@@ -2338,8 +2348,13 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                     p.image_url = re.sub(r"\._[A-Z0-9_,]+_\.", "._SL1000_.", src)
         # Restrict price/MRP extraction strictly to the primary buybox container (never whole-page carousel ads!)
         scope = (soup.select_one("#corePriceDisplay_desktop_feature_div")
+                 or soup.select_one("#corePrice_feature_div")
+                 or soup.select_one("#corePriceDisplay_mobile_feature_div")
                  or soup.select_one("#apex_desktop")
-                 or soup.select_one("#price"))
+                 or soup.select_one("#apex_mobile")
+                 or soup.select_one("#price")
+                 or soup.select_one("#centerCol")
+                 or soup.select_one("#ppd"))
         discount_badge_pct = 0.0
         if scope:
             badge_el = scope.select_one(".savingsPercentage, span.savingPriceOverride")
@@ -2385,6 +2400,33 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                         pass
             if mrp == 0.0 and discount_badge_pct > 0 and (p.price or 0.0) > 0:
                 mrp = round((p.price or 0.0) / (1.0 - (discount_badge_pct / 100.0)), 0)
+        # Fallback price extraction if scope selectors missed
+        if (p.price or 0.0) == 0.0:
+            for psel in [
+                "span.priceToPay span.a-price-whole",
+                "span.apex-pricetopay-value span.a-price-whole",
+                "span.priceToPay span.a-offscreen",
+                "span.a-price:not(.a-text-price) span.a-offscreen"
+            ]:
+                pel = soup.select_one(psel)
+                if pel and pel.get_text(strip=True):
+                    pv = parse_price(pel.get_text())
+                    if pv > 0:
+                        p.price = pv
+                        break
+        if mrp == 0.0:
+            for msel in [
+                "span.basisPrice span.a-offscreen",
+                "span.apex-basisprice-value span.a-offscreen",
+                "span.a-price.a-text-price span.a-offscreen",
+                "span#listPrice"
+            ]:
+                mel = soup.select_one(msel)
+                if mel and mel.get_text(strip=True):
+                    mv = parse_price(mel.get_text())
+                    if mv > 0:
+                        mrp = mv
+                        break
         crumb_el = soup.select_one("div#wayfinding-breadcrumbs_feature_div ul.a-unordered-list")
         if crumb_el:
             crumbs = [c.get_text(strip=True) for c in crumb_el.select("li span.a-list-item")]
@@ -2472,6 +2514,10 @@ def audit_product_deal(url_or_input: str, competitor_url: Optional[str] = None) 
                 lowest_90d = min(current_price, init_p)
             else:
                 lowest_90d = current_price
+    if current_price == 0.0 and learned_amz and float(learned_amz.get("cur_price") or 0) > 0:
+        current_price = float(learned_amz["cur_price"])
+    if (mrp == 0.0 or mrp <= current_price) and learned_amz and float(learned_amz.get("mrp") or 0) > current_price:
+        mrp = float(learned_amz["mrp"])
     # Box MRP enhancement from genuine price history if missing
     if (mrp == 0.0 or mrp <= current_price) and float(hist_amz.get("mrp") or 0) > current_price:
         mrp = float(hist_amz["mrp"])
