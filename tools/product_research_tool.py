@@ -337,6 +337,16 @@ def make_session():
         return _SESSION
     if _CFFI:
         _SESSION = _req.Session(impersonate="chrome120")
+        _SESSION.headers.update({
+            "Accept-Language": "en-IN,en;q=0.9,hi;q=0.8",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+            "Referer": "https://www.amazon.in/",
+            "Sec-Fetch-Site": "same-origin",
+            "Sec-Fetch-Mode": "navigate",
+            "Sec-Fetch-Dest": "document",
+        })
+        _SESSION.cookies.set("i18n-prefs", "INR", domain=".amazon.in")
+        _SESSION.cookies.set("lc-acbin", "en_IN", domain=".amazon.in")
     else:
         _SESSION = _req.Session()
         _SESSION.headers.update({
