@@ -4632,7 +4632,7 @@
     ],
     "category": "Electronics \u203a \u203a \u203a Headphones, Earbuds & Accessories",
     "twin_id": "ACCFZ95M5JTZQH3F",
-    "timestamp": 1793548333.529168,
+    "timestamp": 1793549453.9473636,
     "history_points": [
       {
         "ts": 1793548333.529168,
@@ -4687,7 +4687,7 @@
     "highlights": [],
     "category": "Flipkart Deals",
     "twin_id": "",
-    "timestamp": 1793548321.1177669,
+    "timestamp": 1793549448.5994108,
     "history_points": [
       {
         "ts": 1793546096.0306466,
@@ -4736,5 +4736,35 @@
     "timestamp": 1793548333.20428,
     "source": "live",
     "twin_id": "B08TV2P1N8"
+  },
+  "amazon:B0C9DX5RFY": {
+    "title": "Lifelong LLGM109 Percussion Massage Gun for Pain Relief, Deep Tissue, 6 Speeds & 8 Massage Heads, Cordless, Quiet Operation for Neck, Shoulders, Back, Arms, Legs & Feet (Black)",
+    "lowest_price": 699.0,
+    "avg_price": 749.0,
+    "cur_price": 799.0,
+    "mrp": 3499.0,
+    "all_time_low": 699.0,
+    "all_time_date": "Oct \u2013 Dec 2026",
+    "image_url": "https://m.media-amazon.com/images/I/71u5lh9rj3L._SX679_.jpg",
+    "url": "https://trackingv3.linkredirect.in/visitretailer/1100?id=5518844&dl=https%3A%2F%2Fwww.amazon.in%2Fdp%2FB0C9DX5RFY",
+    "highlights": [
+      "PROFESSIONAL-GRADE RELIEF: High-torque motor delivers 6 intensity levels from 1,800-3,200 percussions/min; targets deep muscle knots and tension; designed for effective pain relief across body, neck, shoulders, back, arms and feet",
+      "COMPLETE MASSAGE KIT: 8 specialized attachments including round, bullet, fork, flat, cone, wave and cushion heads; each head precisely engineered for specific muscle groups; securely packaged with attachment guide",
+      "SMART SAFETY FEATURES: Built-in 15-minute auto-shutoff prevents overheating; ergonomic anti-slip handle ensures comfortable grip; one-button control with LED indicator for intuitive operation; includes overload protection",
+      "RECHARGEABLE CONVENIENC: Lithium-ion battery provides cordless freedom; optimal performance at moderate settings; includes USB charging cable; lightweight design under 1 kg for easy handling during extended sessions",
+      "DURABLE CONSTRUCTION: Premium ABS housing withstands regular use; reinforced attachment connections prevent loosening; backed by 1-year manufacturer warranty; customer service support for technical assistance"
+    ],
+    "category": "Health & Personal Care \u203a \u203a \u203a Health Care",
+    "twin_id": "",
+    "timestamp": 1793894226.9733624,
+    "history_points": [
+      {
+        "ts": 1793893538.4021616,
+        "price": 799.0,
+        "date": "2026-11-05 21:15"
+      }
+    ],
+    "source": "learned_audit",
+    "learned": true
   }
 }
