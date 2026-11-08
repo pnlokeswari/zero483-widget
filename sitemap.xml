@@ -5,6 +5,8 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/pharma-industry-seeks-cdsco-clarity-on-batch-wise-solvent-clearance-flags-risk-of-medicine-supply-medical-dialogue.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/philly-scientists-helped-shape-proposed-fda-guidance-that-could-accelerate-gene-therapies-for-rare-diseases-inquirer-c.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-flags-gmp-concerns-at-uttarakhand-pharma-unit-recommends-immediate-halt-to-production-medical-dialogues.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/china-s-30-day-drug-approval-is-pulling-first-in-human-trials-away-from-the-west-cali-therapeutics-xu-says-biggo-fin.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-drug-approval-process-cder-regulatory-guide-casrai.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -53,6 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/nrx-pharmaceuticals-obtains-fda-nod-for-preservative-free-generic-ketamine-drug-store-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-recalls-thousands-of-blood-pressure-bottles-says-pills-failed-quality-tests-wbal-tv.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/lupin-receives-u-s-fda-approval-for-amifampridine-tablets-lupin-press-release-lupin.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/dr-reddy-s-gets-fda-tentative-nod-for-hiv-prevention-drug-pharma-economictimes-indiatimes-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-advises-consumers-not-to-buy-or-serve-once-upon-a-farm-tractor-wheels-organic-toddler-soft-baked-bars-u-s-food-an.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
