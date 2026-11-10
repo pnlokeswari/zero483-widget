@@ -5,6 +5,9 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/review-assesses-unified-ich-guidelines-for-pharmaceutical-lifecycle-analytical-methods-bioengineer-org.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/bayer-s-pill-cut-risk-of-strokes-caused-by-blocked-blood-flow-by-26-in-a-trial-stock-titan.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/bayer-wins-fda-approval-for-stroke-prevention-drug-with-blockbuster-potential-endpoints-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/novocure-denied-fda-approval-for-metastatic-cancer-treatment-medtech-dive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/asundexian-receives-fda-approval-for-secondary-stroke-prevention-hcplive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-approves-novel-bayer-drug-to-reduce-recurrence-of-stroke-stat.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -52,7 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/takeda-s-ai-crafted-pill-is-up-for-fda-approval-it-s-not-a-cure-business-model-analyst.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-clears-nrx-s-preservative-free-ketamine-amid-drug-shortage-mychesco.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-finalizes-guidance-on-prescription-drug-use-related-software-mcdermott-will-schulte.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-advisory-no-2026-1684-public-health-warning-against-the-purchase-and-use-of-the-unregistered-household-urban-pest.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-cromolyn-sodium-concentrate.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-atropine-sulfate-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
