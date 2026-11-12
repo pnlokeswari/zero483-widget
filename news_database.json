@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-12T01:01:12.367763+00:00",
+  "last_updated": "2026-11-12T08:51:37.422730+00:00",
   "total_items": 50,
   "items": [
     {
@@ -180,6 +180,24 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-11-11T02:15:56.918304+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "8bd77700aa18",
+      "title": "FDA issues GLP-1 NAION warning over potential risk of vision loss - Beinsure",
+      "slug": "fda-issues-glp-1-naion-warning-over-potential-risk-of-vision-loss-beinsure",
+      "date": "2026-11-10",
+      "category": "Adverse Event",
+      "severity": "High",
+      "summary": "<p>Title: FDA issues GLP-1 NAION warning over potential risk of vision loss - Beinsure\nSource: Google News\nDate: Tue, 10 Nov 2026 12:10:49 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "FDA issues GLP-1 NAION warning over potential risk of vision loss - Beinsure",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5JekVsN2c4TXNRVW0xbWJLS0cyRC13T2VUcVJIS1AxdWF1ZFBkZTVILWI0S2pJcDBYc0tjS2RqTDBuLVFVZG5JRVF1VFd4eEo3eDV6Z0dGamtqRElERUdpTFAxTm5PZjUt?oc=5",
+      "fetched_at": "2026-11-12T08:51:30.609005+00:00",
       "is_long_form": false
     },
     {
@@ -486,6 +504,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPckVtdkFadEQwemRTQmdlLS1ncjRKTHd3ZDFCbWIyWm40dUZMckgxSGNRSGFZUlNDX19ZSXhyS2RGaXhQZWI4OFJnVVJYdGhVbW5IUmRPdGVTcHhBWEstbW5Mb0JFdm1OX3B6UkVDblFFd1FDdjZuLXlhZ2RDZHJxR0xiR2RWNzNEUmRB?oc=5",
       "fetched_at": "2026-11-10T08:51:40.814442+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "9d019937edf5",
+      "title": "FDA CDS Guidance: 4 Non-Device CDS Criteria - CASRAI",
+      "slug": "fda-cds-guidance-4-non-device-cds-criteria-casrai",
+      "date": "2026-11-09",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: FDA CDS Guidance: 4 Non-Device CDS Criteria - CASRAI\nSource: Google News\nDate: Mon, 09 Nov 2026 23:46:56 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "FDA CDS Guidance: 4 Non-Device CDS Criteria - CASRAI",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE90RzNzTmxiQTJhUFRJTTNYZXdSUm83MUIzci1nRVZORTlvZi0yOEVmaWhPaDJ6VkZ1Uk9nQjk1Mkp5ZWJSZU9SZnVuUl9sbXNhWnNWWA?oc=5",
+      "fetched_at": "2026-11-12T08:51:36.192349+00:00",
       "is_long_form": false
     },
     {
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQS1F3NEUtRUtTcmE2YzZXY2Q0MFBsdG5UX0ZjMzRxd1M0eE9wYU96X2w4TFpid1M4RnVQb2xWS0F0bmo5QWZqeEtLZ2JiTVVKZEdES2xNSzBNZTVicVRjNU5XTDFIME91UFZQTURCc1MwOXpHQXgzejRMdG9Xa2NIdnNLVFlWWmRZNlp6WW9pMktnLUZJbU0tNVVkbEFiWnowN1UwLW4yZVhRUHVySUJtMjB2NTZoN20tVUtNV2Fldm1femdfM2xaRFh2NkRXOUxSYnZ0QW5jaXAwTkhYb1d3eGtRN2VUaWdE?oc=5",
       "fetched_at": "2026-11-06T15:25:05.675529+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "de68f5667377",
-      "title": "ROTOFIX 32A Centrifuge",
-      "slug": "rotofix-32a-centrifuge",
-      "date": "2026-11-06",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: ROTOFIX 32A Centrifuge\nSource: Health Canada\nDate: 2026-11-06T12:00:00</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "ROTOFIX 32A Centrifuge",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/rotofix-32a-centrifuge",
-      "fetched_at": "2026-11-06T15:25:00.363099+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "58b83a9b318c",
-      "title": "R3 Stem Cell Issues Statement Regarding FDA Warning Letter - The Columbus Dispatch",
-      "slug": "r3-stem-cell-issues-statement-regarding-fda-warning-letter-the-columbus-dispatch",
-      "date": "2026-11-06",
-      "category": "Warning Letter",
-      "severity": "High",
-      "summary": "<p>Title: R3 Stem Cell Issues Statement Regarding FDA Warning Letter - The Columbus Dispatch\nSource: Google News\nDate: Fri, 06 Nov 2026 11:58:57 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "R3 Stem Cell Issues Statement Regarding FDA Warning Letter - The Columbus Dispatch",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbjBQaC1LdldBMExZa1dNRkRZZlVuZlRQdjNmTFpKbFM3bWU1MnYxYUpFakFLWDhfQ3QzZFRpcU1yZDBBUWJEUmtkSnFONTJlVTl3S0pTSl9SRXNoM2FLVWNDcTBYTU9hWlZKc2FuTkJGcWdMVndxZDdpT1ZFUUNTdGx4TGIyN0tnWm1MMHpBN2NEWjRrakYwcEtha0NPYTNaY29oWEVfeFk5U1hNVWFCMQ?oc=5",
-      "fetched_at": "2026-11-06T15:24:54.957418+00:00",
       "is_long_form": false
     }
   ]
