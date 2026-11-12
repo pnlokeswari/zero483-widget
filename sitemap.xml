@@ -5,6 +5,9 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-issues-draft-guidance-on-early-phase-ind-studies-for-solid-tumors-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-cites-record-request-breakdowns-in-trio-of-warning-letters-to-api-makers-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-approval-marks-another-win-for-merck-kgaa-s-rare-tumor-strategy-medcity-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/shanton-pharma-receives-ema-and-fda-pediatric-study-waivers-for-sap-001-in-hyperuricemia-pr-newswire.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/vertex-pharma-stock-heads-toward-pivotal-fda-decision-ad-hoc-news-de.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/lilly-to-seek-fda-approval-for-foundayo-in-sleep-apnea-after-strong-phase-3-data-medwatch.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -12,6 +15,7 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/the-fda-has-over-1k-open-jobs-and-the-staffing-shortage-is-hitting-pharma-pharma-voice.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/aurobindo-unit-eugia-recalls-antibiotic-lot-citing-glass-particle-concerns-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-sterile-water-irrigant.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-orders-new-warning-labels-on-ozempic-wegovy-over-rare-risk-of-permanent-vision-loss-fox-business.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/india-s-pharmaceutical-industry-seeks-clarity-on-cdsco-s-new-solvent-rules-amid-concerns-over-supply-cha-indiatimes.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-warns-of-potential-vision-loss-risk-linked-to-popular-glp-1-drugs-the-news-international.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/psychedelic-pioneer-compass-files-for-fda-approval-as-rivals-close-in-drug-discovery-development.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -28,6 +32,8 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/review-assesses-unified-ich-guidelines-for-pharmaceutical-lifecycle-analytical-methods-bioengineer-org.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/bayer-s-pill-cut-risk-of-strokes-caused-by-blocked-blood-flow-by-26-in-a-trial-stock-titan.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/bayer-wins-fda-approval-for-stroke-prevention-drug-with-blockbuster-potential-endpoints-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-slashes-number-of-analytical-tests-for-ivds-used-in-public-health-emergencies-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-seeks-comments-on-discussion-paper-about-benefits-and-risks-of-autonomous-robotic-medical-devices-american-hospita.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-orders-new-warning-on-glp-1s-over-rare-eye-condition-linked-to-sudden-blindness-nbc-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-requires-naion-warning-across-the-glp-1-receptor-agonist-class-ophthalmology-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/the-checkpoint-combination-trap-why-oncology-trials-keep-winning-battles-the-fda-doesn-t-care-about-the-clinical-tria.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -49,10 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/ema-s-prac-october-2026-review-of-deanxit-signals-tightened-scrutiny-on-fixed-dose-cns-combination-products-the-clinic.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/rotofix-32a-centrifuge.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/r3-stem-cell-issues-statement-regarding-fda-warning-letter-the-columbus-dispatch.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/j-j-wins-fda-approval-for-rybrevant-faspro-in-cancer-grafa-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/boryung-advances-3rd-generation-targeted-cancer-drug-br1500-toward-us-fda-approval.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/korea-to-raise-drug-approval-fees-by-up-to-sixfold-seoul-economic-daily.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-quinapril-hydrochlorothiazide-tablet.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/horizon-medical-imaging-system.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/nova-statstrip-ketone-test-strips.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
