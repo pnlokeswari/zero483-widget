@@ -1,7 +1,25 @@
 {
-  "last_updated": "2026-11-14T07:02:58.412149+00:00",
+  "last_updated": "2026-11-14T14:31:55.819115+00:00",
   "total_items": 50,
   "items": [
+    {
+      "id": "2c5957ff5197",
+      "title": "Novo Nordisk's Week: EU Nod for Haemophilia Drug, FDA Queries on Eye Risk, and a Wider 2026 Outlook - ad-hoc-news.de",
+      "slug": "novo-nordisk-s-week-eu-nod-for-haemophilia-drug-fda-queries-on-eye-risk-and-a-wider-2026-outlook-ad-hoc-news-de",
+      "date": "2026-11-14",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: Novo Nordisk's Week: EU Nod for Haemophilia Drug, FDA Queries on Eye Risk, and a Wider 2026 Outlook - ad-hoc-news.de\nSource: Google News\nDate: Sat, 14 Nov 2026 10:01:28 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Novo Nordisk's Week: EU Nod for Haemophilia Drug, FDA Queries on Eye Risk, and a Wider 2026 Outlook - ad-hoc-news.de",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOZ3p2Nk85RHBGaDdmVkZUcURLZ2pEMjNiX0pEUzBpQVNfVnRlVXFCZ0pTdl9rdVhDNTlHVUhkUEtER3BOR2tIc2hJbENtMEJQdGkxQ1VoX1NxN1lUTTE1LW5XckFJMFliSjJqUWdYeHVJb0tBTGN2aDZRa015OVMyZF8wR2ZCOGVjbXV5X2tBWXEzcElwXzNOUjZuYnRzbFZZQjJwcHhxdWEwd1ZQR1Zjb1E1SUlkYmhJR0xtZWZrWlZXVENzVFdpUllHc3FZOGlURU5PWFNKSUROaEd0UjhYbFViRWotUnM2dnFjcUtqZUNZQXdOTnJ0bnc2QjY?oc=5",
+      "fetched_at": "2026-11-14T14:31:54.845456+00:00",
+      "is_long_form": false
+    },
     {
       "id": "7bb2c4aaa76b",
       "title": "FDA Standardizes Bioequivalence Administration Protocols for Generic Chewable Tablets - Bioengineer.org",
@@ -18,6 +36,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYmV6Qzc5dFpKUW04NE5Zcl95U3AwQ1RuUmRyYl84OGkwQlIyQzExX1FINURjWE1makJOZ29RSC04S1dfSnJyQjctZ3FhMFRPTjUwMWQ4MGxWS2tJbFZRaUZjblJwdXYwdEVYWkFYSDQ5T1hFY2NERjdmWVU0VnFBelMwNHpZS0JkcEZsdWtwRDh6VjlUbGFIdzBhOWhfTkFLSW5ybkV1b2pRakIwWW9R?oc=5",
       "fetched_at": "2026-11-14T07:02:42.049846+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "d610eee2a4dd",
+      "title": "This Week: Senate HELP to vote on Overton, FDA shelves CNPV, and more - RAPS",
+      "slug": "this-week-senate-help-to-vote-on-overton-fda-shelves-cnpv-and-more-raps",
+      "date": "2026-11-13",
+      "category": "Adverse Event",
+      "severity": "High",
+      "summary": "<p>Title: This Week: Senate HELP to vote on Overton, FDA shelves CNPV, and more - RAPS\nSource: Google News\nDate: Fri, 13 Nov 2026 22:05:00 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "This Week: Senate HELP to vote on Overton, FDA shelves CNPV, and more - RAPS",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOU2FHMTJGeXVDZF81bzdISmo2QWVIQTFER2FrTXV4UWljdFBxVUFtTHZyaTZaYnVsVGFzNGhBZTZhRGpvdlVveTc0S3pTY0JIZkVNZEdDdXllMXYyN2xxQ21aZUUzNzBKemtTcVNEQWpnV21la1h1YWZfSkRRNmlKcTJ3MDlsN1BCX1g1dTFlTi0zblYtQmpNNUNyMmVycUVMUm1N?oc=5",
+      "fetched_at": "2026-11-14T14:31:49.166628+00:00",
       "is_long_form": false
     },
     {
@@ -864,42 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdGhhMkNlSXA2NnFVNHUzbFFHejlFdVBPc0hqc3BBNU5XSDVCcmFLYjdzY0E4RFZlLTE4QzA3WGEwVVhNRmEwX0ZNSWRQMWlhLU5OUUJ4TWM4TzFkYWFFSDZGRE5zZTFhSXZ5M0p4MVE5SmFrZXhPV3JVV1dKdUdmNW9aWHNzanNwN1NUaDA5UXhMYzVhNGJVam5tZEsxMVV1d1A3Nm5UWHNGcmZvaUZJMExPY0hycXUwRlE?oc=5",
       "fetched_at": "2026-11-11T18:03:28.421118+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "64704ba1a691",
-      "title": "Drug Shortage: Sterile Water Irrigant",
-      "slug": "drug-shortage-sterile-water-irrigant",
-      "date": "2026-11-11",
-      "category": "Drug Shortage",
-      "severity": "Medium",
-      "summary": "<p>Generic name: Sterile Water Irrigant\nBrand name: N/A\nStatus: Current\nPresentations: []</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Drug Shortage: Sterile Water Irrigant",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
-      "fetched_at": "2026-11-11T02:15:56.918304+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "4c369e251a1c",
-      "title": "Draft Guidance on Hazard Analysis and Risk-Based Preventive Controls - U.S. Food and Drug Administration (.gov)",
-      "slug": "draft-guidance-on-hazard-analysis-and-risk-based-preventive-controls-u-s-food-and-drug-administration-gov",
-      "date": "2026-11-10",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: Draft Guidance on Hazard Analysis and Risk-Based Preventive Controls - U.S. Food and Drug Administration (.gov)\nSource: Google News\nDate: Tue, 10 Nov 2026 12:36:00 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Draft Guidance on Hazard Analysis and Risk-Based Preventive Controls - U.S. Food and Drug Administration (.gov)",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPRFltYkNXT3dqNklUUnhnSDBnYlZNWUhLNndsRXNHUVZMNk1wck84S3FtVDhDR1lXSHBGb1k3R1NaMUdFUHdKWEtEakNPZ1VKUXdEMDBuWGloWW9RVUJKRGtxdnBqZU5sdG5jTmkzUTFGLWk2R195eE05bzNTbDZUNlZyS192dDkyV0VXMXdaTDJHVThRaHBsNEVDZHdOWFBNUlFhQ2ZPZFpON0RlV1JEWHpxcHNBVG1qc0ctYmpOZXlNSk1UYXh0eWpPM2lQelpFemIteHNYZlJadmVHNENKSnEtQ3VmMzU2SldNd3NTVQ?oc=5",
-      "fetched_at": "2026-11-13T11:36:14.490741+00:00",
       "is_long_form": false
     }
   ]
