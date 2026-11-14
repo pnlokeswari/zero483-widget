@@ -5,6 +5,9 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-standardizes-bioequivalence-administration-protocols-for-generic-chewable-tablets-bioengineer-org.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/novo-submits-etavopivat-an-investigational-once-daily-therapy-for-adolescents-and-adults-living-with-sickle-cell-diseas.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/psychedelic-depression-drug-gh001-gets-initial-fda-feedback-lilly-owned-rival-advances-phase-3-work-tech-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/ema-chmp-november-meeting-backs-3-novel-medicines-the-pharma-letter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/ema-calls-on-european-commission-to-re-approve-hansoh-s-nsclc-drug-bioworld-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/astrazeneca-announces-ema-s-chmp-recommends-approval-of-baxfendy-yahoo-finance.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -26,6 +29,7 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/novo-nordisk-files-for-fda-and-ema-approval-of-sickle-cell-drug-streetinsider.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/merck-kgaa-secures-new-drug-approval-strengthening-its-rare-tumour-portfolio-the-indian-practitioner.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/just-5-states-seek-onboarding-on-sugam-labs-portal-cdsco-deplores-poor-response-medical-buyer.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-shelves-the-commissioner-s-national-priority-voucher-program-reuters-reports-mlq-ai.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/high-frequency-of-drug-impacting-gene-variants-found-in-all-of-us-cohort-genetic-engineering-and-biotechnology-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-recalls-breakfast-sandwiches-for-potential-listeria-exposure-sold-in-wa-or-mynorthwest-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/euro-roundup-ema-posts-draft-guideline-on-approval-dossiers-for-biomarker-guided-therapies-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -51,8 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/aurobindo-unit-eugia-recalls-antibiotic-lot-citing-glass-particle-concerns-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-sterile-water-irrigant.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/draft-guidance-on-hazard-analysis-and-risk-based-preventive-controls-u-s-food-and-drug-administration-gov.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-colour-additive-revocations-coincide-with-who-scrutiny-of-food-ingredients-nutraceutical-business-review.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-updates-food-allergen-labeling-faqs-the-national-law-review.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/acting-fda-commissioner-touts-strong-interest-in-early-stage-trial-pilot-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-issues-glp-1-naion-warning-over-potential-risk-of-vision-loss-beinsure.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
