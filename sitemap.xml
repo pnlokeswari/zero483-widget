@@ -5,8 +5,11 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/ich-m7-guideline-mutagenic-impurity-limits-casrai.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-sterile-water-irrigant.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/novo-nordisk-s-week-eu-nod-for-haemophilia-drug-fda-queries-on-eye-risk-and-a-wider-2026-outlook-ad-hoc-news-de.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-standardizes-bioequivalence-administration-protocols-for-generic-chewable-tablets-bioengineer-org.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-blood-pressure-medication-recalled-nationwide-because-of-foreign-tablets-the-healthy-reader-s-digest.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/this-week-senate-help-to-vote-on-overton-fda-shelves-cnpv-and-more-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/novo-submits-etavopivat-an-investigational-once-daily-therapy-for-adolescents-and-adults-living-with-sickle-cell-diseas.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/psychedelic-depression-drug-gh001-gets-initial-fda-feedback-lilly-owned-rival-advances-phase-3-work-tech-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -31,6 +34,7 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/novo-nordisk-files-for-fda-and-ema-approval-of-sickle-cell-drug-streetinsider.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/merck-kgaa-secures-new-drug-approval-strengthening-its-rare-tumour-portfolio-the-indian-practitioner.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/just-5-states-seek-onboarding-on-sugam-labs-portal-cdsco-deplores-poor-response-medical-buyer.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/lung-cancer-drug-ivonescimab-uses-tumor-s-own-growth-signal-to-boost-immunity-fda-votes-saturday-tech-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-shelves-the-commissioner-s-national-priority-voucher-program-reuters-reports-mlq-ai.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/high-frequency-of-drug-impacting-gene-variants-found-in-all-of-us-cohort-genetic-engineering-and-biotechnology-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-recalls-breakfast-sandwiches-for-potential-listeria-exposure-sold-in-wa-or-mynorthwest-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -51,8 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-approval-marks-another-win-for-merck-kgaa-s-rare-tumor-strategy-medcity-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/shanton-pharma-receives-ema-and-fda-pediatric-study-waivers-for-sap-001-in-hyperuricemia-pr-newswire.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/vertex-pharma-stock-heads-toward-pivotal-fda-decision-ad-hoc-news-de.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/lilly-to-seek-fda-approval-for-foundayo-in-sleep-apnea-after-strong-phase-3-data-medwatch.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/merck-s-rare-tumour-drug-pimjetmi-claims-fda-approval-pharmaphorum.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/the-fda-has-over-1k-open-jobs-and-the-staffing-shortage-is-hitting-pharma-pharma-voice.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/aurobindo-unit-eugia-recalls-antibiotic-lot-citing-glass-particle-concerns-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
