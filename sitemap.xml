@@ -5,6 +5,7 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/gazyva-wins-first-fda-approval-for-membranous-nephropathy-but-rituximab-was-skipped-as-comparator-tech-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/ich-m7-guideline-mutagenic-impurity-limits-casrai.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-sterile-water-irrigant.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/novo-nordisk-s-week-eu-nod-for-haemophilia-drug-fda-queries-on-eye-risk-and-a-wider-2026-outlook-ad-hoc-news-de.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -54,5 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-cites-record-request-breakdowns-in-trio-of-warning-letters-to-api-makers-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-approval-marks-another-win-for-merck-kgaa-s-rare-tumor-strategy-medcity-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/shanton-pharma-receives-ema-and-fda-pediatric-study-waivers-for-sap-001-in-hyperuricemia-pr-newswire.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/vertex-pharma-stock-heads-toward-pivotal-fda-decision-ad-hoc-news-de.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
