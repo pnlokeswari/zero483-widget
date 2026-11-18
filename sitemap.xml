@@ -5,6 +5,12 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-grants-breakthrough-designation-for-insomnia-drug-daridorexant-american-academy-of-sleep-medicine-aasm.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-recalls-and-warnings-eye-drop-manufacturer-cited-for-contamination-concerns-hidden-drugs-found-in-arthritis-supple.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-marks-second-lung-cancer-drug-approval-this-year-benzinga.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-moves-to-yank-salerno-s-liquid-cholesterol-drug-approval-on-missing-reports-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-s-10-6bn-nuvalent-bet-pays-off-with-second-lung-cancer-drug-approval-pharmaceutical-technology.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-announces-recall-of-aldi-products-over-potential-botulism-risk-aol-co-uk.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/enterprise-secures-ema-orphan-status-for-cf-therapy-pharmatimes.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-issues-draft-guidance-on-early-phase-ind-trials-for-solid-tumors-casrai.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/white-house-withdraws-heidi-overton-s-fda-nomination-on-eve-of-senate-committee-vote-medical-economics.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -41,18 +47,12 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/secaris-nasal-gel-affected-lot-may-contain-foreign-matter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/azurion-7-m20.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-methylphenidate-hydrochloride-tablet-extended-release.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-committee-rejects-former-danish-drug-again-backs-two-novo-rivals-and-issues-mounjaro-warning-medwatch.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/the-fda-and-psychedelics-what-s-been-happening-and-what-s-changed-healthcare-brew.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/industry-groups-seek-clarifications-in-fda-s-anda-and-505-b-2-guidance-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/6-new-drugs-in-shortage-becker-s-hospital-review.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cr-memo-of-support-for-ny-a1556-s1239-consumer-reports-advocacy.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/when-a-licensed-pharmacy-becomes-an-illegal-factory-modernizing-oversight-of-large-scale-drug-compounding-food-and-dr.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/the-serious-complications-of-glp-1s-that-few-may-know-about-the-washington-post.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-orders-eye-risk-warning-on-glp-1-drugs-njbiz.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/regulatory-round-up-16-november-2026-the-pharma-letter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-committee-rejects-former-danish-drug-again-backs-two-novo-rivals-and-issues-mounjaro-warning-medwatch.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/global-agenda-new-approvals-market-withdrawals-deals-guideline-changes-and-research-wins-and-failures-gxp.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/giredestrant-plus-everolimus-wins-fda-approval-in-esr1-mutated-advanced-breast-cancer-pharmacy-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/the-fda-and-psychedelics-what-s-been-happening-and-what-s-changed-healthcare-brew.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/blood-pressure-medication-recalled-nationwide-over-possible-metal-contamination-nbc-5-chicago.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/clinician-programmer-for-vercise-deep-brain-stimulation-dbs-systems.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-proposes-rule-to-reverse-exclusion-of-nac-from-definition-of-dietary-supplement-quality-assurance-food-safety.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-proposes-rule-to-allow-nac-as-a-dietary-supplement-ingredient-nutritional-outlook.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/industry-groups-seek-clarifications-in-fda-s-anda-and-505-b-2-guidance-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
