@@ -5,6 +5,12 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/enterprise-secures-ema-orphan-status-for-cf-therapy-pharmatimes.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-issues-draft-guidance-on-early-phase-ind-trials-for-solid-tumors-casrai.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/white-house-withdraws-heidi-overton-s-fda-nomination-on-eve-of-senate-committee-vote-medical-economics.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/myasthenia-gravis-treatment-klygefa-wins-fda-approval-as-a-weekly-c5-inhibitor-shot-adults-inject-at-home-medical-dail.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-s-nelkarmi-wins-accelerated-fda-approval-the-pharma-letter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-gets-second-cancer-drug-approval-from-nuvalent-buy-pharmaphorum.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-dextrose-monohydrate-5-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-sterile-water-irrigant.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-proposes-u-s-caught-labels-for-american-seafood-flags-overweight-imports-wabc-radio.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -49,10 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-proposes-rule-to-reverse-exclusion-of-nac-from-definition-of-dietary-supplement-quality-assurance-food-safety.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-proposes-rule-to-allow-nac-as-a-dietary-supplement-ingredient-nutritional-outlook.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/industry-groups-seek-clarifications-in-fda-s-anda-and-505-b-2-guidance-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/biocon-secures-us-fda-approval-for-pebrilzo-its-pertuzumab-biosimilar-for-breast-cancer-voice-of-healthcare.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/how-investors-are-reacting-to-novartis-swx-novn-drug-approval-progress-yahoo-finance.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/novo-nordisk-shares-rise-on-positive-weight-loss-data-hemophilia-drug-approval-wsj.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/weekly-recap-petrelintide-results-and-2026-revenue-expense-guidance-tradingview.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/weekly-recap-low-end-2026-guidance-and-reykjavik-fda-approvals-tradingview.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/biocon-gets-us-fda-approval-for-pebrilzo-injection-biosimilar-to-perjeta-expanding-oncology-portfolio-biospectrum.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
