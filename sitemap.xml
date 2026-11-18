@@ -5,6 +5,14 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-dextrose-monohydrate-5-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-sterile-water-irrigant.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-proposes-u-s-caught-labels-for-american-seafood-flags-overweight-imports-wabc-radio.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/ich-q1e-shelf-life-extrapolation-limits-explained-casrai.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-approves-breakthrough-treatment-that-helps-children-with-type-1-diabetes-keep-producing-insulin-scitechdaily.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-wins-fda-approval-for-lung-cancer-drug-nelkarmi-investing-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-scores-fda-approval-for-nelkarmi-its-2nd-lung-cancer-drug-from-nuvalent-deal-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/check-your-medicine-breckenridge-recalls-propranolol-blood-pressure-pills-due-to-metal-risk-facebook.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/ema-calls-on-european-commission-to-re-approve-hansoh-s-nsclc-drug-bioworld-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/ema-upholds-refusals-for-pediatric-pain-spray-and-npc-drug-medscape.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/taro-candesartan-affected-lots-may-contain-esomeprazole-20mg-capsules.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -27,6 +35,7 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/secaris-nasal-gel-affected-lot-may-contain-foreign-matter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/azurion-7-m20.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-methylphenidate-hydrochloride-tablet-extended-release.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/cr-memo-of-support-for-ny-a1556-s1239-consumer-reports-advocacy.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/when-a-licensed-pharmacy-becomes-an-illegal-factory-modernizing-oversight-of-large-scale-drug-compounding-food-and-dr.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/the-serious-complications-of-glp-1s-that-few-may-know-about-the-washington-post.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-orders-eye-risk-warning-on-glp-1-drugs-njbiz.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -46,13 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/weekly-recap-petrelintide-results-and-2026-revenue-expense-guidance-tradingview.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/weekly-recap-low-end-2026-guidance-and-reykjavik-fda-approvals-tradingview.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/biocon-gets-us-fda-approval-for-pebrilzo-injection-biosimilar-to-perjeta-expanding-oncology-portfolio-biospectrum.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/ivonescimab-s-fda-approval-bid-falls-through-new-variable-in-next-generation-cancer-drug-race.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/his-kidney-drug-just-won-fda-approval-after-cutting-a-key-disease-marker-by-43-one-74-730-infusion-could-leave-him-ow.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/novo-nordisk-fires-on-all-cylinders-haemophilia-approval-raised-guidance-and-a-buyback-in-full-swi-ad-hoc-news-de.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-provides-supportive-pre-ind-feedback-on-vectus-vb0004-tipranks.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/merck-mrk-could-be-8-undervalued-following-europe-drug-approval-support-simply-wall-st.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/alembic-pharma-receives-usfda-approval-for-lung-cancer-drug-binimetinib-business-standard.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/blood-pressure-drug-recalled-over-presence-of-other-tablets-or-capsules-ntd-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-approves-first-membranous-nephropathy-kidney-drug-gazyva-no-trial-tested-rival-rituximab-tech-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/biontech-lifts-2026-revenue-guidance-and-pays-205-million-for-an-fda-fast-lane-ad-hoc-news-de.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
