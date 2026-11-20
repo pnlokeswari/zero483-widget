@@ -5,6 +5,12 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-mandates-inclusion-of-agep-as-adr-in-pils-of-phenytoin-formulations-pharmabiz-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/novartis-reaffirms-sales-targets-as-drug-trial-results-and-fda-talks-loom-yahoo-finance.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-finalizes-guidance-on-transferring-510-k-ownership-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-approval-for-sanofi-drug-marks-an-important-first-in-rare-disease-medcity-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-puts-gastric-implants-on-device-shortages-list-adds-resmed-product-discontinuation-medical-design-outsourcing.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/gastric-stimulators-for-severe-gastroparesis-join-fda-shortage-list-with-tight-supply-expected-through-late-2027-medi.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/olympus-endoscopic-ultrasound-system-and-ultrasonic-gastrovideoscopes-for-aloka-ultrasound-processors.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/philips-bridge-prep-kit.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cardiosave-hybrid-and-cardiosave-rescue-intra-aortic-balloon-pumps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -43,16 +49,10 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-gets-second-cancer-drug-approval-from-nuvalent-buy-pharmaphorum.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-dextrose-monohydrate-5-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-sterile-water-irrigant.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/this-popular-blood-pressure-medication-has-just-been-recalled-over-possible-metal-contamination-prevention.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-proposes-u-s-caught-labels-for-american-seafood-flags-overweight-imports-wabc-radio.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/ich-q1e-shelf-life-extrapolation-limits-explained-casrai.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-approves-breakthrough-treatment-that-helps-children-with-type-1-diabetes-keep-producing-insulin-scitechdaily.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-wins-fda-approval-for-lung-cancer-drug-nelkarmi-investing-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-scores-fda-approval-for-nelkarmi-its-2nd-lung-cancer-drug-from-nuvalent-deal-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/check-your-medicine-breckenridge-recalls-propranolol-blood-pressure-pills-due-to-metal-risk-facebook.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-calls-on-european-commission-to-re-approve-hansoh-s-nsclc-drug-bioworld-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-upholds-refusals-for-pediatric-pain-spray-and-npc-drug-medscape.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/taro-candesartan-affected-lots-may-contain-esomeprazole-20mg-capsules.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/combination-product-group-asks-fda-to-tighten-device-terms-in-container-closure-draft-medtech-insight.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/comments-on-fda-s-pma-estar-draft-guidance-advamed-advanced-medical-technology-association.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-adds-vision-loss-warning-to-ozempic-zepbound-and-all-glp-1-drugs-dr-axe.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/after-four-biotech-owners-and-a-major-trial-failure-beren-s-rare-pediatric-disease-drug-finally-wins-approval-endpoin.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/roche-s-next-major-breast-cancer-drug-wilserdly-secures-fda-approval-as-4th-oral-serd-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/blood-pressure-drug-recalled-due-to-risk-of-patient-harm-cardiovascular-business.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/this-popular-blood-pressure-medication-has-just-been-recalled-over-possible-metal-contamination-prevention.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
