@@ -5,7 +5,10 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/hong-kong-joins-international-council-for-harmonisation-as-regulatory-member-boosting-drug-r-d-and-global-standards.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-methylprednisolone-acetate-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-mandates-inclusion-of-agep-as-adr-in-pils-of-phenytoin-formulations-pharmabiz-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/cotton-leads-arkansas-delegation-in-calling-on-fda-to-ban-contaminated-unwashed-poppy-seeds-forth-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/novartis-reaffirms-sales-targets-as-drug-trial-results-and-fda-talks-loom-yahoo-finance.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-finalizes-guidance-on-transferring-510-k-ownership-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-approval-for-sanofi-drug-marks-an-important-first-in-rare-disease-medcity-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -31,6 +34,7 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/spring-wire-guide-pressure-injectable-picc-kit-arrow-picc-with-arrowg-ard-blue-advance-technology-no-placement-wire.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-warning-letters-target-telehealth-sellers-claiming-compounded-glp-1-drugs-are-the-same-as-wegovy-and-zepbound-medi.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/abbisko-set-for-milestone-payout-after-first-u-s-drug-approval-thebambooworks-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/opinion-glp-1-eye-warning-leaves-patients-doctors-with-a-difficult-choice-medpage-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/glp-1s-are-being-tied-to-unusual-side-effects-but-are-they-to-blame-pharma-voice.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-drug-approval-decisions-expected-in-december-2026-medical-professionals-reference.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-wants-cholesterol-drug-off-the-market-cardiovascular-business.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -49,10 +53,6 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-gets-second-cancer-drug-approval-from-nuvalent-buy-pharmaphorum.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-dextrose-monohydrate-5-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-sterile-water-irrigant.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/combination-product-group-asks-fda-to-tighten-device-terms-in-container-closure-draft-medtech-insight.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-adds-vision-loss-warning-to-ozempic-zepbound-and-all-glp-1-drugs-dr-axe.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/after-four-biotech-owners-and-a-major-trial-failure-beren-s-rare-pediatric-disease-drug-finally-wins-approval-endpoin.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/roche-s-next-major-breast-cancer-drug-wilserdly-secures-fda-approval-as-4th-oral-serd-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/blood-pressure-drug-recalled-due-to-risk-of-patient-harm-cardiovascular-business.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/this-popular-blood-pressure-medication-has-just-been-recalled-over-possible-metal-contamination-prevention.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/ema-upholds-refusals-for-pediatric-pain-spray-and-npc-drug-medscape.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-approves-breakthrough-treatment-that-helps-children-with-type-1-diabetes-keep-producing-insulin-scitechdaily.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
