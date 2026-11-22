@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-22T02:40:22.799603+00:00",
+  "last_updated": "2026-11-22T10:19:35.506747+00:00",
   "total_items": 50,
   "items": [
     {
@@ -90,6 +90,24 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeGg4ZEl3YzZjdjQ2Z2YyVWtScDc2Mzk4NTJVSlhWZ2h4NW5UU0JpbEZRWEI1cjBQVllCNEJFQlZ5LXE3ejhSMmh1eWt1S1htNWNSZFVUV0RnaFo5d1N0dXNqX3VEaDFNbTlTY0FyUzNyUGJhMHp0MFhYTjZkZzMxbU45TEJGN2hzNGpDQ0hXVWdyT28?oc=5",
       "fetched_at": "2026-11-21T08:47:09.184743+00:00",
+      "is_long_form": false
+    },
+    {
+      "id": "46c2ec05cb4f",
+      "title": "FDA’s Final 510(k) Transfer Guidance Leaves Listing Upkeep To New Owners - Medtech Insight",
+      "slug": "fda-s-final-510-k-transfer-guidance-leaves-listing-upkeep-to-new-owners-medtech-insight",
+      "date": "2026-11-20",
+      "category": "Guidance",
+      "severity": "Low",
+      "summary": "<p>Title: FDA’s Final 510(k) Transfer Guidance Leaves Listing Upkeep To New Owners - Medtech Insight\nSource: Google News\nDate: Fri, 20 Nov 2026 22:39:58 GMT</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "FDA’s Final 510(k) Transfer Guidance Leaves Listing Upkeep To New Owners - Medtech Insight",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPVVMtdUpPNm5xak9fZExYbnRZRjBPYVlMY1ZpekpCUjRlSGxjRl90dU1HNXA2QXpNZGZDWGRHdGhLZWdvdGo0d2x1S0ltbnNDWF9reVpUankxS2FzY0FpUDVSYXdMckFvVWRSbWk5NWNGejUtRHJkR3NOX2ZGVUpra0Foa3BYWkVfZ0tSbXBWYzY2WFFmLU5HODhFS000RE9LWVMtOEczdFJ5bWJEM2lzVzRsWTFGY1lJQ0VtT3hZVTZ4WEc1djBzLU9zaTFFOWNUOWdRYVdsMXM1WUlvZHplZk1adEJmWU8zaFRNNi1oVmhKV0RCWE82VEhOaWNwa2pqN0tzRy1YeXBZV05WcV9DZC16MA?oc=5",
+      "fetched_at": "2026-11-22T10:19:34.439964+00:00",
       "is_long_form": false
     },
     {
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "fetched_at": "2026-11-19T12:10:15.306168+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "30dfd954255a",
-      "title": "Blueprint®",
-      "slug": "blueprint",
-      "date": "2026-11-19",
-      "category": "Recall",
-      "severity": "High",
-      "summary": "<p>Title: Blueprint®\nSource: Health Canada\nDate: 2026-11-18T12:00:00</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Blueprint®",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://recalls-rappels.canada.ca/en/alert-recall/blueprintr",
-      "fetched_at": "2026-11-19T02:51:03.099321+00:00",
       "is_long_form": false
     }
   ]
