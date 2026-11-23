@@ -5,9 +5,19 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/philips-bridge-prep-kit.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/cardiosave-hybrid-and-cardiosave-rescue-intra-aortic-balloon-pumps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/unauthorized-drugs-including-prescription-drugs-and-injectable-peptides-seized-from-canada-biogenix-as-they-may-pose-s.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/the-scan-by-2-minute-medicine-light-therapy-offers-hope-for-seasonal-depression-measles-cases-highlight-vaccination-g.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/recon-fda-approves-first-early-stage-breast-cancer-hormone-therapy-in-two-decades-lilly-to-acquire-huntington-s-diseas.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/why-beer-venues-serving-food-could-benefit-from-new-fda-guidance-the-drinks-business.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/marksans-pharma-issued-form-483-with-6-procedural-observations-after-us-fda-inspection-tradingview.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/lupin-secures-us-fda-approval-for-ferric-citrate-tablets-scanx-trade.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/sillajen-reports-phase-1-dose-analyses-to-guide-cancer-drug-trials-chosunbiz.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/baoji-biopharmaceutical-s-kj103-wins-fda-orphan-drug-designation-targeting-seven-year-exclusivity-in-guillain-barr-syn.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/how-biotech-upstart-beren-turned-a-pharma-failure-into-a-first-in-class-fda-approval-medcity-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-establishes-cber-safety-council-to-coordinate-postmarketing-oversight-of-biological-products-casrai.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/nationwide-toothpaste-mouthwash-recall-raises-safety-concerns-dailyvoice-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-flags-two-imported-whitening-creams-over-toxic-heavy-metals-hyderabad-mail.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/oman-granted-observer-status-in-ich-times-of-oman.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/unregulated-skin-lightening-creams-may-cause-heavy-metal-poisoning-experts-warn-telangana-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -45,14 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-mandates-inclusion-of-agep-as-adr-in-pils-of-phenytoin-formulations-pharmabiz-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/after-four-biotech-owners-and-a-major-trial-failure-beren-s-rare-pediatric-disease-drug-finally-wins-approval-endpoin.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/sanofi-secures-first-fda-approval-to-treat-neurological-symptoms-in-rare-metabolic-disease-biospace.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/cotton-leads-arkansas-delegation-in-calling-on-fda-to-ban-contaminated-unwashed-poppy-seeds-forth-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/novartis-reaffirms-sales-targets-as-drug-trial-results-and-fda-talks-loom-yahoo-finance.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-finalizes-guidance-on-transferring-510-k-ownership-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-approval-for-sanofi-drug-marks-an-important-first-in-rare-disease-medcity-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-puts-gastric-implants-on-device-shortages-list-adds-resmed-product-discontinuation-medical-design-outsourcing.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/gastric-stimulators-for-severe-gastroparesis-join-fda-shortage-list-with-tight-supply-expected-through-late-2027-medi.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/olympus-endoscopic-ultrasound-system-and-ultrasonic-gastrovideoscopes-for-aloka-ultrasound-processors.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/philips-bridge-prep-kit.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/cardiosave-hybrid-and-cardiosave-rescue-intra-aortic-balloon-pumps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-grants-rmat-designation-to-iscib1-in-advanced-melanoma-targeted-onc.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
