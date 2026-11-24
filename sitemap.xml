@@ -5,6 +5,8 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/roche-holding-gains-favorable-drug-approval-news-as-weight-loss-pipeline-clinical-data-demonstrate-potential-nai500.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-warns-of-blood-pressure-drug-recall-due-to-potential-metal-contamination-the-healthy-reader-s-digest.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/philips-bridge-prep-kit.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cardiosave-hybrid-and-cardiosave-rescue-intra-aortic-balloon-pumps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/unauthorized-drugs-including-prescription-drugs-and-injectable-peptides-seized-from-canada-biogenix-as-they-may-pose-s.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -53,6 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/hong-kong-joins-international-council-for-harmonisation-as-regulatory-member-boosting-drug-r-d-and-global-standards.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-methylprednisolone-acetate-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-mandates-inclusion-of-agep-as-adr-in-pils-of-phenytoin-formulations-pharmabiz-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/after-four-biotech-owners-and-a-major-trial-failure-beren-s-rare-pediatric-disease-drug-finally-wins-approval-endpoin.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/sanofi-secures-first-fda-approval-to-treat-neurological-symptoms-in-rare-metabolic-disease-biospace.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
