@@ -5,6 +5,16 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/caresite-micro-luer-access-device-and-extension-sets.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/teleflex-loss-of-resistance-syringe.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/qinflow-warrior-lite-base-unit.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/groups-ask-fda-to-clarify-scope-of-actimp-potency-assessment-guidance-use-of-non-animal-assays-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-issues-final-guidance-on-format-and-content-for-otc-monograph-order-requests-casrai.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-finalizes-guidance-to-assist-sponsors-in-preparing-otc-monograph-requests-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-misses-deadline-on-savara-s-rare-lung-disease-drug-leaving-approval-timeline-open-pharmaceutical-executive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/bofa-raises-bridgebio-pharma-stock-price-target-on-fda-approval-investing-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/bridgebio-pharma-s-welgemda-wins-fda-approval-for-lgmd2i-r9-mugglehead-investment-magazine.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/cogent-biosciences-wins-first-fda-approval-for-ekitna-the-business-journals.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-approval-timelines-to-shorten-with-cdsco-capacity-boost-rediff-moneywiz.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/advocacy-submits-comments-on-fda-s-food-traceability-guidance-office-of-advocacy-gov.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/marksans-pharma-flagged-for-6-observations-in-wake-of-fda-inspection-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -45,14 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-urgently-recalls-sandwiches-over-dangerous-organism-linked-to-fatal-infections-new-york-post.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-s-naion-warning-affects-who-may-qualify-for-a-glp-1-vision-loss-claim-jd-supra.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/hk-joins-int-l-drug-standards-body-news-gov-hk.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-drug-approval-decisions-expected-in-december-2026-infectious-disease-advisor.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/us-fda-separates-postmarket-safety-review-from-product-offices-with-cber-safety-council-pink-sheet.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/medical-device-makers-have-gotten-worse-at-disclosing-when-their-products-harm-people-new-study-finds-the-fda-let-them.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/capricor-s-duchenne-treatment-fails-to-get-fda-approval-shares-sink-reuters.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/hk-joins-global-drug-regulatory-body-ich-rthk-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-draft-guidance-food-traceability-relief-for-breweries-brewers-association.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/final-ich-q1-stability-testing-guideline-expected-to-be-released-soon-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/over-51k-toothpaste-mouthwash-products-recalled-see-the-list-usa-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-shares-vascular-guidewire-warning-due-to-safety-risk-cardiovascular-business.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/relay-pro-and-treo-stent-graft-systems.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
