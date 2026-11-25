@@ -5,11 +5,23 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/novum-iq-syringe-pump.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/health-canada-warns-of-very-rare-but-serious-risk-of-vision-loss-with-semaglutide-drugs.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/heartsine-samaritan-pad-350p-360p-500p.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/alkem-draws-fda-warning-letter-over-dissolution-complaint-handling-lapses-biospace.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/green-lumber-holdings-llc-issues-recall-and-consumer-safety-alert-sioux-city-journal.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/weight-loss-pills-recalled-nationwide-as-fda-issues-highest-risk-warning-newsweek.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-recalls-and-warnings-ibuprofen-and-blood-pressure-drug-may-contain-metal-sterility-issues-with-compounded-glp-1s.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/cogent-secures-2nd-line-approval-in-rare-gi-cancer-the-first-in-20-years-fierce-pharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/cogent-gets-its-first-drug-approval-for-gist-drug-ekitna-pharmaphorum.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/compass-filed-its-psilocybin-depression-drug-for-fda-approval-what-s-next-healthcare-brew.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-announces-nationwide-recall-of-ibuprofen-aol-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/324-drug-samples-fail-quality-tests-across-india-cdsco-reports-the-420-in.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cogent-biosciences-stock-in-focus-after-advanced-gist-drug-approval-yahoo-finance.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/caresite-micro-luer-access-device-and-extension-sets.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/teleflex-loss-of-resistance-syringe.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/qinflow-warrior-lite-base-unit.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-launches-cdsco-approved-blenrep-in-india-for-refractory-multiple-myeloma-indian-pharma-post.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-launches-cdsco-approved-blenrep-for-myeloma-in-india-voice-of-healthcare.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-to-flag-accelerated-approvals-on-patient-facing-labels-after-years-of-industry-pushback-endpoints-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-approves-bezuclastinib-plus-sunitinib-for-imatinib-pretreated-gist-oncology-nursing-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -43,16 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/baoji-biopharmaceutical-s-kj103-wins-fda-orphan-drug-designation-targeting-seven-year-exclusivity-in-guillain-barr-syn.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/how-biotech-upstart-beren-turned-a-pharma-failure-into-a-first-in-class-fda-approval-medcity-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-establishes-cber-safety-council-to-coordinate-postmarketing-oversight-of-biological-products-casrai.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/nationwide-toothpaste-mouthwash-recall-raises-safety-concerns-dailyvoice-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-flags-two-imported-whitening-creams-over-toxic-heavy-metals-hyderabad-mail.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/oman-granted-observer-status-in-ich-times-of-oman.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/unregulated-skin-lightening-creams-may-cause-heavy-metal-poisoning-experts-warn-telangana-today.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-dexmedetomidine-hydrochloride-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/who-makes-orl-toothpaste-the-arizona-plant-the-fda-warned-twice-this-year-before-the-hormone-recall-nacionale.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/prostate-cancer-drug-safety-analysis-reveals-divergent-fall-reporting-signals-in-fda-database-bioengineer-org.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/pediatric-drug-safety-requires-measuring-target-response-rather-than-plasma-concentration-alone-bioengineer-org.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/rhoagent-designs-rna-drugs-autonomously-the-fda-has-no-playbook-for-what-comes-next-the-clinical-trial-vanguard.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/alzheimer-s-pill-buntanetap-annovis-says-fda-accepted-pooled-safety-plan-efficacy-unproven-tech-times.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-releases-annual-report-on-the-state-of-pharmaceutical-quality-and-global-site-surveillance-casrai.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/this-week-at-fda-overton-nomination-pulled-fda-promotes-international-reliance-and-more-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
