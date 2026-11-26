@@ -5,10 +5,12 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/324-drug-samples-fail-cdsco-quality-test-in-oct-one-flagged-spurious-etpharma.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-nsq-alert-324-drug-samples-fail-quality-tests-in-october-ehealth-magazine.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/smartport-implantable-ports.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/lupin-gets-us-fda-approval-for-single-dose-dalbavancin-injection-marketscreener-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-shortage-dexmedetomidine-hydrochloride-injection.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/commercial-psychedelics-in-the-united-states-an-faq-on-state-programs-fda-approval-and-what-comes-next-vicente-llp.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/polypid-secures-first-fda-approval-for-surgical-site-infections-drug-after-colorectal-surgery-benzinga.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/sickle-cell-disease-modifying-drug-awaiting-fda-approval-labroots.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/novum-iq-syringe-pump.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -27,6 +29,7 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/caresite-micro-luer-access-device-and-extension-sets.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/teleflex-loss-of-resistance-syringe.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/qinflow-warrior-lite-base-unit.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/capricor-s-second-crl-proves-the-hope-3-trial-was-broken-from-the-inside-the-clinical-trial-vanguard.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-launches-cdsco-approved-blenrep-in-india-for-refractory-multiple-myeloma-indian-pharma-post.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-launches-cdsco-approved-blenrep-for-myeloma-in-india-voice-of-healthcare.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-to-flag-accelerated-approvals-on-patient-facing-labels-after-years-of-industry-pushback-endpoints-news.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -47,12 +50,9 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/why-is-bridgebio-pharma-stock-trading-higher-today-bridgebio-pharma-nasdaq-bbio-benzinga.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/new-haven-biotech-to-seek-fda-approval-for-covid-drug-after-positive-trial-results-hartford-business-journal.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/roche-holding-gains-favorable-drug-approval-news-as-weight-loss-pipeline-clinical-data-demonstrate-potential-nai500.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/us-fda-says-patient-labeling-now-must-include-accelerated-approval-notice-pink-sheet.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/drug-approval-sitagliptin-and-metformin-hydrochloride-msn-laboratories-private-ltd.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/phio-receives-fda-guidance-supporting-ph-762-advancement-on-track-for-randomized-phase-2b-study-in-q1-2027-the-detroi.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-warns-of-blood-pressure-drug-recall-due-to-potential-metal-contamination-the-healthy-reader-s-digest.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/philips-bridge-prep-kit.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/cardiosave-hybrid-and-cardiosave-rescue-intra-aortic-balloon-pumps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/unauthorized-drugs-including-prescription-drugs-and-injectable-peptides-seized-from-canada-biogenix-as-they-may-pose-s.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/the-scan-by-2-minute-medicine-light-therapy-offers-hope-for-seasonal-depression-measles-cases-highlight-vaccination-g.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/recon-fda-approves-first-early-stage-breast-cancer-hormone-therapy-in-two-decades-lilly-to-acquire-huntington-s-diseas.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
