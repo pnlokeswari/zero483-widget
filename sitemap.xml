@@ -5,6 +5,8 @@
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/fda-approves-neuralink-s-link-pivotal-study-the-first-us-pivotal-trial-of-an-implantable-brain-computer-interface-2-m.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/cogent-biosciences-wins-fda-approval-for-first-drug-plans-49-000-a-month-launch-yahoo-finance.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/cdsco-panel-backs-novo-pfizer-trials-for-haemophilia-therapies-in-india-business-standard.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/mckesson-radiology-and-change-healthcare-radiology-solutions.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-issues-trial-noncompliance-notices-to-two-firms-wisevoter.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -38,6 +40,8 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/caresite-micro-luer-access-device-and-extension-sets.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/teleflex-loss-of-resistance-syringe.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/qinflow-warrior-lite-base-unit.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-approval-timelines-to-shorten-with-cdsco-capacity-boost-rediff-moneywiz.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
+  <url>\n    <loc>https://alerts.zero483.com/alerts/new-haven-biotech-to-seek-fda-approval-for-covid-drug-after-positive-trial-results-hartford-business-journal.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/ozempic-lawsuit-november-2026-blindness-and-gastroparesis-claims-drugwatch-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/capricor-s-second-crl-proves-the-hope-3-trial-was-broken-from-the-inside-the-clinical-trial-vanguard.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/gsk-launches-cdsco-approved-blenrep-in-india-for-refractory-multiple-myeloma-indian-pharma-post.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
@@ -51,8 +55,4 @@
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-finalizes-guidance-to-assist-sponsors-in-preparing-otc-monograph-requests-raps.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/fda-misses-deadline-on-savara-s-rare-lung-disease-drug-leaving-approval-timeline-open-pharmaceutical-executive.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
   <url>\n    <loc>https://alerts.zero483.com/alerts/bofa-raises-bridgebio-pharma-stock-price-target-on-fda-approval-investing-com.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/bridgebio-pharma-s-welgemda-wins-fda-approval-for-lgmd2i-r9-mugglehead-investment-magazine.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/cogent-biosciences-wins-first-fda-approval-for-ekitna-the-business-journals.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/drug-approval-timelines-to-shorten-with-cdsco-capacity-boost-rediff-moneywiz.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
-  <url>\n    <loc>https://alerts.zero483.com/alerts/advocacy-submits-comments-on-fda-s-food-traceability-guidance-office-of-advocacy-gov.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>
 </urlset>
