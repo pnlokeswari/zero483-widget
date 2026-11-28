@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-27T22:58:42.498211+00:00",
+  "last_updated": "2026-11-28T04:58:34.471993+00:00",
   "total_items": 50,
   "items": [
     {
@@ -777,6 +777,24 @@
       "is_long_form": false
     },
     {
+      "id": "042e5214784c",
+      "title": "Drug Approval: SITAGLIPTIN PHOSPHATE - BIOCON PHARMA",
+      "slug": "drug-approval-sitagliptin-phosphate-biocon-pharma",
+      "date": "2026-11-24",
+      "category": "Drug Approval",
+      "severity": "Low",
+      "summary": "<p>Application: ANDA218441\nSponsor: BIOCON PHARMA\nProduct: SITAGLIPTIN PHOSPHATE\nSubmission type: ORIG\nSubmission class: N/A\nStatus: AP\nStatus date: 20261124</p>",
+      "compliance_impact": "",
+      "key_actions": "",
+      "industry_context": "",
+      "seo_title": "Drug Approval: SITAGLIPTIN PHOSPHATE - BIOCON PHARMA",
+      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
+      "primary_company_name": null,
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218441",
+      "fetched_at": "2026-11-28T04:58:15.875353+00:00",
+      "is_long_form": false
+    },
+    {
       "id": "9b4b85162f65",
       "title": "Drug Approval: BACFENSSI - POLYPID LTD",
       "slug": "drug-approval-bacfenssi-polypid-ltd",
@@ -882,24 +900,6 @@
       "primary_company_name": null,
       "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5FSXZxTXA3SENjRjl3QWFwT0szNjdIam1JekpaYnZYQVFFZkMzNXQtZ2NhcmdrbTRLUGRaWktEakM3MGw2OXdzbUFza0hfRkkyWlNyYQ?oc=5",
       "fetched_at": "2026-11-26T22:36:52.324071+00:00",
-      "is_long_form": false
-    },
-    {
-      "id": "3466d09a0d04",
-      "title": "Capricor’s Second CRL Proves the HOPE-3 Trial Was Broken From the Inside - The Clinical Trial Vanguard",
-      "slug": "capricor-s-second-crl-proves-the-hope-3-trial-was-broken-from-the-inside-the-clinical-trial-vanguard",
-      "date": "2026-11-24",
-      "category": "Guidance",
-      "severity": "Low",
-      "summary": "<p>Title: Capricor’s Second CRL Proves the HOPE-3 Trial Was Broken From the Inside - The Clinical Trial Vanguard\nSource: Google News\nDate: Tue, 24 Nov 2026 08:36:24 GMT</p>",
-      "compliance_impact": "",
-      "key_actions": "",
-      "industry_context": "",
-      "seo_title": "Capricor’s Second CRL Proves the HOPE-3 Trial Was Broken From the Inside - The Clinical Trial Vanguard",
-      "seo_description": "USFDA Pharma Update. Review the latest developments, market implications, and key takeaways.",
-      "primary_company_name": null,
-      "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSWsyd2hRSkc4emk0TDRlY3hFeDU3emQwQVhkWnJENjV4SjJqNjNVMnNGUFJmOXF0ajd6Y0NpY3otdE5uZE1mS0JqUEx4T2JvT1pwTWp4V3YyVkpsTFlOQ1o1SDBQVkdqM3M3QXc1dTdIbjBsS2tsSmxMdHNHRVNOTmdlYUZjNGFNeFZqRVRuTmtmVGFJeV9ERGxwZnpxdnZSRnFXSlE2MW5WOXpOZzBFckVyMTJPSzV3SUl6Z3F5a0xrQk9nTGc?oc=5",
-      "fetched_at": "2026-11-26T13:11:08.989561+00:00",
       "is_long_form": false
     }
   ]
